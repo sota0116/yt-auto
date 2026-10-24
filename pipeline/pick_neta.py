@@ -5,7 +5,7 @@
 #   回したことを neta.json の「回した理由」に残す（週報に出す）
 # ・型A-4 のネタは、a4_facts の組から作る：直近8週の A の回と、年収1位（山場で下がる職業）が同じ組と、職業が4つ以上重なる組は使わない
 # ・ほかの型は channels\<ch>\ネタ帳.json の行。facts を作るプログラム（facts_cmd）が無い行は、データ待ちとして飛ばす
-# ・作った回と作り途中の回は、history\<ch>\produced.json と channels\<ch>\videos\ の両方から数える
+# ・作った回と作り途中の回は、history\<ch>\produced.json と channels\<ch>\videos\ の両方から数える（作り直した版 remake_of は数えない）
 # ・見張り（watch.py）が history\<ch>\type_hold.json に書いた型（直近5本の平均視聴率が30%未満）は、順番の後ろに回す（設計書 §2「型の後回し」）
 import argparse, datetime, hashlib, itertools, json, os, re, subprocess, sys
 
