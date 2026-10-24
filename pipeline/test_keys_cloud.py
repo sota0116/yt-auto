@@ -19,9 +19,12 @@ def youtube(ch):
 def claude():
     r = subprocess.run([shutil.which("claude") or "claude", "-p", "--model", "haiku", "--output-format", "json"],
                        input="「OK」とだけ答えてください", capture_output=True, text=True, encoding="utf-8", timeout=300)
-    d = json.loads(r.stdout)
-    if d.get("is_error"):
-        raise RuntimeError("Claude がエラーを返しました")
+    try:
+        d = json.loads(r.stdout)
+    except json.JSONDecodeError:
+        d = {"is_error": True, "result": (r.stdout + r.stderr)[-300:]}
+    if d.get("is_error"):  # Claude のエラー文（鍵の中身は入らない）を出す
+        raise SystemExit(f"Claude のエラー：{str(d.get('result'))[:300]}")
     return "返事あり"
 
 
