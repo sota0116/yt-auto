@@ -1,0 +1,29 @@
+{
+ "説明": "競合リサーチ（pipeline/research.py）が毎日見るチャンネルと検索の言葉。出どころは 調査/競合_仕事と職場_2026-10-23.md と 設計/競合分析_フルAIチャンネル_2026-10-23.md。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
+ "channels": [
+  {"id": "UClu1Wun9r141gaXwr_rbv6Q", "name": "限界だもん", "group": "会社の失敗・末路"},
+  {"id": "UC99fMQJQP8H_9b6Bgd9o9RA", "name": "底辺なのだ", "group": "職場のZ世代・退職"},
+  {"id": "UC_JY1bKNWd2fjf2RxM3xLLQ", "name": "ずんだもん末路ストーリー", "group": "職場・お金・格差"},
+  {"id": "UCzqg565KdjuxPXTBuzDdMAw", "name": "企業しくじり・やらかし物語", "group": "業界が苦しくなる理由"},
+  {"id": "UCXzt6u4VooLQcyc3-yIFIcw", "name": "世界まる見えずんだもん", "group": "業界ニュース"},
+  {"id": "UCF27uipT8xmfaIALkQ14hKA", "name": "ずんだ探検隊", "group": "職業の離職理由"},
+  {"id": "UCazH99MFhU6Xm6zK-c0tR5g", "name": "えだまめストーリー", "group": "職場の心理"},
+  {"id": "UCs_pojBiRupv5wbTFmAINxw", "name": "社畜ジャパン", "group": "口コミ紹介"},
+  {"handle": "@社畜の檻", "name": "社畜の檻", "group": "口コミ紹介"},
+  {"id": "UCph76YzMKEXbVem2zqCM3BA", "name": "俺たち天下のゆとりーマン", "group": "会社員の末路（人間制作）"},
+  {"id": "UCOuea2SHLkJYQZzzaoVWCPQ", "name": "サラリーマンな日常", "group": "職場あるある（人間制作）"},
+  {"id": "UCjeyT7yokgpspPPoC5je2dA", "name": "ブラック企業と戦うハセガワです!", "group": "ブラック企業（人間制作）"},
+  {"handle": "@shigoto_reach", "name": "しごとリーチ!", "group": "職業の1日密着（人間制作）"},
+  {"handle": "@AI都市伝説検証室", "name": "AI都市伝説検証室", "group": "AIに検証させる型"},
+  {"handle": "@AINazotokiLab", "name": "AI謎解き研究所", "group": "AIに検証させる型"}
+ ],
+ "queries": [
+  "年収 職業 ランキング",
+  "辞める人が多い 理由 仕事",
+  "仕事 末路 会社員",
+  "給料 上がらない 理由",
+  "転職 年収 下がる",
+  "AIに検証させたら"
+ ],
+ "auto": []
+}

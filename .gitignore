@@ -28,3 +28,5 @@ channels/*/voice_audition*/
 data/raw/xcheck/
 data/raw/gyoji/
 data/raw/naoj/
+# ・競合リサーチのサムネと Claude の記録（よその動画のサムネなので公開しない。research.py が毎日作り直す）
+_research/

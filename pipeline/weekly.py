@@ -66,7 +66,7 @@ def gather(chs):
             "在庫": sum(1 for e in up if not e.get("published") and not e.get("missing")),
             "来週の予約が無い日": [x for x in nxt if x not in booked],
             "今月の制作費_円": cost.get(now().strftime("%Y-%m"), 0),
-            "今週作った回": [{k: p.get(k) for k in ("work", "type", "frame", "title", "回した理由")} for p in prod if str(p.get("made", "")) >= week_ago],
+            "今週作った回": [{k: p.get(k) for k in ("work", "type", "frame", "title", "回した理由", "competitor_note")} for p in prod if str(p.get("made", "")) >= week_ago],
             "最後の毎日の実行": {k: last.get(k) for k in ("started", "made", "stopped", "飛ばした回")},
             "型ごと": per_type(metrics),
             "回ごとの数字": metrics,
@@ -94,12 +94,15 @@ def prompt(path, chs):
     rel = lambda p: os.path.relpath(p, ROOT)
     design = design_doc()
     docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs)
+    memos = "\n".join(f"- {rel(m)}（{ch} の競合メモ。research.py が毎日書く。§7〜9 の提案を 6 の改善案の材料にする）"
+                      for ch in chs for m in [os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")] if os.path.exists(m))
     return f"""あなたは YouTube の自動チャンネルの週報の書き手です。読む人はこの仕組みの持ち主で、専門用語が苦手です。日本語で、短い文で書きます。
 
 ## 先に全部読むファイル
 - {rel(path)}（今週の数字。プログラムが集めた物。ここにない数字は書かない。あなたは割り算などの計算を最小限にし、した時はそう書く）
 {docs}
 - {rel(design) if os.path.exists(design) else '（設計書の写しは無い。下の線だけ使う）'}（§2 の週の流れ・§7 判定会・付録A の線）
+{memos}
 
 ## 書く順（この順。見出しは ## で）
 1. 今週あなたがやること（最大3行）：期限の「1か月以内」が true の物、来週の予約が無い日（審査前＝STOCK_PHASE が pre の時）、AIの申告がオフの回、
@@ -110,7 +113,8 @@ def prompt(path, chs):
 3. 仕組みの健康状態を1行：毎日の実行と見張りの最後の実行時刻、在庫の本数、来週分の予約、今月の制作費（上限の何%か）。
 4. 型ごとの数字（表）：本数・表示1,000回以上の本数・平均再生・クリック率・平均視聴率・1万回あたりの登録。
 5. 伸びた回と伸びなかった回を、1文ずつ比べた違い（数字が2本以上ある時だけ）。
-6. 改善案を1つ（手順書のどこを、どう書き換えるか。差し替えで勝った文言があれば「勝ちパターン」に足す案）。「採用」か「見送り」をコメントで返すよう書き添える。
+6. 改善案を1つ（手順書のどこを、どう書き換えるか。差し替えで勝った文言があれば「勝ちパターン」に足す案。競合メモの「手順書を変える案」と、
+   今週作った回の competitor_note（競合メモから取り入れた物）の回の数字も材料にする。取り入れた回とそうでない回の差は、2本以上ずつある時だけ比べる）。「採用」か「見送り」をコメントで返すよう書き添える。
 7. 細かいこと：差し替えた回、データ待ちで飛ばしているネタ帳の行、回した理由、コメントの状態、型の後回し。
 
 ## 決まり

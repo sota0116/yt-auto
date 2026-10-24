@@ -4,6 +4,7 @@
 # ・書く作業には鍵を渡さない（設計書 §4「作業を2つに分ける」）：子のプロセスから鍵の場所と鍵の環境変数を消して動かす
 # ・Claude は書いたあと check_job_script.py を自分で回し、注意が0件になるまで直す。最後にここでもう一度回して確かめる
 # ・--fix：gate_script.json（台本ゲートの不合格）を読ませて、不合格の所だけ直させる（設計書 §5④ 書き直しは2回まで）
+# ・競合メモ（research.py が毎日書く）も読ませ、試すことを1つ以上取り入れさせる（何を取り入れたかは competitor_note）
 # ・モデルは環境変数 CLAUDE_WRITER_MODEL（無ければ opus）。調べものが要る型（B・C・D）はネット検索も許す
 import argparse, json, os, shutil, subprocess, sys
 
@@ -11,6 +12,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.environ.get("YT_DOCS_DIR", r"C:\Users\koneb\OneDrive\YouTube自動チャンネル")
 SECRET_ENV = ("YT_SECRETS_DIR", "GEMINI_API_KEY", "ESTAT_APP_ID", "OPENAI_API_KEY", "UTAGE_API_KEY", "LOVART_ACCESS_KEY",
               "LOVART_SECRET_KEY", "YT_CLIENT_SECRET", "YT_TOKEN_JOB", "YT_TOKEN_SPI")
+MEMO = lambda ch: os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")  # research.py が毎日書く
 GOLDEN = {"job": os.path.join(ROOT, "channels", "job", "videos", "001_a4_untenshu_fukushi", "script.json")}
 
 
@@ -47,6 +49,7 @@ def prompt(work, ch, fix):
 4. {rel(GOLDEN[ch]) if ch in GOLDEN else '（見本なし）'}（script.json の形の見本。項目名と形だけを借りる。つかみ・言い回し・章立ては写さない）
 5. {rel(os.path.join(ROOT, 'channels', ch, 'profile.json'))}（語り手と聞き手の名前）
 6. {rel(os.path.join(ROOT, 'channels', ch, '禁止表現.txt'))}（使わない言葉。台本ゲートでも照らす）
+7. {rel(MEMO(ch)) if os.path.exists(MEMO(ch)) else '（競合メモはまだ無い）'}（毎日の競合リサーチのまとめ。手順書より下の扱い。借りるのは題材の傾向と型だけ）
 
 ## 直近の回（同じ番号の文・同じつかみの型・同じ骨組みが続かないようにする材料）
 {json.dumps(recent(ch), ensure_ascii=False, indent=1)}
@@ -56,6 +59,8 @@ def prompt(work, ch, fix):
 - 絵のカットの image は、日本語で場面を1〜2文。人が要らない場面は人を書かない。読める文字・ロゴ・実在の会社は書かない。
 - サムネのb案の背景に使う絵を1枚選び、その image カットの id を script.json の thumb_bg に書く（人が写らない場面で、右側に図を重ねても主役が隠れない絵）。
 - 図のカットは chart に、facts.json の値を指す形で書く（見本の chart の kind と項目名を使う）。
+- 競合メモがある時は「うちの次の回で試すこと」から、この回の型に合う物を1つ以上、手順書の決まりの中で取り入れる（タイトル3案・サムネの文字・概要欄・台本の構成のどれか）。
+  手順書とぶつかる案は採らない。競合の文・言い回しは写さない。取り入れた物を script.json の competitor_note に1行で書く（無ければ「なし（理由）」）。
 - 概要欄 desc の LINE のリンクは {{LINE_URL}}、チャプターは {{CHAPTERS}} と書く（あとでプログラムが置き換える）。
 - {'出典が要る事実は WebSearch・WebFetch で公的な一次資料を確かめ、facts.json の「出典」に URL と取得日を足してよい。数字そのものは facts.json の値だけを使う。' if research else 'ネットは使わない（この型は facts.json の値だけで書く）。'}
 
