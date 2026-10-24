@@ -10,6 +10,7 @@
 #   ・"badge": "イメージ" のカットは、右上の隅に小さく札を出す（読み上げない）
 #   ・書き出しは約4Mbps（10分で約300MB）
 #   ・グラフ（images\<id>.mp4）は拡大せず、そのまま。短い時は最後の画面のままのばす
+#   ・声の頭か終わりに大きな雑音（5ミリ秒で振れが0.3超）があるカットは、組み立てずに止まる
 import argparse, json, os, sys
 from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,6 +42,20 @@ def badge_png(text, path, cfg):
     im.save(path)
 
 
+def edge_peak(path):
+    """声の頭と終わり（無音の前）の5ミリ秒の、いちばん大きい振れ（0〜1）"""
+    import wave
+    import numpy as np
+    with wave.open(path) as w:
+        sr = w.getframerate()
+        x = np.abs(np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768)
+    nz = np.flatnonzero(x > 1e-3)
+    if not len(nz):
+        return 0.0
+    k = sr // 200
+    return float(max(x[:k].max(), x[max(0, nz[-1] - k):nz[-1] + 1].max()))
+
+
 def build(work, out):
     need("ffmpeg", "ffmpeg を入れてください")
     cfg = load_config(work)
@@ -59,6 +74,9 @@ def build(work, out):
     for n, c in enumerate(cuts):
         gap = QUIZ_GAP if c.get("quiz") else GAP
         v = os.path.join(b, c["id"] + "_v.wav"); prep_voice(voice_path(work, c["id"]), v, tempo, gap); vcs.append(v)
+        pop = edge_peak(v)
+        if pop > 0.3:  # 声の頭か終わりの5ミリ秒が大きい＝切り替わりで「バチッ」と鳴る（1本目は wav の頭が音として入っていた）
+            raise SystemExit(f"【止まりました】声の頭か終わりに大きな雑音：{c['id']}（大きさ {pop:.2f}。voice の {c['id']}.wav を作り直す）")
         d = dur(v)
         src_img = resolve_image(work, sc["cuts"], c)
         clip = os.path.join(b, c["id"] + ".mp4")

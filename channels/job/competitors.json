@@ -1,5 +1,5 @@
 {
- "説明": "競合リサーチ（pipeline/research.py）が毎日見るチャンネルと検索の言葉。出どころは 調査/競合_仕事と職場_2026-10-23.md と 設計/競合分析_フルAIチャンネル_2026-10-23.md。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
+ "説明": "競合リサーチ（pipeline/research.py）が毎日見るチャンネルと検索の言葉。出どころは 調査/競合_仕事と職場_2026-10-23.md と 設計/競合分析_フルAIチャンネル_2026-10-23.md と 設計/競合分析_参考チャンネル追加_2026-10-24.md（「型の参考」は題材が違う。借りるのはタイトル・サムネ・構成の型だけ）。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
  "channels": [
   {"id": "UClu1Wun9r141gaXwr_rbv6Q", "name": "限界だもん", "group": "会社の失敗・末路"},
   {"id": "UC99fMQJQP8H_9b6Bgd9o9RA", "name": "底辺なのだ", "group": "職場のZ世代・退職"},
@@ -15,7 +15,13 @@
   {"id": "UCjeyT7yokgpspPPoC5je2dA", "name": "ブラック企業と戦うハセガワです!", "group": "ブラック企業（人間制作）"},
   {"handle": "@shigoto_reach", "name": "しごとリーチ!", "group": "職業の1日密着（人間制作）"},
   {"handle": "@AI都市伝説検証室", "name": "AI都市伝説検証室", "group": "AIに検証させる型"},
-  {"handle": "@AINazotokiLab", "name": "AI謎解き研究所", "group": "AIに検証させる型"}
+  {"handle": "@AINazotokiLab", "name": "AI謎解き研究所", "group": "AIに検証させる型"},
+  {"id": "UCaNSFgJkwi6SFolcPGhq0_w", "name": "真夜中のもしも", "group": "型の参考：もしも〜の1日を再現"},
+  {"id": "UC0dkO7IIxQwRz5rZV1qJQBA", "name": "真実のヒストリー", "group": "型の参考：外から見た日本・今のお金に換算"},
+  {"id": "UCwkAl3Fxd69mDEcQjX7NZsQ", "name": "考えすぎる葦", "group": "型の参考：なぜ〜か【学問×学問】"},
+  {"id": "UCUX4T-9fEZvMIJXXgvss3hA", "name": "再現ファイル", "group": "型の参考：公的資料で再現・数字を並べる"},
+  {"id": "UCncDD6p1DDOvliwHYXLueIA", "name": "人生の", "group": "型の参考（次点）：常識の逆・働き方の心理"},
+  {"id": "UCPUi_0Qdh_VCLNGOjMqqESg", "name": "争いの世界史", "group": "型の参考（次点）：なぜ〜したのか"}
  ],
  "queries": [
   "年収 職業 ランキング",

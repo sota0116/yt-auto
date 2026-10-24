@@ -149,6 +149,18 @@ def ask(prompt, model=None, search=False, schema=None, images=None, temperature=
 TTS_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-3.8-flash-tts")
 
 
+def _pcm(data):
+    """返ってきた音が、すでに wav の頭（RIFF）つきなら、中の音だけを取り出す。
+    頭ごと包むと、頭の44バイトが大きな音として鳴る（2026-10-24 の1本目で、カットの切り替わりごとに「バチッ」と鳴った）"""
+    import io, wave
+    if data[:4] != b"RIFF":
+        return data
+    with wave.open(io.BytesIO(data)) as w:
+        if (w.getnchannels(), w.getsampwidth(), w.getframerate()) != (1, 2, 24000):
+            raise RuntimeError(f"Gemini TTS の音の形が想定と違う：{w.getnchannels()}ch・{w.getsampwidth() * 8}bit・{w.getframerate()}Hz")
+        return w.readframes(w.getnframes())
+
+
 def tts(prompt, voice, model=None):
     """声を作る。24kHz・16bit・モノラルの wav のバイト列と、使ったトークン数を返す"""
     import io, wave
@@ -156,7 +168,7 @@ def tts(prompt, voice, model=None):
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
     r = _req("POST", f"models/{model or TTS_MODEL}:generateContent", body)
-    pcm = base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+    pcm = _pcm(base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]))
     buf = io.BytesIO()
     with wave.open(buf, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
@@ -174,7 +186,7 @@ def tts_multi(turns, voices, model=None):
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": cfg}}}}
     r = _req("POST", f"models/{model or TTS_MODEL}:generateContent", body)
-    pcm = base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+    pcm = _pcm(base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]))
     buf = io.BytesIO()
     with wave.open(buf, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
