@@ -25,6 +25,7 @@ def done_list(ch):
     p = os.path.join(ROOT, "history", ch, "produced.json")
     out = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else []
     seen = {x["work"] for x in out}
+    out = [x for x in out if not x.get("remake_of")]  # 作り直した版（remake_of）は、型の順番と回の番号に数えない
     vdir = os.path.join(ROOT, "channels", ch, "videos")
     for name in sorted(os.listdir(vdir)) if os.path.isdir(vdir) else []:
         n = os.path.join(vdir, name, "neta.json")
@@ -34,6 +35,8 @@ def done_list(ch):
                         "jobs": x.get("jobs", []), "made": x.get("made")})
         elif name not in seen and os.path.exists(os.path.join(vdir, name, "script.json")):
             s = json.load(open(os.path.join(vdir, name, "script.json"), encoding="utf-8"))
+            if s.get("remake_of"):
+                continue
             f = json.load(open(os.path.join(vdir, name, "facts.json"), encoding="utf-8"))
             out.append({"work": name, "type": s["type"], "frame": s["frame"], "neta_id": name,
                         "jobs": (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収")  # 型D の順位は list
