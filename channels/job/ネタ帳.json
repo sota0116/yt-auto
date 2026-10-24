@@ -1,0 +1,504 @@
+[
+ {
+  "id": "d_wage30",
+  "title": "日本人の給料はなぜ30年上がらないのか",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/d_wage30.json（法人企業統計・労働力調査・毎月勤労統計・消費者物価指数・家計調査・賃金構造基本統計・国民経済計算）",
+  "premise_numbers": [],
+  "expected_top": "物価と税・保険料",
+  "facts_cmd": [
+   "d_facts.py",
+   "make",
+   "{work}",
+   "wage30"
+  ],
+  "hold": false
+ },
+ {
+  "id": "d_wakamono",
+  "title": "「最近の若者はすぐ辞める」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_shinsotsu3",
+  "title": "「新卒の3年で3割辞める」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_tenshoku_down",
+  "title": "「転職すると年収が下がる」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_35sai",
+  "title": "「35歳を過ぎたら転職できない」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_kibo",
+  "title": "「大企業と中小企業の給料の差は大きい」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_hiseiki",
+  "title": "「非正規で働く人はずっと増え続けている」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "d_kurashi",
+  "title": "「給料は上がったのに暮らしは楽にならない」は本当か",
+  "type": "D",
+  "frame": "D",
+  "target": "自分の給料や働き方が世の中と比べてどうなのか気になっている、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "b_soki45",
+  "title": "45歳以上の早期退職を募った会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/b_data.json",
+  "premise_numbers": [
+   "45歳"
+  ],
+  "expected_top": "",
+  "facts_cmd": [
+   "b_facts.py",
+   "make",
+   "{work}",
+   "soki45"
+  ],
+  "hold": false
+ },
+ {
+  "id": "b_nenko",
+  "title": "年功序列をやめた会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/b_data.json",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "b_facts.py",
+   "make",
+   "{work}",
+   "nenko"
+  ],
+  "hold": false
+ },
+ {
+  "id": "b_shonin30",
+  "title": "初任給を30万円に上げた会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/b_data.json",
+  "premise_numbers": [
+   "30万円"
+  ],
+  "expected_top": "",
+  "facts_cmd": [
+   "b_facts.py",
+   "make",
+   "{work}",
+   "shonin30"
+  ],
+  "hold": false
+ },
+ {
+  "id": "b_shussha",
+  "title": "全員出社に戻した会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "b_zangyo0",
+  "title": "残業ゼロを宣言した会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/b_data.json",
+  "premise_numbers": [
+   "0時間"
+  ],
+  "expected_top": "",
+  "facts_cmd": [
+   "b_facts.py",
+   "make",
+   "{work}",
+   "zangyo0"
+  ],
+  "hold": false
+ },
+ {
+  "id": "b_shukyu3",
+  "title": "週休3日にした会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/b_data.json",
+  "premise_numbers": [
+   "3日"
+  ],
+  "expected_top": "",
+  "facts_cmd": [
+   "b_facts.py",
+   "make",
+   "{work}",
+   "shukyu3"
+  ],
+  "hold": false
+ },
+ {
+  "id": "b_fukugyo",
+  "title": "副業を解禁した会社",
+  "type": "B",
+  "frame": "B",
+  "target": "自分の会社の制度が変わりそうで不安な、25〜45歳の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": null,
+  "hold": false
+ },
+ {
+  "id": "c_truck",
+  "title": "大型トラックの運転者",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "truck"
+  ],
+  "hold": false,
+  "メモ": "「長距離」は統計で分けられないので題から外した（2026-10-24）"
+ },
+ {
+  "id": "c_kango_yakin",
+  "title": "看護師",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "kango"
+  ],
+  "hold": false,
+  "メモ": "「夜勤」は統計で分けられないので題から外した（2026-10-24）"
+ },
+ {
+  "id": "c_keibi",
+  "title": "警備員",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "keibi"
+  ],
+  "hold": false
+ },
+ {
+  "id": "c_denki",
+  "title": "電気工事士",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "denki"
+  ],
+  "hold": false
+ },
+ {
+  "id": "c_seibi",
+  "title": "自動車整備士",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "seibi"
+  ],
+  "hold": false
+ },
+ {
+  "id": "c_daiku",
+  "title": "大工",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "daiku"
+  ],
+  "hold": false
+ },
+ {
+  "id": "a_kaigo",
+  "title": "介護職員",
+  "type": "A",
+  "frame": "A-1",
+  "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a1_facts.py",
+   "make",
+   "{work}",
+   "kaigo"
+  ],
+  "hold": false
+ },
+ {
+  "id": "a_hoiku",
+  "title": "保育士",
+  "type": "A",
+  "frame": "A-1",
+  "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a1_facts.py",
+   "make",
+   "{work}",
+   "hoiku"
+  ],
+  "hold": true,
+  "メモ": "辞める理由が介護と同じ（どれも医療・福祉の値）。続けて出すと中身が重なるので止める（2026-10-24）"
+ },
+ {
+  "id": "a_yakuzai",
+  "title": "薬剤師",
+  "type": "A",
+  "frame": "A-1",
+  "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a1_facts.py",
+   "make",
+   "{work}",
+   "yakuzai"
+  ],
+  "hold": true,
+  "メモ": "辞める理由が介護と同じ（どれも医療・福祉の値）。続けて出すと中身が重なるので止める（2026-10-24）"
+ },
+ {
+  "id": "a_sekokan",
+  "title": "建築の技術者と土木の技術者",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "kenchiku_doboku"
+  ],
+  "hold": false,
+  "メモ": "業界の離職率が全産業以下なので A-1 にできず、A-3（似た職業との比べ）にした（2026-10-24）"
+ },
+ {
+  "id": "a_chori",
+  "title": "調理人",
+  "type": "A",
+  "frame": "A-1",
+  "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a1_facts.py",
+   "make",
+   "{work}",
+   "chori"
+  ],
+  "hold": false
+ },
+ {
+  "id": "a_taxi",
+  "title": "タクシー運転者とバス運転者",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "taxi_bus"
+  ],
+  "hold": false,
+  "メモ": "業界の離職率が全産業以下なので A-1 にできず、A-3（似た職業との比べ）にした（2026-10-24）"
+ },
+ {
+  "id": "a_se",
+  "title": "システムエンジニアとプログラマー",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "se_pg"
+  ],
+  "hold": false,
+  "メモ": "業界の離職率が全産業以下なので A-1 にできず、A-3（似た職業との比べ）にした（2026-10-24）"
+ }
+]

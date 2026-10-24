@@ -1,0 +1,141 @@
+{
+ "_note": "spi 手順書 §8 の年中行事。日付が決まっている物だけを、公的機関か神社の公式サイトの記述で確かめて入れる。quote は保存した raw の本文から写した文（「…」は省略、またはPDFのふりがなが間に入る所）。出典を確かめられなかった物（松の内・十三夜 など）は入れていない。",
+ "fetched": "2026-10-24",
+ "events": [
+  {
+   "name": "七五三",
+   "rule": {"type": "fixed", "month": 11, "day": 15},
+   "sources": [
+    {"url": "https://www.jinjahoncho.or.jp/omairi/shichigosan/", "file": "data/raw/gyoji/jinjahoncho_shichigosan.html", "quote": "11月15日前後の休日、神社の社頭は晴れ着姿で七五三を祝うたくさんの親子連れで賑います。"},
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "七五三（11月15日）とは、子供の無事な成長を祈る行事。"}
+   ]
+  },
+  {
+   "name": "酉の市",
+   "rule": {"type": "branch_in_month", "month": 11, "branch": "酉", "ordinal_names": ["一の酉", "二の酉", "三の酉"]},
+   "sources": [
+    {"url": "https://www.otorisama.or.jp/mame.html", "file": "data/raw/gyoji/otorisama_mame.html", "quote": "そのお礼参りをさた日が１１月の酉の日であったので、この日を鷲神社例祭日と定めたのが「酉の市」です。"}
+   ],
+   "note": "鷲神社（浅草）の記述。二の酉・三の酉まで行われるようになったと同じページにある。"
+  },
+  {
+   "name": "新嘗祭",
+   "rule": {"type": "fixed", "month": 11, "day": 23},
+   "sources": [
+    {"url": "https://www.kunaicho.go.jp/learn/gokomu-kyuchu/saishi/saishi01.html", "file": "data/raw/gyoji/kunaicho_saishi01.html", "quote": "11月23日 新嘗祭（にいなめさい） 天皇陛下が、神嘉殿において新穀を皇祖はじめ神々にお供えになって"}
+   ]
+  },
+  {
+   "name": "正月事始め（煤払い）",
+   "rule": {"type": "fixed", "month": 12, "day": 13},
+   "sources": [
+    {"url": "https://www.jinjahoncho.or.jp/omatsuri/susuharai/", "file": "data/raw/gyoji/jinjahoncho_susuharai.html", "quote": "現在でも全国的に12月13日に行われることが多く、まもなく新年を迎えることから、併せて大掃除を行うことも多い年の瀬の行事です。"},
+    {"url": "https://ja.kyoto.travel/event/season/december/", "file": "data/raw/gyoji/kyototravel_december.html", "quote": "一年お世話になったお礼の挨拶をする「事始め」が行われます。…この日からは、気持ちも新たに、新しい年を迎える準備が始まります。"}
+   ],
+   "note": "公的な出典の言葉は「煤払い」（神社本庁）と「事始め」（京都市観光協会・京都の花街の12月13日）。「正月事始め」という呼び名そのものは公的な出典では確かめていない。"
+  },
+  {
+   "name": "大祓（年越の大祓）",
+   "rule": {"type": "fixed", "month": 12, "day": 31},
+   "sources": [
+    {"url": "https://www.kunaicho.go.jp/learn/gokomu-kyuchu/saishi/saishi01.html", "file": "data/raw/gyoji/kunaicho_saishi01.html", "quote": "12月31日 節折（よおり） 天皇陛下のために行われるお祓いの行事 大祓（おおはらい） 神嘉殿の前で、皇族をはじめ国民のために行われるお祓いの行事"}
+   ]
+  },
+  {
+   "name": "大晦日",
+   "rule": {"type": "fixed", "month": 12, "day": 31},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "大晦日（12月31日の夜）とは、正月の歳神様を眠らないで迎える日。"}
+   ]
+  },
+  {
+   "name": "人日（七草）",
+   "rule": {"type": "fixed", "month": 1, "day": 7},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "五節句とは、人日（1月7日）、上巳（3月3日）、端午（5月5日）、七夕（7月7日）、…重陽（9月9日）のこと。"},
+    {"url": "https://www.maff.go.jp/hokkaido/suishin/shokuiku/osyogatu_gyoji.html", "file": "data/raw/gyoji/maff_hokkaido_osyogatu.html", "quote": "1月7日は「人日」と呼ぶ、五節句の1つです。"}
+   ]
+  },
+  {
+   "name": "鏡開き",
+   "rule": {"type": "fixed", "month": 1, "day": 11},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/wagohan/articles/2301/spe13_01.html", "file": "data/raw/gyoji/maff_kagamimochi.html", "quote": "1月11日は「鏡開き」 「鏡開き」とは、お供えしていた鏡もちを下ろして、無病息災を願って食べる行事です。"},
+    {"url": "https://www.maff.go.jp/j/pr/aff/2001/spe2_01.html", "file": "data/raw/gyoji/maff_kisetsu_mochi.html", "quote": "多くの地域で、1月11日の「鏡開き」まで飾った後に食べる。"}
+   ],
+   "note": "「多くの地域で」とあり、地域で日が違う。"
+  },
+  {
+   "name": "小正月",
+   "rule": {"type": "fixed", "month": 1, "day": 15},
+   "sources": [
+    {"url": "https://www.maff.go.jp/hokkaido/suishin/shokuiku/osyogatu_gyoji.html", "file": "data/raw/gyoji/maff_hokkaido_osyogatu.html", "quote": "1月15日を小正月、女正月と呼びます。"}
+   ]
+  },
+  {
+   "name": "祈年祭",
+   "rule": {"type": "fixed", "month": 2, "day": 17},
+   "sources": [
+    {"url": "https://www.kunaicho.go.jp/learn/gokomu-kyuchu/saishi/saishi01.html", "file": "data/raw/gyoji/kunaicho_saishi01.html", "quote": "2月17日 祈年祭（きねんさい） 三殿で行われる年穀豊穣祈願の祭典"}
+   ]
+  },
+  {
+   "name": "上巳（桃の節句）",
+   "rule": {"type": "fixed", "month": 3, "day": 3},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "五節句とは、人日（1月7日）、上巳（3月3日）、端午（5月5日）、七夕（7月7日）、…重陽（9月9日）のこと。"}
+   ]
+  },
+  {
+   "name": "端午（菖蒲の節句）",
+   "rule": {"type": "fixed", "month": 5, "day": 5},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "五節句とは、人日（1月7日）、上巳（3月3日）、端午（5月5日）、七夕（7月7日）、…重陽（9月9日）のこと。"}
+   ]
+  },
+  {
+   "name": "大祓（夏越の大祓）",
+   "rule": {"type": "fixed", "month": 6, "day": 30},
+   "sources": [
+    {"url": "https://www.kunaicho.go.jp/learn/gokomu-kyuchu/saishi/saishi01.html", "file": "data/raw/gyoji/kunaicho_saishi01.html", "quote": "6月30日 節折（よおり） 天皇陛下のために行われるお祓いの行事 大祓（おおはらい） 神嘉殿の前で、皇族をはじめ国民のために行われるお祓いの行事"}
+   ]
+  },
+  {
+   "name": "七夕",
+   "rule": {"type": "fixed", "month": 7, "day": 7},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "五節句とは、人日（1月7日）、上巳（3月3日）、端午（5月5日）、七夕（7月7日）、…重陽（9月9日）のこと。"}
+   ]
+  },
+  {
+   "name": "盂蘭盆（お盆）",
+   "rule": {"type": "fixed", "month": 8, "day": 15},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "盂蘭盆とは、陰暦7月15日、現在では8月15日を中心に先祖の霊を祭る行事。"}
+   ],
+   "note": "8月15日を中心とした期間の行事。期間の始まりと終わりは出典にないので、8月15日だけを入れる。"
+  },
+  {
+   "name": "重陽（菊の節句）",
+   "rule": {"type": "fixed", "month": 9, "day": 9},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "五節句とは、人日（1月7日）、上巳（3月3日）、端午（5月5日）、七夕（7月7日）、…重陽（9月9日）のこと。"}
+   ]
+  },
+  {
+   "name": "十五夜（中秋の名月）",
+   "rule": {"type": "kyureki", "month": 8, "day": 15},
+   "sources": [
+    {"url": "https://www.maff.go.jp/j/keikaku/syokubunka/culture/pdf/08_gyoji.pdf", "file": "data/raw/gyoji/maff_08_gyoji.pdf", "quote": "月見（9月15日、旧暦8月15日）は仲秋の名月ともよび、秋の収穫をひかえ豊作を祈願する行事。"}
+   ],
+   "note": "日付は旧暦8月15日として計算する（出典の「9月15日」は使わない）。"
+  },
+  {
+   "name": "神嘗祭",
+   "rule": {"type": "fixed", "month": 10, "day": 17},
+   "sources": [
+    {"url": "https://www.kunaicho.go.jp/learn/gokomu-kyuchu/saishi/saishi01.html", "file": "data/raw/gyoji/kunaicho_saishi01.html", "quote": "10月17日 神嘗祭（かんなめさい） 賢所に新穀をお供えになる神恩感謝の祭典。"}
+   ]
+  }
+ ]
+}

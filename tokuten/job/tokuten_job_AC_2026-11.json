@@ -1,0 +1,18 @@
+{
+ "特典": "主な職業の年収・労働時間と、産業別の離職率の一覧",
+ "型": [
+  "A",
+  "C"
+ ],
+ "有効月": "2026-11",
+ "作った日": "2026-10-24",
+ "使った値": [
+  "data/job/main40_r7.json",
+  "data/job/rishoku_sangyo_r7.json"
+ ],
+ "ファイル": {
+  "tokuten_job_AC_2026-11.png": "6b9e909653b9cb203bdd66fc7bf344d8e2c6f616db057a5d5cf598e03b9ea8db",
+  "tokuten_job_AC_2026-11_phone.png": "b498420d1270e4f94e8a3a16c1d888d5490b82d3c3723f1374d9218d9018ee71",
+  "tokuten_job_AC_2026-11.pdf": "e34c510d34a18d799e339ad44ec768f2af44a4156e44535bcc9ab6e62c2e6ee3"
+ }
+}

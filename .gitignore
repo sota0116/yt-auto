@@ -1,0 +1,30 @@
+# 鍵・ログイン情報（中身を GitHub に上げない。設計書 §4）
+.env
+*.env
+keys*
+secrets/
+client_secret*.json
+token*.json
+# 作業フォルダ・完成品
+work/
+videos/
+*.mp4
+*.wav
+*.mp3
+__pycache__/
+# 公開リポジトリに入れない物（2026-10-24 に公開へ切り替え）
+# ・動画スキルは生徒さん向けの配布物。GitHub の Secrets（VENDOR_SKILL_B64）から実行の時だけ戻す
+vendor/youtube-video-maker/
+# ・LINE 特典の本体と絵（LINE に登録した人だけに渡す物。毎日の制作は使わない）
+tokuten/**/*.pdf
+tokuten/**/*.png
+# ・試し・古い版・手元の道具・声の聞き比べ
+_test/
+pipeline/_old/
+tools/
+.pytest_cache/
+channels/*/voice_audition*/
+# ・よそのサイトのページを保存した物（暦の照合用。手元の点検だけで使い、クラウドの実行は読まない）。政府の統計（estat・esri・cao）は出典つきで公開してよいので入れる
+data/raw/xcheck/
+data/raw/gyoji/
+data/raw/naoj/

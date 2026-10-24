@@ -1,0 +1,94 @@
+{
+ "_説明": "仕事と職場チャンネルの固定の設定（設計書 §4）。声と話し方はここで固定し、台本ごとには変えない",
+ "channel": "あの仕事の年収と一生",
+ "narrator": {
+  "name": "ミナト",
+  "role": "働き方の統計と記録を調べて案内する係"
+ },
+ "listener": {
+  "name": "ユイ",
+  "role": "入社3年目の会社員。素直で、すぐ驚く"
+ },
+ "tts_engine": "voicevox",
+ "_tts_engine": "2026-10-24 に Gemini TTS から VOICEVOX に替えた（上限・残高切れで止まる／まとめ作りで境目がずれる）。Gemini の声の設定（tts_model・voices）は戻す時のために残す。1本目（001）は Gemini の声のまま",
+ "voicevox": {
+  "narrator": {
+   "name": "雀松朱司",
+   "style": "ノーマル",
+   "speed": 1.0,
+   "pitch": 0.0,
+   "intonation": 1.1
+  },
+  "listener": {
+   "name": "冥鳴ひまり",
+   "style": "ノーマル",
+   "speed": 1.0,
+   "pitch": 0.0,
+   "intonation": 1.2
+  },
+  "slow_strong": 0.94,
+  "credit": "音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+  "candidates": {
+   "narrator": [
+    [
+     "雀松朱司",
+     "ノーマル"
+    ],
+    [
+     "玄野武宏",
+     "ノーマル"
+    ]
+   ],
+   "listener": [
+    [
+     "冥鳴ひまり",
+     "ノーマル"
+    ]
+   ]
+  },
+  "_規約": "2026-10-24 確認。雀松朱司・玄野武宏＝VirVox Project（https://www.virvoxproject.com/voicevoxの利用規約）商用可・クレジット必須・申請の記載なし・合成と書かずに使うのは禁止。冥鳴ひまり（https://www.meimeihimari.com/terms-of-use）商用可・クレジット必須・申請不要。どちらも政治・特定の団体や思想に当たる使い方は禁止。青山龍星は個人事業主なら事前申請が要るので候補から外した。九州そらは情報商材の禁止があるので外した",
+  "engine": "VOICEVOX ENGINE 0.25.2（2026-04-30 公開。0.26.0 は 2026-10-19 公開で新しすぎるので使わない）"
+ },
+ "tts_model": "gemini-3.8-flash-tts",
+ "voices": {
+  "narrator": {
+   "voice": "Orus",
+   "style": "落ち着いた低めの男性の声で、ニュース解説のようにテンポよく、標準より少し速めに読む。数字を言う直前だけ半拍置く。"
+  },
+  "listener": {
+   "voice": "Autonoe",
+   "style": "20代半ばの会社員の女性の、素直で明るい声。驚く所は短く素直に驚く。語り手より少し軽い調子で、自然な会話として読む。"
+  }
+ },
+ "voice_candidates": {
+  "narrator": [
+   "Charon",
+   "Orus",
+   "Iapetus",
+   "Rasalgethi"
+  ],
+  "listener": [
+   "Leda",
+   "Zephyr",
+   "Autonoe",
+   "Laomedeia"
+  ]
+ },
+ "chapter_tone": {
+  "つかみ・前置き": "最初の1文は、驚きを込めて言い切る。",
+  "クイズ": "問いかける調子で、相手に考えさせるように。",
+  "山場": "数字の所は一段ゆっくり、重みを持たせて。",
+  "まとめ": "明るく、すっきり締める。しんみりさせない。"
+ },
+ "price": {
+  "tts_usd_per_1m_audio_tokens": 9.0,
+  "audio_tokens_per_sec": 32,
+  "yen_per_usd": 155,
+  "source": "https://ai.google.dev/gemini-api/docs/pricing（vendor templates/config.json と同じ。2026-10-23 確認・2027年1月から倍）"
+ },
+ "b_allow_numbers": [
+  "4人"
+ ],
+ "line_url": "https://lin.ee/wQwnVsE",
+ "_line_url": "LINE 公式アカウント（仕事）。UTAGE の流入経路を作るまでは全部の動画でこの1本（登録者100人か1万回の動画が出たら UTAGE に替える）"
+}

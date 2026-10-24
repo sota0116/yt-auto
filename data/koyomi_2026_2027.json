@@ -1,0 +1,9127 @@
+{
+ "meta": {
+  "valid_from": "2026-11-01",
+  "valid_to": "2027-12-31",
+  "built": "2026-10-24",
+  "builder": "pipeline/build_koyomi.py",
+  "timezone": "日本時間（中央標準時）",
+  "sources": {
+   "naoj": [
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2026/rekiyou261.html",
+     "file": "data/raw/naoj/yoko_2026_1_syukujitsu.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2026/rekiyou262.html",
+     "file": "data/raw/naoj/yoko_2026_2_sekki_zassetsu.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2026/rekiyou263.html",
+     "file": "data/raw/naoj/yoko_2026_3_sakugenbo.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2026/rekiyou264.html",
+     "file": "data/raw/naoj/yoko_2026_4_hinode.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2027/rekiyou271.html",
+     "file": "data/raw/naoj/yoko_2027_1_syukujitsu.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2027/rekiyou272.html",
+     "file": "data/raw/naoj/yoko_2027_2_sekki_zassetsu.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2027/rekiyou273.html",
+     "file": "data/raw/naoj/yoko_2027_3_sakugenbo.html"
+    },
+    {
+     "url": "https://eco.mtk.nao.ac.jp/koyomi/yoko/2027/rekiyou274.html",
+     "file": "data/raw/naoj/yoko_2027_4_hinode.html"
+    }
+   ],
+   "cao": {
+    "url": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv",
+    "file": "data/raw/cao/syukujitsu.csv"
+   },
+   "gyoji": "data/gyoji.json",
+   "computed_2028": {
+    "saku": "2028-01-27 00:12",
+    "daikan": "2028-01-20 22:21",
+    "by": "ephem 4.2",
+    "note": "暦要項 2028 が未発表のため計算値。2027-12-28 に始まる旧暦の月の名前（12月）を決めるためだけに使用"
+   }
+  },
+  "rules": {
+   "setsugetsu": "節入りの日（日付）を新しい節月の1日目とする",
+   "kyureki": "暦要項の朔の日（日本時間の日付）を月の1日目とし、月の中の中気で月の名前を決める。中気のない月は閏月",
+   "rokuyo": "（旧暦の月＋日）を6で割った余り 0大安 1赤口 2先勝 3友引 4先負 5仏滅",
+   "tensha": "節月1〜3 戊寅・4〜6 甲午・7〜9 戊申・10〜12 甲子",
+   "manbai": {
+    "1": [
+     "丑",
+     "午"
+    ],
+    "2": [
+     "酉",
+     "寅"
+    ],
+    "3": [
+     "子",
+     "卯"
+    ],
+    "4": [
+     "卯",
+     "辰"
+    ],
+    "5": [
+     "巳",
+     "午"
+    ],
+    "6": [
+     "酉",
+     "午"
+    ],
+    "7": [
+     "子",
+     "未"
+    ],
+    "8": [
+     "卯",
+     "申"
+    ],
+    "9": [
+     "酉",
+     "午"
+    ],
+    "10": [
+     "酉",
+     "戌"
+    ],
+    "11": [
+     "亥",
+     "子"
+    ],
+    "12": [
+     "卯",
+     "子"
+    ]
+   },
+   "shanichi": "春分・秋分に最も近い戊の日（照らした暦サイトなし。台本に出す前に確認が要る）"
+  },
+  "checks": {
+   "ephem_max_diff_min": {
+    "sekki": 0.71,
+    "saku": 0.52
+   },
+   "kyureki_months_one_chuki_each": true,
+   "leap_month_in_range": false
+  },
+  "saikyo_kaiun": [
+   "2026-12-16",
+   "2027-07-14",
+   "2027-09-26",
+   "2027-12-11"
+  ]
+ },
+ "sekki": [
+  {
+   "name": "立冬",
+   "deg": 225,
+   "datetime": "2026-11-07 18:52"
+  },
+  {
+   "name": "小雪",
+   "deg": 240,
+   "datetime": "2026-11-22 16:23"
+  },
+  {
+   "name": "大雪",
+   "deg": 255,
+   "datetime": "2026-12-07 11:53"
+  },
+  {
+   "name": "冬至",
+   "deg": 270,
+   "datetime": "2026-12-22 05:50"
+  },
+  {
+   "name": "小寒",
+   "deg": 285,
+   "datetime": "2027-01-05 23:10"
+  },
+  {
+   "name": "大寒",
+   "deg": 300,
+   "datetime": "2027-01-20 16:30"
+  },
+  {
+   "name": "立春",
+   "deg": 315,
+   "datetime": "2027-02-04 10:46"
+  },
+  {
+   "name": "雨水",
+   "deg": 330,
+   "datetime": "2027-02-19 06:33"
+  },
+  {
+   "name": "啓蟄",
+   "deg": 345,
+   "datetime": "2027-03-06 04:40"
+  },
+  {
+   "name": "春分",
+   "deg": 0,
+   "datetime": "2027-03-21 05:25"
+  },
+  {
+   "name": "清明",
+   "deg": 15,
+   "datetime": "2027-04-05 09:17"
+  },
+  {
+   "name": "穀雨",
+   "deg": 30,
+   "datetime": "2027-04-20 16:18"
+  },
+  {
+   "name": "立夏",
+   "deg": 45,
+   "datetime": "2027-05-06 02:25"
+  },
+  {
+   "name": "小満",
+   "deg": 60,
+   "datetime": "2027-05-21 15:18"
+  },
+  {
+   "name": "芒種",
+   "deg": 75,
+   "datetime": "2027-06-06 06:26"
+  },
+  {
+   "name": "夏至",
+   "deg": 90,
+   "datetime": "2027-06-21 23:11"
+  },
+  {
+   "name": "小暑",
+   "deg": 105,
+   "datetime": "2027-07-07 16:37"
+  },
+  {
+   "name": "大暑",
+   "deg": 120,
+   "datetime": "2027-07-23 10:05"
+  },
+  {
+   "name": "立秋",
+   "deg": 135,
+   "datetime": "2027-08-08 02:27"
+  },
+  {
+   "name": "処暑",
+   "deg": 150,
+   "datetime": "2027-08-23 17:14"
+  },
+  {
+   "name": "白露",
+   "deg": 165,
+   "datetime": "2027-09-08 05:28"
+  },
+  {
+   "name": "秋分",
+   "deg": 180,
+   "datetime": "2027-09-23 15:02"
+  },
+  {
+   "name": "寒露",
+   "deg": 195,
+   "datetime": "2027-10-08 21:17"
+  },
+  {
+   "name": "霜降",
+   "deg": 210,
+   "datetime": "2027-10-24 00:33"
+  },
+  {
+   "name": "立冬",
+   "deg": 225,
+   "datetime": "2027-11-08 00:39"
+  },
+  {
+   "name": "小雪",
+   "deg": 240,
+   "datetime": "2027-11-22 22:16"
+  },
+  {
+   "name": "大雪",
+   "deg": 255,
+   "datetime": "2027-12-07 17:38"
+  },
+  {
+   "name": "冬至",
+   "deg": 270,
+   "datetime": "2027-12-22 11:42"
+  }
+ ],
+ "zassetsu": [
+  {
+   "date": "2026-11-06",
+   "name": "土用明け",
+   "basis": "計算（次の立春・立夏・立秋・立冬の前日）"
+  },
+  {
+   "date": "2027-01-17",
+   "name": "土用入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-01-22",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-02-03",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-02-03",
+   "name": "土用明け",
+   "basis": "計算（次の立春・立夏・立秋・立冬の前日）"
+  },
+  {
+   "date": "2027-02-03",
+   "name": "節分",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-03-18",
+   "name": "彼岸入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-03-20",
+   "name": "社日",
+   "basis": "計算（春分・秋分に最も近い戊の日。照らした暦サイトなし）"
+  },
+  {
+   "date": "2027-03-21",
+   "name": "彼岸の中日",
+   "basis": "計算（彼岸入りの3日後＝春分・秋分）"
+  },
+  {
+   "date": "2027-03-24",
+   "name": "彼岸明け",
+   "basis": "計算（中日の3日後）"
+  },
+  {
+   "date": "2027-04-17",
+   "name": "土用入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-04-28",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-05-02",
+   "name": "八十八夜",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-05-05",
+   "name": "土用明け",
+   "basis": "計算（次の立春・立夏・立秋・立冬の前日）"
+  },
+  {
+   "date": "2027-06-11",
+   "name": "入梅",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-07-02",
+   "name": "半夏生",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-07-20",
+   "name": "土用入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-07-21",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-08-02",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-08-07",
+   "name": "土用明け",
+   "basis": "計算（次の立春・立夏・立秋・立冬の前日）"
+  },
+  {
+   "date": "2027-09-01",
+   "name": "二百十日",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-09-20",
+   "name": "彼岸入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-09-23",
+   "name": "彼岸の中日",
+   "basis": "計算（彼岸入りの3日後＝春分・秋分）"
+  },
+  {
+   "date": "2027-09-26",
+   "name": "彼岸明け",
+   "basis": "計算（中日の3日後）"
+  },
+  {
+   "date": "2027-09-26",
+   "name": "社日",
+   "basis": "計算（春分・秋分に最も近い戊の日。照らした暦サイトなし）"
+  },
+  {
+   "date": "2027-10-21",
+   "name": "土用入り",
+   "basis": "暦要項"
+  },
+  {
+   "date": "2027-10-25",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-11-06",
+   "name": "土用の丑の日",
+   "basis": "計算（土用の期間の丑の日）"
+  },
+  {
+   "date": "2027-11-07",
+   "name": "土用明け",
+   "basis": "計算（次の立春・立夏・立秋・立冬の前日）"
+  }
+ ],
+ "kyureki_months": [
+  {
+   "year": 2026,
+   "month": 9,
+   "leap": false,
+   "start": "2026-10-11",
+   "end": "2026-11-08",
+   "chuki": "霜降"
+  },
+  {
+   "year": 2026,
+   "month": 10,
+   "leap": false,
+   "start": "2026-11-09",
+   "end": "2026-12-08",
+   "chuki": "小雪"
+  },
+  {
+   "year": 2026,
+   "month": 11,
+   "leap": false,
+   "start": "2026-12-09",
+   "end": "2027-01-07",
+   "chuki": "冬至"
+  },
+  {
+   "year": 2026,
+   "month": 12,
+   "leap": false,
+   "start": "2027-01-08",
+   "end": "2027-02-06",
+   "chuki": "大寒"
+  },
+  {
+   "year": 2027,
+   "month": 1,
+   "leap": false,
+   "start": "2027-02-07",
+   "end": "2027-03-07",
+   "chuki": "雨水"
+  },
+  {
+   "year": 2027,
+   "month": 2,
+   "leap": false,
+   "start": "2027-03-08",
+   "end": "2027-04-06",
+   "chuki": "春分"
+  },
+  {
+   "year": 2027,
+   "month": 3,
+   "leap": false,
+   "start": "2027-04-07",
+   "end": "2027-05-05",
+   "chuki": "穀雨"
+  },
+  {
+   "year": 2027,
+   "month": 4,
+   "leap": false,
+   "start": "2027-05-06",
+   "end": "2027-06-04",
+   "chuki": "小満"
+  },
+  {
+   "year": 2027,
+   "month": 5,
+   "leap": false,
+   "start": "2027-06-05",
+   "end": "2027-07-03",
+   "chuki": "夏至"
+  },
+  {
+   "year": 2027,
+   "month": 6,
+   "leap": false,
+   "start": "2027-07-04",
+   "end": "2027-08-01",
+   "chuki": "大暑"
+  },
+  {
+   "year": 2027,
+   "month": 7,
+   "leap": false,
+   "start": "2027-08-02",
+   "end": "2027-08-31",
+   "chuki": "処暑"
+  },
+  {
+   "year": 2027,
+   "month": 8,
+   "leap": false,
+   "start": "2027-09-01",
+   "end": "2027-09-29",
+   "chuki": "秋分"
+  },
+  {
+   "year": 2027,
+   "month": 9,
+   "leap": false,
+   "start": "2027-09-30",
+   "end": "2027-10-28",
+   "chuki": "霜降"
+  },
+  {
+   "year": 2027,
+   "month": 10,
+   "leap": false,
+   "start": "2027-10-29",
+   "end": "2027-11-27",
+   "chuki": "小雪"
+  },
+  {
+   "year": 2027,
+   "month": 11,
+   "leap": false,
+   "start": "2027-11-28",
+   "end": "2027-12-27",
+   "chuki": "冬至"
+  },
+  {
+   "year": 2027,
+   "month": 12,
+   "leap": false,
+   "start": "2027-12-28",
+   "end": "2028-01-26",
+   "chuki": "大寒"
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-11-01",
+   "weekday": "日",
+   "kanshi": "己卯",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-02",
+   "weekday": "月",
+   "kanshi": "庚辰",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-03",
+   "weekday": "火",
+   "kanshi": "辛巳",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": "文化の日",
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-04",
+   "weekday": "水",
+   "kanshi": "壬午",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-05",
+   "weekday": "木",
+   "kanshi": "癸未",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-06",
+   "weekday": "金",
+   "kanshi": "甲申",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [
+    "土用明け"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-07",
+   "weekday": "土",
+   "kanshi": "乙酉",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "立冬",
+    "time": "18:52"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "酉の市（一の酉）"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "weekday": "日",
+   "kanshi": "丙戌",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 9,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-09",
+   "weekday": "月",
+   "kanshi": "丁亥",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-10",
+   "weekday": "火",
+   "kanshi": "戊子",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-11",
+   "weekday": "水",
+   "kanshi": "己丑",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-12",
+   "weekday": "木",
+   "kanshi": "庚寅",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-13",
+   "weekday": "金",
+   "kanshi": "辛卯",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-14",
+   "weekday": "土",
+   "kanshi": "壬辰",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-15",
+   "weekday": "日",
+   "kanshi": "癸巳",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "七五三"
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "weekday": "月",
+   "kanshi": "甲午",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-17",
+   "weekday": "火",
+   "kanshi": "乙未",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-18",
+   "weekday": "水",
+   "kanshi": "丙申",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-19",
+   "weekday": "木",
+   "kanshi": "丁酉",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "酉の市（二の酉）"
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "weekday": "金",
+   "kanshi": "戊戌",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-21",
+   "weekday": "土",
+   "kanshi": "己亥",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-22",
+   "weekday": "日",
+   "kanshi": "庚子",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": {
+    "name": "小雪",
+    "time": "16:23"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-23",
+   "weekday": "月",
+   "kanshi": "辛丑",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "勤労感謝の日",
+   "gyoji": [
+    "新嘗祭"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "weekday": "火",
+   "kanshi": "壬寅",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-25",
+   "weekday": "水",
+   "kanshi": "癸卯",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-26",
+   "weekday": "木",
+   "kanshi": "甲辰",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-27",
+   "weekday": "金",
+   "kanshi": "乙巳",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-28",
+   "weekday": "土",
+   "kanshi": "丙午",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-29",
+   "weekday": "日",
+   "kanshi": "丁未",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-11-30",
+   "weekday": "月",
+   "kanshi": "戊申",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-01",
+   "weekday": "火",
+   "kanshi": "己酉",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-02",
+   "weekday": "水",
+   "kanshi": "庚戌",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-03",
+   "weekday": "木",
+   "kanshi": "辛亥",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-04",
+   "weekday": "金",
+   "kanshi": "壬子",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-05",
+   "weekday": "土",
+   "kanshi": "癸丑",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-06",
+   "weekday": "日",
+   "kanshi": "甲寅",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-07",
+   "weekday": "月",
+   "kanshi": "乙卯",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": {
+    "name": "大雪",
+    "time": "11:53"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-08",
+   "weekday": "火",
+   "kanshi": "丙辰",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 10,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-09",
+   "weekday": "水",
+   "kanshi": "丁巳",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-10",
+   "weekday": "木",
+   "kanshi": "戊午",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-11",
+   "weekday": "金",
+   "kanshi": "己未",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-12",
+   "weekday": "土",
+   "kanshi": "庚申",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-13",
+   "weekday": "日",
+   "kanshi": "辛酉",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "正月事始め（煤払い）"
+   ]
+  },
+  {
+   "date": "2026-12-14",
+   "weekday": "月",
+   "kanshi": "壬戌",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-15",
+   "weekday": "火",
+   "kanshi": "癸亥",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-16",
+   "weekday": "水",
+   "kanshi": "甲子",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日",
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-17",
+   "weekday": "木",
+   "kanshi": "乙丑",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-18",
+   "weekday": "金",
+   "kanshi": "丙寅",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-19",
+   "weekday": "土",
+   "kanshi": "丁卯",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-20",
+   "weekday": "日",
+   "kanshi": "戊辰",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-21",
+   "weekday": "月",
+   "kanshi": "己巳",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-22",
+   "weekday": "火",
+   "kanshi": "庚午",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "冬至",
+    "time": "05:50"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-23",
+   "weekday": "水",
+   "kanshi": "辛未",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-24",
+   "weekday": "木",
+   "kanshi": "壬申",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-25",
+   "weekday": "金",
+   "kanshi": "癸酉",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-26",
+   "weekday": "土",
+   "kanshi": "甲戌",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-27",
+   "weekday": "日",
+   "kanshi": "乙亥",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-28",
+   "weekday": "月",
+   "kanshi": "丙子",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-29",
+   "weekday": "火",
+   "kanshi": "丁丑",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-30",
+   "weekday": "水",
+   "kanshi": "戊寅",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2026-12-31",
+   "weekday": "木",
+   "kanshi": "己卯",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "大祓（年越の大祓）",
+    "大晦日"
+   ]
+  },
+  {
+   "date": "2027-01-01",
+   "weekday": "金",
+   "kanshi": "庚辰",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "元日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-02",
+   "weekday": "土",
+   "kanshi": "辛巳",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-03",
+   "weekday": "日",
+   "kanshi": "壬午",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-04",
+   "weekday": "月",
+   "kanshi": "癸未",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-05",
+   "weekday": "火",
+   "kanshi": "甲申",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": {
+    "name": "小寒",
+    "time": "23:10"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-06",
+   "weekday": "水",
+   "kanshi": "乙酉",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-07",
+   "weekday": "木",
+   "kanshi": "丙戌",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 11,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "人日（七草）"
+   ]
+  },
+  {
+   "date": "2027-01-08",
+   "weekday": "金",
+   "kanshi": "丁亥",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-09",
+   "weekday": "土",
+   "kanshi": "戊子",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-10",
+   "weekday": "日",
+   "kanshi": "己丑",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-11",
+   "weekday": "月",
+   "kanshi": "庚寅",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": "成人の日",
+   "gyoji": [
+    "鏡開き"
+   ]
+  },
+  {
+   "date": "2027-01-12",
+   "weekday": "火",
+   "kanshi": "辛卯",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-13",
+   "weekday": "水",
+   "kanshi": "壬辰",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-14",
+   "weekday": "木",
+   "kanshi": "癸巳",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-15",
+   "weekday": "金",
+   "kanshi": "甲午",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "小正月"
+   ]
+  },
+  {
+   "date": "2027-01-16",
+   "weekday": "土",
+   "kanshi": "乙未",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-17",
+   "weekday": "日",
+   "kanshi": "丙申",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [
+    "土用入り"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-18",
+   "weekday": "月",
+   "kanshi": "丁酉",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-19",
+   "weekday": "火",
+   "kanshi": "戊戌",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-20",
+   "weekday": "水",
+   "kanshi": "己亥",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "大寒",
+    "time": "16:30"
+   },
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-21",
+   "weekday": "木",
+   "kanshi": "庚子",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-22",
+   "weekday": "金",
+   "kanshi": "辛丑",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-23",
+   "weekday": "土",
+   "kanshi": "壬寅",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-24",
+   "weekday": "日",
+   "kanshi": "癸卯",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-25",
+   "weekday": "月",
+   "kanshi": "甲辰",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-26",
+   "weekday": "火",
+   "kanshi": "乙巳",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-27",
+   "weekday": "水",
+   "kanshi": "丙午",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-28",
+   "weekday": "木",
+   "kanshi": "丁未",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-29",
+   "weekday": "金",
+   "kanshi": "戊申",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-30",
+   "weekday": "土",
+   "kanshi": "己酉",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-01-31",
+   "weekday": "日",
+   "kanshi": "庚戌",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-01",
+   "weekday": "月",
+   "kanshi": "辛亥",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-02",
+   "weekday": "火",
+   "kanshi": "壬子",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-03",
+   "weekday": "水",
+   "kanshi": "癸丑",
+   "setsugetsu": 12,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [
+    "節分",
+    "土用明け",
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-04",
+   "weekday": "木",
+   "kanshi": "甲寅",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "立春",
+    "time": "10:46"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-05",
+   "weekday": "金",
+   "kanshi": "乙卯",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-06",
+   "weekday": "土",
+   "kanshi": "丙辰",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2026,
+    "month": 12,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-07",
+   "weekday": "日",
+   "kanshi": "丁巳",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-08",
+   "weekday": "月",
+   "kanshi": "戊午",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-09",
+   "weekday": "火",
+   "kanshi": "己未",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-10",
+   "weekday": "水",
+   "kanshi": "庚申",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-11",
+   "weekday": "木",
+   "kanshi": "辛酉",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "建国記念の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-12",
+   "weekday": "金",
+   "kanshi": "壬戌",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-13",
+   "weekday": "土",
+   "kanshi": "癸亥",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-14",
+   "weekday": "日",
+   "kanshi": "甲子",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-15",
+   "weekday": "月",
+   "kanshi": "乙丑",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-16",
+   "weekday": "火",
+   "kanshi": "丙寅",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-17",
+   "weekday": "水",
+   "kanshi": "丁卯",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "祈年祭"
+   ]
+  },
+  {
+   "date": "2027-02-18",
+   "weekday": "木",
+   "kanshi": "戊辰",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-19",
+   "weekday": "金",
+   "kanshi": "己巳",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": {
+    "name": "雨水",
+    "time": "06:33"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-20",
+   "weekday": "土",
+   "kanshi": "庚午",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-21",
+   "weekday": "日",
+   "kanshi": "辛未",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-22",
+   "weekday": "月",
+   "kanshi": "壬申",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-23",
+   "weekday": "火",
+   "kanshi": "癸酉",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "天皇誕生日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-24",
+   "weekday": "水",
+   "kanshi": "甲戌",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-25",
+   "weekday": "木",
+   "kanshi": "乙亥",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-26",
+   "weekday": "金",
+   "kanshi": "丙子",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-27",
+   "weekday": "土",
+   "kanshi": "丁丑",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-02-28",
+   "weekday": "日",
+   "kanshi": "戊寅",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日",
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-01",
+   "weekday": "月",
+   "kanshi": "己卯",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-02",
+   "weekday": "火",
+   "kanshi": "庚辰",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-03",
+   "weekday": "水",
+   "kanshi": "辛巳",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "上巳（桃の節句）"
+   ]
+  },
+  {
+   "date": "2027-03-04",
+   "weekday": "木",
+   "kanshi": "壬午",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-05",
+   "weekday": "金",
+   "kanshi": "癸未",
+   "setsugetsu": 1,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-06",
+   "weekday": "土",
+   "kanshi": "甲申",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": {
+    "name": "啓蟄",
+    "time": "04:40"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-07",
+   "weekday": "日",
+   "kanshi": "乙酉",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 1,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-08",
+   "weekday": "月",
+   "kanshi": "丙戌",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-09",
+   "weekday": "火",
+   "kanshi": "丁亥",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-10",
+   "weekday": "水",
+   "kanshi": "戊子",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-11",
+   "weekday": "木",
+   "kanshi": "己丑",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-12",
+   "weekday": "金",
+   "kanshi": "庚寅",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日",
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-13",
+   "weekday": "土",
+   "kanshi": "辛卯",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-14",
+   "weekday": "日",
+   "kanshi": "壬辰",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-15",
+   "weekday": "月",
+   "kanshi": "癸巳",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-16",
+   "weekday": "火",
+   "kanshi": "甲午",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-17",
+   "weekday": "水",
+   "kanshi": "乙未",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-18",
+   "weekday": "木",
+   "kanshi": "丙申",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "彼岸入り"
+   ],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-19",
+   "weekday": "金",
+   "kanshi": "丁酉",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-20",
+   "weekday": "土",
+   "kanshi": "戊戌",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [
+    "社日"
+   ],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-21",
+   "weekday": "日",
+   "kanshi": "己亥",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "春分",
+    "time": "05:25"
+   },
+   "zassetsu": [
+    "彼岸の中日"
+   ],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "春分の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-22",
+   "weekday": "月",
+   "kanshi": "庚子",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "休日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-23",
+   "weekday": "火",
+   "kanshi": "辛丑",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-24",
+   "weekday": "水",
+   "kanshi": "壬寅",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "彼岸明け"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日",
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-25",
+   "weekday": "木",
+   "kanshi": "癸卯",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-26",
+   "weekday": "金",
+   "kanshi": "甲辰",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-27",
+   "weekday": "土",
+   "kanshi": "乙巳",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-28",
+   "weekday": "日",
+   "kanshi": "丙午",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-29",
+   "weekday": "月",
+   "kanshi": "丁未",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-30",
+   "weekday": "火",
+   "kanshi": "戊申",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-03-31",
+   "weekday": "水",
+   "kanshi": "己酉",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-01",
+   "weekday": "木",
+   "kanshi": "庚戌",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-02",
+   "weekday": "金",
+   "kanshi": "辛亥",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-03",
+   "weekday": "土",
+   "kanshi": "壬子",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-04",
+   "weekday": "日",
+   "kanshi": "癸丑",
+   "setsugetsu": 2,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-05",
+   "weekday": "月",
+   "kanshi": "甲寅",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "清明",
+    "time": "09:17"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-06",
+   "weekday": "火",
+   "kanshi": "乙卯",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 2,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-07",
+   "weekday": "水",
+   "kanshi": "丙辰",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-08",
+   "weekday": "木",
+   "kanshi": "丁巳",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-09",
+   "weekday": "金",
+   "kanshi": "戊午",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-10",
+   "weekday": "土",
+   "kanshi": "己未",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-11",
+   "weekday": "日",
+   "kanshi": "庚申",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-12",
+   "weekday": "月",
+   "kanshi": "辛酉",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-13",
+   "weekday": "火",
+   "kanshi": "壬戌",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-14",
+   "weekday": "水",
+   "kanshi": "癸亥",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-15",
+   "weekday": "木",
+   "kanshi": "甲子",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-16",
+   "weekday": "金",
+   "kanshi": "乙丑",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-17",
+   "weekday": "土",
+   "kanshi": "丙寅",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [
+    "土用入り"
+   ],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-18",
+   "weekday": "日",
+   "kanshi": "丁卯",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-19",
+   "weekday": "月",
+   "kanshi": "戊辰",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-20",
+   "weekday": "火",
+   "kanshi": "己巳",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": {
+    "name": "穀雨",
+    "time": "16:18"
+   },
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-21",
+   "weekday": "水",
+   "kanshi": "庚午",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-22",
+   "weekday": "木",
+   "kanshi": "辛未",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-23",
+   "weekday": "金",
+   "kanshi": "壬申",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-24",
+   "weekday": "土",
+   "kanshi": "癸酉",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-25",
+   "weekday": "日",
+   "kanshi": "甲戌",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-26",
+   "weekday": "月",
+   "kanshi": "乙亥",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-27",
+   "weekday": "火",
+   "kanshi": "丙子",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-28",
+   "weekday": "水",
+   "kanshi": "丁丑",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-29",
+   "weekday": "木",
+   "kanshi": "戊寅",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "天赦日",
+    "寅の日"
+   ],
+   "holiday": "昭和の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-04-30",
+   "weekday": "金",
+   "kanshi": "己卯",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-01",
+   "weekday": "土",
+   "kanshi": "庚辰",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-02",
+   "weekday": "日",
+   "kanshi": "辛巳",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [
+    "八十八夜"
+   ],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-03",
+   "weekday": "月",
+   "kanshi": "壬午",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": "憲法記念日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-04",
+   "weekday": "火",
+   "kanshi": "癸未",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": "みどりの日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-05",
+   "weekday": "水",
+   "kanshi": "甲申",
+   "setsugetsu": 3,
+   "kyureki": {
+    "year": 2027,
+    "month": 3,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [
+    "土用明け"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": "こどもの日",
+   "gyoji": [
+    "端午（菖蒲の節句）"
+   ]
+  },
+  {
+   "date": "2027-05-06",
+   "weekday": "木",
+   "kanshi": "乙酉",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": {
+    "name": "立夏",
+    "time": "02:25"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-07",
+   "weekday": "金",
+   "kanshi": "丙戌",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-08",
+   "weekday": "土",
+   "kanshi": "丁亥",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-09",
+   "weekday": "日",
+   "kanshi": "戊子",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-10",
+   "weekday": "月",
+   "kanshi": "己丑",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-11",
+   "weekday": "火",
+   "kanshi": "庚寅",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-12",
+   "weekday": "水",
+   "kanshi": "辛卯",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-13",
+   "weekday": "木",
+   "kanshi": "壬辰",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-14",
+   "weekday": "金",
+   "kanshi": "癸巳",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-15",
+   "weekday": "土",
+   "kanshi": "甲午",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-16",
+   "weekday": "日",
+   "kanshi": "乙未",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-17",
+   "weekday": "月",
+   "kanshi": "丙申",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-18",
+   "weekday": "火",
+   "kanshi": "丁酉",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-19",
+   "weekday": "水",
+   "kanshi": "戊戌",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-20",
+   "weekday": "木",
+   "kanshi": "己亥",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-21",
+   "weekday": "金",
+   "kanshi": "庚子",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": {
+    "name": "小満",
+    "time": "15:18"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-22",
+   "weekday": "土",
+   "kanshi": "辛丑",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-23",
+   "weekday": "日",
+   "kanshi": "壬寅",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-24",
+   "weekday": "月",
+   "kanshi": "癸卯",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-25",
+   "weekday": "火",
+   "kanshi": "甲辰",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-26",
+   "weekday": "水",
+   "kanshi": "乙巳",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-27",
+   "weekday": "木",
+   "kanshi": "丙午",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-28",
+   "weekday": "金",
+   "kanshi": "丁未",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-29",
+   "weekday": "土",
+   "kanshi": "戊申",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-30",
+   "weekday": "日",
+   "kanshi": "己酉",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-05-31",
+   "weekday": "月",
+   "kanshi": "庚戌",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-01",
+   "weekday": "火",
+   "kanshi": "辛亥",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-02",
+   "weekday": "水",
+   "kanshi": "壬子",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-03",
+   "weekday": "木",
+   "kanshi": "癸丑",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-04",
+   "weekday": "金",
+   "kanshi": "甲寅",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 4,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-05",
+   "weekday": "土",
+   "kanshi": "乙卯",
+   "setsugetsu": 4,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-06",
+   "weekday": "日",
+   "kanshi": "丙辰",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "芒種",
+    "time": "06:26"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-07",
+   "weekday": "月",
+   "kanshi": "丁巳",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日",
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-08",
+   "weekday": "火",
+   "kanshi": "戊午",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-09",
+   "weekday": "水",
+   "kanshi": "己未",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-10",
+   "weekday": "木",
+   "kanshi": "庚申",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-11",
+   "weekday": "金",
+   "kanshi": "辛酉",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [
+    "入梅"
+   ],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-12",
+   "weekday": "土",
+   "kanshi": "壬戌",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-13",
+   "weekday": "日",
+   "kanshi": "癸亥",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-14",
+   "weekday": "月",
+   "kanshi": "甲子",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-15",
+   "weekday": "火",
+   "kanshi": "乙丑",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-16",
+   "weekday": "水",
+   "kanshi": "丙寅",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-17",
+   "weekday": "木",
+   "kanshi": "丁卯",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-18",
+   "weekday": "金",
+   "kanshi": "戊辰",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-19",
+   "weekday": "土",
+   "kanshi": "己巳",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日",
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-20",
+   "weekday": "日",
+   "kanshi": "庚午",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-21",
+   "weekday": "月",
+   "kanshi": "辛未",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "夏至",
+    "time": "23:11"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-22",
+   "weekday": "火",
+   "kanshi": "壬申",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-23",
+   "weekday": "水",
+   "kanshi": "癸酉",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-24",
+   "weekday": "木",
+   "kanshi": "甲戌",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-25",
+   "weekday": "金",
+   "kanshi": "乙亥",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-26",
+   "weekday": "土",
+   "kanshi": "丙子",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-27",
+   "weekday": "日",
+   "kanshi": "丁丑",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-28",
+   "weekday": "月",
+   "kanshi": "戊寅",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-29",
+   "weekday": "火",
+   "kanshi": "己卯",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-06-30",
+   "weekday": "水",
+   "kanshi": "庚辰",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "大祓（夏越の大祓）"
+   ]
+  },
+  {
+   "date": "2027-07-01",
+   "weekday": "木",
+   "kanshi": "辛巳",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日",
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-02",
+   "weekday": "金",
+   "kanshi": "壬午",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [
+    "半夏生"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-03",
+   "weekday": "土",
+   "kanshi": "癸未",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 5,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-04",
+   "weekday": "日",
+   "kanshi": "甲申",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-05",
+   "weekday": "月",
+   "kanshi": "乙酉",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-06",
+   "weekday": "火",
+   "kanshi": "丙戌",
+   "setsugetsu": 5,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-07",
+   "weekday": "水",
+   "kanshi": "丁亥",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "小暑",
+    "time": "16:37"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "七夕"
+   ]
+  },
+  {
+   "date": "2027-07-08",
+   "weekday": "木",
+   "kanshi": "戊子",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-09",
+   "weekday": "金",
+   "kanshi": "己丑",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-10",
+   "weekday": "土",
+   "kanshi": "庚寅",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-11",
+   "weekday": "日",
+   "kanshi": "辛卯",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-12",
+   "weekday": "月",
+   "kanshi": "壬辰",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-13",
+   "weekday": "火",
+   "kanshi": "癸巳",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-14",
+   "weekday": "水",
+   "kanshi": "甲午",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日",
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-15",
+   "weekday": "木",
+   "kanshi": "乙未",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-16",
+   "weekday": "金",
+   "kanshi": "丙申",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-17",
+   "weekday": "土",
+   "kanshi": "丁酉",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-18",
+   "weekday": "日",
+   "kanshi": "戊戌",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-19",
+   "weekday": "月",
+   "kanshi": "己亥",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "海の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-20",
+   "weekday": "火",
+   "kanshi": "庚子",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [
+    "土用入り"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-21",
+   "weekday": "水",
+   "kanshi": "辛丑",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-22",
+   "weekday": "木",
+   "kanshi": "壬寅",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-23",
+   "weekday": "金",
+   "kanshi": "癸卯",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": {
+    "name": "大暑",
+    "time": "10:05"
+   },
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-24",
+   "weekday": "土",
+   "kanshi": "甲辰",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-25",
+   "weekday": "日",
+   "kanshi": "乙巳",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-26",
+   "weekday": "月",
+   "kanshi": "丙午",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-27",
+   "weekday": "火",
+   "kanshi": "丁未",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-28",
+   "weekday": "水",
+   "kanshi": "戊申",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-29",
+   "weekday": "木",
+   "kanshi": "己酉",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-30",
+   "weekday": "金",
+   "kanshi": "庚戌",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-07-31",
+   "weekday": "土",
+   "kanshi": "辛亥",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-01",
+   "weekday": "日",
+   "kanshi": "壬子",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 6,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-02",
+   "weekday": "月",
+   "kanshi": "癸丑",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-03",
+   "weekday": "火",
+   "kanshi": "甲寅",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-04",
+   "weekday": "水",
+   "kanshi": "乙卯",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-05",
+   "weekday": "木",
+   "kanshi": "丙辰",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-06",
+   "weekday": "金",
+   "kanshi": "丁巳",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-07",
+   "weekday": "土",
+   "kanshi": "戊午",
+   "setsugetsu": 6,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "土用明け"
+   ],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-08",
+   "weekday": "日",
+   "kanshi": "己未",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": {
+    "name": "立秋",
+    "time": "02:27"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-09",
+   "weekday": "月",
+   "kanshi": "庚申",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-10",
+   "weekday": "火",
+   "kanshi": "辛酉",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-11",
+   "weekday": "水",
+   "kanshi": "壬戌",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "山の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-12",
+   "weekday": "木",
+   "kanshi": "癸亥",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-13",
+   "weekday": "金",
+   "kanshi": "甲子",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-14",
+   "weekday": "土",
+   "kanshi": "乙丑",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-15",
+   "weekday": "日",
+   "kanshi": "丙寅",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "盂蘭盆（お盆）"
+   ]
+  },
+  {
+   "date": "2027-08-16",
+   "weekday": "月",
+   "kanshi": "丁卯",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-17",
+   "weekday": "火",
+   "kanshi": "戊辰",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-18",
+   "weekday": "水",
+   "kanshi": "己巳",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-19",
+   "weekday": "木",
+   "kanshi": "庚午",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-20",
+   "weekday": "金",
+   "kanshi": "辛未",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-21",
+   "weekday": "土",
+   "kanshi": "壬申",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-22",
+   "weekday": "日",
+   "kanshi": "癸酉",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-23",
+   "weekday": "月",
+   "kanshi": "甲戌",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": {
+    "name": "処暑",
+    "time": "17:14"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-24",
+   "weekday": "火",
+   "kanshi": "乙亥",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-25",
+   "weekday": "水",
+   "kanshi": "丙子",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-26",
+   "weekday": "木",
+   "kanshi": "丁丑",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-27",
+   "weekday": "金",
+   "kanshi": "戊寅",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-28",
+   "weekday": "土",
+   "kanshi": "己卯",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-29",
+   "weekday": "日",
+   "kanshi": "庚辰",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-30",
+   "weekday": "月",
+   "kanshi": "辛巳",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-08-31",
+   "weekday": "火",
+   "kanshi": "壬午",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 7,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-01",
+   "weekday": "水",
+   "kanshi": "癸未",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [
+    "二百十日"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-02",
+   "weekday": "木",
+   "kanshi": "甲申",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-03",
+   "weekday": "金",
+   "kanshi": "乙酉",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-04",
+   "weekday": "土",
+   "kanshi": "丙戌",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-05",
+   "weekday": "日",
+   "kanshi": "丁亥",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-06",
+   "weekday": "月",
+   "kanshi": "戊子",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-07",
+   "weekday": "火",
+   "kanshi": "己丑",
+   "setsugetsu": 7,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-08",
+   "weekday": "水",
+   "kanshi": "庚寅",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "白露",
+    "time": "05:28"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-09",
+   "weekday": "木",
+   "kanshi": "辛卯",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "重陽（菊の節句）"
+   ]
+  },
+  {
+   "date": "2027-09-10",
+   "weekday": "金",
+   "kanshi": "壬辰",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-11",
+   "weekday": "土",
+   "kanshi": "癸巳",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-12",
+   "weekday": "日",
+   "kanshi": "甲午",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-13",
+   "weekday": "月",
+   "kanshi": "乙未",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-14",
+   "weekday": "火",
+   "kanshi": "丙申",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-15",
+   "weekday": "水",
+   "kanshi": "丁酉",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "十五夜（中秋の名月）"
+   ]
+  },
+  {
+   "date": "2027-09-16",
+   "weekday": "木",
+   "kanshi": "戊戌",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-17",
+   "weekday": "金",
+   "kanshi": "己亥",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-18",
+   "weekday": "土",
+   "kanshi": "庚子",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-19",
+   "weekday": "日",
+   "kanshi": "辛丑",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-20",
+   "weekday": "月",
+   "kanshi": "壬寅",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [
+    "彼岸入り"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": "敬老の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-21",
+   "weekday": "火",
+   "kanshi": "癸卯",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-22",
+   "weekday": "水",
+   "kanshi": "甲辰",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-23",
+   "weekday": "木",
+   "kanshi": "乙巳",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": {
+    "name": "秋分",
+    "time": "15:02"
+   },
+   "zassetsu": [
+    "彼岸の中日"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": "秋分の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-24",
+   "weekday": "金",
+   "kanshi": "丙午",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-25",
+   "weekday": "土",
+   "kanshi": "丁未",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-26",
+   "weekday": "日",
+   "kanshi": "戊申",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [
+    "彼岸明け",
+    "社日"
+   ],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日",
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-27",
+   "weekday": "月",
+   "kanshi": "己酉",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-28",
+   "weekday": "火",
+   "kanshi": "庚戌",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-29",
+   "weekday": "水",
+   "kanshi": "辛亥",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 8,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-09-30",
+   "weekday": "木",
+   "kanshi": "壬子",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-01",
+   "weekday": "金",
+   "kanshi": "癸丑",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-02",
+   "weekday": "土",
+   "kanshi": "甲寅",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-03",
+   "weekday": "日",
+   "kanshi": "乙卯",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-04",
+   "weekday": "月",
+   "kanshi": "丙辰",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-05",
+   "weekday": "火",
+   "kanshi": "丁巳",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-06",
+   "weekday": "水",
+   "kanshi": "戊午",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-07",
+   "weekday": "木",
+   "kanshi": "己未",
+   "setsugetsu": 8,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-08",
+   "weekday": "金",
+   "kanshi": "庚申",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": {
+    "name": "寒露",
+    "time": "21:17"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-09",
+   "weekday": "土",
+   "kanshi": "辛酉",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-10",
+   "weekday": "日",
+   "kanshi": "壬戌",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-11",
+   "weekday": "月",
+   "kanshi": "癸亥",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "スポーツの日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-12",
+   "weekday": "火",
+   "kanshi": "甲子",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-13",
+   "weekday": "水",
+   "kanshi": "乙丑",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-14",
+   "weekday": "木",
+   "kanshi": "丙寅",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-15",
+   "weekday": "金",
+   "kanshi": "丁卯",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-16",
+   "weekday": "土",
+   "kanshi": "戊辰",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-17",
+   "weekday": "日",
+   "kanshi": "己巳",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "神嘗祭"
+   ]
+  },
+  {
+   "date": "2027-10-18",
+   "weekday": "月",
+   "kanshi": "庚午",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-19",
+   "weekday": "火",
+   "kanshi": "辛未",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-20",
+   "weekday": "水",
+   "kanshi": "壬申",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-21",
+   "weekday": "木",
+   "kanshi": "癸酉",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "土用入り"
+   ],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-22",
+   "weekday": "金",
+   "kanshi": "甲戌",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-23",
+   "weekday": "土",
+   "kanshi": "乙亥",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-24",
+   "weekday": "日",
+   "kanshi": "丙子",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": {
+    "name": "霜降",
+    "time": "00:33"
+   },
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-25",
+   "weekday": "月",
+   "kanshi": "丁丑",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-26",
+   "weekday": "火",
+   "kanshi": "戊寅",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-27",
+   "weekday": "水",
+   "kanshi": "己卯",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-28",
+   "weekday": "木",
+   "kanshi": "庚辰",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 9,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-29",
+   "weekday": "金",
+   "kanshi": "辛巳",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-30",
+   "weekday": "土",
+   "kanshi": "壬午",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-10-31",
+   "weekday": "日",
+   "kanshi": "癸未",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-01",
+   "weekday": "月",
+   "kanshi": "甲申",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-02",
+   "weekday": "火",
+   "kanshi": "乙酉",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "酉の市（一の酉）"
+   ]
+  },
+  {
+   "date": "2027-11-03",
+   "weekday": "水",
+   "kanshi": "丙戌",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": "文化の日",
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-04",
+   "weekday": "木",
+   "kanshi": "丁亥",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-05",
+   "weekday": "金",
+   "kanshi": "戊子",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-06",
+   "weekday": "土",
+   "kanshi": "己丑",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [
+    "土用の丑の日"
+   ],
+   "doyo": true,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-07",
+   "weekday": "日",
+   "kanshi": "庚寅",
+   "setsugetsu": 9,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [
+    "土用明け"
+   ],
+   "doyo": true,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-08",
+   "weekday": "月",
+   "kanshi": "辛卯",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": {
+    "name": "立冬",
+    "time": "00:39"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-09",
+   "weekday": "火",
+   "kanshi": "壬辰",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-10",
+   "weekday": "水",
+   "kanshi": "癸巳",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-11",
+   "weekday": "木",
+   "kanshi": "甲午",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-12",
+   "weekday": "金",
+   "kanshi": "乙未",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-13",
+   "weekday": "土",
+   "kanshi": "丙申",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-14",
+   "weekday": "日",
+   "kanshi": "丁酉",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "酉の市（二の酉）"
+   ]
+  },
+  {
+   "date": "2027-11-15",
+   "weekday": "月",
+   "kanshi": "戊戌",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "七五三"
+   ]
+  },
+  {
+   "date": "2027-11-16",
+   "weekday": "火",
+   "kanshi": "己亥",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-17",
+   "weekday": "水",
+   "kanshi": "庚子",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-18",
+   "weekday": "木",
+   "kanshi": "辛丑",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-19",
+   "weekday": "金",
+   "kanshi": "壬寅",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-20",
+   "weekday": "土",
+   "kanshi": "癸卯",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-21",
+   "weekday": "日",
+   "kanshi": "甲辰",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-22",
+   "weekday": "月",
+   "kanshi": "乙巳",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": {
+    "name": "小雪",
+    "time": "22:16"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-23",
+   "weekday": "火",
+   "kanshi": "丙午",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": "勤労感謝の日",
+   "gyoji": [
+    "新嘗祭"
+   ]
+  },
+  {
+   "date": "2027-11-24",
+   "weekday": "水",
+   "kanshi": "丁未",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-25",
+   "weekday": "木",
+   "kanshi": "戊申",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-26",
+   "weekday": "金",
+   "kanshi": "己酉",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "酉の市（三の酉）"
+   ]
+  },
+  {
+   "date": "2027-11-27",
+   "weekday": "土",
+   "kanshi": "庚戌",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 10,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-28",
+   "weekday": "日",
+   "kanshi": "辛亥",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-29",
+   "weekday": "月",
+   "kanshi": "壬子",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-11-30",
+   "weekday": "火",
+   "kanshi": "癸丑",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-01",
+   "weekday": "水",
+   "kanshi": "甲寅",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-02",
+   "weekday": "木",
+   "kanshi": "乙卯",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 5,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-03",
+   "weekday": "金",
+   "kanshi": "丙辰",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 6,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-04",
+   "weekday": "土",
+   "kanshi": "丁巳",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 7,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-05",
+   "weekday": "日",
+   "kanshi": "戊午",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 8,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-06",
+   "weekday": "月",
+   "kanshi": "己未",
+   "setsugetsu": 10,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 9,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-07",
+   "weekday": "火",
+   "kanshi": "庚申",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 10,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": {
+    "name": "大雪",
+    "time": "17:38"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-08",
+   "weekday": "水",
+   "kanshi": "辛酉",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 11,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-09",
+   "weekday": "木",
+   "kanshi": "壬戌",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 12,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-10",
+   "weekday": "金",
+   "kanshi": "癸亥",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 13,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-11",
+   "weekday": "土",
+   "kanshi": "甲子",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 14,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "天赦日",
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-12",
+   "weekday": "日",
+   "kanshi": "乙丑",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 15,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-13",
+   "weekday": "月",
+   "kanshi": "丙寅",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 16,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": [
+    "正月事始め（煤払い）"
+   ]
+  },
+  {
+   "date": "2027-12-14",
+   "weekday": "火",
+   "kanshi": "丁卯",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 17,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-15",
+   "weekday": "水",
+   "kanshi": "戊辰",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 18,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-16",
+   "weekday": "木",
+   "kanshi": "己巳",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 19,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日",
+    "己巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-17",
+   "weekday": "金",
+   "kanshi": "庚午",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 20,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-18",
+   "weekday": "土",
+   "kanshi": "辛未",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 21,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-19",
+   "weekday": "日",
+   "kanshi": "壬申",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 22,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-20",
+   "weekday": "月",
+   "kanshi": "癸酉",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 23,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-21",
+   "weekday": "火",
+   "kanshi": "甲戌",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 24,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-22",
+   "weekday": "水",
+   "kanshi": "乙亥",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 25,
+    "leap": false
+   },
+   "rokuyo": "大安",
+   "sekki": {
+    "name": "冬至",
+    "time": "11:42"
+   },
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-23",
+   "weekday": "木",
+   "kanshi": "丙子",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 26,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "一粒万倍日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-24",
+   "weekday": "金",
+   "kanshi": "丁丑",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 27,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-25",
+   "weekday": "土",
+   "kanshi": "戊寅",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 28,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "寅の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-26",
+   "weekday": "日",
+   "kanshi": "己卯",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 29,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-27",
+   "weekday": "月",
+   "kanshi": "庚辰",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 11,
+    "day": 30,
+    "leap": false
+   },
+   "rokuyo": "仏滅",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-28",
+   "weekday": "火",
+   "kanshi": "辛巳",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 12,
+    "day": 1,
+    "leap": false
+   },
+   "rokuyo": "赤口",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [
+    "巳の日"
+   ],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-29",
+   "weekday": "水",
+   "kanshi": "壬午",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 12,
+    "day": 2,
+    "leap": false
+   },
+   "rokuyo": "先勝",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-30",
+   "weekday": "木",
+   "kanshi": "癸未",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 12,
+    "day": 3,
+    "leap": false
+   },
+   "rokuyo": "友引",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": []
+  },
+  {
+   "date": "2027-12-31",
+   "weekday": "金",
+   "kanshi": "甲申",
+   "setsugetsu": 11,
+   "kyureki": {
+    "year": 2027,
+    "month": 12,
+    "day": 4,
+    "leap": false
+   },
+   "rokuyo": "先負",
+   "sekki": null,
+   "zassetsu": [],
+   "doyo": false,
+   "senjitsu": [],
+   "holiday": null,
+   "gyoji": [
+    "大祓（年越の大祓）",
+    "大晦日"
+   ]
+  }
+ ]
+}

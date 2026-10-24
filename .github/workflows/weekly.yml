@@ -1,0 +1,51 @@
+# 週報（設計書 §2「週1回（日曜の夜）」）：日曜 21:07 JST に、数字を集めて Claude が週報を書き、Issue にする
+# ・書く作業（claude -p）には Claude のトークンだけが渡る（weekly.py が子のプロセスから他の鍵を消す）。YouTube の鍵は使わない
+# ・枠は weekly。cancel-in-progress: false
+# ・まだ無いもの：UTAGE の流入経路づくり・LINE の声の取り込み・特典の作り直し（UTAGE をつなぐ時に足す）
+name: weekly
+on:
+  schedule:
+    - cron: "7 12 * * 0"   # 日曜 21:07 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      TZ: Asia/Tokyo
+      MONTHLY_CAP_YEN: ${{ vars.MONTHLY_CAP_YEN }}
+      STOCK_PHASE: ${{ vars.STOCK_PHASE }}
+      CLAUDE_TOKEN_ISSUED: ${{ vars.CLAUDE_TOKEN_ISSUED }}
+      CHANNELS: job   # スピ（spi）は毎日の実行に足す時に、ここにも足す（例：job spi）
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 道具を入れる（版を固定）
+        run: npm install -g @anthropic-ai/claude-code@2.1.296
+      - name: 週報を書く
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          HC_WEEKLY: ${{ secrets.HC_WEEKLY }}
+        run: python -X utf8 pipeline/weekly.py $CHANNELS
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always()
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet && exit 0
+          git commit -qm "週報：$(date +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
