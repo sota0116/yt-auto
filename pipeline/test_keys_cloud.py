@@ -19,7 +19,9 @@ def youtube(ch):
 def claude():
     v = os.environ.get("CLAUDE_CODE_OAUTH_TOKEN", "")  # 形だけを見る（中身・長さは出さない）
     print(f"  トークンの形：入っている {bool(v)}・頭が sk-ant-oat {v.strip().startswith('sk-ant-oat')}・"
-          f"前後に空白や改行がない {v == v.strip()}", flush=True)
+          f"前後に空白や改行がない {v == v.strip()}・"
+          f"英数字と-_だけ {bool(__import__('re').fullmatch(r'[A-Za-z0-9_-]+', v))}・"
+          f"頭が1回だけ（2回貼っていない） {v.count('sk-ant-') == 1}", flush=True)
     r = subprocess.run([shutil.which("claude") or "claude", "-p", "--model", "haiku", "--output-format", "json"],
                        input="「OK」とだけ答えてください", capture_output=True, text=True, encoding="utf-8", timeout=300)
     try:
