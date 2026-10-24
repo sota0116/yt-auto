@@ -10,7 +10,11 @@ SKILL_CHECK = os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts", "ch
 CPS = 6.0  # check_script.py と同じ読む速さ
 
 LINE3 = "人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。"
-NAME = {1: "働き方の数字を調べている、ミナトです。", 2: "ミナトです。今回も、統計の数字から見ていきます。", 3: "案内役のミナトです。"}
+# メタの言葉（手順書 §4「メタの禁止」）：名乗り・動画や回のこと・進み方・お礼・今日。登録の呼びかけ・LINE の案内・コメントへの問いかけのカットは除く
+META = ("ミナト", "案内役", "この動画", "本動画", "この回", "今回", "前回", "次回", "次の回", "チャンネル", "視聴", "ご覧",
+        "見ていただ", "聞いていただ", "ありがとうございました", "ここから", "ここまで", "この後", "このあと", "次の章", "前の章",
+        "この章", "次の検証", "おさらい", "まとめると", "振り返", "見ていき", "見てみ", "紹介します", "説明します", "お伝えし",
+        "お話しし", "出していき", "を始めます", "始めましょう", "クイズです", "採点結果です", "AIの結論です", "今日", "今夜")
 SUB = {1: "働き方の数字を、統計から届けています。続きが気になった方は、チャンネル登録で応援してもらえると励みになります。",
        2: "このチャンネルでは、仕事や会社を、統計の数字で見ています。次の回も見たい方は、チャンネル登録をお願いします。",
        3: "次の回も、別の職場の数字を届けます。見逃したくない方は、チャンネル登録をしておいてください。"}
@@ -696,7 +700,7 @@ def main(work):
     warn += [l[3:].strip() for l in r.stdout.splitlines() if l.startswith("注意:")]
 
     # 2. 項目
-    for k in ("type", "frame", "target", "hook_type", "name_copy", "sub_copy", "line_copy"):
+    for k in ("type", "frame", "target", "hook_type", "sub_copy", "line_copy"):
         if not sc.get(k):
             ng.append(f"台本の項目 {k} が空")
     if not sc.get("pub_date"):
@@ -795,8 +799,6 @@ def main(work):
 
     # 7. 決まった文
     texts = [c["narration"] for c in cuts]
-    if NAME.get(sc.get("name_copy")) not in texts:
-        ng.append(f"名乗りの文（name_copy={sc.get('name_copy')}）がカットに無い")
     if SUB.get(sc.get("sub_copy")) not in texts:
         ng.append(f"登録の呼びかけの文（sub_copy={sc.get('sub_copy')}）がカットに無い")
     if is_d:  # 型D は line_copy に2つ（1回目・2回目で別の文）
@@ -820,7 +822,20 @@ def main(work):
                         ng.append(f"LINE の案内の〇〇歳が facts.json に無い：{g}歳")
                 elif not any(x in g for x in list(short.values()) + jobs):
                     ng.append(f"LINE の案内の〇〇が職業名でない：{g}")
-    fixed = set(LINE_D.values()) | set(LINE_B.values()) | set(SUB.values()) | set(NAME.values())  # 決まった文は40字の決まりから外す
+    fixed = set(LINE_D.values()) | set(LINE_B.values()) | set(SUB.values())  # 決まった文は40字の決まりから外す
+    # メタの言葉（§4）：呼びかけ・案内・コメントへの問いかけのカットと、型D の「コメントから」の章は除く
+    lname = json.load(open(os.path.join(ROOT, "channels", "job", "profile.json"), encoding="utf-8")).get("listener", {}).get("name")
+    chap = ""
+    for c in cuts:
+        chap = c.get("chapter") or chap
+        t = c["narration"]
+        if c.get("line") or c.get("subscribe") or re.search("概要欄のLINE|チャンネル登録|コメントで", t) or "コメントから" in chap:
+            continue
+        hit = [w for w in META if w in t]
+        if hit:
+            ng.append(f"メタの言葉（動画・回・進み方・名乗りのこと）：{c['id']} {hit}「{t[:30]}」")
+        if lname and lname in t:
+            ng.append(f"聞き手の名前を呼んでいる：{c['id']}（名前は呼ばない）")
     for c in cuts:
         if re.search("毎日|明日も", c["narration"]):
             ng.append(f"「毎日」「明日も」：{c['id']}")

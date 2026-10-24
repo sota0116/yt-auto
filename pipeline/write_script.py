@@ -32,7 +32,7 @@ def doc(ch, name):
 def recent(ch, n=9):
     p = os.path.join(ROOT, "history", ch, "produced.json")
     h = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else []
-    keep = ("work", "type", "frame", "hook_type", "sub_copy", "line_copy", "name_copy", "title", "chapters")
+    keep = ("work", "type", "frame", "hook_type", "sub_copy", "line_copy", "title", "chapters")
     return [{k: x.get(k) for k in keep} for x in h[-n:]]
 
 
@@ -46,7 +46,7 @@ def prompt(work, ch, fix):
 1. {doc(ch, '手順書.md')}（このチャンネルの決まりの正本。全部読む）
 2. {rel(os.path.join(work, 'neta.json'))}（この回の題・型・骨組み・向ける人）
 3. {rel(os.path.join(work, 'facts.json'))}（この回の数字。プログラムが計算した値。ここにない数字・順位・差は書かない。あなたは計算しない）
-4. {rel(GOLDEN[ch]) if ch in GOLDEN else '（見本なし）'}（script.json の形の見本。項目名と形だけを借りる。つかみ・言い回し・章立ては写さない）
+4. {rel(GOLDEN[ch]) if ch in GOLDEN else '（見本なし）'}（script.json の形の見本。項目名と形だけを借りる。つかみ・言い回し・章立ては写さない。見本には名乗り・「ここまで」・お礼などのメタな文が残っているが、手順書 v3.2 で禁止になったので絶対に写さない）
 5. {rel(os.path.join(ROOT, 'channels', ch, 'profile.json'))}（語り手と聞き手の名前）
 6. {rel(os.path.join(ROOT, 'channels', ch, '禁止表現.txt'))}（使わない言葉。台本ゲートでも照らす）
 7. {rel(MEMO(ch)) if os.path.exists(MEMO(ch)) else '（競合メモはまだ無い）'}（毎日の競合リサーチのまとめ。手順書より下の扱い。借りるのは題材の傾向と型だけ）
@@ -56,6 +56,7 @@ def prompt(work, ch, fix):
 
 ## 書き方
 - 手順書 §3 のこの回の型・骨組み、§4 の全回共通の決まり、§5 の絵、§6 のタイトル3案とサムネの文字、§7 の概要欄、§10 の点検の項目を全部守る。
+- 手順書 §4 の「メタの禁止」を守る。名乗り・動画や回のこと・「ここからは」「次の章では」「見ていきます」のような進み方の言葉・聞き手の名前を呼ぶこと・お礼を書かず、中身（数字・場面・問い）だけで進める。例外は登録の呼びかけ・LINE の案内・コメントへの問いかけの決まった文だけ。
 - 絵のカットの image は、日本語で場面を1〜2文。人が要らない場面は人を書かない。読める文字・ロゴ・実在の会社は書かない。
 - サムネのb案の背景に使う絵を1枚選び、その image カットの id を script.json の thumb_bg に書く（人が写らない場面で、右側に図を重ねても主役が隠れない絵）。
 - 図のカットは chart に、facts.json の値を指す形で書く（見本の chart の kind と項目名を使う）。
