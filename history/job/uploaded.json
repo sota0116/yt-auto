@@ -42,9 +42,30 @@
   ],
   "comment": "「主な職業の年収・労働時間と、産業別の離職率の一覧」と「年齢別 転職で年収が上がった人・下がった人の割合の一覧」の2つセットを、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": "2026-10-25T19:00:00+09:00",
+  "publish_at": null,
   "seconds": 1235,
   "title_now": "【30年の謎】給料が上がらない容疑者は5人？ AIに政府の統計だけで採点させたら…意外な1位",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "retired": true,
+  "retired_note": "2026-10-24 メタな台本を直した版に差し替え。非公開のまま残す"
+ },
+ {
+  "work": "002_d_wage30",
+  "video_id": "MNZiQKAXbtE",
+  "title": "【30年の謎】給料が上がらない容疑者は5人？ AIに政府の統計だけで採点させたら…意外な1位",
+  "privacy": "private",
+  "thumb": "thumb_a.jpg",
+  "thumb_set": true,
+  "uploaded_at": "2026-10-24T22:59:59+09:00",
+  "requested_privacy": "private",
+  "privacy_after_upload": "private",
+  "type": "D",
+  "titles": [
+   "【30年の謎】給料が上がらない容疑者は5人？ AIに政府の統計だけで採点させたら…意外な1位",
+   "給料はなぜ30年上がらない？ AIに政府の統計だけで採点させたら、1位と2位の差はたった1点",
+   "給料明細を見るたび「なぜ？」 AIに政府の統計だけで採点させたら、意外な容疑者が1位に"
+  ],
+  "comment": "「主な職業の年収・労働時間と、産業別の離職率の一覧」と「年齢別 転職で年収が上がった人・下がった人の割合の一覧」の2つセットを、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "publish_at": "2026-10-25T19:00:00+09:00"
  }
 ]
