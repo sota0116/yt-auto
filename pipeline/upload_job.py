@@ -74,7 +74,7 @@ def main():
     hp = os.path.join(ROOT, "history", ch, "uploaded.json")
     hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else []
     name = os.path.basename(work)
-    if any(h["work"] == name for h in hist):
+    if any(h["work"] == name and not h.get("retired") for h in hist):  # retired＝差し替えた古い版
         sys.exit(f"【止めました】{name} はもう上げてあります（history の uploaded.json）")
     print("タイトル：", title)
     print("説明文：\n" + desc)

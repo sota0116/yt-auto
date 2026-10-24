@@ -1,6 +1,7 @@
 # 見張り（設計書 §2「毎日（数字の見張り。12:07 JST）」・§4「見張り役どうしで見張る」・§5⑪）
 #   python -X utf8 pipeline\watch.py job [spi] [--dry]
 # ・上げた動画の今の状態を YouTube から読み、history\<ch>\uploaded.json に書く（published・publish_at・missing）。
+#   retired の付いた回（作り直して差し替えた古い版）は missing と同じ扱い
 #   毎日の実行（run_daily.py）は published の付いていない本数を在庫として数える
 # ・公開された回には、チャンネルからコメントを1件入れる（説明文の1段落目＝LINE の案内とリンク。PR は付けない）。
 #   入れたコメントが消された回が2本出たら、そのチャンネルはコメントをやめる（history\<ch>\watch.json の comments_off）
@@ -46,7 +47,7 @@ def refresh(ch, up):
         seen.update({it["id"]: it for it in r.get("items", [])})
     for e in up:
         it = seen.get(e.get("video_id"))
-        if not it:
+        if not it or e.get("retired"):  # retired＝作り直して差し替えた古い版（非公開のまま残す。在庫に数えない）
             e["missing"] = True
             continue
         e.pop("missing", None)
