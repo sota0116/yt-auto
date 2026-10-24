@@ -37,7 +37,7 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           GH_TOKEN: ${{ github.token }}
-          HC_WEEKLY: ${{ secrets.HC_WEEKLY }}
+          HC_WEEKLY: ${{ secrets.HC_PING_WEEKLY }}   # 無くてもよい（無ければ合図を送らない。週報の見張りは watch がする）
         run: python -X utf8 pipeline/weekly.py $CHANNELS
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()

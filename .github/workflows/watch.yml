@@ -53,7 +53,7 @@ jobs:
       - name: 見張る
         env:
           GH_TOKEN: ${{ github.token }}
-          HC_WATCH: ${{ secrets.HC_WATCH }}
+          HC_WATCH: ${{ secrets.HC_PING_WATCH }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
         run: python -X utf8 pipeline/watch.py $CHANNELS
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()

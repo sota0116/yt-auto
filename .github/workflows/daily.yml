@@ -108,8 +108,8 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-          HC_DAILY_JOB: ${{ secrets.HC_DAILY_JOB }}
-          HC_DAILY_SPI: ${{ secrets.HC_DAILY_SPI }}
+          HC_DAILY_JOB: ${{ secrets.HC_PING_DAILY_JOB }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
+          HC_DAILY_SPI: ${{ secrets.HC_PING_DAILY_SPI }}
         run: python -X utf8 pipeline/notify.py daily ${{ matrix.ch }} --slot "$SLOT"
       - name: 鍵を消す
         if: always()
