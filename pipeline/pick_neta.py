@@ -36,7 +36,8 @@ def done_list(ch):
             s = json.load(open(os.path.join(vdir, name, "script.json"), encoding="utf-8"))
             f = json.load(open(os.path.join(vdir, name, "facts.json"), encoding="utf-8"))
             out.append({"work": name, "type": s["type"], "frame": s["frame"], "neta_id": name,
-                        "jobs": f.get("順位", {}).get("年収") or [j["表示名"] for j in f.get("職業", [])], "made": s.get("pub_date")})
+                        "jobs": (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収")  # 型D の順位は list
+                        or [j["表示名"] for j in f.get("職業", []) if isinstance(j, dict) and "表示名" in j], "made": s.get("pub_date")})
     return out
 
 
