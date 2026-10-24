@@ -115,7 +115,7 @@ def choose(ch, hist):
                 names = c[0]
                 nid = "a4_" + hashlib.sha1("|".join(sorted(names)).encode()).hexdigest()[:8]
                 row = {"id": nid, "title": "・".join(names[:3]) + "…年収を並べたら", "type": "A", "frame": "A-4",
-                       "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+                       "target": "自分の仕事がほかの職業と比べてどのあたりか、自分の転職や子どもの進路で気になっている、40〜60代",
                        "jobs": names, "facts_cmd": ["a4_facts.py", "make", "{work}", *names]}
                 return row, want, t
         row = pick_from_board(ch, t, hist)
