@@ -27,6 +27,12 @@ def claude():
     except json.JSONDecodeError:
         d = {"is_error": True, "result": (r.stdout + r.stderr)[-300:]}
     if d.get("is_error"):  # Claude のエラー文（鍵の中身は入らない）を出す
+        # 見分け：偽のトークンで「401 invalid」なら、トークンは読まれている（本物が切れている）。「Not logged in」なら読まれていない
+        fake = subprocess.run([shutil.which("claude") or "claude", "-p", "--model", "haiku", "--output-format", "json"],
+                              input="OK", capture_output=True, text=True, encoding="utf-8", timeout=300,
+                              env={**os.environ, "CLAUDE_CODE_OAUTH_TOKEN": "sk-ant-oat01-dummy"})
+        ver = subprocess.run([shutil.which("claude") or "claude", "--version"], capture_output=True, text=True).stdout.strip()
+        print(f"  見分け：版 {ver}／偽のトークンだと → {(fake.stdout + fake.stderr)[-200:]}", flush=True)
         raise SystemExit(f"Claude のエラー：{str(d.get('result'))[:300]}")
     return "返事あり"
 
