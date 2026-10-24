@@ -1,0 +1,57 @@
+# 鍵が本当に使えるかの試し（準備手順書 B8 の3）。手で動かす時だけ（読むだけ・お金なし）
+name: keytest
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-0.25.2
+        ports:
+          - 50021:50021
+    env:
+      TZ: Asia/Tokyo
+      VOICEVOX_URL: http://127.0.0.1:50021
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 道具を入れる（版を固定）
+        run: |
+          pip install -q -r requirements.txt
+          npm install -g @anthropic-ai/claude-code@2.1.296
+      - name: 動画スキルを置く（Secrets から戻す）
+        env:
+          VENDOR_SKILL_B64: ${{ secrets.VENDOR_SKILL_B64 }}
+        run: |
+          mkdir -p vendor/youtube-video-maker
+          printf '%s' "$VENDOR_SKILL_B64" | base64 -d | tar -xz -C vendor/youtube-video-maker
+      - name: 鍵を置く（中身は画面に出さない）
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
+          YT_TOKEN_SPI: ${{ secrets.YT_TOKEN_SPI }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
+          printf '%s' "$YT_TOKEN_SPI" > "$YT_SECRETS_DIR/token_spi.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: 試す
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: python -X utf8 pipeline/test_keys_cloud.py job spi
+      - name: 鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"
