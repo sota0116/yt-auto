@@ -2,9 +2,13 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/004_a_kaigo",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "reading"
  ],
  "started": "2026-10-25T19:58:00+09:00",
  "tries": 2,
- "stage": "gate_script"
+ "stage": "images",
+ "updated": "2026-10-25T20:40:12+09:00"
 }
