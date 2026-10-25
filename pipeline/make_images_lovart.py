@@ -7,6 +7,9 @@
 #   途中で止まっても、もう一度動かせば頼み直さずに続きを受け取る（二重に頼まない）
 # ・公式クライアント agent_skill.py は書き換えず、部品として読み込む（CLI の send は使うモデルを指定できないため）
 # ・--ref の絵を見本として添付し、画風だけをそろえる（構図と中身はまねさせない）
+# ・登場人物（2026-10-25）：カットに "chars": ["kenji"] があれば、その人の設定画を添付して「同じ人」として描かせる（顔・髪・服を全部の回でそろえる）。
+#   人物は channels\<ch>\characters\characters.json（チャンネルで決まった人）と、script.json の "characters"（その回だけの主役。{"id": {"name", "desc_en"}}）。
+#   設定画が無ければ先に作る（チャンネルの人は characters\ に、その回だけの人は images\_chars\ に置く）
 import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
@@ -57,9 +60,75 @@ def scenes_en(work, s, ids):
     return have
 
 
-def prompt(en, cut, has_ref, extra=""):
+def load_chars(work, s):
+    """登場人物：{id: {"desc_en", "sheet"（設定画のパス）}}。チャンネルの characters.json と、script.json の characters"""
+    out = {}
+    cdir = os.path.normpath(os.path.join(work, "..", "..", "characters"))
+    cp = os.path.join(cdir, "characters.json")
+    if os.path.exists(cp):
+        for k, v in json.load(open(cp, encoding="utf-8")).get("chars", {}).items():
+            out[k] = {"desc_en": v["desc_en"], "sheet": os.path.join(cdir, v.get("sheet", k + ".png"))}
+    for k, v in (s.get("characters") or {}).items():
+        out[k] = {"desc_en": v["desc_en"], "sheet": os.path.join(work, "images", "_chars", k + ".png")}
+    return out
+
+
+def sheet_prompt(style, ch):
+    return ("Generate exactly ONE character reference sheet, landscape 16:9, on a plain warm off-white background.\n"
+            f"Art style: {style}\n"
+            f"Character: {ch['desc_en']}\n"
+            "Show the SAME person three times side by side: full body front view, full body three-quarter view, and a large close-up "
+            "of the face. Neutral standing pose, calm expression, even soft light, no props, no other people.\n"
+            "TEXT-FREE: no letters, numbers, logos or symbols anywhere. Natural hands and faces.\n"
+            "Do not ask questions. Call the image generator exactly once and stop: no editing, upscaling, cropping or post-processing.")
+
+
+def make_sheets(sk, chars, need, style, par):
+    """設定画が無い人物の設定画を作る（無料モード。confirm はしない）。できなかった人物の id を返す"""
+    todo = [k for k in need if not os.path.exists(chars[k]["sheet"])]
+    waiting, t_end = {}, time.time() + WAIT_MAX
+    if todo:
+        print("設定画を先に作る：", todo, flush=True)
+    while (todo or waiting) and time.time() < t_end:
+        while todo and len(waiting) < par:
+            k = todo.pop(0)
+            try:
+                waiting[k] = (sk.send(sheet_prompt(style, chars[k]), PROJECT, prefer_models=MODEL,
+                                      include_tools=MODEL["IMAGE"], mode="fast"), time.time())
+            except Exception as e:
+                if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
+                    todo.insert(0, k); time.sleep(30); break
+                print(k, "設定画を頼めなかった", str(e)[:120], flush=True)
+        time.sleep(15)
+        for k in list(waiting):
+            tid, t0 = waiting[k]
+            try:
+                if sk.get_status(tid)["status"] not in ("done", "abort") and time.time() - t0 < THREAD_MAX:
+                    continue
+                r = sk.get_result(tid)
+            except Exception as e:
+                print(k, "確かめられない（あとでもう一度）", str(e)[:120], flush=True)
+                continue
+            del waiting[k]
+            d = os.path.dirname(chars[k]["sheet"])
+            os.makedirs(d, exist_ok=True)
+            got = [x["local_path"] for x in sk.download_artifacts(r, os.path.join(d, "_lovart", k), "lovart")
+                   if x.get("local_path") and x.get("type") == "image"]
+            if got:
+                to_png(got[0], chars[k]["sheet"])
+            print(k, "設定画できた" if got else "設定画ができない", flush=True)
+    return [k for k in need if not os.path.exists(chars[k]["sheet"])]
+
+
+def prompt(en, cut, has_ref, extra="", chars=()):
     ref = ("The attached image is a STYLE reference only: match its line quality, color palette and film grain. "
            "Do NOT copy its composition, objects or people.\n") if has_ref else ""
+    if chars:  # 添付の順：設定画（人物の順）→ 画風の見本
+        who = " ".join(f"Attached image {n + 1} is the character reference sheet of {c['desc_en'].split(',')[0]}."
+                       for n, c in enumerate(chars))
+        ref = (f"{who} Whenever that person appears, draw exactly the same face, hairstyle, body and clothing as in the sheet. "
+               "Do not copy the sheet's layout, background or pose. Character details: " + " ".join(c["desc_en"] for c in chars) + "\n"
+               + ref.replace("The attached image is", "The last attached image is"))
     return (f"Generate exactly ONE text-free illustration, landscape 16:9.\n{ref}"
             f"Art style: {en['_style']}\n"
             f"Scene: {en[cut['id']]}\n"
@@ -111,6 +180,15 @@ def main():
     queue = [i for i in todo if i not in waiting]
     en = scenes_en(a.work, s, set(cuts))
     ref_url = sk.upload_file(a.ref) if a.ref else ""
+    chars = load_chars(a.work, s)
+    unknown = sorted({k for i in todo for k in cuts[i].get("chars", []) if k not in chars})
+    if unknown:
+        sys.exit(f"【止まりました】characters.json にも script.json の characters にも無い人物：{unknown}")
+    need_c = sorted({k for i in todo for k in cuts[i].get("chars", [])})
+    if make_sheets(sk, chars, need_c, en["_style"], a.par):
+        sys.exit("【止まりました】設定画ができていない人物がいます（もう一度動かすと作り直す）")
+    sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
+    attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
     print(f"Lovart（無料モード・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
     while (queue or waiting) and time.time() < t_end:
@@ -118,13 +196,15 @@ def main():
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
-                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, "")), PROJECT,
-                              attachments=[ref_url] if ref_url else None, prefer_models=MODEL,
+                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])]),
+                              PROJECT, attachments=attach(i) or None, prefer_models=MODEL,
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:
-                if "409" in str(e) or "429" in str(e):
+                if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
                     queue.insert(0, i); time.sleep(30); break
-                log[i] = {"状態": "失敗", "理由": f"頼めなかった：{str(e)[:200]}", "回": tries}; save(); continue
+                log[i] = {"状態": "失敗", "理由": f"頼めなかった：{type(e).__name__} {str(e)[:200]}", "回": tries}; save()
+                print(i, log[i]["理由"], flush=True)  # クラウドでは _lovart.json が見えないので、理由をログにも出す（2026-10-25）
+                continue
             waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries}
             save()
         time.sleep(15)
