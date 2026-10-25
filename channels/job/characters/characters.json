@@ -1,0 +1,25 @@
+{
+ "_説明": "仕事と職場チャンネルの決まった登場人物（手順書 §5）。場面の絵に人を出す時は、この中から選んで script.json のカットに \"chars\": [\"kenji\"] と書く。make_images_lovart.py が設定画（sheet）を添付して、顔・髪・服を全部の回でそろえる。設定画が無ければ先に作る（Lovart の無料モード）。型B・C の主役は、script.json の \"characters\" にその回だけの人物を書く（設定画は作業フォルダの images\\_chars\\ にできる）",
+ "chars": {
+  "kenji": {
+   "name": "健二（45歳・課長）",
+   "sheet": "kenji.png",
+   "desc_en": "Kenji, a 45-year-old Japanese office worker and section manager: average build, short black hair slightly grey at the temples, tired but kind eyes, wears a navy suit jacket, a white shirt and a plain dark navy tie."
+  },
+  "mai": {
+   "name": "麻衣（26歳・入社3年目）",
+   "sheet": "mai.png",
+   "desc_en": "Mai, a 26-year-old Japanese office worker in her third year at the company: slim, shoulder-length dark brown hair tied in a low ponytail, round friendly face, wears a beige knit cardigan over a white blouse and navy straight trousers."
+  },
+  "shigeru": {
+   "name": "茂（58歳・ベテラン社員）",
+   "sheet": "shigeru.png",
+   "desc_en": "Shigeru, a 58-year-old Japanese veteran employee: lean, short grey hair, thin face with deep smile lines, wears a grey knit vest over a light blue collared shirt and dark grey trousers."
+  },
+  "yoko": {
+   "name": "陽子（41歳・パートで働く母）",
+   "sheet": "yoko.png",
+   "desc_en": "Yoko, a 41-year-old Japanese part-time worker and mother of two: medium build, chin-length black bob haircut, gentle tired smile, wears a mustard-yellow knit sweater and dark blue jeans."
+  }
+ }
+}

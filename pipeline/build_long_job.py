@@ -9,7 +9,8 @@
 #   ・章の頭の札（第○章）は、図のカットには重ねない（図の左上の見出しとぶつかるため。章の名前は YouTube のチャプターに残る）
 #   ・"badge": "イメージ" のカットは、右上の隅に小さく札を出す（読み上げない）
 #   ・書き出しは約4Mbps（10分で約300MB）
-#   ・グラフ（images\<id>.mp4）は拡大せず、そのまま。短い時は最後の画面のままのばす
+#   ・グラフ（images\<id>.mp4）は、短い時は最後の画面のままのばし、カットの間ずっと3%だけゆっくり寄る（2026-10-25。止まった画面が続かないように。
+#     図は画面の上75%の内側にあるので、3%寄っても端の文字は切れない）
 #   ・声の頭か終わりに大きな雑音（5ミリ秒で振れが0.3超）があるカットは、組み立てずに止まる
 import argparse, json, os, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -81,8 +82,10 @@ def build(work, out):
         src_img = resolve_image(work, sc["cuts"], c)
         clip = os.path.join(b, c["id"] + ".mp4")
         if src_img.endswith(".mp4"):
+            nfr = int(d * FPS) + 2
             src = ["-i", src_img]
-            vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=60"
+            vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=60,"
+                  f"scale={int(W * ZOOM)}:{int(H * ZOOM)},zoompan=z='1+0.03*on/{nfr}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s={W}x{H}:fps={FPS}")
         else:  # 静止画は、ゆっくり寄る／ゆっくり横に流す を交互に
             nfr = int(d * FPS) + 2
             sw, sh = int(W * ZOOM), int(H * ZOOM)

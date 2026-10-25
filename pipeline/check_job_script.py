@@ -710,6 +710,30 @@ def main(work):
         ng.append(f"speaker が無いカット：{nos[:8]}")
     if typ in ("B", "C") and not sc.get("cast"):
         ng.append("型B・C の台本の項目 cast（主役の年齢・髪・服。全カットで同じ言葉）が空")
+    # 登場人物（手順書 §5）：chars はチャンネルの characters.json か、この回の characters にある人だけ。人のいない絵は3割まで
+    cp = os.path.join(ROOT, "channels", "job", "characters", "characters.json")
+    known = dict(json.load(open(cp, encoding="utf-8")).get("chars", {})) if os.path.exists(cp) else {}
+    for k, v in (sc.get("characters") or {}).items():
+        if not (isinstance(v, dict) and v.get("desc_en") and v.get("name")):
+            ng.append(f"この回の登場人物 {k} に name か desc_en が無い")
+        known[k] = v
+    pics = [c for c in cuts if c.get("image") and not c.get("chart") and not c.get("same_as")]
+    for c in pics:
+        cs = c.get("chars", [])
+        if [x for x in cs if x not in known] or len(cs) > 2:
+            ng.append(f"chars が characters.json にも この回の characters にも無いか、3人以上：{c['id']} {cs}")
+    if typ in ("B", "C") and not any("hero" in c.get("chars", []) for c in pics):
+        ng.append("型B・C の主役（characters の hero）が出るカットが無い")
+    empty = [c["id"] for c in pics if not c.get("chars") and re.search("人は描かない|人を描かない|人はいない|無人", c["image"])]
+    if pics and len(empty) / len(pics) > 0.3:
+        warn.append(f"人のいない場面の絵が {len(empty)}/{len(pics)} 枚（3割まで。登場人物が何かをしている場面に）")
+    if pics and not any(c.get("chars") for c in pics):
+        warn.append("登場人物（chars）が出る絵が1枚も無い（手順書 §5）")
+    for c in cuts:
+        for k in c.get("chars", []):  # 型B・C の主役（hero）は前置きで呼び名を1回言うので除く
+            nm = known.get(k, {}).get("name", "").split("（")[0]
+            if k != "hero" and nm and nm in c["narration"]:
+                warn.append(f"絵だけの登場人物の名前を声で言っている：{c['id']} {known[k]['name']}")
     if fkey in KINDS:
         if not any(c.get("chart") for c in cuts) or not facts.get("出典"):
             ng.append("自前データの図のカットが無いか、facts.json に出典が無い")

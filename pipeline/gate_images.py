@@ -34,7 +34,8 @@ def judge(work, s, cuts, use):
     sch = {"type": "object", "properties": {"判定": {"type": "array", "items": {"type": "object", "properties": {
         "id": S, "合格": {"type": "boolean"}, "問題": {"type": "array", "items": S}, "直す指示": S},
         "required": ["id", "合格", "問題", "直す指示"]}}}, "required": ["判定"]}
-    listing = "\n".join(f"{i + 1}枚目 id={c['id']}／場面：{c['image']}／この絵の間に流れるセリフ：{c['narration']}" for i, c in enumerate(cuts))
+    who = lambda c: ("／出る人：" + "・".join(c["chars"])) if c.get("chars") else ""  # 登場人物（手順書 §5）。場面の説明に名前で出てくる
+    listing = "\n".join(f"{i + 1}枚目 id={c['id']}／場面：{c['image']}{who(c)}／この絵の間に流れるセリフ：{c['narration']}" for i, c in enumerate(cuts))
     q = f"""YouTube の解説動画（日本の仕事と年収の統計）に使う挿絵を点検します。添付の絵は順に {len(cuts)} 枚で、下の一覧と同じ順です。
 画風の決まり：{s['style']}
 1枚ずつ、次のどれかに当たれば不合格にしてください。
