@@ -131,7 +131,7 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
         f.write(out + f"\n（終了コード {r.returncode}・{(time.time() - t0) / 60:.1f}分）\n")
     if stage != "write":
         add_cost(ch, work, stage, yen_in(r.stdout))
-    tail = "\n".join(x for x in out.strip().splitlines()[-4:])
+    tail = "\n".join(x for x in out.strip().splitlines()[-20:])  # クラウドのログで落ちた理由まで読めるように（2026-10-25 に4行から増やした）
     print(f"[{stage}] 終了コード {r.returncode}・{(time.time() - t0) / 60:.1f}分\n{tail}", flush=True)
     if r.returncode == 75:
         raise Wait(f"{stage} で Gemini の1日の回数の上限に届きました。上限が戻る 17:37 の実行で続きから作ります")

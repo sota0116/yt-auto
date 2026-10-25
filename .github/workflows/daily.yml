@@ -102,7 +102,7 @@ jobs:
           git add history
           git diff --cached --quiet && exit 0
           git commit -qm "記録：${{ matrix.ch }} $(date +%F_%H%M)"
-          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
           exit 1
       - name: 通知
         if: always()

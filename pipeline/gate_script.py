@@ -194,6 +194,8 @@ def main():
     for k, v in res.items():
         if isinstance(v, dict) and "合格" in v:
             print(f"{k}：{'合格' if v['合格'] else '不合格'}")
+            if not v["合格"]:  # クラウドでは作業フォルダが見えないので、落ちた理由をログに残す
+                print("  理由：", json.dumps({x: y for x, y in v.items() if x != "合格"}, ensure_ascii=False)[:600])
     print("お金：", res["お金"])
     print("台本ゲート：", "合格" if res["合格"] else "不合格（gate_script.json を見て直す）")
     sys.exit(0 if res["合格"] else 1)
