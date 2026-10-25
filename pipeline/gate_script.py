@@ -96,7 +96,14 @@ def gate_ng(s, ch, use):
 タイトル3案：{json.dumps(s['titles'], ensure_ascii=False)}
 """
     r = ask_json(p, {"type": "object", "properties": {"禁止に当たる": items(id=S, 文=S, 理由=S)}, "required": ["禁止に当たる"]}, use)
-    return {"合格": not r["禁止に当たる"], "一致した所": hits, **r}
+    # 登録の呼びかけ・LINE の案内・コメントへの問いかけは、手順書 §4 の決まった文（メタの禁止の例外）。
+    # 判定するAIが決まった文の前半をメタと取って3回とも落とした（2026-10-25）ので、そのカットのメタの指摘はここで外す
+    fixed = {c["id"] for c in s["cuts"] if re.search("チャンネル登録|LINE|コメント", c["narration"])}
+    out = [x for x in r["禁止に当たる"] if not (x["id"] in fixed and "メタ" in x["理由"])]
+    if len(out) < len(r["禁止に当たる"]):
+        r["外した指摘"] = [x for x in r["禁止に当たる"] if x not in out]
+    r["禁止に当たる"] = out
+    return {"合格": not out, "一致した所": hits, **r}
 
 
 def gate_ads(s, use):
