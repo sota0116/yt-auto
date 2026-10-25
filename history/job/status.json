@@ -1,0 +1,10 @@
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/004_a_kaigo",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-10-25T19:58:00+09:00",
+ "tries": 1,
+ "stage": "gate_script"
+}

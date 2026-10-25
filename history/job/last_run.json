@@ -1,8 +1,9 @@
 {
  "ch": "job",
- "started": "2026-10-25T10:01:05+09:00",
+ "started": "2026-10-25T19:58:00+09:00",
  "made": [],
- "stopped": "固定データのハッシュが合いません：data/job/shokushu_r7.json（中身が違う）、data/job/rishoku_sangyo_r7.json（中身が違う）、data/job/main40_r7.json（中身が違う）、data/raw/naoj/yoko_2026_1_syukujitsu.html（無い）、data/raw/naoj/yoko_2026_2_sekki_zassetsu.html（無い）",
- "ended": "2026-10-25T10:01:05+09:00",
+ "stopped": "台本ゲートで3回不合格（書き直し2回でも直らない）。その回は止め、在庫で公開をつなぐ",
+ "在庫": 1,
+ "ended": "2026-10-25T20:14:05+09:00",
  "今月の制作費_円": 0.0
 }
