@@ -155,6 +155,10 @@ def record(ch, work):
     h = jload(p, [])
     if not any(x["work"] == rec["work"] for x in h):
         jsave(p, h + [rec])
+    # 台本ゲートの「似すぎ」が次の回から比べられるように、セリフだけを git に入る所へ残す（videos\ は git に入れない）
+    os.makedirs(os.path.join(ROOT, "history", ch, "scripts"), exist_ok=True)
+    jsave(os.path.join(ROOT, "history", ch, "scripts", rec["work"] + ".json"),
+          {"cuts": [{"id": c.get("id"), "narration": c.get("narration", "")} for c in s.get("cuts", [])]})
 
 
 def make_one(ch, st, upload):

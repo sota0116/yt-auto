@@ -159,14 +159,15 @@ def gate_similar(s, ch):
         return {"合格": True, "メモ": "過去の回がまだ無い（1本目）。似すぎ・文体の偏り・骨組みの偏りは比べる相手なし"}
     me = trigram("".join(c["narration"] for c in s["cuts"]))
     worst, res = 0, []
-    for x in past:
-        sp = os.path.join(ROOT, x["script"])
-        if not os.path.exists(sp):
+    for x in past:  # 過去の台本は history\<ch>\scripts\<回>.json（セリフだけ。git に入るのでクラウドにもある）、無ければ手元の作業フォルダ
+        sp = next((q for q in (os.path.join(ROOT, "history", ch, "scripts", x["work"] + ".json"),
+                               os.path.join(ROOT, "channels", ch, "videos", x["work"], "script.json")) if os.path.exists(q)), None)
+        if not sp:
             continue
         o = json.load(open(sp, encoding="utf-8"))
         rate = len(me & trigram("".join(c["narration"] for c in o["cuts"]))) / max(1, len(me))
         worst = max(worst, rate)
-        res.append({"回": x["script"], "一致率": round(rate, 3), "同じつかみ": o["cuts"][0]["narration"] == s["cuts"][0]["narration"]})
+        res.append({"回": x["work"], "一致率": round(rate, 3), "同じつかみ": o["cuts"][0]["narration"] == s["cuts"][0]["narration"]})
     return {"合格": worst < 0.35 and not any(r["同じつかみ"] for r in res), "比べた回": res}
 
 
