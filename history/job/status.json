@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/004_a_kaigo",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan",
  "done": [
   "pick",
   "write",
@@ -8,10 +8,12 @@
   "reading",
   "images",
   "charts",
-  "gate_images"
+  "gate_images",
+  "build",
+  "gate_video"
  ],
- "started": "2026-10-25T19:58:00+09:00",
- "tries": 3,
- "stage": "build",
- "updated": "2026-10-26T01:44:47+09:00"
+ "started": "2026-10-26T06:26:27+09:00",
+ "tries": 1,
+ "stage": "thumb",
+ "updated": "2026-10-26T07:13:24+09:00"
 }
