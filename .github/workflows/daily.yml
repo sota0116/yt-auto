@@ -49,6 +49,9 @@ jobs:
       SLOT: ${{ github.event.schedule == '7 23 * * *' && 'retry' || github.event.schedule == '37 8 * * *' && 'late' || 'first' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 枠の順番待ちをした回は、待ち始めた時の古い記録（history/）を取り出してしまい、上げ終えた回の続きを作ろうとして止まった（2026-10-26）。始まる時の最新を取る
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
