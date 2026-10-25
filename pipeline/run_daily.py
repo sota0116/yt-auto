@@ -48,12 +48,19 @@ def heartbeat(ch):
 
 
 def verify_checksums():
+    """ハッシュは Windows の手元（改行 CRLF）で取った物。クラウド（Linux）は git が改行を LF にして取り出すので、
+    改行だけの違いは同じ中身とみなす。.gitignore で git に入れていないファイル（スピの元資料など）はクラウドに無いので数えない（2026-10-25）"""
+    sha = lambda b: hashlib.sha256(b).hexdigest()
     bad = []
     for rel, h in jload(os.path.join(ROOT, "data", "checksums.json"), {}).items():
         p = os.path.join(ROOT, rel)
         if not os.path.exists(p):
-            bad.append(f"{rel}（無い）")
-        elif hashlib.sha256(open(p, "rb").read()).hexdigest() != h:
+            if subprocess.run(["git", "check-ignore", "-q", rel], cwd=ROOT).returncode != 0:
+                bad.append(f"{rel}（無い）")
+            continue
+        b = open(p, "rb").read()
+        lf = b.replace(b"\r\n", b"\n")
+        if h not in (sha(b), sha(lf), sha(lf.replace(b"\n", b"\r\n"))):
             bad.append(f"{rel}（中身が違う）")
     return bad
 
@@ -141,8 +148,8 @@ def record(ch, work):
     chp = os.path.join(work, "chapters.txt")
     keep = ("hook_type", "sub_copy", "line_copy", "name_copy", "title", "titles", "thumb_text", "competitor_note")
     rec = {"work": os.path.basename(work), "type": n.get("type") or s.get("type"), "frame": n.get("frame") or s.get("frame"),
-           "neta_id": n.get("id"), "jobs": n.get("jobs") or (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収", []),  # 型D の順位は説の並び（list） "made": now().date().isoformat(),
-           **{k: s.get(k) for k in keep}, "chapters": open(chp, encoding="utf-8").read().splitlines() if os.path.exists(chp) else [],
+           "neta_id": n.get("id"), "jobs": n.get("jobs") or (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収", []),  # 型D の順位は説の並び（list）
+           "made": now().date().isoformat(), **{k: s.get(k) for k in keep}, "chapters": open(chp, encoding="utf-8").read().splitlines() if os.path.exists(chp) else [],
            "video_id": up.get("video_id"), "回した理由": n.get("回した理由")}
     p = hpath(ch, "produced.json")
     h = jload(p, [])

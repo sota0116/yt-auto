@@ -22,7 +22,10 @@
   "privacy_now": "private",
   "seconds": 536,
   "title_now": "バス運転手・保育士・ケアマネ…年収を並べたら｜時給にすると順位が逆転（厚生労働省の統計）",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "retired": true,
+  "retired_note": "2026-10-25 作り直した版（Xi2h6HTtb-A）に差し替え。本人が非公開にした。非公開のまま残す",
+  "missing": true
  },
  {
   "work": "002_d_wage30",
@@ -67,11 +70,13 @@
    "給料明細を見るたび「なぜ？」 AIに政府の統計だけで採点させたら、意外な容疑者が1位に"
   ],
   "comment": "「主な職業の年収・労働時間と、産業別の離職率の一覧」と「年齢別 転職で年収が上がった人・下がった人の割合の一覧」の2つセットを、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
-  "publish_at": "2026-10-25T10:00:00Z",
-  "privacy_now": "private",
+  "publish_at": null,
+  "privacy_now": "public",
   "seconds": 1212,
   "title_now": "【30年の謎】給料が上がらない容疑者は5人？ AIに政府の統計だけで採点させたら…意外な1位",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "published": true,
+  "published_at": "2026-10-25T19:00:29+09:00"
  },
  {
   "work": "001_a4_untenshu_fukushi_v2",

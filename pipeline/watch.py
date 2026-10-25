@@ -64,8 +64,9 @@ def refresh(ch, up):
 
 
 def comment(ch, e, state, dry):
-    """公開された回にコメントを1件。7日間は残っているかを毎日確かめる"""
-    if not e.get("published") or state.get("comments_off"):
+    """公開された回にコメントを1件。7日間は残っているかを毎日確かめる
+    公開の後に非公開へ戻した回（作り直す前の版など）は、コメントを入れられない（403）ので飛ばす（2026-10-25）"""
+    if not e.get("published") or state.get("comments_off") or e.get("privacy_now") != "public":
         return
     if not e.get("comment_id"):
         if not e.get("comment") or dry:
@@ -218,7 +219,11 @@ def watch_channel(ch, dry):
     try:
         refresh(ch, up)
         for e in up:
-            comment(ch, e, state, dry)
+            try:
+                comment(ch, e, state, dry)
+            except urllib.error.HTTPError as err:  # コメントで断られても、数字と明日の予約は止めない
+                e["comment_error"] = f"{err.code} {now().isoformat(timespec='seconds')}"
+                print(f"  コメントを入れられませんでした（{err.code}）：{e['work']}")
         watch_numbers(ch, up, state, metrics, dry)
         state["type_hold"] = type_hold(ch, metrics)
         if (os.environ.get("STOCK_PHASE") or "pre") == "post":
