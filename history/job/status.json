@@ -1,14 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/007_c_truck",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "reading"
- ],
- "started": "2026-10-26T15:21:10+09:00",
- "tries": 0,
- "stage": "images",
- "updated": "2026-10-26T15:32:07+09:00"
-}
+{}
