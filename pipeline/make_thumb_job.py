@@ -135,6 +135,7 @@ def scan_frame(d, box, label):
 def d_lines(t, given=None):
     """「給料30年の謎」→ ["給料", "30年", "の謎"]。数字のある行を返す番号も（その行を黄で特大）"""
     if given:
+        given = [unicodedata.normalize("NFKC", x) for x in given]  # thumb_text と同じく全角・半角をそろえて照らす（「？」と「?」で止まった。2026-10-26）
         if "".join(given) != t:
             sys.exit(f"【止まりました】thumb_lines をつなぐと thumb_text と違う：{given}／{t}")
         lines = list(given)
@@ -214,6 +215,7 @@ def bg_on(im, work, bg_id):
 def two_lines(t, given=None):
     """サムネA・B の文字を2行までに割る。数字のある行を返す番号も（その行を大きく）。数字が無ければ最後の行"""
     if given:
+        given = [unicodedata.normalize("NFKC", x) for x in given]  # thumb_text と同じく全角・半角をそろえて照らす（「？」と「?」で止まった。2026-10-26）
         if "".join(given) != t or len(given) > 2:
             sys.exit(f"【止まりました】thumb_lines は2行までで、つなぐと thumb_text になる並び：{given}／{t}")
         lines = list(given)
