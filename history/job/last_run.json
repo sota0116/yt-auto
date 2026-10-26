@@ -1,9 +1,14 @@
 {
  "ch": "job",
- "started": "2026-10-26T15:12:58+09:00",
+ "started": "2026-10-26T15:21:09+09:00",
  "made": [],
- "stopped": "thumb で止まりました（終了コード 1）：保存 /home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan/thumb_a.jpg\n保存 /home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan/thumb_b.jpg\nthumb_a.jpg 320pxで読めた： 年収54万円差時間では? 【不一致】\nthumb_b.jpg 320pxで読めた： 年収54万円差時間では? 【不一致】",
+ "stopped": "絵がまだ途中（残り25枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります",
  "在庫": 3,
- "ended": "2026-10-26T15:13:03+09:00",
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan"
+ ],
+ "待ち": true,
+ "途中": true,
+ "ended": "2026-10-26T19:27:37+09:00",
  "今月の制作費_円": 0.0
 }
