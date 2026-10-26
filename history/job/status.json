@@ -1,14 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/007_c_truck",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
-  "reading"
+  "reading",
+  "images",
+  "charts",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
- "started": "2026-10-26T15:21:10+09:00",
+ "started": "2026-10-26T06:26:27+09:00",
  "tries": 0,
- "stage": "images",
- "updated": "2026-10-26T15:32:07+09:00"
+ "stage": "thumb",
+ "updated": "2026-10-26T19:50:00+09:00"
 }
