@@ -10,6 +10,7 @@
 # ・Gemini の1日の回数の上限（各段の終了コード 75）で止まった時は、失敗に数えず「待ち」にする。上限が戻った後の 17:37 の枠（retry）で続きから作る
 # ・時間の枠：GitHub Actions は1回5時間まで。RUN_BUDGET_MIN（無ければ260分）を超えそうな段は区切って「途中」にし、次の実行で続きから作る。
 #   Lovart の無料モードは1枚十数分かかり、絵だけで数時間になるため（2026-10-24）。「途中」は失敗に数えず、Issue にもしない
+# ・3回続けて失敗した回は飛ばす。ただし最後の失敗の後に道具（pipeline の .py）が変わっていれば、直したとみなして0から数え直す（2026-10-27）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 import argparse, datetime, hashlib, json, os, re, subprocess, sys, time
 
@@ -63,6 +64,16 @@ def verify_checksums():
         if h not in (sha(b), sha(lf), sha(lf.replace(b"\n", b"\r\n"))):
             bad.append(f"{rel}（中身が違う）")
     return bad
+
+
+def code_ver():
+    """道具（pipeline の .py）の中身の版。失敗の後に直して push されたかを見分ける（改行の違いは同じとみなす）"""
+    h = hashlib.sha256()
+    d = os.path.join(ROOT, "pipeline")
+    for name in sorted(os.listdir(d)):
+        if name.endswith(".py"):
+            h.update(name.encode() + open(os.path.join(d, name), "rb").read().replace(b"\r\n", b"\n"))
+    return h.hexdigest()[:12]
 
 
 def month_cost(ch):
@@ -173,6 +184,7 @@ def make_one(ch, st, upload):
         jsave(sp, st)
     work = st["work"]
     st["tries"] = st.get("tries", 0) + 1
+    st["code"] = code_ver()
     print(f"■ {ch}：{os.path.basename(work)}（{st['tries']}回目・済み {st['done']}）", flush=True)
 
     def step(name, fn):
@@ -289,6 +301,9 @@ def main():
             st = jload(sp, {})
             if st.get("work") and "record" in st.get("done", []):
                 st = {}
+            if st.get("tries") and st.get("code") != code_ver():
+                print(f"前の失敗の後に道具が直っているので、{os.path.basename(st['work'])} の失敗の数を0から数え直します", flush=True)
+                st["tries"] = 0  # 直した後も前の3回で飛ばすと、出来上がり寸前の回を捨てる（006 がそうなった。2026-10-26）
             if st.get("tries", 0) >= 3:
                 res.setdefault("飛ばした回", []).append(st["work"])
                 st = {}  # 3回続けて失敗した回は飛ばして次のネタへ（週報に出す）
