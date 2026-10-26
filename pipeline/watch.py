@@ -1,5 +1,6 @@
 # 見張り（設計書 §2「毎日（数字の見張り。12:07 JST）」・§4「見張り役どうしで見張る」・§5⑪）
-#   python -X utf8 pipeline\watch.py job [spi] [--dry]
+#   python -X utf8 pipeline\watch.py job [spi] [psy] [--dry]
+# ・psy（しずくの心理学）は見るだけ：状態と数字を取る。在庫・公開の見張りと明日の予約はしない（毎日の制作に入っていないため。2026-10-26）
 # ・上げた動画の今の状態を YouTube から読み、history\<ch>\uploaded.json に書く（published・publish_at・missing）。
 #   retired の付いた回（作り直して差し替えた古い版）は missing と同じ扱い
 #   毎日の実行（run_daily.py）は published の付いていない本数を在庫として数える
@@ -22,6 +23,7 @@ from upload_job import api, API
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
+WATCH_ONLY = {"psy"}  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）
 
 
 def get(ch, url):
@@ -226,7 +228,7 @@ def watch_channel(ch, dry):
                 print(f"  コメントを入れられませんでした（{err.code}）：{e['work']}")
         watch_numbers(ch, up, state, metrics, dry)
         state["type_hold"] = type_hold(ch, metrics)
-        if (os.environ.get("STOCK_PHASE") or "pre") == "post":
+        if (os.environ.get("STOCK_PHASE") or "pre") == "post" and ch not in WATCH_ONLY:
             state["予約"] = schedule_tomorrow(ch, up, dry)
     finally:  # 途中で落ちても、読めた分は残す
         jsave(up_p, up)
@@ -235,7 +237,7 @@ def watch_channel(ch, dry):
     started = any(e.get("published") or e.get("publish_at") for e in live)  # 公開を始めた後だけ、公開の見張りをする
     n_stock = sum(1 for e in live if not e.get("published"))
     state.update(在庫=n_stock, 最後の見張り=now().isoformat(timespec="seconds"))
-    if started:
+    if started and ch not in WATCH_ONLY:
         if n_stock == 0:
             issue(f"【止まりました】{ch}：在庫が0本", f"{when} 在庫（上げて、まだ公開していない動画）が0本です")
         last = max((ts(e["published_at"]) for e in live if e.get("published_at")), default=None)
@@ -254,7 +256,7 @@ def watch_channel(ch, dry):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("chs", nargs="+", choices=["job", "spi"])
+    a.add_argument("chs", nargs="+", choices=["job", "spi", "psy"])
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
