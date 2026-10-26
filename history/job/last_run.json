@@ -1,14 +1,11 @@
 {
  "ch": "job",
- "started": "2026-10-26T15:21:09+09:00",
- "made": [],
- "stopped": "絵がまだ途中（残り25枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります",
- "在庫": 3,
- "飛ばした回": [
-  "/home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan"
+ "started": "2026-10-26T19:33:22+09:00",
+ "made": [
+  "006_a_sekokan"
  ],
- "待ち": true,
- "途中": true,
- "ended": "2026-10-26T19:27:37+09:00",
+ "stopped": null,
+ "在庫": 3,
+ "ended": "2026-10-26T19:33:36+09:00",
  "今月の制作費_円": 0.0
 }
