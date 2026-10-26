@@ -97,11 +97,15 @@
    "バス運転手の1か月は、リハビリ職より36時間長い｜6つの仕事の年収と時給"
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
-  "privacy_now": "private",
-  "publish_at": "2026-10-26T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 520,
   "title_now": "バス運転手は年収1位、時給は最下位｜年収ほぼ同じ6つの仕事を統計で並べた",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "published": true,
+  "published_at": "2026-10-26T19:00:18+09:00",
+  "comment_id": "Ugys22bta9QmRiJpcDt4AaABAg",
+  "comment_at": "2026-10-27T01:04:23+09:00"
  },
  {
   "work": "004_a_kaigo",
@@ -144,7 +148,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": null,
+  "publish_at": "2026-10-28T19:00:00+09:00",
   "seconds": 505,
   "title_now": "大型トラック運転手・大工・臨床検査技師…年収を並べたら｜時給にすると順位が逆転（厚生労働省の統計）",
   "synthetic_on": null
@@ -165,6 +169,11 @@
    "建築の技術者は土木より年収が約54万円高いのに、なぜ2つの物差しで逆転されるのか｜施工管理を統計で比べた",
    "土木の技術者が現場を出る時刻｜建築の技術者と年収・働く時間を厚生労働省の統計で比べた"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 531,
+  "title_now": "建築の技術者と土木の技術者を5つの物差しで比べたら｜年収は建築、2項目で逆転（厚生労働省の統計）",
+  "synthetic_on": null
  }
 ]
