@@ -1,9 +1,9 @@
 {
  "ch": "job",
- "started": "2026-10-26T10:07:17+09:00",
+ "started": "2026-10-26T15:12:58+09:00",
  "made": [],
- "stopped": "thumb で止まりました（終了コード 1）：【止まりました】thumb_lines は2行までで、つなぐと thumb_text になる並び：['年収54万円差', '時間では？']／年収54万円差時間では?",
+ "stopped": "thumb で止まりました（終了コード 1）：保存 /home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan/thumb_a.jpg\n保存 /home/runner/work/yt-auto/yt-auto/channels/job/videos/006_a_sekokan/thumb_b.jpg\nthumb_a.jpg 320pxで読めた： 年収54万円差時間では? 【不一致】\nthumb_b.jpg 320pxで読めた： 年収54万円差時間では? 【不一致】",
  "在庫": 3,
- "ended": "2026-10-26T10:07:17+09:00",
+ "ended": "2026-10-26T15:13:03+09:00",
  "今月の制作費_円": 0.0
 }
