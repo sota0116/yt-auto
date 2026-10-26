@@ -399,10 +399,11 @@ def check(work, outs, t):
     r, u = gemini.ask("添付の2枚は YouTube のサムネを横320pxに縮めた物です。それぞれ、いちばん大きい見出しの文字を、改行を詰めて1つの文字列で書いてください（棒グラフの中の文字は除く）。読めない字は？にしてください。",
                       schema=sch, images=[o.replace(".jpg", "_320.jpg") for o in outs])
     got = json.loads(r)["読めた文字"]
+    t = unicodedata.normalize("NFKC", t)  # 読めた文字も thumb_text も全角・半角をそろえて照らす（「？」と「?」で006が3回目も止まった。2026-10-26）
+    same = lambda g: unicodedata.normalize("NFKC", g).replace(" ", "") == t
     for o, g in zip(outs, got):
-        ok = g.replace(" ", "") == t
-        print(os.path.basename(o), "320pxで読めた：", g, "一致" if ok else "【不一致】")
-    return all(g.replace(" ", "") == t for g in got)
+        print(os.path.basename(o), "320pxで読めた：", g, "一致" if same(g) else "【不一致】")
+    return all(same(g) for g in got)
 
 
 def main():
