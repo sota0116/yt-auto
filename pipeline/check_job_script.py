@@ -919,16 +919,33 @@ def main(work):
         for tk in tokens(t):
             if tk not in allowed:
                 ng.append(f"タイトルに facts.json にない数字：{t} {tk}")
-    th = sc.get("thumb_text", "")
-    if typ in ("B", "C"):  # サムネB（主役が主役）は8字以内（§6）
-        if not th or len(th) > 8:
-            ng.append(f"サムネB の文字は8字以内：{th}（{len(th)}字）")
-    elif len(th) > 12 or not re.search(r"\d", th):
-        ng.append(f"サムネの文字は12字以内で数字1つ：{th}（{len(th)}字）")
-    if "離職率" in th and not re.search(r"(含む|業)の?離職率", th):
-        ng.append(f"サムネの離職率に業界名（〇〇業の）が無い：{th}")
-    if "AI" in th or "PR" in th:
-        ng.append(f"サムネの文字に AI か PR：{th}")
+    # サムネ（§6。2026-10-27 から場面の形・判定の形。make_thumb_job.py の rules と同じ所を見る）
+    nf = lambda k: unicodedata.normalize("NFKC", sc.get(k) or "")
+    top, th, band = nf("thumb_top"), nf("thumb_text"), nf("thumb_band")
+    if not th or len(th) > 10:
+        ng.append(f"サムネの大きい字（thumb_text）は1〜10字：{th}（{len(th)}字）")
+    if len(top) > 16:
+        ng.append(f"サムネの見出し（thumb_top）は16字以内：{top}（{len(top)}字）")
+    if not band or len(band) > 28:
+        ng.append(f"サムネの下の帯（thumb_band）は1〜28字：{band}（{len(band)}字）")
+    th_all = top + th + band
+    if "離職率" in th_all and not re.search(r"(含む|業)の?離職率", th_all):
+        ng.append(f"サムネの離職率に業界名（〇〇業の）が無い：{th_all}")
+    if re.search(r"AI|PR", th_all.upper()):
+        ng.append(f"サムネの字に AI か PR：{th_all}")
+    if "逆転" in th_all and not facts.get("逆転を使える"):
+        ng.append("サムネに「逆転」があるのに、facts.json に入れ替わりの記録（逆転を使える）が無い")
+    if typ == "D" and "意外" in th_all and not facts.get("意外なを使える"):
+        ng.append("サムネに「意外」があるのに、この回は使えない（facts.json の 意外なを使える）")
+    for x in (top, th, band):
+        for tk in tokens(x):
+            if tk not in allowed:
+                ng.append(f"サムネに facts.json にない数字：{x} {tk}")
+    bgc = next((c for c in cuts if c["id"] == sc.get("thumb_bg")), None)
+    if not bgc or bgc.get("chart") or not bgc.get("image"):
+        ng.append(f"thumb_bg が絵のカットの id でない：{sc.get('thumb_bg')}")
+    elif not bgc.get("chars"):
+        warn.append(f"サムネの絵（{bgc['id']}）に登場人物（chars）がいない。人の顔が大きく写るカットに")
     desc = sc.get("desc", "")
     paras = [p for p in desc.split("\n\n")]
     if len(paras) < 3 or paras[2].strip() != LINE3:

@@ -13,7 +13,7 @@ def main():
     L = [f"# 台本（{s.get('frame', '')}）", "",
          f"字数 {chars:,}字・{len(s['cuts'])}カット・見込み約{chars / CPS / 60:.1f}分（{CPS:g}字/秒で計算）", "", "タイトル3案"]
     L += [f"{i + 1}. {t}" for i, t in enumerate(s["titles"])]
-    L += ["", f"サムネの文字：{s['thumb_text']}", ""]
+    L += ["", "サムネの文字：" + "／".join(x for x in (s.get("thumb_top"), s.get("thumb_text"), s.get("thumb_band")) if x), ""]
     for c in s["cuts"]:
         if c.get("chapter"):
             L += ["", f"## {c['chapter']}", ""]

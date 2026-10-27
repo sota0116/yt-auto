@@ -1,0 +1,92 @@
+# 上げ済みの長尺のサムネを新しい形に差し替える（手順書 v4.0 §6。pipeline/rethumb_job.py）
+# ・export：作業フォルダ（actions/cache）から台本と人の写る絵を artifact に出す（Claude が字と絵を選ぶ材料）
+# ・apply：history/job/rethumb.json の項目でサムネを作り直し、a案を YouTube に送る。作り直した作業フォルダはキャッシュに保存する（見張りの B案の差し替えで新しい b案を使うため）
+# ・枠は毎日の実行（daily-job）と同じにして、キャッシュの読み書きがぶつからないようにする。手で動かす時だけ使う
+name: rethumb
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "export か apply"
+        required: true
+        default: export
+
+permissions:
+  contents: write
+
+concurrency:  # export は読むだけなので待たない。apply は毎日の実行と同じ枠
+  group: ${{ inputs.mode == 'apply' && 'daily-job' || format('rethumb-{0}', github.run_id) }}
+  cancel-in-progress: false
+
+jobs:
+  rethumb:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 道具を入れる
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra >/dev/null
+          pip install -q -r requirements.txt
+      - name: 作業フォルダを読む
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: channels/job/videos
+          key: work-job-rethumb-${{ github.run_id }}
+          restore-keys: work-job-
+      - name: 台本と人の絵を出す
+        if: inputs.mode == 'export'
+        run: python -X utf8 pipeline/rethumb_job.py export "$RUNNER_TEMP/rethumb"
+      - uses: actions/upload-artifact@v4
+        if: inputs.mode == 'export'
+        with:
+          name: rethumb-export
+          path: ${{ runner.temp }}/rethumb
+          retention-days: 3
+      - name: 鍵を置く（中身は画面に出さない）
+        if: inputs.mode == 'apply'
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: サムネを作り直して送る
+        if: inputs.mode == 'apply'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -X utf8 pipeline/rethumb_job.py apply
+      - name: 作り直した作業フォルダを保存する（読めた時だけ。空のフォルダで上書きしないため）
+        if: inputs.mode == 'apply' && always() && steps.restore.outputs.cache-matched-key != ''
+        uses: actions/cache/save@v4
+        with:
+          path: channels/job/videos
+          key: work-job-rethumb-${{ github.run_id }}
+      - uses: actions/upload-artifact@v4
+        if: inputs.mode == 'apply' && always()
+        with:
+          name: rethumb-thumbs
+          path: channels/job/videos/*/thumb_*.jpg
+          retention-days: 7
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: inputs.mode == 'apply' && always()
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history/job/rethumb.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "サムネの差し替え：$(date +%F_%H%M)"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
+      - name: 鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"

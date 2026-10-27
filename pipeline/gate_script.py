@@ -53,6 +53,11 @@ def items(**props):
 S = {"type": "string"}
 
 
+def thumb_words(s):
+    """サムネの字（上の見出し／大きい字／下の帯。手順書 §6 の2026-10-27 からの形）"""
+    return "／".join(x for x in (s.get("thumb_top"), s.get("thumb_text"), s.get("thumb_band")) if x)
+
+
 def gate_fact(s, f, use):
     p = f"""あなたは統計番組の事実確認の担当です。下の台本の各文を、下の facts.json（厚生労働省の統計からプログラムで計算した値）と照らしてください。
 
@@ -65,7 +70,7 @@ facts.json
 {json.dumps(f, ensure_ascii=False)}
 
 タイトル3案：{json.dumps(s['titles'], ensure_ascii=False)}
-サムネの文字：{s['thumb_text']}
+サムネの文字：{thumb_words(s)}
 概要欄：{s['desc']}
 台本：
 {lines(s['cuts'], s.get('listener_name', '聞き手'))}
@@ -82,7 +87,7 @@ def gate_ng(s, ch, use):
     words = [w.strip() for w in open(os.path.join(ROOT, "channels", ch, "禁止表現.txt"), encoding="utf-8")
              if w.strip() and not w.startswith("#")]
     texts = [(c["id"], c["narration"]) for c in s["cuts"]] + [(f"title{i+1}", t) for i, t in enumerate(s["titles"])] + \
-            [("thumb", s["thumb_text"]), ("desc", s["desc"])]
+            [("thumb", thumb_words(s)), ("desc", s["desc"])]
     hits = [{"id": i, "語": w, "文": t} for i, t in texts for w in words if w in t]
     p = f"""YouTube の仕事チャンネルの台本の点検です。下の「当たった所」は、禁止表現の一覧と単純に一致した所です。
 それぞれ、文脈で本当に禁止に当たるかを判定してください。カギかっこの引用・統計や制度の正式名の中は「当たらない」。
@@ -112,7 +117,7 @@ def gate_ads(s, use):
 数字に基づく比べ（年収・時給の順位）や問いかけの形は、それだけでは当てはまりません。広告が限られる見込みが高い所だけを挙げてください。無ければ空の配列。
 
 タイトル3案：{json.dumps(s['titles'], ensure_ascii=False)}
-サムネの文字：{s['thumb_text']}
+サムネの文字：{thumb_words(s)}
 台本：
 {lines(s['cuts'], s.get('listener_name', '聞き手'))}
 """
