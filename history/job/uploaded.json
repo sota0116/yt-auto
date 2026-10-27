@@ -78,7 +78,8 @@
   "published": true,
   "published_at": "2026-10-25T19:00:29+09:00",
   "comment_id": "UgwgNYaJMof9xoHQweV4AaABAg",
-  "comment_at": "2026-10-25T19:39:39+09:00"
+  "comment_at": "2026-10-25T19:39:39+09:00",
+  "views_now": 48
  },
  {
   "work": "001_a4_untenshu_fukushi_v2",
@@ -105,7 +106,8 @@
   "published": true,
   "published_at": "2026-10-26T19:00:18+09:00",
   "comment_id": "Ugys22bta9QmRiJpcDt4AaABAg",
-  "comment_at": "2026-10-27T01:04:23+09:00"
+  "comment_at": "2026-10-27T01:04:23+09:00",
+  "views_now": 0
  },
  {
   "work": "004_a_kaigo",
@@ -124,11 +126,16 @@
    "介護職員の休憩室で決まること｜医療・福祉業に転職した人が前の職場を辞めた理由、1位は給料ではなかった"
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
-  "privacy_now": "private",
-  "publish_at": "2026-10-27T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 492,
   "title_now": "介護職員を辞める人が多いのはなぜ｜年収388万円・医療・福祉業の離職率14.3%",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "views_now": 1,
+  "published": true,
+  "published_at": "2026-10-27T19:00:11+09:00",
+  "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
+  "comment_at": "2026-10-28T00:12:23+09:00"
  },
  {
   "work": "005_a4_28f489e3",
@@ -151,7 +158,8 @@
   "publish_at": "2026-10-28T10:00:00Z",
   "seconds": 505,
   "title_now": "大型トラック運転手・大工・臨床検査技師…年収を並べたら｜時給にすると順位が逆転（厚生労働省の統計）",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "006_a_sekokan",
@@ -174,7 +182,8 @@
   "publish_at": null,
   "seconds": 531,
   "title_now": "建築の技術者と土木の技術者を5つの物差しで比べたら｜年収は建築、2項目で逆転（厚生労働省の統計）",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "007_c_truck",
@@ -197,6 +206,7 @@
   "publish_at": null,
   "seconds": 500,
   "title_now": "大型トラック運転手の1日｜年収約507万円、月の労働時間は208時間（厚生労働省の統計）",
-  "synthetic_on": null
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
