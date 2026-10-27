@@ -2,10 +2,10 @@
 #   python -X utf8 pipeline\make_thumb_job.py <作業フォルダ> [--bg D20] [--check]
 # ・2つの形を作る。a案＝その回の主な形、b案＝もう1つの形（クリック率が低い時に watch.py が差し替える）
 #   場面（型A・B・C の a案）：人物が写る場面の絵を全面に。上に白い帯と赤い見出し（thumb_top）、下に特大の字（thumb_text。強調の部分を黄で特大）
-#   判定（型D の a案）：左の黒地に答えを伏せた1文（thumb_text。強調の行を赤）、右に人物の絵と「？」の箱、左上に札（thumb_top）、下の帯（thumb_band）
+#   判定（型D の a案）：左の黒地に答えを伏せた1文（thumb_text。強調の行を赤）、右に人物の絵（「？」の箱は下の決まりの時だけ）、左上に札（thumb_top）、下の帯（thumb_band）
 # ・絵は台本の thumb_bg（人物が大きく写るカット）。--bg で替えられる。絵が無ければ止める
 # ・字：thumb_top 16字以内・thumb_text 10字以内（割り方は thumb_lines）・thumb_band 28字以内。「AI」「PR」は入れない。数字は facts.json にある物だけ（check_job_script と同じ照らし方）
-# ・「？」の箱：型D は1位の扱い（タイトルで1位を言う回はその名前、伏せる回は「？」。check_job_script.d_top_label）。ほかの型は判定の形か、thumb_q が true の時
+# ・「？」の箱：型D は1位の扱い（タイトルで1位を言う回はその名前、伏せる回は「？」。check_job_script.d_top_label）。ほかの型は thumb_q が true の時だけ（どちらの形でも）
 # ・右下の再生時間の表示の所（x>1090, y>630）には字を置かない
 # ・--check：横320pxに縮めた版を Gemini に読ませ、いちばん大きい字が thumb_text と一致するかを見る（手順書 §10 サムネの点検）
 # ・前の形（紺の地の棒グラフ・黄の地のサムネA）は git の 3745ed1 までの版
@@ -146,7 +146,7 @@ def verdict(s, bgp, box_label):
             say(d, (40, y), t, z, WHITE, anchor="ls")
         y += int(z * 0.12)
     if box_label:
-        qbox(d, (1060, 120, 1250, 350), box_label)  # 顔にかからない右端（2026-10-27 陽子の絵で頬にかかった）
+        qbox(d, (1060, 390, 1250, 600), box_label)  # 顔は絵の上半分に来るので帯の上の右下（右上だと 2026-10-27 陽子の頬・004 の介護職員の顔にかかった）
     d.rectangle((0, 620, W, H), fill=(30, 30, 36))
     band = N(s.get("thumb_band"))
     if band:
@@ -188,7 +188,7 @@ def box_of(s, f, layout):
         if labels is None:
             sys.exit("【止まりました】タイトル3案で1位の名前を出す案と伏せる案が混ざっている（サムネの「？」の箱を決められない）")
         return "？" if labels[0] == "？" else "・".join(labels)
-    return "？" if s.get("thumb_q") or layout == "verdict" else None
+    return "？" if s.get("thumb_q") else None  # 答えを言っている回に「？」を出すと食い違う（001_v2 の b案。2026-10-27）
 
 
 def make(work, variant, bg_id=None):

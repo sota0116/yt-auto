@@ -1,0 +1,79 @@
+{
+ "説明": "手順書 v4.0 §6 の新しいサムネに差し替える回（pipeline/rethumb_job.py apply。2026-10-27 本人「横動画のサムネ全然だめ」→「差し替える（おすすめ）」）",
+ "works": [
+  {
+   "work": "002_d_wage30",
+   "video_id": "MNZiQKAXbtE",
+   "thumb_top": "30年 給料が上がらない",
+   "thumb_text": "上がらない本当の理由",
+   "thumb_lines": [
+    "上がらない",
+    "本当の理由"
+   ],
+   "thumb_band": "政府の統計で5人の容疑者を採点 → 意外な1位",
+   "thumb_bg": "A01"
+  },
+  {
+   "work": "001_a4_untenshu_fukushi_v2",
+   "video_id": "Xi2h6HTtb-A",
+   "thumb_top": "バス運転手は年収1位",
+   "thumb_text": "なのに時給は最下位",
+   "thumb_lines": [
+    "なのに",
+    "時給は最下位"
+   ],
+   "thumb_band": "厚生労働省の統計で6つの仕事を時給に直した",
+   "thumb_bg": "C16"
+  },
+  {
+   "work": "004_a_kaigo",
+   "video_id": "aiv-xxzsrQY",
+   "thumb_top": "介護職員 年収388万円",
+   "thumb_text": "なぜ辞める？",
+   "thumb_lines": [
+    "なぜ",
+    "辞める？"
+   ],
+   "thumb_band": "医療・福祉業に転職した人が前の職場を辞めた理由の1位は？",
+   "thumb_q": true,
+   "thumb_bg": "THUMB"
+  },
+  {
+   "work": "005_a4_28f489e3",
+   "video_id": "frlvSzw8szo",
+   "thumb_top": "大型トラック運転手は年収1位",
+   "thumb_text": "時給にすると最下位",
+   "thumb_lines": [
+    "時給にすると",
+    "最下位"
+   ],
+   "thumb_band": "厚生労働省の統計で、年収が近い6つの仕事を時給に直した",
+   "thumb_bg": "THUMB"
+  },
+  {
+   "work": "006_a_sekokan",
+   "video_id": "q-T8RRFcBTk",
+   "thumb_top": "施工管理 建築と土木",
+   "thumb_text": "年収は建築でも逆転",
+   "thumb_lines": [
+    "年収は建築",
+    "でも逆転"
+   ],
+   "thumb_band": "厚生労働省の統計で、年収・働く時間など5つを比べた",
+   "thumb_bg": "THUMB"
+  },
+  {
+   "work": "007_c_truck",
+   "video_id": "CkCSUpsi760",
+   "thumb_top": "144職種で一番長く働く",
+   "thumb_text": "時給は107位",
+   "thumb_lines": [
+    "時給は",
+    "107位"
+   ],
+   "thumb_band": "大型トラック運転手の1日を、厚生労働省の統計で追った",
+   "thumb_bg": "THUMB"
+  }
+ ],
+ "done": {}
+}

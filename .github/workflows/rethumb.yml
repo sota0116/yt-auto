@@ -1,6 +1,6 @@
 # 上げ済みの長尺のサムネを新しい形に差し替える（手順書 v4.0 §6。pipeline/rethumb_job.py）
 # ・export：作業フォルダ（actions/cache）から台本と人の写る絵を artifact に出す（Claude が字と絵を選ぶ材料）
-# ・apply：history/job/rethumb.json の項目でサムネを作り直し、a案を YouTube に送る。作り直した作業フォルダはキャッシュに保存する（見張りの B案の差し替えで新しい b案を使うため）
+# ・apply：手元で作って確かめたサムネ（history/job/rethumb/<回>/）を作業フォルダに写し、a案を YouTube に送る。作業フォルダはキャッシュに保存する（見張りの B案の差し替えで新しい b案を使うため）
 # ・枠は毎日の実行（daily-job）と同じにして、キャッシュの読み書きがぶつからないようにする。手で動かす時だけ使う
 name: rethumb
 on:
@@ -60,23 +60,15 @@ jobs:
           printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
           printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
           chmod 600 "$YT_SECRETS_DIR"/*
-      - name: サムネを作り直して送る
+      - name: サムネを写して送る
         if: inputs.mode == 'apply'
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -X utf8 pipeline/rethumb_job.py apply
-      - name: 作り直した作業フォルダを保存する（読めた時だけ。空のフォルダで上書きしないため）
+      - name: 作業フォルダを保存する（読めた時だけ。空のフォルダで上書きしないため）
         if: inputs.mode == 'apply' && always() && steps.restore.outputs.cache-matched-key != ''
         uses: actions/cache/save@v4
         with:
           path: channels/job/videos
           key: work-job-rethumb-${{ github.run_id }}
-      - uses: actions/upload-artifact@v4
-        if: inputs.mode == 'apply' && always()
-        with:
-          name: rethumb-thumbs
-          path: channels/job/videos/*/thumb_*.jpg
-          retention-days: 7
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: inputs.mode == 'apply' && always()
         run: |
