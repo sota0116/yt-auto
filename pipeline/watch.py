@@ -9,14 +9,16 @@
 #   入れたコメントが消された回が2本出たら、そのチャンネルはコメントをやめる（history\<ch>\watch.json の comments_off）
 # ・数字：公開72時間後と7日後に、表示回数・クリック率・平均視聴率・登録・視聴維持のグラフを取り、history\<ch>\metrics.json に書く
 #   表示1,000回以上でクリック率4%未満なら差し替える（72時間：タイトル2番目＋サムネB案／7日：タイトル3番目。1本2回まで）
-#   クリック率が API で取れない時は差し替えず、取れなかったことを watch.json に残す（週報が「テストと比較」の作業を出す。設計書 §12）
+#   クリック率は API で取れない（2026-10-28 に公式の指標の一覧で確かめた。Studio の画面だけ）。取れなかったことは watch.json に残す
+#   その時、仕事ch（VIEWS_SWAP）は公開ページの再生回数で決める：同じ時点（72時間・7日）のほかの回の真ん中の7割に届かなければ差し替える
+#   （比べるほかの回が2本に届かない間は差し替えない。本人「見ないから自動で」のため、Studio の「テストと比較」は待たない）
 # ・型の後回し：同じ型の直近5本（7日後の数字がある回）の平均視聴率が30%未満なら history\<ch>\type_hold.json に書く（pick_neta.py が後ろに回す）
 # ・在庫・公開の見張り：在庫が0本、26時間公開がない、明後日の公開予約がない（審査前。月曜はまだ無ければ Issue）
 #   審査の後（STOCK_PHASE=post）は、明日の公開予約が無ければ在庫から1本を PUBLISH_TIME（無ければ 19:00）に予約する
 #   （profile.json の publish_every_days が2以上のチャンネルは、前の公開からその日数があく日だけ。仕事chは 2026-10-27 から1日おき）
 # ・見張り役どうしの見張り：毎日の実行が26時間ない、週報が8日ない → Issue。最後に heartbeat.json の watch を書き、HC_WATCH に合図
 # ・--dry：YouTube に書かない（コメント・差し替え・予約をしない）。読むのと記録だけ
-import argparse, datetime, json, os, re, sys, traceback, urllib.error, urllib.parse
+import argparse, datetime, json, os, re, statistics, sys, traceback, urllib.error, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import issue, ping, stale, jload, now, JST
 from run_daily import hpath, jsave
@@ -25,6 +27,7 @@ from upload_job import api, API
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
+VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
 WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した
 
 
@@ -53,7 +56,7 @@ def refresh(ch, up):
     ids = [e["video_id"] for e in up if e.get("video_id")]
     seen = {}
     for i in range(0, len(ids), 50):
-        r = get(ch, f"{API}/videos?part=status,snippet,contentDetails&id={','.join(ids[i:i + 50])}")
+        r = get(ch, f"{API}/videos?part=status,snippet,contentDetails,statistics&id={','.join(ids[i:i + 50])}")
         seen.update({it["id"]: it for it in r.get("items", [])})
     for e in up:
         it = seen.get(e.get("video_id"))
@@ -67,6 +70,7 @@ def refresh(ch, up):
         e["seconds"] = seconds(it["contentDetails"].get("duration"))
         e["title_now"] = it["snippet"]["title"]
         e["synthetic_on"] = st.get("containsSyntheticMedia")
+        e["views_now"] = int(it.get("statistics", {}).get("viewCount", 0))  # 公開ページの再生回数（アナリティクスより2〜3日早い）
         if st.get("privacyStatus") == "public" and not e.get("published"):
             e["published"] = True
             e["published_at"] = ts(it["snippet"].get("publishedAt")).isoformat(timespec="seconds")
@@ -179,12 +183,28 @@ def watch_numbers(ch, up, state, metrics, dry):
                 m[key] = numbers(ch, e, state)
                 m[key]["取った日"] = now().date().isoformat()
                 row, n_sw = m[key], len(e.get("swaps", []))
+                row["再生（公開ページ）"] = e.get("views_now")
                 ctr, imp = row.get("ctr"), row.get("impressions") or 0
-                if ctr is None or imp < IMP_LINE or ctr >= CTR_LINE:
-                    continue
+                if ctr is not None:
+                    if imp < IMP_LINE or ctr >= CTR_LINE:
+                        continue
+                    why = f"クリック率 {ctr}%（表示 {imp}）"
+                else:  # クリック率は API に無い（2026-10-28 に公式の指標の一覧で確かめた）。同じ時点のほかの回の再生と比べる
+                    if ch not in VIEWS_SWAP or row["再生（公開ページ）"] is None:
+                        continue
+                    base = [x[key]["再生（公開ページ）"] for w, x in metrics.items()
+                            if w != e["work"] and x.get(key, {}).get("再生（公開ページ）") is not None]
+                    if len(base) < 2:
+                        row["差し替えの判定"] = "比べるほかの回が2本に届かない"
+                        continue
+                    mid = statistics.median(base)
+                    row["差し替えの判定"] = f"再生 {row['再生（公開ページ）']}・ほかの回の真ん中 {mid}"
+                    if row["再生（公開ページ）"] >= mid * VIEWS_LINE:
+                        continue
+                    why = row["差し替えの判定"]
                 if key == "h72" and n_sw == 0 or key == "d7" and n_sw < 2:
                     m[key]["差し替え"] = swap(ch, e, n_sw + 1, dry)
-                    print(f"  {e['work']}：クリック率 {ctr}%（表示 {imp}）→ {m[key]['差し替え']}")
+                    print(f"  {e['work']}：{why} → {m[key]['差し替え']}")
 
 
 def type_hold(ch, metrics):
