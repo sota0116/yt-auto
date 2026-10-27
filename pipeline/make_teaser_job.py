@@ -203,10 +203,13 @@ def title(sc):
 def description(work, ch, sc, rec, long_id):
     fx = json.load(open(os.path.join(work, "facts.json"), encoding="utf-8"))
     prof = json.load(open(os.path.join(ROOT, "channels", ch, "profile.json"), encoding="utf-8"))
-    tok = fx.get("特典") if isinstance(fx.get("特典"), str) else TOKUTEN
-    src = "\n".join(f"出典：{s['名前']}（{s['公表日']} 公表）\n{s['URL']}" for s in fx.get("出典", []) if isinstance(s, dict) and s.get("名前"))
+    # LINE の特典の段落は、長尺の説明文の1段落目をそのまま使う（型D は特典が2つセットなど、型で違うため）
+    first = (sc.get("desc") or "").split("\n\n")[0]
+    line = first.replace("{LINE_URL}", prof["line_url"]) if "LINEで無料で受け取れます" in first and "{LINE_URL}" in first \
+        else f"▼{TOKUTEN}を、LINEで無料で受け取れます\n{prof['line_url']}"
+    src ="\n".join(f"出典：{s['名前']}（{s['公表日']} 公表）\n{s['URL']}" for s in fx.get("出典", []) if isinstance(s, dict) and s.get("名前"))
     note = "\n".join(x for x in (fx.get("e_stat_note"), fx.get("加工")) if isinstance(x, str))
-    d = (f"本編はこちら\nhttps://youtu.be/{long_id}\n\n▼{tok}を、LINEで無料で受け取れます\n{prof['line_url']}\n\n"
+    d = (f"本編はこちら\nhttps://youtu.be/{long_id}\n\n{line}\n\n"
          f"{src}\n{note}\n\n{HOW}\n{rec.get('credit', '')}").replace("\n\n\n", "\n\n").strip()
     if "PR" in d:
         sys.exit("【止まりました】説明文に PR の文字があります（手順書 §10）")
