@@ -29,10 +29,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-      - name: 道具を入れる
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra >/dev/null
-          pip install -q -r requirements.txt
+      - name: 道具を入れる（サムネは手元で作るので日本語フォントは入れない。apt-get update で30分止まった。2026-10-27）
+        run: pip install -q -r requirements.txt
       - name: 作業フォルダを読む
         id: restore
         uses: actions/cache/restore@v4
