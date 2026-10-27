@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/002_hitori_yasumu",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/003_yonaka_mezame",
  "done": [
   "pick",
   "write",
@@ -8,9 +8,9 @@
   "reading",
   "images"
  ],
- "started": "2026-10-27T22:37:15+09:00",
- "tries": 1,
- "code": "0e71a0bbe418",
+ "started": "2026-10-28T06:12:00+09:00",
+ "tries": 0,
+ "code": "23661cf1058e",
  "stage": "motion",
- "updated": "2026-10-28T02:11:22+09:00"
+ "updated": "2026-10-28T07:13:42+09:00"
 }
