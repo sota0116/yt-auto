@@ -243,7 +243,8 @@ def schedule_tomorrow(ch, up, dry):
     at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
     if dry:
         return f"（--dry）{e['work']} を {at.isoformat()} に予約する"
-    st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+    st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+              "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
     api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
     e["publish_at"] = at.isoformat()
     return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました"
@@ -269,7 +270,8 @@ def schedule_teasers(ch, up, dry):
         if dry:
             out.append(f"（--dry）{w} の予告を {at.strftime('%m/%d %H:%M')} に予約する")
             continue
-        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+              "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
         try:
             api(ch, "PUT", f"{API}/videos?part=status", {"id": t["video_id"], "status": st}, timeout=60)
         except urllib.error.HTTPError as err:  # 予告が予約できなくても、本編の見張りは止めない

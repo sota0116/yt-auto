@@ -36,7 +36,8 @@ def schedule(ch, shorts, longs, dry):
         if dry:
             out.append(f"（--dry）{s['work']} のショートを {at:%m/%d %H:%M} に予約する")
             continue
-        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+              "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
         api(ch, "PUT", f"{API}/videos?part=status", {"id": s["video_id"], "status": st}, timeout=60)
         s["publish_at"] = at.isoformat()
         out.append(f"{s['work']} のショートを {at:%m/%d %H:%M} に予約しました")
