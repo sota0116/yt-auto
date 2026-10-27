@@ -98,5 +98,9 @@
  },
  "_shorts": "ショート（手順書 §12・pipeline/run_shorts.py・.github/workflows/shorts.yml）。1日の本数と、翌日の公開の予約の時刻（日本時間）。auto_publish は 2026-10-27 本人「PDCAで日々いい感じに改善してくれれば見ないから自動でいいよ」で true",
  "line_url": "https://lin.ee/wQwnVsE",
- "_line_url": "LINE 公式アカウント（仕事）。UTAGE の流入経路を作るまでは全部の動画でこの1本（登録者100人か1万回の動画が出たら UTAGE に替える）"
+ "_line_url": "LINE 公式アカウント（仕事）。UTAGE の流入経路を作るまでは全部の動画でこの1本（登録者100人か1万回の動画が出たら UTAGE に替える）",
+ "tools": {
+  "teaser": "make_teaser_job.py"
+ },
+ "_tools": "毎日の実行（run_daily.py）の段の道具。ここに書いた段だけ替える（書いていない段は標準の道具）。teaser＝長尺の予告ショート（2026-10-28。長尺の冒頭を縦の画面に収めて、長尺の公開の2時間30分後に出す）"
 }

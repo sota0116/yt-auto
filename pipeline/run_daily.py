@@ -269,6 +269,9 @@ def make_one(ch, st, upload):
             args[2:2] = ["--bg", s["thumb_bg"]]
         run(work, "thumb", args, ch)
     step("thumb", thumb)
+    # 長尺の予告ショート（profile.json の tools の teaser。仕事ch 2026-10-28）。long.mp4 と _build はアップの後に消すので、ここで作る
+    if tool(ch, "teaser", None):
+        step("teaser", lambda: short("teaser", [tool(ch, "teaser", None), "make", work]))
 
     def short(name, args):  # ショート（心理学ch。2026-10-27）。作れなくても本編は止めない（その回はショート無しで先へ進む。理由は _run.log）
         try:
@@ -285,10 +288,12 @@ def make_one(ch, st, upload):
     step("upload", lambda: run(work, "upload", ["upload_job.py", work, "--channel", ch, "--privacy", "private"], ch))
     if tool(ch, "short_upload", None) and os.path.exists(os.path.join(work, "short", "short.mp4")):
         step("short_upload", lambda: short("short_upload", [tool(ch, "short_upload", None), work]))
+    if tool(ch, "teaser", None) and os.path.exists(os.path.join(work, "teaser", "teaser.mp4")):  # 非公開で上げる。公開の予約は見張り
+        step("teaser_upload", lambda: short("teaser_upload", [tool(ch, "teaser", None), "upload", work, "--ch", ch, "--go"]))
     step("record", lambda: record(ch, work))
     if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
         import shutil
-        for d in ("images", "voice", "_build", "short"):
+        for d in ("images", "voice", "_build", "short", "teaser"):
             shutil.rmtree(os.path.join(work, d), ignore_errors=True)
         for x in ("long.mp4",):
             if os.path.exists(os.path.join(work, x)):

@@ -16,6 +16,7 @@
 # ・在庫・公開の見張り：在庫が0本、26時間公開がない、明後日の公開予約がない（審査前。月曜はまだ無ければ Issue）
 #   審査の後（STOCK_PHASE=post）は、明日の公開予約が無ければ在庫から1本を PUBLISH_TIME（無ければ 19:00）に予約する
 #   （profile.json の publish_every_days が2以上のチャンネルは、前の公開からその日数があく日だけ。仕事chは 2026-10-27 から1日おき）
+# ・予告ショート（history\<ch>\teasers.json。make_teaser_job.py が非公開で上げる）：長尺の公開の TEASER_AFTER 分後に公開を予約する（2026-10-28）
 # ・見張り役どうしの見張り：毎日の実行が26時間ない、週報が8日ない → Issue。最後に heartbeat.json の watch を書き、HC_WATCH に合図
 # ・--dry：YouTube に書かない（コメント・差し替え・予約をしない）。読むのと記録だけ
 import argparse, datetime, json, os, re, statistics, sys, traceback, urllib.error, urllib.parse
@@ -28,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
 VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
+TEASER_AFTER = 150  # 長尺の公開から何分後に予告を出すか（19:00 の長尺なら 21:30。ショートの 20:10 から1時間20分あける）
 WATCH_ONLY = {"spi"}  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した。
 # spi（千年こよみ）は 2026-10-28 に見張りへ入れた（本人の指示）。手で作って上げるので、在庫0本・26時間公開なしの Issue と明日の予約はしない
 
@@ -247,6 +249,40 @@ def schedule_tomorrow(ch, up, dry):
     return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました"
 
 
+def schedule_teasers(ch, up, dry):
+    """予告の公開を、長尺の公開（予約を含む）の TEASER_AFTER 分後に予約する。
+    その時刻がもう過ぎた（30分を切った）時は、次の日の同じ時刻にする。予告どうしは同じ日に重ねない"""
+    p = hpath(ch, "teasers.json")
+    tz = jload(p, {})
+    by = {e.get("video_id"): e for e in up if not e.get("missing")}
+    used = {ts(t["publish_at"]).date() for t in tz.values() if t.get("publish_at")}
+    out = []
+    for w, t in tz.items():
+        e = by.get(t.get("long_id"))
+        base = e and (ts(e.get("publish_at")) or ts(e.get("published_at")))
+        if t.get("publish_at") or not base:
+            continue
+        at = (base + datetime.timedelta(minutes=TEASER_AFTER)).replace(second=0, microsecond=0)
+        while at < now() + datetime.timedelta(minutes=30) or at.date() in used:
+            at += datetime.timedelta(days=1)
+        used.add(at.date())
+        if dry:
+            out.append(f"（--dry）{w} の予告を {at.strftime('%m/%d %H:%M')} に予約する")
+            continue
+        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+        try:
+            api(ch, "PUT", f"{API}/videos?part=status", {"id": t["video_id"], "status": st}, timeout=60)
+        except urllib.error.HTTPError as err:  # 予告が予約できなくても、本編の見張りは止めない
+            t["予約の失敗"] = f"{err.code} {now().isoformat(timespec='seconds')}"
+            out.append(f"{w} の予告を予約できませんでした（{err.code}）")
+            continue
+        t["publish_at"] = at.isoformat()
+        out.append(f"{w} の予告を {at.strftime('%m/%d %H:%M')} に予約しました")
+    if tz and not dry:
+        jsave(p, tz)
+    return out or None
+
+
 def watch_channel(ch, dry):
     up_p, st_p, me_p = hpath(ch, "uploaded.json"), hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = jload(up_p, []), jload(st_p, {}), jload(me_p, {})
@@ -266,6 +302,7 @@ def watch_channel(ch, dry):
         state["type_hold"] = type_hold(ch, metrics)
         if prof(ch, "stock_phase", "STOCK_PHASE", "pre") == "post" and ch not in WATCH_ONLY:
             state["予約"] = schedule_tomorrow(ch, up, dry)
+            state["予告の予約"] = schedule_teasers(ch, up, dry)
     finally:  # 途中で落ちても、読めた分は残す
         jsave(up_p, up)
         jsave(me_p, metrics)
