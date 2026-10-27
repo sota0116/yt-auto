@@ -30,3 +30,6 @@ data/raw/gyoji/
 data/raw/naoj/
 # ・競合リサーチのサムネと Claude の記録（よその動画のサムネなので公開しない。research.py が毎日作り直す）
 _research/
+
+# ショートの作業フォルダ（動画・声。2026-10-27）
+channels/*/shorts/

@@ -1,0 +1,91 @@
+# ショートの毎日（手順書 §12。2026-10-27 から仕事ch）：数字を取って学ぶ（PDCA）→ 2本作る → 翌日 12:10・20:10 に予約
+# ・枠は shorts-job（毎日の長尺の制作・見張りとぶつからない）。声は VOICEVOX をサービスのコンテナで動かす（0円）
+# ・書く作業（claude -p）には Claude のトークンだけが渡る（write_short.py が子のプロセスから他の鍵を消す）
+# ・作業フォルダ（channels/job/shorts）は引き継がない（1日分をその場で作って上げる）。記録（history/job/shorts*.json）は commit する
+# ・PAUSED が 1 の間は作らない（数字を取るのは続ける）
+name: shorts
+on:
+  schedule:
+    - cron: "47 20 * * *"   # 05:47 JST
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "作る本数（空なら profile.json の per_day）"
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: shorts-job
+  cancel-in-progress: false
+
+jobs:
+  shorts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-0.25.2
+        ports:
+          - 50021:50021
+    env:
+      TZ: Asia/Tokyo
+      PAUSED: ${{ vars.PAUSED }}
+      VOICEVOX_URL: http://127.0.0.1:50021
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 道具を入れる（版を固定）
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-cjk-extra
+          pip install -q -r requirements.txt
+          npm install -g @anthropic-ai/claude-code@2.1.296
+      - name: 動画スキルを置く（共通の部品 common.py を使う。Secrets から戻す）
+        env:
+          VENDOR_SKILL_B64: ${{ secrets.VENDOR_SKILL_B64 }}
+        run: |
+          mkdir -p vendor/youtube-video-maker
+          printf '%s' "$VENDOR_SKILL_B64" | base64 -d | tar -xz -C vendor/youtube-video-maker
+          test -f vendor/youtube-video-maker/scripts/common.py
+      - name: 鍵を置く（中身は画面に出さない）
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN_JOB }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN" > "$YT_SECRETS_DIR/token_job.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: 数字を取って学ぶ（PDCA）
+        run: python -X utf8 pipeline/short_learn.py
+      - name: 作って予約する
+        if: vars.PAUSED != '1'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: python -X utf8 pipeline/run_shorts.py ${{ inputs.n && format('--n {0}', inputs.n) || '' }}
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always()
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history/job/shorts*.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "記録：ショート $(date +%F_%H%M)"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
+      - name: 止まったら Issue を出す
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -X utf8 -c "import sys; sys.path.insert(0, 'pipeline'); from notify import issue; issue('【止まりました】job：ショートの毎日', 'Actions の shorts の記録を見る')"
+      - name: 鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"
