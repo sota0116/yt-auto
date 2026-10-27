@@ -10,6 +10,9 @@
 # ・登場人物（2026-10-25）：カットに "chars": ["kenji"] があれば、その人の設定画を添付して「同じ人」として描かせる（顔・髪・服を全部の回でそろえる）。
 #   人物は channels\<ch>\characters\characters.json（チャンネルで決まった人）と、script.json の "characters"（その回だけの主役。{"id": {"name", "desc_en"}}）。
 #   設定画が無ければ先に作る（チャンネルの人は characters\ に、その回だけの人は images\_chars\ に置く）
+# ・チャンネルの絵の決まり（2026-10-27 心理学chから）：profile.json に image_rules_en があれば、カットごとに1文足す。
+#   主役（chars）が出る絵は with_chars、"nobody": true か場面に「人物は描かない」の絵は nobody、それ以外は without_chars。nobody 以外は always も足す。
+#   script.json に avoid（描かない物）があれば、それも英語にして足す
 import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
@@ -47,15 +50,18 @@ def scenes_en(work, s, ids):
              "mugs are 'plain mugs', signs and bus destination boards are 'plain panels'. Remove notes in parentheses that say text is unreadable "
              "(they are already handled). Do not add brands.\n"
              + json.dumps({c["id"]: c["image"] for c in need}, ensure_ascii=False)
-             + "\nAlso translate this art style into English: " + s["style"])
+             + "\nAlso translate this art style into English: " + s["style"]
+             + ("\nAlso translate this list of things NOT to draw into English, as 'avoid': " + s["avoid"] if s.get("avoid") else ""))
         sch = {"type": "object", "properties": {
             "scenes": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "string"}, "en": {"type": "string"}},
                                                   "required": ["id", "en"]}},
-            "style": {"type": "string"}}, "required": ["scenes", "style"]}
+            "style": {"type": "string"}, "avoid": {"type": "string"}}, "required": ["scenes", "style"]}
         t, _ = gemini.ask(q, schema=sch)
         r = json.loads(t)
         have.update({x["id"]: x["en"] for x in r["scenes"]})
         have["_style"] = r["style"]
+        if r.get("avoid"):
+            have["_avoid"] = r["avoid"]
         json.dump(have, open(p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return have
 
@@ -120,7 +126,21 @@ def make_sheets(sk, chars, need, style, par):
     return [k for k in need if not os.path.exists(chars[k]["sheet"])]
 
 
-def prompt(en, cut, has_ref, extra="", chars=()):
+def channel_rules(work):
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    return (json.load(open(p, encoding="utf-8")).get("image_rules_en") if os.path.exists(p) else None) or {}
+
+
+def rule_for(rules, cut):
+    """チャンネルの絵の決まりのうち、このカットに当てはまる文"""
+    if not rules:
+        return ""
+    if cut.get("nobody") or "人物は描かない" in cut.get("image", ""):
+        return rules.get("nobody", "")
+    return " ".join(x for x in (rules.get("with_chars" if cut.get("chars") else "without_chars", ""), rules.get("always", "")) if x)
+
+
+def prompt(en, cut, has_ref, extra="", chars=(), rules=None):
     ref = ("The attached image is a STYLE reference only: match its line quality, color palette and film grain. "
            "Do NOT copy its composition, objects or people.\n") if has_ref else ""
     if chars:  # 添付の順：設定画（人物の順）→ 画風の見本
@@ -132,6 +152,8 @@ def prompt(en, cut, has_ref, extra="", chars=()):
     return (f"Generate exactly ONE text-free illustration, landscape 16:9.\n{ref}"
             f"Art style: {en['_style']}\n"
             f"Scene: {en[cut['id']]}\n"
+            f"{(rule_for(rules, cut) + chr(10)) if rules else ''}"
+            f"{('Avoid: ' + en['_avoid'] + chr(10)) if en.get('_avoid') else ''}"
             f"{('Extra direction: ' + extra + chr(10)) if extra else ''}"
             f"TEXT-FREE: there are no letters, numbers or symbols anywhere in the picture. Every sheet of paper, notebook, "
             f"book spine, folder, mug, screen, sign and calendar is plain and unmarked. No logos or brand names on any object "
@@ -189,6 +211,7 @@ def main():
         sys.exit("【止まりました】設定画ができていない人物がいます（もう一度動かすと作り直す）")
     sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
     attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
+    rules = channel_rules(a.work)
     print(f"Lovart（無料モード・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
     while (queue or waiting) and time.time() < t_end:
@@ -196,7 +219,7 @@ def main():
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
-                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])]),
+                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])], rules),
                               PROJECT, attachments=attach(i) or None, prefer_models=MODEL,
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:

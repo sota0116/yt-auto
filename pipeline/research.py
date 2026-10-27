@@ -8,6 +8,8 @@
 # ・検索の上位に3日出たチャンネルは、次の日から見るチャンネルに足す（history\<ch>\competitors\auto_channels.json）
 # ・まとめは Claude（claude -p）。鍵は渡さない（write_script.py と同じ分け方）。書くのは history\<ch>\competitors\競合メモ.md と、その日付の写し
 #   台本の書き手（write_script.py）と週報（weekly.py）がこのメモを読む。借りるのは題材の傾向と型だけ。文・絵・サムネ・図は写さない
+# ・心理学ch（psy。2026-10-27）は、題材の決まりを心理学の4つの area に替え、ネタの候補を ネタ候補.json にも書かせる。
+#   ネタ帳の使っていない行が15行を切ったら、候補から1日5行まで channels\psy\ネタ帳.json に足す（ネタ帳が尽きて毎日の制作が止まらないように）
 # ・--no-claude：集めるだけ（まとめない）
 import argparse, datetime, json, os, re, shutil, statistics, subprocess, sys, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -18,6 +20,8 @@ from write_script import SECRET_ENV, doc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MIN_SEC, MAX_DAYS, HOT_X, HOT_N, THUMB_N = 480, 30, 2.0, 30, 12
+PSY_AREAS = ("人づきあい", "ひとりの時間", "眠りと夜", "幸せの心理")
+NETA_LOW, NETA_ADD = 15, 5  # 心理学ch：ネタ帳の使っていない行がこれを切ったら、1日にこの行数まで足す
 
 
 def get(ch, path, **q):
@@ -173,6 +177,20 @@ def prompt(ch, path, imgs, memo):
     rel = lambda p: os.path.relpath(p, ROOT).replace("\\", "/")
     own = [rel(os.path.join(ROOT, "history", ch, n)) for n in ("uploaded.json", "metrics.json", "produced.json")
            if os.path.exists(os.path.join(ROOT, "history", ch, n))]
+    if ch == "psy":
+        ex = "例「年を重ねて友だちが減る」「夜中の同じ時間に目が覚める」"
+        neta = f"""手順書 §1 の area（{'・'.join(PSY_AREAS)}）のどれかに当てはまり、査読のある心理学の研究で説明できそうな題だけ。
+   area と、手がかりになりそうな研究（著者・年。推測なら「推測」と書く）。うちのネタ帳 channels/psy/ネタ帳.json と、うちの記録にある題と同じ物は出さない。
+   同じ候補を {rel(os.path.join(os.path.dirname(memo), 'ネタ候補.json'))} にも書く（全部を書き直す。JSON の配列。1つの形はネタ帳と同じ：
+   {{"id": "p_英小文字と_", "area": "{PSY_AREAS[0]}", "title": "毎日の場面＋わけ（30字まで）", "scene": "60代の女性の毎日の1場面（1文）",
+   "angle": "研究で言える切り口（1文）", "hint": "研究の手がかり", "competitor": "根拠の動画 id と再生"}}）"""
+        off = """- 心理学と関係のない回（占い・スピ・政治・海外の反応・流行りの物など）は、2 の題材から外し、3〜6 の型の参考だけにする
+- 心の病気の診断・治し方・薬・病院、発達の見分け方、効果の約束に寄る題材は、伸びていても「うちは使わない」と書く（手順書 §1）"""
+    else:
+        ex = "例「45歳以上のリストラ」「〇〇を辞める人が多い理由」"
+        neta = "手順書の型（A〜D）に当てはまり、公的な統計で確かめられる題だけ。型と、確かめに使えそうな統計の名前（推測なら「推測」と書く）"
+        off = """- うちの題材（仕事・年収・職場・働き方）に関係のない回（政治・海外の反応・流行りの物など）は、2 の題材から外し、3〜6 の型の参考だけにする
+- 男女の対立・特定の国や人への攻撃・炎上をねらう題材は、伸びていても「うちは使わない」と書く"""
     return f"""あなたは YouTube チャンネルの競合リサーチの担当です。今日集めた競合の動画から、うちのタイトル・サムネ・概要欄・台本を良くする材料を「競合メモ」にまとめてください。
 読むのは、このチャンネルの台本の書き手（AI）と週報です。日本語で、短い文で書きます。
 
@@ -185,20 +203,19 @@ def prompt(ch, path, imgs, memo):
 
 ## 書く物：{rel(memo)}（全部を書き直す。150行まで。見出しは ## で、この順）
 1. 今日の母数：見たチャンネルの数・動画の数・伸びている回の数（{rel(path)} の 母数 の値）と、日付
-2. 伸びている題材：題材を一般化した言葉で（例「45歳以上のリストラ」「〇〇を辞める人が多い理由」）。1行に1つ、根拠の動画 id と、再生・1日あたりの再生・ふだんの何倍か。5つまで
+2. 伸びている題材：題材を一般化した言葉で（{ex}）。1行に1つ、根拠の動画 id と、再生・1日あたりの再生・ふだんの何倍か。5つまで
 3. タイトルの部品：効いている部品を型にして書く（例「数字を頭に」「〇〇した結果…で結末を伏せる」「なぜ〇〇なのか」）。競合のタイトルの文はこのメモに写さない（動画 id で指す）。うちの手順書 §6 の決まりとぶつかる部品は「使えない」と書く
 4. サムネの傾向：サムネの画像を見て、構図・文字の数・色・人物の有無・数字の有無。何枚中何枚かで書く
 5. 概要欄の傾向：頭の文の型、チャプターの数と名前の付け方、リンクの置き方（desc_head と chapters から。何本中何本か）
 6. 台本と構成の傾向：長さ（分）、チャプターの並び方（つかみ→…→結末）、章の数。何本中何本か
 7. うちの次の回で試すこと（3つまで）：タイトル・サムネの文字・概要欄・台本のどれを、手順書の決まりの中でどう変えるか。1つずつ、根拠（動画 id と数字）と、手順書のどの決まりの中でやるかを書く。前のメモの提案で、うちの回が作られて数字が出た物は「結果」を1行足す
-8. ネタの候補（5つまで）：手順書の型（A〜D）に当てはまり、公的な統計で確かめられる題だけ。型と、確かめに使えそうな統計の名前（推測なら「推測」と書く）
+8. ネタの候補（5つまで）：{neta}
 9. 手順書を変える案（あれば。自動では変えない。週報で持ち主が決める）
 
 ## 決まり
 - 借りるのは題材の傾向と型だけ。競合の文・言い回し・絵・サムネ・図は写さない。実在の会社の名前は題材の例に使わない
 - 数字は {rel(path)} の値だけ。割り算をした時は「計算」と書く。母数（何本中何本）を必ず添える。1本だけの傾向は「1本だけ」と書く
-- うちの題材（仕事・年収・職場・働き方）に関係のない回（政治・海外の反応・流行りの物など）は、2 の題材から外し、3〜6 の型の参考だけにする
-- 男女の対立・特定の国や人への攻撃・炎上をねらう題材は、伸びていても「うちは使わない」と書く
+{off}
 - 結果を約束しない。「伸びる」と言い切らず「〇本で伸びていた」と書く
 - 水平線（--- など）は使わない。「—」「→」の多用もしない
 - 最後に、書いた物と同じ全文を {rel(memo[:-3] + '_' + now().date().isoformat() + '.md')} にも保存して終える
@@ -207,7 +224,7 @@ def prompt(ch, path, imgs, memo):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("ch", choices=["job", "spi"])
+    a.add_argument("ch", choices=["job", "spi", "psy"])
     a.add_argument("--no-claude", action="store_true")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
@@ -250,6 +267,31 @@ def main():
         print(f"競合メモを書きました（Claude：{out.get('num_turns')}手・{out.get('duration_ms', 0) / 60000:.1f}分）")
     except json.JSONDecodeError:
         print("競合メモを書きました")
+    if a.ch == "psy":
+        add_neta(a.ch, d)
+
+
+def add_neta(ch, d):
+    """心理学ch：ネタ帳の使っていない行が NETA_LOW を切ったら、競合メモのネタ候補から NETA_ADD 行まで足す（形の合わない候補は捨てる）"""
+    bp = os.path.join(ROOT, "channels", ch, "ネタ帳.json")
+    board = jload(bp, [])
+    used = {p.get("neta_id") for p in jload(os.path.join(ROOT, "history", ch, "produced.json"), [])}
+    free = sum(1 for r in board if r["id"] not in used)
+    if free >= NETA_LOW:
+        print(f"ネタ帳の残り {free}行（{NETA_LOW}行以上あるので足さない）")
+        return
+    ids, titles = {r["id"] for r in board}, {r["title"] for r in board}
+    new = []
+    for c in jload(os.path.join(d, "ネタ候補.json"), []):
+        ok = isinstance(c, dict) and re.fullmatch(r"p_[a-z0-9_]{3,40}", str(c.get("id"))) and c.get("area") in PSY_AREAS \
+            and all(isinstance(c.get(k), str) and c[k].strip() for k in ("title", "scene", "angle", "hint"))
+        if ok and c["id"] not in ids and c["title"] not in titles and len(new) < NETA_ADD:
+            new.append({k: c.get(k, "") for k in ("id", "area", "title", "scene", "angle", "hint", "competitor")}
+                       | {"added": now().date().isoformat(), "from": "競合リサーチ"})
+            ids.add(c["id"]); titles.add(c["title"])
+    if new:
+        jsave(bp, board + new)
+    print(f"ネタ帳の残り {free}行 → 競合リサーチの候補から {len(new)}行足しました：{[x['title'] for x in new]}")
 
 
 if __name__ == "__main__":

@@ -17,6 +17,9 @@ on:
       count:
         description: "auto か 本数"
         default: "auto"
+      ch:
+        description: "all か チャンネル（job・psy）。手で1つだけ回す時"
+        default: "all"
 
 permissions:
   contents: write
@@ -27,7 +30,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ch: [job]   # スピ（spi）は手順書と特典ができたら足す
+        # 心理学（psy）は 2026-10-27 から毎日公開。スピ（spi）は手順書と特典ができたら足す
+        ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy"]') }}
     concurrency:
       group: daily-${{ matrix.ch }}
       cancel-in-progress: false
@@ -59,6 +63,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-cjk-extra
+          sudo apt-get install -y -qq fonts-morisawa-bizud-gothic || echo "BIZ UDゴシックが入らないので Noto で作る"   # 心理学ch の研究カード・章タイトル（001 と同じ字）
           pip install -q -r requirements.txt
           npm install -g @anthropic-ai/claude-code@2.1.296
       - name: 動画スキルを置く（生徒さん向けの配布物なので公開リポジトリには入れず、Secrets から戻す）
@@ -77,7 +82,7 @@ jobs:
       - name: 鍵を置く（中身は画面に出さない）
         env:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_TOKEN: ${{ matrix.ch == 'job' && secrets.YT_TOKEN_JOB || secrets.YT_TOKEN_SPI }}
+          YT_TOKEN: ${{ matrix.ch == 'job' && secrets.YT_TOKEN_JOB || matrix.ch == 'psy' && secrets.YT_TOKEN_PSY || secrets.YT_TOKEN_SPI }}
         run: |
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
@@ -113,6 +118,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           HC_DAILY_JOB: ${{ secrets.HC_PING_DAILY_JOB }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
           HC_DAILY_SPI: ${{ secrets.HC_PING_DAILY_SPI }}
+          HC_DAILY_PSY: ${{ secrets.HC_PING_DAILY_PSY }}   # 無ければ送らない
         run: python -X utf8 pipeline/notify.py daily ${{ matrix.ch }} --slot "$SLOT"
       - name: 鍵を消す
         if: always()

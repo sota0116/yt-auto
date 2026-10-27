@@ -19,13 +19,13 @@ concurrency:
 jobs:
   weekly:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 60
     env:
       TZ: Asia/Tokyo
       MONTHLY_CAP_YEN: ${{ vars.MONTHLY_CAP_YEN }}
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       CLAUDE_TOKEN_ISSUED: ${{ vars.CLAUDE_TOKEN_ISSUED }}
-      CHANNELS: job   # スピ（spi）は毎日の実行に足す時に、ここにも足す（例：job spi）
+      CHANNELS: job psy   # スピ（spi）は毎日の実行に足す時に、ここにも足す（例：job spi psy）。psy は history/psy/学び.md も書く（毎日の台本の書き手が読む）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

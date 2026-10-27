@@ -5,6 +5,7 @@
 # ・「AIで作った映像・声」の申告（containsSyntheticMedia）はいつもオン
 # ・二重に上げない：history\<ch>\uploaded.json に同じ作業フォルダがある時と、チャンネルに同じタイトルの動画がある時は上げない
 # ・上げた結果は 作業フォルダ\uploaded.json と history\<ch>\uploaded.json
+# ・公開後のコメント：profile.json に comment_text があればそれ（{LINE_URL} を置き換え。心理学ch 2026-10-27）、無ければ説明文の1段落目
 # ・--dry：上げずに、説明文とタイトルと確かめの結果だけ出す
 import argparse, datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -56,7 +57,7 @@ def channel_titles(ch):
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
-    a.add_argument("--channel", required=True, choices=["job", "spi"])
+    a.add_argument("--channel", required=True, choices=["job", "spi", "psy"])
     a.add_argument("--privacy", default="private", choices=["private", "unlisted"])
     a.add_argument("--video", default="long.mp4")
     a.add_argument("--thumb", default="thumb_a.jpg")
@@ -101,11 +102,13 @@ def main():
     except urllib.error.HTTPError as e:
         thumb_ok = False
         print("【メモ】サムネを付けられませんでした（電話番号の確認が済んでいないと付けられない）：", e.code)
+    prof = json.load(open(os.path.join(ROOT, "channels", ch, "profile.json"), encoding="utf-8"))
+    comment = (prof.get("comment_text") or "").replace("{LINE_URL}", prof.get("line_url", "")) or desc.split("\n\n")[0].strip()
     rec = {"work": name, "video_id": vid, "title": title, "privacy": a.privacy, "thumb": a.thumb, "thumb_set": thumb_ok,
            "uploaded_at": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat(timespec="seconds"),
            "requested_privacy": a.privacy, "privacy_after_upload": d["status"].get("privacyStatus"),
            # 見張り（watch.py）が使う：公開後のコメント（説明文の1段落目＝LINE の案内とリンク）と、差し替え用のタイトル案
-           "type": s.get("type"), "titles": s.get("titles", [title]), "comment": desc.split("\n\n")[0].strip()}
+           "type": s.get("type"), "titles": s.get("titles", [title]), "comment": comment}
     json.dump(rec, open(os.path.join(work, "uploaded.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     os.makedirs(os.path.dirname(hp), exist_ok=True)
     json.dump(hist + [rec], open(hp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

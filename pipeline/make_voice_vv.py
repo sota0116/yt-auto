@@ -53,7 +53,7 @@ def secs(data):
 def make(work, ch, force, only):
     p = profile(ch)
     vv = p["voicevox"]
-    sids = {w: speaker_id(vv[w]["name"], vv[w]["style"]) for w in ("narrator", "listener")}
+    sids = {w: speaker_id(vv[w]["name"], vv[w]["style"]) for w in ("narrator", "listener") if w in vv}
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
     only = set(filter(None, only.split(",")))
     os.makedirs(os.path.join(work, "voice"), exist_ok=True)

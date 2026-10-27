@@ -58,6 +58,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           HC_WATCH: ${{ secrets.HC_PING_WATCH }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
         run: python -X utf8 pipeline/watch.py $CHANNELS
+      - name: ショートを見張る（心理学ch。本編の予約が入ったら次の日の 12:10 に予約・72時間と7日の数字）
+        if: always()
+        run: python -X utf8 pipeline/shorts_watch.py psy
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |

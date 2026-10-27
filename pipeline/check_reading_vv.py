@@ -17,7 +17,8 @@ def main():
     a.add_argument("--ch", default="job")
     a.add_argument("--fix", action="store_true", help="読み違いのカットに tts_text を書いて、声を作り直す")
     a = a.parse_args()
-    p = vv.profile(a.ch)["voicevox"]
+    prof = vv.profile(a.ch)
+    p = prof["voicevox"]
     sid = vv.speaker_id(p["narrator"]["name"], p["narrator"]["style"])
     sf = os.path.join(a.work, "script.json")
     s = json.load(open(sf, encoding="utf-8"))
@@ -35,7 +36,7 @@ def main():
     for i in range(0, len(rows), BATCH):
         part = rows[i:i + BATCH]
         q = ("日本語の読み上げソフトが、台本の文をどう読むか（カタカナ。/ と、 は区切り）を並べました。"
-             "日本の仕事と年収の統計を解説する動画です。読みが間違っている語（数字・単位・年・英字・職業名・地名・固有名詞・同じ字で読みが違う語）だけを挙げてください。"
+             f"{prof.get('topic') or '日本の仕事と年収の統計を解説する動画'}です。読みが間違っている語（数字・単位・年・英字・職業名・地名・固有名詞・同じ字で読みが違う語）だけを挙げてください。"
              "アクセント・区切り・カタカナの書き方の違いは挙げないでください。間違いが無ければ空の配列。"
              "tts_text には、そのカットの文全体を、間違えた語だけひらがなに直して書いてください。\n\n"
              + "\n".join(f"{r['id']}｜文：{r['文']}｜読み：{r['読み']}" for r in part))

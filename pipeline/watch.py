@@ -1,6 +1,7 @@
 # 見張り（設計書 §2「毎日（数字の見張り。12:07 JST）」・§4「見張り役どうしで見張る」・§5⑪）
 #   python -X utf8 pipeline\watch.py job [spi] [psy] [--dry]
-# ・psy（しずくの心理学）は見るだけ：状態と数字を取る。在庫・公開の見張りと明日の予約はしない（毎日の制作に入っていないため。2026-10-26）
+# ・psy（しずくの心理学）は 2026-10-26 は見るだけだった。2026-10-27 から毎日の制作に入れ、在庫・公開の見張りと明日の予約もする
+#   （段階 stock_phase と公開の時刻 publish_time は、チャンネルの profile.json を先に見る）
 # ・上げた動画の今の状態を YouTube から読み、history\<ch>\uploaded.json に書く（published・publish_at・missing）。
 #   retired の付いた回（作り直して差し替えた古い版）は missing と同じ扱い
 #   毎日の実行（run_daily.py）は published の付いていない本数を在庫として数える
@@ -24,7 +25,13 @@ from upload_job import api, API
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
-WATCH_ONLY = {"psy"}  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）
+WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した
+
+
+def prof(ch, key, env, default):
+    """チャンネルの profile.json の値（stock_phase・publish_time）を先に見る。無ければ設定値（STOCK_PHASE・PUBLISH_TIME）"""
+    p = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
+    return p.get(key) or os.environ.get(env) or default
 
 
 def get(ch, url):
@@ -209,7 +216,7 @@ def schedule_tomorrow(ch, up, dry):
         return "在庫が無いので明日の予約を入れられません"
     pool.sort(key=lambda e: (0 if (e.get("type") or "")[:1] in axis or e.get("type") in axis else 1, e.get("uploaded_at", "")))
     e = pool[0]
-    hh, mm = (os.environ.get("PUBLISH_TIME") or "19:00").split(":")
+    hh, mm = prof(ch, "publish_time", "PUBLISH_TIME", "19:00").split(":")
     at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
     if dry:
         return f"（--dry）{e['work']} を {at.isoformat()} に予約する"
@@ -236,7 +243,7 @@ def watch_channel(ch, dry):
                 print(f"  コメントを入れられませんでした（{err.code}）：{e['work']}")
         watch_numbers(ch, up, state, metrics, dry)
         state["type_hold"] = type_hold(ch, metrics)
-        if (os.environ.get("STOCK_PHASE") or "pre") == "post" and ch not in WATCH_ONLY:
+        if prof(ch, "stock_phase", "STOCK_PHASE", "pre") == "post" and ch not in WATCH_ONLY:
             state["予約"] = schedule_tomorrow(ch, up, dry)
     finally:  # 途中で落ちても、読めた分は残す
         jsave(up_p, up)

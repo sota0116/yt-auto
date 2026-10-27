@@ -15,6 +15,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BATCH, MAX_FIX, REUSE_MAX = 6, 2, 0.15
 
 
+def topic(work):
+    """何の動画か。チャンネルの profile.json の topic（無ければ仕事チャンネルの言い方。2026-10-27 心理学chを毎日の制作に入れた時に足した）"""
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    return (json.load(open(p, encoding="utf-8")).get("topic") if os.path.exists(p) else None) or "日本の仕事と年収の統計"
+
+
 def image_cuts(s):
     return [c for c in s["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")]
 
@@ -35,8 +41,8 @@ def judge(work, s, cuts, use):
         "id": S, "合格": {"type": "boolean"}, "問題": {"type": "array", "items": S}, "直す指示": S},
         "required": ["id", "合格", "問題", "直す指示"]}}}, "required": ["判定"]}
     who = lambda c: ("／出る人：" + "・".join(c["chars"])) if c.get("chars") else ""  # 登場人物（手順書 §5）。場面の説明に名前で出てくる
-    listing = "\n".join(f"{i + 1}枚目 id={c['id']}／場面：{c['image']}{who(c)}／この絵の間に流れるセリフ：{c['narration']}" for i, c in enumerate(cuts))
-    q = f"""YouTube の解説動画（日本の仕事と年収の統計）に使う挿絵を点検します。添付の絵は順に {len(cuts)} 枚で、下の一覧と同じ順です。
+    listing = "\n".join(f"{i + 1}枚目 id={c['id']}／場面：{c['image']}{who(c)}／この絵の間に流れるセリフ：{c.get('narration') or '（サムネの背景・語りなし）'}" for i, c in enumerate(cuts))
+    q = f"""YouTube の解説動画（{topic(work)}）に使う挿絵を点検します。添付の絵は順に {len(cuts)} 枚で、下の一覧と同じ順です。
 画風の決まり：{s['style']}
 1枚ずつ、次のどれかに当たれば不合格にしてください。
 1. 場面の説明・セリフと合っていない（場所・時間帯・人数・していること）

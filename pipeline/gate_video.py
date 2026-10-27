@@ -13,6 +13,12 @@ import gemini
 MIN_SEC, LUFS, LUFS_TOL, SIL_SEC, SIL_DB, FRAMES = 480, -15, 2, 3.0, -45, 10
 
 
+def topic(work):
+    """何の動画か。チャンネルの profile.json の topic（無ければ仕事チャンネルの言い方）"""
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    return (json.load(open(p, encoding="utf-8")).get("topic") if os.path.exists(p) else None) or "日本の仕事と年収の統計"
+
+
 def ff(*args):
     return subprocess.run(["ffmpeg", "-hide_banner", "-nostats", *args], capture_output=True, text=True, encoding="utf-8", errors="replace").stderr
 
@@ -54,7 +60,7 @@ def main():
     S = {"type": "string"}
     sch = {"type": "object", "properties": {"判定": {"type": "array", "items": {"type": "object", "properties": {
         "枚目": {"type": "integer"}, "合格": {"type": "boolean"}, "問題": S}, "required": ["枚目", "合格", "問題"]}}}, "required": ["判定"]}
-    q = f"""YouTube に上げる前の解説動画（日本の仕事と年収の統計）から、均等に{FRAMES}枚の画面を切り出しました。添付の順に1枚目〜{FRAMES}枚目です。
+    q = f"""YouTube に上げる前の解説動画（{topic(a.work)}）から、均等に{FRAMES}枚の画面を切り出しました。添付の順に1枚目〜{FRAMES}枚目です。
 1枚ずつ、見る人が気づく次の問題があれば不合格にしてください。
 1. 字幕の帯が、図の数字・文字や大事な所にかぶっている
 2. 文字が画面の端で切れている、文字化けしている（□や記号の羅列）

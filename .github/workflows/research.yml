@@ -1,6 +1,7 @@
 # 競合リサーチ（毎日 01:17 JST。02:07 の毎日の制作の前に、その日の台本が新しい競合メモを読めるように）
 # ・YouTube は読むだけ（1日 約650回分。お金なし）。まとめは Claude（鍵は渡さない。research.py が子のプロセスから消す）
 # ・書くのは history/<ch>/competitors/ だけ（集めた物・競合メモ・その日付の写し）。サムネは _research/ に置き、commit しない
+# ・心理学ch（psy。2026-10-27 から）は、ネタ帳の残りが少ない時に channels/psy/ネタ帳.json にも候補を足す（research.py の add_neta）
 # ・PAUSED の間も動かす（読むだけなので）
 name: research
 on:
@@ -19,10 +20,10 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 75   # 2チャンネル分（Claude のまとめが1つ最大30分）
     env:
       TZ: Asia/Tokyo
-      CHANNELS: job   # スピ（spi）は channels/spi/competitors.json を作ったら足す（例：job spi）
+      CHANNELS: job psy   # スピ（spi）は channels/spi/competitors.json を作ったら足す（例：job spi psy）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -37,12 +38,14 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
           YT_TOKEN_SPI: ${{ secrets.YT_TOKEN_SPI }}
+          YT_TOKEN_PSY: ${{ secrets.YT_TOKEN_PSY }}
         run: |
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
           printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
           [ -n "$YT_TOKEN_JOB" ] && printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
           [ -n "$YT_TOKEN_SPI" ] && printf '%s' "$YT_TOKEN_SPI" > "$YT_SECRETS_DIR/token_spi.json"
+          [ -n "$YT_TOKEN_PSY" ] && printf '%s' "$YT_TOKEN_PSY" > "$YT_SECRETS_DIR/token_psy.json"
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 調べる
         env:
@@ -57,7 +60,7 @@ jobs:
         run: |
           git config user.name "yt-auto"
           git config user.email "yt-auto@users.noreply.github.com"
-          git add history
+          git add history channels/psy/ネタ帳.json
           git diff --cached --quiet && exit 0
           git commit -qm "競合リサーチ：$(date +%F_%H%M)"
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done

@@ -76,6 +76,13 @@ def code_ver():
     return h.hexdigest()[:12]
 
 
+def tool(ch, stage, default):
+    """段の道具。profile.json の tools に書いた段はその道具（null はその段を飛ばす＝None）。書いていない段は仕事チャンネルと同じ道具
+    （2026-10-27 心理学chを毎日の制作に入れた時に足した）"""
+    t = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("tools") or {}
+    return t[stage] if stage in t else default
+
+
 def month_cost(ch):
     return jload(hpath(ch, "cost.json"), {}).get(now().strftime("%Y-%m"), 0.0)
 
@@ -162,6 +169,10 @@ def record(ch, work):
            "neta_id": n.get("id"), "jobs": n.get("jobs") or (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収", []),  # 型D の順位は説の並び（list）
            "made": now().date().isoformat(), **{k: s.get(k) for k in keep}, "chapters": open(chp, encoding="utf-8").read().splitlines() if os.path.exists(chp) else [],
            "video_id": up.get("video_id"), "回した理由": n.get("回した理由")}
+    if isinstance(f.get("studies"), list):  # 心理学ch：使った研究（次の回の書き手が同じ研究を中心にしないように）
+        rec["studies"] = [x.get("cite") for x in f["studies"]]
+    if s.get("short"):  # 心理学ch：ショートを上げられたか（週報が数える）
+        rec["short_video_id"] = jload(os.path.join(work, "short", "uploaded.json"), {}).get("video_id") or "上げられなかった"
     p = hpath(ch, "produced.json")
     h = jload(p, [])
     if not any(x["work"] == rec["work"] for x in h):
@@ -176,7 +187,7 @@ def make_one(ch, st, upload):
     """1本作る。st は status.json の中身（続きから始める時は work と done が入っている）"""
     sp = hpath(ch, "status.json")
     if not st.get("work"):
-        r = run(ROOT, "pick", ["pick_neta.py", ch], ch)
+        r = run(ROOT, "pick", [tool(ch, "pick", "pick_neta.py"), ch], ch)
         work = r.stdout.strip().splitlines()[-1].strip()
         if not os.path.isdir(work):
             raise Stop(f"ネタの段で作業フォルダが分かりません：{work}")
@@ -200,14 +211,15 @@ def make_one(ch, st, upload):
         jsave(sp, st)
 
     def write_and_gate():
+        w_py, g_py = tool(ch, "write", "write_script.py"), tool(ch, "gate_script", "gate_script.py")
         for i in range(3):  # 1回目＋書き直し2回
             if i == 0 and "write" not in st["done"]:
-                run(work, "write", ["write_script.py", work, "--ch", ch], ch, ok=(0, 1))
+                run(work, "write", [w_py, work, "--ch", ch], ch, ok=(0, 1))
                 st["done"].append("write")
                 jsave(sp, st)
             elif i > 0:
-                run(work, "write", ["write_script.py", work, "--ch", ch, "--fix"], ch, ok=(0, 1))
-            r = run(work, "gate_script", ["gate_script.py", work, "--ch", ch], ch, ok=(0, 1))
+                run(work, "write", [w_py, work, "--ch", ch, "--fix"], ch, ok=(0, 1))
+            r = run(work, "gate_script", [g_py, work, "--ch", ch], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
         raise Stop("台本ゲートで3回不合格（書き直し2回でも直らない）。その回は止め、在庫で公開をつなぐ")
@@ -230,7 +242,15 @@ def make_one(ch, st, upload):
         if rest:
             raise Busy(f"絵がまだ途中（残り{len(rest)}枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります")
     step("images", images)
-    step("charts", lambda: run(work, "charts", ["make_charts_job.py", work], ch))
+    def motion():  # 絵の一部を数秒の動画にする（心理学ch。無料の時だけ。終わらない分は3回の実行まで続きを待つ。できなくても止めない）
+        r = run(work, "motion", [tool(ch, "motion", None), work], ch, ok=(0, 3),
+                env={"MOTION_DEADLINE": str(int(time.time() + max(0, left() - 75 * 60)))})
+        if r.returncode == 3:
+            raise Busy("動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります")
+    if tool(ch, "motion", None):
+        step("motion", motion)
+    if tool(ch, "charts", "make_charts_job.py"):
+        step("charts", lambda: run(work, "charts", [tool(ch, "charts", "make_charts_job.py"), work], ch))
 
     def gate_images():
         r = run(work, "gate_images", ["gate_images.py", work, "--fix"], ch, ok=(0, 1, 2))
@@ -239,24 +259,36 @@ def make_one(ch, st, upload):
         if r.returncode == 1:
             raise Stop("絵ゲートの不合格が残りました（images\\_gate.json）")
     step("gate_images", gate_images)
-    step("build", lambda: run(work, "build", ["build_long_job.py", work], ch))
+    step("build", lambda: run(work, "build", [tool(ch, "build", "build_long_job.py"), work], ch))
     step("gate_video", lambda: run(work, "gate_video", ["gate_video.py", work], ch))
 
     def thumb():
         s = jload(os.path.join(work, "script.json"), {})
-        args = ["make_thumb_job.py", work, "--check"]
+        args = [tool(ch, "thumb", "make_thumb_job.py"), work, "--check"]
         if s.get("thumb_bg"):
             args[2:2] = ["--bg", s["thumb_bg"]]
         run(work, "thumb", args, ch)
     step("thumb", thumb)
+
+    def short(name, args):  # ショート（心理学ch。2026-10-27）。作れなくても本編は止めない（その回はショート無しで先へ進む。理由は _run.log）
+        try:
+            run(work, name, args, ch)
+        except Wait:
+            raise
+        except Stop as e:
+            print(f"【メモ】{name} で止まりました（本編は続けます）：{str(e)[:300]}", flush=True)
+    if tool(ch, "short", None):
+        step("short", lambda: short("short", [tool(ch, "short", None), work]))
     if not upload:
         print("（--no-upload なので、アップの手前で止めました）")
         return st
     step("upload", lambda: run(work, "upload", ["upload_job.py", work, "--channel", ch, "--privacy", "private"], ch))
+    if tool(ch, "short_upload", None) and os.path.exists(os.path.join(work, "short", "short.mp4")):
+        step("short_upload", lambda: short("short_upload", [tool(ch, "short_upload", None), work]))
     step("record", lambda: record(ch, work))
     if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
         import shutil
-        for d in ("images", "voice", "_build"):
+        for d in ("images", "voice", "_build", "short"):
             shutil.rmtree(os.path.join(work, d), ignore_errors=True)
         for x in ("long.mp4",):
             if os.path.exists(os.path.join(work, x)):
@@ -266,7 +298,7 @@ def make_one(ch, st, upload):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("ch", choices=["job", "spi"])
+    a.add_argument("ch", choices=["job", "spi", "psy"])
     a.add_argument("--count", default="auto")
     a.add_argument("--no-upload", action="store_true")
     a.add_argument("--slot", default="first", choices=["first", "retry", "late"], help="retry＝08:07・late＝17:37 のやり直し。今日の 02:07 が成功していれば何もしない")
@@ -292,7 +324,9 @@ def main():
             raise Stop("MONTHLY_CAP_YEN（制作費の月の上限）が入っていないので、新しく作りませんでした")
         if cap and month_cost(ch) >= float(cap):
             raise Stop(f"今月の制作費の累計 {month_cost(ch):.0f}円 が上限 {cap}円 に届いたので、新しく作りませんでした")
-        goal, two_at = STOCK_GOAL.get(os.environ.get("STOCK_PHASE") or "pre", STOCK_GOAL["pre"])
+        # 段階はチャンネルの profile.json の stock_phase を先に見る（心理学chは毎日公開＝post。2026-10-27）。無ければ設定値 STOCK_PHASE
+        phase = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("stock_phase") or os.environ.get("STOCK_PHASE") or "pre"
+        goal, two_at = STOCK_GOAL.get(phase, STOCK_GOAL["pre"])
         n_stock = stock(ch)
         res["在庫"] = n_stock
         n = int(a.count) if a.count.isdigit() else (2 if n_stock <= two_at else 1)
