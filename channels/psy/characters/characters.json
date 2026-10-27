@@ -1,0 +1,10 @@
+{
+ "_説明": "しずくの心理学の決まった登場人物（make_images_lovart.py が設定画を添付して同じ見た目で描かせる）。hero.png は character/主役見本_v1.png の写し（2026-10-25 GPT Image 2 で作った主役の見本）",
+ "chars": {
+  "hero": {
+   "name": "しずく（主役）",
+   "desc_en": "the main character, a small cream-colored drop-shaped character with simple dot eyes, a small mouth and a young-grass-green knitted scarf, no clothes, no hair",
+   "sheet": "hero.png"
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "_説明": "しずくの心理学（psy）の固定の設定。毎日の制作（run_daily.py）が読む。2026-10-27 に毎日の制作へ入れた（それまでは手で作って Claude が上げていた）",
+ "channel": "しずくの心理学",
+ "topic": "50〜70代の女性に向けて、人づきあい・ひとりの時間・眠りと夜・幸せの心理を、心理学の研究から解説する動画",
+ "viewer": "50〜70代の女性。夜ひとりの時間に、お茶を飲みながら耳で聞く",
+ "narrator": {
+  "name": "語り手",
+  "role": "名乗らない語り手。落ち着いた読み聞かせの声"
+ },
+ "tts_engine": "voicevox",
+ "voicevox": {
+  "narrator": {
+   "name": "No.7",
+   "style": "読み聞かせ",
+   "speed": 1.0,
+   "pitch": 0.0,
+   "intonation": 1.0
+  },
+  "slow_strong": 1.0,
+  "credit": "音声：VOICEVOX:No.7",
+  "candidates": {
+   "narrator": [
+    [
+     "No.7",
+     "読み聞かせ"
+    ]
+   ]
+  },
+  "_決めた理由": "2026-10-25 本人が3人の聞き比べから No.7 読み聞かせ（speaker 31）を選んだ。声は速さ1.0で作り、組み立てで1.28倍にする（001 v3 と同じ。記録.md 2026-10-26）"
+ },
+ "line_url": "https://utage-system.com/line/open/ntrNEWTbCnh3",
+ "comment_text": "LINE登録で「心のクセ診断」を無料で受けられます🎁\n{LINE_URL}",
+ "stock_phase": "post",
+ "_stock_phase": "このチャンネルは毎日公開する（2026-10-27 本人「しずくもスキル使って毎日更新して」）。在庫が1本以下なら2本作り、見張りが毎日、明日の公開を予約する",
+ "publish_time": "19:00",
+ "build": {
+  "tempo": 1.28,
+  "gap": 0.25,
+  "lufs": -14,
+  "height": 1440,
+  "font_size": 76,
+  "maxlen": 22,
+  "bgm": "channels/psy/assets/bgm/psy_bgm_01_seed21.m4a",
+  "bgm_volume": 0.035,
+  "chapter_title": true,
+  "chime": true,
+  "hero": "channels/psy/characters/hero.png",
+  "_決めた理由": "001 v3（long_full_v3.py・extras_v3.json）と同じ。競合8本と測り比べて決めた値（記録.md 2026-10-26・PDCA_運用表_v1）"
+ },
+ "image_rules_en": {
+  "with_chars": "Exactly ONE cream-colored drop-shaped character with a young-grass-green scarf (the main character) appears in this picture. Any other characters are drop-shaped too but colored pink, light blue, brown or pale purple, never cream, and wear no scarf. Do not add characters the scene does not mention.",
+  "without_chars": "The cream-colored drop-shaped character with a green scarf does NOT appear in this picture. If the scene mentions characters, draw them as simple drop-shaped characters colored pink, light blue, brown or pale purple (never cream) with no scarf. Do not add characters the scene does not mention.",
+  "nobody": "Draw no people and no characters at all (no drop-shaped characters either). Books and papers carry no writing.",
+  "always": "All characters are simple drop-shaped figures with dot eyes and a small mouth: no clothes, no hair, smooth one-color bodies (only the main character's green scarf is an exception). Show age only with small props such as reading glasses, a cane or a bag. Draw exactly as many characters as the scene says. Never draw realistic humans."
+ },
+ "tools": {
+  "pick": "pick_neta_psy.py",
+  "write": "write_script_psy.py",
+  "gate_script": "gate_script_psy.py",
+  "motion": "make_motion_psy.py",
+  "charts": null,
+  "build": "build_long_psy.py",
+  "thumb": "make_thumb_psy.py",
+  "short": "make_short_psy.py",
+  "short_upload": "upload_short_psy.py",
+  "_説明": "run_daily.py の段ごとの道具を、このチャンネル用に替える（書いていない段は仕事チャンネルと同じ道具。null はその段を飛ばす）。short・short_upload は心理学chだけの段（本編の絵を借りた縦のショート。2026-10-27）"
+ }
+}

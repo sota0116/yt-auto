@@ -1,0 +1,14 @@
+{
+ "説明": "競合リサーチ（pipeline/research.py psy）が毎日見るチャンネルと検索の言葉。出どころは OneDrive の channels/psy/記録.md（参考6ch・2026-10-25〜26）と 設計/競合分析_全チャンネル横断_2026-10-25.md。チャンネルの id は 2026-10-27 に YouTube の検索で名前から引いた。「型の参考」は見る人か題材が違う（借りるのはタイトル・サムネ・構成の型だけ）。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
+ "channels": [
+  {"id": "UCKl14Mw0EmMleo1TQV4ue-g", "name": "ひととき心理学", "group": "心のやすらぎ・眠り・人づきあい（キャラが動く絵）"},
+  {"id": "UCsE7w0V7q-mrJ2iQ8hhilrA", "name": "心と脳のカラクリ【心理学・脳科学】", "group": "見る人も題材もいちばん近い（研究の解説）"},
+  {"id": "UCf16bHoUwpFMJ4eUPP_4dEg", "name": "心がほっとする人生学", "group": "幸せの心理・人生（キャラが動く絵）"},
+  {"id": "UC9CjC8_gEBJyUZCCxILHLpg", "name": "心理のコトノハ", "group": "60代以降の回あり・暮らしの心理"},
+  {"id": "UCd6KmdffFuVCcKVGs9hRXiQ", "name": "ちょっとダークな心理学", "group": "人づきあいの心理（文字のスライド型）"},
+  {"id": "UCqehKI4N19djEvcMI5QPX4Q", "name": "50代60代のひと息心理学", "group": "見る人が同じ新しいチャンネル（2026-10-27 時点で4本）"},
+  {"id": "UCV8Jcbou4ei7HhtuffgvUYg", "name": "深淵回廊@人間の脳と心の仕組み", "group": "型の参考：脳と心の仕組み（見る人は若め）"}
+ ],
+ "queries": ["心理学 60代", "心理学 人間関係 年を重ねる", "ひとりの時間 心理学", "眠れない夜 心理学", "幸せな人 共通点 心理学", "心理学 雑学 聞き流し"],
+ "auto": []
+}
