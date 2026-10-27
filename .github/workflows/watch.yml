@@ -27,7 +27,7 @@ jobs:
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       AXIS_TYPES: ${{ vars.AXIS_TYPES }}
       PUBLISH_TIME: ${{ vars.PUBLISH_TIME }}
-      CHANNELS: job psy   # スピ（spi）は毎日の実行に足す時に、ここにも足す（例：job spi psy）。psy は見るだけ（watch.py の WATCH_ONLY）
+      CHANNELS: job psy spi   # spi（千年こよみ）は 2026-10-28 から。手で作るので見るだけ（watch.py の WATCH_ONLY）：公開・コメント・数字
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -58,9 +58,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           HC_WATCH: ${{ secrets.HC_PING_WATCH }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
         run: python -X utf8 pipeline/watch.py $CHANNELS
-      - name: ショートを見張る（心理学ch。本編の予約が入ったら次の日の 12:10 に予約・72時間と7日の数字）
+      - name: ショートを見張る（心理学ch 12:10・千年こよみ 19:15。本編の予約が入ったら次の日に予約・本編へのコメント・72時間と7日の数字）
         if: always()
-        run: python -X utf8 pipeline/shorts_watch.py psy
+        run: python -X utf8 pipeline/shorts_watch_v2.py psy spi
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |

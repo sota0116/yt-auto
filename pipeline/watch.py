@@ -28,7 +28,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
 VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
-WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した
+WATCH_ONLY = {"spi"}  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した。
+# spi（千年こよみ）は 2026-10-28 に見張りへ入れた（本人の指示）。手で作って上げるので、在庫0本・26時間公開なしの Issue と明日の予約はしない
 
 
 def prof(ch, key, env, default):
