@@ -309,7 +309,9 @@ def main():
     res = {"ch": ch, "started": now().isoformat(timespec="seconds"), "made": [], "stopped": None}
     lp = hpath(ch, "last_run.json")
     last = jload(lp, {})
-    if a.slot != "first" and last.get("started", "")[:10] == now().date().isoformat() and not last.get("stopped"):
+    # 作り途中の回（時間切れで落ちた回。status.json に work が残る）がある時は、やり直しの枠でも続きを作る（2026-10-28）
+    if a.slot != "first" and last.get("started", "")[:10] == now().date().isoformat() and not last.get("stopped") \
+            and not jload(hpath(ch, "status.json"), {}).get("work"):
         print("今日の分はもう作れています（やり直しは不要）")
         return
     try:
@@ -327,6 +329,8 @@ def main():
         # 段階はチャンネルの profile.json の stock_phase を先に見る（心理学chは毎日公開＝post。2026-10-27）。無ければ設定値 STOCK_PHASE
         phase = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("stock_phase") or os.environ.get("STOCK_PHASE") or "pre"
         goal, two_at = STOCK_GOAL.get(phase, STOCK_GOAL["pre"])
+        # チャンネルごとの在庫の目標（profile.json の stock_goal：[目標, この本数以下なら2本]。心理学chは在庫をためるため 2026-10-28）
+        goal, two_at = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("stock_goal") or (goal, two_at)
         n_stock = stock(ch)
         res["在庫"] = n_stock
         n = int(a.count) if a.count.isdigit() else (2 if n_stock <= two_at else 1)
