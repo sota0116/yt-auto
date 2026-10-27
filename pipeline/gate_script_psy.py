@@ -82,13 +82,16 @@ DISCLAIMER = "この動画は、心理学の研究をもとにした一般的な
 def gate_ng(s, ch, use):
     words = [w.strip() for w in open(os.path.join(ROOT, "channels", ch, "禁止表現.txt"), encoding="utf-8")
              if w.strip() and not w.startswith("#")]
-    th = "".join(t for line in (s.get("thumb") or {}).get("lines", []) for t, _ in line)
+    th = lambda k: "".join(t for line in (s.get("thumb") or {}).get(k) or [] for t, _ in line)
+    sh = s.get("short") or {}
     texts = [(c["id"], c["narration"]) for c in s["cuts"]] + [(f"title{i+1}", t) for i, t in enumerate(s.get("titles", []))] + \
-            [("thumb", th), ("desc", s.get("desc", "").replace(DISCLAIMER, ""))]  # 手順書 §7 の決まった断り書きの「治療」は当たらない
+            [("thumb", th("lines")), ("thumb_b", th("lines_b")), ("desc", s.get("desc", "").replace(DISCLAIMER, ""))] + \
+            [("short_title", sh.get("title", ""))] + [(c.get("id", "S"), c.get("narration", "")) for c in sh.get("cuts", [])]
+    # 手順書 §7 の決まった断り書きの「治療」は当たらない。サムネB案・ショートも見る（2026-10-28 002 で題とサムネに「怠けではない」が残った）
     hits =[{"id": i, "語": w, "文": t} for i, t in texts for w in words if w in t]
     p = f"""YouTube の心理学チャンネル（50〜70代の女性向け・夜にひとりで聞く）の台本の点検です。下の「当たった所」は、禁止表現の一覧と単純に一致した所です。
 それぞれ、文脈で本当に禁止に当たるかを判定してください。カギかっこの引用・研究や制度の正式名の中は「当たらない」。
-禁止の中身：病気の診断・治し方・薬・受診のすすめ／効果の約束（必ず・誰でも・人生が変わる）／見る人の内面に点をつける言い方（あなたは悪くない・そのままでいい・頑張ってきた証・自分を責めなくていい など、見る人の心を評価する言い方）／中身の無い抽象語（道のり・輪郭・光が差す・心を整える・本当の自分）／占い・スピの言葉（波動・運気・魂など）／時を決める言い方（今夜・今日は）／公開の頻度（毎日・明日も）／人や世代・男女をけなす・対立をあおる言い方／記号（──・…・※・★・→）。
+禁止の中身：病気の診断・治し方・薬・受診のすすめ／効果の約束（必ず・誰でも・人生が変わる）／見る人の内面に点をつける言い方（あなたは悪くない・そのままでいい・頑張ってきた証・自分を責めなくていい など、見る人の心を評価する言い方。「怠けではない」「甘えじゃない」のように見る人の行いを打ち消して許す言い方も当たる）／中身の無い抽象語（道のり・輪郭・光が差す・心を整える・本当の自分）／占い・スピの言葉（波動・運気・魂など）／時を決める言い方（今夜・今日は）／公開の頻度（毎日・明日も）／人や世代・男女をけなす・対立をあおる言い方／記号（──・…・※・★・→）。
 毎日の場面の描写の中の「毎日」（例：毎日同じ道を散歩する）は、公開の頻度ではないので当たらない。研究の説明の中の「必ずしも〜ない」も当たらない。
 あわせて、一覧に無くても台本の全文を読んで、上の禁止の中身に当たる文があれば足してください。無ければ空の配列。
 
@@ -96,6 +99,8 @@ def gate_ng(s, ch, use):
 台本：
 {lines(s['cuts'])}
 タイトル3案：{json.dumps(s.get('titles'), ensure_ascii=False)}
+サムネの文字（A案・B案）：{th("lines")}／{th("lines_b")}
+ショート：{json.dumps({"title": sh.get("title"), "語り": [c.get("narration") for c in sh.get("cuts", [])]}, ensure_ascii=False)}
 """
     r = ask_json(p, {"type": "object", "properties": {"禁止に当たる": items(id=S, 文=S, 理由=S)}, "required": ["禁止に当たる"]}, use)
     return {"合格": not r["禁止に当たる"], "一致した所": hits, **r}

@@ -89,6 +89,11 @@ def main():
         for w in bad_words:
             if w in t and w not in MARKS:
                 warn.append(f"{c['id']}：禁止表現「{w}」の可能性（台本ゲートが文脈で見る）：{t}")
+    th = lambda k: "".join(r[0] for ln in (s.get("thumb") or {}).get(k) or [] for r in ln)
+    for k, t in [("タイトル", x) for x in s.get("titles", [])] + [("サムネA", th("lines")), ("サムネB", th("lines_b"))]:
+        for w in bad_words:
+            if w in t and w not in MARKS:  # 題とサムネも見る（2026-10-28 002 で「怠けではない」が残った）
+                warn.append(f"{k}：禁止表現「{w}」の可能性（台本ゲートが文脈で見る）：{t}")
     # 絵
     img = [c for c in cuts if c.get("image") and not c.get("same_as")]
     same = [c for c in talk if c.get("same_as")]

@@ -183,6 +183,30 @@ def record(ch, work):
           {"cuts": [{"id": c.get("id"), "narration": c.get("narration", "")} for c in s.get("cuts", [])]})
 
 
+def apply_fixes(ch, work, st):
+    """台本ゲートを通った後に人が見つけた直し（channels\\<ch>\\fixes\\<作業フォルダ名>.json）を、アップの前に script.json へ入れる（2026-10-28）
+    titles（3案）・thumb・short_title を置き換え、drop_lines_with の言葉がある行を概要欄（本編・ショート）から除く"""
+    fp = os.path.join(ROOT, "channels", ch, "fixes", os.path.basename(work) + ".json")
+    sp = os.path.join(work, "script.json")
+    if not os.path.exists(fp) or not os.path.exists(sp) or "upload" in st.get("done", []) or st.get("fixed"):
+        return
+    fx, s = jload(fp, {}), jload(sp, {})
+    if fx.get("titles"):
+        s["titles"], s["title"] = fx["titles"], fx["titles"][0]
+    if fx.get("thumb"):
+        s["thumb"] = fx["thumb"]
+    if fx.get("short_title") and s.get("short"):
+        s["short"]["title"] = fx["short_title"]
+    drop = lambda t: "\n".join(x for x in t.split("\n") if not any(w in x for w in fx.get("drop_lines_with", [])))
+    s["desc"] = drop(s.get("desc", ""))
+    if s.get("short"):
+        s["short"]["desc"] = drop(s["short"].get("desc", ""))
+    jsave(sp, s)
+    st["done"] = [d for d in st.get("done", []) if d not in ("thumb", "short")]  # 字が変わったのでサムネとショートは作り直す
+    st["fixed"] = True
+    print(f"直し（{os.path.relpath(fp, ROOT)}）を script.json に入れました", flush=True)
+
+
 def make_one(ch, st, upload):
     """1本作る。st は status.json の中身（続きから始める時は work と done が入っている）"""
     sp = hpath(ch, "status.json")
@@ -194,6 +218,7 @@ def make_one(ch, st, upload):
         st = {"work": work, "done": ["pick"], "started": now().isoformat(timespec="seconds"), "tries": 0}
         jsave(sp, st)
     work = st["work"]
+    apply_fixes(ch, work, st)
     st["tries"] = st.get("tries", 0) + 1
     st["code"] = code_ver()
     print(f"■ {ch}：{os.path.basename(work)}（{st['tries']}回目・済み {st['done']}）", flush=True)
