@@ -73,6 +73,19 @@
    ],
    "thumb_band": "大型トラック運転手の1日を、厚生労働省の統計で追った",
    "thumb_bg": "THUMB"
+  },
+  {
+   "work": "008_b_shonin30",
+   "台本だけ": true,
+   "thumb_top": "初任給30万円の会社",
+   "thumb_text": "新人に抜かれる？",
+   "thumb_lines": [
+    "新人に",
+    "抜かれる？"
+   ],
+   "thumb_band": "30代前半の先輩の給料を、厚生労働省の統計で追った",
+   "thumb_q": true,
+   "thumb_bg": "C062"
   }
  ],
  "done": {

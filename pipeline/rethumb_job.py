@@ -7,6 +7,7 @@
 # ・サムネは手元で make_thumb_job.py で作り、目で確かめてから history/job/rethumb/<作業フォルダの名前>/ に thumb_a.jpg・thumb_b.jpg を置く
 # ・apply：history/job/rethumb.json の works ごとに、そのサムネを作業フォルダに写し（フォルダが無ければ作る。見張りの B案の差し替えが
 #   thumb_b.jpg を読むため）、script.json があればサムネの項目を足して、video_id があれば a案を YouTube に送る。済んだ回は done に書き、2回目は飛ばす
+# ・"台本だけ": true の回（前の形の台本のまま作っている途中の回）は、script.json に項目を足すだけ。サムネは毎日の実行のサムネの段が新しい形で作る
 import argparse, datetime, json, os, shutil, sys
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -57,17 +58,22 @@ def apply(dry):
             print(w, "済み（", done[w]["日時"], "）")
             continue
         src = os.path.join(THUMBS, w)
-        if not all(os.path.exists(os.path.join(src, f)) for f in FILES[:2]):
+        work = os.path.join(VIDEOS, w)
+        only = e.get("台本だけ")  # 作っている途中の回（前の形の台本）：項目だけ足し、サムネは毎日の実行のサムネの段が作る
+        if only and not os.path.exists(os.path.join(work, "script.json")):
+            bad.append(f"{w}：台本だけ足す回なのに、作業フォルダに script.json が無い")
+            continue
+        if not only and not all(os.path.exists(os.path.join(src, f)) for f in FILES[:2]):
             bad.append(f"{w}：history/job/rethumb/{w}/ に thumb_a.jpg・thumb_b.jpg が無い")
             continue
-        work = os.path.join(VIDEOS, w)
         note = []
         if not dry:
             os.makedirs(work, exist_ok=True)
-            for f in FILES:
-                if os.path.exists(os.path.join(src, f)):
-                    shutil.copyfile(os.path.join(src, f), os.path.join(work, f))
-            note.append("作業フォルダに写した")
+            if not only:
+                for f in FILES:
+                    if os.path.exists(os.path.join(src, f)):
+                        shutil.copyfile(os.path.join(src, f), os.path.join(work, f))
+                note.append("作業フォルダに写した")
             sp = os.path.join(work, "script.json")
             if os.path.exists(sp):
                 s = json.load(open(sp, encoding="utf-8"))
@@ -76,7 +82,7 @@ def apply(dry):
                     s.pop("thumb_lines", None)
                 json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
                 note.append("script.json に項目を足した")
-        if e.get("video_id") and not dry:
+        if e.get("video_id") and not only and not dry:
             from upload_job import api
             api("job", "POST", f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={e['video_id']}",
                 open(os.path.join(src, "thumb_a.jpg"), "rb").read(), {"Content-Type": "image/jpeg"}, timeout=120)
