@@ -2,10 +2,14 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/008_b_shonin30",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "reading"
  ],
  "started": "2026-10-27T06:41:49+09:00",
  "tries": 1,
  "code": "0d0235b313e2",
- "stage": "gate_script"
+ "stage": "images",
+ "updated": "2026-10-27T11:06:26+09:00"
 }
