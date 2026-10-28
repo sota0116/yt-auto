@@ -20,7 +20,7 @@ on:
         description: "auto か 本数"
         default: "auto"
       ch:
-        description: "all か チャンネル（job・psy）。手で1つだけ回す時"
+        description: "all か チャンネル（job・psy・spi）。手で1つだけ回す時"
         default: "all"
 
 permissions:
@@ -32,8 +32,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 心理学（psy）は 2026-10-27 から毎日公開。スピ（spi）は手順書と特典ができたら足す
-        ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy"]') }}
+        # 心理学（psy）は 2026-10-27 から毎日公開。千年こよみ（spi）は 2026-10-29 から（週4本・月水金日 18:00）
+        ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy", "spi"]') }}
     concurrency:
       group: daily-${{ matrix.ch }}
       cancel-in-progress: false
@@ -68,6 +68,8 @@ jobs:
           sudo apt-get install -y -qq fonts-morisawa-bizud-gothic || echo "BIZ UDゴシックが入らないので Noto で作る"   # 心理学ch の研究カード・章タイトル（001 と同じ字）
           pip install -q -r requirements.txt
           npm install -g @anthropic-ai/claude-code@2.1.296
+          # spi の動く図解カードは Playwright で Chrome を動かす（runner に入っている /usr/bin/google-chrome を使う。build_long_spi.py）
+          test -x /usr/bin/google-chrome || python -m playwright install --with-deps chromium
       - name: 動画スキルを置く（生徒さん向けの配布物なので公開リポジトリには入れず、Secrets から戻す）
         env:
           VENDOR_SKILL_B64: ${{ secrets.VENDOR_SKILL_B64 }}
@@ -75,6 +77,16 @@ jobs:
           mkdir -p vendor/youtube-video-maker
           printf '%s' "$VENDOR_SKILL_B64" | base64 -d | tar -xz -C vendor/youtube-video-maker
           test -f vendor/youtube-video-maker/scripts/build_long.py
+      - name: spi の BGM を戻す（甘茶の音楽工房の曲。規約が「音楽だけの配布」を禁じるので、公開リポジトリには暗号にして置き、鍵は Secrets）
+        if: matrix.ch == 'spi'
+        env:
+          SPI_BGM_PASS: ${{ secrets.SPI_BGM_PASS }}
+        run: |
+          # 鍵か暗号のファイルが無い時は、ここでは止めない（ネタ・台本・絵は先に作る。組み立て build_long_spi.py が BGM 無しで止まる）
+          f=channels/spi/assets/bgm/koyomi_bgm_02_amacha3.m4a.gpg
+          { [ -n "$SPI_BGM_PASS" ] && [ -f "$f" ]; } || { echo "::warning::spi の BGM の鍵（SPI_BGM_PASS）か $f がありません。組み立ての手前で止まります"; exit 0; }
+          printf '%s' "$SPI_BGM_PASS" | gpg -q --batch --pinentry-mode loopback --passphrase-fd 0 -o "$RUNNER_TEMP/spi_bgm.m4a" -d "$f"
+          echo "SPI_BGM=$RUNNER_TEMP/spi_bgm.m4a" >> "$GITHUB_ENV"
       - name: 作業フォルダを引き継ぐ
         uses: actions/cache/restore@v4
         with:

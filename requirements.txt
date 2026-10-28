@@ -3,3 +3,4 @@ numpy==2.5.3
 requests==2.34.2
 sudachipy==0.7.0
 sudachidict_full==20261015
+playwright==1.62.0

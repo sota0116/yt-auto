@@ -27,7 +27,7 @@ jobs:
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       AXIS_TYPES: ${{ vars.AXIS_TYPES }}
       PUBLISH_TIME: ${{ vars.PUBLISH_TIME }}
-      CHANNELS: job psy spi   # spi（千年こよみ）は 2026-10-28 から。手で作るので見るだけ（watch.py の WATCH_ONLY）：公開・コメント・数字
+      CHANNELS: job psy spi   # spi（千年こよみ）は 2026-10-28 から見るだけ、2026-10-29 から毎日の制作に入れたので予約もする（公開日は pub_plan.json の pub_date を守る）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

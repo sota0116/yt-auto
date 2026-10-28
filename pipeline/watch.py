@@ -31,7 +31,7 @@ ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
 VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
 TEASER_AFTER = 150  # 長尺の公開から何分後に予告を出すか（19:00 の長尺なら 21:30。ショートの 20:10 から1時間20分あける）
-WATCH_ONLY = {"spi"}  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27 に毎日の制作へ入れたので外した。
+WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27、spi は 2026-10-29 に毎日の制作へ入れたので外した。
 # spi（千年こよみ）は 2026-10-28 に見張りへ入れた（本人の指示）。手で作って上げるので、在庫0本・26時間公開なしの Issue と明日の予約はしない
 
 
@@ -250,9 +250,16 @@ def schedule_tomorrow(ch, up, dry):
     axis = [t.strip() for t in (os.environ.get("AXIS_TYPES") or "").split(",") if t.strip()]
     pool = [e for e in up if not e.get("published") and not e.get("missing") and not e.get("publish_at")
             and e.get("privacy_now") == "private"]
+    # 日付が中身に出る回（spi：pick_neta_spi.py が history/<ch>/pub_plan.json に公開日 pub_date と出してよい期間 window を書く）は、
+    # 公開日より前には出さず、期間を過ぎたら出さない。公開日がちょうど明日の回を先にする（2026-10-29）
+    plan = jload(hpath(ch, "pub_plan.json"), {})
+    pp = lambda e: plan.get(e.get("work")) or {}
+    t = tom.isoformat()
+    pool = [e for e in pool if not pp(e).get("pub_date") or pp(e)["pub_date"] <= t <= (pp(e).get("window") or [t, t])[1]]
     if not pool:
-        return "在庫が無いので明日の予約を入れられません"
-    pool.sort(key=lambda e: (0 if (e.get("type") or "")[:1] in axis or e.get("type") in axis else 1, e.get("uploaded_at", "")))
+        return "在庫が無いので明日の予約を入れられません（日付のある回は、公開日の前と期間の後には入れない）"
+    pool.sort(key=lambda e: (pp(e).get("pub_date") != t, (pp(e).get("window") or ["", "9999"])[1],
+                             0 if (e.get("type") or "")[:1] in axis or e.get("type") in axis else 1, e.get("uploaded_at", "")))
     e = pool[0]
     hh, mm = prof(ch, "publish_time", "PUBLISH_TIME", "19:00").split(":")
     at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
