@@ -268,11 +268,30 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
           f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "mix.wav", "-af", f"{ln},aresample=48000", "-ar", "48000", "mix_n.wav"], check=True, cwd=b)
     li = loud("mix_n.wav", b)
-    if li is not None and abs(li - a.lufs) > 0.7:  # 声の山が大きい時、linear の loudnorm が届かないことがある。音量を足して頭を抑える
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "mix_n.wav", "-af", f"volume={a.lufs - li:.2f}dB,alimiter=limit=0.84:level=false",
-                        "-ar", "48000", "mix_g.wav"], check=True, cwd=b)
-        os.replace(os.path.join(b, "mix_g.wav"), os.path.join(b, "mix_n.wav"))
-        li = loud("mix_n.wav", b)
+    # 声の山が大きい時、linear の loudnorm が届かないことがある。音量を足して頭を抑える。
+    # 頭を抑えると上がり方が足した量の 3〜4 割に減るので、実際の上がり方を見て足す量を直し、最大 4 回くり返す
+    # （001 の試験：足す量そのままでは −15.5 止まり。4dB 足して −14.2）
+    if li is not None and abs(li - a.lufs) > 0.7:
+        li0, g, best = li, a.lufs - li, None
+        for _ in range(4):
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "mix_n.wav", "-af",
+                            f"volume={g:.2f}dB,alimiter=limit=0.84:level=false:attack=5:release=50",
+                            "-ar", "48000", "mix_g.wav"], check=True, cwd=b)
+            lg = loud("mix_g.wav", b)
+            if lg is None:
+                break
+            if best is None or abs(lg - a.lufs) < abs(best - a.lufs):
+                best = lg
+                os.replace(os.path.join(b, "mix_g.wav"), os.path.join(b, "mix_best.wav"))
+            if abs(lg - a.lufs) <= 0.5:
+                break
+            if lg - li0 > 0.05:
+                g = min(12.0, g * (a.lufs - li0) / (lg - li0))
+            else:
+                g = min(12.0, g * 2)
+        if best is not None and abs(best - a.lufs) < abs(li - a.lufs):
+            os.replace(os.path.join(b, "mix_best.wav"), os.path.join(b, "mix_n.wav"))
+            li = best
     print(f"音：{m['input_i']} LUFS → {li} LUFS（目標 {a.lufs}）", flush=True)
 
     # ⑥ 書き出し（subtitles には相対パスで渡す。Windows の「C:」で壊れるため）
