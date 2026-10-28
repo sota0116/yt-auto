@@ -202,7 +202,7 @@ def title(sc):
     if re.search(r"AI|PR", base.upper()):
         sys.exit(f"【止まりました】予告のタイトルに「AI」か「PR」：{base}")
     if sc.get("type") != "D" and rank_unscoped(base):
-        sys.exit(f"【止まりました】予告のタイトルの順位に、何の中の順位か（「6つの中で」など）が無い：{base}")
+        sys.exit(f"【止まりました】予告のタイトルの順位に、何の中の順位か（「6職種で」など）が無い：{base}")
     return base + " #年収 #仕事"
 
 

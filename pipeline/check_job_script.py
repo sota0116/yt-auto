@@ -56,8 +56,9 @@ G_RE = "|".join(GROUPS)
 # 期間の言い方・決まった言い回しの中の数字は、値として数えない
 SKIP = ["1日8時間で数えると", "1か月", "1年", "1時間", "1日", "1枚", "1人ずつ", "1冊ずつ"]
 # 順位の範囲（2026-10-28 本人「バス運転手は年収1位のやつと大型トラック運転手は年収1位、どちらも1位なの？」→ どちらも6つの中での1位だった）
-# 型A・B・C で「〇位」「最下位」と言う時は、何の中の順位か（「6つの中で」「144職種で」）を同じ所に書く。型D は採点の順位なので除く
-SCOPE = re.compile(r"(\d+|[一二三四五六七八九十]+)(つの仕事|つの職業|つ|職種|業種|職業|人|社)(の中|中)?で")
+# 「6つの中で」は何の6つかが分からないので数えない（2026-10-28 本人「意味わからなくない？メタになってない？」）
+# 型A・B・C で「〇位」「最下位」と言う時は、何の中の順位か（「6職種で」「144職種で」）を同じ所に書く。型D は採点の順位なので除く
+SCOPE = re.compile(r"(\d+|[一二三四五六七八九十]+)(つの仕事|つの職業|職種|業種|職業|人|社)(の中|中)?で")
 
 
 def rank_unscoped(text):
@@ -927,7 +928,7 @@ def main(work):
             ng.append(f"タイトルの離職率に業界名が無い：{t}")
         head = unicodedata.normalize("NFKC", t).split("|")[0]  # 見る人がまず読む｜の前に、何の中の順位かを書く
         if typ != "D" and rank_unscoped(head):
-            ng.append(f"タイトルの順位に、何の中の順位か（「6つの中で」など）が｜の前に無い：{t}")
+            ng.append(f"タイトルの順位に、何の中の順位か（「6職種で」など）が｜の前に無い：{t}")
         for tk in tokens(t):
             if tk not in allowed:
                 ng.append(f"タイトルに facts.json にない数字：{t} {tk}")
@@ -950,7 +951,7 @@ def main(work):
     if typ == "D" and "意外" in th_all and not facts.get("意外なを使える"):
         ng.append("サムネに「意外」があるのに、この回は使えない（facts.json の 意外なを使える）")
     if typ != "D" and rank_unscoped(top + th):
-        ng.append(f"サムネの順位に、何の中の順位か（「6つの中で」など）が見出しか大きい字に無い：{top}／{th}")
+        ng.append(f"サムネの順位に、何の中の順位か（「6職種で」など）が見出しか大きい字に無い：{top}／{th}")
     for x in (top, th, band):
         for tk in tokens(x):
             if tk not in allowed:
