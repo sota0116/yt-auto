@@ -259,6 +259,11 @@ def make_one(ch, st, upload):
     # 声は profile.json の tts_engine で選ぶ（2026-10-24 から仕事チャンネルは VOICEVOX）
     voice_py = "make_voice_vv.py" if jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("tts_engine") == "voicevox" else "make_voice_job.py"
     step("voice", lambda: run(work, "voice", [voice_py, "make", work, "--ch", ch], ch))
+    import importlib.util
+    if voice_py == "make_voice_vv.py" and os.path.exists(os.path.join(ROOT, "pipeline", "yomi_auto.py")) and importlib.util.find_spec("sudachipy"):
+        # 読みの機械点検（2026-10-28 本人の指摘。スキル references/16 の7）：辞書（Sudachi）と声の読みの食い違いを voice/_yomi_auto.json に残す。
+        # 食い違いがあっても止めない（終了コード1も通す）。次の reading の段が、食い違いを目印にして Gemini に確かめさせる
+        step("yomi", lambda: run(work, "yomi", ["yomi_auto.py", work, "--ch", ch], ch, ok=(0, 1)))
     if voice_py == "make_voice_vv.py":  # 読み違い（数字・単位・職業名など）を読みの文字で探し、見つかったカットは読みを書いて作り直す
         step("reading", lambda: run(work, "reading", ["check_reading_vv.py", work, "--ch", ch, "--fix"], ch))
     def images():

@@ -4,6 +4,8 @@
 # ・スキルの check_script.py --long も一緒に回す（図のカット（chart）は絵の指示があるものとして渡す）
 # ・Gemini で見る項目（事実の裏取り・似すぎ・広告に向くか・続きを見たくなるか）は、ここでは見ない
 import json, os, re, subprocess, sys, tempfile, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from check_psy_script import tease  # 答えの先送りの見分け方（心理学chと同じ。references/16 の6）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILL_CHECK = os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts", "check_script.py")
@@ -868,6 +870,9 @@ def main(work):
         hit = [w for w in META if w in t]
         if hit:
             ng.append(f"メタの言葉（動画・回・進み方・名乗りのこと）：{c['id']} {hit}「{t[:30]}」")
+        w = tease(t)
+        if w:  # 2026-10-28 本人の指摘（スキル references/16 の6）。問いは出してよいが、答えを先に延ばすだけの文は書かない
+            ng.append(f"答えを先送りするだけの文：{c['id']}「{w}」（中身で引く：次に分かることを具体的に言う。§4）")
         if lname and lname in t:
             ng.append(f"聞き手の名前を呼んでいる：{c['id']}（名前は呼ばない）")
     k = next((i for i, c in enumerate(cuts) if c.get("chapter")), 0)  # つかみ〜前置き（最初の章の前）の長さ（手順書 §4 の 40〜70秒）
@@ -885,6 +890,26 @@ def main(work):
         for s in re.split(r"(?<=[。！？])", c["narration"]):
             if len(s) > 40 and c["narration"] not in fixed:
                 ng.append(f"40字を超える文：{c['id']} {len(s)}字")
+
+    # 7-2. 動く絵と見どころ（2026-10-28 本人の指摘「紙芝居」「見どころが無い」。スキル references/16 の2・4。手順書 §5）
+    #   動く絵＝図のカット（chart。組み立てで動くグラフ・カードになる）。章ごとに1つ以上
+    per_mv, chap = {}, None
+    for c in cuts:
+        chap = c.get("chapter") or chap
+        if chap:
+            per_mv[chap] = per_mv.get(chap, 0) + bool(c.get("chart"))
+    for k, x in per_mv.items():
+        if not x:
+            ng.append(f"章「{k}」に図のカット（chart＝動くグラフ・カード）が無い（動く絵は章ごとに1つ以上。§5）")
+    pk = [c for c in cuts if c.get("peak")]
+    if not pk:
+        ng.append("見どころのカットが無い：いちばん驚く数字が出るカットに \"peak\": true を書き、chart・label・strong のうち2つ以上を付ける（§5）")
+    for c in pk:
+        if sum(bool(c.get(x)) for x in ("chart", "label", "strong")) < 2:
+            ng.append(f"見どころ（peak）{c['id']} に chart・label・strong のうち2つ以上が無い（§5）")
+        if c in cuts[-6:] or c.get("line") or c.get("subscribe"):
+            ng.append(f"見どころ（peak）{c['id']} が締め・案内・呼びかけのカットにある（本編の山に付ける）")
+    print(f"見どころ（peak）：{[c['id'] for c in pk]}／図のカットの無い章 {[k for k, x in per_mv.items() if not x]}")
 
     # 8. 骨組み A-4：物差しごとに、2位を出す前にクイズ
     if sc.get("frame") == "A-4":

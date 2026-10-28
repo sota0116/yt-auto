@@ -1,6 +1,8 @@
 # ショート②の点検（手順書 §12）：script.json を facts.json と決まりに照らす。NG があれば終わりのコードが1
 #   python -X utf8 pipeline\check_short.py <作業フォルダ>
 import json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from check_psy_script import tease  # 答えの先送りの見分け方（references/16 の6）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 META = ["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後", "次の章", "見ていきます", "紹介します",
@@ -72,6 +74,28 @@ def check(work):
     for i, ch in enumerate(fx["charts"]):
         if last.get(i, 0) < len(ch["bars"]):
             ng.append(f"グラフ{i} の棒が最後まで全部出ていない")
+    # 見どころ（2026-10-28 本人の指摘。スキル references/16 の4）：新しい棒が伸びるカット（動き）に "peak": true。
+    #   rank は1位の黄の棒が出るカット（棒が伸びる動き＋黄の強調で2つ）。答えを先送りするだけの文も NG（references/16 の6）
+    seen, grow = {}, {}
+    for c in cuts:
+        s_ = c.get("screen") or {}
+        if "chart" in s_ and s_["chart"] < len(fx["charts"]):
+            k = s_.get("show", len(fx["charts"][s_["chart"]]["bars"]))
+            grow[c["id"]] = (k > seen.get(s_["chart"], 0), k >= len(fx["charts"][s_["chart"]]["bars"]))
+            seen[s_["chart"]] = k
+    pk = [c for c in cuts if c.get("peak")]
+    if not pk:
+        ng.append("見どころのカットが無い：1位（強調の黄の棒）が出るカットに \"peak\": true を書く（§12）")
+    for c in pk:
+        g, full = grow.get(c["id"], (False, False))
+        if not g:
+            ng.append(f"{c['id']} の peak：新しい棒が伸びるカットに付ける（止まった画面には付けない）")
+        elif fx.get("kind") == "rank" and not full:
+            ng.append(f"{c['id']} の peak：rank は1位の黄の棒が出るカット（show が全部の本数）に付ける")
+    for c in cuts:
+        w = tease(c.get("narration", "") + c.get("hook", ""))
+        if w:
+            ng.append(f"{c['id']}：答えを先送りするだけの文「{w}」（問いで引き、答えはこのショートの中で出す）")
     # rank：1位の名前は、1位の棒を出すカットより前に言わない
     if fx["kind"] == "rank":
         first = fx["charts"][0]["bars"][0]["name"]

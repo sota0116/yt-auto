@@ -1,3 +1,5 @@
 pillow==12.3.0
 numpy==2.5.3
 requests==2.34.2
+sudachipy==0.7.0
+sudachidict_full==20261015

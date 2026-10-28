@@ -164,13 +164,18 @@ def prompt(en, cut, has_ref, extra="", chars=(), rules=None):
 
 
 def to_png(src, dst):
+    """縦横の比だけ 16:9 にそろえ、縮めずに残す（2026-10-28 本人の指摘「画質」。スキル references/16 の1）。
+    Lovart の 2752×1536 は 2730×1536 のまま残す（前は 1920×1080 に縮めていて、組み立ての寄りでぼやけた）。
+    1920×1080 より小さい時だけ大きくする"""
     im = Image.open(src).convert("RGB")
     w, h = im.size
     if w / h > W / H:
         nw = int(h * W / H); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
     else:
         nh = int(w * H / W); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
-    im.resize((W, H), Image.LANCZOS).save(dst)
+    if im.width < W or im.height < H:
+        im = im.resize((W, H), Image.LANCZOS)
+    im.save(dst)
 
 
 def main():

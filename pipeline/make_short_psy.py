@@ -54,6 +54,21 @@ def check(work):
                 ng.append(f"{c.get('id')}：記号「{mark}」は使わない")
     if cuts and cuts[-1].get("narration") != CLOSE:
         ng.append(f"最後のカットは決まった文「{CLOSE}」にする")
+    # 2026-10-28 本人の指摘（スキル references/16）：答えを先送りするだけの文（6）・動く絵（2）・見どころ（4）
+    from check_psy_script import tease
+    for c in cuts[:-1]:  # 最後の決まった文（本編への案内）は除く
+        w = tease(c.get("narration", ""))
+        if w:
+            ng.append(f"{c.get('id')}：答えを先送りするだけの文「{w}」（問いで引き、答えの手前で止める。§10）")
+    if cuts and not (long_ids.get(cuts[0].get("from")) or {}).get("motion"):
+        ng.append("S01 の from は、本編で motion（動く絵）を付けたカットにする（ショートの1カット目は動く絵。§10）")
+    pk = [c for c in cuts[1:-1] if c.get("peak")]
+    if not pk:
+        ng.append("見どころのカットが無い：いちばん面白い所（答えの一歩手前）のカットに \"peak\": true を書き、"
+                  "from を本編で motion を付けたカットにする（§10）")
+    for c in pk:
+        if not (long_ids.get(c.get("from")) or {}).get("motion"):
+            ng.append(f"{c.get('id')}：見どころ（peak）の from は、本編で motion（動く絵）を付けたカットにする（§10）")
     if cuts and not cuts[0].get("narration", "").rstrip().endswith(("？", "か。")):
         ng.append("S01 は見る人の毎日の場面の小さな謎を、問いの形（？で終わる）で言う")
     words = [w.strip() for w in open(os.path.join(ROOT, "channels", "psy", "禁止表現.txt"), encoding="utf-8") if w.strip() and not w.startswith("#")]
@@ -149,6 +164,12 @@ def build(work):
         t += d
     if t > 59.5:
         sys.exit(f"【止まりました】ショートが {t:.1f}秒（60秒を超える）。short の語りを減らす")
+    # 動く絵が本当に入ったか（Kling は無料の時だけなので、作れなかった絵は止まった絵になる。references/16 の2）
+    srcs = [resolve_image(work, s["cuts"], long_cuts[c["from"]]) for c in sh["cuts"]]
+    n_mv = sum(str(x).endswith(".mp4") for x in srcs)
+    print(f"動く絵 {n_mv} カット（1カット目 {'動く' if str(srcs[0]).endswith('.mp4') else '止まった絵'}）")
+    if n_mv == 0:
+        sys.exit("【止まりました】ショートに動く絵が1つも無い（止まった絵だけの紙芝居は出さない）。本編の motion の絵ができてから作る")
     open(os.path.join(b, "subs.ass"), "w", encoding="utf-8").write(f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}

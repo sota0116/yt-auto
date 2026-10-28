@@ -11,6 +11,18 @@ import argparse, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MARKS = ("──", "—", "…", "※", "★", "→")
+# 答えを先送りするだけの文（2026-10-28 本人の指摘。スキル references/16 の6）。問いは出してよいが「答えはこのあと」とは言わない
+# 実例：「その答えは、後半の研究でお見せします。」「答えは、次の章で。」「最後まで見てくださって、ありがとうございました。」
+TEASE = [re.compile(x) for x in (
+    r"答えは.{0,12}(後半|最後|この後|このあと|あと|後ほど|のちほど|次の|終わり)",
+    r"(後半|最後の章|終わりの章|このあと|この後|後ほど|のちほど|あとで)(で|に|の.{0,8}で)?、?.{0,10}(お見せ|発表|明か|お伝え|言います|わかります|分かります|教えます)",
+    r"最後(まで|に)(見て|ご覧|お付き合い|聞いて|言います)",
+    r"(続き|答え)は(最後|後半|この後|このあと)")]
+
+
+def tease(t):
+    m = next((p.search(t) for p in TEASE if p.search(t)), None)
+    return m.group(0) if m else ""
 
 
 def count(t):
@@ -73,9 +85,15 @@ def main():
     if not any("ここで問題です" in t for t in nar.values()):
         ng.append("クイズ（「ここで問題です。」）が無い（§3-3）")
     tail = " ".join(c["narration"] for c in talk[-6:])
-    for need in ("コメントで教えてください", "最後まで見てくださって、ありがとうございました", "また次の動画で、お会いしましょう"):
+    # 締めのお礼は「最後まで」を付けない（2026-10-28 本人の指摘。references/16 の6）
+    for need in ("コメントで教えてください", "見てくださって、ありがとうございました", "また次の動画で、お会いしましょう"):
         if need not in tail:
             ng.append(f"締めに「{need}」が無い（§3-7）")
+    for c in talk:
+        w = tease(c["narration"])
+        if w:
+            ng.append(f"{c['id']}：答えを先送りするだけの文「{w}」（問いを出したら、それ以上は引っ張らない。"
+                      f"「その答えは後半で」「答えは次の章で」「最後まで見て」は書かない。§3）：{c['narration']}")
     if "LINE" in " ".join(nar.values()):
         ng.append("語りに LINE が出ている（LINE は概要欄と固定コメントだけ）")
     # 記号・禁止表現
@@ -122,6 +140,27 @@ def main():
     for c in mo:
         if not c.get("image") or c.get("same_as") or c.get("card"):
             ng.append(f"{c['id']}：motion は、自分の絵があるカットだけ（same_as・card には付けない）")
+    # 動く絵は章ごとに1つ以上（2026-10-28 本人の指摘「紙芝居」。references/16 の2）
+    cur, per = None, {}
+    for c in cuts:
+        cur = c.get("chapter") or cur
+        if cur:
+            per.setdefault(cur, 0)
+            per[cur] += bool(c.get("motion"))
+    for k, x in per.items():
+        if not x:
+            ng.append(f"章「{k}」に motion のカットが無い（動く絵は章ごとに1つ以上。§5）")
+    # 見どころ（peak）：1本に1つ以上。動く絵・label・strong の2つ以上で目立たせる（references/16 の4）
+    pk = [c for c in talk if c.get("peak")]
+    if not pk:
+        ng.append("見どころのカットが無い：この回でいちばん面白い場面（この回だけの研究の結果か場面）のカットに "
+                  "\"peak\": true を書き、motion・label・strong のうち2つ以上を付ける（§5）")
+    for c in pk:
+        has = [k for k in ("motion", "label", "strong") if c.get(k)]
+        if len(has) < 2:
+            ng.append(f"{c['id']}：見どころ（peak）は motion・label・strong のうち2つ以上で目立たせる（今：{has or 'なし'}。§5）")
+        if c in talk[-6:]:
+            ng.append(f"{c['id']}：見どころ（peak）を締めに置かない（本編の中のその回だけの場面にする。§5）")
     cards = [c for c in cuts if c.get("card")]
     if not 5 <= len(cards) <= 8:
         ng.append(f"研究カード {len(cards)}枚（5〜8枚。§5）")
