@@ -12,6 +12,8 @@ on:
     - cron: "7 17 * * *"   # 02:07 JST
     - cron: "7 23 * * *"   # 08:07 JST（やり直し）
     - cron: "37 8 * * *"   # 17:37 JST（Gemini の1日の上限が戻った後の続き。上限は日本時間の16時（夏時間）か17時に戻る）
+    - cron: "37 3 * * *"   # 12:37 JST（続き。心理学chは1本に絵が約190枚あり、Lovart の無料の順番待ちで6〜8時間かかる。空いている時間を埋めて毎日1本を保つ。2026-10-28）
+    - cron: "47 13 * * *"  # 22:47 JST（同じ。リポジトリは公開なので実行の時間は無料。作るのは在庫が足りない時だけ（profile.json の stock_goal））
   workflow_dispatch:
     inputs:
       count:
@@ -50,7 +52,7 @@ jobs:
       COST_FACTOR: ${{ vars.COST_FACTOR }}
       VOICEVOX_URL: http://127.0.0.1:50021
       LOVART_SKILL: ${{ github.workspace }}/vendor/lovart/agent_skill.py
-      SLOT: ${{ github.event.schedule == '7 23 * * *' && 'retry' || github.event.schedule == '37 8 * * *' && 'late' || 'first' }}
+      SLOT: ${{ (github.event.schedule == '7 23 * * *' || github.event.schedule == '37 3 * * *' || github.event.schedule == '47 13 * * *') && 'retry' || github.event.schedule == '37 8 * * *' && 'late' || 'first' }}
     steps:
       - uses: actions/checkout@v4
         with:
