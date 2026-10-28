@@ -13,6 +13,9 @@
 # ・チャンネルの絵の決まり（2026-10-27 心理学chから）：profile.json に image_rules_en があれば、カットごとに1文足す。
 #   主役（chars）が出る絵は with_chars、"nobody": true か場面に「人物は描かない」の絵は nobody、それ以外は without_chars。nobody 以外は always も足す。
 #   script.json に avoid（描かない物）があれば、それも英語にして足す
+# ・縦長のショート（2026-10-29 アナザー日本紀から）：script.json の "format" が "short" なら縦 9:16 で頼み、縦横の比だけ 9:16 にそろえて縮めずに残す。
+#   カットに "image_en"（英語の場面）があれば翻訳を通さずそのまま使い、script.json の "style_en"・"avoid_en" があれば画風の翻訳もしない
+#   （どれも無い今までの台本は、今までと同じく Gemini／Claude に英語にさせる。横長は何も変わらない）
 # ・詰まった時（2026-10-29）：--boost は run_daily.py が速いモード（lovart_boost.fast_mode）にした間だけ使う。--only の残りを順番待ちを捨てて頼み直し、
 #   頼んだ数だけ history\<ch>\lovart_credits.json に足す。--boost でない時に速いモードになっていたら（別の回が使っている間）、新しく頼まずに待つ
 import argparse, importlib.util, json, os, sys, time
@@ -41,8 +44,15 @@ def scenes_en(work, s, ids):
     文字が出やすい物（紙・本の背・画面・マグ・看板）は「無地」と書き直させる。1本につき Gemini 1回。images\\_scene_en.json に残す"""
     p = os.path.join(work, "images", "_scene_en.json")
     have = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    for c in s["cuts"]:  # 英語の場面が台本に書いてあるカットは、翻訳を通さない
+        if c["id"] in ids and c.get("image_en") and c["id"] not in have:
+            have[c["id"]] = c["image_en"]
+    if s.get("style_en"):
+        have["_style"] = s["style_en"]
+        if s.get("avoid_en"):
+            have["_avoid"] = s["avoid_en"]
     need = [c for c in s["cuts"] if c["id"] in ids and c["id"] not in have]
-    if need:
+    if need or "_style" not in have:
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import gemini
         q = ("Translate each Japanese scene description into one natural English sentence or two for an image generator. "
@@ -142,7 +152,7 @@ def rule_for(rules, cut):
     return " ".join(x for x in (rules.get("with_chars" if cut.get("chars") else "without_chars", ""), rules.get("always", "")) if x)
 
 
-def prompt(en, cut, has_ref, extra="", chars=(), rules=None):
+def prompt(en, cut, has_ref, extra="", chars=(), rules=None, portrait=False):
     ref = ("The attached image is a STYLE reference only: match its line quality, color palette and film grain. "
            "Do NOT copy its composition, objects or people.\n") if has_ref else ""
     if chars:  # 添付の順：設定画（人物の順）→ 画風の見本
@@ -151,7 +161,10 @@ def prompt(en, cut, has_ref, extra="", chars=(), rules=None):
         ref = (f"{who} Whenever that person appears, draw exactly the same face, hairstyle, body and clothing as in the sheet. "
                "Do not copy the sheet's layout, background or pose. Character details: " + " ".join(c["desc_en"] for c in chars) + "\n"
                + ref.replace("The attached image is", "The last attached image is"))
-    return (f"Generate exactly ONE text-free illustration, landscape 16:9.\n{ref}"
+    shape = ("Generate exactly ONE text-free illustration, tall vertical 9:16 (a phone-screen short video). ONE single scene seen from ONE camera "
+             "viewpoint that fills the whole canvas from top to bottom. Do NOT divide the picture into an upper half and a lower half, "
+             "and draw no panel border or frame.\n") if portrait else "Generate exactly ONE text-free illustration, landscape 16:9.\n"
+    return (f"{shape}{ref}"
             f"Art style: {en['_style']}\n"
             f"Scene: {en[cut['id']]}\n"
             f"{(rule_for(rules, cut) + chr(10)) if rules else ''}"
@@ -165,18 +178,19 @@ def prompt(en, cut, has_ref, extra="", chars=(), rules=None):
             f"cropping or any post-processing step afterwards.")
 
 
-def to_png(src, dst):
+def to_png(src, dst, portrait=False):
     """縦横の比だけ 16:9 にそろえ、縮めずに残す（2026-10-28 本人の指摘「画質」。スキル references/16 の1）。
     Lovart の 2752×1536 は 2730×1536 のまま残す（前は 1920×1080 に縮めていて、組み立ての寄りでぼやけた）。
     1920×1080 より小さい時だけ大きくする"""
     im = Image.open(src).convert("RGB")
     w, h = im.size
-    if w / h > W / H:
-        nw = int(h * W / H); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
+    W_, H_ = (1080, 1920) if portrait else (W, H)  # 縦長のショートは 9:16
+    if w / h > W_ / H_:
+        nw = int(h * W_ / H_); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
     else:
-        nh = int(w * H / W); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
-    if im.width < W or im.height < H:
-        im = im.resize((W, H), Image.LANCZOS)
+        nh = int(w * H_ / W_); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
+    if im.width < W_ or im.height < H_:
+        im = im.resize((W_, H_), Image.LANCZOS)
     im.save(dst)
 
 
@@ -224,6 +238,7 @@ def main():
     sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
     attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
     rules = channel_rules(a.work)
+    portrait = s.get("format") == "short"
     print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
     while ((queue and not paused) or waiting) and time.time() < t_end:
@@ -236,7 +251,7 @@ def main():
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
-                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])], rules),
+                tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])], rules, portrait),
                               PROJECT, attachments=attach(i) or None, prefer_models=MODEL,
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:
@@ -274,7 +289,7 @@ def main():
             got = [d["local_path"] for d in sk.download_artifacts(r, os.path.join(img, "_lovart", i), "lovart")
                    if d.get("local_path") and d.get("type") == "image"]
             if got:
-                to_png(got[0], os.path.join(img, i + ".png"))
+                to_png(got[0], os.path.join(img, i + ".png"), portrait)
                 log[i] = {"状態": "できた", "thread": w["thread"], "回": w["回"],
                           "秒": round(time.time() - w["頼んだ時刻"]), "元": os.path.relpath(got[0], a.work),
                           "注意": ("あとの編集はクレジットが要るので頼んでいない" if st == "pending" else "")

@@ -1,0 +1,997 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】現代の消防士が、江戸の大火に飛ばされたら｜明暦の大火で天守を守った世界線",
+ "promise": "明暦の大火（1657年）で江戸がなぜあれほど燃えたのか、その後の江戸が橋・広い道・火消しで燃えにくい町に変わっていった流れが、1本で分かる",
+ "desc": "もしも現代の消防士が1人、1657年の明暦の大火の江戸に飛ばされたら。持って行けたのは、消防の知識だけ。\n火は飛ぶ。逃げ道を先に作る。壊すなら風下の先を。江戸城の天守は守れるのか。そして本当の江戸は、大火の後どう変わったのか。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※消防士が江戸に行く話と、天守が焼け残る場面は作り話です。明暦の大火・破壊消防・定火消・町火消・両国橋などは、内閣府「1657明暦江戸大火」報告書や東京消防庁の資料をもとにしています（死者の数などには諸説あります）。\n※映像とナレーションはAIを使って作っています。\n音声：VOICEVOX:青山龍星、VOICEVOX:玄野武宏、VOICEVOX:麒ヶ島宗麟",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "江戸時代",
+  "明暦の大火",
+  "火消し",
+  "町火消",
+  "江戸城",
+  "タイムスリップ"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、炎と夜の強い明暗、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ、コマ割り、枠、今の時代の物（消防士の服以外）、血・けが・遺体",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "大火の日時・火元・風の変わり目を知っているのは、未来から来た消防士だけ。親方・鳶・保科正之など江戸の人は知らない",
+  "消防士が持って来たのは知識だけ。ホースもポンプも無い。使えるのは江戸にある道具（とび口・手桶）だけ",
+  "消防士の世界線で変わるのは、天守が焼け残ること・町人の火消しの組が早くできることの2つ。年・人・出来事は本当の歴史"
+ ],
+ "world_terms": [
+  "知って",
+  "世界線",
+  "占い",
+  "昼すぎ",
+  "未来"
+ ],
+ "voices": {
+  "shoboshi": 39,
+  "oyakata": 53
+ },
+ "facts": [
+  "明暦の大火：明暦3年1月18〜19日（1657年3月2〜3日）。本郷丸山の本妙寺（18日午後2時ごろ）、小石川（19日午前10時ごろ）、麹町（19日夜）の3か所から出火。江戸の市街地の約6割を焼いた。出どころ：内閣府 防災情報 1657明暦江戸大火 報告書 第2章 www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1657_meireki_edotaika/",
+  "前年から80日以上雨が無く、前日から北西風。18日の火は湯島・神田・日本橋・八丁堀・佃島へ。霊巌寺に逃げ込んだ9600人あまりが亡くなったとされる。19日正午〜午後1時に天守に燃え移り、午後4時ごろ風が西に変わって西の丸・御三家上屋敷は焼け残った。麹町の火は桜田から芝浦の海岸へ。20日未明に鎮火。出どころ：内閣府報告書 第2章、東京消防庁 www.tfd.metro.tokyo.lg.jp/learning/elib/qa/qa_30.html",
+  "焼失：大名屋敷160・町人町800町余（明暦炎上記）。武江年表では数字が異なる。死者は3万7千余（上杉年譜ほか）〜10万7046（武江年表）と割れ、内閣府報告書は元延実録の6万8千余を実相に近いとする。東京消防庁は一件の火災として最多とする。",
+  "振袖火事は伝説（同時代の記録に無く、後年の聞書で強調される。内閣府報告書第2・3章）。出火原因は放火・失火の両説で不明。",
+  "大名火消は1643年。1655年の神田大工町の火事では武家に影響なしとして出動しなかった記録（内閣府報告書第1章）。破壊消防・とび口（同第1章、東京消防庁 times01）。龍吐水は1751年に町火消への備えを勧め、1764年に13組に支給。ホースほど遠くへ飛ばない（東京消防庁 qa_60）。",
+  "大火後、幕府は車に荷物を積んで避難することを禁じた。粥の施行は6か所・1日1000俵。身元不明の死者を本所牛島新田に葬り回向院を建てた。材木の値上げに対し城の造営延期のうわさを流した逸話（内閣府報告書第2・3章）。",
+  "天守は焼失後再建されず。天守台は前田綱紀が築いた（補助資料）。再建中止を保科正之の判断とする話は一般的だが公的な一次資料は確認できず、台本では「と伝わる」。",
+  "両国橋は万治2年（1659）架橋が通説（1660・1661説あり。国立国会図書館 www.ndl.go.jp/landmarks/sights/ryogokubashi）。たもとは火除地の広小路で盛り場に。庇切りと道の拡幅（日本橋通り10間＝約18.2m）、火除土手、瓦・塗屋の推奨、茅葺き藁葺きの禁止、穴蔵の普及（江戸の地面の十分の一が穴、という史料は成立年代不詳）。内閣府報告書第3章。",
+  "定火消：万治元年（1658）9月、旗本4名。屋敷は江戸城の北西（冬の風上）。内閣府報告書第3章（東京消防庁には1650・1657説もある）。",
+  "町火消：享保3年（1718）大岡忠相。いろは47組（のち48組。47→48の年は1720か1730で割れる）。「ひ・へ・ら・ん」は「百・千・万・本」に。纏は早く着いたことを知らせる物。東京消防庁 qa_03・times01、コトバンク 町火消。",
+  "使わない：紀伊国屋文左衛門（明暦の大火より後の人）、八百屋お七、保科の言葉の直接引用"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "1657年1月18日、昼すぎの江戸。本郷の寺から、黒い煙が上がった。",
+   "image_en": "Afternoon over an Edo-period city of dense wooden rooftops; thick black smoke rises from a temple on a hill and is blown sideways by a strong wind.",
+   "label": "1657年1月18日",
+   "image": "Afternoon over an Edo-period city of dense wooden rooftops; thick blac",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "A02",
+   "narration": "この火は3日のうちに、江戸の町の6割を焼くことになる。",
+   "image_en": "Night. A gigantic fire sweeps across the whole Edo townscape seen from a hill, sparks filling the sky, the white castle keep far away.",
+   "label": "町の6割",
+   "strong": true,
+   "image": "Night. A gigantic fire sweeps across the whole Edo townscape seen from",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "A03",
+   "narration": "そこに、今の消防士が1人だけ立っていた。",
+   "image_en": "the modern firefighter, standing alone and stunned in a narrow Edo street, smoke rising in the distance behind him. Place the main person slightly right of center.",
+   "image": "the modern firefighter, standing alone and stunned in a narrow Edo str",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "A04",
+   "narration": "足すルールは1つ。現代の消防士が1人、明暦の大火の江戸に飛ばされる。持って行けたのは、消防の知識だけ。",
+   "same_as": "A03",
+   "tts_text": "足すルールは1つ。現代の消防士が1人、めいれきの大火の江戸に飛ばされる。持って行けたのは、消防の知識だけ。"
+  },
+  {
+   "id": "A05",
+   "narration": "年と人と出来事は本当の歴史。消防士だけが作り話です。",
+   "image_en": "Close-up of a low wooden desk: an old blank scroll, a brush, an ink stone and a hand-drawn map of old Edo showing only rivers, moats and the castle, warm lantern light. No people.",
+   "image": "Close-up of a low wooden desk: an old blank scroll, a brush, an ink st",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "明暦3年1月18日の朝。消防士が目を開けると、そこは江戸の町だった。",
+   "image_en": "the modern firefighter, waking up lying on a dirt street in Edo in the early morning, curious townspeople leaning over him. Place the main person slightly right of center.",
+   "chapter": "江戸に落ちた朝",
+   "label": "明暦3年",
+   "image": "the modern firefighter, waking up lying on a dirt street in Edo in the",
+   "chars": [
+    "shoboshi"
+   ],
+   "tts_text": "めいれき3年1月18日の朝。消防士が目を開けると、そこは江戸の町だった。"
+  },
+  {
+   "id": "B02",
+   "narration": "空気が、ひどく乾いている。地面から、白い土ぼこりが舞い上がる。",
+   "image_en": "A dry dusty Edo street in winter morning light, white dust swirling in the wind, shop curtains flapping hard, people covering their faces.",
+   "image": "A dry dusty Edo street in winter morning light, white dust swirling in",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "この年、江戸では80日以上、雨が降っていなかったといわれる。",
+   "image_en": "Close view of cracked dry earth and an empty wooden rain barrel beside a wooden house wall, harsh winter sunlight. No people.",
+   "label": "80日",
+   "image": "Close view of cracked dry earth and an empty wooden rain barrel beside",
+   "chars": []
+  },
+  {
+   "id": "B04",
+   "narration": "しかも前の日から、北西の強い風が吹き続けていた。",
+   "image_en": "Strong wind bending pine trees over Edo rooftops, laundry and shop curtains blowing violently to one side, cold winter sky.",
+   "image": "Strong wind bending pine trees over Edo rooftops, laundry and shop cur",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "B05",
+   "narration": "消防士は町を見回して、息をのむ。家はどれも木と紙。屋根は板やかやぶきだ。",
+   "image_en": "the modern firefighter, staring with alarm at rows of tightly packed wooden row houses with board and thatched roofs and paper windows. Place the main person slightly right of center.",
+   "image": "the modern firefighter, staring with alarm at rows of tightly packed w",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "B06",
+   "narration": "細い道には、店のひさしが両側から張り出して、道をせばめている。",
+   "image_en": "A very narrow Edo merchant street where wooden eaves stick out from both sides, almost touching overhead, crowded with people.",
+   "image": "A very narrow Edo merchant street where wooden eaves stick out from bo",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "消防士の頭の中で、警報が鳴った。ここは、燃えるために建てたような町だ。",
+   "same_as": "B05"
+  },
+  {
+   "id": "B08",
+   "narration": "このころ江戸の町人は、およそ28万人といわれる。そこに武家の屋敷がひしめいていた。",
+   "image_en": "A crowded bustling Edo street seen from above, merchants, porters, samurai, and large samurai mansions with walls beyond.",
+   "label": "28万人",
+   "image": "A crowded bustling Edo street seen from above, merchants, porters, sam",
+   "chars": []
+  },
+  {
+   "id": "B09",
+   "narration": "火事のとき、誰が消すのか。消防士は、通りかかった鳶の親方に聞いた。",
+   "image_en": "the modern firefighter, talking earnestly to the tobi foreman at a wooden building site with scaffolding. Place the main person slightly right of center.",
+   "image": "the modern firefighter, talking earnestly to the tobi foreman at a woo",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ],
+   "tts_text": "火事のとき、誰が消すのか。消防士は、通りかかったとびの親方に聞いた。"
+  },
+  {
+   "id": "B10",
+   "narration": "火消しなら、お大名の火消しがいる。だが、守るのはお城とお屋敷だけだ。",
+   "image_en": "the tobi foreman, shrugging and pointing toward the castle with his thumb, half smiling. Place the main person slightly right of center.",
+   "image": "the tobi foreman, shrugging and pointing toward the castle with his th",
+   "chars": [
+    "oyakata"
+   ],
+   "voice": "oyakata"
+  },
+  {
+   "id": "B11",
+   "narration": "大名火消。1643年に、幕府が大名たちに命じてつくった火消しだ。",
+   "image_en": "A procession of samurai firemen in matching dark fire coats and helmets marching with tall plain standards, a mounted daimyo leading them. Faded old-memory colors.",
+   "label": "1643年",
+   "image": "A procession of samurai firemen in matching dark fire coats and helmet",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "2年前の神田の火事では、武家に関係ないとして出てこなかった記録もある。",
+   "image_en": "A burning row of townhouses at night while a group of samurai firemen on horseback stands still in the distance, watching without helping. Faded old-memory colors.",
+   "image": "A burning row of townhouses at night while a group of samurai firemen ",
+   "chars": []
+  },
+  {
+   "id": "B13",
+   "narration": "町の火事は、町の人が自分で消す。それが、このころの江戸だった。",
+   "image_en": "Edo townspeople frantically passing wooden buckets of water hand to hand toward a burning house at night.",
+   "image": "Edo townspeople frantically passing wooden buckets of water hand to ha",
+   "chars": []
+  },
+  {
+   "id": "B14",
+   "narration": "消防士は、親方に頼んだ。",
+   "image_en": "the modern firefighter, urgently gripping the shoulders of the tobi foreman in a sunny street. Place the main person slightly right of center.",
+   "image": "the modern firefighter, urgently gripping the shoulders of the tobi fo",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ]
+  },
+  {
+   "id": "B14b",
+   "narration": "この昼すぎ、本郷で大きな火が出る。人を集めてほしい。",
+   "same_as": "B14",
+   "voice": "shoboshi"
+  },
+  {
+   "id": "B15",
+   "narration": "親方は笑った。",
+   "image_en": "the tobi foreman, laughing loudly with his arms folded, not believing, young tobi workers grinning behind him. Place the main person slightly right of center.",
+   "image": "the tobi foreman, laughing loudly with his arms folded, not believing,",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "B15b",
+   "narration": "おまえさん、占い師か何かかい。",
+   "same_as": "B15",
+   "voice": "oyakata"
+  },
+  {
+   "id": "C01",
+   "narration": "午後2時ごろ。本郷丸山の本妙寺から、火が出た。",
+   "image_en": "A Buddhist temple hall on a hill in Edo catching fire in the afternoon, flames bursting from the roof, smoke blown hard by the wind.",
+   "chapter": "本妙寺の火",
+   "label": "午後2時",
+   "image": "A Buddhist temple hall on a hill in Edo catching fire in the afternoon",
+   "chars": []
+  },
+  {
+   "id": "C02",
+   "narration": "この火は、振袖火事とも呼ばれる。",
+   "image_en": "A beautiful long-sleeved furisode kimono burning in a temple fire, sparks rising into the dark smoke. No people.",
+   "label": "振袖火事",
+   "image": "A beautiful long-sleeved furisode kimono burning in a temple fire, spa",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "供養で焼いた振袖が、風で舞い上がって燃え移ったという話だ。",
+   "image_en": "A burning furisode kimono flying up in a gust of wind toward a temple hall while monks reading sutras look up in shock. Faded old-memory colors.",
+   "image": "A burning furisode kimono flying up in a gust of wind toward a temple ",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "ただ、同じころの記録には出てこない。今では伝説とされている。",
+   "same_as": "C03"
+  },
+  {
+   "id": "C05",
+   "narration": "消防士は、親方と若い衆を連れて走った。",
+   "image_en": "the modern firefighter, running down a hill street with the tobi foreman and young tobi men carrying long hooked poles, smoke ahead. Place the main person slightly right of center.",
+   "image": "the modern firefighter, running down a hill street with the tobi forem",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "火は北西の風に乗って、湯島から神田へ広がっていく。",
+   "image_en": "Fire spreading across wooden rooftops downhill in Edo, driven by a strong wind, people fleeing in the streets below.",
+   "image": "Fire spreading across wooden rooftops downhill in Edo, driven by a str",
+   "chars": []
+  },
+  {
+   "id": "C07",
+   "narration": "消防士が見ていたのは、炎ではなかった。空に舞う、火の粉だった。",
+   "image_en": "the modern firefighter, looking up at countless glowing sparks swirling across the smoky sky. Place the main person slightly right of center.",
+   "image": "the modern firefighter, looking up at countless glowing sparks swirlin",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "火の粉が風に乗って、ずっと先の屋根に落ちる。飛び火だ。",
+   "image_en": "Glowing sparks landing on distant rooftops far from the main fire, small new fires starting on thatched roofs.",
+   "label": "飛び火",
+   "image": "Glowing sparks landing on distant rooftops far from the main fire, sma",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "C09",
+   "narration": "江戸の火事は、燃え広がるのではない。飛んで広がるのだ。",
+   "same_as": "C08"
+  },
+  {
+   "id": "C10",
+   "narration": "この日の火は日本橋を越え、八丁堀から佃島まで飛んだ。",
+   "image_en": "The famous wooden arched Nihonbashi bridge with fire raging on both banks, sparks flying across the river.",
+   "label": "日本橋",
+   "image": "The famous wooden arched Nihonbashi bridge with fire raging on both ba",
+   "chars": [],
+   "tts_text": "この日の火は日本橋を越え、八丁堀からつくだじままで飛んだ。"
+  },
+  {
+   "id": "C11",
+   "narration": "みんな荷物を背負い、車に積んで逃げている。荷物が道をふさいでいた。",
+   "image_en": "A panicked crowd of Edo townspeople fleeing with huge bundles on their backs and wooden carts piled high with belongings.",
+   "image": "A panicked crowd of Edo townspeople fleeing with huge bundles on their",
+   "chars": []
+  },
+  {
+   "id": "C13",
+   "narration": "本当の歴史でも大火の後、幕府は、車に荷物を積んで逃げることを禁じている。",
+   "image_en": "An Edo official in formal kamishimo reading out an order to a crowd of townspeople by a blank notice board. Faded old-memory colors.",
+   "image": "An Edo official in formal kamishimo reading out an order to a crowd of",
+   "chars": []
+  },
+  {
+   "id": "C14",
+   "narration": "消防士は叫んだ。",
+   "image_en": "the modern firefighter, shouting and waving his arms to direct a fleeing crowd, fire glowing behind them. Place the main person slightly right of center.",
+   "image": "the modern firefighter, shouting and waving his arms to direct a fleei",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "C14b",
+   "narration": "荷物を捨てろ！風上へ逃げろ！",
+   "same_as": "C14",
+   "voice": "shoboshi"
+  },
+  {
+   "id": "C15",
+   "narration": "もう1つ、逃げ場の無い所があった。隅田川だ。",
+   "image_en": "A wide dark river at night with no bridge in sight, fire reflected on the water, the far bank dark.",
+   "image": "A wide dark river at night with no bridge in sight, fire reflected on ",
+   "chars": []
+  },
+  {
+   "id": "C16",
+   "narration": "このころ隅田川に架かる橋は、ずっと上流の千住大橋だけだった。",
+   "image_en": "A wide calm river with a single long wooden bridge far upstream in the distance, Edo period, daytime. Faded old-memory colors.",
+   "label": "橋は1本",
+   "image": "A wide calm river with a single long wooden bridge far upstream in the",
+   "chars": []
+  },
+  {
+   "id": "C17",
+   "narration": "本当の歴史では、霊巌寺に逃げ込んだ人だけでも、9600人あまりが亡くなったといわれる。",
+   "image_en": "Silhouettes of a crowd trapped at a temple by the riverside with fire glowing behind, solemn and quiet, no blood. Faded old-memory colors.",
+   "label": "9600人",
+   "image": "Silhouettes of a crowd trapped at a temple by the riverside with fire ",
+   "chars": [],
+   "tts_text": "本当の歴史では、れいがんじに逃げ込んだ人だけでも、9600人あまりが亡くなったといわれる。"
+  },
+  {
+   "id": "C18",
+   "narration": "消防士は、人を川ではなく、もう焼けた跡の空き地へ向かわせた。一度燃えた所は、もう燃えない。",
+   "image_en": "the modern firefighter, leading a line of townspeople across an open burned-out ground covered with ash, the fire moving away from them. Place the main person slightly right of center.",
+   "image": "the modern firefighter, leading a line of townspeople across an open b",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "D01",
+   "narration": "次の朝。消防士は焼け跡にしゃがみ、棒で地面に町の形を描いた。",
+   "image_en": "the modern firefighter, crouching in the ashes and drawing lines in the ground with a stick, the tobi foreman watching. Place the main person slightly right of center.",
+   "chapter": "壊して止める",
+   "image": "the modern firefighter, crouching in the ashes and drawing lines in th",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ]
+  },
+  {
+   "id": "D02",
+   "narration": "1月19日。本当の歴史では、この日、火元がさらに2つ増える。",
+   "image_en": "Morning over Edo: two new columns of smoke rising from different parts of the city.",
+   "label": "1月19日",
+   "image": "Morning over Edo: two new columns of smoke rising from different parts",
+   "chars": []
+  },
+  {
+   "id": "D03",
+   "narration": "午前10時ごろに小石川から。そして夜には、麹町から。",
+   "same_as": "D02"
+  },
+  {
+   "id": "D04",
+   "narration": "消防士は知っている。次の火は、お城に向かう。",
+   "image_en": "the modern firefighter, looking toward Edo castle in the distance with a grim face, wind blowing. Place the main person slightly right of center.",
+   "image": "the modern firefighter, looking toward Edo castle in the distance with",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "D05",
+   "narration": "江戸城には、大きな天守がそびえていた。",
+   "image_en": "The tall five-story white keep of Edo castle on a high stone base under a clear winter sky, majestic.",
+   "label": "天守",
+   "image": "The tall five-story white keep of Edo castle on a high stone base unde",
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "でも、水が無い。ホースもポンプも無い。あるのは、井戸と手桶と天水桶だけ。",
+   "image_en": "Wooden rain barrels stacked with small wooden buckets beside a well in an Edo street. No people.",
+   "image": "Wooden rain barrels stacked with small wooden buckets beside a well in",
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "そこで親方が見せたのが、とび口だった。長い柄の先に、鉄のかぎが付いている。",
+   "image_en": "the tobi foreman, holding up a long wooden pole with an iron hook on the end, proud face. Place the main person slightly right of center.",
+   "label": "とび口",
+   "image": "the tobi foreman, holding up a long wooden pole with an iron hook on t",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "D08",
+   "narration": "江戸の火消しは、水で消さない。燃えそうな家を、先に壊す。",
+   "image_en": "Edo firemen pulling down a wooden house with long hooked poles and ropes, the roof collapsing in a cloud of dust.",
+   "image": "Edo firemen pulling down a wooden house with long hooked poles and rop",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "D09",
+   "narration": "破壊消防だ。火の通り道から、燃える物を無くしてしまう。",
+   "image_en": "A heap of torn-down timber and roof boards where a house stood; beyond it the fire stops at the empty gap.",
+   "label": "破壊消防",
+   "image": "A heap of torn-down timber and roof boards where a house stood; beyond",
+   "chars": []
+  },
+  {
+   "id": "D11",
+   "narration": "手押しポンプの龍吐水が配られるのは、まだ100年ほど先の話だ。",
+   "image_en": "Two Edo firemen pumping an old wooden hand pump box, a weak short stream of water arching toward a fire. Faded old-memory colors.",
+   "label": "龍吐水",
+   "image": "Two Edo firemen pumping an old wooden hand pump box, a weak short stre",
+   "chars": []
+  },
+  {
+   "id": "D12",
+   "narration": "消防士は、壊すこと自体は止めなかった。変えたのは、壊す場所だ。",
+   "image_en": "the modern firefighter, and the tobi foreman arguing face to face over lines drawn in the ashes. Place the main person slightly right of center.",
+   "image": "the modern firefighter, and the tobi foreman arguing face to face over",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ]
+  },
+  {
+   "id": "D13",
+   "narration": "火の手前ではなく、風下のずっと先。火が着く前に、広い帯を空ける。",
+   "image_en": "A long straight belt of demolished houses cutting across the wooden townscape, seen from a rooftop, smoke far away upwind.",
+   "image": "A long straight belt of demolished houses cutting across the wooden to",
+   "chars": []
+  },
+  {
+   "id": "D14",
+   "narration": "今の言葉でいえば、防火帯だ。",
+   "same_as": "D13",
+   "label": "防火帯"
+  },
+  {
+   "id": "D15",
+   "narration": "親方はしぶい顔をした。まだ燃えていない家を壊せば、恨まれるのは鳶だ。",
+   "image_en": "the tobi foreman, frowning hard while angry townspeople shout at him in front of their houses. Place the main person slightly right of center.",
+   "image": "the tobi foreman, frowning hard while angry townspeople shout at him i",
+   "chars": [
+    "oyakata"
+   ],
+   "tts_text": "親方はしぶい顔をした。まだ燃えていない家を壊せば、恨まれるのはとびだ。"
+  },
+  {
+   "id": "D16",
+   "narration": "壊した家の数より、助かる家の数を数えてくれ。",
+   "image_en": "Close-up of the modern firefighter, speaking sincerely, soot on his cheek. Place the main person slightly right of center.",
+   "image": "Close-up of the modern firefighter, speaking sincerely, soot on his ch",
+   "chars": [
+    "shoboshi"
+   ],
+   "voice": "shoboshi"
+  },
+  {
+   "id": "D17",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になる方は、チャンネル登録で応援してください。",
+   "same_as": "A03",
+   "tts_text": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になるかたは、チャンネル登録で応援してください。"
+  },
+  {
+   "id": "E01",
+   "narration": "午前10時ごろ、小石川で火が出た。風はまだ北西だ。",
+   "image_en": "Fire bursting out of large samurai mansions in Edo, black smoke blown to the southeast by a strong wind.",
+   "chapter": "天守を守れ",
+   "label": "午前10時",
+   "image": "Fire bursting out of large samurai mansions in Edo, black smoke blown ",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "火は水戸藩の屋敷を焼き、飯田町から番町へ、お城の方へ伸びていく。",
+   "image_en": "A wall of fire advancing across samurai districts toward the moats and stone walls of Edo castle.",
+   "image": "A wall of fire advancing across samurai districts toward the moats and",
+   "chars": [],
+   "tts_text": "火は水戸藩の屋敷を焼き、飯田町からばんちょうへ、お城の方へ伸びていく。"
+  },
+  {
+   "id": "E03",
+   "narration": "本当の歴史では、正午から午後1時ごろ、この火が天守に燃え移る。",
+   "image_en": "The tall white keep of Edo castle engulfed in flames, smoke pouring from its windows. Faded old-memory colors.",
+   "label": "正午",
+   "image": "The tall white keep of Edo castle engulfed in flames, smoke pouring fr",
+   "chars": []
+  },
+  {
+   "id": "E04",
+   "narration": "消防士と鳶たちは、お城の北の町で、家を壊し続けた。",
+   "image_en": "the modern firefighter, directing tobi men who pull down houses near the castle moat, the castle keep visible beyond. Place the main person slightly right of center.",
+   "image": "the modern firefighter, directing tobi men who pull down houses near t",
+   "chars": [
+    "shoboshi"
+   ],
+   "tts_text": "消防士ととびたちは、お城の北の町で、家を壊し続けた。"
+  },
+  {
+   "id": "E06",
+   "narration": "消防士は、空ばかり見ていた。風の向きが変わる時を、待っていた。",
+   "image_en": "the modern firefighter, staring up at smoke and fluttering plain banners, judging the wind. Place the main person slightly right of center.",
+   "image": "the modern firefighter, staring up at smoke and fluttering plain banne",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "E07",
+   "narration": "本当の歴史では午後4時ごろ、風は西に変わった。",
+   "image_en": "Plain banners on a castle wall turning direction in the wind, smoke bending the other way, late afternoon. Faded old-memory colors.",
+   "label": "午後4時",
+   "image": "Plain banners on a castle wall turning direction in the wind, smoke be",
+   "chars": []
+  },
+  {
+   "id": "E09",
+   "narration": "その時には、天守の北に、燃える物の無い帯ができていた。",
+   "image_en": "A wide cleared strip of bare ground north of Edo castle, demolished timber piled on the sides, the white keep beyond.",
+   "image": "A wide cleared strip of bare ground north of Edo castle, demolished ti",
+   "chars": []
+  },
+  {
+   "id": "E11",
+   "narration": "天守は、黒い煙の向こうに、立ったままだった。",
+   "image_en": "The white keep of Edo castle still standing tall behind dark smoke, lit by the orange glow of fire, dramatic.",
+   "image": "The white keep of Edo castle still standing tall behind dark smoke, li",
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "label": "天守が残った",
+   "strong": true,
+   "highlight": [
+    "立ったまま"
+   ]
+  },
+  {
+   "id": "E12",
+   "narration": "鳶たちから声が上がった。親方が、消防士の背中をたたいた。",
+   "image_en": "the tobi foreman, slapping the back of the modern firefighter while young tobi men cheer, raising their hooked poles. Place the main person slightly right of center.",
+   "image": "the tobi foreman, slapping the back of the modern firefighter while yo",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ],
+   "tts_text": "とびたちから声が上がった。親方が、消防士の背中をたたいた。"
+  },
+  {
+   "id": "E13",
+   "narration": "だが、まだ終わらない。その夜、3つ目の火が麹町から出る。",
+   "image_en": "Night. A new fire bursting out among townhouses and mansions, the sky glowing red.",
+   "label": "3つ目",
+   "image": "Night. A new fire bursting out among townhouses and mansions, the sky ",
+   "chars": []
+  },
+  {
+   "id": "E15",
+   "narration": "火は芝の海まで走った。消防士たちは家を壊し、人を逃がし続けた。",
+   "image_en": "the modern firefighter, guiding families with children away from the fire at night, tobi men tearing down houses behind. Place the main person slightly right of center.",
+   "image": "the modern firefighter, guiding families with children away from the f",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "E16",
+   "narration": "20日の明け方、江戸の火は、ようやくすべて止まった。",
+   "image_en": "Dawn over a vast smoldering Edo, thin smoke columns rising in silence, a pale sky.",
+   "image": "Dawn over a vast smoldering Edo, thin smoke columns rising in silence,",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "では、本当の江戸は、大火の後どうなったのか。",
+   "image_en": "A vast burned-out area of Edo in cold morning light: charred posts, ash, stone walls, a few people searching the ruins. Faded old-memory colors.",
+   "chapter": "焼け跡の江戸",
+   "image": "A vast burned-out area of Edo in cold morning light: charred posts, as",
+   "chars": []
+  },
+  {
+   "id": "F02",
+   "narration": "明暦の大火で、江戸の市街地のおよそ6割が焼けたとされる。",
+   "same_as": "F01",
+   "label": "約6割",
+   "tts_text": "めいれきの大火で、江戸の市街地のおよそ6割が焼けたとされる。"
+  },
+  {
+   "id": "F04",
+   "narration": "亡くなった人の数は、記録によって大きく違う。3万7千人という記録も、10万人をこえるという記録もある。",
+   "image_en": "Rows of small lit candles and incense smoke in front of plain wooden memorial markers, solemn. Faded old-memory colors.",
+   "label": "諸説",
+   "image": "Rows of small lit candles and incense smoke in front of plain wooden m",
+   "chars": []
+  },
+  {
+   "id": "F05",
+   "narration": "国の報告書は、その間の6万8千人あまりが、実際に近いとみている。",
+   "same_as": "F04",
+   "label": "6万8千人",
+   "tts_text": "国の報告書は、そのあいだの6万8千人あまりが、実際に近いとみている。"
+  },
+  {
+   "id": "F07",
+   "narration": "幕府は町の6か所に小屋を建て、おかゆを配った。",
+   "image_en": "Officials ladling rice gruel from huge iron pots under a temporary wooden shelter to a long line of townspeople. Faded old-memory colors.",
+   "label": "おかゆ",
+   "image": "Officials ladling rice gruel from huge iron pots under a temporary woo",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "F08",
+   "narration": "使った米は、1日に1000俵。",
+   "same_as": "F07",
+   "label": "1日1000俵",
+   "tts_text": "使ったこめは、1日にせんぴょう。"
+  },
+  {
+   "id": "F09",
+   "narration": "身元の分からない亡くなった人は、隅田川の向こうに葬られた。そこに建てられたのが、今の両国の回向院だ。",
+   "image_en": "A quiet small Buddhist temple across a river, monks praying, incense smoke. Faded old-memory colors.",
+   "label": "回向院",
+   "image": "A quiet small Buddhist temple across a river, monks praying, incense s",
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "立て直しにも、すぐ問題が起きた。材木の値段が、跳ね上がったのだ。",
+   "image_en": "A greedy lumber merchant sitting proudly on a huge stack of timber logs, counting coins, smiling slyly. Faded old-memory colors.",
+   "image": "A greedy lumber merchant sitting proudly on a huge stack of timber log",
+   "chars": []
+  },
+  {
+   "id": "F11",
+   "narration": "幕府は、うわさを流したと伝わる。お城の工事は3年延ばす。材木は町からは1本も買わない。",
+   "image_en": "Townspeople whispering and gossiping in a street while an official walks away calmly. Faded old-memory colors.",
+   "image": "Townspeople whispering and gossiping in a street while an official wal",
+   "chars": []
+  },
+  {
+   "id": "F12",
+   "narration": "材木の値は、たちまち下がったという。",
+   "same_as": "F10"
+  },
+  {
+   "id": "G01",
+   "narration": "では、焼けた江戸城の天守は、その後どうなったのか。",
+   "image_en": "A large empty stone keep base of Edo castle with no tower on top, smoke drifting, gray sky. Faded old-memory colors.",
+   "chapter": "天守のない城",
+   "image": "A large empty stone keep base of Edo castle with no tower on top, smok",
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "G02",
+   "narration": "ここで問題です。焼けた天守は、何年後に建て直されたでしょう。",
+   "same_as": "G01",
+   "label": "問題",
+   "tease": true
+  },
+  {
+   "id": "G04",
+   "narration": "建て直しを止めたのは、4代将軍家綱を支えた保科正之だと伝わる。",
+   "image_en": "Hoshina Masayuki, sitting in a castle council room with a serious face. Place the main person slightly right of center. Faded old-memory colors.",
+   "label": "保科正之",
+   "image": "Hoshina Masayuki, sitting in a castle council room with a serious face",
+   "chars": [
+    "hoshina"
+   ],
+   "tts_text": "建て直しを止めたのは、4代将軍いえつなを支えた保科正之だと伝わる。"
+  },
+  {
+   "id": "G05",
+   "narration": "天守は戦の役には立たない。それより今は、町の立て直しに力を使うべきだ、と。",
+   "image_en": "Hoshina Masayuki, speaking calmly to other lords in a council hall, gesturing toward the burned town outside. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Hoshina Masayuki, speaking calmly to other lords in a council hall, ge",
+   "chars": [
+    "hoshina"
+   ]
+  },
+  {
+   "id": "G06",
+   "narration": "答えは、何年たっても建たない。江戸城の天守は、二度と建て直されなかった。",
+   "image_en": "The empty stone keep base standing alone under a clear sky, quiet castle garden around it. Faded old-memory colors.",
+   "label": "建て直さず",
+   "strong": true,
+   "image": "The empty stone keep base standing alone under a clear sky, quiet cast",
+   "chars": [],
+   "payoff": true
+  },
+  {
+   "id": "G07",
+   "narration": "今も皇居の東御苑には、そのときの天守台だけが残っている。",
+   "same_as": "G06"
+  },
+  {
+   "id": "G08",
+   "narration": "消防士の世界線では、天守は焼けずに残った。",
+   "image_en": "the modern firefighter, looking up at the tall white keep of Edo castle standing safe at sunset. Place the main person slightly right of center.",
+   "image": "the modern firefighter, looking up at the tall white keep of Edo castl",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "G09",
+   "narration": "それを見上げた消防士は、保科正之に会いに行った。",
+   "image_en": "the modern firefighter, kneeling politely before Hoshina Masayuki in a castle hall. Place the main person slightly right of center.",
+   "image": "the modern firefighter, kneeling politely before Hoshina Masayuki in a",
+   "chars": [
+    "shoboshi",
+    "hoshina"
+   ]
+  },
+  {
+   "id": "G10",
+   "narration": "天守の次に守るべきは、町の人です。",
+   "same_as": "G09",
+   "voice": "shoboshi"
+  },
+  {
+   "id": "G11",
+   "narration": "消防士が差し出した紙には、4つのことが書いてあった。",
+   "image_en": "Hoshina Masayuki, reading a sheet of blank paper with great interest. Place the main person slightly right of center.",
+   "image": "Hoshina Masayuki, reading a sheet of blank paper with great interest. ",
+   "chars": [
+    "hoshina"
+   ]
+  },
+  {
+   "id": "H01",
+   "narration": "1つ目は、逃げ道。川に橋を架けること。",
+   "image_en": "A plan of a new long wooden bridge being built across a wide river, carpenters on scaffolding.",
+   "chapter": "燃えにくい町",
+   "image": "A plan of a new long wooden bridge being built across a wide river, ca",
+   "chars": []
+  },
+  {
+   "id": "H02",
+   "narration": "本当の歴史でも、大火の2年後の1659年に、隅田川に新しい橋が架かったとされる。のちの両国橋だ。",
+   "image_en": "A long wooden arched bridge across the Sumida river in Edo crowded with people, boats below. Faded old-memory colors.",
+   "label": "両国橋",
+   "image": "A long wooden arched bridge across the Sumida river in Edo crowded wit",
+   "chars": [],
+   "tts_text": "本当の歴史でも、大火の2年後の1659年に、隅田川に新しい橋が架かったとされる。のちのりょうごくばしだ。",
+   "anim": "kling"
+  },
+  {
+   "id": "H03",
+   "narration": "橋のたもとは、燃え広がりを止める空き地、火除地になった。",
+   "image_en": "A wide open plaza at the end of a wooden bridge, with no buildings, people crossing. Faded old-memory colors.",
+   "image": "A wide open plaza at the end of a wooden bridge, with no buildings, pe",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "その空き地には、やがて見世物小屋や屋台が並び、江戸いちばんの盛り場になる。",
+   "image_en": "A lively Edo plaza at a bridge end crowded with food stalls, tents, street performers and happy crowds. Faded old-memory colors.",
+   "label": "両国広小路",
+   "image": "A lively Edo plaza at a bridge end crowded with food stalls, tents, st",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "2つ目は、道を広くすること。",
+   "same_as": "B06"
+  },
+  {
+   "id": "H06",
+   "narration": "本当の歴史でも、通りに張り出したひさしは切られ、日本橋の通りは、はば18メートルほどに広げられた。",
+   "image_en": "A wide straight Edo merchant street with neat shops on both sides and short eaves, many people walking. Faded old-memory colors.",
+   "label": "はば18m",
+   "image": "A wide straight Edo merchant street with neat shops on both sides and ",
+   "chars": []
+  },
+  {
+   "id": "H08",
+   "narration": "3つ目は、燃えにくい家。",
+   "image_en": "Plasterers coating the wooden walls of an Edo house with thick clay plaster.",
+   "image": "Plasterers coating the wooden walls of an Edo house with thick clay pl",
+   "chars": []
+  },
+  {
+   "id": "H09",
+   "narration": "幕府は、かやぶきやわらぶきの屋根を禁じ、壁を土で塗った家をすすめた。",
+   "same_as": "H08"
+  },
+  {
+   "id": "H10",
+   "narration": "町の人は、地面に穴蔵を掘って大事な物をしまった。江戸の地面の10分の1が穴、という話まである。",
+   "image_en": "An Edo merchant lowering a wooden chest into a square underground storage pit lined with wood, curious neighbors watching. Faded old-memory colors.",
+   "label": "10分の1",
+   "image": "An Edo merchant lowering a wooden chest into a square underground stor",
+   "chars": []
+  },
+  {
+   "id": "H11",
+   "narration": "そして4つ目。消防士が、いちばん大事だと言ったこと。町の人を守る火消しを作ること。",
+   "image_en": "the modern firefighter, pointing toward a crowd of ordinary townspeople, passionate face. Place the main person slightly right of center.",
+   "image": "the modern firefighter, pointing toward a crowd of ordinary townspeopl",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "H12",
+   "narration": "本当の歴史では、大火の翌年の1658年に、旗本が率いる定火消ができる。",
+   "image_en": "A tall wooden fire watchtower with a drum and a bell inside a samurai compound, firemen gathered below. Faded old-memory colors.",
+   "label": "1658年",
+   "image": "A tall wooden fire watchtower with a drum and a bell inside a samurai ",
+   "chars": []
+  },
+  {
+   "id": "H13",
+   "narration": "屋敷は4つ。どれも江戸城の北西、冬の風が吹いてくる側に置かれた。",
+   "image_en": "Strong winter wind blowing past a fire watchtower toward a distant castle, banners stretched. Faded old-memory colors.",
+   "image": "Strong winter wind blowing past a fire watchtower toward a distant cas",
+   "chars": []
+  },
+  {
+   "id": "H14",
+   "narration": "火は、風上から来る。消防士の考えと同じだった。",
+   "same_as": "H11"
+  },
+  {
+   "id": "I01",
+   "narration": "では、町人の火消しは、いつできたのか。",
+   "image_en": "Ordinary Edo townspeople, merchants and craftsmen, standing in a street looking at a distant smoke.",
+   "chapter": "町火消が生まれるまで",
+   "image": "Ordinary Edo townspeople, merchants and craftsmen, standing in a stree",
+   "chars": []
+  },
+  {
+   "id": "I02",
+   "narration": "本当の歴史では、大火から61年後の1718年。町奉行の大岡忠相が、町火消をつくった。",
+   "image_en": "Ooka Tadasuke, a Japanese town magistrate about forty in formal grey kamishimo, intelligent kind face, topknot, sitting at a desk in a magistrate's office, writing with a brush. Place the main person slightly right of center. Faded old-memory colors.",
+   "label": "1718年",
+   "image": "Ooka Tadasuke, a Japanese town magistrate about forty in formal grey k",
+   "chars": []
+  },
+  {
+   "id": "I03",
+   "narration": "町ごとに組を作り、いろは47組。のちに48組になる。",
+   "image_en": "Rows of Edo firemen in matching happi coats lined up proudly, each group holding a tall plain matoi standard with no letters. Faded old-memory colors.",
+   "label": "いろは48組",
+   "image": "Rows of Edo firemen in matching happi coats lined up proudly, each gro",
+   "chars": []
+  },
+  {
+   "id": "I04",
+   "narration": "ただ、いろはの中で、組の名に使われなかった字が4つある。",
+   "same_as": "I03"
+  },
+  {
+   "id": "I05",
+   "narration": "ひ、へ、ら、ん。",
+   "image_en": "Four small blank wooden name tags hanging on a wall, warm lantern light. No writing.",
+   "label": "ひ・へ・ら・ん",
+   "strong": true,
+   "image": "Four small blank wooden name tags hanging on a wall, warm lantern ligh",
+   "chars": [],
+   "tts_text": "ひ。ヘ。ら。ん。"
+  },
+  {
+   "id": "I06",
+   "narration": "ひは火に通じる。へは、おならの屁。らと、んは、言葉の響きを嫌ったといわれる。",
+   "image_en": "Edo firemen laughing loudly together in a fire station, one holding his nose as a joke. Faded old-memory colors.",
+   "image": "Edo firemen laughing loudly together in a fire station, one holding hi",
+   "chars": [],
+   "tts_text": "ひは、火に通じる。屁の字は、おならの屁。らと、んは、言葉の響きを嫌ったといわれる。"
+  },
+  {
+   "id": "I07",
+   "narration": "代わりに、百、千、万、本の組が作られた。",
+   "same_as": "I05",
+   "label": "百・千・万・本",
+   "tts_text": "代わりに、ひゃく、せん、まん、ほんの組が作られた。"
+  },
+  {
+   "id": "I08",
+   "narration": "町火消は鳶の職人が中心。屋根でまといを振り、ここは自分たちが守ると知らせた。",
+   "image_en": "An Edo fireman standing on a rooftop swinging a tall plain matoi standard with paper strips, fire and smoke nearby, heroic.",
+   "image": "An Edo fireman standing on a rooftop swinging a tall plain matoi stand",
+   "chars": [],
+   "tts_text": "町火消はとびの職人が中心。屋根でまといを振り、ここは自分たちが守ると知らせた。",
+   "anim": "kling"
+  },
+  {
+   "id": "I09",
+   "narration": "消防士の世界線では、61年早く、親方たちの組ができていた。",
+   "image_en": "the tobi foreman, in a new matching happi coat leading his group of tobi firemen, the modern firefighter standing beside him. Place the main person slightly right of center.",
+   "image": "the tobi foreman, in a new matching happi coat leading his group of to",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ]
+  },
+  {
+   "id": "I10",
+   "narration": "そろいの法被の親方が、照れくさそうに言った。",
+   "same_as": "I09"
+  },
+  {
+   "id": "I10b",
+   "narration": "これで、恨まれずに家を壊せる。",
+   "same_as": "I09",
+   "voice": "oyakata"
+  },
+  {
+   "id": "J01",
+   "narration": "消防士が持って行ったのは、知識だけだった。",
+   "image_en": "the modern firefighter, standing on a hill at sunset looking over the rebuilt wooden city of Edo. Place the main person slightly right of center.",
+   "chapter": "おわりに",
+   "image": "the modern firefighter, standing on a hill at sunset looking over the ",
+   "chars": [
+    "shoboshi"
+   ]
+  },
+  {
+   "id": "J02",
+   "narration": "火は飛ぶ。逃げ道を先に作る。壊すなら、風下の先を。",
+   "same_as": "C07"
+  },
+  {
+   "id": "J03",
+   "narration": "どれも今の消防では当たり前のこと。江戸の人が、大火から何十年もかけて学んだことでもある。",
+   "image_en": "A rebuilt Edo town with wide streets, plastered houses and a fire watchtower, peaceful evening. Faded old-memory colors.",
+   "image": "A rebuilt Edo town with wide streets, plastered houses and a fire watc",
+   "chars": []
+  },
+  {
+   "id": "J05",
+   "narration": "それでも町は、橋を架け、道を広げ、町火消を育てて、少しずつ燃えにくくなっていった。",
+   "same_as": "H04"
+  },
+  {
+   "id": "J06",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "the modern firefighter, and the tobi foreman, sitting side by side on a riverbank at sunset, tired but smiling. Place the main person slightly right of center.",
+   "image": "the modern firefighter, and the tobi foreman, sitting side by side on ",
+   "chars": [
+    "shoboshi",
+    "oyakata"
+   ],
+   "anim": "kling"
+  },
+  {
+   "id": "J07",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "J01"
+  }
+ ]
+}

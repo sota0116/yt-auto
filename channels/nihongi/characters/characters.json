@@ -1,0 +1,84 @@
+{
+ "_説明": "アナザー日本紀の登場人物（2026-10-27 から）。何度も出る人だけ設定画（sheet）を作り、全部の回で顔・髪・服をそろえる。make_images_lovart_chars.py（OneDrive\\ClaudeBackup\\tools\\youtube）が読む。1回しか出ない人は、script.json の image_en に見た目を直接書く。2026-10-28 L001 で長政・久秀・村重・義昭・家康を足した（長政・久秀・村重は S001 の絵の指示と同じ見た目）。2026-10-28 L002 で消防士・鳶の親方・保科正之を足した",
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game.",
+ "chars": {
+  "nobunaga": {
+   "name": "織田信長（40代後半）",
+   "sheet": "nobunaga.png",
+   "desc_en": "Oda Nobunaga, a Japanese warlord in his late forties: lean narrow face, sharp piercing eyes, thin moustache, traditional chonmage topknot, black kosode kimono under a crimson jinbaori surcoat.",
+   "voice": 21,
+   "voice_name": "剣崎雌雄（ノーマル）"
+  },
+  "mitsuhide": {
+   "name": "明智光秀（50代）",
+   "sheet": "mitsuhide.png",
+   "desc_en": "Akechi Mitsuhide, a Japanese samurai general in his fifties: calm composed face, quiet serious eyes, thin short beard, chonmage topknot, plain pale light-blue kimono with grey hakama.",
+   "voice": 11,
+   "voice_name": "玄野武宏（ノーマル）"
+  },
+  "hideyoshi": {
+   "name": "羽柴秀吉（40代）",
+   "sheet": "hideyoshi.png",
+   "desc_en": "Hashiba Hideyoshi, a Japanese samurai in his forties: short and small, wiry build, deeply wrinkled cheerful face with a broad grin, sparse moustache, chonmage topknot, golden jinbaori surcoat over a brown kimono.",
+   "voice": 12,
+   "voice_name": "白上虎太郎（ふつう）"
+  },
+  "nagamasa": {
+   "name": "浅井長政（20代）",
+   "sheet": "nagamasa.png",
+   "desc_en": "Azai Nagamasa, a handsome young Japanese samurai lord in his twenties: strong jaw, earnest eyes, chonmage topknot, dark green kimono and navy hakama.",
+   "voice": 52,
+   "voice_name": "雀松朱司（ノーマル）"
+  },
+  "hisahide": {
+   "name": "松永久秀（60代）",
+   "sheet": "hisahide.png",
+   "desc_en": "Matsunaga Hisahide, an elderly Japanese samurai lord in his sixties: shrewd narrow eyes, sly smile, grey chonmage topknot, grey goatee, dark purple kimono.",
+   "voice": 53,
+   "voice_name": "麒ヶ島宗麟（ノーマル）"
+  },
+  "murashige": {
+   "name": "荒木村重（40代）",
+   "sheet": "murashige.png",
+   "desc_en": "Araki Murashige, a stout Japanese samurai lord in his forties: round face, thick eyebrows, short beard, chonmage topknot, dark brown kimono and black hakama.",
+   "voice": 101,
+   "voice_name": "離途（シリアス）"
+  },
+  "yoshiaki": {
+   "name": "足利義昭（30代）",
+   "sheet": "yoshiaki.png",
+   "desc_en": "Ashikaga Yoshiaki, the Japanese shogun in his thirties: pale refined face, thin eyebrows, tall black eboshi court hat, white and purple court robes.",
+   "voice": 67,
+   "voice_name": "栗田まろん（ノーマル）"
+  },
+  "ieyasu": {
+   "name": "徳川家康（40代）",
+   "sheet": "ieyasu.png",
+   "desc_en": "Tokugawa Ieyasu, a Japanese warlord in his forties: round face, sturdy heavy build, calm quiet eyes, chonmage topknot, dark brown kimono with a grey haori.",
+   "voice": 100,
+   "voice_name": "黒沢冴白（ノーマル）"
+  },
+  "shoboshi": {
+   "name": "現代の消防士（30代・L002）",
+   "sheet": "shoboshi.png",
+   "desc_en": "A modern Japanese firefighter in his thirties: short black hair, determined honest face, plain orange-and-silver protective turnout suit with reflective stripes and a plain helmet, with no marks, letters, numbers or logos anywhere.",
+   "voice": 39,
+   "voice_name": "玄野武宏（喜び）"
+  },
+  "oyakata": {
+   "name": "鳶の親方（40代・L002）",
+   "sheet": "oyakata.png",
+   "desc_en": "An Edo-period tobi construction foreman about forty-five: stocky build, thick eyebrows, chonmage topknot with shaved pate, short plain dark indigo happi coat, white headband, tight dark work trousers.",
+   "voice": 53,
+   "voice_name": "麒ヶ島宗麟（ノーマル）"
+  },
+  "hoshina": {
+   "name": "保科正之（40代）",
+   "sheet": "hoshina.png",
+   "desc_en": "Hoshina Masayuki, a dignified Japanese lord about forty-six: calm wise face, chonmage topknot, formal dark blue kamishimo.",
+   "voice": 99,
+   "voice_name": "離途（ノーマル）"
+  }
+ },
+ "_声": "2026-10-28 から：登場人物のセリフは語り手（VOICEVOX 青山龍星（ノーマル）・13）と違う声で読む（スキル references/16 の3）。台本全体の \"voices\" に、出る人物の voice を写す。同じ回に出る2人が同じ声にならないようにする（同じ声の人物：別々の回にしか出ない組だけ）。声は仮決め。試聴は characters/_voicetest_2026-10-28/。各キャラの VOICEVOX 規約（収益化・内容の制限）は、初めて公開する前に確かめる"
+}

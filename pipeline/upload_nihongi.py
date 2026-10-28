@@ -56,7 +56,9 @@ def live(h):
 
 
 def next_slot(hist, three=False):
-    taken = {h["publish_at"][:16] for h in hist if h.get("publish_at") and live(h)}
+    # 毎日の制作（クラウド）が上げた分（history/nihongi/uploaded.json。2026-10-29 から）の予約も枠に数える
+    import ustore
+    taken = {h["publish_at"][:16] for h in list(hist) + ustore.load(CH) if h.get("publish_at") and live(h)}
     now = datetime.datetime.now(JST)
     day = now.date()
     for _ in range(60):

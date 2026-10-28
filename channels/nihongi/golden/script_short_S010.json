@@ -1,0 +1,181 @@
+{
+ "format": "short",
+ "title": "もしも江戸で、白いご飯が禁止されたら #もしも #日本史 #江戸時代",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※白米が禁止される話は作り話です。江戸わずらい（脚気）と、1910年に鈴木梅太郎が米ぬかから有効成分（オリザニン＝ビタミンB1）を取り出したことは史実をもとにしています。\n※映像とナレーションはAIを使って作っています。\n音声：VOICEVOX:青山龍星",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "江戸わずらい",
+  "脚気",
+  "鈴木梅太郎",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ、コマ割り、枠、血・けが・病気の生々しい描写",
+ "banner": [
+  "アナザー日本紀",
+  "江戸の病が消えた"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "facts": [
+  "江戸時代、白米を食べる習慣が広がり、とくに江戸で脚気が多かったため「江戸患い」とも呼ばれた。脚気はビタミンB1の不足による。出どころ：農林水産省 www.maff.go.jp/j/meiji150/eiyo/01.html",
+  "江戸に来た武士（勤番）がかかりやすく、故郷に帰ると治ることが多かったといわれる（一般向けの解説：intojapanwaraku.com/rock/culture-rock/211437/、allabout.co.jp/gm/gc/455224/）。台本では「といわれる」",
+  "明治43年（1910年）、農学者・鈴木梅太郎が米ぬかから脚気予防の有効成分オリザニン（ビタミンB1）を取り出した。脚気は大正時代には結核と並ぶ二大国民病といわれた。出どころ：農林水産省 www.maff.go.jp/j/meiji150/eiyo/02.html",
+  "白米禁止のおふれは作り話（そういう禁令は無い）"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "白米が\n禁止",
+   "narration": "もしも江戸で、白いご飯が禁止されたら。",
+   "image_en": "An Edo-period townsman in a plain kimono freezes in shock, holding a bowl of shining white rice with chopsticks, mouth open; a government notice board stands blank behind him on the street.",
+   "shots": [
+    "n01",
+    "n01@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n02",
+   "narration": "江戸では、白いご飯を食べるのが当たり前になっていた。",
+   "highlight": [
+    "白いご飯"
+   ],
+   "image_en": "A lively Edo-period row-house family eating bowls of white rice heaped high at a low table, warm lantern light, happy faces.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n03",
+   "narration": "ところが江戸に来た武士が、次々に足のむくみで寝込む。",
+   "image_en": "a young Japanese samurai about twenty-five from the countryside, plain dark blue kimono and hakama, topknot, thin honest face, lying weakly on a futon in a plain room of a samurai residence, rubbing his heavy tired leg with a worried face; other samurai look in from the doorway.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n04",
+   "narration": "故郷に帰ると治ったといわれる。名前は、江戸わずらい。",
+   "highlight": [
+    "江戸わずらい"
+   ],
+   "image_en": "a young Japanese samurai about twenty-five from the countryside, plain dark blue kimono and hakama, topknot, thin honest face, walking happily and healthily along a country road between rice fields toward a thatched farmhouse village, mountains behind, sunny.",
+   "shots": [
+    "n04",
+    "n04@right"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n05",
+   "narration": "そこで幕府が、おふれを出す。白米を食べてはならぬ。",
+   "highlight": [
+    "食べてはならぬ"
+   ],
+   "image_en": "A stern Edo-period official in formal kamishimo posts a large blank wooden notice board at a busy crossroads while townspeople crowd around in disbelief.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n06",
+   "narration": "町の人は大さわぎ。米屋の前で、玄米と麦をにらむ。",
+   "image_en": "Angry and confused Edo townspeople in front of a rice shop, glaring at open sacks of brown rice and barley; the rice merchant shrugs.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "tts_text": "町の人は大さわぎ。こめやの前で、玄米と麦をにらむ。"
+  },
+  {
+   "id": "n07",
+   "narration": "しかたなく、麦飯とそばを食べる日が続いた。",
+   "image_en": "Edo townspeople slurping soba noodles at a street stall at night while others eat bowls of barley rice, grumbling faces, lantern light.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n08",
+   "narration": "一年後、江戸わずらいで寝込む武士がいなくなった。",
+   "highlight": [
+    "いなくなった"
+   ],
+   "image_en": "a young Japanese samurai about twenty-five from the countryside, plain dark blue kimono and hakama, topknot, thin honest face, practicing sword swings energetically in the courtyard of a samurai residence in spring with cherry blossoms, several other healthy samurai training beside him.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n09",
+   "narration": "誰も理由が分からないまま、江戸は元気な町になった。",
+   "image_en": "A bustling bright Edo street at sunset full of energetic people, porters running, children playing; a puzzled doctor in a dark haori scratches his head in the middle.",
+   "shots": [
+    "n09",
+    "n09@right"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n10",
+   "narration": "本当の歴史では、原因が分かったのは明治になってから。",
+   "image_en": "A Meiji-era Japanese laboratory with glass flasks and a wooden table; a serious scientist in a Western suit with a moustache examines a dish of rice bran. Faded old-memory colors.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n11",
+   "narration": "1910年、米ぬかから、効く成分が取り出された。",
+   "highlight": [
+    "米ぬか"
+   ],
+   "image_en": "Close view of a scientist's hands holding a small glass bottle of pale liquid next to a heap of brown rice bran on a wooden lab table. Faded old-memory colors.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n12",
+   "narration": "白米にするとき削る所に、答えがあった。",
+   "image_en": "A single grain of rice drawn very large, half brown with its bran and germ, half polished white, glowing softly on a dark background. No text.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n13",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "a young Japanese samurai about twenty-five from the countryside, plain dark blue kimono and hakama, topknot, thin honest face, smiling and eating a bowl of barley rice on the veranda of a samurai residence at dusk, a lantern beside him.",
+   "shots": [
+    "n13"
+   ],
+   "chars": []
+  }
+ ]
+}

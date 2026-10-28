@@ -21,6 +21,13 @@ def topic(work):
     return (json.load(open(p, encoding="utf-8")).get("topic") if os.path.exists(p) else None) or "日本の仕事と年収の統計"
 
 
+def era_rule(work):
+    """3番目の不合格の条件。チャンネルの profile.json の image_gate_item3（無ければ今までの言い方。アナザー日本紀は江戸・戦国・幕末の絵なので別の文を入れる）"""
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    v = json.load(open(p, encoding="utf-8")).get("image_gate_item3") if os.path.exists(p) else None
+    return v or "日本の今の時代に見えない、時間帯が違う"
+
+
 def image_cuts(s):
     return [c for c in s["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")]
 
@@ -30,7 +37,7 @@ def small(work, cid):
     os.makedirs(d, exist_ok=True)
     p = os.path.join(d, cid + ".jpg")
     im = Image.open(os.path.join(work, "images", cid + ".png")).convert("RGB")
-    im.thumbnail((1024, 576))
+    im.thumbnail((576, 1024) if im.height > im.width else (1024, 576))  # 縦長のショートの絵は縦を1024に（アナザー日本紀。2026-10-29）
     im.save(p, quality=85)
     return p
 
@@ -47,7 +54,7 @@ def judge(work, s, cuts, use):
 1枚ずつ、次のどれかに当たれば不合格にしてください。
 1. 場面の説明・セリフと合っていない（場所・時間帯・人数・していること）
 2. 場面に出てこないはずの人がいる（場面に人の説明が無いのに人が描かれている、など）
-3. 日本の今の時代に見えない、時間帯が違う
+3. {era_rule(work)}
 4. 崩れ（指の数・手・顔・体のゆがみ、物の形がおかしい）
 5. 読める文字・数字・偽の文字・ロゴ・ブランド名がある（紙・本の背・画面・マグ・看板・車体）
 6. 実在の人物や有名なキャラクターに似ている

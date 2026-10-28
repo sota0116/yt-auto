@@ -1,0 +1,73 @@
+{
+ "_説明": "アナザー日本紀（nihongi）の固定の設定。毎日の制作（run_daily.py）と見張り（watch.py）が読む。2026-10-29 に毎日の制作（クラウド）へ入れた（それまでは手で作って Claude が上げていた）。ショートと横動画を別々の在庫・別々の枠で作るため、kinds を使う（仕組みは run_daily.py・watch.py の先頭の説明）",
+ "channel": "アナザー日本紀【もしも歴史】〜選ばれなかった日本の物語〜",
+ "topic": "江戸・戦国・幕末の史実に、ありえないルールを1つだけ足して、史実が少しだけひっくり返る様子を見せる『もしも歴史』のショートと横動画",
+ "viewer": "雑学が好きで、見終わったあと「へえ」と言いたい人。教科書の名前を少し覚えている人",
+ "tts_engine": "voicevox",
+ "voicevox": {
+  "narrator": {"name": "青山龍星", "style": "ノーマル", "speaker": 13},
+  "credit": "VOICEVOX:青山龍星",
+  "_説明": "人物のセリフの声は channels/nihongi/characters/characters.json の voice。概要欄の音声の行は、声を作ったあとの voice/_credits.txt から全員分を書く"
+ },
+ "stock_phase": "post",
+ "uploaded_files": ["uploaded.json"],
+ "uploaded_files_ro": ["shorts_uploaded.json", "long_uploaded.json"],
+ "_uploaded_files": "手で上げた分の記録（shorts_uploaded.json・long_uploaded.json）は読むだけ（ustore.py。git の衝突を避ける）。毎日の制作（クラウド）が上げた分は uploaded.json に足す。upload_nihongi.py の next_slot もこの記録の予約を枠に数える",
+ "reserved_slots": ["2026-11-01T18:00", "2026-11-01T21:00"],
+ "_reserved_slots": "手で作る S009・S010 の予約の枠（11/01 18:00・21:00）。クラウドの見張りはここに入れない",
+ "kinds": {
+  "short": {
+   "slots": ["18:00", "21:00"],
+   "extra_slot": "12:10",
+   "extra_min_stock": 6,
+   "_extra": "在庫が（明日の枠の数を引いて）6本以上たまっている日だけ、昼の 12:10 も使う（制作ルール §0 の「3本の日」）",
+   "start_date": "2026-11-02",
+   "stock_goal": [8, 4],
+   "make_max": 2,
+   "_stock": "在庫の目標8本（4日分）。4本以下なら1回の実行で2本作る。1本の絵は約13枚（Lovart 無料モードは1時間に40枚ほど）",
+   "tools": {
+    "thumb": null,
+    "short": null,
+    "short_upload": null,
+    "teaser": null
+   }
+  },
+  "long": {
+   "slots": ["20:00"],
+   "every_days": 2,
+   "start_date": "2026-11-03",
+   "stock_goal": [2, 1],
+   "make_max": 1,
+   "_stock": "横動画は2日に1本（制作ルール §0）。同じ日に2本入れない。1本の絵は約90枚で、1日では終わらないことがある（作り途中の回は次の実行で続きから作る）",
+   "tools": {
+    "thumb": "make_thumb_nihongi.py"
+   }
+  }
+ },
+ "build": {
+  "tempo_short": 1.35,
+  "tempo_long": 1.15,
+  "lufs": -14,
+  "height": 1440,
+  "_説明": "ショートの組み立ては縦 1080x1920（セーフゾーンは上288・下672・左48・右192）、横は 1920x1080。音量は loudnorm2（2回測る）で -14 LUFS、書き出しの上限は TP -1.0"
+ },
+ "image_rules_en": {
+  "with_chars": "The people named in the scene keep exactly the face, hairstyle, clothing and crest of their character sheets. Do not add people the scene does not mention.",
+  "without_chars": "Draw only the people the scene mentions, in plain period clothing. Do not add other recognizable historical figures.",
+  "nobody": "Draw no people at all.",
+  "always": "Japanese historical gekiga manga look: bold ink outlines, heavy shadows, warm lantern and sunset colors, exaggerated expressions. ONE single moment seen from ONE camera viewpoint, a composition that fills the whole canvas. Do NOT divide the picture into an upper half and a lower half, draw no panel border, frame or speech bubble. No writing of any kind: signs, banners and papers stay blank."
+ },
+ "image_gate_item3": "江戸・戦国・幕末の日本の絵に見えない（今の物が出るのは、その回の台本が足したルールの物だけ）。服・道具・建物の時代が合っていない",
+ "tools": {
+  "pick": "pick_neta_nihongi.py",
+  "write": "write_script_nihongi.py",
+  "gate_script": "gate_script_nihongi.py",
+  "voice": "make_voice_nihongi.py",
+  "motion": "make_motion_psy.py",
+  "charts": null,
+  "build": "build_nihongi.py",
+  "gate_video": "gate_video_nihongi.py",
+  "upload": "upload_nihongi_auto.py",
+  "_説明": "run_daily.py の段ごとの道具。kinds.<種類>.tools が先。null はその段を飛ばす"
+ }
+}

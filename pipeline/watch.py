@@ -19,12 +19,16 @@
 #   （profile.json の publish_weekdays があるチャンネルは、その曜日だけ。心理学chは 2026-10-29 から週5本＝月水金土日）
 # ・予告ショート（history\<ch>\teasers.json。make_teaser_job.py が非公開で上げる）：長尺の公開の TEASER_AFTER 分後に公開を予約する（2026-10-28）
 # ・見張り役どうしの見張り：毎日の実行が26時間ない、週報が8日ない → Issue。最後に heartbeat.json の watch を書き、HC_WATCH に合図
+# ・種類ごとのチャンネル（アナザー日本紀。2026-10-29。profile.json の kinds）：ショートは1日に複数の枠（kinds.short.slots）、横動画は何日おき（every_days）の
+#   決まった時刻に、在庫から1本ずつ予約する（schedule_tomorrow_kinds）。同じ日に横動画を2本入れない・手で上げた分の予約と同じ枠に入れない
+#   （手で上げた記録は shorts_uploaded.json／long_uploaded.json。ustore.py が全部つなげて読む）。kinds の無いチャンネルは今までと同じ
 # ・--dry：YouTube に書かない（コメント・差し替え・予約をしない）。読むのと記録だけ
 import argparse, datetime, json, os, re, statistics, sys, traceback, urllib.error, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import issue, ping, stale, jload, now, JST
 from run_daily import hpath, jsave
 from upload_job import api, API
+import ustore
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
@@ -272,6 +276,64 @@ def schedule_tomorrow(ch, up, dry):
     return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました"
 
 
+def schedule_tomorrow_kinds(ch, up, dry):
+    """種類ごとのチャンネル：明日の公開の枠のうち、予約が入っていない枠に、種類ごとの在庫から1本ずつ予約する。
+    ・枠：kinds.<種類>.slots（日本時間 "18:00" の並び）。ショートは在庫が extra_min_stock 本以上たまっている日だけ extra_slot（昼）も使う
+    ・横動画：every_days 日おき（前の公開・予約から every_days 日あく日だけ）。同じ日に横動画は1本まで
+    ・start_date より前の日には入れない（手で作った回が先に予約している期間を空けるため）。reserved_slots（"2026-11-01T18:00"）には入れない
+    ・手で上げた分も含めて、もう予約が入っている時刻には入れない"""
+    ks = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("kinds") or {}
+    pf = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
+    tom = (now() + datetime.timedelta(days=1)).date()
+    live = [e for e in up if not e.get("missing") and not e.get("retired")]
+    taken = {t.strftime("%Y-%m-%dT%H:%M") for t in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in live) if t}
+    taken |= set(pf.get("reserved_slots") or [])
+    out = []
+    for kind, kc in ks.items():
+        if kc.get("start_date") and tom.isoformat() < kc["start_date"]:
+            out.append(f"{kind}：{kc['start_date']} より前なので入れない")
+            continue
+        if tom.weekday() not in (kc.get("weekdays") or range(7)):
+            out.append(f"{kind}：明日は公開しない曜日")
+            continue
+        every = int(kc.get("every_days") or 1)
+        days = [t.date() for t in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in live if ustore.kind_of(e) == kind) if t]
+        if every > 1 and any(abs((tom - d).days) < every for d in days):
+            out.append(f"{kind}：明日は公開しない日（{every}日に1本）")
+            continue
+        pool = [e for e in live if ustore.kind_of(e) == kind and not e.get("published") and not e.get("publish_at")
+                and e.get("privacy_now") == "private"]
+        pool.sort(key=lambda e: e.get("uploaded_at", ""))
+        slots = list(kc.get("slots") or [prof(ch, "publish_time", "PUBLISH_TIME", "19:00")])
+        free = [x for x in slots if f"{tom.isoformat()}T{x}" not in taken]
+        if kc.get("extra_slot") and f"{tom.isoformat()}T{kc['extra_slot']}" not in taken \
+                and len(pool) - len(free) >= int(kc.get("extra_min_stock") or 99):
+            free.insert(0, kc["extra_slot"])  # 在庫があふれそうな日だけ、昼の枠を足す
+        if not free:
+            out.append(f"{kind}：明日の枠は全部入っている")
+            continue
+        if not pool:
+            out.append(f"{kind}：在庫が無いので明日の予約を入れられません")
+            continue
+        for x in free:
+            if not pool:
+                out.append(f"{kind}：{x} の枠は在庫が足りず空き")
+                break
+            e = pool.pop(0)
+            hh, mm = x.split(":")
+            at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
+            if dry:
+                out.append(f"（--dry）{e['work']} を {at.isoformat()} に予約する")
+                continue
+            st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+                  "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
+            api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
+            e["publish_at"] = at.isoformat()
+            taken.add(at.strftime("%Y-%m-%dT%H:%M"))
+            out.append(f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました")
+    return "／".join(out) or None
+
+
 def schedule_teasers(ch, up, dry):
     """予告の公開を、長尺の公開（予約を含む）の TEASER_AFTER 分後に予約する。
     その時刻がもう過ぎた（30分を切った）時は、次の日の同じ時刻にする。予告どうしは同じ日に重ねない"""
@@ -308,8 +370,9 @@ def schedule_teasers(ch, up, dry):
 
 
 def watch_channel(ch, dry):
-    up_p, st_p, me_p = hpath(ch, "uploaded.json"), hpath(ch, "watch.json"), hpath(ch, "metrics.json")
-    up, state, metrics = jload(up_p, []), jload(st_p, {}), jload(me_p, {})
+    st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
+    up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
+    KS = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("kinds")
     when = now().strftime("%m/%d %H:%M")
     if not up:
         print(f"{ch}：まだ上げた動画がありません")
@@ -325,16 +388,37 @@ def watch_channel(ch, dry):
         watch_numbers(ch, up, state, metrics, dry)
         state["type_hold"] = type_hold(ch, metrics)
         if prof(ch, "stock_phase", "STOCK_PHASE", "pre") == "post" and ch not in WATCH_ONLY:
-            state["予約"] = schedule_tomorrow(ch, up, dry)
+            state["予約"] = schedule_tomorrow_kinds(ch, up, dry) if KS else schedule_tomorrow(ch, up, dry)
             state["予告の予約"] = schedule_teasers(ch, up, dry)
     finally:  # 途中で落ちても、読めた分は残す
-        jsave(up_p, up)
+        ustore.save(ch, up)
         jsave(me_p, metrics)
     live = [e for e in up if not e.get("missing")]
     started = any(e.get("published") or e.get("publish_at") for e in live)  # 公開を始めた後だけ、公開の見張りをする
     n_stock = sum(1 for e in live if not e.get("published"))
     state.update(在庫=n_stock, 最後の見張り=now().isoformat(timespec="seconds"))
-    if started and ch not in WATCH_ONLY:
+    if started and ch not in WATCH_ONLY and KS:
+        # 種類ごとのチャンネル：在庫0・公開が止まっている・明後日の予約が無い、を種類ごとに見る（横動画は every_days 日おきなので間隔が長い）
+        for k, kc in KS.items():
+            lk = [e for e in live if ustore.kind_of(e) == k]
+            ns = sum(1 for e in lk if not e.get("published"))
+            if ns == 0 and kc.get("start_date", "") <= now().date().isoformat():
+                issue(f"【止まりました】{ch}：{k}の在庫が0本", f"{when} {k} の在庫（上げて、まだ公開していない動画）が0本です")
+            every_k = int(kc.get("every_days") or 1)
+            lastk = max((ts(e["published_at"]) for e in lk if e.get("published_at")), default=None)
+            gapk = 26 + 24 * (every_k - 1)
+            if lastk and now() - lastk > datetime.timedelta(hours=gapk) and kc.get("start_date", "") <= now().date().isoformat():
+                issue(f"【止まりました】{ch}：{k}が{gapk}時間公開がない", f"{when} 最後の{k}の公開：{lastk.strftime('%m/%d %H:%M')}")
+            day2 = (now() + datetime.timedelta(days=2)).date()
+            span2 = {day2 + datetime.timedelta(days=i) for i in range(every_k)}
+            has2k = any(ts(e.get("publish_at")) and ts(e["publish_at"]).date() in span2 for e in lk)
+            state.setdefault("明後日の予約", {})
+            if not isinstance(state["明後日の予約"], dict):
+                state["明後日の予約"] = {}
+            state["明後日の予約"][k] = "あり" if has2k else f"なし（{day2}）"
+            if not has2k and now().weekday() == 0 and kc.get("start_date", "") <= now().date().isoformat():
+                issue(f"【止まりました】{ch}：{k}の明後日の公開予約がない", f"{when} {day2} に公開予定の{k}がありません")
+    elif started and ch not in WATCH_ONLY:
         if n_stock == 0:
             issue(f"【止まりました】{ch}：在庫が0本", f"{when} 在庫（上げて、まだ公開していない動画）が0本です")
         last = max((ts(e["published_at"]) for e in live if e.get("published_at")), default=None)

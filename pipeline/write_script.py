@@ -12,7 +12,7 @@ import argparse, datetime, json, os, shutil, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.environ.get("YT_DOCS_DIR", r"C:\Users\koneb\OneDrive\YouTube自動チャンネル")
 SECRET_ENV = ("YT_SECRETS_DIR", "GEMINI_API_KEY", "ESTAT_APP_ID", "OPENAI_API_KEY", "UTAGE_API_KEY", "LOVART_ACCESS_KEY",
-              "LOVART_SECRET_KEY", "YT_CLIENT_SECRET", "YT_TOKEN_JOB", "YT_TOKEN_SPI")
+              "LOVART_SECRET_KEY", "YT_CLIENT_SECRET", "YT_TOKEN_JOB", "YT_TOKEN_SPI", "YT_TOKEN_NIHONGI")
 MEMO = lambda ch: os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")  # research.py が毎日書く
 LEARN = lambda ch: os.path.join(ROOT, "history", ch, "学び.md")  # learn_job.py が毎日書く（うちの回の数字から）
 GOLDEN = {"job": os.path.join(ROOT, "channels", "job", "videos", "001_a4_untenshu_fukushi", "script.json")}
