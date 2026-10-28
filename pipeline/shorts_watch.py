@@ -1,8 +1,9 @@
 # ショートの見張り（心理学ch・2026-10-27 新設）：watch.yml で watch.py のあとに動く
 #   python -X utf8 pipeline\shorts_watch.py psy [--dry]
 # ・history\<ch>\shorts_uploaded.json のショートの今の状態を読む（消えた・公開になった）
-# ・予約：非公開でまだ予約の無いショートは、本編（long_video_id）に公開か予約が入ったら、本編の公開の次の日の 12:10 に予約する。
-#   その時刻が近すぎる（30分以内）か過ぎていたら、次の 12:10 にする
+# ・予約：非公開でまだ予約の無いショートは、本編（long_video_id）に公開か予約が入ったら、本編の公開の日の 20:10 から、
+#   12:10・20:10 の枠を順に見て、ほかのショートが入っていない最初の枠に予約する（近すぎる（30分以内）か過ぎた枠はとばす）
+#   1日2枠なので、本編1本にショート1本なら毎日 20:10、2本なら次の日の 12:10 にも入る（2026-10-28 本人「ショートは毎日1～3本」）
 # ・数字：公開から72時間と7日の時点で、再生・平均視聴率・平均視聴時間・登録を history\<ch>\shorts_metrics.json に残す
 #   （週報 weekly.py と、次の回の台本の書き手が読む。つかみの文と上の帯の字ごとに、どれが見られたかを比べるため）
 import argparse, datetime, json, os, sys, traceback
@@ -12,18 +13,23 @@ from run_daily import hpath, jsave
 from upload_job import api, API
 from watch import refresh, report, ts
 
-TIME = (12, 10)
+TIMES = ((12, 10), (20, 10))  # 本編は 19:00 なので、その日のショートは本編のあと
 
 
-def slot_after(day):
-    at = datetime.datetime.combine(day, datetime.time(*TIME), JST)
-    while at < now() + datetime.timedelta(minutes=30):
-        at += datetime.timedelta(days=1)
-    return at
+def slot_after(when, used):
+    """本編の公開（when）より後で、30分より先で、ほかのショートが入っていない最初の枠"""
+    day = when.date()
+    while True:
+        for t in TIMES:
+            at = datetime.datetime.combine(day, datetime.time(*t), JST)
+            if at > when and at >= now() + datetime.timedelta(minutes=30) and at not in used:
+                return at
+        day += datetime.timedelta(days=1)
 
 
 def schedule(ch, shorts, longs, dry):
     by_id = {e.get("video_id"): e for e in longs}
+    used = {ts(s.get("publish_at") or s.get("published_at")) for s in shorts if not s.get("missing")} - {None}
     out = []
     for s in shorts:
         if s.get("missing") or s.get("published") or s.get("publish_at") or s.get("privacy_now") != "private":
@@ -32,7 +38,8 @@ def schedule(ch, shorts, longs, dry):
         when = lg and ts(lg.get("published_at") or lg.get("publish_at"))
         if not when:
             continue  # 本編がまだ在庫（公開の日が決まっていない）
-        at = slot_after(when.date() + datetime.timedelta(days=1))
+        at = slot_after(when, used)
+        used.add(at)
         if dry:
             out.append(f"（--dry）{s['work']} のショートを {at:%m/%d %H:%M} に予約する")
             continue

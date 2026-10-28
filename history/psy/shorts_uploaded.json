@@ -1,5 +1,26 @@
 [
  {
+  "work": "001_aitai_hito",
+  "video_id": "NdqGhXDQ8kg",
+  "title": "【心理学】年を重ねると、会いたい人が自然としぼられていく理由 #shorts",
+  "type": null,
+  "long_video_id": "xUofUMa2fHU",
+  "hook": "年賀状の相手は減ったのに、会いたい人の顔がはっきり浮かぶのは、なぜでしょうか？",
+  "band": [
+   "会いたい人が",
+   "しぼられるわけ"
+  ],
+  "uploaded_at": "2026-10-28T15:46:30+09:00",
+  "privacy_now": "public",
+  "publish_at": null,
+  "seconds": 45,
+  "title_now": "【心理学】年を重ねると、会いたい人が自然としぼられていく理由 #shorts",
+  "synthetic_on": null,
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-10-28T15:47:30+09:00"
+ },
+ {
   "work": "002_hitori_yasumu",
   "video_id": "Pa57xkmeZHs",
   "title": "【心理学】一歩も家から出なかった休みの日に、脳と気持ちで起きていること #shorts",
@@ -10,7 +31,13 @@
    "休みに家から出ない日",
    "実は落ち着いている"
   ],
-  "uploaded_at": "2026-10-28T06:12:00+09:00"
+  "uploaded_at": "2026-10-28T06:12:00+09:00",
+  "privacy_now": "private",
+  "publish_at": "2026-10-28T11:10:00Z",
+  "seconds": 43,
+  "title_now": "【心理学】一歩も家から出なかった休みの日に、脳と気持ちで起きていること #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "003_yonaka_mezame",
@@ -23,6 +50,12 @@
    "夜中に浮かぶ昔のこと",
    "なぜいやな方へ"
   ],
-  "uploaded_at": "2026-10-28T09:11:08+09:00"
+  "uploaded_at": "2026-10-28T09:11:08+09:00",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 49,
+  "title_now": "【心理学】夜中に目が覚めると、昔のいやなことばかり浮かぶわけ #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
