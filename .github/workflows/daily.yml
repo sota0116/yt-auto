@@ -98,6 +98,12 @@ jobs:
           LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
           LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
         run: python -X utf8 pipeline/run_daily.py ${{ matrix.ch }} --slot "$SLOT" --count "${{ inputs.count || 'auto' }}"
+      - name: Lovart を無料モードに戻す（詰まりを取る間に落ちた時だけ。pipeline/lovart_boost.py）
+        if: always()
+        env:
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+        run: python -X utf8 pipeline/lovart_boost.py restore
       - name: 作業フォルダを保存する
         if: always()
         uses: actions/cache/save@v4

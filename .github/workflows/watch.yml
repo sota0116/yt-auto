@@ -61,6 +61,14 @@ jobs:
       - name: ショートを見張る（心理学ch 12:10・千年こよみ 19:15。本編の予約が入ったら次の日に予約・本編へのコメント・72時間と7日の数字）
         if: always()
         run: python -X utf8 pipeline/shorts_watch_v2.py psy spi
+      - name: Lovart が速いモードのままになっていないか（なっていたら無料モードに戻す。2回続いたら Issue。2026-10-29）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LOVART_SKILL: ${{ github.workspace }}/vendor/lovart/agent_skill.py
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+        run: python -X utf8 pipeline/lovart_boost.py check
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |

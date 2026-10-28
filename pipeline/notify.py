@@ -18,7 +18,10 @@ TODO = [("台本ゲート", "何もしなくてよい。同じ理由が3日続�
         ("MONTHLY_CAP_YEN", "上限額を確かめる。上げてよければ Variables の MONTHLY_CAP_YEN を書き換える"),
         ("上限", "上限額を確かめる。上げてよければ Variables の MONTHLY_CAP_YEN を書き換える"),
         ("ログイン", "PC で Claude に「YouTube のログインをやり直して」と言う（約5分）"),
-        ("予約", "週報の「今週やること」にある予約をする（道1なら約25分、道2なら約45分）")]
+        ("予約", "週報の「今週やること」にある予約をする（道1なら約25分、道2なら約45分）"),
+        ("72時間", "何もしなくてよい（次のネタで作り続けている）。同じことが3日続いたら、Claude に見せる"),
+        ("在庫が少ない", "何もしなくてよい（詰まった回は速いモードで作る）。3日続いたら、Claude に見せる"),
+        ("Lovart", "何もしなくてよい（無料モードに戻してある）")]
 
 
 def now():
@@ -78,6 +81,11 @@ def daily(ch, slot):
             ping(f"HC_DAILY_{ch.upper()}", "/fail")
     else:
         ping(f"HC_DAILY_{ch.upper()}")
+    # 詰まった時の決まり（run_daily.py の説明の4・5。2026-10-29）
+    for w in r.get("長く止まって飛ばした回", []):
+        issue(f"【止まりました】{ch}：72時間終わらない回を飛ばした", f"{when}（{slot}）{w}。次のネタで作り続けています")
+    if slot == "first" and isinstance(r.get("在庫"), int) and r["在庫"] <= 2:  # 1日1回だけ（02:07）
+        issue(f"【在庫が少ない】{ch}", f"{when} 在庫 {r['在庫']}本（今回作った {len(r.get('made', []))}本）。止まった理由：{stopped or 'なし'}")
     hb = jload(os.path.join(ROOT, "history", "heartbeat.json"), {})
     if hb.get("watch") and stale(hb, "watch", 48):
         issue("【止まりました】見張り：48時間動いていません", f"{when} 毎日の実行（{ch}）が見つけました。最後の見張り：{hb.get('watch')}")

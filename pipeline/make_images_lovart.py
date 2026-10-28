@@ -13,6 +13,8 @@
 # ・チャンネルの絵の決まり（2026-10-27 心理学chから）：profile.json に image_rules_en があれば、カットごとに1文足す。
 #   主役（chars）が出る絵は with_chars、"nobody": true か場面に「人物は描かない」の絵は nobody、それ以外は without_chars。nobody 以外は always も足す。
 #   script.json に avoid（描かない物）があれば、それも英語にして足す
+# ・詰まった時（2026-10-29）：--boost は run_daily.py が速いモード（lovart_boost.fast_mode）にした間だけ使う。--only の残りを順番待ちを捨てて頼み直し、
+#   頼んだ数だけ history\<ch>\lovart_credits.json に足す。--boost でない時に速いモードになっていたら（別の回が使っている間）、新しく頼まずに待つ
 import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
@@ -186,10 +188,13 @@ def main():
     a.add_argument("--force", action="store_true")
     a.add_argument("--ref", default="")
     a.add_argument("--fix", action="append", default=[], help="<id>=<追加の指示>（絵ゲートで落ちた所の作り直し用）")
+    a.add_argument("--boost", action="store_true", help="速いモードの間だけ（run_daily.py が使う）。--only の残りを頼み直し、使った量を数える")
     a = a.parse_args()
     sk = client()
-    if sk.query_mode().get("unlimited") is not True:
-        sys.exit("【止まりました】Lovart が unlimited（無料）モードではありません。クレジットを使うので作りません")
+    free = lambda: sk.query_mode().get("unlimited") is True
+    paused = not a.boost and not free()
+    if paused:
+        print("Lovart が速いモードです（別の回が詰まりを取っている間）。クレジットを使わないよう新しく頼まず、頼んである絵だけ受け取ります", flush=True)
     s = json.load(open(os.path.join(a.work, "script.json"), encoding="utf-8"))
     only = set(filter(None, a.only.split(",")))
     fix = dict(f.split("=", 1) for f in a.fix)
@@ -202,9 +207,11 @@ def main():
     cuts = {c["id"]: c for c in s["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")
             and (not only or c["id"] in only)}
     todo = [i for i in cuts if a.force or i in fix or not os.path.exists(os.path.join(img, i + ".png"))]
-    # 前回頼んだまま受け取っていない会話は、頼み直さずに待つ
-    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and i not in fix and not a.force}
+    # 前回頼んだまま受け取っていない会話は、頼み直さずに待つ（--boost は順番待ちを捨てて、速いモードで頼み直す）
+    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and i not in fix and not a.force and not a.boost}
     queue = [i for i in todo if i not in waiting]
+    ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
+    checked = [time.time()]
     en = scenes_en(a.work, s, set(cuts))
     ref_url = sk.upload_file(a.ref) if a.ref else ""
     chars = load_chars(a.work, s)
@@ -217,10 +224,15 @@ def main():
     sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
     attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
     rules = channel_rules(a.work)
-    print(f"Lovart（無料モード・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
+    print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
-    while (queue or waiting) and time.time() < t_end:
-        while queue and len(waiting) < a.par:
+    while ((queue and not paused) or waiting) and time.time() < t_end:
+        if not a.boost and not paused and time.time() - checked[0] > 60:  # 途中で別の回が速いモードにしたら、新しく頼むのをやめる
+            checked[0] = time.time()
+            paused = not free()
+            if paused:
+                print("Lovart が速いモードになったので、新しく頼むのをやめて、頼んである絵だけ待ちます", flush=True)
+        while queue and not paused and len(waiting) < a.par:
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
@@ -235,6 +247,9 @@ def main():
                 continue
             waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries}
             save()
+            if a.boost:
+                from lovart_boost import add_spent, unit
+                add_spent(ch, unit("image"), f"{os.path.basename(a.work)} {i} の絵")
         time.sleep(15)
         for i in list(waiting):
             w = waiting[i]

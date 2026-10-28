@@ -11,6 +11,13 @@
 # ・時間の枠：GitHub Actions は1回5時間まで。RUN_BUDGET_MIN（無ければ260分）を超えそうな段は区切って「途中」にし、次の実行で続きから作る。
 #   Lovart の無料モードは1枚十数分かかり、絵だけで数時間になるため（2026-10-24）。「途中」は失敗に数えず、Issue にもしない
 # ・3回続けて失敗した回は飛ばす。ただし最後の失敗の後に道具（pipeline の .py）が変わっていれば、直したとみなして0から数え直す（2026-10-27）
+# ・詰まった時の決まり（2026-10-29 本人「エラーが起きた場合の対処もあらかじめ決めておく」「詰まりを取ろう」）：
+#   1. 絵・動く絵が時間の枠で終わらない →「途中」にして次の実行で続ける（前と同じ）
+#   2. 同じ段が2回続けて「途中」になり、在庫が目標より少ない → 残りを Lovart の速いモードで作る（lovart_boost.py。その日の上限の分だけ・
+#      絵は半額の 23:00〜04:00 だけ・速いモードは1回45分まで・終わったら必ず無料モードに戻す）。上限で足りない分は無料で続ける
+#   3. 動く絵は、無料の実行3回でも終わらなければ残りを静止画のまま進める（make_motion_psy.py。前と同じ）
+#   4. 作り始めて72時間たっても上がらない回は飛ばして次のネタへ（Issue。作業フォルダは残すので、あとで続きから作れる）
+#   5. 在庫が2本以下になったら、02:07 の実行の通知で Issue にする（notify.py）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 import argparse, datetime, hashlib, json, os, re, subprocess, sys, time
 
@@ -113,6 +120,13 @@ def yen_in(text):
 def stock(ch):
     up = jload(hpath(ch, "uploaded.json"), [])
     return sum(1 for x in up if not x.get("published") and not x.get("missing"))  # published・missing は見張り（watch.py）が書く
+
+
+def stock_goal(ch):
+    """(在庫の目標, この本数以下なら2本作る)。profile.json の stock_goal が先、無ければ stock_phase か設定値 STOCK_PHASE（pre／post）"""
+    prof = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
+    phase = prof.get("stock_phase") or os.environ.get("STOCK_PHASE") or "pre"
+    return tuple(prof.get("stock_goal") or STOCK_GOAL.get(phase, STOCK_GOAL["pre"]))
 
 
 class Stop(Exception):
@@ -266,23 +280,57 @@ def make_one(ch, st, upload):
         step("yomi", lambda: run(work, "yomi", ["yomi_auto.py", work, "--ch", ch], ch, ok=(0, 1)))
     if voice_py == "make_voice_vv.py":  # 読み違い（数字・単位・職業名など）を読みの文字で探し、見つかったカットは読みを書いて作り直す
         step("reading", lambda: run(work, "reading", ["check_reading_vv.py", work, "--ch", ch, "--fix"], ch))
+
+    def busy(kind, msg):
+        """「途中」の回数を数えてから区切る（2回続いたら、次の実行で速いモードを使う）"""
+        st.setdefault("busy", {})[kind] = st.get("busy", {}).get(kind, 0) + 1
+        jsave(sp, st)
+        raise Busy(f"{msg}（{st['busy'][kind]}回目）")
+
+    def boost(kind, ids, script, extra):
+        """詰まった時の決まり2：同じ段が2回続けて「途中」で、在庫が目標より少なければ、残りを速いモードで作る（上の説明）。
+        extra は環境変数を返す関数（23:00 まで待った後の残り時間で決めるため）"""
+        import lovart_boost as lb
+        if not ids or st.get("busy", {}).get(kind, 0) < 2 or stock(ch) >= stock_goal(ch)[0]:
+            return
+        if kind == "images" and not lb.night():
+            t = now()
+            if not (t.hour == 22 and t.minute >= 30 and left() > 120 * 60):
+                print(f"絵の速いモードは半額の 23:00〜04:00 だけ使う（今は {t:%H:%M}）", flush=True)
+                return
+            time.sleep((60 - t.minute) * 60 - t.second + 5)  # 22:47 の実行は 23:00 まで待つ
+        n = int(lb.left_today(ch) // lb.unit("image" if kind == "images" else "video"))
+        if n < 1 or left() < 60 * 60:
+            print(f"速いモードは使わない（今日の残り {lb.left_today(ch)} クレジット・時間の枠の残り {left() / 60:.0f}分）", flush=True)
+            return
+        pick = ids[:n]
+        print(f"■ 詰まりを取る：{kind} の残り {len(ids)} のうち {len(pick)} を速いモードで作る（今日の残り {lb.left_today(ch)} クレジット）", flush=True)
+        with lb.fast_mode():
+            run(work, kind + "_boost", [script, work, "--boost", "--only", ",".join(pick)], ch, ok=(0, 1), env=extra())
+
     def images():
+        s = jload(os.path.join(work, "script.json"), {})
+        missing = lambda: [c["id"] for c in s.get("cuts", []) if c.get("image") and not c.get("same_as") and not c.get("chart")
+                           and not os.path.exists(os.path.join(work, "images", c["id"] + ".png"))]
+        boost("images", missing(), "make_images_lovart.py", lambda: {"LOVART_WAIT_MAX": str(int(min(45 * 60, left() - 50 * 60)))})
         # 待つ上限を時間の枠に合わせる（区切っても、頼んだ絵は次の実行で受け取る）
         run(work, "images", ["make_images_lovart.py", work, "--par", "6"], ch, ok=(0, 1),
             env={"LOVART_WAIT_MAX": str(int(max(300, left() - 15 * 60)))})
-        s = jload(os.path.join(work, "script.json"), {})
         lg = jload(os.path.join(work, "images", "_lovart.json"), {})
-        rest = [c["id"] for c in s.get("cuts", []) if c.get("image") and not c.get("same_as") and not c.get("chart")
-                and not os.path.exists(os.path.join(work, "images", c["id"] + ".png"))
-                and (lg.get(c["id"], {}).get("状態") == "待ち" or lg.get(c["id"], {}).get("回", 0) < 2)]
+        rest = [i for i in missing() if lg.get(i, {}).get("状態") == "待ち" or lg.get(i, {}).get("回", 0) < 2]
         if rest:
-            raise Busy(f"絵がまだ途中（残り{len(rest)}枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります")
+            busy("images", f"絵がまだ途中（残り{len(rest)}枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります")
     step("images", images)
     def motion():  # 絵の一部を数秒の動画にする（心理学ch。無料の時だけ。終わらない分は3回の実行まで続きを待つ。できなくても止めない）
+        s = jload(os.path.join(work, "script.json"), {})
+        ids = [c["id"] for c in s.get("cuts", []) if c.get("motion") and not c.get("same_as") and not c.get("card")
+               and os.path.exists(os.path.join(work, "images", c["id"] + ".png"))
+               and not os.path.exists(os.path.join(work, "images", c["id"] + ".mp4"))]
+        boost("motion", ids, tool(ch, "motion", None), lambda: {"MOTION_DEADLINE": str(int(time.time() + 30 * 60))})
         r = run(work, "motion", [tool(ch, "motion", None), work], ch, ok=(0, 3),
                 env={"MOTION_DEADLINE": str(int(time.time() + max(0, left() - 75 * 60)))})
         if r.returncode == 3:
-            raise Busy("動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります")
+            busy("motion", "動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります")
     if tool(ch, "motion", None):
         step("motion", motion)
     if tool(ch, "charts", "make_charts_job.py"):
@@ -367,11 +415,8 @@ def main():
             raise Stop("MONTHLY_CAP_YEN（制作費の月の上限）が入っていないので、新しく作りませんでした")
         if cap and month_cost(ch) >= float(cap):
             raise Stop(f"今月の制作費の累計 {month_cost(ch):.0f}円 が上限 {cap}円 に届いたので、新しく作りませんでした")
-        # 段階はチャンネルの profile.json の stock_phase を先に見る（心理学chは毎日公開＝post。2026-10-27）。無ければ設定値 STOCK_PHASE
-        phase = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("stock_phase") or os.environ.get("STOCK_PHASE") or "pre"
-        goal, two_at = STOCK_GOAL.get(phase, STOCK_GOAL["pre"])
-        # チャンネルごとの在庫の目標（profile.json の stock_goal：[目標, この本数以下なら2本]。心理学chは在庫をためるため 2026-10-28）
-        goal, two_at = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("stock_goal") or (goal, two_at)
+        # 在庫の目標（profile.json の stock_goal：[目標, この本数以下なら2本]。無ければ stock_phase か STOCK_PHASE。stock_goal() の説明）
+        goal, two_at = stock_goal(ch)
         n_stock = stock(ch)
         res["在庫"] = n_stock
         n = int(a.count) if a.count.isdigit() else (2 if n_stock <= two_at else 1)
@@ -392,6 +437,12 @@ def main():
             if st.get("tries", 0) >= 3:
                 res.setdefault("飛ばした回", []).append(st["work"])
                 st = {}  # 3回続けて失敗した回は飛ばして次のネタへ（週報に出す）
+            if st.get("work") and st.get("started") and "upload" not in st.get("done", []) \
+                    and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=72):
+                # 詰まった時の決まり4：72時間たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
+                res.setdefault("長く止まって飛ばした回", []).append(f"{os.path.basename(st['work'])}（{st.get('stage')} の段・{st['started'][:16]} から）")
+                res.setdefault("飛ばした回", []).append(st["work"])
+                st = {}
             if cap and month_cost(ch) >= float(cap):
                 raise Stop(f"今月の制作費の累計が上限 {cap}円 に届いたので、{i}本で止めました")
             st = make_one(ch, st, not a.no_upload)
