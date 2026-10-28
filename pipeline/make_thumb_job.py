@@ -10,9 +10,12 @@
 #   台本の thumb_q は読まない）
 # ・右下の再生時間の表示の所（x>1090, y>630）には字を置かない
 # ・--check：横320pxに縮めた版を Gemini に読ませ、いちばん大きい字が thumb_text と一致するかを見る（手順書 §10 サムネの点検）
+# ・2026-10-28 v4.7（本人「インパクトやわかりやすさがない」→ 参考チャンネル36枚の型 youtube-video-maker/references/15_サムネの型.md）：
+#   下の段（thumb_text）を横幅7割以上（足りない分は字を大きく→横に少し広げる）、字の外側に光（glow）、1語だけ色を変える（強調の部分。ほかは白）、
+#   上の段（thumb_top）を横幅6割以上、絵を少し暗く濃く。作ったあとに点検（いちばん大きい字の横幅・字の面積・行数・色を変えた語）を出す（NG があっても絵は保存する）
 # ・前の形（紺の地の棒グラフ・黄の地のサムネA）は git の 3745ed1 までの版
 import argparse, json, os, re, sys, unicodedata
-from PIL import Image, ImageDraw, ImageEnhance
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from make_charts_job import font, tw
 
@@ -20,11 +23,81 @@ W, H = 1280, 720
 BLACK, WHITE = (10, 10, 16), (255, 255, 255)
 RED, YEL = (226, 32, 40), (255, 214, 0)
 SAFE = (1090, 630)  # 右下の再生時間の表示の所
+METRICS = {}  # 作った案ごとの点検の数字（make が入れ、main が出す）
 N = lambda s: unicodedata.normalize("NFKC", s or "")
 
 
 def say(d, xy, s, size, fill, stroke=BLACK, sw=None, anchor="la"):
     d.text(xy, s, font=font(size), fill=fill, stroke_width=sw if sw is not None else max(6, size // 9), stroke_fill=stroke, anchor=anchor)
+
+
+def put_text(im, parts, xy, anchor="ls", xs=1.0, glow=None, stroke=BLACK, gap=0):
+    """字を描く。parts＝[(字, 大きさ, 色)] を同じ基準線で左から並べる。xs＞1 で横に広げる。glow＝字の外側の光の色。
+    anchor "ls"＝xy が左端・基準線、"mm"＝xy が真ん中。描いた字（縁を含む）の範囲 (x0,y0,x1,y1) を返す"""
+    big = max(z for _, z, _ in parts)
+    pad = 90
+    ws = [tw(t, z) for t, z, _ in parts]
+    total = sum(ws) + gap * (len(parts) - 1)
+    lay = Image.new("RGBA", (int(total) + pad * 2, int(big * 1.5) + pad * 2), (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    base = pad + int(big * 1.1)
+    x = pad
+    for (t, z, c), w in zip(parts, ws):
+        d.text((x, base), t, font=font(z), fill=c, stroke_width=max(6, z // 9), stroke_fill=stroke, anchor="ls")
+        x += w + gap
+    if xs != 1:
+        lay = lay.resize((int(lay.width * xs), lay.height), Image.LANCZOS)
+    a = lay.getchannel("A")
+    if anchor == "mm":
+        px, py = int(xy[0] - (pad + total / 2) * xs), int(xy[1] + big * 0.38 - base)
+    else:
+        px, py = int(xy[0] - pad * xs), int(xy[1] - base)
+    if glow:
+        k = max(5, big // 14) * 2 + 1
+        g = a.filter(ImageFilter.MaxFilter(k)).filter(ImageFilter.GaussianBlur(big // 8)).point(lambda v: min(255, int(v * 1.4)))
+        im.paste(Image.new("RGB", lay.size, glow), (px, py), g)
+    im.paste(lay.convert("RGB"), (px, py), a)
+    bb = a.getbbox()
+    return (px + bb[0], py + bb[1], px + bb[2], py + bb[3])
+
+
+def stretch(width, lo, hi, cap=1.25):
+    """横幅 width を lo 以上にするための横に広げる倍率（hi を超えない・cap まで）"""
+    if width >= lo:
+        return 1.0
+    return max(1.0, min(cap, hi / width, (lo * 1.03) / width))
+
+
+def metric(tag, rows, top_w=None, main_w=None, lines=0, hi=(), main_lo=0.70, main_name="下の段", area_check=True):
+    """15_サムネの型.md の点検の数字を作る（rows＝字の範囲の一覧）"""
+    area = sum((b[2] - b[0]) * (b[3] - b[1]) for b in rows) / (W * H)
+    return {"tag": tag, "top": top_w, "main": main_w, "area": area, "lines": lines, "hi": list(hi), "main_lo": main_lo, "main_name": main_name, "area_check": area_check}
+
+
+def report(m):
+    ng = []
+    if m["main"] is not None:
+        print(f"  点検（{m['tag']}）：{m['main_name']}の横幅 {m['main']:.0%}（めやす{m['main_lo']:.0%}以上）", end="")
+        if m["main"] < m["main_lo"]:
+            ng.append(f"{m['main_name']}の字が細い（横幅{m['main_lo']:.0%}以上にする）")
+    if m["top"] is not None:
+        print(f"／上の段の横幅 {m['top']:.0%}（めやす60%以上）", end="")
+        if m["top"] < 0.60:
+            ng.append("上の段（thumb_top）が小さい（横幅60%以上にする。字数を足すか短くしすぎない）")
+    print(f"／字の面積 約{m['area']:.0%}（めやす30〜60%）／行数 {m['lines']}（めやす4行まで）／色を変えた語：{'・'.join(m['hi']) or 'なし'}")
+    if m["area_check"] and m["area"] < 0.30:  # 判定の形は左の黒地に字を置くので、画面全体の面積は見ない
+        ng.append("字が少なすぎて目に入らない（面積30%未満）")
+    if m["area_check"] and m["area"] > 0.60:
+        ng.append("字が絵をつぶしている（面積60%超）")
+    if m["lines"] > 4:
+        ng.append("行が多い（4行まで）")
+    if not m["hi"]:
+        ng.append("色を変えた語が無い")
+    for x in ng:
+        print("    NG", x)
+    if not ng:
+        print("    点検 NG 0件")
+    return ng
 
 
 def fit(s, size, maxw, low=40):
@@ -86,31 +159,60 @@ def parts(t, given, most=2):
 
 
 def scene(s, bgp, box_label):
-    """場面：絵を全面＋上の帯（赤い見出し）＋下の特大の字"""
-    im = ImageEnhance.Brightness(cover(bgp, W, H)).enhance(0.92)
-    d = ImageDraw.Draw(im)
+    """場面：絵を全面（少し暗く濃く）＋上の帯（赤い見出し。横幅6割以上）＋下の特大の字（横幅7割以上・外側に光・1語だけ黄）"""
+    im = cover(bgp, W, H)
+    im = ImageEnhance.Color(im).enhance(1.15)
+    im = ImageEnhance.Contrast(im).enhance(1.08)
+    im = ImageEnhance.Brightness(im).enhance(0.88)
+    rows, top_w, hi_words = [], None, []
     top = N(s.get("thumb_top"))
-    if top:
-        d.rectangle((0, 0, W, 122), fill=WHITE)
-        say(d, (W // 2, 63), top, fit(top, 92, W - 60), RED, WHITE, 4, "mm")
-    shade(im, (0, H - 300, W, H), 0, 215)
-    d = ImageDraw.Draw(im)
     lines, hi = parts(N(s["thumb_text"]), s.get("thumb_lines"), 2)
-    size = [190 if i == hi else 120 for i in range(len(lines))]
-    maxw = SAFE[0] - 50  # 下の段は再生時間の表示の所に掛けない
-    if sum(tw(x, z) for x, z in zip(lines, size)) + 30 * (len(lines) - 1) <= maxw:  # 1行に並べる
-        x = 40
-        for i, (t, z) in enumerate(zip(lines, size)):
-            say(d, (x, H - 30), t, z, YEL if i == hi else WHITE, anchor="ls")
-            x += int(tw(t, z)) + 30
-    else:  # 2行：普通の部分の下に強調の部分
-        y = H - 30
+    maxw = SAFE[0] - 40 - 10  # 下の段は再生時間の表示の所に掛けない（左 40 から 1090 まで）
+    # 下の段の組み方：1行に並べる（強調の字を大きく）か、2行（普通の部分の下に強調の部分）か
+    one = None
+    for z in range(236, 119, -2):
+        sz = [z if i == hi else int(z * .63) for i in range(len(lines))]
+        if sum(tw(x, q) for x, q in zip(lines, sz)) + int(z * .16) * (len(lines) - 1) <= maxw:
+            one = (z, sz)
+            break
+    if one and (one[0] >= 170 or len(lines) == 1):
+        z, sz = one
+        w = sum(tw(x, q) for x, q in zip(lines, sz)) + int(z * .16) * (len(lines) - 1)
+        xs = stretch(w, W * .72, maxw)
+        block_h = z
+        shade(im, (0, H - block_h - 100, W, H), 0, 215)
+        bb = put_text(im, [(x, q, YEL if i == hi else WHITE) for i, (x, q) in enumerate(zip(lines, sz))], (40, H - 44), "ls", xs, RED, gap=int(z * .16))
+        rows.append(bb)
+        main_w = (bb[2] - bb[0]) / W
+    else:
+        szs = []
+        for i, x in enumerate(lines):
+            szs.append(fit(x, 220, maxw, 60) if i == hi else 0)
+        sh = szs[hi]
+        szs = [z if i == hi else fit(lines[i], int(sh * .6), maxw, 50) for i, z in enumerate(szs)]
+        shade(im, (0, H - int(sh * 1.9) - 110, W, H), 0, 215)
+        y = H - 44
+        main_w = 0
         for i in reversed(range(len(lines))):
-            z = fit(lines[i], size[i] if i == hi else 110, maxw)
-            say(d, (40, y), lines[i], z, YEL if i == hi else WHITE, anchor="ls")
-            y -= int(z * 1.08)
+            w = tw(lines[i], szs[i])
+            xs = stretch(w, W * .72, maxw) if i == hi else 1.0
+            bb = put_text(im, [(lines[i], szs[i], YEL if i == hi else WHITE)], (40, y), "ls", xs, RED)
+            rows.append(bb)
+            main_w = max(main_w, (bb[2] - bb[0]) / W)
+            y -= int(szs[i] * .9) + 22
+    hi_words.append(lines[hi])
+    if top:
+        d = ImageDraw.Draw(im)
+        d.rectangle((0, 0, W, 132), fill=WHITE)
+        z = fit(top, 108, W - 100, 40)
+        xs = stretch(tw(top, z), W * .62, W - 100, 1.3)
+        bb = put_text(im, [(top, z, RED)], (W // 2, 68), "mm", xs, None, WHITE)
+        rows.append(bb)
+        top_w = (bb[2] - bb[0]) / W
     if box_label:
+        d = ImageDraw.Draw(im)
         qbox(d, (1030, 170, 1240, 380), box_label)
+    METRICS["scene"] = metric("場面", rows, top_w if top else None, main_w, len(lines) + (1 if top else 0), hi_words)
     return im
 
 
@@ -139,21 +241,27 @@ def verdict(s, bgp, box_label):
         d.rectangle((x, 36, x + w, 100), fill=WHITE)
         d.text((x + w // 2, 68), rest, font=font(z), fill=BLACK, anchor="mm")
     lines, hi = parts(N(s["thumb_text"]), s.get("thumb_lines"), 3)
-    zs = [fit(t, 160 if i == hi else 128, 570) for i, t in enumerate(lines)]
+    zs = [fit(t, 176 if i == hi else 140, 570) for i, t in enumerate(lines)]
     y = 130 + max(0, (480 - sum(int(z * 1.12) for z in zs)) // 2)
+    rows, mw = [], 0
     for i, (t, z) in enumerate(zip(lines, zs)):
         y += z
-        if i == hi:
-            say(d, (40, y), t, z, RED, WHITE, max(5, z // 22), "ls")
+        if i == hi:  # 赤い字には白い光、白い字には赤い光
+            bb = put_text(im, [(t, z, RED)], (40, y), "ls", 1.0, WHITE, WHITE)
         else:
-            say(d, (40, y), t, z, WHITE, anchor="ls")
+            bb = put_text(im, [(t, z, WHITE)], (40, y), "ls", 1.0, (150, 20, 28))
+        rows.append(bb)
+        mw = max(mw, (bb[2] - bb[0]) / 570)
         y += int(z * 0.12)
+    d = ImageDraw.Draw(im)
     if box_label:
         qbox(d, (1060, 390, 1250, 600), box_label)  # 顔は絵の上半分に来るので帯の上の右下（右上だと 2026-10-27 陽子の頬・004 の介護職員の顔にかかった）
     d.rectangle((0, 620, W, H), fill=(30, 30, 36))
     band = N(s.get("thumb_band"))
     if band:
         say(d, (40, 670), band, fit(band, 52, SAFE[0] - 60, 30), YEL, BLACK, 3, "lm")
+    # 判定の形は左の黒地（幅570px）に字を置くので、横幅は黒地に対する割合で見る（画面の7割にはならない形）
+    METRICS["verdict"] = metric("判定", rows, None, mw, len(lines) + (1 if top else 0) + (1 if band else 0), [lines[hi]], 0.85, "大きい字（左の黒地の中）", False)
     return im
 
 
@@ -207,6 +315,7 @@ def make(work, variant, bg_id=None):
     main_layout = "verdict" if s.get("type") == "D" else "scene"
     layout = main_layout if variant == "a" else {"scene": "verdict", "verdict": "scene"}[main_layout]
     im = (scene if layout == "scene" else verdict)(s, bgp, box_of(s, f, layout))
+    METRICS["last"] = METRICS[layout]
     out = os.path.join(work, f"thumb_{variant}.jpg")
     im.save(out, quality=92)
     im.resize((320, 180), Image.LANCZOS).save(out.replace(".jpg", "_320.jpg"), quality=90)
@@ -232,9 +341,13 @@ def main():
     a.add_argument("--bg", default="")
     a.add_argument("--check", action="store_true")
     a = a.parse_args()
-    outs = [make(a.work, v, a.bg or None) for v in ("a", "b")]
-    for o in outs:
+    outs = []
+    for v in ("a", "b"):
+        outs.append(make(a.work, v, a.bg or None))
+        METRICS[f"last_{v}"] = METRICS["last"]
+    for o, v in zip(outs, ("a", "b")):
         print("保存", o)
+        report(METRICS[f"last_{v}"])
     if a.check:
         t = json.load(open(os.path.join(a.work, "script.json"), encoding="utf-8"))["thumb_text"]
         sys.exit(0 if check(a.work, outs, t) else 1)

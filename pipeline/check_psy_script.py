@@ -164,9 +164,11 @@ def main():
     lines = (s.get("thumb") or {}).get("lines") or []
     flat = ["".join(r[0] for r in ln) for ln in lines]
     yellow = sum(1 for ln in lines for r in ln if r[1].upper() == "#FFE234")
-    if len(lines) != 3 or not 11 <= sum(len(x) for x in flat) <= 17 or yellow != 1 or \
+    if len(lines) not in (2, 3) or not 11 <= sum(len(x) for x in flat) <= 17 or yellow != 1 or \
             any(r[1].upper() not in ("#FFFFFF", "#FFE234") for ln in lines for r in ln):
-        ng.append(f"サムネの文字は3行・11〜17字・白と黄（黄は1か所）：{flat}（§6）")
+        ng.append(f"サムネの文字は2段（上の段・下の段の2行。3行は2・3行目をつなぐ）・11〜17字・白と黄（黄は1か所）：{flat}（§6）")
+    elif len(lines) == 2 and not (6 <= len(flat[0]) <= 11 and 4 <= len(flat[1]) <= 9):
+        warn.append(f"サムネの上の段 {len(flat[0])}字（7〜9字）・下の段 {len(flat[1])}字（5〜8字）のめやす：{flat}（§6）")
     # 概要欄
     d = s.get("desc", "")
     for need in ("{LINE_URL}", "{CHAPTERS}", "📚参考にした研究", "医療・診断・治療を目的としたものではありません",
