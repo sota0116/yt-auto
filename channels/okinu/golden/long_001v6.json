@@ -1,0 +1,1786 @@
+{
+ "format": "long",
+ "title": "【年金11万円】節約しても貯金が減る人の財布に入っている3つの物。同じ年金で貯金が減らない友人との違い",
+ "desc": "",
+ "tags": [],
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "card_theme": "kinun",
+ "bgm": "../../bgm/okinu_bgm_01_seed1.wav",
+ "tempo": 1.0,
+ "gap": 0.45,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 0.85
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "お昼は家のおにぎり。",
+   "image_en": "Midday in the small tidy kitchen of a modest present-day Japanese public housing apartment (danchi). Sawako sits alone at a small wooden table eating a plain homemade rice ball wrapped in nori, a cup of green tea beside her, a modest calm face. Soft window light.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "A02",
+   "narration": "電気はこまめに消す。",
+   "image_en": "Close-up in the narrow hallway of a modest present-day Japanese public housing apartment (danchi): a middle-aged woman's hand switches off a plain white wall light switch, the hallway light going dim. Only the hand and the switch, no face.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "A03",
+   "narration": "それなのに、月末になると、財布にはお札が1枚も残っていない。",
+   "tts_text": "それなのに、げつまつになると、財布にはおさつがいちまいも残っていない。",
+   "card": {
+    "type": "wallet",
+    "from": {
+     "bills": [
+      "1000",
+      "1000"
+     ]
+    },
+    "to": {
+     "bills": []
+    },
+    "note": "月末の財布",
+    "count": "お札　0枚"
+   }
+  },
+  {
+   "id": "A04",
+   "narration": "あなたにも、覚えはありませんか。",
+   "image_en": "Night, a small tidy Japanese kitchen of today. Sawako sits alone at a small wooden kitchen table under a warm pendant lamp, holding her open long wallet with both hands and looking into it with a puzzled, slightly worried expression. A plain cup of green tea beside her. The inside of the wallet is not visible.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "tag": "月末の夜"
+   },
+   "img_from": "A06"
+  },
+  {
+   "id": "A05",
+   "narration": "節約が足りないのではありません。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "節約が足りないのではない",
+    "accent": "足りないのではない"
+   }
+  },
+  {
+   "id": "A06",
+   "narration": "お金が出ていく人の財布には、共通して入っている物があります。",
+   "tts_text": "お金が出ていく人の財布には、共通して入っているものがあります。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が出ていく人の財布には",
+    "text2": "共通して入っている物がある",
+    "accent": "共通して"
+   }
+  },
+  {
+   "id": "A07",
+   "narration": "佐和子さん、66歳。年金は月11万円。",
+   "tts_text": "さわこさん、ろくじゅうろくさい。年金は月じゅういちまんえん。",
+   "image_en": "Daytime, Sawako sits on the sofa and opens a plain bankbook calmly, a cup of tea beside her.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "66歳　年金は月11万円"
+   },
+   "img_from": "H20"
+  },
+  {
+   "id": "A08",
+   "narration": "家計簿も毎晩つけています。",
+   "tts_text": "かけいぼも毎晩つけています。",
+   "image_en": "Night at the small kitchen table of a modest present-day Japanese public housing apartment (danchi). Sawako writes carefully with a pencil in an open plain household account notebook under a pendant lamp, a messy pile of crumpled plain receipts beside it.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "それでも、この3年で、貯金は50万円減りました。",
+   "tts_text": "それでも、このさんねんで、貯金はごじゅうまんえん減りました。",
+   "card": {
+    "type": "big_text",
+    "text": "それでも、貯金は",
+    "text2": "3年で、50万円減った",
+    "accent": "50万円減った"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "同じ団地の澄江さんも、年金は同じ11万円。",
+   "tts_text": "同じ団地のすみえさんも、年金は同じじゅういちまんえん。",
+   "image_en": "Sumie stands at the open front door of her apartment in a modest present-day Japanese public housing apartment (danchi), smiling warmly as if welcoming a neighbor. Soft afternoon light in the outdoor corridor.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金は月11万円"
+   }
+  },
+  {
+   "id": "A11",
+   "narration": "けれど澄江さんの貯金は、3年前から減っていません。",
+   "tts_text": "けれどすみえさんの貯金は、さんねん前から減っていません。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "3年で50万円減った",
+      "icon": "receipt",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "3年前から減っていない",
+      "icon": "bills"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A12",
+   "narration": "2人の財布を並べると、違いはすぐに分かりました。",
+   "tts_text": "ふたりの財布を並べると、違いはすぐに分かりました。",
+   "image_en": "Close-up on a low wooden table: two long wallets lie side by side. The left one is thin, flat and neatly closed; the right one is fat and bulging, its clasp barely shut, edges of plain paper slips sticking out. Warm indoor light. No people.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "A13",
+   "narration": "佐和子さんの財布には、1か月分のレシートと、使っていないポイントカードが7枚。",
+   "tts_text": "さわこさんの財布には、いっかげつぶんのレシートと、使っていないポイントカードがななまい。",
+   "image_en": "Close-up of a bulging long wallet opened on a wooden table: a thick wad of crumpled plain paper receipts stuffed in the bill section, and many plain pastel-colored cards crammed into the card slots. No people, no readable text.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "A14",
+   "narration": "澄江さんの財布には、向きをそろえたお札と、使わずに残している一万円札が1枚。",
+   "tts_text": "すみえさんの財布には、向きをそろえたおさつと、使わずに残しているイチマンエンサツがいちまい。",
+   "card": {
+    "type": "wallet",
+    "to": {
+     "bills": [
+      "10000",
+      "5000",
+      "1000",
+      "1000"
+     ]
+    },
+    "note": "澄江さんの財布",
+    "count": "向きをそろえた　お札"
+   }
+  },
+  {
+   "id": "A15",
+   "narration": "レシートは、1枚も入っていませんでした。",
+   "tts_text": "レシートは、いちまいも入っていませんでした。",
+   "card": {
+    "type": "big_text",
+    "text": "澄江さんの財布には",
+    "text2": "レシートは、1枚もない",
+    "accent": "1枚もない"
+   }
+  },
+  {
+   "id": "A16",
+   "narration": "財布は、お金の家。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She rests one hand on a plain brown long wallet and a plain brown envelope placed side by side on the table, explaining gently.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "財布は",
+     "big": "お金の家"
+    },
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "E10"
+  },
+  {
+   "id": "A17",
+   "narration": "昔から、そう言われてきました。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She looks toward the viewer with a calm knowing smile, one hand slightly raised as if beginning to explain. Warm afternoon light.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "昔から",
+     "big": "そう言われてきた",
+     "size": 120
+    }
+   },
+   "img_from": "B01"
+  },
+  {
+   "id": "A18",
+   "narration": "お金が出ていく人の財布に入っている物は、全部で3つ。",
+   "tts_text": "お金が出ていく人の財布に入っているものは、全部でみっつ。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が出ていく人の財布に入っている物",
+    "text2": "全部で、3つ",
+    "accent": "3つ"
+   }
+  },
+  {
+   "id": "A19",
+   "narration": "あなたの財布にも、入っていないでしょうか。",
+   "image_en": "Close-up of a pair of middle-aged hands opening a plain brown leather long wallet above a wooden dining table, soft morning window light. Only the hands and wallet are visible, no face. The inside of the wallet shows only plain pale rectangles.",
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "A09"
+  },
+  {
+   "id": "B00",
+   "narration": "9月の終わり。",
+   "tts_text": "くがつの終わり。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第一章",
+    "title": "財布を並べた日"
+   },
+   "yt_chapter": "財布を並べた日"
+  },
+  {
+   "id": "B01",
+   "narration": "スーパーのレジで、佐和子さんは財布を開いて、手が止まりました。",
+   "tts_text": "スーパーのレジで、さわこさんは財布を開いて、手が止まりました。",
+   "image_en": "At the checkout of a small unbranded Japanese neighborhood supermarket, present day. Sawako stands at the counter looking down into her open long wallet, her hand frozen, a slightly flustered face. Warm store light, no readable signs.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "tag": "9月の終わり",
+    "tag_sub": "近所のスーパー"
+   }
+  },
+  {
+   "id": "B02",
+   "narration": "千円札が2枚はあると思っていたのに、出てくるのはレシートの束ばかり。",
+   "tts_text": "センエンサツがにまいはあると思っていたのに、出てくるのはレシートの束ばかり。",
+   "image_en": "Close-up at a supermarket checkout counter: a woman's fingers pull a thick bundle of crumpled plain paper receipts out of the bill section of a long wallet. No face, no readable text.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B03",
+   "narration": "後ろに並んだ人を気にしながら、小銭をかき集めて、やっと払いました。",
+   "image_en": "At a supermarket checkout, Sawako hurriedly picks coins out of the coin pocket of her long wallet onto the counter tray, glancing back nervously; a shopper waits behind her, softly blurred. No readable signs.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B04",
+   "narration": "帰り道、佐和子さんは思いました。",
+   "tts_text": "帰り道、さわこさんは思いました。",
+   "image_en": "Early evening, Sawako walks home alone on the path between the buildings of a modest present-day Japanese public housing apartment (danchi), carrying a small plastic shopping bag, a thoughtful downcast face. Autumn trees, soft dusk light.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "毎晩、家計簿をつけているのに。",
+   "tts_text": "毎晩、かけいぼをつけているのに。",
+   "same_as": "A08"
+  },
+  {
+   "id": "B06",
+   "narration": "どうして自分の財布にいくら入っているのかも、分からないんだろう。",
+   "card": {
+    "type": "big_text",
+    "text": "毎晩、家計簿をつけているのに",
+    "text2": "いくら入っているのかも、分からない",
+    "accent": "分からない"
+   }
+  },
+  {
+   "id": "B07",
+   "narration": "10月のはじめ。",
+   "tts_text": "じゅうがつのはじめ。",
+   "image_en": "Exterior of a modest present-day Japanese public housing apartment (danchi) on a clear early autumn afternoon: several four-story pale concrete apartment buildings, laundry on some balconies, a small playground and trees turning yellow. No readable signs, no people close up.",
+   "card": {
+    "type": "photo",
+    "tag": "10月のはじめ",
+    "tag_sub": "同じ団地"
+   }
+  },
+  {
+   "id": "B08",
+   "narration": "佐和子さんは、団地の集会所の掃除当番を終えて、澄江さんの部屋でお茶をいただいていました。",
+   "tts_text": "さわこさんは、団地のしゅうかいじょのそうじとうばんを終えて、すみえさんの部屋でお茶をいただいていました。",
+   "image_en": "Inside Sumie's small, tidy apartment in a modest present-day Japanese public housing apartment (danchi): Sawako and Sumie sit facing each other at a low wooden table with cups of green tea and a small plate of rice crackers, chatting in soft afternoon light.",
+   "chars": [
+    "sawako",
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B09",
+   "narration": "澄江さん、どうやってやりくりしてるの。年金、同じくらいでしょう。",
+   "tts_text": "すみえさん、どうやってやりくりしてるの。年金、同じくらいでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "年金は、同じくらいなのに",
+    "text2": "どうやって、やりくりしてるの？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "B10",
+   "narration": "澄江さんは湯のみを置いて、少し笑いました。",
+   "tts_text": "すみえさんは湯のみを置いて、少し笑いました。",
+   "image_en": "Close-up of Sumie at the low table in her apartment, setting her teacup down on the table with a small gentle smile. Soft afternoon light.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B11",
+   "narration": "やりくりなんて、たいしたことしてないのよ。",
+   "same_as": "B10"
+  },
+  {
+   "id": "B12",
+   "narration": "ただ、財布の中だけは、毎晩見るの。",
+   "card": {
+    "type": "quote",
+    "text": "財布の中だけは\n毎晩見るの",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "B13",
+   "narration": "財布の中？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "財布の中？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "佐和子さん、ちょっと財布、出してみて。",
+   "tts_text": "さわこさん、ちょっと財布、出してみて。",
+   "same_as": "B08"
+  },
+  {
+   "id": "B15",
+   "narration": "佐和子さんは、バッグから長財布を出しました。ふくらんで、留め金が少し浮いています。",
+   "tts_text": "さわこさんは、バッグからながざいふを出しました。ふくらんで、とめがねが少し浮いています。",
+   "image_en": "Close-up: Sawako's hands place her fat bulging long wallet on the low wooden table, its clasp barely closed and lifted, edges of plain paper slips poking out.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "テーブルに、2つの財布が並びました。",
+   "tts_text": "テーブルに、ふたつの財布が並びました。",
+   "same_as": "A12"
+  },
+  {
+   "id": "B17",
+   "narration": "澄江さんの財布は薄くて、閉じるとまっすぐ。佐和子さんの財布は、厚みが倍ほどありました。",
+   "tts_text": "すみえさんの財布は薄くて、閉じるとまっすぐ。さわこさんの財布は、あつみが倍ほどありました。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "澄江さん",
+      "sub": "薄くて、まっすぐ",
+      "icon": "bills"
+     },
+     {
+      "head": "佐和子さん",
+      "sub": "厚みが、倍ほど",
+      "icon": "receipt"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "B18",
+   "narration": "中、出してみてもいい？",
+   "same_as": "B08"
+  },
+  {
+   "id": "B19",
+   "narration": "出てきたのは、スーパーとドラッグストアのレシートが、ひと月分。",
+   "image_en": "Seen from above on a low wooden table: a big messy pile of crumpled plain white paper receipts of different lengths, spread out next to an open long wallet. No readable text, no people.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B20",
+   "narration": "美容院、閉店したパン屋、2年前に一度だけ行った電器店。ポイントカードが7枚。",
+   "tts_text": "美容院、閉店したパン屋、にねんまえにいちどだけ行ったでんきてん。ポイントカードがななまい。",
+   "image_en": "Seen from above on a low wooden table: exactly seven plain point cards in different soft pastel colors fanned out in a row, all completely blank with no logos or text. No people.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "そしてカード入れの奥から、角のすり切れた、大吉のおみくじ。",
+   "tts_text": "そしてカード入れの奥から、かどのすり切れた、だいきちのおみくじ。",
+   "image_en": "Extreme close-up: fingers slowly pull a small folded slip of thin white paper with worn, frayed corners out from deep behind the card slots of a long wallet. The paper is plain with no readable writing.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B22",
+   "narration": "それ、5年前の初詣で引いたの。大吉だったから、ずっと入れてるのよ。",
+   "tts_text": "それ、ごねん前のはつもうでで引いたの。だいきちだったから、ずっと入れてるのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "5年前の初詣で引いた",
+    "text2": "大吉だから、ずっと入れてる",
+    "accent": "ずっと",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "B23",
+   "narration": "澄江さんは、テーブルの上を見て、静かに言いました。",
+   "tts_text": "すみえさんは、テーブルの上を見て、静かに言いました。",
+   "image_en": "Sumie looks down at the receipts, cards and the small folded paper slip spread on the low table, a quiet, thoughtful face; Sawako beside her watching. Soft light.",
+   "chars": [
+    "sumie",
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B24",
+   "narration": "佐和子さん。これ全部、母が、財布に入れておいちゃいけないって言ってた物なの。",
+   "tts_text": "さわこさん。これ全部、ハハが、財布に入れておいちゃいけないって言ってたものなの。",
+   "card": {
+    "type": "quote",
+    "text": "財布に\n入れておいては\nいけない物",
+    "by": "澄江さんの母の教え"
+   }
+  },
+  {
+   "id": "C00",
+   "narration": "最初は、レシートです。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第二章",
+    "title": "1つ目　レシート"
+   },
+   "yt_chapter": "1つ目 レシート"
+  },
+  {
+   "id": "C01",
+   "narration": "レシートはね、お金が出ていった証拠なのよ。",
+   "tts_text": "レシートわね、お金が出ていった証拠なのよ。",
+   "card": {
+    "type": "quote",
+    "text": "レシートは\nお金が出ていった\n証拠",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "C02",
+   "narration": "金運の世界では、財布はお金の家だと考えます。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She smiles warmly and opens her palm toward the viewer as if welcoming someone home.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "金運の世界では",
+     "big": "財布は、お金の家",
+     "size": 120
+    }
+   },
+   "img_from": "E11"
+  },
+  {
+   "id": "C03",
+   "narration": "その家に、出ていった記録がたまっていく。",
+   "same_as": "B19"
+  },
+  {
+   "id": "C04",
+   "narration": "レシートを入れたままにすると、出ていく流れのほうを呼んでしまう。そう言われてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "レシートを入れたままだと",
+    "text2": "出ていく流れを、呼んでしまう",
+    "accent": "出ていく流れ"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "佐和子さんがレシートをためていたのには、わけがありました。",
+   "tts_text": "さわこさんがレシートをためていたのには、わけがありました。",
+   "same_as": "A08"
+  },
+  {
+   "id": "C06",
+   "narration": "だって、家計簿をつけるのに要るでしょう。",
+   "tts_text": "だって、かけいぼをつけるのにいるでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "だって",
+    "text2": "家計簿をつけるのに、要るでしょう？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "C07",
+   "narration": "要るわよ。だから、捨てなくていいの。財布から出すだけ。",
+   "tts_text": "いるわよ。だから、捨てなくていいの。財布から出すだけ。",
+   "card": {
+    "type": "quote",
+    "text": "捨てなくていい\n財布から\n出すだけ",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "C08",
+   "narration": "澄江さんのやり方は、こうでした。",
+   "tts_text": "すみえさんのやりかたは、こうでした。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんのレシートの決まり",
+    "items": [
+     "玄関で、財布から出す",
+     "台所の空き箱に入れておく",
+     "財布には、1枚も残さない"
+    ],
+    "show": 1,
+    "cur": -1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C09",
+   "narration": "家に帰ったら、玄関で財布を開けて、その日のレシートを出す。",
+   "image_en": "The small entrance (genkan) of a modest present-day Japanese public housing apartment (danchi): Sawako, just home with her handbag still on her shoulder, stands by the shoe cabinet, opening her long wallet and taking out a few plain paper receipts. Warm light.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "C10",
+   "narration": "台所の空き箱に入れておいて、夜、家計簿をつけるときに、そこから出す。",
+   "tts_text": "台所のあきばこに入れておいて、夜、かけいぼをつけるときに、そこから出す。",
+   "image_en": "Night, a small kitchen table under a pendant lamp: an empty plain sweets tin box holding folded plain receipts, beside an open household account notebook and a pencil. No people, no readable text.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "C11",
+   "narration": "財布には、その日の分も残さない。",
+   "tts_text": "財布には、そのひのぶんも残さない。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんのレシートの決まり",
+    "items": [
+     "玄関で、財布から出す",
+     "台所の空き箱に入れておく",
+     "財布には、1枚も残さない"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C12",
+   "narration": "出かけた先でレシートを渡されたら？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "出かけた先で、渡されたら？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "C13",
+   "narration": "バッグの小さなポケットに入れておけばいいの。財布にさえ入れなければ。",
+   "image_en": "Close-up: a woman's hand slips a folded plain paper receipt into a small inner pocket of an open cloth handbag, the long wallet sitting closed in the main compartment. No face.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "C14",
+   "narration": "カードで払ったときの控えも？",
+   "tts_text": "カードで払ったときのひかえも？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "カードで払った、控えも？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "同じよ。控えも、出ていったお金の紙だから。",
+   "tts_text": "同じよ。ひかえも、出ていったお金の紙だから。",
+   "card": {
+    "type": "quote",
+    "text": "控えも\n出ていったお金の紙",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "C16",
+   "narration": "レシートを抜くと、ほかにも、いいことがありました。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She carefully smooths a plain pale paper rectangle flat on the table with her fingertips, a gentle careful look.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "レシートを抜くと",
+     "big": "ほかにも、いいこと",
+     "size": 110
+    }
+   },
+   "img_from": "H12"
+  },
+  {
+   "id": "C17",
+   "narration": "財布を開いたとき、お札が何枚あるのか、すぐに見えるのです。",
+   "tts_text": "財布を開いたとき、おさつがなんまいあるのか、すぐに見えるのです。",
+   "card": {
+    "type": "wallet",
+    "to": {
+     "bills": [
+      "1000",
+      "1000",
+      "1000"
+     ]
+    },
+    "note": "レシートを抜いた財布",
+    "count": "お札が　すぐ見える"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "レシートに埋もれていたとき、佐和子さんは、財布にいくら残っているのか、レジの前で数えるまで分かりませんでした。",
+   "tts_text": "レシートに埋もれていたとき、さわこさんは、財布にいくら残っているのか、レジの前で数えるまで分かりませんでした。",
+   "same_as": "B02"
+  },
+  {
+   "id": "C19",
+   "narration": "佐和子さんの財布は、レシートを抜いただけで、厚みが半分になりました。",
+   "tts_text": "さわこさんの財布は、レシートを抜いただけで、あつみが半分になりました。",
+   "image_en": "Sawako at the low table holds up her long wallet, now much slimmer and neatly closed, with a pleasantly surprised face; a stack of plain receipts lies beside her. Soft light.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D00",
+   "narration": "次は、7枚のポイントカードでした。",
+   "tts_text": "次は、ななまいのポイントカードでした。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第三章",
+    "title": "2つ目　使っていないポイントカード"
+   },
+   "yt_chapter": "2つ目 使っていないポイントカード"
+  },
+  {
+   "id": "D01",
+   "narration": "この中で、先月使ったのはどれ？",
+   "card": {
+    "type": "big_text",
+    "text": "この中で",
+    "text2": "先月、使ったのはどれ？",
+    "kicker": "澄江さん"
+   }
+  },
+  {
+   "id": "D02",
+   "narration": "佐和子さんが手に取ったのは、近所のスーパーと、ドラッグストアの2枚だけでした。",
+   "tts_text": "さわこさんが手に取ったのは、近所のスーパーと、ドラッグストアのにまいだけでした。",
+   "image_en": "Close-up from above: Sawako's fingers pick just two plain pastel cards out of seven blank cards fanned on the low wooden table. No logos, no text.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D03",
+   "narration": "閉店したパン屋のカードは、もう使えません。",
+   "same_as": "B20"
+  },
+  {
+   "id": "D04",
+   "narration": "ドラッグストアはね、ポイント5倍の日に行くの。",
+   "tts_text": "ドラッグストアわね、ポイントごばいの日に行くの。",
+   "card": {
+    "type": "big_text",
+    "text": "ドラッグストアは",
+    "text2": "ポイント5倍の日に行く",
+    "accent": "5倍の日",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "せっかくだから、洗剤やティッシュも買い置きしちゃう。",
+   "image_en": "In a bright unbranded Japanese drugstore aisle, Sawako carries a shopping basket piled with plain detergent bottles and boxes of tissues, reaching for one more bottle on the shelf. No readable labels or signs.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "澄江さんは、さっきのレシートの束から、1枚を抜き出しました。",
+   "tts_text": "すみえさんは、さっきのレシートの束から、いちまいを抜き出しました。",
+   "image_en": "Close-up: Sumie's hand draws one very long plain paper receipt out of the messy pile of receipts on the low wooden table. No readable text.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D07",
+   "narration": "5倍の日のレシートが、いちばん長かったのです。",
+   "tts_text": "ごばいの日のレシートが、いちばん長かったのです。",
+   "card": {
+    "type": "receipt",
+    "head": "ポイント5倍の日",
+    "lines": [
+     [
+      "洗剤",
+      "398円"
+     ],
+     [
+      "ティッシュ　5箱",
+      "548円"
+     ],
+     [
+      "柔軟剤",
+      "328円"
+     ],
+     [
+      "お菓子",
+      "258円"
+     ],
+     [
+      "入浴剤",
+      "298円"
+     ],
+     [
+      "合計",
+      "1,830円"
+     ]
+    ],
+    "show": 6
+   }
+  },
+  {
+   "id": "D08",
+   "narration": "ポイントをためるつもりで、要らない物まで買っている。",
+   "tts_text": "ポイントをためるつもりで、いらないものまで買っている。",
+   "card": {
+    "type": "big_text",
+    "text": "ポイントをためるつもりで",
+    "text2": "要らない物まで、買っている",
+    "accent": "要らない物"
+   }
+  },
+  {
+   "id": "D09",
+   "narration": "佐和子さんは、そのレシートを見て、黙ってしまいました。",
+   "tts_text": "さわこさんは、そのレシートを見て、黙ってしまいました。",
+   "image_en": "Sawako at the low table holds the long receipt in both hands and looks at it in silence, a little embarrassed. Soft afternoon light.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D10",
+   "narration": "金運の世界では、ぱんぱんの財布は、満員の家だと言われます。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She turns the pages of an old plain thread-bound book with no readable writing, a thoughtful look.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "ぱんぱんの財布は",
+     "big": "満員の家"
+    }
+   },
+   "img_from": "E14"
+  },
+  {
+   "id": "D11",
+   "narration": "満員の家には、新しいお客さんが入れません。",
+   "card": {
+    "type": "big_text",
+    "text": "満員の家には",
+    "text2": "新しいお客さんが、入れない",
+    "accent": "入れない"
+   }
+  },
+  {
+   "id": "D12",
+   "narration": "使わないカードは、その満員のいちばんの原因です。",
+   "same_as": "A13"
+  },
+  {
+   "id": "D13",
+   "narration": "澄江さんの決まりは、とても簡単でした。",
+   "tts_text": "すみえさんの決まりは、とても簡単でした。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんのカードの決まり",
+    "items": [
+     "先月、1回でも使ったカードだけ入れる",
+     "残りは、輪ゴムでまとめて箱へ",
+     "使う日の前の晩に、財布へ移す"
+    ],
+    "show": 1,
+    "cur": -1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "先月、1回でも使ったカードだけ、財布に入れる。",
+   "tts_text": "先月、いっかいでも使ったカードだけ、財布に入れる。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんのカードの決まり",
+    "items": [
+     "先月、1回でも使ったカードだけ入れる",
+     "残りは、輪ゴムでまとめて箱へ",
+     "使う日の前の晩に、財布へ移す"
+    ],
+    "show": 1
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "残りは、捨てなくてかまいません。ポイントがたまっているなら、輪ゴムでまとめて、カードの箱にしまっておく。",
+   "tts_text": "残りは、捨てなくてかまいません。ポイントがたまっているなら、わごむでまとめて、カードの箱にしまっておく。",
+   "image_en": "Close-up on a wooden table: hands put a small stack of plain pastel cards held together with a rubber band into a small plain wooden box. No text, no logos.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D16",
+   "narration": "使う日の前の晩に、財布へ移せばいいのです。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんのカードの決まり",
+    "items": [
+     "先月、1回でも使ったカードだけ入れる",
+     "残りは、輪ゴムでまとめて箱へ",
+     "使う日の前の晩に、財布へ移す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D17",
+   "narration": "病院の診察券は？",
+   "tts_text": "病院のしんさつけんは？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "病院の診察券は？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "D18",
+   "narration": "通っている病院のなら、入れておいていいのよ。困るのは、使わないのに入っている物だけ。",
+   "tts_text": "通っている病院のなら、入れておいていいのよ。困るのは、使わないのに入っているものだけ。",
+   "card": {
+    "type": "quote",
+    "text": "困るのは\n使わないのに\n入っている物だけ",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "D19",
+   "narration": "通帳は？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "通帳は？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "D20",
+   "narration": "通帳は、家の決まった場所に。財布は、持ち歩くお金の家だから。",
+   "image_en": "Daytime, Sawako sits on the sofa and opens a plain bankbook calmly, a cup of tea beside her.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "H20"
+  },
+  {
+   "id": "D21",
+   "narration": "スマホのアプリにできるお店なら、カードをアプリに替えてしまうのも、いいやり方です。",
+   "tts_text": "スマホのアプリにできるお店なら、カードをアプリに替えてしまうのも、いいやりかたです。",
+   "card": {
+    "type": "big_text",
+    "text": "スマホのアプリにできるお店なら",
+    "text2": "アプリに替えるのも、いいやり方",
+    "accent": "アプリ"
+   }
+  },
+  {
+   "id": "D22",
+   "narration": "佐和子さんの財布に残ったカードは、スーパーとドラッグストアの2枚に、マイナンバーカードと、キャッシュカード。",
+   "tts_text": "さわこさんの財布に残ったカードは、スーパーとドラッグストアのにまいに、マイナンバーカードと、キャッシュカード。",
+   "image_en": "Close-up of a slim open long wallet on a wooden table: only four plain blank cards sit neatly in the card slots, the rest of the slots empty. No logos, no text. Calm light.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D23",
+   "narration": "7枚あったポイントカードが、2枚になりました。",
+   "tts_text": "ななまいあったポイントカードが、にまいになりました。",
+   "card": {
+    "type": "big_text",
+    "text": "ポイントカードは",
+    "text2": "7枚が、2枚に",
+    "accent": "2枚"
+   }
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が出ていく人の財布に入っている物",
+    "items": [
+     "レシート",
+     "使っていないポイントカード",
+     "入れっぱなしのおみくじ"
+    ],
+    "show": 2,
+    "all": true,
+    "fresh": true
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "3つ目は、多くの人が、むしろ縁起のいい物だと思って入れている物です。",
+   "tts_text": "みっつ目は、多くの人が、むしろえんぎのいいものだと思って入れているものです。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ目は",
+    "text2": "縁起のいい物だと思って、入れている",
+    "accent": "縁起のいい物"
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "このチャンネルでは、財布や台所でできる、お金のかからない金運の決まりを、物語でお届けしています。",
+   "tts_text": "このチャンネルでは、財布や台所でできる、お金のかからない金運の決まりを、ものがたりでお届けしています。",
+   "image_en": "Okinu sits at a low wooden table in a calm Japanese room of today with a cup of green tea, turning toward the viewer with a warm friendly smile, one hand resting on an old plain brown envelope on the table. Soft afternoon window light.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "G26"
+  },
+  {
+   "id": "M04",
+   "narration": "続きを聞いてみたい方は、チャンネル登録をして、また聞きに来てくださいね。",
+   "image_en": "Okinu sits at a low wooden table in a calm Japanese room of today with a cup of green tea, bowing her head slightly toward the viewer with a gentle smile, hands placed together on the table. Warm light.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "G27",
+   "tts_text": "続きを聞いてみたいかたは、チャンネル登録をして、また聞きに来てくださいね。"
+  },
+  {
+   "id": "E00",
+   "narration": "最後に残ったのは、大吉のおみくじでした。",
+   "tts_text": "最後に残ったのは、だいきちのおみくじでした。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第四章",
+    "title": "3つ目　入れっぱなしのおみくじ"
+   },
+   "yt_chapter": "3つ目 入れっぱなしのおみくじ"
+  },
+  {
+   "id": "E01",
+   "narration": "大吉よ。縁起がいいでしょう。",
+   "tts_text": "だいきちよ。えんぎがいいでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "大吉よ",
+    "text2": "縁起がいいでしょう？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "E02",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   }
+  },
+  {
+   "id": "E03",
+   "narration": "澄江さんも、大吉を引いた年がありました。",
+   "tts_text": "すみえさんも、だいきちを引いた年がありました。",
+   "image_en": "A small quiet neighborhood Shinto shrine on a cold clear winter morning around New Year: Sumie in a warm coat stands near the wooden offering box, holding a small unfolded plain white paper slip and smiling happily. Faces small, no readable writing.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E04",
+   "narration": "そのおみくじを、澄江さんはどうしたと思いますか。",
+   "tts_text": "そのおみくじを、すみえさんはどうしたと思いますか。",
+   "card": {
+    "type": "big_text",
+    "text": "大吉のおみくじを、澄江さんは",
+    "text2": "どうしたと思いますか",
+    "accent": "どうした",
+    "kicker": "問題"
+   }
+  },
+  {
+   "id": "E05",
+   "narration": "1番、ずっと財布に入れておいた。",
+   "tts_text": "いちばん、ずっと財布に入れておいた。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんは、大吉のおみくじを",
+    "items": [
+     "ずっと財布に入れておいた",
+     "引いたその場で、神社に結んだ",
+     "かなうまで持って、かなったら納めた"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "2番、引いたその場で、神社に結んだ。",
+   "tts_text": "にばん、引いたその場で、神社に結んだ。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんは、大吉のおみくじを",
+    "items": [
+     "ずっと財布に入れておいた",
+     "引いたその場で、神社に結んだ",
+     "かなうまで持って、かなったら納めた"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E07",
+   "narration": "3番、書いてあることがかなうまで財布に入れて、かなったら、神社に納めた。",
+   "tts_text": "さんばん、書いてあることがかなうまで財布に入れて、かなったら、神社におさめた。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんは、大吉のおみくじを",
+    "items": [
+     "ずっと財布に入れておいた",
+     "引いたその場で、神社に結んだ",
+     "かなうまで持って、かなったら納めた"
+    ],
+    "show": 3
+   }
+  },
+  {
+   "id": "E08",
+   "narration": "あなたは、どれだと思いますか。",
+   "card": {
+    "type": "rules",
+    "title": "澄江さんは、大吉のおみくじを",
+    "items": [
+     "ずっと財布に入れておいた",
+     "引いたその場で、神社に結んだ",
+     "かなうまで持って、かなったら納めた"
+    ],
+    "show": 3,
+    "all": true,
+    "cur": -1
+   }
+  },
+  {
+   "id": "E09",
+   "narration": "答えは、3番です。",
+   "tts_text": "答えは、さんばんです。",
+   "card": {
+    "type": "big_text",
+    "text": "答えは",
+    "text2": "3番",
+    "accent": "3番",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E10",
+   "narration": "おみくじは、お守りとは違うのよ。神様からの言葉なの。",
+   "card": {
+    "type": "quote",
+    "text": "おみくじは\n神様からの\n言葉",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "E11",
+   "narration": "おみくじは、持っているだけで運を呼ぶ物ではなく、書いてあることを守るための物。",
+   "tts_text": "おみくじは、持っているだけで運を呼ぶものではなく、書いてあることを守るためのもの。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She holds up one large plain pale paper rectangle with both hands in front of her chest, looking at it with respect.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "おみくじは",
+     "big": "書いてあることを守る物",
+     "size": 100
+    }
+   },
+   "img_from": "B02"
+  },
+  {
+   "id": "E12",
+   "narration": "かなうまでは持ち歩いて、ときどき読み返す。かなったら、お礼を言って納める。",
+   "tts_text": "かなうまでは持ち歩いて、ときどき読み返す。かなったら、お礼を言っておさめる。",
+   "image_en": "At a small Shinto shrine, close-up of a woman's hands gently placing a folded plain white paper slip into a simple wooden box for returned fortunes, a small respectful bow implied. No readable writing, face not shown.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E13",
+   "narration": "何年も入れっぱなしにすると、読まれない紙になって、レシートと同じように、財布をふさいでしまうと言われます。",
+   "tts_text": "なんねんも入れっぱなしにすると、読まれない紙になって、レシートと同じように、財布をふさいでしまうと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "何年も入れっぱなしにすると",
+    "text2": "読まれない紙が、財布をふさぐ",
+    "accent": "財布をふさぐ"
+   }
+  },
+  {
+   "id": "E14",
+   "narration": "神社が遠いときは？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "神社が遠いときは？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "E15",
+   "narration": "手帳に貼って、ときどき読み返している人もいるわ。読み返すのが、本当の使い方だから。",
+   "image_en": "Close-up on a kitchen table: an open small pocket notebook with a folded plain white paper slip taped neatly onto one page, a pencil beside it. No readable writing, no people.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "佐和子さんは、5年ぶりに、おみくじを開いてみました。",
+   "tts_text": "さわこさんは、ごねんぶりに、おみくじを開いてみました。",
+   "image_en": "Sawako at the low table carefully unfolds the small worn white paper slip, looking at it with curious eyes. Soft light. The paper has no readable writing.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E17",
+   "narration": "金運の欄には、こう書いてありました。",
+   "tts_text": "金運のらんには、こう書いてありました。",
+   "same_as": "E16"
+  },
+  {
+   "id": "E18",
+   "narration": "浪費をつつしめ。",
+   "tts_text": "ろうひをつつしめ。",
+   "card": {
+    "type": "quote",
+    "text": "金運\n浪費をつつしめ",
+    "by": "5年前の大吉"
+   }
+  },
+  {
+   "id": "E19",
+   "narration": "5年間、財布の中で、ずっと言われてたのね。",
+   "tts_text": "ごねんかん、財布の中で、ずっと言われてたのね。",
+   "card": {
+    "type": "big_text",
+    "text": "5年間、財布の中で",
+    "text2": "ずっと言われてたのね",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "E20",
+   "narration": "2人は、声を出して笑いました。",
+   "tts_text": "ふたりは、声を出して笑いました。",
+   "image_en": "Sawako and Sumie laugh out loud together at the low table in Sumie's apartment, Sawako holding the small paper slip, cups of tea on the table. Warm afternoon light.",
+   "chars": [
+    "sawako",
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "空いた佐和子さんの財布の隣で、澄江さんは、自分の財布を開いて見せました。",
+   "tts_text": "あいたさわこさんの財布の隣で、すみえさんは、自分の財布を開いて見せました。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第五章",
+    "title": "澄江さんの財布に残っていた物"
+   },
+   "yt_chapter": "澄江さんの財布に残っていた物"
+  },
+  {
+   "id": "F01",
+   "narration": "お札は、顔の向きをそろえて、大きいお札から順に並んでいます。",
+   "tts_text": "おさつは、顔の向きをそろえて、大きいおさつからじゅんに並んでいます。",
+   "card": {
+    "type": "wallet",
+    "to": {
+     "bills": [
+      "10000",
+      "5000",
+      "1000",
+      "1000"
+     ]
+    },
+    "note": "澄江さんの財布",
+    "count": "大きいお札から　順に"
+   }
+  },
+  {
+   "id": "F02",
+   "narration": "向きがそろっていると、開いた瞬間に、いくら残っているかが分かります。",
+   "image_en": "Close-up: a neat aligned stack of plain pale paper rectangles on the wooden table under warm lamp light, a hand resting beside it. Calm.",
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "G18"
+  },
+  {
+   "id": "F03",
+   "narration": "お金を大事に扱う人のところに、お金は帰ってくる。金運では、そう考えます。",
+   "tts_text": "お金を大事にあつかう人のところに、お金は帰ってくる。金運では、そう考えます。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She smiles brightly with both hands together near her chest, as if seeing someone off kindly.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "大事に扱う人のところに",
+     "big": "お金は帰ってくる",
+     "size": 110
+    }
+   },
+   "img_from": "G05"
+  },
+  {
+   "id": "F04",
+   "narration": "そして、いちばん奥に、一万円札が1枚。",
+   "tts_text": "そして、いちばん奥に、イチマンエンサツがいちまい。",
+   "image_en": "Extreme close-up: Sumie's fingers lift the back flap of her slim long wallet to show one folded plain pale paper rectangle kept alone in the very back pocket. No digits, no portrait.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "F05",
+   "narration": "これは使わないお札。母は、種銭って呼んでたわ。",
+   "tts_text": "これは使わないおさつ。ハハは、たねせんって呼んでたわ。",
+   "card": {
+    "type": "quote",
+    "text": "これは\n使わないお札",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "F06",
+   "narration": "種銭は、お金を呼ぶための、財布の中の最初のお金です。",
+   "tts_text": "たねせんは、お金を呼ぶための、財布の中の最初のお金です。",
+   "image_en": "Okinu is placed in the left third of the frame, from the waist up, at a low wooden table in a calm Japanese room of today; the right half of the frame is a plain softly lit cream wall with nothing on it. She holds a small plain brown envelope in both hands close to her heart, a calm serious face.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お金を呼ぶ、最初のお金",
+     "big": "種銭"
+    }
+   },
+   "img_from": "J13"
+  },
+  {
+   "id": "F07",
+   "narration": "財布が空っぽにならないように、1枚だけ残しておきます。",
+   "tts_text": "財布がからっぽにならないように、いちまいだけ残しておきます。",
+   "card": {
+    "type": "wallet",
+    "to": {
+     "bills": [
+      "10000"
+     ]
+    },
+    "note": "使わずに残す1枚",
+    "count": "種銭"
+   }
+  },
+  {
+   "id": "F08",
+   "narration": "新しいお札でないと、だめなの？",
+   "tts_text": "新しいおさつでないと、だめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "新しいお札でないと、だめ？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "F09",
+   "narration": "きれいなお札がいいけど、新札でなくてもいいのよ。大事なのは、使わずに残しておくこと。",
+   "tts_text": "きれいなおさつがいいけど、しんさつでなくてもいいのよ。大事なのは、使わずに残しておくこと。",
+   "card": {
+    "type": "quote",
+    "text": "大事なのは\n使わずに\n残しておくこと",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "どうしても使ってしまったら？",
+   "card": {
+    "type": "big_text",
+    "text": "どうしても",
+    "text2": "使ってしまったら？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "F11",
+   "narration": "次の年金の日に、また1枚入れればいいの。それだけ。",
+   "tts_text": "次の年金の日に、またいちまい入れればいいの。それだけ。",
+   "card": {
+    "type": "quote",
+    "text": "次の年金の日に\nまた1枚",
+    "by": "澄江さん"
+   }
+  },
+  {
+   "id": "F12",
+   "narration": "澄江さん、毎晩財布を見るって、何をしてるの？",
+   "tts_text": "すみえさん、毎晩財布を見るって、なにをしてるの？",
+   "card": {
+    "type": "big_text",
+    "text": "澄江さん",
+    "text2": "毎晩、何をしてるの？",
+    "kicker": "佐和子さん"
+   }
+  },
+  {
+   "id": "F13",
+   "narration": "レシートを出して、お札を数えて、それから財布を、たんすの引き出しにしまうの。",
+   "tts_text": "レシートを出して、おさつを数えて、それから財布を、たんすの引き出しにしまうの。",
+   "image_en": "Night in Sumie's apartment in a modest present-day Japanese public housing apartment (danchi): Sumie gently places her slim long wallet into an open drawer of an old wooden chest of drawers, lit by a small lamp. Calm, cozy.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "F14",
+   "narration": "バッグに入れっぱなしの財布は、夜も外にいるのと同じ。",
+   "card": {
+    "type": "big_text",
+    "text": "バッグに入れっぱなしの財布は",
+    "text2": "夜も、外にいるのと同じ",
+    "accent": "外にいる"
+   }
+  },
+  {
+   "id": "F15",
+   "narration": "家に帰ったら、財布も休ませてあげる。澄江さんのお母さんは、そう言っていたそうです。",
+   "tts_text": "家に帰ったら、財布も休ませてあげる。すみえさんのおかあさんは、そう言っていたそうです。",
+   "image_en": "Okinu sits at a low wooden table in a calm Japanese room of today with a cup of green tea, holding a small neat stack of plain pale paper rectangles in both hands and looking at it with a soft smile. Evening lamp light.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "H21"
+  },
+  {
+   "id": "F16",
+   "narration": "お札を数えるのは、ほんの1分。",
+   "tts_text": "おさつを数えるのは、ほんのいっぷん。",
+   "image_en": "Close-up of Sawako's hands counting plain pale paper rectangles one by one at the kitchen table at night.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "H17"
+  },
+  {
+   "id": "F17",
+   "narration": "それでも毎晩数えていると、今月あといくら使えるのか、頭の中で分かるようになる。",
+   "card": {
+    "type": "big_text",
+    "text": "毎晩数えていると、分かるようになる",
+    "text2": "あと、いくら使えるか",
+    "accent": "いくら使えるか"
+   }
+  },
+  {
+   "id": "F18",
+   "narration": "澄江さんのやりくりの正体は、この1分でした。",
+   "tts_text": "すみえさんのやりくりのしょうたいは、このいっぷんでした。",
+   "card": {
+    "type": "big_text",
+    "text": "澄江さんのやりくりの正体は",
+    "text2": "この1分",
+    "accent": "1分"
+   }
+  },
+  {
+   "id": "G00",
+   "narration": "その晩から、佐和子さんは、家計簿をつけたあとに、財布を開くようになりました。",
+   "tts_text": "その晩から、さわこさんは、かけいぼをつけたあとに、財布を開くようになりました。",
+   "card": {
+    "type": "chapter_title",
+    "num": "第六章",
+    "title": "それからの3か月"
+   },
+   "yt_chapter": "それからの3か月"
+  },
+  {
+   "id": "G01",
+   "narration": "はじめの週は、玄関でレシートを出すのを、2回忘れました。",
+   "tts_text": "はじめの週は、玄関でレシートを出すのを、にかい忘れました。",
+   "same_as": "C09"
+  },
+  {
+   "id": "G02",
+   "narration": "そこで、靴箱の上に、お菓子の空き箱を置きました。目に入れば、忘れません。",
+   "tts_text": "そこで、くつばこの上に、お菓子のあきばこを置きました。目に入れば、忘れません。",
+   "image_en": "Close-up of the top of a small wooden shoe cabinet in an apartment entrance: an empty plain sweets tin box with a few folded plain receipts inside, a key tray beside it. No people, no readable text.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "G03",
+   "narration": "おみくじは、台所の手帳に貼りました。浪費をつつしめ。家計簿を開くたびに、目に入ります。",
+   "tts_text": "おみくじは、台所の手帳に貼りました。ろうひをつつしめ。かけいぼを開くたびに、目に入ります。",
+   "same_as": "E15"
+  },
+  {
+   "id": "G04",
+   "narration": "変わったのは、財布を開いたときに、残りがひと目で分かるようになったことです。",
+   "image_en": "Sawako just home from shopping, grocery bags on the kitchen floor, counts the change in her wallet at the counter with a light smile.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "H22"
+  },
+  {
+   "id": "G05",
+   "narration": "11月のポイント5倍の日。財布を開くと、千円札が3枚。",
+   "tts_text": "じゅういちがつのポイントごばいの日。財布を開くと、センエンサツがさんまい。",
+   "card": {
+    "type": "wallet",
+    "to": {
+     "bills": [
+      "1000",
+      "1000",
+      "1000"
+     ]
+    },
+    "note": "11月　ポイント5倍の日",
+    "count": "千円札　3枚"
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "佐和子さんは、かごに入れた洗剤を、棚に戻しました。",
+   "tts_text": "さわこさんは、かごに入れた洗剤を、棚に戻しました。",
+   "image_en": "In a bright unbranded Japanese drugstore aisle, Sawako calmly puts a plain detergent bottle from her basket back onto the shelf, a light relaxed face. No readable labels or signs.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "G07",
+   "narration": "家にまだ2本あるのを、思い出したのです。",
+   "tts_text": "家にまだにほんあるのを、思い出したのです。",
+   "same_as": "G06"
+  },
+  {
+   "id": "G08",
+   "narration": "12月の終わり。家計簿の月末の欄に、佐和子さんは、久しぶりに、残った金額を書きました。",
+   "tts_text": "じゅうにがつの終わり。かけいぼのげつまつのらんに、さわこさんは、久しぶりに、残った金額を書きました。",
+   "image_en": "Night at Sawako's small kitchen table: she writes in her household account notebook with a pencil, a soft quiet smile; her slim long wallet lies closed beside the notebook. Warm pendant lamp light, no readable writing.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "tag": "12月の終わり"
+   }
+  },
+  {
+   "id": "G09",
+   "narration": "佐和子さんがしたのは、毎晩、財布の中を見ることだけ。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんがしたのは",
+    "text2": "毎晩、財布の中を見るだけ",
+    "accent": "毎晩"
+   },
+   "tts_text": "さわこさんがしたのは、毎晩、財布の中を見ることだけ。"
+  },
+  {
+   "id": "G10",
+   "narration": "澄江さんも、お母さんに教わってから、何十年も続けてきたことです。",
+   "tts_text": "すみえさんも、おかあさんに教わってから、なんじゅうねんも続けてきたことです。",
+   "same_as": "F13"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が出ていく人の財布に入っている物は、3つでした。",
+   "tts_text": "お金が出ていく人の財布に入っているものは、みっつでした。",
+   "card": {
+    "type": "rules",
+    "title": "お金が出ていく人の財布に入っている物",
+    "items": [
+     "レシート",
+     "使っていないポイントカード",
+     "入れっぱなしのおみくじ"
+    ],
+    "show": 3,
+    "all": true,
+    "fresh": true
+   },
+   "yt_chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "最初は、レシート。家に帰ったら、玄関で出す。",
+   "card": {
+    "type": "rules",
+    "title": "財布から出す3つ",
+    "items": [
+     "レシートは、玄関で出す",
+     "カードは、先月使った物だけ",
+     "おみくじは、かなったら納める"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "次に、使っていないポイントカード。先月使ったカードだけを入れる。",
+   "card": {
+    "type": "rules",
+    "title": "財布から出す3つ",
+    "items": [
+     "レシートは、玄関で出す",
+     "カードは、先月使った物だけ",
+     "おみくじは、かなったら納める"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "そして、入れっぱなしのおみくじ。かなうまで持って、かなったら納める。",
+   "tts_text": "そして、入れっぱなしのおみくじ。かなうまで持って、かなったらおさめる。",
+   "card": {
+    "type": "rules",
+    "title": "財布から出す3つ",
+    "items": [
+     "レシートは、玄関で出す",
+     "カードは、先月使った物だけ",
+     "おみくじは、かなったら納める"
+    ],
+    "show": 3
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "財布の奥には、使わない一万円札を1枚。",
+   "tts_text": "財布の奥には、使わないイチマンエンサツをいちまい。",
+   "image_en": "Close-up of Sawako's hands tucking a folded plain pale paper rectangle into the very back pocket of her long wallet, behind the card slots.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "J24"
+  },
+  {
+   "id": "K06",
+   "narration": "あなたの財布には、3つのうち、どれが入っていましたか。",
+   "tts_text": "あなたの財布には、みっつのうち、どれが入っていましたか。",
+   "card": {
+    "type": "big_text",
+    "text": "あなたの財布には",
+    "text2": "3つのうち、どれが入っていた？",
+    "accent": "どれ"
+   }
+  },
+  {
+   "id": "K07",
+   "narration": "よかったら、コメントで教えてくださいね。",
+   "image_en": "Okinu sits at a low wooden table in a calm Japanese room of today with a cup of green tea, listening with a kind attentive smile, chin slightly tilted, a cup of green tea in her hands. Soft warm light.",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "K08"
+  },
+  {
+   "id": "K08",
+   "narration": "また次の動画で、お会いしましょう。",
+   "same_as": "E20"
+  }
+ ]
+}

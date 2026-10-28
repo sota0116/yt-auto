@@ -1,0 +1,175 @@
+{
+ "format": "short",
+ "title": "【60代】財布にレシートを入れたままの人へ",
+ "desc": "あなたの財布には、レシートが何枚入っていますか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #財布",
+ "tags": [
+  "金運",
+  "財布",
+  "レシート",
+  "60代"
+ ],
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../bgm/okinu_bgm_01_seed1.wav",
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "財布に、レシートを入れたままにしていませんか。",
+   "image_en": "Close-up of an older woman's hands holding an open, worn brown wallet that is stuffed and bulging with crumpled plain white paper slips. Warm kitchen light.",
+   "chars": [],
+   "hook": "レシート\n入れてる?"
+  },
+  {
+   "id": "C02",
+   "narration": "すみえさんは68歳。年金はひと月11万円です。",
+   "image_en": "Sumie sits alone at a small kitchen table in a modest present-day Japanese apartment, holding her thin wallet and looking at it with a slightly worried face. Evening light.",
+   "chars": [
+    "sumie"
+   ],
+   "subs": [
+    "すみえさんは\n68歳。",
+    "年金はひと月\n11万円です。"
+   ]
+  },
+  {
+   "id": "C03",
+   "narration": "特売の日しか買い物に行かないのに、",
+   "image_en": "Sumie in a bright local Japanese supermarket aisle, carefully choosing vegetables from a discount corner and putting them into a shopping basket.",
+   "chars": [
+    "sumie"
+   ],
+   "subs": [
+    "特売の日しか\n買い物に",
+    "行かないのに、"
+   ]
+  },
+  {
+   "id": "C04",
+   "narration": "財布はいつも空っぽ。",
+   "image_en": "Close-up of an open, empty wallet lying on a wooden table, with no bills inside and only a few coins in the corner.",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "開けてみると、レシートがぎっしり。",
+   "image_en": "Close-up of many crumpled plain white paper slips spilling out of a brown wallet onto a wooden kitchen table.",
+   "chars": [],
+   "highlight": [
+    "レシート"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "昔から、財布はお金のおうちと言われています。",
+   "image_en": "Okinu sits at a low wooden table in a calm Japanese room of today with a cup of green tea, speaking gently with one hand raised slightly as if explaining. Warm light.",
+   "chars": [
+    "okinu"
+   ],
+   "subs": [
+    "昔から、財布は\nお金のおうちと",
+    "言われています。"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "紙くずで散らかったおうちには、",
+   "same_as": "C06",
+   "shots": [
+    "C06@close"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "お札が落ち着いていられないの。",
+   "same_as": "C06",
+   "shots": [
+    "C06@face"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "家計簿をつけたい人も、捨てなくて大丈夫よ。",
+   "image_en": "Close-up of an older woman's hands taking plain white paper slips out of a wallet and placing them neatly into a small empty cardboard box on a kitchen table, next to a plain closed notebook.",
+   "chars": [],
+   "tts_text": "かけいぼをつけたい人も、捨てなくて大丈夫よ。",
+   "subs": [
+    "家計簿を\nつけたい人も、",
+    "捨てなくて\n大丈夫よ。"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "帰ったらすぐ財布から出して、",
+   "same_as": "C09",
+   "shots": [
+    "C09@close"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "空き箱にまとめておけばいいの。",
+   "same_as": "C09",
+   "shots": [
+    "C09@full"
+   ],
+   "tts_text": "あきばこにまとめておけばいいの。"
+  },
+  {
+   "id": "C12",
+   "narration": "すみえさんがしたのは、それだけ。",
+   "image_en": "Sumie at her kitchen table in the evening, smiling softly as she looks into her tidy wallet, a small cardboard box of paper slips beside her.",
+   "chars": [
+    "sumie"
+   ],
+   "subs": [
+    "すみえさんが\nしたのは、",
+    "それだけ。"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "お金が急に増えたわけではないけれど、",
+   "same_as": "C12",
+   "shots": [
+    "C12@close"
+   ],
+   "subs": [
+    "お金が急に\n増えたわけでは",
+    "ないけれど、"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "何に使ったかが、すぐ見えるようになったそうよ。",
+   "same_as": "C12",
+   "shots": [
+    "C12@face"
+   ],
+   "subs": [
+    "何に使ったかが、",
+    "すぐ見えるように\nなったそうよ。"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "あなたの財布には、レシートが何枚入っていますか。",
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ],
+   "highlight": [
+    "レシート"
+   ],
+   "subs": [
+    "あなたの財布には、",
+    "レシートが何枚\n入っていますか。"
+   ]
+  }
+ ],
+ "tempo": 1.3
+}

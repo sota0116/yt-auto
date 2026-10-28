@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 100  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）
     env:
       TZ: Asia/Tokyo
-      CHANNELS: job psy spi   # spi（千年こよみ）は 2026-10-29 に channels/spi/competitors.json を作って足した
+      CHANNELS: job psy spi nihongi okinu   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi（千年こよみ）は 2026-10-29 に channels/spi/competitors.json を作って足した
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

@@ -27,7 +27,7 @@ jobs:
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       AXIS_TYPES: ${{ vars.AXIS_TYPES }}
       PUBLISH_TIME: ${{ vars.PUBLISH_TIME }}
-      CHANNELS: job psy spi nihongi   # nihongi（アナザー日本紀）は 2026-10-30 から毎日の制作に入れた（ショート1日2本＋横動画2日に1本の枠の予約は watch.py の schedule_tomorrow_kinds）。spi（千年こよみ）は 2026-10-28 から見るだけ、2026-10-29 から毎日の制作に入れたので予約もする（公開日は pub_plan.json の pub_date を守る）
+      CHANNELS: job psy spi nihongi okinu   # okinu（金運おきぬ）は 2026-10-29 に足した（kinds。手で上げた uploaded.json は読むだけ）。 nihongi（アナザー日本紀）は 2026-10-30 から毎日の制作に入れた（ショート1日2本＋横動画2日に1本の枠の予約は watch.py の schedule_tomorrow_kinds）。spi（千年こよみ）は 2026-10-28 から見るだけ、2026-10-29 から毎日の制作に入れたので予約もする（公開日は pub_plan.json の pub_date を守る）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -46,6 +46,7 @@ jobs:
           YT_TOKEN_SPI: ${{ secrets.YT_TOKEN_SPI }}
           YT_TOKEN_PSY: ${{ secrets.YT_TOKEN_PSY }}
           YT_TOKEN_NIHONGI: ${{ secrets.YT_TOKEN_NIHONGI }}
+          YT_TOKEN_OKINU: ${{ secrets.YT_TOKEN_OKINU }}
         run: |
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
@@ -54,6 +55,7 @@ jobs:
           [ -n "$YT_TOKEN_SPI" ] && printf '%s' "$YT_TOKEN_SPI" > "$YT_SECRETS_DIR/token_spi.json"
           [ -n "$YT_TOKEN_PSY" ] && printf '%s' "$YT_TOKEN_PSY" > "$YT_SECRETS_DIR/token_psy.json"
           [ -n "$YT_TOKEN_NIHONGI" ] && printf '%s' "$YT_TOKEN_NIHONGI" > "$YT_SECRETS_DIR/token_nihongi.json"
+          [ -n "$YT_TOKEN_OKINU" ] && printf '%s' "$YT_TOKEN_OKINU" > "$YT_SECRETS_DIR/token_okinu.json"
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 見張る
         env:

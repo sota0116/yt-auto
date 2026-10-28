@@ -1,0 +1,150 @@
+{
+ "_説明": "金運おきぬの固定の設定（制作ルール v1.4 = 手順書.md）。2026-10-29 に毎日の自動制作（第1段階）のために作った。先頭が「_」の項目は説明で、道具は読まない。共有側（run_daily.py・make_voice_vv.py・make_images_lovart.py）がまだ読めない項目は「_共有側に要る物」に書いてある",
+ "channel": "金運おきぬ",
+ "narrator": {
+  "name": "おきぬ",
+  "role": "60代前半の金運鑑定師。財布と暮らしの言い伝えを案内する語り手",
+  "_声": "波音リツ ノーマル（VOICEVOX id 9）"
+ },
+ "tts_engine": "voicevox",
+ "voicevox": {
+  "narrator": {
+   "name": "波音リツ",
+   "style": "ノーマル",
+   "id": 9
+  },
+  "credit": "VOICEVOX:波音リツ",
+  "_登場人物の声": "characters/characters.json の各人の voice（VOICEVOX の id）。セリフだけのカットに \"voice\": \"sawako\" を書き、台本全体の \"voices\" にその人の声を入れる（make_voice_okinu.py が読む）。概要欄には使った声を全員「VOICEVOX:名前」で書く（手順書 §10）。新しい声を初めて公開する前に、その声の VOICEVOX 規約を確かめる（手順書 §5）"
+ },
+ "line_url": "",
+ "_line_url": "LINE（無料金運鑑定）の行は LINE 公式ができてから（手順書 §10）。空の間は概要欄に LINE の行も、本文の中の LINE の約束も入れない",
+ "topic": "財布と暮らしの小物の金運の言い伝え（レシート・ポイントカード・お札・種銭など）",
+ "_topic": "gate_images.py・gate_video.py が絵と画面を見る時の「何の動画か」",
+ "tools": {
+  "pick": "pick_neta_okinu.py",
+  "write": "write_script_okinu.py",
+  "gate_script": "gate_script_okinu.py",
+  "motion": "make_motion_psy.py",
+  "charts": null,
+  "build": "build_long_okinu.py",
+  "thumb": "make_thumb_okinu.py",
+  "teaser": null,
+  "_motion": "motion（make_motion_psy.py）は共有の道具で Kling を呼ぶ。ここで試験では回していない（お金がかかる）。台本の motion: true のカットは Kling が使えない間 exit 3（待ち）になるので、まだ回さないなら台本に motion を付けない／付けても組み立ては静止画で通る（build_short は mp4 があれば使い、無ければ静止画に寄りを付ける）。手順書 §6 は動く絵2つ以上を求めるので、Kling を回すかはメインの判断",
+  "voice": "make_voice_okinu.py",
+  "gate_video": "gate_video_okinu.py",
+  "upload": "upload_okinu_auto.py",
+  "images": "make_images_lovart.py",
+  "short": null,
+  "short_upload": null,
+  "_説明": "run_daily.py の段ごとの道具。kinds.<種類>.tools が先。null はその段を飛ばす。ショートの組み立ては kinds.short.tools.build（tools.short は使わない）"
+ },
+ "_tools": "2026-10-29：ショートは make_voice_okinu.py → make_images_lovart.py（script.json の format が short なら縦 9:16）→ build_short_okinu.py → gate_video_okinu.py → upload_okinu_auto.py。長尺は make_voice_okinu.py → make_images_lovart.py → build_long_okinu.py → gate_video_okinu.py → make_thumb_okinu.py → upload_okinu_auto.py",
+ "stock_phase": "post",
+ "build": {
+  "tempo": 1.1,
+  "gap": 0.35,
+  "lufs": -14,
+  "height": 1440,
+  "font_size": 72,
+  "maxlen": 22,
+  "bgm": "channels/okinu/assets/bgm/okinu_bgm_01_seed1.m4a",
+  "bgm_volume": 0.02,
+  "card_theme": "kinun",
+  "par": 3,
+  "short": {
+   "tempo": 1.3,
+   "lufs": -15,
+   "bgm_volume": 0.02,
+   "subs_max_chars": 8,
+   "safe_zone": [
+    48,
+    288,
+    888,
+    1248
+   ]
+  },
+  "_決めた理由": "手順書 §4・§5・§7：長尺は声の速さ 0.85＋組み立てで 1.1 倍、間 0.35。ショートは声を 1.0 で作って組み立てで 1.3 倍（S001 で本人が選んだ）、−15 LUFS、BGM 0.02（声との差 25dB 以上）。BGM は自作の okinu_bgm_01_seed1 を m4a にして repo に入れた（wav は .gitignore に当たるため）。クラウドでは環境変数 OKINU_BGM でも渡せる"
+ },
+ "image_rules_en": {
+  "with_chars": "The people in this picture are only the attached reference characters. Keep each one's face, hair and usual clothes exactly as in the reference sheet. Other people, if the scene needs them, are small, in the background and seen from behind.",
+  "without_chars": "Any people are ordinary Japanese people of today, small in the frame or seen from behind; no close-up faces. Hands holding an object are fine.",
+  "nobody": "No people at all in this picture: only objects, a table, a wallet, paper, light.",
+  "always": "Soft Japanese hand-drawn anime feature film style, clean gentle line art, hand-painted backgrounds, warm muted colors (cream, ochre, faded indigo, soft brick red), soft window light, subtle film grain. No readable letters, numbers, signs or shop names anywhere; no real banknote or coin designs; no faces on hands-only shots; no scroll hanging on the wall; never split the picture into panels."
+ },
+ "_image_rules_en": "手順書 §6 と、S001 で見つけた崩れ（英語の看板・上下2コマに割れる・掛け軸・手元の絵に顔が入る）をそのまま禁止にした",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "short": {
+  "chars_min": 270,
+  "chars_max": 300,
+  "sentences_min": 13,
+  "sentences_max": 17,
+  "sentence_max_chars": 27,
+  "hook_lines": 2,
+  "hook_line_max": 5,
+  "images_min": 7,
+  "images_max": 8,
+  "first_pattern": "していませんか",
+  "last_pattern": "あなたの",
+  "_型": "ショートの型.md の「型」の表（270〜300字・15文前後・1文平均18〜19字・最長26〜27字・『〜していませんか』で始めて『あなたの〇〇には』で終える・最初の文字は5字×2行・絵は1本7〜8枚）。check_okinu_script.py が数える"
+ },
+ "_共有側に要る物": [
+  "make_voice_okinu.py を tools.voice で呼べること（今の run_daily.py の声の段は make_voice_vv.py / make_voice_job.py に固定）",
+  "ショート用の絵の段 tools.images_short（縦 1080x1920）。今の images の段は make_images_lovart.py に固定で横 1920x1080 だけ",
+  "ショートの作業フォルダ S101_〜 を run_daily.py が通すこと（今は pick の最後の行を作業フォルダとして読み、台本・声・絵・組み立て・ゲートの順に回す。S 付きの名前で壊れる所は無いはずだが未検証）",
+  "1日に複数本・複数の時刻（アナザー日本紀の担当が作っている物）。pick は OKINU_KIND=short|long|cut で種類を指定できる"
+ ],
+ "uploaded_files": [
+  "uploaded_auto.json"
+ ],
+ "uploaded_files_ro": [
+  "uploaded.json"
+ ],
+ "_uploaded_files": "手で上げた分（upload_okinu.py）は history/okinu/uploaded.json に書かれる（読むだけ）。クラウドの自動の分は uploaded_auto.json に足す（git の衝突を避ける。ustore.py）",
+ "reserved_slots": [
+  "2026-10-31T19:00",
+  "2026-11-01T19:00"
+ ],
+ "_reserved_slots": "手で予約済みの枠（S004 は 10/31 19:00）。11/01 19:00 は手で作る回の余地として空けた。手で予約を増やしたら足す。start_date より前の日には入れない",
+ "image_gate_item3": "今の日本の暮らし（財布・小物・台所・団地）の絵に見えない。人物の顔・髪・服が設定画と違う。読める文字・数字・実在の紙幣や硬貨の絵柄が絵の中に出ている",
+ "kinds": {
+  "short": {
+   "slots": [
+    "19:00"
+   ],
+   "extra_slot": "12:00",
+   "extra_min_stock": 4,
+   "start_date": "2026-11-02",
+   "stock_goal": [
+    6,
+    3
+   ],
+   "make_max": 2,
+   "_stock": "ショートは毎日1〜3本（手順書 §0）。在庫の目標6本。3本以下なら1回で2本作る。単独の1本の絵は7〜8枚（Lovart 無料モードは1時間に40枚ほど）。昼の 12:00 は在庫が（明日の枠を引いて）4本以上の日だけ",
+   "tools": {
+    "thumb": null,
+    "short": null,
+    "short_upload": null,
+    "teaser": null,
+    "build": "build_short_okinu.py"
+   }
+  },
+  "long": {
+   "slots": [
+    "18:00"
+   ],
+   "every_days": 3,
+   "start_date": "2026-11-02",
+   "stock_goal": [
+    1,
+    0
+   ],
+   "make_max": 1,
+   "_stock": "長尺は3日に1本（手順書 §0）。同じ日に2本入れない。1本の絵は25〜60枚で、1日では終わらないことがある（作り途中の回は次の実行で続きから）",
+   "tools": {
+    "thumb": "make_thumb_okinu.py",
+    "build": "build_long_okinu.py"
+   }
+  }
+ }
+}

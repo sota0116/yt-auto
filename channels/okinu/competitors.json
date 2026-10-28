@@ -1,0 +1,56 @@
+{
+ "説明": "競合リサーチ（pipeline/research.py okinu）が毎日見るチャンネルと検索の言葉。出どころ：OneDrive 調査/競合_金運LINE鑑定型_分析_2026-10-25.md、_research/okinu_kinun_genre_2026-10-27（チャンネル地図.md）、okinu_ref5_2026-10-27（まとめ.md）。借りるのは題・サムネ・構成の型だけ（手順書 §8・§9）。2026-10-29 に写した。auto は research.py が足した物",
+ "channels": [
+  {
+   "id": "UC0rvsDnTlvualb1EkgbxBzQ",
+   "name": "金運上昇チャンネル",
+   "group": "習慣・NG行動の解説（中央値5.7万・ショート1382本）。ショートの型と題の参考"
+  },
+  {
+   "id": "UCTvgqlIYvoS9RDWlZspPydA",
+   "name": "丸儲け住職 -ブッダの教えで人生好転-",
+   "group": "〇〇な人の特徴型（中央値4.1万・973本）。題の型の参考"
+  },
+  {
+   "id": "UCftU0U6BG0vw7cQcdTBbIRQ",
+   "name": "和尚の開運宝典",
+   "group": "暮らしの開運（中央値4.2万）"
+  },
+  {
+   "id": "UCv1y7e2igAxa_nELcsSuuvg",
+   "name": "シニア女性の心が軽くなる物語",
+   "group": "物語型（VOICEVOX・開設11日目で10万回超え）。長尺の物語の型の参考。2026-08-22で更新停止"
+  },
+  {
+   "id": "UCKud3SBtyRB45Yiij_EeC7g",
+   "name": "占い師きんまんの予言ニュース",
+   "group": "暦速報＋選択式コメント（中央値2.1万）"
+  },
+  {
+   "id": "UCVMtuJGkv1Q7t9LXfVF2E6Q",
+   "name": "開運マスター櫻庭露樹の運呼チャンネル",
+   "group": "開運の解説（中央値4.8万）"
+  },
+  {
+   "id": "UCdqcCoXCjur2imt9IMiH5yA",
+   "name": "幸せの雑学",
+   "group": "雑学型（中央値4400）"
+  },
+  {
+   "id": "UCV8Jcbou4ei7HhtuffgvUYg",
+   "name": "深淵回廊",
+   "group": "型の参考のみ：AIで作る参考5チャンネルのc1（中央値11.7万）。題材は違う"
+  }
+ ],
+ "queries": [
+  "財布 金運 やってはいけない",
+  "財布に入れてはいけないもの",
+  "60代 お金 貯まる 習慣",
+  "財布 レシート 金運",
+  "種銭 新札 金運",
+  "お札 向き 金運",
+  "金運 シニア 物語",
+  "年金 お金が残らない"
+ ],
+ "auto": []
+}

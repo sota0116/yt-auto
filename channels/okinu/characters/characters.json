@@ -1,0 +1,56 @@
+{
+ "_説明": "金運おきぬの登場人物。絵を作るときに設定画（sheet）を添付して、顔・髪・服を全編でそろえる。make_images_lovart_chars.py が読む",
+ "style_en": "Soft Japanese hand-drawn anime feature film style: clean gentle line art, hand-painted backgrounds, warm muted colors (cream, ochre, faded indigo, soft brick red), soft window light, subtle film grain. Calm and nostalgic, never glossy or 3D.",
+ "chars": {
+  "sawako": {
+   "name": "佐和子（001v4は59歳・001v6は66歳・今）",
+   "sheet": "sawako.png",
+   "desc_en": "Sawako, a Japanese woman in her sixties: slim and small, kind round face with soft smile lines, shoulder-length dark brown hair with a few grey strands tied loosely at the nape, wears a beige knit cardigan over a white blouse and navy straight trousers.",
+   "voice": 20,
+   "voice_name": "もち子さん（ノーマル）"
+  },
+  "take": {
+   "name": "タケ（佐和子の祖母・昭和50年ごろ・70代）",
+   "sheet": "take.png",
+   "desc_en": "Take, an elderly Japanese woman in her seventies in the 1970s: small and upright, thin face with deep kind wrinkles and narrow calm eyes, grey hair pulled into a neat low bun, wears a plain dark indigo kimono with a white kappogi apron (long-sleeved Japanese housework apron).",
+   "voice": 31,
+   "voice_name": "No.7（読み聞かせ）"
+  },
+  "sawako_child": {
+   "name": "佐和子（8歳・昭和50年ごろ）",
+   "sheet": "sawako_child.png",
+   "desc_en": "Sawako as an 8-year-old Japanese girl in the 1970s: round face, black bob haircut with straight bangs, wears a red knit cardigan over a white collared blouse and a grey pleated skirt.",
+   "voice": 45,
+   "voice_name": "櫻歌ミコ（ロリ）"
+  },
+  "masakazu": {
+   "name": "正和（佐和子の夫・61歳・今）",
+   "sheet": "masakazu.png",
+   "desc_en": "Masakazu, a 61-year-old Japanese man: medium build, short neatly cut grey-black hair, rectangular thin-framed glasses, calm gentle face, wears a navy V-neck sweater over a light blue collared shirt and beige chino trousers.",
+   "voice": 53,
+   "voice_name": "麒ヶ島宗麟（ノーマル）"
+  },
+  "yota": {
+   "name": "陽太（佐和子の孫・6歳・今）",
+   "sheet": "yota.png",
+   "desc_en": "Yota, a 6-year-old Japanese boy: round cheerful face, short black hair with a small cowlick, wears a yellow hooded sweatshirt and dark blue shorts.",
+   "voice": 73,
+   "voice_name": "満別花丸（ボーイ）"
+  },
+  "okinu": {
+   "name": "おきぬ（語り手・60代前半の金運鑑定師）",
+   "sheet": "okinu.png",
+   "desc_en": "Okinu, a Japanese woman in her early sixties: warm round face with gentle smile lines and bright kind eyes, silver-grey hair in a neat low bun held with a simple dark wooden hair stick, wears a muted mustard-gold haori jacket over a cream high-neck blouse and a dark indigo long skirt, small plain gold stud earrings. Calm, friendly, down-to-earth.",
+   "voice": 9,
+   "voice_name": "波音リツ（ノーマル）＝語り手"
+  },
+  "sumie": {
+   "name": "澄江（001v6・佐和子と同じ団地の友人・66歳・今）",
+   "sheet": "sumie.png",
+   "desc_en": "Sumie, a 66-year-old Japanese woman: slightly plump and upright, short softly permed grey hair, round thin silver-rimmed glasses, calm cheerful face with laugh lines, wears a soft olive-green knit cardigan over a light grey blouse and dark brown trousers.",
+   "voice": 109,
+   "voice_name": "東北イタコ（ノーマル）"
+  }
+ },
+ "_声": "2026-10-28 から：登場人物のセリフは語り手（VOICEVOX 波音リツ（ノーマル）・9）と違う声で読む（スキル references/16 の3）。台本全体の \"voices\" に、出る人物の voice を写す。同じ回に出る2人が同じ声にならないようにする（同じ声の人物：別々の回にしか出ない組だけ）。声は仮決め。試聴は characters/_voicetest_2026-10-28/。各キャラの VOICEVOX 規約（収益化・内容の制限）は、初めて公開する前に確かめる"
+}

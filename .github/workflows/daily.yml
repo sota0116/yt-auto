@@ -20,7 +20,7 @@ on:
         description: "auto か 本数"
         default: "auto"
       ch:
-        description: "all か チャンネル（job・psy・spi・nihongi）。手で1つだけ回す時"
+        description: "all か チャンネル（job・psy・spi・nihongi・okinu）。手で1つだけ回す時"
         default: "all"
 
 permissions:
@@ -32,8 +32,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 心理学（psy）は 2026-10-27 から毎日公開。千年こよみ（spi）は 2026-10-29 から（週4本・月水金日 18:00）。アナザー日本紀（nihongi）は 2026-10-30 から（ショート毎日2本＋横動画2日に1本。profile.json の kinds）
-        ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy", "spi", "nihongi"]') }}
+        # 心理学（psy）は 2026-10-27 から毎日公開。千年こよみ（spi）は 2026-10-29 から（週4本・月水金日 18:00）。アナザー日本紀（nihongi）は 2026-10-30 から（ショート毎日2本＋横動画2日に1本。profile.json の kinds）。金運おきぬ（okinu）は 2026-10-29 に足した（ショート19:00＋長尺3日に1本・18:00）
+        ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy", "spi", "nihongi", "okinu"]') }}
     concurrency:
       group: daily-${{ matrix.ch }}
       cancel-in-progress: false
@@ -142,6 +142,7 @@ jobs:
           HC_DAILY_SPI: ${{ secrets.HC_PING_DAILY_SPI }}
           HC_DAILY_PSY: ${{ secrets.HC_PING_DAILY_PSY }}   # 無ければ送らない
           HC_DAILY_NIHONGI: ${{ secrets.HC_PING_DAILY_NIHONGI }}
+          HC_DAILY_OKINU: ${{ secrets.HC_PING_DAILY_OKINU }}
         run: python -X utf8 pipeline/notify.py daily ${{ matrix.ch }} --slot "$SLOT"
       - name: 鍵を消す
         if: always()
