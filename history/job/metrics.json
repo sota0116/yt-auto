@@ -1,7 +1,17 @@
 {
  "002_d_wage30": {
   "type": "D",
-  "video_id": "MNZiQKAXbtE"
+  "video_id": "MNZiQKAXbtE",
+  "h72": {
+   "views": 1,
+   "averageViewPercentage": 0.08,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-10-29",
+   "再生（公開ページ）": 50,
+   "差し替えの判定": "比べるほかの回が2本に届かない"
+  }
  },
  "001_a4_untenshu_fukushi_v2": {
   "type": "A",
@@ -10,5 +20,9 @@
  "004_a_kaigo": {
   "type": "A",
   "video_id": "aiv-xxzsrQY"
+ },
+ "005_a4_28f489e3": {
+  "type": "A",
+  "video_id": "frlvSzw8szo"
  }
 }
