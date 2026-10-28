@@ -2,10 +2,12 @@
 #   python -X utf8 pipeline\make_thumb_job.py <作業フォルダ> [--bg D20] [--check]
 # ・2つの形を作る。a案＝その回の主な形、b案＝もう1つの形（公開72時間の再生がほかの回より少ない時に watch.py が差し替える）
 #   場面（型A・B・C の a案）：人物が写る場面の絵を全面に。上に白い帯と赤い見出し（thumb_top）、下に特大の字（thumb_text。強調の部分を黄で特大）
-#   判定（型D の a案）：左の黒地に答えを伏せた1文（thumb_text。強調の行を赤）、右に人物の絵（「？」の箱は下の決まりの時だけ）、左上に札（thumb_top）、下の帯（thumb_band）
+#   判定（型D の a案）：左の黒地に答えを伏せた1文（thumb_text。強調の行を赤）、右に人物の絵（型D は1位の箱）、左上に札（thumb_top）、下の帯（thumb_band）
 # ・絵は台本の thumb_bg（人物が大きく写るカット）。--bg で替えられる。絵が無ければ止める
 # ・字：thumb_top 16字以内・thumb_text 10字以内（割り方は thumb_lines）・thumb_band 28字以内。「AI」「PR」は入れない。数字は facts.json にある物だけ（check_job_script と同じ照らし方）
-# ・「？」の箱：型D は1位の扱い（タイトルで1位を言う回はその名前、伏せる回は「？」。check_job_script.d_top_label）。ほかの型は thumb_q が true の時だけ（どちらの形でも）
+# ・1位の箱：型D だけ（タイトルで1位を言う回はその名前、伏せる回は「1位は？」。check_job_script.d_top_label）
+#   ほかの型には箱を出さない（2026-10-28 本人「謎の？マークは何？必要？」。thumb_text がもう問いの形で、中身の無い「？」だけの箱は意味が伝わらない。
+#   台本の thumb_q は読まない）
 # ・右下の再生時間の表示の所（x>1090, y>630）には字を置かない
 # ・--check：横320pxに縮めた版を Gemini に読ませ、いちばん大きい字が thumb_text と一致するかを見る（手順書 §10 サムネの点検）
 # ・前の形（紺の地の棒グラフ・黄の地のサムネA）は git の 3745ed1 までの版
@@ -51,11 +53,12 @@ def shade(im, box, top_a, bottom_a):
     im.paste(g, (x0, y0), g)
 
 
-def qbox(d, box, label="？"):
+def qbox(d, box, label="1位は？"):
     x0, y0, x1, y1 = box
     d.rectangle(box, fill=BLACK, outline=RED, width=8)
-    if label == "？":
-        say(d, ((x0 + x1) // 2, (y0 + y1) // 2), "？", int((y1 - y0) * .62), RED, BLACK, 2, "mm")
+    if label == "1位は？":  # 伏せた1位（何が伏せてあるかを箱の上の字で言う）
+        say(d, ((x0 + x1) // 2, y0 + 38), "1位は", fit("1位は", 48, x1 - x0 - 24, 24), WHITE, BLACK, 3, "mm")
+        say(d, ((x0 + x1) // 2, (y0 + y1) // 2 + 24), "？", int((y1 - y0) * .5), RED, BLACK, 2, "mm")
     else:  # 型D でタイトルが1位を言う回は、その名前を出す
         say(d, ((x0 + x1) // 2, (y0 + y1) // 2), label, fit(label, 56, x1 - x0 - 24, 24), YEL, BLACK, 4, "mm")
 
@@ -187,8 +190,8 @@ def box_of(s, f, layout):
         labels = d_top_label(s.get("titles", []), f)
         if labels is None:
             sys.exit("【止まりました】タイトル3案で1位の名前を出す案と伏せる案が混ざっている（サムネの「？」の箱を決められない）")
-        return "？" if labels[0] == "？" else "・".join(labels)
-    return "？" if s.get("thumb_q") else None  # 答えを言っている回に「？」を出すと食い違う（001_v2 の b案。2026-10-27）
+        return "1位は？" if labels[0] == "？" else "・".join(labels)
+    return None
 
 
 def make(work, variant, bg_id=None):
