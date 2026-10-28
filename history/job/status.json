@@ -1,1 +1,20 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/009_a_taxi",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading",
+  "images",
+  "charts",
+  "gate_images",
+  "build"
+ ],
+ "started": "2026-10-29T06:38:28+09:00",
+ "tries": 1,
+ "code": "674cb179119e",
+ "stage": "gate_video",
+ "updated": "2026-10-29T07:42:05+09:00"
+}
