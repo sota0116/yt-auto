@@ -5,6 +5,7 @@
 #   ・字幕は話し手で色を分ける（長尺と同じ。語り手は生成りの字、聞き手は紺の字に生成りの下地）。黄は字幕に使わない
 #   ・字幕はセーフゾーンの下の段（1085〜1248）。1行11字まで・2行まで。タイミングは文字数の割合（Whisper は使わない）
 #   ・1カット目の hook は、グラフの段の真ん中に黄の大きな字で出す（1行5字・2行まで）
+#   ・大きな字も字幕も、画面の真ん中（x=540）にそろえる。幅は short_charts.py の字の段（192〜888。2026-10-28 本人「左右どちらかに寄せないで」）
 #   ・声の大きさを約 −14 LUFS にそろえる
 # ・できあがると safezone_check.png（赤い枠＝セーフゾーン。はじめ・真ん中・終わりの3コマ）も作る
 import argparse, json, os, sys
@@ -12,12 +13,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import run, need, dur, ass_time, voice_path, image_path, starts_of, chunks, prep_voice, vlen
-from short_charts import W, H, FPS, SAFE_L, SAFE_T, SAFE_R, SAFE_B, SAFE_W, BAR_T, BAR_B
+from short_charts import W, H, FPS, SAFE_L, SAFE_T, SAFE_R, SAFE_B, SAFE_W, BAR_T, BAR_B, TXT_L, TXT_R, TXT_W, CX
 
 NAVY, KINARI, YELLOW, PANEL = "#141F34", "#F3EBDD", "#F2C14E", "#1F2E4A"
 FONT = "Noto Sans JP"
 TEMPO, GAP = 1.15, 0.12
-CAP_FS, CAP_LEN = 68, 11
+CAP_FS, CAP_LEN = 60, 11  # 11字×60px＋地の箱で、字の段の幅（696px）に収まる
 LUFS = -14
 
 
@@ -28,7 +29,7 @@ def ass_c(h, alpha=0):
 
 def hook_size(s):
     longest = max(vlen(x) for x in s.split("\n")) or 1
-    return min(190, int(SAFE_W * 0.92 / longest))
+    return min(190, int(TXT_W * 0.92 / longest))
 
 
 def safezone_sheet(video, t, out):
@@ -60,7 +61,7 @@ def build(work, out):
         clips.append(clip)
         if c.get("hook"):
             cy = (BAR_T + BAR_B) // 2
-            events.append(f"Dialogue: 1,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{{\\an5\\pos({(SAFE_L + SAFE_R) // 2},{cy})\\fs{hook_size(c['hook'])}"
+            events.append(f"Dialogue: 1,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{{\\an5\\pos({CX},{cy})\\fs{hook_size(c['hook'])}"
                           f"\\fscx40\\fscy40\\t(0,140,\\fscx112\\fscy112)\\t(140,240,\\fscx100\\fscy100)}}{c['hook'].replace(chr(10), chr(92) + 'N')}")
         ps = chunks(c["narration"], CAP_LEN)
         speak = d - GAP
@@ -70,7 +71,7 @@ def build(work, out):
         for p, st, en in zip(ps, starts, ends):
             events.append(f"Dialogue: 0,{ass_time(t + st)},{ass_time(t + en)},{style},,0,0,0,,{p.replace(chr(10), chr(92) + 'N')}")
         t += d
-    box = f"1,0,0,0,100,100,0,0,3,12,0,2,{SAFE_L},{W - SAFE_R},{H - SAFE_B},1"  # 地の箱つき・下そろえ。下の端がセーフゾーンの下（1248）
+    box = f"1,0,0,0,100,100,0,0,3,12,0,2,{TXT_L},{W - TXT_R},{H - SAFE_B},1"  # 地の箱つき・真ん中で下そろえ。下の端がセーフゾーンの下（1248）
     ass = os.path.join(b, "subs.ass")
     open(ass, "w", encoding="utf-8").write(f"""[Script Info]
 ScriptType: v4.00+

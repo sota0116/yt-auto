@@ -5,6 +5,8 @@
 #   teaser\teaser.mp4・teaser.json・teaser_check.png を作る。クラウドはアップの後に long.mp4 と _build を消すので、毎日の実行の thumb の後に動かす
 #   冒頭が58秒を超える時は、58秒までのカットの切れ目で切る。20秒に届かない回は作らない（終了コード 0。teaser.json に理由）
 #   画面：紺の地。上（セーフゾーンの中）に長尺のサムネの字（thumb_top を白い札に赤、thumb_text を大きく。強調の部分は黄）、その下に長尺の映像（16:9）
+#   字も映像も画面の真ん中（x=540）にそろえる。字の幅は、右のボタンの所（x>888）に掛けない幅を左にも同じだけあけた 192〜888
+#   （2026-10-28 本人「アウトゾーンにかぶらないでほしいだけで、左右どちらかに違和感のある寄り方をしないでほしい」）
 #   声で言うことは長尺の冒頭のまま（台本の点検・ゲートを通った物）。字はサムネの字（check_job_script・make_thumb_job の点検を通った物）だけ
 # ・upload：長尺を上げた後に、予告を非公開で上げる（公開の予約は入れない）。記録は history\<ch>\teasers.json（長尺の uploaded.json には入れない）
 #   公開は見張り（watch.py の schedule_teasers）が、長尺の公開の TEASER_AFTER 分後に予約する（ショートの 20:10 と時間をあける）
@@ -24,9 +26,10 @@ W, H = 1080, 1920
 SAFE = (48, 288, 888, 1248)  # 左・上・右・下（手順書 §12 のショートのセーフゾーン）
 NAVY, KINARI = (20, 31, 52), (243, 235, 221)
 RED, YEL, WHITE, BLACK = (226, 32, 40), (255, 214, 0), (255, 255, 255), (10, 10, 16)
-VX, VY, VW, VH = 24, 690, 960, 540  # 長尺の映像の置き場（字幕は映像の真ん中に焼き込まれているので、右のボタンの所にかからない幅）
+TXT_L, TXT_R = W - SAFE[2], SAFE[2]  # 字の段（真ん中 540 をはさんで左右同じ）
+VX, VY, VW, VH = 60, 690, 960, 540  # 長尺の映像の置き場（真ん中。映像の右はしはボタンの所に少し入るが、字は字の段に出す）
 MAX_S, MIN_S = 58.0, 20.0
-CAP_Y0, CAP_Y1, CAP_MAX = VY + VH - 130, VY + VH, 15  # 映像の下の130px（長尺の焼き込みの字幕の所）を帯で隠し、大きい字幕を1行15字までで出す
+CAP_Y0, CAP_Y1, CAP_MAX = VY + VH - 130, VY + VH, 13  # 映像の下の130px（長尺の焼き込みの字幕の所）を帯で隠し、大きい字幕を1行13字までで出す
 QUIZ_GAP, GAP = 2.0, 0.3  # build_long_job.py と同じカットの後の間
 HOW = "人の手では数えきれない統計をプログラムで計算し、グラフと合成音声で動画にしています。数字は全部、出典と照らしています。"
 TOKUTEN = "主な職業の年収・労働時間と、産業別の離職率の一覧"
@@ -95,7 +98,7 @@ def pieces(s, n=CAP_MAX):
 def captions(cuts, o):
     """大きい字幕の絵（[(絵, 始まり, 終わり)]）。長尺の焼き込みの小さい字幕の所を帯で隠して、その上に出す。
     時刻は組み立てと同じく、カットの声の長さ（間を除く）を文字数の割合で分ける。話し手で色を分ける（語り手は紺に生成り、聞き手は生成りに紺）"""
-    out, cx = [], VX + VW // 2
+    out, cx = [], W // 2
     for c, st, d in cuts:
         ps = pieces(N(c["narration"]))
         speak = d - (QUIZ_GAP if c.get("quiz") else GAP)
@@ -107,7 +110,7 @@ def captions(cuts, o):
             im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             dr = ImageDraw.Draw(im)
             dr.rectangle((VX, CAP_Y0, VX + VW, CAP_Y1), fill=KINARI if lis else NAVY)
-            z = fit(x, 54, 2 * (SAFE[2] - cx) - 16, 30)
+            z = fit(x, 54, TXT_R - TXT_L - 16, 30)
             dr.text((cx, (CAP_Y0 + CAP_Y1) // 2), x, font=font(z), fill=NAVY if lis else KINARI, anchor="mm")
             p = os.path.join(o, f"_cap{len(out):03d}.png")
             im.save(p)
@@ -130,20 +133,20 @@ def overlay(sc, out):
     """上の字（長尺のサムネの字）を、透明の地に描く"""
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    x0, y0, x1 = SAFE[0] + 12, SAFE[1] + 16, SAFE[2] - 12
+    cx, y0, mw = W // 2, SAFE[1] + 16, TXT_R - TXT_L
     top = N(sc.get("thumb_top"))
     y = y0
     if top:
-        z = fit(top, 50, x1 - x0 - 40, 30)
+        z = fit(top, 50, mw - 40, 30)
         w = int(tw(top, z)) + 40
-        d.rectangle((x0, y, x0 + w, y + z + 30), fill=WHITE)
-        d.text((x0 + 20, y + 15), top, font=font(z), fill=RED)
+        d.rectangle((cx - w // 2, y, cx - w // 2 + w, y + z + 30), fill=WHITE)
+        d.text((cx, y + 15), top, font=font(z), fill=RED, anchor="ma")
         y += z + 30 + 24
     lines, hi = parts(N(sc["thumb_text"]), sc.get("thumb_lines"), 2)
     for i, t in enumerate(lines):
-        z = fit(t, 130 if i == hi else 96, x1 - x0)
+        z = fit(t, 130 if i == hi else 96, mw - 12)
         y += z
-        say(d, (x0, y), t, z, YEL if i == hi else WHITE, anchor="ls")
+        say(d, (cx, y), t, z, YEL if i == hi else WHITE, anchor="ms")
         y += int(z * 0.18)
     if y > VY - 10:
         sys.exit(f"【止まりました】上の字が映像にかかります（字の下 {y}px・映像の上 {VY}px）")
@@ -192,11 +195,14 @@ def make(work):
 
 
 def title(sc):
+    from check_job_script import rank_unscoped
     base = N(sc.get("title")).split("|")[0].strip()
-    if re.search(r"AI|PR", base.upper()) or len(base) > 32 or not base:
+    if re.search(r"AI|PR", base.upper()) or len(base) > 32 or not base or (sc.get("type") != "D" and rank_unscoped(base)):
         base = f"{N(sc.get('thumb_top'))}｜{N(sc['thumb_text'])}".strip("｜")
     if re.search(r"AI|PR", base.upper()):
         sys.exit(f"【止まりました】予告のタイトルに「AI」か「PR」：{base}")
+    if sc.get("type") != "D" and rank_unscoped(base):
+        sys.exit(f"【止まりました】予告のタイトルの順位に、何の中の順位か（「6つの中で」など）が無い：{base}")
     return base + " #年収 #仕事"
 
 

@@ -2,6 +2,8 @@
 #   python -X utf8 pipeline\short_charts.py <作業フォルダ> [--still]
 # ・数字はすべて facts.json の charts から取る（台本の文から数字を拾わない）
 # ・縦 1080x1920。文字はセーフゾーン（左48・上288・右888・下1248。ショートのボタンと説明文にかぶらない所）の中だけに置く
+#   字の段は画面の真ん中（x=540）をはさんで左右同じ幅（192〜888）。右のボタンの所（x>888）に掛けない幅を、左にも同じだけあける
+#   （2026-10-28 本人「アウトゾーンにかぶらないでほしいだけで、左右どちらかに違和感のある寄り方をしないでほしい」。前はセーフゾーンの左はしに寄せていた）
 #   上から：帯（何の話か）270〜470 → 見出しと出典 490〜580 → 棒 600〜1070 → 字幕 1085〜1248（字幕は build_short_job.py が重ねる）
 # ・紺の地に生成りの文字、1位（強調）の棒だけ黄。ほかの棒は1位より暗い灰色（手順書 §5 の暗い地のグラフ）
 # ・カットの screen：{"hook": true}（帯だけ。大きな字は組み立てで重ねる）／{"chart": 0, "show": 3}（charts[0] の棒を3本出す）
@@ -15,6 +17,8 @@ from make_charts_job import NAVY, PANEL, LINE, KINARI, MUTED, YELLOW, GREY, ease
 W, H, FPS = 1080, 1920, 30
 SAFE_L, SAFE_T, SAFE_R, SAFE_B = 48, 288, 888, 1248
 SAFE_W = SAFE_R - SAFE_L
+TXT_L, TXT_R = W - SAFE_R, SAFE_R  # 字の段（真ん中 540 をはさんで左右同じ）
+TXT_W, CX = TXT_R - TXT_L, W // 2
 BAN_T, BAN_B = 270, 470
 CAP_T = 1085          # 字幕の段の上の端（build_short_job.py と同じ）
 BAR_T, BAR_B = 600, 1070
@@ -23,17 +27,16 @@ ANIM = 0.5
 
 def banner(d, ban):
     d.rectangle((0, BAN_T, W, BAN_B), fill=KINARI)
-    cx = (SAFE_L + SAFE_R) // 2
     big = ban[0] if ban else ""
     small = ban[1] if ban and len(ban) > 1 else ""
-    text(d, (cx, 345 if small else 370), big, fit(big, 104, SAFE_W - 20), fill=NAVY, anchor="mm")
+    text(d, (CX, 345 if small else 370), big, fit(big, 104, TXT_W - 20), fill=NAVY, anchor="mm")
     if small:
-        text(d, (cx, 432), small, fit(small, 58, SAFE_W - 20, 700), fill=NAVY, weight=700, anchor="mm")
+        text(d, (CX, 432), small, fit(small, 58, TXT_W - 20, 700), fill=NAVY, weight=700, anchor="mm")
 
 
 def header(d, title, src):
-    text(d, (SAFE_L, 490), title, fit(title, 46, SAFE_W), fill=KINARI)
-    text(d, (SAFE_L, 548), src, fit(src, 28, SAFE_W, 500), fill=MUTED, weight=500)
+    text(d, (CX, 490), title, fit(title, 46, TXT_W), fill=KINARI, anchor="ma")
+    text(d, (CX, 548), src, fit(src, 28, TXT_W, 500), fill=MUTED, weight=500, anchor="ma")
 
 
 def bars(d, ch, show, new, t):
@@ -50,17 +53,17 @@ def bars(d, ch, show, new, t):
         yb = y + name_s + 12
         hl = b.get("hl", b.get("rank") == 1)
         if i not in vis:
-            d.rounded_rectangle((SAFE_L, yb, SAFE_L + SAFE_W * 0.3, yb + bar_h), 8, outline=LINE, width=3)
+            d.rounded_rectangle((TXT_L, yb, TXT_L + TXT_W * 0.3, yb + bar_h), 8, outline=LINE, width=3)
             if rank:
-                text(d, (SAFE_L, y), f"{b['rank']}位  ？", name_s, fill=MUTED)
+                text(d, (TXT_L, y), f"{b['rank']}位  ？", name_s, fill=MUTED)
             continue
         k = ease(t / ANIM) if i in new else 1.0
         lab_w = tw(b["label"], name_s)
         head = (f"{b['rank']}位  " if rank else "") + b["name"]
-        text(d, (SAFE_L, y), head, fit(head, name_s, SAFE_W - lab_w - 24), fill=YELLOW if hl else KINARI)
+        text(d, (TXT_L, y), head, fit(head, name_s, TXT_W - lab_w - 24), fill=YELLOW if hl else KINARI)
         if k > 0.5:
-            text(d, (SAFE_R, y), b["label"], name_s, fill=YELLOW if hl else KINARI, anchor="ra")
-        d.rounded_rectangle((SAFE_L, yb, SAFE_L + max(14, SAFE_W * b["value"] / vmax * k), yb + bar_h), 8, fill=YELLOW if hl else GREY)
+            text(d, (TXT_R, y), b["label"], name_s, fill=YELLOW if hl else KINARI, anchor="ra")
+        d.rounded_rectangle((TXT_L, yb, TXT_L + max(14, TXT_W * b["value"] / vmax * k), yb + bar_h), 8, fill=YELLOW if hl else GREY)
 
 
 def frame(sc, fx, cut, prev, t):

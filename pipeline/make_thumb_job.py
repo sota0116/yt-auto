@@ -176,7 +176,9 @@ def rules(s, f):
         ng.append("サムネに「逆転」があるのに、facts.json に入れ替わりの記録（逆転を使える）が無い")
     if s.get("type") == "D" and "意外" in allt and not f.get("意外なを使える"):
         ng.append("サムネに「意外」があるのに、この回は使えない（1位が予想どおりか同点。facts.json の 意外なを使える）")
-    from check_job_script import tokens, allowed_from
+    from check_job_script import tokens, allowed_from, rank_unscoped
+    if s.get("type") != "D" and rank_unscoped(top + t):  # 何の中の順位か（2026-10-28 本人「どちらも1位なの？」）
+        ng.append(f"サムネの順位に、何の中の順位か（「6つの中で」など）が見出しか大きい字に無い：{top}／{t}")
     ok = allowed_from(f)
     for x in (top, t, band):
         ng += [f"サムネに facts.json にない数字：{x} {k}" for k in tokens(x) if k not in ok]
