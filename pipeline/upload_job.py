@@ -57,7 +57,7 @@ def channel_titles(ch):
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
-    a.add_argument("--channel", required=True, choices=["job", "spi", "psy"])
+    a.add_argument("--channel", required=True, choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--privacy", default="private", choices=["private", "unlisted"])
     a.add_argument("--video", default="long.mp4")
     a.add_argument("--thumb", default="thumb_a.jpg")

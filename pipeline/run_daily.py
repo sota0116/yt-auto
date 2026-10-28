@@ -387,7 +387,7 @@ def make_one(ch, st, upload):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("ch", choices=["job", "spi", "psy"])
+    a.add_argument("ch", choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--count", default="auto")
     a.add_argument("--no-upload", action="store_true")
     a.add_argument("--slot", default="first", choices=["first", "retry", "late"], help="retry＝08:07・late＝17:37 のやり直し。今日の 02:07 が成功していれば何もしない")

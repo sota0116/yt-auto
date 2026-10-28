@@ -224,7 +224,7 @@ def prompt(ch, path, imgs, memo):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("ch", choices=["job", "spi", "psy"])
+    a.add_argument("ch", choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--no-claude", action="store_true")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"

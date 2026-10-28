@@ -84,8 +84,10 @@ jobs:
       - name: 鍵を置く（中身は画面に出さない）
         env:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_TOKEN: ${{ matrix.ch == 'job' && secrets.YT_TOKEN_JOB || matrix.ch == 'psy' && secrets.YT_TOKEN_PSY || secrets.YT_TOKEN_SPI }}
+          # チャンネルごとのログイン。無いチャンネルは空になり、下で止まる（前は job・psy 以外が全部 spi のログインになっていた。2026-10-29）
+          YT_TOKEN: ${{ matrix.ch == 'job' && secrets.YT_TOKEN_JOB || matrix.ch == 'psy' && secrets.YT_TOKEN_PSY || matrix.ch == 'spi' && secrets.YT_TOKEN_SPI || matrix.ch == 'nihongi' && secrets.YT_TOKEN_NIHONGI || matrix.ch == 'okinu' && secrets.YT_TOKEN_OKINU || '' }}
         run: |
+          [ -n "$YT_TOKEN" ] || { echo "【止まりました】${{ matrix.ch }} の YouTube のログイン（YT_TOKEN_<チャンネル>）が GitHub の Secrets にありません"; exit 1; }
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
           printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
