@@ -5,11 +5,12 @@
   "write",
   "gate_script",
   "voice",
-  "reading"
+  "reading",
+  "images"
  ],
  "started": "2026-10-28T09:11:09+09:00",
  "tries": 0,
- "code": "1036dbb6abfe",
- "stage": "images",
- "updated": "2026-10-28T09:36:36+09:00"
+ "code": "70aae05a4f4d",
+ "stage": "motion",
+ "updated": "2026-10-28T18:21:12+09:00"
 }
