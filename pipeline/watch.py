@@ -16,6 +16,7 @@
 # ・在庫・公開の見張り：在庫が0本、26時間公開がない、明後日の公開予約がない（審査前。月曜はまだ無ければ Issue）
 #   審査の後（STOCK_PHASE=post）は、明日の公開予約が無ければ在庫から1本を PUBLISH_TIME（無ければ 19:00）に予約する
 #   （profile.json の publish_every_days が2以上のチャンネルは、前の公開からその日数があく日だけ。仕事chは 2026-10-27 から1日おき）
+#   （profile.json の publish_weekdays があるチャンネルは、その曜日だけ。心理学chは 2026-10-29 から週5本＝月水金土日）
 # ・予告ショート（history\<ch>\teasers.json。make_teaser_job.py が非公開で上げる）：長尺の公開の TEASER_AFTER 分後に公開を予約する（2026-10-28）
 # ・見張り役どうしの見張り：毎日の実行が26時間ない、週報が8日ない → Issue。最後に heartbeat.json の watch を書き、HC_WATCH に合図
 # ・--dry：YouTube に書かない（コメント・差し替え・予約をしない）。読むのと記録だけ
@@ -225,11 +226,25 @@ def every(ch):
     return int(prof(ch, "publish_every_days", "PUBLISH_EVERY_DAYS", 1))
 
 
+def weekdays(ch):
+    """長尺を出す曜日（0＝月〜6＝日）。profile.json の publish_weekdays（心理学chは 2026-10-29 から週5本）。無ければ毎日"""
+    w = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("publish_weekdays")
+    return sorted(set(w)) if w else list(range(7))
+
+
+def gap_days(ch):
+    """公開と公開のあいだのいちばん長い間隔（日）。publish_every_days と、曜日の決まりの大きい方（見張りの時間に使う）"""
+    w = weekdays(ch)
+    return max(every(ch), max((w[(i + 1) % len(w)] - w[i]) % 7 or 7 for i in range(len(w))))
+
+
 def schedule_tomorrow(ch, up, dry):
     """審査の後だけ：明日の公開予約が無ければ、在庫から1本を予約する（軸の型を先に。設計書 §2）
     間隔が2日以上のチャンネルは、前の公開（予約を含む）から間隔があく日だけ入れる"""
     tom = (now() + datetime.timedelta(days=1)).date()
     days = [d.date() for d in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in up if not e.get("missing")) if d]
+    if tom.weekday() not in weekdays(ch):
+        return None if tom in days else f"明日は公開しない曜日（{'月火水木金土日'[tom.weekday()]}）"
     if any(abs((tom - d).days) < every(ch) for d in days):
         return None if tom in days else f"明日は公開しない日（{every(ch)}日に1本）"
     axis = [t.strip() for t in (os.environ.get("AXIS_TYPES") or "").split(",") if t.strip()]
@@ -316,11 +331,11 @@ def watch_channel(ch, dry):
         if n_stock == 0:
             issue(f"【止まりました】{ch}：在庫が0本", f"{when} 在庫（上げて、まだ公開していない動画）が0本です")
         last = max((ts(e["published_at"]) for e in live if e.get("published_at")), default=None)
-        gap = 26 + 24 * (every(ch) - 1)  # 1日おきのチャンネルは50時間
+        gap = 26 + 24 * (gap_days(ch) - 1)  # 1日おきのチャンネル・休みの曜日の次は50時間
         if last and now() - last > datetime.timedelta(hours=gap):
             issue(f"【止まりました】{ch}：{gap}時間公開がない", f"{when} 最後の公開：{last.strftime('%m/%d %H:%M')}")
         day2 = (now() + datetime.timedelta(days=2)).date()
-        span = {day2 + datetime.timedelta(days=i) for i in range(every(ch))}  # 1日おきなら明後日か、その次の日にあればよい
+        span = {day2 + datetime.timedelta(days=i) for i in range(gap_days(ch))}  # 1日おき・休みの曜日なら明後日か、その次の日にあればよい
         has2 = any(ts(e.get("publish_at")) and ts(e["publish_at"]).date() in span for e in live)
         state["明後日の予約"] = "あり" if has2 else f"なし（{day2}）"
         if not has2 and now().weekday() == 0:

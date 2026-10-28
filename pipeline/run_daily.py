@@ -420,12 +420,13 @@ def main():
         n_stock = stock(ch)
         res["在庫"] = n_stock
         n = int(a.count) if a.count.isdigit() else (2 if n_stock <= two_at else 1)
-        # 長尺を1日おきに出すチャンネル（profile.json の publish_every_days。仕事chは 2026-10-27 から）は、
+        # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-10-27 から1日おき・publish_weekdays＝心理学chは 2026-10-29 から週5本）は、
         # 在庫が目標に届いていて作り途中の回も無ければ作らない（毎日作ると在庫がたまり続けるため。空いた時間はショートに回す）
-        if not a.count.isdigit() and int(jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("publish_every_days") or 1) > 1 \
+        pf = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
+        if not a.count.isdigit() and (int(pf.get("publish_every_days") or 1) > 1 or len(pf.get("publish_weekdays") or range(7)) < 7) \
                 and n_stock >= goal and not jload(hpath(ch, "status.json"), {}).get("work"):
             n = 0
-            res["作らなかった理由"] = f"在庫が{n_stock}本で目標の{goal}本に届いている（長尺は1日おき）"
+            res["作らなかった理由"] = f"在庫が{n_stock}本で目標の{goal}本に届いている（長尺は毎日ではない）"
         sp = hpath(ch, "status.json")
         for i in range(n):
             st = jload(sp, {})
