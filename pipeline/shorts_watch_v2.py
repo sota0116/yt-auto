@@ -4,8 +4,9 @@
 #   ②記録に comment があるショート（spi。本編の公開日とリンク）は、公開されたらチャンネルからコメントを1件入れる（watch.py の comment と同じ。
 #   消されたコメントが2本出たら、そのチャンネルのショートはコメントをやめる。history\<ch>\shorts_watch.json）
 # ・history\<ch>\shorts_uploaded.json のショートの今の状態を読む（消えた・公開になった）
-# ・予約：非公開でまだ予約の無いショートは、本編（long_video_id）に公開か予約が入ったら、本編の公開の次の日の 12:10 に予約する。
-#   その時刻が近すぎる（30分以内）か過ぎていたら、次の 12:10 にする
+# ・予約：非公開でまだ予約の無いショートは、本編（long_video_id）に公開か予約が入ったら予約する。psy は本編の日の 20:10 から 12:10/20:10 の空き枠（shorts_watch.py）。
+#   spi は本編の公開の次の日の 19:15。
+#   その時刻が近すぎる（30分以内）か過ぎていたら、次の枠にする
 # ・数字：公開から72時間と7日の時点で、再生・平均視聴率・平均視聴時間・登録を history\<ch>\shorts_metrics.json に残す
 #   （週報 weekly.py と、次の回の台本の書き手が読む。つかみの文と上の帯の字ごとに、どれが見られたかを比べるため）
 import argparse, datetime, json, os, sys, traceback, urllib.error
@@ -14,6 +15,7 @@ from notify import jload, now, JST
 from run_daily import hpath, jsave
 from upload_job import api, API
 from watch import comment, refresh, report, ts
+from shorts_watch import slot_after as slot_psy  # psy は本編の日の 20:10 から 12:10/20:10 の空き枠（2026-10-28 本人「ショートは毎日1～3本」）
 
 TIME = {"psy": (12, 10), "spi": (19, 15)}
 
@@ -27,6 +29,7 @@ def slot_after(ch, day):
 
 def schedule(ch, shorts, longs, dry):
     by_id = {e.get("video_id"): e for e in longs}
+    used = {ts(s.get("publish_at") or s.get("published_at")) for s in shorts if not s.get("missing")} - {None}
     out = []
     for s in shorts:
         if s.get("missing") or s.get("published") or s.get("publish_at") or s.get("privacy_now") != "private":
@@ -35,11 +38,13 @@ def schedule(ch, shorts, longs, dry):
         when = lg and ts(lg.get("published_at") or lg.get("publish_at"))
         if not when:
             continue  # 本編がまだ在庫（公開の日が決まっていない）
-        at = slot_after(ch, when.date() + datetime.timedelta(days=1))
+        at = slot_psy(when, used) if ch == "psy" else slot_after(ch, when.date() + datetime.timedelta(days=1))
+        used.add(at)
         if dry:
             out.append(f"（--dry）{s['work']} のショートを {at:%m/%d %H:%M} に予約する")
             continue
-        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+        st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+              "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
         api(ch, "PUT", f"{API}/videos?part=status", {"id": s["video_id"], "status": st}, timeout=60)
         s["publish_at"] = at.isoformat()
         out.append(f"{s['work']} のショートを {at:%m/%d %H:%M} に予約しました")
