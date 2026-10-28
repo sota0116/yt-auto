@@ -1,0 +1,59 @@
+{
+ "_説明": "千年こよみのネタ帳（手順書 §8。2026-10-29 新設）。pipeline/pick_neta_spi.py が読む。日付はここに書かない：data_ref（暦の固定ファイルの項目）から、公開日より後に来る日をプログラムが出す。A-4（1つの重なりが主役）と C2（翌月の暦の総まとめ）の行は、暦の固定ファイルから月ごとに自動で作るので、ここには書かない（auto の欄）",
+ "_行の項目": "id／type（A・B・C・C2・D）／題（何の話か。タイトルではない）／frames（使える骨組み。前の同じ型と違う物を選ぶ）／target（向ける人）／data_ref（A：gyoji・sekki・zassetsu・holiday の名前。B・C：使う暦の集計）／kichijitsu（この回に吉日が出るか。LINE の案内文②を使えるか）／hold（作らない理由。書いた行は選ばない）／used_by（もう作った回）",
+ "auto": {
+  "A-4": "暦の固定ファイルで、選日が2つ以上重なる日（天赦日・一粒万倍日・寅の日・己巳の日・巳の日）がある月ごとに1行。公開できる期間は前月20日〜その月10日。2026-12（12月16日の最強開運日）は 001 で使った",
+  "C2": "2027-02 から 2027-12 まで、月ごとに C2-1（日付の順）と C2-2（重なり5つ）の2行。公開できる期間は前月20日〜その月10日",
+  "C2-2・A-2・B-2": "数え上げの骨組みは、直近9本で合わせて3本まで（pick_neta_spi.py が数える）"
+ },
+ "特典": {
+  "_説明": "LINE の案内で約束する特典（手順書 §4 の表）。ファイルが無い型は、約束が守れないので選ばない（2026-10-29 時点で、あるのは A・C2 のカレンダーだけ）。B・C・D の特典を作ったら、ここの glob に当たるファイルを置けば自動で選べるようになる",
+  "A": "tokuten/spi/tokuten_spi_AC2_*.json",
+  "C2": "tokuten/spi/tokuten_spi_AC2_*.json",
+  "B": "tokuten/spi/tokuten_spi_B_*.json",
+  "C": "tokuten/spi/tokuten_spi_C_*.json",
+  "D": "tokuten/spi/tokuten_spi_D_*.json"
+ },
+ "rows": [
+  {"id": "a_torinoichi_2026", "type": "A", "題": "酉の市の由来と、一の酉の日付", "frames": ["A-1"], "data_ref": {"gyoji": "酉の市"}, "used_by": "002_a1_torinoichi_1107（手元で作り途中・公開 2026-10-30 の予定）"},
+  {"id": "a_shichigosan_2026", "type": "A", "題": "七五三が11月15日になった由来と、千歳飴の言い伝え", "frames": ["A-1", "A-2", "A-3"], "target": "11月に孫の七五三のお参りを控えた60代の祖母", "data_ref": {"gyoji": "七五三"}, "kichijitsu": false},
+  {"id": "a_niiname_2026", "type": "A", "題": "勤労感謝の日と新嘗祭｜新米を神さまに供える日の由来", "frames": ["A-1", "A-2", "A-3"], "target": "新米の季節に、祝日の由来を家族に話したい50代の人", "data_ref": {"gyoji": "新嘗祭"}, "kichijitsu": false},
+  {"id": "a_kotohajime_2026", "type": "A", "題": "正月事始め（12月13日）｜すす払いから正月の準備を始める由来", "frames": ["A-1", "A-2", "A-3"], "target": "年末の大掃除をいつ始めるか迷っている50〜60代の主婦", "data_ref": {"gyoji": "正月事始め"}, "kichijitsu": false},
+  {"id": "a_toji_2026", "type": "A", "題": "冬至と柚子湯｜一年でいちばん昼が短い日の過ごし方と由来", "frames": ["A-1", "A-2", "A-3"], "target": "冬至に柚子湯とかぼちゃを用意する60代の人", "data_ref": {"sekki": "冬至"}, "kichijitsu": false},
+  {"id": "a_omisoka_2026", "type": "A", "題": "大晦日と年越の大祓｜年越しそばと除夜の鐘の由来", "frames": ["A-1", "A-2", "A-3"], "target": "年越しの準備をしている50〜60代の人", "data_ref": {"gyoji": "大晦日"}, "kichijitsu": false},
+  {"id": "a_hatsumode_2027", "type": "A", "題": "初詣の由来と松の内｜いつまでに行けばよいか", "frames": ["A-1", "A-2", "A-3"], "target": "初詣にいつ行くか家族と決めたい60代の人", "data_ref": {"holiday": "元日"}, "kichijitsu": false},
+  {"id": "a_nanakusa_2027", "type": "A", "題": "七草がゆ（人日の節句）の由来と、七草の名前", "frames": ["A-1", "A-2", "A-3"], "target": "1月7日に七草がゆを作る50〜60代の主婦", "data_ref": {"gyoji": "人日"}, "kichijitsu": false},
+  {"id": "a_kagamibiraki_2027", "type": "A", "題": "鏡開きの日と、鏡もちを切らずに割る由来", "frames": ["A-1", "A-2", "A-3"], "target": "鏡もちをいつ下げるか迷う60代の人", "data_ref": {"gyoji": "鏡開き"}, "kichijitsu": false},
+  {"id": "a_koshogatsu_2027", "type": "A", "題": "小正月と小豆がゆ｜1月15日のもう1つの正月", "frames": ["A-1", "A-2", "A-3"], "target": "正月飾りをいつ片付けるか迷う60代の人", "data_ref": {"gyoji": "小正月"}, "kichijitsu": false},
+  {"id": "a_setsubun_2027", "type": "A", "題": "節分の豆まきと恵方巻｜立春の前の日の由来", "frames": ["A-1", "A-2", "A-3"], "target": "節分の豆まきを孫とする60代の人", "data_ref": {"zassetsu": "節分"}, "kichijitsu": false},
+  {"id": "a_kinensai_2027", "type": "A", "題": "祈年祭（としごいのまつり）｜2月17日に一年の実りを祈る由来", "frames": ["A-1", "A-3"], "target": "近くの神社の春の祭りが気になる60代の人", "data_ref": {"gyoji": "祈年祭"}, "kichijitsu": false},
+  {"id": "a_joushi_2027", "type": "A", "題": "桃の節句（上巳）｜ひな人形を飾る日としまう日の言い伝え", "frames": ["A-1", "A-2", "A-3"], "target": "孫のひな祭りの準備をする60代の祖母", "data_ref": {"gyoji": "上巳"}, "kichijitsu": false},
+  {"id": "a_higan_haru_2027", "type": "A", "題": "春のお彼岸｜彼岸の中日と、ぼたもちの由来", "frames": ["A-1", "A-2", "A-3"], "target": "お彼岸のお墓参りの日を決める60代の人", "data_ref": {"zassetsu": "彼岸の中日"}, "kichijitsu": false},
+  {"id": "a_hachijuhachiya_2027", "type": "A", "題": "八十八夜と新茶｜立春から数えて88日目の言い伝え", "frames": ["A-1", "A-2"], "target": "新茶の季節を楽しみにしている60代の人", "data_ref": {"zassetsu": "八十八夜"}, "kichijitsu": false},
+  {"id": "a_tango_2027", "type": "A", "題": "端午の節句と菖蒲湯｜こいのぼりとかしわもちの由来", "frames": ["A-1", "A-2", "A-3"], "target": "孫の端午の節句を祝う60代の人", "data_ref": {"gyoji": "端午"}, "kichijitsu": false},
+  {"id": "a_nagoshi_2027", "type": "A", "題": "夏越の大祓と茅の輪くぐり｜6月30日の由来", "frames": ["A-1", "A-2", "A-3"], "target": "近くの神社の茅の輪が気になる50〜60代の人", "data_ref": {"gyoji": "大祓（夏越"}, "kichijitsu": false},
+  {"id": "a_tanabata_2027", "type": "A", "題": "七夕の由来と、短冊に願いを書く習わし", "frames": ["A-1", "A-2", "A-3"], "target": "孫と七夕飾りを作る60代の人", "data_ref": {"gyoji": "七夕"}, "kichijitsu": false},
+  {"id": "a_doyo_ushi_2027", "type": "A", "題": "土用の丑の日と、うなぎ以外の「う」の付く食べ物", "frames": ["A-2", "A-3"], "target": "夏の土用の丑の日に何を食べるか決めたい60代の人", "data_ref": {"zassetsu": "土用の丑の日", "after": "2027-07-01"}, "kichijitsu": false},
+
+  {"id": "b_nirei_2026", "type": "B", "題": "二礼二拍手一礼の始まり｜参拝の作法の本当の意味", "frames": ["B-1", "B-2"], "target": "神社で作法を間違えていないか気になる60代の人", "data_ref": {"source": "神社本庁の参拝の作法"}},
+  {"id": "b_ofuda_henno_2026", "type": "B", "題": "お札とお守りの返し方｜古いお守りをどこに返すか", "frames": ["B-1", "B-2"], "target": "引き出しに古いお守りがたまっている60代の人", "data_ref": {"source": "神社本庁のお札とお守り"}},
+  {"id": "b_kamidana_2026", "type": "B", "題": "神棚の祀り方とお札の替え時｜年末に新しいお札を迎える作法", "frames": ["B-1", "B-2"], "target": "年末に神棚のお札を替えようとしている60代の人", "data_ref": {"source": "神社本庁の神棚の祀り方"}},
+  {"id": "b_yakudoshi_2026", "type": "B", "題": "厄年の由来と、厄払いに行く時期", "frames": ["B-1", "B-2"], "target": "家族の厄年が気になる50〜60代の人", "data_ref": {"source": "神社本庁の厄年"}, "_注意": "型D の「厄年の数え方」と8週あける（手順書 §8）"},
+  {"id": "b_komainu_2026", "type": "B", "題": "狛犬が2体いる理由｜口を開けた方と閉じた方", "frames": ["B-1", "B-2"], "target": "神社で狛犬の形が気になった60代の人", "data_ref": {"source": "各神社の公式サイトの狛犬の説明"}},
+  {"id": "b_ujigami_2026", "type": "B", "題": "氏神さまの由来と、自分の氏神さまの調べ方", "frames": ["B-1", "B-2"], "target": "引っ越し先の氏神さまが分からない60代の人", "data_ref": {"source": "神社本庁の氏神と崇敬神社"}},
+  {"id": "b_torii_2026", "type": "B", "題": "鳥居の形の違い｜神明鳥居と明神鳥居", "frames": ["B-1", "B-2"], "target": "神社めぐりで鳥居の違いが気になった60代の人", "data_ref": {"source": "神社本庁と各神社の公式サイトの鳥居の説明"}},
+
+  {"id": "c_2027_soumatome", "type": "C", "題": "2027年 丁未（ひのとひつじ）の年の暦の総まとめ", "frames": ["C-1"], "target": "来年の手帳に吉日を書き込みたい60代の人", "data_ref": {"counts": "2027"}, "kichijitsu": true},
+  {"id": "c_2027_calendar", "type": "C", "題": "2027年の吉日カレンダー総まとめ｜天赦日・一粒万倍日・寅の日の全日程", "frames": ["C-1"], "target": "来年の大事な予定を吉日に合わせたい60代の人", "data_ref": {"counts": "2027"}, "kichijitsu": true},
+  {"id": "c_eto_kyusei", "type": "C", "題": "干支と九星の由来の総まとめ｜丁未の年はどう決まるのか", "frames": ["C-1"], "target": "干支と九星の違いが気になる60代の人", "data_ref": {"counts": "2027"}, "kichijitsu": true},
+  {"id": "c_ne_nenpyo", "type": "C", "題": "子年生まれの暦と年表", "frames": ["C-2"], "hold": "C-2 は年表の公的統計の取り込み（data/ に保存・出典つき）がまだ無い"},
+  {"id": "c_ushi_nenpyo", "type": "C", "題": "丑年生まれの暦と年表", "frames": ["C-2"], "hold": "C-2 は年表の公的統計の取り込み（data/ に保存・出典つき）がまだ無い"},
+
+  {"id": "d_hinoeuma", "type": "D", "題": "丙午（ひのえうま）の迷信と1966年の出生数", "hold": "型D は 20〜25分・採点（data/scoring_rank.json）・出典カード・人口動態統計の取り込みが自動の流れにまだ無い"},
+  {"id": "d_butsumetsu", "type": "D", "題": "「仏滅の結婚はだめ」はいつからか", "hold": "型D は自動の流れにまだ無い"},
+  {"id": "d_rokuyo", "type": "D", "題": "六曜はいつ誰が作ったのか", "hold": "型D は自動の流れにまだ無い"},
+  {"id": "d_unagi", "type": "D", "題": "土用の丑にうなぎはいつ誰が始めたのか", "hold": "型D は自動の流れにまだ無い"},
+  {"id": "d_yakudoshi", "type": "D", "題": "厄年の数え方はなぜ男女で違うのか", "hold": "型D は自動の流れにまだ無い"},
+  {"id": "d_saikyo", "type": "D", "題": "最強開運日は昔から「最強」だったのか", "hold": "型D は自動の流れにまだ無い（昔の暦の計算 koyomi_history も無い）"}
+ ]
+}

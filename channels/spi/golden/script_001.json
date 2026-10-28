@@ -1,0 +1,3447 @@
+{
+ "format": "long",
+ "channel": "spi",
+ "type": "A",
+ "frame": "A-4",
+ "hook_type": "問い",
+ "target": "暦の吉日を、家族の予定や始めごとの日取りに使いたい50代後半から60代の女性",
+ "pub_date": "2026-11-01",
+ "window": [
+  "2026-10-20",
+  "2026-11-10"
+ ],
+ "line_copy": 3,
+ "sub_copy": 1,
+ "title": "天赦日と一粒万倍日の重なりは、なぜ年に数回しか来ないのか｜次は12月16日（水）",
+ "title_alts": [
+  "天赦日は年に6日、最強開運日はその半分｜重なる日を決める十二支の決まり",
+  "最強開運日が来られる月は12か月のうち6つだけ｜次は12月16日（水）"
+ ],
+ "thumb_text": [
+  "最強開運日は なぜ少ない？"
+ ],
+ "desc": "今月と来月の吉日と行事のカレンダー（天赦日と一粒万倍日が重なる日に印つき）を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・国立国会図書館「日本の暦」干支①六十干支 https://www.ndl.go.jp/koyomi/chapter3/s1.html\n・国立国会図書館「日本の暦」吉凶を表す言葉①六曜 https://www.ndl.go.jp/koyomi/chapter3/s3.html\n・国立国会図書館「日本の暦」吉凶を表す言葉③下段 https://www.ndl.go.jp/koyomi/chapter3/s5.html\n・国立国会図書館「日本の暦」吉凶を表す言葉④その他 https://www.ndl.go.jp/koyomi/chapter3/s6.html\n・たびこふれ（寅の日の言い伝え） https://tabi-mag.jp/kn0081/\n・じゃらんニュース（吉日の言い伝え） https://www.jalan.net/news/article/591406/\n・国立天文台 暦計算室「暦要項」2026年・2027年 https://eco.mtk.nao.ac.jp/koyomi/yoko/\n\nBGM：甘茶の音楽工房 https://amachamusic.chagasi.com/\n\n千年以上続く暦の、人の手では数えきれない日付の重なりをプログラムで計算し、AIで映像と声にしています。日付は全部、暦と照らしています。\n\n{CHAPTERS}",
+ "tags": [
+  "最強開運日",
+  "天赦日",
+  "一粒万倍日",
+  "吉日",
+  "十二支",
+  "干支",
+  "暦",
+  "寅の日",
+  "2026年12月",
+  "2027年"
+ ],
+ "style": "淡い水彩と和紙の風合い、朱と金と生成りの配色、やわらかい光、日本の四季の暮らし",
+ "avoid": "読める文字、実在の神社の社名の額と紋、実在の神職や僧侶、有名なキャラクターに似た顔、仏像の顔の大写し、語り手の姿",
+ "characters_dir": "../../characters",
+ "card_theme": "koyomi",
+ "card_data": {},
+ "bgm": "../../assets/bgm/koyomi_bgm_02_amacha3.wav",
+ "tempo": 1.0,
+ "gap": 0.4,
+ "voice": {
+  "engine": "voicevox",
+  "narrator": {
+   "name": "玄野武宏",
+   "style": "ノーマル"
+  },
+  "credit": "音声：VOICEVOX:玄野武宏"
+ },
+ "cuts": [
+  {
+   "id": "P01",
+   "speaker": "narrator",
+   "narration": "カレンダーを開くと、吉日の印は、毎週のように並んでいます。",
+   "tts_text": "カレンダーを開くと、きちじつの印は、毎週のように並んでいます。",
+   "image_en": "Close view of Kazue's hand drawing small red circles on several squares of a plain paper wall calendar. The calendar grid has only blank squares with no numbers or letters. Warm indoor light.",
+   "img_src": "A04",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "P02",
+   "speaker": "narrator",
+   "narration": "一粒万倍日だけでも、2027年の暦には、60日あります。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2027年の暦",
+    "text": "一粒万倍日だけで",
+    "text2": "60日",
+    "accent": "60日"
+   }
+  },
+  {
+   "id": "P03",
+   "speaker": "narrator",
+   "narration": "ところが、天赦日と一粒万倍日が重なる日は、同じ年に、3日しかありません。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2027年の暦",
+    "text": "天赦日と一粒万倍日が重なる日",
+    "text2": "3日",
+    "accent": "3日"
+   }
+  },
+  {
+   "id": "P04",
+   "speaker": "narrator",
+   "narration": "この重なりが、最強開運日と呼ばれる日です。",
+   "image_en": "A winter morning in a small tidy Japanese kitchen. Kazue stands in front of a plain paper wall calendar hanging by the fridge, holding a red pen and looking at it with quiet interest. Soft low winter sunlight through the window, a kettle on the stove.",
+   "img_src": "A02",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "天赦日 × 一粒万倍日",
+     "big": "最強開運日"
+    }
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "P05",
+   "speaker": "narrator",
+   "narration": "天赦日そのものは、その年に6日あります。重なるのは、ちょうど半分です。",
+   "card": {
+    "type": "tally",
+    "title": "2027年の天赦日",
+    "items": [
+     {
+      "name": "天赦日",
+      "n": 6
+     },
+     {
+      "name": "万倍日と重なる",
+      "n": 3,
+      "hl": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "P06",
+   "speaker": "narrator",
+   "narration": "残りの3日は、天赦日なのに、一粒万倍日の印がつきません。",
+   "image_en": "Kazue sits at the kitchen table with a plain calendar and a pencil, counting on her fingers with a slightly puzzled expression. Afternoon light.",
+   "img_src": "B15",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "P07",
+   "speaker": "narrator",
+   "narration": "なぜ、天赦日と一粒万倍日の重なりは、年に数回しか来ないのか。",
+   "image_en": "Kazue holds two plain paper calendar pages side by side, one in each hand, comparing them thoughtfully by a bright window. The pages show only blank grids.",
+   "img_src": "A08",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "P08",
+   "speaker": "narrator",
+   "narration": "先に入口を言うと、決めているのは、日ごとについている十二支です。",
+   "emo": "plain",
+   "card": {
+    "type": "big_text",
+    "text": "重なりを決めているのは",
+    "text2": "日ごとの十二支",
+    "accent": "十二支"
+   }
+  },
+  {
+   "id": "P09",
+   "speaker": "narrator",
+   "narration": "ねずみ年、うま年の、あの十二支が、1日ずつ順番に、日にもついています。",
+   "emo": "plain",
+   "image_en": "Kazue tilts her head curiously while looking at a small set of zodiac animal figurines on a shelf, winter afternoon.",
+   "img_src": "F07",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "P10",
+   "speaker": "narrator",
+   "narration": "この決まりが分かると、新しいカレンダーを開いた時、最強開運日が来る季節を、自分で確かめられます。",
+   "image_en": "Kazue's finger traces along the middle of a plain December calendar page, stopping at one square. Close shot, warm lamp light.",
+   "img_src": "D14",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q01",
+   "speaker": "narrator",
+   "narration": "まず、数の多い、一粒万倍日からです。",
+   "yt_chapter": "一粒万倍日はなぜ多いのか",
+   "card": {
+    "type": "chapter_title",
+    "num": "第一章",
+    "title": "一粒万倍日はなぜ多い"
+   }
+  },
+  {
+   "id": "Q02",
+   "speaker": "narrator",
+   "narration": "一粒万倍日は、ひと粒のモミが、万倍にも実る稲穂になる日とされています。",
+   "tts_text": "一粒万倍日は、ひと粒のモミが、まんばいにも実る稲穂になる日とされています。",
+   "image_en": "Close-up of an old farmer's weathered hands holding a single golden rice grain above heavy ripe ears of rice in a sunlit autumn paddy field in rural Japan. Warm golden light.",
+   "img_src": "B04",
+   "card": {
+    "type": "photo",
+    "tate": {
+     "text": "ひと粒のモミが\n万倍にも実る",
+     "by": "国立国会図書館「日本の暦」"
+    }
+   }
+  },
+  {
+   "id": "Q03",
+   "speaker": "narrator",
+   "narration": "昔から、仕事始めや開店、種まきによい日と言われてきました。",
+   "image_en": "Kazue kneels in a small home vegetable garden in late autumn, sowing seeds into a neat row of dark soil with her fingers, a small plain seed packet beside her. Calm sunny afternoon.",
+   "img_src": "B05",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "一粒万倍日に吉",
+     "big": "仕事始め・種まき",
+     "side": "l",
+     "size": 104
+    }
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q04",
+   "speaker": "narrator",
+   "narration": "この日を決めているのは、暦の月と、日の十二支の組み合わせです。",
+   "card": {
+    "type": "big_text",
+    "kicker": "一粒万倍日の決め方",
+    "text": "暦の月と",
+    "text2": "日の十二支の組み合わせ",
+    "accent": "十二支",
+    "source": "出典：国立国会図書館「日本の暦」"
+   }
+  },
+  {
+   "id": "Q05",
+   "speaker": "narrator",
+   "narration": "暦の月ごとに、一粒万倍日になる十二支が、2つずつ決まっています。",
+   "card": {
+    "type": "big_text",
+    "text": "暦の月ごとに、一粒万倍日になる十二支が",
+    "text2": "2つずつ",
+    "accent": "2つずつ"
+   }
+  },
+  {
+   "id": "Q06",
+   "speaker": "narrator",
+   "narration": "暦の月は、カレンダーの月の初めからではなく、毎月の節入りの日から数えます。",
+   "tts_text": "暦の月は、カレンダーの月の初めからではなく、毎月の、せついりの日から数えます。",
+   "card": {
+    "type": "big_text",
+    "kicker": "暦の月",
+    "text": "カレンダーの1日からではなく",
+    "text2": "節入りの日から",
+    "accent": "節入り",
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "Q07",
+   "speaker": "narrator",
+   "narration": "十二支は、ひと月のうちに、何度もめぐってきます。",
+   "image_en": "Kazue tears off a page of a plain paper wall calendar, revealing the next blank page, with a curious smile. Early winter morning light, frost on the window.",
+   "img_src": "C16",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q08",
+   "speaker": "narrator",
+   "narration": "2つの十二支が、それぞれ何度も来るので、一粒万倍日は、ひと月の中に何日も並びます。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 11,
+    "marks": [
+     {
+      "d": 4,
+      "lab": "万倍"
+     },
+     {
+      "d": 7,
+      "lab": "万倍"
+     },
+     {
+      "d": 8,
+      "lab": "万倍"
+     },
+     {
+      "d": 19,
+      "lab": "万倍"
+     },
+     {
+      "d": 20,
+      "lab": "万倍"
+     }
+    ],
+    "title": "2026年11月の一粒万倍日"
+   }
+  },
+  {
+   "id": "Q09",
+   "speaker": "narrator",
+   "narration": "並べてみると、たいてい、隣り合った日に続けて来ます。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 11,
+    "marks": [
+     {
+      "d": 4,
+      "lab": "万倍"
+     },
+     {
+      "d": 7,
+      "lab": "万倍"
+     },
+     {
+      "d": 8,
+      "lab": "万倍"
+     },
+     {
+      "d": 19,
+      "lab": "万倍"
+     },
+     {
+      "d": 20,
+      "lab": "万倍"
+     }
+    ],
+    "prev": 5,
+    "fresh": false,
+    "hl": [
+     7,
+     8,
+     19,
+     20
+    ],
+    "title": "2026年11月の一粒万倍日",
+    "note": "隣り合って続く"
+   }
+  },
+  {
+   "id": "Q10",
+   "speaker": "narrator",
+   "narration": "立冬から大雪までのひと月は、酉の日と戌の日。十二支の並びで、隣どうしです。",
+   "tts_text": "りっとうから、たいせつまでの、ひと月は、とりのひと、いぬのひ。じゅうにしの並びで、隣どうしです。",
+   "card": {
+    "type": "big_text",
+    "kicker": "立冬からのひと月",
+    "text": "一粒万倍日は 酉の日と戌の日",
+    "text2": "十二支の並びで隣どうし",
+    "accent": "隣どうし"
+   }
+  },
+  {
+   "id": "Q11",
+   "speaker": "narrator",
+   "narration": "だから、酉の日のすぐ次の日が、また一粒万倍日になります。",
+   "tts_text": "だから、とりのひの、すぐ次の日が、また一粒万倍日になります。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 11,
+    "marks": [
+     {
+      "d": 4,
+      "lab": "万倍"
+     },
+     {
+      "d": 7,
+      "lab": "万倍"
+     },
+     {
+      "d": 8,
+      "lab": "万倍"
+     },
+     {
+      "d": 19,
+      "lab": "万倍"
+     },
+     {
+      "d": 20,
+      "lab": "万倍"
+     }
+    ],
+    "prev": 5,
+    "fresh": false,
+    "hl": [
+     7,
+     8
+    ],
+    "title": "2026年11月の一粒万倍日"
+   }
+  },
+  {
+   "id": "Q12",
+   "speaker": "narrator",
+   "narration": "丸をつけた日の朝、カレンダーを見て、次の日も一粒万倍日だったと気づく。",
+   "emo": "aruaru",
+   "image_en": "Early morning, Kazue in a cardigan holds a mug of coffee and leans close to the plain wall calendar with a small surprised smile, noticing something. Soft blue morning light in the kitchen.",
+   "img_src": "B13",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q13",
+   "speaker": "narrator",
+   "narration": "続けて来るので、始めることを、前の日に決めておく人もいます。",
+   "image_en": "Kazue holds up two fingers with a cheerful smile in front of the plain calendar, morning kitchen.",
+   "img_src": "F03",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q13b",
+   "speaker": "narrator",
+   "narration": "新しいお財布をおろす日を、一粒万倍日に合わせる人もいます。",
+   "image_en": "Kazue sits on a sofa at home holding a brand-new plain long wallet in both hands, smiling softly as she opens it for the first time. A plain cardboard box beside her.",
+   "img_src": "C03",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "Q14",
+   "speaker": "narrator",
+   "narration": "反対に、増える意味があるので、借金と借り物は、凶とされています。",
+   "tts_text": "反対に、増える意味があるので、しゃっきんと借り物は、凶とされています。",
+   "image_en": "A new plain leather long wallet resting on a folded purple cloth (furoshiki) on a low table, soft winter light, a small white ceramic snake ornament beside it. No people.",
+   "img_src": "D11",
+   "card": {
+    "type": "photo",
+    "tate": {
+     "text": "増える意味があるため\n借金、借り物は凶",
+     "by": "国立国会図書館「日本の暦」（一粒万倍日）"
+    }
+   }
+  },
+  {
+   "id": "Q15",
+   "speaker": "narrator",
+   "narration": "数が多いぶん、ほかの吉日と同じ日になる回数も、それだけ増えます。",
+   "image_en": "Kazue draws a red circle on a plain wall calendar with a satisfied smile, evening kitchen light.",
+   "img_src": "C12",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "R01",
+   "speaker": "narrator",
+   "narration": "では、天赦日のほうは、なぜ少ないのか。",
+   "yt_chapter": "天赦日はなぜ少ないのか",
+   "card": {
+    "type": "chapter_title",
+    "num": "第二章",
+    "title": "天赦日はなぜ少ない"
+   }
+  },
+  {
+   "id": "R02",
+   "speaker": "narrator",
+   "narration": "天赦日は、百の神が天に集まり、天が、万物を許す日とされています。",
+   "tts_text": "天赦日は、ひゃくのかみが天に集まり、天が、ばんぶつを許す日とされています。",
+   "card": {
+    "type": "quote",
+    "text": "百神が天に会合し\n天が万物を許す日",
+    "by": "国立国会図書館「日本の暦」"
+   }
+  },
+  {
+   "id": "R03",
+   "speaker": "narrator",
+   "narration": "暦の下の段に書かれた吉日の中で、万事にわたって吉とされる日です。",
+   "tts_text": "暦の下の段に書かれた吉日の中で、ばんじにわたって、きちとされる日です。",
+   "image_en": "Dawn over a small local shrine in winter: golden light spreading across the sky behind a plain red torii gate, frost on the stone steps, a few pine trees. No plaques or signs. Soft watercolor.",
+   "img_src": "F05",
+   "card": {
+    "type": "photo",
+    "tate": {
+     "text": "万事にわたって\n吉とする",
+     "by": "国立国会図書館「日本の暦」（天赦日）"
+    }
+   }
+  },
+  {
+   "id": "R03b",
+   "speaker": "narrator",
+   "narration": "昔の暦は、日付の下の段に、その日の吉凶を細かく書き込んだ物でした。",
+   "tts_text": "昔の暦は、日付の下の段に、その日の、きっきょうを、細かく書き込んだ物でした。",
+   "image_en": "An old traditional Japanese almanac booklet bound with string lies open on a low wooden table next to a plain notebook and a brush pen. The pages show only faint unreadable ink patterns, no legible characters. Soft lamp light.",
+   "img_src": "A09",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "R04",
+   "speaker": "narrator",
+   "narration": "この日の決め方は、季節ごとに、日の干支がひとつだけです。",
+   "tts_text": "この日の決め方は、季節ごとに、日のえとが、ひとつだけです。",
+   "card": {
+    "type": "rules",
+    "title": "天赦日になる日の干支",
+    "items": [
+     "春　戊寅（つちのえとら）の日",
+     "夏　甲午（きのえうま）の日",
+     "秋　戊申（つちのえさる）の日",
+     "冬　甲子（きのえね）の日"
+    ],
+    "fresh": true,
+    "all": true
+   }
+  },
+  {
+   "id": "R05",
+   "speaker": "narrator",
+   "narration": "春は戊寅、夏は甲午、秋は戊申、冬は甲子の日です。",
+   "tts_text": "春は、つちのえとら。夏は、きのえうま。秋は、つちのえさる。冬は、きのえねの日です。",
+   "card": {
+    "type": "rules",
+    "title": "天赦日になる日の干支",
+    "items": [
+     "春　戊寅（つちのえとら）の日",
+     "夏　甲午（きのえうま）の日",
+     "秋　戊申（つちのえさる）の日",
+     "冬　甲子（きのえね）の日"
+    ],
+    "all": true
+   }
+  },
+  {
+   "id": "R06",
+   "speaker": "narrator",
+   "narration": "ここでの季節も、暦の数え方です。春は立春から、冬は立冬から始まります。",
+   "tts_text": "ここでの季節も、暦の数え方です。春は、りっしゅんから、冬は、りっとうから始まります。",
+   "card": {
+    "type": "big_text",
+    "kicker": "天赦日の季節",
+    "text": "春は立春から　夏は立夏から",
+    "text2": "秋は立秋から　冬は立冬から",
+    "accent": "立冬から"
+   }
+  },
+  {
+   "id": "R07",
+   "speaker": "narrator",
+   "narration": "干支は、十干と十二支の組み合わせです。同じ干支の日は、60日に1度しか回ってきません。",
+   "tts_text": "えとは、じっかんと、じゅうにしの組み合わせです。同じえとの日は、60日に1度しか回ってきません。",
+   "card": {
+    "type": "big_text",
+    "text": "同じ干支の日は",
+    "text2": "60日に1度",
+    "accent": "60日に1度",
+    "source": "干支は60通りで一巡（国立国会図書館「日本の暦」）"
+   }
+  },
+  {
+   "id": "R08",
+   "speaker": "narrator",
+   "narration": "ひとつの季節の間に、決まった干支の日は、数えるほどしか来ません。",
+   "tts_text": "ひとつの季節の間に、決まった、えとの日は、数えるほどしか来ません。",
+   "card": {
+    "type": "big_text",
+    "text": "ひとつの季節に、決まった干支の日は",
+    "text2": "1回か2回",
+    "accent": "1回か2回"
+   }
+  },
+  {
+   "id": "R09",
+   "speaker": "narrator",
+   "narration": "ひと月に何日も並ぶ一粒万倍日とは、数が、まるで違います。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2027年の暦",
+    "text": "一粒万倍日　60日",
+    "text2": "天赦日　6日",
+    "accent": "6日"
+   }
+  },
+  {
+   "id": "R09b",
+   "speaker": "narrator",
+   "narration": "数が少ないので、天赦日に合わせて、神社へのお参りを決める人もいます。",
+   "image_en": "Kazue bows quietly in front of a small pond-side shrine in winter, hands together, light snow, peaceful atmosphere.",
+   "img_src": "H04",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "R10",
+   "speaker": "narrator",
+   "narration": "カレンダーの小さな字で天赦日を見つけたのに、その日は仕事で、気づいたら過ぎていた。",
+   "emo": "aruaru",
+   "image_en": "Kazue sighs with a small rueful smile, holding a red pen over the plain wall calendar.",
+   "img_src": "C09",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "R11",
+   "speaker": "narrator",
+   "narration": "少ない天赦日が、多い一粒万倍日と、同じ日に来るかどうか。",
+   "image_en": "Kazue sits at a low table with a plain blank calendar spread out, tilting her head in surprise, a cup of green tea beside her. Late autumn afternoon light, a few red maple leaves visible outside the window.",
+   "img_src": "A06",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "R12",
+   "speaker": "narrator",
+   "narration": "それを決めるのが、天赦日の干支の、後ろの1字。十二支の部分です。",
+   "tts_text": "それを決めるのが、天赦日の、えとの、後ろの1字。じゅうにしの部分です。",
+   "card": {
+    "type": "big_text",
+    "text": "甲子の「子」　甲午の「午」",
+    "text2": "干支の後ろの1字＝十二支",
+    "accent": "十二支"
+   }
+  },
+  {
+   "id": "S01",
+   "speaker": "narrator",
+   "narration": "天赦日と一粒万倍日が重なる日を、全部書き出した、今月と来月のカレンダーです。概要欄のLINEから受け取れます。",
+   "tts_text": "天赦日と一粒万倍日が重なる日を、全部書き出した、今月と来月のカレンダーです。概要欄のラインから受け取れます。",
+   "line": true,
+   "card": {
+    "type": "big_text",
+    "kicker": "LINEで無料",
+    "text": "天赦日と一粒万倍日が重なる日を全部書き出した",
+    "text2": "今月と来月の吉日カレンダー",
+    "accent": "吉日カレンダー"
+   }
+  },
+  {
+   "id": "S02",
+   "speaker": "narrator",
+   "narration": "冷蔵庫に貼っておくと、印の日を、家族も見られます。",
+   "image_en": "Kazue sticks a plain printed calendar sheet with no legible text onto the fridge door with a magnet, smiling.",
+   "img_src": "E02",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "S03",
+   "speaker": "narrator",
+   "narration": "天赦日と一粒万倍日が重なれる月は、はじめから決まっています。",
+   "yt_chapter": "重なれる月は決まっている",
+   "card": {
+    "type": "chapter_title",
+    "num": "第三章",
+    "title": "重なれる月は決まっている"
+   }
+  },
+  {
+   "id": "S04",
+   "speaker": "narrator",
+   "narration": "冬の天赦日、甲子の日で考えます。",
+   "tts_text": "冬の天赦日、きのえねの日で考えます。",
+   "card": {
+    "type": "big_text",
+    "kicker": "冬の天赦日",
+    "text": "甲子（きのえね）の日",
+    "text2": "十二支は「子（ね）」",
+    "accent": "子（ね）"
+   }
+  },
+  {
+   "id": "S05",
+   "speaker": "narrator",
+   "narration": "甲子の十二支は、子。ねずみ年の、子です。",
+   "tts_text": "きのえねの、じゅうにしは、ね。ねずみ年の、ねです。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "newrows": [
+     3
+    ],
+    "fresh": true,
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S06",
+   "speaker": "narrator",
+   "narration": "冬の暦の月のうち、一粒万倍日に子の日が入っている月は、どれか。",
+   "tts_text": "冬の暦の月のうち、一粒万倍日に、ねのひが入っている月は、どれか。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S07",
+   "speaker": "narrator",
+   "narration": "立冬からのひと月は、酉と戌。子は入っていません。",
+   "tts_text": "りっとうからの、ひと月は、とりと、いぬ。ねは、入っていません。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "anim": [
+     "3-0"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S08",
+   "speaker": "narrator",
+   "narration": "大雪からのひと月は、亥と子。小寒からのひと月は、卯と子。どちらにも、子が入っています。",
+   "tts_text": "たいせつからの、ひと月は、いと、ね。しょうかんからの、ひと月は、うと、ね。どちらにも、ねが入っています。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "shown": [
+     "3-0"
+    ],
+    "anim": [
+     "3-1",
+     "3-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S09",
+   "speaker": "narrator",
+   "narration": "冬の天赦日は、大雪から節分までの間に来た時だけ、一粒万倍日と重なります。",
+   "tts_text": "冬の天赦日は、たいせつから、せつぶんまでの間に来た時だけ、一粒万倍日と重なります。",
+   "emo": "reveal",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "hl": [
+     "3-1",
+     "3-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S10",
+   "speaker": "narrator",
+   "narration": "同じことを、春と夏と秋でも確かめます。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "newrows": [
+     0,
+     1,
+     2
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S11",
+   "speaker": "narrator",
+   "narration": "春の戊寅は、寅の日。寅が入っているのは、啓蟄からのひと月だけです。",
+   "tts_text": "春の、つちのえとらは、とらのひ。とらが入っているのは、けいちつからの、ひと月だけです。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "anim": [
+     "0-0",
+     "0-1",
+     "0-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S12",
+   "speaker": "narrator",
+   "narration": "夏の甲午は、午の日。芒種からと、小暑からの、ふた月です。",
+   "tts_text": "夏の、きのえうまは、うまのひ。ぼうしゅからと、しょうしょからの、ふたつきです。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2",
+     "0-0",
+     "0-1",
+     "0-2"
+    ],
+    "anim": [
+     "1-0",
+     "1-1",
+     "1-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S13",
+   "speaker": "narrator",
+   "narration": "秋の戊申は、申の日。白露からのひと月だけです。",
+   "tts_text": "秋の、つちのえさるは、さるのひ。はくろからの、ひと月だけです。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2",
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2"
+    ],
+    "anim": [
+     "2-0",
+     "2-1",
+     "2-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S14",
+   "speaker": "narrator",
+   "narration": "並べると、天赦日が一粒万倍日と重なれる月は、一年のうち、半分しかありません。",
+   "emo": "strong",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "hl": [
+     "0-1",
+     "1-1",
+     "1-2",
+     "2-1",
+     "3-1",
+     "3-2"
+    ],
+    "note": "重なれる月は12か月のうち6か月",
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S15",
+   "speaker": "narrator",
+   "narration": "天赦日が、この半分の月に入った時だけ、最強開運日になります。",
+   "image_en": "Kazue looks at the plain December calendar page with raised eyebrows and a delighted expression, winter morning.",
+   "img_src": "D03",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "S16",
+   "speaker": "narrator",
+   "narration": "天赦日の日付は、年ごとに少しずつずれていきます。",
+   "tts_text": "天赦日の日付は、年ごとに、少しずつずれていきます。",
+   "image_en": "Kazue and Hiroshi relax on a Sunday morning in late December, reading by a sunny window with cups of tea, a plain calendar on the wall.",
+   "img_src": "I02",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "同じ干支の日付は",
+     "big": "年ごとにずれる",
+     "size": 110
+    }
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "S17",
+   "speaker": "narrator",
+   "narration": "重なれる月にたくさん入った年は、最強開運日が増え、外れた年は、減ります。",
+   "image_en": "Kazue holds the new plain calendar for the next year and flips through the pages, eyebrows raised in surprise.",
+   "img_src": "J03",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "S18",
+   "speaker": "narrator",
+   "narration": "年に数回しか来ない理由は、この、重なれる月の少なさにあります。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "hl": [
+     "0-1",
+     "1-1",
+     "1-2",
+     "2-1",
+     "3-1",
+     "3-2"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "S19",
+   "speaker": "narrator",
+   "narration": "春に天赦日を見つけて喜んだのに、一粒万倍日の印がついていない。",
+   "image_en": "Kazue reads an old book about calendars at the kitchen table, looking pleasantly surprised. The pages show no legible text.",
+   "img_src": "D06",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "S20",
+   "speaker": "narrator",
+   "narration": "春の天赦日は、戊寅の日なので、いつも寅の日と重なります。",
+   "tts_text": "春の天赦日は、つちのえとらの日なので、いつも、とらのひと重なります。",
+   "image_en": "A majestic tiger walking along a misty mountain path among autumn trees, painted in soft Japanese watercolor on washi paper texture. No people.",
+   "img_src": "C04",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "春の天赦日",
+     "big": "いつも寅の日"
+    }
+   }
+  },
+  {
+   "id": "S21",
+   "speaker": "narrator",
+   "narration": "寅の日は、出したお金が戻ってくると言い伝えられてきた日です。",
+   "tts_text": "とらのひは、出したお金が戻ってくると、言い伝えられてきた日です。",
+   "image_en": "Kazue and Hiroshi stand on a small rural train platform with a small travel bag, looking toward the arriving train with gentle smiles. Clear late autumn morning. No station signs or text.",
+   "img_src": "C05",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "寅の日の言い伝え",
+     "big": "出したお金が戻る",
+     "size": 100
+    }
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "S22",
+   "speaker": "narrator",
+   "narration": "旅に出る日を、寅の日に合わせる人もいます。",
+   "tts_text": "旅に出る日を、とらのひに合わせる人もいます。",
+   "image_en": "Kazue and Hiroshi sit side by side in a train seat by the window, autumn mountains passing outside, sharing a plain bento box.",
+   "img_src": "C06",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "T01",
+   "speaker": "narrator",
+   "narration": "この決まりで、年の瀬の暦を見ます。",
+   "yt_chapter": "答え合わせ 12月16日",
+   "card": {
+    "type": "chapter_title",
+    "num": "第四章",
+    "title": "答え合わせ"
+   }
+  },
+  {
+   "id": "T02",
+   "speaker": "narrator",
+   "narration": "冬の天赦日、甲子の日が回ってくるのは、12月16日、水曜日です。",
+   "tts_text": "冬の天赦日、きのえねの日が回ってくるのは、12月16日、水曜日です。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 12,
+    "marks": [
+     {
+      "d": 16,
+      "lab": "天赦"
+     }
+    ],
+    "title": "2026年12月の天赦日"
+   }
+  },
+  {
+   "id": "T03",
+   "speaker": "narrator",
+   "narration": "大雪から節分までの間。重なれる月の中に入っています。",
+   "tts_text": "たいせつから、せつぶんまでの間。重なれる月の中に入っています。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "vis": [
+     3
+    ],
+    "shown": [
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "hl": [
+     "3-1"
+    ],
+    "dates": {
+     "3-1": "12/16"
+    },
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "T04",
+   "speaker": "narrator",
+   "narration": "この月の一粒万倍日は、亥の日と子の日。甲子は子の日なので、そのまま一粒万倍日です。",
+   "tts_text": "この月の一粒万倍日は、いのひと、ねのひ。きのえねは、ねのひなので、そのまま一粒万倍日です。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 12,
+    "marks": [
+     {
+      "d": 1,
+      "lab": "万倍"
+     },
+     {
+      "d": 2,
+      "lab": "万倍"
+     },
+     {
+      "d": 15,
+      "lab": "万倍"
+     },
+     {
+      "d": 16,
+      "lab": "天赦・万倍"
+     },
+     {
+      "d": 27,
+      "lab": "万倍"
+     },
+     {
+      "d": 28,
+      "lab": "万倍"
+     }
+    ],
+    "title": "2026年12月の一粒万倍日"
+   }
+  },
+  {
+   "id": "T05",
+   "speaker": "narrator",
+   "narration": "天赦日と一粒万倍日が重なる、最強開運日です。",
+   "emo": "reveal",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 12,
+    "marks": [
+     {
+      "d": 1,
+      "lab": "万倍"
+     },
+     {
+      "d": 2,
+      "lab": "万倍"
+     },
+     {
+      "d": 15,
+      "lab": "万倍"
+     },
+     {
+      "d": 16,
+      "lab": "天赦・万倍"
+     },
+     {
+      "d": 27,
+      "lab": "万倍"
+     },
+     {
+      "d": 28,
+      "lab": "万倍"
+     }
+    ],
+    "prev": 6,
+    "fresh": false,
+    "hl": [
+     16
+    ],
+    "title": "2026年12月の一粒万倍日",
+    "note": "最強開運日"
+   }
+  },
+  {
+   "id": "G11",
+   "speaker": "narrator",
+   "narration": "暦としきたりを、日付と由来つきで届けています。よければ、チャンネル登録をお願いします。",
+   "sub": true,
+   "image_en": "A warm winter living room: Kazue and Hiroshi drink tea at a kotatsu table, a plain calendar on the wall behind them, mandarin oranges in a bowl.",
+   "img_src": "G01",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "T06",
+   "speaker": "narrator",
+   "narration": "前の日も、子の前の亥の日なので、一粒万倍日。しかも、六曜は大安です。",
+   "tts_text": "前の日も、ねの前の、いのひなので、一粒万倍日。しかも、ろくようは、たいあんです。",
+   "card": {
+    "type": "calendar",
+    "year": 2026,
+    "month": 12,
+    "marks": [
+     {
+      "d": 15,
+      "lab": "万倍・大安"
+     },
+     {
+      "d": 16,
+      "lab": "天赦・万倍"
+     }
+    ],
+    "hl": [
+     15,
+     16
+    ],
+    "title": "2026年12月"
+   }
+  },
+  {
+   "id": "T06b",
+   "speaker": "narrator",
+   "narration": "大安は、万事大吉。とくに婚礼によい日とされています。",
+   "tts_text": "たいあんは、ばんじだいきち。とくに婚礼によい日とされています。",
+   "image_en": "A small traditional Shinto wedding procession at a modest local shrine in early winter: the bride in a white kimono and hood under a red parasol, the groom in black hakama, family following. No signs or plaques.",
+   "img_src": "D04",
+   "card": {
+    "type": "photo",
+    "tate": {
+     "text": "万事大吉。\n特に婚礼に良い。",
+     "by": "国立国会図書館「日本の暦」（六曜）"
+    }
+   }
+  },
+  {
+   "id": "T07",
+   "speaker": "narrator",
+   "narration": "亥と子は、十二支の並びで隣どうし。前の日から、続けて吉日になります。",
+   "tts_text": "いと、ねは、じゅうにしの並びで、隣どうし。前の日から、続けて吉日になります。",
+   "card": {
+    "type": "big_text",
+    "text": "亥（い）と子（ね）は",
+    "text2": "十二支の並びで隣どうし",
+    "accent": "隣どうし"
+   }
+  },
+  {
+   "id": "T08",
+   "speaker": "narrator",
+   "narration": "年の瀬のまん中の水曜日。手帳に、先に書き込んでおく人もいます。",
+   "image_en": "Kazue writes carefully in a small pocket planner with a red pen, a winter scarf over her shoulders, sitting by a window.",
+   "img_src": "F10",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T08b",
+   "speaker": "narrator",
+   "narration": "大掃除や年末の買い出しが重なる時期です。始めたいことを、ひとつだけ選んでおきます。",
+   "image_en": "Kazue stands in the middle of a living room during year-end cleaning, surrounded by boxes and a vacuum cleaner, wiping her forehead with a tired laugh.",
+   "img_src": "I05",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T09",
+   "speaker": "narrator",
+   "narration": "ただし、この日の六曜は、赤口です。",
+   "tts_text": "ただし、この日の、ろくようは、しゃっこうです。",
+   "card": {
+    "type": "big_text",
+    "kicker": "12月16日の六曜",
+    "text": "ただし",
+    "text2": "赤口（しゃっこう）",
+    "accent": "赤口"
+   }
+  },
+  {
+   "id": "T10",
+   "speaker": "narrator",
+   "narration": "赤口は、朝と夕方は凶、正午は吉とされてきました。",
+   "tts_text": "しゃっこうは、朝と夕方は凶、しょうごは吉とされてきました。",
+   "card": {
+    "type": "big_text",
+    "kicker": "赤口",
+    "text": "朝と夕方は凶",
+    "text2": "正午は吉",
+    "accent": "正午は吉",
+    "source": "出典：国立国会図書館「日本の暦」"
+   }
+  },
+  {
+   "id": "T11",
+   "speaker": "narrator",
+   "narration": "昔から、この日にすると言われてきたことがあります。",
+   "card": {
+    "type": "big_text",
+    "kicker": "12月16日（水）",
+    "text": "昔からこの日にすると言われてきたこと",
+    "text2": "3つ",
+    "accent": "3つ"
+   }
+  },
+  {
+   "id": "T12",
+   "speaker": "narrator",
+   "narration": "ひとつ目は、始めたいことに、手をつけること。一粒万倍日は、万事を始めるのによい日とされています。",
+   "tts_text": "ひとつめは、始めたいことに、手をつけること。一粒万倍日は、ばんじを始めるのによい日とされています。",
+   "image_en": "Kazue sits at the kitchen table writing a short note in a plain notebook with a calm determined expression, a cup of tea beside her. Winter evening lamp light.",
+   "img_src": "F21",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "1つ目",
+     "big": "始めたいことに手をつける",
+     "side": "l",
+     "size": 80
+    }
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T13",
+   "speaker": "narrator",
+   "narration": "ふたつ目は、借金と借り物をしないこと。増える意味があるので、凶とされています。",
+   "tts_text": "ふたつめは、しゃっきんと、借り物をしないこと。増える意味があるので、凶とされています。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2つ目",
+    "text": "一粒万倍日は凶",
+    "text2": "借金・借り物をしない",
+    "accent": "しない",
+    "source": "出典：国立国会図書館「日本の暦」"
+   }
+  },
+  {
+   "id": "T14",
+   "speaker": "narrator",
+   "narration": "傘を借りるような小さな用事も、別の日に回します。",
+   "image_en": "Kazue at the front door politely shaking her head and smiling while a neighbor woman offers to lend her a plain umbrella. Cloudy late autumn day, a small entrance with potted plants.",
+   "img_src": "B07",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T15",
+   "speaker": "narrator",
+   "narration": "みっつ目は、出かけるのを、お昼の前後にすること。赤口の正午は、吉とされています。",
+   "tts_text": "みっつめは、出かけるのを、お昼の前後にすること。しゃっこうの、しょうごは、吉とされています。",
+   "image_en": "Kazue walks up stone steps to a small local shrine at midday in winter, bright sun high overhead, bare trees, a light coat and scarf.",
+   "img_src": "F25",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "3つ目",
+     "big": "出かけるのはお昼の前後",
+     "size": 96
+    }
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T16",
+   "speaker": "narrator",
+   "narration": "お昼に合わせて、家を出る。",
+   "image_en": "Kazue and Hiroshi put on their coats at the front entrance at midday, about to leave together, bright winter sun outside.",
+   "img_src": "F14",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "T17",
+   "speaker": "narrator",
+   "narration": "張り切って神社まで来たのに、お賽銭の前で、小銭がないと気づく。",
+   "emo": "aruaru",
+   "image_en": "Kazue stands in front of a plain wooden offering box at a small shrine, looking into her open wallet with a flustered expression. Winter midday. No writing on the box.",
+   "img_src": "F15",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "T18",
+   "speaker": "narrator",
+   "narration": "出かける前に、お財布の小銭を確かめておくと、慌てずにすみます。",
+   "image_en": "Hiroshi chuckles and hands Kazue a few plain coins in front of the shrine, both smiling.",
+   "img_src": "F16",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue",
+    "hiroshi"
+   ]
+  },
+  {
+   "id": "T19",
+   "speaker": "narrator",
+   "narration": "この重なりの次は、年をまたいだ先にあります。",
+   "image_en": "Kazue stands by a window at dusk holding a new plain calendar for the next year still in its clear wrapping, looking out at a snowy garden.",
+   "img_src": "F18",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "U01",
+   "speaker": "narrator",
+   "narration": "年をまたいだ後の暦でも、同じ決まりが当てはまるか、確かめます。",
+   "yt_chapter": "次の最強開運日",
+   "card": {
+    "type": "chapter_title",
+    "num": "第五章",
+    "title": "次の最強開運日"
+   }
+  },
+  {
+   "id": "U02",
+   "speaker": "narrator",
+   "narration": "年が明けた後の天赦日を、季節の表に当てはめます。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "dates": {
+     "0-0": "2/28",
+     "0-2": "4/29",
+     "1-0": "5/15",
+     "1-2": "7/14",
+     "2-1": "9/26",
+     "3-1": "12/11"
+    },
+    "anim": [],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "U03",
+   "speaker": "narrator",
+   "narration": "春と、初夏の天赦日は、重なれない月に入りました。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "dates": {
+     "0-0": "2/28",
+     "0-2": "4/29",
+     "1-0": "5/15",
+     "1-2": "7/14",
+     "2-1": "9/26",
+     "3-1": "12/11"
+    },
+    "hl": [
+     "0-0",
+     "0-2",
+     "1-0"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "U04",
+   "speaker": "narrator",
+   "narration": "残りの天赦日は、夏、秋、冬の、重なれる月に入っています。",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "dates": {
+     "0-0": "2/28",
+     "0-2": "4/29",
+     "1-0": "5/15",
+     "1-2": "7/14",
+     "2-1": "9/26",
+     "3-1": "12/11"
+    },
+    "hl": [
+     "1-2",
+     "2-1",
+     "3-1"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "U05",
+   "speaker": "narrator",
+   "narration": "天赦日と一粒万倍日が、次に重なるのは、2027年7月14日、水曜日です。",
+   "emo": "reveal",
+   "card": {
+    "type": "timeline",
+    "points": [
+     {
+      "label": "2026年12月16日",
+      "text": "最強開運日"
+     },
+     {
+      "label": "2027年7月14日",
+      "text": "次の最強開運日"
+     }
+    ],
+    "span": [
+     0,
+     1,
+     "210日"
+    ],
+    "fresh": true
+   }
+  },
+  {
+   "id": "U06",
+   "speaker": "narrator",
+   "narration": "この日の六曜は、仏滅です。六曜と吉日は、別々の決まりで並ぶので、こうした日も出てきます。",
+   "tts_text": "この日の、ろくようは、ぶつめつです。ろくようと吉日は、別々の決まりで並ぶので、こうした日も出てきます。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2027年7月14日の六曜",
+    "text": "最強開運日でも",
+    "text2": "仏滅",
+    "accent": "仏滅"
+   }
+  },
+  {
+   "id": "U07",
+   "speaker": "narrator",
+   "narration": "夏の暑い盛りに、最強開運日が来ます。",
+   "image_en": "Summer scene: Kazue in a light summer blouse fans herself on a shaded engawa veranda, a glass of cold barley tea, morning glories, bright sun.",
+   "img_src": "J06",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "U08",
+   "speaker": "narrator",
+   "narration": "その後も、秋と冬に、ひとつずつ続きます。",
+   "card": {
+    "type": "big_text",
+    "kicker": "2027年の最強開運日",
+    "text": "7月14日（水）・9月26日（日）",
+    "text2": "2027年12月11日（土）",
+    "accent": "12月11日"
+   }
+  },
+  {
+   "id": "U09",
+   "speaker": "narrator",
+   "narration": "どれも、表で丸のついた月の中です。",
+   "emo": "plain",
+   "card": {
+    "type": "kgrid",
+    "title": "天赦日が一粒万倍日と重なれる月",
+    "rows": [
+     {
+      "s": "春",
+      "k": "戊寅",
+      "b": "寅",
+      "m": [
+       [
+        "2月",
+        "立春から"
+       ],
+       [
+        "3月",
+        "啓蟄から"
+       ],
+       [
+        "4月",
+        "清明から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "夏",
+      "k": "甲午",
+      "b": "午",
+      "m": [
+       [
+        "5月",
+        "立夏から"
+       ],
+       [
+        "6月",
+        "芒種から"
+       ],
+       [
+        "7月",
+        "小暑から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     },
+     {
+      "s": "秋",
+      "k": "戊申",
+      "b": "申",
+      "m": [
+       [
+        "8月",
+        "立秋から"
+       ],
+       [
+        "9月",
+        "白露から"
+       ],
+       [
+        "10月",
+        "寒露から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "s": "冬",
+      "k": "甲子",
+      "b": "子",
+      "m": [
+       [
+        "11月",
+        "立冬から"
+       ],
+       [
+        "12月",
+        "大雪から"
+       ],
+       [
+        "1月",
+        "小寒から"
+       ]
+      ],
+      "ok": [
+       0,
+       1,
+       1
+      ]
+     }
+    ],
+    "shown": [
+     "0-0",
+     "0-1",
+     "0-2",
+     "1-0",
+     "1-1",
+     "1-2",
+     "2-0",
+     "2-1",
+     "2-2",
+     "3-0",
+     "3-1",
+     "3-2"
+    ],
+    "dates": {
+     "0-0": "2/28",
+     "0-2": "4/29",
+     "1-0": "5/15",
+     "1-2": "7/14",
+     "2-1": "9/26",
+     "3-1": "12/11"
+    },
+    "hl": [
+     "1-2",
+     "2-1",
+     "3-1"
+    ],
+    "source": "暦の月は節入り（毎月4〜9日ごろ）から数える"
+   }
+  },
+  {
+   "id": "U10",
+   "speaker": "narrator",
+   "narration": "来年のカレンダーを買うのは、たいてい、年の瀬に入ってから。",
+   "image_en": "Kazue browses a shelf of plain wall calendars with blank covers and no text in a small stationery shop in December, holding one up.",
+   "img_src": "J08",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "U11",
+   "speaker": "narrator",
+   "narration": "新しいカレンダーが届いたら、天赦日の印を先に探して、その月の一粒万倍日と見比べる。",
+   "image_en": "Kazue opens a new plain calendar to a page and draws a red circle on one square, smiling confidently. Evening lamp light.",
+   "img_src": "J10",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "次の最強開運日 2027年",
+     "big": "7月14日（水）",
+     "side": "l",
+     "size": 120
+    }
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "U11b",
+   "speaker": "narrator",
+   "narration": "家族の行事の日取りも、新しい暦で、先に印を確かめておく家があります。",
+   "image_en": "Kazue and her daughter Mio sit together at the dining table looking at a plain calendar and Mio's smartphone with a blank screen, discussing a date, a small child's kimono folded nearby.",
+   "img_src": "C14",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue",
+    "mio"
+   ]
+  },
+  {
+   "id": "U12",
+   "speaker": "narrator",
+   "narration": "印が同じ日にそろっていれば、その日が、最強開運日です。",
+   "image_en": "Kazue walks home on a winter street carrying a rolled calendar under her arm, breath visible in the cold air, smiling.",
+   "img_src": "J09",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "V01",
+   "speaker": "narrator",
+   "narration": "天赦日と一粒万倍日が重なる日を、近い順に並べます。",
+   "yt_chapter": "次の重なり",
+   "card": {
+    "type": "next_table",
+    "title": "次の最強開運日",
+    "rows": [
+     {
+      "date": "12月16日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "7月14日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "9月26日",
+      "wd": "日",
+      "names": "天赦日 × 一粒万倍日"
+     }
+    ],
+    "hl": 0
+   }
+  },
+  {
+   "id": "V02",
+   "speaker": "narrator",
+   "narration": "いちばん近いのは、冬の甲子の日です。",
+   "tts_text": "いちばん近いのは、冬の、きのえねの日です。",
+   "card": {
+    "type": "next_table",
+    "title": "次の最強開運日",
+    "rows": [
+     {
+      "date": "12月16日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "7月14日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "9月26日",
+      "wd": "日",
+      "names": "天赦日 × 一粒万倍日"
+     }
+    ],
+    "hl": 0
+   }
+  },
+  {
+   "id": "V03",
+   "speaker": "narrator",
+   "narration": "その次が、夏と秋。どれも、重なれる月の中に入っています。",
+   "card": {
+    "type": "next_table",
+    "title": "次の最強開運日",
+    "rows": [
+     {
+      "date": "12月16日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "7月14日",
+      "wd": "水",
+      "names": "天赦日 × 一粒万倍日"
+     },
+     {
+      "date": "9月26日",
+      "wd": "日",
+      "names": "天赦日 × 一粒万倍日"
+     }
+    ],
+    "hl": 1
+   }
+  },
+  {
+   "id": "W01",
+   "speaker": "narrator",
+   "narration": "天赦日は季節ごとに干支がひとつ、一粒万倍日は暦の月ごとに十二支が2つ。この2つが同じ日を指した時だけ、最強開運日になります。",
+   "tts_text": "天赦日は、季節ごとに、えとがひとつ、一粒万倍日は、暦の月ごとに、じゅうにしが2つ。この2つが同じ日を指した時だけ、最強開運日になります。",
+   "yt_chapter": "まとめ",
+   "emo": "strong",
+   "image_en": "Kazue stands by the kitchen window holding the plain December calendar page, looking out at a crisp clear winter morning, calm smile.",
+   "img_src": "M01",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  },
+  {
+   "id": "W02",
+   "speaker": "narrator",
+   "narration": "あなたの家では、最強開運日に、何を始めますか。コメントで教えてください。",
+   "image_en": "A cozy winter dining table: a plain notebook, a red pen, a cup of tea, and a plain calendar, warm lamp light. No people.",
+   "img_src": "M02",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "W03",
+   "speaker": "narrator",
+   "narration": "次にカレンダーをめくる時は、天赦日の印を、先に探してください。",
+   "image_en": "Kazue's hand turns a plain paper wall calendar page in soft morning light, a red pen clipped to it.",
+   "img_src": "M03",
+   "card": {
+    "type": "photo"
+   },
+   "chars": [
+    "kazue"
+   ]
+  }
+ ]
+}

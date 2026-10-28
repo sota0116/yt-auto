@@ -1,0 +1,17 @@
+{
+ "説明": "競合リサーチ（pipeline/research.py spi）が毎日見るチャンネルと検索の言葉。出どころは 手順書 v3.8 §3・§7・§13 の根拠に出てくる競合と、2026-10-28 の時刻の調べ（_research/spi_long_time_2026-10-28.json の競合13チャンネル）。id は手元の調べで名前から引いた物（2026-10-29 に写した）。丸儲け住職・AI都市伝説検証室は id が手元に無いので queries で拾う。「型の参考」は題材が違う（借りるのはタイトル・サムネ・構成の型だけ）。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
+ "channels": [
+  {"id": "UCojLlRWjoVcptG_WIgYWK4g", "name": "招福こよみ", "group": "暦・年運（見る人も題材もいちばん近い。ショートの時刻の根拠）"},
+  {"id": "UC0rvsDnTlvualb1EkgbxBzQ", "name": "金運上昇チャンネル", "group": "吉日の速報（型A の根拠）"},
+  {"id": "UC1tiWO6t2V0xAkGVagqrc6g", "name": "神秘の雑学書", "group": "行事・供養の由来（型A の根拠）"},
+  {"id": "UCYj7x7ZTNxmffEH3frBRPCA", "name": "雑学の王様", "group": "神さま・作法（型B の根拠）"},
+  {"id": "UCS00Jmyh5XGF8DXAP0_o4Ew", "name": "神宮館TV（九星気学と暦）", "group": "暦・九星（暦の解説の型）"},
+  {"id": "UCGo6yMLqfaavol7MyqU4l4g", "name": "開運!スピリチュアル通信", "group": "開運・吉日（タイトルの強い言葉の型）"},
+  {"id": "UCeOhvId9laYom7snzFsJxlg", "name": "スピの鈴", "group": "開運・吉日（サムネの型）"},
+  {"id": "UCwWp2BsEQk036j7FjQ-4ozw", "name": "ゆっくりスピリチュアル大事典", "group": "型の参考（語りの型・見る人は近い）"},
+  {"id": "UCPOY4MSNPc7dlNE--QQcMxg", "name": "碇のりこ", "group": "型の参考（顔出しの開運。タイトルの言葉だけ借りる）"},
+  {"id": "UCuErzozeK-Fzko0XNrzqzvg", "name": "先祖のしわざ", "group": "型の参考（先祖・供養の題材）"}
+ ],
+ "queries": ["天赦日 一粒万倍日 重なる日", "最強開運日 次", "吉日カレンダー 今月", "暦 由来 年中行事", "神棚 お札 作法", "土用 やってはいけないこと", "丸儲け住職", "AI 検証 迷信 記録"],
+ "auto": []
+}

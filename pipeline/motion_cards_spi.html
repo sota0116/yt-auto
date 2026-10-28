@@ -1,0 +1,493 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- motion_cards_spi.py が読み込む図解カードの型（motion_cards_v8.html の写し・2026-10-29。字の読み込みを style の頭の印にして、Windows と Linux で motion_cards_spi.py が差し込む）。draw(t) で t 秒目の1コマを描く（時間で決まるので、何度描いても同じ絵になる） -->
+<style>
+/*@FONTS@*/
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden}
+body.kinun{--bg:#F2EADB;--bg2:#E2D2B6;--ink:#2B2622;--sub:#6E6258;--shu:#B33A2B;--gold:#B8893A;--ai:#33506B;--paper:#FBF7EE;--onshu:#FFF8EC;--font:JSerif;--grain:.38;--b10000:#D8C49A;--b1000:#AFC0D2}
+body.job{--bg:#13203B;--bg2:#0C1528;--ink:#F4EBDC;--sub:#A9B4C8;--shu:#FFC93C;--gold:#FFC93C;--ai:#6FA8DC;--paper:#1E2F52;--onshu:#13203B;--font:JSans;--grain:.12;--b10000:#D8C49A;--b1000:#AFC0D2}
+body.koyomi{--bg:#F4EEE1;--bg2:#E4D6BC;--ink:#2B2622;--sub:#6E6258;--shu:#C43E2C;--gold:#B8893A;--ai:#5B6E7E;--paper:#FBF7EE;--onshu:#FFF8EC;--font:JSans;--grain:.30;--b10000:#D8C49A;--b1000:#AFC0D2}
+/* 千年こよみ：図・表・カレンダーは Noto Sans JP、山場の大きな字と言葉の札は Noto Serif JP（手順書 §6） */
+body.koyomi .bt,body.koyomi .qt,body.koyomi .cn2,body.koyomi .by,body.koyomi .tag{font-family:JSerif}
+body{background:var(--bg);font-family:var(--font);color:var(--ink)}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 38%,var(--bg) 52%,var(--bg2) 100%)}
+#grain{position:absolute;inset:0;opacity:var(--grain);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .35  0 0 0 0 .27  0 0 0 .26 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+#dust,#zoom,#stage{position:absolute;inset:0}
+#zoom{transform-origin:50% 40%}
+.dot{position:absolute;border-radius:50%;background:var(--gold)}
+.abs{position:absolute}
+.kicker{position:absolute;background:var(--shu);color:var(--onshu);font-size:40px;font-weight:700;padding:8px 28px;letter-spacing:.06em;white-space:nowrap}
+.title{position:absolute;left:140px;top:72px;font-size:60px;font-weight:800;padding-left:30px;border-left:12px solid var(--shu);line-height:1.15;white-space:nowrap}
+.src{position:absolute;right:130px;top:770px;font-size:28px;color:var(--sub);white-space:nowrap}
+/* 写真 */
+.ph{position:absolute;inset:0;overflow:hidden}
+.ph img,.ph video{width:100%;height:100%;object-fit:cover;transform-origin:50% 45%}
+.old .ph{inset:auto;left:290px;top:62px;width:1340px;height:754px;border:22px solid #F7F1E3;box-shadow:0 22px 50px rgba(40,25,10,.35)}
+.old .ph img{filter:sepia(.35) saturate(.85) contrast(.96)}
+.grad{position:absolute;left:0;right:0;bottom:0;height:360px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.42))}
+.tag{position:absolute;left:0;top:84px;background:rgba(36,30,26,.86);color:#F7F1E3;padding:16px 46px 18px 56px;border-left:14px solid var(--shu);white-space:nowrap;font-family:JSerif}
+.tag b{font-size:66px;font-weight:800;letter-spacing:.04em}
+.tag span{font-size:38px;margin-left:30px;opacity:.85}
+.nameplate{position:absolute;right:120px;top:560px;background:#FBF7EE;color:#2B2622;padding:22px 48px 26px 40px;border-left:12px solid var(--shu);box-shadow:0 10px 30px rgba(0,0,0,.25);font-family:JSerif}
+.nameplate .role{display:block;font-size:34px;color:#6E6258;margin-bottom:6px}
+/* 昔の場面の「再現イメージ」（右上・字の高さは画面の3%前後。千年こよみ 手順書 §6） */
+.era{position:absolute;right:56px;top:40px;font-size:32px;font-weight:700;color:#F7F1E3;background:rgba(36,30,26,.62);padding:6px 18px;letter-spacing:.08em;font-family:JSans}
+.nameplate b{font-size:88px;font-weight:800}
+/* 絵の中に浮かぶ言葉（pop：小さい朱の札＋大きい字）と、原文の縦書き（tate）。紙芝居に見せないため、絵の上で字が動く */
+.popsh{position:absolute;top:0;width:1200px;height:560px}
+.pop{position:absolute;top:110px;color:#FBF7EE;font-family:JSerif;text-shadow:0 0 22px rgba(20,14,10,.9),0 4px 12px rgba(20,14,10,.75)}
+.pop .ps{display:inline-block;font-size:44px;font-weight:700;letter-spacing:.08em;padding:6px 22px 8px;background:var(--shu);color:var(--onshu);text-shadow:none;margin-bottom:16px;white-space:nowrap}
+.pop .pb{font-size:140px;font-weight:800;line-height:1.1;white-space:nowrap}
+.tsh{position:absolute;right:0;top:0;bottom:0;width:1000px;background:linear-gradient(90deg,rgba(24,18,14,0),rgba(24,18,14,.74) 42%)}
+.tate{position:absolute;top:80px;writing-mode:vertical-rl;font-family:JSerif;font-weight:800;color:#FBF7EE;line-height:1.6;letter-spacing:.1em;text-shadow:0 0 16px rgba(20,14,10,.6)}
+.tby{position:absolute;writing-mode:vertical-rl;font-family:JSerif;font-weight:600;color:rgba(251,247,238,.86);letter-spacing:.15em}
+/* 大きい文字 */
+.bt{position:absolute;left:80px;right:80px;top:0;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.bt .l1{font-size:84px;font-weight:600;white-space:nowrap}
+.bt .l2{font-size:128px;font-weight:800;white-space:nowrap;letter-spacing:.02em}
+.bt .k{position:static;margin-bottom:10px}
+.ch{display:inline-block}
+.acc{position:relative;color:var(--shu)}
+.acc .ul{position:absolute;left:0;right:0;bottom:-8px;height:12px;background:var(--shu);transform-origin:0 50%;opacity:.9}
+/* 財布・お金 */
+.count{position:absolute;left:1170px;top:330px;width:680px;font-size:110px;font-weight:800;line-height:1.25}
+.count .num{color:var(--shu);font-size:150px}
+/* レシート */
+.rc{position:absolute;left:460px;top:90px;width:1000px;background:#FFFDF7;color:#2B2622;box-shadow:0 16px 40px rgba(40,25,10,.28);padding:40px 70px 56px;box-sizing:border-box;font-family:JSerif}
+.rc .hd{text-align:center;font-size:46px;letter-spacing:.5em;padding-bottom:18px;border-bottom:4px dashed #B9AE9C;margin-bottom:22px;color:#6E6258}
+.rc .ln{display:flex;justify-content:space-between;align-items:baseline;font-size:82px;font-weight:700;padding:14px 0}
+.rc .ln .am{position:relative}
+.rc .zig{position:absolute;left:0;right:0;bottom:-22px;height:24px;background:linear-gradient(-45deg,transparent 16px,#FFFDF7 0),linear-gradient(45deg,transparent 16px,#FFFDF7 0);background-size:32px 32px;background-position:left bottom}
+/* 曜日 */
+.day{position:absolute;top:196px;width:300px;height:520px;background:var(--paper);border:4px solid rgba(110,98,88,.25);border-radius:20px;box-sizing:border-box}
+.day .dc{position:absolute;left:80px;top:26px;width:140px;height:140px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:92px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.day .bl{position:absolute;left:45px;width:210px;height:84px;background:var(--b1000);border:3px solid rgba(0,0,0,.25);border-radius:6px;box-sizing:border-box}
+.day .cn{position:absolute;left:0;right:0;top:418px;text-align:center;font-size:70px;font-weight:800}
+.day.last{border:6px solid var(--shu)}
+.day.last .cn{color:var(--shu)}
+.chev{position:absolute;top:430px;font-size:80px;color:var(--gold);font-weight:800}
+/* 寿命の棒 */
+.lab{position:absolute;width:330px;text-align:right;font-size:60px;font-weight:800;white-space:nowrap}
+.bar{position:absolute;height:78px;border-radius:0 10px 10px 0}
+.rng{position:absolute;height:78px;border-radius:0 10px 10px 0;opacity:.5;background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.55) 0 10px,rgba(255,255,255,0) 10px 22px)}
+.val{position:absolute;font-size:54px;font-weight:800;white-space:nowrap}
+.tick{position:absolute;top:722px;font-size:32px;color:var(--sub);transform:translateX(-50%)}
+.note{position:absolute;right:130px;top:66px;max-width:860px;background:var(--paper);border-left:12px solid var(--shu);font-size:46px;font-weight:800;padding:18px 34px;box-shadow:0 8px 24px rgba(40,25,10,.15)}
+/* 言葉 */
+.qt{position:absolute;top:58px;height:760px;writing-mode:vertical-rl;font-size:112px;font-weight:800;line-height:1.55;letter-spacing:.08em}
+.by{position:absolute;writing-mode:vertical-rl;font-size:46px;color:var(--sub);letter-spacing:.2em;font-weight:600}
+.seal{position:absolute;width:64px;height:64px;background:var(--shu);border-radius:8px}
+/* 2枚の札 */
+.pn{position:absolute;top:130px;width:760px;height:600px;background:var(--paper);border-radius:26px;box-shadow:0 14px 36px rgba(40,25,10,.18);text-align:center;box-sizing:border-box;padding:320px 40px 0}
+.pn .hd{font-size:62px;font-weight:800;line-height:1.3}
+.pn .sb{font-size:42px;color:var(--sub);margin-top:20px}
+.pn svg{position:absolute;left:230px;top:40px}
+.xx{position:absolute;left:0;right:0;top:-10px;text-align:center;font-size:290px;line-height:1;color:var(--shu);opacity:0;font-family:JSans;font-weight:300}
+.env{position:absolute}
+.env .lb{position:absolute;left:0;right:0;top:150px;margin:auto;writing-mode:vertical-rl;font-size:64px;font-weight:700;color:#2B2622;height:250px;display:flex;align-items:center;letter-spacing:.1em}
+.env .mo{position:absolute;left:0;right:0;top:384px;text-align:center;font-size:32px;font-weight:700;color:#4A3426;white-space:nowrap}
+.rl{position:absolute;left:220px;display:flex;align-items:center;gap:30px;font-size:58px;font-weight:700;padding:10px 30px 10px 14px;border-radius:12px;white-space:nowrap}
+.rl .no{width:76px;height:76px;border-radius:50%;background:var(--shu);color:var(--onshu);display:flex;align-items:center;justify-content:center;font-size:46px;font-family:JSans;font-weight:800;flex:none}
+.rl.cur{background:var(--paper);box-shadow:0 8px 24px rgba(40,25,10,.15)}
+.tl{position:absolute;text-align:center;transform:translateX(-50%);white-space:nowrap}
+.plus{position:absolute;left:910px;top:380px;width:100px;height:100px;border-radius:50%;background:var(--shu);color:var(--onshu);font-size:76px;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:JSans}
+/* 章 */
+.cn1{position:absolute;left:0;right:0;top:250px;text-align:center;font-size:56px;color:var(--shu);letter-spacing:.5em;font-weight:700;padding-left:.5em}
+.cn2{position:absolute;left:0;right:0;top:350px;text-align:center;font-size:170px;font-weight:800;white-space:nowrap}
+.cl{position:absolute;top:286px;height:4px;background:var(--gold)}
+/* 暦（カレンダー・次の重なり・数の札） */
+/* v8（2026-10-27・千年こよみ）：カレンダーを「枠のあるマス目に全部の日付」にした。印の日はマスごと朱で囲み、名前はマスの中。下の余白まで使う */
+.wd{position:absolute;top:172px;width:236px;text-align:center;font-size:38px;font-weight:800;color:var(--sub)}
+.wd.su{color:var(--shu)}.wd.sa{color:var(--ai)}
+.cell{position:absolute;box-sizing:border-box;border:2px solid rgba(110,98,88,.30);background:rgba(251,247,238,.6)}
+.cell.em{background:rgba(228,214,188,.35)}
+.cell .n{position:absolute;left:16px;top:10px;line-height:1;font-size:40px;font-weight:600;color:rgba(43,38,34,.55);z-index:1}
+.cell.su .n{color:rgba(196,62,44,.7)}.cell.sa .n{color:rgba(91,110,126,.85)}
+.cell.mk .n{color:var(--ink);font-weight:900}
+.cell .fl{position:absolute;inset:3px;border-radius:6px;border:6px solid var(--shu);background:rgba(196,62,44,.10);box-sizing:border-box}
+.cell .lb{position:absolute;left:0;right:16px;bottom:16px;text-align:right;line-height:1;font-weight:800;color:var(--shu);white-space:nowrap;z-index:1}
+.cell.hl .fl{background:var(--shu)}
+.cell.hl .n,.cell.hl .lb{color:var(--onshu)}
+.nt{position:absolute;left:210px;width:1500px;height:150px;background:var(--paper);border-radius:18px;box-shadow:0 10px 28px rgba(40,25,10,.14);box-sizing:border-box;display:flex;align-items:center;gap:40px;padding:0 50px;white-space:nowrap}
+.nt .no{width:70px;height:70px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:40px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.nt .dt{font-size:76px;font-weight:900;min-width:560px}
+.nt .dt small{font-size:48px;font-weight:700;margin-left:10px}
+.nt .nm{font-size:56px;font-weight:800;color:var(--sub)}
+.nt.hl{border:6px solid var(--shu)}
+.nt.hl .dt{color:var(--shu)}
+.nt.hl .no{background:var(--shu);color:var(--onshu)}
+.ty{position:absolute;left:220px;width:1480px;height:120px;display:flex;align-items:center;white-space:nowrap}
+.ty .nm{width:470px;font-size:58px;font-weight:800}
+.ty .dots{flex:1;position:relative;height:120px}
+.ty .dt2{position:absolute;top:24px;width:72px;height:72px;border-radius:50%;background:var(--gold)}
+.ty .ct{width:220px;text-align:right;font-size:72px;font-weight:900}
+.ty.hl .nm,.ty.hl .ct{color:var(--shu)}
+.ty.hl .dt2{background:var(--shu)}
+.ty.zero .ct{color:var(--sub)}
+/* 季節×暦の月の表（kgrid・2026-10-27 千年こよみ001 v3）：天赦日の季節（行）と暦の月（列）。○＝一粒万倍日と重なれる月 */
+.kg{position:absolute;box-sizing:border-box;border:2px solid rgba(110,98,88,.30);background:rgba(251,247,238,.6);white-space:nowrap}
+.kg.se{background:var(--paper);display:flex;align-items:center;justify-content:center;gap:26px;border-left:12px solid var(--shu)}
+.kg .sn{font-size:76px;font-weight:900;font-family:JSerif}
+.kg .sk{font-size:44px;font-weight:800;color:var(--sub)}
+.kg .mn{position:absolute;left:26px;top:10px;font-size:54px;font-weight:800;line-height:1.1}
+.kg .ms{position:absolute;left:28px;top:70px;font-size:30px;font-weight:700;line-height:1;color:var(--sub)}
+/* 日付は月の右横（下の節気の字と重ねない） */
+.kg .md{position:absolute;left:150px;top:20px;font-size:38px;font-weight:900;line-height:1.1;color:var(--shu)}
+.kg .mk{position:absolute;right:22px;top:18px;font-size:80px;font-weight:900;line-height:1;font-family:JSans}
+.kg.ok .mk{color:var(--shu)}
+.kg.ng .mk{color:rgba(110,98,88,.5)}
+.kg.ng .mn,.kg.ng .md{color:rgba(43,38,34,.45)}
+.kg .kf{position:absolute;inset:0;border:7px solid var(--shu);border-radius:6px;background:rgba(196,62,44,.12);opacity:0}
+/* 補足札は題と重ならないよう表の下・左に出す（題が長いので右上は使わない） */
+.kg-note{right:auto;top:716px;font-size:42px;padding:14px 30px}
+</style></head>
+<body class="kinun"><div id="bg"></div><div id="grain"></div><div id="dust"></div><div id="zoom"><div id="stage"></div></div>
+<script>
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const P=(t,s,d)=>clamp((t-s)/d);
+const out=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.70158;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const inout=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let CARD=null,DUR=5,ZOOM=0;
+const stage=document.getElementById('stage');
+function H(html,parent=stage){const d=document.createElement('div');d.innerHTML=html.trim();const e=d.firstChild;parent.appendChild(e);return e}
+function show(e,a,dx=0,dy=0){e.style.opacity=a;e.style.transform=`translate(${dx}px,${dy}px)`}
+// 1文字ずつのspan。accent の部分は朱色＋下線
+function chars(text,accent){
+  const i=accent?text.indexOf(accent):-1;let h='';
+  [...text].forEach((c,k)=>{
+    if(i>=0&&k===i)h+='<span class="acc">';
+    h+=`<span class="ch">${c==='　'||c===' '?'&nbsp;':esc(c)}</span>`;
+    if(i>=0&&k===i+[...accent].length-1)h+='<span class="ul"></span></span>';
+  });return h}
+function stagger(root,t,t0,step,dy=24){root.querySelectorAll('.ch').forEach((c,k)=>{const a=out(P(t,t0+k*step,.35));c.style.opacity=a;c.style.transform=`translateY(${(1-a)*dy}px)`})}
+function fit(e,maxW){let fs=parseFloat(getComputedStyle(e).fontSize);while(e.scrollWidth>maxW&&fs>36){fs-=4;e.style.fontSize=fs+'px'}}
+
+const BILL={'10000':['var(--b10000)','一万円'],'1000':['var(--b1000)','千円'],'5000':['#C9B7D3','五千円']};
+const CARDS={
+photo(s){
+  // v6（2026-10-27）：s.video があれば、絵の代わりに動く絵（Kling の5秒動画）を下地にする。カットが長い時はゆっくり再生、さらに長い時は往復
+  const media=s.video?`<video src="${s.video}" muted preload="auto" playsinline></video>`:`<img src="${s.src}">`;
+  const root=H(`<div class="abs ${s.frame==='old'?'old':''}" style="inset:0"><div class="ph">${media}</div>${s.frame==='old'?'':'<div class="grad"></div>'}</div>`);
+  const img=root.querySelector(s.video?'video':'img'),ph=root.querySelector('.ph');
+  const ready=s.video?new Promise(r=>{if(img.readyState>=2)r();else{img.onloadeddata=r;img.onerror=r}})
+    :new Promise(r=>{if(img.complete)r();else{img.onload=r;img.onerror=r}});
+  const seek=t=>{const vd=Math.max(.5,(img.duration||5)-.08);let vt;
+    if(DUR<=vd*1.7)vt=t*vd/DUR;else{const u=(t/1.3)%(2*vd);vt=u<=vd?u:2*vd-u}
+    vt=Math.min(vd,Math.max(0,vt));if(Math.abs(img.currentTime-vt)<1e-3)return null;
+    return new Promise(r=>{img.onseeked=()=>r(true);img.currentTime=vt})};
+  const tag=s.tag?H(`<div class="tag"><b>${esc(s.tag)}</b>${s.tag_sub?`<span>${esc(s.tag_sub)}</span>`:''}</div>`):null;
+  const nm=s.name?H(`<div class="nameplate"><span class="role">${esc(s.role||'')}</span><b>${esc(s.name)}</b></div>`):null;
+  // pop：{small, big, side:"r"|"l", size:大きい字のpx（既定140）}。右上（side l なら左上）に、朱の札→大きい字の順に出す
+  let pop=null,psh=null;
+  if(s.pop){const L=s.pop.side==='l';
+    psh=H(`<div class="popsh" style="${L?'left':'right'}:0;background:radial-gradient(ellipse at ${L?'25%':'75%'} 30%,rgba(20,14,10,.55),rgba(20,14,10,0) 68%)"></div>`);
+    pop=H(`<div class="pop" style="${L?'left':'right'}:110px;text-align:${L?'left':'right'}">${s.pop.small?`<div class="ps">${esc(s.pop.small)}</div>`:''}<div class="pb"${s.pop.size?` style="font-size:${s.pop.size}px"`:''}>${chars(s.pop.big)}</div></div>`)}
+  // tate：{text:"1行目\n2行目", by:"出典"}。右側を暗くして、原文を縦書きで1字ずつ出す（字幕のある下1/4には入れない）
+  let tt=null,tsh=null,tby=null;
+  if(s.tate){const cols=s.tate.text.split('\n'),fs=Math.min(104,Math.floor(680/(Math.max(...cols.map(c=>[...c].length))*1.1))),w=cols.length*fs*1.6;
+    tsh=H('<div class="tsh"></div>');
+    tt=H(`<div class="tate" style="right:170px;font-size:${fs}px">${cols.map(c=>chars(c)).join('<br>')}</div>`);
+    if(s.tate.by){const bl=[...s.tate.by].length,bfs=Math.min(38,Math.floor(640/(bl*1.15)));
+      tby=H(`<div class="tby" style="right:${170+w+40}px;top:${Math.max(120,800-bl*bfs*1.15)}px;font-size:${bfs}px">${esc(s.tate.by)}</div>`)}}
+  if(s.era)H('<div class="era">再現イメージ</div>');
+  const dir=(s.seed||0)%2?1:-1,old=s.frame==='old';
+  if(old)ph.style.transform='rotate(-1.2deg)';
+  return{ready,draw(t){const k=t/DUR;
+    img.style.transform=old?`scale(${1.02+.05*k})`:s.video?`scale(${1.02+.03*k})`:`scale(${1.05+.07*k}) translateX(${dir*(18-36*k)}px)`;
+    const sk=s.video?seek(t):null;
+    if(old)ph.style.opacity=out(P(t,0,.5));
+    if(tag){const a=out(P(t,.25,.5));show(tag,a,(1-a)*-70)}
+    if(nm){const a=out(P(t,.5,.6));show(nm,a,0,(1-a)*30)}
+    if(pop){psh.style.opacity=out(P(t,.2,.5));const ps=pop.querySelector('.ps');if(ps){const a=out(P(t,.3,.4));show(ps,a,(s.pop.side==='l'?-1:1)*(1-a)*60)}
+      pop.querySelectorAll('.ch').forEach((e,i)=>{const a=back(P(t,.55+i*.06,.4));e.style.opacity=clamp(P(t,.55+i*.06,.2));e.style.transform=`scale(${Math.max(0,.6+.4*a)})`})}
+    if(tt){tsh.style.opacity=out(P(t,0,.6));const ch=tt.querySelectorAll('.ch');
+      ch.forEach((e,i)=>{const a=out(P(t,.4+i*.07,.45));e.style.opacity=a;e.style.filter=`blur(${(1-a)*8}px)`});
+      if(tby)tby.style.opacity=out(P(t,.5+ch.length*.07,.5))}
+    return sk;
+  }}},
+wallet(s){
+  const from=(s.from||{}).bills||[],to=(s.to||{}).bills||[],coins=(s.to||{}).coins||0;
+  const n=Math.max(from.length,to.length);let g='';
+  const bills=[];
+  for(let i=0;i<n;i++){
+    const a=from[i],b=to[i];
+    if(a&&a===b)bills.push({ty:a,mode:'keep',i});
+    else{if(a)bills.push({ty:a,mode:'out',i});if(b)bills.push({ty:b,mode:'in',i})}
+  }
+  const tot=to.length;
+  bills.forEach((b,k)=>{const [col,lab]=BILL[b.ty];const rot=tot>1?(b.i-(tot-1)/2)*4.2:0;
+    g+=`<g class="bw" data-k="${k}"><g transform="rotate(${rot} 500 640)"><g class="bm"><rect x="150" y="120" width="700" height="380" rx="10" fill="${col}" stroke="rgba(0,0,0,.28)" stroke-width="3"/>
+      <rect x="168" y="138" width="664" height="344" rx="6" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="3"/>
+      <ellipse cx="690" cy="270" rx="92" ry="96" fill="rgba(255,255,255,.35)"/>
+      <text x="200" y="215" font-family="JSerif" font-weight="800" font-size="72" fill="#2B2622">${lab}</text></g></g></g>`});
+  let c='';for(let i=0;i<coins;i++){const x=880+(i%3)*58,y=640-Math.floor(i/3)*30+(i%2)*8;
+    c+=`<g class="cn" data-i="${i}" transform="translate(${x} ${y})"><g class="cs"><circle r="38" fill="${i%2?'#C3C7CB':'#C9A54B'}" stroke="rgba(0,0,0,.3)" stroke-width="3"/><circle r="26" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="3"/></g></g>`}
+  const root=H(`<svg class="abs" style="left:110px;top:110px" width="1060" height="720" viewBox="0 0 1060 720">
+    <rect x="80" y="330" width="840" height="360" rx="34" fill="#4E3424"/>
+    ${g}
+    <rect x="80" y="420" width="840" height="270" rx="30" fill="#6B4A35"/>
+    <rect x="102" y="440" width="796" height="230" rx="22" fill="none" stroke="#C9A982" stroke-width="3" stroke-dasharray="14 10"/>
+    <rect x="460" y="404" width="80" height="44" rx="10" fill="#B8893A"/>${c}</svg>`);
+  const k=H(`<div class="kicker" style="left:1170px;top:250px">${esc(s.note||'')}</div>`);
+  const cnt=H(`<div class="count">${esc(s.count||'').replace(/(\d+)/g,'<span class="num">$1</span>').replace(/　/,'<br>')}</div>`);
+  const bw=[...root.querySelectorAll('.bw')],cs=[...root.querySelectorAll('.cn')];
+  let nIn=0;bills.forEach(b=>{if(b.mode==='in')b.order=nIn++});
+  return{draw(t){
+    bw.forEach((e,k)=>{const b=bills[k],m=e.querySelector('.bm');
+      if(b.mode==='keep'){m.setAttribute('transform','');return}
+      if(b.mode==='in'){const a=out(P(t,.3+b.order*.13,.55));m.setAttribute('transform',`translate(0 ${(1-a)*-560})`);m.style.opacity=clamp(a*3)}
+      else{const a=inout(P(t,.2,.6));m.setAttribute('transform',`translate(0 ${a*-560})`);m.style.opacity=1-a}});
+    const t1=.3+nIn*.13+.4;
+    cs.forEach((e,i)=>{const a=back(P(t,t1+i*.09,.4));e.querySelector('.cs').setAttribute('transform',`scale(${Math.max(0,a)})`)});
+    const a=out(P(t,.6,.5));show(k,a,(1-a)*40);const b=out(P(t,.8,.5));show(cnt,b,(1-b)*40);
+  }}},
+receipt(s){
+  const prev=s.prev||0,showN=s.show||s.lines.length;
+  let h=`<div class="hd">${esc(s.head||'お会計')}</div>`;
+  s.lines.slice(0,showN).forEach((l,i)=>{h+=`<div class="ln"><span>${esc(l[0])}</span><span class="am">${esc(l[1])}${i===showN-1?'<span class="ul" style="position:absolute;left:-6px;right:-6px;bottom:4px;height:14px;background:var(--shu);opacity:.75;transform-origin:0 50%"></span>':''}</span></div>`});
+  const rc=H(`<div class="rc">${h}<div class="zig"></div></div>`);
+  const ls=[...rc.querySelectorAll('.ln')],ul=rc.querySelector('.ul');
+  return{draw(t){const a=out(P(t,0,.5));show(rc,a,0,(1-a)*-60);
+    ls.forEach((l,i)=>{if(i<prev){l.style.opacity=1;return}const b=out(P(t,.45+(i-prev)*.55,.4));show(l,b,(1-b)*-40)});
+    if(ul){const st=.45+(showN-1-prev)*.55+.45;ul.style.transform=`scaleX(${out(P(t,st,.45))})`}
+  }}},
+days(s){
+  const n=s.days.length,w=300,gap=60,x0=(1920-(n*w+(n-1)*gap))/2,cards=[];
+  s.days.forEach((d,i)=>{let b='';for(let j=0;j<s.counts[i];j++)b+=`<div class="bl" style="top:${190+j*26}px"></div>`;
+    cards.push(H(`<div class="day ${i===n-1?'last':''}" style="left:${x0+i*(w+gap)}px"><div class="dc">${esc(d)}</div>${b}<div class="cn">${s.counts[i]}枚</div></div>`));
+    if(i<n-1)cards.push(H(`<div class="chev" style="left:${x0+i*(w+gap)+w+8}px">›</div>`))});
+  const k=H(`<div class="kicker" style="left:${x0+(n-1)*(w+gap)-40}px;top:104px">${esc(s.note||'')}　${esc(s.count||'')}</div>`);
+  const step=Math.min(.75,(DUR-1.4)/n);
+  return{draw(t){cards.forEach((c,j)=>{const i=Math.floor(j/2)+(j%2?.6:0);const a=out(P(t,.15+i*step,.45));show(c,a,0,(1-a)*40)});
+    const a=out(P(t,.15+(n-1)*step+.35,.4));show(k,a,0,(1-a)*-20)}}},
+week_compare(s){
+  const x0=330,x1=1640,y0=230,y1=700,n=s.days.length,max=Math.max(...s.series.flatMap(z=>z.values));
+  const X=i=>x0+(x1-x0)*i/(n-1),Y=v=>y1-(y1-y0)*v/max;
+  let g='';[0,max/2,max].forEach(v=>{g+=`<line x1="${x0}" x2="${x1}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--sub)" stroke-opacity=".25" stroke-width="2"/><text x="${x0-28}" y="${Y(v)+12}" text-anchor="end" font-size="34" fill="var(--sub)">${v>=10000?(v/10000)+'万円':v.toLocaleString()+'円'}</text>`});
+  s.days.forEach((d,i)=>{g+=`<text x="${X(i)}" y="770" text-anchor="middle" font-size="46" font-weight="700" fill="var(--ink)">${esc(d)}</text>`});
+  s.series.forEach((z,k)=>{const pts=z.values.map((v,i)=>`${X(i)},${Y(v)}`).join(' ');const col=z.color==='shu'?'var(--shu)':'var(--gold)';
+    const L=z.values.length-1,ex=X(L),ey=Y(z.values[L]);
+    g+=`<polyline class="ln" points="${pts}" fill="none" stroke="${col}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="end" data-k="${k}"><circle cx="${ex}" cy="${ey}" r="16" fill="${col}"/>
+      <text x="${k?ex+34:ex}" y="${k?ey+16:ey-92}" text-anchor="${k?'start':'end'}" font-size="44" font-weight="800" fill="${col}">${esc(z.name)}${k?'　'+z.values[L].toLocaleString()+'円':''}</text></g>`});
+  const root=H(`<svg class="abs" style="left:0;top:0" width="1920" height="1080" font-family="JSerif">${g}</svg>`);
+  const ti=H(`<div class="title">${esc(s.title||'')}</div>`);
+  const ls=[...root.querySelectorAll('.ln')],es=[...root.querySelectorAll('.end')];
+  ls.forEach(l=>{const L=l.getTotalLength();l.dataset.L=L;l.style.strokeDasharray=L});
+  const win=Math.min(2.6,DUR-.6);
+  return{draw(t){show(ti,out(P(t,0,.4)));
+    ls.forEach((l,k)=>{const s0=.2+k*win*.4,a=inout(P(t,s0,win*.55));l.style.strokeDashoffset=l.dataset.L*(1-a);es[k].style.opacity=out(P(t,s0+win*.5,.3))})}}},
+big_text(s){ZOOM=.035;
+  const root=H(`<div class="bt">${s.kicker?`<div class="kicker k">${esc(s.kicker)}</div>`:''}${s.text?`<div class="l1">${chars(s.text,s.text2?null:s.accent)}</div>`:''}${s.text2?`<div class="l2">${chars(s.text2,s.accent)}</div>`:''}</div>`);
+  const l1=root.querySelector('.l1'),l2=root.querySelector('.l2'),k=root.querySelector('.kicker'),ul=root.querySelector('.ul');
+  if(s.source)H(`<div class="src">${esc(s.source)}</div>`);
+  return{layout(){if(l1)fit(l1,1700);if(l2)fit(l2,1720)},draw(t){
+    if(k){const a=out(P(t,0,.4));show(k,a,0,(1-a)*-20)}
+    if(l1)stagger(l1,t,.15,.035);if(l2)stagger(l2,t,l1?.55:.2,.045,36);
+    if(ul){const n=l2?[...s.text2].length:[...s.text].length;ul.style.transform=`scaleX(${out(P(t,(l1?.55:.2)+n*.045+.2,.5))})`}}}},
+lifespan(s,data){
+  const d=data.lifespan,show_=new Set(s.show||[]),nw=new Set(s.new||[]),hl=new Set(s.highlight||[]);
+  const tx0=520,tx1=1420,u=(tx1-tx0)/d.axis_max,ys=[300,450,600];
+  const ti=H(`<div class="title">${esc(d.title)}</div>`),src=H(`<div class="src">${esc(d.source)}</div>`);
+  const rows=d.rows.map((r,i)=>{const col=i===0?'var(--gold)':'var(--ai)';
+    return{lab:H(`<div class="lab" style="left:150px;top:${ys[i]-44}px">${esc(r.label)}</div>`),
+      bar:H(`<div class="bar" style="left:${tx0}px;top:${ys[i]-39}px;width:${u*r.min}px;background:${col};transform-origin:0 50%"></div>`),
+      rng:H(`<div class="rng" style="left:${tx0+u*r.min}px;top:${ys[i]-39}px;width:${u*(r.max-r.min)}px;background-color:${col};transform-origin:0 50%"></div>`),
+      val:H(`<div class="val" style="left:${tx0+u*r.max+30}px;top:${ys[i]-40}px;color:${col}">${esc(r.text)}</div>`),i}});
+  let ax=`<div class="abs" style="left:${tx0}px;top:705px;width:${tx1-tx0}px;height:4px;background:var(--sub);opacity:.5"></div>`;
+  for(let y=1;y<=d.axis_max;y++)ax+=`<div class="tick" style="left:${tx0+u*y}px">${y}${esc(d.unit)}</div>`;
+  const axe=H(`<div>${ax}</div>`);
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  let ord=0;rows.forEach(r=>{if(nw.has(r.i))r.ord=ord++});
+  return{draw(t){
+    const fresh=!(s.show||[]).some(i=>!nw.has(i));const a0=fresh?out(P(t,0,.4)):1;
+    ti.style.opacity=a0;src.style.opacity=a0;axe.style.opacity=a0;
+    rows.forEach(r=>{const on=show_.has(r.i);const dim=hl.size&&!hl.has(r.i)?inout(P(t,.1,.5))*.7:0;
+      let g=1,f=1;if(nw.has(r.i)){const st=.35+r.ord*.3;g=out(P(t,st,1.1));f=out(P(t,st+.9,.4));}
+      const op=on?1-dim:0;
+      r.lab.style.opacity=on?op*(nw.has(r.i)?out(P(t,.2+(r.ord||0)*.3,.4)):1):0;
+      r.bar.style.opacity=op;r.bar.style.transform=`scaleX(${clamp(g*1.25)})`;
+      r.rng.style.opacity=op*.5;r.rng.style.transform=`scaleX(${clamp(g*1.25-.25)/1})`;
+      r.val.style.opacity=op*f;
+      const glow=hl.has(r.i)?out(P(t,.2,.5)):0;r.bar.style.boxShadow=glow?`0 0 0 ${6*glow}px var(--shu)`:'none';});
+    if(note){const a=out(P(t,.45,.5));show(note,a,(1-a)*50)}
+  }}},
+quote(s){ZOOM=.03;
+  const cols=s.text.split('\n'),fs=Math.min(112,Math.floor(720/(Math.max(...cols.map(c=>[...c].length))*1.1)));
+  const enso=H(`<svg class="abs" style="left:610px;top:40px" width="700" height="760"><circle cx="350" cy="380" r="330" fill="none" stroke="var(--shu)" stroke-opacity=".13" stroke-width="30" stroke-linecap="round" transform="rotate(-100 350 380)"/></svg>`);
+  const c=enso.querySelector('circle'),L=2*Math.PI*330;c.style.strokeDasharray=L;
+  const w=cols.length*fs*1.55,x=(1920-w)/2;
+  const qt=H(`<div class="qt" style="left:${x}px;font-size:${fs}px">${cols.map(t=>chars(t)).join('<br>')}</div>`);
+  // 出典が長い時は字を小さくして上へずらし、下端を 800px（画面の75%の手前）に収める
+  const bl=s.by?[...s.by].length:0,bfs=Math.min(46,Math.floor(660/(bl*1.2||1))),byt=Math.max(140,800-bl*bfs*1.2);
+  const by=s.by?H(`<div class="by" style="left:${x-110}px;top:${byt}px;font-size:${bfs}px">${esc(s.by)}</div>`):null;
+  const seal=s.by?H(`<div class="seal" style="left:${x-112}px;top:${byt-70}px"></div>`):null;
+  return{draw(t){c.style.strokeDashoffset=L*(1-.92*inout(P(t,0,1.6)));
+    qt.querySelectorAll('.ch').forEach((e,k)=>{const a=out(P(t,.2+k*.09,.45));e.style.opacity=a;e.style.filter=`blur(${(1-a)*8}px)`;e.style.transform=`scale(${1.15-.15*a})`});
+    if(by){const n=qt.querySelectorAll('.ch').length,a=out(P(t,.3+n*.09,.5));by.style.opacity=a;seal.style.opacity=a;seal.style.transform=`scale(${.6+.4*back(P(t,.3+n*.09,.5))})`}}}},
+two_cards(s){ZOOM=.025;
+  const ic={bank:`<svg width="300" height="270" viewBox="0 0 240 220" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linejoin="round"><path d="M20 70 L120 18 L220 70 Z"/><path d="M40 90 V170 M90 90 V170 M150 90 V170 M200 90 V170"/><path d="M14 196 H226 M28 176 H212"/></svg>`,
+    receipt:`<svg width="300" height="270" viewBox="0 0 240 220"><path d="M60 10 H180 V205 L165 195 L150 205 L135 195 L120 205 L105 195 L90 205 L75 195 L60 205 Z" fill="#FFFDF7" stroke="#6E6258" stroke-width="6"/><path d="M80 50 H160 M80 85 H160 M80 120 H140 M80 155 H160" stroke="#6E6258" stroke-width="8"/></svg>`,
+    bills:`<svg width="300" height="270" viewBox="0 0 240 220"><rect x="30" y="110" width="180" height="80" rx="6" fill="#D8C49A" stroke="#6E6258" stroke-width="5"/><rect x="40" y="80" width="180" height="80" rx="6" fill="#D8C49A" stroke="#6E6258" stroke-width="5"/><rect x="50" y="50" width="180" height="80" rx="6" fill="#D8C49A" stroke="#6E6258" stroke-width="5"/><circle cx="185" cy="90" r="22" fill="rgba(255,255,255,.5)"/></svg>`,
+    envelope:`<svg width="300" height="270" viewBox="0 0 240 220"><rect x="20" y="40" width="200" height="150" rx="8" fill="#B98A5A" stroke="#6B4A35" stroke-width="6"/><path d="M20 48 L120 120 L220 48" fill="none" stroke="#6B4A35" stroke-width="6"/><circle cx="120" cy="120" r="12" fill="#6B4A35"/></svg>`};
+  const ps=s.items.map((it,i)=>H(`<div class="pn" style="left:${i?990:170}px">${ic[it.icon]||''}<div class="hd">${esc(it.head).split('\n').join('<br>')}</div><div class="sb">${esc(it.sub||'')}</div>${it.x?'<div class="xx">×</div>':''}</div>`));
+  const sep=s.sep||'＋',pl=H(`<div class="plus"${[...sep].length>1?' style="font-size:42px"':''}>${esc(sep)}</div>`);  // v7：sep で間の印を変える（比べる時は VS）
+  return{draw(t){ps.forEach((p,i)=>{const a=out(P(t,.15+i*.6,.5));show(p,a,0,(1-a)*50);const x=p.querySelector('.xx');if(x){const b=P(t,1.6,.3);x.style.opacity=b;x.style.transform=`scale(${1.4-.4*b})`}});
+    pl.style.opacity=P(t,.5,.2);pl.style.transform=`scale(${Math.max(0,back(P(t,.5,.4)))})`}}},
+chapter_title(s){ZOOM=.03;
+  const n=H(`<div class="cn1">${esc(s.num)}</div>`),ti=H(`<div class="cn2" style="font-size:${Math.min(170,Math.floor(1720/[...s.title].length))}px">${chars(s.title)}</div>`);  // v7：長い題は画面の幅に収まるよう小さく
+  const l=H('<div class="cl" style="right:1270px;width:420px;transform-origin:100% 50%"></div>'),r=H('<div class="cl" style="left:1270px;width:420px;transform-origin:0 50%"></div>');
+  return{draw(t){const a=inout(P(t,.05,.9));l.style.transform=r.style.transform=`scaleX(${a})`;
+    const b=out(P(t,.25,.5));show(n,b,0,(1-b)*20);stagger(ti,t,.5,.1,40)}}},
+envelopes(s){
+  const L=s.labels,n=L.length,w=Math.min(300,(1640-(n-1)*40)/n),gap=Math.min(60,(1640-n*w)/Math.max(1,n-1)),x0=(1920-(n*w+(n-1)*gap))/2,hl=new Set(s.highlight||[]);
+  const top=s.kicker?240:190;
+  const es=L.map((lb,i)=>H(`<div class="env" style="left:${x0+i*(w+gap)}px;top:${top}px;width:${w}px;height:440px">
+    <svg width="${w}" height="440" viewBox="0 0 300 440" preserveAspectRatio="none"><path d="M10 90 L150 10 L290 90 Z" fill="#9C744B"/><rect x="10" y="90" width="280" height="340" rx="8" fill="#9C744B"/>
+    <g class="bl" style="opacity:0"><rect x="40" y="40" width="220" height="110" rx="6" fill="var(--b10000)" stroke="rgba(0,0,0,.3)" stroke-width="3"/></g>
+    <rect x="10" y="110" width="280" height="320" rx="8" fill="#C49A6C" stroke="${hl.has(i)?'var(--shu)':'#8A6542'}" stroke-width="${hl.has(i)?10:4}"/></svg>
+    <div class="lb" style="font-size:${Math.min(64,250/(Math.max(...lb.split('\n').map(z=>z.length))*1.12))}px">${esc(lb).split('\n').join('<br>')}</div>${s.month?`<div class="mo">${esc(s.month)}</div>`:''}</div>`));
+  const k=s.kicker?H(`<div class="kicker" style="left:${x0}px;top:130px">${esc(s.kicker)}</div>`):null;
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  return{draw(t){
+    es.forEach((e,i)=>{const a=s.fresh===false?1:out(P(t,.1+i*.15,.45));const d=hl.size&&!hl.has(i)?.65*inout(P(t,.9,.5)):0;
+      e.style.opacity=a*(1-d);e.style.transform=`translateY(${(1-a)*40-(hl.has(i)?16*out(P(t,.9,.4)):0)}px)`;
+      const b=e.querySelector('.bl');
+      if(s.fill){const f=out(P(t,.8+i*.25,.5));b.style.opacity=clamp(f*3);b.setAttribute('transform',`translate(0 ${(1-f)*-260})`)}
+      else if(s.move){if(i===s.move[0]){const f=inout(P(t,.9,.6));b.style.opacity=1-f;b.setAttribute('transform',`translate(0 ${-200*f})`)}
+        else if(i===s.move[1]){const f=out(P(t,1.4,.6));b.style.opacity=clamp(f*3);b.setAttribute('transform',`translate(0 ${(1-f)*-260})`)}}
+    });
+    if(k){const a=out(P(t,0,.4));show(k,a,(1-a)*-30)}
+    if(note){const a=out(P(t,.6,.5));show(note,a,(1-a)*50)}}}},
+rules(s){
+  const n=s.show||s.items.length,cur=s.cur===undefined?n-1:s.cur,ti=H(`<div class="title">${esc(s.title)}</div>`);
+  const rs=s.items.slice(0,n).map((it,i)=>H(`<div class="rl ${i===cur?'cur':''}" style="top:${190+i*112}px"><div class="no">${i+1}</div>${esc(it)}</div>`));
+  return{draw(t){ti.style.opacity=s.fresh?out(P(t,0,.4)):1;
+    rs.forEach((r,i)=>{if(i!==cur&&!s.fresh){r.style.opacity=.55;return}const a=out(P(t,s.fresh?.3+i*.4:.2,.5));show(r,a*(i===cur||s.all?1:.55),(1-a)*-50)})}}},
+avg_bars(s){
+  const v=s.values,n=v.length,x0=330,x1=1590,yb=680,mh=420,mx=Math.max(...v),bw=(x1-x0)/n*.62,avg=v.reduce((a,b)=>a+b)/n;
+  const X=i=>x0+(x1-x0)*(i+.5)/n,Y=h=>yb-mh*h/mx,im=v.indexOf(mx);
+  H(`<div class="title">${esc(s.title||'')}</div>`);H('<div class="src" style="top:96px">（イメージ）</div>');
+  const bs=v.map((h,i)=>H(`<div class="abs" style="left:${X(i)-bw/2}px;top:${Y(h)}px;width:${bw}px;height:${yb-Y(h)}px;background:${s.step==='max'&&i===im?'var(--gold)':'var(--ai)'};transform-origin:50% 100%;border-radius:6px 6px 0 0"></div>`));
+  v.forEach((h,i)=>H(`<div class="tick" style="left:${X(i)}px;top:${yb+16}px">${i+1}年目</div>`));
+  H(`<div class="abs" style="left:${x0-20}px;top:${yb}px;width:${x1-x0+40}px;height:4px;background:var(--sub);opacity:.5"></div>`);
+  const lv=s.step==='max'?mx:avg,col=s.step==='max'?'var(--gold)':'var(--shu)';
+  const ln=s.step&&s.step!=='bars'?H(`<div class="abs" style="left:${x0-20}px;top:${Y(lv)-3}px;width:${x1-x0+40}px;height:0;border-top:7px dashed ${col};transform-origin:0 50%"></div>`):null;
+  const lb=ln?H(`<div class="abs" style="left:${x1-860}px;top:${Y(mx)-84}px;width:900px;text-align:right;font-size:46px;font-weight:800;color:${col}"><span style="display:inline-block;width:80px;border-top:7px dashed ${col};vertical-align:middle;margin-right:18px"></span>${esc(s.line_label||'')}</div>`):null;
+  const note=s.note?H(`<div class="note" style="top:66px">${esc(s.note)}</div>`):null;
+  return{draw(t){
+    bs.forEach((b,i)=>{b.style.transform=`scaleY(${s.fresh?out(P(t,.2+i*.12,.5)):1})`});
+    if(ln){const a=out(P(t,.4,.8));ln.style.transform=`scaleX(${a})`;lb.style.opacity=out(P(t,1,.4))}
+    if(note){const a=out(P(t,1.2,.5));show(note,a,(1-a)*50)}}}},
+merge(s){
+  let h='';for(let i=0;i<10;i++)h+=`<div class="abs mb" style="left:${170+(i%5)*120}px;top:${250+Math.floor(i/5)*190}px;width:200px;height:96px;background:var(--b1000);border:3px solid rgba(0,0,0,.25);border-radius:6px;box-sizing:border-box;font-size:30px;font-weight:700;padding:8px 14px;color:#2B2622">千円</div>`;
+  const g=H(`<div>${h}</div>`),ms=[...g.querySelectorAll('.mb')];
+  const l1=H(`<div class="abs" style="left:170px;top:610px;width:680px;text-align:center;font-size:58px;font-weight:800">千円札　10枚</div>`);
+  const ar=H('<div class="abs" style="left:930px;top:330px;font-size:120px;color:var(--gold);font-weight:800">›</div>');
+  const big=H(`<div class="abs" style="left:1100px;top:260px;width:640px;height:300px;background:var(--b10000);border:4px solid rgba(0,0,0,.28);border-radius:10px;box-sizing:border-box;font-size:64px;font-weight:800;padding:24px 34px;color:#2B2622">一万円<div style="position:absolute;right:60px;top:70px;width:160px;height:170px;border-radius:50%;background:rgba(255,255,255,.35)"></div></div>`);
+  const l2=H(`<div class="abs" style="left:1100px;top:610px;width:640px;text-align:center;font-size:58px;font-weight:800;color:var(--shu)">一万円札　1枚</div>`);
+  return{draw(t){ms.forEach((m,i)=>{const a=out(P(t,.1+i*.06,.3)),b=inout(P(t,1.5,.7));m.style.opacity=a*(1-b);
+      m.style.transform=`translate(${b*(1110-(170+(i%5)*120))*.6}px,${b*(310-(250+Math.floor(i/5)*190))*.6}px)`});
+    l1.style.opacity=out(P(t,.6,.4))*(1-.6*P(t,1.5,.7));ar.style.opacity=out(P(t,1.2,.4));
+    const c=back(P(t,1.9,.6));big.style.opacity=clamp(P(t,1.9,.2));big.style.transform=`scale(${Math.max(0,.6+.4*c)})`;l2.style.opacity=out(P(t,2.3,.4))}}},
+timeline(s){
+  const pts=s.points,n=s.show||pts.length,x0=320,x1=1600,y=420,X=i=>x0+(x1-x0)*i/(pts.length-1),fresh=s.fresh;
+  const full=X(n-1)-x0,prev=n>=2?X(n-2)-x0:0;
+  const ln=n>=2?H(`<div class="abs" style="left:${x0}px;top:${y-4}px;height:8px;width:${full}px;background:var(--ink);opacity:.7;transform-origin:0 50%"></div>`):null;
+  const ps=pts.slice(0,n).map((p,i)=>H(`<div><div class="abs" style="left:${X(i)-26}px;top:${y-26}px;width:52px;height:52px;border-radius:50%;background:${i===n-1?'var(--shu)':'var(--ink)'}"></div>
+    <div class="tl" style="left:${X(i)}px;top:${y-150}px;font-size:56px;font-weight:800">${esc(p.label)}</div>
+    <div class="tl" style="left:${X(i)}px;top:${y+60}px;font-size:46px;font-weight:700;color:${i===n-1?'var(--shu)':'var(--sub)'}">${esc(p.text)}</div></div>`));
+  const sp=s.span?H(`<div class="tl" style="left:${(X(s.span[0])+X(s.span[1]))/2}px;top:${y+150}px;font-size:56px;font-weight:800;color:var(--gold)">${esc(s.span[2])}</div>`):null;
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  if(s.source)H(`<div class="src">${esc(s.source)}</div>`);
+  return{draw(t){
+    if(ln){const a=fresh?out(P(t,.2,1.2)):out(P(t,.2,.7));const w=fresh?full*a:prev+(full-prev)*a;ln.style.transform=`scaleX(${w/full})`}
+    ps.forEach((p,i)=>{const a=(i<n-1&&!fresh)?1:out(P(t,fresh?.2+i*.5:.6,.5));show(p,a,0,(1-a)*30)});
+    if(sp)sp.style.opacity=out(P(t,1,.5));if(note){const a=out(P(t,.8,.5));show(note,a,(1-a)*50)}}}},
+note_compare(s){
+  const k=4.4,mk=(o,x,lb,col)=>H(`<div><div class="abs" style="left:${x}px;top:${430-o[1]*k/2}px;width:${o[0]*k}px;height:${o[1]*k}px;background:${col};border:4px solid rgba(0,0,0,.28);border-radius:8px;box-sizing:border-box;font-size:56px;font-weight:800;padding:18px 28px;color:#2B2622">一万円<div style="position:absolute;right:${o[0]*k*.12}px;top:${o[1]*k*.2}px;width:${o[1]*k*.5}px;height:${o[1]*k*.55}px;border-radius:50%;background:rgba(255,255,255,.35)"></div></div>
+    <div class="tl" style="left:${x+o[0]*k/2}px;top:${430+o[1]*k/2+30}px;font-size:46px;font-weight:800">${esc(lb)}</div></div>`);
+  const a=mk(s.old,150,s.old_label,'#CDB98A'),b=mk(s.new,150+s.old[0]*k+90,s.new_label,'#E0CFAA');
+  return{draw(t){const x=out(P(t,.1,.5)),y=out(P(t,.6,.5));show(a,x,0,(1-x)*40);show(b,y,0,(1-y)*40)}}},
+// 1か月のカレンダー。marks の日はマスを朱で囲み、短い名前をマスの中にのせる。prev 個目までは最初から出ている（前のカットの続き）。hl の日は朱で塗る
+// v8：全部の日付を枠つきのマスで出す（印のない日は薄い字）。v6 までの「印の日だけ数字」は、カレンダーに見えなかった（千年こよみ001・本人「カレンダーが見づらい」）
+calendar(s){
+  const y=s.year,m=s.month,first=new Date(y,m-1,1).getDay(),nd=new Date(y,m,0).getDate(),R=Math.ceil((first+nd)/7),W=236,x0=(1920-7*W)/2,H0=226,RH=Math.floor((806-H0)/R);
+  const nf=Math.min(56,Math.round(RH*.48)),lf=Math.min(34,Math.round(RH*.29));
+  const ti=H(`<div class="title">${esc(s.title||`${y}年${m}月`)}</div>`);
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  const hd=['日','月','火','水','木','金','土'].map((w,i)=>H(`<div class="wd ${i===0?'su':i===6?'sa':''}" style="left:${x0+i*W}px">${w}</div>`));
+  const mk={};(s.marks||[]).forEach((k,i)=>{mk[k.d]={...k,i}});
+  const hl=new Set(s.hl||[]),prev=s.prev||0,cells=[];
+  for(let p=0;p<R*7;p++){const d=p-first+1,r=Math.floor(p/7),c=p%7,k=mk[d],em=d<1||d>nd;
+    const e=H(`<div class="cell ${em?'em':''} ${k?'mk':''} ${hl.has(d)?'hl':''} ${c===0?'su':c===6?'sa':''}" style="left:${x0+c*W-1}px;top:${H0+r*RH-1}px;width:${W+2}px;height:${RH+2}px">${k?'<div class="fl"></div>':''}${em?'':`<div class="n"${k?` style="font-size:${nf}px"`:''}>${d}</div>`}${k&&k.lab?`<div class="lb" style="font-size:${lf}px">${esc(k.lab)}</div>`:''}</div>`);
+    cells.push({e,k,d:p+1})}
+  const fresh=s.fresh!==false;
+  return{draw(t){const a=fresh?out(P(t,0,.45)):1;ti.style.opacity=a;hd.forEach(h=>h.style.opacity=a);if(note){const b=out(P(t,.6,.5));show(note,b,(1-b)*50)}
+    cells.forEach(({e,k,d})=>{e.style.opacity=fresh?out(P(t,.05+d*.012,.4)):1;if(!k)return;
+      const fl=e.querySelector('.fl'),lb=e.querySelector('.lb'),n=e.querySelector('.n');
+      if(k.i<prev){fl.style.transform='scale(1)';if(lb)lb.style.opacity=1;return}
+      const t0=(fresh?.6:.25)+(k.i-prev)*Math.min(.45,(DUR-1.5)/Math.max(1,(s.marks.length-prev)));
+      const b=back(P(t,t0,.4));fl.style.transform=`scale(${Math.max(0,b)})`;if(lb){const c=out(P(t,t0+.2,.35));show(lb,c,0,(1-c)*14)}
+      n.style.transform=`scale(${1+.18*Math.sin(Math.PI*P(t,t0,.4))})`})}}},
+// 次の重なり（近い順に3つまで）。hl の行を朱で強める
+next_table(s){
+  const ti=H(`<div class="title">${esc(s.title||'次の重なり')}</div>`);
+  const ys=[230,410,590],hl=s.hl===undefined?-1:s.hl;
+  const rs=s.rows.slice(0,3).map((r,i)=>H(`<div class="nt ${i===hl?'hl':''}" style="top:${ys[i]}px"><div class="no">${i+1}</div><div class="dt">${esc(r.date)}<small>（${esc(r.wd)}）</small></div><div class="nm">${esc(r.names)}</div></div>`));
+  return{draw(t){ti.style.opacity=out(P(t,0,.4));
+    rs.forEach((r,i)=>{const a=out(P(t,.3+i*.5,.5));show(r,a,(1-a)*-80);if(i===hl){const g=out(P(t,.3+rs.length*.5+.2,.5));r.style.boxShadow=`0 0 0 ${10*g}px rgba(196,62,44,.18),0 10px 28px rgba(40,25,10,.14)`}})}}},
+// 季節×暦の月の表（kgrid）。rows＝[{s:"冬",k:"甲子",m:[["11月","立冬から"],…],ok:[0,1,1]}]、vis＝出す行（行の位置は固定）、newrows＝この札で現れる行、
+// shown＝最初から出ている○×（"行-列"）、anim＝この札で順に出す○×、dates＝{"行-列":"7/14"}（anim にある所は○×と一緒に出る）、hl＝最後に朱の枠で囲む所
+kgrid(s){
+  const R=s.rows,vis=s.vis||R.map((_,i)=>i),nr=new Set(s.newrows||[]),SW=330,CW=400,x0=(1920-(SW+3*CW))/2,y0=184,RH=130;
+  const ti=H(`<div class="title">${esc(s.title||'')}</div>`);
+  const note=s.note?H(`<div class="note kg-note" style="left:${x0}px">${esc(s.note)}</div>`):null;
+  if(s.source)H(`<div class="src" style="top:790px">${esc(s.source)}</div>`);
+  const shown=new Set(s.shown||[]),anim=s.anim||[],hl=new Set(s.hl||[]),dates=s.dates||{};
+  const rows=[],cells={};
+  vis.forEach(ri=>{const r=R[ri],y=y0+ri*RH;
+    const se=H(`<div class="kg se" style="left:${x0}px;top:${y}px;width:${SW-10}px;height:${RH-10}px"><span class="sn">${esc(r.s)}</span><span class="sk">${esc(r.k)}</span></div>`);
+    const cs=r.m.map((m,ci)=>{const key=`${ri}-${ci}`,on=shown.has(key)||anim.includes(key),ok=r.ok[ci];
+      const e=H(`<div class="kg ${on?(ok?'ok':'ng'):''}" style="left:${x0+SW+ci*CW}px;top:${y}px;width:${CW-10}px;height:${RH-10}px">${hl.has(key)?'<div class="kf"></div>':''}<div class="mn">${esc(m[0])}</div><div class="ms">${esc(m[1])}</div>${dates[key]?`<div class="md">${esc(dates[key])}</div>`:''}${on?`<div class="mk">${ok?'○':'×'}</div>`:''}</div>`);
+      cells[key]=e;return e});
+    rows.push({ri,es:[se,...cs]})});
+  const st=(s.newrows||[]).length?.3+nr.size*.25:.2,step=Math.min(.6,(DUR-st-1)/Math.max(1,anim.length)),th=st+anim.length*step+.15;
+  return{draw(t){const a0=out(P(t,0,.4));ti.style.opacity=s.fresh?a0:1;
+    rows.forEach(({ri,es})=>{const k=[...nr].indexOf(ri),a=k<0?(s.fresh?a0:1):out(P(t,.15+k*.25,.4));es.forEach(e=>show(e,a,0,(1-a)*24))});
+    anim.forEach((key,k)=>{const e=cells[key];if(!e)return;const b=back(P(t,st+k*step,.4)),mk=e.querySelector('.mk'),md=e.querySelector('.md');
+      if(mk){mk.style.opacity=clamp(P(t,st+k*step,.15));mk.style.transform=`scale(${Math.max(0,b)})`}if(md)md.style.opacity=out(P(t,st+k*step,.3))});
+    hl.forEach(key=>{const f=cells[key]&&cells[key].querySelector('.kf');if(f)f.style.opacity=out(P(t,th,.4))});
+    if(note){const b=out(P(t,th+.2,.5));show(note,b,(1-b)*50)}}}},
+// 吉日の数（名前ごとに丸を1つずつ置いて数える）。n が 0 の行は「0日」と出す
+tally(s){
+  const ti=H(`<div class="title">${esc(s.title||'')}</div>`);
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  // 5行の時も、いちばん下の行を画面の上から75%（810px）の中に収める
+  const n=s.items.length,top=n>4?186:240,step=Math.min(140,(n>4?480:520)/Math.max(1,n-1||1));
+  const rows=s.items.map((it,i)=>{let d='';for(let j=0;j<it.n;j++)d+=`<div class="dt2" style="left:${j*96}px"></div>`;
+    return H(`<div class="ty ${it.hl?'hl':''} ${it.n===0?'zero':''}" style="top:${top+i*step}px"><div class="nm">${esc(it.name)}</div><div class="dots">${d}</div><div class="ct">${it.n}日</div></div>`)});
+  let k=0;const order=[];rows.forEach((r,i)=>r.querySelectorAll('.dt2').forEach(e=>order.push({e,i,k:k++})));
+  const tot=Math.max(1,order.length),sp=Math.min(.22,(DUR-1.6)/tot);
+  return{draw(t){ti.style.opacity=out(P(t,0,.4));if(note){const b=out(P(t,.5+tot*sp,.5));show(note,b,(1-b)*50)}
+    rows.forEach((r,i)=>{const a=out(P(t,.15+i*.12,.4));r.querySelector('.nm').style.opacity=a;
+      const mine=order.filter(o=>o.i===i),last=mine.length?mine[mine.length-1].k:-1;
+      r.querySelector('.ct').style.opacity=out(P(t,last<0?.5+i*.12:.5+last*sp+.2,.3))});
+    order.forEach(o=>{o.e.style.transform=`scale(${Math.max(0,back(P(t,.5+o.k*sp,.35)))})`})}}},
+};
+// 金の粉（ゆっくり上る）
+const dust=document.getElementById('dust');const DOTS=[];
+for(let i=0;i<18;i++){const e=document.createElement('div');e.className='dot';const r=3+(i*7)%6;e.style.width=e.style.height=r*2+'px';dust.appendChild(e);DOTS.push(e)}
+function drawDust(t){DOTS.forEach((e,i)=>{const x=(i*331+97)%1920+40*Math.sin(t*.35+i),y=1100-((t*16+i*173)%1180);e.style.left=x+'px';e.style.top=y+'px';e.style.opacity=.10+.12*((Math.sin(t*.8+i*1.7)+1)/2)})}
+async function setup(spec,dur,theme,data){
+  document.body.className=theme;DUR=dur;ZOOM=0;stage.innerHTML='';
+  CARD=CARDS[spec.type](spec,data||{});
+  // SVG の fill/stroke 属性では var() が効かないので style に移す
+  stage.querySelectorAll('[fill*="var("],[stroke*="var("]').forEach(e=>['fill','stroke'].forEach(a=>{const v=e.getAttribute(a);if(v&&v.includes('var(')){e.style[a]=v;e.removeAttribute(a)}}));
+  await document.fonts.ready;if(CARD.ready)await CARD.ready;
+  await document.fonts.load('800 60px JSerif');await document.fonts.load('800 60px JSans');
+  if(CARD.layout)CARD.layout();await draw(0);return true}
+async function draw(t){drawDust(t);document.getElementById('zoom').style.transform=`scale(${1+ZOOM*t/DUR})`;const r=CARD.draw(t);if(r&&r.then)await r;return true}
+</script></body></html>

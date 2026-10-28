@@ -67,5 +67,55 @@
  "_line_url": "LINE 公式アカウント（スピ開運）。UTAGE の流入経路を作るまでは全部の動画でこの1本（line_scenario.md）",
  "tokuten": {
   "A・C2": "tokuten/spi/tokuten_spi_AC2_<有効月>.png（pipeline/make_tokuten_spi.py。毎月第1日曜に作り直す）"
- }
+ },
+ "topic": "日本の暦（吉日・選日・行事・しきたり）と、その日付と由来",
+ "_topic": "2026-10-29：gate_images.py・gate_video.py が絵と画面を見る時の「何の動画か」（無いと仕事chの言い方になる）",
+ "tools": {
+  "pick": "pick_neta_spi.py",
+  "write": "write_script_spi.py",
+  "gate_script": "gate_script_spi.py",
+  "motion": "make_motion_psy.py",
+  "charts": null,
+  "build": "build_long_spi.py",
+  "thumb": "make_thumb_spi.py",
+  "short": null,
+  "short_upload": null,
+  "teaser": null
+ },
+ "_tools": "2026-10-29：run_daily.py の段ごとの道具（毎日の制作に入れるため）。null はその段を飛ばす。charts：表やカレンダーは動くカード（build_long_spi.py が描く）なので、別の段は無い。short・short_upload：make_short_spi.py は short.json（ショートの台本）と、本編を上げた後の video_id・公開日が要るので、本編と同じ流れでは作れない。ショートは別の流れで作る。teaser：千年こよみは予告ショートを本編の流れで作らない。motion：心理学chと同じ make_motion_psy.py（Lovart の無料モードの Kling。台本の \"motion\": true の場面の絵だけ）",
+ "stock_phase": "post",
+ "stock_goal": [
+  4,
+  2
+ ],
+ "_stock_goal": "2026-10-29：公開は週4本（月・水・金・日）。在庫は4本を目標に、2本以下なら1日に2本作る",
+ "publish_weekdays": [
+  0,
+  2,
+  4,
+  6
+ ],
+ "publish_time": "18:00",
+ "_publish": "2026-10-29：手順書 §13（月・水・金・日の 18:00）。schedule_long_spi.py の枠と同じ。日付のある回（型A・C2）は、台本の pub_date（pick_neta_spi.py が history/spi/pub_plan.json に書いた日）を過ぎて出すと意味が無いので、予約する道具は pub_date を守ること",
+ "build": {
+  "tempo": 1.25,
+  "gap": 0.25,
+  "lufs": -14,
+  "height": 1440,
+  "font_size": 72,
+  "maxlen": 22,
+  "bgm": "channels/spi/assets/bgm/koyomi_bgm_02_amacha3.wav",
+  "bgm_volume": 0.03,
+  "card_theme": "koyomi",
+  "clips": "images/_v3",
+  "par": 3,
+  "_決めた理由": "2026-10-29：001 v3（手元の long_koyomi_v2.py・motion_cards_v4.py＋v8.html）と同じ値。速さ1.25・間0.25（記録.md：303字/分）、BGM 0.03（声との差 約27dB）、−14 LUFS、1440p、字幕 Noto Sans JP 72・1行22字・語り手は和紙の帯に墨の字。BGM の wav は甘茶の音楽工房の曲で、規約が「音楽だけの配布」を禁じるので公開リポジトリには入れない。クラウドでは環境変数 SPI_BGM（wav か m4a の場所）でも渡せる。どちらも無いと build_long_spi.py は止まる（BGM 無しで出さない）"
+ },
+ "image_rules_en": {
+  "with_chars": "The people in this picture are only the attached reference characters. Keep each one's face, hair and usual clothes exactly as in the reference sheet. Other people, if the scene needs them, are small, in the background and seen from behind.",
+  "without_chars": "Any people are ordinary Japanese people of today, small in the frame or seen from behind; no close-up faces.",
+  "nobody": "No people at all in this picture: only places, objects, plants, sky and light.",
+  "always": "Soft Japanese watercolor on washi paper texture, vermilion, muted gold and unbleached cream palette, gentle natural light, seasonal everyday life in Japan. No readable letters, numbers or signs anywhere; no real shrine name plaques or crests; no real priests or monks; no faces resembling famous characters; no close-up of Buddha statue faces. Keep the bottom 8% of the picture calm and plain."
+ },
+ "_image_rules_en": "2026-10-29：手順書 §6 の画風と描かない物（make_images_lovart.py がカットごとに1文足す）。主役は characters/characters.json の和枝・博・美緒"
 }
