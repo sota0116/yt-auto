@@ -6,11 +6,14 @@
   "gate_script",
   "voice",
   "reading",
-  "images"
+  "images",
+  "motion",
+  "gate_images",
+  "build"
  ],
  "started": "2026-10-28T09:11:09+09:00",
- "tries": 0,
- "code": "70aae05a4f4d",
- "stage": "motion",
- "updated": "2026-10-28T18:21:12+09:00"
+ "tries": 1,
+ "code": "4207214b36cd",
+ "stage": "gate_video",
+ "updated": "2026-10-29T03:43:26+09:00"
 }
