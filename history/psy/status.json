@@ -9,11 +9,12 @@
   "images",
   "motion",
   "gate_images",
-  "build"
+  "build",
+  "yomi"
  ],
  "started": "2026-10-28T09:11:09+09:00",
  "tries": 1,
- "code": "4207214b36cd",
+ "code": "bf7bd05635ab",
  "stage": "gate_video",
- "updated": "2026-10-29T03:43:26+09:00"
+ "updated": "2026-10-29T04:09:09+09:00"
 }
