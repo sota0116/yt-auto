@@ -20,18 +20,32 @@ def recent(ch, n=9):
     7日後が無ければ72時間後。直す所＝見る人が離れた所。毎日の PDCA：前の回の数字を次の回の書き手が読む。2026-10-27）"""
     p = os.path.join(ROOT, "history", ch, "metrics.json")
     metrics = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    p = os.path.join(ROOT, "history", ch, "shorts_metrics.json")
+    shorts = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
     out = []
     for name in ("uploaded.json", "produced.json"):
         p = os.path.join(ROOT, "history", ch, name)
         for x in json.load(open(p, encoding="utf-8")) if os.path.exists(p) else []:
-            if x.get("work") and not any(o["work"] == x["work"] for o in out):
+            if not x.get("work"):
+                continue
+            o = next((o for o in out if o["work"] == x["work"]), None)
+            if o is None:
                 out.append({"work": x["work"], "area": x.get("type"), "title": x.get("title"), "chapters": x.get("chapters"), "studies": x.get("studies")})
+            else:  # uploaded.json には章と研究が無い。produced.json の分で埋める（2026-10-28 まで研究が書き手に届いていなかった）
+                for k, v in (("chapters", x.get("chapters")), ("studies", x.get("studies"))):
+                    o[k] = o.get(k) or v
     for o in out:
         m = metrics.get(o["work"], {})
         row = m.get("d7") if (m.get("d7") or {}).get("views") is not None else m.get("h72")
         if row and row.get("views") is not None:
             o["数字"] = {"いつ": "7日後" if row is m.get("d7") else "72時間後",
                         **{k: row.get(k) for k in ("views", "impressions", "ctr", "averageViewPercentage", "subscribersGained", "直す所") if row.get(k) is not None}}
+        # ショートの数字（shorts_watch.py の shorts_metrics.json）。つかみの文と上の帯の字ごとに、どれが見られたかを次のショートで比べる（2026-10-28）
+        sm = shorts.get(o["work"], {})
+        srow = sm.get("d7") if (sm.get("d7") or {}).get("views") is not None else sm.get("h72")
+        if srow and srow.get("views") is not None:
+            o["ショートの数字"] = {"いつ": "7日後" if srow is sm.get("d7") else "72時間後", "つかみ": sm.get("hook"), "帯": sm.get("band"),
+                               **{k: srow.get(k) for k in ("views", "averageViewPercentage", "averageViewDuration", "subscribersGained") if srow.get(k) is not None}}
     return out[-n:]
 
 
