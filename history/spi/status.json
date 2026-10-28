@@ -1,0 +1,19 @@
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/003_a_shichigosan_2026",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading",
+  "images",
+  "motion",
+  "gate_images"
+ ],
+ "started": "2026-10-29T03:44:54+09:00",
+ "tries": 1,
+ "code": "bf7bd05635ab",
+ "stage": "build",
+ "updated": "2026-10-29T04:30:54+09:00"
+}

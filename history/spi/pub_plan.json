@@ -13,5 +13,19 @@
   "sub_copy": 2,
   "made": "2026-10-28",
   "_手元": "手で作っている回（C:\\yt-auto\\channels\\spi\\videos\\002_a1_torinoichi_1107 の script.json の値）。2026-10-29 に pick_neta_spi.py を作った時に写した"
+ },
+ "003_a_shichigosan_2026": {
+  "neta_id": "a_shichigosan_2026",
+  "type": "A",
+  "frame": "A-2",
+  "pub_date": "2026-11-06",
+  "window": [
+   "2026-11-05",
+   "2026-11-12"
+  ],
+  "hook_type": "場面",
+  "line_copy": 3,
+  "sub_copy": 3,
+  "made": "2026-10-29"
  }
 }
