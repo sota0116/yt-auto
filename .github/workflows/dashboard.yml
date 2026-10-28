@@ -2,7 +2,7 @@
 # ・YouTube の公開ページから6チャンネルの登録者数・再生数を取り、history（在庫・予約・週報）と合わせて stats.json を作る
 # ・stats.json は dashboard の枝に1コミットだけ置く（毎回作り直して force push。main の記録は増やさない）
 # ・クラウドの見回り役（毎時0分）がこの枝から読んで司令室（claude.ai の管理ページ）へ送る。PC を閉じていても回る
-# ・鍵は使わない（公開ページを読むだけ）。作り方の元は OneDrive\ClaudeBackup\tools\youtube\dashboard_stats_v2.py
+# ・鍵は使わない（公開ページを読むだけ）。作り方の元は OneDrive\ClaudeBackup\tools\youtube\dashboard_stats_v3.py
 name: dashboard
 on:
   schedule:

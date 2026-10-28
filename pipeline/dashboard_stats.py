@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""YouTube司令室（claude.ai の管理ページ）に載せる「数字」を作る（v2・2026-10-28。6チャンネルの ID を固定し、--schedule を省けるように）。
+"""YouTube司令室（claude.ai の管理ページ）に載せる「数字」を作る（v3・2026-10-28。回ごとに題名・チャンネル・初めて見つけた時刻を足した）。
+
+v3 の足し物：videos[id] に ch（チャンネル）・t（題名）・f（l＝横動画／s＝ショート）・seen（初めて見つけた時刻。記録を始める前からあった回は null）。
+seenSince は記録を始めた時刻。司令室の「新しく公開された動画」は seen から作る（予約一覧に無い回、徳次郎の手動公開も拾える）。
+読めなかったチャンネルは前回の回をそのまま残す（次に読めた時に、全部が新しい回に見えないように）。
 
 予約とサムネは dashboard_sync_v*.py、数字はこのスクリプト。
 PC を閉じていても動くよう、yt-auto の GitHub Actions（dashboard.yml）で毎時回し、stats.json を dashboard の枝に置く。
@@ -9,7 +13,7 @@ PC を閉じていても動くよう、yt-auto の GitHub Actions（dashboard.ym
   - 仕組みの具合：yt-auto の history（在庫・予約・見張り・制作中の段階・週報の制作費と期限）
 
 使い方:
-  python -X utf8 dashboard_stats_v2.py --prev stats_prev.json --out stats.json --yt-auto . --source actions
+  python -X utf8 dashboard_stats_v3.py --prev stats_prev.json --out stats.json --yt-auto . --source actions
     --schedule : board/schedule の中身（省ける。KNOWN_IDS に無いチャンネルの ID を、公開済みの回から拾う時だけ使う）
     --prev     : 前回の board/stats の中身（無ければ省く。初回は前日比が空になる）
     --yt-auto  : yt-auto の場所（history を読む）。--git-ref origin/main を足すと、その枝の中身を読む（PC の手元が古い時）
@@ -167,11 +171,20 @@ def main():
     prev = prev or {}
     now = datetime.now(JST)
     today = now.date().isoformat()
+    now_iso = now.isoformat(timespec="minutes")
+    prev_videos = prev.get("videos") or {}
+    seen_since = prev.get("seenSince")  # 無ければ今回から記録を始める（今ある回は全部「前からあった回」）
     repo = Repo(args.yt_auto, args.git_ref)
 
     by_ch = {ch: [v for v in sched.get("videos") or [] if v.get("ch") == ch] for ch in CHANNELS}
     vid_hist = prev.get("vidHist") or {}
     channels, videos, errors = {}, {}, []
+
+    def keep(ch):
+        """読めなかったチャンネルの回は前回のまま残す"""
+        for vid, pv in prev_videos.items():
+            if pv.get("ch") == ch:
+                videos[vid] = pv
 
     for ch in CHANNELS:
         pc = (prev.get("channels") or {}).get(ch) or {}
@@ -185,6 +198,7 @@ def main():
         if not cid:
             errors.append(f"{ch}: チャンネルが分からない（公開済みの回が無い）")
             channels[ch] = pc
+            keep(ch)
             continue
         subs, longs = tab(cid, "videos")
         subs2, shorts = tab(cid, "shorts")
@@ -193,6 +207,7 @@ def main():
         if not rows and subs is None:
             errors.append(f"{ch}: 公開ページを読めなかった")
             channels[ch] = pc
+            keep(ch)
             continue
         total = sum(r["views"] or 0 for r in rows)
 
@@ -208,7 +223,9 @@ def main():
             h[today] = r["views"]
             vid_hist[r["id"]] = dict(sorted(h.items())[-VID_DAYS:])
             d1, d7 = diff_since(vid_hist[r["id"]], 1, today), diff_since(vid_hist[r["id"]], 7, today)
-            videos[r["id"]] = {"v": r["views"], "d1": d1, "d7": d7}
+            pv = prev_videos.get(r["id"])
+            seen = pv.get("seen") if pv else (now_iso if seen_since else None)
+            videos[r["id"]] = {"v": r["views"], "d1": d1, "d7": d7, "ch": ch, "t": r["title"], "f": "s" if r["fmt"] == "short" else "l", "seen": seen}
             tops.append({"id": r["id"], "title": r["title"], "fmt": r["fmt"], "views": r["views"], "d1": d1})
         tops.sort(key=lambda t: ((t["d1"] or 0), (t["views"] or 0)), reverse=True)
 
@@ -236,6 +253,7 @@ def main():
         "source": args.source,
         "channels": channels,
         "videos": videos,
+        "seenSince": seen_since or now_iso,
         "vidHist": vid_hist,
         "pipeline": pipeline,
         "weekly": weekly,
