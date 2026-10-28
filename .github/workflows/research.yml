@@ -3,6 +3,7 @@
 # ・書くのは history/<ch>/competitors/ だけ（集めた物・競合メモ・その日付の写し）。サムネは _research/ に置き、commit しない
 # ・心理学ch（psy。2026-10-27 から）は、ネタ帳の残りが少ない時に channels/psy/ネタ帳.json にも候補を足す（research.py の add_neta）
 # ・PAUSED の間も動かす（読むだけなので）
+# ・調べたあと、仕事ch の毎日の学び（learn_job.py。history/job/学び.md）も書く（2026-10-28 本人「毎日レベル上げてね」）
 name: research
 on:
   schedule:
@@ -20,7 +21,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-24.04
-    timeout-minutes: 75   # 2チャンネル分（Claude のまとめが1つ最大30分）
+    timeout-minutes: 100  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）
     env:
       TZ: Asia/Tokyo
       CHANNELS: job psy   # スピ（spi）は channels/spi/competitors.json を作ったら足す（例：job spi psy）
@@ -55,6 +56,12 @@ jobs:
           bad=0
           for ch in $CHANNELS; do python -X utf8 pipeline/research.py "$ch" || bad=1; done
           exit $bad
+      - name: 学ぶ（仕事ch。うちの回の数字から、次の回で試すことを1つ決める。learn_job.py）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: python -X utf8 pipeline/learn_job.py job
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |

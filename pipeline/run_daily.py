@@ -164,13 +164,19 @@ def record(ch, work):
     f = jload(os.path.join(work, "facts.json"), {})
     up = jload(os.path.join(work, "uploaded.json"), {})
     chp = os.path.join(work, "chapters.txt")
-    keep = ("hook_type", "sub_copy", "line_copy", "name_copy", "title", "titles", "thumb_text", "competitor_note")
+    keep = ("hook_type", "sub_copy", "line_copy", "name_copy", "title", "titles", "thumb_text", "competitor_note", "learn_note")
     rec = {"work": os.path.basename(work), "type": n.get("type") or s.get("type"), "frame": n.get("frame") or s.get("frame"),
            "neta_id": n.get("id"), "jobs": n.get("jobs") or (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収", []),  # 型D の順位は説の並び（list）
            "made": now().date().isoformat(), **{k: s.get(k) for k in keep}, "chapters": open(chp, encoding="utf-8").read().splitlines() if os.path.exists(chp) else [],
            "video_id": up.get("video_id"), "回した理由": n.get("回した理由")}
     if isinstance(f.get("studies"), list):  # 心理学ch：使った研究（次の回の書き手が同じ研究を中心にしないように）
         rec["studies"] = [x.get("cite") for x in f["studies"]]
+    g = jload(os.path.join(work, "gate_script.json"), {}).get("続きを見たくなるか") or {}
+    if isinstance(g.get("最初の30秒"), dict):  # 台本ゲートの点（いちばん早い数字。learn_job.py が毎日の学びに使う。作業フォルダは git に入らないのでここに残す）
+        ch_pts = sorted(g.get("章") or [], key=lambda c: c.get("点", 10))
+        rec["台本ゲートの点"] = {"最初の30秒": g["最初の30秒"].get("点"), "章": [c.get("点") for c in g.get("章") or []],
+                            "山場": (g.get("山場") or {}).get("点"),
+                            "低い所の直すなら": [str(x.get("直すなら", ""))[:120] for x in [g["最初の30秒"]] + ch_pts[:2] if x.get("点", 10) < 8]}
     if s.get("short"):  # 心理学ch：ショートを上げられたか（週報が数える）
         rec["short_video_id"] = jload(os.path.join(work, "short", "uploaded.json"), {}).get("video_id") or "上げられなかった"
     p = hpath(ch, "produced.json")

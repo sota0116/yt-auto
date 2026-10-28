@@ -77,7 +77,7 @@ def gather(chs):
             "在庫": sum(1 for e in up if not e.get("published") and not e.get("missing")),
             "来週の予約が無い日": [x for x in nxt if x not in booked],
             "今月の制作費_円": cost.get(now().strftime("%Y-%m"), 0),
-            "今週作った回": [{k: p.get(k) for k in ("work", "type", "frame", "title", "回した理由", "competitor_note")} for p in prod if str(p.get("made", "")) >= week_ago],
+            "今週作った回": [{k: p.get(k) for k in ("work", "type", "frame", "title", "回した理由", "competitor_note", "learn_note", "台本ゲートの点")} for p in prod if str(p.get("made", "")) >= week_ago],
             "最後の毎日の実行": {k: last.get(k) for k in ("started", "made", "stopped", "飛ばした回")},
             "型ごと": per_type(metrics),
             "回ごとの数字": metrics,
@@ -106,6 +106,8 @@ def prompt(path, chs):
     docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs)
     memos = "\n".join(f"- {rel(m)}（{ch} の競合メモ。research.py が毎日書く。§7〜9 の提案を 6 の改善案の材料にする）"
                       for ch in chs for m in [os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")] if os.path.exists(m))
+    if "job" in chs and os.path.exists(os.path.join(ROOT, "history", "job", "学び.md")):  # learn_job.py が毎日書く。6 の改善案は「続ける」になった試しを手順書に移す案にしてよい
+        memos += f"\n- {rel(os.path.join(ROOT, 'history', 'job', '学び.md'))}（job の毎日の学び。learn_job.py が書く。「続ける」になった試しを手順書に移す案を 6 の材料にする）"
     learn = os.path.join(ROOT, "history", "psy", "学び.md")
     psy = "" if "psy" not in chs else f"""
 ## 心理学ch（psy）について

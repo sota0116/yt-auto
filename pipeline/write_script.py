@@ -5,6 +5,7 @@
 # ・Claude は書いたあと check_job_script.py を自分で回し、注意が0件になるまで直す。最後にここでもう一度回して確かめる
 # ・--fix：gate_script.json（台本ゲートの不合格）を読ませて、不合格の所だけ直させる（設計書 §5④ 書き直しは2回まで）
 # ・競合メモ（research.py が毎日書く）も読ませ、試すことを1つ以上取り入れさせる（何を取り入れたかは competitor_note）
+# ・学び（learn_job.py が毎日書く。うちの回の数字から）も読ませ、「次の回で試すこと」を1つやらせる（何をやったかは learn_note）
 # ・モデルは環境変数 CLAUDE_WRITER_MODEL（無ければ opus）。調べものが要る型（B・C・D）はネット検索も許す
 import argparse, json, os, shutil, subprocess, sys
 
@@ -13,6 +14,7 @@ DOCS = os.environ.get("YT_DOCS_DIR", r"C:\Users\koneb\OneDrive\YouTube自動チ�
 SECRET_ENV = ("YT_SECRETS_DIR", "GEMINI_API_KEY", "ESTAT_APP_ID", "OPENAI_API_KEY", "UTAGE_API_KEY", "LOVART_ACCESS_KEY",
               "LOVART_SECRET_KEY", "YT_CLIENT_SECRET", "YT_TOKEN_JOB", "YT_TOKEN_SPI")
 MEMO = lambda ch: os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")  # research.py が毎日書く
+LEARN = lambda ch: os.path.join(ROOT, "history", ch, "学び.md")  # learn_job.py が毎日書く（うちの回の数字から）
 GOLDEN = {"job": os.path.join(ROOT, "channels", "job", "videos", "001_a4_untenshu_fukushi", "script.json")}
 
 
@@ -51,6 +53,7 @@ def prompt(work, ch, fix):
 6. {rel(os.path.join(ROOT, 'channels', ch, '禁止表現.txt'))}（使わない言葉。台本ゲートでも照らす）
 7. {rel(MEMO(ch)) if os.path.exists(MEMO(ch)) else '（競合メモはまだ無い）'}（毎日の競合リサーチのまとめ。手順書より下の扱い。借りるのは題材の傾向と型だけ）
 8. {rel(os.path.join(ROOT, 'channels', ch, 'characters', 'characters.json'))}（場面の絵に出す決まった登場人物。手順書 §5）
+9. {rel(LEARN(ch)) if os.path.exists(LEARN(ch)) else '（学びはまだ無い）'}（うちの回の数字から毎日書く学び。手順書より下、競合メモより上の扱い）
 
 ## 直近の回（同じ番号の文・同じつかみの型・同じ骨組みが続かないようにする材料）
 {json.dumps(recent(ch), ensure_ascii=False, indent=1)}
@@ -74,6 +77,8 @@ def prompt(work, ch, fix):
 - 図のカットは chart に、facts.json の値を指す形で書く（見本の chart の kind と項目名を使う）。
 - 競合メモがある時は「うちの次の回で試すこと」から、この回の型に合う物を1つ以上、手順書の決まりの中で取り入れる（タイトル3案・サムネの文字・概要欄・台本の構成のどれか）。
   手順書とぶつかる案は採らない。競合の文・言い回しは写さない。取り入れた物を script.json の competitor_note に1行で書く（無ければ「なし（理由）」）。
+- 学びがある時は「分かったこと」を全部守り、「次の回で試すこと」を、この回で手順書の決まりの中でやる（競合メモと同じ所を変える時は、学びを先にする）。
+  やった事を script.json の learn_note に1行で書く（「試す_10-29：」のように学びの印から始める。この回の型でできない時は「なし（理由）」）。
 - 概要欄 desc の LINE のリンクは {{LINE_URL}}、チャプターは {{CHAPTERS}} と書く（あとでプログラムが置き換える）。
 - {'出典が要る事実は WebSearch・WebFetch で公的な一次資料を確かめ、facts.json の「出典」に URL と取得日を足してよい。数字そのものは facts.json の値だけを使う。' if research else 'ネットは使わない（この型は facts.json の値だけで書く）。'}
 
