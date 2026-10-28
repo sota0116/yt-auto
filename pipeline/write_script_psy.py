@@ -9,7 +9,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK  # noqa: E402
 
 GOLDEN = os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
@@ -55,7 +55,8 @@ def extra_docs(ch):
     for p, what in ((os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md"),
                      "競合メモ（毎日の競合リサーチ。§3〜7 の型と「次の回で試すこと」を、手順書の決まりの中で1つ取り入れてよい。文・題は写さない）"),
                     (os.path.join(ROOT, "history", ch, "学び.md"),
-                     "学び（うちの回の数字から週報が書いた物。手順書の決まりの中で守る。手順書とぶつかる時は手順書が勝つ）")):
+                     "学び（うちの回の数字から週報が書いた物。手順書の決まりの中で守る。手順書とぶつかる時は手順書が勝つ）"),
+                    (levelup(ch), "改善ログ（作るたびに1行ずつ足す記録。いちばん下の「次に上げること」をこの回に入れる）")):
         if os.path.exists(p):
             out.append((p, what))
     return out
@@ -98,6 +99,7 @@ def prompt(work, ch, fix):
    どちらも NG が0件になるまで直す（注意は、直せる物は直す）。
 5. 最後に、語りの字数・カット数・章の名前・使った研究（key と cite）・登録の呼びかけの位置（%）・ショートの字数とカット数を1行ずつ書いて終える。
 
+{LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 夜ひとりの時間に、お茶を飲みながら耳で聞く60代の女性として10点満点。最初の30秒が7点以上、全部の章が5点以上で合格。
 - 最初の30秒は、見る人の毎日の1場面の小さな謎で始める。各章の終わりの1文で、次を聞きたくなる引きを作る。
@@ -135,6 +137,7 @@ def main():
     r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(work, a.ch, a.fix), capture_output=True, text=True, encoding="utf-8", timeout=5400)
     log = os.path.join(work, "_write.log")
     open(log, "a", encoding="utf-8").write(r.stdout + "\n" + r.stderr + "\n")
+    out = {}
     try:
         out = json.loads(r.stdout)
         print(out.get("result", "")[-1500:])
@@ -144,6 +147,8 @@ def main():
     sp = os.path.join(work, "script.json")
     if r.returncode != 0 or not os.path.exists(sp):
         sys.exit("【止まりました】台本を書けませんでした（_write.log を見る）")
+    if not a.fix:
+        levelup_add(a.ch, work, out.get("result", ""))
     # type は area（アップの記録 uploaded.json の type になり、見張りと週報が area ごとに数字を比べる）
     s = json.load(open(sp, encoding="utf-8"))
     area = json.load(open(os.path.join(work, "neta.json"), encoding="utf-8")).get("area")

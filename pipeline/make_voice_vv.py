@@ -7,6 +7,10 @@
 # ・声のキャラ・速さ・高さは profile.json の voicevox。キャラは名前とスタイル名で指定し、番号はエンジンに聞いて決める
 # ・クレジット（キャラの規約で必須）を voice\_credit.txt に書く。upload_job.py が説明文の最後に足す
 # ・作ってある声は飛ばす。読み間違えやすい語は、カットの tts_text に読みを書く
+# ・チャンネル全体で読み間違える語は channels\<ch>\yomi.json に書く（2026-10-27 から。千年こよみ001で「重なり」を「じゅうなり」と読んだ）。
+#   dict はエンジンのユーザー辞書に登録（言葉の区切りとアクセントも直る）、replace は声にする前の文だけを置き換える（字幕はそのまま）。
+#   GitHub Actions のエンジンは毎回まっさらなので、作る前に毎回登録する
+#   python -X utf8 pipeline\make_voice_vv.py kana <作業フォルダ> --ch spi   … 全カットの読みをカナで出す（読み間違いの点検。声は作らない）
 import argparse, io, json, os, sys, urllib.error, urllib.parse, urllib.request, wave
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +41,39 @@ def speaker_id(name, style):
     sys.exit(f"【止まりました】VOICEVOX に {name} がいません（エンジンの版を確かめる）")
 
 
+def yomi(ch):
+    """channels/<ch>/yomi.json の dict をエンジンに登録し、replace の表を返す（無ければ何もしない）"""
+    p = os.path.join(ROOT, "channels", ch, "yomi.json")
+    if not os.path.exists(p):
+        return {}
+    y = json.load(open(p, encoding="utf-8"))
+    have = {w["surface"]: w for w in json.loads(call("/user_dict")).values()}
+    n = 0
+    for w in y.get("dict", []):
+        # エンジンは表記を全角にして持つ。漢字とカナだけの語なので、そのまま比べられる
+        old = have.get(w["surface"])
+        if old and old["pronunciation"] == w["kana"] and old["accent_type"] == w["accent"] and old.get("priority") == 10:
+            continue
+        # 優先度8では七五三・赤口がエンジンの元の読みに負けた（2026-10-27）。10にする
+        q = urllib.parse.urlencode({"surface": w["surface"], "pronunciation": w["kana"], "accent_type": w["accent"],
+                                    "word_type": "PROPER_NOUN", "priority": 10})
+        if old:  # 読みかアクセントが違う時は書き換える
+            uid = next(k for k, v in json.loads(call("/user_dict")).items() if v["surface"] == w["surface"])
+            urllib.request.urlopen(urllib.request.Request(f"{URL}/user_dict_word/{uid}?{q}", method="PUT"), timeout=60)
+        else:
+            call("/user_dict_word?" + q)
+        n += 1
+    if n:
+        print(f"読みの表：{n}語をエンジンの辞書に入れました（{p}）", flush=True)
+    return y.get("replace", {})
+
+
+def say(text, rep):
+    for a, b in rep.items():
+        text = text.replace(a, b)
+    return text
+
+
 def synth(text, sid, v, slow=1.0):
     q = json.loads(call("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": sid})))
     q.update({"speedScale": v.get("speed", 1.0) * slow, "pitchScale": v.get("pitch", 0.0),
@@ -54,6 +91,7 @@ def make(work, ch, force, only):
     p = profile(ch)
     vv = p["voicevox"]
     sids = {w: speaker_id(vv[w]["name"], vv[w]["style"]) for w in ("narrator", "listener") if w in vv}
+    rep = yomi(ch)
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
     only = set(filter(None, only.split(",")))
     os.makedirs(os.path.join(work, "voice"), exist_ok=True)
@@ -63,7 +101,8 @@ def make(work, ch, force, only):
         if not c.get("narration") or (only and c["id"] not in only) or (not force and os.path.exists(f)):
             continue
         who = c.get("speaker", "narrator")
-        text = c.get("tts_text") or c["narration"]
+        # tts_text にも読みの表を通す（ひらがなで書いた語を漢字に戻して辞書を効かせる。001で「てんしゃにち」が途中で切れた）
+        text = say(c.get("tts_text") or c["narration"], rep)
         # 山場とクイズは少しだけゆっくり（Gemini 版の「数字の所は一段ゆっくり」の代わり）
         data = synth(text, sids[who], vv[who], vv.get("slow_strong", 0.94) if (c.get("strong") or c.get("quiz")) else 1.0)
         open(f, "wb").write(data)
@@ -80,23 +119,38 @@ def make(work, ch, force, only):
     print(f"声：{len(log)}カット・合計{sec / 60:.1f}分・VOICEVOX（0円）", flush=True)
 
 
+def kana(work, ch):
+    """全カットの読みをカナで出す（声は作らない）。読みの表を入れた後の読みになる"""
+    vv = profile(ch)["voicevox"]
+    rep = yomi(ch)
+    sid = speaker_id(vv["narrator"]["name"], vv["narrator"]["style"])
+    s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
+    for c in s["cuts"]:
+        if not c.get("narration"):
+            continue
+        q = json.loads(call("/audio_query?" + urllib.parse.urlencode({"text": say(c.get("tts_text") or c["narration"], rep), "speaker": sid})))
+        print(c["id"], c["narration"], "\n   ", "/".join("".join(m["text"] for m in ap["moras"]) for ap in q["accent_phrases"]), flush=True)
+
+
 def audition(ch):
     p = profile(ch)
     vv = p["voicevox"]
+    rep = yomi(ch)
     out = os.path.join(ROOT, "channels", ch, "voice_audition_vv")
     os.makedirs(out, exist_ok=True)
-    lines = {"narrator": "年収約453万円で1位の仕事が、時給に直すと、6つの中で最下位に落ちます。そして1位は、バス運転手。年収は約453万円です。",
-             "listener": "えっ、年収は1位だったのに。それ、うちの部署もみんなやってます。"}
+    lines = vv.get("audition_lines") or {
+        "narrator": "年収約453万円で1位の仕事が、時給に直すと、6つの中で最下位に落ちます。そして1位は、バス運転手。年収は約453万円です。",
+        "listener": "えっ、年収は1位だったのに。それ、うちの部署もみんなやってます。"}
     for who, cands in vv["candidates"].items():
         for name, style in cands:
-            data = synth(lines[who], speaker_id(name, style), vv[who])
-            open(os.path.join(out, f"{who}_{name}_{style}.wav"), "wb").write(data)
+            data = synth(say(lines[who], rep), speaker_id(name, style), vv.get(who, {}))
+            open(os.path.join(out, f"{who}_{name.replace('/', '_')}_{style}.wav"), "wb").write(data)  # 小夜/SAYO の「/」
             print(who, name, style, f"{secs(data):.1f}秒", flush=True)
 
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("cmd", choices=["audition", "make"])
+    a.add_argument("cmd", choices=["audition", "make", "kana"])
     a.add_argument("target")
     a.add_argument("--ch", default="job")
     a.add_argument("--force", action="store_true")
@@ -104,6 +158,8 @@ def main():
     a = a.parse_args()
     if a.cmd == "audition":
         audition(a.target)
+    elif a.cmd == "kana":
+        kana(a.target, a.ch)
     else:
         make(a.target, a.ch, a.force, a.only)
 

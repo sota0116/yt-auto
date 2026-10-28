@@ -1,0 +1,21 @@
+{
+  "_説明": "千年こよみの登場人物（絵だけに出る人。名前は声では言わない。手順書 §6）。絵を作るときに設定画（sheet）を添付して、顔・髪・服を全部の回でそろえる。make_images_lovart_chars.py が読む。季節で上着を変えるのはよいが、顔・髪・いつもの服の色はそろえる",
+  "style_en": "Soft Japanese watercolor illustration on washi paper texture: gentle thin ink outlines, transparent layered washes, a palette of unbleached cream, vermilion red and muted gold with soft indigo accents, soft natural light, seasonal everyday life in Japan. Calm, warm and quiet, never glossy, never 3D, never photographic.",
+  "chars": {
+    "kazue": {
+      "name": "和枝（58歳・主役。暦を見て吉日に印をつける人）",
+      "sheet": "kazue.png",
+      "desc_en": "Kazue, a 58-year-old Japanese woman: medium height, soft oval face with gentle eyes and faint smile lines, chin-length dark brown bob with a few grey strands and a side part, wears a muted vermilion knit cardigan over a cream blouse and dark indigo straight trousers."
+    },
+    "hiroshi": {
+      "name": "博（63歳・和枝の夫）",
+      "sheet": "hiroshi.png",
+      "desc_en": "Hiroshi, a 63-year-old Japanese man: tall and slightly stooped, long calm face, short grey hair combed back, round tortoiseshell glasses, wears a moss green crew-neck sweater over a white collared shirt and grey trousers."
+    },
+    "mio": {
+      "name": "美緒（32歳・和枝の娘）",
+      "sheet": "mio.png",
+      "desc_en": "Mio, a 32-year-old Japanese woman: slim, bright round face, long straight black hair tied in a low ponytail, wears a light mustard yellow sweater and a long beige skirt."
+    }
+  }
+}

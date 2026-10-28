@@ -12,7 +12,8 @@ CLIENT = os.path.join(SEC, "client_secret.json")
 # ドライブは設計書の「道2」でしか使わないので、要る時に別のログインにする
 SCOPES = " ".join("https://www.googleapis.com/auth/" + s for s in
                   ["youtube", "youtube.force-ssl", "yt-analytics.readonly"])
-NAMES = {"job": "仕事と職場（あの仕事の年収と一生）", "spi": "スピ開運（千年こよみ）", "psy": "しずくの心理学"}
+NAMES = {"job": "仕事と職場（あの仕事の年収と一生）", "spi": "スピ開運（千年こよみ）", "psy": "しずくの心理学", "okinu": "金運おきぬ", "nihongi": "アナザー日本紀（YouTube 上の元の名前は 仕事のすうじ図鑑）",
+         "tokujiro": "徳次郎"}
 
 
 def token_path(ch):

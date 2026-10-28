@@ -10,6 +10,9 @@
 #   週報には「データ待ちで飛ばしているネタ帳の行」を出す）
 # ・心理学ch（psy。2026-10-27）：型の代わりに area（人づきあい・ひとりの時間・眠りと夜・幸せの心理）で比べる。ショートの数字（shorts_watch.py）も集める。
 #   数字から分かったことを history\psy\学び.md に書かせる。毎日の台本の書き手（write_script_psy.py）がこれを読む（手順書は変えない。手順書を変える案は週報に出して持ち主が決める）
+# ・千年こよみ（spi。2026-10-28 本人「どんどん作ってどんどん数値分析してどんどんPDCA回していけるように」）：psy と同じく
+#   history\spi\学び.md を書かせる。台本を書く時（Claude Code が手で作る。手順書 §14）に必ず読む。
+#   ショートは種類（kind：teaser 予告・after 切り出し・solo 単独）ごとと、枠の時刻（11:15・19:15）ごとに比べる
 import argparse, datetime, json, os, re, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, ping
@@ -64,7 +67,16 @@ def gather(chs):
         booked = {(e.get("publish_at") or "")[:10] for e in up if not e.get("missing")}
         board = jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), [])
         used = {p.get("neta_id") for p in prod}
-        if ch == "psy":  # 研究は書く段が調べるので「データ待ち」は無い。ネタ帳は競合リサーチが足す
+        if ch == "spi":  # 手で作る。ネタ帳は手順書 §2 の行事・暦の日付から選ぶ
+            sm = h(ch, "shorts_metrics.json", {})
+            su = h(ch, "shorts_uploaded.json", [])
+            by_kind = per_type({k: {**v, "type": v.get("kind") or "after"} for k, v in sm.items()})
+            by_slot = per_type({k: {**v, "type": v.get("publish_slot") or "?"} for k, v in sm.items()})
+            extra = {"ショート": {"上げた本数": sum(1 for x in su if not x.get("retired") and not x.get("missing")),
+                                "来週の枠（11:15・19:15）で空いている数": 14 - sum(1 for x in su if not x.get("missing") and not x.get("retired")
+                                                                   and (x.get("publish_at") or "")[:10] in nxt),
+                                "種類ごと": by_kind, "時刻ごと": by_slot, "回ごとの数字": sm}}
+        elif ch == "psy":  # 研究は書く段が調べるので「データ待ち」は無い。ネタ帳は競合リサーチが足す
             sm = h(ch, "shorts_metrics.json", {})
             extra = {"ネタ帳": {"残り": sum(1 for r in board if r["id"] not in used and not r.get("hold")),
                                "競合リサーチが足した行": [r["title"] for r in board if r.get("from") == "競合リサーチ" and r["id"] not in used]},
@@ -109,6 +121,18 @@ def prompt(path, chs):
     if "job" in chs and os.path.exists(os.path.join(ROOT, "history", "job", "学び.md")):  # learn_job.py が毎日書く。6 の改善案は「続ける」になった試しを手順書に移す案にしてよい
         memos += f"\n- {rel(os.path.join(ROOT, 'history', 'job', '学び.md'))}（job の毎日の学び。learn_job.py が書く。「続ける」になった試しを手順書に移す案を 6 の材料にする）"
     learn = os.path.join(ROOT, "history", "psy", "学び.md")
+    learn_spi = os.path.join(ROOT, "history", "spi", "学び.md")
+    spi = "" if "spi" not in chs else f"""
+## 千年こよみ（spi）について
+- 本編は手で作る（週3〜4本。月・水・金・日 18:00）。判定会（2）は spi を別の1行で書く。型D と「早い見直し」は job だけ。
+- 4 の表のあとに、ショートの種類ごと（teaser 予告・after 切り出し・solo 単独）と時刻ごと（11:15・19:15）の数字（本数・平均再生・平均視聴率・登録）を書く。
+  つかみの文（hook）と上の帯の字（band）ごとの違いも書く（2本以上ある時だけ比べる）。来週の枠の空きが多い時は「今週あなたがやること」ではなく 7 に書く（作るのは Claude）。
+- 最後に {rel(learn_spi)} を書き直す（30行まで。Claude Code が千年こよみの台本・ショートを書く前に毎回読む。手順書は変えない）：
+  ・うちの回の数字から分かったことだけ。1行に1つ、根拠（回の名前と数字・何本中何本か）をつける。1本だけの傾向は書かない
+  ・長尺（つかみ・章の引き・題とサムネの言葉）とショート（種類・時刻・つかみの文・帯の字）に分ける
+  ・最後に「次の1週間で試すこと」を1つだけ書く（1度に変えるのは1つ。何を比べ、何本で判定するか）
+  ・数字がまだ2本に満たない時は、前の {rel(learn_spi)} の行を残し、無ければ「まだ数字が足りない（{now().date().isoformat()}）」の1行だけにする
+"""
     psy = "" if "psy" not in chs else f"""
 ## 心理学ch（psy）について
 - 型の代わりに area（人づきあい・ひとりの時間・眠りと夜・幸せの心理）で比べる（数字の「型ごと」の名前が area）。型D と付録A の「早い見直し」は job だけ。
@@ -140,7 +164,7 @@ def prompt(path, chs):
 6. 改善案を1つ（手順書のどこを、どう書き換えるか。差し替えで勝った文言があれば「勝ちパターン」に足す案。競合メモの「手順書を変える案」と、
    今週作った回の competitor_note（競合メモから取り入れた物）の回の数字も材料にする。取り入れた回とそうでない回の差は、2本以上ずつある時だけ比べる）。「採用」か「見送り」をコメントで返すよう書き添える。
 7. 細かいこと：差し替えた回、データ待ちで飛ばしているネタ帳の行、回した理由、コメントの状態、型の後回し。
-{psy}
+{psy}{spi}
 ## 決まり
 - 水平線（--- など）は使わない。「—」「→」の多用もしない。
 - 結果を約束しない。数字が少ない時は「まだ判定できない」と書く。

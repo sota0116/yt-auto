@@ -7,7 +7,7 @@
 # ・競合メモ（research.py が毎日書く）も読ませ、試すことを1つ以上取り入れさせる（何を取り入れたかは competitor_note）
 # ・学び（learn_job.py が毎日書く。うちの回の数字から）も読ませ、「次の回で試すこと」を1つやらせる（何をやったかは learn_note）
 # ・モデルは環境変数 CLAUDE_WRITER_MODEL（無ければ opus）。調べものが要る型（B・C・D）はネット検索も許す
-import argparse, json, os, shutil, subprocess, sys
+import argparse, datetime, json, os, shutil, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.environ.get("YT_DOCS_DIR", r"C:\Users\koneb\OneDrive\YouTube自動チャンネル")
@@ -29,6 +29,32 @@ def doc(ch, name):
     if os.path.exists(dst):
         return dst
     sys.exit(f"【止まりました】{name} が見つかりません（channels/{ch}/）")
+
+
+def levelup(ch):
+    """改善ログ（毎日1つ上げる。2026-10-28）：書く前に最後の「次に上げること」を読ませ、書き終えたら書き手の最後の行を1行足す"""
+    return os.path.join(ROOT, "history", ch, "改善ログ.md")
+
+
+LEVELUP_ASK = """## 改善ログ（毎日1つ上げる・電子ゴミにしない）
+- 改善ログがある時は、いちばん下の行の「次に上げること」を、この回に必ず1つ入れる（手順書の決まりの中で）。
+- この回が手順書の「電子ゴミの線」に1つでも当たる時は、当たらなくなるまで直してから終える。
+- 最後の行に、次の形で1行だけ書く（プログラムが日付と回の名前を付けて改善ログに足す）：
+  改善ログ：前の回より良くした所（確かめられる形で）｜次の回で上げること1つ
+"""
+
+
+def levelup_add(ch, work, result):
+    """書き手の最後の「改善ログ：」の行を、日付と回の名前を付けて改善ログに足す（書き直しの時は足さない）"""
+    line = next((x.strip()[len("改善ログ："):] for x in reversed(result.splitlines()) if x.strip().startswith("改善ログ：")), "")
+    if not line:
+        print("【メモ】書き手が改善ログの行を書きませんでした")
+        return
+    p = levelup(ch)
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    head = "" if os.path.exists(p) else "# 改善ログ（作るたびに1行。日付｜作った物｜前より良くした所｜次に上げること）\n\n"
+    with open(p, "a", encoding="utf-8") as f:
+        f.write(f"{head}- {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))):%Y-%m-%d}｜{os.path.basename(work)}｜{line}\n")
 
 
 def recent(ch, n=9):
@@ -54,6 +80,7 @@ def prompt(work, ch, fix):
 7. {rel(MEMO(ch)) if os.path.exists(MEMO(ch)) else '（競合メモはまだ無い）'}（毎日の競合リサーチのまとめ。手順書より下の扱い。借りるのは題材の傾向と型だけ）
 8. {rel(os.path.join(ROOT, 'channels', ch, 'characters', 'characters.json'))}（場面の絵に出す決まった登場人物。手順書 §5）
 9. {rel(LEARN(ch)) if os.path.exists(LEARN(ch)) else '（学びはまだ無い）'}（うちの回の数字から毎日書く学び。手順書より下、競合メモより上の扱い）
+10. {rel(levelup(ch)) if os.path.exists(levelup(ch)) else '（改善ログはまだ無い）'}（作るたびに1行ずつ足す記録。いちばん下の「次に上げること」をこの回に入れる）
 
 ## 直近の回（同じ番号の文・同じつかみの型・同じ骨組みが続かないようにする材料）
 {json.dumps(recent(ch), ensure_ascii=False, indent=1)}
@@ -98,7 +125,8 @@ def prompt(work, ch, fix):
 ## 終わる前に必ずやること
 - `python -X utf8 pipeline/check_job_script.py {rel(work)}` を回し、NG が0件・注意も0件になるまで script.json を直す（pub_date が空という注意だけは残す。公開日は在庫に入れる時にプログラムが入れる）。
 - 最後に、字数・カット数・聞き手の割合・LINE の案内と登録の呼びかけの位置（%）を1行ずつ書いて終える。
-"""
+
+""" + LEVELUP_ASK
     if neta["type"] == "D":  # 見本（001）は型A-4 なので、型D の図と項目の形はここで渡す
         p += """
 ## 型D の script.json（見本に無い所）
@@ -176,6 +204,7 @@ def main():
     r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(work, a.ch, a.fix), capture_output=True, text=True, encoding="utf-8", timeout=3600)
     log = os.path.join(work, "_write.log")
     open(log, "a", encoding="utf-8").write(r.stdout + "\n" + r.stderr + "\n")
+    out = {}
     try:
         out = json.loads(r.stdout)
         print(out.get("result", "")[-1500:])
@@ -184,6 +213,8 @@ def main():
         print(r.stdout[-1500:], r.stderr[-800:])
     if r.returncode != 0 or not os.path.exists(os.path.join(work, "script.json")):
         sys.exit("【止まりました】台本を書けませんでした（_write.log を見る）")
+    if not a.fix:
+        levelup_add(a.ch, work, out.get("result", ""))
     chk = subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "pipeline", "check_job_script.py"), work],
                          capture_output=True, text=True, encoding="utf-8")
     print("\n".join(chk.stdout.strip().splitlines()[-3:]))

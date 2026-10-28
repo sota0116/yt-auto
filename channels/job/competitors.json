@@ -1,5 +1,5 @@
 {
- "説明": "競合リサーチ（pipeline/research.py）が毎日見るチャンネルと検索の言葉。出どころは 調査/競合_仕事と職場_2026-10-23.md と 設計/競合分析_フルAIチャンネル_2026-10-23.md と 設計/競合分析_参考チャンネル追加_2026-10-24.md（「型の参考」は題材が違う。借りるのはタイトル・サムネ・構成の型だけ）。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
+ "説明": "競合リサーチ（pipeline/research.py）が毎日見るチャンネルと検索の言葉。出どころは 調査/競合_仕事と職場_2026-10-23.md と 設計/競合分析_フルAIチャンネル_2026-10-23.md と 設計/競合分析_参考チャンネル追加_2026-10-24.md と 設計/競合分析_参考チャンネル追加2_2026-10-25.md（「型の参考」は題材が違う。借りるのはタイトル・サムネ・構成の型だけ）。auto は research.py が足した物（検索の上位に3日出たチャンネル）",
  "channels": [
   {"id": "UClu1Wun9r141gaXwr_rbv6Q", "name": "限界だもん", "group": "会社の失敗・末路"},
   {"id": "UC99fMQJQP8H_9b6Bgd9o9RA", "name": "底辺なのだ", "group": "職場のZ世代・退職"},
@@ -21,7 +21,15 @@
   {"id": "UCwkAl3Fxd69mDEcQjX7NZsQ", "name": "考えすぎる葦", "group": "型の参考：なぜ〜か【学問×学問】"},
   {"id": "UCUX4T-9fEZvMIJXXgvss3hA", "name": "再現ファイル", "group": "型の参考：公的資料で再現・数字を並べる"},
   {"id": "UCncDD6p1DDOvliwHYXLueIA", "name": "人生の", "group": "型の参考（次点）：常識の逆・働き方の心理"},
-  {"id": "UCPUi_0Qdh_VCLNGOjMqqESg", "name": "争いの世界史", "group": "型の参考（次点）：なぜ〜したのか"}
+  {"id": "UCPUi_0Qdh_VCLNGOjMqqESg", "name": "争いの世界史", "group": "型の参考（次点）：なぜ〜したのか"},
+  {"id": "UC6rNI8cnWUpJSFStbOXBCZA", "name": "出世の階段", "group": "型の参考：どこまで出世できるのか・給料と人数を全10段で検証"},
+  {"id": "UCtwVIuL57q0DlDPizIFU9bw", "name": "コンサルのリアルch", "group": "業界の内側：末路・闇・10選"},
+  {"id": "UC0ft-GjtHiul2fO1wamK0cA", "name": "昭和ルーティン", "group": "型の参考：昭和の働く人の1日・一生"},
+  {"id": "UCQP9fKUP_T5iIimDGbJneyQ", "name": "AI深層部", "group": "型の参考：なぜAIは〜のか（掛け合い）"},
+  {"id": "UCoAw3q-0YKswRuk_q7k_svA", "name": "スリーピーシンギュラリティ", "group": "型の参考：AIが予想した未来ドキュメンタリー"},
+  {"id": "UCQBDKFCHOSjyREnNBbL44Aw", "name": "レイ AI警告室", "group": "型の参考：AIで仕事はどうなる（実在人物の写真サムネは使わない）"},
+  {"id": "UCPeG9F7X1F1sshDVhIh1eJA", "name": "時をかける帖", "group": "型の参考：外国人の記録で見る真逆の日本"},
+  {"id": "UCgtRHrI_zw0EMhDj0NHDfeg", "name": "絵で見る歴史ラボ", "group": "型の参考：勢力図・地図の移り変わり"}
  ],
  "queries": [
   "年収 職業 ランキング",

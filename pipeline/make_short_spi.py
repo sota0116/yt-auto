@@ -12,6 +12,12 @@
 #   本編を上げて公開の日（予約）が決まってから作る。本編の公開の日と長さは YouTube から読む（作業フォルダの uploaded.json の video_id）
 #   最後のカットの語りは "{CLOSE}" と書く → 「続きは、10月27日、火曜日に出した、本編の長い動画でお話ししています。」にする
 #   最後のカットの from は "END"：本編のサムネ（uploaded.json の thumb）と「10月27日（火）公開・約9分」の案内の画面にする
+# ・ショートの種類（2026-10-28 本人「全部が全部横動画に関係していなくてもいい。横動画を出したあとに関連・小出しのショートで横動画に誘導」）：
+#   python -X utf8 pipeline\make_short_spi.py <作業フォルダ> --name short_2 → short_2.json を読み、short_2\short.mp4 に出す（1つの回から何本でも）
+#   short.json の "kind"（省略は after）：
+#     after  … 本編の中身を1つ切り出す。最後は {CLOSE}（続きは、〇月〇日、〇曜日に出した、本編の長い動画で）＋ END の画面
+#     teaser … 本編の公開の前に出す予告。最後は {CLOSE}（〇月〇日、〇曜日の夕方6時に出す、本編の長い動画で）＋ END の画面。本編に予約が入ってから作る
+#     solo   … 1本で答えまで言い切る。{CLOSE} と END は使わない（本編へは説明欄とコメントでつなぐ）。本編の日が未定でも作れる
 import argparse, json, os, re, subprocess, sys
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 
@@ -20,6 +26,7 @@ sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import need, dur, run, chunks, ass_time, prep_voice  # noqa: E402
 from build_long_psy import onsets, sub_starts  # noqa: E402
+from check_psy_script import tease  # noqa: E402  答えの先送りの見分け方（references/16 の6）
 
 W, H, FPS = 1080, 1920, 30
 BAND, IMG_Y = 400, 400  # 上の帯の高さ・絵を置く所（400〜1480）
@@ -27,6 +34,8 @@ WASHI, INK, GOLD = (241, 235, 221), (43, 38, 34), "#F2C14E"  # 和紙はカー�
 CHARS = (170, 260)  # 語りの字数（句読点を除く）。本編の速さ（約303字/分）で約35〜55秒
 NCUT = (5, 11)
 CLOSE = "続きは、{m}月{d}日、{w}曜日に出した、本編の長い動画でお話ししています。"
+CLOSE_TEASER = "続きは、{m}月{d}日、{w}曜日の夕方6時に出す、本編の長い動画でお話しします。"
+KINDS = ("teaser", "after", "solo")
 WEEK = "月火水木金土日"
 SUB_MAX = 12
 TEMPO, GAP, BGM_VOL, LUFS = 1.0, 0.25, 0.03, -14
@@ -41,32 +50,37 @@ def plain(t):
     return re.sub(r"[\s、。！？「」]", "", t)
 
 
-def long_info(work):
-    """本編の公開の日（予約の日）・長さ・サムネ。日が決まっていなければ止める"""
+def long_info(work, kind="after"):
+    """本編の公開の日（予約の日）・長さ・サムネ。日が決まっていなければ止める（solo は止めない）"""
     from upload_job import api, API
     up = json.load(open(os.path.join(work, "uploaded.json"), encoding="utf-8"))
     it = json.load(api("spi", "GET", f"{API}/videos?part=status,snippet,contentDetails&id={up['video_id']}", timeout=60))["items"][0]
     st = it["status"]
     when = it["snippet"]["publishedAt"] if st["privacyStatus"] == "public" else st.get("publishAt")
-    if not when:
+    if kind == "teaser" and st["privacyStatus"] != "private":
+        sys.exit("【止まりました】本編はもう公開されています。予告（teaser）ではなく after で作ります")
+    if not when and kind != "solo":
         sys.exit("【止まりました】本編の公開の日（予約）がまだ決まっていません。本編の予約を入れてから、ショートを作ります")
     import datetime
-    day = datetime.datetime.fromisoformat(when.replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=9))).date()
+    at = when and datetime.datetime.fromisoformat(when.replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=9)))
+    day = at and at.date()
     m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it["contentDetails"]["duration"])
     h, mi, s = (int(x or 0) for x in m.groups())
-    return {"day": day, "minutes": round((h * 3600 + mi * 60 + s) / 60), "video_id": up["video_id"],
+    fmt = CLOSE_TEASER if kind == "teaser" else CLOSE
+    return {"day": day, "at": at, "kind": kind, "minutes": round((h * 3600 + mi * 60 + s) / 60), "video_id": up["video_id"],
             "thumb": os.path.join(work, up.get("thumb") or "thumb.jpg"),
-            "close": CLOSE.format(m=day.month, d=day.day, w=WEEK[day.weekday()])}
+            "close": day and kind != "solo" and fmt.format(m=day.month, d=day.day, w=WEEK[day.weekday()])}
 
 
-def load(work):
+def load(work, name="short"):
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
-    sh = json.load(open(os.path.join(work, "short.json"), encoding="utf-8"))
+    sh = json.load(open(os.path.join(work, name + ".json"), encoding="utf-8"))
     return s, sh
 
 
-def check(work, clips, li):
-    s, sh = load(work)
+def check(work, clips, li, name="short"):
+    s, sh = load(work, name)
+    solo = li["kind"] == "solo"
     close = li["close"]
     for c in sh.get("cuts") or []:
         if c.get("narration") == "{CLOSE}":
@@ -89,7 +103,9 @@ def check(work, clips, li):
         src = long_ids.get(c.get("from"))
         used[c.get("from")] = used.get(c.get("from"), 0) + 1
         if c.get("from") == "END":
-            if i != len(cuts) - 1:
+            if solo:
+                ng.append(f"{c.get('id')}：solo は END（本編の案内の画面）を使わない")
+            elif i != len(cuts) - 1:
                 ng.append(f"{c.get('id')}：from「END」（本編の案内の画面）は最後のカットだけ")
             elif not os.path.exists(li["thumb"]):
                 ng.append(f"本編のサムネ {li['thumb']} がない")
@@ -102,10 +118,22 @@ def check(work, clips, li):
                 ng.append(f"{c.get('id')}：記号「{mark}」は使わない")
         if t != close:
             ng += [f"{c.get('id')}：メタの言葉「{w}」" for w in META if w in t]
+            w = tease(t)  # 2026-10-28 本人の指摘（スキル references/16 の6）。決まった締めの文 CLOSE は除く
+            if w:
+                ng.append(f"{c.get('id')}：答えを先送りするだけの文「{w}」（問いで引き、答えの手前の中身まで言う）")
+        if solo and ("本編" in t or "{CLOSE}" in t):
+            ng.append(f"{c.get('id')}：solo は語りで本編へ誘わない（1本で言い切る。本編へは説明欄とコメント）")
     ng += [f"from「{k}」が {v}回（2回まで）" for k, v in used.items() if v > 2]
-    if cuts and cuts[-1].get("narration") != close:
+    # 見どころ（2026-10-28 本人の指摘。スキル references/16 の4）：S01 と締め以外の1つ以上に "peak": true
+    if not any(c.get("peak") for c in cuts[1:-1]):
+        ng.append("見どころのカットが無い：いちばん面白い所（答えの一歩手前）のカットに \"peak\": true を書く（S01 と締め以外）")
+    if sh.get("kind", "after") not in KINDS:
+        ng.append(f"kind「{sh.get('kind')}」は {KINDS} のどれか")
+    if sh.get("kind", "after") != li["kind"]:
+        ng.append(f"short.json の kind（{sh.get('kind', 'after')}）と、読んだ本編の情報の kind（{li['kind']}）が違う")
+    if not solo and cuts and cuts[-1].get("narration") != close:
         ng.append(f"最後のカットは決まった文「{close}」にする（short.json には {{CLOSE}} と書く）")
-    if cuts and cuts[-1].get("from") != "END":
+    if not solo and cuts and cuts[-1].get("from") != "END":
         ng.append("最後のカットの from は END（本編の案内の画面）にする")
     if cuts and not cuts[0].get("narration", "").rstrip().endswith(("？", "か。")):
         ng.append("S01 は問いの形（？か「か。」で終わる）にする")
@@ -119,11 +147,41 @@ def check(work, clips, li):
     t = sh.get("title", "")
     if not 10 <= len(t) <= 60:
         ng.append(f"ショートの題は10〜60字（今 {len(t)}字）")
-    print(f"ショートの台本：語り {n}字・{len(cuts)}カット・題 {len(t)}字・帯 {band}")
+    ng += repeats(work, name, sh)
+    print(f"ショートの台本（{li['kind']}）：語り {n}字・{len(cuts)}カット・題 {len(t)}字・帯 {band}")
     for x in ng:
         print("  NG", x)
     print(f"NG {len(ng)}件")
     return not ng
+
+
+def repeats(work, name, sh):
+    """電子ゴミにしない（2026-10-28 本人「電子ゴミにならないように日々レベルをあげるように」）：
+    同じ回のほかのショートと、千年こよみで上げたショート全部とを比べて、似すぎていたら NG
+    ・1文目（つかみ）か上の帯の字か題が、ほかと同じ ・同じ回のほかのショートと、借りる絵（from）が半分以上同じ"""
+    ng, mine = [], {c.get("from") for c in sh.get("cuts", [])} - {"END"}
+    band = "".join(t for ln in sh.get("lines", []) for t, _ in ln)
+    hook = (sh.get("cuts") or [{}])[0].get("narration")
+    others = []
+    for f in sorted(os.listdir(work)):
+        if re.fullmatch(r"short(_\d+)?\.json", f) and f != name + ".json":
+            o = json.load(open(os.path.join(work, f), encoding="utf-8"))
+            others.append((f, o.get("title"), (o.get("cuts") or [{}])[0].get("narration"),
+                           "".join(t for ln in o.get("lines", []) for t, _ in ln), {c.get("from") for c in o.get("cuts", [])} - {"END"}))
+    hp = os.path.join(ROOT, "history", "spi", "shorts_uploaded.json")
+    for h in (json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else []):
+        if not h.get("retired") and not h.get("missing") and not (h["work"] == os.path.basename(work) and (h.get("name") or "short") == name):
+            others.append((h["work"] + ":" + (h.get("name") or "short"), h.get("title", "").replace(" #shorts", ""), h.get("hook"), "".join(h.get("band") or []), None))
+    for f, title, h1, b, fr in others:
+        if title and title == sh.get("title"):
+            ng.append(f"題が {f} と同じ")
+        if h1 and h1 == hook:
+            ng.append(f"1文目が {f} と同じ")
+        if b and b == band:
+            ng.append(f"上の帯の字が {f} と同じ")
+        if fr is not None and mine and len(mine & fr) * 2 >= len(mine):
+            ng.append(f"借りる絵が {f} と半分以上同じ（{len(mine & fr)}/{len(mine)}）")
+    return ng
 
 
 def band_png(lines, out):
@@ -158,8 +216,10 @@ def end_png(bg, li, out):
     d.rectangle((x - 8, y - 8, x + 968, y + 548), fill=(178, 58, 46))
     im.paste(th, (x, y))
     day = li["day"]
-    d.text((W / 2, y + 625), f"{day.month}月{day.day}日（{WEEK[day.weekday()]}）公開・約{li['minutes']}分", font=f2, fill=(178, 58, 46), anchor="mm")
-    d.text((W / 2, y + 705), "千年こよみの「動画」の欄にあります", font=f3, fill=INK, anchor="mm")
+    hm = f"{li['at']:%H:%M} " if li["kind"] == "teaser" else ""
+    d.text((W / 2, y + 625), f"{day.month}月{day.day}日（{WEEK[day.weekday()]}）{hm}公開・約{li['minutes']}分", font=f2, fill=(178, 58, 46), anchor="mm")
+    d.text((W / 2, y + 705), "公開されると千年こよみの「動画」の欄に出ます" if li["kind"] == "teaser" else "千年こよみの「動画」の欄にあります",
+           font=f3, fill=INK, anchor="mm")
     im.save(out)
 
 
@@ -181,7 +241,10 @@ def clip(bg, src, kind, pan, d, out, b):
         run("ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", src, "-vf", f"fps={FPS}", "-t", f"{d:.3f}", "-an",
             "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "17", "-preset", "veryfast", out)
         return
-    if kind == "photo":
+    if kind == "photo_fit":  # 文字の帯（pop・tate）のある絵：正方形に切ると帯か人物が切れるので、横幅いっぱいに全体を置く（2026-10-28）
+        img = f"[1:v]scale={W}:-2,fps={FPS},tpad=stop_mode=clone:stop_duration=30[img]"
+        pos = f"0:{IMG_Y + (size - W * 9 // 16) // 2}"
+    elif kind == "photo":
         x = f"(iw-{size})*{pan}"
         img = f"[1:v]scale=-2:{size},crop={size}:{size}:{x}:0,fps={FPS},tpad=stop_mode=clone:stop_duration=30[img]"
         pos = f"0:{IMG_Y}"
@@ -205,13 +268,13 @@ def loud(b, src):
     return json.loads(js[: js.find("}") + 1])
 
 
-def build(work, clips, li):
+def build(work, clips, li, name="short"):
     need("ffmpeg", "ffmpeg を入れてください")
-    s, sh = load(work)
+    s, sh = load(work, name)
     for c in sh["cuts"]:
         if c.get("narration") == "{CLOSE}":
             c["narration"] = li["close"]
-    sw = os.path.join(work, "short"); b = os.path.join(sw, "_build")
+    sw = os.path.join(work, name); b = os.path.join(sw, "_build")
     os.makedirs(b, exist_ok=True)
     # 声：作業フォルダ\short\script.json に語りだけを置いて、本編と同じ道具（感情づけ）で作る
     json.dump({"cuts": [{k: c[k] for k in ("id", "narration", "tts_text", "emo") if k in c} for c in sh["cuts"]]},
@@ -222,14 +285,19 @@ def build(work, clips, li):
     if r.returncode:
         sys.exit("【止まりました】ショートの声を作れませんでした")
     bg = os.path.join(b, "band.png"); band_png(sh["lines"], bg)
-    endp = os.path.join(b, "end.png"); end_png(bg, li, endp)
+    endp = os.path.join(b, "end.png")
+    if li["kind"] != "solo":
+        end_png(bg, li, endp)
     long_cuts = {c["id"]: c for c in s["cuts"]}
     t, outs, vcs, events = 0.0, [], [], []
     for c in sh["cuts"]:
         v = os.path.join(b, c["id"] + "_v.wav")
         prep_voice(os.path.join(sw, "voice", c["id"] + ".wav"), v, TEMPO, GAP)
         d = dur(v); vcs.append(v)
-        kind = "END" if c["from"] == "END" else (long_cuts[c["from"]].get("card") or {}).get("type", "photo")
+        card = {} if c["from"] == "END" else (long_cuts[c["from"]].get("card") or {})
+        kind = "END" if c["from"] == "END" else card.get("type", "photo")
+        if kind == "photo" and (card.get("pop") or card.get("tate")) and "pan" not in c:
+            kind = "photo_fit"
         src = endp if kind == "END" else os.path.join(work, clips, c["from"] + ".mp4")
         out = os.path.join(b, c["id"] + ".mp4")
         clip(bg, src, kind, c.get("pan", 0.5), d, out, b); outs.append(out)
@@ -288,13 +356,15 @@ def main():
     a.add_argument("work")
     a.add_argument("--check", action="store_true")
     a.add_argument("--clips", default=os.path.join("images", "_v3"))
+    a.add_argument("--name", default="short", help="short.json なら short（既定）、short_2.json なら short_2")
     a = a.parse_args()
     work = os.path.abspath(a.work)
-    li = long_info(work)
-    ok = check(work, a.clips, li)
+    kind = load(work, a.name)[1].get("kind", "after")
+    li = long_info(work, kind if kind in KINDS else "after")
+    ok = check(work, a.clips, li, a.name)
     if a.check or not ok:
         sys.exit(0 if ok else 1)
-    build(work, a.clips, li)
+    build(work, a.clips, li, a.name)
 
 
 if __name__ == "__main__":
