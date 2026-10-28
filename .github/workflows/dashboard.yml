@@ -1,0 +1,47 @@
+# 司令室の数字（2026-10-28）
+# ・YouTube の公開ページから6チャンネルの登録者数・再生数を取り、history（在庫・予約・週報）と合わせて stats.json を作る
+# ・stats.json は dashboard の枝に1コミットだけ置く（毎回作り直して force push。main の記録は増やさない）
+# ・クラウドの見回り役（毎時0分）がこの枝から読んで司令室（claude.ai の管理ページ）へ送る。PC を閉じていても回る
+# ・鍵は使わない（公開ページを読むだけ）。作り方の元は OneDrive\ClaudeBackup\tools\youtube\dashboard_stats_v2.py
+name: dashboard
+on:
+  schedule:
+    - cron: "37 0-14,22,23 * * *"   # 毎時37分（7:37〜23:37 JST）。見回り役の0分に間に合わせる
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: yt-dlp を入れる
+        run: pip install -q -U yt-dlp
+      - name: 前回の数字を読む（前日比を出すため。無ければ初回として作る）
+        run: |
+          git fetch -q origin dashboard && git show origin/dashboard:stats.json > "$RUNNER_TEMP/prev.json" || echo "前回の数字なし"
+      - name: 数字を作る
+        run: |
+          PREV=""
+          [ -s "$RUNNER_TEMP/prev.json" ] && PREV="--prev $RUNNER_TEMP/prev.json"
+          python -X utf8 pipeline/dashboard_stats.py $PREV --out "$RUNNER_TEMP/stats.json" --yt-auto . --source actions
+      - name: dashboard の枝に置く
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          blob=$(git hash-object -w "$RUNNER_TEMP/stats.json")
+          tree=$(printf '100644 blob %s\tstats.json\n' "$blob" | git mktree)
+          commit=$(git commit-tree "$tree" -m "数字：$(date +%F_%H%M)")
+          git push -q -f origin "$commit:refs/heads/dashboard"
