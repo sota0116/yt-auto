@@ -293,8 +293,9 @@ def gate_hook(s, kind, use):
     return {"合格": ok, **r}
 
 
-def gate_trash(s, n, kind, use):
-    past = [x for x in past_works() if x["kind"] == kind][-6:]
+def gate_trash(s, n, kind, use, work):
+    # 作り途中のこの回（videos/ の neta.json）も past_works に入るので外す。外さないと自分と比べて「前の回と同じ」で落ちる（L101。2026-10-29）
+    past = [x for x in past_works() if x["kind"] == kind and x["work"] != os.path.basename(work) and x["no"] != n.get("no")][-6:]
     p = f"""下の台本が『電子ゴミ』（手順書 §10）の線に当たらないかを判定します。当たる物は出さずに直します。
 1. 持ち帰れる『へえ』が無い：どの{'場面' if kind == 'short' else '章'}にも、本当にあった出来事（年・人・場所）が1つ入っているか。入っていない{'場面' if kind == 'short' else '章'}を挙げる。
 2. 道具を置くだけ：足したルールを置いたあと、史実の何が変わった／何が見えたかまで言えているか。置いただけで終わっているなら挙げる。
@@ -327,7 +328,7 @@ def main():
         print("（形が不合格なので、文脈の判定は直したあとに回します）")
     else:
         res.update({"史実と出どころ": gate_fact(s, n, kind, use), "決まりの食い違い": gate_rules(s, kind, use), "禁止表現": gate_ng(s, use),
-                    "広告に向くか": gate_ads(s, use), "続きを見たくなるか": gate_hook(s, kind, use), "電子ゴミの線": gate_trash(s, n, kind, use)})
+                    "広告に向くか": gate_ads(s, use), "続きを見たくなるか": gate_hook(s, kind, use), "電子ゴミの線": gate_trash(s, n, kind, use, work)})
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)
     json.dump(res, open(os.path.join(work, "gate_script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

@@ -18,6 +18,8 @@
 #   3. 動く絵は、無料の実行3回でも終わらなければ残りを静止画のまま進める（make_motion_psy.py。前と同じ）
 #   4. 作り始めて72時間たっても上がらない回は飛ばして次のネタへ（Issue。作業フォルダは残すので、あとで続きから作れる）
 #   5. 在庫が2本以下になったら、02:07 の実行の通知で Issue にする（notify.py）
+#   6. 完成動画ゲートで落ちたのが画面（絵の中の読める文字・崩れた絵）だけなら、そのカットの絵を作り直して組み立て直す（2回まで。bad_frame_cuts）。
+#      心理学ch 004 が、組み立てまで済んだ18分の回を、看板の英語1枚で止めた（2026-10-29）。前の絵は images/_video_gate_old/ に残す
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -26,7 +28,7 @@
 #   ・種類ごとに kinds.<種類>.tools（段の道具。書いた段が profile.json の tools より先）・stock_goal（[目標, この本数以下なら make_max 本]）・make_max
 #   ・作り途中の回は種類ごとに history/<ch>/status_<種類>.json（ショートが詰まっても横動画の続きは止まらず、横動画が詰まってもショートは作れる）
 #   ・在庫は種類ごとに数える（ustore.kind_of）。pick には --kind <種類> を渡す。kinds の無いチャンネル（job・psy・spi）は今までと同じ動き
-import argparse, datetime, hashlib, json, os, re, subprocess, sys, time
+import argparse, datetime, hashlib, json, os, re, subprocess, sys, time, wave
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PY = [sys.executable, "-X", "utf8"]
@@ -261,6 +263,40 @@ def apply_fixes(ch, work, st):
     print(f"直し（{os.path.relpath(fp, ROOT)}）を script.json に入れました", flush=True)
 
 
+def bad_frame_cuts(work):
+    """完成動画ゲート（_gate_video.json）で落ちたのが画面だけの時、落ちた画面の秒からカットを引き、{絵のカットの id: 作り直しの英語の指示} を返す。
+    秒は組み立てが残した _build/<id>_v.wav（1カットの声＋間）の長さを足して決める（build_long_psy.py と同じ並び）。
+    長さ・声の大きさ・無音・動く絵の不合格が混じる時、カットが引けない時、図やカードのカットの時は {}（絵の作り直しでは直らない）"""
+    g = jload(os.path.join(work, "_gate_video.json"), {})
+    bad = g.get("不合格") or []
+    if not bad or not all(b.startswith("画面") for b in bad):
+        return {}
+    cuts = jload(os.path.join(work, "script.json"), {}).get("cuts", [])
+    by_id, spans, t = {c.get("id"): c for c in cuts}, [], 0.0
+    for c in (c for c in cuts if c.get("narration")):
+        p = os.path.join(work, "_build", c["id"] + "_v.wav")
+        if not os.path.exists(p):
+            return {}
+        with wave.open(p) as w:
+            d = w.getnframes() / w.getframerate()
+        spans.append((t, t + d, c))
+        t += d
+    out = {}
+    for x in g.get("画面", []):
+        if x.get("合格"):
+            continue
+        c = next((c for a, b, c in spans if a <= x.get("秒", -1) < b), None)
+        while c and c.get("same_as") and c["same_as"] in by_id and c["same_as"] != c["id"]:
+            c = by_id[c["same_as"]]
+        if not c or c.get("card") or c.get("chart") or not os.path.exists(os.path.join(work, "images", c["id"] + ".png")):
+            return {}
+        q = x.get("問題", "") + (x.get("見直し") or {}).get("問題", "")
+        out[c["id"]] = ("Absolutely no readable text anywhere: no signs, shop names, letters, numbers or logos (leave signboards blank)."
+                        if re.search(r"文字|ロゴ|看板|英語|ブランド|店名", q) else
+                        "Redraw the scene cleanly: natural hands, faces, bodies and objects, nothing deformed, no readable text.")
+    return out
+
+
 def make_one(ch, st, upload, kind=None):
     """1本作る。st は status.json の中身（続きから始める時は work と done が入っている）。kind＝種類（kinds のあるチャンネルだけ）"""
     sp = status_path(ch, kind)
@@ -381,7 +417,52 @@ def make_one(ch, st, upload, kind=None):
             raise Stop("絵ゲートの不合格が残りました（images\\_gate.json）")
     step("gate_images", gate_images)
     step("build", lambda: run(work, "build", [T("build", "build_long_job.py"), work], ch))
-    step("gate_video", lambda: run(work, "gate_video", [T("gate_video", "gate_video.py"), work], ch))
+
+    def redo_cuts(fixes):
+        """完成動画ゲートで落ちた画面のカットの絵を作り直し、絵ゲート→動く絵→組み立てをやり直す（詰まった時の決まり6）。
+        前の絵は images/_video_gate_old/ に残す。絵が時間の枠で終わらなければ「途中」にして、次の実行で続きから受け取る"""
+        img, old = os.path.join(work, "images"), os.path.join(work, "images", "_video_gate_old")
+        first = not st.get("video_redo_sent")  # 続きから受け取る2回目以降は、動かさず・頼み直さない（作り直した絵を古い方へ動かさないため）
+        if first:
+            os.makedirs(old, exist_ok=True)
+            for i in fixes:
+                for ext in (".png", ".mp4"):
+                    if os.path.exists(os.path.join(img, i + ext)):
+                        os.replace(os.path.join(img, i + ext), os.path.join(old, i + ext))
+            st["video_redo_sent"] = True
+            jsave(sp, st)
+        run(work, "images", [T("images", "make_images_lovart.py"), work, "--only", ",".join(fixes)]
+            + (sum((["--fix", f"{i}={x}"] for i, x in fixes.items()), []) if first else []), ch, ok=(0, 1),
+            env={"LOVART_WAIT_MAX": str(int(max(300, left() - 30 * 60)))})
+        if [i for i in fixes if not os.path.exists(os.path.join(img, i + ".png"))]:
+            busy("images", "完成動画ゲートで落ちた絵の作り直しがまだ途中。次の実行で続きから受け取ります")
+        r = run(work, "gate_images", ["gate_images.py", work, "--fix", "--only", ",".join(fixes)], ch, ok=(0, 1, 2))
+        if r.returncode:
+            raise Stop("完成動画ゲートで落ちた絵を作り直したが、絵ゲートで不合格のまま（images\\_gate.json）")
+        moved = [i for i in fixes if os.path.exists(os.path.join(old, i + ".mp4"))]
+        if moved and T("motion", None):  # 動く絵だったカットは動く絵も作り直す。終わらなければ静止画のまま進める（決まり3と同じ）
+            run(work, "motion", [T("motion", None), work, "--only", ",".join(moved)], ch, ok=(0, 3),
+                env={"MOTION_DEADLINE": str(int(time.time() + max(0, min(40 * 60, left() - 60 * 60))))})
+        run(work, "build", [T("build", "build_long_job.py"), work], ch)
+
+    def gate_video():
+        g_py = T("gate_video", "gate_video.py")
+        while True:
+            if st.get("video_redo_ids"):
+                redo_cuts(st["video_redo_ids"])
+                st.pop("video_redo_ids"), st.pop("video_redo_sent", None)
+                jsave(sp, st)
+            r = run(work, "gate_video", [g_py, work], ch, ok=(0, 1))
+            if r.returncode == 0:
+                return
+            fixes = bad_frame_cuts(work)
+            if not fixes or st.get("video_redo", 0) >= 2:
+                raise Stop(f"gate_video で止まりました（終了コード 1）：{r.stdout.strip()[-300:]}")
+            st["video_redo"] = st.get("video_redo", 0) + 1
+            st["video_redo_ids"] = fixes
+            print(f"■ 完成動画ゲートで落ちた画面のカット {list(fixes)} の絵を作り直す（{st['video_redo']}回目・2回まで）", flush=True)
+            jsave(sp, st)
+    step("gate_video", gate_video)
 
     def thumb():
         s = jload(os.path.join(work, "script.json"), {})
