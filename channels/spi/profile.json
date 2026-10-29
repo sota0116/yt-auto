@@ -83,6 +83,8 @@
   "teaser": null
  },
  "_tools": "2026-10-29：run_daily.py の段ごとの道具（毎日の制作に入れるため）。null はその段を飛ばす。charts：表やカレンダーは動くカード（build_long_spi.py が描く）なので、別の段は無い。short・short_upload：make_short_spi.py は short.json（ショートの台本）と、本編を上げた後の video_id・公開日が要るので、本編と同じ流れでは作れない。ショートは別の流れで作る。teaser：千年こよみは予告ショートを本編の流れで作らない。motion：心理学chと同じ make_motion_psy.py（Lovart の無料モードの Kling。台本の \"motion\": true の場面の絵だけ）",
+ "gate_rewrites": 4,
+ "_gate_rewrites": "台本ゲートで落ちた時の書き直しの回数（run_daily.py。無ければ2回）。2026-10-30 005 事始め・006 縁日が3回目に重い指摘0・軽い2つまで来て止まった（直すたびに近づいている）。心理学chと同じく4回にする。合格の線は変えない",
  "stock_phase": "post",
  "stock_goal": [
   4,
