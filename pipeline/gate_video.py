@@ -63,7 +63,7 @@ def card_shift(work, t):
     sp = os.path.join(work, "script.json")
     if not os.path.exists(sp):
         return t, "script.json が無い"
-    s0 = 0.0
+    spans, s0 = [], 0.0
     for c in json.load(open(sp, encoding="utf-8")).get("cuts", []):
         if not c.get("narration"):
             continue
@@ -75,13 +75,22 @@ def card_shift(work, t):
                 d = w.getnframes() / w.getframerate()
         except (wave.Error, EOFError) as e:
             return t, f"{c['id']}_v.wav が読めない（{e}）"
+        spans.append((s0, d, c))
+        s0 += d
+    total = s0
+    for k, (s0, d, c) in enumerate(spans):
         if s0 <= t < s0 + d:
+            # 切り替わりの0.5秒前は、次のカットの出だしとして扱う（カットごとにコマの端数でずれがたまり、
+            # 006 では F09 の終わり0.1秒前＝実際には F10 の出だしを切り出した。2026-10-30）
+            if s0 + d - t < 0.5 and k + 1 < len(spans):
+                s0, d, c = spans[k + 1]
             kind = "カード" if (c.get("card") or c.get("chart")) else "絵"
             if kind == "カード" and t - s0 < 2.0:
                 return s0 + min(2.0, d * 0.8), f"{c['id']}（カード・{s0:.1f}〜{s0 + d:.1f}秒）の出だしなので後ろへ"
+            if s0 > t:  # 次の絵のカットの出だし：切り替わりを避けて少し後ろへ
+                return s0 + min(1.0, d * 0.5), f"{c['id']}（絵・{s0:.1f}〜{s0 + d:.1f}秒）の切り替わりを避けて後ろへ"
             return t, f"{c['id']}（{kind}・{s0:.1f}〜{s0 + d:.1f}秒）"
-        s0 += d
-    return t, f"カットの合計 {s0:.1f}秒 の外"
+    return t, f"カットの合計 {total:.1f}秒 の外"
 
 
 def main():
