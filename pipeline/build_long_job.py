@@ -85,7 +85,7 @@ def sfx_mix(times, first):
     return kinds, fc
 
 
-def build(work, out):
+def build(work, out, gap_base=GAP):
     need("ffmpeg", "ffmpeg を入れてください")
     cfg = load_config(work)
     cfg.update({"label_color": KINARI, "label_color2": "#F2C14E", "chapter_bg": NAVY, "chapter_accent": "#F2C14E"})
@@ -102,7 +102,7 @@ def build(work, out):
     t, clips, vcs, events, chaps, nchap = 0.0, [], [], [], [], 0
     sfx = {"wow": [], "peak": []}
     for n, c in enumerate(cuts):
-        gap = QUIZ_GAP if c.get("quiz") else GAP
+        gap = QUIZ_GAP if c.get("quiz") else gap_base
         v = os.path.join(b, c["id"] + "_v.wav"); prep_voice(voice_path(work, c["id"]), v, tempo, gap); vcs.append(v)
         pop = edge_peak(v)
         if pop > 0.3:  # 声の頭か終わりの5ミリ秒が大きい＝切り替わりで「バチッ」と鳴る（1本目は wav の頭が音として入っていた）
@@ -207,5 +207,6 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(); p.add_argument("work"); p.add_argument("--out")
+    p.add_argument("--gap", type=float, default=GAP, help="カットの間の秒（8分にわずかに足りない時に run_daily.py が広げる。0.6まで）")
     a = p.parse_args()
-    build(a.work, a.out or os.path.join(a.work, "long.mp4"))
+    build(a.work, a.out or os.path.join(a.work, "long.mp4"), a.gap)
