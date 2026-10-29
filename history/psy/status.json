@@ -2,10 +2,14 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/005_kofuku_toshi",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading"
  ],
  "started": "2026-10-29T17:46:22+09:00",
- "tries": 1,
+ "tries": 0,
  "redone": {
   "日時": "2026-10-29T17:46:22+09:00",
   "前の済み": [
@@ -17,6 +21,10 @@
    "reading"
   ]
  },
- "code": "0efb6a3b520f",
- "stage": "gate_script"
+ "code": "9449b5fa13ea",
+ "stage": "images",
+ "updated": "2026-10-29T19:12:25+09:00",
+ "busy": {
+  "images": 1
+ }
 }
