@@ -20,6 +20,8 @@
 #   5. 在庫が2本以下になったら、02:07 の実行の通知で Issue にする（notify.py）
 #   6. 完成動画ゲートで落ちたのが画面（絵の中の読める文字・崩れた絵）だけなら、そのカットの絵を作り直して組み立て直す（2回まで。bad_frame_cuts）。
 #      心理学ch 004 が、組み立てまで済んだ18分の回を、看板の英語1枚で止めた（2026-10-29）。前の絵は images/_video_gate_old/ に残す
+#   7. 完成動画ゲートで落ちたのが「8分未満」だけで、足りないのが5%以内なら、カットの間（gap。0.6秒まで）を広げて1回だけ組み直す
+#      （千年こよみ 003 が7.7分で止まった。2026-10-29。声の速さは変えない。組み立ての道具が --gap を受ける時だけ）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -416,7 +418,22 @@ def make_one(ch, st, upload, kind=None):
         if r.returncode == 1:
             raise Stop("絵ゲートの不合格が残りました（images\\_gate.json）")
     step("gate_images", gate_images)
-    step("build", lambda: run(work, "build", [T("build", "build_long_job.py"), work], ch))
+    def build_args():  # 長さの足りない回は、カットの間を広げて組み直す（決まり7。build_gap は status に残す）
+        return [T("build", "build_long_job.py"), work] + (["--gap", str(st["build_gap"])] if st.get("build_gap") else [])
+    step("build", lambda: run(work, "build", build_args(), ch))
+
+    def stretch_gap():
+        """完成動画ゲートの不合格が「8分未満」だけで、足りないのが5%以内なら、カットの間（gap）を広げた値を返す（声の速さは変えない）。
+        組み立ての道具が --gap を受けない・広げても 0.6秒を超える時は None"""
+        g = jload(os.path.join(work, "_gate_video.json"), {})
+        bad, sec = g.get("不合格") or [], g.get("長さ秒") or 0
+        src = open(os.path.join(ROOT, "pipeline", T("build", "build_long_job.py")), encoding="utf-8").read()
+        if not bad or not all(b.startswith("長さが") for b in bad) or "--gap" not in src or not sec or sec < 480 * 0.95:
+            return None
+        n = sum(1 for c in jload(os.path.join(work, "script.json"), {}).get("cuts", []) if c.get("narration"))
+        base = st.get("build_gap") or (profile(ch).get("build") or {}).get("gap", 0.25)
+        gap = round(base + (495 - sec) / max(1, n), 2)  # 8分15秒を目指す
+        return gap if gap <= 0.6 else None
 
     def redo_cuts(fixes):
         """完成動画ゲートで落ちた画面のカットの絵を作り直し、絵ゲート→動く絵→組み立てをやり直す（詰まった時の決まり6）。
@@ -443,7 +460,7 @@ def make_one(ch, st, upload, kind=None):
         if moved and T("motion", None):  # 動く絵だったカットは動く絵も作り直す。終わらなければ静止画のまま進める（決まり3と同じ）
             run(work, "motion", [T("motion", None), work, "--only", ",".join(moved)], ch, ok=(0, 3),
                 env={"MOTION_DEADLINE": str(int(time.time() + max(0, min(40 * 60, left() - 60 * 60))))})
-        run(work, "build", [T("build", "build_long_job.py"), work], ch)
+        run(work, "build", build_args(), ch)
 
     def gate_video():
         g_py = T("gate_video", "gate_video.py")
@@ -455,6 +472,13 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_video", [g_py, work], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
+            gap = None if st.get("build_gap") else stretch_gap()
+            if gap:
+                st["build_gap"] = gap
+                jsave(sp, st)
+                print(f"■ 完成動画ゲート：8分にわずかに足りないので、カットの間を {gap} 秒にして組み直す（1回だけ）", flush=True)
+                run(work, "build", build_args(), ch)
+                continue
             fixes = bad_frame_cuts(work)
             if not fixes or st.get("video_redo", 0) >= 2:
                 raise Stop(f"gate_video で止まりました（終了コード 1）：{r.stdout.strip()[-300:]}")
