@@ -1,0 +1,11 @@
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S101_n007",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-10-29T17:28:55+09:00",
+ "tries": 1,
+ "code": "e520f5bd63be",
+ "stage": "gate_script"
+}
