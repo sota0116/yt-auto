@@ -269,6 +269,9 @@ def schedule_tomorrow(ch, up, dry):
     e = pool[0]
     hh, mm = prof(ch, "publish_time", "PUBLISH_TIME", "19:00").split(":")
     at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
+    # 手元で作っている回のために空けておく枠（profile.json の reserved_slots。種類ごとのチャンネルと同じ。spi 002 酉の市 2026-10-29）
+    if f"{tom.isoformat()}T{hh}:{mm}" in (jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("reserved_slots") or []):
+        return f"明日 {hh}:{mm} は手元で作っている回のために空けてある枠（profile.json の reserved_slots）"
     if dry:
         return f"（--dry）{e['work']} を {at.isoformat()} に予約する"
     st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
