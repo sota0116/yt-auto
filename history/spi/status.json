@@ -10,11 +10,12 @@
   "images",
   "motion",
   "gate_images",
-  "build"
+  "build",
+  "gate_video"
  ],
  "started": "2026-10-30T02:49:26+09:00",
  "tries": 1,
- "code": "bc0f66db6a25",
- "stage": "gate_video",
- "updated": "2026-10-30T05:57:42+09:00"
+ "code": "b416d7634093",
+ "stage": "thumb",
+ "updated": "2026-10-30T06:23:46+09:00"
 }
