@@ -300,6 +300,43 @@ def redo(ch, work, st):
             "redone": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
 
 
+WIP = ("neta.json", "script.json", "facts.json", "images/_lovart.json", "images/_motion.json")
+
+
+def wip_dir(ch, work):
+    return hpath(ch, os.path.join("wip", os.path.basename(work)))
+
+
+def wip_save(ch, work):
+    """作り途中の回の小さい控え（台本・ネタ・研究・Lovart に頼んだ会話の番号）を history に写す（記録の commit で残る）。
+    作業フォルダ（キャッシュ）が消えても、台本はそのまま、絵と動く絵は Lovart から受け取り直せる（2026-10-30 psy 005 で絵162枚が消えた）"""
+    import shutil
+    if not os.path.isdir(work):
+        return
+    for x in WIP:
+        src = os.path.join(work, x)
+        if os.path.exists(src):
+            dst = os.path.join(wip_dir(ch, work), x)
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shutil.copyfile(src, dst)
+
+
+def wip_restore(ch, work, st):
+    """作業フォルダが消えた回を、history の控えから戻す。台本があれば台本ゲートの次（声）から続け、絵と動く絵は Lovart から受け取り直す。
+    控えが無ければ None（同じネタで台本から作り直す）"""
+    import shutil
+    d = wip_dir(ch, work)
+    if not os.path.exists(os.path.join(d, "script.json")) or "gate_script" not in st.get("done", []):
+        return None
+    for x in WIP:
+        if os.path.exists(os.path.join(d, x)):
+            os.makedirs(os.path.dirname(os.path.join(work, x)), exist_ok=True)
+            shutil.copyfile(os.path.join(d, x), os.path.join(work, x))
+    print(f"作業フォルダ {os.path.basename(work)} が消えていたので、history の控えから台本を戻しました。声から作り直し、絵と動く絵は Lovart から受け取り直します", flush=True)
+    return {**st, "done": ["pick", "write", "gate_script"], "tries": 0,
+            "restored": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
+
+
 PARK_DAYS = 21  # 後回しにした回は、公開の予定日がこの日数以内に来たら戻す
 
 
@@ -396,6 +433,9 @@ def make_one(ch, st, upload, kind=None):
         st = {"work": work, "done": ["pick"], "started": now().isoformat(timespec="seconds"), "tries": 0}
         jsave(sp, st)
     work = st["work"]
+    if not os.path.isdir(work) and "upload" not in st.get("done", []) and wip_restore(ch, work, st):
+        st = wip_restore(ch, work, st)
+        jsave(sp, st)
     if not os.path.isdir(work) and "upload" not in st.get("done", []):
         # 作業フォルダが消えた（引き継ぎの保存が落ちた・古い保存がキャッシュの10GBの枠から押し出された。2026-10-30 psy 005 で、絵162枚を作った後に起きた）。
         # 同じネタで台本からやり直す（redo）。ネタの id は、フォルダ名（番号_id の英数字）とネタ帳.json の id を合わせて探す
@@ -421,7 +461,10 @@ def make_one(ch, st, upload, kind=None):
             raise Busy(f"時間の枠の残りが20分を切ったので、{name} の前で区切りました。次の実行で続きから作ります")
         st["stage"] = name
         jsave(sp, st)
-        fn()
+        try:
+            fn()
+        finally:  # 時間切れで止まった段も、そこまでに頼んだ絵の会話の番号を控える
+            wip_save(ch, work)
         st["done"].append(name)
         st["updated"] = now().isoformat(timespec="seconds")
         jsave(sp, st)
@@ -626,6 +669,7 @@ def make_one(ch, st, upload, kind=None):
     step("record", lambda: record(ch, work))
     if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
         import shutil
+        shutil.rmtree(wip_dir(ch, work), ignore_errors=True)  # 作り途中の控えも要らない（台本は record が history/<ch>/scripts に残す）
         for d in ("images", "voice", "_build", "short", "teaser") + tuple(x for x in os.listdir(work) if re.fullmatch(r"short_\d+", x)):
             shutil.rmtree(os.path.join(work, d), ignore_errors=True)  # short_2 …＝心理学chの2本目からのショート（2026-10-29）
         for x in os.listdir(work):  # 作業フォルダの直下の動画（long.mp4・アナザー日本紀の short.mp4 と _1440p の写し）

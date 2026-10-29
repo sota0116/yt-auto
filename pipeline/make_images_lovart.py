@@ -222,7 +222,13 @@ def main():
             and (not only or c["id"] in only)}
     todo = [i for i in cuts if a.force or i in fix or not os.path.exists(os.path.join(img, i + ".png"))]
     # 前回頼んだまま受け取っていない会話は、頼み直さずに待つ（--boost は順番待ちを捨てて、速いモードで頼み直す）
-    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and i not in fix and not a.force and not a.boost}
+    # できたはずの物のファイルが無い時（作業フォルダが消えて、history の控えから戻した時。2026-10-30 psy 005）は、頼み直さずに
+    # 同じ会話（thread）から受け取り直す。Lovart は終わった会話の結果を持っているので、クレジットも順番待ちも要らない
+    for i in todo:
+        if log.get(i, {}).get("状態") == "できた" and log[i].get("thread") and i not in fix and not a.force:
+            log[i] = {"状態": "待ち", "thread": log[i]["thread"], "頼んだ時刻": time.time(), "回": log[i].get("回", 1), "受け取り直し": True}
+    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and i not in fix and not a.force
+               and (not a.boost or log[i].get("受け取り直し"))}
     queue = [i for i in todo if i not in waiting]
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
     checked = [time.time()]

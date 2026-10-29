@@ -58,7 +58,13 @@ def main():
         print("Lovart が速いモードです（別の回が詰まりを取っている間）。クレジットを使わないよう、新しく頼まずに待ちます", flush=True)
         log["_runs"] -= 1  # 待っただけの実行は、3回の数に入れない
         save()
-    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and not a.force and not a.boost}
+    # できたはずの物のファイルが無い時（作業フォルダが消えて、history の控えから戻した時。2026-10-30 psy 005）は、頼み直さずに
+    # 同じ会話（thread）から受け取り直す。Lovart は終わった会話の結果を持っているので、クレジットも順番待ちも要らない
+    for i in todo:
+        if log.get(i, {}).get("状態") == "できた" and log[i].get("thread") and not a.force:
+            log[i] = {"状態": "待ち", "thread": log[i]["thread"], "頼んだ時刻": time.time(), "回": log[i].get("回", 1), "受け取り直し": True}
+    waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and not a.force
+               and (not a.boost or log[i].get("受け取り直し"))}
     queue = [i for i in todo if i not in waiting]
     checked = time.time()
     print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Kling 2.6）：新しく頼む {len(queue)} 本・前回の続き {len(waiting)} 本（同時に{a.par}本・{log['_runs']}回目の実行）", flush=True)
