@@ -74,7 +74,7 @@ def rank_unscoped(text):
 
 RANK_NUM = re.compile(r"\d+位")  # 順位（tokens は単位つきの値だけを拾うので、数字の合計（§0）と見出しの数字の数ではこれも数える）
 THUMB_KINDS = ("判定", "落差", "自分ごと", "謎", "裏側")  # 手順書 §6 のサムネの字の型
-HOW_TAIL = re.compile(r"[（(][^）)]*統計[^）)]*[）)]|統計で(並べ|追っ|比べ|計算)|を並べた")  # 出典・作り方の尾（§6。2026-10-29 から付けない）
+HOW_TAIL = re.compile(r"統計|厚生労働省|厚労省|政府|e-Stat|データ|調査|並べ|物差し")  # 出典・作り方の言葉（§6。2026-10-30 本人「（厚生労働省の統計）こういうのいらない」。競合254本で2本だけ）
 
 
 def nums(text, small_rank=True):
@@ -412,22 +412,12 @@ def check_d(sc, facts, cuts, chars, ng, warn):
             ng.append(f"LINE の案内の2回目が、結論の章の後・締めの前に無い：{cuts[li[1]]['id']}")
 
     # 9. タイトル：AI の出し方・意外な・1位の名前・同点
-    say = facts.get("題の言い方", "")
-    names_ok = {say[:-3]} if say.endswith("だけで") else set()
-    stats = facts.get("e-Statにある統計", []) + facts.get("e-Statにない統計", [])
-    if len(stats) == 1:
-        names_ok.add(re.sub(r"^.*「|」.*$", "", stats[0]))
     for t in titles:
         a = t.find("AI")
         if a < 0 or a + 2 > 32:
             ng.append(f"型D のタイトルの「AI」が前の32字に無い：{t}")
-        m = re.search(r"AIに(.+?)だけで(?:採点|検証)させ", t)
-        if not m and re.search(r"AIが(?:採点|検証)", t):
-            m = re.search(r"([^\s、。：:？！…｜【】]+?)だけで", t)
-        if not m:
-            ng.append(f"タイトルに「AIに〈出典名〉だけで採点（検証）させたら」の形が無い：{t}")
-        elif m.group(1) not in names_ok:
-            ng.append(f"「だけで」の前の名前「{m.group(1)}」が、使った統計を全部覆う名前でない（facts.json の題の言い方：{say}）：{t}")
+        if not re.search(r"AI(に|が)", t):  # 2026-10-30 から出典名（「政府統計だけで」）は書かない。方法は「AIに採点させたら」だけ
+            ng.append(f"タイトルに「AIに採点（検証）させたら」の形が無い：{t}")
         if "意外な" in t and not facts.get("意外なを使える"):
             ng.append(f"「意外な」はこの回では使えない（1位が予想どおりか同点。facts.json の 意外なを使える）：{t}")
         if facts.get("1位が同点"):
@@ -1048,9 +1038,9 @@ def main(work):
         if len({s for s in short.values() if s in t}) >= 3:
             warn.append(f"タイトル{k + 1}案目に職業名が3つ以上（羅列は表の見出しになる。1〜2つにする §6）：{t}")
         if HOW_TAIL.search(unicodedata.normalize("NFKC", t)):
-            warn.append(f"タイトル{k + 1}案目に出典・作り方の尾（出典は概要欄と画面。§6）：{t}")
-        if typ == "B" and not any(n in t for n in facts.get("A社", {}).get("題の呼び名", ["平均的な会社", "統計から作った会社"])):
-            ng.append(f"型B のタイトルに「平均的な会社」か「統計から作った会社」が無い：{t}")
+            ng.append(f"タイトル{k + 1}案目に出典・作り方の言葉（{HOW_TAIL.search(unicodedata.normalize('NFKC', t)).group(0)}。出典は概要欄と画面。§6）：{t}")
+        if typ == "B" and not re.search(r"平均的な会社|もし|たら", t):  # 実際の出来事と読ませない（仮定の形か「平均的な会社」）
+            ng.append(f"型B のタイトルが仮定の形（「もし〜」「〜したら」）でも「平均的な会社」入りでもない：{t}")
         if sc.get("type") != "D" and "AI" in t:
             ng.append(f"型A・B・C のタイトルに「AI」：{t}")
         if t.count("【") > 1:
