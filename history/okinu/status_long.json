@@ -1,0 +1,13 @@
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/101_通帳まわりの3つ",
+ "done": [
+  "pick",
+  "write",
+  "gate_script"
+ ],
+ "started": "2026-10-29T21:35:28+09:00",
+ "tries": 0,
+ "code": "4c349f21db83",
+ "stage": "gate_script",
+ "updated": "2026-10-29T21:52:26+09:00"
+}
