@@ -1,19 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/004_a_niiname_2026",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/005_a_kotohajime_2026",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading"
+  "write"
  ],
- "started": "2026-10-29T17:37:44+09:00",
- "tries": 0,
- "code": "138e784b58c7",
- "stage": "images",
- "updated": "2026-10-29T18:06:33+09:00",
- "busy": {
-  "images": 1
- }
+ "started": "2026-10-29T23:37:32+09:00",
+ "tries": 1,
+ "code": "8f6cdbdebaf5",
+ "stage": "gate_script"
 }
