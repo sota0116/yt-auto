@@ -24,7 +24,7 @@
   "published_at": "2026-10-26T18:41:50+09:00",
   "comment_id": "Ugx5gZLpfNkOZrZzDVR4AaABAg",
   "comment_at": "2026-10-26T18:42:35+09:00",
-  "views_now": 1,
+  "views_now": 2,
   "thumb_lines": {
    "lines": [
     [
@@ -90,7 +90,7 @@
   "seconds": 1005,
   "title_now": "【心理学】休みの日に家から出ない人に共通する4つのこと｜何もしない時間に、脳が続けていること",
   "synthetic_on": null,
-  "views_now": 16,
+  "views_now": 24,
   "published": true,
   "published_at": "2026-10-28T19:00:40+09:00",
   "comment_id": "UgzmRNJE6pIBadCvW414AaABAg",
@@ -263,6 +263,11 @@
   "retitled": {
    "日時": "2026-10-29T17:09:24",
    "内容": "手順書 v4.0 の型へ題とサムネを差し替え"
-  }
+  },
+  "privacy_now": "private",
+  "publish_at": "2026-10-30T19:00:00+09:00",
+  "seconds": 1097,
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
