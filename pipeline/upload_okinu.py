@@ -5,11 +5,12 @@
 # ・上げた後、動画が残っていて断られていないかを数分見張る。消えた・断られた時は理由を出して止まる
 # ・非公開で上げる。--publish-at を付けるとその日時に公開の予約。AI の申告はオン、子ども向けではない
 #   60秒を超える動画（横動画）は、同じ日に横動画がもう入っていれば止まる（long_day_guard.py。2026-10-29）
+# ・題が、チャンネルのほかの動画の題の言い換え（似ている度合い 0.55 以上）なら止まる（title_guard.py。2026-10-30）
 # ・記録：<作業フォルダ>\<--up>\uploaded.json と history\okinu\uploaded.json（watch.py が読む）
 import argparse, datetime, json, os, subprocess, sys, time, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import api, API, channel_titles
-import long_day_guard
+import long_day_guard, title_guard
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH = "okinu"
@@ -36,9 +37,15 @@ def up1440(video):
         return video
     big = (2560, 1440) if w > h else (1440, 2560)
     dst = os.path.splitext(video)[0] + "_1440p.mp4"
+    # 途中で切れた写し（moov の無い壊れたファイル）を上げると、YouTube がすぐ消す（2026-10-30 004 で2回）。
+    # 長さが元と合わない写しは作り直し、作る時は仮の名前で書いてから付け替える
+    if os.path.exists(dst) and abs(seconds(dst) - seconds(video)) > 1:
+        os.replace(dst, dst + ".broken")
     if not os.path.exists(dst):
+        tmp = dst + ".part.mp4"
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", video, "-vf", f"scale={big[0]}:{big[1]}:flags=lanczos",
-                        "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "copy", dst], check=True)
+                        "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "copy", tmp], check=True)
+        os.replace(tmp, dst)
     return dst
 
 
@@ -95,6 +102,7 @@ def main():
         sys.exit("【止まりました】15分を超える動画は、チャンネルの電話番号の確認が済むまで上げられません（https://www.youtube.com/verify）")
     if a.publish_at and sec > 60:  # 横動画は同じ日に2本以上出さない（2026-10-29）
         long_day_guard.check(CH, datetime.datetime.fromisoformat(a.publish_at))
+    title_guard.check(title, channel_titles(CH))  # ほかの回の題の言い換えは止める（2026-10-30）
     if a.dry:
         print("（--dry なので上げません）", title)
         return
