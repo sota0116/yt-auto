@@ -1,23 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/009_a_taxi",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/010_a4_155a1cce",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images",
-  "charts",
-  "gate_images",
-  "build",
-  "gate_video",
-  "thumb"
+  "write"
  ],
- "started": "2026-10-29T06:38:28+09:00",
+ "started": "2026-10-30T03:21:24+09:00",
  "tries": 1,
- "code": "309067575812",
- "stage": "teaser",
- "updated": "2026-10-30T03:08:04+09:00",
- "build_gap": 0.51
+ "code": "ef1a35e56aba",
+ "stage": "gate_script"
 }
