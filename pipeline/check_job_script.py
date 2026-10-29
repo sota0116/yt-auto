@@ -74,6 +74,10 @@ def rank_unscoped(text):
 
 RANK_NUM = re.compile(r"\d+位")  # 順位（tokens は単位つきの値だけを拾うので、数字の合計（§0）と見出しの数字の数ではこれも数える）
 THUMB_KINDS = ("判定", "落差", "自分ごと", "謎", "裏側")  # 手順書 §6 のサムネの字の型
+# 比べた数（2026-10-30 本人「6職種とかあんまり一般的じゃないでしょ」。競合342本で「〇つの仕事」0本、「職種」4本はどれもランキングの見出し）
+COUNT_WORD = re.compile(r"\d+(職種|業種)|職種で|(\d+|[一二三四五六七八九十]+)つの(仕事|職業)")
+# タイトルの順位の範囲は、数でなく普段の言葉で言う（「全職業で」「年収が近い仕事の中で」）
+SCOPE_WORD = re.compile(r"全職業|全部の仕事|すべての仕事|日本の仕事|年収が(近い|同じくらいの|ほぼ同じ)仕事")
 HOW_TAIL = re.compile(r"統計|厚生労働省|厚労省|政府|e-Stat|データ|調査|並べ|物差し")  # 出典・作り方の言葉（§6。2026-10-30 本人「（厚生労働省の統計）こういうのいらない」。競合254本で2本だけ）
 
 
@@ -1031,8 +1035,8 @@ def main(work):
         names = list(short.values()) + jobs
         if typ in ("A", "C") and not any(n in t[:15] for n in names):  # 型A・C だけ（§6。2026-10-29 から頭でなく前の15字。型B は決断の言葉、型D は「AI」の位置で見る）
             ng.append(f"タイトル{k + 1}案目の前の15字に職業名が無い：{t}")
-        if len(t) > 40:
-            warn.append(f"タイトル{k + 1}案目が {len(t)} 字（40字まで。前の20字で謎か判定か自分ごとの問いが分かるように §6）：{t}")
+        if len(t) > 48:  # 競合の伸びた回の真ん中は42字（2026-10-30 の342本）
+            warn.append(f"タイトル{k + 1}案目が {len(t)} 字（48字まで。前の20字で職業名か出来事が分かるように §6）：{t}")
         if len(nums(t)) > 2:
             warn.append(f"タイトル{k + 1}案目の数字が {len(nums(t))} つ（1案に1つまで、落差の型でも2つまで §6）：{t}")
         if len({s for s in short.values() if s in t}) >= 3:
@@ -1047,12 +1051,17 @@ def main(work):
             ng.append(f"【】が2つ以上：{t}")
         if "離職率" in t and not re.search(r"(含む|業)の?離職率", t):
             ng.append(f"タイトルの離職率に業界名が無い：{t}")
-        head = unicodedata.normalize("NFKC", t).split("|")[0]  # 見る人がまず読む｜の前に、何の中の順位かを書く
-        if typ != "D" and rank_unscoped(head):
-            ng.append(f"タイトルの順位に、何の中の順位か（「6職種で」など）が｜の前に無い：{t}")
+        tn = unicodedata.normalize("NFKC", t)
+        if COUNT_WORD.search(tn):
+            ng.append(f"タイトル{k + 1}案目に比べた数（{COUNT_WORD.search(tn).group(0)}）。見る人の言葉でないので書かない §6：{t}")
+        rk = re.search(r"\d+位|最下位", tn)
+        if typ != "D" and rk and not SCOPE_WORD.search(tn):  # 範囲が無いと全部の中の順位に読める（2026-10-28）。範囲は数でなく普段の言葉で
+            ng.append(f"型A・B・C のタイトルの順位（{rk.group(0)}）に、何の中かが普段の言葉で無い（「全職業で」「年収が近い仕事の中で」。または「保育士より安い」と相手の名前で言う §6）：{t}")
         for tk in tokens(t):
             if tk not in allowed:
                 ng.append(f"タイトルに facts.json にない数字：{t} {tk}")
+    if sum("?" in unicodedata.normalize("NFKC", t) for t in ts) > 1:  # 競合の伸びた回で18%、それ以外で42%（2026-10-30）
+        warn.append(f"「？」のタイトルが {sum('?' in unicodedata.normalize('NFKC', t) for t in ts)} 案（1案まで。結末の形「〜した結果…」「〜したら」や【】を使う §6）")
     # サムネ（§6。2026-10-27 から場面の形・判定の形。make_thumb_job.py の rules と同じ所を見る）
     nf = lambda k: unicodedata.normalize("NFKC", sc.get(k) or "")
     top, th, band = nf("thumb_top"), nf("thumb_text"), nf("thumb_band")

@@ -1,5 +1,5 @@
 # 上げ済みの長尺のタイトルを、手順書 v5.3 §6 の形（1文の謎・判定・自分ごと。出典・作り方を書かない）に差し替える（仕事ch・2026-10-30 本人「タイトルがへたくそすぎる」「（厚生労働省の統計）こういうのいらない」）
-#   python -X utf8 pipeline\retitle_job.py [--dry]
+#   python -X utf8 pipeline\retitle_job.py [--only 007 008] [--dry]
 # ・history/job/retitle.json の works ごとに、タイトルを titles[0] にする。サムネは変えない
 # ・説明・タグ・カテゴリ・言語は今の値をそのまま送り返す（送らなかった項目は消えるため。watch.py の swap と同じ）
 # ・uploaded.json の title・titles・title_now も新しくする（見張りの72時間後の差し替えは titles[1]、2回目は titles[2] を使う）
@@ -16,10 +16,13 @@ UP = os.path.join(ROOT, "history", "job", "uploaded.json")
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--dry", action="store_true")
+    a.add_argument("--only", nargs="*", default=None, help="この番号で始まる回だけ（例 007 008。公開前の回だけ先に送る時）")
     a = a.parse_args()
     rec = json.load(open(REC, encoding="utf-8"))
     up = json.load(open(UP, encoding="utf-8"))
     for w in rec["works"]:
+        if a.only is not None and not any(w["work"].startswith(x) for x in a.only):
+            continue
         if w["video_id"] in rec["done"]:
             print(f"{w['work']}：済み")
             continue
@@ -39,7 +42,7 @@ def main():
             if e.get("video_id") == w["video_id"]:
                 # swaps には足さない（見張りは swaps の数で次の差し替えの番号を決める。titles[1] から使わせる）
                 e.update(title=w["titles"][0], titles=w["titles"], title_now=w["titles"][0])
-                e["retitled"] = {"日時": datetime.datetime.now().isoformat(timespec="seconds"), "内容": "手順書 v5.3 の形へタイトルを差し替え"}
+                e["retitled"] = {"日時": datetime.datetime.now().isoformat(timespec="seconds"), "内容": "手順書 v5.4 の形へタイトルを差し替え"}
         rec["done"].append(w["video_id"])
         json.dump(rec, open(REC, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         json.dump(up, open(UP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

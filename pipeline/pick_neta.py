@@ -121,7 +121,7 @@ def choose(ch, hist):
             if c:
                 names = c[0]
                 nid = "a4_" + hashlib.sha1("|".join(sorted(names)).encode()).hexdigest()[:8]
-                row = {"id": nid, "title": "・".join(names[:2]) + "…年収が近い6つの仕事", "type": "A", "frame": "A-4",
+                row = {"id": nid, "title": names[0] + "と" + names[1] + "、年収は近いのに", "type": "A", "frame": "A-4",
                        "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
                        "jobs": names, "facts_cmd": ["a4_facts.py", "make", "{work}", *names]}
                 return row, want, t
