@@ -335,6 +335,34 @@ def bad_frame_cuts(work):
     return out
 
 
+def swap_bad_frames(work, fixes):
+    """完成動画ゲートで落ちた絵（fixes の id）のファイルを、すぐ前（無ければすぐ後）の合格の絵で上書きする。{落ちた id: 借りた id}。
+    元の絵は images/_video_gate_old/ に残す。same_as でたどるカット・ショートの from も同じファイルを読むので、まとめて直る"""
+    import shutil
+    img, old = os.path.join(work, "images"), os.path.join(work, "images", "_video_gate_old")
+    cuts = [c for c in jload(os.path.join(work, "script.json"), {}).get("cuts", [])
+            if c.get("narration") and not c.get("card") and not c.get("chart") and not c.get("same_as")]
+    ids = [c["id"] for c in cuts]
+    ok = lambda i: i not in fixes and os.path.exists(os.path.join(img, i + ".png"))
+    out = {}
+    for bad in fixes:
+        if bad not in ids:
+            continue
+        k = ids.index(bad)
+        near = next((ids[j] for j in list(range(k - 1, -1, -1)) + list(range(k + 1, len(ids))) if ok(ids[j])), None)
+        if not near:
+            continue
+        os.makedirs(old, exist_ok=True)
+        for ext in (".png", ".mp4"):
+            p = os.path.join(img, bad + ext)
+            if os.path.exists(p):
+                os.replace(p, os.path.join(old, bad + ext))
+            if os.path.exists(os.path.join(img, near + ext)):
+                shutil.copyfile(os.path.join(img, near + ext), p)
+        out[bad] = near
+    return out
+
+
 def make_one(ch, st, upload, kind=None):
     """1本作る。st は status.json の中身（続きから始める時は work と done が入っている）。kind＝種類（kinds のあるチャンネルだけ）"""
     sp = status_path(ch, kind)
@@ -519,6 +547,15 @@ def make_one(ch, st, upload, kind=None):
                 run(work, "build", build_args(), ch)
                 continue
             fixes = bad_frame_cuts(work)
+            if fixes and not st.get("video_swapped") and len(fixes) <= 6:
+                # 2026-10-29：絵1枚の看板の字で 004 が約10時間止まった（描き直しも無料の順番待ちで、また字が出た）。
+                # まず落ちた絵を前のカットの絵に差し替えて、待たずに組み直す。それでも落ちた時だけ、下の描き直しへ
+                st["video_swapped"] = swap_bad_frames(work, fixes)
+                jsave(sp, st)
+                if st["video_swapped"]:
+                    print(f"■ 完成動画ゲートで落ちた絵を、近くのカットの絵に差し替えて組み直す：{st['video_swapped']}", flush=True)
+                    run(work, "build", build_args(), ch)
+                    continue
             if not fixes or st.get("video_redo", 0) >= 2:
                 raise Stop(f"gate_video で止まりました（終了コード 1）：{r.stdout.strip()[-300:]}")
             st["video_redo"] = st.get("video_redo", 0) + 1
