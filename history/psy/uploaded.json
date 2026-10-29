@@ -90,7 +90,7 @@
   "seconds": 1005,
   "title_now": "【心理学】休みの日に家から出ない人に共通する4つのこと｜何もしない時間に、脳が続けていること",
   "synthetic_on": null,
-  "views_now": 24,
+  "views_now": 31,
   "published": true,
   "published_at": "2026-10-28T19:00:40+09:00",
   "comment_id": "UgzmRNJE6pIBadCvW414AaABAg",
@@ -155,8 +155,8 @@
    "【心理学】夜中にふと目が覚めると、昔のことばかり思い出してしまう理由｜沈んだ気分でくり返し考えると、思い出はいやな方へかたよりやすいという実験"
   ],
   "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
-  "privacy_now": "private",
-  "publish_at": "2026-10-29T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 1047,
   "title_now": "【心理学】夜中にふと目が覚める人の「意外な特徴」｜眠りは、2つに分かれることがある",
   "synthetic_on": null,
@@ -202,7 +202,11 @@
   "retitled": {
    "日時": "2026-10-29T17:09:18",
    "内容": "手順書 v4.0 の型へ題とサムネを差し替え"
-  }
+  },
+  "published": true,
+  "published_at": "2026-10-29T19:00:35+09:00",
+  "comment_id": "UgwEjHOkTQJwv775iod4AaABAg",
+  "comment_at": "2026-10-29T21:59:11+09:00"
  },
  {
   "work": "004_tsukare_hito",
