@@ -10,7 +10,7 @@
   "_説明": "LINE の案内で約束する特典（手順書 §4 の表）。ファイルが無い型は、約束が守れないので選ばない（2026-10-29 時点で、あるのは A・C2 のカレンダーだけ）。B・C・D の特典を作ったら、ここの glob に当たるファイルを置けば自動で選べるようになる",
   "A": "tokuten/spi/tokuten_spi_AC2_*.json",
   "C2": "tokuten/spi/tokuten_spi_AC2_*.json",
-  "B": "tokuten/spi/tokuten_spi_B_*.json",
+  "B": "tokuten/spi/tokuten_spi_AC2_*.json",
   "C": "tokuten/spi/tokuten_spi_C_*.json",
   "D": "tokuten/spi/tokuten_spi_D_*.json"
  },
