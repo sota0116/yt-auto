@@ -1,7 +1,7 @@
 # 台本の機械点検（心理学ch・2026-10-27 新設。手順書 §9）：script.json と facts.json を決まりと照らす
 #   python -X utf8 pipeline\check_psy_script.py <作業フォルダ> [--no-net]
-# ・NG：字数（4,900〜6,000）・章（6〜8）・つかみの決まった文・登録の呼びかけの位置（40〜50%）・締めの文・クイズ・
-#   研究カード（5〜8枚と形）・動かす絵（20〜40）・使い回し（12%まで）・サムネの背景（THUMB）・記号と禁止表現・
+# ・NG：字数（4,900〜6,000）・章（7〜9）・つかみの問いと予告の文・特徴の章（4つ以上）・登録の呼びかけの位置（30〜55% かまとめ）・締めの文・
+#   研究カード（4〜8枚と形）・動かす絵（20〜40）・使い回し（12%まで）・サムネの背景（THUMB）・記号と禁止表現・
 #   タイトル（【心理学】・100字まで・3案）・サムネの文字（3行・11〜17字・黄は1か所）・概要欄（置き換えの印・研究・断り）・
 #   研究（5〜9個・study の参照先・DOI を Crossref で引いて著者と年が合うか）
 # ・注意：1カットの字数・label の数など、直した方がよいが止めない物
@@ -11,6 +11,10 @@ import argparse, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MARKS = ("──", "—", "…", "※", "★", "→")
+# 競合の伸びた回の型（手順書 v4.0 §3。2026-10-29 本人の指摘「研究を淡々と話すだけで、最後まで楽しく見られない」）
+NUM = r"([0-9０-９]+|[一二三四五六七八九])"
+PLAN = re.compile(r"今回は、.*" + NUM + r"(個|つ)の(特徴|サイン|共通点|理由)")
+FEAT = re.compile(NUM + r"つ目の(特徴|サイン|共通点|理由)は")
 # 答えを先送りするだけの文（2026-10-28 本人の指摘。スキル references/16 の6）。問いは出してよいが「答えはこのあと」とは言わない
 # 実例：「その答えは、後半の研究でお見せします。」「答えは、次の章で。」「最後まで見てくださって、ありがとうございました。」
 TEASE = [re.compile(x) for x in (
@@ -72,19 +76,29 @@ def main():
         if len(c["chapter"]) > 20:
             ng.append(f"{c['id']}：章の名前が20字を超える")
     nar = {c["id"]: c["narration"] for c in talk}
-    hook = [c for c in talk[:8]]
-    if not any(re.match(r"今回は、.+心理学の研究から見ていきます。", c["narration"]) for c in hook):
-        ng.append("つかみに「今回は、〇〇を、心理学の研究から見ていきます。」が無い（§3-1）")
-    if not any(c["narration"].startswith("最後に、") and "お話しします" in c["narration"] for c in hook):
-        ng.append("つかみに「最後に、〇〇も、お話しします。」が無い（§3-1）")
+    # つかみ：問い「ありませんか」と、最初の90秒（語りの12%まで）に「今回は、〇〇な人に共通する、N個の特徴を」の予告
+    plan = next((c for c in talk if PLAN.search(c["narration"])), None)
+    if not plan:
+        ng.append("つかみに予告の文「今回は、〇〇な人に共通する、N個の特徴を、心理学の研究からお話しします。」が無い（§3-1）")
+    elif pos[plan["id"]] > 0.12:
+        ng.append(f"予告の文が語りの {pos[plan['id']]:.0%} の所にある（つかみは最初の60〜90秒・12%まで。§3-1）")
+    elif pos[plan["id"]] < 0.03:
+        warn.append(f"予告の文が語りの {pos[plan['id']]:.0%} の所（つかみは60〜90秒・300〜450字のめやす。場面と思い込みとひっくり返しを先に。§3-1）")
+    before = talk[:talk.index(plan) + 1] if plan else talk[:16]
+    if not any("ありませんか" in c["narration"] for c in before):
+        ng.append("つかみに問い「そんな経験は、ありませんか？」が無い（予告の文より前に。§3-1）")
+    feats = [c for c in talk if FEAT.search(c["narration"])]
+    if len(feats) < 4:
+        ng.append(f"特徴の章の「〇つ目の特徴は、〇〇です。」が {len(feats)}個（4〜6個。§3-3）")
+    for c in feats:
+        if not c.get("label") and not c.get("card"):
+            warn.append(f"{c['id']}：「〇つ目の特徴は」のカットに label が無い（特徴を短くした label を付ける。§5）")
     sub = [i for i, t in nar.items() if "チャンネル登録" in t]
     if not sub:
         ng.append("登録の呼びかけが無い（§3-4）")
-    elif not 0.38 <= pos[sub[0]] <= 0.52:
-        ng.append(f"登録の呼びかけの位置 {pos[sub[0]]:.0%}（40〜50%。§3-4）")
-    if not any("ここで問題です" in t for t in nar.values()):
-        ng.append("クイズ（「ここで問題です。」）が無い（§3-3）")
-    tail = " ".join(c["narration"] for c in talk[-6:])
+    elif not (0.30 <= pos[sub[0]] <= 0.55 or sub[0] in [c["id"] for c in talk[-10:]]):
+        ng.append(f"登録の呼びかけの位置 {pos[sub[0]]:.0%}（まとめの締めの前か、30〜55% の章と章の間。§3-4）")
+    tail = " ".join(c["narration"] for c in talk[-10:])
     # 締めのお礼は「最後まで」を付けない（2026-10-28 本人の指摘。references/16 の6）
     for need in ("コメントで教えてください", "見てくださって、ありがとうございました", "また次の動画で、お会いしましょう"):
         if need not in tail:
@@ -132,8 +146,8 @@ def main():
         if c.get("nobody") and c.get("chars"):
             ng.append(f"{c['id']}：nobody なのに chars がある")
     nob = sum(1 for c in img if c.get("nobody"))
-    if nob / max(1, len(img)) > 0.3:
-        warn.append(f"物だけの絵 {nob}/{len(img)}（3割までのめやす）")
+    if nob / max(1, len(img)) > 0.25:
+        warn.append(f"物だけの絵 {nob}/{len(img)}（25%までのめやす。§5）")
     mo = [c for c in cuts if c.get("motion")]
     if not 20 <= len(mo) <= 40:
         ng.append(f"動かす絵 {len(mo)}カット（25〜35 のめやす。§5）")
@@ -159,11 +173,11 @@ def main():
         has = [k for k in ("motion", "label", "strong") if c.get(k)]
         if len(has) < 2:
             ng.append(f"{c['id']}：見どころ（peak）は motion・label・strong のうち2つ以上で目立たせる（今：{has or 'なし'}。§5）")
-        if c in talk[-6:]:
+        if c in talk[-10:]:
             ng.append(f"{c['id']}：見どころ（peak）を締めに置かない（本編の中のその回だけの場面にする。§5）")
     cards = [c for c in cuts if c.get("card")]
-    if not 5 <= len(cards) <= 8:
-        ng.append(f"研究カード {len(cards)}枚（5〜8枚。§5）")
+    if not 4 <= len(cards) <= 8:
+        ng.append(f"研究カード {len(cards)}枚（4〜8枚。§5）")
     for c in cards:
         k = c["card"]
         if not k.get("source"):
@@ -196,8 +210,12 @@ def main():
     t = s.get("title", "")
     if not t.startswith("【心理学】") or len(t) > 100:
         ng.append(f"タイトルは「【心理学】」で始め100字まで：{t}")
-    elif not 40 <= len(t) <= 85:
-        warn.append(f"タイトル {len(t)}字（60〜80字のめやす）")
+    elif not 40 <= len(t) <= 70:
+        warn.append(f"タイトル {len(t)}字（45〜65字のめやす。§6）")
+    if t and "人" not in t.split("｜")[0]:
+        warn.append(f"タイトルの「｜」より前に「〇〇な人」が無い（§6 の型 A〜D）：{t}")
+    if re.search(r"(理由|わけ)$", t.split("｜")[0]):
+        warn.append(f"タイトルが「〜理由」「〜わけ」で終わる（v3.4 までの形。§6 の型 A〜D にする）：{t}")
     if len(s.get("titles", [])) != 3 or s["titles"][0] != t:
         ng.append("titles は3案で、1番目が title と同じ（§6）")
     lines = (s.get("thumb") or {}).get("lines") or []
@@ -254,7 +272,7 @@ def main():
                 ng.append(f"facts.json {k}：DOI の著者 {fams[:3]} と first_author {x.get('first_author')} が合わない")
             if yr and x.get("year") and abs(int(yr) - int(x["year"])) > 1:
                 ng.append(f"facts.json {k}：DOI の年 {yr} と year {x['year']} が合わない")
-    print(f"語り {total}字・{len(talk)}カット・章 {len(chaps)}・絵 {len(img)}（物だけ {nob}）・使い回し {len(same)}・"
+    print(f"語り {total}字・{len(talk)}カット・章 {len(chaps)}・特徴 {len(feats)}・絵 {len(img)}（物だけ {nob}）・使い回し {len(same)}・"
           f"動かす {len(mo)}・カード {len(cards)}・研究 {len(st)}")
     for w in warn:
         print("注意：", w)

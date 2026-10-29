@@ -13,6 +13,7 @@ from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVE
 
 GOLDEN = os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
+FRAME = os.path.join(ROOT, "channels", "psy", "golden", "構成見本_v4_2026-10-29.md")  # 競合の伸びた回の骨組み（手順書 v4.0 §3）
 
 
 def recent(ch, n=9):
@@ -64,17 +65,18 @@ def extra_docs(ch):
 
 def prompt(work, ch, fix):
     rel = lambda p: os.path.relpath(p, ROOT).replace("\\", "/")
-    more = "".join(f"\n{i}. {rel(x)}（{what}）" for i, (x, what) in enumerate(extra_docs(ch), 8))
+    more = "".join(f"\n{i}. {rel(x)}（{what}）" for i, (x, what) in enumerate(extra_docs(ch), 9))
     p = f"""あなたは YouTube チャンネル「しずくの心理学」の台本の書き手です。作業フォルダ {rel(work)} に facts.json と script.json を書いてください。
 
 ## 先に全部読むファイル（部分読み禁止）
 1. {rel(doc(ch, '手順書.md'))}（このチャンネルの決まりの正本。全部読む）
 2. {rel(os.path.join(work, 'neta.json'))}（この回の題・場面・切り口・研究の手がかり・参考にした競合の題）
-3. {rel(GOLDEN)}（1本目の台本。形と密度の見本。項目名・カットの長さ・つかみと締めの決まった文・研究の話し方・カード・動かす絵の付け方を借りる。中身の場面・言い回しは写さない）
-4. {rel(GOLDEN_FACTS)}（1本目で使った研究と「言ってよい範囲」の書き方の見本）
-5. {rel(os.path.join(ROOT, 'channels', ch, 'profile.json'))}（チャンネルの設定）
-6. {rel(os.path.join(ROOT, 'channels', ch, '禁止表現.txt'))}（使わない言葉。台本ゲートでも照らす）
-7. {rel(os.path.join(ROOT, 'channels', ch, 'characters', 'characters.json'))}（主役 hero）{more}
+3. {rel(FRAME)}（組み立ての見本。競合の伸びた回の「〇〇な人に共通するN個の特徴」の骨組み。並びと密度を借りる。例の文・【】の所は写さない）
+4. {rel(GOLDEN)}（1本目の台本。項目名・カットの長さ・カード・動かす絵・label・概要欄の付け方だけを借りる。組み立てと語り口は v3 の研究の講義の形なので写さない）
+5. {rel(GOLDEN_FACTS)}（1本目で使った研究と「言ってよい範囲」の書き方の見本）
+6. {rel(os.path.join(ROOT, 'channels', ch, 'profile.json'))}（チャンネルの設定）
+7. {rel(os.path.join(ROOT, 'channels', ch, '禁止表現.txt'))}（使わない言葉。台本ゲートでも照らす）
+8. {rel(os.path.join(ROOT, 'channels', ch, 'characters', 'characters.json'))}（主役 hero）{more}
 
 ## 直近の回（同じ研究を中心にしない・同じつかみの場面を使わない材料）
 数字がある回は、平均視聴率（averageViewPercentage）とクリック率（ctr）の高い回の、つかみの形・章の引き・タイトルとサムネの言葉の型を参考にする。
@@ -82,7 +84,8 @@ def prompt(work, ch, fix):
 {json.dumps(recent(ch), ensure_ascii=False, indent=1)}
 
 ## やること
-1. 研究を調べる：neta.json の angle と hint を手がかりに、WebSearch・WebFetch で、この回の場面のわけを説明できる研究を5〜9個選ぶ。
+1. 研究を調べる：neta.json の angle と hint を手がかりに、WebSearch・WebFetch で、この回の「〇〇な人」の特徴4〜6個を、1つずつ説明できる研究を5〜9個選ぶ。
+   人の出てくる物語にできる研究（どこの大学の誰が、何人に、何をして、どんな驚く数字が出たか）を優先する。数字・大学・研究者の名前は may_say に書く。
    査読のある論文か、大学・学会の公式の解説だけ。論文は DOI を確かめて書く（DOI の無い物は url）。読めた範囲（抄録・公式の解説）から外れることは書かない。
    手順書 §8 の形で facts.json を書く。may_say には「台本で言ってよい範囲」、kind には実験・観察・総説のどれかを書く。
    手がかりの研究が見つからない・合わない時は、同じ切り口の別の研究にしてよい。研究で説明できない題なら、題を研究に合わせて少し変えてよい（neta.json は書き換えない）。
@@ -90,9 +93,13 @@ def prompt(work, ch, fix):
    研究の結果は may_say の範囲だけで言う。観察研究を「〇〇すると△△になる」と言わない。効果の約束・医療の話はしない。
    サムネの背景（THUMB カット）は手順書 §5・§6 の通り：主役のしずくの顔に、その回の気持ち（驚き・不安・困惑・ほっとした顔のどれか1つ）をはっきり出し、
    画面の真ん中の高さに（上と下の2割をあける）、暗めの背景に主役だけ光を当てて描く絵を image に書く。人間は描かない。比べる回は色ちがいのしずくを並べて札を付ける絵にする。thumb の文字は2段（上＝何の話か・下＝答え）。
+   2026-10-29 本人の指摘「研究結果を淡々と話すだけで、最後まで楽しく見られない。タイトル・サムネがつまらない。伸びている競合の型をまず写す」：
+   ・組み立ては手順書 §3（つかみの問い「ありませんか」→ 思い込み → ひっくり返す → 予告「今回は、〇〇な人に共通する、N個の特徴を」→ 前提の章 → 特徴の章4〜6つ → 暮らしの工夫 → まとめ）。
+   ・特徴の章は、あるある場面 → 研究の物語と驚く数字 → 二段目の驚き → たとえ → 三人称の言い切り。研究の結果を並べるだけの講義にしない。後ろの特徴ほど意外に。
+   ・タイトルとサムネは手順書 §6 の型（〇〇な人の「意外な特徴」／〇〇な人、実は〇〇です。／〇〇な人に共通するN個の特徴／〇〇する人の正体）。「〜理由」「〜わけ」で終わる題にしない。
    2026-10-28 本人の指摘（スキル references/16。見本 001 に無くても守る。見本の B20・C35・I11c の言い方は写さない）：
    ・章ごとに motion のカット（動く絵）を1つ以上置く。
-   ・見どころ：この回でいちばん面白い場面（この回だけの研究の結果か場面）のカット1つに "peak": true を書き、motion・label・strong のうち2つ以上を付ける。締めの6カットには付けない。
+   ・見どころ：この回でいちばん驚く所（最後の特徴の章の、驚く数字が出る所など）のカット1つに "peak": true を書き、motion・label・strong のうち2つ以上を付ける。締めの10カットには付けない。
    ・「その答えは後半で」「答えは次の章で」「最後まで見て」のような、答えを先に延ばすだけの文は書かない。締めのお礼は「見てくださって、ありがとうございました。」（「最後まで」を付けない）。
 3. ショートを書く：手順書 §10 の決まりで、script.json に "short" を書く。サムネの B案（thumb の "lines_b"。§6）も忘れずに。
 4. 終わる前に必ず `python -X utf8 pipeline/check_psy_script.py {rel(work)}` と `python -X utf8 pipeline/make_short_psy.py {rel(work)} --check` を回し、
@@ -101,8 +108,8 @@ def prompt(work, ch, fix):
 
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
-- 夜ひとりの時間に、お茶を飲みながら耳で聞く60代の女性として10点満点。最初の30秒が7点以上、全部の章が5点以上で合格。
-- 最初の30秒は、見る人の毎日の1場面の小さな謎で始める。各章の終わりの1文で、次を聞きたくなる引きを作る。
+- 家事をしながら耳で聞き、退屈ならすぐ次の動画へ行く60代の女性として10点満点。最初の30秒が7点以上、全部の章が6点以上、最後まで楽しく見られるか（全体）が7点以上で合格。
+- 研究の結果を並べるだけの講義の章は、正しくても低く付く。「へぇ」「これ私のことだ」「人に話したい」を章ごとに1つ作る。
 - 画面を見ないと分からない言い方（「この表」「ここに書いてある」）はしない。
 """
     if fix:
