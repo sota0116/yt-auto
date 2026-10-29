@@ -70,5 +70,19 @@
   "line_copy": 1,
   "sub_copy": 3,
   "made": "2026-10-30"
+ },
+ "007_b_kamidana_2026": {
+  "neta_id": "b_kamidana_2026",
+  "type": "B",
+  "frame": "B-2",
+  "pub_date": "2026-11-04",
+  "window": [
+   "2026-11-02",
+   "2027-04-01"
+  ],
+  "hook_type": "場面",
+  "line_copy": 2,
+  "sub_copy": 1,
+  "made": "2026-10-30"
  }
 }

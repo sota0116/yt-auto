@@ -1,21 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/006_b_ennichi_2026",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/007_b_kamidana_2026",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "write"
  ],
- "started": "2026-10-30T02:49:26+09:00",
+ "started": "2026-10-30T06:30:04+09:00",
  "tries": 1,
  "code": "b416d7634093",
- "stage": "thumb",
- "updated": "2026-10-30T06:23:46+09:00"
+ "stage": "gate_script"
 }

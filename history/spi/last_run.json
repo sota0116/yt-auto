@@ -1,9 +1,11 @@
 {
  "ch": "spi",
- "started": "2026-10-30T06:23:25+09:00",
- "made": [],
- "stopped": "thumb で止まりました（終了コード 1）：）／下の段 90%（70%以上）／上の段 84%（60%以上）／字の面積 約29%（30〜60%）／行数 2（4行まで）／色を変えた語 1（1〜2）／字数 20\n  NG 字が少なすぎて目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/spi/videos/006_b_ennichi_2026/thumb_a_small.jpg\nサムネ：/home/runner/work/yt-auto/yt-auto/channels/spi/videos/006_b_ennichi_2026/thumb_a.jpg（NG 1件）",
+ "started": "2026-10-30T06:29:54+09:00",
+ "made": [
+  "006_b_ennichi_2026"
+ ],
+ "stopped": "台本ゲートで5回不合格（書き直し4回でも直らない）。その回は止め、在庫で公開をつなぐ",
  "在庫": 2,
- "ended": "2026-10-30T06:23:47+09:00",
+ "ended": "2026-10-30T06:58:10+09:00",
  "今月の制作費_円": 0.0
 }
