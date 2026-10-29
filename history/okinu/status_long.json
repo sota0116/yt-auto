@@ -4,13 +4,15 @@
   "pick",
   "write",
   "gate_script",
-  "voice"
+  "voice",
+  "images",
+  "motion"
  ],
  "started": "2026-10-29T21:35:28+09:00",
- "tries": 0,
- "code": "8f6cdbdebaf5",
- "stage": "images",
- "updated": "2026-10-29T22:52:38+09:00",
+ "tries": 1,
+ "code": "1eb5dc62f369",
+ "stage": "gate_images",
+ "updated": "2026-10-30T01:54:49+09:00",
  "busy": {
   "images": 1
  }
