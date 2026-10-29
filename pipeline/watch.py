@@ -375,6 +375,29 @@ def schedule_teasers(ch, up, dry):
     return out or None
 
 
+def move(spec, dry):
+    """予約を指定の時刻へ移す（本人の指示で、決まりの枠や期間の外に出す時。手で動かす見張りの move 入力）。
+    spec＝「チャンネル:作業フォルダの名前@2026-10-30T18:00」（日本時間）。2026-10-30 本人「10月30日に横動画載せて」"""
+    ch, rest = spec.split(":", 1)
+    work, when = rest.rsplit("@", 1)
+    at = datetime.datetime.fromisoformat(when).replace(tzinfo=JST)
+    if at <= now() + datetime.timedelta(minutes=30):
+        raise SystemExit(f"{spec}：30分より先の時刻にしてください")
+    up = ustore.load(ch)
+    e = next((x for x in up if x.get("work") == work and not x.get("missing")), None)
+    if not e or e.get("published"):
+        raise SystemExit(f"{spec}：上げた回に無いか、もう公開されています")
+    if dry:
+        print(f"（--dry）{ch} {work} を {at.isoformat()} へ移す（今は {e.get('publish_at')}）")
+        return
+    st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+          "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
+    api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
+    print(f"{ch} {work} の予約を {e.get('publish_at')} → {at.isoformat()} に移しました")
+    e["publish_at"] = at.isoformat()
+    ustore.save(ch, up)
+
+
 def watch_channel(ch, dry, ahead=1):
     st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
@@ -461,11 +484,14 @@ def main():
     a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--dry", action="store_true")
     a.add_argument("--ahead", type=int, default=1, help="明日から何日先まで予約するか（1＝明日だけ）")
+    a.add_argument("--move", default="", help="予約を移す「ch:作業フォルダ@YYYY-MM-DDTHH:MM」（空白で区切って複数）")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
     hb_p = os.path.join(ROOT, "history", "heartbeat.json")
     when = now().strftime("%m/%d %H:%M")
     failed = False
+    for spec in a.move.split():  # 見張りの前に移す（空いた枠に、このあと見張りが在庫を入れられるように）
+        move(spec, a.dry)
     for ch in a.chs:
         try:
             watch_channel(ch, a.dry, a.ahead)

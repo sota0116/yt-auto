@@ -14,6 +14,10 @@ on:
         description: "明日から何日先まで予約するか（定時は7）"
         required: false
         default: "7"
+      move:
+        description: "予約を移す（例 spi:003_a_shichigosan_2026@2026-10-30T18:00。空白で区切って複数）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -67,7 +71,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           HC_WATCH: ${{ secrets.HC_PING_WATCH }}   # 鍵の名前は鍵ファイル（keys.env）に合わせる
           AHEAD: ${{ inputs.ahead || '7' }}   # 2026-10-30 から明日だけでなく7日先まで予約する（上げた回が予約なしで並ばないように。近い日から順に入れる）
-        run: python -X utf8 pipeline/watch.py $CHANNELS --ahead "$AHEAD"
+          MOVE: ${{ inputs.move || '' }}
+        run: python -X utf8 pipeline/watch.py $CHANNELS --ahead "$AHEAD" --move "$MOVE"
       - name: ショートを見張る（心理学ch 12:10・千年こよみ 19:15。本編の予約が入ったら次の日に予約・本編へのコメント・72時間と7日の数字）
         if: always()
         run: python -X utf8 pipeline/shorts_watch_v2.py psy spi
