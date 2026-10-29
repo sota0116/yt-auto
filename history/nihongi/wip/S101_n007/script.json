@@ -1,0 +1,283 @@
+{
+ "format": "short",
+ "title": "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代",
+ "promise": "1695年の元禄の改鋳で、小判は重さがほぼ同じまま金の割合が84%から57%に下がったのに、幕府はそれを1両として使わせ、その差が幕府の収入（出目）になった、という仕組みが持ち帰れる",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※小判がしゃべる話と、そのせいで小判が1両の7割の値でしか受け取られず、幕府の儲けが0になった話は作り話です。1695年（元禄8年）に荻原重秀の案で、幕府が「極印が古くなったので作り直す」という名目のおふれを出して小判を作り直し、金の割合が84%から57%に下がったこと、幕府が新しい小判を1両として通用させ、改鋳の差益で財政の赤字を埋めたこと、物価が上がったこと、1712年に荻原重秀が新井白石の弾劾で職を追われたことは史実をもとにしています。差益の額（約500万両）は、そういわれている話です。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "元禄の改鋳",
+  "小判",
+  "荻原重秀",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "1両が7割に"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "小判には心があり、声を出せる。声が聞こえるのは、その小判を手に持っている人だけ（持っていない人・幕府の役人・荻原重秀には聞こえない）",
+  "小判が知っているのは、自分の身に起きたこと（慶長小判だった自分が溶かされ、混ぜ物をされて作り直されたこと・今は米屋の手の中にいること）と、自分の金の割合と、前の自分（慶長小判）が1両だったことだけ。年・荻原重秀の名前・おふれの名目・幕府の収入・赤字・物価・その後のこと（1712年の失脚）は知らない。それは語り手が話す",
+  "米屋の主人が知るのは、手に持った小判から聞いた金の割合だけ（1両の7割の値は、そこから米屋が決めたこと）。幕府の収入の額は知らない",
+  "小判が7割の値でしか受け取られず、幕府の儲けが0になったのは作り話の世界のこと（台本では「しゃべる小判なら」「しゃべれば」と断る）。本当の歴史では小判はしゃべらず（黙っていた）、幕府は新しい小判を1両として通用させ、差益を得たといわれる"
+ ],
+ "world_terms": [
+  "小判",
+  "割合",
+  "%",
+  "7割",
+  "3割",
+  "儲け",
+  "1両",
+  "500万両",
+  "黙"
+ ],
+ "voices": {
+  "koban": 12
+ },
+ "facts": [
+  "1695年（元禄8年）、幕府は慶長金銀を改鋳して元禄金銀を出した。荻原重秀（当時は勘定頭差添役、1696年に勘定奉行）の建議による。出どころ：コトバンク『元禄金銀』（百科事典マイペディア・ブリタニカ国際大百科事典・旺文社日本史事典）kotobank.jp/word/元禄金銀、コトバンク『荻原重秀』（改訂新版 世界大百科事典・山川 日本史小辞典）kotobank.jp/word/荻原重秀",
+  "元禄小判の金の割合（品位）は57%で、慶長小判の84%から下げられた。目的は貨幣の流通量を増やし、改鋳の利益で財政の赤字（寺社の造営や明暦の大火後の江戸の復興などが原因）を埋めること。荻原重秀は5代将軍綱吉に仕えた。出どころ：日本銀行金融研究所 貨幣博物館 常設展示図録 43/101 www.imes.boj.or.jp/cm/collection/tenjizuroku/mod/book/pageindices/index43.html（日本大百科全書は慶長小判87%→元禄小判57%とする）",
+  "元禄の小判は、形と重さは慶長小判とほぼ同じで、品位が劣っていた。改鋳の差益（出目）で幕府は多くの利益を得、物価が上がった。出どころ：旺文社日本史事典 三訂版『元禄金銀』（コトバンク）。台本では「物価が上がった」とだけ言い、程度は言わない",
+  "改鋳にあたり幕府は「金銀極印古く成り候に付，吹き直すべき旨仰せ出され，云々」という触書を出した（極印が古くなったので作り直す、という名目）。極印が見えにくくなった貨幣の追放と、貨幣流通量の増加を名目とした。本当の目的は改鋳の利益で赤字を埋めること（上の貨幣博物館の図録）。出どころ：改訂新版 世界大百科事典『元禄金銀』、山川 日本史小辞典 改訂新版『元禄金銀』（コトバンク kotobank.jp/word/元禄金銀）。台本では「小判の印が古いから作り直す」と言う",
+  "幕府は金の含有量を3割減らした元禄小判を、1%程度のプレミアム（上乗せ）で強制的に通用させた（慶長小判と同じ1両として使わせた）。改鋳益は旧貨を多く持つ商業資本が負担したという見方もある。出どころ：村井淳志『勘定奉行 荻原重秀の生涯』（集英社新書）を紹介した J-CAST トレンド「元禄貨幣改鋳、時代が早すぎた経済観」2013-12-19 www.j-cast.com/trend/2013/12/19192132.html。台本では「同じ1両で使えと命じた」と言う",
+  "差益は約500万両といわれる（世界大百科事典（旧版）『江戸幕府』の項が「という」の形で記す。コトバンク『荻原重秀』のページ内。東洋経済オンライン 大村大次郎 2021-07-13 toyokeizai.net/articles/-/425003 も「500万両の出目（収入）を得たとされている」と書く）。台本では「といわれる」",
+  "1712年（正徳2年）、荻原重秀は新井白石の3度にわたる弾劾で勘定奉行を追われた（失脚）。出どころ：山川 日本史小辞典 改訂新版『荻原重秀』（コトバンク kotobank.jp/word/荻原重秀）",
+  "小判がしゃべること、小判が1両の7割の値でしか受け取られなかったこと、そのために幕府の儲けが0になったことは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "薄い小判\nしゃべる",
+   "narration": "小判から金が3割消えた。それでも1両で通った。",
+   "highlight": [
+    "3割消えた"
+   ],
+   "image_en": "A single large gold oval koban coin with a plain blank surface, glowing brightly as if alive, standing on a dark wooden counter of an Edo-period shop; an astonished townsman in a plain kimono leans back with wide eyes, lantern light.",
+   "shots": [
+    "n01",
+    "n01@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "小判から金がさんわり消えた。それでもいちりょうで通った。",
+   "image": "A single large gold oval koban coin with a plain blank surface, glowing brightly as if alive, standing on a dark wooden counter of an Edo-period shop; an astonished townsman in a plain kimono leans back with wide eyes, lantern light.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1695年、幕府のおふれ。小判の印が古いから作り直す。",
+   "highlight": [
+    "印が古い"
+   ],
+   "image_en": "A stern Edo-period samurai official in formal black kamishimo reads aloud from a blank unrolled paper scroll in front of a crowd of townspeople at a busy Edo crossroads, gold oval coins with plain blank surfaces piled on a wooden tray beside him, daylight.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "tts_text": "せんろっぴゃくきゅうじゅうごねん、幕府のおふれ。小判のしるしが古いから作り直す。",
+   "image": "A stern Edo-period samurai official in formal black kamishimo reads aloud from a blank unrolled paper scroll in front of a crowd of townspeople at a busy Edo crossroads, gold oval coins with plain blank surfaces piled on a wooden tray beside him, daylight."
+  },
+  {
+   "id": "n03",
+   "narration": "案は荻原重秀。本当は、浮いた金で赤字を埋めるため。",
+   "highlight": [
+    "赤字を埋める"
+   ],
+   "image_en": "Ogiwara Shigehide, a Japanese shogunate finance official about thirty-seven: thin clever face, sharp narrow eyes, faint confident smile, chonmage topknot, dark grey kamishimo; he kneels in a castle office and holds up one gold oval coin with a plain blank surface, lamp light.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [],
+   "tts_text": "案は、おぎわらしげひで。本当は、浮いた金で赤字を埋めるため。",
+   "image": "Ogiwara Shigehide, a Japanese shogunate finance official about thirty-seven: thin clever face, sharp narrow eyes, faint confident smile, chonmage topknot, dark grey kamishimo; he kneels in a castle office and holds up one gold oval coin with a plain blank surface, lamp light."
+  },
+  {
+   "id": "n04",
+   "narration": "もしも、その小判がしゃべれたら。",
+   "image_en": "One pale gold oval koban coin with a plain blank surface lying alone on a dark wooden tray in an Edo-period mint workshop, glowing softly as if about to speak, warm lamp light.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "image": "One pale gold oval koban coin with a plain blank surface lying alone on a dark wooden tray in an Edo-period mint workshop, glowing softly as if about to speak, warm lamp light."
+  },
+  {
+   "id": "n05",
+   "narration": "熱い。溶かされて、何かを混ぜられた。",
+   "image_en": "Close-up of a gold oval koban coin with a plain blank surface half melted in a glowing crucible, pale silver liquid swirling into the gold, sparks rising, dramatic orange light.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "voice": "koban",
+   "image": "Close-up of a gold oval koban coin with a plain blank surface half melted in a glowing crucible, pale silver liquid swirling into the gold, sparks rising, dramatic orange light."
+  },
+  {
+   "id": "n06",
+   "narration": "重さはほぼ同じ。金だけ、84%から57%に減った。",
+   "highlight": [
+    "84%",
+    "57%"
+   ],
+   "image_en": "Two gold oval koban coins with plain blank surfaces side by side on a balance scale in perfect balance: the left one deep rich gold, the right one paler and slightly whitish gold, dark background with warm lamp light.",
+   "shots": [
+    "n06",
+    "n06@left",
+    "n06@right"
+   ],
+   "chars": [],
+   "tts_text": "重さはほぼ同じ。金だけ、はちじゅうよんパーセントから、ごじゅうななパーセントに減った。",
+   "image": "Two gold oval koban coins with plain blank surfaces side by side on a balance scale in perfect balance: the left one deep rich gold, the right one paler and slightly whitish gold, dark background with warm lamp light."
+  },
+  {
+   "id": "n07",
+   "narration": "幕府は新しい小判も、同じ1両で使えと命じた。",
+   "highlight": [
+    "同じ1両"
+   ],
+   "image_en": "A stern Edo-period samurai official in formal black kamishimo lays a deep gold oval coin and a paler gold oval coin, both with plain blank surfaces, side by side on a low table before kneeling merchants in a magistrate's hall, pointing at them firmly, lamp light.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "tts_text": "幕府は新しい小判も、同じいちりょうで使えと命じた。",
+   "image": "A stern Edo-period samurai official in formal black kamishimo lays a deep gold oval coin and a paler gold oval coin, both with plain blank surfaces, side by side on a low table before kneeling merchants in a magistrate's hall, pointing at them firmly, lamp light."
+  },
+  {
+   "id": "n08",
+   "narration": "その1枚が、江戸の米屋に渡る。",
+   "image_en": "A plump Edo-period rice merchant about fifty: round face, thin topknot, brown striped kimono and dark apron; he receives one pale gold oval coin with a plain blank surface from a customer across the counter of his rice shop, rice sacks behind, daylight.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "tts_text": "そのいちまいが、江戸のこめやに渡る。",
+   "image": "A plump Edo-period rice merchant about fifty: round face, thin topknot, brown striped kimono and dark apron; he receives one pale gold oval coin with a plain blank surface from a customer across the counter of his rice shop, rice sacks behind, daylight."
+  },
+  {
+   "id": "n09",
+   "narration": "米屋さん。私、前より金が3割も少ないんです。",
+   "highlight": [
+    "3割"
+   ],
+   "image_en": "Extreme close-up of the plump rice merchant's open palm holding one pale gold oval coin with a plain blank surface that glows softly as if whispering; his round face in the background turns pale with wide eyes.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [],
+   "voice": "koban",
+   "tts_text": "こめやさん。私、前より金がさんわりも少ないんです。",
+   "image": "Extreme close-up of the plump rice merchant's open palm holding one pale gold oval coin with a plain blank surface that glows softly as if whispering; his round face in the background turns pale with wide eyes."
+  },
+  {
+   "id": "n10",
+   "narration": "本当の私は、1両もありません。",
+   "highlight": [
+    "1両もありません"
+   ],
+   "image_en": "Dramatic close-up of one pale gold oval coin with a plain blank surface shining in the center of a dark frame, a faint shadow falling across one third of it, as if confessing.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "voice": "koban",
+   "anim": "kling",
+   "tts_text": "本当の私は、いちりょうもありません。",
+   "image": "Dramatic close-up of one pale gold oval coin with a plain blank surface shining in the center of a dark frame, a faint shadow falling across one third of it, as if confessing.",
+   "motion": true
+  },
+  {
+   "id": "n11",
+   "narration": "しゃべる小判なら、米屋は7割しか払わない。",
+   "highlight": [
+    "7割"
+   ],
+   "image_en": "A plump Edo-period rice merchant about fifty: round face, thin topknot, brown striped kimono and dark apron; pale-faced with gritted teeth, he slams down a wooden abacus on his counter beside one pale gold oval coin, a startled customer in front of him.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "tts_text": "しゃべる小判なら、こめやはななわりしか払わない。",
+   "image": "A plump Edo-period rice merchant about fifty: round face, thin topknot, brown striped kimono and dark apron; pale-faced with gritted teeth, he slams down a wooden abacus on his counter beside one pale gold oval coin, a startled customer in front of him."
+  },
+  {
+   "id": "n12",
+   "narration": "だが本当の小判は黙り、1両のまま町を回った。",
+   "highlight": [
+    "1両のまま"
+   ],
+   "image_en": "A busy Edo street market in daylight: townspeople hand pale gold oval coins with plain blank surfaces from hand to hand between shop counters, the plump rice merchant (round face, thin topknot, brown striped kimono and dark apron) accepting one with a polite bow. Faded old-memory colors.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "tts_text": "だが本当の小判は黙り、いちりょうのまま町を回った。",
+   "image": "A busy Edo street market in daylight: townspeople hand pale gold oval coins with plain blank surfaces from hand to hand between shop counters, the plump rice merchant (round face, thin topknot, brown striped kimono and dark apron) accepting one with a polite bow. Faded old-memory colors."
+  },
+  {
+   "id": "n13",
+   "narration": "黙ったから、幕府の儲けは約500万両といわれる。",
+   "highlight": [
+    "約500万両"
+   ],
+   "image_en": "Wooden chests piled high and overflowing with gold oval coins with plain blank surfaces in a castle storehouse, golden light from a lantern. Faded old-memory colors. Draw no people.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "tts_text": "黙ったから、幕府の儲けは、やくごひゃくまんりょうといわれる。",
+   "image": "Wooden chests piled high and overflowing with gold oval coins with plain blank surfaces in a castle storehouse, golden light from a lantern. Faded old-memory colors. Draw no people.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "物価は上がった。荻原は1712年、新井白石に責められ失脚。",
+   "image_en": "Arai Hakuseki, a stern Confucian scholar-official about fifty-five: gaunt face, deep frown, chonmage topknot, black formal kamishimo; he points sharply in a castle hall while Ogiwara Shigehide, now an older finance official about fifty-four with a thin clever face, sharp narrow eyes, chonmage topknot and dark grey kamishimo, bows his head low. Faded old-memory colors.",
+   "shots": [
+    "n14",
+    "n14@left",
+    "n14@right"
+   ],
+   "chars": [],
+   "tts_text": "物価は上がった。おぎわらは、せんななひゃくじゅうにねん、あらいはくせきに責められ失脚。",
+   "image": "Arai Hakuseki, a stern Confucian scholar-official about fifty-five: gaunt face, deep frown, chonmage topknot, black formal kamishimo; he points sharply in a castle hall while Ogiwara Shigehide, now an older finance official about fifty-four with a thin clever face, sharp narrow eyes, chonmage topknot and dark grey kamishimo, bows his head low. Faded old-memory colors."
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "One pale gold oval koban coin with a plain blank surface resting quietly on the palm of the plump Edo-period rice merchant (round face, thin topknot, brown striped kimono and dark apron) at dusk, lantern light, a calm thoughtful mood.",
+   "shots": [
+    "n15"
+   ],
+   "chars": [],
+   "image": "One pale gold oval koban coin with a plain blank surface resting quietly on the palm of the plump Edo-period rice merchant (round face, thin topknot, brown striped kimono and dark apron) at dusk, lantern light, a calm thoughtful mood."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
