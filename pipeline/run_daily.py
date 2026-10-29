@@ -593,10 +593,6 @@ def make_one(ch, st, upload, kind=None):
         run(work, "thumb", args, ch)
     if T("thumb", "make_thumb_job.py"):  # null＝この種類はサムネを作らない（アナザー日本紀のショート。ショートは動画の中の1コマが表紙）
         step("thumb", thumb)
-    # 長尺の予告ショート（profile.json の tools の teaser。仕事ch 2026-10-28）。long.mp4 と _build はアップの後に消すので、ここで作る
-    if T("teaser", None):
-        step("teaser", lambda: short("teaser", [T("teaser", None), "make", work]))
-
     def short(name, args):  # ショート（心理学ch。2026-10-27）。作れなくても本編は止めない（その回はショート無しで先へ進む。理由は _run.log）
         try:
             run(work, name, args, ch)
@@ -604,6 +600,9 @@ def make_one(ch, st, upload, kind=None):
             raise
         except Stop as e:
             print(f"【メモ】{name} で止まりました（本編は続けます）：{str(e)[:300]}", flush=True)
+    # 長尺の予告ショート（profile.json の tools の teaser。仕事ch 2026-10-28）。long.mp4 と _build はアップの後に消すので、ここで作る（short の定義より後に置く。前に置いて 2026-10-30 に NameError で止まった）
+    if T("teaser", None):
+        step("teaser", lambda: short("teaser", [T("teaser", None), "make", work]))
     if T("short", None):
         step("short", lambda: short("short", [T("short", None), work]))
     if not upload:
