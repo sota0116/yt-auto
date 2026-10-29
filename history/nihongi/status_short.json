@@ -2,10 +2,17 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S101_n007",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build"
  ],
  "started": "2026-10-29T17:28:55+09:00",
  "tries": 1,
- "code": "4c349f21db83",
- "stage": "gate_script"
+ "code": "8f6cdbdebaf5",
+ "stage": "gate_video",
+ "updated": "2026-10-29T23:03:12+09:00"
 }
