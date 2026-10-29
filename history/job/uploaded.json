@@ -139,7 +139,7 @@
   "seconds": 492,
   "title_now": "【意外】介護・福祉に移った人、前の職場を辞めた理由はお金じゃなかった",
   "synthetic_on": null,
-  "views_now": 1107,
+  "views_now": 1203,
   "published": true,
   "published_at": "2026-10-27T19:00:11+09:00",
   "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 3,
+  "views_now": 5,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -203,7 +203,7 @@
   "seconds": 531,
   "title_now": "施工管理は建築が年収54万円上。でも働く時間が短いのは土木だった",
   "synthetic_on": null,
-  "views_now": 3,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-10-29T19:00:36+09:00",
   "comment_id": "UgwRTgviKeQ0d-2mwN54AaABAg",
@@ -259,7 +259,7 @@
   ],
   "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": "2026-10-31T10:00:00Z",
+  "publish_at": "2026-11-02T10:00:00Z",
   "seconds": 534,
   "title_now": "【給与逆転】もし初任給が30万円になったら、30代前半の先輩の半分以上が新人より下",
   "synthetic_on": null,
@@ -290,7 +290,12 @@
   "retitled": {
    "日時": "2026-10-30T03:45:21",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
-  }
+  },
+  "publish_at": "2026-10-31T10:00:00Z",
+  "privacy_now": "private",
+  "seconds": 475,
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "010_a4_155a1cce",
@@ -308,7 +313,13 @@
    "プログラマーは年収約578万円。でも1時間あたりに直したら、割に合うのか",
    "あなたの時給、客室乗務員より上？ 稼ぎではプログラマーの方が多いのに"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "publish_at": "2026-11-01T10:00:00Z",
+  "privacy_now": "private",
+  "seconds": 511,
+  "title_now": "【時給の罠】プログラマー、稼ぎが近い仕事でトップなのに時給では勝てない相手がいた",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "011_a_se",
@@ -326,6 +337,12 @@
    "システムエンジニアは割に合うのか。プログラマーより長く働く時間を、1時間の値段にしたら",
    "あなたの時給はプログラマー以上？ SEにも1つだけ勝てない物があった"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "publish_at": "2026-11-03T19:00:00+09:00",
+  "privacy_now": "private",
+  "seconds": 503,
+  "title_now": "【悲報】プログラマー、隣のSEより年収311万円少ない。差は残業ではなかった",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
