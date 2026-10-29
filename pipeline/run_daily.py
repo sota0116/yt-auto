@@ -576,6 +576,17 @@ def main():
     cloud = os.environ.get("GITHUB_ACTIONS") == "true"
     res = {"ch": ch, "started": now().isoformat(timespec="seconds"), "made": [], "stopped": None}
     cur = {"sp": hpath(ch, "status.json")}  # いま作っている回の status ファイル（種類ごとに別。止まった時にその回の失敗の数を戻す）
+
+    def stop_note(e):
+        """止まった理由が順番待ち・回数の上限なら「待ち」「途中」の印を付け、その回の失敗の数を戻す"""
+        if isinstance(e, Wait):
+            res["待ち"] = True
+            if isinstance(e, Busy):
+                res["途中"] = True
+            st = jload(cur["sp"], {})
+            if st.get("tries"):
+                st["tries"] -= 1  # 回数の上限で止まったのは、その回の失敗ではない
+                jsave(cur["sp"], st)
     lp = hpath(ch, "last_run.json")
     last = jload(lp, {})
     # 作り途中の回（時間切れで落ちた回。status.json に work が残る）がある時は、やり直しの枠でも続きを作る（2026-10-28）
@@ -627,44 +638,54 @@ def main():
                 and n_stock >= goal and not jload(hpath(ch, "status.json"), {}).get("work"):
             n = 0
             res["作らなかった理由"] = f"在庫が{n_stock}本で目標の{goal}本に届いている（長尺は毎日ではない）"
+        stops = []  # 種類ごとのチャンネルで、種類ごとに止まった理由
         for kind, n in jobs:
           sp = status_path(ch, kind)
-          for i in range(n):
+          try:
+            for i in range(n):
+              cur["sp"] = sp
+              st = jload(sp, {})
+              if st.get("work") and "record" in st.get("done", []):
+                  st = {}
+              if st.get("tries") and st.get("code") != code_ver():
+                  print(f"前の失敗の後に道具が直っているので、{os.path.basename(st['work'])} の失敗の数を0から数え直します", flush=True)
+                  st["tries"] = 0  # 直した後も前の3回で飛ばすと、出来上がり寸前の回を捨てる（006 がそうなった。2026-10-26）
+              if st.get("tries", 0) >= 3:
+                  res.setdefault("飛ばした回", []).append(st["work"])
+                  st = {}  # 3回続けて失敗した回は飛ばして次のネタへ（週報に出す）
+              if st.get("work") and st.get("started") and "upload" not in st.get("done", []) \
+                      and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=72):
+                  # 詰まった時の決まり4：72時間たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
+                  res.setdefault("長く止まって飛ばした回", []).append(f"{os.path.basename(st['work'])}（{st.get('stage')} の段・{st['started'][:16]} から）")
+                  res.setdefault("飛ばした回", []).append(st["work"])
+                  st = {}
+              if cap and month_cost(ch) >= float(cap):
+                  raise Stop(f"今月の制作費の累計が上限 {cap}円 に届いたので、{i}本で止めました")
+              st = make_one(ch, st, not a.no_upload, kind)
+              if not a.no_upload:
+                  res["made"].append(os.path.basename(st["work"]))
+                  jsave(sp, {})
+              else:
+                  break
+          except Stop as e:
+            if not KS:
+                raise
+            # 種類ごとのチャンネル：1つの種類で止まっても、次の種類は作る。ショートの絵の順番待ちや台本ゲートで止まると、
+            # その後ろの横動画（日本紀 L101・おきぬの横動画）に一度も手が付かなかった（2026-10-29）
             cur["sp"] = sp
-            st = jload(sp, {})
-            if st.get("work") and "record" in st.get("done", []):
-                st = {}
-            if st.get("tries") and st.get("code") != code_ver():
-                print(f"前の失敗の後に道具が直っているので、{os.path.basename(st['work'])} の失敗の数を0から数え直します", flush=True)
-                st["tries"] = 0  # 直した後も前の3回で飛ばすと、出来上がり寸前の回を捨てる（006 がそうなった。2026-10-26）
-            if st.get("tries", 0) >= 3:
-                res.setdefault("飛ばした回", []).append(st["work"])
-                st = {}  # 3回続けて失敗した回は飛ばして次のネタへ（週報に出す）
-            if st.get("work") and st.get("started") and "upload" not in st.get("done", []) \
-                    and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=72):
-                # 詰まった時の決まり4：72時間たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
-                res.setdefault("長く止まって飛ばした回", []).append(f"{os.path.basename(st['work'])}（{st.get('stage')} の段・{st['started'][:16]} から）")
-                res.setdefault("飛ばした回", []).append(st["work"])
-                st = {}
-            if cap and month_cost(ch) >= float(cap):
-                raise Stop(f"今月の制作費の累計が上限 {cap}円 に届いたので、{i}本で止めました")
-            st = make_one(ch, st, not a.no_upload, kind)
-            if not a.no_upload:
-                res["made"].append(os.path.basename(st["work"]))
-                jsave(sp, {})
-            else:
-                break
+            stop_note(e)
+            stops.append((kind, e))
+            print("【止まりました】", f"{kind}：{e}", flush=True)
+        if stops:
+            res["stopped"] = "／".join(f"{e}（{k}）" for k, e in stops)
+            # 全部が順番待ち・回数の上限の時だけ「待ち」「途中」（1つでも本当の失敗があれば Issue にする。notify.py）
+            if not all(isinstance(e, Wait) for _, e in stops):
+                res.pop("待ち", None)
+            if not all(isinstance(e, Busy) for _, e in stops):
+                res.pop("途中", None)
     except Stop as e:
         res["stopped"] = str(e)
-        if isinstance(e, Wait):
-            res["待ち"] = True
-            if isinstance(e, Busy):
-                res["途中"] = True
-            sp = cur["sp"]
-            st = jload(sp, {})
-            if st.get("tries"):
-                st["tries"] -= 1  # 回数の上限で止まったのは、その回の失敗ではない
-                jsave(sp, st)
+        stop_note(e)
         print("【止まりました】", e, flush=True)
     except subprocess.TimeoutExpired as e:
         res["stopped"] = f"時間切れ：{e.cmd[2] if len(e.cmd) > 2 else e.cmd}"
