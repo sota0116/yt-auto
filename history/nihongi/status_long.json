@@ -7,11 +7,11 @@
   "voice"
  ],
  "started": "2026-10-29T04:26:35+09:00",
- "tries": 1,
- "code": "ec188871b30b",
+ "tries": 0,
+ "code": "00aa62372e6b",
  "stage": "images",
  "updated": "2026-10-29T11:31:03+09:00",
  "busy": {
-  "images": 1
+  "images": 2
  }
 }
