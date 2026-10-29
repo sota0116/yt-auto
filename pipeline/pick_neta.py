@@ -4,6 +4,7 @@
 # ・その型のネタが無い（データがまだ取れない）時は、決まり（D は続けて2本まで・A-1/A-4 は直近9本で3本まで）を守れる別の型に回し、
 #   回したことを neta.json の「回した理由」に残す（週報に出す）
 # ・型A-4 のネタは、a4_facts の組から作る：直近8週の A の回と、年収1位（山場で下がる職業）が同じ組と、職業が4つ以上重なる組は使わない
+#   残った組は、興味の点（profile.json の a4_interest。名前で押される仕事ほど高い）の合計が高い順、同じ点なら入れ替わりの大きい順（2026-10-29 から）
 # ・ほかの型は channels\<ch>\ネタ帳.json の行。facts を作るプログラム（facts_cmd）が無い行は、データ待ちとして飛ばす
 # ・作った回と作り途中の回は、history\<ch>\produced.json と channels\<ch>\videos\ の両方から数える（作り直した版 remake_of は数えない）
 # ・見張り（watch.py）が history\<ch>\type_hold.json に書いた型（直近5本の平均視聴率が30%未満）は、順番の後ろに回す（設計書 §2「型の後回し」）
@@ -60,6 +61,8 @@ def a4_candidates(hist):
     recent = [h for h in hist if h["type"] == "A" and (not h.get("made") or str(h["made"]) >= since.isoformat())]
     used_top = {h["jobs"][0] for h in recent if h.get("jobs")}
     used_sets = [set(h.get("jobs", [])) for h in recent]
+    pp = os.path.join(ROOT, "channels", "job", "profile.json")
+    interest = json.load(open(pp, encoding="utf-8")).get("a4_interest", {}) if os.path.exists(pp) else {}
     res = []
     for g in itertools.combinations(m, 6):
         ns = [x["年収_千円"] for x in g]
@@ -73,9 +76,10 @@ def a4_candidates(hist):
         if order[0] in used_top or any(len(set(order) & s) >= 4 for s in used_sets):
             continue
         mx = max(abs(rn[k] - rh[k]) for k in rn)
-        res.append((-mx, -sum(abs(rn[k] - rh[k]) for k in rn), max(ns) - min(ns), order))
+        pop = sum(interest.get(k, 1) for k in order)  # 前は入れ替わりの大きさだけで選び、名前で押されにくい組が出ていた（手順書 §8）
+        res.append((-pop, -mx, -sum(abs(rn[k] - rh[k]) for k in rn), max(ns) - min(ns), order))
     res.sort()
-    return [r[3] for r in res]
+    return [r[-1] for r in res]
 
 
 def board(ch):

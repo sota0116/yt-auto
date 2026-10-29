@@ -12,6 +12,8 @@
 #   ・グラフ（images\<id>.mp4）は、短い時は最後の画面のままのばし、カットの間ずっと3%だけゆっくり寄る（2026-10-25。止まった画面が続かないように。
 #     図は画面の上75%の内側にあるので、3%寄っても端の文字は切れない）
 #   ・声の頭か終わりに大きな雑音（5ミリ秒で振れが0.3超）があるカットは、組み立てずに止まる
+#   ・効果音（2026-10-29。手順書 §5）：驚きの粒（"wow": true）のカットの頭に短く上がる音、見どころ（"peak": true）の頭に「ジャン」と鳴る和音。
+#     ffmpeg で計算して作る音なので、素材の権利もお金もかからない。声より小さく（SFX_VOL）、声の大きさをそろえる前に混ぜる
 import argparse, json, os, sys
 from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +29,10 @@ FONT_SUB = "Noto Sans JP"
 QUIZ_GAP, GAP = 2.0, 0.3
 LUFS = -15
 VBIT = "4M"
+SFX_VOL = 0.35
+SFX = {"wow": ("0.6*sin(2*PI*(880+1800*t)*t)*exp(-14*t)", 0.3),
+       "peak": ("0.45*sin(2*PI*523*t)*exp(-4*t)+0.35*sin(2*PI*784*t)*exp(-4*t)+0.4*sin(2*PI*130*t)*exp(-10*t)", 0.9)}
+# 見どころの音はスマホのスピーカーで聞こえる高さ（523Hz・784Hz の和音）を主にする。低い音（130Hz）は補助。100Hz 以下はスマホでほぼ鳴らない
 
 
 def ass_c(h, alpha=0):
@@ -57,6 +63,28 @@ def edge_peak(path):
     return float(max(x[:k].max(), x[max(0, nz[-1] - k):nz[-1] + 1].max()))
 
 
+def sfx_wav(kind, path):
+    expr, d = SFX[kind]
+    run("ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"aevalsrc='{expr}':s=48000:d={d}", "-ac", "1", path)
+
+
+def sfx_mix(times, first):
+    """効果音を鳴らす時刻 {種類: [秒]} から、入力に足す種類（first 番目から）と、混ぜた音 [sx] を作る式を返す"""
+    kinds, fc, outs = [], "", []
+    for kind, ts in times.items():
+        if not ts:
+            continue
+        k = first + len(kinds)
+        kinds.append(kind)
+        fc += f"[{k}:a]asplit={len(ts)}" + "".join(f"[{kind}{j}]" for j in range(len(ts))) + ";"
+        for j, st in enumerate(ts):
+            fc += f"[{kind}{j}]adelay={int(st * 1000)}:all=1[{kind}d{j}];"
+            outs.append(f"[{kind}d{j}]")
+    if outs:
+        fc += "".join(outs) + f"amix=inputs={len(outs)}:duration=longest:normalize=0,volume={SFX_VOL}[sx];"
+    return kinds, fc
+
+
 def build(work, out):
     need("ffmpeg", "ffmpeg を入れてください")
     cfg = load_config(work)
@@ -72,6 +100,7 @@ def build(work, out):
     if noimg:
         raise SystemExit(f"【止まりました】絵がないカット：{noimg[:10]}（{len(noimg)}カット）")
     t, clips, vcs, events, chaps, nchap = 0.0, [], [], [], [], 0
+    sfx = {"wow": [], "peak": []}
     for n, c in enumerate(cuts):
         gap = QUIZ_GAP if c.get("quiz") else GAP
         v = os.path.join(b, c["id"] + "_v.wav"); prep_voice(voice_path(work, c["id"]), v, tempo, gap); vcs.append(v)
@@ -79,6 +108,8 @@ def build(work, out):
         if pop > 0.3:  # 声の頭か終わりの5ミリ秒が大きい＝切り替わりで「バチッ」と鳴る（1本目は wav の頭が音として入っていた）
             raise SystemExit(f"【止まりました】声の頭か終わりに大きな雑音：{c['id']}（大きさ {pop:.2f}。voice の {c['id']}.wav を作り直す）")
         d = dur(v)
+        if c.get("peak") or c.get("wow"):
+            sfx["peak" if c.get("peak") else "wow"].append(t + 0.05)
         src_img = resolve_image(work, sc["cuts"], c)
         clip = os.path.join(b, c["id"] + ".mp4")
         if src_img.endswith(".mp4"):
@@ -151,7 +182,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                "[1:a]volume=1.0[n];[n][m]amix=inputs=2:duration=first:normalize=0[am];")
     else:
         mix = "[1:a]anull[am];"
-    mix += f"[am]loudnorm=I={LUFS}:LRA=11:TP=-1.5,aresample=48000[a]"
+    kinds, s_fc = sfx_mix(sfx, 3 if bgm else 2)
+    if s_fc:
+        for kind in kinds:
+            sfx_wav(kind, os.path.join(b, f"sfx_{kind}.wav"))
+            ins += ["-i", os.path.join(b, f"sfx_{kind}.wav")]
+        mix += s_fc + "[am][sx]amix=inputs=2:duration=first:normalize=0[amx];"
+    else:
+        mix += "[am]anull[amx];"
+    mix += f"[amx]loudnorm=I={LUFS}:LRA=11:TP=-1.5,aresample=48000[a]"
     sub = ass.replace("\\", "/").replace(":", "\\:")
     run("ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", f"[0:v]subtitles='{sub}'[v];{mix}",
         "-map", "[v]", "-map", "[a]", "-t", f"{t:.3f}", "-c:v", "libx264", "-preset", "medium",

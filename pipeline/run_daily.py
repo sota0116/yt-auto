@@ -213,7 +213,7 @@ def record(ch, work):
     f = jload(os.path.join(work, "facts.json"), {})
     up = jload(os.path.join(work, "uploaded.json"), {})
     chp = os.path.join(work, "chapters.txt")
-    keep = ("hook_type", "sub_copy", "line_copy", "name_copy", "title", "titles", "thumb_text", "competitor_note", "learn_note")
+    keep = ("hook_type", "sub_copy", "line_copy", "name_copy", "title", "titles", "thumb_text", "thumb_kind", "competitor_note", "learn_note")
     rec = {"work": os.path.basename(work), "type": n.get("type") or s.get("type"), "frame": n.get("frame") or s.get("frame"),
            "neta_id": n.get("id"), "jobs": n.get("jobs") or (f.get("順位") if isinstance(f.get("順位"), dict) else {}).get("年収", []),  # 型D の順位は説の並び（list）
            "made": now().date().isoformat(), **{k: s.get(k) for k in keep}, "chapters": open(chp, encoding="utf-8").read().splitlines() if os.path.exists(chp) else [],

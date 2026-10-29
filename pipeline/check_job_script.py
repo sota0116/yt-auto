@@ -2,14 +2,17 @@
 #   python -X utf8 pipeline\check_job_script.py <作業フォルダ>
 # ・作業フォルダに script.json と facts.json があること
 # ・スキルの check_script.py --long も一緒に回す（図のカット（chart）は絵の指示があるものとして渡す）
-# ・Gemini で見る項目（事実の裏取り・似すぎ・広告に向くか・続きを見たくなるか）は、ここでは見ない
+# ・Gemini で見る項目（事実の裏取り・似すぎ・広告に向くか・続きを見たくなるか・押したくなるか）は、ここでは見ない
 import json, os, re, subprocess, sys, tempfile, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from check_psy_script import tease  # 答えの先送りの見分け方（心理学chと同じ。references/16 の6）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILL_CHECK = os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts", "check_script.py")
-CPS = 6.0  # check_script.py と同じ読む速さ
+CPS = 6.0  # check_script.py と同じ読む速さ（声の速さ 1.0 の時）
+# 声の速さ（profile の voicevox の語り手）。2026-10-29 に 1.05 にした（手順書 §2）。見込みの長さは CPS×SPEED で割る
+SPEED = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "channels", "job", "profile.json"),
+                       encoding="utf-8")).get("voicevox", {}).get("narrator", {}).get("speed", 1.0)
 
 LINE3 = "人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。"
 # メタの言葉（手順書 §4「メタの禁止」）：名乗り・動画や回のこと・進み方・お礼・今日。登録の呼びかけ・LINE の案内・コメントへの問いかけのカットは除く
@@ -69,6 +72,17 @@ def rank_unscoped(text):
     return bool(re.search(r"\d+位|最下位", t)) and not SCOPE.search(t)
 
 
+RANK_NUM = re.compile(r"\d+位")  # 順位（tokens は単位つきの値だけを拾うので、数字の合計（§0）と見出しの数字の数ではこれも数える）
+THUMB_KINDS = ("判定", "落差", "自分ごと", "謎", "裏側")  # 手順書 §6 のサムネの字の型
+HOW_TAIL = re.compile(r"[（(][^）)]*統計[^）)]*[）)]|統計で(並べ|追っ|比べ|計算)|を並べた")  # 出典・作り方の尾（§6。2026-10-29 から付けない）
+
+
+def nums(text, small_rank=True):
+    """見る人に数字として見える物（単位つきの値と順位）。small_rank=False は1桁の順位（A-4 の6職業の1〜6位など、覚えなくても追える物）を数えない"""
+    t = unicodedata.normalize("NFKC", text or "")
+    return tokens(t) + [r for r in RANK_NUM.findall(t) if small_rank or len(r) > 2]
+
+
 def tokens(text):
     t = text
     for s in SKIP:
@@ -124,12 +138,22 @@ def b_tokens(text):
     return out
 
 
+def trivia_tokens(facts):
+    """facts.json の 豆知識（手順書 §0。書き手が公的なページで確かめて足す）の数字"""
+    ok = set()
+    for x in facts.get("豆知識") or []:
+        if isinstance(x, dict):
+            ok.update(tokens(str(x.get("文", ""))))
+    return ok
+
+
 def allowed_from(facts):
     """facts.json にある値を、声で言える形の集合にする"""
     ok = set()
     if facts.get("type") == "B":  # 型B は統計の値・グラフの表示・題の前提の数だけ（期間の区切りの「24年」などを拾わない）
         for s in b_sources(facts):
             ok.update(tokens(s))
+        ok.update(trivia_tokens(facts))  # 豆知識（手順書 §0）
         return ok
 
     def walk(v):
@@ -689,12 +713,79 @@ def check_c(sc, facts, cuts, ng, warn):
             warn.append(f"C-3 の山場の数字（2人の年収の差 {fr['値']['声_年収の差']}）を声で言っていない")
 
 
+HEDGE = re.compile(r"(この職業|この仕事)だけの(値|数字)ではありません|同じ人が年を取った数字ではありません|業界の数字なので")
+
+
+def fun_check(sc, facts, cuts, warn):
+    """手順書 §0 面白さの軸（2026-10-29）：豆知識・驚きの粒・label・語りの続き方・声の断り書き"""
+    tv = [x for x in facts.get("豆知識") or [] if isinstance(x, dict)]
+    if len(tv) < 3:
+        warn.append(f"豆知識が {len(tv)} つ（1本3つ以上。facts.json の 豆知識 に出典つきで足す §0）")
+    for i, x in enumerate(tv):
+        if not (x.get("url") and x.get("原文") and x.get("文")):
+            warn.append(f"豆知識 {i + 1} に 文・url・原文 のどれかが無い（公的なページで確かめた物だけ §0）")
+    wow = [c for c in cuts if c.get("wow")]
+    if len(wow) < 8:
+        warn.append(f"驚きの粒（\"wow\": true）のカットが {len(wow)}（1本8つ以上。各章2つ以上 §0）")
+    lab, chap = {}, None
+    for c in cuts:
+        chap = c.get("chapter") or chap
+        if chap and not re.search("まとめ|締め", chap):
+            lab[chap] = lab.get(chap, 0) + bool(c.get("label") or c.get("chart"))
+    nolab = [k for k, v in lab.items() if not v]
+    if nolab:
+        warn.append(f"label（画面に大きく出る字）か図のカットが無い章：{nolab}（各章1つ以上 §0）")
+    run, worst = 0, (0, None)
+    for c in cuts:
+        run = run + 1 if c.get("speaker") == "narrator" and not (c.get("line") or c.get("subscribe")) else 0
+        if run > worst[0]:
+            worst = (run, c["id"])
+    if worst[0] >= 4:
+        warn.append(f"語り手のカットが {worst[0]} 続く所がある（{worst[1]} まで。3つ続いたら聞き手のツッコミか問い §0）")
+    hd = [c["id"] for c in cuts if HEDGE.search(c["narration"])]
+    if len(hd) > 2:
+        warn.append(f"声の断り書きが {len(hd)} 回（1本2回まで。残りは画面の出典・図の見出しに任せる §0）：{hd}")
+    fc = sc.get("fun_core") or ""
+    miss = [k for k in ("謎", "自分ごと", "判定") if k + "：" not in fc and k + ":" not in fc]
+    if fc and miss:
+        warn.append(f"fun_core に {'・'.join(miss)} が無い（「謎：〜｜自分ごと：〜｜判定：〜」の形。§0 の1と2は毎回入れる）")
+    # 数字の合計（§0。2026-10-29 本人「数字がありすぎても胃もたれしそう」）：声に出る統計の数字の種類と、豆知識を足した種類
+    tv_tk = trivia_tokens(facts)
+    said = {x for c in cuts if not (c.get("line") or c.get("subscribe")) for x in nums(c["narration"], small_rank=False)}
+    stat = said - tv_tk
+    d = sc.get("type") == "D"
+    if len(stat) > (12 if d else 8):
+        warn.append(f"声に出る統計の数字が {len(stat)} 種類（1本{12 if d else 8}種類まで。主役の数字3つに絞り、ほかは言葉の驚きにする §0）：{sorted(stat)}")
+    if len(said) > (14 if d else 10):
+        warn.append(f"豆知識の数字を足して {len(said)} 種類（1本{14 if d else 10}種類まで §0）")
+    print(f"面白さの軸：fun_core＝{fc or '（無し）'}／主役の数字 {sc.get('key_numbers')}／声の数字 統計{len(stat)}・全部{len(said)}種類／豆知識 {len(tv)}／驚きの粒 {len(wow)}／語りの続き 最長{worst[0]}／声の断り書き {len(hd)}")
+
+
+def key_check(sc, facts, cuts, allowed, ng, warn):
+    """主役の数字（§0）：1〜3つ、facts.json の値で、声で言っている"""
+    kn = sc.get("key_numbers")
+    if not (isinstance(kn, list) and 1 <= len(kn) <= 3 and all(isinstance(x, str) and x for x in kn)):
+        ng.append(f"key_numbers（主役の数字）は1〜3つの文字の並び：{kn}（§0）")
+        return
+    dump = unicodedata.normalize("NFKC", json.dumps(facts, ensure_ascii=False)).replace(",", "")
+    voice = unicodedata.normalize("NFKC", "".join(c["narration"] for c in cuts)).replace(",", "")
+    for x in kn:
+        x_tk, x_rk = tokens(unicodedata.normalize("NFKC", x)), RANK_NUM.findall(unicodedata.normalize("NFKC", x))
+        if not x_tk and not x_rk:
+            ng.append(f"key_numbers の {x} に数字が無い（§0）")
+            continue
+        if [k for k in x_tk if k not in allowed] or [r for r in x_rk if r[:-1] not in dump]:
+            ng.append(f"key_numbers の {x} が facts.json の値でない（§0）")
+        if not all(k.lstrip("約") in voice for k in x_tk + x_rk):
+            warn.append(f"key_numbers の {x} を声で言っていない（主役の数字は 予想→出す→言い直す→反応 の4拍で §0）")
+
+
 def main(work):
     sc = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
     facts = json.load(open(os.path.join(work, "facts.json"), encoding="utf-8"))
     cuts = sc["cuts"]
     ng, warn = [], []
-    allowed = allowed_from(facts)
+    allowed = allowed_from(facts) | trivia_tokens(facts)
     jobs = job_names(facts)
     short = {j: re.split(r"[（・]", j)[0] for j in jobs}  # 「理学療法士など（リハビリ職）」→「理学療法士など」
     typ = sc.get("type")
@@ -712,7 +803,7 @@ def main(work):
     warn += [l[3:].strip() for l in r.stdout.splitlines() if l.startswith("注意:")]
 
     # 2. 項目
-    for k in ("type", "frame", "target", "hook_type", "sub_copy", "line_copy"):
+    for k in ("type", "frame", "fun_core", "target", "hook_type", "sub_copy", "line_copy"):
         if not sc.get(k):
             ng.append(f"台本の項目 {k} が空")
     if not sc.get("pub_date"):
@@ -755,18 +846,18 @@ def main(work):
     chars = sum(len(c["narration"]) for c in cuts)
     is_d = sc.get("type") == "D"
     if not is_d:
-        if not 3000 <= chars <= 3800:
-            ng.append(f"字数 {chars}（3,000〜3,800）")
-        if not 95 <= len(cuts) <= 110:
-            ng.append(f"カット {len(cuts)}（95〜110）")
-        if chars / CPS < 480:
-            ng.append(f"見込み {chars / CPS / 60:.1f} 分（8分以上）")
+        if not 3400 <= chars <= 4200:
+            ng.append(f"字数 {chars}（3,400〜4,200）")
+        if not 105 <= len(cuts) <= 135:
+            ng.append(f"カット {len(cuts)}（105〜135）")
+        if chars / (CPS * SPEED) < 480:
+            ng.append(f"見込み {chars / (CPS * SPEED) / 60:.1f} 分（8分以上。声の速さ {SPEED}）")
         switches = sum(1 for c in cuts if not c.get("same_as"))
         if not 85 <= switches <= 90:
             warn.append(f"画面の切り替わり {switches}（設計書 §5⑥ の 85〜90）")
     else:
-        if not 20 * 60 <= chars / CPS <= 25 * 60:
-            ng.append(f"見込み {chars / CPS / 60:.1f} 分・字数 {chars}（型D は20〜25分＝{int(20 * 60 * CPS):,}〜{int(25 * 60 * CPS):,}字）")
+        if not 20 * 60 <= chars / (CPS * SPEED) <= 25 * 60:
+            ng.append(f"見込み {chars / (CPS * SPEED) / 60:.1f} 分・字数 {chars}（型D は20〜25分＝{int(20 * 60 * CPS * SPEED):,}〜{int(25 * 60 * CPS * SPEED):,}字。声の速さ {SPEED}）")
         if not 200 <= len(cuts) <= 300:
             ng.append(f"カット {len(cuts)}（型D は200〜300）")
         check_d(sc, facts, cuts, chars, ng, warn)
@@ -774,8 +865,11 @@ def main(work):
     # 4. 聞き手
     L = [c for c in cuts if c["speaker"] == "listener"]
     rate = len(L) / len(cuts)
-    if not 0.2 <= rate <= 0.3:
-        ng.append(f"聞き手のカットが {rate:.0%}（2〜3割）")
+    if not 0.25 <= rate <= 0.40:
+        ng.append(f"聞き手のカットが {rate:.0%}（2割5分〜4割。手順書 §2。掛け合いは器で、謎・予想・ツッコミ・自分ごとの時だけ出す）")
+    aizuchi = [c["id"] for c in L if re.search(r"それ、?うち", c["narration"])]
+    if len(aizuchi) > 3:
+        warn.append(f"「それ、うちも」の形の相づちが {len(aizuchi)} 回（1本3回まで。予想・ツッコミ・置き換えにする §2）：{aizuchi}")
     for c in L:
         n_sent = len([s for s in re.split(r"(?<=[。！？])", c["narration"]) if s.strip()])
         if n_sent > 1 or len(c["narration"]) > 25:
@@ -788,7 +882,8 @@ def main(work):
                 warn.append(f"聞き手の口癖「{tic}」が直近3カットで続いている：{L[i]['id']}")
 
     # 5. 数字（出典との照合・章ごとの数）
-    chap, per = "（つかみ・前置き）", {}
+    chap, per, peak_ch = "（つかみ・前置き）", {}, set()
+    trivia = trivia_tokens(facts) - {t for k, v in facts.items() if k != "豆知識" for t in tokens(json.dumps(v, ensure_ascii=False))}
     for c in cuts:
         if c.get("chapter"):
             chap = c["chapter"]
@@ -800,10 +895,13 @@ def main(work):
             warn.append(f"聞き手が数字を言っている（facts.json の値か確かめる）：{c['id']} {tk}")
         if c.get("line") or c.get("subscribe"):
             continue
-        per.setdefault(chap, set()).update(tk)
+        per.setdefault(chap, set()).update(t for t in tk if t not in trivia)
+        if c.get("peak"):
+            peak_ch.add(chap)
     for ch, s in per.items():  # 型D の採点結果の章は、1位と最下位の点を言うので別に見る
-        if ch != "（つかみ・前置き）" and "採点結果" not in ch and len(s) >= 2:
-            warn.append(f"章「{ch}」で声に出る数字が {len(s)} つ：{sorted(s)}（言い切りは1つ）")
+        lim = 3 if ch in peak_ch else 2
+        if ch != "（つかみ・前置き）" and "採点結果" not in ch and len(s) > lim:
+            warn.append(f"章「{ch}」で声に出る統計の数字が {len(s)} つ：{sorted(s)}（{lim}つまで。豆知識の数字は除く §4）")
     hook = re.split(r"(?<=[。！？])", cuts[0]["narration"])[0]
     if sc.get("hook_type") == "統計":
         ht = tokens(hook)
@@ -910,6 +1008,8 @@ def main(work):
         if c in cuts[-6:] or c.get("line") or c.get("subscribe"):
             ng.append(f"見どころ（peak）{c['id']} が締め・案内・呼びかけのカットにある（本編の山に付ける）")
     print(f"見どころ（peak）：{[c['id'] for c in pk]}／図のカットの無い章 {[k for k, x in per_mv.items() if not x]}")
+    fun_check(sc, facts, cuts, warn)
+    key_check(sc, facts, cuts, allowed, ng, warn)
 
     # 8. 骨組み A-4：物差しごとに、2位を出す前にクイズ
     if sc.get("frame") == "A-4":
@@ -939,10 +1039,16 @@ def main(work):
         ng.append(f"タイトルが {len(ts)} 案（3案）")
     for k, t in enumerate(ts):
         names = list(short.values()) + jobs
-        if typ in ("A", "C") and k < 2 and not any(t.startswith(n) for n in names):  # 型A・C だけ（§6。型B は決断の言葉、型D は「AI」の位置で見る）
-            ng.append(f"タイトル{k + 1}案目の頭に職業名が無い：{t}")
-        if typ in ("A", "C") and k == 2 and not any(n in t[:10] for n in names):
-            ng.append(f"タイトル3案目の前の10字に職業名が無い：{t}")
+        if typ in ("A", "C") and not any(n in t[:15] for n in names):  # 型A・C だけ（§6。2026-10-29 から頭でなく前の15字。型B は決断の言葉、型D は「AI」の位置で見る）
+            ng.append(f"タイトル{k + 1}案目の前の15字に職業名が無い：{t}")
+        if len(t) > 40:
+            warn.append(f"タイトル{k + 1}案目が {len(t)} 字（40字まで。前の20字で謎か判定か自分ごとの問いが分かるように §6）：{t}")
+        if len(nums(t)) > 2:
+            warn.append(f"タイトル{k + 1}案目の数字が {len(nums(t))} つ（1案に1つまで、落差の型でも2つまで §6）：{t}")
+        if len({s for s in short.values() if s in t}) >= 3:
+            warn.append(f"タイトル{k + 1}案目に職業名が3つ以上（羅列は表の見出しになる。1〜2つにする §6）：{t}")
+        if HOW_TAIL.search(unicodedata.normalize("NFKC", t)):
+            warn.append(f"タイトル{k + 1}案目に出典・作り方の尾（出典は概要欄と画面。§6）：{t}")
         if typ == "B" and not any(n in t for n in facts.get("A社", {}).get("題の呼び名", ["平均的な会社", "統計から作った会社"])):
             ng.append(f"型B のタイトルに「平均的な会社」か「統計から作った会社」が無い：{t}")
         if sc.get("type") != "D" and "AI" in t:
@@ -981,6 +1087,22 @@ def main(work):
         for tk in tokens(x):
             if tk not in allowed:
                 ng.append(f"サムネに facts.json にない数字：{x} {tk}")
+    kind = sc.get("thumb_kind")
+    if kind not in THUMB_KINDS:
+        warn.append(f"thumb_kind（サムネの字の型）が {'・'.join(THUMB_KINDS)} のどれでもない：{kind}（§6）")
+    else:
+        hp = os.path.join(ROOT, "history", "job", "produced.json")
+        past = [x.get("thumb_kind") for x in (json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else [])
+                if x.get("work") != os.path.basename(os.path.abspath(work))][-3:]
+        if kind in past:
+            warn.append(f"thumb_kind「{kind}」が直近3本と同じ型（直近：{past}。§6）")
+    n_th = len(nums(top)) + len(nums(th)) + len(nums(band))
+    if n_th > 2:
+        warn.append(f"サムネの字の数字が {n_th} つ（3つの字で1つまで、落差の型でも2つまで §6）：{top}／{th}／{band}")
+    if th and not re.sub(r"[約\d.,万億円%割倍時間日か月位年人件社点のはがもで、。！？!?\s]", "", th):
+        warn.append(f"サムネの大きい字が数字と単位だけ（謎・判定・自分ごとの言葉にする §6）：{th}")
+    if re.search(r"統計で|並べた|厚生労働省|政府統計", band):
+        warn.append(f"サムネの下の帯が作り方・出典の説明（謎を一段深くする一言に §6）：{band}")
     bgc = next((c for c in cuts if c["id"] == sc.get("thumb_bg")), None)
     if not bgc or bgc.get("chart") or not bgc.get("image"):
         ng.append(f"thumb_bg が絵のカットの id でない：{sc.get('thumb_bg')}")
