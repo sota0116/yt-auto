@@ -65,7 +65,12 @@ def add_spent(ch, n, what):
 
 
 def left_today(ch):
-    return max(0, cap_today(ch) - spent_today(ch))
+    """その日に使える残り＝自分の割り当ての残り＋ほかのチャンネルの割り当ての使っていない分の半分（2026-10-29 本人「うまくやって」）。
+    割り当てを使い切るほど詰まるチャンネルは限られ、使わない分は 11/17 に失効するので、詰まった回が借りる。半分にするのは、同じ夜に
+    詰まったほかのチャンネルの分を残すため（並んで動く実行が同じ時に数えると、合計で1日の上限を少し超えることがある）"""
+    own = max(0, cap_today(ch) - spent_today(ch))
+    others = sum(max(0, cap_today(c) - spent_today(c)) for c in budget().get("share", {}) if c != ch)
+    return int(own + others // 2)
 
 
 def client():
