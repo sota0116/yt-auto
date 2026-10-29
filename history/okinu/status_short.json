@@ -1,0 +1,17 @@
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S101_母の形見の10円玉",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice"
+ ],
+ "started": "2026-10-29T17:28:40+09:00",
+ "tries": 0,
+ "code": "e520f5bd63be",
+ "stage": "images",
+ "updated": "2026-10-29T17:36:52+09:00",
+ "busy": {
+  "images": 1
+ }
+}
