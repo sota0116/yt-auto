@@ -146,10 +146,19 @@ def yen_in(text):
 
 
 def stock(ch, kind=None):
-    """在庫＝上げて、まだ公開していない本数。kind を渡すと、その種類（short／long）だけ数える"""
+    """在庫＝上げて、まだ公開していない本数。kind を渡すと、その種類（short／long）だけ数える
+    公開の予約の時刻（publish_at）を過ぎた回も公開済みとして数えない。読むだけの記録（ustore.py の uploaded_files_ro）は
+    見張りが published を書き戻さないので、10/28 に公開した日本紀・おきぬの横動画が在庫に残り、おきぬの横動画を作っていなかった（2026-10-29）"""
     import ustore
     up = ustore.load(ch)
-    return sum(1 for x in up if not x.get("published") and not x.get("missing") and not x.get("retired")
+    t = now()
+
+    def gone(x):
+        try:
+            return datetime.datetime.fromisoformat(x["publish_at"].replace("Z", "+00:00")) <= t
+        except (KeyError, AttributeError, TypeError, ValueError):
+            return False
+    return sum(1 for x in up if not x.get("published") and not x.get("missing") and not x.get("retired") and not gone(x)
                and (not kind or ustore.kind_of(x) == kind))  # published・missing は見張り（watch.py）が書く
 
 

@@ -13,15 +13,15 @@
  "uploaded_files": ["uploaded.json"],
  "uploaded_files_ro": ["shorts_uploaded.json", "long_uploaded.json"],
  "_uploaded_files": "手で上げた分の記録（shorts_uploaded.json・long_uploaded.json）は読むだけ（ustore.py。git の衝突を避ける）。毎日の制作（クラウド）が上げた分は uploaded.json に足す。upload_nihongi.py の next_slot もこの記録の予約を枠に数える",
- "reserved_slots": ["2026-11-01T18:00", "2026-11-01T21:00"],
- "_reserved_slots": "手で作る S009・S010 の予約の枠（11/01 18:00・21:00）。クラウドの見張りはここに入れない",
+ "reserved_slots": [],
+ "_reserved_slots": "クラウドの見張りが入れない枠（\"2026-11-01T18:00\" の形）。11/01 の2枠は手で作る S009・S010 用に空けていたが、手で作る回は無いので外した（2026-10-29）",
  "kinds": {
   "short": {
    "slots": ["18:00", "21:00"],
    "extra_slot": "12:10",
    "extra_min_stock": 6,
    "_extra": "在庫が（明日の枠の数を引いて）6本以上たまっている日だけ、昼の 12:10 も使う（制作ルール §0 の「3本の日」）",
-   "start_date": "2026-11-02",
+   "start_date": "2026-10-30",
    "stock_goal": [8, 4],
    "make_max": 2,
    "_stock": "在庫の目標8本（4日分）。4本以下なら1回の実行で2本作る。1本の絵は約13枚（Lovart 無料モードは1時間に40枚ほど）",
@@ -35,7 +35,7 @@
   "long": {
    "slots": ["20:00"],
    "every_days": 2,
-   "start_date": "2026-11-03",
+   "start_date": "2026-10-30",
    "stock_goal": [2, 1],
    "make_max": 1,
    "_stock": "横動画は2日に1本（制作ルール §0）。同じ日に2本入れない。1本の絵は約90枚で、1日では終わらないことがある（作り途中の回は次の実行で続きから作る）",
