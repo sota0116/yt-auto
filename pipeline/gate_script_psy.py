@@ -103,7 +103,7 @@ def gate_ng(s, ch, use):
 {lines(s['cuts'])}
 タイトル3案：{json.dumps(s.get('titles'), ensure_ascii=False)}
 サムネの文字（A案・B案）：{th("lines")}／{th("lines_b")}
-ショート：{json.dumps({"title": sh.get("title"), "語り": [c.get("narration") for c in sh.get("cuts", [])]}, ensure_ascii=False)}
+ショート：{json.dumps([{"title": x.get("title"), "語り": [c.get("narration") for c in x.get("cuts", [])]} for x in shs], ensure_ascii=False)}
 """
     r = ask_json(p, {"type": "object", "properties": {"禁止に当たる": items(id=S, 文=S, 理由=S)}, "required": ["禁止に当たる"]}, use)
     return {"合格": not r["禁止に当たる"], "一致した所": hits, **r}
