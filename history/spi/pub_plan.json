@@ -27,5 +27,19 @@
   "line_copy": 3,
   "sub_copy": 3,
   "made": "2026-10-29"
+ },
+ "004_a_niiname_2026": {
+  "neta_id": "a_niiname_2026",
+  "type": "A",
+  "frame": "A-1",
+  "pub_date": "2026-11-13",
+  "window": [
+   "2026-11-13",
+   "2026-11-20"
+  ],
+  "hook_type": "問い",
+  "line_copy": 1,
+  "sub_copy": 1,
+  "made": "2026-10-29"
  }
 }
