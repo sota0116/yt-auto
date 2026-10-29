@@ -65,6 +65,12 @@ def thumb_words(s):
     return "／".join(x for x in (s.get("thumb_top"), s.get("thumb_text"), s.get("thumb_band")) if x)
 
 
+def desc_no_line(desc):
+    """概要欄から LINE の特典の段落を除く（チャンネル共通の決まった文で、その回の facts.json には無い。
+    2026-10-30 に 010 が「産業別の離職率の一覧」を出典なしの断定とされ、台本ゲートで止まった）"""
+    return "\n\n".join(x for x in (desc or "").split("\n\n") if "LINE" not in x)
+
+
 def gate_fact(s, f, use):
     p = f"""あなたは統計番組の事実確認の担当です。下の台本の各文を、下の facts.json（厚生労働省の統計からプログラムで計算した値。「豆知識」は書き手が公的なページで確かめた決まり・仕組みで、url と原文つき）と照らしてください。
 
@@ -78,7 +84,7 @@ facts.json
 
 タイトル3案：{json.dumps(s['titles'], ensure_ascii=False)}
 サムネの文字：{thumb_words(s)}
-概要欄：{s['desc']}
+概要欄（LINE の特典の段落はチャンネル共通の決まった文なので除いてあります）：{desc_no_line(s['desc'])}
 台本：
 {lines(s['cuts'], s.get('listener_name', '聞き手'))}
 """
