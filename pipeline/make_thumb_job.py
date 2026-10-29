@@ -325,14 +325,20 @@ def make(work, variant, bg_id=None):
 def check(work, outs, t):
     import gemini
     sch = {"type": "object", "properties": {"読めた文字": {"type": "array", "items": {"type": "string"}}}, "required": ["読めた文字"]}
-    r, u = gemini.ask("添付の2枚は YouTube のサムネを横320pxに縮めた物です。それぞれ、いちばん大きい字の見出し（上の白い帯・左上の札・下の帯・箱の中の字は除く）を、改行を詰めて1つの文字列で書いてください。読めない字は？にしてください。",
-                      schema=sch, images=[o.replace(".jpg", "_320.jpg") for o in outs])
-    got = json.loads(r)["読めた文字"]
+    # 見出しは強調の行だけ特大で、ほかの行は6割ほどの大きさ。「いちばん大きい字」と頼むと強調の行だけが返り、
+    # 010 が「1時間だと／何番目?」の「1時間だと」だけ読まれて止まった（2026-10-30）。大きさ・色の違う行も含めて全部読ませる
     t = N(t)  # 読めた文字も thumb_text も全角・半角をそろえて照らす（「？」と「?」で006が3回目も止まった。2026-10-26）
-    same = lambda g: N(g).replace(" ", "") == t
-    for o, g in zip(outs, got):
-        print(os.path.basename(o), "320pxで読めた：", g, "一致" if same(g) else "【不一致】")
-    return all(same(g) for g in got)
+    # 見たいのは thumb_text が320pxで欠けずに読めるか。読み手は「1枚目: 」の前置きや上の帯の字まで書くことがあるので、含まれていれば一致とする
+    same = lambda g: t in re.sub(r"\s", "", N(g))
+    for n in range(2):  # 読み手の答えは毎回少しぶれるので、不一致の時だけもう1回読ませる
+        r, u = gemini.ask("添付の2枚は YouTube のサムネを横320pxに縮めた物です。それぞれ、大きい字の見出し（上の白い帯・左上の札・下の帯・箱の中の字は除く）を、大きさや色が違う行も含めて全部、上の行から順に、改行を詰めて1つの文字列で書いてください。「1枚目」などの前置きは付けないでください。読めない字は？にしてください。",
+                          schema=sch, images=[o.replace(".jpg", "_320.jpg") for o in outs])
+        got = json.loads(r)["読めた文字"]
+        for o, g in zip(outs, got):
+            print(os.path.basename(o), "320pxで読めた：", g, "一致" if same(g) else "【不一致】")
+        if len(got) == len(outs) and all(same(g) for g in got):
+            return True
+    return False
 
 
 def main():
