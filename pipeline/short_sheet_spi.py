@@ -8,7 +8,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"))
 from common import dur  # noqa: E402
 
-FONT = r"C:\Windows\Fonts\NotoSansJP-Bold.ttf"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from make_short_spi import FONT  # noqa: E402  手元は Noto Sans JP、クラウドは Noto Sans CJK JP（2026-10-30）
 TW, TH, COLS = 270, 480, 5
 
 

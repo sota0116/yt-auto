@@ -1,5 +1,5 @@
 # ⑨ショート（千年こよみ・2026-10-27 新設。心理学ch の make_short_psy.py をもとにした。元は残している）
-#   python -X utf8 pipeline\make_short_spi.py <作業フォルダ> [--check] [--clips images/_v3]
+#   python -X utf8 pipeline\make_short_spi.py <作業フォルダ> [--check] [--clips images/_v3] [--name short_2] [--offline]
 # ・台本は 作業フォルダ\short.json（script.json は 台本_生成元 で作り直すと消えるので、別のファイルにした）
 #   {"title", "lines": 上の帯の文字（1〜2行）, "desc", "cuts": [{"id": "S01", "narration", "from": "本編のカットの id", "emo"?, "tts_text"?, "pan"?}]}
 # ・絵は本編のカードの動画（--clips。既定 images/_v3）を借りる。千年こよみの本編は全部が横長のカード（1920x1080）なので、
@@ -39,7 +39,12 @@ KINDS = ("teaser", "after", "solo")
 WEEK = "月火水木金土日"
 SUB_MAX = 12
 TEMPO, GAP, BGM_VOL, LUFS = 1.0, 0.25, 0.03, -14
-FONT = r"C:\Windows\Fonts\NotoSansJP-Bold.ttf"
+# 字（手元は Noto Sans JP、クラウドの Linux は fonts-noto-cjk の Noto Sans CJK JP。build_long_spi.py の SUB_FONTS と同じ。2026-10-30）
+FONTS = [(r"C:\Windows\Fonts\NotoSansJP-Bold.ttf", "Noto Sans JP"),
+         (os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Windows\Fonts\NotoSansJP-Bold.ttf"), "Noto Sans JP"),
+         ("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "Noto Sans CJK JP"),
+         ("/usr/share/fonts/noto-cjk/NotoSansCJK-Bold.ttc", "Noto Sans CJK JP")]
+FONT, FONT_NAME = next(((p, n) for p, n in FONTS if os.path.exists(p)), FONTS[0])
 # 手順書 §4 のメタの禁止と、書かないこと（決まった締めの文 CLOSE は除く）
 META = ["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後すぐ", "次の章", "見ていきます", "紹介します",
         "おさらい", "ありがとうございました", "今日", "今夜"]
@@ -50,24 +55,33 @@ def plain(t):
     return re.sub(r"[\s、。！？「」]", "", t)
 
 
-def long_info(work, kind="after"):
-    """本編の公開の日（予約の日）・長さ・サムネ。日が決まっていなければ止める（solo は止めない）"""
+def fetch_long(work):
+    """本編の今の状態（公開か予約の日時・非公開か・長さの秒）を YouTube から読む。shorts_spi.py が作業フォルダの _long.json に置く"""
     from upload_job import api, API
     up = json.load(open(os.path.join(work, "uploaded.json"), encoding="utf-8"))
     it = json.load(api("spi", "GET", f"{API}/videos?part=status,snippet,contentDetails&id={up['video_id']}", timeout=60))["items"][0]
     st = it["status"]
-    when = it["snippet"]["publishedAt"] if st["privacyStatus"] == "public" else st.get("publishAt")
-    if kind == "teaser" and st["privacyStatus"] != "private":
+    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it["contentDetails"]["duration"])
+    h, mi, s = (int(x or 0) for x in m.groups())
+    return {"video_id": up["video_id"], "privacy": st["privacyStatus"],
+            "when": it["snippet"]["publishedAt"] if st["privacyStatus"] == "public" else st.get("publishAt"), "seconds": h * 3600 + mi * 60 + s}
+
+
+def long_info(work, kind="after", offline=False):
+    """本編の公開の日（予約の日）・長さ・サムネ。日が決まっていなければ止める（solo は止めない）
+    offline：YouTube に聞かず、作業フォルダの _long.json（shorts_spi.py が読んで置いた値）を使う。鍵を持たない台本の書き手が点検を回す時（2026-10-30）"""
+    up = json.load(open(os.path.join(work, "uploaded.json"), encoding="utf-8"))
+    lg = json.load(open(os.path.join(work, "_long.json"), encoding="utf-8")) if offline else fetch_long(work)
+    when = lg["when"]
+    if kind == "teaser" and lg["privacy"] != "private":
         sys.exit("【止まりました】本編はもう公開されています。予告（teaser）ではなく after で作ります")
     if not when and kind != "solo":
         sys.exit("【止まりました】本編の公開の日（予約）がまだ決まっていません。本編の予約を入れてから、ショートを作ります")
     import datetime
     at = when and datetime.datetime.fromisoformat(when.replace("Z", "+00:00")).astimezone(datetime.timezone(datetime.timedelta(hours=9)))
     day = at and at.date()
-    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it["contentDetails"]["duration"])
-    h, mi, s = (int(x or 0) for x in m.groups())
     fmt = CLOSE_TEASER if kind == "teaser" else CLOSE
-    return {"day": day, "at": at, "kind": kind, "minutes": round((h * 3600 + mi * 60 + s) / 60), "video_id": up["video_id"],
+    return {"day": day, "at": at, "kind": kind, "minutes": round(lg["seconds"] / 60), "video_id": up["video_id"],
             "thumb": os.path.join(work, up.get("thumb") or "thumb.jpg"),
             "close": day and kind != "solo" and fmt.format(m=day.month, d=day.day, w=WEEK[day.weekday()])}
 
@@ -316,20 +330,25 @@ PlayResY: {H}
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,Noto Sans JP,84,&H0022262B,&H0022262B,&H00F7FBFF,&H00000000,1,0,0,0,100,100,2,0,1,7,0,8,40,40,1530,1
+Style: Cap,{FONT_NAME},84,&H0022262B,&H0022262B,&H00F7FBFF,&H00000000,1,0,0,0,100,100,2,0,1,7,0,8,40,40,1530,1
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """ + "\n".join(events) + "\n")
     fd = os.path.join(b, "fonts"); os.makedirs(fd, exist_ok=True)
     import shutil
-    shutil.copyfile(FONT, os.path.join(fd, "NotoSansJP-Bold.ttf"))
+    shutil.copyfile(FONT, os.path.join(fd, os.path.basename(FONT)))
     open(os.path.join(b, "clips.txt"), "w").write("".join(f"file '{p}'\n" for p in outs))
     run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", os.path.join(b, "clips.txt"), "-c", "copy", os.path.join(b, "video.mp4"))
     open(os.path.join(b, "voice.txt"), "w").write("".join(f"file '{p}'\n" for p in vcs))
     run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", os.path.join(b, "voice.txt"), os.path.join(b, "voice.wav"))
     # 音：声＋BGM → 足りない分だけ音量を上げて、リミッター（最大 −1.5 dB）で山をおさえる。
     # loudnorm だけでは、感情づけの強調で山が上がっているため −16.3 LUFS にしかならなかった（本編も −16.5 → 同じ方式で −14.8）
-    bgm = os.path.abspath(os.path.join(work, s["bgm"]))
+    # BGM：本編と同じ順（環境変数 SPI_BGM → profile.json の build.bgm → script.json の bgm）。クラウドは SPI_BGM（2026-10-30）
+    prof = (json.load(open(os.path.join(ROOT, "channels", "spi", "profile.json"), encoding="utf-8")).get("build") or {})
+    bgm = next((os.path.abspath(p) for p in (os.environ.get("SPI_BGM"), os.path.join(ROOT, prof["bgm"]) if prof.get("bgm") else None,
+                                              os.path.join(work, s["bgm"]) if s.get("bgm") else None) if p and os.path.exists(p)), None)
+    if not bgm:
+        sys.exit("【止まりました】BGM が見つかりません（環境変数 SPI_BGM か、profile.json の build.bgm か、script.json の bgm）")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "voice.wav", "-stream_loop", "-1", "-i", bgm, "-filter_complex",
                     f"[1:a]volume={BGM_VOL},afade=t=in:d=1,afade=t=out:st={max(0, t - 2):.2f}:d=2[m];"
                     "[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
@@ -357,10 +376,11 @@ def main():
     a.add_argument("--check", action="store_true")
     a.add_argument("--clips", default=os.path.join("images", "_v3"))
     a.add_argument("--name", default="short", help="short.json なら short（既定）、short_2.json なら short_2")
+    a.add_argument("--offline", action="store_true", help="本編の状態を YouTube に聞かず、作業フォルダの _long.json を使う")
     a = a.parse_args()
     work = os.path.abspath(a.work)
     kind = load(work, a.name)[1].get("kind", "after")
-    li = long_info(work, kind if kind in KINDS else "after")
+    li = long_info(work, kind if kind in KINDS else "after", a.offline)
     ok = check(work, a.clips, li, a.name)
     if a.check or not ok:
         sys.exit(0 if ok else 1)

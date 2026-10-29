@@ -241,6 +241,9 @@ def record(ch, work):
         rec["押したくなるかの点"] = {"タイトル": c["タイトル"].get("点"), "サムネ": (c.get("サムネ") or {}).get("点")}
     if s.get("short"):  # 心理学ch：ショートを上げられたか（週報が数える）
         rec["short_video_id"] = jload(os.path.join(work, "short", "uploaded.json"), {}).get("video_id") or "上げられなかった"
+    sr = jload(os.path.join(work, "shorts_result.json"), {})
+    if sr:  # 千年こよみ：本編から作ったショート（shorts_spi.py。名前ごとに video_id か、上げなかった理由）
+        rec["shorts"] = {k: v.get("video_id") or v.get("結果") for k, v in sr.items()}
     p = hpath(ch, "produced.json")
     h = jload(p, [])
     if not any(x["work"] == rec["work"] for x in h):
@@ -666,6 +669,12 @@ def make_one(ch, st, upload, kind=None):
         step("short_upload", lambda: short("short_upload", [T("short_upload", None), work]))
     if T("teaser", None) and os.path.exists(os.path.join(work, "teaser", "teaser.mp4")):  # 非公開で上げる。公開の予約は見張り
         step("teaser_upload", lambda: short("teaser_upload", [T("teaser", None), "upload", work, "--ch", ch, "--go"]))
+    # 千年こよみ（2026-10-30）：上げた本編にすぐ公開の予約を入れ（watch.py --book）、本編から縦のショートを書いて作って上げる（shorts_spi.py）。
+    # 予告・切り出しのショートは本編の公開の日が要り、本編の絵はこの後に消すので、見張りを待たずにここで回す。どちらも落ちても本編は止めない
+    if T("book", None):
+        step("book", lambda: short("book", [T("book", None), ch, "--book", f"{ch}:{os.path.basename(work)}"]))
+    if T("shorts", None):
+        step("shorts", lambda: short("shorts", [T("shorts", None), work]))
     step("record", lambda: record(ch, work))
     if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
         import shutil

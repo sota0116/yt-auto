@@ -398,6 +398,30 @@ def move(spec, dry):
     ustore.save(ch, up)
 
 
+def book(spec, dry, days=21):
+    """上げたばかりの回に、すぐ公開の予約を入れる（spi 2026-10-30。予告・切り出しのショートは本編の公開の日が要るので、見張りの 12:07 を待たない。
+    絵はアップの後に消すので、ショートは本編と同じ実行の中でしか作れない）。spec＝「チャンネル:作業フォルダの名前」。
+    明日から近い日へ順に、見張りと同じ決まり（schedule_tomorrow：曜日・公開日と期間・空けておく枠）で在庫を予約し、この回に入ったら止める。
+    days 日先まで入らなければ、予約なしのまま（見張りが後で入れる。ショートは solo だけになる）"""
+    ch, work = spec.split(":", 1)
+    up = ustore.load(ch)
+    me = lambda: next((e for e in up if e.get("work") == work and not e.get("missing")), None)
+    try:
+        refresh(ch, up)
+        if not me():
+            raise SystemExit(f"{spec}：上げた回の記録にありません")
+        for i in range(1, days + 1):
+            if me().get("publish_at") or me().get("published"):
+                break
+            d = (now() + datetime.timedelta(days=i)).date()
+            r = schedule_tomorrow(ch, up, dry, d)
+            if r and ("しました" in r or "--dry" in r):
+                print(f"{d:%m/%d}：{r}")
+    finally:
+        ustore.save(ch, up)
+    print(f"{work}：" + (f"{me().get('publish_at')} に予約が入っています" if me().get("publish_at") else f"{days}日先までに入れられる日がありませんでした（予約なし）"))
+
+
 def watch_channel(ch, dry, ahead=1):
     st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
@@ -485,8 +509,12 @@ def main():
     a.add_argument("--dry", action="store_true")
     a.add_argument("--ahead", type=int, default=1, help="明日から何日先まで予約するか（1＝明日だけ）")
     a.add_argument("--move", default="", help="予約を移す「ch:作業フォルダ@YYYY-MM-DDTHH:MM」（空白で区切って複数）")
+    a.add_argument("--book", default="", help="上げたばかりの回だけ予約して終える「ch:作業フォルダ」（run_daily.py が本編を上げた直後に使う）")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
+    if a.book:
+        book(a.book, a.dry)
+        return
     hb_p = os.path.join(ROOT, "history", "heartbeat.json")
     when = now().strftime("%m/%d %H:%M")
     failed = False
