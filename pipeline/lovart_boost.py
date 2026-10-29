@@ -6,7 +6,7 @@
 # ・1日の上限は data\lovart_budget.json（日付ごとの上限×チャンネルの割合）。失効が近いほど上限を上げる（本人 2026-10-29）
 # ・使った量は history\<ch>\lovart_credits.json（チャンネルごとに分ける。並んで動く2つの実行が同じファイルを書き合わないため）
 # ・クレジットの数は Lovart から取れないので、確認（pending_confirmation）に出た見積もりがあればそれを、無ければ data の目安で数える
-import contextlib, datetime, json, os, sys, tempfile
+import contextlib, datetime, json, os, sys, tempfile, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = datetime.timezone(datetime.timedelta(hours=9))
@@ -111,7 +111,20 @@ def check():
     sk = client()
     p = os.path.join(ROOT, "history", "lovart_mode.json")
     h = jload(p, {})
-    if sk.query_mode().get("unlimited") is True:
+    # Lovart が「回数が多すぎる（429）」と返した時は、少し待って2回まで聞き直し、それでもだめなら今回は見ない
+    # （見張りは1日2回あるので次で見る。この段が落ちると見張り全体が失敗に見えて Issue が立っていた。2026-10-29）
+    for wait in (30, 90, None):
+        try:
+            mode = sk.query_mode()
+            break
+        except Exception as e:
+            if getattr(e, "code", None) != 429 and "Rate limit" not in str(e):
+                raise
+            if wait is None:
+                print(f"::warning::Lovart の回数の上限（429）で、今回はモードを確かめられませんでした。次の見張りで見ます", flush=True)
+                return
+            time.sleep(wait)
+    if mode.get("unlimited") is True:
         jsave(p, {"fast_seen": 0, "checked": now().isoformat(timespec="seconds")})
         return
     sk.set_mode(unlimited=True)
