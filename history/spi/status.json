@@ -2,10 +2,19 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/006_b_ennichi_2026",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading",
+  "images",
+  "motion",
+  "gate_images",
+  "build"
  ],
  "started": "2026-10-30T02:49:26+09:00",
  "tries": 1,
- "code": "135cd86dc6df",
- "stage": "gate_script"
+ "code": "760ab46e5e5b",
+ "stage": "gate_video",
+ "updated": "2026-10-30T05:57:42+09:00"
 }
