@@ -1087,6 +1087,13 @@ def main(work):
         for tk in tokens(x):
             if tk not in allowed:
                 ng.append(f"サムネに facts.json にない数字：{x} {tk}")
+    if ts:  # タイトルとサムネで同じ言葉をくり返さない（§6。2026-10-29 のゲートの試しで、どの回でも減点された）
+        t0 = unicodedata.normalize("NFKC", ts[0])
+        for n in list(short.values()) + jobs:
+            t0 = t0.replace(n, "")
+        dup = sorted({w for w in re.findall(r"[一-鿿゠-ヿ]{2,}", top + th) if w in t0})
+        if dup:
+            warn.append(f"タイトル1案目とサムネの字に同じ言葉：{dup}（片方が謎、もう片方が手がかり。§6）")
     kind = sc.get("thumb_kind")
     if kind not in THUMB_KINDS:
         warn.append(f"thumb_kind（サムネの字の型）が {'・'.join(THUMB_KINDS)} のどれでもない：{kind}（§6）")
