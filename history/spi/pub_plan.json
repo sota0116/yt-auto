@@ -56,5 +56,19 @@
   "line_copy": 3,
   "sub_copy": 2,
   "made": "2026-10-29"
+ },
+ "006_b_ennichi_2026": {
+  "neta_id": "b_ennichi_2026",
+  "type": "B",
+  "frame": "B-1",
+  "pub_date": "2026-11-02",
+  "window": [
+   "2026-11-02",
+   "2027-04-01"
+  ],
+  "hook_type": "日付",
+  "line_copy": 1,
+  "sub_copy": 3,
+  "made": "2026-10-30"
  }
 }
