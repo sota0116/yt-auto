@@ -10,12 +10,14 @@
   "images",
   "charts",
   "gate_images",
-  "build"
+  "build",
+  "gate_video",
+  "thumb"
  ],
  "started": "2026-10-29T06:38:28+09:00",
  "tries": 1,
- "code": "3c1d6f026735",
- "stage": "gate_video",
- "updated": "2026-10-29T07:42:05+09:00",
+ "code": "309067575812",
+ "stage": "teaser",
+ "updated": "2026-10-30T03:08:04+09:00",
  "build_gap": 0.51
 }
