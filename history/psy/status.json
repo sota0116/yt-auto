@@ -12,7 +12,7 @@
   "gate_images"
  ],
  "started": "2026-10-29T17:46:22+09:00",
- "tries": 0,
+ "tries": 1,
  "redone": {
   "日時": "2026-10-29T17:46:22+09:00",
   "前の済み": [
@@ -24,7 +24,7 @@
    "reading"
   ]
  },
- "code": "1eb5dc62f369",
+ "code": "ef1a35e56aba",
  "stage": "build",
  "updated": "2026-10-30T02:55:21+09:00",
  "busy": {
