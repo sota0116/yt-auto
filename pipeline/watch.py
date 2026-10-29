@@ -244,10 +244,11 @@ def gap_days(ch):
     return max(every(ch), max((w[(i + 1) % len(w)] - w[i]) % 7 or 7 for i in range(len(w))))
 
 
-def schedule_tomorrow(ch, up, dry):
+def schedule_tomorrow(ch, up, dry, tom=None):
     """審査の後だけ：明日の公開予約が無ければ、在庫から1本を予約する（軸の型を先に。設計書 §2）
-    間隔が2日以上のチャンネルは、前の公開（予約を含む）から間隔があく日だけ入れる"""
-    tom = (now() + datetime.timedelta(days=1)).date()
+    間隔が2日以上のチャンネルは、前の公開（予約を含む）から間隔があく日だけ入れる
+    tom を渡すと、その日の枠を見る（--ahead で明日より先の日も予約する。文の「明日」はその日のこと）"""
+    tom = tom or (now() + datetime.timedelta(days=1)).date()
     days = [d.date() for d in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in up if not e.get("missing")) if d]
     if tom.weekday() not in weekdays(ch):
         return None if tom in days else f"明日は公開しない曜日（{'月火水木金土日'[tom.weekday()]}）"
@@ -281,7 +282,7 @@ def schedule_tomorrow(ch, up, dry):
     return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました"
 
 
-def schedule_tomorrow_kinds(ch, up, dry):
+def schedule_tomorrow_kinds(ch, up, dry, tom=None):
     """種類ごとのチャンネル：明日の公開の枠のうち、予約が入っていない枠に、種類ごとの在庫から1本ずつ予約する。
     ・枠：kinds.<種類>.slots（日本時間 "18:00" の並び）。ショートは在庫が extra_min_stock 本以上たまっている日だけ extra_slot（昼）も使う
     ・横動画：every_days 日おき（前の公開・予約から every_days 日あく日だけ）。同じ日に横動画は1本まで
@@ -289,7 +290,7 @@ def schedule_tomorrow_kinds(ch, up, dry):
     ・手で上げた分も含めて、もう予約が入っている時刻には入れない"""
     ks = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("kinds") or {}
     pf = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
-    tom = (now() + datetime.timedelta(days=1)).date()
+    tom = tom or (now() + datetime.timedelta(days=1)).date()
     live = [e for e in up if not e.get("missing") and not e.get("retired")]
     taken = {t.strftime("%Y-%m-%dT%H:%M") for t in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in live) if t}
     taken |= set(pf.get("reserved_slots") or [])
@@ -374,7 +375,7 @@ def schedule_teasers(ch, up, dry):
     return out or None
 
 
-def watch_channel(ch, dry):
+def watch_channel(ch, dry, ahead=1):
     st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
     if not isinstance(metrics, dict):
@@ -398,7 +399,15 @@ def watch_channel(ch, dry):
         watch_numbers(ch, up, state, metrics, dry)
         state["type_hold"] = type_hold(ch, metrics)
         if prof(ch, "stock_phase", "STOCK_PHASE", "pre") == "post" and ch not in WATCH_ONLY:
-            state["予約"] = schedule_tomorrow_kinds(ch, up, dry) if KS else schedule_tomorrow(ch, up, dry)
+            sched = schedule_tomorrow_kinds if KS else schedule_tomorrow
+            state["予約"] = sched(ch, up, dry)
+            # 明日より先の日も、近い日から順に予約する（2026-10-30 本人「予約しておいて」。上げた回が予約なしのまま司令室に並ばないように）
+            later = []
+            for i in range(1, ahead):
+                d = (now() + datetime.timedelta(days=1 + i)).date()
+                r = sched(ch, up, dry, d)
+                later += [f"{d:%m/%d}：{x}" for x in (r or "").split("／") if "しました" in x or "--dry" in x]
+            state["先の予約"] = later or None
             state["予告の予約"] = schedule_teasers(ch, up, dry)
     finally:  # 途中で落ちても、読めた分は残す
         ustore.save(ch, up)
@@ -451,6 +460,7 @@ def main():
     a = argparse.ArgumentParser()
     a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--dry", action="store_true")
+    a.add_argument("--ahead", type=int, default=1, help="明日から何日先まで予約するか（1＝明日だけ）")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
     hb_p = os.path.join(ROOT, "history", "heartbeat.json")
@@ -458,7 +468,7 @@ def main():
     failed = False
     for ch in a.chs:
         try:
-            watch_channel(ch, a.dry)
+            watch_channel(ch, a.dry, a.ahead)
         except SystemExit as e:  # ログインが切れた（yt_auth.py が止めた）など
             failed = True
             issue(f"【止まりました】{ch}：YouTube のログインが切れた", f"{when} 見張り：{e}")
