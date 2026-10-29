@@ -1,20 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/004_tsukare_hito",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/005_kofuku_toshi",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
-  "reading",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "yomi"
+  "yomi",
+  "reading"
  ],
- "started": "2026-10-28T09:11:09+09:00",
- "tries": 1,
- "code": "674cb179119e",
- "stage": "gate_video",
- "updated": "2026-10-29T04:09:09+09:00"
+ "started": "2026-10-29T10:22:15+09:00",
+ "tries": 0,
+ "code": "ec188871b30b",
+ "stage": "images",
+ "updated": "2026-10-29T10:47:18+09:00",
+ "busy": {
+  "images": 1
+ }
 }
