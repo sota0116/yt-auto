@@ -9,25 +9,26 @@
   "reading",
   "images",
   "motion",
-  "gate_images"
+  "gate_images",
+  "build"
  ],
- "started": "2026-10-29T17:46:22+09:00",
- "tries": 2,
+ "started": "2026-10-30T03:47:28+09:00",
+ "tries": 1,
  "redone": {
-  "日時": "2026-10-29T17:46:22+09:00",
+  "日時": "2026-10-30T03:47:28+09:00",
   "前の済み": [
    "pick",
    "write",
    "gate_script",
    "voice",
    "yomi",
-   "reading"
+   "reading",
+   "images",
+   "motion",
+   "gate_images"
   ]
  },
- "code": "ef1a35e56aba",
- "stage": "build",
- "updated": "2026-10-30T02:55:21+09:00",
- "busy": {
-  "images": 1
- }
+ "code": "c7027cc0bedb",
+ "stage": "gate_video",
+ "updated": "2026-10-30T06:57:48+09:00"
 }
