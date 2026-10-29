@@ -2,10 +2,16 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L101_long_s006",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice"
  ],
  "started": "2026-10-29T04:26:35+09:00",
  "tries": 1,
  "code": "ec188871b30b",
- "stage": "gate_script"
+ "stage": "images",
+ "updated": "2026-10-29T11:31:03+09:00",
+ "busy": {
+  "images": 1
+ }
 }
