@@ -3,11 +3,15 @@
  "done": [
   "pick",
   "write",
-  "gate_script"
+  "gate_script",
+  "voice"
  ],
  "started": "2026-10-29T21:35:28+09:00",
  "tries": 0,
- "code": "4c349f21db83",
- "stage": "gate_script",
- "updated": "2026-10-29T21:52:26+09:00"
+ "code": "8f6cdbdebaf5",
+ "stage": "images",
+ "updated": "2026-10-29T22:52:38+09:00",
+ "busy": {
+  "images": 1
+ }
 }

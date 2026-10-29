@@ -1,19 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S101_母の形見の10円玉",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S102_通帳",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images"
+  "write"
  ],
- "started": "2026-10-29T17:28:40+09:00",
- "tries": 0,
- "code": "4c349f21db83",
- "stage": "motion",
- "updated": "2026-10-29T21:35:28+09:00",
- "busy": {
-  "images": 1,
-  "motion": 1
- }
+ "started": "2026-10-29T22:34:52+09:00",
+ "tries": 1,
+ "code": "8f6cdbdebaf5",
+ "stage": "gate_script"
 }
