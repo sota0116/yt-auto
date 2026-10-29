@@ -62,6 +62,8 @@ def gather(chs):
     week_ago = (today - datetime.timedelta(days=7)).isoformat()
     for ch in chs:
         up, metrics, w = h(ch, "uploaded.json", []), h(ch, "metrics.json", {}), h(ch, "watch.json", {})
+        if not isinstance(metrics, dict):  # 日本紀・おきぬは一覧の形（stats_<ch>.py）。見張りの数字は metrics_auto.json（watch.py）
+            metrics = h(ch, "metrics_auto.json", {})
         prod, cost, last = h(ch, "produced.json", []), h(ch, "cost.json", {}), h(ch, "last_run.json", {})
         nxt = [(today + datetime.timedelta(days=i)).isoformat() for i in range(1, 8)]
         booked = {(e.get("publish_at") or "")[:10] for e in up if not e.get("missing")}

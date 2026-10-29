@@ -377,6 +377,11 @@ def schedule_teasers(ch, up, dry):
 def watch_channel(ch, dry):
     st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
+    if not isinstance(metrics, dict):
+        # 日本紀・おきぬの metrics.json は、手で作った頃の stats_<ch>.py が書く一覧の形。読むだけにして、見張りの数字は別のファイルに書く
+        # （一覧のまま setdefault して落ち、明日の予約の手前で止まっていた。2026-10-29）
+        me_p = hpath(ch, "metrics_auto.json")
+        metrics = jload(me_p, {})
     KS = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("kinds")
     when = now().strftime("%m/%d %H:%M")
     if not up:
