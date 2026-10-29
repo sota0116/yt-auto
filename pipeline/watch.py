@@ -168,6 +168,8 @@ def swap(ch, e, n, dry):
     api(ch, "PUT", f"{API}/videos?part=snippet", {"id": e["video_id"], "snippet": sn}, timeout=60)
     note = f"タイトルを「{titles[n]}」に"
     tb = os.path.join(ROOT, "channels", ch, "videos", e["work"], "thumb_b.jpg")
+    rb = os.path.join(ROOT, "history", ch, "rethumb", e["work"], "thumb_b.jpg")  # 上げた後に作り直したサムネ（retitle_psy.py）があれば、そちらの B案
+    tb = rb if os.path.exists(rb) else tb
     if n == 1 and os.path.exists(tb):
         api(ch, "POST", f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={e['video_id']}",
             open(tb, "rb").read(), {"Content-Type": "image/jpeg"}, timeout=120)
