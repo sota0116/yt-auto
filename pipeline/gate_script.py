@@ -1,7 +1,8 @@
 # ④台本ゲート（設計書 §5④）：形・事実・似すぎ・文体の偏り・骨組みの偏り・禁止表現・広告に向くか・続きを見たくなるか・押したくなるか
 #   python -X utf8 pipeline\gate_script.py <作業フォルダ> [--ch job]
 # ・結果は 作業フォルダ\gate_script.json。不合格の項目があれば終了コード1
-# ・Gemini（書いた Claude と別の会社のAI）に、事実・禁止表現の文脈・広告・続き・押したくなるかの5つを見せる
+# ・判定のAI（gemini.py の ask。2026-10-24 からふだんは Claude Sonnet が claude -p で答える）に、事実・禁止表現の文脈・広告・続き・押したくなるかの5つを見せる
+# ・押したくなるかは点を記録に残すだけで、合否には使わない（2026-10-29 に競合33組で確かめ、伸びた回を当てられなかった。手順書 v5.2）
 # ・似すぎ・偏りは history\<ch>\produced.json の過去回と比べる（1本目は比べる相手がないので合格）
 import argparse, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -168,7 +169,8 @@ LINE の案内と登録の呼びかけも決まった位置に入ります。入
 
 
 def gate_click(s, use):
-    """押したくなるか（手順書 §6。2026-10-29 本人「サムネタイトルも特につまらない」）：1案目のタイトルとサムネの字を、一覧で見た人の目で採点"""
+    """押したくなるか（手順書 §6）：1案目のタイトルとサムネの字を、一覧で見た人の目で採点する。点は記録だけで、合否には使わない
+    2026-10-29 に競合の伸びた回と伸びなかった回の33組で確かめ、伸びた回に高い点が付いたのはタイトル47%・サムネ39%（当てずっぽうで50%）だった"""
     # 型D の「AIに〈出典名〉だけで採点させたら」は競合で伸びた型で、わざと入れている。2026-10-29 の試しで作り方の説明として減点されたので、ここで伝える
     d = "このタイトルの「AIに〈出典名〉だけで採点（検証）させたら」は、このチャンネルが決めて入れている見どころの方法なので、作り方の説明として減点しないでください。\n" if s.get("type") == "D" else ""
     p = f"""あなたは YouTube のサムネとタイトルの担当です。見る人はスマホのおすすめ欄を親指で流している20〜50代で、仕事やお金の話に興味はあるが、勉強したいわけではありません。
@@ -183,11 +185,7 @@ def gate_click(s, use):
 """
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
     r = ask_json(p, {"type": "object", "properties": {"タイトル": pt, "サムネ": pt}, "required": ["タイトル", "サムネ"]}, use)
-    return {"合格": r["タイトル"]["点"] >= CLICK_PASS and r["サムネ"]["点"] >= CLICK_PASS, **r}
-
-
-CLICK_PASS = 6  # 2026-10-29 の試し：古い形は6点以上の両方が16回中1回、v5.1 の形は14回中8回。7点は厳しめの採点では天井に近く、どの形も通らなかった
-CLICK_TRIES = 3  # 押したくなるかで落ちても、この回目（書き直し2回のあと）は止めない（手順書 §6・§10。公開の数を減らす損の方が大きい）
+    return {"合格": True, "使い方": "記録だけ（合否と書き直しには使わない。手順書 v5.2）", **r}
 
 
 def trigram(t):
@@ -227,15 +225,10 @@ def main():
     a.add_argument("--ch", default="job")
     a = a.parse_args()
     s, f = load(a.work)
-    gp = os.path.join(a.work, "gate_script.json")
-    tries = (json.load(open(gp, encoding="utf-8")).get("押したくなるか", {}).get("回目", 0) if os.path.exists(gp) else 0) + 1
     use = []
     res = {"モデル": gemini.TEXT_MODEL, "形": gate_form(a.work), "似すぎ・偏り": gate_similar(s, a.ch),
            "事実": gate_fact(s, f, use), "禁止表現": gate_ng(s, a.ch, use), "広告に向くか": gate_ads(s, use),
            "続きを見たくなるか": gate_hook(s, use, a.ch), "押したくなるか": gate_click(s, use)}
-    res["押したくなるか"]["回目"] = tries
-    if not res["押したくなるか"]["合格"] and tries >= CLICK_TRIES:
-        res["押したくなるか"].update({"合格": True, "止めずに出した": f"{tries}回目も{CLICK_PASS}点未満。押したくなるかだけでは止めない（手順書 §6）"})
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)
     json.dump(res, open(os.path.join(a.work, "gate_script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

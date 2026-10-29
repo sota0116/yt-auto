@@ -15,7 +15,7 @@ from run_daily import jsave
 from write_script import SECRET_ENV, LEARN, MEMO, doc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KEEP = ("work", "made", "type", "frame", "hook_type", "title", "thumb_text", "competitor_note", "learn_note", "台本ゲートの点")
+KEEP = ("work", "made", "type", "frame", "hook_type", "title", "thumb_text", "competitor_note", "learn_note", "台本ゲートの点", "押したくなるかの点")
 NUM = ("views", "impressions", "ctr", "averageViewPercentage", "averageViewDuration", "subscribersGained", "直す所")
 
 
@@ -64,7 +64,8 @@ def prompt(ch, path, learn):
 5. {rel(sm) if os.path.exists(sm) else '（ショートの学びは無い）'}（ショートの数字から分かった事。プログラムが書く。長尺のタイトルとサムネの言葉の参考だけ）
 
 ## 数字の見方
-- 台本ゲートの点：別の会社のAIが、通勤中に耳で聞く人の気持ちで付けた10点満点（最初の30秒・章ごと・山場）。台本を書いた日に出る、いちばん早い数字。
+- 台本ゲートの点：判定のAI（Claude Sonnet）が、通勤中に耳で聞く人の気持ちで付けた10点満点（最初の30秒・章ごと・山場）。台本を書いた日に出る、いちばん早い数字。
+- 押したくなるかの点：判定のAI（Claude Sonnet）が、1案目のタイトルとサムネの字に付けた10点満点。競合33組では伸びた回を当てられなかった（当てずっぽうと同じ）ので、これで良し悪しを決めない。72時間後の数字と並べて、うちの回で当たるかだけを見る。
 - 公開ページの再生と1日あたりの再生：公開から2〜3日の早い数字。公開の時刻と曜日で揺れるので、これだけで良し悪しを決めない。
 - 72時間後・7日後：見張りが YouTube の分析から取った数字。クリック率（ctr）はタイトルとサムネ、平均視聴率（averageViewPercentage）と直す所は台本の良し悪し。
 - 型（A〜D）が違う回どうしは、同じ型どうしより差が出やすい。比べる時は型を添える。

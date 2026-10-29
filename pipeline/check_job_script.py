@@ -2,7 +2,7 @@
 #   python -X utf8 pipeline\check_job_script.py <作業フォルダ>
 # ・作業フォルダに script.json と facts.json があること
 # ・スキルの check_script.py --long も一緒に回す（図のカット（chart）は絵の指示があるものとして渡す）
-# ・Gemini で見る項目（事実の裏取り・似すぎ・広告に向くか・続きを見たくなるか・押したくなるか）は、ここでは見ない
+# ・判定のAI（Claude Sonnet）で見る項目（事実の裏取り・似すぎ・広告に向くか・続きを見たくなるか・押したくなるか）は、ここでは見ない
 import json, os, re, subprocess, sys, tempfile, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from check_psy_script import tease  # 答えの先送りの見分け方（心理学chと同じ。references/16 の6）
