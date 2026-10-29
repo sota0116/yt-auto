@@ -1,1 +1,11 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S103_使い終わった古い財布",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-10-30T06:46:29+09:00",
+ "tries": 1,
+ "code": "b416d7634093",
+ "stage": "gate_script"
+}

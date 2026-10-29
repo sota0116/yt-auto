@@ -1,0 +1,252 @@
+{
+ "title": "【60代】古い財布を引き出しにしまったままの人へ",
+ "fiction": true,
+ "world_rules": [
+  "おきぬは、さわこの引き出しを見ていない。さわこの話は聞いた話として「そうよ」で語る（C12）",
+  "さわこが知っているのは、自分の古い財布の中身と自分の気持ちだけ。それはさわこ自身のセリフ（C04・C13）で言う",
+  "言い伝えはおきぬが語る。さわこは言い伝えを口にしない"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "前の財布を、引き出しにしまったままにしていませんか。",
+   "image_en": "Close-up of an older woman's hands sliding open a wooden dresser drawer, revealing a worn, faded brown wallet tucked at the back among folded cloths. Soft afternoon window light.",
+   "chars": [],
+   "hook": "古い財布\nそのまま?",
+   "motion": true,
+   "anim": "kling",
+   "subs": [
+    "前の財布を、",
+    "引き出しに\nしまったままに",
+    "していませんか。"
+   ],
+   "image": "Close-up of an older woman's hands sliding open a wooden dresser drawer, revealing a worn, faded brown wallet tucked at the back among folded cloths. Soft afternoon window light."
+  },
+  {
+   "id": "C02",
+   "narration": "65歳のさわこさん、春に財布を新調したそうよ。",
+   "image_en": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a new plain cream-colored wallet in both hands and glancing with a slightly troubled face at a half-open drawer nearby. Warm afternoon light.",
+   "chars": [
+    "sawako"
+   ],
+   "subs": [
+    "65歳の\nさわこさん、",
+    "春に財布を\n新調したそうよ。"
+   ],
+   "image": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a new plain cream-colored wallet in both hands and glancing with a slightly troubled face at a half-open drawer nearby. Warm afternoon light."
+  },
+  {
+   "id": "C03",
+   "narration": "買い替えたのに、古いほうが捨てられない。",
+   "same_as": "C02",
+   "shots": [
+    "C02@face"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "highlight": [
+    "捨てられない"
+   ],
+   "subs": [
+    "買い替えたのに、",
+    "古いほうが\n捨てられない。"
+   ]
+  },
+  {
+   "id": "C04",
+   "narration": "開けてみたら、底に小銭が残ってたの。",
+   "image_en": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket. Soft window light.",
+   "chars": [],
+   "voice": "sawako",
+   "subs": [
+    "開けてみたら、",
+    "底に小銭が\n残ってたの。"
+   ],
+   "image": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket. Soft window light."
+  },
+  {
+   "id": "C05",
+   "narration": "昔から、使い終えた財布は、",
+   "image_en": "Close-up of a worn, faded brown wallet resting quietly on a flat sheet of plain white paper on a low wooden table, soft morning light from a paper screen window.",
+   "chars": [],
+   "subs": [
+    "昔から、",
+    "使い終えた\n財布は、"
+   ],
+   "image": "Close-up of a worn, faded brown wallet resting quietly on a flat sheet of plain white paper on a low wooden table, soft morning light from a paper screen window."
+  },
+  {
+   "id": "C06",
+   "narration": "白い紙に包んで手放すと言われています。",
+   "same_as": "C05",
+   "shots": [
+    "C05@close"
+   ],
+   "chars": [],
+   "highlight": [
+    "白い紙"
+   ],
+   "subs": [
+    "白い紙に包んで\n手放すと",
+    "言われています。"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "長く使った財布には、思いがこもるそうよ。",
+   "same_as": "C05",
+   "shots": [
+    "C05@full"
+   ],
+   "chars": [],
+   "subs": [
+    "長く使った\n財布には、",
+    "思いがこもる\nそうよ。"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "取っておくなら、空にして包めば大丈夫よ。",
+   "image_en": "Close-up of an older woman's hands gently folding a sheet of plain white paper around an empty, worn brown wallet on a wooden table. Soft warm light.",
+   "chars": [],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "大丈夫"
+   ],
+   "tts_text": "取っておくなら、からにして包めば大丈夫よ。",
+   "subs": [
+    "取っておくなら、",
+    "空にして\n包めば",
+    "大丈夫よ。"
+   ],
+   "image": "Close-up of an older woman's hands gently folding a sheet of plain white paper around an empty, worn brown wallet on a wooden table. Soft warm light."
+  },
+  {
+   "id": "C09",
+   "narration": "最初は、小銭もカードも全部出すの。",
+   "image_en": "Close-up of an older woman's hands taking a few coins and blank plastic cards out of a worn brown wallet into a small ceramic dish on a wooden table.",
+   "chars": [],
+   "subs": [
+    "最初は、\n小銭もカードも",
+    "全部出すの。"
+   ],
+   "image": "Close-up of an older woman's hands taking a few coins and blank plastic cards out of a worn brown wallet into a small ceramic dish on a wooden table."
+  },
+  {
+   "id": "C10",
+   "narration": "次に、ありがとうと言って白い紙に包んでね。",
+   "same_as": "C08",
+   "shots": [
+    "C08@close"
+   ],
+   "chars": [],
+   "highlight": [
+    "ありがとう"
+   ],
+   "subs": [
+    "次に、\nありがとうと",
+    "言って白い紙に\n包んでね。"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "そして、手放す日は自分で決めてね。",
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ],
+   "chars": [],
+   "subs": [
+    "そして、\n手放す日は",
+    "自分で決めてね。"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "見つけた小銭は、今の財布へ移したそうよ。",
+   "image_en": "Sawako at her kitchen table, smiling softly as she drops a few coins into a new plain cream-colored wallet, a small bundle wrapped in plain white paper beside her. Gentle evening light.",
+   "chars": [
+    "sawako"
+   ],
+   "subs": [
+    "見つけた\n小銭は、",
+    "今の財布へ\n移したそうよ。"
+   ],
+   "image": "Sawako at her kitchen table, smiling softly as she drops a few coins into a new plain cream-colored wallet, a small bundle wrapped in plain white paper beside her. Gentle evening light."
+  },
+  {
+   "id": "C13",
+   "narration": "これで、やっとお別れできた気がするわ。",
+   "same_as": "C12",
+   "shots": [
+    "C12@face"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "voice": "sawako",
+   "subs": [
+    "これで、\nやっと",
+    "お別れできた\n気がするわ。"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "すぐ手放せなくても、包んだ日を区切りにしてみてね。",
+   "same_as": "C12",
+   "shots": [
+    "C12@full"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "subs": [
+    "すぐ\n手放せなくても、",
+    "包んだ日を\n区切りに",
+    "してみてね。"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "あなたの引き出しには、前の財布がありますか。",
+   "image_en": "Okinu sits at a low wooden table in a calm present-day Japanese room with a cup of green tea, a small wallet wrapped in plain white paper beside her, smiling gently toward the viewer. Warm light.",
+   "chars": [
+    "okinu"
+   ],
+   "highlight": [
+    "前の財布"
+   ],
+   "subs": [
+    "あなたの\n引き出しには、",
+    "前の財布が\nありますか。"
+   ],
+   "image": "Okinu sits at a low wooden table in a calm present-day Japanese room with a cup of green tea, a small wallet wrapped in plain white paper beside her, smiling gently toward the viewer. Warm light."
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {
+  "sawako": 20
+ },
+ "desc": "あなたの引き出しには、前の財布がありますか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん\n\n#shorts #金運 #使い終わった古い財布",
+ "tags": [
+  "金運",
+  "財布",
+  "使い終わった古い財布",
+  "60代"
+ ],
+ "comment": "あなたの引き出しには、前の財布がありますか。"
+}
