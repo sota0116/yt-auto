@@ -1,0 +1,14 @@
+[
+ {
+  "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/005_a_kotohajime_2026",
+  "done": [
+   "pick",
+   "write"
+  ],
+  "started": "2026-10-29T23:37:32+09:00",
+  "tries": 1,
+  "code": "1eb5dc62f369",
+  "stage": "gate_script",
+  "_後回し": "2026-10-30：公開 12/04 の回。台本ゲートで3回落ちて、11/02〜11/11 の枠の回が作られないため後回し。公開日の21日前（11/13）から run_daily.py が続きを作る"
+ }
+]

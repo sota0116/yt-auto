@@ -300,6 +300,27 @@ def redo(ch, work, st):
             "redone": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
 
 
+PARK_DAYS = 21  # 後回しにした回は、公開の予定日がこの日数以内に来たら戻す
+
+
+def unpark(ch, kind=None):
+    """後回しにした回（history/<ch>/parked.json に status.json の中身を手で移した回）のうち、公開の予定日（pub_plan.json）が
+    PARK_DAYS 日以内に来た回を1つ戻す。遠い日の回が台本ゲートで止まって、その間の近い空き枠の回が作られない時に使う
+    （spi 005 事始め 12/04 が止まり、11/02〜11/11 の枠が空いていた。2026-10-30 本人「その間の横動画は？」）"""
+    pp = hpath(ch, f"parked_{kind}.json" if kind else "parked.json")
+    parked = jload(pp, [])
+    plan = jload(hpath(ch, "pub_plan.json"), {})
+    lim = (now() + datetime.timedelta(days=PARK_DAYS)).date().isoformat()
+    for i, st in enumerate(parked):
+        pub = (plan.get(os.path.basename(st.get("work", ""))) or {}).get("pub_date") or ""
+        if pub and pub <= lim:
+            parked.pop(i)
+            jsave(pp, parked)
+            print(f"後回しにしていた {os.path.basename(st['work'])}（公開 {pub}）の続きを作ります", flush=True)
+            return {**st, "started": now().isoformat(timespec="seconds")}  # 72時間で飛ばす決まりは、戻した時から数える
+    return {}
+
+
 def bad_frame_cuts(work):
     """完成動画ゲート（_gate_video.json）で落ちたのが画面だけの時、落ちた画面の秒からカットを引き、{絵のカットの id: 作り直しの英語の指示} を返す。
     秒は組み立てが残した _build/<id>_v.wav（1カットの声＋間）の長さを足して決める（build_long_psy.py と同じ並び）。
@@ -688,6 +709,8 @@ def main():
               st = jload(sp, {})
               if st.get("work") and "record" in st.get("done", []):
                   st = {}
+              if not st.get("work"):
+                  st = unpark(ch, kind) or st
               if st.get("tries") and st.get("code") != code_ver():
                   print(f"前の失敗の後に道具が直っているので、{os.path.basename(st['work'])} の失敗の数を0から数え直します", flush=True)
                   st["tries"] = 0  # 直した後も前の3回で飛ばすと、出来上がり寸前の回を捨てる（006 がそうなった。2026-10-26）
