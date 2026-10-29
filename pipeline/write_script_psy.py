@@ -4,7 +4,7 @@
 # ・研究は WebSearch・WebFetch で調べさせ、facts.json に DOI か URL と「言ってよい範囲」を書かせる（手順書 §8）
 # ・書く作業には鍵を渡さない（write_script.py と同じ。子のプロセスから鍵の場所と鍵の環境変数を消して動かす）
 # ・Claude は書いたあと check_psy_script.py を自分で回し、NG が0件になるまで直す。最後にここでもう一度回して確かめる
-# ・--fix：gate_script.json（台本ゲートの不合格）を読ませて、不合格の所だけ直させる（書き直しは2回まで。run_daily.py が数える）
+# ・--fix：gate_script.json（台本ゲートの不合格）を読ませて、不合格の所だけ直させる（書き直しの回数は profile.json の gate_rewrites。無ければ2回。run_daily.py が数える）
 # ・モデルは環境変数 CLAUDE_WRITER_MODEL（無ければ opus）
 import argparse, json, os, shutil, subprocess, sys
 

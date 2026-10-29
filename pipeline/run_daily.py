@@ -398,7 +398,8 @@ def make_one(ch, st, upload, kind=None):
 
     def write_and_gate():
         w_py, g_py = T("write", "write_script.py"), T("gate_script", "gate_script.py")
-        for i in range(3):  # 1回目＋書き直し2回
+        n_fix = int(profile(ch).get("gate_rewrites") or 2)  # 書き直しの回数（profile.json。無ければ2回。心理学chは 2026-10-29 から4回）
+        for i in range(1 + n_fix):  # 1回目＋書き直し
             if i == 0 and "write" not in st["done"]:
                 run(work, "write", [w_py, work, "--ch", ch], ch, ok=(0, 1))
                 st["done"].append("write")
@@ -408,7 +409,7 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_script", [g_py, work, "--ch", ch], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
-        raise Stop("台本ゲートで3回不合格（書き直し2回でも直らない）。その回は止め、在庫で公開をつなぐ")
+        raise Stop(f"台本ゲートで{1 + n_fix}回不合格（書き直し{n_fix}回でも直らない）。その回は止め、在庫で公開をつなぐ")
 
     step("gate_script", write_and_gate)
     # 声は profile.json の tts_engine で選ぶ（2026-10-24 から仕事チャンネルは VOICEVOX）
