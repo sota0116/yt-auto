@@ -265,6 +265,29 @@ def apply_fixes(ch, work, st):
     print(f"直し（{os.path.relpath(fp, ROOT)}）を script.json に入れました", flush=True)
 
 
+def redo(ch, work, st):
+    """作り途中の回を台本からやり直す（status.json に "redo": "<ネタの id>" を手で入れた時。2026-10-29 手順書 v4.0 の型に替えた psy 005 のため）
+    neta.json と _run.log だけ残し、題はネタ帳.json の今の行に合わせる。台本・声・絵などは消す（声の段は同じカット番号の音声があると使い回すため）"""
+    import shutil
+    np_ = os.path.join(work, "neta.json")
+    neta = jload(np_, {})
+    nid = neta.get("id") or st["redo"]
+    row = next((r for r in jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), []) if r.get("id") == nid), None)
+    if row:
+        neta = {**neta, **row} if neta else {**row, "type": row.get("area"), "frame": row.get("area"), "made": now().date().isoformat()}
+    if not neta:
+        raise Stop(f"やり直しの回のネタが分かりません（neta.json もネタ帳の行 {nid} も無い）")
+    os.makedirs(work, exist_ok=True)
+    for x in os.listdir(work):
+        if x not in ("neta.json", "_run.log"):
+            p = os.path.join(work, x)
+            shutil.rmtree(p, ignore_errors=True) if os.path.isdir(p) else os.remove(p)
+    jsave(np_, neta)
+    print(f"■ {os.path.basename(work)} を台本からやり直します（題：{neta.get('title')}）", flush=True)
+    return {"work": work, "done": ["pick"], "started": now().isoformat(timespec="seconds"), "tries": 0,
+            "redone": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
+
+
 def bad_frame_cuts(work):
     """完成動画ゲート（_gate_video.json）で落ちたのが画面だけの時、落ちた画面の秒からカットを引き、{絵のカットの id: 作り直しの英語の指示} を返す。
     秒は組み立てが残した _build/<id>_v.wav（1カットの声＋間）の長さを足して決める（build_long_psy.py と同じ並び）。
@@ -312,6 +335,9 @@ def make_one(ch, st, upload, kind=None):
         st = {"work": work, "done": ["pick"], "started": now().isoformat(timespec="seconds"), "tries": 0}
         jsave(sp, st)
     work = st["work"]
+    if st.get("redo") and "upload" not in st.get("done", []):
+        st = redo(ch, work, st)
+        jsave(sp, st)
     apply_fixes(ch, work, st)
     st["tries"] = st.get("tries", 0) + 1
     st["code"] = code_ver()
