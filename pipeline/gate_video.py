@@ -6,7 +6,7 @@
 # ・画面：均等に10枚切り出して Gemini が見る（字幕と図のかぶり・切れた文字・真っ黒/真っ白・崩れた絵・読める偽の文字やロゴ）
 # ・不合格の画面は、1枚だけでもう一度見せる。2回とも不合格の時だけ落とす（まとめての判定が回ごとに揺れるため）
 # ・結果は _gate_video.json。不合格があれば終了コード1
-import argparse, glob, json, os, re, subprocess, sys
+import argparse, glob, json, os, re, subprocess, sys, wave
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini
 
@@ -56,6 +56,28 @@ def moving(work):
     return n, still_ch, still_peak
 
 
+def card_shift(work, t):
+    """切り出す秒が、図やカードのカットの出だし（字が順に出てくる途中）に当たる時は、そのカットの少し後ろへずらす。
+    カットの秒は組み立てが残した _build/<id>_v.wav（1カットの声＋間）の長さを足して決める（run_daily.py の bad_frame_cuts と同じ並び）。
+    2026-10-30 千年こよみ 006 F10：箇条書きのカードの出だし0.3秒（見出しが薄く、項目がまだ出ていない）を切り出して「ほぼ何も映っていない」で落ちた"""
+    sp = os.path.join(work, "script.json")
+    if not os.path.exists(sp):
+        return t
+    s0 = 0.0
+    for c in json.load(open(sp, encoding="utf-8")).get("cuts", []):
+        if not c.get("narration"):
+            continue
+        p = os.path.join(work, "_build", c["id"] + "_v.wav")
+        if not os.path.exists(p):
+            return t
+        with wave.open(p) as w:
+            d = w.getnframes() / w.getframerate()
+        if s0 <= t < s0 + d:
+            return s0 + min(2.0, d * 0.8) if (c.get("card") or c.get("chart")) and t - s0 < 2.0 else t
+        s0 += d
+    return t
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
@@ -99,7 +121,7 @@ def main():
     os.makedirs(d, exist_ok=True)
     shots = []
     for i in range(FRAMES):
-        t = sec * (i + 0.5) / FRAMES
+        t = card_shift(a.work, sec * (i + 0.5) / FRAMES)
         p = os.path.join(d, f"f{i:02d}.jpg")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.2f}", "-i", v, "-frames:v", "1", "-vf", "scale=1280:-2", "-q:v", "3", p])
         shots.append((p, t))
