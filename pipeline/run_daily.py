@@ -396,6 +396,16 @@ def make_one(ch, st, upload, kind=None):
         st = {"work": work, "done": ["pick"], "started": now().isoformat(timespec="seconds"), "tries": 0}
         jsave(sp, st)
     work = st["work"]
+    if not os.path.isdir(work) and "upload" not in st.get("done", []):
+        # 作業フォルダが消えた（引き継ぎの保存が落ちた・古い保存がキャッシュの10GBの枠から押し出された。2026-10-30 psy 005 で、絵162枚を作った後に起きた）。
+        # 同じネタで台本からやり直す（redo）。ネタの id は、フォルダ名（番号_id の英数字）とネタ帳.json の id を合わせて探す
+        tail = re.sub(r"^\d+_", "", os.path.basename(work))
+        slug = lambda r: re.sub(r"[^0-9a-z_]", "", str(r.get("id", "")).lower())
+        row = next((r for r in jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), []) if slug(r) == tail or slug(r).endswith("_" + tail)), None)
+        if not row:
+            raise Stop(f"作業フォルダ {os.path.basename(work)} が消えていて、ネタ帳にも同じネタの行がありません（status.json の work を消すと、次のネタから作ります）")
+        print(f"作業フォルダ {os.path.basename(work)} が消えていたので、同じネタ（{row['id']}）で台本から作り直します", flush=True)
+        st["redo"] = row["id"]
     if st.get("redo") and "upload" not in st.get("done", []):
         st = redo(ch, work, st)
         jsave(sp, st)

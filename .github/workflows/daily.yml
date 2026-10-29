@@ -26,6 +26,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write  # 古い作業フォルダの保存（キャッシュ）を消すため
 
 jobs:
   make:
@@ -118,12 +119,30 @@ jobs:
           LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
           LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
         run: python -X utf8 pipeline/lovart_boost.py restore
+      - name: 裏で動き続けている道具を止める（保存の前）
+        # 時間切れで止めた組み立ての ffmpeg が裏で long.mp4 を書き続け、保存（tar）が「file changed as we read it」で落ちた（2026-10-30 psy 005。絵162枚が消えた）
+        if: always()
+        run: |
+          pkill -9 -x ffmpeg || true
+          pkill -9 -f 'pipeline/.*[.]py' || true
+          sleep 2
       - name: 作業フォルダを保存する
         if: always()
         uses: actions/cache/save@v4
         with:
           path: channels/${{ matrix.ch }}/videos
           key: work-${{ matrix.ch }}-${{ github.run_id }}
+      - name: 同じチャンネルの古い保存を消す（今回の保存ができた時だけ）
+        # キャッシュはリポジトリ全体で10GBまで。実行のたびに1〜2.5GB の保存が増え、psy の保存が押し出されて消えた（2026-10-30）。
+        # 今回の保存が見つからない時（保存が落ちた時）は、古い保存を残す（次の実行はそれを引き継ぐ）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          k="work-${{ matrix.ch }}-${{ github.run_id }}"
+          ids=$(gh cache list --key "work-${{ matrix.ch }}-" --limit 100 --json id,key -q ".[] | select(.key != \"$k\") | .id")
+          gh cache list --key "$k" --json key -q '.[].key' | grep -qx "$k" || { echo "::warning::今回の保存が見つからないので、古い保存は残します"; exit 0; }
+          for i in $ids; do gh cache delete "$i" || true; done
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |
