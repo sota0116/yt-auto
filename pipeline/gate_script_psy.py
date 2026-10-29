@@ -84,10 +84,11 @@ def gate_ng(s, ch, use):
     words = [w.strip() for w in open(os.path.join(ROOT, "channels", ch, "禁止表現.txt"), encoding="utf-8")
              if w.strip() and not w.startswith("#")]
     th = lambda k: "".join(t for line in (s.get("thumb") or {}).get(k) or [] for t, _ in line)
-    sh = s.get("short") or {}
+    shs = [s.get("short") or {}] + list(s.get("extra_shorts") or [])  # 2本目からのショート（extra_shorts。2026-10-29）も見る
     texts = [(c["id"], c["narration"]) for c in s["cuts"]] + [(f"title{i+1}", t) for i, t in enumerate(s.get("titles", []))] + \
             [("thumb", th("lines")), ("thumb_b", th("lines_b")), ("desc", s.get("desc", "").replace(DISCLAIMER, ""))] + \
-            [("short_title", sh.get("title", ""))] + [(c.get("id", "S"), c.get("narration", "")) for c in sh.get("cuts", [])]
+            [x for j, sh in enumerate(shs) for x in [(f"short{j + 1}_title", sh.get("title", ""))] +
+             [(f"short{j + 1}_{c.get('id', 'S')}", c.get("narration", "")) for c in sh.get("cuts", [])]]
     # 手順書 §7 の決まった断り書きの「治療」は当たらない。サムネB案・ショートも見る（2026-10-28 002 で題とサムネに「怠けではない」が残った）
     hits =[{"id": i, "語": w, "文": t} for i, t in texts for w in words if w in t]
     p = f"""YouTube の心理学チャンネル（50〜70代の女性向け・夜にひとりで聞く）の台本の点検です。下の「当たった所」は、禁止表現の一覧と単純に一致した所です。

@@ -555,8 +555,8 @@ def make_one(ch, st, upload, kind=None):
     step("record", lambda: record(ch, work))
     if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
         import shutil
-        for d in ("images", "voice", "_build", "short", "teaser"):
-            shutil.rmtree(os.path.join(work, d), ignore_errors=True)
+        for d in ("images", "voice", "_build", "short", "teaser") + tuple(x for x in os.listdir(work) if re.fullmatch(r"short_\d+", x)):
+            shutil.rmtree(os.path.join(work, d), ignore_errors=True)  # short_2 …＝心理学chの2本目からのショート（2026-10-29）
         for x in os.listdir(work):  # 作業フォルダの直下の動画（long.mp4・アナザー日本紀の short.mp4 と _1440p の写し）
             if x.endswith(".mp4") and os.path.isfile(os.path.join(work, x)):
                 os.remove(os.path.join(work, x))

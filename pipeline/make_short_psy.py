@@ -1,7 +1,9 @@
 # ⑨ショート（心理学ch・2026-10-27 新設）：その回の長尺の絵（動く絵）を借りて、縦のショート（1080x1920・60秒未満）を作る
-#   python -X utf8 pipeline\make_short_psy.py <作業フォルダ> [--check]
+#   python -X utf8 pipeline\make_short_psy.py <作業フォルダ> [--check] [--name short_2]
 # ・台本は script.json の "short"（台本の書き手 write_script_psy.py が手順書 §10 の決まりで書く）
-#   {"title", "lines": サムネと同じ形の上の帯の文字（1〜2行）, "desc", "cuts": [{"id": "S01", "narration", "from": "本編のカットの id", "study"?}]}
+# ・2026-10-29 から、特徴の章ごとのショートを "extra_shorts"（同じ形の並び）に足せる。作業フォルダ\short_2\・short_3\ … に作る。
+#   --name が無い時は全部作る。"short"（1本目）が作れなければ止める（今までと同じ）。2本目からは作れなかった物だけ飛ばす
+#   形はどれも {"title", "lines": サムネと同じ形の上の帯の文字（1〜2行）, "desc", "cuts": [{"id": "S01", "narration", "from": "本編のカットの id", "study"?}]}
 # ・声は長尺と同じ VOICEVOX（make_voice_vv.py を 作業フォルダ\short\ に向けて回す）。速さ・間・BGM・音の大きさも長尺と同じ（profile.json の build）
 # ・画面：上に濃い帯と白い大きな字（大事な言葉1つは黄）、真ん中に本編の絵を正方形で（静止画はゆっくり寄る。動く絵はそのまま）、下に大きな字幕
 # ・--check：作る前の点検だけ（字数・カット数・借りる絵・決まった締めの文・禁止表現・帯の字）。台本の書き手も書いたあとに回す
@@ -22,15 +24,24 @@ CHARS = (180, 290)  # 語りの字数（句読点を除く）。速さ 1.28 で�
 NCUT = (5, 11)
 CLOSE = "続きは、本編の動画でお話ししています。"
 SUB_MAX = 12  # 字幕の1行の字数
+EXTRA_MAX = 3  # 2本目からのショートは3本まで（1回で4本。予約の枠は1日3つ・長尺は週5本なので週20本。shorts_watch.py の TIMES）
 
 
 def plain(t):
     return re.sub(r"[\s、。！？「」]", "", t)
 
 
-def check(work):
+def shorts_of(s):
+    """[(フォルダの名前, ショートの台本)]。1本目は short、2本目からは short_2 …（upload_short_psy.py も使う）"""
+    if not s.get("short"):
+        return []
+    extra = (s.get("extra_shorts") or [])[:EXTRA_MAX]
+    return [("short", s["short"])] + [(f"short_{i + 2}", x) for i, x in enumerate(extra)]
+
+
+def check(work, name="short"):
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
-    sh = s.get("short") or {}
+    sh = dict(shorts_of(s)).get(name) or {}
     ng = []
     cuts = sh.get("cuts") or []
     long_ids = {c["id"]: c for c in s.get("cuts", [])}
@@ -82,7 +93,10 @@ def check(work):
     t = sh.get("title", "")
     if not 10 <= len(t) <= 60 or not t.startswith("【心理学】"):
         ng.append(f"ショートの題は「【心理学】」で始めて60字まで（今 {len(t)}字）")
-    print(f"ショートの台本：語り {n}字・{len(cuts)}カット・題 {len(t)}字・帯 {band}")
+    others = [x.get("title") for k, x in shorts_of(s) if k != name]
+    if t and t in others:
+        ng.append("ほかのショートと同じ題（1本ずつ別の題にする）")
+    print(f"{name}：語り {n}字・{len(cuts)}カット・題 {len(t)}字・帯 {band}")
     for x in ng:
         print("  NG", x)
     print(f"NG {len(ng)}件")
@@ -131,13 +145,13 @@ def clip(bg, src, n, d, out):
         "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "17", "-preset", "veryfast", out)
 
 
-def build(work):
+def build(work, name="short"):
     need("ffmpeg", "ffmpeg を入れてください")
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
-    sh = s["short"]
+    sh = dict(shorts_of(s))[name]
     prof = json.load(open(os.path.join(ROOT, "channels", "psy", "profile.json"), encoding="utf-8"))
     bc = prof["build"]
-    sw = os.path.join(work, "short"); b = os.path.join(sw, "_build")
+    sw = os.path.join(work, name); b = os.path.join(sw, "_build")
     os.makedirs(b, exist_ok=True)
     # 声：作業フォルダ\short\script.json に語りだけを置いて、長尺と同じ道具で作る
     json.dump({"cuts": [{k: c[k] for k in ("id", "narration", "tts_text") if k in c} for c in sh["cuts"]]},
@@ -199,12 +213,24 @@ def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
     a.add_argument("--check", action="store_true")
+    a.add_argument("--name", default="", help="1本だけ作る時（short・short_2 …）")
     a = a.parse_args()
     work = os.path.abspath(a.work)
-    ok = check(work)
-    if a.check or not ok:
-        sys.exit(0 if ok else 1)
-    build(work)
+    s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
+    names = [a.name] if a.name else [k for k, _ in shorts_of(s)] or ["short"]
+    oks = {k: check(work, k) for k in names}
+    if a.check or not oks[names[0]]:
+        sys.exit(0 if all(oks.values()) else 1)
+    for k in names:
+        if not oks[k]:
+            print(f"{k}：点検で NG があるので作りません")
+            continue
+        try:
+            build(work, k)
+        except (SystemExit, subprocess.CalledProcessError) as e:
+            if k == names[0]:
+                raise
+            print(f"{k}：作れませんでした（{e}）。ほかのショートは続けます")
 
 
 if __name__ == "__main__":
