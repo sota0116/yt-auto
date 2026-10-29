@@ -840,12 +840,19 @@ def main(work):
     chars = sum(len(c["narration"]) for c in cuts)
     is_d = sc.get("type") == "D"
     if not is_d:
-        if not 3400 <= chars <= 4200:
-            ng.append(f"字数 {chars}（3,400〜4,200）")
-        if not 105 <= len(cuts) <= 135:
-            ng.append(f"カット {len(cuts)}（105〜135）")
-        if chars / (CPS * SPEED) < 480:
-            ng.append(f"見込み {chars / (CPS * SPEED) / 60:.1f} 分（8分以上。声の速さ {SPEED}）")
+        # 長さは目安（2026-10-30 本人「無理しなくていいよ、クオリティ重視だから時間を絶対ルールにしなくていい」）。水増しより中身。落とすのは6分より短い時だけ
+        if chars > 4200 or chars < 2600:
+            ng.append(f"字数 {chars}（2,600〜4,200。目安は3,400以上）")
+        elif chars < 3400:
+            warn.append(f"字数 {chars}（目安は3,400以上。足りない分を水増しで埋めない）")
+        if len(cuts) > 135 or len(cuts) < 85:
+            ng.append(f"カット {len(cuts)}（85〜135。目安は105以上）")
+        elif len(cuts) < 105:
+            warn.append(f"カット {len(cuts)}（目安は105以上）")
+        if chars / (CPS * SPEED) < 360:
+            ng.append(f"見込み {chars / (CPS * SPEED) / 60:.1f} 分（6分以上。声の速さ {SPEED}）")
+        elif chars / (CPS * SPEED) < 480:
+            warn.append(f"見込み {chars / (CPS * SPEED) / 60:.1f} 分（目安は8分以上。声の速さ {SPEED}）")
         switches = sum(1 for c in cuts if not c.get("same_as"))
         if not 85 <= switches <= 90:
             warn.append(f"画面の切り替わり {switches}（設計書 §5⑥ の 85〜90）")

@@ -1,6 +1,6 @@
 # ⑨完成動画ゲート（設計書 §5⑨）：出来上がった動画を、上げる前に機械と Claude（2026-10-24 までは Gemini）で見る
 #   python -X utf8 pipeline\gate_video.py <作業フォルダ> [--video long.mp4]
-# ・長さ：8分以上
+# ・長さ：profile.json の min_sec 以上（無ければ8分）。min_sec〜8分は注意だけ（仕事ch 2026-10-30 本人「クオリティ重視だから時間を絶対ルールにしなくていい」）
 # ・声の大きさ：−15 LUFS の ±2 以内（ffmpeg の ebur128 で測る）
 # ・無音：3秒以上続く無音が無い（ffmpeg の silencedetect、−45dB）。クイズの間（2秒）は引っかからない
 # ・画面：均等に10枚切り出して Gemini が見る（字幕と図のかぶり・切れた文字・真っ黒/真っ白・崩れた絵・読める偽の文字やロゴ）
@@ -17,6 +17,12 @@ def topic(work):
     """何の動画か。チャンネルの profile.json の topic（無ければ仕事チャンネルの言い方）"""
     p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
     return (json.load(open(p, encoding="utf-8")).get("topic") if os.path.exists(p) else None) or "日本の仕事と年収の統計"
+
+
+def min_sec(work):
+    """落とす長さ（秒）。チャンネルの profile.json の min_sec（無ければ8分）"""
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    return (json.load(open(p, encoding="utf-8")).get("min_sec") if os.path.exists(p) else None) or MIN_SEC
 
 
 def ff(*args):
@@ -74,8 +80,11 @@ def main():
         sys.exit(1 if bad else 0)
     sec = length(v)
     res["長さ秒"] = round(sec, 1)
-    if sec < MIN_SEC:
-        bad.append(f"長さが{sec / 60:.1f}分（8分未満）")
+    lo = min_sec(a.work)
+    if sec < lo:
+        bad.append(f"長さが{sec / 60:.1f}分（{lo / 60:g}分未満）")
+    elif sec < MIN_SEC:
+        print(f"  注意：長さが{sec / 60:.1f}分（8分未満。途中の広告は付かないが、中身を優先してこのまま出す）")
     log = ff("-i", v, "-vn", "-af", f"ebur128,silencedetect=n={SIL_DB}dB:d={SIL_SEC}", "-f", "null", "-")
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", log)
     lufs = float(m[-1]) if m else None
