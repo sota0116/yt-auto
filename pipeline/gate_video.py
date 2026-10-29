@@ -62,20 +62,26 @@ def card_shift(work, t):
     2026-10-30 千年こよみ 006 F10：箇条書きのカードの出だし0.3秒（見出しが薄く、項目がまだ出ていない）を切り出して「ほぼ何も映っていない」で落ちた"""
     sp = os.path.join(work, "script.json")
     if not os.path.exists(sp):
-        return t
+        return t, "script.json が無い"
     s0 = 0.0
     for c in json.load(open(sp, encoding="utf-8")).get("cuts", []):
         if not c.get("narration"):
             continue
         p = os.path.join(work, "_build", c["id"] + "_v.wav")
         if not os.path.exists(p):
-            return t
-        with wave.open(p) as w:
-            d = w.getnframes() / w.getframerate()
+            return t, f"{c['id']}_v.wav が無い"
+        try:
+            with wave.open(p) as w:
+                d = w.getnframes() / w.getframerate()
+        except (wave.Error, EOFError) as e:
+            return t, f"{c['id']}_v.wav が読めない（{e}）"
         if s0 <= t < s0 + d:
-            return s0 + min(2.0, d * 0.8) if (c.get("card") or c.get("chart")) and t - s0 < 2.0 else t
+            kind = "カード" if (c.get("card") or c.get("chart")) else "絵"
+            if kind == "カード" and t - s0 < 2.0:
+                return s0 + min(2.0, d * 0.8), f"{c['id']}（カード・{s0:.1f}〜{s0 + d:.1f}秒）の出だしなので後ろへ"
+            return t, f"{c['id']}（{kind}・{s0:.1f}〜{s0 + d:.1f}秒）"
         s0 += d
-    return t
+    return t, f"カットの合計 {s0:.1f}秒 の外"
 
 
 def main():
@@ -121,7 +127,9 @@ def main():
     os.makedirs(d, exist_ok=True)
     shots = []
     for i in range(FRAMES):
-        t = card_shift(a.work, sec * (i + 0.5) / FRAMES)
+        t, note = card_shift(a.work, sec * (i + 0.5) / FRAMES)
+        res.setdefault("切り出し", []).append(f"{t:.1f}秒：{note}")
+        print(f"  切り出し {t:.1f}秒：{note}", flush=True)
         p = os.path.join(d, f"f{i:02d}.jpg")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.2f}", "-i", v, "-frames:v", "1", "-vf", "scale=1280:-2", "-q:v", "3", p])
         shots.append((p, t))
