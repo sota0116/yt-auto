@@ -567,7 +567,19 @@ def make_one(ch, st, upload, kind=None):
     step("gate_images", gate_images)
     def build_args():  # 長さの足りない回は、カットの間を広げて組み直す（決まり7。build_gap は status に残す）
         return [T("build", "build_long_job.py"), work] + (["--gap", str(st["build_gap"])] if st.get("build_gap") else [])
-    step("build", lambda: run(work, "build", build_args(), ch))
+    def build():
+        try:
+            run(work, "build", build_args(), ch)
+        except Stop as e:
+            if "絵がないカット" not in str(e) or st.get("images_back"):
+                raise
+            # 絵が足りないのに「絵の段は済み」のままだと、組み立てで毎回止まる（2026-10-30 nihongi L101 が J05・J06 待ちのまま止まり続けた）。絵の段へ1回だけ戻す
+            st["images_back"] = True
+            st["done"] = [d for d in st["done"] if d not in ("images", "motion", "gate_images")]
+            st.get("busy", {}).pop("images", None)
+            jsave(sp, st)
+            raise Busy("絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します")
+    step("build", build)
 
     def stretch_gap():
         """完成動画ゲートの不合格が「8分未満」だけで、足りないのが5%以内なら、カットの間（gap）を広げた値を返す（声の速さは変えない）。
@@ -619,6 +631,13 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_video", [g_py, work], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
+            if "動画がありません" in r.stdout + r.stderr and not st.get("video_rebuilt"):
+                # 組み立ては済みなのに動画が作業フォルダに無い時は、組み直す（2026-10-30 nihongi S101 が同じ所で毎回止まった）
+                st["video_rebuilt"] = True
+                jsave(sp, st)
+                print("■ 完成動画が作業フォルダに無いので、組み直す（1回だけ）", flush=True)
+                run(work, "build", build_args(), ch)
+                continue
             gap = None if st.get("build_gap") else stretch_gap()
             if gap:
                 st["build_gap"] = gap
