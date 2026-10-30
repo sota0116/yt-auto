@@ -1,21 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/006_hitori_suki",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/007_kotowarenai",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "images"
+  "reading"
  ],
- "started": "2026-10-30T18:04:25+09:00",
+ "started": "2026-10-31T07:05:03+09:00",
  "tries": 0,
  "code": "80e9bf6960c4",
- "stage": "motion",
- "updated": "2026-10-31T03:12:31+09:00",
+ "stage": "images",
+ "updated": "2026-10-31T07:41:32+09:00",
  "busy": {
-  "images": 2,
-  "motion": 1
+  "images": 1
  }
 }

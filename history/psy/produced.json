@@ -198,5 +198,70 @@
    ]
   },
   "short_video_id": "OXwg2j9YOzs"
+ },
+ {
+  "work": "006_hitori_suki",
+  "type": "ひとりの時間",
+  "frame": "ひとりの時間",
+  "neta_id": "p_hitori_suki",
+  "jobs": [],
+  "made": "2026-10-31",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】ひとりの時間がないと落ち着かない人に共通する5つの特徴｜心地よさのかぎは「自分で選んだか」",
+  "titles": [
+   "【心理学】ひとりの時間がないと落ち着かない人に共通する5つの特徴｜心地よさのかぎは「自分で選んだか」",
+   "【心理学】ひとりの時間がないと落ち着かない人の「意外な特徴」｜部屋にひとりでも、心は誰かとつながっていた",
+   "【心理学】家族が出かけた日にひとりでほっとする人、実は「自分で選べたか」で気分が違います。"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-10-30「次の回で試すこと」1：タイトルの1番目を型A（001・003・004 で3本続いた）から型C「N個の特徴」に変えた。3：特徴の章の名前を「特徴1　選んだひとりは、明るい」のように番号と中身の両方にした",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:25 ほっとするのは、ふつうの心",
+   "3:04 特徴1　選んだかどうかで違う",
+   "5:07 特徴2　静かな明るさに切りかわる",
+   "7:18 特徴3　選べなくても、沈みにくい",
+   "9:17 特徴4　ひとりでも、つながっている",
+   "11:08 特徴5　何を思うかで、味が変わる",
+   "14:09 ひとりの時間を味わう3つの工夫",
+   "16:00 まとめ"
+  ],
+  "video_id": "PjAl891Nyy8",
+  "回した理由": null,
+  "studies": [
+   "Coplan, Hipson, Archbell, Ooi, Baldwin & Bowker (2019) Personality and Individual Differences",
+   "Tse, Lay & Nakamura (2021) Social Psychological and Personality Science",
+   "Pauly, Lay, Nater, Scott & Hoppmann (2017) Gerontology",
+   "Nguyen, Ryan & Deci (2018) Personality and Social Psychology Bulletin",
+   "Nikitin, Rupprecht & Ristl (2022) International Journal of Behavioral Development",
+   "Mann, Boeder, Tse, Graham & Nakamura (2022) Research on Aging",
+   "Wilson, Reinhard, Westgate, Gilbert, Ellerbeck, Hahn, Brown & Shaked (2014) Science",
+   "Westgate, Wilson, Buttrick, Furrer & Gilbert (2021) Emotion"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 8,
+   "章": [
+    8,
+    8,
+    6,
+    7,
+    6,
+    7,
+    9,
+    7,
+    7
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "留守番の場面は良いが、C06〜C14が8,769回など数字と結果の並べ方で講義調になるため、数字を1つに絞り、「宅配を待つ午後が一番沈んだ」という意外さを人の話として語ると上がる。",
+    "「年を取ると余裕があるから」という思い込みを覆す構成は良いが、E05〜E12bの「差が小さい」は耳で分かりにくいので、公民館が中止になった人の一日のように、具体的な人の物語で結果を語ると上がる。"
+   ]
+  },
+  "short_video_id": "TQislAgn9Ec"
  }
 ]
