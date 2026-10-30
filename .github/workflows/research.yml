@@ -40,6 +40,8 @@ jobs:
           YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
           YT_TOKEN_SPI: ${{ secrets.YT_TOKEN_SPI }}
           YT_TOKEN_PSY: ${{ secrets.YT_TOKEN_PSY }}
+          YT_TOKEN_NIHONGI: ${{ secrets.YT_TOKEN_NIHONGI }}
+          YT_TOKEN_OKINU: ${{ secrets.YT_TOKEN_OKINU }}
         run: |
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
@@ -47,6 +49,8 @@ jobs:
           [ -n "$YT_TOKEN_JOB" ] && printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
           [ -n "$YT_TOKEN_SPI" ] && printf '%s' "$YT_TOKEN_SPI" > "$YT_SECRETS_DIR/token_spi.json"
           [ -n "$YT_TOKEN_PSY" ] && printf '%s' "$YT_TOKEN_PSY" > "$YT_SECRETS_DIR/token_psy.json"
+          [ -n "$YT_TOKEN_NIHONGI" ] && printf '%s' "$YT_TOKEN_NIHONGI" > "$YT_SECRETS_DIR/token_nihongi.json"
+          [ -n "$YT_TOKEN_OKINU" ] && printf '%s' "$YT_TOKEN_OKINU" > "$YT_SECRETS_DIR/token_okinu.json"
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 調べる
         env:
