@@ -3,7 +3,7 @@
 # ・upload_nihongi_auto.py を okinu 用に写した物。手で作った分の upload_okinu.py（予約つき）とは別の道具。
 #   記録は ustore.files("okinu") の書き込める先頭（profile.json の uploaded_files。history/okinu/uploaded_auto.json）。手で上げた分の uploaded.json は読むだけ
 # ・種類（short／long）：作業フォルダの名前が S… か script.json の format が short ならショート。ショートは 1080x1920・60秒以内、
-#   長尺は 1920x1080・8分以上・サムネ thumb_a.jpg つき・説明文の {CHAPTERS} を chapters.txt に
+#   長尺は 1920x1080 か 2560x1440・順位の型（rank カード）・8分以上・サムネ thumb_a.jpg つき・説明文の {CHAPTERS} を chapters.txt に
 # ・説明文：AI の1行・「創作」の行・VOICEVOX のクレジット（voice/_credits.txt の全員）が無ければ止まる。{LONG_URL} が残るショートは、その行を消す（長尺の URL が決まらない間）
 # ・二重アップ：記録に同じ作業フォルダ・チャンネルに同じタイトルがあれば止まる。アップの後、動画が残っているかを数分見る（upload_okinu.check_after）
 # ・守り（2026-10-30。upload_okinu.py の手の道具と同じ2つ）：題が、チャンネルのほかの動画の題の言い換え（0.55 以上）なら止まる（title_guard.py）。
@@ -79,8 +79,10 @@ def main():
         thumb = os.path.join(work, a.thumb)
         if not os.path.exists(thumb):
             sys.exit(f"【止まりました】サムネがありません：{thumb}")
-        if (w, h) != (1920, 1080) or sec < 480:
+        if (w, h) not in ((1920, 1080), (2560, 1440)) or sec < 480:  # 組み立ては 1440p（profile の build.height）。1080p は up1440 が引き上げる
             sys.exit(f"【止まりました】長尺の形ではありません（{w}x{h}・{sec:.1f}秒）")
+        if not any((c.get("card") or {}).get("type") == "rank" for c in s.get("cuts", [])):  # v1.4 の物語の型のまま作り途中だった回は上げない（2026-10-30。101 を取り消した）
+            sys.exit("【止まりました】順位の型（rank カード）の無い長尺です。制作ルール v1.7 では上げません")
     elif (w, h) != (1080, 1920) or sec > 60:
         sys.exit(f"【止まりました】ショートの形ではありません（{w}x{h}・{sec:.1f}秒）")
     if any(x.get("work") == name and not x.get("missing") and not x.get("retired") for x in ustore.load(ch)):
