@@ -3,17 +3,13 @@
  "done": [
   "pick",
   "write",
-  "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images",
-  "build"
+  "gate_script"
  ],
  "started": "2026-10-29T17:28:55+09:00",
- "tries": 1,
- "code": "5cc09caa2d3b",
+ "tries": 0,
+ "code": "80e9bf6960c4",
  "stage": "gate_video",
  "updated": "2026-10-29T23:03:12+09:00",
- "video_rebuilt": true
+ "video_rebuilt": true,
+ "video_lost": true
 }

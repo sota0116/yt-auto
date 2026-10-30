@@ -5,13 +5,17 @@
   "write",
   "gate_script",
   "voice",
-  "images"
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
  "started": "2026-10-29T04:26:35+09:00",
- "tries": 0,
- "code": "5cc09caa2d3b",
- "stage": "motion",
- "updated": "2026-10-30T18:11:15+09:00",
+ "tries": 1,
+ "code": "80e9bf6960c4",
+ "stage": "thumb",
+ "updated": "2026-10-31T02:56:03+09:00",
  "busy": {
   "motion": 2
  },
