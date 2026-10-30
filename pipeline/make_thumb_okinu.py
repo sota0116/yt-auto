@@ -179,6 +179,7 @@ def main():
     print(log, end="")
     if ng and a.check:
         print("【NG】サムネの点検：" + "／".join(ng))
+        print("サムネの指定：" + json.dumps(s.get("thumb"), ensure_ascii=False))  # 止まった回は作業フォルダがクラウドにしかないので、直す字をログで読めるようにする
         sys.exit(1)
 
 
