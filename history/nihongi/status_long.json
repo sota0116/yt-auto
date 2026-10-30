@@ -9,11 +9,11 @@
  ],
  "started": "2026-10-29T04:26:35+09:00",
  "tries": 0,
- "code": "7f4671aaee90",
+ "code": "5cc09caa2d3b",
  "stage": "motion",
  "updated": "2026-10-30T18:11:15+09:00",
  "busy": {
-  "motion": 1
+  "motion": 2
  },
  "images_back": true
 }
