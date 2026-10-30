@@ -29,7 +29,20 @@
  },
  "004_a_kaigo": {
   "type": "A",
-  "video_id": "aiv-xxzsrQY"
+  "video_id": "aiv-xxzsrQY",
+  "h72": {
+   "views": 181,
+   "averageViewPercentage": 26.58,
+   "averageViewDuration": 130,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-10-31",
+   "再生（公開ページ）": 1705,
+   "差し替えの判定": "再生 1705・ほかの回の真ん中 25.0"
+  }
  },
  "005_a4_28f489e3": {
   "type": "A",
@@ -38,5 +51,9 @@
  "006_a_sekokan": {
   "type": "A",
   "video_id": "q-T8RRFcBTk"
+ },
+ "007_c_truck": {
+  "type": "C",
+  "video_id": "CkCSUpsi760"
  }
 }

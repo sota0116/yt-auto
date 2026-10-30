@@ -50,12 +50,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-10-30T23:02:28+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】古い財布を引き出しにしまったままの人へ"
   ],
-  "comment": "あなたの引き出しには、前の財布がありますか。"
+  "comment": "あなたの引き出しには、前の財布がありますか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-03T19:00:00+09:00",
+  "seconds": 38,
+  "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S104_財布に入れてはいけない物",
@@ -66,11 +71,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-10-31T00:11:53+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】財布に入れておくとお金が逃げる物3選"
   ],
-  "comment": "あなたの財布には、いくつ入っていましたか。"
+  "comment": "あなたの財布には、いくつ入っていましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-04T19:00:00+09:00",
+  "seconds": 41,
+  "title_now": "【60代】財布に入れておくとお金が逃げる物3選",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

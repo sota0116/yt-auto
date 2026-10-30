@@ -139,7 +139,7 @@
   "seconds": 492,
   "title_now": "【意外】介護・福祉に移った人、前の職場を辞めた理由はお金じゃなかった",
   "synthetic_on": null,
-  "views_now": 1454,
+  "views_now": 1705,
   "published": true,
   "published_at": "2026-10-27T19:00:11+09:00",
   "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 16,
+  "views_now": 56,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -230,8 +230,8 @@
    "大型トラック運転手は割に合う？ いちばん長く走る仕事を時給にしたら"
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
-  "privacy_now": "private",
-  "publish_at": "2026-10-30T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 500,
   "title_now": "【悲報】大型トラック運転手、全職業でいちばん長く働くのに年収は真ん中",
   "synthetic_on": null,
@@ -239,7 +239,11 @@
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
-  }
+  },
+  "published": true,
+  "published_at": "2026-10-30T19:00:34+09:00",
+  "comment_id": "Ugx6BfIudulMaiANtzR4AaABAg",
+  "comment_at": "2026-10-31T00:49:30+09:00"
  },
  {
   "work": "008_b_shonin30",

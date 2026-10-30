@@ -22,5 +22,9 @@
  "002_家じゅうの小銭": {
   "type": "okinu",
   "video_id": "LTktY2qoujM"
+ },
+ "S003_お札の向き": {
+  "type": "okinu",
+  "video_id": "r8SCodcdMWs"
  }
 }
