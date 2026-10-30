@@ -148,5 +148,29 @@
   "ok": true,
   "why": "",
   "made_at": "2026-10-29T09:31:20+09:00"
+ },
+ {
+  "work": "20261030_0932_0",
+  "topic_id": "rank_乗り物_労働時間_hi",
+  "kind": "rank",
+  "measure": "労働時間",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-10-30T09:32:40+09:00"
+ },
+ {
+  "work": "20261030_0932_1",
+  "topic_id": "duel_歯科衛生士_美容師・理容師_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-10-30T09:32:47+09:00"
  }
 ]

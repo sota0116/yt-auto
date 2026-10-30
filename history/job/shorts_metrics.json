@@ -1,1 +1,44 @@
-{}
+{
+ "20261027_2102_0": {
+  "video_id": "U9v0H1olaA4",
+  "title": "会社員の残業が少ない仕事5つ｜1位は月に1時間 #年収 #仕事",
+  "topic_id": "rank_会社員_残業_lo",
+  "kind": "rank",
+  "measure": "残業",
+  "hook": "残業ほぼ\nゼロの職業",
+  "banner": [
+   "残業が少ない順",
+   "会社員の仕事10から"
+  ],
+  "48h": {
+   "views": 1108,
+   "averageViewPercentage": 88.35,
+   "averageViewDuration": 29,
+   "subscribersGained": 2,
+   "likes": 0,
+   "score": 1378.9
+  },
+  "取った日": "2026-10-30T09:32:32+09:00"
+ },
+ "20261027_2104_1": {
+  "video_id": "WxPKcSlM0OU",
+  "title": "タクシー運転手と理学療法士のボーナスを比べると｜年収はほぼ同じなのに #年収 #仕事",
+  "topic_id": "duel_タクシー運転手_理学療法士など（リハビリ職）_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "hook": "年収同じ\nなぜ差？",
+  "banner": [
+   "賞与くらべ",
+   "年収が同じ2職業"
+  ],
+  "48h": {
+   "views": 1161,
+   "averageViewPercentage": 185.58,
+   "averageViewDuration": 68,
+   "subscribersGained": 0,
+   "likes": 2,
+   "score": 2154.6
+  },
+  "取った日": "2026-10-30T09:32:32+09:00"
+ }
+}
