@@ -17,8 +17,8 @@ CPS = 6.0
 MARKS = ["──", "—", "→", "…", "※", "★"]
 POSES = os.path.join(CH_DIR, "assets", "poses")
 LAYOUTS = ("object", "person", "split", "shock")
-# 手で作った回のサムネの型（002 から。クラウドには OneDrive が無いので history/okinu/scripts/ の thumb.layout と produced.json の thumb_kind も見る）
-HAND_LAYOUT = {"002": "shock", "003": "shock", "004": "split", "005": "object", "006": "person"}
+# 手で作った回のサムネの型（002 から。007 は順位の絵＝4つの型の外の手作り。クラウドには OneDrive が無いので history/okinu/scripts/ の thumb.layout と produced.json の thumb_kind も見る）
+HAND_LAYOUT = {"002": "shock", "003": "shock", "004": "split", "005": "object", "006": "person", "007": "rank"}
 LONG_CARDS = ("rank", "rules", "big_text", "two_cards", "photo")
 TITLE_LINE = 0.55  # title_guard.py と同じ線
 
