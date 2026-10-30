@@ -131,5 +131,72 @@
    "John & Gross (2004) Journal of Personality"
   ],
   "short_video_id": "上げられなかった"
+ },
+ {
+  "work": "005_kofuku_toshi",
+  "type": "幸せの心理",
+  "frame": "幸せの心理",
+  "neta_id": "p_kofuku_toshi",
+  "jobs": [],
+  "made": "2026-10-30",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】年を重ねるほど、楽しい思い出が残る人、実は「昔の自分」まで明るく思い出しています。",
+  "titles": [
+   "【心理学】年を重ねるほど、楽しい思い出が残る人、実は「昔の自分」まで明るく思い出しています。",
+   "【心理学】年を重ねるほど楽しい思い出が残る人に共通する5つの特徴｜いやな気持ちから先に薄れていた",
+   "【心理学】冬になると昔を思い出す人の正体｜懐かしい思い出で、寒い部屋が暖かく感じられた"
+  ],
+  "thumb_text": "思い出が楽しい人は／実は手入れ中",
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-10-29 の「次の回で試すこと」1（サムネA案を「実は〇〇」の型で2段に。B案は別の型）と3（概要欄の場面を「物と小さな出来事」→「それなのに」→「そんな〇〇は、ありませんか？」に）を入れた。タイトルは直近3回が型A（意外な特徴）だったので、1案目を型B（実は〇〇です。）にした。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:08 幸せは、50代から上向く",
+   "2:39 特徴1　いやな気持ちから薄れる",
+   "4:54 特徴2　旅は、あとから明るくなる",
+   "7:01 特徴3　目が、うれしい方へ向く",
+   "9:07 特徴4　寒い日ほど、昔を思い出す",
+   "10:47 特徴5　昔の自分を明るく思い出す",
+   "13:21 楽しい思い出を残す3つの工夫",
+   "15:54 まとめ"
+  ],
+  "video_id": "0BWDNDF0tgM",
+  "回した理由": null,
+  "studies": [
+   "Blanchflower & Oswald (2008) Social Science & Medicine",
+   "Stone, Schwartz, Broderick & Deaton (2010) Proceedings of the National Academy of Sciences",
+   "Walker, Skowronski & Thompson (2003) Review of General Psychology",
+   "Mitchell, Thompson, Peterson & Cronk (1997) Journal of Experimental Social Psychology",
+   "Reed, Chan & Mikels (2014) Psychology and Aging",
+   "Zhou, Wildschut, Sedikides, Chen & Vingerhoets (2012) Emotion",
+   "Kennedy, Mather & Carstensen (2004) Psychological Science",
+   "Skowronski, Gibbons, Vogl & Walker (2004) Self and Identity",
+   "Do, Rupert & Wolford (2008) Psychonomic Bulletin & Review"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    7,
+    7,
+    7,
+    9,
+    6,
+    7,
+    8,
+    6,
+    7
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "A06の「のんきになったのかな」の直後に、A09の「先に消えていたのは、いやだった日の気持ちのほう」を先に言い切り、答えをひっくり返す形で一気に聞かせると、続きが気になる。",
+    "E09の「100もの研究をまとめ直すと」が数字だけの説明で弱いので、E07の雷と花畑の問いの答え（若い人は雷）をもっと驚きとして間を取って言い、E15〜E16の「気を取られていない時ほど」を縁側の場面にして短くすると上がる。",
+    "H06やH20の研究の説明が短く言い切りだけで人の場面が薄いので、H16〜H18の町内会の食事会のように、1つ目と2つ目も「やってみた人」の短い場面で見せ、H09〜H13を1つ目と同じ長さの話にすると、試したくなる。"
+   ]
+  },
+  "short_video_id": "OXwg2j9YOzs"
  }
 ]
