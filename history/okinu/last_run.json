@@ -1,8 +1,8 @@
 {
  "ch": "okinu",
- "started": "2026-10-31T04:17:14+09:00",
+ "started": "2026-10-31T06:22:13+09:00",
  "made": [],
- "stopped": "thumb で止まりました（終了コード 1）：-auto/yt-auto/channels/okinu/videos/102_カバン/thumb.jpg\n点検：いちばん大きい字の横幅 47%（めやす70%以上）／字の面積 約27%（めやす30〜60%）／行数 3（めやす4行まで）\n  NG 字が少なすぎて目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/102_カバン/thumb_small.jpg\n  （型の線：いちばん大きい字の横幅 47%・45%以上でOK）\n【NG】サムネの点検：NG 字が少なすぎて目に入らない（面積30%未満）（long）",
+ "stopped": "thumb で止まりました（終了コード 1）：て目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/102_カバン/thumb_small.jpg\n  （型の線：いちばん大きい字の横幅 47%・45%以上でOK）\n【NG】サムネの点検：NG 字が少なすぎて目に入らない（面積30%未満）\nサムネの指定：{\"layout\": \"object\", \"bg\": \"F02\", \"line1\": \"カバンに\", \"line2\": \"●●入れたまま\", \"judge\": \"破産します\", \"hl\": [\"●●\"], \"edge\": \"#FFFFFF\"}（long）",
  "在庫": {
   "short": 6,
   "long": 4
@@ -11,6 +11,6 @@
   "short": 0,
   "long": 1
  },
- "ended": "2026-10-31T06:14:35+09:00",
+ "ended": "2026-10-31T06:22:21+09:00",
  "今月の制作費_円": 0.0
 }
