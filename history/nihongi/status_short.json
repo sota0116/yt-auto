@@ -12,7 +12,8 @@
  ],
  "started": "2026-10-29T17:28:55+09:00",
  "tries": 1,
- "code": "59a3e374af41",
+ "code": "7b9be2ef7d8c",
  "stage": "gate_video",
- "updated": "2026-10-29T23:03:12+09:00"
+ "updated": "2026-10-29T23:03:12+09:00",
+ "video_rebuilt": true
 }
