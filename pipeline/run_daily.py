@@ -813,6 +813,10 @@ def main():
               st = jload(sp, {})
               if st.get("work") and "record" in st.get("done", []):
                   st = {}
+              if st.get("work") and os.path.basename(st["work"]) in (profile(ch).get("drop_works") or []):
+                  # 作り方が変わる前の回を、続きから作らない（profile.json の drop_works）。作業の控えは消さない（2026-10-30 okinu の順位の型より前の 101）
+                  print(f"{os.path.basename(st['work'])} は作らない回なので、次のネタへ進みます", flush=True)
+                  st = {}
               if not st.get("work"):
                   st = unpark(ch, kind) or st
               if st.get("tries") and st.get("code") != code_ver():

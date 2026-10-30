@@ -115,7 +115,8 @@ def make_sheets(sk, chars, need, style, par):
                                       include_tools=MODEL["IMAGE"], mode="fast"), time.time())
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
-                    todo.insert(0, k); time.sleep(30); break
+                    print(k, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)  # 2026-10-30 黙って45秒ごとに頼み直すと、断られた分まで毎時600回の枠を食い、全員が4時間止まった
+                    todo.insert(0, k); time.sleep(120); break
                 print(k, "設定画を頼めなかった", str(e)[:120], flush=True)
         time.sleep(15)
         for k in list(waiting):
@@ -262,7 +263,8 @@ def main():
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
-                    queue.insert(0, i); time.sleep(30); break
+                    print(i, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)  # 2026-10-30 黙って45秒ごとに頼み直すと、断られた分まで毎時600回の枠を食い、全員が4時間止まった
+                    queue.insert(0, i); time.sleep(120); break
                 log[i] = {"状態": "失敗", "理由": f"頼めなかった：{type(e).__name__} {str(e)[:200]}", "回": tries}; save()
                 print(i, log[i]["理由"], flush=True)  # クラウドでは _lovart.json が見えないので、理由をログにも出す（2026-10-25）
                 continue

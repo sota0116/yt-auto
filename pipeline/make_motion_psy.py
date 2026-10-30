@@ -81,7 +81,8 @@ def main():
                               prefer_models={"VIDEO": [MODEL]}, include_tools=[MODEL])
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時の上限（絵と分け合う）は待って頼み直す
-                    queue.insert(0, i); time.sleep(60); break
+                    print(i, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)
+                    queue.insert(0, i); time.sleep(120); break
                 log[i] = {"状態": "失敗", "理由": f"頼めなかった：{type(e).__name__} {str(e)[:200]}", "回": tries}; save()
                 print(i, log[i]["理由"], flush=True)
                 continue

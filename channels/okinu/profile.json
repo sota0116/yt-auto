@@ -101,6 +101,8 @@
   "uploaded.json"
  ],
  "_uploaded_files": "手で上げた分（upload_okinu.py）は history/okinu/uploaded.json に書かれる（読むだけ）。クラウドの自動の分は uploaded_auto.json に足す（git の衝突を避ける。ustore.py）",
+ "drop_works": ["101_通帳まわりの3つ"],
+ "_drop_works": "制作ルール v1.7（順位の型）より前に作りかけた回。続きから作らず次のネタへ進む",
  "reserved_slots": [
   "2026-10-31T19:00",
   "2026-11-01T18:00",
