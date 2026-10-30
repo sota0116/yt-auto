@@ -644,9 +644,9 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_video", [g_py, work], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
-            if "動画がありません" in r.stdout + r.stderr and not st.get("video_rebuilt"):
+            if "動画がありません" in r.stdout + r.stderr and not st.get("video_lost"):
                 # 組み立ては済みなのに動画が作業フォルダに無い時は、組み直す（2026-10-30 nihongi S101 が同じ所で毎回止まった）
-                st["video_rebuilt"] = True
+                st["video_lost"] = True
                 jsave(sp, st)
                 print("■ 完成動画が作業フォルダに無いので、組み直す（1回だけ）", flush=True)
                 try:
