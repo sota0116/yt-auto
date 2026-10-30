@@ -2,10 +2,18 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/102_カバン",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
  "started": "2026-10-31T00:44:33+09:00",
- "tries": 2,
+ "tries": 3,
  "code": "80e9bf6960c4",
- "stage": "gate_script"
+ "stage": "thumb",
+ "updated": "2026-10-31T06:14:24+09:00"
 }

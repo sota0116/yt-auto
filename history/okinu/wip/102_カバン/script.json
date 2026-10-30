@@ -46,7 +46,7 @@
   "speedScale": 1.0
  },
  "promise": "お金が残る人がカバンでしない5つ（くたびれたカバンを使い続ける・底にレシートをためる・パンパンにする・床にじかに置く・財布を入れたまま寝る）の言い伝えのわけと、お金をかけずにできる直し方、形見のカバン・穴・家計簿のレシート・ティッシュ・もしもの薬・大きいカバン・フックが無い家・かごが無い店・カバンの中をそのままにしていいか・次の朝の「やっていいか」10問の答え、財布の入ったカバンを置く方角（北）、帰ったらひと拭きの手順が持ち帰れる",
- "desc_lead": "くたびれたカバン、底にたまったレシート、床に置いたままのカバン。金運の世界では、年金がほとんど同じでも、カバンの扱い方で、お金の残り方が変わると言われています。金運の世界で、お金が残る人がカバンでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れて帰った夜に、つい、そのままにしてしまいがちなことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母からもらった古いカバンはいいか・家計簿のレシートはいいか・カバンの中をそのままにしておいていいか、財布の入ったカバンを置くといい方角もお伝えします。\n\nあなたのカバンは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね👜",
+ "desc_lead": "くたびれたカバン、底にたまったレシート、床に置いたままのカバン。年金がほとんど同じ2人でも、カバンの扱い方は、まるで違いました。金運の世界で、お金が残る人がカバンでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れて帰った夜に、つい、そのままにしてしまいがちなことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母からもらった古いカバンはいいか・家計簿のレシートはいいか・カバンの中をそのままにしておいていいか、財布の入ったカバンを置くといい方角もお伝えします。\n\nあなたのカバンは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね👜",
  "tags": [
   "金運",
   "金運アップ",
@@ -144,8 +144,8 @@
   },
   {
    "id": "A09",
-   "narration": "金運の世界では、その差は、毎日持ち歩くカバンの扱い方に出ると言われています。",
-   "tts_text": "きんうんの世界では、そのさは、毎日もちあるくカバンのあつかいかたに出ると言われています。",
+   "narration": "2人の毎日を並べてみると、持ち歩くカバンの扱い方が、まるで違っていました。",
+   "tts_text": "ふたりの毎日を並べてみると、もちあるくカバンのあつかいかたが、まるで違っていました。",
    "card": {
     "type": "big_text",
     "text": "2人のカバンは",
@@ -976,8 +976,8 @@
   },
   {
    "id": "D20",
-   "narration": "大きくしても、詰めこめば、すき間は残りません。大事なのは、カバンの大きさより、中の余白です。",
-   "tts_text": "大きくしても、詰めこめば、すき間は残りません。大事なのは、カバンの大きさより、なかの余白です。",
+   "narration": "大きくしても、詰めこめば、すき間は残りません。昔から、大事なのはカバンの大きさより、中の余白だと言われています。",
+   "tts_text": "大きくしても、詰めこめば、すき間は残りません。むかしから、大事なのはカバンの大きさより、なかの余白だと言われています。",
    "card": {
     "type": "big_text",
     "text": "大事なのは、中の余白",
@@ -1368,18 +1368,18 @@
    "id": "F02",
    "narration": "明かりを消した部屋。",
    "tts_text": "明かりを消したへや。",
-   "image_en": "Night, extreme close-up looking into the open inside of a worn soft brown leather shoulder bag left on a chair in a dark room of a modest present-day Japanese public housing apartment (danchi): a long wallet lies buried among keys, crumpled blank receipts and a tissue packet, lit only by faint cold moonlight from the window. The wallet is clearly the subject. No people. No readable text, no logos, no brand names.",
+   "image_en": "Night, extreme close-up looking into the open inside of a worn soft brown leather shoulder bag hanging on a simple wall hook in a dark room of a modest present-day Japanese public housing apartment (danchi): a long wallet lies buried among keys, crumpled blank receipts and a tissue packet, lit only by faint cold moonlight from the window. The wallet is clearly the subject. No people. No readable text, no logos, no brand names.",
    "anim": "kling",
    "motion": true,
    "peak": true,
    "strong": true,
    "highlight": "入れたまま",
-   "image": "Night, extreme close-up looking into the open inside of a worn soft brown leather shoulder bag left on a chair in a dark room of a modest present-day Japanese public housing apartment (danchi): a long wallet lies buried among keys, crumpled blank receipts and a tissue packet, lit only by faint cold moonlight from the window. The wallet is clearly the subject. No people. No readable text, no logos, no brand names."
+   "image": "Night, extreme close-up looking into the open inside of a worn soft brown leather shoulder bag hanging on a simple wall hook in a dark room of a modest present-day Japanese public housing apartment (danchi): a long wallet lies buried among keys, crumpled blank receipts and a tissue packet, lit only by faint cold moonlight from the window. The wallet is clearly the subject. No people. No readable text, no logos, no brand names."
   },
   {
    "id": "F02a",
-   "narration": "椅子の上のカバンの中で、財布が、朝まで、じっと眠っている。",
-   "tts_text": "いすの上のカバンのなかで、財布が、あさまで、じっと眠っている。",
+   "narration": "壁に掛けたカバンの中で、財布が、朝まで、じっと眠っている。",
+   "tts_text": "かべにかけたカバンのなかで、財布が、あさまで、じっと眠っている。",
    "same_as": "F02"
   },
   {
@@ -1473,8 +1473,8 @@
   },
   {
    "id": "F15b",
-   "narration": "引き出しを閉める時、すみえさんは、ごくろうさま、と小さく声をかけるそうです。",
-   "tts_text": "引き出しを閉める時、すみえさんは、ごくろうさま、と小さくこえをかけるそうです。",
+   "narration": "引き出しを閉める時、すみえさんは、財布に、労いの言葉を小さくかけるそうです。",
+   "tts_text": "引き出しを閉める時、すみえさんは、財布に、ねぎらいの言葉を小さくかけるそうです。",
    "same_as": "F14"
   },
   {
@@ -1888,6 +1888,6 @@
  "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
  "characters_dir": "../../characters",
  "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
- "desc": "くたびれたカバン、底にたまったレシート、床に置いたままのカバン。金運の世界では、年金がほとんど同じでも、カバンの扱い方で、お金の残り方が変わると言われています。金運の世界で、お金が残る人がカバンでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れて帰った夜に、つい、そのままにしてしまいがちなことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母からもらった古いカバンはいいか・家計簿のレシートはいいか・カバンの中をそのままにしておいていいか、財布の入ったカバンを置くといい方角もお伝えします。\n\nあなたのカバンは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね👜\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "desc": "くたびれたカバン、底にたまったレシート、床に置いたままのカバン。年金がほとんど同じ2人でも、カバンの扱い方は、まるで違いました。金運の世界で、お金が残る人がカバンでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れて帰った夜に、つい、そのままにしてしまいがちなことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母からもらった古いカバンはいいか・家計簿のレシートはいいか・カバンの中をそのままにしておいていいか、財布の入ったカバンを置くといい方角もお伝えします。\n\nあなたのカバンは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね👜\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
  "comment": "あなたのカバンは、5つのうち、いくつ当てはまりましたか？"
 }
