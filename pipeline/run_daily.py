@@ -209,6 +209,9 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
         add_cost(ch, work, stage, yen_in(r.stdout))
     tail = "\n".join(x for x in out.strip().splitlines()[-20:])  # クラウドのログで落ちた理由まで読めるように（2026-10-25 に4行から増やした）
     print(f"[{stage}] 終了コード {r.returncode}・{(time.time() - t0) / 60:.1f}分\n{tail}", flush=True)
+    if "OAuth token revoked" in out or "Failed to authenticate" in out:
+        # 台本の失敗ではない。前は「台本ゲートで3回不合格」と出て失敗の数に入り、その回を飛ばすおそれがあった（2026-10-30 全チャンネルで起きた）
+        raise Wait(f"{stage} で Claude のログインが切れています（GitHub の Secrets の CLAUDE_CODE_OAUTH_TOKEN を入れ直すと、次の実行で続きから作ります）")
     if r.returncode == 75:
         raise Wait(f"{stage} で Gemini の1日の回数の上限に届きました。上限が戻る 17:37 の実行で続きから作ります")
     if r.returncode not in ok:
