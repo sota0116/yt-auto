@@ -1,0 +1,2036 @@
+{
+ "format": "long",
+ "title": "【実はみんな逆】お金が残る人が台所で絶対にしないこと5選【金運】",
+ "desc": "欠けたままのお皿、出しっぱなしの包丁、流しに残したままの夕ごはんの食器。年金がほとんど同じでも、お金が残る人と残らない人では、台所がこれだけ違います。金運の世界で、お金が残る人が台所でしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れた夜に、ほとんどの人がついやってしまうことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母の形見のお皿が欠けたら・包丁立てはいいか・食洗機ならいいか、西の台所に置くといい色もお伝えします。\n\nあなたの台所は、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね🍵\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "tags": [
+  "金運",
+  "金運アップ",
+  "台所",
+  "キッチン",
+  "風水",
+  "キッチン風水",
+  "包丁",
+  "排水口",
+  "開運",
+  "年金",
+  "60代",
+  "50代",
+  "お金の習慣"
+ ],
+ "promise": "お金が残る人が台所でしない5つ（欠けたお皿を使い続ける・冷蔵庫の奥に古い物をためる・包丁を出しっぱなし・排水口のぬめりを放っておく・食器を洗わずに寝る）の言い伝えのわけと、お金をかけずにできる直し方、形見のお皿・金継ぎ・冷凍庫・もらい物の調味料・包丁立て・はさみ・ネットだけ・毎日・水につけておく・洗えない夜の「やっていいか」10問の答えと、西に黄色の決まりが持ち帰れる",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん・澄江さんは架空の人物（002〜005 と同じ団地の2人）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "金運の話は言い伝えとして話す。効き目の数字は出さない"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "言いました",
+  "風水",
+  "仏様",
+  "そうです"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "夜の台所に、包丁が、まな板の上に出たままになっていませんか。",
+   "tts_text": "夜のだいどころに、ほうちょうが、まな板の上に出たままになっていませんか。",
+   "image_en": "Night inside the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: a kitchen knife lies left out on a wooden cutting board beside the sink, its blade catching a faint cold light. Only a dim light from the small window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "金運の世界では、それは、お金の縁が切れていく台所のしるしだと言われています。",
+   "tts_text": "きんうんの世界では、それは、お金のえんが切れていくだいどころのしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "出しっぱなしの包丁は",
+     "big": "お金の縁が切れるしるし",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A03",
+   "narration": "お金が残る人には、台所で、絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人には、だいどころで、絶対にしないことがいつつあります。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人が台所で",
+    "text2": "絶対にしない、5つのこと",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A04",
+   "narration": "あなたは、いくつやっているか、数えながら見てください。",
+   "card": {
+    "type": "big_text",
+    "text": "数えながら見てください",
+    "text2": "いくつやっている？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "佐和子さん、66歳。年金は月11万円。",
+   "tts_text": "さわこさん、ろくじゅうろくさい。年金は月じゅういちまんえん。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "66歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A06",
+   "narration": "同じ団地の澄江さんも、年金はほとんど同じです。",
+   "tts_text": "同じ団地のすみえさんも、年金はほとんど同じです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A07",
+   "narration": "それなのに、月末に財布にお札が残るのは、澄江さんだけ。",
+   "tts_text": "それなのに、月末に財布にお札が残るのは、すみえさんだけ。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月末のお札　0枚",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月末のお札　残る"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A08",
+   "narration": "2人の家でいちばん違っていたのは、台所でした。",
+   "tts_text": "ふたりのいえでいちばん違っていたのは、だいどころでした。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の家でいちばん違ったのは",
+    "text2": "台所だった",
+    "accent": "台所"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "台所は、家族の食べる物を作る、家の財産の場所だと言われます。",
+   "tts_text": "だいどころは、かぞくの食べる物を作る、いえの財産の場所だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "台所は",
+     "big": "家の財産の場所",
+     "size": 120
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "A09a",
+   "narration": "火と水を、毎日使う所。その使い方が、そのまま、お金の使い方にあらわれるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "台所の使い方は",
+    "text2": "お金の使い方に、あらわれる",
+    "accent": "お金"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "お金が残らない人は、台所で、この5つをやっています。",
+   "tts_text": "お金が残らない人は、だいどころで、このいつつをやっています。",
+   "montage": [
+    "B01",
+    "C01",
+    "A01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　欠けた●●を使い続ける",
+    "第4位　冷蔵庫の●に古い物をためる",
+    "第3位　●●を出しっぱなし",
+    "第2位　排水口の●●●"
+   ]
+  },
+  {
+   "id": "A11",
+   "narration": "第1位は、疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "tts_text": "だいいちいは、疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "●●を●●●に寝る",
+    "sub": "疲れた夜に、ついやってしまう",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "A12",
+   "narration": "どれも、お金をかけずに、今ある物で直せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どれも",
+     "big": "お金をかけずに直せる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。欠けたお皿を、使い続ける。",
+   "tts_text": "だいごい。欠けたお皿を、使い続ける。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "欠けたお皿を使い続ける",
+    "sub": "まだ使えるから、もったいない"
+   },
+   "yt_chapter": "第5位 欠けたお皿を使い続ける"
+  },
+  {
+   "id": "B01",
+   "narration": "ふちの欠けたお茶わん。ひびの入った大皿。取っ手のゆるんだ、片手なべ。",
+   "image_en": "Close-up on the counter of the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: a stack of old plates and rice bowls with visibly chipped rims, one large plate with a thin crack, and a small old saucepan with a loose wobbly handle. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B02",
+   "narration": "まだ使えるから、もったいない。そう思って、使い続けていませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "金運の世界では、欠けた物を使うと、運も欠けていくと考えます。",
+   "tts_text": "きんうんの世界では、欠けた物を使うと、運も欠けていくと考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "欠けた物を使うと",
+     "big": "運も欠けていく",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B04",
+   "narration": "お皿やお茶わんは、毎日、口に触れる物です。",
+   "card": {
+    "type": "big_text",
+    "text": "お皿やお茶わんは",
+    "text2": "毎日、口に触れる",
+    "accent": "口"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "欠けた器で食べるのは、欠けた運を、口から入れているようなもの。",
+   "card": {
+    "type": "big_text",
+    "text": "欠けた器で食べると",
+    "text2": "欠けた運を、口から入れる",
+    "accent": "口から"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "壊れた物を使い続ける家からは、豊かさが、少しずつこぼれていくと言われています。",
+   "tts_text": "壊れた物を使い続けるいえからは、豊かさが、少しずつこぼれていくと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "壊れた物の家からは",
+     "big": "豊かさがこぼれる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "B07",
+   "narration": "ひびから、お金が漏れていく。昔から、そう考えられてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "昔から",
+    "text2": "ひびから、お金が漏れる",
+    "accent": "漏れる"
+   }
+  },
+  {
+   "id": "B08",
+   "narration": "佐和子さんの食器棚にも、ふちの欠けたお茶わんが、いくつも入っていました。",
+   "tts_text": "さわこさんのしょっきだなにも、ふちの欠けたお茶わんが、いくつもはいっていました。",
+   "image_en": "Inside the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator, Sawako stands at an open cupboard holding a rice bowl with a chipped rim in both hands, looking down at it with a troubled guilty face. Soft dim light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B09",
+   "narration": "まだ使えるのに、捨てるなんて。",
+   "card": {
+    "type": "big_text",
+    "text": "捨てるなんて",
+    "text2": "まだ使えるのに",
+    "kicker": "使える"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B10",
+   "narration": "いちばん欠けていたのは、毎日使う、自分のお茶わんでした。",
+   "same_as": "B08"
+  },
+  {
+   "id": "B11",
+   "narration": "澄江さんの食器棚には、数は少なくても、欠けていないお皿だけ。",
+   "tts_text": "すみえさんのしょっきだなには、数は少なくても、欠けていないお皿だけ。",
+   "image_en": "Inside a clean tidy small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: an open cupboard with a few neatly stacked plain plates and rice bowls, all with smooth unbroken rims, plenty of empty space on the shelves. Soft morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "B12",
+   "narration": "家族が減ってからは、使う分だけ残して、あとは手放していました。",
+   "tts_text": "かぞくが減ってからは、使う分だけ残して、あとは手放していました。",
+   "same_as": "B11"
+  },
+  {
+   "id": "B13",
+   "narration": "直し方は、欠けたお皿を、使わないこと。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "欠けたお皿は、使わない",
+     "ゆるんだ取っ手は、直すか替える",
+     "ありがとうと言って、手放す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "取っ手のゆるんだなべは、ねじを締めて直すか、替えます。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "欠けたお皿は、使わない",
+     "ゆるんだ取っ手は、直すか替える",
+     "ありがとうと言って、手放す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B15",
+   "narration": "手放す時は、ありがとうと言って、紙に包む。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "欠けたお皿は、使わない",
+     "ゆるんだ取っ手は、直すか替える",
+     "ありがとうと言って、手放す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "長く使った器に、ありがとうと言って送ると、新しい運が入る場所ができると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "ありがとうと送ると",
+     "big": "新しい運の場所ができる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B17",
+   "narration": "母の形見のお皿が、欠けてしまったら？",
+   "card": {
+    "type": "big_text",
+    "text": "母の",
+    "text2": "形見のお皿が欠けたら？",
+    "kicker": "形見"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B18",
+   "narration": "使わずに、飾っておくなら、いい、と言われています。困るのは、欠けた器で食べることだからです。",
+   "card": {
+    "type": "big_text",
+    "text": "困るのは、欠けた器で食べること",
+    "text2": "飾るなら、いい",
+    "accent": "飾る",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B19",
+   "narration": "金継ぎで直したお皿は、使っていいの？",
+   "tts_text": "きんつぎで直したお皿は、使っていいの？",
+   "card": {
+    "type": "big_text",
+    "text": "直したお皿",
+    "text2": "金継ぎのお皿は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B20",
+   "narration": "直した器は、欠けた器とは違います。金で継いだ所に、金運が宿るとも言われます。",
+   "tts_text": "直した器は、欠けた器とは違います。金で継いだ所に、きんうんが宿るとも言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "金で継いだ所に",
+    "text2": "直した器は、いい",
+    "accent": "金",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B20a",
+   "narration": "佐和子さんは、欠けたお茶わんを3つ、新聞紙に包みました。",
+   "tts_text": "さわこさんは、欠けたお茶わんをみっつ、新聞紙に包みました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "お茶わんを3つ、包んだ",
+    "accent": "3つ"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "器が少なくても、欠けていなければ、それで十分です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "器は少なくても",
+     "big": "欠けていなければいい",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。冷蔵庫の奥に、古い物をためる。",
+   "tts_text": "だいよんい。れいぞうこの奥に、古い物をためる。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "冷蔵庫の奥に古い物をためる",
+    "sub": "いつ開けたか、分からない瓶"
+   },
+   "yt_chapter": "第4位 冷蔵庫の奥に古い物をためる"
+  },
+  {
+   "id": "C01",
+   "narration": "冷蔵庫の奥に、使いかけの瓶と、いつのか分からない、ドレッシング。",
+   "tts_text": "れいぞうこの奥に、使いかけの瓶と、いつのか分からない、ドレッシング。",
+   "image_en": "Inside the open old white refrigerator of the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: the back of the shelves is crammed with half-used jars, old sauce bottles with blank labels, and forgotten containers pushed together, some crusted. Cold dim fridge light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "C02",
+   "narration": "手前の物だけ使って、奥は見ないままになっていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "金運の世界では、冷蔵庫は、家の食べ物をしまう、財産の蔵だと考えます。",
+   "tts_text": "きんうんの世界では、れいぞうこは、いえの食べ物をしまう、財産の蔵だと考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "冷蔵庫は",
+     "big": "家の財産の蔵",
+     "size": 130
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C04",
+   "narration": "期限の切れた物は、もう生きていない物。死んだ気を出すと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "期限の切れた物は",
+    "text2": "死んだ気を、出す",
+    "accent": "死んだ気"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "蔵の奥が古い物でつまると、新しい物が入る場所が、なくなってしまう。",
+   "card": {
+    "type": "big_text",
+    "text": "奥がつまると",
+    "text2": "新しい物が、入らない",
+    "accent": "入らない"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "新しい物が入らない家には、新しいお金も入ってこない。そう考えられてきました。",
+   "tts_text": "新しい物が入らないいえには、新しいお金もはいってこない。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "新しい物が入らない家に",
+     "big": "新しいお金も入らない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "C07",
+   "narration": "佐和子さんの冷蔵庫の奥からは、3年前の、梅干しの瓶が出てきました。",
+   "tts_text": "さわこさんのれいぞうこの奥からは、さんねんまえの、梅干しの瓶が出てきました。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C08",
+   "narration": "澄江さんの冷蔵庫は、奥まで、すっと見通せます。",
+   "tts_text": "すみえさんのれいぞうこは、奥まで、すっと見通せます。",
+   "image_en": "Inside the open refrigerator of a clean tidy small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: a few neatly arranged containers and fresh vegetables at the front, and clear empty space at the back of each shelf so you can see all the way in. Clean bright fridge light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "C09",
+   "narration": "奥には、何も置かないことにしていました。",
+   "same_as": "C08"
+  },
+  {
+   "id": "C10",
+   "narration": "直し方は、月に1回、奥の物まで、全部出してみること。",
+   "tts_text": "直し方は、月にいっかい、奥の物まで、全部出してみること。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "月に1回、奥まで出してみる",
+     "期限の切れた物は、捨てる",
+     "奥に、すき間をあけておく"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C11",
+   "narration": "期限の切れた物は、捨てます。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "月に1回、奥まで出してみる",
+     "期限の切れた物は、捨てる",
+     "奥に、すき間をあけておく"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C12",
+   "narration": "そして、奥に、すき間をあけておく。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "月に1回、奥まで出してみる",
+     "期限の切れた物は、捨てる",
+     "奥に、すき間をあけておく"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C12a",
+   "narration": "佐和子さんは、冷蔵庫の中身を、全部テーブルに出して並べました。",
+   "tts_text": "さわこさんは、れいぞうこの中身を、全部テーブルに出して並べました。",
+   "same_as": "C08"
+  },
+  {
+   "id": "C13",
+   "narration": "すき間は、新しい運が入ってくる場所。空いているのは、もったいないことではありません。",
+   "tts_text": "すき間は、新しい運がはいってくる場所。空いているのは、もったいないことではありません。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "冷蔵庫のすき間は",
+     "big": "新しい運の入る場所",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "C14",
+   "narration": "冷凍庫の古い物も、同じなの？",
+   "tts_text": "れいとうこの古い物も、同じなの？",
+   "card": {
+    "type": "big_text",
+    "text": "古い物は",
+    "text2": "冷凍庫も、同じ？",
+    "kicker": "冷凍庫"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C15",
+   "narration": "同じだと言われます。凍っていても、いつのか分からない物は、出してみます。",
+   "card": {
+    "type": "big_text",
+    "text": "いつのか分からない物は",
+    "text2": "冷凍庫も、同じ",
+    "accent": "同じ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C16",
+   "narration": "もらった調味料が、使いきれないんだけど。",
+   "tts_text": "もらったちょうみりょうが、使いきれないんだけど。",
+   "card": {
+    "type": "big_text",
+    "text": "使いきれない",
+    "text2": "もらい物の調味料は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C17",
+   "narration": "開けていない物なら、使ってくれる人に、早めに回していい、と言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "開けていない物は",
+    "text2": "早めに、人に回す",
+    "accent": "回す",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "冷蔵庫には、使い切れる分だけ。それで十分です。",
+   "tts_text": "れいぞうこには、使い切れる分だけ。それで十分です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "冷蔵庫には",
+     "big": "使い切れる分だけ",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "C19",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "C20",
+   "narration": "風水には、西に置くと、金運が上がると言われる色があります。",
+   "tts_text": "ふうすいには、西に置くと、きんうんが上がると言われる色があります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "西に置くと",
+     "big": "金運が上がる色",
+     "size": 130
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C21",
+   "narration": "その色は、黄色と、赤。どちらでしょう。",
+   "tts_text": "その色は、きいろと、赤。どちらでしょう。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "黄色",
+      "sub": "？"
+     },
+     {
+      "head": "赤",
+      "sub": "？"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "C22",
+   "narration": "あなたは、どちらだと思いますか。",
+   "same_as": "C21"
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "●●を●●●●●●",
+     "●●●の●●●を放っておく",
+     "●●を●●●に寝る"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、もっと多くの人が、やってしまっています。",
+   "tts_text": "残りのみっつは、もっと多くの人が、やってしまっています。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "●●を●●●●●●",
+     "●●●の●●●を放っておく",
+     "●●を●●●に寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "このチャンネルでは、お金をかけずにできる金運の決まりを、お伝えしています。",
+   "tts_text": "このチャンネルでは、お金をかけずにできるきんうんの決まりを、お伝えしています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "M04",
+   "narration": "次のお話も見たい方は、チャンネル登録をしておくと、新しいお話が届きます。",
+   "tts_text": "次のお話もみたいかたは、チャンネル登録をしておくと、新しいお話が届きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:M04"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。包丁を、出しっぱなしにする。",
+   "tts_text": "だいさんい。ほうちょうを、出しっぱなしにする。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "包丁を出しっぱなし",
+    "sub": "まな板の上に、置いたまま"
+   },
+   "yt_chapter": "第3位 包丁を出しっぱなし"
+  },
+  {
+   "id": "D01",
+   "narration": "使い終わった包丁が、まな板の上に、そのまま。",
+   "tts_text": "使い終わったほうちょうが、まな板の上に、そのまま。",
+   "same_as": "A01"
+  },
+  {
+   "id": "D02",
+   "narration": "あとで洗えばいいと、そのまま寝てしまうことはありませんか。",
+   "same_as": "A01"
+  },
+  {
+   "id": "D03",
+   "narration": "金運の世界では、刃物は、縁を切る物だと考えます。",
+   "tts_text": "きんうんの世界では、はものは、えんを切る物だと考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "刃物は",
+     "big": "縁を切る物",
+     "size": 130
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "D04",
+   "narration": "出したままの包丁は、家族の縁も、お金の縁も、切ってしまうと言われます。",
+   "tts_text": "出したままのほうちょうは、かぞくのえんも、お金のえんも、切ってしまうと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "出したままの包丁は",
+    "text2": "お金の縁も、切ってしまう",
+    "accent": "切って"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "刃物は、悪い気も、いい気も、跳ね返す。だから、入ってくるはずの運まで、はじいてしまうのです。",
+   "tts_text": "はものは、悪い気も、いい気も、跳ね返す。だから、はいってくるはずの運まで、はじいてしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "出したままの刃物は",
+    "text2": "入ってくる運まで、はじく",
+    "accent": "はじく"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "刃物は、使う時だけ出して、すぐにしまう。昔から、そう言われてきました。",
+   "tts_text": "はものは、使う時だけ出して、すぐにしまう。昔から、そう言われてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "刃物は",
+     "big": "使う時だけ出す",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "D07",
+   "narration": "佐和子さんは、朝、台所に入るたびに、出しっぱなしの包丁を見ていました。",
+   "tts_text": "さわこさんは、朝、だいどころに入るたびに、出しっぱなしのほうちょうを見ていました。",
+   "image_en": "Morning inside the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: Sawako stands in her apron looking down at a kitchen knife left out on the cutting board by the sink, one hand on her cheek, a tired uneasy face. Soft grey morning light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D08",
+   "narration": "あとで洗うつもりだったのに。",
+   "card": {
+    "type": "big_text",
+    "text": "包丁は",
+    "text2": "あとで洗うつもりだった",
+    "kicker": "あとで"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D09",
+   "narration": "包丁立ても、流しの横に、むき出しで置いてありました。",
+   "tts_text": "ほうちょうたても、流しの横に、むき出しで置いてありました。",
+   "same_as": "D07"
+  },
+  {
+   "id": "D10",
+   "narration": "澄江さんの台所には、刃物が1つも見えません。",
+   "tts_text": "すみえさんのだいどころには、はものがひとつも見えません。",
+   "image_en": "Inside a clean tidy small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: the counter and cutting board are completely clear; a kitchen drawer is slightly pulled open showing a kitchen knife resting safely in a wooden tray inside. Soft morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "D11",
+   "narration": "包丁は、使ったらすぐに洗って、引き出しの中でした。",
+   "tts_text": "ほうちょうは、使ったらすぐに洗って、引き出しの中でした。",
+   "same_as": "D10"
+  },
+  {
+   "id": "D12",
+   "narration": "直し方は、包丁を、使ったらすぐに洗うこと。",
+   "tts_text": "直し方は、ほうちょうを、使ったらすぐに洗うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "使ったら、すぐ洗う",
+     "引き出しか、扉の中にしまう",
+     "刃は、外に向けない"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D13",
+   "narration": "洗ったら、引き出しか、扉の中にしまいます。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "使ったら、すぐ洗う",
+     "引き出しか、扉の中にしまう",
+     "刃は、外に向けない"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "しまう時は、刃を、外に向けない。",
+   "tts_text": "しまう時は、はを、外に向けない。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "使ったら、すぐ洗う",
+     "引き出しか、扉の中にしまう",
+     "刃は、外に向けない"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D14a",
+   "narration": "佐和子さんは、包丁立てを、流しの下の扉の中へ移しました。",
+   "tts_text": "さわこさんは、ほうちょうたてを、流しの下の扉の中へ移しました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "包丁立てを、扉の中へ",
+    "accent": "扉の中"
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "包丁立てに立てておくのは、いいの？",
+   "tts_text": "ほうちょうたてに立てておくのは、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "見える所の",
+    "text2": "包丁立ては、いい？",
+    "kicker": "包丁立て"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D16",
+   "narration": "扉の中なら、いい、と言われます。見える所に置くなら、刃が見えない物を選びます。",
+   "tts_text": "扉の中なら、いい、と言われます。みえる所に置くなら、はが見えない物を選びます。",
+   "card": {
+    "type": "big_text",
+    "text": "見える所なら、刃を隠す",
+    "text2": "扉の中なら、いい",
+    "accent": "扉の中",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D17",
+   "narration": "はさみも、同じなの？",
+   "card": {
+    "type": "big_text",
+    "text": "台所の",
+    "text2": "はさみも、同じ？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D18",
+   "narration": "同じだと言われます。はさみも、使ったら、引き出しへ。",
+   "card": {
+    "type": "big_text",
+    "text": "はさみも、同じ",
+    "text2": "はさみも、引き出しへ",
+    "accent": "引き出し",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D19",
+   "narration": "刃物がしまってある台所は、それだけで、気がやわらかくなると言われます。",
+   "tts_text": "はものがしまってあるだいどころは、それだけで、気がやわらかくなると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "刃物をしまうと",
+     "big": "台所の気がやわらぐ",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。排水口のぬめりを、放っておく。",
+   "tts_text": "だいにい。はいすいこうのぬめりを、ほうっておく。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "排水口のぬめりを放っておく",
+    "sub": "ふたの下で、見えない所"
+   },
+   "yt_chapter": "第2位 排水口のぬめりを放っておく"
+  },
+  {
+   "id": "E01",
+   "narration": "シンクの排水口のふたを開けると、かごに、生ごみと黒いぬめり。",
+   "tts_text": "シンクのはいすいこうのふたを開けると、かごに、なまごみと黒いぬめり。",
+   "image_en": "Extreme close-up looking down into a kitchen sink drain with its cover lifted: the plastic drain basket is clogged with food scraps and covered in dark slimy grime. Dim light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E02",
+   "narration": "ふたがあるから、見ないで済んでいませんか。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E03",
+   "narration": "風水では、水は、お金の流れをあらわします。",
+   "tts_text": "ふうすいでは、水は、お金の流れをあらわします。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "水は",
+     "big": "お金の流れ",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "E04",
+   "narration": "排水口は、その流れの出口です。",
+   "tts_text": "はいすいこうは、その流れの出口です。",
+   "card": {
+    "type": "big_text",
+    "text": "排水口は",
+    "text2": "お金の流れの、出口",
+    "accent": "出口"
+   }
+  },
+  {
+   "id": "E05",
+   "narration": "出口がつまると、お金の流れも、つまる。排水口のつまりは、心のつまりとも言われます。",
+   "tts_text": "出口がつまると、お金の流れも、つまる。はいすいこうのつまりは、心のつまりとも言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "排水口のつまりは",
+     "big": "心のつまり",
+     "size": 130
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "E06",
+   "narration": "ぬめりは、毎日たまる汚れ。放っておくほど、流れは悪くなっていくのです。",
+   "tts_text": "ぬめりは、毎日たまる汚れ。ほうっておくほど、流れは悪くなっていくのです。",
+   "card": {
+    "type": "big_text",
+    "text": "ぬめりは",
+    "text2": "放っておくほど、流れが悪くなる",
+    "accent": "流れ"
+   }
+  },
+  {
+   "id": "E07",
+   "narration": "佐和子さんは、久しぶりに、排水口のふたを開けてみました。",
+   "tts_text": "さわこさんは、久しぶりに、はいすいこうのふたを開けてみました。",
+   "image_en": "Inside the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator, Sawako bends over the sink holding up the lifted drain cover, her eyes wide and one hand over her mouth in shock as she looks into the drain. Soft light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E08",
+   "narration": "思わず、声が出ました。",
+   "tts_text": "おもわず、声が出ました。",
+   "card": {
+    "type": "big_text",
+    "text": "排水口が",
+    "text2": "こんなに、ぬるぬるだったなんて",
+    "kicker": "ぬるぬる"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E09",
+   "narration": "ネットは替えていたのに、かごは、一度も洗ったことがなかったのです。",
+   "tts_text": "ネットは替えていたのに、かごは、いちども洗ったことがなかったのです。",
+   "same_as": "E07"
+  },
+  {
+   "id": "E09a",
+   "narration": "佐和子さんは、その場でかごを外して、古い歯ブラシでこすりました。",
+   "tts_text": "さわこさんは、その場でかごを外して、古い歯ブラシでこすりました。",
+   "same_as": "E10"
+  },
+  {
+   "id": "E10",
+   "narration": "澄江さんは、寝る前に、排水口のごみを捨てていました。",
+   "tts_text": "すみえさんは、寝る前に、はいすいこうのごみを捨てていました。",
+   "image_en": "Close-up: an older woman's hands in plain rubber gloves hold a clean shining plastic sink drain basket over a clean stainless sink. Only the gloved hands, no face. Bright light. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   }
+  },
+  {
+   "id": "E11",
+   "narration": "直し方は、寝る前に、排水口のごみを捨てること。",
+   "tts_text": "直し方は、寝る前に、はいすいこうのごみを捨てること。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "寝る前に、ごみを捨てる",
+     "週に1回、かごを洗う",
+     "ふたの裏も、拭く"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E12",
+   "narration": "週に1回は、かごを外して、洗います。",
+   "tts_text": "しゅうにいっかいは、かごを外して、洗います。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "寝る前に、ごみを捨てる",
+     "週に1回、かごを洗う",
+     "ふたの裏も、拭く"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E13",
+   "narration": "ふたの裏も、一緒に拭く。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "寝る前に、ごみを捨てる",
+     "週に1回、かごを洗う",
+     "ふたの裏も、拭く"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E13a",
+   "narration": "排水口がきれいになると、台所のにおいも、すっと消えます。",
+   "tts_text": "はいすいこうがきれいになると、だいどころのにおいも、すっと消えます。",
+   "card": {
+    "type": "big_text",
+    "text": "排水口がきれいになると",
+    "text2": "においも、すっと消える",
+    "accent": "消える"
+   }
+  },
+  {
+   "id": "E13b",
+   "narration": "においのこもらない台所には、陰の気がたまらない、と言われています。",
+   "tts_text": "においのこもらないだいどころには、いんのきがたまらない、と言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "においのない台所に",
+     "big": "陰の気がたまらない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "E14",
+   "narration": "ネットを替えていれば、それでいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "排水口は",
+    "text2": "ネットだけで、いい？",
+    "kicker": "ネット"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E15",
+   "narration": "ネットだけでは、足りないと言われます。ぬめりがたまるのは、かごとふたの裏だからです。",
+   "card": {
+    "type": "big_text",
+    "text": "ぬめりは、かごとふたの裏",
+    "text2": "ネットだけでは、足りない",
+    "accent": "足りない",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "毎日、洗わないと、だめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "排水口は",
+    "text2": "毎日、洗わないとだめ？",
+    "kicker": "毎日"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E17",
+   "narration": "毎日は、ごみを捨てるだけでいい、と言われます。洗うのは、週に1回で十分です。",
+   "tts_text": "毎日は、ごみを捨てるだけでいい、と言われます。洗うのは、しゅうにいっかいで十分です。",
+   "card": {
+    "type": "big_text",
+    "text": "洗うのは週に1回",
+    "text2": "毎日は、捨てるだけ",
+    "accent": "捨てる",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E18",
+   "narration": "水がさらさら流れる台所には、お金も、さらさら入ってくる。そう考えられてきました。",
+   "tts_text": "水がさらさら流れるだいどころには、お金も、さらさらはいってくる。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "水がさらさら流れる台所に",
+     "big": "お金も入ってくる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "P01",
+   "narration": "ここまでで、4つ。残るは、第1位だけです。",
+   "tts_text": "ここまでで、よっつ。残るは、だいいちいだけです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "包丁を出しっぱなし",
+     "排水口のぬめりを放っておく",
+     "●●を●●●に寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "いよいよ、第1位です。",
+   "tts_text": "いよいよ、だいいちいです。",
+   "card": {
+    "type": "big_text",
+    "text": "いよいよ",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、食器を、洗わずに寝ること。",
+   "tts_text": "だいいちいは、食器を、洗わずに寝ること。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "食器を洗わずに寝る",
+    "sub": "疲れた夜に、ついやってしまう"
+   },
+   "yt_chapter": "第1位 疲れた夜に、ついやってしまうこと"
+  },
+  {
+   "id": "F02",
+   "narration": "夕ごはんのお皿を、シンクに重ねたまま、電気を消す。",
+   "tts_text": "ゆうごはんのお皿を、シンクに重ねたまま、電気を消す。",
+   "image_en": "Night inside the small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: the stainless sink is piled high with unwashed plates, bowls, chopsticks and a pot from dinner, sitting in murky water. The room is dark except for a dim light from the window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "peak": true,
+   "highlight": "洗わずに寝る",
+   "motion": true
+  },
+  {
+   "id": "F03",
+   "narration": "疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "洗わずに寝るのは",
+    "text2": "疲れた夜に、つい",
+    "accent": "疲れた夜"
+   }
+  },
+  {
+   "id": "F04",
+   "narration": "金運の世界では、台所は、火と水の場所。水は、お金の流れです。",
+   "tts_text": "きんうんの世界では、だいどころは、火と水の場所。水は、お金の流れです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "台所の水は",
+     "big": "お金の流れ",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "F05",
+   "narration": "汚れたお皿を一晩置くと、その汚れが、水と一緒によどんでいく。",
+   "tts_text": "汚れたお皿をひとばん置くと、その汚れが、水と一緒によどんでいく。",
+   "card": {
+    "type": "big_text",
+    "text": "洗わずに寝ると",
+    "text2": "汚れが、一晩よどむ",
+    "accent": "よどむ"
+   }
+  },
+  {
+   "id": "F06",
+   "narration": "よどんだ水は、お金の流れを、止めてしまうと言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "よどんだ水は",
+    "text2": "お金の流れが、止まる",
+    "accent": "止まる"
+   }
+  },
+  {
+   "id": "F07",
+   "narration": "そして朝、台所に入って、最初に目にするのが、汚れたお皿。",
+   "tts_text": "そして朝、だいどころにはいって、最初に目にするのが、汚れたお皿。",
+   "same_as": "F02"
+  },
+  {
+   "id": "F08",
+   "narration": "朝いちばんに見た物が、その日の運を決める、とも言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "朝いちばんに見た物が",
+     "big": "その日の運を決める",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "F09",
+   "narration": "汚れから始まる朝は、1日の運まで、重くしてしまうのです。",
+   "tts_text": "汚れから始まる朝は、いちにちの運まで、重くしてしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "汚れから始まる朝は",
+    "text2": "1日の運まで、重くなる",
+    "accent": "重く"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "佐和子さんは、疲れた夜は、いつもお皿を、シンクに置いたままでした。",
+   "tts_text": "さわこさんは、疲れた夜は、いつもお皿を、シンクに置いたままでした。",
+   "same_as": "D07"
+  },
+  {
+   "id": "F11",
+   "narration": "朝、まとめて洗えばいいと思って。",
+   "card": {
+    "type": "big_text",
+    "text": "お皿は",
+    "text2": "朝、まとめて洗えばいい",
+    "kicker": "まとめて"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F12",
+   "narration": "朝は朝で、時間がなくて、昼まで残ることもありました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんのお皿は",
+    "text2": "昼まで、残っていた",
+    "accent": "昼まで"
+   }
+  },
+  {
+   "id": "F13",
+   "narration": "澄江さんは、夕ごはんのあと、すぐにお皿を洗って、拭いてしまいます。",
+   "tts_text": "すみえさんは、ゆうごはんのあと、すぐにお皿を洗って、拭いてしまいます。",
+   "image_en": "Evening close-up in a clean tidy small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: an older woman's hands dry a freshly washed plate with a clean white cloth beside an empty clean sink. Only the hands, no face. Warm soft lamp light. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F14",
+   "narration": "シンクは、空っぽで、水気も拭いてあります。",
+   "tts_text": "シンクは、空っぽで、みずけも拭いてあります。",
+   "same_as": "F13"
+  },
+  {
+   "id": "F15",
+   "narration": "直し方は、夕ごはんの食器を、寝る前に洗うこと。",
+   "tts_text": "直し方は、ゆうごはんの食器を、寝る前に洗うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "夕ごはんの食器は、寝る前に洗う",
+     "洗ったら、水気を拭く",
+     "シンクを、空にして寝る"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F16",
+   "narration": "洗ったら、水気を拭きます。",
+   "tts_text": "洗ったら、みずけを拭きます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "夕ごはんの食器は、寝る前に洗う",
+     "洗ったら、水気を拭く",
+     "シンクを、空にして寝る"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F17",
+   "narration": "そして、シンクを、空にして寝る。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "夕ごはんの食器は、寝る前に洗う",
+     "洗ったら、水気を拭く",
+     "シンクを、空にして寝る"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F17a",
+   "narration": "すぐに洗うのは、手間の面でも、いいことです。",
+   "card": {
+    "type": "big_text",
+    "text": "すぐに洗うのは",
+    "text2": "手間も、少なくてすむ",
+    "accent": "手間"
+   }
+  },
+  {
+   "id": "F17b",
+   "narration": "汚れは、乾く前なら、さっと落ちます。朝まで置くと、こする時間が何倍にもなります。",
+   "card": {
+    "type": "big_text",
+    "text": "汚れは",
+    "text2": "乾く前なら、さっと落ちる",
+    "accent": "さっと"
+   }
+  },
+  {
+   "id": "F18",
+   "narration": "空のシンクで眠れば、お金の流れは止まらずに、朝には新しい運が入ってくる。そう考えられてきました。",
+   "tts_text": "空のシンクで眠れば、お金の流れは止まらずに、朝には新しい運がはいってくる。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "空のシンクで眠れば",
+     "big": "朝、新しい運が入る",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "F19",
+   "narration": "水につけておけば、いいんじゃないの？",
+   "card": {
+    "type": "big_text",
+    "text": "洗えない時は",
+    "text2": "水につけておけば、いい？",
+    "kicker": "水"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F20",
+   "narration": "水につけたままも、同じだと言われます。よどんだ水が、一晩たまるからです。",
+   "tts_text": "水につけたままも、同じだと言われます。よどんだ水が、ひとばんたまるからです。",
+   "card": {
+    "type": "big_text",
+    "text": "よどんだ水が、たまる",
+    "text2": "水につけても、同じ",
+    "accent": "同じ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F21",
+   "narration": "疲れて、どうしても洗えない夜は？",
+   "card": {
+    "type": "big_text",
+    "text": "疲れて",
+    "text2": "どうしても洗えない夜は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F22",
+   "narration": "せめて、水を捨てて、お皿をシンクから出しておく。それだけでも、いい、と言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "せめて",
+    "text2": "水を捨てて、シンクから出す",
+    "accent": "出す",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F23",
+   "narration": "食洗機があるなら、中に入れて、扉を閉めておけば、いいそうです。",
+   "tts_text": "しょくせんきがあるなら、中に入れて、扉を閉めておけば、いいそうです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "食洗機なら",
+     "big": "入れて閉めればいい",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "F23a",
+   "narration": "佐和子さんも、その日から、夕ごはんのお皿を、寝る前に洗うようになりました。",
+   "tts_text": "さわこさんも、その日から、ゆうごはんのお皿を、寝る前に洗うようになりました。",
+   "same_as": "F13"
+  },
+  {
+   "id": "F24",
+   "narration": "朝、台所に入るのが、少し楽しみになったのです。",
+   "tts_text": "朝、だいどころに入るのが、少し楽しみになったのです。",
+   "same_as": "C08"
+  },
+  {
+   "id": "Q01",
+   "narration": "色の問題の答えは、黄色です。",
+   "tts_text": "色の問題の答えは、きいろです。",
+   "card": {
+    "type": "big_text",
+    "text": "西に置くといい色は",
+    "text2": "黄色",
+    "accent": "黄色",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q02",
+   "narration": "西に黄色。風水で、いちばんよく知られた、金運の決まりです。",
+   "tts_text": "西にきいろ。ふうすいで、いちばんよく知られた、きんうんの決まりです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "西に黄色",
+     "big": "いちばん知られた金運の決まり",
+     "size": 100
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "Q03",
+   "narration": "西は、実りの方角。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "西",
+      "sub": "実りの方角"
+     },
+     {
+      "head": "黄色",
+      "sub": "お金の色"
+     }
+    ],
+    "sep": "×"
+   }
+  },
+  {
+   "id": "Q03a",
+   "narration": "黄色は、お金の色。実りの方角に、お金の色を置くと、お金が入ってくると言われてきました。",
+   "tts_text": "きいろは、お金の色。実りの方角に、お金の色を置くと、お金がはいってくると言われてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "実りの方角に、お金の色",
+    "text2": "お金が、入ってくる",
+    "accent": "入ってくる"
+   }
+  },
+  {
+   "id": "Q04",
+   "narration": "台所が西にある家は、黄色いふきんを1枚、かけておくといいそうです。",
+   "tts_text": "だいどころが西にあるいえは、きいろいふきんをいちまい、かけておくといいそうです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "西の台所には",
+     "big": "黄色いふきんを1枚",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "G00",
+   "narration": "最後に、逆に、金運が上がると言われる行いを1つ。",
+   "tts_text": "最後に、逆に、きんうんが上がると言われる行いをひとつ。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "米びつのお米を切らさない",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "金運が上がる台所の習慣"
+  },
+  {
+   "id": "G01",
+   "narration": "米びつのお米を、切らさないことです。",
+   "tts_text": "こめびつのお米を、切らさないことです。",
+   "image_en": "Bright fresh morning in a clean tidy small kitchen of a modest present-day Japanese public housing apartment (danchi): a stainless steel sink, a two-burner gas stove, plain cream cabinets, a small window over the sink, an old white refrigerator: an older woman's hands pour fresh white rice from a plain paper bag into a clean wooden rice storage box, filling it generously. Only the hands, no face. Warm morning sunlight. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "お米は、昔から、家の豊かさのしるしだと言われてきました。",
+   "tts_text": "お米は、昔から、いえの豊かさのしるしだと言われてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "お米は、昔から",
+    "text2": "家の、豊かさのしるし",
+    "accent": "豊かさ"
+   }
+  },
+  {
+   "id": "G03",
+   "narration": "米びつが空になると、家のお金も、底をつくと言われます。",
+   "tts_text": "こめびつが空になると、いえのお金も、底をつくと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "米びつが空になると",
+    "text2": "お金も、底をつく",
+    "accent": "底"
+   }
+  },
+  {
+   "id": "G03a",
+   "narration": "いつもお米がある家には、お金も、いつもある。そう考えられてきました。",
+   "tts_text": "いつもお米があるいえには、お金も、いつもある。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お米がいつもある家に",
+     "big": "お金もいつもある",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "G04",
+   "narration": "米びつは、空にした日に、さっと洗う。",
+   "tts_text": "こめびつは、空にした日に、さっと洗う。",
+   "card": {
+    "type": "rules",
+    "title": "米びつのお米を切らさない",
+    "items": [
+     "お米を、切らさない",
+     "米びつは、空にした日に洗う",
+     "ふたをして、暗い所に"
+    ],
+    "show": 2,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G05",
+   "narration": "ふたをして、暗い所に置きます。",
+   "card": {
+    "type": "rules",
+    "title": "米びつのお米を切らさない",
+    "items": [
+     "お米を、切らさない",
+     "米びつは、空にした日に洗う",
+     "ふたをして、暗い所に"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G05a",
+   "narration": "古いお米の上に、新しいお米を足さないこと。空にしてから入れると、いつも新しいお米が食べられます。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G06",
+   "narration": "澄江さんは、米びつが半分になったら、次のお米を買っていました。",
+   "tts_text": "すみえさんは、こめびつが半分になったら、次のお米を買っていました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G07",
+   "narration": "お米があると思うだけで、その月のお金に、ゆとりができる。澄江さんは、そう言いました。",
+   "tts_text": "お米があると思うだけで、その月のお金に、ゆとりができる。すみえさんは、そう言いました。",
+   "same_as": "A06"
+  },
+  {
+   "id": "G08",
+   "narration": "佐和子さんも、その月から、お米を切らさないようになりました。",
+   "tts_text": "さわこさんも、その月から、お米を切らさないようになりました。",
+   "same_as": "C08"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人が台所でしない5つを、もう一度。",
+   "tts_text": "お金が残る人がだいどころでしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "包丁を出しっぱなし",
+     "排水口のぬめりを放っておく",
+     "食器を洗わずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、欠けたお皿を使い続ける。第4位、冷蔵庫の奥に古い物をためる。第3位、包丁を出しっぱなし。",
+   "tts_text": "だいごい、欠けたお皿を使い続ける。だいよんい、れいぞうこの奥に古い物をためる。だいさんい、ほうちょうを出しっぱなし。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "包丁を出しっぱなし",
+     "排水口のぬめりを放っておく",
+     "食器を洗わずに寝る"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、排水口のぬめりを放っておく。そして第1位、食器を洗わずに寝る。",
+   "tts_text": "だいにい、はいすいこうのぬめりをほうっておく。そしてだいいちい、食器を洗わずに寝る。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が台所でしないこと　5つ",
+    "items": [
+     "欠けたお皿を使い続ける",
+     "冷蔵庫の奥に古い物をためる",
+     "包丁を出しっぱなし",
+     "排水口のぬめりを放っておく",
+     "食器を洗わずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上やっていた人は、まず第1位。寝る前に、シンクを空にしてみてください。",
+   "tts_text": "みっつ以上やっていた人は、まずだいいちい。寝る前に、シンクを空にしてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上やっていたら",
+    "text2": "まず、シンクを空にして寝る",
+    "accent": "シンク"
+   }
+  },
+  {
+   "id": "K04a",
+   "narration": "次に、包丁を、引き出しへ。どちらも、すぐにできます。",
+   "tts_text": "次に、ほうちょうを、引き出しへ。どちらも、すぐにできます。",
+   "card": {
+    "type": "big_text",
+    "text": "シンクの次は",
+    "text2": "次に、包丁を引き出しへ",
+    "accent": "包丁"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "直しても、すぐにお金が増えるわけではありません。",
+   "card": {
+    "type": "big_text",
+    "text": "直しても",
+    "text2": "すぐにお金が増えるわけではない",
+    "accent": "すぐに"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "それでも、朝、台所に入った時の景色は、その日から変わります。",
+   "tts_text": "それでも、朝、だいどころに入った時の景色は、その日から変わります。",
+   "same_as": "C08"
+  },
+  {
+   "id": "K07",
+   "narration": "あなたは、5つのうち、いくつやっていましたか。",
+   "tts_text": "あなたは、いつつのうち、いくつやっていましたか。",
+   "card": {
+    "type": "big_text",
+    "text": "あなたは、5つのうち",
+    "text2": "いくつやっていた？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "K08",
+   "narration": "コメントで、数だけでも教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "thumb": {
+  "layout": "person",
+  "bg": "D07",
+  "line1": "疲れた夜に",
+  "line2": "●●する人",
+  "judge": "大損してます",
+  "hl": [
+   "●●"
+  ]
+ },
+ "thumb_kind": "person",
+ "_説明": "長尺の見本（手で作った 006 台所のNG5・制作ルール v1.7 の順位の型）。形と密度を借りる。中身の場面・言い回しは写さない。img_from の pose: は assets/poses の共有ポーズ絵を使い回す印（絵は作らない）",
+ "desc_lead": "欠けたままのお皿、出しっぱなしの包丁、流しに残したままの夕ごはんの食器。年金がほとんど同じでも、お金が残る人と残らない人では、台所がこれだけ違います。金運の世界で、お金が残る人が台所でしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れた夜に、ほとんどの人がついやってしまうことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、母の形見のお皿が欠けたら・包丁立てはいいか・食洗機ならいいか、西の台所に置くといい色もお伝えします。\n\nあなたの台所は、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね🍵",
+ "titles": [
+  "【実はみんな逆】お金が残る人が台所で絶対にしないこと5選【金運】"
+ ]
+}
