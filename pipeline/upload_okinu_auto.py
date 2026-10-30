@@ -6,6 +6,9 @@
 #   長尺は 1920x1080・8分以上・サムネ thumb_a.jpg つき・説明文の {CHAPTERS} を chapters.txt に
 # ・説明文：AI の1行・「創作」の行・VOICEVOX のクレジット（voice/_credits.txt の全員）が無ければ止まる。{LONG_URL} が残るショートは、その行を消す（長尺の URL が決まらない間）
 # ・二重アップ：記録に同じ作業フォルダ・チャンネルに同じタイトルがあれば止まる。アップの後、動画が残っているかを数分見る（upload_okinu.check_after）
+# ・守り（2026-10-30。upload_okinu.py の手の道具と同じ2つ）：題が、チャンネルのほかの動画の題の言い換え（0.55 以上）なら止まる（title_guard.py）。
+#   長尺は、pub_plan.json にこの回の公開日（pub_date）があれば、その日に横動画がもう入っていないかを見る（long_day_guard.py）。
+#   公開日が決まっていない（ふだんの自動の回。非公開で上げるだけ）時は見られないので、横動画の1日1本は見張り（watch.py）の枠と every_days（profile.json の kinds.long）が守る
 # ・YouTube の API を呼ぶ道具なので、試験では --dry（上げずに説明文と形だけ点検）までしか回していない
 import argparse, datetime, json, os, re, sys, urllib.error
 
@@ -14,6 +17,7 @@ from upload_job import ROOT, api, API, channel_titles  # noqa: E402
 from upload_okinu import up1440, check_after, get  # noqa: E402
 from gate_video_okinu import probe  # noqa: E402
 import ustore  # noqa: E402
+import long_day_guard, title_guard  # noqa: E402
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 AI_LINE = "※映像とナレーションはAIを使って作っています。"
@@ -84,6 +88,13 @@ def main():
     print(f"動画 {sec:.1f}秒・{w}x{h}・{os.path.getsize(video) / 1e6:.1f}MB・{kind}")
     print("タイトル：", title)
     print("説明文：\n" + desc)
+    title_guard.check(title, channel_titles(ch))  # ほかの回の題の言い換えは止める
+    if kind == "long":
+        pd = (json.load(open(os.path.join(ROOT, "history", ch, "pub_plan.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "history", ch, "pub_plan.json")) else {}).get(name, {}).get("pub_date")
+        if pd:  # 公開日が決まっている時だけ（長尺は日本時間 19:00 の枠）
+            long_day_guard.check(ch, datetime.datetime.fromisoformat(pd + "T19:00:00").replace(tzinfo=JST))
+        else:
+            print("【メモ】公開日が決まっていないので、横動画の同じ日の確かめ（long_day_guard）は予約の時（watch.py の枠・every_days）に任せます")
     if a.dry:
         print("（--dry なので上げません）")
         return

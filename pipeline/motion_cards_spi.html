@@ -1,6 +1,6 @@
 <!doctype html>
 <html><head><meta charset="utf-8">
-<!-- motion_cards_spi.py が読み込む図解カードの型（motion_cards_v8.html の写し・2026-10-29。字の読み込みを style の頭の印にして、Windows と Linux で motion_cards_spi.py が差し込む）。draw(t) で t 秒目の1コマを描く（時間で決まるので、何度描いても同じ絵になる） -->
+<!-- motion_cards_spi.py が読み込む図解カードの型（motion_cards_v8.html の写し・2026-10-29。2026-10-30：v9 の rank カードと rules の nums を足した。rules の大きい字（76px・行の間150px）は金運おきぬ＝body.kinun の時だけ＝spi の見た目は v8 のまま。字の読み込みを style の頭の印にして、Windows と Linux で motion_cards_spi.py が差し込む）。draw(t) で t 秒目の1コマを描く（時間で決まるので、何度描いても同じ絵になる） -->
 <style>
 /*@FONTS@*/
 html,body{margin:0;width:1920px;height:1080px;overflow:hidden}
@@ -88,6 +88,15 @@ body{background:var(--bg);font-family:var(--font);color:var(--ink)}
 .env .mo{position:absolute;left:0;right:0;top:384px;text-align:center;font-size:32px;font-weight:700;color:#4A3426;white-space:nowrap}
 .rl{position:absolute;left:220px;display:flex;align-items:center;gap:30px;font-size:58px;font-weight:700;padding:10px 30px 10px 14px;border-radius:12px;white-space:nowrap}
 .rl .no{width:76px;height:76px;border-radius:50%;background:var(--shu);color:var(--onshu);display:flex;align-items:center;justify-content:center;font-size:46px;font-family:JSans;font-weight:800;flex:none}
+/* v9（金運おきぬ）：スマホで読めるよう rules の字を大きく。kinun の時だけ（spi・job・koyomi は v8 のまま） */
+body.kinun .rl{gap:34px;font-size:76px}
+body.kinun .rl .no{width:96px;height:96px;font-size:58px}
+/* v9（2026-10-29・金運おきぬ 003）：番号カード rank。新しい NG に入るたびに、順位・物の名前・赤い判定の印を画面いっぱいに出す（制作ルール v1.6 §6） */
+.rk1{position:absolute;left:0;right:0;top:190px;text-align:center;font-size:250px;font-weight:900;color:var(--shu);white-space:nowrap;line-height:1}
+.rk2{position:absolute;left:80px;right:80px;top:540px;text-align:center;font-size:130px;font-weight:800;white-space:nowrap}
+.rk3{position:absolute;left:0;right:0;top:740px;text-align:center;font-size:54px;font-weight:700;color:var(--sub);white-space:nowrap}
+.stamp{position:absolute;left:1390px;top:180px;width:230px;height:230px;border-radius:50%;border:14px solid var(--shu);color:var(--shu);display:flex;align-items:center;justify-content:center;font-size:104px;font-weight:900;font-family:JSans;box-sizing:border-box}
+.stamp.good{border-color:var(--gold);color:var(--gold)}
 .rl.cur{background:var(--paper);box-shadow:0 8px 24px rgba(40,25,10,.15)}
 .tl{position:absolute;text-align:center;transform:translateX(-50%);white-space:nowrap}
 .plus{position:absolute;left:910px;top:380px;width:100px;height:100px;border-radius:50%;background:var(--shu);color:var(--onshu);font-size:76px;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:JSans}
@@ -361,9 +370,17 @@ envelopes(s){
     });
     if(k){const a=out(P(t,0,.4));show(k,a,(1-a)*-30)}
     if(note){const a=out(P(t,.6,.5));show(note,a,(1-a)*50)}}}},
+rank(s){ZOOM=.03;  // v9：{num:"第5位", title:"物の名前", sub:"下の小さい字（任意）", mark:"NG"（既定）, good:true で金色の印}
+  const n=H(`<div class="rk1">${chars(s.num)}</div>`),ti=H(`<div class="rk2">${chars(s.title,s.accent)}</div>`);
+  const sb=s.sub?H(`<div class="rk3">${esc(s.sub)}</div>`):null;
+  const mk=s.mark||'NG',st=H(`<div class="stamp${s.good?' good':''}"${[...mk].length>1&&!/^[A-Z]+$/.test(mk)?' style="font-size:66px;white-space:nowrap"':''}>${esc(mk)}</div>`);  // 2字の漢字（開運など）は丸に収まる大きさ
+  return{layout(){fit(ti,1760)},draw(t){
+    n.querySelectorAll('.ch').forEach((e,k)=>{const a=P(t,.05+k*.07,.35);e.style.opacity=Math.min(1,a*2);e.style.transform=`scale(${1.5-.5*Math.min(1,back(a))})`});
+    stagger(ti,t,.45,.05,40);if(sb){const a=out(P(t,.9,.4));show(sb,a,0,(1-a)*20)}
+    const b=P(t,.85,.3);st.style.opacity=Math.min(1,b*2);st.style.transform=`rotate(-14deg) scale(${1.8-.8*b})`}}},
 rules(s){
-  const n=s.show||s.items.length,cur=s.cur===undefined?n-1:s.cur,ti=H(`<div class="title">${esc(s.title)}</div>`);
-  const rs=s.items.slice(0,n).map((it,i)=>H(`<div class="rl ${i===cur?'cur':''}" style="top:${190+i*112}px"><div class="no">${i+1}</div>${esc(it)}</div>`));
+  const n=s.show||s.items.length,cur=s.cur===undefined?n-1:s.cur,kn=document.body.classList.contains('kinun'),ti=H(`<div class="title"${kn?' style="font-size:72px"':''}>${esc(s.title)}</div>`);  // v9：金運おきぬ（kinun）だけ字を大きく（行の間 112→150px（5行以上は130px。字幕と重ならないように）・タイトル 72px）。spi は v8 のまま
+  const rs=s.items.slice(0,n).map((it,i)=>H(`<div class="rl ${i===cur?'cur':''}" style="top:${kn?215+i*(n>=5?130:150):190+i*112}px"><div class="no">${s.nums?s.nums[i]:i+1}</div>${esc(it)}</div>`));  // v9：nums で丸の数字を指定（ランキングは 5,4,3,2,1）
   return{draw(t){ti.style.opacity=s.fresh?out(P(t,0,.4)):1;
     rs.forEach((r,i)=>{if(i!==cur&&!s.fresh){r.style.opacity=.55;return}const a=out(P(t,s.fresh?.3+i*.4:.2,.5));show(r,a*(i===cur||s.all?1:.55),(1-a)*-50)})}}},
 avg_bars(s){

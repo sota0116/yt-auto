@@ -1,5 +1,5 @@
 {
- "_説明": "金運おきぬの固定の設定（制作ルール v1.4 = 手順書.md）。2026-10-29 に毎日の自動制作（第1段階）のために作った。先頭が「_」の項目は説明で、道具は読まない。共有側（run_daily.py・make_voice_vv.py・make_images_lovart.py）がまだ読めない項目は「_共有側に要る物」に書いてある",
+ "_説明": "金運おきぬの固定の設定（制作ルール v1.7 = 手順書.md。2026-10-30 に v1.4 から更新：長尺は場所の順位の型・ショートはショートの型 v2）。2026-10-29 に毎日の自動制作（第1段階）のために作った。先頭が「_」の項目は説明で、道具は読まない。共有側（run_daily.py・make_voice_vv.py・make_images_lovart.py）がまだ読めない項目は「_共有側に要る物」に書いてある",
  "channel": "金運おきぬ",
  "narrator": {
   "name": "おきぬ",
@@ -29,7 +29,7 @@
   "build": "build_long_okinu.py",
   "thumb": "make_thumb_okinu.py",
   "teaser": null,
-  "_motion": "motion（make_motion_psy.py）は共有の道具で Kling を呼ぶ。ここで試験では回していない（お金がかかる）。台本の motion: true のカットは Kling が使えない間 exit 3（待ち）になるので、まだ回さないなら台本に motion を付けない／付けても組み立ては静止画で通る（build_short は mp4 があれば使い、無ければ静止画に寄りを付ける）。手順書 §6 は動く絵2つ以上を求めるので、Kling を回すかはメインの判断",
+  "_motion": "motion（make_motion_psy.py）は共有の道具で Kling を呼ぶ（お金がかかる）。台本の motion: true で card の無い（絵だけの）カットを動かす。v1.7 の長尺は約7カット（1カット目・各順位・山場）、ショートは2カット以上（1カット目と第1位）。Kling が使えない間は exit 3（待ち）になる。動かすカットに card を付けると動かさない（finish が何も載せない photo の card を外す）",
   "voice": "make_voice_okinu.py",
   "gate_video": "gate_video_okinu.py",
   "upload": "upload_okinu_auto.py",
@@ -38,17 +38,17 @@
   "short_upload": null,
   "_説明": "run_daily.py の段ごとの道具。kinds.<種類>.tools が先。null はその段を飛ばす。ショートの組み立ては kinds.short.tools.build（tools.short は使わない）"
  },
- "_tools": "2026-10-29：ショートは make_voice_okinu.py → make_images_lovart.py（script.json の format が short なら縦 9:16）→ build_short_okinu.py → gate_video_okinu.py → upload_okinu_auto.py。長尺は make_voice_okinu.py → make_images_lovart.py → build_long_okinu.py → gate_video_okinu.py → make_thumb_okinu.py → upload_okinu_auto.py",
+ "_tools": "2026-10-29：ショートは make_voice_okinu.py → make_images_lovart.py（script.json の format が short なら縦 9:16）→ build_short_okinu.py → gate_video_okinu.py → upload_okinu_auto.py。長尺は make_voice_okinu.py → make_images_lovart.py → build_long_okinu.py（先見せ rank_montage_okinu.py を中で呼ぶ）→ gate_video_okinu.py → make_thumb_okinu.py（make_thumb_v3.py で4つの型を描く）→ upload_okinu_auto.py",
  "stock_phase": "post",
  "build": {
-  "tempo": 1.1,
-  "gap": 0.35,
-  "lufs": -14,
+  "tempo": 1.0,
+  "gap": 0.3,
+  "lufs": -15,
   "height": 1440,
   "font_size": 72,
   "maxlen": 22,
   "bgm": "channels/okinu/assets/bgm/okinu_bgm_01_seed1.m4a",
-  "bgm_volume": 0.02,
+  "bgm_volume": 0.018,
   "card_theme": "kinun",
   "par": 3,
   "short": {
@@ -63,7 +63,7 @@
     1248
    ]
   },
-  "_決めた理由": "手順書 §4・§5・§7：長尺は声の速さ 0.85＋組み立てで 1.1 倍、間 0.35。ショートは声を 1.0 で作って組み立てで 1.3 倍（S001 で本人が選んだ）、−15 LUFS、BGM 0.02（声との差 25dB 以上）。BGM は自作の okinu_bgm_01_seed1 を m4a にして repo に入れた（wav は .gitignore に当たるため）。クラウドでは環境変数 OKINU_BGM でも渡せる"
+  "_決めた理由": "手順書 §4・§5・§7（v1.7）：長尺は声の速さ 1.0＋組み立ても 1.0 倍（1分320〜340字）、間 0.3、−15 LUFS、BGM 0.018（手で作った 003〜006 の値。v1.4 の 0.85＋1.1 倍・間 0.35・−14 は物語の型の値）。ショートは声を 1.0 で作って組み立てで 1.3 倍（S001 で本人が選んだ）、−15 LUFS、BGM 0.02（声との差 25dB 以上）。BGM は自作の okinu_bgm_01_seed1 を m4a にして repo に入れた（wav は .gitignore に当たるため）。クラウドでは環境変数 OKINU_BGM でも渡せる"
  },
  "image_rules_en": {
   "with_chars": "The people in this picture are only the attached reference characters. Keep each one's face, hair and usual clothes exactly as in the reference sheet. Other people, if the scene needs them, are small, in the background and seen from behind.",
@@ -75,18 +75,18 @@
  "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
  "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
  "short": {
-  "chars_min": 270,
-  "chars_max": 300,
-  "sentences_min": 13,
-  "sentences_max": 17,
+  "chars_min": 250,
+  "chars_max": 360,
+  "sentences_min": 12,
+  "sentences_max": 22,
   "sentence_max_chars": 27,
   "hook_lines": 2,
   "hook_line_max": 5,
   "images_min": 7,
-  "images_max": 8,
-  "first_pattern": "していませんか",
+  "images_max": 9,
+  "first_pattern": "型1「〇〇に入れていると、お金が逃げる物、3つ。」／型2「〇〇に、これを置いていませんか。」",
   "last_pattern": "あなたの",
-  "_型": "ショートの型.md の「型」の表（270〜300字・15文前後・1文平均18〜19字・最長26〜27字・『〜していませんか』で始めて『あなたの〇〇には』で終える・最初の文字は5字×2行・絵は1本7〜8枚）。check_okinu_script.py が数える"
+  "_型": "ショートの型 v2（ショートの型.md）。型1＝NG3つの数え下げ 290〜360字・型2＝1つだけ禁止 250〜300字（3本のうち型1が2本・型2が1本）。1文最長27字・最初の文字は5字×2行・絵は1本7〜9枚。check_okinu_script.py が数える。※このブロックは記録用で、道具は読まない"
  },
  "_共有側に要る物": [
   "make_voice_okinu.py を tools.voice で呼べること（今の run_daily.py の声の段は make_voice_vv.py / make_voice_job.py に固定）",
@@ -105,9 +105,10 @@
   "2026-10-31T19:00",
   "2026-11-01T18:00",
   "2026-11-03T18:00",
-  "2026-11-05T18:00"
+  "2026-11-05T18:00",
+  "2026-11-07T18:00"
  ],
- "_reserved_slots": "手で予約済みの枠（S004 は 10/31 19:00）。11/01 19:00 は手で作る回の余地として空けていたが、手で作る回は無いので外した（2026-10-29）。手で予約を増やしたら足す。start_date より前の日には入れない 2026-10-30：手で作った長尺（順位の型）004 を 11/01 18:00 に予約、005 を 11/03・006 を 11/05 の 18:00 に入れる予定なので空けた（同じ日に横動画2本を防ぐ）",
+ "_reserved_slots": "手で予約済みの枠（S004 は 10/31 19:00）。11/01 19:00 は手で作る回の余地として空けていたが、手で作る回は無いので外した（2026-10-29）。手で予約を増やしたら足す。start_date より前の日には入れない 2026-10-30：手で作った長尺（順位の型）004 を 11/01 18:00 に予約、005 を 11/03・006 を 11/05 の 18:00 に入れる予定なので空けた（同じ日に横動画2本を防ぐ）。11/07 18:00 は手で作る 007（捨てる物）。長尺の自動制作は 2日に1本で、予約の日を除いて入れる",
  "image_gate_item3": "今の日本の暮らし（財布・小物・台所・団地）の絵に見えない。人物の顔・髪・服が設定画と違う。読める文字・数字・実在の紙幣や硬貨の絵柄が絵の中に出ている",
  "kinds": {
   "short": {
@@ -135,14 +136,14 @@
    "slots": [
     "18:00"
    ],
-   "every_days": 3,
+   "every_days": 2,
    "start_date": "2026-10-30",
    "stock_goal": [
-    1,
-    0
+    2,
+    1
    ],
    "make_max": 1,
-   "_stock": "長尺は3日に1本（手順書 §0）。同じ日に2本入れない。1本の絵は25〜60枚で、1日では終わらないことがある（作り途中の回は次の実行で続きから）",
+   "_stock": "長尺（v1.7 の順位の型）は2日に1本（手順書 §0）。在庫の目標2本・1本以下なら多めに作る。同じ日に2本入れない。1本の新しい絵は14〜20枚（共有ポーズ絵 pose: は作らない）で、Kling の動く絵が約7カット。1日では終わらないことがある（作り途中の回は次の実行で続きから）",
    "tools": {
     "thumb": "make_thumb_okinu.py",
     "build": "build_long_okinu.py"

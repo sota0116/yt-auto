@@ -2,7 +2,7 @@
 #   python -X utf8 pipeline/gate_video_okinu.py <作業フォルダ> [--video short.mp4|long.mp4]
 # ・種類：作業フォルダの名前が S… か script.json の format が short ならショート。それ以外は長尺
 # ・形：ショートは 1080x1920・59.5秒以内（ふつうは 25〜45秒）／長尺は 1920x1080 以上の横・8〜16分（1440p の 2560x1440 も可）
-# ・声の大きさ：ショート −15 LUFS・長尺 −14 LUFS の ±1.5 以内（ffmpeg の ebur128）
+# ・声の大きさ：ショート −15 LUFS・長尺 −15 LUFS（v1.7） の ±1.5 以内（ffmpeg の ebur128）
 # ・無音：ショートは2秒以上、長尺は3秒以上続く無音が無い（silencedetect −45dB）
 # ・ショートの動く絵：build_report.json の「動く絵のカット」が2以上かを注意として出す（Kling を回さない間は静止画に寄りを付けるだけなので、落とさない）
 # ・結果は _gate_video.json。不合格があれば終了コード1
@@ -44,7 +44,7 @@ def main():
             ng.append(f"形が横 16:9（1920x1080 か 2560x1440）ではありません（{w}x{h}）")
         if not 480 <= sec <= 960:
             ng.append(f"{sec / 60:.1f}分（長尺は8〜16分）")
-        target, sil = -14.0, 3.0
+        target, sil = -15.0, 3.0
     log = ff(["-i", v, "-af", "ebur128=peak=true", "-f", "null", "-"])
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", log)
     lufs = float(m[-1]) if m else None

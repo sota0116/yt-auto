@@ -5,6 +5,8 @@
 #   （長尺は毎日でなくてよい・ショートは毎日1〜3本。手順書 §0。切り出しは長尺の絵が作業フォルダに残っている手元の実行だけ。クラウドは絵を消すので kind=cut は使えない）
 # ・中身は ネタ帳.json の行（小物1つ・悩み1つ・年齢1つ・「やっていいか」の問い1つ。手順書 §1）。使った行（history・作業フォルダ・手で作った回の小物）は選ばない。
 #   直前の回と年齢が同じ行・悩みの言葉が同じ行は後ろへ（手順書 §12 の2：前の回と同じにしない）
+# ・ショートの型（2026-10-30。ショートの型.md v2）：ネタ帳の行の「型」（1＝NG3つの数え下げ／2＝1つだけ禁止）を 型1:型2 = 2:1 で回す
+#   （直前の自動のショート2本がどちらも型1なら型2、そうでなければ型1。選びたい型の行が尽きた時はもう一方から選ぶ）
 # ・番号のぶつかりを避ける（手順書 §13 の作業フォルダ名）：手で作る回は 001〜099／S001〜S099。自動の回は 101／S101 から、
 #   次を取る前に OneDrive の videos・repo の videos・history/okinu の uploaded／produced／pub_plan にある番号を全部数えて、いちばん大きい番号の次にする
 import argparse, datetime as dt, glob, json, os, re, sys
@@ -144,6 +146,12 @@ def main():
         if not rows:
             sys.exit(f"【止まりました】ネタ帳に、まだ作っていない {kind} の行がありません（ネタ帳.json に行を足す）")
 
+        if kind == "short":  # 型1:型2 = 2:1 で回す
+            ts = [m.get("型") for m in made if m.get("kind") == "short" and m.get("型")][-2:]
+            want = 2 if ts == [1, 1] else 1
+            same = [x for x in rows if x.get("型", 2) == want]
+            rows = same or rows
+
         def key(r):  # 前の回と同じ年齢の行は後ろへ。同点はネタ帳の順
             return (1 if last.get("年") == r.get("年") else 0, rows.index(r))
         r = sorted(rows, key=key)[0]
@@ -161,7 +169,7 @@ def main():
         return
     os.makedirs(work, exist_ok=True)
     json.dump(neta, open(os.path.join(work, "neta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    plan[os.path.basename(work)] = {k: neta.get(k) for k in ("neta_id", "kind", "主人公", "年", "悩み", "小物", "made", "num", "long")}
+    plan[os.path.basename(work)] = {k: neta.get(k) for k in ("neta_id", "kind", "主人公", "年", "悩み", "小物", "made", "num", "long", "型")}
     plan[os.path.basename(work)]["neta_id"] = neta.get("neta_id") or neta.get("id")
     os.makedirs(os.path.dirname(hpath("pub_plan.json")), exist_ok=True)
     json.dump(plan, open(hpath("pub_plan.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

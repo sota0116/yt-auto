@@ -1,7 +1,8 @@
-# ⑧組み立て・長尺（金運おきぬ・2026-10-29 新設）：build_long_spi.py（千年こよみ）を okinu 用に写したもの。カードは motion_cards_spi.py の kinun 配色（001 v6 の作り）
+# ⑧組み立て・長尺（金運おきぬ・2026-10-29 新設／2026-10-30 制作ルール v1.7 の順位の型に更新）：build_long_spi.py（千年こよみ）を okinu 用に写したもの。カードは motion_cards_spi.py の kinun 配色（001 v6 の作り）
 #   python -X utf8 pipeline/build_long_okinu.py <作業フォルダ> [--out long.mp4] [--par 3] [--tempo 1.1 --gap 0.35] [--only-cards] [--height 1080]
-# ・設定は channels/okinu/profile.json の build（声は 0.85 で作って組み立てで 1.1 倍・間 0.35・−14 LUFS・1440p・字幕 72px／22字・BGM 0.02・カード kinun）。
+# ・設定は channels/okinu/profile.json の build（v1.7：声は 1.0 で作って組み立ても 1.0 倍・間 0.3・−15 LUFS・1440p・字幕 72px／22字・BGM 0.018・カード kinun）。
 #   コマンドの引数が優先。script.json の tempo・gap は使わない（手で作った 001 の値が残っているため）
+# ・先見せ（montage）：声のあと・カードの前に rank_montage_okinu.py が images/<id>.mp4 を作り、make_cards がそれを clips に写して、そのカットの映像にする（絵が無いカットなので card_spec は通らない）
 # ・流れ・カードの中身・絵の探し方・BGM の探し方は build_long_spi.py と同じ（BGM は環境変数 OKINU_BGM → profile の build.bgm（m4a）→ script.json の bgm）
 #   2026-10-29 試験：金運おきぬの黄金サンプル 001v6 から6カット（章の題・図解カード・2枚並べ・絵）を抜いて声 → カード → 組み立て。19秒・−14.2 LUFS・字幕の切り替えは声の間に一致
 # ・字幕の字：Windows は Noto Sans JP Bold、Linux は Noto Sans CJK JP Bold（fonts-noto-cjk）
@@ -12,6 +13,7 @@ sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import dur, run, voice_path, chunks, ass_time, prep_voice  # noqa: E402
 from build_long_psy import onsets, sub_starts  # noqa: E402
+import rank_montage_okinu as RM  # noqa: E402
 import motion_cards_spi as MC  # noqa: E402
 
 W, H, FPS = 1920, 1080, 30
@@ -96,6 +98,16 @@ def make_cards(work, b, cuts, durs, theme, data, clips, par, stamps, stamp_p):
     html = os.path.join(os.path.dirname(os.path.abspath(__file__)), "motion_cards_spi.html")
     todo, miss = [], []
     for n, c in enumerate(cuts):
+        if c.get("montage"):
+            # 先見せ：rank_montage_okinu.py が作った images/<id>.mp4 をそのカットの映像にする（カードは描かない）
+            mv, out = os.path.join(work, "images", c["id"] + ".mp4"), os.path.join(work, clips, c["id"] + ".mp4")
+            if not os.path.exists(mv):
+                miss.append(c["id"]); continue
+            if stamps.get(c["id"] + ":card") != mt(mv) or not os.path.exists(out):
+                os.makedirs(os.path.dirname(out), exist_ok=True)
+                shutil.copyfile(mv, out)
+                stamps[c["id"] + ":card"] = mt(mv)
+            continue
         spec, deps = card_spec(work, cuts, c, n, b)
         if spec is None:
             miss.append(c["id"]); continue
@@ -149,10 +161,10 @@ def main():
     ap.add_argument("work")
     ap.add_argument("--out", default="long.mp4")
     ap.add_argument("--clips", default=prof.get("clips", "images/_v3"))
-    ap.add_argument("--tempo", type=float, default=prof.get("tempo", 1.25))
-    ap.add_argument("--gap", type=float, default=prof.get("gap", 0.25))
-    ap.add_argument("--bgm-volume", type=float, default=prof.get("bgm_volume", 0.03))
-    ap.add_argument("--lufs", type=float, default=prof.get("lufs", -14))
+    ap.add_argument("--tempo", type=float, default=prof.get("tempo", 1.0))
+    ap.add_argument("--gap", type=float, default=prof.get("gap", 0.3))
+    ap.add_argument("--bgm-volume", type=float, default=prof.get("bgm_volume", 0.018))
+    ap.add_argument("--lufs", type=float, default=prof.get("lufs", -15))
     ap.add_argument("--height", type=int, default=prof.get("height", 1440))
     ap.add_argument("--font-size", type=int, default=prof.get("font_size", 72))
     ap.add_argument("--maxlen", type=int, default=prof.get("maxlen", 22))
@@ -189,6 +201,16 @@ def main():
     json.dump(stamps, open(stamp_p, "w", encoding="utf-8"), ensure_ascii=False)
     print(f"声：{len(cuts)}カット・{sum(durs.values()) / 60:.1f}分（速さ {a.tempo}・間 {a.gap}）", flush=True)
 
+    # ②-0 先見せ（montage）：声の長さが決まったあとで作る。声・絵・字が変わらなければ前のまま
+    for c in sc["cuts"]:
+        if c.get("montage") and c.get("narration"):
+            key = hashlib.md5(json.dumps([c["montage"], c.get("montage_labels"), c.get("montage_blur"), round(durs[c["id"]], 2),
+                                          [mt(RM.find_image(work, sc["cuts"], x)) for m in c["montage"] for x in sc["cuts"] if x["id"] == m], mt(RM.__file__)],
+                                         ensure_ascii=False).encode()).hexdigest()
+            if stamps.get(c["id"] + ":montage") != key or not os.path.exists(os.path.join(work, "images", c["id"] + ".mp4")):
+                RM.build_one(work, sc["cuts"], c, durs[c["id"]])
+                stamps[c["id"] + ":montage"] = key
+                json.dump(stamps, open(stamp_p, "w", encoding="utf-8"), ensure_ascii=False)
     # ② カード
     make_cards(work, b, cuts, durs, sc.get("card_theme", "kinun"), sc.get("card_data", {}), a.clips, max(1, a.par), stamps, stamp_p)
     if a.only_cards:
@@ -248,7 +270,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     open(os.path.join(b, "voice.txt"), "w", encoding="utf-8").write("".join(f"file '{os.path.basename(p)}'\n" for p in vcs))
     run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", os.path.join(b, "voice.txt"), os.path.join(b, "voice.wav"))
 
-    # ⑤ 音：声＋BGM を混ぜてから、全体を −14 LUFS にそろえる（2回測る方式。最後にもう一度測って、ずれたら音量だけ足す）
+    # ⑤ 音：声＋BGM を混ぜてから、全体を −15 LUFS（profile.build.lufs）にそろえる（2回測る方式。最後にもう一度測って、ずれたら音量だけ足す）
     mix = (f"[1:a]volume={a.bgm_volume},afade=t=in:d=1.5,afade=t=out:st={max(0, t - 2.5):.2f}:d=2.5[m];"
            "[0:a][m]amix=inputs=2:duration=first:normalize=0[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "voice.wav", "-stream_loop", "-1", "-i", bgm, "-filter_complex", mix,
