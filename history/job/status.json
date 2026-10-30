@@ -6,11 +6,19 @@
   "gate_script",
   "voice",
   "yomi",
-  "reading"
+  "reading",
+  "images",
+  "charts",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
  "started": "2026-10-30T06:28:13+09:00",
  "tries": 0,
- "code": "59a3e374af41",
- "stage": "images",
- "updated": "2026-10-30T17:00:25+09:00"
+ "code": "5cc09caa2d3b",
+ "stage": "gate_video",
+ "updated": "2026-10-31T01:04:16+09:00",
+ "video_swapped": {
+  "C066": "C060"
+ }
 }
