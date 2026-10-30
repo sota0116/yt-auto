@@ -1,1 +1,11 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S105_実は貧乏な人に多い財布の",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-10-31T00:33:09+09:00",
+ "tries": 1,
+ "code": "80e9bf6960c4",
+ "stage": "gate_script"
+}

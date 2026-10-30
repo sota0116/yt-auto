@@ -1,16 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/101_通帳まわりの3つ",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/102_カバン",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice"
+  "write"
  ],
- "started": "2026-10-29T21:35:28+09:00",
- "tries": 0,
- "code": "d49fc61706ea",
- "stage": "gate_images",
- "updated": "2026-10-30T01:54:49+09:00",
- "busy": {},
- "images_back": true
+ "started": "2026-10-31T00:44:33+09:00",
+ "tries": 1,
+ "code": "80e9bf6960c4",
+ "stage": "gate_script"
 }

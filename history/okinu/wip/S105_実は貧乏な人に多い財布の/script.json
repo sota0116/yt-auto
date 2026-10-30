@@ -1,0 +1,306 @@
+{
+ "title": "【60代】実は貧乏な人に多い財布の特徴3選",
+ "fiction": true,
+ "world_rules": [
+  "語るのはおきぬ1人。第1位の絵に出る女性（さわこ）は名乗らず、セリフも言わない",
+  "言い伝えはおきぬが「昔から〜と言われています」の形で語る。ファスナーの財布がお金の出ていくのを防ぐ、は確かめられなかったので言わない"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "その財布、お金が逃げる特徴が3つありませんか。",
+   "image_en": "Extreme close-up of an older woman's hands holding a long-used brown leather wallet with frayed, worn corners and a zipper that is stuck half open. The wallet fills more than half of the vertical frame. Warm kitchen table light. No letters or numbers anywhere.",
+   "hook": "貧乏な人の\n財布",
+   "band": "貧乏財布の特徴",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "お金が逃げる"
+   ],
+   "subs": [
+    "その財布、",
+    "お金が逃げる\n特徴が",
+    "3つ\nありませんか。"
+   ],
+   "image": "Extreme close-up of an older woman's hands holding a long-used brown leather wallet with frayed, worn corners and a zipper that is stuck half open. The wallet fills more than half of the vertical frame. Warm kitchen table light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C02",
+   "narration": "角と、ファスナーと、色を見てね。",
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ],
+   "highlight": [
+    "色"
+   ],
+   "subs": [
+    "角と、",
+    "ファスナーと、",
+    "色を見てね。"
+   ]
+  },
+  {
+   "id": "C03",
+   "narration": "第3位、角のすり切れた財布。",
+   "image_en": "Macro close-up of the corner of an old brown leather wallet, the leather rubbed thin and frayed, pale fibers showing at the edge, lying on a wooden table. The worn corner fills more than half of the vertical frame. Soft daylight. No letters or numbers anywhere.",
+   "highlight": [
+    "角のすり切れた"
+   ],
+   "subs": [
+    "第3位、",
+    "角のすり切れた\n財布。"
+   ],
+   "image": "Macro close-up of the corner of an old brown leather wallet, the leather rubbed thin and frayed, pale fibers showing at the edge, lying on a wooden table. The worn corner fills more than half of the vertical frame. Soft daylight. No letters or numbers anywhere."
+  },
+  {
+   "id": "C04",
+   "narration": "手入れしないままは、NGです。",
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ],
+   "subs": [
+    "手入れしない\nままは、",
+    "NGです。"
+   ]
+  },
+  {
+   "id": "C05",
+   "narration": "でも、手入れすれば使っていいの。",
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ],
+   "highlight": [
+    "使っていい"
+   ],
+   "subs": [
+    "でも、\n手入れすれば",
+    "使っていいの。"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "角は、布でやさしく拭いてね。",
+   "image_en": "Close-up of an older woman's fingers gently wiping the worn corner of a brown leather wallet with a soft plain cream cloth on a wooden table. Hands, cloth and wallet fill more than half of the vertical frame, no face in the frame. Soft morning light. No letters or numbers anywhere.",
+   "tts_text": "かどは、布でやさしく拭いてね。",
+   "subs": [
+    "角は、",
+    "布でやさしく\n拭いてね。"
+   ],
+   "image": "Close-up of an older woman's fingers gently wiping the worn corner of a brown leather wallet with a soft plain cream cloth on a wooden table. Hands, cloth and wallet fill more than half of the vertical frame, no face in the frame. Soft morning light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C07",
+   "narration": "昔から、直して使う財布は良いと言われています。",
+   "image_en": "Close-up of an older woman's hands carefully sewing a loose stitch on the edge of a worn brown leather wallet with a needle and brown thread, a small sewing tin beside it on a wooden table. Hands and wallet fill more than half of the vertical frame, no face in the frame. Calm afternoon light. No letters or numbers anywhere.",
+   "subs": [
+    "昔から、",
+    "直して使う\n財布は",
+    "良いと\n言われています。"
+   ],
+   "image": "Close-up of an older woman's hands carefully sewing a loose stitch on the edge of a worn brown leather wallet with a needle and brown thread, a small sewing tin beside it on a wooden table. Hands and wallet fill more than half of the vertical frame, no face in the frame. Calm afternoon light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C08",
+   "narration": "第2位、ファスナーが閉まりきらない財布。",
+   "image_en": "Close-up of a navy round-zip wallet lying on a wooden table with its zipper stuck halfway, the slider caught and the zipper teeth gaping open at one corner, plain paper slips peeking out. The wallet fills more than half of the vertical frame. Cool soft light. No letters, numbers or logos anywhere.",
+   "highlight": [
+    "ファスナー"
+   ],
+   "subs": [
+    "第2位、",
+    "ファスナーが\n閉まりきらない",
+    "財布。"
+   ],
+   "image": "Close-up of a navy round-zip wallet lying on a wooden table with its zipper stuck halfway, the slider caught and the zipper teeth gaping open at one corner, plain paper slips peeking out. The wallet fills more than half of the vertical frame. Cool soft light. No letters, numbers or logos anywhere."
+  },
+  {
+   "id": "C09",
+   "narration": "口が開いたままでは、NGです。",
+   "same_as": "C08",
+   "shots": [
+    "C08@close"
+   ],
+   "subs": [
+    "口が\n開いたままでは、",
+    "NGです。"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "昔から、壊れたままの財布は、",
+   "same_as": "C03",
+   "shots": [
+    "C03@full"
+   ],
+   "subs": [
+    "昔から、",
+    "壊れたままの\n財布は、"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "運気が下がると言われています。",
+   "same_as": "C08",
+   "shots": [
+    "C08@full"
+   ],
+   "subs": [
+    "運気が\n下がると",
+    "言われています。"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "ファスナーの歯に、鉛筆の芯を滑らせてね。",
+   "image_en": "Close-up of an older woman's hand rubbing the tip of a plain wooden pencil along the metal teeth of a navy wallet zipper on a wooden table. Hand, pencil and zipper fill more than half of the vertical frame, no face in the frame. Warm lamp light. No letters or numbers anywhere.",
+   "highlight": [
+    "鉛筆の芯"
+   ],
+   "subs": [
+    "ファスナーの\n歯に、",
+    "鉛筆の芯を\n滑らせてね。"
+   ],
+   "image": "Close-up of an older woman's hand rubbing the tip of a plain wooden pencil along the metal teeth of a navy wallet zipper on a wooden table. Hand, pencil and zipper fill more than half of the vertical frame, no face in the frame. Warm lamp light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C13",
+   "narration": "第1位は、赤い財布。",
+   "image_en": "Close-up of a bright red leather wallet lying on a plain cream cloth on a wooden table, beside a loosely untied red gift ribbon. The red wallet fills more than half of the vertical frame. Warm evening light. No letters or numbers anywhere.",
+   "highlight": [
+    "赤い財布"
+   ],
+   "subs": [
+    "第1位は、",
+    "赤い財布。"
+   ],
+   "image": "Close-up of a bright red leather wallet lying on a plain cream cloth on a wooden table, beside a loosely untied red gift ribbon. The red wallet fills more than half of the vertical frame. Warm evening light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C14",
+   "narration": "還暦祝いで、もらった人も多いはず。",
+   "image_en": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a bright red leather wallet up in both hands close to the viewer, her eyes wide and mouth slightly open in a startled realization. The red wallet is large in the lower half of the vertical frame. Warm evening light. No letters anywhere.",
+   "chars": [
+    "sawako"
+   ],
+   "subs": [
+    "還暦祝いで、",
+    "もらった人も\n多いはず。"
+   ],
+   "image": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a bright red leather wallet up in both hands close to the viewer, her eyes wide and mouth slightly open in a startled realization. The red wallet is large in the lower half of the vertical frame. Warm evening light. No letters anywhere."
+  },
+  {
+   "id": "C15",
+   "narration": "財布には向かないと言われる色なの。",
+   "same_as": "C13",
+   "shots": [
+    "C13@close"
+   ],
+   "subs": [
+    "財布には\n向かないと",
+    "言われる色なの。"
+   ]
+  },
+  {
+   "id": "C16",
+   "narration": "昔から、赤はお金を燃やす色と言われています。",
+   "same_as": "C14",
+   "shots": [
+    "C14@face"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "highlight": [
+    "お金を燃やす"
+   ],
+   "subs": [
+    "昔から、",
+    "赤はお金を\n燃やす色と",
+    "言われています。"
+   ]
+  },
+  {
+   "id": "C17",
+   "narration": "捨てなくていいの。",
+   "image_en": "Close-up of an older woman's hands taking plain paper slips out of a bright red leather wallet and gently tucking a pressed flower and a small folded blank card into it, on a wooden table. Hands and red wallet fill more than half of the vertical frame, no face in the frame. Soft warm light. No letters or numbers anywhere.",
+   "motion": true,
+   "anim": "kling",
+   "peak": true,
+   "strong": true,
+   "highlight": [
+    "捨てなくていい"
+   ],
+   "subs": [
+    "捨てなくて\nいいの。"
+   ],
+   "image": "Close-up of an older woman's hands taking plain paper slips out of a bright red leather wallet and gently tucking a pressed flower and a small folded blank card into it, on a wooden table. Hands and red wallet fill more than half of the vertical frame, no face in the frame. Soft warm light. No letters or numbers anywhere."
+  },
+  {
+   "id": "C18",
+   "narration": "お札は抜いて、思い出の小物入れにしてね。",
+   "same_as": "C17",
+   "shots": [
+    "C17@close"
+   ],
+   "highlight": [
+    "小物入れ"
+   ],
+   "subs": [
+    "お札は\n抜いて、",
+    "思い出の\n小物入れに",
+    "してね。"
+   ]
+  },
+  {
+   "id": "C19",
+   "narration": "すぐ変わらなくても、気楽にね。",
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ],
+   "subs": [
+    "すぐ\n変わらなくても、",
+    "気楽にね。"
+   ]
+  },
+  {
+   "id": "C20",
+   "narration": "あなたの財布には、いくつありましたか。",
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ],
+   "highlight": [
+    "いくつ"
+   ],
+   "subs": [
+    "あなたの財布には、",
+    "いくつ\nありましたか。"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布には、いくつありましたか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #実は貧乏な人に多い財",
+ "tags": [
+  "金運",
+  "財布",
+  "実は貧乏な人に多い財",
+  "60代"
+ ],
+ "short_type": 1,
+ "comment": "あなたの財布には、いくつありましたか。"
+}
