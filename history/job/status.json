@@ -1,11 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/013_b_zangyo0",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/014_a_chori",
  "done": [
   "pick",
   "write"
  ],
- "started": "2026-10-31T01:11:39+09:00",
- "tries": 2,
+ "started": "2026-10-31T05:39:38+09:00",
+ "tries": 1,
  "code": "80e9bf6960c4",
  "stage": "gate_script"
 }
