@@ -10,10 +10,10 @@
  ],
  "started": "2026-10-30T18:04:25+09:00",
  "tries": 0,
- "code": "59a3e374af41",
+ "code": "d49fc61706ea",
  "stage": "images",
  "updated": "2026-10-30T18:43:40+09:00",
  "busy": {
-  "images": 1
+  "images": 2
  }
 }
