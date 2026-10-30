@@ -24,20 +24,20 @@
   },
   {
    "id": "C02",
-   "narration": "65歳のさわこさん、春に財布を新調したそうよ。",
+   "narration": "65歳のさわこさん、新しい財布にしたのに、",
    "image_en": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a new plain cream-colored wallet in both hands and glancing with a slightly troubled face at a half-open drawer nearby. Warm afternoon light.",
    "chars": [
     "sawako"
    ],
    "subs": [
     "65歳の\nさわこさん、",
-    "春に財布を\n新調したそうよ。"
+    "新しい財布に\nしたのに、"
    ],
    "image": "Sawako sits at a small kitchen table in a present-day Japanese apartment, holding a new plain cream-colored wallet in both hands and glancing with a slightly troubled face at a half-open drawer nearby. Warm afternoon light."
   },
   {
    "id": "C03",
-   "narration": "買い替えたのに、古いほうが捨てられない。",
+   "narration": "前の財布は、捨てられずに引き出しの中。",
    "same_as": "C02",
    "shots": [
     "C02@face"
@@ -46,24 +46,24 @@
     "sawako"
    ],
    "highlight": [
-    "捨てられない"
+    "捨てられず"
    ],
    "subs": [
-    "買い替えたのに、",
-    "古いほうが\n捨てられない。"
+    "前の財布は、",
+    "捨てられずに\n引き出しの中。"
    ]
   },
   {
    "id": "C04",
-   "narration": "開けてみたら、底に小銭が残ってたの。",
-   "image_en": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket. Soft window light.",
+   "narration": "底に小銭が残ってて、捨てる手が止まったの。",
+   "image_en": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket, an older woman's hand paused in mid-air just above it. Soft window light.",
    "chars": [],
    "voice": "sawako",
    "subs": [
-    "開けてみたら、",
-    "底に小銭が\n残ってたの。"
+    "底に小銭が\n残ってて、",
+    "捨てる手が\n止まったの。"
    ],
-   "image": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket. Soft window light."
+   "image": "Close-up of a worn, faded brown wallet lying open on a wooden table, a few coins still left at the bottom of the coin pocket, an older woman's hand paused in mid-air just above it. Soft window light."
   },
   {
    "id": "C05",
@@ -94,20 +94,21 @@
   },
   {
    "id": "C07",
-   "narration": "長く使った財布には、思いがこもるそうよ。",
+   "narration": "長年手になじんだ財布だから、お礼をして送るの。",
    "same_as": "C05",
    "shots": [
     "C05@full"
    ],
    "chars": [],
    "subs": [
-    "長く使った\n財布には、",
-    "思いがこもる\nそうよ。"
+    "長年手に\nなじんだ",
+    "財布だから、",
+    "お礼をして\n送るの。"
    ]
   },
   {
    "id": "C08",
-   "narration": "取っておくなら、空にして包めば大丈夫よ。",
+   "narration": "取っておくなら、空にして包んでみてね。",
    "image_en": "Close-up of an older woman's hands gently folding a sheet of plain white paper around an empty, worn brown wallet on a wooden table. Soft warm light.",
    "chars": [],
    "peak": true,
@@ -115,26 +116,27 @@
    "motion": true,
    "anim": "kling",
    "highlight": [
-    "大丈夫"
+    "空にして"
    ],
-   "tts_text": "取っておくなら、からにして包めば大丈夫よ。",
+   "tts_text": "取っておくなら、からにして包んでみてね。",
    "subs": [
     "取っておくなら、",
-    "空にして\n包めば",
-    "大丈夫よ。"
+    "空にして\n包んでみてね。"
    ],
    "image": "Close-up of an older woman's hands gently folding a sheet of plain white paper around an empty, worn brown wallet on a wooden table. Soft warm light."
   },
   {
    "id": "C09",
    "narration": "最初は、小銭もカードも全部出すの。",
-   "image_en": "Close-up of an older woman's hands taking a few coins and blank plastic cards out of a worn brown wallet into a small ceramic dish on a wooden table.",
+   "same_as": "C04",
+   "shots": [
+    "C04@close"
+   ],
    "chars": [],
    "subs": [
     "最初は、\n小銭もカードも",
     "全部出すの。"
-   ],
-   "image": "Close-up of an older woman's hands taking a few coins and blank plastic cards out of a worn brown wallet into a small ceramic dish on a wooden table."
+   ]
   },
   {
    "id": "C10",
@@ -154,29 +156,27 @@
   },
   {
    "id": "C11",
-   "narration": "そして、手放す日は自分で決めてね。",
-   "same_as": "C01",
-   "shots": [
-    "C01@full"
-   ],
+   "narration": "そして、小銭は今の財布へ移してね。",
+   "image_en": "Close-up of an older woman's hands dropping a few coins into a new plain cream-colored wallet on a wooden table, a small bundle wrapped in plain white paper beside it. Gentle warm light.",
    "chars": [],
    "subs": [
-    "そして、\n手放す日は",
-    "自分で決めてね。"
-   ]
+    "そして、\n小銭は",
+    "今の財布へ\n移してね。"
+   ],
+   "image": "Close-up of an older woman's hands dropping a few coins into a new plain cream-colored wallet on a wooden table, a small bundle wrapped in plain white paper beside it. Gentle warm light."
   },
   {
    "id": "C12",
-   "narration": "見つけた小銭は、今の財布へ移したそうよ。",
-   "image_en": "Sawako at her kitchen table, smiling softly as she drops a few coins into a new plain cream-colored wallet, a small bundle wrapped in plain white paper beside her. Gentle evening light.",
+   "narration": "包みは、引き出しに戻したそうよ。",
+   "image_en": "Sawako kneels by a wooden dresser in her present-day Japanese apartment, smiling softly as she places a small bundle wrapped in plain white paper back into an open drawer. Gentle evening light.",
    "chars": [
     "sawako"
    ],
    "subs": [
-    "見つけた\n小銭は、",
-    "今の財布へ\n移したそうよ。"
+    "包みは、",
+    "引き出しに\n戻したそうよ。"
    ],
-   "image": "Sawako at her kitchen table, smiling softly as she drops a few coins into a new plain cream-colored wallet, a small bundle wrapped in plain white paper beside her. Gentle evening light."
+   "image": "Sawako kneels by a wooden dresser in her present-day Japanese apartment, smiling softly as she places a small bundle wrapped in plain white paper back into an open drawer. Gentle evening light."
   },
   {
    "id": "C13",
@@ -196,7 +196,7 @@
   },
   {
    "id": "C14",
-   "narration": "すぐ手放せなくても、包んだ日を区切りにしてみてね。",
+   "narration": "包んだ日が区切り、手放す日は自分で決めていいの。",
    "same_as": "C12",
    "shots": [
     "C12@full"
@@ -204,10 +204,13 @@
    "chars": [
     "sawako"
    ],
+   "highlight": [
+    "区切り"
+   ],
    "subs": [
-    "すぐ\n手放せなくても、",
-    "包んだ日を\n区切りに",
-    "してみてね。"
+    "包んだ日が\n区切り、",
+    "手放す日は\n自分で",
+    "決めていいの。"
    ]
   },
   {
