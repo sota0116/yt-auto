@@ -1,15 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S101_n007",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S102_n015",
  "done": [
   "pick",
-  "write",
-  "gate_script"
+  "write"
  ],
- "started": "2026-10-29T17:28:55+09:00",
- "tries": 0,
+ "started": "2026-10-31T04:17:31+09:00",
+ "tries": 1,
  "code": "80e9bf6960c4",
- "stage": "gate_video",
- "updated": "2026-10-29T23:03:12+09:00",
- "video_rebuilt": true,
- "video_lost": true
+ "stage": "gate_script"
 }

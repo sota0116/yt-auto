@@ -1,0 +1,267 @@
+{
+ "format": "short",
+ "title": "もしも黒船が、アメリカに来た日本の船だったら。舵はアメリカ人 #もしも #日本史 #幕末",
+ "promise": "1860年に咸臨丸が太平洋を渡れたのは、日本人だけでやった測量の腕と、嵐で舵を助けたアメリカ人11人の両方のおかげだった、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※咸臨丸の役目が「アメリカに開国を迫ること」だったという話は作り話です。1860年の咸臨丸の太平洋横断（艦長・勝海舟、ブルック大尉らアメリカ人11人が同乗、37日でサンフランシスコ着）、嵐でアメリカ人が舵をとったこと、サンフランシスコでの歓迎は史実をもとにしています。勝海舟の船酔いは伝わる話、新聞の話と船底の手入れは勝海舟の後日談によります。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "幕末",
+  "咸臨丸",
+  "勝海舟",
+  "黒船",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "舵はアメリカ人"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：咸臨丸の役目が「アメリカに開国を迫る黒船」だった。日付・人・嵐・アメリカ人の助け・測量・歓迎・船底の手入れ・新聞の話は史実（記録）のまま",
+  "役目を知っているのは日本側の乗組員だけ。同乗したアメリカ人11人（ブルック大尉ら）は役目を知らない（だから舵や見張りを手伝う）",
+  "サンフランシスコの町の人・新聞・船を手入れした人も役目を知らない（だから大歓迎し、厚意で世話する）",
+  "勝海舟は航海の大半を寝て過ごしたので、嵐の甲板で誰が舵を握ったかを自分の目では見ていない。舵のことは語り手が、ブルックの記録をもとに言う。新聞の話は勝の後日談として語り手が引く",
+  "ブルックの日記・福沢の自伝・勝の後日談は史実の記録で、作り話の役目には触れていない。記録が食い違うと言うのも、役目と結び付けて言う（「迫られる側が動かしていた」）のも語り手だけ",
+  "人物のセリフは無い（勝海舟・ブルック・福沢は characters.json にいないため、語り手が記録を引く形にする）"
+ ],
+ "world_terms": [
+  "開国",
+  "役目",
+  "黒船",
+  "舵",
+  "アメリカ",
+  "迫",
+  "書",
+  "独力",
+  "回想"
+ ],
+ "voices": {},
+ "facts": [
+  "咸臨丸は幕府がオランダに注文して造らせた軍艦で、1860年2月10日（旧暦1月19日）に浦賀を出て、3月17日にサンフランシスコに着いた。艦長は勝海舟。日本の軍艦として初めて太平洋を渡った。出どころ：コトバンク「咸臨丸」（日本大百科全書・ブリタニカ国際大百科事典・山川日本史小辞典） kotobank.jp/word/咸臨丸",
+  "乗っていたのは日本人と、便乗したアメリカ人の士官ら11人（ブルック大尉を含む）。アメリカ人水夫の助けを得ながら日章旗を掲げて太平洋を渡った。出どころ：コトバンク「咸臨丸」（ブリタニカ）、外務省 外交史料館 展示解説 www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/14.html（検索の抜粋で確認）",
+  "出航の翌日から荒天。ブルックの記録では、アメリカ水兵が当直を行い、荒天の場合も見張りに立ち、舵をとり舵手の指揮をとった。齋藤留蔵の日記では、日本人は初めての荒天で疲労・狼狽し、帆の上げ下ろしは全てアメリカ人の助力を受けた。ブルックは日記に「日本人達は全く我々に頼り切っている」と書き、航海を通じて日本人は腕をあげ、充分船をあやつれるようになったとも記した。サンフランシスコまで37日。出どころ：和樂web intojapanwaraku.com/rock/culture-rock/168013/（ブルックの日記・齋藤留蔵の日記を引く）",
+  "福沢諭吉（木村摂津守の従者として乗船）の自伝によれば、航海中の測量は日本人だけで行い、ブルックの助けは借りなかった（「米人に少しも助けは借りなかった」）。出どころ：和樂web 同上（『福翁自伝』を引く）。台本では「福沢は自伝に書く」と、本人の記録として言う。ブルックの日記と書き方が逆だと言うのは語り手のまとめ",
+  "勝海舟は航海中ほとんど床に伏せ、医官の看護を受けたと当時のサンフランシスコの新聞に載ったとされる（和樂web 同上）。荒天による船酔いで大変だったようだ（大田区 おおた区報 平成30年8月1日号 www.city.ota.tokyo.jp/kuho/kuho_web/20180801/tokusyu.html）。台本では「船酔いだったと伝わる」",
+  "咸臨丸の一行は、アメリカで大歓迎を受けた。出どころ：おおた区報 同上",
+  "勝海舟の後日談によれば、サンフランシスコに着くと、日本人が独力でこんな小さい軍艦ではるばる来たと新聞で大変褒められ、船底の付着物やペンキの塗り替えまで厚意でことごとく世話してくれた。出どころ：和樂web 同上（勝海舟の後日談を引く）。台本では「勝の回想では」と出どころを言う",
+  "咸臨丸の役目が「アメリカに開国を迫ること」だったというのは作り話（本当の役目は、日米修好通商条約の批准書を届ける遣米使節の随行）"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "日本の\n黒船",
+   "narration": "1860年、日本の船が太平洋を渡った。もしもそれが、アメリカに開国を迫る黒船だったら。",
+   "highlight": [
+    "1860年",
+    "開国を迫る"
+   ],
+   "image_en": "A black-hulled three-masted Japanese steam warship with one tall funnel and a plain white flag with a red sun disc, plowing through huge dark Pacific waves toward the viewer, black smoke pouring out, stormy sunset sky.",
+   "shots": [
+    "n01",
+    "n01@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "A black-hulled three-masted Japanese steam warship with one tall funnel and a plain white flag with a red sun disc, plowing through huge dark Pacific waves toward the viewer, black smoke pouring out, stormy sunset sky.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "2月、咸臨丸が浦賀を出る。艦長は勝海舟。",
+   "highlight": [
+    "勝海舟"
+   ],
+   "tts_text": "2月、かんりんまるが浦賀を出る。艦長は勝海舟。",
+   "image_en": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama and two swords at his waist, standing proudly on the wooden deck of a sailing steamship at the harbor of Uraga, ropes and masts behind him.",
+   "shots": [
+    "n02",
+    "n02@face"
+   ],
+   "chars": [],
+   "image": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama and two swords at his waist, standing proudly on the wooden deck of a sailing steamship at the harbor of Uraga, ropes and masts behind him."
+  },
+  {
+   "id": "n03",
+   "narration": "ところが出た翌日から、冬の海は大荒れ。",
+   "highlight": [
+    "大荒れ"
+   ],
+   "image_en": "A black-hulled three-masted Japanese steam warship tossed steeply by giant winter storm waves at night, sails torn, lightning over the dark sea, Japanese sailors in plain kimono clinging to ropes on the deck.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "A black-hulled three-masted Japanese steam warship tossed steeply by giant winter storm waves at night, sails torn, lightning over the dark sea, Japanese sailors in plain kimono clinging to ropes on the deck.",
+   "motion": true
+  },
+  {
+   "id": "n04",
+   "narration": "艦長は寝込む。船酔いだったと伝わる。",
+   "highlight": [
+    "船酔い"
+   ],
+   "image_en": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, lying pale and green-faced on a narrow bunk in a swaying wooden cabin lit by a swinging lantern, a Japanese ship doctor in a plain dark kimono kneeling beside him.",
+   "shots": [
+    "n04",
+    "n04@face"
+   ],
+   "chars": [],
+   "image": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, lying pale and green-faced on a narrow bunk in a swaying wooden cabin lit by a swinging lantern, a Japanese ship doctor in a plain dark kimono kneeling beside him."
+  },
+  {
+   "id": "n05",
+   "narration": "嵐の中、舵を握ったのはアメリカ人の水兵だった。",
+   "highlight": [
+    "アメリカ人"
+   ],
+   "image_en": "In a raging night storm on the deck of the Japanese warship, American sailors in dark blue 1860s navy jackets grip the big wooden steering wheel with all their strength, rain lashing their faces, while Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform with brass buttons, shouts orders beside them; behind them exhausted Japanese sailors in plain kimono cling to the ropes, wide-eyed, lightning flashing.",
+   "shots": [
+    "n05",
+    "n05@close",
+    "n05@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "In a raging night storm on the deck of the Japanese warship, American sailors in dark blue 1860s navy jackets grip the big wooden steering wheel with all their strength, rain lashing their faces, while Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform with brass buttons, shouts orders beside them; behind them exhausted Japanese sailors in plain kimono cling to the ropes, wide-eyed, lightning flashing.",
+   "motion": true
+  },
+  {
+   "id": "n06",
+   "narration": "開国を迫る黒船を、迫られる側が動かしていた。",
+   "highlight": [
+    "迫られる側"
+   ],
+   "image_en": "Close view of the wet wooden steering wheel of the Japanese warship in a night storm: big bearded American sailors' hands in dark blue navy sleeves turning it hard, the plain white flag with a red sun disc snapping above them in the wind and spray, dark waves rising behind.",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": [],
+   "image": "Close view of the wet wooden steering wheel of the Japanese warship in a night storm: big bearded American sailors' hands in dark blue navy sleeves turning it hard, the plain white flag with a red sun disc snapping above them in the wind and spray, dark waves rising behind."
+  },
+  {
+   "id": "n07",
+   "narration": "ブルックは日記に書く。日本人は我々に頼り切っている。",
+   "highlight": [
+    "頼り切っている"
+   ],
+   "image_en": "Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform with brass buttons, writing in a blank leather diary by lantern light in a small ship cabin, a wry tired look on his face.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform with brass buttons, writing in a blank leather diary by lantern light in a small ship cabin, a wry tired look on his face."
+  },
+  {
+   "id": "n08",
+   "narration": "福沢は自伝に書く。測量にアメリカ人の助けは借りなかった。",
+   "highlight": [
+    "助けは借りなかった"
+   ],
+   "image_en": "Two Japanese navigators in plain kimono and topknots on a rolling deck at noon, one holding a brass sextant up to the sun with fierce concentration, the other writing on a blank chart board; a young Fukuzawa Yukichi, about twenty-five, slim with a high forehead, topknot and plain grey kimono, watches closely.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "image": "Two Japanese navigators in plain kimono and topknots on a rolling deck at noon, one holding a brass sextant up to the sun with fierce concentration, the other writing on a blank chart board; a young Fukuzawa Yukichi, about twenty-five, slim with a high forehead, topknot and plain grey kimono, watches closely."
+  },
+  {
+   "id": "n09",
+   "narration": "同じ航海を、二人は正反対に書いた。",
+   "highlight": [
+    "正反対"
+   ],
+   "image_en": "On the deck of the Japanese warship under a grey sky, Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform, and a young Fukuzawa Yukichi, about twenty-five, slim with a high forehead, topknot and plain grey kimono, stand back to back, each holding a closed blank notebook, frowning in opposite directions.",
+   "shots": [
+    "n09",
+    "n09@left",
+    "n09@right"
+   ],
+   "chars": [],
+   "image": "On the deck of the Japanese warship under a grey sky, Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform, and a young Fukuzawa Yukichi, about twenty-five, slim with a high forehead, topknot and plain grey kimono, stand back to back, each holding a closed blank notebook, frowning in opposite directions."
+  },
+  {
+   "id": "n10",
+   "narration": "ブルックも、日本人は腕を上げたと残す。",
+   "highlight": [
+    "腕を上げた"
+   ],
+   "image_en": "Japanese sailors in plain kimono and headbands hauling sail ropes in perfect rhythm on a sunny deck under full white sails; Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform, nods in approval with his arms folded.",
+   "shots": [
+    "n10",
+    "n10@right"
+   ],
+   "chars": [],
+   "image": "Japanese sailors in plain kimono and headbands hauling sail ropes in perfect rhythm on a sunny deck under full white sails; Lieutenant John Brooke, an American naval officer about thirty-three with dark wavy hair, a full dark beard and a dark blue 1860s US Navy uniform, nods in approval with his arms folded."
+  },
+  {
+   "id": "n11",
+   "narration": "37日後、サンフランシスコ。町は大歓迎。",
+   "highlight": [
+    "大歓迎"
+   ],
+   "image_en": "A black-hulled three-masted Japanese steam warship with a plain white flag with a red sun disc entering a busy 1860 American harbor with wooden piers and hills of wooden houses; crowds of Americans in top hats and long dresses cheer and wave hats from the docks.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": [],
+   "image": "A black-hulled three-masted Japanese steam warship with a plain white flag with a red sun disc entering a busy 1860 American harbor with wooden piers and hills of wooden houses; crowds of Americans in top hats and long dresses cheer and wave hats from the docks."
+  },
+  {
+   "id": "n12",
+   "narration": "勝の回想では、船底の塗り直しまで厚意で世話された。",
+   "highlight": [
+    "厚意"
+   ],
+   "image_en": "A black-hulled three-masted Japanese steam warship with one tall funnel and a plain white flag with a red sun disc resting in a wooden dock of an 1860 American harbor, American workers in shirtsleeves and flat caps scraping and repainting its black hull from scaffolds, while Japanese sailors in plain kimono watch from the deck, surprised and grateful, sunny day.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "image": "A black-hulled three-masted Japanese steam warship with one tall funnel and a plain white flag with a red sun disc resting in a wooden dock of an 1860 American harbor, American workers in shirtsleeves and flat caps scraping and repainting its black hull from scaffolds, while Japanese sailors in plain kimono watch from the deck, surprised and grateful, sunny day."
+  },
+  {
+   "id": "n13",
+   "narration": "新聞は、日本人が独力で来たと褒めた。",
+   "highlight": [
+    "独力"
+   ],
+   "image_en": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, now healthy and grinning proudly, sitting in a lantern-lit Japanese room and holding up an old folded American newspaper with no readable text, telling the story to a listener off-screen.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": [],
+   "image": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, now healthy and grinning proudly, sitting in a lantern-lit Japanese room and holding up an old folded American newspaper with no readable text, telling the story to a listener off-screen."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, finally standing on deck, still a little pale, looking at the hills of San Francisco across the bay at dusk with a small wry smile.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [],
+   "image": "Katsu Kaishu, a Japanese naval commander about thirty-seven with a lean face, sharp dark eyes, chonmage topknot, dark navy haori over grey hakama, finally standing on deck, still a little pale, looking at the hills of San Francisco across the bay at dusk with a small wry smile."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
