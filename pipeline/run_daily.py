@@ -558,11 +558,29 @@ def make_one(ch, st, upload, kind=None):
     if T("charts", "make_charts_job.py"):
         step("charts", lambda: run(work, "charts", [T("charts", "make_charts_job.py"), work], ch))
 
+    def images_back():
+        """絵が足りないのに「絵の段は済み」のままだと、同じ所で毎回止まる（2026-10-30 nihongi L101 は J05・J06 が待ちのまま、okinu 101 は D01 が
+        Lovart のエラーで2回失敗したまま止まり続けた）。絵の段へ1回だけ戻す。失敗の印は消して頼み直し、待ちの絵は受け取り直す"""
+        if st.get("images_back"):
+            return
+        st["images_back"] = True
+        lp = os.path.join(work, "images", "_lovart.json")
+        lg = jload(lp, {})
+        for i in [i for i, v in lg.items() if isinstance(v, dict) and v.get("状態") == "失敗"]:
+            lg.pop(i)
+        jsave(lp, lg)
+        st["done"] = [d for d in st["done"] if d not in ("images", "motion", "gate_images")]
+        st.get("busy", {}).pop("images", None)
+        jsave(sp, st)
+        raise Busy("絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します")
+
     def gate_images():
         r = run(work, "gate_images", ["gate_images.py", work, "--fix"], ch, ok=(0, 1, 2))
         if r.returncode == 2:
             raise Stop("絵の使い回しが15%を超えました（絵ゲート）。その回は止め、在庫で公開をつなぐ")
         if r.returncode == 1:
+            if "まだ絵が無いカット" in r.stdout:
+                images_back()
             raise Stop("絵ゲートの不合格が残りました（images\\_gate.json）")
     step("gate_images", gate_images)
     def build_args():  # 長さの足りない回は、カットの間を広げて組み直す（決まり7。build_gap は status に残す）
@@ -571,14 +589,9 @@ def make_one(ch, st, upload, kind=None):
         try:
             run(work, "build", build_args(), ch)
         except Stop as e:
-            if "絵がないカット" not in str(e) or st.get("images_back"):
-                raise
-            # 絵が足りないのに「絵の段は済み」のままだと、組み立てで毎回止まる（2026-10-30 nihongi L101 が J05・J06 待ちのまま止まり続けた）。絵の段へ1回だけ戻す
-            st["images_back"] = True
-            st["done"] = [d for d in st["done"] if d not in ("images", "motion", "gate_images")]
-            st.get("busy", {}).pop("images", None)
-            jsave(sp, st)
-            raise Busy("絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します")
+            if "絵がないカット" in str(e):
+                images_back()
+            raise
     step("build", build)
 
     def stretch_gap():
@@ -636,7 +649,14 @@ def make_one(ch, st, upload, kind=None):
                 st["video_rebuilt"] = True
                 jsave(sp, st)
                 print("■ 完成動画が作業フォルダに無いので、組み直す（1回だけ）", flush=True)
-                run(work, "build", build_args(), ch)
+                try:
+                    run(work, "build", build_args(), ch)
+                except Stop as e:
+                    if "がありません" not in str(e):
+                        raise
+                    st["done"] = ["pick", "write", "gate_script"]  # 声も絵も無い時は、台本ゲートの次から作り直す（まだ上げていない回だけがここへ来る）
+                    jsave(sp, st)
+                    raise Busy("作業フォルダの声や絵も無いので、声から作り直します。次の実行で続けます")
                 continue
             gap = None if st.get("build_gap") else stretch_gap()
             if gap:
