@@ -1,24 +1,11 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/012_a4_51c2a430",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/013_b_zangyo0",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images",
-  "charts",
-  "gate_images",
-  "build",
-  "gate_video"
+  "write"
  ],
- "started": "2026-10-30T06:28:13+09:00",
- "tries": 0,
- "code": "5cc09caa2d3b",
- "stage": "gate_video",
- "updated": "2026-10-31T01:04:16+09:00",
- "video_swapped": {
-  "C066": "C060"
- }
+ "started": "2026-10-31T01:11:39+09:00",
+ "tries": 1,
+ "code": "80e9bf6960c4",
+ "stage": "gate_script"
 }

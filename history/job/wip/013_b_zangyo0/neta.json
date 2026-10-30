@@ -1,0 +1,23 @@
+{
+ "id": "b_zangyo0",
+ "title": "残業ゼロを宣言した会社",
+ "type": "B",
+ "frame": "B",
+ "target": "残業が減ると給料がどうなるか気になる、20〜40代の会社員",
+ "window_start": "",
+ "window_end": "",
+ "data_ref": "data/job/b_data.json",
+ "premise_numbers": [
+  "0時間"
+ ],
+ "expected_top": "",
+ "facts_cmd": [
+  "b_facts.py",
+  "make",
+  "{work}",
+  "zangyo0"
+ ],
+ "hold": false,
+ "made": "2026-10-31",
+ "順番の型": "B"
+}
