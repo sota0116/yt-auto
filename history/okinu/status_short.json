@@ -1,17 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S103_使い終わった古い財布",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-10-30T06:46:29+09:00",
- "tries": 0,
- "code": "7f4671aaee90",
- "stage": "images",
- "updated": "2026-10-30T18:18:32+09:00",
- "busy": {
-  "images": 1
- }
-}
+{}
