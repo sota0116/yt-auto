@@ -84,5 +84,19 @@
   "line_copy": 2,
   "sub_copy": 1,
   "made": "2026-10-30"
+ },
+ "008_b_komainu_2026": {
+  "neta_id": "b_komainu_2026",
+  "type": "B",
+  "frame": "B-1",
+  "pub_date": "2026-11-09",
+  "window": [
+   "2026-11-03",
+   "2027-04-02"
+  ],
+  "hook_type": "問い",
+  "line_copy": 3,
+  "sub_copy": 2,
+  "made": "2026-10-31"
  }
 }

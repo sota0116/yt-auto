@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/007_b_kamidana_2026",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/008_b_komainu_2026",
  "done": [
   "pick",
   "write",
@@ -8,12 +8,12 @@
   "yomi",
   "reading"
  ],
- "started": "2026-10-30T06:30:04+09:00",
+ "started": "2026-10-31T03:17:32+09:00",
  "tries": 0,
- "code": "5cc09caa2d3b",
+ "code": "80e9bf6960c4",
  "stage": "images",
- "updated": "2026-10-30T18:26:31+09:00",
+ "updated": "2026-10-31T03:50:56+09:00",
  "busy": {
-  "images": 2
+  "images": 1
  }
 }
