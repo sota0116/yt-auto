@@ -8,12 +8,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-10-31T04:16:31+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-01T18:00:00+09:00",
+  "seconds": 48,
+  "title_now": "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "L101_long_s006",
@@ -24,13 +29,18 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-10-31T04:50:46+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【もしも歴史】刀に「心」があったら｜刀狩の夜、1本だけ家に帰った刀の世界線"
   ],
   "comment": "",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-01T20:00:00+09:00",
+  "seconds": 501,
+  "title_now": "【もしも歴史】刀に「心」があったら｜刀狩の夜、1本だけ家に帰った刀の世界線",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

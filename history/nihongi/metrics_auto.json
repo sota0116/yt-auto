@@ -1,7 +1,16 @@
 {
  "S001_裏切り確率": {
   "type": null,
-  "video_id": "-PYlZmROF7k"
+  "video_id": "-PYlZmROF7k",
+  "h72": {
+   "views": 3201,
+   "averageViewPercentage": 114.44000000000001,
+   "averageViewDuration": 51,
+   "subscribersGained": 3,
+   "直す所": [],
+   "取った日": "2026-10-31",
+   "再生（公開ページ）": 4621
+  }
  },
  "S002_信長自身の数字": {
   "type": null,
@@ -26,5 +35,9 @@
  "S006_刀に心があったら": {
   "type": null,
   "video_id": "bILhueZGxMc"
+ },
+ "S007_身分がお金の順だったら": {
+  "type": null,
+  "video_id": "8p4jE0LduPo"
  }
 }

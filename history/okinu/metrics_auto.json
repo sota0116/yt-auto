@@ -5,7 +5,18 @@
  },
  "001v6_財布の中身": {
   "type": "okinu",
-  "video_id": "m-CEE8f8J8A"
+  "video_id": "m-CEE8f8J8A",
+  "h72": {
+   "views": 11,
+   "averageViewPercentage": 52.32,
+   "averageViewDuration": 378,
+   "subscribersGained": 0,
+   "直す所": [
+    "13%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-10-31",
+   "再生（公開ページ）": 43
+  }
  },
  "S008_切出_おみくじ": {
   "type": "okinu",
@@ -26,5 +37,9 @@
  "S003_お札の向き": {
   "type": "okinu",
   "video_id": "r8SCodcdMWs"
+ },
+ "003_玄関のNG5": {
+  "type": "okinu",
+  "video_id": "GNmrB2YYjkM"
  }
 }

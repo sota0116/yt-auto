@@ -139,7 +139,7 @@
   "seconds": 492,
   "title_now": "【意外】介護・福祉に移った人、前の職場を辞めた理由はお金じゃなかった",
   "synthetic_on": null,
-  "views_now": 1705,
+  "views_now": 1735,
   "published": true,
   "published_at": "2026-10-27T19:00:11+09:00",
   "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 56,
+  "views_now": 177,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -203,7 +203,7 @@
   "seconds": 531,
   "title_now": "施工管理は建築が年収54万円上。でも働く時間が短いのは土木だった",
   "synthetic_on": null,
-  "views_now": 4,
+  "views_now": 5,
   "published": true,
   "published_at": "2026-10-29T19:00:36+09:00",
   "comment_id": "UgwRTgviKeQ0d-2mwN54AaABAg",
@@ -235,7 +235,7 @@
   "seconds": 500,
   "title_now": "【悲報】大型トラック運転手、全職業でいちばん長く働くのに年収は真ん中",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 1,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -365,7 +365,13 @@
    "タクシー運転手は割に合う？ 年収約451万円を1時間あたりに直した結果",
    "タクシー運転手と同じ年収のあなた、1時間あたりでは損しているかもしれない"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": "2026-11-04T19:00:00+09:00",
+  "seconds": 399,
+  "title_now": "【給与逆転】タクシー運転手は年収が近い仕事で一番稼ぐのに、なぜ時給では勝てないのか",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "013_b_zangyo0",
@@ -383,7 +389,13 @@
    "もし会社が残業ゼロを宣言したら、残業代が年に約40万円消える人がいる",
    "あなたの残業代、消えても平気？ もし会社が残業をゼロにしたら"
   ],
-  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": "2026-11-05T19:00:00+09:00",
+  "seconds": 518,
+  "title_now": "【悲報】残業ゼロを宣言した平均的な会社、45歳の課長より給料が減った人がいた",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "014_a_chori",
@@ -401,6 +413,12 @@
    "調理人は割に合うのか。年収約379万円を1時間あたりに直した結果",
    "あなたの時給、調理人より上？ 全産業より長く立つ厨房の1時間の値段"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": "2026-11-06T19:00:00+09:00",
+  "seconds": 514,
+  "title_now": "【厨房の真実】調理人は好きで入る業界なのに、なぜ辞める人がこんなに多いのか",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
