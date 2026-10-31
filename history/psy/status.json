@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/008_mono_herasu",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/009_zenbu_hitonome",
  "done": [
   "pick",
   "write",
@@ -7,21 +7,14 @@
   "voice",
   "yomi",
   "reading",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video",
-  "thumb",
-  "short"
+  "images"
  ],
- "started": "2026-10-31T10:49:55+09:00",
+ "started": "2026-10-31T23:44:21+09:00",
  "tries": 0,
- "code": "5a927f3b0f37",
- "stage": "short",
- "updated": "2026-10-31T22:58:36+09:00",
+ "code": "9fb328b04ed9",
+ "stage": "motion",
+ "updated": "2026-11-01T02:29:39+09:00",
  "busy": {
-  "images": 1,
   "motion": 1
  }
 }

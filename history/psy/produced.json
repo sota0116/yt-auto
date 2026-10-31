@@ -327,5 +327,70 @@
    ]
   },
   "short_video_id": "d90sb3IODWo"
+ },
+ {
+  "work": "008_mono_herasu",
+  "type": "幸せの心理",
+  "frame": "幸せの心理",
+  "neta_id": "p_mono_herasu",
+  "jobs": [],
+  "made": "2026-10-31",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】物をためずに手放せる人に共通する5つの特徴｜「もったいない」の正体は、持ち主の目だった",
+  "titles": [
+   "【心理学】物をためずに手放せる人に共通する5つの特徴｜「もったいない」の正体は、持ち主の目だった",
+   "【心理学】物をためずに手放せる人の「隠れた特徴」｜思い出は、物ではなく写真に残していた",
+   "【心理学】使わない物を、つい取っておく人の正体｜自分の物になると、値段は2倍ほどに上がった"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-10-31 の「次の回で試すこと」から2つ：1 タイトルの1番目を型C（〇〇な人に共通するN個の特徴｜〜）にした。3 サムネB案の上の段に算用数字（2倍）を入れて黄にした。2 の相手の一言から入るつかみは、人づきあいの回ではないので入れていない。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:13 押し入れの奥で、手が止まる",
+   "2:58 特徴1　もったいないを先で考える",
+   "5:32 特徴2　持ち主の目で値をつけない",
+   "7:54 特徴3　思い出は写真に残す",
+   "10:14 特徴4　物より、出来事を喜ぶ",
+   "12:31 特徴5　家を、くつろぐ場所と語る",
+   "15:35 手放す前に試せる3つの工夫",
+   "17:27 まとめ"
+  ],
+  "video_id": "mu4FkBUf1x8",
+  "回した理由": null,
+  "studies": [
+   "Ekerdt & Baker (2014) The Journals of Gerontology: Series B",
+   "Arkes & Blumer (1985) Organizational Behavior and Human Decision Processes",
+   "Kahneman, Knetsch & Thaler (1990) Journal of Political Economy",
+   "Winterich, Reczek & Irwin (2017) Journal of Marketing",
+   "Van Boven & Gilovich (2003) Journal of Personality and Social Psychology",
+   "Saxbe & Repetti (2010) Personality and Social Psychology Bulletin",
+   "Donnelly, Lamberton, Reczek & Norton (2017) Journal of the Association for Consumer Research"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    6,
+    7,
+    8,
+    9,
+    8,
+    6,
+    9,
+    7,
+    6
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "A05の「年のせい、もったいない世代」を、A03の大皿の場面の直後に「私も、そう言われました」と本人の声で受け、A06で「実は、年より先に、ある勘違いが働いている」と答えの形を一言だけ匂わせると、続きが気になる。",
+    "A07〜A09の予告が、マグカップや「共働きの妻」の話で唐突に飛ぶので、A06の直後に「その答えは、あなたの押し入れの中にあります」のように1文で身近な場面へ戻すと、耳だけでも流れが分かる。",
+    "F05〜F10の調査の説明が淡々と並んでいるので、「57%と34%」の数字より先にF11の「露天風呂の方が顔がほころぶ」を出して、聞き手に自分の答えを考えさせてから結果を言うと、講義っぽさが減る。"
+   ]
+  },
+  "short_video_id": "fOdshuVUziY"
  }
 ]
