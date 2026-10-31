@@ -144,39 +144,1203 @@
   "注意": ""
  },
  "B09": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "eb4898dc-aba6-4ce4-bbcb-5759a2727ce5",
-  "頼んだ時刻": 1793415410.5505078,
-  "回": 1
+  "回": 1,
+  "秒": 794,
+  "元": "images/_lovart/B09/lovart_56b76fbab17e.png",
+  "注意": ""
  },
  "B10": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "d4e31ca6-1da0-4783-adc7-4d145a0d32cf",
-  "頼んだ時刻": 1793415410.6944711,
-  "回": 1
+  "回": 1,
+  "秒": 796,
+  "元": "images/_lovart/B10/lovart_e25bc808b867.png",
+  "注意": ""
  },
  "B11": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "c5f17d03-13c7-4e5a-9e63-ab3459bad8c7",
-  "頼んだ時刻": 1793415410.830942,
-  "回": 1
+  "回": 1,
+  "秒": 798,
+  "元": "images/_lovart/B11/lovart_4cbda52a0b0b.png",
+  "注意": ""
  },
  "B12": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "94c6a8bf-9eea-4305-8589-c6eb0e2b93fc",
-  "頼んだ時刻": 1793415410.9825094,
-  "回": 1
+  "回": 1,
+  "秒": 801,
+  "元": "images/_lovart/B12/lovart_abd8cc69af5e.png",
+  "注意": ""
  },
  "B12b": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "2da17788-fd92-4b63-8fed-da2abeb4739a",
-  "頼んだ時刻": 1793415411.1062863,
-  "回": 1
+  "回": 1,
+  "秒": 803,
+  "元": "images/_lovart/B12b/lovart_d439767ade05.png",
+  "注意": ""
  },
  "B13": {
-  "状態": "待ち",
+  "状態": "できた",
   "thread": "c3d453e8-6316-480d-9d89-f9ab0d884908",
-  "頼んだ時刻": 1793415429.1386316,
-  "回": 1
+  "回": 1,
+  "秒": 788,
+  "元": "images/_lovart/B13/lovart_a74f8f2ef6d7.png",
+  "注意": ""
+ },
+ "B14": {
+  "状態": "できた",
+  "thread": "f521fa3a-58a8-4250-8064-ecaf6e01b309",
+  "回": 1,
+  "秒": 689,
+  "元": "images/_lovart/B14/lovart_abfaf0b1b9f5.png",
+  "注意": ""
+ },
+ "B15": {
+  "状態": "できた",
+  "thread": "54d56cd4-da23-47b3-940a-d39840adf374",
+  "回": 1,
+  "秒": 691,
+  "元": "images/_lovart/B15/lovart_faa1afc5f359.png",
+  "注意": ""
+ },
+ "B16": {
+  "状態": "できた",
+  "thread": "b5eaf151-bc6a-4cd6-a756-eaae777b022a",
+  "回": 1,
+  "秒": 694,
+  "元": "images/_lovart/B16/lovart_2657c179d769.png",
+  "注意": ""
+ },
+ "B17": {
+  "状態": "できた",
+  "thread": "18891d33-52e8-4f61-873c-41c0c7d9b71c",
+  "回": 1,
+  "秒": 717,
+  "元": "images/_lovart/B17/lovart_33936cc474df.png",
+  "注意": ""
+ },
+ "B18": {
+  "状態": "できた",
+  "thread": "9e60c3ab-2e86-411c-a684-56dda4afa28e",
+  "回": 1,
+  "秒": 696,
+  "元": "images/_lovart/B18/lovart_8ae8efcd6cf7.png",
+  "注意": ""
+ },
+ "C01": {
+  "状態": "できた",
+  "thread": "0ffce4a9-e61d-4e32-9ec4-e06d38b679f9",
+  "回": 1,
+  "秒": 698,
+  "元": "images/_lovart/C01/lovart_2231931756c1.png",
+  "注意": ""
+ },
+ "C02": {
+  "状態": "できた",
+  "thread": "84764a82-d007-4e87-a5e6-a1fac7c79f1f",
+  "回": 1,
+  "秒": 709,
+  "元": "images/_lovart/C02/lovart_3366a531191a.png",
+  "注意": ""
+ },
+ "C03": {
+  "状態": "できた",
+  "thread": "49314042-4011-43a6-8cea-724f5d3bf900",
+  "回": 1,
+  "秒": 690,
+  "元": "images/_lovart/C03/lovart_7827c96ec7b2.png",
+  "注意": ""
+ },
+ "C04": {
+  "状態": "できた",
+  "thread": "46b27fb2-8860-4aa9-ade4-9e0ff68a06f8",
+  "回": 1,
+  "秒": 711,
+  "元": "images/_lovart/C04/lovart_7003058181f0.png",
+  "注意": ""
+ },
+ "C05": {
+  "状態": "できた",
+  "thread": "098d4dcd-83da-4f14-81eb-f83ab45296a6",
+  "回": 1,
+  "秒": 713,
+  "元": "images/_lovart/C05/lovart_1099e8470149.png",
+  "注意": ""
+ },
+ "C06": {
+  "状態": "できた",
+  "thread": "08aedb6d-7e00-4a91-a4eb-2570302a70c4",
+  "回": 1,
+  "秒": 715,
+  "元": "images/_lovart/C06/lovart_fd2f738d7688.png",
+  "注意": ""
+ },
+ "C07": {
+  "状態": "できた",
+  "thread": "9a06f656-f407-4d07-b1bd-7987d79e55dc",
+  "回": 1,
+  "秒": 699,
+  "元": "images/_lovart/C07/lovart_191eebc5a660.png",
+  "注意": ""
+ },
+ "C08": {
+  "状態": "できた",
+  "thread": "b385ced6-7920-4b03-a23b-1f5a82cc7b4f",
+  "回": 1,
+  "秒": 747,
+  "元": "images/_lovart/C08/lovart_efc51004b23d.png",
+  "注意": ""
+ },
+ "C09": {
+  "状態": "できた",
+  "thread": "6cfd06cb-7862-4d2f-9ae6-53dee9ba3c72",
+  "回": 1,
+  "秒": 769,
+  "元": "images/_lovart/C09/lovart_cf1db48f96c9.png",
+  "注意": ""
+ },
+ "C10": {
+  "状態": "できた",
+  "thread": "68f0fcfa-f9be-4d6d-8c63-a35b0494964f",
+  "回": 1,
+  "秒": 771,
+  "元": "images/_lovart/C10/lovart_28fcd90916fd.png",
+  "注意": ""
+ },
+ "C11": {
+  "状態": "できた",
+  "thread": "121e5cbf-9350-4766-af2d-a8ee77497306",
+  "回": 1,
+  "秒": 774,
+  "元": "images/_lovart/C11/lovart_22165ceda550.png",
+  "注意": ""
+ },
+ "C12": {
+  "状態": "できた",
+  "thread": "62bcc91e-d017-43fa-8810-7f313e00b1b2",
+  "回": 1,
+  "秒": 776,
+  "元": "images/_lovart/C12/lovart_8aa097d9c289.png",
+  "注意": ""
+ },
+ "C13": {
+  "状態": "できた",
+  "thread": "8cca840b-7cb2-4a57-a790-be52efe2e3cf",
+  "回": 1,
+  "秒": 778,
+  "元": "images/_lovart/C13/lovart_54fc36c3236e.png",
+  "注意": ""
+ },
+ "C13b": {
+  "状態": "できた",
+  "thread": "d18a5aad-362a-4deb-b7eb-59bd8b459997",
+  "回": 1,
+  "秒": 731,
+  "元": "images/_lovart/C13b/lovart_20b57371d8ca.png",
+  "注意": ""
+ },
+ "C14": {
+  "状態": "できた",
+  "thread": "50c1ce59-aedd-44de-86f0-56d8f4319c7d",
+  "回": 1,
+  "秒": 764,
+  "元": "images/_lovart/C14/lovart_caa2cd521255.png",
+  "注意": ""
+ },
+ "C15": {
+  "状態": "できた",
+  "thread": "6f43cf10-649e-4750-9a80-814ecf5572be",
+  "回": 1,
+  "秒": 738,
+  "元": "images/_lovart/C15/lovart_d9a79c5e59b6.png",
+  "注意": ""
+ },
+ "C16": {
+  "状態": "できた",
+  "thread": "31676ab0-8257-420e-ba95-a617bc63a739",
+  "回": 1,
+  "秒": 740,
+  "元": "images/_lovart/C16/lovart_eda0f4038e0e.png",
+  "注意": ""
+ },
+ "C17": {
+  "状態": "できた",
+  "thread": "dd00389c-1013-438c-971e-22d5f0034457",
+  "回": 1,
+  "秒": 742,
+  "元": "images/_lovart/C17/lovart_7d0cdf28e1bf.png",
+  "注意": ""
+ },
+ "C18": {
+  "状態": "できた",
+  "thread": "7632de57-0be0-4116-9edd-244d924f48c4",
+  "回": 1,
+  "秒": 744,
+  "元": "images/_lovart/C18/lovart_6a0aa2fd2876.png",
+  "注意": ""
+ },
+ "C19": {
+  "状態": "できた",
+  "thread": "d97b7809-95ef-40b1-b6d9-09e006f82f74",
+  "回": 1,
+  "秒": 747,
+  "元": "images/_lovart/C19/lovart_b0b752f8ddbc.png",
+  "注意": ""
+ },
+ "C20": {
+  "状態": "できた",
+  "thread": "85d3bb43-194d-460e-9892-efa1b806fe4e",
+  "回": 1,
+  "秒": 774,
+  "元": "images/_lovart/C20/lovart_166877fdd60e.png",
+  "注意": ""
+ },
+ "C21": {
+  "状態": "できた",
+  "thread": "f6952cd5-a188-4555-8af8-20003685685d",
+  "回": 1,
+  "秒": 808,
+  "元": "images/_lovart/C21/lovart_a8cee26d6d89.png",
+  "注意": ""
+ },
+ "C22": {
+  "状態": "できた",
+  "thread": "9334e078-7603-4844-8f82-e0aefb83599e",
+  "回": 1,
+  "秒": 755,
+  "元": "images/_lovart/C22/lovart_73241a38260d.png",
+  "注意": ""
+ },
+ "D01": {
+  "状態": "できた",
+  "thread": "c11c8f31-412c-4fe7-962a-aba5b700d4df",
+  "回": 2,
+  "秒": 711,
+  "元": "images/_lovart/D01/lovart_a64aebcc15ce.png",
+  "注意": ""
+ },
+ "D02": {
+  "状態": "できた",
+  "thread": "360a7a9e-e51d-483d-9f6f-c7e3a964c29b",
+  "回": 1,
+  "秒": 824,
+  "元": "images/_lovart/D02/lovart_a013092130f5.png",
+  "注意": ""
+ },
+ "D03": {
+  "状態": "できた",
+  "thread": "3c45ef74-e6f2-4cd4-b87c-a4e7f50a4d66",
+  "回": 1,
+  "秒": 711,
+  "元": "images/_lovart/D03/lovart_e5d7c391cdf0.png",
+  "注意": ""
+ },
+ "D04": {
+  "状態": "できた",
+  "thread": "12a8f327-1bf6-4c44-900d-85302e5bc73a",
+  "回": 1,
+  "秒": 680,
+  "元": "images/_lovart/D04/lovart_6bcb5cc6d8d6.png",
+  "注意": ""
+ },
+ "D05": {
+  "状態": "できた",
+  "thread": "9435272d-e52a-43db-b0cb-80fd4552d76c",
+  "回": 1,
+  "秒": 696,
+  "元": "images/_lovart/D05/lovart_ff2dbb6b41b5.png",
+  "注意": ""
+ },
+ "D06": {
+  "状態": "できた",
+  "thread": "e77b9756-8cdb-4612-9749-2e8bb6f44d39",
+  "回": 1,
+  "秒": 679,
+  "元": "images/_lovart/D06/lovart_f5b65c896dfe.png",
+  "注意": ""
+ },
+ "D07": {
+  "状態": "できた",
+  "thread": "c4003a6d-4141-4bda-af6f-327a52a20e14",
+  "回": 1,
+  "秒": 663,
+  "元": "images/_lovart/D07/lovart_fb6c806ed781.png",
+  "注意": ""
+ },
+ "D08": {
+  "状態": "できた",
+  "thread": "81dc3eb2-accb-42dd-8d79-135b7e24e8b7",
+  "回": 1,
+  "秒": 634,
+  "元": "images/_lovart/D08/lovart_4570f47f44cb.png",
+  "注意": ""
+ },
+ "D09": {
+  "状態": "できた",
+  "thread": "530949c5-99b4-43ad-9065-f99bc3928047",
+  "回": 1,
+  "秒": 555,
+  "元": "images/_lovart/D09/lovart_2d6b6ad444d5.png",
+  "注意": ""
+ },
+ "D10": {
+  "状態": "できた",
+  "thread": "bc46c618-a567-4d3e-8a50-6c68ccad6d3b",
+  "回": 1,
+  "秒": 539,
+  "元": "images/_lovart/D10/lovart_29fe5166c982.png",
+  "注意": ""
+ },
+ "D11": {
+  "状態": "できた",
+  "thread": "dd558eff-f465-4201-8e22-8a6b3866f6f9",
+  "回": 1,
+  "秒": 523,
+  "元": "images/_lovart/D11/lovart_4ef3b8a867ef.png",
+  "注意": ""
+ },
+ "D11b": {
+  "状態": "できた",
+  "thread": "2bb41564-8c9b-4740-86ba-a0d9f3cba7cc",
+  "回": 1,
+  "秒": 539,
+  "元": "images/_lovart/D11b/lovart_b1f73af69c4d.png",
+  "注意": ""
+ },
+ "D12": {
+  "状態": "できた",
+  "thread": "45f698ba-403f-4dfb-8987-3d950d4f2dae",
+  "回": 1,
+  "秒": 537,
+  "元": "images/_lovart/D12/lovart_03f0309ba5cc.png",
+  "注意": ""
+ },
+ "D13": {
+  "状態": "できた",
+  "thread": "f29a3ae6-42ef-4f1d-981f-8f17c2da8f6d",
+  "回": 1,
+  "秒": 539,
+  "元": "images/_lovart/D13/lovart_d0f3df2e015d.png",
+  "注意": ""
+ },
+ "D14": {
+  "状態": "できた",
+  "thread": "17248d19-f5a4-4201-a88d-1c5152e5ba01",
+  "回": 1,
+  "秒": 428,
+  "元": "images/_lovart/D14/lovart_0a51499c90ed.png",
+  "注意": ""
+ },
+ "D14b": {
+  "状態": "できた",
+  "thread": "fc549606-2e7f-416a-a8b9-2dea8b3c9665",
+  "回": 1,
+  "秒": 772,
+  "元": "images/_lovart/D14b/lovart_2d732ca90f3f.png",
+  "注意": ""
+ },
+ "D15": {
+  "状態": "できた",
+  "thread": "83c6c1b1-9cde-4c38-931c-b65da5fdb34c",
+  "回": 1,
+  "秒": 409,
+  "元": "images/_lovart/D15/lovart_fec3c8019f89.png",
+  "注意": ""
+ },
+ "D16": {
+  "状態": "できた",
+  "thread": "37bd12cd-4924-44aa-a065-77e0201e1805",
+  "回": 1,
+  "秒": 921,
+  "元": "images/_lovart/D16/lovart_5e8a03c20425.png",
+  "注意": "一部の道具が断られた"
+ },
+ "D17": {
+  "状態": "できた",
+  "thread": "29cc6f9d-ca56-4634-aec3-4837ad118985",
+  "回": 1,
+  "秒": 409,
+  "元": "images/_lovart/D17/lovart_b2f456fd7e93.png",
+  "注意": ""
+ },
+ "D18": {
+  "状態": "できた",
+  "thread": "dc6a84b1-2993-41ea-8267-0b97ad7db9f0",
+  "回": 1,
+  "秒": 390,
+  "元": "images/_lovart/D18/lovart_7582379dd459.png",
+  "注意": ""
+ },
+ "D19": {
+  "状態": "できた",
+  "thread": "a52a4592-9125-451b-be10-cd5a8192d335",
+  "回": 1,
+  "秒": 360,
+  "元": "images/_lovart/D19/lovart_ba57fe97d858.png",
+  "注意": ""
+ },
+ "D20": {
+  "状態": "できた",
+  "thread": "52d589d9-2b3e-4b64-8b10-d3564c4f38a4",
+  "回": 1,
+  "秒": 363,
+  "元": "images/_lovart/D20/lovart_24c06a40940a.png",
+  "注意": ""
+ },
+ "D21": {
+  "状態": "できた",
+  "thread": "b62bb52a-7164-4f41-90c6-491d0502106e",
+  "回": 1,
+  "秒": 362,
+  "元": "images/_lovart/D21/lovart_50eb8678e701.png",
+  "注意": ""
+ },
+ "E01": {
+  "状態": "できた",
+  "thread": "c2ae2fc3-5ae2-4966-b7e8-9791001b86d9",
+  "回": 1,
+  "秒": 378,
+  "元": "images/_lovart/E01/lovart_2128ee475838.png",
+  "注意": ""
+ },
+ "E02": {
+  "状態": "できた",
+  "thread": "0a4e16cc-a1b9-47ca-9726-598d03d453ee",
+  "回": 1,
+  "秒": 378,
+  "元": "images/_lovart/E02/lovart_06c6458b2f9a.png",
+  "注意": ""
+ },
+ "E03": {
+  "状態": "できた",
+  "thread": "37812613-fcd3-49de-a8c0-b9a444bbab73",
+  "回": 1,
+  "秒": 394,
+  "元": "images/_lovart/E03/lovart_cd8faa28f9e7.png",
+  "注意": ""
+ },
+ "E04": {
+  "状態": "できた",
+  "thread": "d296c41f-b5d0-4b62-8e3a-37964da3f2d9",
+  "回": 1,
+  "秒": 394,
+  "元": "images/_lovart/E04/lovart_ab8aac18ce72.png",
+  "注意": ""
+ },
+ "E05": {
+  "状態": "できた",
+  "thread": "24e7df0a-a0b4-46dc-81a6-9ff834895917",
+  "回": 1,
+  "秒": 393,
+  "元": "images/_lovart/E05/lovart_93607b43bf9d.png",
+  "注意": ""
+ },
+ "E06": {
+  "状態": "できた",
+  "thread": "085eda46-5a59-42d6-9283-9834bf8fda63",
+  "回": 1,
+  "秒": 393,
+  "元": "images/_lovart/E06/lovart_948ae0754004.png",
+  "注意": ""
+ },
+ "E07": {
+  "状態": "できた",
+  "thread": "c8244041-699b-4614-b17a-17ca478999d9",
+  "回": 1,
+  "秒": 423,
+  "元": "images/_lovart/E07/lovart_0f4c18344c99.png",
+  "注意": ""
+ },
+ "E07b": {
+  "状態": "できた",
+  "thread": "5ac4cbb8-a208-435b-bbf8-eb526b722b0c",
+  "回": 1,
+  "秒": 375,
+  "元": "images/_lovart/E07b/lovart_7914121ed2bf.png",
+  "注意": ""
+ },
+ "E08": {
+  "状態": "できた",
+  "thread": "9cee3682-b8e5-4a41-b8bf-32a0e33b28e2",
+  "回": 1,
+  "秒": 359,
+  "元": "images/_lovart/E08/lovart_d0092c3db8d0.png",
+  "注意": ""
+ },
+ "E09": {
+  "状態": "できた",
+  "thread": "423a8474-2593-4a2b-a275-3accd45c5e7c",
+  "回": 1,
+  "秒": 391,
+  "元": "images/_lovart/E09/lovart_09450149e79c.png",
+  "注意": ""
+ },
+ "E10": {
+  "状態": "できた",
+  "thread": "bff3a48b-8c06-4645-b77e-af328829b157",
+  "回": 1,
+  "秒": 359,
+  "元": "images/_lovart/E10/lovart_fc0249bb1654.png",
+  "注意": ""
+ },
+ "E11": {
+  "状態": "できた",
+  "thread": "c5e3b1f2-536b-4403-a8f8-98e688ec5ad9",
+  "回": 1,
+  "秒": 375,
+  "元": "images/_lovart/E11/lovart_785d5de84811.png",
+  "注意": ""
+ },
+ "E12": {
+  "状態": "できた",
+  "thread": "95470839-21e9-472a-a2ec-f114515c4205",
+  "回": 1,
+  "秒": 312,
+  "元": "images/_lovart/E12/lovart_49d681193842.png",
+  "注意": ""
+ },
+ "E13": {
+  "状態": "できた",
+  "thread": "26adaa1a-e4f7-460a-9531-469e8e97bd9d",
+  "回": 1,
+  "秒": 297,
+  "元": "images/_lovart/E13/lovart_570f739f7f4d.png",
+  "注意": ""
+ },
+ "E13b": {
+  "状態": "できた",
+  "thread": "0ca00101-d3d3-4f3b-a6cd-4a021d6674d3",
+  "回": 1,
+  "秒": 297,
+  "元": "images/_lovart/E13b/lovart_e77c98fb91d1.png",
+  "注意": ""
+ },
+ "E14": {
+  "状態": "できた",
+  "thread": "ca73054d-d650-4b10-b4b1-5f8dec71b481",
+  "回": 1,
+  "秒": 297,
+  "元": "images/_lovart/E14/lovart_8eb502a2979d.png",
+  "注意": ""
+ },
+ "E15": {
+  "状態": "できた",
+  "thread": "c33961a2-2d67-4d69-89ff-44d2cd540004",
+  "回": 1,
+  "秒": 279,
+  "元": "images/_lovart/E15/lovart_6af720fcc912.png",
+  "注意": ""
+ },
+ "E16": {
+  "状態": "できた",
+  "thread": "d6827030-726e-49ca-8edf-1b5fff19654b",
+  "回": 1,
+  "秒": 313,
+  "元": "images/_lovart/E16/lovart_1cff453466dd.png",
+  "注意": ""
+ },
+ "E17": {
+  "状態": "できた",
+  "thread": "97c5a3da-8a98-44e9-96c5-5bf128f29cf3",
+  "回": 1,
+  "秒": 282,
+  "元": "images/_lovart/E17/lovart_cabaceedbc94.png",
+  "注意": ""
+ },
+ "E18": {
+  "状態": "できた",
+  "thread": "de8e6157-f674-478e-a7f7-355026f079a2",
+  "回": 1,
+  "秒": 330,
+  "元": "images/_lovart/E18/lovart_cc5880087bbd.png",
+  "注意": ""
+ },
+ "E19": {
+  "状態": "できた",
+  "thread": "1456622a-0c36-44d7-901d-37e7cc1eeb10",
+  "回": 1,
+  "秒": 345,
+  "元": "images/_lovart/E19/lovart_4944f396cdbd.png",
+  "注意": ""
+ },
+ "E20": {
+  "状態": "できた",
+  "thread": "7a1d9108-1d92-4e42-ba7b-2623314b8767",
+  "回": 1,
+  "秒": 329,
+  "元": "images/_lovart/E20/lovart_6e54ad261ac8.png",
+  "注意": ""
+ },
+ "F01": {
+  "状態": "できた",
+  "thread": "aeabc724-0570-40ad-9b89-2e2eea6cf29e",
+  "回": 1,
+  "秒": 442,
+  "元": "images/_lovart/F01/lovart_9fa67de4df8c.png",
+  "注意": ""
+ },
+ "F02": {
+  "状態": "できた",
+  "thread": "2355694c-fb9e-42b8-9d4a-1df6efc615df",
+  "回": 1,
+  "秒": 358,
+  "元": "images/_lovart/F02/lovart_f3ed3755069b.png",
+  "注意": ""
+ },
+ "F03": {
+  "状態": "できた",
+  "thread": "5a52fc34-93ec-4fc5-bc80-205214abe04a",
+  "回": 1,
+  "秒": 345,
+  "元": "images/_lovart/F03/lovart_8e3630e85bdd.png",
+  "注意": ""
+ },
+ "F04": {
+  "状態": "できた",
+  "thread": "fc9a71af-e8f8-4698-b0ed-d94750f17ee9",
+  "回": 1,
+  "秒": 347,
+  "元": "images/_lovart/F04/lovart_b42c2619f2f0.png",
+  "注意": ""
+ },
+ "F05": {
+  "状態": "できた",
+  "thread": "495bbf79-06dd-47b9-9648-6e608ad981fb",
+  "回": 1,
+  "秒": 347,
+  "元": "images/_lovart/F05/lovart_b07cfe8965c9.png",
+  "注意": ""
+ },
+ "F06": {
+  "状態": "できた",
+  "thread": "b3570a19-f9e9-449f-94bc-07992fc1f24b",
+  "回": 1,
+  "秒": 331,
+  "元": "images/_lovart/F06/lovart_f2d262ef8ed7.png",
+  "注意": ""
+ },
+ "F07": {
+  "状態": "できた",
+  "thread": "5381b59e-143d-4ea9-a195-6f92fe02dc76",
+  "回": 1,
+  "秒": 315,
+  "元": "images/_lovart/F07/lovart_0c2d03561697.png",
+  "注意": ""
+ },
+ "F08": {
+  "状態": "できた",
+  "thread": "2d000d4b-b33e-44bc-902d-f4d6b7cf196a",
+  "回": 1,
+  "秒": 331,
+  "元": "images/_lovart/F08/lovart_7a53967654b6.png",
+  "注意": ""
+ },
+ "F08b": {
+  "状態": "できた",
+  "thread": "0f9412cb-4a46-4472-8367-ed22c7b602ad",
+  "回": 1,
+  "秒": 315,
+  "元": "images/_lovart/F08b/lovart_2a4f60487c0f.png",
+  "注意": ""
+ },
+ "F09": {
+  "状態": "できた",
+  "thread": "e3bb286e-691e-48ce-96ea-4b663b263b21",
+  "回": 1,
+  "秒": 315,
+  "元": "images/_lovart/F09/lovart_6ac41411dccd.png",
+  "注意": ""
+ },
+ "F10": {
+  "状態": "できた",
+  "thread": "b88da05b-e357-4822-9cb0-ee707cbaff35",
+  "回": 1,
+  "秒": 297,
+  "元": "images/_lovart/F10/lovart_71d0fd2bac06.png",
+  "注意": ""
+ },
+ "F11": {
+  "状態": "できた",
+  "thread": "54d93c6f-fe5c-48c9-83a6-67b962bad009",
+  "回": 1,
+  "秒": 299,
+  "元": "images/_lovart/F11/lovart_ca4e88e87eef.png",
+  "注意": ""
+ },
+ "F12": {
+  "状態": "できた",
+  "thread": "ec4c0dbf-5dcd-4d11-a069-02a1cdbd8204",
+  "回": 1,
+  "秒": 299,
+  "元": "images/_lovart/F12/lovart_82f7546341b8.png",
+  "注意": ""
+ },
+ "F12b": {
+  "状態": "できた",
+  "thread": "9263fe1c-df15-439a-a2ea-f7e2b2c4dc45",
+  "回": 1,
+  "秒": 314,
+  "元": "images/_lovart/F12b/lovart_6272bfcb717f.png",
+  "注意": ""
+ },
+ "F13": {
+  "状態": "できた",
+  "thread": "e2e01024-b525-437b-a220-eed3e74ae0ba",
+  "回": 1,
+  "秒": 296,
+  "元": "images/_lovart/F13/lovart_d8daccd916e9.png",
+  "注意": ""
+ },
+ "F14": {
+  "状態": "できた",
+  "thread": "d8e55c94-e4da-45d0-8933-62307885fd5b",
+  "回": 1,
+  "秒": 296,
+  "元": "images/_lovart/F14/lovart_973d0fa5d86a.png",
+  "注意": ""
+ },
+ "F15": {
+  "状態": "できた",
+  "thread": "810b6c8f-37ff-4df6-93b1-86dccfda14d6",
+  "回": 1,
+  "秒": 293,
+  "元": "images/_lovart/F15/lovart_df33bf8e47ca.png",
+  "注意": ""
+ },
+ "F16": {
+  "状態": "できた",
+  "thread": "f97c10a2-45cf-4cbe-a503-23a6f6adeb71",
+  "回": 1,
+  "秒": 295,
+  "元": "images/_lovart/F16/lovart_cba5b2a7586c.png",
+  "注意": ""
+ },
+ "F17": {
+  "状態": "できた",
+  "thread": "f0cbaeec-99e1-466f-a83e-43a4accd089e",
+  "回": 1,
+  "秒": 280,
+  "元": "images/_lovart/F17/lovart_b336c81e464a.png",
+  "注意": ""
+ },
+ "F18": {
+  "状態": "できた",
+  "thread": "e5824ac5-dda7-4aa7-82e7-5f9038e19c3b",
+  "回": 1,
+  "秒": 265,
+  "元": "images/_lovart/F18/lovart_77b95c5937f3.png",
+  "注意": ""
+ },
+ "F19": {
+  "状態": "できた",
+  "thread": "c563e7cd-14ce-48b6-8050-145160c72d3a",
+  "回": 1,
+  "秒": 280,
+  "元": "images/_lovart/F19/lovart_ff4c06c8771c.png",
+  "注意": ""
+ },
+ "G01": {
+  "状態": "できた",
+  "thread": "1cbf43c0-0be2-42ee-a906-7d5f9cf8e854",
+  "回": 1,
+  "秒": 299,
+  "元": "images/_lovart/G01/lovart_dedd73028cdc.png",
+  "注意": ""
+ },
+ "G02": {
+  "状態": "できた",
+  "thread": "c09de66c-f013-4e84-a7c2-5a54651c6a57",
+  "回": 1,
+  "秒": 312,
+  "元": "images/_lovart/G02/lovart_aab2997637de.png",
+  "注意": ""
+ },
+ "G03": {
+  "状態": "できた",
+  "thread": "448e652e-d51d-4341-a2f6-120271a6d0f0",
+  "回": 1,
+  "秒": 314,
+  "元": "images/_lovart/G03/lovart_764980933127.png",
+  "注意": ""
+ },
+ "G04": {
+  "状態": "できた",
+  "thread": "bf9278d6-471a-4b13-a27d-45658443a765",
+  "回": 1,
+  "秒": 314,
+  "元": "images/_lovart/G04/lovart_f3b2444b1e1f.png",
+  "注意": ""
+ },
+ "G05": {
+  "状態": "できた",
+  "thread": "9375f3fc-3e10-429e-9013-43e3c366c5a5",
+  "回": 1,
+  "秒": 315,
+  "元": "images/_lovart/G05/lovart_7cf49ad8be86.png",
+  "注意": ""
+ },
+ "G06": {
+  "状態": "できた",
+  "thread": "ef9247c3-2895-4adb-87e9-8317c8019076",
+  "回": 1,
+  "秒": 330,
+  "元": "images/_lovart/G06/lovart_4165bf7eaf2b.png",
+  "注意": ""
+ },
+ "G07": {
+  "状態": "できた",
+  "thread": "c99c2e9a-b036-4937-8f67-6e85d8cb8e9c",
+  "回": 1,
+  "秒": 332,
+  "元": "images/_lovart/G07/lovart_5ed55694b56f.png",
+  "注意": ""
+ },
+ "G08": {
+  "状態": "できた",
+  "thread": "6e095542-e64d-45e0-b70b-f92f6015f837",
+  "回": 1,
+  "秒": 345,
+  "元": "images/_lovart/G08/lovart_43db497ed5ac.png",
+  "注意": ""
+ },
+ "G09": {
+  "状態": "できた",
+  "thread": "a1db631e-f94b-4582-a869-81b17f47d891",
+  "回": 1,
+  "秒": 363,
+  "元": "images/_lovart/G09/lovart_d2318bc04d95.png",
+  "注意": ""
+ },
+ "G10": {
+  "状態": "できた",
+  "thread": "7005dfea-10c8-44e8-a991-9e66d5cccbbe",
+  "回": 1,
+  "秒": 362,
+  "元": "images/_lovart/G10/lovart_9864317b9750.png",
+  "注意": ""
+ },
+ "G11": {
+  "状態": "できた",
+  "thread": "3b6e6896-cea7-460f-b8bd-d332056f8893",
+  "回": 1,
+  "秒": 362,
+  "元": "images/_lovart/G11/lovart_11dadc457680.png",
+  "注意": ""
+ },
+ "G11b": {
+  "状態": "できた",
+  "thread": "167d062f-9c66-45aa-958e-35cc69bcdff9",
+  "回": 1,
+  "秒": 362,
+  "元": "images/_lovart/G11b/lovart_5b073723fa72.png",
+  "注意": ""
+ },
+ "G12": {
+  "状態": "できた",
+  "thread": "11f35123-4b03-4616-990b-cbf264d4aca9",
+  "回": 1,
+  "秒": 375,
+  "元": "images/_lovart/G12/lovart_0f82b6c6784d.png",
+  "注意": ""
+ },
+ "G12b": {
+  "状態": "できた",
+  "thread": "c23d035a-07c8-436c-9eaf-c1556c7260c9",
+  "回": 1,
+  "秒": 390,
+  "元": "images/_lovart/G12b/lovart_482a64341617.png",
+  "注意": ""
+ },
+ "G12c": {
+  "状態": "できた",
+  "thread": "1c375f84-4516-4871-9b60-76b78b1b43d2",
+  "回": 1,
+  "秒": 374,
+  "元": "images/_lovart/G12c/lovart_0c31e9ef13d2.png",
+  "注意": ""
+ },
+ "G13": {
+  "状態": "できた",
+  "thread": "74190084-ddd6-4c40-ac3e-252168f3b2a8",
+  "回": 1,
+  "秒": 423,
+  "元": "images/_lovart/G13/lovart_35bc5485f3dc.png",
+  "注意": ""
+ },
+ "G14": {
+  "状態": "できた",
+  "thread": "544b6b8a-902b-42b4-8dc1-f52c4520c7c5",
+  "回": 1,
+  "秒": 423,
+  "元": "images/_lovart/G14/lovart_8c511d462d9e.png",
+  "注意": ""
+ },
+ "G15": {
+  "状態": "できた",
+  "thread": "593484ea-ea53-42ac-a18c-96c762356d22",
+  "回": 1,
+  "秒": 423,
+  "元": "images/_lovart/G15/lovart_1de357f67367.png",
+  "注意": ""
+ },
+ "G16": {
+  "状態": "できた",
+  "thread": "cadb2234-9c03-47db-9069-74f326e58acb",
+  "回": 1,
+  "秒": 439,
+  "元": "images/_lovart/G16/lovart_8275853ef8ee.png",
+  "注意": ""
+ },
+ "G17": {
+  "状態": "できた",
+  "thread": "c7626a27-fc10-4ebe-b86c-3bd20378eef5",
+  "回": 1,
+  "秒": 439,
+  "元": "images/_lovart/G17/lovart_6a78d21366ef.png",
+  "注意": ""
+ },
+ "G18": {
+  "状態": "できた",
+  "thread": "d5911c4e-4492-474b-b1ea-bd557fe39056",
+  "回": 1,
+  "秒": 457,
+  "元": "images/_lovart/G18/lovart_9610574b2641.png",
+  "注意": ""
+ },
+ "G19": {
+  "状態": "できた",
+  "thread": "d94a8503-864f-48a5-91fd-28ba606701ca",
+  "回": 1,
+  "秒": 471,
+  "元": "images/_lovart/G19/lovart_91aed146564c.png",
+  "注意": ""
+ },
+ "G20": {
+  "状態": "できた",
+  "thread": "137d434c-d700-4562-8526-db6f84953082",
+  "回": 1,
+  "秒": 471,
+  "元": "images/_lovart/G20/lovart_d419c710ab9d.png",
+  "注意": ""
+ },
+ "G21": {
+  "状態": "できた",
+  "thread": "63f2a6bc-ff1b-41f4-9a0f-39c4eb2dadcb",
+  "回": 1,
+  "秒": 487,
+  "元": "images/_lovart/G21/lovart_522450be5e1f.png",
+  "注意": ""
+ },
+ "G22": {
+  "状態": "できた",
+  "thread": "31ca6f6b-ece9-439a-91f7-dc41a919cb6d",
+  "回": 1,
+  "秒": 486,
+  "元": "images/_lovart/G22/lovart_184a4b5f522c.png",
+  "注意": ""
+ },
+ "G23": {
+  "状態": "できた",
+  "thread": "8ad54026-f6cb-4ca9-ab23-ba2111313881",
+  "回": 1,
+  "秒": 486,
+  "元": "images/_lovart/G23/lovart_2bea02704111.png",
+  "注意": ""
+ },
+ "G24": {
+  "状態": "できた",
+  "thread": "093ebf79-f6b1-484a-bccb-6ef8708b5762",
+  "回": 1,
+  "秒": 486,
+  "元": "images/_lovart/G24/lovart_ee0c5af5a000.png",
+  "注意": ""
+ },
+ "H01": {
+  "状態": "できた",
+  "thread": "6b4a9fbe-80c9-4515-957b-e044cbfef4f3",
+  "回": 1,
+  "秒": 503,
+  "元": "images/_lovart/H01/lovart_6d63fc51d5e9.png",
+  "注意": ""
+ },
+ "H02": {
+  "状態": "できた",
+  "thread": "aebe3dd4-7c5d-43b1-846d-80e7ec983937",
+  "回": 1,
+  "秒": 504,
+  "元": "images/_lovart/H02/lovart_4f9a01ecbe5f.png",
+  "注意": ""
+ },
+ "H03": {
+  "状態": "できた",
+  "thread": "7b9fdbcb-1124-4e15-a07e-642422948bcc",
+  "回": 1,
+  "秒": 503,
+  "元": "images/_lovart/H03/lovart_36b148fe91ab.png",
+  "注意": ""
+ },
+ "H03b": {
+  "状態": "できた",
+  "thread": "22537d86-a0ee-4239-8f2e-17895e204093",
+  "回": 1,
+  "秒": 535,
+  "元": "images/_lovart/H03b/lovart_cf0786c40ce2.png",
+  "注意": ""
+ },
+ "H04": {
+  "状態": "できた",
+  "thread": "4cf56b89-6970-4370-a0e2-90c1ea4b4792",
+  "回": 1,
+  "秒": 535,
+  "元": "images/_lovart/H04/lovart_e3accd4549e8.png",
+  "注意": ""
+ },
+ "H05": {
+  "状態": "できた",
+  "thread": "aba232c3-e4cd-4023-ae80-da1368590445",
+  "回": 1,
+  "秒": 534,
+  "元": "images/_lovart/H05/lovart_7147a1bf87a2.png",
+  "注意": ""
+ },
+ "H06": {
+  "状態": "できた",
+  "thread": "11b43c41-6125-49d3-bac5-ac092fe09004",
+  "回": 1,
+  "秒": 551,
+  "元": "images/_lovart/H06/lovart_c53042d3cf78.png",
+  "注意": ""
+ },
+ "H07": {
+  "状態": "できた",
+  "thread": "939ee7b1-e4eb-49d6-a57f-118990f0b0a0",
+  "回": 1,
+  "秒": 551,
+  "元": "images/_lovart/H07/lovart_fd4fb3085d4e.png",
+  "注意": ""
+ },
+ "H08": {
+  "状態": "できた",
+  "thread": "a7472681-b7ac-450b-9bfb-3abe212374b8",
+  "回": 1,
+  "秒": 551,
+  "元": "images/_lovart/H08/lovart_a0ded31f25a8.png",
+  "注意": ""
+ },
+ "H09": {
+  "状態": "できた",
+  "thread": "6a7b9f98-d495-4541-9418-c80ba0bd7841",
+  "回": 1,
+  "秒": 568,
+  "元": "images/_lovart/H09/lovart_b37dd6726ff9.png",
+  "注意": ""
+ },
+ "H10": {
+  "状態": "できた",
+  "thread": "27381ce6-6057-4934-91e7-b1d2a14f076a",
+  "回": 1,
+  "秒": 568,
+  "元": "images/_lovart/H10/lovart_88c94f175bc1.png",
+  "注意": ""
+ },
+ "H11": {
+  "状態": "できた",
+  "thread": "92374480-a433-4f9b-9f7c-9009adc8ec94",
+  "回": 1,
+  "秒": 569,
+  "元": "images/_lovart/H11/lovart_6f46d4ad8bb9.png",
+  "注意": ""
+ },
+ "H12": {
+  "状態": "できた",
+  "thread": "fb92f8f0-7a30-4db0-86f1-472b967299d1",
+  "回": 1,
+  "秒": 568,
+  "元": "images/_lovart/H12/lovart_203bbee44deb.png",
+  "注意": ""
+ },
+ "H13": {
+  "状態": "できた",
+  "thread": "61587594-b561-4a99-9303-e711d6ec1868",
+  "回": 1,
+  "秒": 583,
+  "元": "images/_lovart/H13/lovart_340977901aaa.png",
+  "注意": ""
+ },
+ "H14": {
+  "状態": "できた",
+  "thread": "433dc11e-d8f8-4409-8164-241081c5b522",
+  "回": 1,
+  "秒": 568,
+  "元": "images/_lovart/H14/lovart_f0dd18b63e97.png",
+  "注意": ""
+ },
+ "H15": {
+  "状態": "できた",
+  "thread": "3152df3e-0494-4aac-9a9c-0a5dc19a0049",
+  "回": 1,
+  "秒": 631,
+  "元": "images/_lovart/H15/lovart_e242f3def05c.png",
+  "注意": ""
+ },
+ "H16": {
+  "状態": "できた",
+  "thread": "fd34f398-885d-43f9-8bdc-34edd168f105",
+  "回": 1,
+  "秒": 630,
+  "元": "images/_lovart/H16/lovart_28c346a41fb1.png",
+  "注意": ""
+ },
+ "I07": {
+  "状態": "できた",
+  "thread": "e75c2898-6876-40af-a57d-3ec8e8bc7ab7",
+  "回": 1,
+  "秒": 631,
+  "元": "images/_lovart/I07/lovart_66faa18862b7.png",
+  "注意": ""
+ },
+ "I08": {
+  "状態": "できた",
+  "thread": "6540b569-f75c-416d-b4e4-de95a096b081",
+  "回": 1,
+  "秒": 631,
+  "元": "images/_lovart/I08/lovart_c730ab17131f.png",
+  "注意": ""
+ },
+ "I09": {
+  "状態": "できた",
+  "thread": "36e31365-f125-4479-8f17-4fa6dea1326f",
+  "回": 1,
+  "秒": 615,
+  "元": "images/_lovart/I09/lovart_8c6478f981b0.png",
+  "注意": ""
+ },
+ "I10": {
+  "状態": "できた",
+  "thread": "ba075597-5d6e-441d-abe4-fa7658e64d18",
+  "回": 1,
+  "秒": 614,
+  "元": "images/_lovart/I10/lovart_79d9767cdcb4.png",
+  "注意": ""
+ },
+ "I12": {
+  "状態": "できた",
+  "thread": "ab75b9a4-90de-4264-9b55-02d67f3c2d6b",
+  "回": 1,
+  "秒": 668,
+  "元": "images/_lovart/I12/lovart_2d0cc4430868.png",
+  "注意": ""
+ },
+ "THUMB": {
+  "状態": "できた",
+  "thread": "904df36e-db18-486d-8890-64c3a542ad8f",
+  "回": 1,
+  "秒": 667,
+  "元": "images/_lovart/THUMB/lovart_e30d0d88cab8.png",
+  "注意": ""
  }
 }
