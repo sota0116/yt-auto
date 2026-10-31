@@ -1,0 +1,230 @@
+{
+ "at": "2026-11-01T03:20+09:00",
+ "pc": {
+  "mem": {
+   "freeMb": 293,
+   "totalMb": 16068
+  },
+  "need": 1500,
+  "apps": [
+   {
+    "name": "Chrome",
+    "mb": 1971,
+    "n": 39
+   },
+   {
+    "name": "Claude",
+    "mb": 1953,
+    "n": 18
+   },
+   {
+    "name": "Cursor",
+    "mb": 663,
+    "n": 16
+   },
+   {
+    "name": "ffmpeg",
+    "mb": 443,
+    "n": 2
+   },
+   {
+    "name": "Node",
+    "mb": 65,
+    "n": 58
+   },
+   {
+    "name": "Python",
+    "mb": 40,
+    "n": 4
+   }
+  ],
+  "jobs": [
+   {
+    "ch": "okinu",
+    "stage": "edit",
+    "n": 1,
+    "since": "2026-10-31T01:19+09:00"
+   },
+   {
+    "ch": "kakure",
+    "stage": "edit",
+    "n": 2,
+    "since": "2026-11-01T02:48+09:00"
+   }
+  ],
+  "works": [
+   {
+    "ch": "kakure",
+    "work": "003",
+    "kind": "long",
+    "stage": "images",
+    "at": "2026-11-01T03:20+09:00",
+    "auto": true
+   },
+   {
+    "ch": "nihongi",
+    "work": "L004",
+    "kind": "long",
+    "stage": "upload",
+    "at": "2026-11-01T02:30+09:00",
+    "auto": true,
+    "done": true
+   }
+  ],
+  "heavy": {
+   "ch": "kakure",
+   "since": "2026-11-01T02:48+09:00"
+  },
+  "autoLong": {
+   "task": "ready",
+   "state": "running",
+   "nextAt": "2026-11-01T04:30:00",
+   "lastAt": "2026-11-01T01:30+09:00",
+   "ch": "kakure",
+   "stock": {
+    "nihongi": {
+     "n": 2,
+     "last": "2026-11-01",
+     "taken": [
+      "2026-10-31",
+      "2026-11-01"
+     ]
+    },
+    "spi": {
+     "n": 4,
+     "last": "2026-11-13",
+     "taken": [
+      "2026-11-02",
+      "2026-11-04",
+      "2026-11-09",
+      "2026-11-13"
+     ]
+    },
+    "okinu": {
+     "n": 3,
+     "last": "2026-11-05",
+     "taken": [
+      "2026-11-01",
+      "2026-11-03",
+      "2026-11-05"
+     ]
+    },
+    "kakure": {
+     "n": 1,
+     "last": "2026-11-01",
+     "taken": [
+      "2026-11-01"
+     ]
+    },
+    "shimei": {
+     "n": 1,
+     "last": "2026-11-01",
+     "taken": [
+      "2026-11-01"
+     ]
+    }
+   },
+   "since": "2026-10-31T19:40+09:00"
+  },
+  "tasks": {
+   "auto": {
+    "state": "Running",
+    "last": "2026-11-01T01:30:01",
+    "next": "2026-11-01T04:30:00",
+    "res": 267009
+   },
+   "status": {
+    "state": "Running",
+    "last": "2026-11-01T03:20:01",
+    "next": "2026-11-01T03:50:00",
+    "res": 267009
+   }
+  }
+ },
+ "cloud": {
+  "at": "2026-11-01T03:20+09:00",
+  "ch": {
+   "spi": {
+    "ok24": 4,
+    "fail24": 1,
+    "state": "running",
+    "at": "2026-11-01T02:56+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "psy": {
+    "ok24": 1,
+    "fail24": 4,
+    "state": "running",
+    "at": "2026-11-01T02:55+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "nihongi": {
+    "ok24": 0,
+    "fail24": 5,
+    "state": "running",
+    "at": "2026-11-01T02:55+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "okinu": {
+    "ok24": 4,
+    "fail24": 5,
+    "state": "fail",
+    "at": "2026-11-01T02:55+09:00",
+    "end": "2026-11-01T03:19+09:00",
+    "wf": "daily",
+    "step": null
+   },
+   "job": {
+    "ok24": 4,
+    "fail24": 1,
+    "state": "running",
+    "at": "2026-11-01T02:55+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   }
+  },
+  "wf": [
+   {
+    "name": "daily",
+    "state": "in_progress",
+    "at": "2026-11-01T02:55+09:00"
+   },
+   {
+    "name": "dashboard",
+    "state": "success",
+    "at": "2026-11-01T00:28+09:00"
+   },
+   {
+    "name": "watch",
+    "state": "success",
+    "at": "2026-11-01T00:15+09:00"
+   },
+   {
+    "name": "agent",
+    "state": "success",
+    "at": "2026-11-01T00:07+09:00"
+   },
+   {
+    "name": "shorts",
+    "state": "success",
+    "at": "2026-10-31T09:09+09:00"
+   },
+   {
+    "name": "research",
+    "state": "success",
+    "at": "2026-10-31T05:48+09:00"
+   }
+  ],
+  "ok24": 13,
+  "fail24": 16,
+  "running": 4
+ },
+ "errors": []
+}
