@@ -14,7 +14,8 @@
 # ・詰まった時の決まり（2026-10-29 本人「エラーが起きた場合の対処もあらかじめ決めておく」「詰まりを取ろう」）：
 #   1. 絵・動く絵が時間の枠で終わらない →「途中」にして次の実行で続ける（前と同じ）
 #   2. 同じ段が2回続けて「途中」になり、在庫が目標より少ない → 残りを Lovart の速いモードで作る（lovart_boost.py。その日の上限の分だけ・
-#      絵は半額の 23:00〜04:00 だけ・速いモードは1回45分まで・終わったら必ず無料モードに戻す）。上限で足りない分は無料で続ける
+#      絵は半額の 23:00〜04:00 だけ・速いモードは1回45分まで・終わったら必ず無料モードに戻す）。上限で足りない分は無料で続ける。
+#      クレジットの失効前（〜2026-11-16）は、在庫が目標より少なければ「途中」を待たず、昼も最初から使う（2026-10-31 本人）
 #   3. 動く絵は、無料の実行3回でも終わらなければ残りを静止画のまま進める（make_motion_psy.py。前と同じ）
 #   4. 作り始めて72時間たっても上がらない回は飛ばして次のネタへ（Issue。作業フォルダは残すので、あとで続きから作れる）
 #   5. 在庫が2本以下になったら、02:07 の実行の通知で Issue にする（notify.py）
@@ -530,10 +531,11 @@ def make_one(ch, st, upload, kind=None):
             return
         if kind == "images" and not lb.night():
             t = now()
-            if not (t.hour == 22 and t.minute >= 30 and left() > 120 * 60):
+            if t.hour == 22 and t.minute >= 30 and left() > 120 * 60:
+                time.sleep((60 - t.minute) * 60 - t.second + 5)  # 22:47 の実行は 23:00 まで待つ
+            elif not lb.expiring():
                 print(f"絵の速いモードは半額の 23:00〜04:00 だけ使う（今は {t:%H:%M}）", flush=True)
                 return
-            time.sleep((60 - t.minute) * 60 - t.second + 5)  # 22:47 の実行は 23:00 まで待つ
         n = int(lb.left_today(ch) // lb.unit("image" if kind == "images" else "video"))
         if n < 1 or left() < 60 * 60:
             print(f"速いモードは使わない（今日の残り {lb.left_today(ch)} クレジット・時間の枠の残り {left() / 60:.0f}分）", flush=True)

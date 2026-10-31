@@ -51,11 +51,21 @@ def cap_today(ch):
     return int(cap * b.get("share", {}).get(ch, 0))
 
 
-def boost_after():
-    """同じ段が何回「途中」になったら速いモードを使うか。失効するクレジットが残る間（budget の schedule の期間）は1回、その後は2回
-    （2026-10-31：18,615 のうち3日で524しか使えず、2回待つ決まりのままでは 11/17 に大半が失効する）"""
+def expiring():
+    """失効するクレジットが残る間か（budget の schedule の期間）"""
     d = now().date().isoformat()
-    return 1 if any(x["from"] <= d <= x["to"] for x in budget().get("schedule", [])) else 2
+    return any(x["from"] <= d <= x["to"] for x in budget().get("schedule", []))
+
+
+def boost_after():
+    """同じ段が何回「途中」になったら速いモードを使うか。失効前は0回（詰まるのを待たず、在庫が足りない回は最初から使う）、その後は2回
+    （2026-10-31 本人「クレジット消費をして早めたほうがいい」。18,615 のうち3日で524しか使えず、待つ決まりのままでは 11/17 に大半が失効する）"""
+    return 0 if expiring() else 2
+
+
+def can_join(ch):
+    """別の回が速いモードにしている間、一緒に頼んでよいか。失効前で、その日の上限が残っている時だけ（上限が無いと1回で数千クレジット使える）"""
+    return expiring() and left_today(ch) >= unit("image")
 
 
 def spent_today(ch):
@@ -143,7 +153,7 @@ def check():
     n = h.get("fast_seen", 0) + 1
     jsave(p, {"fast_seen": n, "checked": now().isoformat(timespec="seconds")})
     print(f"Lovart が速いモードのままだったので、無料モードに戻しました（{n}回目）", flush=True)
-    if n >= 2:
+    if n >= 2 and not expiring():  # 失効前は速いモードの回が多いので、見つけても異常ではない
         from notify import issue
         issue("【止まりました】Lovart：速いモードのままになっていた",
               f"{now():%m/%d %H:%M} 見張りが2回続けて見つけ、無料モードに戻しました。手で速いモードを使った後なら、何もしなくてよい")
