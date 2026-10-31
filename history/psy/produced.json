@@ -263,5 +263,69 @@
    ]
   },
   "short_video_id": "TQislAgn9Ec"
+ },
+ {
+  "work": "007_kotowarenai",
+  "type": "人づきあい",
+  "frame": "人づきあい",
+  "neta_id": "p_kotowarenai",
+  "jobs": [],
+  "made": "2026-10-31",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】頼まれると、つい「いいですよ」と言ってしまう人の正体｜断られた相手は、思っているほど気にしていなかった",
+  "titles": [
+   "【心理学】頼まれると、つい「いいですよ」と言ってしまう人の正体｜断られた相手は、思っているほど気にしていなかった",
+   "【心理学】頼まれると断れない人の「意外な特徴」｜来月の自分は暇なはず、と見込んでいるのかもしれない",
+   "【心理学】頼まれると断れない人に共通する5つの特徴｜2,000人以上の実験で分かった、断られた側の気持ち"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-10-30 の「次の回で試すこと」から3つとも入れた。1：タイトルの1番目を型D（〇〇する人の正体）にした（004 型A・005 型B・006 型C のあと）。2：つかみの1カット目の続きを相手の一言「来年の班長、お願いできないかしら」の場面にし、「あなたなら、どう返しますか？」と「ありませんか？」の両方を入れ、概要欄の場面の1行目も同じ一言にした。3：特徴の章の名前を「特徴1　来年の頼みは軽く見える」（のちに「先の頼みは軽く見える」に直した）のように番号と中身の両方にした。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:08 4人に3人が、断れずにいた",
+   "2:45 特徴1　先の頼みは軽く見える",
+   "5:12 特徴2　顔を見ると、断りにくい",
+   "7:36 特徴3　断るひと言が、重すぎる",
+   "9:59 特徴4　自分からは、頼めない",
+   "12:12 特徴5　相手は、思うほど気にしない",
+   "15:03 断る前に、試せる3つの工夫",
+   "17:01 まとめ"
+  ],
+  "video_id": "iFnGAfBm-p0",
+  "回した理由": null,
+  "studies": [
+   "Zauberman & Lynch (2005) Journal of Experimental Psychology: General",
+   "Roghanizad & Bohns (2017) Journal of Experimental Social Psychology",
+   "Flynn & Lake (2008) Journal of Personality and Social Psychology",
+   "Bohns, Roghanizad & Xu (2014) Personality and Social Psychology Bulletin",
+   "Zhao & Epley (2022) Psychological Science",
+   "Givi & Kirk (2024) Journal of Personality and Social Psychology",
+   "Roghanizad & Bohns (2022) Social Psychological and Personality Science"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 8,
+   "章": [
+    8,
+    8,
+    7,
+    8,
+    7,
+    8,
+    8,
+    7,
+    7
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "雪の原っぱのたとえや来月の手帳は分かりやすいが、C07〜C08の学生95人・平均8.2が数字の羅列で耳に残りにくく、「今日と1か月後どちらが暇？」と問いかけ形にして聞き手に答えさせると生きる。",
+    "「ピクルス」と本に書く頼みは面白い掴みだが、E12以降の道案内の追加実験が結果を並べるだけで弱く、人物の物語（値札を書く夜）に早く戻して「満員バスで降ります」のたとえに繋ぐと上がる。"
+   ]
+  },
+  "short_video_id": "d90sb3IODWo"
  }
 ]
