@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 177,
+  "views_now": 241,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -235,7 +235,7 @@
   "seconds": 500,
   "title_now": "【悲報】大型トラック運転手、全職業でいちばん長く働くのに年収は真ん中",
   "synthetic_on": null,
-  "views_now": 1,
+  "views_now": 3,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -295,11 +295,15 @@
    "日時": "2026-10-30T03:45:21",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
   },
-  "publish_at": "2026-10-31T10:00:00Z",
-  "privacy_now": "private",
+  "publish_at": null,
+  "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-10-31T19:00:26+09:00",
+  "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
+  "comment_at": "2026-11-01T00:15:32+09:00"
  },
  {
   "work": "010_a4_155a1cce",
@@ -367,7 +371,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": "2026-11-04T19:00:00+09:00",
+  "publish_at": "2026-11-04T10:00:00Z",
   "seconds": 399,
   "title_now": "【給与逆転】タクシー運転手は年収が近い仕事で一番稼ぐのに、なぜ時給では勝てないのか",
   "synthetic_on": null,
@@ -391,7 +395,7 @@
   ],
   "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": "2026-11-05T19:00:00+09:00",
+  "publish_at": "2026-11-05T10:00:00Z",
   "seconds": 518,
   "title_now": "【悲報】残業ゼロを宣言した平均的な会社、45歳の課長より給料が減った人がいた",
   "synthetic_on": null,
@@ -415,7 +419,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
   "privacy_now": "private",
-  "publish_at": "2026-11-06T19:00:00+09:00",
+  "publish_at": "2026-11-06T10:00:00Z",
   "seconds": 514,
   "title_now": "【厨房の真実】調理人は好きで入る業界なのに、なぜ辞める人がこんなに多いのか",
   "synthetic_on": null,

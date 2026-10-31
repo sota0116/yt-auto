@@ -14,7 +14,19 @@
  },
  "002_hitori_yasumu": {
   "type": "ひとりの時間",
-  "video_id": "_RAR83NftZ4"
+  "video_id": "_RAR83NftZ4",
+  "h72": {
+   "views": 24,
+   "averageViewPercentage": 33.79,
+   "averageViewDuration": 339,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 492
+  }
  },
  "003_yonaka_mezame": {
   "type": "眠りと夜",

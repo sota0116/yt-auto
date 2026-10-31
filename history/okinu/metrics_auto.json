@@ -1,7 +1,18 @@
 {
  "S001_レシート": {
   "type": "okinu",
-  "video_id": "YPp6vjnspls"
+  "video_id": "YPp6vjnspls",
+  "h72": {
+   "views": 46,
+   "averageViewPercentage": 147.54,
+   "averageViewDuration": 47,
+   "subscribersGained": 0,
+   "直す所": [
+    "14%あたりで急に落ちる（15%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 1165
+  }
  },
  "001v6_財布の中身": {
   "type": "okinu",
@@ -41,5 +52,9 @@
  "003_玄関のNG5": {
   "type": "okinu",
   "video_id": "GNmrB2YYjkM"
+ },
+ "S004_種銭": {
+  "type": "okinu",
+  "video_id": "n1z2MDRwzIw"
  }
 }

@@ -14,11 +14,35 @@
  },
  "S002_信長自身の数字": {
   "type": null,
-  "video_id": "V1xNfFLXpq0"
+  "video_id": "V1xNfFLXpq0",
+  "h72": {
+   "views": 1394,
+   "averageViewPercentage": 93.05,
+   "averageViewDuration": 33,
+   "subscribersGained": 1,
+   "直す所": [
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 1594
+  }
  },
  "L001_裏切り確率_完全版": {
   "type": null,
-  "video_id": "Ke00RvK8N4w"
+  "video_id": "Ke00RvK8N4w",
+  "h72": {
+   "views": 50,
+   "averageViewPercentage": 50.89,
+   "averageViewDuration": 270,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "76%あたりで急に落ちる（12%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 267
+  }
  },
  "S003_金ヶ崎の80%": {
   "type": null,
@@ -39,5 +63,9 @@
  "S007_身分がお金の順だったら": {
   "type": null,
   "video_id": "8p4jE0LduPo"
+ },
+ "S008_関ヶ原がグループLINE": {
+  "type": null,
+  "video_id": "j6Jocfuxmew"
  }
 }

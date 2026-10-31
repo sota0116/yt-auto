@@ -46,7 +46,17 @@
  },
  "005_a4_28f489e3": {
   "type": "A",
-  "video_id": "frlvSzw8szo"
+  "video_id": "frlvSzw8szo",
+  "h72": {
+   "views": 2,
+   "averageViewPercentage": 13.86,
+   "averageViewDuration": 69,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 241,
+   "差し替えの判定": "再生 241・ほかの回の真ん中 50"
+  }
  },
  "006_a_sekokan": {
   "type": "A",
@@ -55,5 +65,9 @@
  "007_c_truck": {
   "type": "C",
   "video_id": "CkCSUpsi760"
+ },
+ "009_a_taxi": {
+  "type": "A",
+  "video_id": "uLDrw_lxkWk"
  }
 }
