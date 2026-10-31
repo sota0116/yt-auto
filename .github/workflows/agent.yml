@@ -1,0 +1,179 @@
+# 「Claude が1本作る」チャンネルの制作（2026-10-31 本人「kakure・shimei も github の無料にして」）。01:17・07:17・13:17・19:17 JST
+# ・PC の auto_long_v5.ps1 のクラウド版。1回で終わらなければ、次の回が _auto_run.md を読んで続きから作る
+# ・動かすチャンネルは Variables の AGENT_CHANNELS（例 ["kakure", "shimei"]）。空の間は動かない。止めるのは daily と同じ PAUSED
+# ・素材と作りかけは暗号にして Release（agent-state）に置く（pipeline/agent_state.py）。キャッシュの10GB枠は使わない
+# ・作る段（Claude）はネットの調べ物をするので、YouTube・Release の鍵を渡さない。checkout も書き込みの鍵を残さない
+# ・上げる段だけ YouTube の鍵を置き、終わったら消す
+# ・手で動かす時、ch にチャンネルを書く。dry にチェックを入れると作らずに環境だけ確かめる（鍵の AGENT_STATE_PASS・YT_TOKEN が無くても動く）
+name: agent
+on:
+  schedule:
+    - cron: "17 16 * * *"  # 01:17 JST
+    - cron: "17 22 * * *"  # 07:17 JST
+    - cron: "17 4 * * *"   # 13:17 JST
+    - cron: "17 10 * * *"  # 19:17 JST
+  workflow_dispatch:
+    inputs:
+      ch:
+        description: "チャンネル（kakure・shimei）。空なら AGENT_CHANNELS の全部"
+        default: ""
+      dry:
+        description: "作らずに環境だけ確かめる"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  make:
+    if: (inputs.ch != '' || vars.AGENT_CHANNELS != '') && vars.PAUSED != 'true'
+    strategy:
+      fail-fast: false
+      matrix:
+        ch: ${{ fromJSON(inputs.ch && format('["{0}"]', inputs.ch) || vars.AGENT_CHANNELS) }}
+    concurrency:
+      group: agent-${{ matrix.ch }}
+      cancel-in-progress: false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-0.25.2
+        ports:
+          - 50021:50021
+    env:
+      TZ: Asia/Tokyo
+      CH: ${{ matrix.ch }}
+      AGENT_MINUTES: "250"
+      VOICEVOX_URL: http://127.0.0.1:50021
+      LOVART_SKILL: ${{ github.workspace }}/vendor/lovart/agent_skill.py
+      # 手元の道具が使う部品（agent_skill・common）と、Windows の winreg の代わり
+      PYTHONPATH: ${{ github.workspace }}/vendor/lovart:${{ github.workspace }}/agent_shared/skill/scripts:${{ github.workspace }}/pipeline/agent_stub
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 道具を入れる（版を固定）
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-cjk-extra
+          sudo apt-get install -y -qq fonts-morisawa-bizud-gothic || echo "BIZ UDゴシックが入らないので Noto で作る"
+          pip install -q -r requirements.txt opencv-python-headless==5.0.0.93
+          npm install -g @anthropic-ai/claude-code@2.1.296
+      - name: 環境だけ確かめる
+        if: inputs.dry
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          set -x
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:50021/version && break; sleep 2; done
+          python -X utf8 -c "import cv2, numpy, PIL, sudachipy, winreg, agent_skill; print('部品 ok')"
+          bash -n pipeline/agent_motion.sh
+          fc-match sans:lang=ja
+          gh release view agent-state --json tagName >/dev/null || gh release create agent-state --prerelease --title "agent-state" --notes "暗号にした作業の保存（pipeline/agent_state.py）"
+          # 暗号の保存と取り出し（試しの鍵で往復して、消す）
+          export AGENT_STATE_PASS=$(openssl rand -hex 24)
+          mkdir -p channels/smoke/videos/001 && head -c 3000000 /dev/urandom > channels/smoke/videos/001/a.bin
+          cd pipeline && python -X utf8 -c "import agent_state as a; a.save('smoke'); a.fetch('smoke', '/tmp/smoke')" && cd ..
+          cmp channels/smoke/videos/001/a.bin /tmp/smoke/videos/001/a.bin
+          for n in $(gh release view agent-state --json assets -q '.assets[].name' | grep '^smoke-'); do gh release delete-asset agent-state "$n" -y; done
+          # 許可した道具で Claude が動くか（短く）
+          claude -p "ls で pipeline フォルダの中のファイル数を数え、数字だけ答えて" --model haiku --permission-mode dontAsk --allowedTools "Bash(ls *)" > /tmp/claude.txt 2>&1 || true
+          tail -3 /tmp/claude.txt
+      - name: 素材を戻す
+        id: restore
+        if: ${{ !inputs.dry }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AGENT_STATE_PASS: ${{ secrets.AGENT_STATE_PASS }}
+        run: |
+          python -X utf8 pipeline/agent_state.py restore "$CH"
+          ln -s ../agent_shared/skill vendor/youtube-video-maker   # pipeline の道具が読む場所
+          df -h . | tail -1
+      - name: 何を作るか決める
+        id: pick
+        if: ${{ !inputs.dry }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -X utf8 pipeline/agent_run.py pick "$CH"
+      - name: 作る
+        if: steps.pick.outputs.run == 'true'
+        timeout-minutes: 255
+        env:
+          AGENT_RESUME: ${{ steps.pick.outputs.resume }}
+          BASH_DEFAULT_TIMEOUT_MS: "600000"
+          BASH_MAX_TIMEOUT_MS: "3000000"
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+        run: |
+          python -X utf8 pipeline/agent_run.py prompt "$CH"
+          # 公開のログに台本や素材を出さないので、Claude の出力は暗号の保存の中に置く
+          rc=0
+          timeout -k 60 250m claude -p "$(cat "channels/$CH/_prompt.md")" --model opus --permission-mode dontAsk \
+            --allowedTools "Read Write Edit Glob Grep WebSearch WebFetch Monitor Bash(python *) Bash(ffmpeg *) Bash(ffprobe *) Bash(bash *) Bash(nohup *) Bash(timeout *) Bash(cd *) Bash(ls *) Bash(cat *) Bash(head *) Bash(tail *) Bash(grep *) Bash(wc *) Bash(find *) Bash(sort *) Bash(cp *) Bash(mv *) Bash(mkdir *) Bash(date *) Bash(stat *) Bash(sleep *) Bash(echo *) Bash(fc-match *)" \
+            > "channels/$CH/_reports/claude_last.log" 2>&1 || rc=$?
+          echo "Claude の終了コード：$rc（124 は時間切れ。次の回が続きを作る）"
+      - name: 裏で動き続けている道具を止める（保存の前）
+        if: always()
+        run: |
+          pkill -9 -x ffmpeg || true
+          pkill -9 -f 'agent_motion[.]sh' || true
+          pkill -9 -f '(pipeline|agent_shared|channels)/.*[.]py' || true
+          sleep 2
+      - name: 上げて、公開の予約を入れる
+        if: always() && steps.restore.outcome == 'success'
+        timeout-minutes: 60
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN: ${{ matrix.ch == 'kakure' && secrets.YT_TOKEN_KAKURE || matrix.ch == 'shimei' && secrets.YT_TOKEN_SHIMEI || '' }}
+        run: |
+          [ -n "$YT_TOKEN" ] || { echo "::warning::$CH の YouTube のログイン（YT_TOKEN_<チャンネル>）がありません。上げるのは次の回にします"; exit 0; }
+          export YT_SECRETS_DIR="$RUNNER_TEMP/secrets"
+          trap 'rm -rf "$YT_SECRETS_DIR"' EXIT
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN" > "$YT_SECRETS_DIR/token_$CH.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+          python -X utf8 pipeline/agent_run.py finish "$CH"
+      - name: 素材を保存する
+        if: always() && steps.restore.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AGENT_STATE_PASS: ${{ secrets.AGENT_STATE_PASS }}
+        run: python -X utf8 pipeline/agent_state.py save "$CH"
+      - name: Lovart を無料モードに戻す（落ちた時だけ）
+        if: always() && !inputs.dry
+        env:
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+        run: python -X utf8 pipeline/lovart_boost.py restore
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always() && !inputs.dry
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh auth setup-git
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet && exit 0
+          git commit -qm "記録：$CH $(date +%F_%H%M)"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
+      - name: 落ちた時は Issue を立てる
+        if: failure() && !inputs.dry
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          cd pipeline && python -X utf8 -c "import os; from notify import issue; issue('【止まりました】' + os.environ['CH'] + '：agent の実行が落ちました', os.environ['RUN_URL'])"
