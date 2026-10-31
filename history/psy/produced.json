@@ -392,5 +392,72 @@
    ]
   },
   "short_video_id": "fOdshuVUziY"
+ },
+ {
+  "work": "009_zenbu_hitonome",
+  "type": "人づきあい",
+  "frame": "人づきあい",
+  "neta_id": "p_zenbu_hitonome",
+  "jobs": [],
+  "made": "2026-11-01",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】人の目が気になる人がハマる「心のクセ」全6つ｜恥ずかしいシャツに気づいた人は、思った数の半分だった",
+  "titles": [
+   "【心理学】人の目が気になる人がハマる「心のクセ」全6つ｜恥ずかしいシャツに気づいた人は、思った数の半分だった",
+   "【心理学】人の目が気になってしまう人、実は「自分にだけ」スポットライトが当たって見えています。",
+   "【心理学】失敗をいつまでも思い出す人の「意外な特徴」｜まわりが付けた点は、思っていたより、ずっと高かった"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-10-31 の「次の回で試すこと」から1つ：2 人づきあいの回なので、つかみの1カット目を相手の短い一言（「あ、落ちましたよ」）の場面にし、概要欄の §7 の4番の1行目も同じ一言にした（「ありませんか」の問いも残した）。タイトルは網羅回なので1番目を型E、2番目を型B、3番目を型A にした。サムネB案は網羅回の決まり（下「全部で6つ」）を優先し、算用数字は「6」を黄にした。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:15 見られている気がするのは",
+   "2:44 1つ目　自分にだけ明かり",
+   "4:54 2つ目　昨日とのちがい",
+   "7:07 3つ目　顔に出ている気がする",
+   "9:09 4つ目　失敗の点数",
+   "11:29 5つ目　ほめ言葉をのみこむ",
+   "13:30 6つ目　お礼をしまっておく",
+   "15:41 人の目が気になる時の工夫",
+   "17:52 まとめ"
+  ],
+  "video_id": "X4TbcBQKT0k",
+  "回した理由": null,
+  "studies": [
+   "Gilovich, Medvec & Savitsky (2000) Journal of Personality and Social Psychology",
+   "Gilovich, Kruger & Medvec (2002) Journal of Experimental Social Psychology",
+   "Gilovich, Savitsky & Medvec (1998) Journal of Personality and Social Psychology",
+   "Savitsky, Epley & Gilovich (2001) Journal of Personality and Social Psychology",
+   "Zhao & Epley (2021) Journal of Personality and Social Psychology",
+   "Kumar & Epley (2018) Psychological Science",
+   "Savitsky & Gilovich (2003) Journal of Experimental Social Psychology"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    8,
+    6,
+    9,
+    6,
+    8,
+    8,
+    7,
+    9,
+    6,
+    6
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "A01〜A06は「私のことだ」と思える良い場面ですが、A06で終わって宙に浮くので、最後に「実は、あの場面を一番くり返し見ていたのは、本人だけかもしれません」と、ひっくり返しの予感を一言置くと、続きが気になります。",
+    "B07〜B09の「6つの点のすべて」は数字が無く耳に残らないので、台所の場面を中心にし、研究の説明は短くして、B12の難しい理屈も「自分の顔は、自分にだけ大きく見える」くらいの一言に縮めてください。",
+    "D06〜D17は実験が3つ続いて講義っぽいので、バレーボールの14/15だけを残し、ゲームの実験は短くまとめて、お隣さんの場面に早く戻ってください。"
+   ]
+  },
+  "short_video_id": "amjywC33V7Q"
  }
 ]
