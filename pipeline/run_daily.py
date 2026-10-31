@@ -22,6 +22,10 @@
 #      心理学ch 004 が、組み立てまで済んだ18分の回を、看板の英語1枚で止めた（2026-10-29）。前の絵は images/_video_gate_old/ に残す
 #   7. 完成動画ゲートで落ちたのが「8分未満」だけで、足りないのが5%以内なら、カットの間（gap。0.6秒まで）を広げて1回だけ組み直す
 #      （千年こよみ 003 が7.7分で止まった。2026-10-29。声の速さは変えない。組み立ての道具が --gap を受ける時だけ）
+#   8. サムネの点検で落ちたのが「字の面積30%未満」なら、字の組み方だけを変えて作り直す（fix_thumb.py。2回まで）。
+#      おきぬ 102・日本紀 L101 が、完成動画まで通った後にここで止まり、手で直すまで次へ進まなかった（2026-10-31）
+#   9. 台本ゲートの不合格で止まるのが2回続いた回は、作業フォルダを残して次のネタへ進む（gate_fails）。tries は道具が変わると0に戻るので、
+#      道具の更新が続く日は同じネタの書き直しが終わらなかった（2026-10-31。1回の実行で最大5往復）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -96,6 +100,12 @@ def code_ver():
 
 def profile(ch):
     return jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
+
+
+def neta_rows(ch):
+    """ネタ帳.json の行。job・psy は行の配列、spi・nihongi・okinu は {"rows": [...]} の形（配列のつもりで読むと、nihongi が毎回 AttributeError で止まった。2026-10-31）"""
+    book = jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), [])
+    return book.get("rows", []) if isinstance(book, dict) else book
 
 
 def kinds(ch):
@@ -288,9 +298,9 @@ def redo(ch, work, st):
     neta.json と _run.log だけ残し、題はネタ帳.json の今の行に合わせる。台本・声・絵などは消す（声の段は同じカット番号の音声があると使い回すため）"""
     import shutil
     np_ = os.path.join(work, "neta.json")
-    neta = jload(np_, {})
+    neta = jload(np_, {}) or jload(os.path.join(wip_dir(ch, work), "neta.json"), {})  # 作業フォルダが消えていても、控えのネタ（kind・no も入る）で作り直す
     nid = neta.get("id") or st["redo"]
-    row = next((r for r in jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), []) if r.get("id") == nid), None)
+    row = next((r for r in neta_rows(ch) if r.get("id") == nid), None)
     if row:
         neta = {**neta, **row} if neta else {**row, "type": row.get("area"), "frame": row.get("area"), "made": now().date().isoformat()}
     if not neta:
@@ -447,7 +457,8 @@ def make_one(ch, st, upload, kind=None):
         # 同じネタで台本からやり直す（redo）。ネタの id は、フォルダ名（番号_id の英数字）とネタ帳.json の id を合わせて探す
         tail = re.sub(r"^\d+_", "", os.path.basename(work))
         slug = lambda r: re.sub(r"[^0-9a-z_]", "", str(r.get("id", "")).lower())
-        row = next((r for r in jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), []) if slug(r) == tail or slug(r).endswith("_" + tail)), None)
+        kept = jload(os.path.join(wip_dir(ch, work), "neta.json"), {})  # 控えのネタが先（ネタ補充.json の行はネタ帳に無い）
+        row = kept if kept.get("id") else next((r for r in neta_rows(ch) if slug(r) == tail or slug(r).endswith("_" + tail)), None)
         if not row:
             raise Stop(f"作業フォルダ {os.path.basename(work)} が消えていて、ネタ帳にも同じネタの行がありません（status.json の work を消すと、次のネタから作ります）")
         print(f"作業フォルダ {os.path.basename(work)} が消えていたので、同じネタ（{row['id']}）で台本から作り直します", flush=True)
@@ -488,6 +499,8 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_script", [g_py, work, "--ch", ch], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
+        st["gate_fails"] = st.get("gate_fails", 0) + 1  # 詰まった時の決まり9
+        jsave(sp, st)
         raise Stop(f"台本ゲートで{1 + n_fix}回不合格（書き直し{n_fix}回でも直らない）。その回は止め、在庫で公開をつなぐ")
 
     step("gate_script", write_and_gate)
@@ -513,7 +526,7 @@ def make_one(ch, st, upload, kind=None):
         """詰まった時の決まり2：同じ段が2回続けて「途中」で、在庫が目標より少なければ、残りを速いモードで作る（上の説明）。
         extra は環境変数を返す関数（23:00 まで待った後の残り時間で決めるため）"""
         import lovart_boost as lb
-        if not ids or st.get("busy", {}).get(kind, 0) < 2 or stock(ch, KIND) >= stock_goal(ch, KIND)[0]:
+        if not ids or st.get("busy", {}).get(kind, 0) < lb.boost_after() or stock(ch, KIND) >= stock_goal(ch, KIND)[0]:
             return
         if kind == "images" and not lb.night():
             t = now()
@@ -688,7 +701,17 @@ def make_one(ch, st, upload, kind=None):
         args = [T("thumb", "make_thumb_job.py"), work, "--check"]
         if s.get("thumb_bg"):
             args[2:2] = ["--bg", s["thumb_bg"]]
-        run(work, "thumb", args, ch)
+        for i in range(3):  # 詰まった時の決まり8
+            try:
+                run(work, "thumb", args, ch)
+                return
+            except Wait:
+                raise
+            except Stop as e:
+                if i == 2 or "面積30%未満" not in str(e):
+                    raise
+                print(f"■ サムネの字が少ないので、字の組み方を変えて作り直す（{i + 1}回目・2回まで）", flush=True)
+                run(work, "thumb_fix", ["fix_thumb.py", work], ch)
     if T("thumb", "make_thumb_job.py"):  # null＝この種類はサムネを作らない（アナザー日本紀のショート。ショートは動画の中の1コマが表紙）
         step("thumb", thumb)
     def short(name, args):  # ショート（心理学ch。2026-10-27）。作れなくても本編は止めない（その回はショート無しで先へ進む。理由は _run.log）
@@ -822,9 +845,9 @@ def main():
               if st.get("tries") and st.get("code") != code_ver():
                   print(f"前の失敗の後に道具が直っているので、{os.path.basename(st['work'])} の失敗の数を0から数え直します", flush=True)
                   st["tries"] = 0  # 直した後も前の3回で飛ばすと、出来上がり寸前の回を捨てる（006 がそうなった。2026-10-26）
-              if st.get("tries", 0) >= 3:
+              if st.get("tries", 0) >= 3 or st.get("gate_fails", 0) >= 2:
                   res.setdefault("飛ばした回", []).append(st["work"])
-                  st = {}  # 3回続けて失敗した回は飛ばして次のネタへ（週報に出す）
+                  st = {}  # 3回続けて失敗した回・台本ゲートで2回止まった回は飛ばして次のネタへ（週報に出す）
               if st.get("work") and st.get("started") and "upload" not in st.get("done", []) \
                       and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=72):
                   # 詰まった時の決まり4：72時間たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
@@ -867,7 +890,8 @@ def main():
         jsave(lp, res)
         heartbeat(ch)
         print(json.dumps(res, ensure_ascii=False))
-    sys.exit(1 if res["stopped"] and not res["stopped"].startswith("PAUSED") else 0)
+    # 「途中」「待ち」は失敗ではない（Issue の判断は notify.py が last_run を見る）。前は GitHub の画面で全部失敗に見え、本当の失敗と見分けられなかった（2026-10-31）
+    sys.exit(1 if res["stopped"] and not res["stopped"].startswith("PAUSED") and not res.get("待ち") else 0)
 
 
 if __name__ == "__main__":

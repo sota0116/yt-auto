@@ -13,7 +13,7 @@
 import argparse, json, os, shutil, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from make_images_lovart import client, PROJECT  # noqa: E402
+from make_images_lovart import client, is_free, PROJECT  # noqa: E402
 from lovart_boost import add_spent, left_today, unit  # noqa: E402
 
 MODEL = "generate_video_kling_v2_6"
@@ -52,7 +52,7 @@ def main():
         print("動かすカットはもう全部済んでいます")
         return
     sk = client()
-    free = lambda: sk.query_mode().get("unlimited") is True
+    free = lambda: is_free(sk)
     paused = not a.boost and not free()
     if paused:  # 前は静止画のまま0で終えていた。別の回が詰まりを取っている間だけなので、次の実行で続ける（2026-10-29）
         print("Lovart が速いモードです（別の回が詰まりを取っている間）。クレジットを使わないよう、新しく頼まずに待ちます", flush=True)

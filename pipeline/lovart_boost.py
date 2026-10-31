@@ -51,6 +51,13 @@ def cap_today(ch):
     return int(cap * b.get("share", {}).get(ch, 0))
 
 
+def boost_after():
+    """同じ段が何回「途中」になったら速いモードを使うか。失効するクレジットが残る間（budget の schedule の期間）は1回、その後は2回
+    （2026-10-31：18,615 のうち3日で524しか使えず、2回待つ決まりのままでは 11/17 に大半が失効する）"""
+    d = now().date().isoformat()
+    return 1 if any(x["from"] <= d <= x["to"] for x in budget().get("schedule", [])) else 2
+
+
 def spent_today(ch):
     return jload(os.path.join(ROOT, "history", ch, "lovart_credits.json"), {}).get(now().date().isoformat(), {}).get("計", 0)
 

@@ -39,6 +39,21 @@ def client():
     return m.AgentSkill(base_url=os.environ.get("LOVART_BASE_URL", "https://lgw.lovart.ai"), access_key=ak, secret_key=sk, timeout=180)
 
 
+def is_free(sk, waits=(30, 90, 240)):
+    """無料モードか。回数の上限（429）は待って聞き直す（心理学chが、絵の後の4時間分をこの1回の問い合わせで落とした。2026-10-31）。
+    それでも答えが取れない時は False（クレジットを使わないよう新しく頼まず、頼んである分だけ受け取る）"""
+    for wait in waits + (None,):
+        try:
+            return sk.query_mode().get("unlimited") is True
+        except Exception as e:
+            if getattr(e, "code", None) != 429 and "Rate limit" not in str(e):
+                raise
+            if wait is None:
+                print("Lovart の回数の上限でモードを確かめられないので、新しく頼まずに待ちます", flush=True)
+                return False
+            time.sleep(wait)
+
+
 def scenes_en(work, s, ids):
     """場面の説明を英語にする（日本語で頼むと、絵の中にも日本語の文字を描きたがるため）。
     文字が出やすい物（紙・本の背・画面・マグ・看板）は「無地」と書き直させる。1本につき Gemini 1回。images\\_scene_en.json に残す"""
@@ -206,7 +221,7 @@ def main():
     a.add_argument("--boost", action="store_true", help="速いモードの間だけ（run_daily.py が使う）。--only の残りを頼み直し、使った量を数える")
     a = a.parse_args()
     sk = client()
-    free = lambda: sk.query_mode().get("unlimited") is True
+    free = lambda: is_free(sk)
     paused = not a.boost and not free()
     if paused:
         print("Lovart が速いモードです（別の回が詰まりを取っている間）。クレジットを使わないよう新しく頼まず、頼んである絵だけ受け取ります", flush=True)
