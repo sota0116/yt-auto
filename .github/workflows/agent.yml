@@ -49,8 +49,8 @@ jobs:
       AGENT_MINUTES: "250"
       VOICEVOX_URL: http://127.0.0.1:50021
       LOVART_SKILL: ${{ github.workspace }}/vendor/lovart/agent_skill.py
-      # 手元の道具が使う部品（agent_skill・common）と、Windows の winreg の代わり
-      PYTHONPATH: ${{ github.workspace }}/vendor/lovart:${{ github.workspace }}/agent_shared/skill/scripts:${{ github.workspace }}/pipeline/agent_stub
+      # 手元の道具が使う部品（agent_skill・common）
+      PYTHONPATH: ${{ github.workspace }}/vendor/lovart:${{ github.workspace }}/agent_shared/skill/scripts
     steps:
       - uses: actions/checkout@v4
         with:
@@ -74,7 +74,7 @@ jobs:
         run: |
           set -x
           for i in $(seq 1 30); do curl -sf http://127.0.0.1:50021/version && break; sleep 2; done
-          python -X utf8 -c "import cv2, numpy, PIL, sudachipy, winreg, agent_skill; print('部品 ok')"
+          python -X utf8 -c "import cv2, numpy, PIL, sudachipy, agent_skill; print('部品 ok')"
           bash -n pipeline/agent_motion.sh
           fc-match sans:lang=ja
           gh release view agent-state --json tagName >/dev/null || gh release create agent-state --prerelease --title "agent-state" --notes "暗号にした作業の保存（pipeline/agent_state.py）"
@@ -96,6 +96,8 @@ jobs:
         run: |
           python -X utf8 pipeline/agent_state.py restore "$CH"
           ln -s ../agent_shared/skill vendor/youtube-video-maker   # pipeline の道具が読む場所
+          # 手元の lovart_one.py は Windows の winreg を読み込む。鍵は環境変数から取るので、クラウドの控えでは外す（winreg の代役は標準の mimetypes まで壊すので置かない）
+          find "channels/$CH/道具" -name '*.py' -exec sed -i 's/^import winreg$/winreg = None/' {} +
           df -h . | tail -1
       - name: 何を作るか決める
         id: pick
