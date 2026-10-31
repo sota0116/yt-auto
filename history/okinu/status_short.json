@@ -1,1 +1,12 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S106_財布の中の家族の写真",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-11-01T02:57:25+09:00",
+ "tries": 1,
+ "code": "30e5e3d89f28",
+ "stage": "gate_script",
+ "gate_fails": 1
+}

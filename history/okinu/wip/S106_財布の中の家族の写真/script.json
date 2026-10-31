@@ -1,0 +1,258 @@
+{
+ "title": "【60代】財布に「これ」入れてる人、今すぐ出して",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。物（財布と家族の写真）が主役で、物語の場面は入れない",
+  "人物は答えのカット（C11）の手元の場面だけ。62歳の女性（絵は澄江の設定画）で、名乗らない・セリフは無い",
+  "言い伝えは「〜と言われています」の距離で話す。写真を手放させず、移し先を言う"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "財布に、これを入れていませんか。",
+   "subs": [
+    "財布に、\nこれを",
+    "入れていませんか。"
+   ],
+   "hook": "財布に\nこれはNG",
+   "image_en": "Extreme close-up of a worn brown leather wallet lying half-open on a wooden table, the corner of a small printed family photo peeking out from a card slot, the people in the photo too small and blurred to see. The wallet fills more than half of the vertical frame. Soft warm window light, slight dust in the air.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Extreme close-up of a worn brown leather wallet lying half-open on a wooden table, the corner of a small printed family photo peeking out from a card slot, the people in the photo too small and blurred to see. The wallet fills more than half of the vertical frame. Soft warm window light, slight dust in the air."
+  },
+  {
+   "id": "C02",
+   "narration": "お札の後ろに、家族の写真をはさんでいませんか。",
+   "tts_text": "おさつのうしろに、家族の写真をはさんでいませんか。",
+   "subs": [
+    "お札の後ろに、",
+    "家族の写真を\nはさんで",
+    "いませんか。"
+   ],
+   "highlight": [
+    "家族の写真"
+   ],
+   "image_en": "Close-up of a small old printed family photo being pulled out from behind plain paper bills in a brown wallet by an older woman's fingers, the photo shows a smiling young family with a small child in soft focus. The photo and wallet fill most of the vertical frame. Warm light. No text, no real banknote designs.",
+   "image": "Close-up of a small old printed family photo being pulled out from behind plain paper bills in a brown wallet by an older woman's fingers, the photo shows a smiling young family with a small child in soft focus. The photo and wallet fill most of the vertical frame. Warm light. No text, no real banknote designs."
+  },
+  {
+   "id": "C03",
+   "narration": "財布を、開いてみて。",
+   "subs": [
+    "財布を、\n開いてみて。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ]
+  },
+  {
+   "id": "C04",
+   "narration": "写真の入った財布は、お金が逃げやすいと言われます。",
+   "subs": [
+    "写真の入った\n財布は、",
+    "お金が\n逃げやすいと",
+    "言われます。"
+   ],
+   "highlight": [
+    "逃げやすい"
+   ],
+   "image_en": "Close-up inside an open brown wallet: a small family photo lies crooked on top of a few plain paper bills that are folded and facing different ways, giving a restless messy feeling. The wallet fills more than half of the vertical frame. Warm muted light. No readable text, no real banknote designs.",
+   "image": "Close-up inside an open brown wallet: a small family photo lies crooked on top of a few plain paper bills that are folded and facing different ways, giving a restless messy feeling. The wallet fills more than half of the vertical frame. Warm muted light. No readable text, no real banknote designs."
+  },
+  {
+   "id": "C05",
+   "narration": "写真と一緒に、カードや紙もはさんで、",
+   "subs": [
+    "写真と一緒に、",
+    "カードや紙も\nはさんで、"
+   ],
+   "image_en": "Close-up from above of a thick open brown wallet on a kitchen table, stuffed with a family photo, many plain plastic cards and folded plain white paper slips, a few slips spilling onto the table. The wallet fills more than half of the vertical frame. No readable text or logos.",
+   "image": "Close-up from above of a thick open brown wallet on a kitchen table, stuffed with a family photo, many plain plastic cards and folded plain white paper slips, a few slips spilling onto the table. The wallet fills more than half of the vertical frame. No readable text or logos."
+  },
+  {
+   "id": "C06",
+   "narration": "口が閉じないのは、詰め込みすぎのしるし。",
+   "tts_text": "くちがとじないのは、詰め込みすぎのしるし。",
+   "subs": [
+    "口が\n閉じないのは、",
+    "詰め込みすぎの\nしるし。"
+   ],
+   "highlight": [
+    "詰め込みすぎ"
+   ],
+   "image_en": "Side view close-up of a brown leather wallet so overstuffed with cards and paper that it cannot close, bulging and straining, standing on a wooden table. The wallet fills more than half of the vertical frame. Soft evening light. No text.",
+   "image": "Side view close-up of a brown leather wallet so overstuffed with cards and paper that it cannot close, bulging and straining, standing on a wooden table. The wallet fills more than half of the vertical frame. Soft evening light. No text."
+  },
+  {
+   "id": "C07",
+   "narration": "お札の横に、思い出の物があると、",
+   "tts_text": "おさつのよこに、思い出のものがあると、",
+   "subs": [
+    "お札の横に、",
+    "思い出の物が\nあると、"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@close"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "昔から、お金の気が散ると言われています。",
+   "subs": [
+    "昔から、",
+    "お金の気が\n散ると",
+    "言われています。"
+   ],
+   "highlight": [
+    "散る"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@full"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "風水では、財布はお金の家とも言われます。",
+   "tts_text": "ふうすいでは、財布はお金のいえとも言われます。",
+   "subs": [
+    "風水では、\n財布は",
+    "お金の家とも\n言われます。"
+   ],
+   "highlight": [
+    "お金の家"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@full"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "ぎゅうぎゅうでは、お金も休めないのね。",
+   "subs": [
+    "ぎゅうぎゅう\nでは、",
+    "お金も\n休めないのね。"
+   ],
+   "highlight": [
+    "ぎゅうぎゅう"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@close"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "お札の後ろは、お札だけの場所にしてあげて。",
+   "tts_text": "おさつのうしろは、おさつだけの場所にしてあげて。",
+   "subs": [
+    "お札の後ろは、",
+    "お札だけの\n場所に",
+    "してあげて。"
+   ],
+   "highlight": [
+    "お札だけ"
+   ],
+   "image_en": "Sumie at her kitchen table with a sudden realization look, eyes wide behind her glasses, gently pulling a small family photo out from behind plain paper bills in her open brown wallet, a plain clear pass case lying beside it. The hands, wallet and photo are large in the lower half of the vertical frame. Warm daylight. No text, no real banknote designs.",
+   "chars": [
+    "sumie"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Sumie at her kitchen table with a sudden realization look, eyes wide behind her glasses, gently pulling a small family photo out from behind plain paper bills in her open brown wallet, a plain clear pass case lying beside it. The hands, wallet and photo are large in the lower half of the vertical frame. Warm daylight. No text, no real banknote designs."
+  },
+  {
+   "id": "C12",
+   "narration": "写真は捨てずに、定期入れへ移せばいいの。",
+   "tts_text": "写真は捨てずに、ていきいれへ移せばいいの。",
+   "subs": [
+    "写真は\n捨てずに、",
+    "定期入れへ\n移せばいいの。"
+   ],
+   "highlight": [
+    "定期入れ"
+   ],
+   "image_en": "Close-up of a plain clear pass case lying on a wooden table, a small family photo of smiling children in soft focus neatly inside the front window, beside an older woman's hand. The pass case fills more than half of the vertical frame. Soft warm light. No text or logos.",
+   "image": "Close-up of a plain clear pass case lying on a wooden table, a small family photo of smiling children in soft focus neatly inside the front window, beside an older woman's hand. The pass case fills more than half of the vertical frame. Soft warm light. No text or logos."
+  },
+  {
+   "id": "C13",
+   "narration": "家族はそばに、お札とは別の部屋にね。",
+   "tts_text": "家族はそばに、おさつとはべつのへやにね。",
+   "subs": [
+    "家族はそばに、",
+    "お札とは\n別の部屋にね。"
+   ],
+   "highlight": [
+    "別の部屋"
+   ],
+   "same_as": "C12",
+   "shots": [
+    "C12@close"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "カードと紙は、引き出しへ移しておくの。",
+   "tts_text": "カードと紙は、ひきだしへ移しておくの。",
+   "subs": [
+    "カードと紙は、",
+    "引き出しへ\n移しておくの。"
+   ],
+   "image_en": "Close-up of an older woman's hands taking plain plastic cards and folded plain paper slips out of a brown wallet and laying them in a neat row on a wooden table. Hands and wallet fill more than half of the vertical frame, no face. Evening lamp light. No readable text or logos.",
+   "image": "Close-up of an older woman's hands taking plain plastic cards and folded plain paper slips out of a brown wallet and laying them in a neat row on a wooden table. Hands and wallet fill more than half of the vertical frame, no face. Evening lamp light. No readable text or logos."
+  },
+  {
+   "id": "C15",
+   "narration": "一枚ずつでいいのよ。",
+   "tts_text": "いちまいずつでいいのよ。",
+   "subs": [
+    "一枚ずつで\nいいのよ。"
+   ],
+   "image_en": "Close-up of a slim, neatly closed brown leather wallet lying flat on a clean wooden table next to a small plain clear pass case holding a family photo, morning sunlight, calm and tidy. The wallet fills more than half of the vertical frame. No text.",
+   "image": "Close-up of a slim, neatly closed brown leather wallet lying flat on a clean wooden table next to a small plain clear pass case holding a family photo, morning sunlight, calm and tidy. The wallet fills more than half of the vertical frame. No text."
+  },
+  {
+   "id": "C16",
+   "narration": "あなたの財布のお札の後ろには、入っていませんか。",
+   "subs": [
+    "あなたの財布の",
+    "お札の後ろには、",
+    "入って\nいませんか。"
+   ],
+   "highlight": [
+    "お札の後ろ"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布のお札の後ろには、入っていませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #財布の中の家族の写真",
+ "tags": [
+  "金運",
+  "財布",
+  "財布の中の家族の写真",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布のお札の後ろには、入っていませんか。"
+}
