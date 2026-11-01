@@ -133,7 +133,9 @@ def pick_long():
             ent["S" + m.group(1)] = e
     cands = [x for x in past if x["kind"] == "short" and x["no"] not in long_done and x["no"] in ent]
     if not cands:
-        sys.exit("【止まりました】nihongi：横動画の元にできるショートがありません（上げたショートで、まだ横動画にしていない物が無い）")
+        # 失敗ではない。次のショートが上がれば作れる（終了コード 76＝run_daily.py が「待ち」にする。Issue にしない。2026-11-01）
+        print("横動画の元にできるショートがまだありません（上げたショートで、まだ横動画にしていない物が無い）。次のショートが上がるのを待ちます", file=sys.stderr)
+        sys.exit(76)
     cands.sort(key=lambda x: (-int(ent[x["no"]].get("views_now") or 0), number_key(x["no"])))
     s = cands[0]
     e = ent[s["no"]]

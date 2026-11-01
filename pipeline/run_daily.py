@@ -229,6 +229,8 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
         raise Wait(f"{stage} で Claude のログインが切れています（GitHub の Secrets の CLAUDE_CODE_OAUTH_TOKEN を入れ直すと、次の実行で続きから作ります）")
     if r.returncode == 75:
         raise Wait(f"{stage} で Gemini の1日の回数の上限に届きました。上限が戻る 17:37 の実行で続きから作ります")
+    if r.returncode == 76:  # 材料待ち（日本紀の横動画の元にするショートがまだ無い時）。失敗ではない
+        raise Wait(f"{stage}：{out.strip().splitlines()[-1]}")
     if r.returncode not in ok:
         raise Stop(f"{stage} で止まりました（終了コード {r.returncode}）：{tail[-300:]}")
     return r
@@ -292,6 +294,32 @@ def heal_uploaded(ch):
         for work, r in add:
             record(ch, work)
             print(f"記録を戻しました：{r['work']}（{r['video_id']}）", flush=True)
+
+
+def already_up(ch, st):
+    """作り途中の回が、もう YouTube に上がっているなら video_id を返す。記録の commit が落ちると status だけ「上げる前」で残り、
+    台本から作り直しては二重アップ防止で止まり続けた（2026-10-31 日本紀 S102_n015。作り直しで題が変わった回は別の動画として上がった）"""
+    import ustore
+    if not st.get("work") or st.get("redo") or "upload" in st.get("done", []):  # redo＝人が作り直しを頼んだ回
+        return None
+    name = os.path.basename(st["work"])
+    return next((e["video_id"] for e in ustore.load(ch) if e.get("work") == name and e.get("video_id")
+                 and not e.get("retired") and not e.get("missing")), None)
+
+
+def clean_work(ch, work):
+    """クラウドで上げ終えた回の大きいファイルを、次の実行に引き継がない（動画は YouTube にある）"""
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        return
+    import shutil
+    shutil.rmtree(wip_dir(ch, work), ignore_errors=True)  # 作り途中の控えも要らない（台本は record が history/<ch>/scripts に残す）
+    if not os.path.isdir(work):
+        return
+    for d in ("images", "voice", "_build", "short", "teaser") + tuple(x for x in os.listdir(work) if re.fullmatch(r"short_\d+", x)):
+        shutil.rmtree(os.path.join(work, d), ignore_errors=True)  # short_2 …＝心理学chの2本目からのショート（2026-10-29）
+    for x in os.listdir(work):  # 作業フォルダの直下の動画（long.mp4・アナザー日本紀の short.mp4 と _1440p の写し）
+        if x.endswith(".mp4") and os.path.isfile(os.path.join(work, x)):
+            os.remove(os.path.join(work, x))
 
 
 def opening_point(g):
@@ -803,14 +831,7 @@ def make_one(ch, st, upload, kind=None):
     if T("shorts", None):
         step("shorts", lambda: short("shorts", [T("shorts", None), work]))
     step("record", lambda: record(ch, work))
-    if os.environ.get("GITHUB_ACTIONS") == "true":  # 上げ終えた回の大きいファイルは、次の実行に引き継がない（動画は YouTube にある）
-        import shutil
-        shutil.rmtree(wip_dir(ch, work), ignore_errors=True)  # 作り途中の控えも要らない（台本は record が history/<ch>/scripts に残す）
-        for d in ("images", "voice", "_build", "short", "teaser") + tuple(x for x in os.listdir(work) if re.fullmatch(r"short_\d+", x)):
-            shutil.rmtree(os.path.join(work, d), ignore_errors=True)  # short_2 …＝心理学chの2本目からのショート（2026-10-29）
-        for x in os.listdir(work):  # 作業フォルダの直下の動画（long.mp4・アナザー日本紀の short.mp4 と _1440p の写し）
-            if x.endswith(".mp4") and os.path.isfile(os.path.join(work, x)):
-                os.remove(os.path.join(work, x))
+    clean_work(ch, work)
     return st
 
 
@@ -903,6 +924,12 @@ def main():
                   # 作り方が変わる前の回を、続きから作らない（profile.json の drop_works）。作業の控えは消さない（2026-10-30 okinu の順位の型より前の 101）
                   print(f"{os.path.basename(st['work'])} は作らない回なので、次のネタへ進みます", flush=True)
                   st = {}
+              vid = already_up(ch, st)
+              if vid:
+                  print(f"{os.path.basename(st['work'])} はもう上がっている（{vid}）ので、作り直さずに次のネタへ進みます", flush=True)
+                  clean_work(ch, st["work"])
+                  st = {}
+                  jsave(sp, st)
               if not st.get("work"):
                   st = unpark(ch, kind) or st
               if st.get("tries") and st.get("code") != code_ver():

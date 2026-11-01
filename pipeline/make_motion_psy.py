@@ -67,7 +67,7 @@ def main():
                and (not a.boost or log[i].get("受け取り直し"))}
     queue = [i for i in todo if i not in waiting]
     checked = time.time()
-    print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Kling 2.6）：新しく頼む {len(queue)} 本・前回の続き {len(waiting)} 本（同時に{a.par}本・{log['_runs']}回目の実行）", flush=True)
+    print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Kling 2.6）：新しく頼む {len(queue)} 本・前回の続き {len(waiting)} 本（同時に{a.par}本・{log.get('_runs', 0)}回目の実行）", flush=True)
     while (queue and not paused and time.time() < deadline) or (waiting and time.time() < deadline + 20 * 60):
         if not a.boost and not paused and time.time() - checked > 60:
             checked = time.time()
