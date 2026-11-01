@@ -31,11 +31,33 @@
  },
  "S008_切出_おみくじ": {
   "type": "okinu",
-  "video_id": "tjqjGB28UdQ"
+  "video_id": "tjqjGB28UdQ",
+  "h72": {
+   "views": 649,
+   "averageViewPercentage": 63.99,
+   "averageViewDuration": 22,
+   "subscribersGained": 2,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 1257
+  }
  },
  "S002_ポイントカード": {
   "type": "okinu",
-  "video_id": "pALO6Bif7Vo"
+  "video_id": "pALO6Bif7Vo",
+  "h72": {
+   "views": 1185,
+   "averageViewPercentage": 122.46,
+   "averageViewDuration": 40,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 1271
+  }
  },
  "S009_切出_毎晩見る財布": {
   "type": "okinu",
@@ -56,5 +78,13 @@
  "S004_種銭": {
   "type": "okinu",
   "video_id": "n1z2MDRwzIw"
+ },
+ "S101_母の形見の10円玉": {
+  "type": null,
+  "video_id": "-u6zovqCoVk"
+ },
+ "004_トイレのNG5": {
+  "type": "okinu",
+  "video_id": "HKgVBFHgH3Y"
  }
 }

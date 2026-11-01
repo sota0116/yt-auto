@@ -24,7 +24,7 @@
   "published_at": "2026-10-26T18:41:50+09:00",
   "comment_id": "Ugx5gZLpfNkOZrZzDVR4AaABAg",
   "comment_at": "2026-10-26T18:42:35+09:00",
-  "views_now": 2,
+  "views_now": 5,
   "thumb_lines": {
    "lines": [
     [
@@ -90,7 +90,7 @@
   "seconds": 1005,
   "title_now": "【心理学】休みの日に家から出ない人に共通する4つのこと｜何もしない時間に、脳が続けていること",
   "synthetic_on": null,
-  "views_now": 492,
+  "views_now": 675,
   "published": true,
   "published_at": "2026-10-28T19:00:40+09:00",
   "comment_id": "UgzmRNJE6pIBadCvW414AaABAg",
@@ -160,7 +160,7 @@
   "seconds": 1047,
   "title_now": "【心理学】夜中にふと目が覚める人の「意外な特徴」｜眠りは、2つに分かれることがある",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 1,
   "thumb_lines": {
    "lines": [
     [
@@ -295,12 +295,16 @@
    "【心理学】冬になると昔を思い出す人の正体｜懐かしい思い出で、寒い部屋が暖かく感じられた"
   ],
   "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
-  "privacy_now": "private",
-  "publish_at": "2026-11-01T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 1054,
   "title_now": "【心理学】年を重ねるほど、楽しい思い出が残る人、実は「昔の自分」まで明るく思い出しています。",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-01T19:00:15+09:00",
+  "comment_id": "Ugy-Cv-VPkIA14htNHR4AaABAg",
+  "comment_at": "2026-11-01T19:17:04+09:00"
  },
  {
   "work": "006_hitori_suki",
@@ -366,7 +370,13 @@
    "【心理学】物をためずに手放せる人の「隠れた特徴」｜思い出は、物ではなく写真に残していた",
    "【心理学】使わない物を、つい取っておく人の正体｜自分の物になると、値段は2倍ほどに上がった"
   ],
-  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3"
+  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
+  "privacy_now": "private",
+  "publish_at": "2026-11-06T19:00:00+09:00",
+  "seconds": 1140,
+  "title_now": "【心理学】物をためずに手放せる人に共通する5つの特徴｜「もったいない」の正体は、持ち主の目だった",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "009_zenbu_hitonome",
@@ -384,7 +394,13 @@
    "【心理学】人の目が気になってしまう人、実は「自分にだけ」スポットライトが当たって見えています。",
    "【心理学】失敗をいつまでも思い出す人の「意外な特徴」｜まわりが付けた点は、思っていたより、ずっと高かった"
   ],
-  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3"
+  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
+  "privacy_now": "private",
+  "publish_at": "2026-11-07T19:00:00+09:00",
+  "seconds": 1145,
+  "title_now": "【心理学】人の目が気になる人がハマる「心のクセ」全6つ｜恥ずかしいシャツに気づいた人は、思った数の半分だった",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "010_niwa_shokubutsu",
@@ -402,6 +418,12 @@
    "【心理学】植物を育てるのが好きな人、実は30分の土いじりで、本を読むより気持ちを立て直しています。",
    "【心理学】植物を育てるのが好きな人に共通する5つの特徴｜緑を40秒見た学生は、コンクリートを見た学生より見落としが少なかった"
   ],
-  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3"
+  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
+  "privacy_now": "private",
+  "publish_at": "2026-11-08T19:00:00+09:00",
+  "seconds": 1157,
+  "title_now": "【心理学】植物を育てる人の「意外な特徴」｜ひとりの庭仕事でも、誰かと一緒の時と同じくらい明るかった",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

@@ -46,7 +46,20 @@
  },
  "S003_金ヶ崎の80%": {
   "type": null,
-  "video_id": "0BC3QDO4jec"
+  "video_id": "0BC3QDO4jec",
+  "h72": {
+   "views": 1310,
+   "averageViewPercentage": 80.62,
+   "averageViewDuration": 29,
+   "subscribersGained": 2,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 1505
+  }
  },
  "S004_秀吉だけ0%": {
   "type": null,
@@ -67,5 +80,9 @@
  "S008_関ヶ原がグループLINE": {
   "type": null,
   "video_id": "j6Jocfuxmew"
+ },
+ "S101_n007": {
+  "type": null,
+  "video_id": "jpXbQgHDIxY"
  }
 }

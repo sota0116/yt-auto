@@ -11,6 +11,16 @@
    "取った日": "2026-10-29",
    "再生（公開ページ）": 50,
    "差し替えの判定": "比べるほかの回が2本に届かない"
+  },
+  "d7": {
+   "views": 52,
+   "averageViewPercentage": 20.01,
+   "averageViewDuration": 242,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 53,
+   "差し替えの判定": "比べるほかの回が2本に届かない"
   }
  },
  "001_a4_untenshu_fukushi_v2": {
@@ -60,7 +70,18 @@
  },
  "006_a_sekokan": {
   "type": "A",
-  "video_id": "q-T8RRFcBTk"
+  "video_id": "q-T8RRFcBTk",
+  "h72": {
+   "views": 4,
+   "averageViewPercentage": 45.84,
+   "averageViewDuration": 243,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 5,
+   "差し替えの判定": "再生 5・ほかの回の真ん中 145.5",
+   "差し替え": "タイトルを「施工管理の建築と土木、年収は建築の勝ち。でも長く勤めているのは土木」に、サムネをB案に"
+  }
  },
  "007_c_truck": {
   "type": "C",
@@ -69,5 +90,9 @@
  "009_a_taxi": {
   "type": "A",
   "video_id": "uLDrw_lxkWk"
+ },
+ "010_a4_155a1cce": {
+  "type": "A",
+  "video_id": "r0sLrrg472s"
  }
 }

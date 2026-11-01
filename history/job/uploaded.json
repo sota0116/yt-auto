@@ -79,7 +79,7 @@
   "published_at": "2026-10-25T19:00:29+09:00",
   "comment_id": "UgwgNYaJMof9xoHQweV4AaABAg",
   "comment_at": "2026-10-25T19:39:39+09:00",
-  "views_now": 52,
+  "views_now": 53,
   "retitled": {
    "日時": "2026-10-30T03:03:07",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -139,7 +139,7 @@
   "seconds": 492,
   "title_now": "【意外】介護・福祉に移った人、前の職場を辞めた理由はお金じゃなかった",
   "synthetic_on": null,
-  "views_now": 1735,
+  "views_now": 1733,
   "published": true,
   "published_at": "2026-10-27T19:00:11+09:00",
   "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 241,
+  "views_now": 336,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -211,7 +211,13 @@
   "retitled": {
    "日時": "2026-10-30T03:03:11",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
-  }
+  },
+  "swaps": [
+   {
+    "日時": "2026-11-01T19:17:00+09:00",
+    "内容": "タイトルを「施工管理の建築と土木、年収は建築の勝ち。でも長く勤めているのは土木」に、サムネをB案に"
+   }
+  ]
  },
  {
   "work": "007_c_truck",
@@ -235,7 +241,7 @@
   "seconds": 500,
   "title_now": "【悲報】大型トラック運転手、全職業でいちばん長く働くのに年収は真ん中",
   "synthetic_on": null,
-  "views_now": 3,
+  "views_now": 4,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -299,7 +305,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -322,12 +328,16 @@
    "あなたの時給、客室乗務員より上？ 稼ぎではプログラマーの方が多いのに"
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
-  "publish_at": "2026-11-01T10:00:00Z",
-  "privacy_now": "private",
+  "publish_at": null,
+  "privacy_now": "public",
   "seconds": 511,
   "title_now": "【時給の罠】プログラマー、稼ぎが近い仕事でトップなのに時給では勝てない相手がいた",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-01T19:00:33+09:00",
+  "comment_id": "Ugws8Uh7WfDGJI_seZd4AaABAg",
+  "comment_at": "2026-11-01T19:16:56+09:00"
  },
  {
   "work": "011_a_se",
@@ -441,7 +451,13 @@
    "年功序列をやめた平均的な会社、同じ40代後半でも月給に約15万円の差があった",
    "あなたの給料は得する側？ 平均的な会社が年功序列をやめたら"
   ],
-  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": "2026-11-07T19:00:00+09:00",
+  "seconds": 503,
+  "title_now": "【悲報】もし会社が年功序列をやめたら、いちばん損をするのは若手ではなかった",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "015_b_shukyu3",
@@ -459,6 +475,12 @@
    "週休3日にした平均的な会社、休みが増えて割に合わなくなった人がいた",
    "あなたの会社の休みは多い方？ もし平均的な会社が週休3日にしたら"
   ],
-  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE"
+  "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://lin.ee/wQwnVsE",
+  "privacy_now": "private",
+  "publish_at": "2026-11-08T19:00:00+09:00",
+  "seconds": 528,
+  "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
