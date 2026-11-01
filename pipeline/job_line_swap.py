@@ -6,8 +6,10 @@
 # ・history/job/uploaded.json の comment も替える（公開前の回に、古いリンクのコメントが入らないように）
 # ・何度動かしても同じ：古いリンクが残っている物だけ替えるので、API の上限で途中で止まっても、もう一度動かせば続きから進む
 # ・記録は history/job/line_swap.json
+# ・--profile：ショートの説明文に、プロフィールのリンクへの案内の1行を足す（2026-11-02。ショートの説明欄のリンクは押せないため）。リンクとコメントは替えない
 import argparse, datetime, json, os, re, sys, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from short_upload import PROFILE_NOTE
 from upload_job import API, ROOT, api
 
 CH = "job"
@@ -58,6 +60,44 @@ def swap_description(v, go):
     return kind
 
 
+def add_profile_note(v, go):
+    """ショートの説明文の、ショートの経路の URL の上に案内の1行を足す。足してある物と URL の無い物はそのまま"""
+    sn = v["snippet"]
+    desc = sn.get("description", "")
+    if seconds(v["contentDetails"].get("duration")) > SHORT_MAX or SHORT not in desc or PROFILE_NOTE in desc:
+        return False
+    if go:
+        keep = ("title", "tags", "categoryId", "defaultLanguage", "defaultAudioLanguage")
+        new = desc.replace(SHORT, f"{PROFILE_NOTE}\n{SHORT}", 1)
+        body = {"id": v["id"], "snippet": {**{k: sn[k] for k in keep if k in sn}, "description": new}}
+        api(CH, "PUT", f"{API}/videos?part=snippet", body, timeout=60)
+    return True
+
+
+def profile_main(go):
+    done, fails = [], []
+    for v in videos():
+        try:
+            if add_profile_note(v, go):
+                done.append(v["id"])
+                print(f"  ショート：{v['id']} {v['snippet']['title'][:40]}")
+        except urllib.error.HTTPError as ex:
+            fails.append(f"{v['id']}：{ex.code} {ex.read()[:200]!r}")
+    print(f"案内の1行を足す本数：{len(done)}")
+    if go:
+        lp = os.path.join(ROOT, "history", CH, "line_swap.json")
+        log = json.load(open(lp, encoding="utf-8")) if os.path.exists(lp) else []
+        log.append({"at": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat(timespec="seconds"),
+                    "profile_note": done, "fails": fails})
+        json.dump(log, open(lp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    else:
+        print("（--go が無いので替えていません）")
+    if fails:
+        print("【止まった物】もう一度動かすと続きから進みます")
+        print("\n".join("  " + f for f in fails))
+        sys.exit(1)
+
+
 def swap_comment(e, go):
     if not e.get("comment_id") or e.get("comment_gone"):
         return False
@@ -77,7 +117,10 @@ def swap_comment(e, go):
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--go", action="store_true")
+    a.add_argument("--profile", action="store_true")
     a = a.parse_args()
+    if a.profile:
+        return profile_main(a.go)
     hp = os.path.join(ROOT, "history", CH, "uploaded.json")
     hist = json.load(open(hp, encoding="utf-8"))
     done, fails = {"long": [], "short": [], "comment": []}, []

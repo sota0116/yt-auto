@@ -10,6 +10,8 @@ from upload_job import ROOT, api, channel_titles
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 TOKUTEN = "主な職業の年収・労働時間と、産業別の離職率の一覧"  # 手順書 §4 の型A・C の特典
+# ショートの説明欄のリンクは押せないので、押せるプロフィールのリンクへ案内する。URL は登録経路の計測のために残す（2026-11-02）
+PROFILE_NOTE = "チャンネル名を押すと、プロフィールにLINEのリンクがあります"
 HOW = "人の手では数えきれない統計をプログラムで計算し、グラフと合成音声で動画にしています。数字は全部、出典と照らしています。"
 HOW_ROUTINE = "1日の流れは、公開されている資料をもとに組み立てた、ある1日の例です。時間や中身は職場によって違います。統計とネットの情報をもとに、AIで映像と声にしています。"
 
@@ -27,7 +29,7 @@ def description(work, ch="job"):
         credit = credit.split("、")[0]
         urls = list(dict.fromkeys(x["url"] for x in sc.get("day_facts", []) if "PR" not in x["url"]))
         src = "▼1日の流れの資料\n" + "\n".join(urls) + "\n\n" + src
-    d = (f"{sc['desc_lead']}\n\n▼{TOKUTEN}を、LINEで無料で受け取れます\n{prof.get('line_url_short') or prof['line_url']}\n\n{src}\n{fx['e_stat_note']}\n{fx['加工']}\n\n"
+    d = (f"{sc['desc_lead']}\n\n▼{TOKUTEN}を、LINEで無料で受け取れます\n{PROFILE_NOTE}\n{prof.get('line_url_short') or prof['line_url']}\n\n{src}\n{fx['e_stat_note']}\n{fx['加工']}\n\n"
          f"{how}\n{credit}\n\n{tags}")
     if "PR" in d:
         sys.exit("【止まりました】説明文に PR の文字があります（手順書 §10）")

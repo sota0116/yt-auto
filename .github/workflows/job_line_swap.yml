@@ -1,10 +1,15 @@
 # 仕事ch：動画の LINE リンクを UTAGE の登録経路に替える。手で動かす時だけ。go を付けないと確かめるだけ
+# profile を付けると、ショートの説明文にプロフィールのリンクへの案内を足す
 name: job_line_swap
 on:
   workflow_dispatch:
     inputs:
       go:
         description: "書き換える"
+        type: boolean
+        default: false
+      profile:
+        description: "ショートの説明文にプロフィールへの案内を足す"
         type: boolean
         default: false
 
@@ -37,7 +42,7 @@ jobs:
           printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 替える
-        run: python -X utf8 pipeline/job_line_swap.py ${{ inputs.go && '--go' || '' }}
+        run: python -X utf8 pipeline/job_line_swap.py ${{ inputs.go && '--go' || '' }} ${{ inputs.profile && '--profile' || '' }}
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always() && inputs.go
         run: |

@@ -211,7 +211,8 @@ def description(work, ch, sc, rec, long_id):
     prof = json.load(open(os.path.join(ROOT, "channels", ch, "profile.json"), encoding="utf-8"))
     # LINE の特典の段落は、長尺の説明文の1段落目をそのまま使う（型D は特典が2つセットなど、型で違うため）
     first = (sc.get("desc") or "").split("\n\n")[0]
-    url = prof.get("line_url_short") or prof["line_url"]  # ショートは経路を分ける（UTAGE の登録経路。2026-11-01）
+    from short_upload import PROFILE_NOTE
+    url = PROFILE_NOTE + "\n" + (prof.get("line_url_short") or prof["line_url"])  # ショートは経路を分ける（UTAGE の登録経路。2026-11-01）。押せるプロフィールへ案内する
     line = first.replace("{LINE_URL}", url) if "LINEで無料で受け取れます" in first and "{LINE_URL}" in first \
         else f"▼{TOKUTEN}を、LINEで無料で受け取れます\n{url}"
     src ="\n".join(f"出典：{s['名前']}（{s['公表日']} 公表）\n{s['URL']}" for s in fx.get("出典", []) if isinstance(s, dict) and s.get("名前"))

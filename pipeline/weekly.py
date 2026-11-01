@@ -90,6 +90,10 @@ def gather(chs):
             if ch == "job":  # 手順書 §12：伸びたショートは同じ題の長尺と関連動画につなぐ案を出す。音と画の直しの前後もここで見る
                 sl = h(ch, "shorts_learn.json", {})
                 extra["ショート"] = {k: sl.get(k) for k in ("編集の版ごと", "伸びた回")}
+                # 手順書 §12 の投稿：作るのは Chrome の画面からなので、予約が切れる前に足せるよう残りを出す
+                posts = h(ch, "posts.json", [])
+                left = [p for p in posts if p["日"] > now().strftime("%Y-%m-%d")]
+                extra["投稿"] = {"予約の残り": len(left), "最後の予約": max((p["日"] for p in left), default=None), "足す時期": len(left) <= 2}
         d["チャンネル"][ch] = {
             "在庫": sum(1 for e in up if not e.get("published") and not e.get("missing")),
             "来週の予約が無い日": [x for x in nxt if x not in booked],
