@@ -64,5 +64,27 @@
   "publish_at": "2026-11-02T19:00:00+09:00",
   "uploaded_at": "2026-11-01T14:52:37+09:00",
   "missing": false
+ },
+ {
+  "work": "S007_使い回しの鍵",
+  "video_id": "QJTJxhLIZF4",
+  "title": "掲示板のパスワードで、ゲーム会社の中へ入れた理由 #実話 #ハッカー",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-03T12:00:00+09:00",
+  "uploaded_at": "2026-11-01T23:07:32+09:00",
+  "missing": false
+ },
+ {
+  "work": "S008_止まるのこぎり",
+  "video_id": "dK51bB7Qg2s",
+  "title": "指が触れた瞬間、回る刃が消える。のこぎりの仕組み #実話 #仕組み",
+  "video": "完成_v2.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-03T19:00:00+09:00",
+  "uploaded_at": "2026-11-01T23:09:38+09:00",
+  "missing": false
  }
 ]
