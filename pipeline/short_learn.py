@@ -76,6 +76,8 @@ def measure(dry):
     now = datetime.datetime.now(JST)
     n = 0
     for e in up:
+        if e.get("retired"):  # 取り下げて公開しなかった回（short_unschedule.py）
+            continue
         at = datetime.datetime.fromisoformat(e["publish_at"])
         age = (now - at).total_seconds() / 3600
         m = met.get(e["work"], {})

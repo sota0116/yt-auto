@@ -15,6 +15,12 @@ on:
       routine_at:
         description: "1日の流れを1本だけ作って予約する時刻（例 2026-11-03T18:10。空ならいつもどおり）"
         default: ""
+      pull_video:
+        description: "作る前に予約を取り下げるショートの動画ID（消さない。空なら何もしない）"
+        default: ""
+      pull_why:
+        description: "取り下げる理由（pull_video を使う時に書く）"
+        default: ""
 
 permissions:
   contents: write
@@ -70,6 +76,12 @@ jobs:
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 数字を取って学ぶ（PDCA）
         run: python -X utf8 pipeline/short_learn.py
+      - name: 予約を取り下げる（入力があった時だけ。pipeline/short_unschedule.py）
+        if: inputs.pull_video != ''
+        env:
+          INPUT_VIDEO: ${{ inputs.pull_video }}
+          INPUT_WHY: ${{ inputs.pull_why }}
+        run: python -X utf8 pipeline/short_unschedule.py "$INPUT_VIDEO" --why "$INPUT_WHY"
       - name: 作って予約する
         if: vars.PAUSED != '1'
         env:

@@ -2,15 +2,19 @@
 #   python -X utf8 pipeline\check_routine.py <作業フォルダ>
 # ・作り話を防ぐ：day_facts の URL を実際に開き、抜き書きがそのページにあるかを照らす。2件以上通らなければ NG
 # ・声の文の数字は、時刻か、facts.json か、day_facts の「事実」にある物だけ
+# ・1本は1回の勤務（2026-11-02 1本目が 21:00 から翌 17:00 までの1回の勤務になり、点検を素通りした）。
+#   clock の最初から最後までが SHIFT_MAX 時間以内。それより長い勤務（24時間勤務など）は、照合が通った資料の「事実」に「24時間勤務」のように書いてある時だけ
 import ipaddress, json, os, re, sys, urllib.parse
 import requests
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from check_psy_script import tease
 from check_short import META, banned, nums
 
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHARS = (330, 520)
 CUTS = (9, 13)
 CUT_MAX = 55
+SHIFT_MAX = 16
 ANGLES = ("引き", "寄り", "見下ろし", "見上げ", "目線")
 TIME = re.compile(r"\d{1,2}時(?!間)(?:半|\d{1,2}分)?")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; yt-auto-factcheck/1.0)"}
@@ -62,6 +66,28 @@ def verify(day_facts):
         else:
             bad.append(f"{url}：抜き書きがページにない")
     return good, bad
+
+
+def shift_hours(clocks):
+    """clock を順に進めた時の、最初から最後までの時間。前より早い時刻が来たら、次の日へまたいだと見る"""
+    mins, day = [], 0
+    for c in clocks:
+        h, m = map(int, c.split(":"))
+        if mins and h * 60 + m + day < mins[-1]:
+            day += 1440
+        mins.append(h * 60 + m + day)
+    return (mins[-1] - mins[0]) / 60 if mins else 0
+
+
+def shift_limit(passed):
+    """照合が通った資料に「24時間勤務」のような長い勤務が書いてあれば、そこまで認める"""
+    long_ = [int(x) for d in passed for x in re.findall(r"(\d+)時間(?:勤務|拘束|当直)", d.get("事実", ""))]
+    return max([SHIFT_MAX] + long_)
+
+
+def used_titles():
+    p = os.path.join(ROOT, "history", "job", "shorts.json")
+    return {x.get("title") for x in json.load(open(p, encoding="utf-8"))} if os.path.exists(p) else set()
 
 
 def check(work):
@@ -121,6 +147,9 @@ def check(work):
         hero += bool(c.get("chars"))
     if len(clocks) < 5:
         ng.append(f"時刻のカット {len(clocks)}（5以上）")
+    span, limit = shift_hours([c for c in clocks if re.fullmatch(r"\d{1,2}:\d{2}", c)]), shift_limit(passed)
+    if span > limit:
+        ng.append(f"最初の時刻から最後の時刻まで {span:g}時間（{clocks[0]}〜{clocks[-1]}。1本は1回の勤務で{limit}時間まで）")
     charts = [c for c in cuts if c.get("chart")]
     if len(charts) != 1:
         ng.append('年収のカットは1つ（"chart": "pay"）')
@@ -149,6 +178,8 @@ def check(work):
     t = sc.get("title", "")
     if not t or len(t) > 60:
         ng.append(f"タイトル {len(t)}字（ハッシュタグ込みで60字まで）")
+    if t in used_titles():
+        ng.append("タイトルが前に作った回と同じ（二重防止で上げられない）")
     if fx["呼び名"] not in t or "1日" not in t:
         ng.append(f"タイトルに「{fx['呼び名']}」と「1日」を入れる")
     for w in ("AI", "PR"):
