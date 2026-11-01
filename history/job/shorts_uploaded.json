@@ -149,6 +149,19 @@
   "privacy": "private",
   "publish_at": "2026-11-03T18:10:00+09:00",
   "uploaded_at": "2026-11-02T01:00:46+09:00",
+  "missing": false,
+  "retired": true,
+  "retired_why": "1回の勤務が20時間で、拘束時間の決まりと合わないため取り下げ",
+  "retired_at": "2026-11-02T01:14:22+09:00"
+ },
+ {
+  "work": "20261102_0114_r0",
+  "video_id": "Wp-pJp2iUk0",
+  "title": "大型トラック運転手の1日｜棚が埋まる前の夜、荷待ちと休息の決まり #年収 #仕事",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-03T07:10:00+09:00",
+  "uploaded_at": "2026-11-02T01:36:38+09:00",
   "missing": false
  }
 ]
