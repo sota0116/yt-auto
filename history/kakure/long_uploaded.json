@@ -26,5 +26,33 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "物語"
+ },
+ {
+  "work": "003_因幡の白兎",
+  "video_id": "O3cHNDWO7gg",
+  "title": "因幡の白兎はなぜ皮をはがれたのか 古事記に「白」の字は無かった【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-03T20:00:00+09:00",
+  "uploaded_at": "2026-11-01T23:45:17+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "謎"
+ },
+ {
+  "work": "004_曜日の神々",
+  "video_id": "QgUE3NqHYPc",
+  "title": "英語の木曜日Thursdayは雷の神トールの日 曜日に隠れた北欧の神々【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-05T20:00:00+09:00",
+  "uploaded_at": "2026-11-02T00:03:15+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "元ネタ"
  }
 ]
