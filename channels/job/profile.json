@@ -102,8 +102,9 @@
   "auto_publish": true
  },
  "_shorts": "ショート（手順書 §12・pipeline/run_shorts.py・.github/workflows/shorts.yml）。1日の本数と、翌日の公開の予約の時刻（日本時間）。auto_publish は 2026-10-27 本人「PDCAで日々いい感じに改善してくれれば見ないから自動でいいよ」で true",
- "line_url": "https://lin.ee/wQwnVsE",
- "_line_url": "LINE 公式アカウント（仕事）。UTAGE の流入経路を作るまでは全部の動画でこの1本（登録者100人か1万回の動画が出たら UTAGE に替える）",
+ "line_url": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+ "line_url_short": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=DQNRx7AqeMn5",
+ "_line_url": "LINE 公式アカウント（仕事）の UTAGE 登録経路。line_url は長尺、line_url_short はショート。経路で登録数を分けて見る（2026-11-01）",
  "tools": {
   "teaser": "make_teaser_job.py"
  },

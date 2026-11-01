@@ -20,7 +20,7 @@ def description(work, ch="job"):
     src = "\n".join(f"出典：{s['名前']}（{s['公表日']} 公表）\n{s['URL']}" for s in fx["出典"])
     credit = prof["voicevox"]["credit"]
     tags = " ".join("#" + t for t in sc.get("tags", [])[:3])
-    d = (f"{sc['desc_lead']}\n\n▼{TOKUTEN}を、LINEで無料で受け取れます\n{prof['line_url']}\n\n{src}\n{fx['e_stat_note']}\n{fx['加工']}\n\n"
+    d = (f"{sc['desc_lead']}\n\n▼{TOKUTEN}を、LINEで無料で受け取れます\n{prof.get('line_url_short') or prof['line_url']}\n\n{src}\n{fx['e_stat_note']}\n{fx['加工']}\n\n"
          f"{HOW}\n{credit}\n\n{tags}")
     if "PR" in d:
         sys.exit("【止まりました】説明文に PR の文字があります（手順書 §10）")

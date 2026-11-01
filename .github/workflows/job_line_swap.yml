@@ -1,0 +1,53 @@
+# 仕事ch：動画の LINE リンクを UTAGE の登録経路に替える。手で動かす時だけ。go を付けないと確かめるだけ
+name: job_line_swap
+on:
+  workflow_dispatch:
+    inputs:
+      go:
+        description: "書き換える"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  swap:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 鍵を置く（中身は画面に出さない）
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: 替える
+        run: python -X utf8 pipeline/job_line_swap.py ${{ inputs.go && '--go' || '' }}
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always() && inputs.go
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet && exit 0
+          git commit -qm "仕事ch：動画の LINE リンクを UTAGE に替えた記録"
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
+      - name: 鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"
