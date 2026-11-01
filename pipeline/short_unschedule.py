@@ -4,11 +4,12 @@
 # ・もう公開された動画には触らない。予約が外れたことを読み直して確かめてから記録を直す
 # ・記録：shorts_uploaded.json の回に "retired": true（short_learn.py が数字を取らない）、
 #   shorts.json の回を ok: false（routine_pick.py がその職業をまた選べる。失敗2回で飛ばす）
-import argparse, datetime, json, os, sys
+import argparse, datetime, json, os, sys, time, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import API, ROOT, api
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
+WAIT = 4
 H = lambda n: os.path.join(ROOT, "history", "job", n)
 
 
@@ -21,6 +22,35 @@ def status_of(vid):
 
 def save(path, data):
     json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
+def put(vid, status):
+    api("job", "PUT", f"{API}/videos?part=status", {"id": vid, "status": status}, timeout=60)
+
+
+def cleared(vid):
+    """反映に少し間があるので、3回まで読み直す"""
+    for i in range(3):
+        time.sleep(i * WAIT)
+        st = status_of(vid)
+        if not st.get("publishAt"):
+            return st
+    return st
+
+
+def clear(vid, body):
+    """publishAt を送らないだけでは予約が残る（2026-11-02 21lm0bjJSRk で起きた）。空で送り、残れば限定公開を挟んで非公開へ戻す"""
+    try:
+        put(vid, {**body, "publishAt": None})
+        st = cleared(vid)
+        if not st.get("publishAt"):
+            return st
+        print("publishAt を空にしても残るので、限定公開を挟みます")
+    except urllib.error.HTTPError as e:
+        print(f"publishAt を空で送れない（{e.code}）ので、限定公開を挟みます")
+    put(vid, {**body, "privacyStatus": "unlisted"})
+    put(vid, body)
+    return cleared(vid)
 
 
 def main():
@@ -40,8 +70,7 @@ def main():
         sys.exit(f"【止まりました】{a.video_id} はもう {st.get('privacyStatus')} です。公開済みは触りません")
     body = {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True, "embeddable": True,
             "publicStatsViewable": True, "license": st.get("license", "youtube")}
-    api("job", "PUT", f"{API}/videos?part=status", {"id": a.video_id, "status": body}, timeout=60)
-    st = status_of(a.video_id)
+    st = clear(a.video_id, body)
     if st.get("publishAt") or st.get("privacyStatus") != "private":
         sys.exit(f"【止まりました】予約が外れていません：{st.get('privacyStatus')} {st.get('publishAt')}")
     rec.update({"retired": True, "retired_why": a.why, "retired_at": datetime.datetime.now(JST).isoformat(timespec="seconds")})
