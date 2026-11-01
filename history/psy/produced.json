@@ -459,5 +459,71 @@
    ]
   },
   "short_video_id": "amjywC33V7Q"
+ },
+ {
+  "work": "010_niwa_shokubutsu",
+  "type": "ひとりの時間",
+  "frame": "ひとりの時間",
+  "neta_id": "p_niwa_shokubutsu",
+  "jobs": [],
+  "made": "2026-11-01",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】植物を育てる人の「意外な特徴」｜ひとりの庭仕事でも、誰かと一緒の時と同じくらい明るかった",
+  "titles": [
+   "【心理学】植物を育てる人の「意外な特徴」｜ひとりの庭仕事でも、誰かと一緒の時と同じくらい明るかった",
+   "【心理学】植物を育てるのが好きな人、実は30分の土いじりで、本を読むより気持ちを立て直しています。",
+   "【心理学】植物を育てるのが好きな人に共通する5つの特徴｜緑を40秒見た学生は、コンクリートを見た学生より見落としが少なかった"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-11-01 の「次の回で試すこと」から2つ：1 つかみの1カット目を、日付と時刻と場所と物の入った1場面（四月の朝6時半・縁側・じょうろ）にし、2カット目に頭の中の一言（「あら、こんな所に」）を入れた。2 タイトルの1番目を型A にした（年代の言葉は、S5 が年配の人に限った調べではないので入れていない）。3 の工夫の前にうまくいかないやり方を見せるのは、人づきあいの回ではないので入れていない。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:20 朝の水やりが、やめられない",
+   "3:11 特徴1　緑を見て、注意を休める",
+   "5:43 特徴2　土にさわって、立て直す",
+   "8:04 特徴3　ひとりの庭でも、明るい",
+   "10:23 特徴4　出入りのたびに、緑を見る",
+   "12:41 特徴5　小さな芽に、はっとする",
+   "15:31 植物と暮らす3つの工夫",
+   "17:44 まとめ"
+  ],
+  "video_id": "liv4Sr8aVbA",
+  "回した理由": null,
+  "studies": [
+   "Soga, Gaston & Yamaura (2017) Preventive Medicine Reports",
+   "Lee, Williams, Sargent, Williams & Johnson (2015) Journal of Environmental Psychology",
+   "Berman, Jonides & Kaplan (2008) Psychological Science",
+   "Van Den Berg & Custers (2011) Journal of Health Psychology",
+   "Ambrose, Das, Fan & Ramaswami (2020) Landscape and Urban Planning",
+   "Chalmin-Pui, Roe, Griffiths, Smyth, Heaton, Clayden & Cameron (2021) Landscape and Urban Planning",
+   "Langer & Rodin (1976) Journal of Personality and Social Psychology",
+   "Sturm, Datta, Roy, Sible, Kosik, Veziris, Chow, Morris, Neuhaus, Kramer, Miller, Holley & Keltner (2022) Emotion"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    8,
+    6,
+    6,
+    9,
+    6,
+    8,
+    9,
+    6,
+    7
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "A05「ふしぎなことが起きていた」とA06「ただの趣味と思われがち」が少し曖昧なので、A04の直後に「その数分、実は、台所のことを考える頭が止まっていた」のように、答えの輪郭が一つ見える一文を置くと先が気になる。",
+    "B07〜B09の22の研究の要約が講義調で人の話になっていないので、B01〜B06の人物に「朝の水やりを続けた人」として戻し、数字より先に「落ち着く」の理由の謎を引っ張るとよい。",
+    "C07〜C17は大学生の実験が2本続いて説明が長いので、1本（40秒の屋上）に絞って人の様子を語り、もう1本は短く「植物園と町中」の対比だけにすると耳で追いやすい。"
+   ]
+  },
+  "short_video_id": "6Ih7okYWhA0"
  }
 ]
