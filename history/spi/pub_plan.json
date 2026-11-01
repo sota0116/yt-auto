@@ -112,5 +112,19 @@
   "line_copy": 1,
   "sub_copy": 1,
   "made": "2026-11-01"
+ },
+ "013_b_shinshi_kitsune": {
+  "neta_id": "b_shinshi_kitsune",
+  "type": "B",
+  "frame": "B-2",
+  "pub_date": "2026-11-16",
+  "window": [
+   "2026-11-05",
+   "2027-04-04"
+  ],
+  "hook_type": "場面",
+  "line_copy": 2,
+  "sub_copy": 1,
+  "made": "2026-11-02"
  }
 }
