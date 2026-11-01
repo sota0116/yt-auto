@@ -1,16 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S102_n015",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images",
-  "motion"
- ],
- "started": "2026-10-31T04:17:31+09:00",
- "tries": 1,
- "code": "4087bba7caa2",
- "stage": "gate_images",
- "updated": "2026-11-01T11:07:58+09:00"
-}
+{}
