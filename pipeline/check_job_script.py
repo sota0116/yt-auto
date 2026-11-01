@@ -841,12 +841,13 @@ def main(work):
     is_d = sc.get("type") == "D"
     if not is_d:
         # 長さは目安（2026-10-30 本人「無理しなくていいよ、クオリティ重視だから時間を絶対ルールにしなくていい」）。水増しより中身。落とすのは6分より短い時だけ
-        if chars > 4200 or chars < 2600:
-            ng.append(f"字数 {chars}（2,600〜4,200。目安は3,400以上）")
+        # 字数とカットの上限は 2026-11-01 に外した（本人「そんなの必要ない」。手順書 v5.8 §4）
+        if chars < 2600:
+            ng.append(f"字数 {chars}（2,600以上。目安は3,400以上）")
         elif chars < 3400:
             warn.append(f"字数 {chars}（目安は3,400以上。足りない分を水増しで埋めない）")
-        if len(cuts) > 135 or len(cuts) < 85:
-            ng.append(f"カット {len(cuts)}（85〜135。目安は105以上）")
+        if len(cuts) < 85:
+            ng.append(f"カット {len(cuts)}（85以上。目安は105以上）")
         elif len(cuts) < 105:
             warn.append(f"カット {len(cuts)}（目安は105以上）")
         if chars / (CPS * SPEED) < 360:
