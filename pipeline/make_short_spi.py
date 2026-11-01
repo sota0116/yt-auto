@@ -18,7 +18,7 @@
 #     after  … 本編の中身を1つ切り出す。最後は {CLOSE}（続きは、〇月〇日、〇曜日に出した、本編の長い動画で）＋ END の画面
 #     teaser … 本編の公開の前に出す予告。最後は {CLOSE}（〇月〇日、〇曜日の夕方6時に出す、本編の長い動画で）＋ END の画面。本編に予約が入ってから作る
 #     solo   … 1本で答えまで言い切る。{CLOSE} と END は使わない（本編へは説明欄とコメントでつなぐ）。本編の日が未定でも作れる
-import argparse, json, os, re, subprocess, sys
+import argparse, json, os, re, subprocess, sys, time
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -59,9 +59,16 @@ def fetch_long(work):
     """本編の今の状態（公開か予約の日時・非公開か・長さの秒）を YouTube から読む。shorts_spi.py が作業フォルダの _long.json に置く"""
     from upload_job import api, API
     up = json.load(open(os.path.join(work, "uploaded.json"), encoding="utf-8"))
-    it = json.load(api("spi", "GET", f"{API}/videos?part=status,snippet,contentDetails&id={up['video_id']}", timeout=60))["items"][0]
+    for i in range(10):  # 上げた直後は YouTube の処理中で、長さが PT〜 の形で返らないことがある（2026-11-01 千年こよみ 010 のショートが落ちた）
+        it = json.load(api("spi", "GET", f"{API}/videos?part=status,snippet,contentDetails&id={up['video_id']}", timeout=60))["items"][0]
+        m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it["contentDetails"]["duration"])
+        if m:
+            break
+        print(f"本編の長さがまだ読めません（{it['contentDetails']['duration']}）。30秒待ちます", flush=True)
+        time.sleep(30)
+    else:
+        sys.exit("【止まりました】本編の長さが読めません（YouTube の処理中）。次の実行で続きから作ります")
     st = it["status"]
-    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it["contentDetails"]["duration"])
     h, mi, s = (int(x or 0) for x in m.groups())
     return {"video_id": up["video_id"], "privacy": st["privacyStatus"],
             "when": it["snippet"]["publishedAt"] if st["privacyStatus"] == "public" else st.get("publishAt"), "seconds": h * 3600 + mi * 60 + s}

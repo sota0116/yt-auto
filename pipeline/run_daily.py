@@ -270,6 +270,26 @@ def record(ch, work):
     jsave(os.path.join(ROOT, "history", ch, "scripts", rec["work"] + ".json"), hs)
 
 
+def heal_uploaded(ch):
+    """記録の commit が落ちた回は、上げたのに history に載らない。在庫を少なく数え、続きの回は二重アップ防止で止まる（2026-11-01）
+    作業フォルダの uploaded.json（actions/cache で引き継ぐ）から戻す。古い回は手で消した動画かもしれないので、14日以内だけ"""
+    import glob
+    import ustore
+    up = ustore.load(ch)
+    have = {e.get("work") for e in up}
+    since = (now() - datetime.timedelta(days=14)).isoformat()
+    add = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "channels", ch, "videos", "*", "uploaded.json"))):
+        r = jload(f, {})
+        if r.get("video_id") and r.get("work") and r["work"] not in have and r.get("uploaded_at", "") >= since:
+            add.append((os.path.dirname(f), r))
+    if add:
+        ustore.save(ch, up + [r for _, r in add])
+        for work, r in add:
+            record(ch, work)
+            print(f"記録を戻しました：{r['work']}（{r['video_id']}）", flush=True)
+
+
 def apply_fixes(ch, work, st):
     """台本ゲートを通った後に人が見つけた直し（channels\\<ch>\\fixes\\<作業フォルダ名>.json）を、アップの前に script.json へ入れる（2026-10-28）
     titles（3案）・thumb・short_title を置き換え、drop_lines_with の言葉がある行を概要欄（本編・ショート）から除く"""
@@ -780,6 +800,7 @@ def main():
                 jsave(cur["sp"], st)
     lp = hpath(ch, "last_run.json")
     last = jload(lp, {})
+    heal_uploaded(ch)
     # 作り途中の回（時間切れで落ちた回。status.json に work が残る）がある時は、やり直しの枠でも続きを作る（2026-10-28）
     KS = kinds(ch)  # 種類ごとに作るチャンネル（アナザー日本紀）。無ければ None＝今までの動き
     kinds_run = [k for k in (KS or {}) if not a.kind or k == a.kind]
