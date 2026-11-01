@@ -99,8 +99,10 @@
  "shorts": {
   "per_day": 2,
   "times": ["12:10", "20:10"],
-  "auto_publish": true
+  "auto_publish": true,
+  "routine_per_day": 1
  },
+ "_routine_per_day": "1日の流れショートの本数の始まりの値（2026-11-02 本人「自動でのせてPDCAで改善して」）。あとは short_learn.py の判定が 0〜2 に動かす（手順書 §12）",
  "_shorts": "ショート（手順書 §12・pipeline/run_shorts.py・.github/workflows/shorts.yml）。1日の本数と、翌日の公開の予約の時刻（日本時間）。auto_publish は 2026-10-27 本人「PDCAで日々いい感じに改善してくれれば見ないから自動でいいよ」で true",
  "line_url": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
  "line_url_short": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=DQNRx7AqeMn5",

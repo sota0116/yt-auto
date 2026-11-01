@@ -101,7 +101,7 @@ def history():
 
 
 def choose(ts, kind=None):
-    h = history()
+    h = [x for x in history() if x.get("kind") != "routine"]  # 1日の流れ（routine_pick.py）は別の順番で回す
     used = {x["topic_id"] for x in h}
     last = h[-1] if h else {}
     recent_m = [x.get("measure") for x in h[-3:]]

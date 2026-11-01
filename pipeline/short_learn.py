@@ -32,6 +32,43 @@ def score(m):
     return round((m.get("views") or 0) * (m.get("averageViewPercentage") or 0) / 100 + (m.get("subscribersGained") or 0) * 200, 1)
 
 
+def retention(vid, start):
+    """1日の流れの見続けられ方。動画の長さを100として、一番落ちた位置（%）と、半分の位置に残った割合を返す。取れない時は空"""
+    q = {"ids": "channel==MINE", "startDate": start, "endDate": datetime.datetime.now(JST).date().isoformat(),
+         "metrics": "audienceWatchRatio", "dimensions": "elapsedVideoTimeRatio", "filters": f"video=={vid};audienceType==ORGANIC"}
+    try:
+        rows = json.load(api("job", "GET", ANA + "?" + urllib.parse.urlencode(q), timeout=60)).get("rows") or []
+    except urllib.error.HTTPError:
+        return {}
+    if len(rows) < 10:
+        return {}
+    fall = max(range(1, len(rows)), key=lambda i: rows[i - 1][1] - rows[i][1])
+    return {"一番落ちた位置": round(rows[fall][0] * 100), "半分の位置に残った割合": round(min(rows, key=lambda r: abs(r[0] - 0.5))[1], 2)}
+
+
+def routine_block(rows):
+    """1日の流れと統計ショートを、48時間の再生の真ん中で比べる（手順書 §12）。5本そろって1.2倍以上なら2本、10本そろって0.8倍未満なら0本、それ以外は1本"""
+    v48 = lambda r: (r.get("48h") or r.get("7d") or {}).get("views") or 0
+    rt = [r for r in rows if r.get("kind") == "routine"]
+    if not rt:
+        return None
+    st = sorted((r for r in rows if r.get("kind") != "routine"), key=lambda r: r["work"])
+    base = st[-max(6, len(rt)):]
+    mr, mb = statistics.median(v48(r) for r in rt), statistics.median(v48(r) for r in base) if base else 0
+    ratio = round(mr / mb, 2) if mb else None
+    per_day = 1
+    if ratio is not None and len(rt) >= 5 and ratio >= 1.2:
+        per_day = 2
+    elif ratio is not None and len(rt) >= 10 and ratio < 0.8:
+        per_day = 0
+    rt.sort(key=lambda r: r["score"], reverse=True)
+    keep = ("title", "hook", "measure", "views", "avp", "subs", "score", "一番落ちた位置", "半分の位置に残った割合")
+    groups = {r.get("measure", "").replace("1日_", "") for r in rt}
+    pts = {g: round(statistics.mean(r["score"] for r in rt if r.get("measure") == "1日_" + g), 1) for g in groups}
+    return {"本数": len(rt), "再生の真ん中": mr, "比べた統計ショートの本数": len(base), "統計の再生の真ん中": mb, "倍率": ratio, "1日の本数": per_day,
+            "仲間の点": pts, "点の高い3本": [{k: r.get(k) for k in keep} for r in rt[:3]], "点の低い3本": [{k: r.get(k) for k in keep} for r in rt[-3:]]}
+
+
 def measure(dry):
     up = jl(H("shorts_uploaded.json"), [])
     made = {x["work"]: x for x in jl(H("shorts.json"), [])}
@@ -52,6 +89,8 @@ def measure(dry):
             continue
         s["score"] = score(s)
         mk = made.get(e["work"], {})
+        if mk.get("kind") == "routine":
+            s.update(retention(e["video_id"], at.date().isoformat()))
         m.update({"video_id": e["video_id"], "title": e["title"], "topic_id": mk.get("topic_id"), "kind": mk.get("kind"),
                   "measure": mk.get("measure"), "hook": mk.get("hook"), "banner": mk.get("banner"),
                   "7d" if age >= 24 * 7 else "48h": s, "取った日": now.isoformat(timespec="seconds")})
@@ -69,8 +108,13 @@ def learn(met, dry=False):
         s = m.get("7d") or m.get("48h")
         if s:
             rows.append({**m, "work": w, "score": s["score"], "views": s.get("views"), "avp": s.get("averageViewPercentage"),
-                         "subs": s.get("subscribersGained")})
+                         "subs": s.get("subscribersGained"), "一番落ちた位置": s.get("一番落ちた位置"),
+                         "半分の位置に残った割合": s.get("半分の位置に残った割合")})
+    block = routine_block(rows)
+    rows = [r for r in rows if r.get("kind") != "routine"]  # ここから下は統計ショートの学び。1日の流れは "1日の流れ" に分ける
     out = {"本数": len(rows), "更新": datetime.datetime.now(JST).isoformat(timespec="seconds")}
+    if block:
+        out["1日の流れ"] = block
     if len(rows) < MIN_N:
         out["メモ"] = f"数字のあるショートが {len(rows)}本（{MIN_N}本そろうまで学びは出さない）"
     else:

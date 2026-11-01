@@ -12,6 +12,9 @@ on:
       n:
         description: "作る本数（空なら profile.json の per_day）"
         default: ""
+      routine_at:
+        description: "1日の流れを1本だけ作って予約する時刻（例 2026-11-03T18:10。空ならいつもどおり）"
+        default: ""
 
 permissions:
   contents: write
@@ -24,7 +27,7 @@ concurrency:
 jobs:
   shorts:
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 240
     services:
       voicevox:
         image: voicevox/voicevox_engine:cpu-0.25.2
@@ -34,6 +37,7 @@ jobs:
       TZ: Asia/Tokyo
       PAUSED: ${{ vars.PAUSED }}
       VOICEVOX_URL: http://127.0.0.1:50021
+      LOVART_SKILL: ${{ github.workspace }}/vendor/lovart/agent_skill.py
     steps:
       - uses: actions/checkout@v4
         with:
@@ -70,7 +74,35 @@ jobs:
         if: vars.PAUSED != '1'
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-        run: python -X utf8 pipeline/run_shorts.py ${{ inputs.n && format('--n {0}', inputs.n) || '' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+          INPUT_N: ${{ inputs.n }}
+          INPUT_AT: ${{ inputs.routine_at }}
+        run: |
+          if [ -n "$INPUT_AT" ]; then
+            python -X utf8 pipeline/run_shorts.py --routine-only --at "$INPUT_AT"
+          else
+            python -X utf8 pipeline/run_shorts.py ${INPUT_N:+--n "$INPUT_N"}
+          fi
+      - name: Lovart を無料モードに戻す（pipeline/lovart_boost.py）
+        if: always()
+        env:
+          LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
+          LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}
+        run: python -X utf8 pipeline/lovart_boost.py restore
+      - name: 1日の流れの完成品を残す（7日）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: routine-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            channels/job/shorts/*_r*/short.mp4
+            channels/job/shorts/*_r*/script.json
+            channels/job/shorts/*_r*/safezone_check.png
+            channels/job/shorts/*_r*/_write.log
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |
