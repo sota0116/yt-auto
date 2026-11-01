@@ -1,1 +1,19 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S107_台所に置くとお金が逃げる",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
+ ],
+ "started": "2026-11-02T00:27:10+09:00",
+ "tries": 1,
+ "code": "a7e7897a0c1a",
+ "stage": "upload",
+ "updated": "2026-11-02T00:58:29+09:00"
+}

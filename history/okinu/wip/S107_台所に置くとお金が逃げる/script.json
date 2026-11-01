@@ -1,0 +1,279 @@
+{
+ "title": "台所に置くとお金が逃げる物3選、第1位は？",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。物（台所の包丁・冷蔵庫の請求書・欠けた茶碗）が主役で、物語の場面は入れない",
+  "人物は第1位の答えのカット（C13）の手元の場面だけ。65歳の女性（絵は佐和子の設定画）で、名乗らない・セリフは無い",
+  "言い伝えは「〜と言われています」の距離で話す。欠けた茶碗は捨てさせず、口をつけない使い方に下げる"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "流しと冷蔵庫に置くと、お金が逃げる物、3つ。",
+   "subs": [
+    "流しと冷蔵庫に\n置くと、",
+    "お金が\n逃げる物、3つ。"
+   ],
+   "tts_text": "ながしとれいぞうこにおくと、お金が逃げるもの、みっつ。",
+   "hook": "台所に\n置くとNG",
+   "band": "お金が逃げる物",
+   "highlight": [
+    "流しと冷蔵庫",
+    "3つ"
+   ],
+   "image_en": "Close-up of the sink corner of a quiet Japanese home kitchen in the evening: a kitchen knife standing in a dish drying rack beside the sink and a white rice bowl with a small chipped rim in front, right next to a white refrigerator door with one plain blank paper held by a round magnet. The rack, bowl and fridge door fill more than half of the vertical frame. Warm lamp light, a thin drip of water falling from the faucet. No people, no text, no writing on the paper, no logos.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Close-up of the sink corner of a quiet Japanese home kitchen in the evening: a kitchen knife standing in a dish drying rack beside the sink and a white rice bowl with a small chipped rim in front, right next to a white refrigerator door with one plain blank paper held by a round magnet. The rack, bowl and fridge door fill more than half of the vertical frame. Warm lamp light, a thin drip of water falling from the faucet. No people, no text, no writing on the paper, no logos."
+  },
+  {
+   "id": "C02",
+   "narration": "食費を削っても残らないなら、水切りかごを見て。",
+   "subs": [
+    "食費を削っても\n残らないなら、",
+    "水切りかごを\n見て。"
+   ],
+   "tts_text": "しょくひをけずっても残らないなら、みずきりかごを見て。",
+   "highlight": [
+    "水切りかご"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ]
+  },
+  {
+   "id": "C03",
+   "narration": "第3位、水切りかごに立てたままの包丁。",
+   "subs": [
+    "第3位、",
+    "水切りかごに\n立てたままの包丁。"
+   ],
+   "tts_text": "だいさんい、みずきりかごに立てたままのほうちょう。",
+   "highlight": [
+    "第3位"
+   ],
+   "image_en": "Extreme close-up of a stainless kitchen knife standing upright in a plastic dish drying rack next to a sink, the blade catching a cold glint of light, a few washed plates behind it. The knife and rack fill more than half of the vertical frame. Kitchen of a modest Japanese home, evening. No text or logos.",
+   "image": "Extreme close-up of a stainless kitchen knife standing upright in a plastic dish drying rack next to a sink, the blade catching a cold glint of light, a few washed plates behind it. The knife and rack fill more than half of the vertical frame. Kitchen of a modest Japanese home, evening. No text or logos."
+  },
+  {
+   "id": "C04",
+   "narration": "光る刃先は、お金が逃げるしるし。",
+   "subs": [
+    "光る刃先は、",
+    "お金が\n逃げるしるし。"
+   ],
+   "tts_text": "ひかるはさきは、お金が逃げるしるし。",
+   "highlight": [
+    "逃げる"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C05",
+   "narration": "見える刃物は、お金のもめごとを呼ぶと言われています。",
+   "subs": [
+    "見える刃物は、",
+    "お金の\nもめごとを",
+    "呼ぶと\n言われています。"
+   ],
+   "tts_text": "みえるはものは、お金のもめごとを呼ぶと言われています。",
+   "same_as": "C03",
+   "shots": [
+    "C03@full"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "拭いたら、シンク下の戸の内側に収めてね。",
+   "subs": [
+    "拭いたら、",
+    "シンク下の\n戸の内側に",
+    "収めてね。"
+   ],
+   "tts_text": "ふいたら、しんくしたの、とのうちがわにおさめてね。",
+   "highlight": [
+    "戸の内側"
+   ],
+   "image_en": "Close-up of an older woman's hands sliding a kitchen knife into a simple knife holder fixed on the inside of an open cabinet door under a kitchen sink. Hands, knife and door fill more than half of the vertical frame, no face. Warm soft light. No text or logos.",
+   "image": "Close-up of an older woman's hands sliding a kitchen knife into a simple knife holder fixed on the inside of an open cabinet door under a kitchen sink. Hands, knife and door fill more than half of the vertical frame, no face. Warm soft light. No text or logos."
+  },
+  {
+   "id": "C07",
+   "narration": "第2位、冷蔵庫の扉に貼った請求書。",
+   "subs": [
+    "第2位、",
+    "冷蔵庫の扉に\n貼った請求書。"
+   ],
+   "tts_text": "だいにい、れいぞうこのとびらに貼ったせいきゅうしょ。",
+   "highlight": [
+    "第2位"
+   ],
+   "image_en": "Close-up of a white refrigerator door with a folded plain envelope and a blank paper slip held by two round magnets, the papers turned so no writing is visible. The door and papers fill more than half of the vertical frame. Modest Japanese kitchen, soft daylight. No text, no logos, no numbers.",
+   "image": "Close-up of a white refrigerator door with a folded plain envelope and a blank paper slip held by two round magnets, the papers turned so no writing is visible. The door and papers fill more than half of the vertical frame. Modest Japanese kitchen, soft daylight. No text, no logos, no numbers."
+  },
+  {
+   "id": "C08",
+   "narration": "扉の請求書は、お金が止まるしるし。",
+   "subs": [
+    "扉の請求書は、",
+    "お金が\n止まるしるし。"
+   ],
+   "tts_text": "とびらのせいきゅうしょは、お金がとまるしるし。",
+   "highlight": [
+    "止まる"
+   ],
+   "same_as": "C07",
+   "shots": [
+    "C07@close"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "風水では、扉には何も貼らないのがよいと言われています。",
+   "subs": [
+    "風水では、",
+    "扉には何も\n貼らないのが",
+    "よいと\n言われています。"
+   ],
+   "tts_text": "ふうすいでは、とびらにはなにも貼らないのがよいと言われています。",
+   "image_en": "Close-up of a clean, completely bare white refrigerator door in a tidy Japanese kitchen, morning sunlight falling across it, a small potted green herb on the counter beside it. The door fills more than half of the vertical frame. No text, no logos, no magnets on the door.",
+   "image": "Close-up of a clean, completely bare white refrigerator door in a tidy Japanese kitchen, morning sunlight falling across it, a small potted green herb on the counter beside it. The door fills more than half of the vertical frame. No text, no logos, no magnets on the door."
+  },
+  {
+   "id": "C10",
+   "narration": "請求書は、封筒に戻して状差しへ。",
+   "subs": [
+    "請求書は、",
+    "封筒に戻して\n状差しへ。"
+   ],
+   "tts_text": "せいきゅうしょは、ふうとうにもどしてじょうさしへ。",
+   "highlight": [
+    "封筒"
+   ],
+   "same_as": "C09",
+   "shots": [
+    "C09@left"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "第1位、ふちが少し欠けた、毎日のご飯茶碗。",
+   "subs": [
+    "第1位、",
+    "ふちが少し\n欠けた、",
+    "毎日の\nご飯茶碗。"
+   ],
+   "tts_text": "だいいちい、ふちがすこしかけた、まいにちのごはんぢゃわん。",
+   "highlight": [
+    "第1位"
+   ],
+   "image_en": "Extreme close-up of a well-used white Japanese rice bowl with a small chip missing from its rim, a little steamed rice inside, on a wooden dining table. The chipped rim is clearly visible and the bowl fills more than half of the vertical frame. Warm evening light. No text.",
+   "image": "Extreme close-up of a well-used white Japanese rice bowl with a small chip missing from its rim, a little steamed rice inside, on a wooden dining table. The chipped rim is clearly visible and the bowl fills more than half of the vertical frame. Warm evening light. No text."
+  },
+  {
+   "id": "C12",
+   "narration": "欠けのある器は、お金を受け止めにくいと言われています。",
+   "subs": [
+    "欠けのある\n器は、",
+    "お金を\n受け止めにくいと",
+    "言われています。"
+   ],
+   "tts_text": "かけのあるうつわは、お金を受け止めにくいと言われています。",
+   "highlight": [
+    "受け止め"
+   ],
+   "same_as": "C11",
+   "shots": [
+    "C11@close"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "口をつけるのはやめて、別の器でよそってね。",
+   "subs": [
+    "口をつけるのは\nやめて、",
+    "別の器で\nよそってね。"
+   ],
+   "tts_text": "くちをつけるのはやめて、べつのうつわでよそってね。",
+   "highlight": [
+    "別の器"
+   ],
+   "image_en": "Sawako in her kitchen with a sudden realization look, eyes wide, holding a white rice bowl in both hands and looking closely at the small chip on its rim. The hands and the bowl are large in the lower half of the vertical frame, her face above. Warm evening light. No text.",
+   "chars": [
+    "sawako"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Sawako in her kitchen with a sudden realization look, eyes wide, holding a white rice bowl in both hands and looking closely at the small chip on its rim. The hands and the bowl are large in the lower half of the vertical frame, her face above. Warm evening light. No text."
+  },
+  {
+   "id": "C14",
+   "narration": "捨てにくければ、棚で休ませてあげて。",
+   "subs": [
+    "捨てにくければ、",
+    "棚で\n休ませてあげて。"
+   ],
+   "tts_text": "すてにくければ、たなでやすませてあげて。",
+   "highlight": [
+    "休ませて"
+   ],
+   "image_en": "Close-up of a chipped white rice bowl set down to rest on an upper wooden kitchen shelf, an older woman's hand just letting go of it, no face. A plain new rice bowl with steamed rice waits on the counter below. The chipped bowl fills more than half of the vertical frame. Soft morning light. No text.",
+   "image": "Close-up of a chipped white rice bowl set down to rest on an upper wooden kitchen shelf, an older woman's hand just letting go of it, no face. A plain new rice bowl with steamed rice waits on the counter below. The chipped bowl fills more than half of the vertical frame. Soft morning light. No text."
+  },
+  {
+   "id": "C15",
+   "narration": "すぐ何も変わらない時も、気にしないでね。",
+   "subs": [
+    "すぐ何も\n変わらない時も、",
+    "気に\nしないでね。"
+   ],
+   "tts_text": "すぐなにもかわらないときも、きにしないでね。",
+   "same_as": "C14",
+   "shots": [
+    "C14@full"
+   ]
+  },
+  {
+   "id": "C16",
+   "narration": "あなたの台所には、いくつ置いてありましたか。",
+   "subs": [
+    "あなたの台所には、",
+    "いくつ置いて\nありましたか。"
+   ],
+   "highlight": [
+    "いくつ"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  }
+ ],
+ "tempo": 1.3,
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "/home/runner/work/yt-auto/yt-auto/channels/okinu/assets/bgm/okinu_bgm_01_seed1.m4a",
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの台所には、いくつ置いてありましたか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #台所に置くとお金が逃",
+ "tags": [
+  "金運",
+  "財布",
+  "台所に置くとお金が逃",
+  "60代"
+ ],
+ "short_type": 1,
+ "comment": "あなたの台所には、いくつ置いてありましたか。"
+}
