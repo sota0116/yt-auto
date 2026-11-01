@@ -1,1 +1,23 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/010_niwa_shokubutsu",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading",
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video",
+  "thumb",
+  "short"
+ ],
+ "started": "2026-11-01T05:31:12+09:00",
+ "tries": 0,
+ "code": "30e5e3d89f28",
+ "stage": "short",
+ "updated": "2026-11-01T09:32:01+09:00"
+}
