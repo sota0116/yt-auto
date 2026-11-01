@@ -63,7 +63,18 @@
  },
  "S004_秀吉だけ0%": {
   "type": null,
-  "video_id": "ln1Yf7HlVIo"
+  "video_id": "ln1Yf7HlVIo",
+  "h72": {
+   "views": 1883,
+   "averageViewPercentage": 134.69,
+   "averageViewDuration": 44,
+   "subscribersGained": 4,
+   "直す所": [
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-01",
+   "再生（公開ページ）": 2263
+  }
  },
  "S005_消防士が江戸の大火へ": {
   "type": null,
