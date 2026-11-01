@@ -4,11 +4,12 @@
 # ・Gemini（書いた Claude と別の会社のAI）に、研究・禁止表現の文脈・広告・続きの4つを見せる。部品は gate_script.py のものを使う
 # ・似すぎは、1本目（golden\script_001.json）と history\psy\scripts\ の過去回と比べる
 # ・THUMB（サムネの背景のカット）は語りが無いので、語りを見る所では外す
+# ・2026-11-01 本人：研究と合っているか・禁止表現・広告は回さない。合否は最初の30秒だけで、章・全体の点は記録だけ（gate_script.py の hook_result）
 # ・『続きを見たくなるか』の名前は run_daily.py の record() が点を拾う名前にそろえた（2026-10-29 まで「続きを聞きたくなるか」で拾われていなかった）
 import argparse, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ROOT, ask_json, items, S, trigram, cost  # noqa: E402
+from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result  # noqa: E402
 
 CPS = 5.15  # 読む速さ（字/秒）。1本目 5,254字（句読点を除く）・17分01秒から
 
@@ -152,10 +153,7 @@ def gate_hook(s, use):
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
     sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "全体": pt},
            "required": ["最初の30秒", "章", "全体"]}
-    r = ask_json(p, sch, use)
-    # 2026-10-29：各章 5→6・全体 7 を足した（「最後まで楽しく見られる」を線にする。本人の指摘）
-    ok = r["最初の30秒"]["点"] >= 7 and all(c["点"] >= 6 for c in r["章"]) and r["全体"]["点"] >= 7
-    return {"合格": ok, **r}
+    return hook_result(ask_json(p, sch, use))
 
 
 def gate_similar(s, ch, work):
@@ -184,7 +182,6 @@ def main():
     s, f = load(a.work)
     use = []
     res = {"モデル": gemini.TEXT_MODEL, "形": gate_form(a.work), "似すぎ": gate_similar(s, a.ch, a.work),
-           "研究と合っているか": gate_fact(s, f, use), "禁止表現": gate_ng(s, a.ch, use), "広告に向くか": gate_ads(s, use),
            "続きを見たくなるか": gate_hook(s, use)}
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)

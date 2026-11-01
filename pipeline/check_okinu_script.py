@@ -120,7 +120,7 @@ def check(work, kind=None):
     voiced = [c for c in cuts if c.get("narration")]
     text = "".join(c["narration"] for c in voiced)
 
-    # 共通：禁止表現・禁止記号・「ひとつめ」。声に出す文・題・最初の文字・サムネの文字を見る
+    # 共通：禁止表現（2026-11-01 本人「禁止表現の検品はフル無視でOK」で注意だけにした）・禁止記号・「ひとつめ」。声に出す文・題・最初の文字・サムネの文字を見る
     shown = [(c["id"], c["narration"]) for c in voiced] + [("title", s.get("title", ""))] + \
             [(f"title{i + 1}", t) for i, t in enumerate(s.get("titles") or [])] + \
             [(f"{c['id']}.hook", c.get("hook", "")) for c in cuts if c.get("hook")] + \
@@ -128,7 +128,7 @@ def check(work, kind=None):
     for w in words():
         for i, t in shown:
             if w in t:
-                ng.append(f"禁止表現「{w}」：{i}「{t[:30]}」")
+                warn.append(f"禁止表現「{w}」：{i}「{t[:30]}」")
     for i, t in shown:
         for m in MARKS:
             if m in t:

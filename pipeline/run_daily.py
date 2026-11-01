@@ -27,6 +27,8 @@
 #      おきぬ 102・日本紀 L101 が、完成動画まで通った後にここで止まり、手で直すまで次へ進まなかった（2026-10-31）
 #   9. 台本ゲートの不合格で止まるのが2回続いた回は、作業フォルダを残して次のネタへ進む（gate_fails）。tries は道具が変わると0に戻るので、
 #      道具の更新が続く日は同じネタの書き直しが終わらなかった（2026-10-31。1回の実行で最大5往復）
+#   10. 書き直しても最初の30秒が7点に届かなければ、機械の点検を通った版のうち最高点の版を使う。6点以上なら止めずに進み、5点以下だけ止める（keep_best・use_best）。
+#      「続きを見たくなるか」の不合格58回のうち45回が6点で、1点差で回が止まっていた（2026-11-01 本人が検品の基準を変えると決めた）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -43,6 +45,8 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 T0 = time.time()
 BUDGET = float(os.environ.get("RUN_BUDGET_MIN") or 260) * 60
 STOCK_GOAL = {"pre": (9, 8), "post": (2, 1)}  # (在庫の目標, この本数以下なら2本作る)
+HOOK_MIN = 6  # 書き直しても7点に届かない時に、止めずに進める最初の30秒の点
+BEST = ("script.json", "facts.json", "gate_script.json")
 
 
 def now():
@@ -290,6 +294,37 @@ def heal_uploaded(ch):
             print(f"記録を戻しました：{r['work']}（{r['video_id']}）", flush=True)
 
 
+def opening_point(g):
+    """gate_script.json の最初の30秒の点。機械の点検（形・似すぎ・直近の回との回し方）が落ちている版は -1（最高点の版の候補にしない）"""
+    pt = (g.get("続きを見たくなるか") or {}).get("最初の30秒")
+    if not isinstance(pt, dict) or any(k != "続きを見たくなるか" and isinstance(v, dict) and v.get("合格") is False for k, v in g.items()):
+        return -1
+    return pt.get("点", -1)
+
+
+def keep_best(work, best):
+    """今の版の点が今までの最高より高ければ、_best/ に控える（書き直しで点が下がることがあるため）。最高点を返す"""
+    import shutil
+    pt = opening_point(jload(os.path.join(work, "gate_script.json"), {}))
+    if pt <= best:
+        return best
+    d = os.path.join(work, "_best")
+    os.makedirs(d, exist_ok=True)
+    for x in BEST:
+        if os.path.exists(os.path.join(work, x)):
+            shutil.copyfile(os.path.join(work, x), os.path.join(d, x))
+    return pt
+
+
+def use_best(work, best):
+    """控えた最高点の版を作業フォルダへ戻す。record() がこの版の点を記録する"""
+    import shutil
+    for x in BEST:
+        if os.path.exists(os.path.join(work, "_best", x)):
+            shutil.copyfile(os.path.join(work, "_best", x), os.path.join(work, x))
+    print(f"台本ゲート：最初の30秒が7点に届かなかったので、{best}点の版で進めます（詰まった時の決まり10）", flush=True)
+
+
 def apply_fixes(ch, work, st):
     """台本ゲートを通った後に人が見つけた直し（channels\\<ch>\\fixes\\<作業フォルダ名>.json）を、アップの前に script.json へ入れる（2026-10-28）
     titles（3案）・thumb・short_title を置き換え、drop_lines_with の言葉がある行を概要欄（本編・ショート）から除く"""
@@ -510,6 +545,7 @@ def make_one(ch, st, upload, kind=None):
     def write_and_gate():
         w_py, g_py = T("write", "write_script.py"), T("gate_script", "gate_script.py")
         n_fix = int(profile(ch).get("gate_rewrites") or 2)  # 書き直しの回数（profile.json。無ければ2回。心理学chは 2026-10-29 から4回）
+        best = -1
         for i in range(1 + n_fix):  # 1回目＋書き直し
             if i == 0 and "write" not in st["done"]:
                 run(work, "write", [w_py, work, "--ch", ch], ch, ok=(0, 1))
@@ -520,6 +556,10 @@ def make_one(ch, st, upload, kind=None):
             r = run(work, "gate_script", [g_py, work, "--ch", ch], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
+            best = keep_best(work, best)
+        if best >= HOOK_MIN:  # 詰まった時の決まり10
+            use_best(work, best)
+            return
         st["gate_fails"] = st.get("gate_fails", 0) + 1  # 詰まった時の決まり9
         jsave(sp, st)
         raise Stop(f"台本ゲートで{1 + n_fix}回不合格（書き直し{n_fix}回でも直らない）。その回は止め、在庫で公開をつなぐ")

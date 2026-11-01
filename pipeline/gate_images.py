@@ -67,6 +67,9 @@ def judge(work, s, cuts, use):
     t, u = gemini.ask(q, schema=sch, images=[small(work, c["id"]) for c in cuts])
     use.append(u)
     r = {x["id"]: x for x in json.loads(t)["判定"]}
+    miss = [c for c in cuts if c["id"] not in r]
+    if miss and len(miss) < len(cuts):  # 答えから漏れた絵だけ聞き直す。不合格にすると、見ていない絵を作り直して使い回しの数を増やす（2026-11-01 nihongi S102）
+        r.update(judge(work, s, miss, use))
     return {c["id"]: r.get(c["id"], {"合格": False, "問題": ["Gemini の答えにこの絵が無い"], "直す指示": ""}) for c in cuts}
 
 

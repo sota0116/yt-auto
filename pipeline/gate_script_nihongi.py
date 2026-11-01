@@ -5,13 +5,14 @@
 #   最後の一言・動く絵2つ以上と見どころ・fiction なら world_rules・概要欄の作り話とAIの行・出どころ付きの facts。横動画は約3100字・95〜110カット前後・章ごとに動く絵）
 # ・直近の回：前のショートと同じずらし方でない／『へえ』の主役の史実が過去の回と同じでない／hook・帯の小さい字・題が過去の回と同じでない（手順書 §2・§10）
 # ・似すぎ：見本と history/nihongi/scripts/ の過去回と比べる（3文字の重なり 0.35 未満・同じ1文目なし）。横動画は元のショートとは比べない（企画が同じため）
-# ・文脈の判定（史実と出どころ・決まりの食い違い・禁止表現・広告に向くか・続きを見たくなるか・電子ゴミ）は gemini.ask（ふだんは Claude（claude -p）。JUDGE=gemini で Gemini）
+# ・文脈の判定（決まりの食い違い・続きを見たくなるか・電子ゴミ）は gemini.ask（ふだんは Claude（claude -p）。JUDGE=gemini で Gemini）
+# ・2026-11-01 本人：史実と出どころ・禁止表現・広告は回さない。合否は最初の30秒だけで、決まりの食い違いと電子ゴミは記録だけ（gate_script.py の hook_result・note_only）
 # ・『続きを見たくなるか』の名前は run_daily.py の record() が点を拾う名前にそろえた
 import argparse, json, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ask_json, items, S, trigram, cost  # noqa: E402
+from gate_script import ask_json, items, S, trigram, cost, hook_result, note_only  # noqa: E402
 from nihongi_common import ROOT, CH, CDIR, HIST, VENDOR, jload, kind_of_work, past_works, FIXED_END, AI_LINE, vendor_ok  # noqa: E402
 from pick_neta_nihongi import same_fact  # noqa: E402
 
@@ -296,9 +297,7 @@ def gate_hook(s, kind, use):
 """
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
     sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt}, "required": ["最初の30秒", "章", "山場"]}
-    r = ask_json(p, sch, use)
-    ok = r["最初の30秒"]["点"] >= 7 and all(c["点"] >= 5 for c in r["章"]) and r["山場"]["点"] >= 6
-    return {"合格": ok, **r}
+    return hook_result(ask_json(p, sch, use))
 
 
 def gate_trash(s, n, kind, use, work):
@@ -336,8 +335,8 @@ def main():
     if not res["形"]["合格"]:  # 形が落ちた回は、文脈の判定（時間がかかる）を回さずに直しへ回す
         print("（形が不合格なので、文脈の判定は直したあとに回します）")
     else:
-        res.update({"史実と出どころ": gate_fact(s, n, kind, use), "決まりの食い違い": gate_rules(s, kind, use), "禁止表現": gate_ng(s, use),
-                    "広告に向くか": gate_ads(s, use), "続きを見たくなるか": gate_hook(s, kind, use), "電子ゴミの線": gate_trash(s, n, kind, use, work)})
+        res.update({"決まりの食い違い": note_only(gate_rules(s, kind, use)), "続きを見たくなるか": gate_hook(s, kind, use),
+                    "電子ゴミの線": note_only(gate_trash(s, n, kind, use, work))})
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)
     json.dump(res, open(os.path.join(work, "gate_script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

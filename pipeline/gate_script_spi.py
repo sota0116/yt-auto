@@ -4,12 +4,13 @@
 # ・形：スキルの check_script.py --long（注意だけ。記録に残す）と check_spi_script.py（手順書 §4・§7・§11 の機械の点検。NG 0件で合格）
 # ・直近の回（手順書 §11）：呼びかけの番号が直近5本で3回以上／数え上げの骨組み（A-2・B-2・C2-2）が直近9本で4本以上 なら不合格。元は history/spi/produced.json
 # ・似すぎ：1本目（golden/script_001.json）と history/spi/scripts/ の過去回と比べる（3文字の重なり 0.35 未満・同じ1文目なし）
-# ・文脈の判定（暦と出典・禁止表現・広告・続き）は gemini.ask（2026-10-24 から、ふだんは Claude（claude -p・契約の範囲内）。JUDGE=gemini で Gemini）
+# ・文脈の判定（続き）は gemini.ask（2026-10-24 から、ふだんは Claude（claude -p・契約の範囲内）。JUDGE=gemini で Gemini）
+# ・2026-11-01 本人：暦と出典・禁止表現・広告は回さない。合否は最初の30秒だけで、章・山場の点は記録だけ（gate_script.py の hook_result）
 # ・「続きを見たくなるか」の名前は run_daily.py の record() が点を拾う名前にそろえた（仕事chと同じ）
 import argparse, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ROOT, ask_json, items, S, trigram, cost  # noqa: E402
+from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result  # noqa: E402
 
 CPS = 6.0  # 読む速さ（字/秒）。check_script.py・check_spi_script.py と同じ
 SKILL_CHECK = os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts", "check_script.py")
@@ -222,9 +223,7 @@ def gate_hook(s, use):
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
     sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt},
            "required": ["最初の30秒", "章", "山場"]}
-    r = ask_json(p, sch, use)
-    ok = r["最初の30秒"]["点"] >= 7 and all(c["点"] >= 5 for c in r["章"]) and r["山場"]["点"] >= 6
-    return {"合格": ok, **r}
+    return hook_result(ask_json(p, sch, use))
 
 
 def gate_similar(s, ch, work):
@@ -259,8 +258,7 @@ def main():
     if not res["形"]["合格"]:  # 形が落ちた回は、文脈の判定（時間がかかる）を回さずに直しへ回す
         print("（形が不合格なので、文脈の判定は直したあとに回します）")
     else:
-        res.update({"暦と出典": gate_fact(s, f, use), "禁止表現": gate_ng(s, a.ch, use), "広告に向くか": gate_ads(s, use),
-                    "続きを見たくなるか": gate_hook(s, use)})
+        res.update({"続きを見たくなるか": gate_hook(s, use)})
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)
     json.dump(res, open(os.path.join(work, "gate_script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

@@ -8,12 +8,13 @@
 #   同じ型（第5位〜第1位・直し方・まとめ）の決まり文句が重なる分で、0.35 のままだと手で作った回同士が不合格になる。0.45 は最大値に 0.08 の余裕を足した線
 #   （001v6・002 との重なりは 0.18〜0.33。作業中の 007 捨てる物 と 006 は 0.384）。同じ1文目・同じ題・同じ最初の文字は長尺でも不合格のまま。作業フォルダ自身と同じ番号の回（006 と long_006 と history の 006）は相手から外す
 # ・v1.7：題・サムネ・番号カードの判定語（破産・貧乏神・お金が逃げる 等）は本人の方針で使う＝それだけでは不合格にしない（gate_fact・gate_ads・gate_ng）。本文の効果の言い切りと保証は従来どおり見る
-# ・文脈の判定（言い伝え・禁止表現・広告・続きを見たくなるか・電子ゴミの線）は gemini.ask（ふだんは Claude の claude -p。JUDGE=gemini で Gemini）
+# ・文脈の判定（続きを見たくなるか・電子ゴミの線）は gemini.ask（ふだんは Claude の claude -p。JUDGE=gemini で Gemini）
+# ・2026-11-01 本人：言い伝え・禁止表現・広告は回さない。合否は最初の部分だけで、章・山場・電子ゴミの線は記録だけ（gate_script.py の hook_result）
 # ・「続きを見たくなるか」の名前と中身（最初の30秒・章・山場の点）は run_daily.py の record() が点を拾う名前にそろえた
 import argparse, glob, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402,F401
-from gate_script import ROOT, ask_json, items, S, trigram, cost  # noqa: E402
+from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CPS = 6.0
@@ -189,9 +190,7 @@ def gate_hook(s, n, use):
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
     sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt, "電子ゴミ": {"type": "boolean"}, "電子ゴミの理由": S},
            "required": ["最初の30秒", "章", "山場", "電子ゴミ", "電子ゴミの理由"]}
-    r = ask_json(p, sch, use)
-    ok = r["最初の30秒"]["点"] >= 7 and all(c["点"] >= 5 for c in r["章"]) and r["山場"]["点"] >= 6 and not r["電子ゴミ"]
-    return {"合格": ok, **r}
+    return hook_result(ask_json(p, sch, use))
 
 
 def main():
@@ -207,8 +206,7 @@ def main():
     if not res["形"]["合格"]:  # 形が落ちた回は、文脈の判定（時間がかかる）を回さずに直しへ回す
         print("（形が不合格なので、文脈の判定は直したあとに回します）")
     else:
-        res.update({"言い伝え": gate_fact(s, f, n, use), "禁止表現": gate_ng(s, a.ch, use), "広告に向くか": gate_ads(s, use),
-                    "続きを見たくなるか": gate_hook(s, n, use)})
+        res.update({"続きを見たくなるか": gate_hook(s, n, use)})
     res["お金"] = cost(use)
     res["合格"] = all(v["合格"] for v in res.values() if isinstance(v, dict) and "合格" in v)
     json.dump(res, open(os.path.join(work, "gate_script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
