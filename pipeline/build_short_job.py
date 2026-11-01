@@ -7,6 +7,7 @@
 #   ・1カット目の hook は、グラフの段の真ん中に黄の大きな字で出す（1行5字・2行まで）
 #   ・大きな字も字幕も、画面の真ん中（x=540）にそろえる。幅は short_charts.py の字の段（192〜888。2026-10-28 本人「左右どちらかに寄せないで」）
 #   ・声の大きさを約 −14 LUFS にそろえる
+#   ・音は short_audio.py（自作の BGM と効果音。2026-11-02）。hook は最初のコマから読める大きさで出す（小さい字から育てると最初の1コマが読めない）
 # ・できあがると safezone_check.png（赤い枠＝セーフゾーン。はじめ・真ん中・終わりの3コマ）も作る
 import argparse, json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,6 +15,7 @@ sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import run, need, dur, ass_time, voice_path, image_path, starts_of, chunks, prep_voice, vlen
 from short_charts import W, H, FPS, SAFE_L, SAFE_T, SAFE_R, SAFE_B, SAFE_W, BAR_T, BAR_B, TXT_L, TXT_R, TXT_W, CX
+import short_audio
 
 NAVY, KINARI, YELLOW, PANEL = "#141F34", "#F3EBDD", "#F2C14E", "#1F2E4A"
 FONT = "Noto Sans JP"
@@ -32,6 +34,12 @@ def hook_size(s):
     return min(190, int(TXT_W * 0.92 / longest))
 
 
+def hook_tag(cx, cy, s):
+    """1カット目の大きな字。最初のコマから全部読める大きさで出し、少しだけ縮んで止まる"""
+    return (f"{{\\an5\\pos({cx},{cy})\\fs{hook_size(s)}\\fscx108\\fscy108\\t(0,180,\\fscx100\\fscy100)}}"
+            + s.replace(chr(10), chr(92) + "N"))
+
+
 def safezone_sheet(video, t, out):
     ts = [min(0.6, t / 4), t / 2, max(0.0, t - 1.0)]
     ins = []
@@ -48,6 +56,7 @@ def build(work, out):
     b = os.path.join(work, "_build"); os.makedirs(b, exist_ok=True)
     cuts = sc["cuts"]
     t, clips, vs, events = 0.0, [], [], []
+    hits, shown = {"hit": [0.0], "tick": [], "peak": []}, {}
     for c in cuts:
         src = voice_path(work, c["id"])
         img = image_path(work, c["id"])
@@ -59,10 +68,16 @@ def build(work, out):
         run("ffmpeg", "-v", "error", "-y", "-i", img, "-vf", f"fps={FPS},tpad=stop_mode=clone:stop_duration=30",
             "-t", f"{d:.3f}", "-an", "-c:v", "libx264", "-crf", "16", "-preset", "fast", "-pix_fmt", "yuv420p", clip)
         clips.append(clip)
+        s_ = c.get("screen") or {}
+        if c.get("peak"):
+            hits["peak"].append(t)
+        elif "chart" in s_ and s_.get("show", 99) > shown.get(s_["chart"], 0):
+            hits["tick"].append(t)  # 新しい棒が出るカット
+        if "chart" in s_:
+            shown[s_["chart"]] = s_.get("show", 99)
         if c.get("hook"):
             cy = (BAR_T + BAR_B) // 2
-            events.append(f"Dialogue: 1,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{{\\an5\\pos({CX},{cy})\\fs{hook_size(c['hook'])}"
-                          f"\\fscx40\\fscy40\\t(0,140,\\fscx112\\fscy112)\\t(140,240,\\fscx100\\fscy100)}}{c['hook'].replace(chr(10), chr(92) + 'N')}")
+            events.append(f"Dialogue: 1,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{hook_tag(CX, cy, c['hook'])}")
         ps = chunks(c["narration"], CAP_LEN)
         speak = d - GAP
         starts = starts_of(ps, [], speak)
@@ -92,7 +107,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     vl = os.path.join(b, "voice.txt"); open(vl, "w").write("".join(f"file '{os.path.abspath(p)}'\n" for p in vs))
     run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", vl, os.path.join(b, "voice.wav"))
     sub = ass.replace("\\", "/").replace(":", "\\:")
-    run("ffmpeg", "-v", "error", "-y", "-i", os.path.join(b, "video.mp4"), "-i", os.path.join(b, "voice.wav"),
+    audio = os.path.join(b, "audio.wav")
+    short_audio.note(work, sc, short_audio.mix(work, os.path.join(b, "voice.wav"), t, hits, audio, short_audio.pick_bgm(work, ("drive", "lofi"))))
+    run("ffmpeg", "-v", "error", "-y", "-i", os.path.join(b, "video.mp4"), "-i", audio,
         "-filter_complex", f"[0:v]subtitles='{sub}'[v];[1:a]loudnorm=I={LUFS}:LRA=11:TP=-1.5,aresample=48000[a]",
         "-map", "[v]", "-map", "[a]", "-t", f"{t:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out)

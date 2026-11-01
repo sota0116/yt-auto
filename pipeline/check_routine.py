@@ -11,8 +11,9 @@ from check_psy_script import tease
 from check_short import META, banned, nums
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CHARS = (330, 520)
-CUTS = (9, 13)
+CHARS = (320, 420)  # 2026-11-02：声で約49〜64秒。詰め込みすぎない（前は330〜520字）
+CUTS = (9, 12)
+FIRST_MAX, LAST_MAX = 25, 30  # 1文目と最後の1文の字数
 CUT_MAX = 55
 SHIFT_MAX = 16
 ANGLES = ("引き", "寄り", "見下ろし", "見上げ", "目線")
@@ -168,6 +169,11 @@ def check(work):
         ng.append(f"動く絵 {motion}（2〜3）")
     if not any(c.get("peak") for c in cuts):
         ng.append('山場のカットに "peak": true を書く')
+    sents = lambda s: [x for x in re.split(r"(?<=[。？！?!])", s) if x.strip()]
+    if cuts and sents(cuts[0].get("narration", "")) and len(sents(cuts[0]["narration"])[0]) > FIRST_MAX:
+        ng.append(f"1文目が {len(sents(cuts[0]['narration'])[0])}字（{FIRST_MAX}字まで）")
+    if cuts and sents(cuts[-1].get("narration", "")) and len(sents(cuts[-1]["narration"])[-1]) > LAST_MAX:
+        ng.append(f"最後の1文が {len(sents(cuts[-1]['narration'])[-1])}字（{LAST_MAX}字まで）")
     hook = cuts[0].get("hook", "") if cuts else ""
     if not hook or max(len(x) for x in hook.split("\n")) > 7 or hook.count("\n") > 1:
         ng.append(f"1カット目の hook「{hook}」（1行7字・2行まで）")

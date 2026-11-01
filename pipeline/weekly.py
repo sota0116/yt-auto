@@ -87,6 +87,9 @@ def gather(chs):
         else:
             extra = {"ネタ帳": {"残り": sum(1 for r in board if r["id"] not in used and not r.get("hold")),
                                "データ待ち（facts_cmd が無い）": [r["id"] for r in board if r["id"] not in used and not r.get("facts_cmd")]}}
+            if ch == "job":  # 手順書 §12：伸びたショートは同じ題の長尺と関連動画につなぐ案を出す。音と画の直しの前後もここで見る
+                sl = h(ch, "shorts_learn.json", {})
+                extra["ショート"] = {k: sl.get(k) for k in ("編集の版ごと", "伸びた回")}
         d["チャンネル"][ch] = {
             "在庫": sum(1 for e in up if not e.get("published") and not e.get("missing")),
             "来週の予約が無い日": [x for x in nxt if x not in booked],

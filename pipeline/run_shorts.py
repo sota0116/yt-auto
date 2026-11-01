@@ -21,6 +21,7 @@ def record(work, fx, sc, ok, why=""):
     h = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
     h.append({"work": os.path.basename(work), "topic_id": fx["topic_id"], "kind": fx["kind"], "measure": fx["measure"],
               "title": (sc or {}).get("title"), "hook": ((sc or {}).get("cuts") or [{}])[0].get("hook"), "banner": (sc or {}).get("banner"),
+              "編集の版": (sc or {}).get("編集の版", 1), "bgm": (sc or {}).get("bgm"),
               "ok": ok, "why": why, "made_at": datetime.datetime.now(JST).isoformat(timespec="seconds")})
     json.dump(h, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 

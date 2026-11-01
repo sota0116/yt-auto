@@ -1,9 +1,10 @@
 # 1日の流れショート④組み立て（手順書 §12）：縦全面の絵、語りの声、字幕、時刻の大きな字を short.mp4 にする
 #   python -X utf8 pipeline\build_short_routine.py <作業フォルダ> [--out 出力.mp4]
-# ・絵は 1080x1920 に切り抜き、ゆっくり寄る／引く動きを交互に付ける。動く絵（images\<id>.mp4）はそのまま使い、足りない分は最後のコマでのばす
+# ・絵は 1080x1920 に切り抜き、1枚を約2秒ごとに寄りと位置を変えて切る（SPOTS。2026-11-02。絵を増やさず、画面の変化を約5秒に1回から約2秒に1回へ）。
+#   動く絵（images\<id>.mp4）はそのまま使い、足りない分は最後のコマでのばす。年収のカードは字が切れないので切らない
 # ・"chart": "pay" のカットは、facts.json の年収・時給・労働時間を紺の地のカードにする（数字はプログラムが書く）
 # ・字幕は統計ショートと同じセーフゾーンの下の段。clock は上の段に黄の大きな字。上の端に職業名の札
-# ・BGM は入れない（job に音源が無い。他のチャンネルの音源は流用しない）
+# ・音は short_audio.py（自作の BGM と効果音。声を優先して混ぜる）。1カット目の hook は最初のコマから読める大きさで出す
 import argparse, json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"))
@@ -12,11 +13,15 @@ from PIL import Image, ImageDraw
 from common import run, need, dur, ass_time, voice_path, image_path, starts_of, chunks, prep_voice
 from short_charts import W, H, FPS, SAFE_T, SAFE_B, TXT_L, TXT_R, TXT_W, BAR_T, BAR_B, CX
 from make_charts_job import NAVY, PANEL, KINARI, MUTED, YELLOW, text, fit
-from build_short_job import (ass_c, hook_size, safezone_sheet, KINARI as K_H, YELLOW as Y_H, NAVY as N_H, PANEL as P_H,
+from build_short_job import (ass_c, hook_size, hook_tag, safezone_sheet, KINARI as K_H, YELLOW as Y_H, NAVY as N_H, PANEL as P_H,
                              FONT, TEMPO, GAP, CAP_FS, CAP_LEN, LUFS)
+import short_audio
 
 MAX_SEC, MIN_SEC = 90, 45
-ZOOM = 0.11  # 1カットで11%寄る／引く
+ZOOM = 0.11  # 年収のカードは1カットで11%寄る／引く
+SUB = 2.0    # 1枚の絵を切る長さの目安（秒）
+PUSH = 0.03  # 切った1つの中で3%寄る（止まって見えないように）
+SPOTS = [(1.00, .50, .50), (1.18, .50, .40), (1.30, .50, .58), (1.12, .44, .46), (1.24, .56, .44)]  # 寄り・中心の横・中心の縦（顔が切れにくい範囲）
 
 
 def pay_card(fx, out):
@@ -38,16 +43,40 @@ def pay_card(fx, out):
     im.save(out)
 
 
-def clip_of(src, d, zoom_in, out):
-    frames = max(1, int(d * FPS) + 1)
-    if src.lower().endswith(".mp4"):
-        vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=30"
-    else:
-        z = f"1+{ZOOM}*on/{frames}" if zoom_in else f"{1 + ZOOM}-{ZOOM}*on/{frames}"
-        vf = (f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
-              f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}")
-    run("ffmpeg", "-v", "error", "-y", "-i", src, "-vf", vf, "-t", f"{d:.3f}", "-an", "-c:v", "libx264", "-crf", "17", "-preset", "fast",
+def encode(src, vf, frames, out):
+    run("ffmpeg", "-v", "error", "-y", "-i", src, "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-crf", "17", "-preset", "fast",
         "-pix_fmt", "yuv420p", out)
+
+
+def zoom_vf(z, cx, cy, frames):
+    x, y = f"max(0,min(iw-iw/zoom,iw*{cx}-iw/zoom/2))", f"max(0,min(ih-ih/zoom,ih*{cy}-ih/zoom/2))"
+    return (f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
+            f"zoompan=z='{z}':x='{x}':y='{y}':d={frames}:s={W}x{H}:fps={FPS}")
+
+
+def clip_of(src, d, n, out, card=False):
+    """1カット分の映像。n はカットの番号（寄りの順をカットごとにずらす）。card は字のあるカード（切らない）"""
+    total = max(1, round(d * FPS))
+    if src.lower().endswith(".mp4"):
+        encode(src, f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=30", total, out)
+        return 1
+    if card:
+        z = f"1+{ZOOM}*on/{total}" if n % 2 == 0 else f"{1 + ZOOM}-{ZOOM}*on/{total}"
+        encode(src, zoom_vf(z, .5, .5, total), total, out)
+        return 1
+    parts = max(1, round(d / SUB))
+    edges = [total * i // parts for i in range(parts + 1)]
+    segs = []
+    for i in range(parts):
+        frames = edges[i + 1] - edges[i]
+        z0, cx, cy = SPOTS[(n * 2 + i) % len(SPOTS)]
+        seg = f"{out[:-4]}_{i}.mp4"
+        encode(src, zoom_vf(f"{z0}+{PUSH}*on/{frames}", cx, cy, frames), frames, seg)
+        segs.append(seg)
+    lst = out[:-4] + "_segs.txt"
+    open(lst, "w").write("".join(f"file '{os.path.abspath(p)}'\n" for p in segs))
+    run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out)
+    return parts
 
 
 def build(work, out):
@@ -58,7 +87,8 @@ def build(work, out):
     os.makedirs(b, exist_ok=True)
     os.makedirs(os.path.join(work, "images"), exist_ok=True)
     cuts = sc["cuts"]
-    t, clips, vs, events, moved = 0.0, [], [], [], 0
+    t, clips, vs, events, moved, changes = 0.0, [], [], [], 0, 0
+    hits = {"hit": [0.0], "tick": [], "coin": [], "peak": []}
     for n, c in enumerate(cuts):
         if c.get("chart"):
             pay_card(fx, os.path.join(work, "images", c["id"] + ".png"))
@@ -70,17 +100,22 @@ def build(work, out):
         vs.append(v)
         d = dur(v)
         clip = os.path.join(b, c["id"] + ".mp4")
-        clip_of(img, d, n % 2 == 0, clip)
+        changes += clip_of(img, d, n, clip, card=bool(c.get("chart")))
         clips.append(clip)
         moved += img.lower().endswith(".mp4")
+        if c.get("peak"):
+            hits["peak"].append(t)
+        elif c.get("chart"):
+            hits["coin"].append(t)
+        elif c.get("clock"):
+            hits["tick"].append(t)
         if not c.get("chart"):
             if c.get("clock"):
                 events.append(f"Dialogue: 2,{ass_time(t)},{ass_time(t + d)},Clock,,0,0,0,,{{\\an5\\pos({CX},{SAFE_T + 130})}}{c['clock']}")
             events.append(f"Dialogue: 2,{ass_time(t)},{ass_time(t + d)},Tag,,0,0,0,,{{\\an5\\pos({CX},{SAFE_T + 26})}}{fx['呼び名']}の1日")
         if c.get("hook"):
             cy = (BAR_T + BAR_B) // 2
-            events.append(f"Dialogue: 3,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{{\\an5\\pos({CX},{cy})\\fs{hook_size(c['hook'])}"
-                          f"\\fscx40\\fscy40\\t(0,140,\\fscx112\\fscy112)\\t(140,240,\\fscx100\\fscy100)}}{c['hook'].replace(chr(10), chr(92) + 'N')}")
+            events.append(f"Dialogue: 3,{ass_time(t)},{ass_time(t + d)},Hook,,0,0,0,,{hook_tag(CX, cy, c['hook'])}")
         ps = chunks(c["narration"], CAP_LEN)
         starts = starts_of(ps, [], d - GAP)
         for p, st, en in zip(ps, starts, starts[1:] + [d]):
@@ -110,12 +145,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     open(vl, "w").write("".join(f"file '{os.path.abspath(p)}'\n" for p in vs))
     run("ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", vl, os.path.join(b, "voice.wav"))
     sub = ass.replace("\\", "/").replace(":", "\\:")
-    run("ffmpeg", "-v", "error", "-y", "-i", os.path.join(b, "video.mp4"), "-i", os.path.join(b, "voice.wav"),
+    audio = os.path.join(b, "audio.wav")
+    short_audio.note(work, sc, short_audio.mix(work, os.path.join(b, "voice.wav"), t, hits, audio, short_audio.pick_bgm(work, ("tense", "lofi"))))
+    run("ffmpeg", "-v", "error", "-y", "-i", os.path.join(b, "video.mp4"), "-i", audio,
         "-filter_complex", f"[0:v]subtitles='{sub}'[v];[1:a]loudnorm=I={LUFS}:LRA=11:TP=-1.5,aresample=48000[a]",
         "-map", "[v]", "-map", "[a]", "-t", f"{t:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out)
     safezone_sheet(out, t, os.path.join(work, "safezone_check.png"))
-    print(f"できました：{out}（{t:.1f}秒・{len(cuts)}カット・動く絵 {moved}）")
+    print(f"できました：{out}（{t:.1f}秒・{len(cuts)}カット・動く絵 {moved}・画面の変化 {changes}回・BGM {sc['bgm']}）")
     if not MIN_SEC <= t <= MAX_SEC:
         sys.exit(f"【止まりました】長さが {t:.1f}秒（1日の流れは {MIN_SEC}〜{MAX_SEC}秒）")
     return t

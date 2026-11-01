@@ -6,12 +6,20 @@
 #   ①題の選び方：種類（rank・duel）と物差しごとの点数の平均。short_pick.py が、3本に2本は点の高い物差し・種類から選び、1本は試していない・点の低い物から選ぶ（試す枠）
 #   ②書き方：点の高い3本と低い3本の hook・帯・タイトル・平均視聴率。write_short.py が台本の書き手に渡す（型を借りる。文は写さない）
 # ・数字が6本そろうまでは学びを出さない（少ない数で決めない）。改善は数字だけで機械的に回し、手順書の決まり（§4・§12）は変えない
+# ・再生の取り方（2026-11-02。Analytics は反映が遅れ、48時間の時点では0や少ない値が返る。記録が0の3本は公開ページで 561・642・445、100 の回は 620 だった）：
+#   区切りの終わりから LAG 時間たっていなければ、再生は公開の数字（videos statistics）を使い、Analytics がまだ空の回は "未確定" として次の日に取り直す。
+#   LAG 時間たった回は、Analytics の範囲を公開から48時間（7日の回は7日）に区切って読む。Analytics の日付は太平洋時間なので、開始日はそれに合わせる
+#   前の形の記録（"再生の出どころ" が無い回）は、この区切りで取り直す
+# ・本を比べる数字は48時間にそろえる（公開7日の回と2日の回を同じ土俵に置かない）
 import argparse, datetime, json, os, statistics, sys, urllib.error, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from upload_job import ROOT, api
+from upload_job import API, ROOT, api
 
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 JST = datetime.timezone(datetime.timedelta(hours=9))
+PT = datetime.timezone(datetime.timedelta(hours=-8))
+LAG = 48  # Analytics がそろうまでの余裕（時間）
+BIG = (2, 1000)  # 伸びた回の線：48時間の再生が直近12本の真ん中の2倍以上で、1,000回以上
 H = lambda n: os.path.join(ROOT, "history", "job", n)
 MIN_N = 6
 
@@ -20,16 +28,47 @@ def jl(p, d):
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else d
 
 
-def stats(vid, start):
-    q = {"ids": "channel==MINE", "startDate": start, "endDate": datetime.datetime.now(JST).date().isoformat(),
+def stats(vid, start, end=None):
+    q = {"ids": "channel==MINE", "startDate": start, "endDate": end or datetime.datetime.now(JST).date().isoformat(),
          "metrics": "views,averageViewPercentage,averageViewDuration,subscribersGained,likes", "filters": f"video=={vid}"}
     r = json.load(api("job", "GET", ANA + "?" + urllib.parse.urlencode(q), timeout=60))
     cols = [c["name"] for c in r.get("columnHeaders", [])]
     return dict(zip(cols, (r.get("rows") or [[0] * len(cols)])[0]))
 
 
+def public_views(ids):
+    """公開の再生回数（反映がほぼすぐ）。{動画ID: 再生}。50本ずつ読む"""
+    out = {}
+    for i in range(0, len(ids), 50):
+        url = f"{API}/videos?part=statistics&id={','.join(ids[i:i + 50])}"
+        for x in json.load(api("job", "GET", url, timeout=60)).get("items", []):
+            out[x["id"]] = int(x["statistics"].get("viewCount") or 0)
+    return out
+
+
 def score(m):
     return round((m.get("views") or 0) * (m.get("averageViewPercentage") or 0) / 100 + (m.get("subscribersGained") or 0) * 200, 1)
+
+
+def slot(vid, at, age, hours, pub):
+    """公開から hours 時間の数字を1つ作る。age はいまの経過時間"""
+    start = at.astimezone(PT)
+    if age >= hours + LAG:
+        s = stats(vid, start.date().isoformat(), (start + datetime.timedelta(hours=hours)).date().isoformat())
+        s["再生の出どころ"] = "Analytics（区切り）"
+    else:
+        s = stats(vid, start.date().isoformat())
+        if pub.get(vid) is not None:
+            s["views"] = pub[vid]
+        s["再生の出どころ"] = "公開の数字"
+    if not s.get("averageViewPercentage"):
+        s["未確定"] = True
+    s["score"] = score(s)
+    return s
+
+
+def stale(s):
+    return s.get("未確定") or "再生の出どころ" not in s
 
 
 def retention(vid, start):
@@ -75,27 +114,29 @@ def measure(dry):
     met = jl(H("shorts_metrics.json"), {})
     now = datetime.datetime.now(JST)
     n = 0
-    for e in up:
-        if e.get("retired"):  # 取り下げて公開しなかった回（short_unschedule.py）
-            continue
+    age_of = lambda e: (now - datetime.datetime.fromisoformat(e["publish_at"])).total_seconds() / 3600
+    live = [e for e in up if not e.get("retired") and age_of(e) >= 48]  # 取り下げて公開しなかった回（short_unschedule.py）は入れない
+    pub = public_views([e["video_id"] for e in live]) if live and not dry else {}
+    for e in live:
         at = datetime.datetime.fromisoformat(e["publish_at"])
-        age = (now - at).total_seconds() / 3600
+        age = age_of(e)
         m = met.get(e["work"], {})
-        due = ("48h" not in m and age >= 48) or ("7d" not in m and age >= 24 * 7)
-        if not due or dry:
+        todo = [k for k, h in (("48h", 48), ("7d", 24 * 7)) if age >= h and (k not in m or stale(m[k]))]
+        if not todo or dry:
             continue
+        mk = made.get(e["work"], {})
         try:
-            s = stats(e["video_id"], at.date().isoformat())
+            for k in todo:
+                s = slot(e["video_id"], at, age, 48 if k == "48h" else 24 * 7, pub)
+                if mk.get("kind") == "routine":
+                    s.update(retention(e["video_id"], at.astimezone(PT).date().isoformat()))
+                m[k] = s
         except urllib.error.HTTPError as err:
             print(f"（{e['work']} の数字が取れない：{err.code}）")
             continue
-        s["score"] = score(s)
-        mk = made.get(e["work"], {})
-        if mk.get("kind") == "routine":
-            s.update(retention(e["video_id"], at.date().isoformat()))
         m.update({"video_id": e["video_id"], "title": e["title"], "topic_id": mk.get("topic_id"), "kind": mk.get("kind"),
-                  "measure": mk.get("measure"), "hook": mk.get("hook"), "banner": mk.get("banner"),
-                  "7d" if age >= 24 * 7 else "48h": s, "取った日": now.isoformat(timespec="seconds")})
+                  "measure": mk.get("measure"), "hook": mk.get("hook"), "banner": mk.get("banner"), "編集の版": mk.get("編集の版", 1),
+                  "bgm": mk.get("bgm"), "取った日": now.isoformat(timespec="seconds")})
         met[e["work"]] = m
         n += 1
     if not dry:
@@ -104,17 +145,36 @@ def measure(dry):
     return met
 
 
+def versions(rows):
+    """編集の版ごと（種類は分ける）の、48時間の再生と平均視聴率の真ん中。音と画の直しの前後を比べる"""
+    out = {}
+    for r in rows:
+        out.setdefault(("1日の流れ" if r.get("kind") == "routine" else "統計") + f"_版{r.get('編集の版', 1)}", []).append(r)
+    return {k: {"本数": len(v), "再生の真ん中": statistics.median(x["views"] or 0 for x in v),
+                "平均視聴率の真ん中": round(statistics.median(x["avp"] or 0 for x in v), 1)} for k, v in sorted(out.items())}
+
+
+def big(rows):
+    """伸びた回：同じ題の長尺と関連動画につなぐ候補（週報に載せる）"""
+    last = sorted(rows, key=lambda r: r["work"])[-12:]
+    if len(last) < 6:
+        return []
+    line = max(statistics.median(r["views"] or 0 for r in last) * BIG[0], BIG[1])
+    return [{k: r.get(k) for k in ("title", "video_id", "views", "avp")} for r in last if (r["views"] or 0) >= line]
+
+
 def learn(met, dry=False):
     rows = []
     for w, m in met.items():
-        s = m.get("7d") or m.get("48h")
+        s = m.get("48h") or m.get("7d")
         if s:
             rows.append({**m, "work": w, "score": s["score"], "views": s.get("views"), "avp": s.get("averageViewPercentage"),
                          "subs": s.get("subscribersGained"), "一番落ちた位置": s.get("一番落ちた位置"),
                          "半分の位置に残った割合": s.get("半分の位置に残った割合")})
     block = routine_block(rows)
+    ver, hits = versions(rows), big(rows)
     rows = [r for r in rows if r.get("kind") != "routine"]  # ここから下は統計ショートの学び。1日の流れは "1日の流れ" に分ける
-    out = {"本数": len(rows), "更新": datetime.datetime.now(JST).isoformat(timespec="seconds")}
+    out = {"本数": len(rows), "更新": datetime.datetime.now(JST).isoformat(timespec="seconds"), "編集の版ごと": ver, "伸びた回": hits}
     if block:
         out["1日の流れ"] = block
     if len(rows) < MIN_N:
