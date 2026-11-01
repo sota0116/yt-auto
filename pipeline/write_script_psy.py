@@ -9,7 +9,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK  # noqa: E402
 
 GOLDEN = os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
@@ -109,6 +109,8 @@ def prompt(work, ch, fix):
    どちらも NG が0件になるまで直す（注意は、直せる物は直す）。
 5. 最後に、語りの字数・カット数・章の名前・使った研究（key と cite）・登録の呼びかけの位置（%）・ショートの字数とカット数を1行ずつ書いて終える。
 
+{HOOK_ASK}
+{IMAGE_ASK}
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 家事をしながら耳で聞き、退屈ならすぐ次の動画へ行く60代の女性として10点満点。最初の30秒が7点以上、全部の章が6点以上、最後まで楽しく見られるか（全体）が7点以上で合格。

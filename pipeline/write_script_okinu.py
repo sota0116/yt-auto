@@ -15,7 +15,7 @@
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK  # noqa: E402
+from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CH_DIR = os.path.join(ROOT, "channels", "okinu")
@@ -208,6 +208,8 @@ def prompt(work, fix):
 4. 終わる前に必ず `python -X utf8 pipeline/check_okinu_script.py {rel(work)}` を回し、NG が0件になるまで直す（注意は直せる物は直す）。概要欄は書いたあとにプログラムが入れるので、「概要欄に〜が無い」の NG は気にしなくてよい（finish で入る）。
 5. 最後に、字数・カット数・絵の数（新しい絵）・使った言い伝えの確かめ方を1行ずつ書いて終える。
 
+{HOOK_ASK}
+{IMAGE_ASK}
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 60代前後の女性として10点満点。最初の文（ショートは1文目、長尺は最初の30秒）で続きを見たくなるか。持ち帰れる物（手元でできる習慣・言い伝え）が1つ言えているか。
