@@ -98,5 +98,19 @@
   "line_copy": 3,
   "sub_copy": 2,
   "made": "2026-10-31"
+ },
+ "012_b_shinshi_karasu": {
+  "neta_id": "b_shinshi_karasu",
+  "type": "B",
+  "frame": "B-1",
+  "pub_date": "2026-11-11",
+  "window": [
+   "2026-11-04",
+   "2027-04-03"
+  ],
+  "hook_type": "日付",
+  "line_copy": 1,
+  "sub_copy": 1,
+  "made": "2026-11-01"
  }
 }

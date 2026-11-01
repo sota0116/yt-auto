@@ -1,1 +1,20 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/012_b_shinshi_karasu",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading",
+  "images"
+ ],
+ "started": "2026-11-01T12:58:04+09:00",
+ "tries": 0,
+ "code": "6931c3ff68a1",
+ "stage": "motion",
+ "updated": "2026-11-01T13:39:56+09:00",
+ "busy": {
+  "motion": 1
+ }
+}
