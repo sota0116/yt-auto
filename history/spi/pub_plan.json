@@ -126,5 +126,19 @@
   "line_copy": 2,
   "sub_copy": 1,
   "made": "2026-11-02"
+ },
+ "014_b_shinshi_matome": {
+  "neta_id": "b_shinshi_matome",
+  "type": "B",
+  "frame": "B-1",
+  "pub_date": "2026-11-18",
+  "window": [
+   "2026-11-05",
+   "2027-04-04"
+  ],
+  "hook_type": "問い",
+  "line_copy": 3,
+  "sub_copy": 2,
+  "made": "2026-11-02"
  }
 }
