@@ -1,0 +1,239 @@
+{
+ "format": "short",
+ "title": "もしも戦国で、塩が国境を越えられなかったら。松本のあめ市が消える #もしも #日本史 #戦国時代",
+ "promise": "『敵に塩を送る』は1567年の今川・北条の塩留めのあとの話で、謙信はただで配らず商人に高く売るなと命じたと伝わり、松本のあめ市は塩が届いた日の塩市が始まりと伝わる、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※塩が国境を越えられないという決まりと、商人のセリフは作り話です。1567年（永禄10年）に今川氏真と北条氏康が甲斐への塩を止めた塩留め、上杉謙信が松本街道（千国街道・塩の道）に番所を置いて塩の交易を守ったこと、塩が牛とボッカで糸魚川から松本へ運ばれたことは史実をもとにしています。謙信が塩を送った話、商人に高く売るなと命じた話、松本の塩市（今のあめ市）の始まりは、伝わる話です。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "戦国時代",
+  "敵に塩を送る",
+  "上杉謙信",
+  "武田信玄",
+  "塩の道",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板や俵や旗の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "あめ市が消えた"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：戦国の世で、塩はどの国の境も越えられない（国の外へ出せない）。1567年の塩留め・人・場所・番所・塩の道は史実のまま",
+  "この決まりは、この世界の人みんなが知っている（信玄・謙信・商人・番所の役人）。商人のセリフ（n10）は、自分の番所で塩が出せないことだけを言う",
+  "『敵に塩を送る』という言葉・松本の塩市とあめ市・江戸の本のことを知っているのは語り手だけ。戦国の人物は口にしない",
+  "「本当は」「と伝わる」で言う文（n05・n06・n11）は、語り手が史実と逸話に戻る文。謙信が塩を送った話・高く売るなと命じた話・塩市の始まりは言い切らない",
+  "n09・n12・n13 は、この世界の結果を語り手が言う文（塩が越後から出ないので、松本に塩市が立たず、塩送りの話も生まれない）"
+ ],
+ "world_terms": [
+  "塩",
+  "番所",
+  "国境",
+  "峠",
+  "俵",
+  "あめ市",
+  "塩市",
+  "生まれない",
+  "この世界"
+ ],
+ "voices": {
+  "shionin": 12
+ },
+ "facts": [
+  "永禄10年（1567年）、今川氏真は北条氏康とともに甲斐への塩留めを行った。謙信が信玄に塩を送った逸話の元は17世紀後半の『謙信公御年譜』で、19世紀前半の頼山陽『日本外史』でも取り上げられた。『日本外史』では、謙信が商人に便乗値上げせず適正な価格で信玄の領内で売るよう求めたとされる。今は史実として認めがたいという説が有力。出どころ：渡邊大門「上杉謙信が敵の武田信玄に塩を送ったという美談は怪しい。その理由」Yahoo!ニュース エキスパート 2024-01-19 news.yahoo.co.jp/expert/articles/817b5f2357a6937f3ec010c5fa803dd250fabadc（2026-11-02 に本文を読んで確認）",
+  "今川氏真と北条氏康が武田信玄へ塩の輸出を禁止した。逸話では、謙信は『いくらでも越後から輸入するといい』『決して高値にしないよう商人に厳命しておく』と伝えたとされ、無償で塩を大量に送ってはいない。出どころ：乃至政彦「上杉謙信から武田信玄へ『敵に塩を送る』は本当か」JBpress 2020-09-30 jbpress.ismedia.jp/articles/-/62264（本文で確認）。台本では「と伝わる」",
+  "松本街道（千国街道・信州側では糸魚川街道）は越後の糸魚川から信州の松本に至る全長約120kmの山越えの道で、日本海側からは塩や海産物が牛やボッカで運ばれ、「塩の道」とも呼ばれる。上杉謙信は道沿いに番所を設け、街道を管理するとともに塩の自由交易を保障した。塩留めに苦しむ信玄に塩を送った話は俗説・故事として伝わる。国の史跡（2002年3月19日指定・新潟県糸魚川市）。出どころ：文化庁 文化遺産オンライン「松本街道」online.bunka.go.jp/heritages/detail/173855（2026-11-02 に本文を読んで確認）",
+  "松本では、謙信の塩が届いたと伝わる1月11日にちなむ塩市が開かれ、今のあめ市になったといわれる。国土交通省の観光解説では、この伝説が出てきたのは江戸時代の終わりごろで、塩市はそれより前からあったとされる。出どころ：国土交通省 観光庁 多言語解説文データベース www.mlit.go.jp/tagengo-db/common/001653337.pdf（PDF の本文は、この環境で字を取り出せず読めなかった。検索の抜粋で確認）。台本では「と伝わる」",
+  "塩がどの国の境も越えられないという決まり、そのせいで松本に塩市が立たず『敵に塩を送る』が生まれない話、越後の塩商人のセリフは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "塩が\n国を出ない",
+   "narration": "「敵に塩を送る」。この言葉が、生まれない。",
+   "highlight": [
+    "生まれない"
+   ],
+   "image_en": "Takeda Shingen, a heavyset Japanese warlord in his late forties with a thick black beard, fierce round eyes, a white monk's hood cloth wrapped over his shaved head and red lacquered armor, stares in shock into an empty plain wooden salt box in a dim castle kitchen, his hands gripping its edges, lantern light.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "n02",
+   "narration": "もしも戦国で、塩が国境を越えられなかったら。",
+   "highlight": [
+    "国境を越えられなかったら"
+   ],
+   "image_en": "A wooden checkpoint gate on a steep mountain pass, a pile of plain straw-wrapped salt bales stopped in front of the closed gate, a pack ox and porters waiting with puzzled faces, snowy peaks behind.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n03",
+   "narration": "武田信玄の甲斐には、海が無い。塩は、よそから買う。",
+   "tts_text": "武田信玄の、かいには、海が無い。塩は、よそから買う。",
+   "highlight": [
+    "海が無い"
+   ],
+   "image_en": "Takeda Shingen, a heavyset Japanese warlord in his late forties with a thick black beard, fierce round eyes, a white monk's hood cloth wrapped over his shaved head and red lacquered armor, stands on a castle veranda looking out over a basin of rice fields completely ringed by tall mountains, no sea anywhere, sunset.",
+   "shots": [
+    "n03",
+    "n03@right"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n04",
+   "narration": "1567年、今川氏真と北条氏康が、甲斐への塩を止めた。",
+   "tts_text": "せんごひゃくろくじゅうななねん、いまがわうじざねと、ほうじょううじやすが、かいへの塩を止めた。",
+   "highlight": [
+    "塩を止めた"
+   ],
+   "image_en": "Two Japanese warlords in formal dark robes sit facing each other in a lantern-lit hall, one young and pale with a thin face, the other older and stern with a grey moustache, both nodding coldly over a closed lacquered box, retainers kneeling behind.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n05",
+   "narration": "本当はここで、上杉謙信が越後の塩を送ったと伝わる。",
+   "tts_text": "本当はここで、うえすぎけんしんが、えちごの塩を送ったと伝わる。",
+   "image_en": "Uesugi Kenshin, a lean Japanese warlord about thirty-eight with a calm stern clean-shaven face, a white monk's head cloth and black armor under a plain white surcoat, stands on a snowy castle wall gazing south over the mountains, wind blowing his surcoat. Faded old-memory colors.",
+   "shots": [
+    "n05",
+    "n05@face"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n06",
+   "narration": "それも、ただでなく、商人に高く売るなと命じたと伝わる。",
+   "highlight": [
+    "高く売るな"
+   ],
+   "image_en": "Uesugi Kenshin, a lean Japanese warlord about thirty-eight with a calm stern clean-shaven face, a white monk's head cloth and black armor under a plain white surcoat, raises one finger sternly at a row of kneeling merchants in plain brown kimono who bow low before stacked straw salt bales, lantern light. Faded old-memory colors.",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n07",
+   "narration": "塩は糸魚川から松本へ、牛と歩荷が山を越えて運んだ。",
+   "tts_text": "塩は、いといがわから松本へ、牛と、ぼっかが山を越えて運んだ。",
+   "image_en": "A line of pack oxen loaded with straw salt bales and porters carrying huge loads on wooden back frames climb a narrow stony mountain path along a deep river gorge, breath steaming in the cold air. Faded old-memory colors.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "anim": "kling"
+  },
+  {
+   "id": "n08",
+   "narration": "謙信はその道に番所を置き、塩の売り買いを守った。",
+   "tts_text": "けんしんはその道に、ばんしょを置き、塩の売り買いを守った。",
+   "image_en": "A small wooden guard post with a thatched roof beside a mountain path, an Uesugi guard in simple armor waving a salt-laden ox and its driver through the open gate with a nod.",
+   "shots": [
+    "n08",
+    "n08@right"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n09",
+   "narration": "でもこの世界では、その番所で、塩が止まる。",
+   "highlight": [
+    "塩が止まる"
+   ],
+   "image_en": "The same small wooden guard post with a thatched roof, now its gate shut tight, straw salt bales piling up high in front of it, oxen standing idle, porters sitting on their loads with their heads in their hands, grey sky.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n10",
+   "narration": "峠の向こうへは、一俵も出せませぬ。",
+   "tts_text": "とうげの向こうへは、いっぴょうも出せませぬ。",
+   "voice": "shionin",
+   "image_en": "An Echigo salt merchant about fifty with a weathered tanned face, grey stubble, a straw hat hanging on his back and a plain brown kimono with tied-up sleeves sits on a straw salt bale at the shut mountain gate and spreads his empty hands toward the viewer with a helpless frown.",
+   "shots": [
+    "n10",
+    "n10@face"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n11",
+   "narration": "松本では、塩が届いた1月11日に塩市が立ったと伝わる。",
+   "tts_text": "松本では、塩が届いた、いちがつじゅういちにちに、しおいちが立ったと伝わる。",
+   "image_en": "A crowded winter market street of an old castle town at dawn, townspeople in padded kimono buying salt from straw bales at wooden stalls, oxen tied by the road, light snow, blank cloth awnings. Faded old-memory colors.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n12",
+   "narration": "今の「あめ市」の始まりだ。この世界の松本に、その市は無い。",
+   "tts_text": "今の、あめいちの始まりだ。この世界の松本に、その市は無い。",
+   "highlight": [
+    "あめ市",
+    "無い"
+   ],
+   "image_en": "The same winter street of the old castle town, now completely empty and silent, wooden stalls shut, fresh snow untouched, a lone small child in a padded kimono standing in the middle staring at the closed stalls in disbelief.",
+   "shots": [
+    "n12",
+    "n12@face",
+    "n12@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true
+  },
+  {
+   "id": "n13",
+   "narration": "江戸の本が広めた「敵に塩を送る」も、生まれない。",
+   "highlight": [
+    "生まれない"
+   ],
+   "image_en": "Takeda Shingen, a heavyset Japanese warlord in his late forties with a thick black beard, fierce round eyes, a white monk's hood cloth wrapped over his shaved head and red lacquered armor, sits alone in a cold dark hall staring at a bowl of plain unsalted rice gruel, jaw clenched, a single lantern.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": []
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "A line of pack oxen loaded with straw salt bales crossing a high mountain pass at sunset, the snowy peaks glowing orange, a porter looking back toward the distant valley.",
+   "shots": [
+    "n14"
+   ],
+   "chars": []
+  }
+ ]
+}
