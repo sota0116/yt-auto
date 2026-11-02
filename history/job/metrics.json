@@ -35,6 +35,16 @@
    "取った日": "2026-10-29",
    "再生（公開ページ）": 0,
    "差し替えの判定": "比べるほかの回が2本に届かない"
+  },
+  "d7": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 0,
+   "差し替えの判定": "比べるほかの回が2本に届かない"
   }
  },
  "004_a_kaigo": {
@@ -85,7 +95,18 @@
  },
  "007_c_truck": {
   "type": "C",
-  "video_id": "CkCSUpsi760"
+  "video_id": "CkCSUpsi760",
+  "h72": {
+   "views": 1,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 23,
+   "差し替えの判定": "再生 23・ほかの回の真ん中 50",
+   "差し替え": "タイトルを「大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円」に、サムネをB案に"
+  }
  },
  "009_a_taxi": {
   "type": "A",
@@ -94,5 +115,9 @@
  "010_a4_155a1cce": {
   "type": "A",
   "video_id": "r0sLrrg472s"
+ },
+ "008_b_shonin30": {
+  "type": "B",
+  "video_id": "uNfX-oXGNac"
  }
 }

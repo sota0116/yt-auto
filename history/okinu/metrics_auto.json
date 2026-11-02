@@ -61,15 +61,48 @@
  },
  "S009_切出_毎晩見る財布": {
   "type": "okinu",
-  "video_id": "lgRbtd0MDKQ"
+  "video_id": "lgRbtd0MDKQ",
+  "h72": {
+   "views": 399,
+   "averageViewPercentage": 75.32,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "13%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 1326
+  }
  },
  "002_家じゅうの小銭": {
   "type": "okinu",
-  "video_id": "LTktY2qoujM"
+  "video_id": "LTktY2qoujM",
+  "h72": {
+   "views": 21,
+   "averageViewPercentage": 31.1,
+   "averageViewDuration": 189,
+   "subscribersGained": 0,
+   "直す所": [
+    "12%あたりで急に落ちる（11%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 94
+  }
  },
  "S003_お札の向き": {
   "type": "okinu",
-  "video_id": "r8SCodcdMWs"
+  "video_id": "r8SCodcdMWs",
+  "h72": {
+   "views": 741,
+   "averageViewPercentage": 133.76,
+   "averageViewDuration": 42,
+   "subscribersGained": 3,
+   "直す所": [],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 1355
+  }
  },
  "003_玄関のNG5": {
   "type": "okinu",
@@ -86,5 +119,9 @@
  "004_トイレのNG5": {
   "type": "okinu",
   "video_id": "HKgVBFHgH3Y"
+ },
+ "S102_通帳": {
+  "type": null,
+  "video_id": "kEwYOtfhQ2s"
  }
 }

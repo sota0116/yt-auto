@@ -139,7 +139,7 @@
   "seconds": 492,
   "title_now": "【意外】介護・福祉に移った人、前の職場を辞めた理由はお金じゃなかった",
   "synthetic_on": null,
-  "views_now": 1734,
+  "views_now": 1738,
   "published": true,
   "published_at": "2026-10-27T19:00:11+09:00",
   "comment_id": "UgwnTfkz6U0VbtKSVh54AaABAg",
@@ -171,7 +171,7 @@
   "seconds": 505,
   "title_now": "【悲報】大型トラック運転手、年収は臨床検査技師より上なのに時給にすると負けた",
   "synthetic_on": null,
-  "views_now": 336,
+  "views_now": 337,
   "published": true,
   "published_at": "2026-10-28T19:00:29+09:00",
   "comment_id": "UgwJW8_7-u6SkTdGTwJ4AaABAg",
@@ -241,7 +241,7 @@
   "seconds": 500,
   "title_now": "【悲報】大型トラック運転手、全職業でいちばん長く働くのに年収は真ん中",
   "synthetic_on": null,
-  "views_now": 5,
+  "views_now": 23,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -249,7 +249,13 @@
   "published": true,
   "published_at": "2026-10-30T19:00:34+09:00",
   "comment_id": "Ugx6BfIudulMaiANtzR4AaABAg",
-  "comment_at": "2026-10-31T00:49:30+09:00"
+  "comment_at": "2026-10-31T00:49:30+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-02T19:49:21+09:00",
+    "内容": "タイトルを「大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円」に、サムネをB案に"
+   }
+  ]
  },
  {
   "work": "008_b_shonin30",
@@ -268,8 +274,8 @@
    "あなたの給料は新人より高い？ もし初任給が30万円になったら"
   ],
   "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
-  "privacy_now": "private",
-  "publish_at": "2026-11-02T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 534,
   "title_now": "【給与逆転】もし初任給が30万円になったら、30代前半の先輩の半分以上が新人より下",
   "synthetic_on": null,
@@ -277,7 +283,11 @@
   "retitled": {
    "日時": "2026-10-30T02:35:28",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
-  }
+  },
+  "published": true,
+  "published_at": "2026-11-02T19:00:22+09:00",
+  "comment_id": "UgzLLsQi8_gYS7v2afV4AaABAg",
+  "comment_at": "2026-11-02T19:49:16+09:00"
  },
  {
   "work": "009_a_taxi",
@@ -305,7 +315,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 5,
+  "views_now": 1057,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -333,7 +343,7 @@
   "seconds": 511,
   "title_now": "【時給の罠】プログラマー、稼ぎが近い仕事でトップなのに時給では勝てない相手がいた",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 136,
   "published": true,
   "published_at": "2026-11-01T19:00:33+09:00",
   "comment_id": "Ugws8Uh7WfDGJI_seZd4AaABAg",
@@ -499,6 +509,12 @@
    "看護師は割に合うのか。新人と同じ夜勤をこなす50代の給料の伸びを追った結果",
    "看護師のベテランより、あなたの給料は伸びている？ 新人の頃からの差を比べたら"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": "2026-11-09T19:00:00+09:00",
+  "seconds": 533,
+  "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

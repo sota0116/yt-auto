@@ -18,7 +18,7 @@
   "seconds": 48,
   "title_now": "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1105,
+  "views_now": 1911,
   "published": true,
   "published_at": "2026-11-01T18:00:24+09:00"
  },
@@ -82,12 +82,14 @@
    "もしも日本が、アメリカに黒船を送ったら。舵はアメリカ人 #もしも #日本史 #幕末"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-02T09:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 45,
   "title_now": "もしも日本が、アメリカに黒船を送ったら。舵はアメリカ人 #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 118,
+  "published": true,
+  "published_at": "2026-11-02T18:00:23+09:00"
  },
  {
   "work": "S104_n014",
@@ -140,12 +142,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-02T00:50:52+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-03T21:00:00+09:00",
+  "seconds": 44,
+  "title_now": "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S107_n011",
@@ -156,11 +163,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-02T02:00:13+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-04T18:00:00+09:00",
+  "seconds": 42,
+  "title_now": "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

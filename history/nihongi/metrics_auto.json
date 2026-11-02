@@ -78,7 +78,19 @@
  },
  "S005_消防士が江戸の大火へ": {
   "type": null,
-  "video_id": "g34Dk_umgHg"
+  "video_id": "g34Dk_umgHg",
+  "h72": {
+   "views": 1122,
+   "averageViewPercentage": 84.43,
+   "averageViewDuration": 30,
+   "subscribersGained": 1,
+   "直す所": [
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 1355
+  }
  },
  "S006_刀に心があったら": {
   "type": null,
@@ -95,5 +107,9 @@
  "S101_n007": {
   "type": null,
   "video_id": "jpXbQgHDIxY"
+ },
+ "S102_n015": {
+  "type": null,
+  "video_id": "XU6ExbhlUUM"
  }
 }

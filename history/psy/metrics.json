@@ -10,6 +10,15 @@
    "直す所": [],
    "取った日": "2026-10-29",
    "再生（公開ページ）": 2
+  },
+  "d7": {
+   "views": 2,
+   "averageViewPercentage": 8.97,
+   "averageViewDuration": 91,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 6
   }
  },
  "002_hitori_yasumu": {
@@ -43,10 +52,23 @@
  },
  "004_tsukare_hito": {
   "type": "人づきあい",
-  "video_id": "QTZ9Mg5Un5c"
+  "video_id": "QTZ9Mg5Un5c",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-02",
+   "再生（公開ページ）": 2
+  }
  },
  "005_kofuku_toshi": {
   "type": "幸せの心理",
   "video_id": "0BWDNDF0tgM"
+ },
+ "006_hitori_suki": {
+  "type": "ひとりの時間",
+  "video_id": "PjAl891Nyy8"
  }
 }
