@@ -18,7 +18,7 @@
   "seconds": 48,
   "title_now": "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1911,
+  "views_now": 2265,
   "published": true,
   "published_at": "2026-11-01T18:00:24+09:00"
  },
@@ -38,12 +38,14 @@
   "comment": "",
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
-  "privacy_now": "private",
-  "publish_at": "2026-11-02T11:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 501,
   "title_now": "【もしも歴史】刀に「心」があったら｜刀狩の夜、1本だけ家に帰った刀の世界線",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 2,
+  "published": true,
+  "published_at": "2026-11-02T20:00:05+09:00"
  },
  {
   "work": "L104_long_s101",
@@ -87,7 +89,7 @@
   "seconds": 45,
   "title_now": "もしも日本が、アメリカに黒船を送ったら。舵はアメリカ人 #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 118,
+  "views_now": 1430,
   "published": true,
   "published_at": "2026-11-02T18:00:23+09:00"
  },
@@ -105,12 +107,14 @@
    "もしも坂本龍馬の会社に、現代の営業マンがいたら。薩長同盟の保証人に #もしも #日本史 #幕末"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-02T12:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 45,
   "title_now": "もしも坂本龍馬の会社に、現代の営業マンがいたら。薩長同盟の保証人に #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1273,
+  "published": true,
+  "published_at": "2026-11-02T21:00:38+09:00"
  },
  {
   "work": "S105_n010",
@@ -148,7 +152,7 @@
   ],
   "comment": "",
   "privacy_now": "private",
-  "publish_at": "2026-11-03T21:00:00+09:00",
+  "publish_at": "2026-11-03T12:00:00Z",
   "seconds": 44,
   "title_now": "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
@@ -169,7 +173,7 @@
   ],
   "comment": "",
   "privacy_now": "private",
-  "publish_at": "2026-11-04T18:00:00+09:00",
+  "publish_at": "2026-11-04T09:00:00Z",
   "seconds": 42,
   "title_now": "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代",
   "synthetic_on": null,
