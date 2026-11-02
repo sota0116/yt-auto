@@ -1,0 +1,32 @@
+# 止めていた定期実行を戻す（2026-11-02 本人「4日の13時までクレジット消費系は定期実行やめて」）
+# ・Claude を使う定期実行（agent・daily・research・shorts）を 11/2 に無効にした。11/4 13:05 JST に有効へ戻す（13:35・15:05 は予備。2回目からは何もしない）
+# ・watch・dashboard はクレジットを使わないので止めていない。weekly は次が 11/8（日）なので止めていない
+# ・戻したあとの Claude のアカウントは pipeline/pick_claude.sh が選ぶ（元で試して、使えなければ新しい方）
+# ・この cron は日付つきなので、毎年 11/4 に動く。2回目以降の年も「有効にする」だけで害はない（止めていなければ何も変わらない）
+name: resume
+on:
+  schedule:
+    - cron: "5 4 4 11 *"    # 11/4 13:05 JST
+    - cron: "35 4 4 11 *"   # 11/4 13:35 JST（予備）
+    - cron: "5 6 4 11 *"    # 11/4 15:05 JST（予備）
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  resume:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: 有効に戻す
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          bad=0
+          for w in agent daily research shorts; do
+            gh workflow enable "$w" && echo "$w を有効にした" || { echo "::error::$w を有効にできなかった"; bad=1; }
+          done
+          gh workflow list
+          exit $bad
