@@ -26,7 +26,8 @@ jobs:
         run: |
           bad=0
           for w in agent daily research shorts; do
-            gh workflow enable "$w" && echo "$w を有効にした" || { echo "::error::$w を有効にできなかった"; bad=1; }
+            # gh workflow enable は無効のものしか名前で探さないので、API でファイル名を指す（有効のものに送っても何も変わらない）
+            gh api -X PUT "repos/$GH_REPO/actions/workflows/$w.yml/enable" && echo "$w を有効にした" || { echo "::error::$w を有効にできなかった"; bad=1; }
           done
           gh workflow list
           exit $bad
