@@ -5,8 +5,8 @@
   "write"
  ],
  "started": "2026-11-02T06:07:58+09:00",
- "tries": 1,
+ "tries": 2,
  "code": "6da8e04a7ee7",
  "stage": "gate_script",
- "gate_fails": 1
+ "gate_fails": 2
 }
