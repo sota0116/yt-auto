@@ -1,12 +1,12 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/017_c_keibi",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/018_a4_9934fd3e",
  "done": [
   "pick",
   "write"
  ],
- "started": "2026-11-02T06:07:20+09:00",
- "tries": 2,
+ "started": "2026-11-02T17:40:03+09:00",
+ "tries": 1,
  "code": "6da8e04a7ee7",
  "stage": "gate_script",
- "gate_fails": 2
+ "gate_fails": 1
 }
