@@ -1,19 +1,12 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S107_台所に置くとお金が逃げる",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S108_玄関に置くとお金が出てい",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "write"
  ],
- "started": "2026-11-02T00:27:10+09:00",
- "tries": 3,
+ "started": "2026-11-02T17:39:41+09:00",
+ "tries": 1,
  "code": "6da8e04a7ee7",
- "stage": "upload",
- "updated": "2026-11-02T00:58:29+09:00"
+ "stage": "gate_script",
+ "gate_fails": 1
 }
