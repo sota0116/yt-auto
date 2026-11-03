@@ -110,13 +110,15 @@ body.kinun .rl .no{width:96px;height:96px;font-size:58px}
 .wd.su{color:var(--shu)}.wd.sa{color:var(--ai)}
 .cell{position:absolute;box-sizing:border-box;border:2px solid rgba(110,98,88,.30);background:rgba(251,247,238,.6)}
 .cell.em{background:rgba(228,214,188,.35)}
-.cell .n{position:absolute;left:16px;top:10px;line-height:1;font-size:40px;font-weight:600;color:rgba(43,38,34,.55);z-index:1}
-.cell.su .n{color:rgba(196,62,44,.7)}.cell.sa .n{color:rgba(91,110,126,.85)}
+/* 2026-11-03：日付は全部ふつうの濃さで出す（千年こよみ 手順書 §6「薄い字にしない・背景に溶かさない」。前は墨の55%で、印のない日が灰色に見えた） */
+.cell .n{position:absolute;left:16px;top:10px;line-height:1;font-size:40px;font-weight:600;color:var(--ink);z-index:1}
+.cell.su .n{color:var(--shu)}.cell.sa .n{color:var(--ai)}
 .cell.mk .n{color:var(--ink);font-weight:900}
 .cell .fl{position:absolute;inset:3px;border-radius:6px;border:6px solid var(--shu);background:rgba(196,62,44,.10);box-sizing:border-box}
 .cell .lb{position:absolute;left:0;right:16px;bottom:16px;text-align:right;line-height:1;font-weight:800;color:var(--shu);white-space:nowrap;z-index:1}
 .cell.hl .fl{background:var(--shu)}
-.cell.hl .n,.cell.hl .lb{color:var(--onshu)}
+/* 2026-11-03：hl の日付は、朱の塗りが字を覆ってから（.on）和紙色にする。前は最初から和紙色で、塗りが来るまで地に溶けていた（002 酉の市 C11 の7・19。完成動画ゲートの指摘） */
+.cell.hl.on .n,.cell.hl .lb{color:var(--onshu)}
 .nt{position:absolute;left:210px;width:1500px;height:150px;background:var(--paper);border-radius:18px;box-shadow:0 10px 28px rgba(40,25,10,.14);box-sizing:border-box;display:flex;align-items:center;gap:40px;padding:0 50px;white-space:nowrap}
 .nt .no{width:70px;height:70px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:40px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
 .nt .dt{font-size:76px;font-weight:900;min-width:560px}
@@ -445,9 +447,11 @@ calendar(s){
   return{draw(t){const a=fresh?out(P(t,0,.45)):1;ti.style.opacity=a;hd.forEach(h=>h.style.opacity=a);if(note){const b=out(P(t,.6,.5));show(note,b,(1-b)*50)}
     cells.forEach(({e,k,d})=>{e.style.opacity=fresh?out(P(t,.05+d*.012,.4)):1;if(!k)return;
       const fl=e.querySelector('.fl'),lb=e.querySelector('.lb'),n=e.querySelector('.n');
-      if(k.i<prev){fl.style.transform='scale(1)';if(lb)lb.style.opacity=1;return}
+      if(k.i<prev){fl.style.transform='scale(1)';if(lb)lb.style.opacity=1;e.classList.add('on');return}
       const t0=(fresh?.6:.25)+(k.i-prev)*Math.min(.45,(DUR-1.5)/Math.max(1,(s.marks.length-prev)));
-      const b=back(P(t,t0,.4));fl.style.transform=`scale(${Math.max(0,b)})`;if(lb){const c=out(P(t,t0+.2,.35));show(lb,c,0,(1-c)*14)}
+      const b=back(P(t,t0,.4));fl.style.transform=`scale(${Math.max(0,b)})`;
+      if(lb){const c=out(P(t,t0+.2,.35));show(lb,c,0,(1-c)*14)}
+      e.classList.toggle('on',b>=.9);  // 塗りが左上の日付まで届くのは 0.89 倍から（マスの中心から計算）。それまでは墨の太字のまま
       n.style.transform=`scale(${1+.18*Math.sin(Math.PI*P(t,t0,.4))})`})}}},
 // 次の重なり（近い順に3つまで）。hl の行を朱で強める
 next_table(s){
