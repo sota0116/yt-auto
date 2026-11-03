@@ -122,7 +122,20 @@
  },
  "S008_関ヶ原がグループLINE": {
   "type": null,
-  "video_id": "j6Jocfuxmew"
+  "video_id": "j6Jocfuxmew",
+  "h72": {
+   "views": 1888,
+   "averageViewPercentage": 76.69,
+   "averageViewDuration": 28,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-04",
+   "再生（公開ページ）": 2457
+  }
  },
  "S101_n007": {
   "type": null,
@@ -143,5 +156,9 @@
  "S105_n010": {
   "type": null,
   "video_id": "tOv3nwu0X-4"
+ },
+ "S106_n009": {
+  "type": null,
+  "video_id": "kJdeaY6mpRI"
  }
 }
