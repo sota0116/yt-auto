@@ -103,5 +103,29 @@
   "kind": "after",
   "title": "【心理学】昔の悔しさが、いつのまにか薄れている人の「意外な特徴」 #shorts",
   "publish_slot": "20:10"
+ },
+ "006_hitori_suki": {
+  "type": "ひとりの時間",
+  "video_id": "TQislAgn9Ec",
+  "hook": "何もない部屋で15分、ただ考えるだけ。あなたは楽しめると思いますか？",
+  "band": [
+   "ひとりで15分",
+   "3人に2人が押した"
+  ],
+  "kind": "after",
+  "title": "【心理学】ひとりで15分考えるより、電気の刺激を選んだ人の正体 #shorts",
+  "publish_slot": "07:10"
+ },
+ "006_hitori_suki:short_2": {
+  "type": "ひとりの時間",
+  "video_id": "CBF9NOfuOJo",
+  "hook": "部屋にひとりなのに、ちっともさびしくない夜は、ありませんか？",
+  "band": [
+   "部屋にひとりでも",
+   "心はつながる"
+  ],
+  "kind": "after",
+  "title": "【心理学】部屋にひとりでも、さびしくない人の「意外な特徴」 #shorts",
+  "publish_slot": "12:10"
  }
 }

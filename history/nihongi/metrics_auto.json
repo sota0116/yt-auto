@@ -109,7 +109,16 @@
  },
  "S007_身分がお金の順だったら": {
   "type": null,
-  "video_id": "8p4jE0LduPo"
+  "video_id": "8p4jE0LduPo",
+  "h72": {
+   "views": 2731,
+   "averageViewPercentage": 105.08999999999999,
+   "averageViewDuration": 36,
+   "subscribersGained": 2,
+   "直す所": [],
+   "取った日": "2026-11-03",
+   "再生（公開ページ）": 4844
+  }
  },
  "S008_関ヶ原がグループLINE": {
   "type": null,
@@ -130,5 +139,9 @@
  "S104_n014": {
   "type": null,
   "video_id": "xcdbXE3LhCI"
+ },
+ "S105_n010": {
+  "type": null,
+  "video_id": "tOv3nwu0X-4"
  }
 }

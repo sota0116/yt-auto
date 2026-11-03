@@ -106,11 +106,33 @@
  },
  "003_玄関のNG5": {
   "type": "okinu",
-  "video_id": "GNmrB2YYjkM"
+  "video_id": "GNmrB2YYjkM",
+  "h72": {
+   "views": 1,
+   "averageViewPercentage": 49.94,
+   "averageViewDuration": 332,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-03",
+   "再生（公開ページ）": 46
+  }
  },
  "S004_種銭": {
   "type": "okinu",
-  "video_id": "n1z2MDRwzIw"
+  "video_id": "n1z2MDRwzIw",
+  "h72": {
+   "views": 1228,
+   "averageViewPercentage": 63.66,
+   "averageViewDuration": 21,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-03",
+   "再生（公開ページ）": 1233
+  }
  },
  "S101_母の形見の10円玉": {
   "type": null,
@@ -123,5 +145,13 @@
  "S102_通帳": {
   "type": null,
   "video_id": "kEwYOtfhQ2s"
+ },
+ "S103_使い終わった古い財布": {
+  "type": null,
+  "video_id": "QYrMa7dJfcA"
+ },
+ "005_寝室のNG5": {
+  "type": "okinu",
+  "video_id": "r35vevoBSkY"
  }
 }
