@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>順位の入れ替わり</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #1b1714; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { width: min(100vw, calc(100vh * 16 / 9)); height: auto; aspect-ratio: 16 / 9; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script>
+"use strict";
+// =====================================================================
+//  job: 年収の順位 -> 時給の順位 の入れ替わり（手順書 §3 A-4 の山場・rank_swap の差し替え）
+//  pipeline/anim_resort.py が DATA を facts.json から書き込む。数字はすべて DATA から（ここで計算しない）。
+//  区切り: [0, SEG0) 並べ替え / 以後 2秒ずつ、注目の職業を1つずつ（rank_swap の shown 1, 2, 3 に当たる）
+// =====================================================================
+const DATA = /*DATA*/null;
+const FPS = 24, W = 1920, H = 1080;
+const BPM = 120, BEAT = 60 / BPM, E8 = BEAT / 2, E16 = BEAT / 4;
+const SEG0 = 3.0, SEGL = 2.0;
+const DURATION = SEG0 + SEGL * DATA.focus.length;
+const NFRAMES = Math.round(DURATION * FPS);
+const LOOP_T = NFRAMES / FPS;
+const SAFE = { top: 30, bottom: 30, right: 30 };
+const HAND = '"Noto Sans JP", "Noto Sans CJK JP", "BIZ UDGothic", sans-serif';   // 手順書 §5: Noto Sans JP only
+const CX = 960;
+const ERA_LIST = [[0, DURATION, () => sceneBoard()]];
+const SHOTS = [['board', 0, 0.0, DURATION, 'rank swap board']];
+const T_SLAM = 1.2;
+const TIMELINE = {
+  width: W, height: H, fps: FPS, bpm: BPM, duration: DURATION, frames: NFRAMES, loop: LOOP_T, safe: SAFE,
+  format: 'locked-off',
+  shots: SHOTS.map(([key, era, t0, t1, title], i) => ({ id: i + 1, key, era, t0, t1, title })),
+  cuts: [], morphs: [],
+  cues: { slam: T_SLAM },
+  acts: [{ name: 'swap', role: 'gift', t0: 0, t1: DURATION }],
+  board: [], narration: [],
+};
+window.TIMELINE = TIMELINE;

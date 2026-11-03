@@ -15,6 +15,10 @@ __pycache__/
 # 公開リポジトリに入れない物（2026-10-24 に公開へ切り替え）
 # ・動画スキルは生徒さん向けの配布物。GitHub の Secrets（VENDOR_SKILL_B64）から実行の時だけ戻す
 vendor/youtube-video-maker/
+# ・motion graphics の見本集（1.2GB。手元で見るだけ。2026-11-03）
+vendor/mg-styles-15/
+# ・animate の書き出し（作業フォルダの中に作る。念のため）
+**/_anim/**/frames/
 # ・LINE 特典の本体と絵（LINE に登録した人だけに渡す物。毎日の制作は使わない）
 tokuten/**/*.pdf
 tokuten/**/*.png

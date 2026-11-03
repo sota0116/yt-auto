@@ -71,6 +71,8 @@ jobs:
           npm install -g @anthropic-ai/claude-code@2.1.296
           # spi の動く図解カードは Playwright で Chrome を動かす（runner に入っている /usr/bin/google-chrome を使う。build_long_spi.py）
           test -x /usr/bin/google-chrome || python -m playwright install --with-deps chromium
+          # job の山場（年収→時給の順位の入れ替わり）を animate で描くための道具（vendor/animate）。入らなければ今までの図で作る
+          (npm install -g playwright@1.62.0 && npx -y playwright@1.62.0 install --with-deps chromium) || echo "Playwright が入らないので、入れ替わりの図は今までの図で作る"
       - name: Claude のアカウントを選ぶ（pipeline/pick_claude.sh。CLAUDE_SUB_UNTIL を過ぎたら元で試し、使えなければ新しい方）
         env:
           MAIN_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}

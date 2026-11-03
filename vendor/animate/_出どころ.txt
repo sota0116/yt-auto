@@ -1,0 +1,1 @@
+source: https://github.com/cth9191/animate @7e5eb56 (2026-11-03 取得)

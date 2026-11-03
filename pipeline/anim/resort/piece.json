@@ -1,0 +1,8 @@
+{
+  "name": "job_rank_swap",
+  "title": "年収の順位と時給の順位",
+  "format": { "width": 1920, "height": 1080, "fps": 24, "bpm": 120 },
+  "storyFormat": "locked-off build",
+  "style": "crosshatch",
+  "review": { "safe": { "top": 30, "bottom": 30, "right": 30 }, "refs": {} }
+}

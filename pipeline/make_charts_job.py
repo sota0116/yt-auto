@@ -742,7 +742,24 @@ def main():
     only = set(filter(None, a.only.split(",")))
     cuts = s["cuts"]
     done = 0
+    anim = set()  # 山場の rank_swap は animate の動く図（手順書 §5）。作れない時は今までの図で作る
+    if not a.still and not os.environ.get("NO_ANIM"):
+        try:
+            import anim_resort
+            for g in anim_resort.groups(cuts):
+                if only and not any(c["id"] in only for c in g):
+                    continue
+                try:
+                    anim.update(anim_resort.make(a.work, g, fx))
+                except Exception as e:
+                    print(f"【注意】animate の入れ替わりの図を作れないので、今までの図で作ります：{e}", flush=True)
+        except Exception as e:
+            print(f"【注意】animate を使えないので、今までの図で作ります：{e}", flush=True)
     for i, c in enumerate(cuts):
+        if c["id"] in anim:
+            done += 1
+            print(c["id"], "rank_swap（animate）", flush=True)
+            continue
         if c.get("chart") and (not only or c["id"] in only):
             render(a.work, c, cuts, i, fx, s, a.still, a.tokuten)
             done += 1
