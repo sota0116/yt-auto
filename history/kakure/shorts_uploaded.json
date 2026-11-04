@@ -52,9 +52,10 @@
   "video": "short_final.mp4",
   "format": "short",
   "privacy": "private",
-  "publish_at": "2026-11-05T19:00:00+09:00",
+  "publish_at": "2026-11-05T12:00:00+09:00",
   "uploaded_at": "2026-11-04T19:08:33+09:00",
-  "missing": false
+  "missing": false,
+  "_respaced": "2026-11-05T19:00:00+09:00 → 2026-11-05T12:00:00+09:00（2026-11-04 respace.py。3時間あける）"
  },
  {
   "work": "S008_格付け_名前の多い神",

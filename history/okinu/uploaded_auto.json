@@ -114,11 +114,12 @@
   ],
   "comment": "あなたの財布には、いくつありましたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-05T10:00:00Z",
+  "publish_at": "2026-11-05T12:00:00+09:00",
   "seconds": 43,
   "title_now": "【60代】実は貧乏な人に多い財布の特徴3選",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "_respaced": "2026-11-05T19:00:00+09:00 → 2026-11-05T12:00:00+09:00（2026-11-04 respace.py。3時間あける）"
  },
  {
   "work": "102_カバン",
