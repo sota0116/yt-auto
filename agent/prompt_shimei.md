@@ -35,6 +35,7 @@
 7. 音量：`python -X utf8 agent_shared/tools/loudnorm2.py long.mp4 完成.mp4`。−14〜−16 LUFS に入れる。gate_video.py はこのチャンネルでは使わない。6 の一覧と LUFS・3秒以上の無音が無いことの確認で代える（ffmpeg の silencedetect=n=-45dB:d=3）。
 8. サムネ：看板 §7。背景は `python -X utf8 K/道具/lovart_one.py <出力.png> <頼む文.txt>`（手本 L001 の thumb_bg_prompt.txt）。この道具は Lovart が無料モードの時だけ動くので、速いモードで止まったら数分おいて動かし直す。thumb.json は L001 の形。`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0、thumb_small.jpg が1秒で読めるか見る。タイトルにある言葉は使わない（誰の話か分かるための主語・対象を1語入れるのはよい）。
    - サムネの字（thumb.json の texts。2026-11-04 追加）：上の段と下の段を続けて読むと、自然な1文になるように書く（手本 L001「CIA長官 FBI副長官／全員やられた」）。字だけで誰の・何の話か分かるよう、主語か対象を入れる。助詞を省かない。語の途中で行を割らない。数字は台本・調査メモにある物だけ使う。
+   - 題とサムネの競合の型（2026-11-04 本人「サムネとタイトルが意味わからないの多い」。上の決まりの中で使う）：題は、具体的で強い出来事の中身（誰が・何をした）を頭に置く。サムネは、人数か数と結果の一言（「43人」「家族4人」の形）か、明かす言葉（自社で当たった形は「全部筒抜け」）を1つ。「全員やられた」だけのように、誰が・何に、が無い字にしない。題とサムネで役を分け、題の言葉をサムネに写さない。言いさしで終えない。数字は調査メモで確かめた物だけ。書いたら3つを確かめる：字だけで何の事件か分かるか／その事件を知らない人でも見たくなるか／題とサムネで役が分かれているか。
    - 字の点検：`python -X utf8 pipeline/check_thumb_text.py <作業フォルダ>`。NG なら、出てきた理由と書き直し例を見て thumb.json を直し、make_thumb.py と点検をやり直す。3回直しても NG なら、理由を記録に書いて進める。
 9. 上げる準備：`python -X utf8 pipeline/agent_run.py title shimei "題"` が OK なら、upload.json を `{"video": "完成.mp4", "format": "long", "thumb": "thumb.jpg"}` で置く。この実行の後の段が upload_shimei.py で上げ、次の空き枠に入れる（横動画は 2日おきの 20:00）。
 

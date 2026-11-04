@@ -1,5 +1,5 @@
 {
- "_説明": "アナザー日本紀の競合（2026-10-29 に調査 json から写した）。ショート＝歴史ショートの看板の競合（チャンネル情報）。横動画＝『もしも』系の横動画の再生が多い順（上位）と、近い規模のチャンネルの直近の動画。台本・サムネ・題を作る前の参考で、型・構成・フック1行目だけを借りる（文・題は写さない）。research.py が足す競合メモは history/nihongi/competitors/ に書く",
+ "_説明": "アナザー日本紀の競合（2026-10-29 に調査 json から写した）。ショート＝歴史ショートの看板の競合（チャンネル情報）。横動画＝『もしも』系の横動画の再生が多い順（上位）と、近い規模のチャンネルの直近の動画。台本・サムネ・題を作る前の参考で、型・構成・フック1行目だけを借りる（文・題は写さない）。research.py が足す競合メモは history/nihongi/competitors/ に書く 2026-11-04：research.py が読む channels と queries を足した（それまで毎日の競合リサーチが0本だった）。主な参考はヒューマン伝・Floating Stories（設計\\競合分析_参考チャンネル追加3_2026-11-04.md）。",
  "ショート看板": [
   {
    "channel_id": "UCjD_2efj0-oKZX1chXSw1Bg",
@@ -842,5 +842,53 @@
     }
    ]
   }
- }
+ },
+ "channels": [
+  {
+   "id": "UCYJdHBzUk_l1xsVVy6xy8Nw",
+   "name": "ヒューマン伝",
+   "group": "横動画の主な参考：もしも〇〇に生まれたら・〇〇の謎・総集編（今の国や実在の集団の題は使わない）"
+  },
+  {
+   "id": "UCLrRs5masRm4u8YaLLXU3zQ",
+   "name": "Floating Stories",
+   "group": "サムネの参考（実物の古地図・古書＋AIの絵）・古代日本の題"
+  },
+  {
+   "id": "UCakCP3tMuu_U2H66Xwpzzog",
+   "name": "もしもボックスチャンネル",
+   "group": "もしも〇〇（横動画）"
+  },
+  {
+   "id": "UC_6ohnHHl2Fx_5hKHKkcflg",
+   "name": "もしも、あの日の日本に",
+   "group": "もしも（日本史）"
+  },
+  {
+   "id": "UCT-xz7Ot0fmEcyVAbnVftmw",
+   "name": "歴史じっくり紀行",
+   "group": "日本史の横動画"
+  },
+  {
+   "id": "UC3mT4OZegHkmD6WcPJMmpCA",
+   "name": "麗しの日本史",
+   "group": "日本史の横動画"
+  },
+  {
+   "id": "UCbOlDIjs1frvIkUUHvfB8xw",
+   "name": "ファンタジーな世界",
+   "group": "もしも・異世界の型"
+  },
+  {
+   "id": "UCaNSFgJkwi6SFolcPGhq0_w",
+   "name": "真夜中のもしも",
+   "group": "型の参考：もしも〜の1日を再現"
+  }
+ ],
+ "queries": [
+  "もしも 歴史",
+  "もしも 江戸時代",
+  "戦国 謎",
+  "歴史 総集編"
+ ]
 }
