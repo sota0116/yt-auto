@@ -33,7 +33,9 @@
 5. 動く絵：章ごとに1つ以上＋山場。`bash pipeline/agent_motion.sh <作業フォルダ> <id,id>` をバックグラウンドで動かす（できた絵から順に頼み、上限で落ちたら3分待つ）。取れなかった物は止まった絵のままでよい。枠が付いた絵は agent_shared/tools/frame_crop.py で切る。
 6. 組み立て：config.json を L001 から写す。K/素材/bgm/bgm_suspense1.wav を作業フォルダに写す（ショートも同じ）。`python -X utf8 agent_shared/skill/scripts/build_long.py <作業フォルダ>` をバックグラウンドで動かす。全カットの1コマを並べた一覧（check/ に置く）を目で見て、絵とセリフのずれ・切れた文字・偽の文字を直す。
 7. 音量：`python -X utf8 agent_shared/tools/loudnorm2.py long.mp4 完成.mp4`。−14〜−16 LUFS に入れる。gate_video.py はこのチャンネルでは使わない。6 の一覧と LUFS・3秒以上の無音が無いことの確認で代える（ffmpeg の silencedetect=n=-45dB:d=3）。
-8. サムネ：看板 §7。背景は `python -X utf8 K/道具/lovart_one.py <出力.png> <頼む文.txt>`（手本 L001 の thumb_bg_prompt.txt）。この道具は Lovart が無料モードの時だけ動くので、速いモードで止まったら数分おいて動かし直す。thumb.json は L001 の形。`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0、thumb_small.jpg が1秒で読めるか見る。タイトルにある言葉は使わない。
+8. サムネ：看板 §7。背景は `python -X utf8 K/道具/lovart_one.py <出力.png> <頼む文.txt>`（手本 L001 の thumb_bg_prompt.txt）。この道具は Lovart が無料モードの時だけ動くので、速いモードで止まったら数分おいて動かし直す。thumb.json は L001 の形。`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0、thumb_small.jpg が1秒で読めるか見る。タイトルにある言葉は使わない（誰の話か分かるための主語・対象を1語入れるのはよい）。
+   - サムネの字（thumb.json の texts。2026-11-04 追加）：上の段と下の段を続けて読むと、自然な1文になるように書く（手本 L001「CIA長官 FBI副長官／全員やられた」）。字だけで誰の・何の話か分かるよう、主語か対象を入れる。助詞を省かない。語の途中で行を割らない。数字は台本・調査メモにある物だけ使う。
+   - 字の点検：`python -X utf8 pipeline/check_thumb_text.py <作業フォルダ>`。NG なら、出てきた理由と書き直し例を見て thumb.json を直し、make_thumb.py と点検をやり直す。3回直しても NG なら、理由を記録に書いて進める。
 9. 上げる準備：`python -X utf8 pipeline/agent_run.py title shimei "題"` が OK なら、upload.json を `{"video": "完成.mp4", "format": "long", "thumb": "thumb.jpg"}` で置く。この実行の後の段が upload_shimei.py で上げ、次の空き枠に入れる（横動画は 2日おきの 20:00）。
 
 #### ショート2本の作り方

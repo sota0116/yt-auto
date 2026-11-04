@@ -29,6 +29,8 @@
 #      道具の更新が続く日は同じネタの書き直しが終わらなかった（2026-10-31。1回の実行で最大5往復）
 #   10. 書き直しても最初の30秒が7点に届かなければ、機械の点検を通った版のうち最高点の版を使う。6点以上なら止めずに進み、5点以下だけ止める（keep_best・use_best）。
 #      「続きを見たくなるか」の不合格58回のうち45回が6点で、1点差で回が止まっていた（2026-11-01 本人が検品の基準を変えると決めた）
+#   11. サムネの字は作る前に意味の点検（check_thumb_text.py）を通す。NG なら fix_thumb.py --reason で直す（2回まで）。直らなくても止めない
+#      （2026-11-04 本人「サムネのテキストが日本語的に意味わからなかったり、文脈が繋がってないことが多いから変える」）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -575,12 +577,17 @@ def make_one(ch, st, upload, kind=None):
         n_fix = int(profile(ch).get("gate_rewrites") or 2)  # 書き直しの回数（profile.json。無ければ2回。心理学chは 2026-10-29 から4回）
         best = -1
         for i in range(1 + n_fix):  # 1回目＋書き直し
-            if i == 0 and "write" not in st["done"]:
+            # 続きから再開した時、done に write があっても script.json が無ければ書き直す（2026-11-04。無いまま進むと
+            # gate_script が落ち、--fix も gate_script.json が無くて落ち、「台本ゲートで n 回不合格」の空振りになった：job・psy 11-02）
+            if i == 0 and ("write" not in st["done"] or not os.path.exists(os.path.join(work, "script.json"))):
                 run(work, "write", [w_py, work, "--ch", ch], ch, ok=(0, 1))
-                st["done"].append("write")
+                if "write" not in st["done"]:
+                    st["done"].append("write")
                 jsave(sp, st)
             elif i > 0:
-                run(work, "write", [w_py, work, "--ch", ch, "--fix"], ch, ok=(0, 1))
+                # 台本か点検の結果が無い時（書く段が台本を残さずに終わった時など）は、書き直しではなく最初から書く（write_script_*.py は5本あり、どれも --fix で gate_script.json を開く）
+                fresh = not all(os.path.exists(os.path.join(work, f)) for f in ("script.json", "gate_script.json"))
+                run(work, "write", [w_py, work, "--ch", ch] + ([] if fresh else ["--fix"]), ch, ok=(0, 1))
             r = run(work, "gate_script", [g_py, work, "--ch", ch], ch, ok=(0, 1))
             if r.returncode == 0:
                 return
@@ -786,7 +793,36 @@ def make_one(ch, st, upload, kind=None):
             jsave(sp, st)
     step("gate_video", gate_video)
 
+    def check_text():
+        """サムネの字の意味の点検（詰まった時の決まり11）。NG なら fix_thumb --reason で直す（2回まで）。直らなくても止めない"""
+        if not os.path.exists(os.path.join(ROOT, "pipeline", "check_thumb_text.py")):
+            return
+        for i in range(3):
+            try:
+                r = run(work, "thumb_text", ["check_thumb_text.py", work, "--ch", ch], ch, ok=(0, 1))
+            except Stop as e:
+                print(f"【メモ】サムネの字の点検が動きませんでした（作るのは続けます）：{str(e)[:300]}", flush=True)
+                return
+            if r.returncode == 0:
+                return
+            j = jload(os.path.join(work, "check_thumb_text.json"), {})
+            why = "／".join(x for x in sum((v.get("ng", []) + [(v.get("llm") or {}).get("fix_hint", "")]
+                                           for v in j.get("variants", [])), []) + j.get("ng", []) if x)
+            if i == 2:
+                print(f"【メモ】サムネの字の点検で NG が残りました（作るのは続けます）：{why[:300]}", flush=True)
+                return
+            print(f"■ サムネの字が意味の点検で NG なので直す（{i + 1}回目・2回まで）：{why[:200]}", flush=True)
+            try:
+                f = run(work, "thumb_fix", ["fix_thumb.py", work, "--reason", why[:500]], ch, ok=(0, 1))
+            except Stop as e:
+                print(f"【メモ】サムネの字の直しが動きませんでした（作るのは続けます）：{str(e)[:300]}", flush=True)
+                return
+            if f.returncode:
+                print("【メモ】サムネの字を直せませんでした（作るのは続けます）", flush=True)
+                return
+
     def thumb():
+        check_text()  # 直した字で作るので、script.json はこの後に読む
         s = jload(os.path.join(work, "script.json"), {})
         args = [T("thumb", "make_thumb_job.py"), work, "--check"]
         if s.get("thumb_bg"):

@@ -14,7 +14,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 from write_script_psy import recent  # noqa: E402
 import koyomi_spi as KS  # noqa: E402
 
@@ -120,6 +120,7 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
 
 {HOOK_ASK}
 {IMAGE_ASK}
+{THUMB_TEXT_ASK}
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 家事の合間に耳だけで聞く50〜60代の女性として10点満点。最初の30秒が7点以上、全部の章が5点以上で合格。

@@ -15,7 +15,7 @@
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK  # noqa: E402
+from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CH_DIR = os.path.join(ROOT, "channels", "okinu")
@@ -210,6 +210,7 @@ def prompt(work, fix):
 
 {HOOK_ASK}
 {IMAGE_ASK}
+{THUMB_TEXT_ASK}
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 60代前後の女性として10点満点。最初の文（ショートは1文目、長尺は最初の30秒）で続きを見たくなるか。持ち帰れる物（手元でできる習慣・言い伝え）が1つ言えているか。

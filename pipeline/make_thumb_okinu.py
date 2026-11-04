@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import make_thumb_v3 as T  # noqa: E402
 import rank_montage_okinu as RM  # noqa: E402
+import thumb_split as TS  # noqa: E402
 from PIL import Image, ImageEnhance  # noqa: E402
 
 W, H = 1280, 720
@@ -40,7 +41,7 @@ def spec_legacy(s, bg_rel):
         size_top = min(112, int(1180 / max(1, n_top)))
         hl_top = [w for w in (th.get("hl") or []) if w in top][:1]
         texts.append({"t": top, "x": 0, "y": 28, "size": size_top, "color": "#FFFFFF", "hl": hl_top, "hl_color": "#FFD23F", "center": True})
-    hl_big = [w for w in (th.get("hl") or []) if w in big][:1] or [big.split("\n")[-1][-3:]]
+    hl_big = [w for w in (th.get("hl") or []) if w in big][:1] or [key_word(big.split("\n")[-1], tail=True)]
     texts.append({"t": big, "x": 0, "y": y_big, "size": size_big, "color": "#FFFFFF", "hl": hl_big,
                   "hl_color": ["#FFE0D0", "#FF3B2F", "#B00010"], "glow": "#FFFFFF", "center": True})
     return {"bg": bg_rel, "size": "long", "out": "thumb.jpg", "shade": "both", "texts": texts}
@@ -64,10 +65,59 @@ def cover(im, w, h, zoom=1.0, zx=.5, zy=.5):
     return im.crop((x, y, x + w, y + h))
 
 
+def key_word(t, tail=False, n=2):
+    """既定の色を変える語（2026-11-04）：前（tail なら後ろ）から見て最初の2字以上の名詞（続く名詞・接尾辞ごと）。
+    名詞が無ければ最初の動詞・形容詞（後ろの助動詞ごと）。前の作りは字数で切っていて「大損し」のように語の途中で色が切れていた"""
+    tk = TS.tokens(t)
+    if not tk:
+        return t[-(n + 1):] if tail else t[:n]
+
+    def grow(i, keep):
+        j = i
+        while j + 1 < len(tk) and tk[j + 1][3] in keep:
+            j += 1
+        return t[tk[i][1]:tk[j][2]]
+    order = list(reversed(range(len(tk)))) if tail else list(range(len(tk)))
+    for i in order:
+        if tk[i][3] in ("名詞", "代名詞") and "●" not in tk[i][0] and (i == 0 or tk[i - 1][3] not in ("名詞", "接頭辞")):
+            w = grow(i, ("名詞", "接尾辞"))
+            if len(w) >= n:
+                return w
+    for i in order:
+        if tk[i][3] in ("動詞", "形容詞"):
+            w = grow(i, ("助動詞", "接尾辞"))
+            j = t.index(w, tk[i][1]) + len(w)
+            if t[j:j + 1] in ("て", "で") and any(x[1] == j and x[3] == "助詞" for x in tk):
+                w += t[j]  # 「どけて」「やめて」の「て」までを1語に
+            if len(w) >= n:
+                return w
+    return t[-(n + 1):] if tail else t[:n]
+
+
+def snap(line, w):
+    """指定の語が語の途中（「大損し」など）で切れていたら、語の切れ目にそろえる。後ろは縮める（2字以上残る時）か広げる"""
+    i = line.find(w)
+    tk = TS.tokens(line)
+    if i < 0 or tk is None:
+        return w
+    starts = sorted(TS.cuts(line)[1] | {0})  # 頭＝次が助詞・助動詞・接尾辞・記号でない所
+    ends = {len(line)} | {x[2] for x, y in zip(tk, tk[1:])  # 尻＝次が助動詞・接尾辞・記号でなく、動詞・形容詞の活用の途中でもない所
+                          if y[3] not in ("助動詞", "接尾辞", "補助記号") and not (x[3] in ("動詞", "形容詞", "助動詞") and y[3] == "助詞")}
+    s = max(p for p in starts if p <= i)
+    e = i + len(w)
+    if e not in ends:
+        e = max((p for p in ends if s + 2 <= p < e), default=min(p for p in ends if p > e))
+    return line[s:e]
+
+
 def hl_of(th, lines, default):
-    """色を変える語：thumb.hl（どれかの行に含まれる物）→ ●● → 既定"""
-    hl = [w for w in (th.get("hl") or []) if any(w in l for l in lines)]
-    return hl or [w for w in ("●●●", "●●") if any(w in l for l in lines)][:1] or [default]
+    """色を変える語：thumb.hl（どれかの行に含まれる物・語の切れ目にそろえる）→ ●● → 既定"""
+    hl = []
+    for w in th.get("hl") or []:
+        line = next((x for x in lines if w in x), None)
+        if line is not None:
+            hl.append(w if "●" in w else snap(line, w))
+    return hl or [w for w in ("●●●", "●●") if any(w in x for x in lines)][:1] or [default]
 
 
 def fit(text, budget, cap):
@@ -91,7 +141,7 @@ def layout_spec(s, work, tmp):
         texts = [{"t": l1, "x": 36, "y": 24, "size": s1, "color": "#FFFFFF", "edge": "#000000"},
                  {"t": l2, "x": 36, "y": 24 + int(s1 * 0.9), "size": s2, "color": YEL, "edge": "#000000"},
                  {"t": jd, "x": 0, "y": H - int(sj * 1.1) - 40, "size": sj, "color": "#FFFFFF", "box": "#C00010", "center": True,
-                  "hl": hl_of(th, [jd], jd[:3]), "hl_color": YEL}]
+                  "hl": hl_of(th, [jd], key_word(jd)), "hl_color": YEL}]
         shade = "left"
     elif lay == "person":
         im = cut_image(work, cuts, th["bg"], tmp)
@@ -100,7 +150,7 @@ def layout_spec(s, work, tmp):
         bg = cover(im, W, H, th.get("zoom", 1.0), th.get("zx", .5), th.get("zy", .5))
         s1, s2, sj = fit(l1, 570, 112), fit(l2, 570, 118), fit(jd, 1180, 196)
         texts = [{"t": l1, "x": 690, "y": 30, "size": s1, "color": "#FFFFFF", "edge": "#000000"},
-                 {"t": l2, "x": 690, "y": 30 + int(s1 * 1.25), "size": s2, "color": "#FFFFFF", "hl": hl_of(th, [l2, l1], l2[:2]), "hl_color": YEL, "edge": "#000000"},
+                 {"t": l2, "x": 690, "y": 30 + int(s1 * 1.25), "size": s2, "color": "#FFFFFF", "hl": hl_of(th, [l2, l1], key_word(l2)), "hl_color": YEL, "edge": "#000000"},
                  {"t": jd, "x": 0, "y": H - int(sj * 1.1) - 20, "size": sj, "color": RED, "edge": "#FFFFFF", "center": True}]
         shade = "both"
     elif lay == "shock":
@@ -115,7 +165,7 @@ def layout_spec(s, work, tmp):
             mask.paste(a, (x, 0, x + 1, H))
         bg.paste(layer, (0, 0), mask)
         s1, s2, sj = fit(l1, 700, 124), fit(l2, 700, 124), fit(jd, 1180, 200)
-        texts = [{"t": l1, "x": 36, "y": 18, "size": s1, "color": "#FFFFFF", "hl": hl_of(th, [l1, l2], l1[:2]), "hl_color": YEL},
+        texts = [{"t": l1, "x": 36, "y": 18, "size": s1, "color": "#FFFFFF", "hl": hl_of(th, [l1, l2], key_word(l1)), "hl_color": YEL},
                  {"t": l2, "x": 36, "y": 18 + int(s1 * 1.4), "size": s2, "color": "#FFFFFF"},
                  {"t": jd, "x": 0, "y": H - int(sj * 1.1) - 20, "size": sj, "color": RED, "edge": "#FFFFFF", "center": True}]
         shade = "left"
@@ -132,7 +182,7 @@ def layout_spec(s, work, tmp):
         sl = fit(th["left_label"], 560, 96)
         sr = fit(th["right_label"], 560, 96)
         rx = W - 24 - 50 - sr * len(th["right_label"])
-        texts = [{"t": l1, "x": 0, "y": 8, "size": s1, "color": "#FFFFFF", "hl": hl_of(th, [l1], l1[:2]), "hl_color": YEL, "center": True, "edge": "#000000"},
+        texts = [{"t": l1, "x": 0, "y": 8, "size": s1, "color": "#FFFFFF", "hl": hl_of(th, [l1], key_word(l1)), "hl_color": YEL, "center": True, "edge": "#000000"},
                  {"t": l2, "x": 0, "y": 8 + int(s1 * 1.05), "size": s2, "color": RED, "edge": "#FFFFFF", "center": True},
                  {"t": th["left_label"], "x": 24, "y": H - sl - 56, "size": sl, "color": "#FFFFFF", "box": "#C00010"},
                  {"t": th["right_label"], "x": rx, "y": H - sr - 56, "size": sr, "color": "#1A1A1A", "box": YEL}]

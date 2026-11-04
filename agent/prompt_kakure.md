@@ -36,7 +36,9 @@
 6. 動く絵：章ごとに1つ以上＋見どころ（peak）。`bash pipeline/agent_motion.sh <作業フォルダ> <id,id>` をバックグラウンドで動かす（できた絵から順に頼み、上限で落ちたら3分待つ）。取れなかった物は止まった絵のままでよい。枠が付いた絵は agent_shared/tools/frame_crop.py で切る。
 7. 組み立て：作業フォルダに写す物＝前回の横動画の config.json（K/config.json は古いので使わない）・K/素材/bgm/amacha3.wav を bgm_amacha3.wav という名前で・K/素材/sfx/ の wav を sfx/ に。`python -X utf8 agent_shared/skill/scripts/build_long.py <作業フォルダ>` をバックグラウンドで動かす。全カットの1コマを並べた一覧（check/ に置く）を目で見て、絵とセリフのずれ・切れた文字・偽の文字を直す。
 8. 音量：`python -X utf8 agent_shared/tools/loudnorm2.py long.mp4 long_final.mp4`。測った LUFS を記録する。gate_video.py はこのチャンネルでは使わない。7 の一覧と LUFS・3秒以上の無音が無いことの確認で代える（無音は ffmpeg の silencedetect=n=-45dB:d=3）。
-9. サムネ：_thumb_<番号>_<神>/script.json で T1・T2 を作り（手本どおり。上下の4分の1はあける）、良い方を thumb_bg.png にする。thumb.json（手本どおり size long・shade both・2段の字）を書き、`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0 と thumb_small.jpg が1秒で読めるかを見る。タイトルと同じ言葉をくり返さない。
+9. サムネ：_thumb_<番号>_<神>/script.json で T1・T2 を作り（手本どおり。上下の4分の1はあける）、良い方を thumb_bg.png にする。thumb.json（手本どおり size long・shade both・2段の字）を書き、`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0 と thumb_small.jpg が1秒で読めるかを見る。タイトルと同じ言い回しをくり返さない（誰の話か分かるための神の名・物の名は入れてよい）。
+   - サムネの字（thumb.json の texts。2026-11-04 追加）：上の段と下の段を続けて読むと、自然な1文になるように書く。字だけで誰の・何の話か分かるよう、主語か対象（神の名・物）を入れる。助詞を省かない。語の途中で行を割らない。数字は台本・調査メモにある物だけ使う。悪い例は「あと1歩で言った／余計な一言」（誰が言ったのか分からない）。良い例は「白兎があと1歩で言った／余計な一言」。
+   - 字の点検：`python -X utf8 pipeline/check_thumb_text.py <作業フォルダ>`。NG なら、出てきた理由と書き直し例を見て thumb.json を直し、make_thumb.py と点検をやり直す。3回直しても NG なら、理由を記録に書いて進める。
 10. 上げる準備：`python -X utf8 pipeline/agent_run.py title kakure "題"` が OK なら、upload.json を `{"video": "long_final.mp4", "format": "long", "thumb": "thumb.jpg"}` で置く。この実行の後の段が upload_kakure.py で上げ、次の空き枠に入れる（横動画は2日おきの20:00）。
 
 #### ショート2本の作り方

@@ -12,7 +12,7 @@
 import argparse, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK  # noqa: E402
+from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 from nihongi_common import (ROOT, CH, CDIR, HIST, VENDOR, jload, characters, kind_of_work, past_works, claude_env, vendor_ok,  # noqa: E402
                             SHORT_STYLE, LONG_STYLE, AVOID, AI_LINE, FIXED_END)
 
@@ -124,6 +124,7 @@ def prompt(work, fix):
 
 {HOOK_ASK}
 {IMAGE_ASK}
+{THUMB_TEXT_ASK}
 {LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 雑学が好きで、見終わったあと『へえ』と言いたい人として10点満点。最初の30秒（ショートは最初の1文と hook）が7点以上、全部の場面・章が5点以上、見どころが6点以上で合格。

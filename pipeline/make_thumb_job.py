@@ -18,6 +18,7 @@ import argparse, json, os, re, sys, unicodedata
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from make_charts_job import font, tw
+from thumb_split import split2
 
 W, H = 1280, 720
 BLACK, WHITE = (10, 10, 16), (255, 255, 255)
@@ -144,14 +145,16 @@ def parts(t, given, most=2):
             sys.exit(f"【止まりました】thumb_lines は{most}つまでで、つなぐと thumb_text になる並び：{given}／{t}")
         lines = list(given)
     else:
-        m = re.search(r"\d", t)
-        if m and m.start() > 0:
-            lines = [t[:m.start()], t[m.start():]]
-        elif len(t) <= 4:
-            lines = [t]
-        else:
-            k = 3 if t.endswith("?") else 2
-            lines = [t[:-k], t[-k:]]
+        lines = split2(t)  # 2026-11-04：語の切れ目で割る（前は最後の2〜3字で割り「最／下位」「なぜ辞／める?」になっていた）
+        if lines is None:  # sudachi が無い環境だけ前の割り方
+            m = re.search(r"\d", t)
+            if m and m.start() > 0:
+                lines = [t[:m.start()], t[m.start():]]
+            elif len(t) <= 4:
+                lines = [t]
+            else:
+                k = 3 if t.endswith("?") else 2
+                lines = [t[:-k], t[-k:]]
     hi = next((i for i, x in enumerate(lines) if re.search(r"\d", x)), len(lines) - 1)
     if len(lines) == 3 and not re.search(r"\d", "".join(lines)):
         hi = 1  # 3行で数字が無い時は真ん中（競合の「黒幕は／すぐ隣／にいた」）
