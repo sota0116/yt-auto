@@ -86,6 +86,9 @@ cuts（1カット＝1文。1文は27字まで）。1つのカット：
 - narration：声に出す文（字幕もこの字）
 - subs：字幕の分け方（配列。\\n で改行。1行8字まで。つなぐと narration と同じ字になること。語の途中で切らない）。全カットに書く
 - image_en：絵の頼み方（英語。縦長 1080x1920 で物が画面の半分以上の寄り。人物は第1位の場面だけ・はっとした顔で）。新しい絵のカットだけ。全体で7〜9枚
+- real：実際の画像（2026-11-05）。意味づけ（昔から〜と言われています）のカットで、本物の資料を見せた方が伝わる時だけ、1本に0〜1カット。
+  "real": "Wikimedia Commons で探す英語の検索語"（例 "Kan'ei Tsuho coin"・"maneki-neko ukiyo-e"）。image_en もいつもどおり書く（見つからない時は AI の絵になる）。
+  1カット目・peak・motion・chars のカットには付けない
 - same_as＋shots：前の絵を使い回すカット（"same_as": "C01", "shots": ["C01@close"]。@close／@full／@face／@left／@right）
 - chars：絵に出る人（characters.json の id）。物だけの絵は書かない
 - hook：1カット目だけ。画面いっぱいの最初の文字。5字×2行まで（"財布に\\n入れたらNG"）
@@ -139,6 +142,9 @@ rank／rules／big_text（text・text2・accent・kicker）／two_cards（items[
 - 新しく作る絵（image_en）は14〜20枚（006 は14枚。多くても25枚まで）。絵のあるカットは新規＋ポーズ絵で合わせて40以上（006 は45）。同じ絵の続きは same_as。物の寄りと、その場所の暗い絵（NGの場面）を中心に。人物は chars を書く（sawako・sumie・okinu）。
 - 共有ポーズ絵（新しく作らない）："img_from": "pose:A17"（image_en は書かない）。使える id：A17・A16・C02・C16・D10・F03・F06・E11（おきぬの上半身のポーズ）／A10（澄江さんが玄関で笑う）／s02_A05（佐和子さんの場面）／s02_A07（佐和子さんの驚き顔）／M03・M04・K07・C09。好きな場面に使い回してよい（同じ id を1本で3〜4回まで）。
 - 動く絵：約7カットに "anim": "kling" と "motion": true（1カット目・各順位に1つ・山場）。動かすカットに card は付けない（card があると動かない）。
+- 実際の画像（2026-11-05。AI の絵ばかりで単調になるのを崩す）：意味づけ（昔から〜と言われています）のカットのうち、本物の資料を見せた方が伝わる2〜4カットに
+  "real": "Wikimedia Commons で探す英語の検索語"（例 "Kan'ei Tsuho coin"・"Ebisu Daikoku ukiyo-e"・"Edo period kitchen kamado"）を書く。image_en もいつもどおり書く（見つからない時は AI の絵になる）。
+  chars・motion・peak のカットと、サムネの背景に使うカットには付けない。声で「これは江戸時代の錦絵です」のように何の資料かを言ってよい（画面の文字は読ませない）。
 ## サムネ（制作ルール v1.7 §9）
 thumb の layout を次の4つから選ぶ。直近2本と同じ layout にしない（直近6本で同じ型は2回まで。下の「直近の回」のサムネの型を見る）。
 - "object"：物の寄りが背景。{"layout":"object","bg":"<物の絵のカットid>","line1":"枕元の","line2":"コレ","judge":"今すぐどけて"}（line2 は大きく黄色）
@@ -281,6 +287,12 @@ def finish(work):
             c["anim"] = "kling"
         if c.get("motion") and c.get("card") == {"type": "photo"}:
             c.pop("card")  # card が付くと make_motion_psy.py が動かさない。何も載せない photo は不要
+    if kind in ("short", "long"):  # 実際の画像（real のカット）を置く。切り出しは長尺の絵だけを使うので置かない（2026-11-05）
+        try:
+            import real_images
+            real_images.apply(work, s, "okinu", kind)
+        except Exception as e:
+            print(f"【注意】実際の画像を置けませんでした（AI の絵で進めます）：{type(e).__name__}: {e}")
     th = s.get("thumb") or {}
     if th.get("layout"):
         s["thumb_kind"] = th["layout"]  # run_daily の record() が produced.json に残す＝サムネの型の履歴（同じ型を続けない）

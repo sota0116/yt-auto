@@ -5,7 +5,7 @@
 #     image_en は残す（台本ゲートが必須にしている・取れなかった時の予備）。
 # ・探す所：検索語なら Wikimedia Commons（鍵なし）。URL ならそのまま取る
 # ・はめ方：画像の全体を見せる（古地図・屏風・古書の端を切らない）。余白は同じ画像を広げてぼかし、少し暗くして敷く
-# ・付けないカット：chars（人物の絵）・anim / motion（動く絵）・peak（見どころ）・voice（セリフ）・hook・same_as。付いていても AI の絵のまま
+# ・付けないカット：chars（人物の絵）・anim / motion（動く絵）・peak（見どころ）・voice（セリフ）・hook・same_as・サムネの背景（thumb_bg / THUMB）。付いていても AI の絵のまま
 # ・取れない時はそのカットは AI の絵のまま（回は止めない）
 # ・出どころは script.json の各カット "real_src" と history/<ch>/real_images.json に残す（images は上げたあと消えるので。申し立てが来た時に差し替える相手を探すため）
 #   単体で試す：python -X utf8 pipeline/real_images.py <作業フォルダ> --ch nihongi
@@ -88,8 +88,14 @@ def apply(work, s, ch, kind):
     size = (1080, 1920) if kind == "short" else (1920, 1080)
     avoid = used_before(ch)
     log, n = [], 0
+    th = s.get("thumb") if isinstance(s.get("thumb"), dict) else {}
+    thumb = {s.get("thumb_bg") or "THUMB", "THUMB"} | {th.get(k) for k in ("bg", "face", "left", "right") if isinstance(th.get(k), str)}
+    # ↑ サムネの背景のカットは AI の絵のまま（サムネの型と点検が image を前提にしている。okinu は thumb の bg・face・left・right。2026-11-05）
     for c in s.get("cuts", []):
         if not c.get("real"):
+            continue
+        if c.get("id") in thumb:
+            print(f"  （実画像 {c['id']}：サムネの背景なので AI の絵のまま）")
             continue
         if any(c.get(k) for k in SKIP_KEYS):
             print(f"  （実画像 {c['id']}：人物・動く絵・見どころ・セリフのカットなので AI の絵のまま）")

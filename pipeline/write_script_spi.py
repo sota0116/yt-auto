@@ -98,6 +98,10 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
     人は "chars": ["kazue"] のように characters.json の id で（1カット2人まで）。人のいない絵は "nobody": true（場面の絵の3割まで）。
     写真の上に出す札は "photo": {{"pop": {{"small", "big", "side"}}, "tag", "tag_sub", "tate": {{"text", "by"}}}}（001 の photo カードの pop・tag・tate と同じ形）。
     昔の場面は "era": "江戸" のように時代の名前（画面の右上に「再現イメージ」が出る）。
+    実際の画像：本物の資料を見せた方が伝わるカット（古い暦・浮世絵や錦絵の行事・神社や祭りの古写真・古地図）の1〜2カットに、
+    "real": "Wikimedia Commons で探す英語の検索語"（例 "Japanese calendar Edo period"・"ukiyo-e Setsubun"）を書く（2026-11-05。単調な絵が続くのを崩すため）。
+    image もいつもどおり書く（見つからない時は AI の絵になる）。real のカットに era は書かない。chars・motion・peak のカットとサムネの背景には付けない。
+    声では「こちらは江戸時代の暦です」のように、何の資料かを言う（画面の文字は読ませない）。
     001 の image_en・img_src・"card": {{"type": "photo"}} は手で作った時の形なので使わない。
   - 動く場面："motion": true を、場面の絵のカットの1〜2割に付ける（Kling で5秒動かす。card の無いカットだけ）。
   - 同じ絵を続けて使うカットは "same_as": "前のカットの id"（全体の1割まで）。
@@ -174,6 +178,14 @@ def finish(work):
     for c in s.get("cuts", []):
         if c.get("narration"):
             c.setdefault("speaker", "narrator")
+    try:  # 実際の画像（real のカット）を置く。取れなければ AI の絵のまま（2026-11-05）
+        import real_images
+        real_images.apply(work, s, "spi", "long")
+    except Exception as e:
+        print(f"【注意】実際の画像を置けませんでした（AI の絵で進めます）：{type(e).__name__}: {e}")
+    for c in s.get("cuts", []):
+        if c.get("real_src"):
+            c.pop("era", None)  # 本物の資料に「再現イメージ」を出さない
     json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     f = json.load(open(fp, encoding="utf-8")) if os.path.exists(fp) else {}
     if f.get("koyomi") != json.loads(json.dumps(KS.facts(neta), ensure_ascii=False)):

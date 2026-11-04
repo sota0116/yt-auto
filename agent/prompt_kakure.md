@@ -27,14 +27,15 @@
    - 目安の長さは10〜15分だが、話が言い切れた所で終える。15分は超えない。
    - 改善ログの「次に上げること」を必ず入れる。今の1つ目：画面の変化を平均2秒以下にする（check_script の数字で確かめる）。人物のポーズ差し替え・吹き出しを増やす。
    - 声：語りは 14（冥鳴ひまり）。神のセリフは別の声（台本の "voices"。No.7 は使わない）。同じ神は回をまたいで同じ声にする（001 は father 53・mother 16・hiruko 52）。新しい声を使う時は、その声の規約が商用可でクレジット表記だけで済むかを確かめ、確かめられなければ使わない。有料の声は使わない。
+   - 実際の画像（2026-11-05 追加。本人の決定「ネットで拾った実際の画像は条件なしで使ってよい」。絵が AI の絵だけで単調になるのを崩す）：2〜4カットに `"real": "<英語の検索語>"`（例 "Kojiki manuscript"・"Izumo Taisha old photograph"・"ukiyo-e Susanoo"）か `"real": "https://...（画像の URL）"` を書く。向くのは原典の写本・古書の挿絵・神社や遺跡の古写真・浮世絵・古地図など、話の証拠になる物。そのカットにも "image" は書いておく（取れなかった時の予備）。chars・anim・peak・same_as・セリフのカットには付けない。そのカットの語りで「これは〜の写本です」のように何の資料かを言う（言わないと何の絵か分からない）。
    - 点検：`python -X utf8 agent_shared/skill/scripts/check_script.py <作業フォルダ>` の NG 0。長さ・字数の NG と、看板 §3 で直さないと決めた伏線の注意は残ってよい（理由を記録に書く）。
 3. 新しい神の絵：出てくる神が K/characters/characters.json に無ければ足す。上書きの前に characters_v<版>_<内容>_<日付>.json として前の版を残す。desc_en は看板どおり古墳時代の服で書く（世界の神話の回は、その土地の時代の服に合わせる）。
    - ポーズは _chara_<番号>_<神>/script.json に書く（手本 _chara_001_ヒルコ の文をそのまま使う。背景は真っ白・全身）。主役は6種、脇役は3種。すでに K/characters/cut にあるポーズは作らない。
    - 作る：`python -X utf8 pipeline/agent_images.py <ポーズの作業フォルダ> --par 4` → `python -X utf8 K/道具/make_chara.py <ポーズの作業フォルダ> K/characters/cut`。何人も並んだ絵は `--pick <id>=<番号>`。切り抜いた絵を一覧で見て確かめる。
 4. 声：`python -X utf8 agent_shared/skill/scripts/make_voice.py <作業フォルダ> --engine voicevox --yomi K/yomi.json`。そのあと `python -X utf8 pipeline/yomi_auto.py <作業フォルダ> --speaker 14 --yomi K/yomi.json` の食い違いを1語ずつ見て直す（神の名は間違えやすい。全カットに効く物は K/yomi.json に1行足す）。
-5. 絵：背景は45〜50枚ほど（同じ場所は "same_as" で使い回す）。`python -X utf8 pipeline/agent_images.py <作業フォルダ> --par 4`。途中で止まっても `images/_lovart.json` から続きを受け取れるので、同じコマンドをもう一度動かす。
+5. 絵：背景は45〜50枚ほど（同じ場所は "same_as" で使い回す）。先に `python -X utf8 pipeline/real_images.py <作業フォルダ> --ch kakure --kind long` で "real" のカットに実際の画像を置く（置けたカットは "image" が外れ、AI の絵を作らない。取れなかったカットは AI の絵のまま。出どころは history/kakure/real_images.json に残る）。そのあと `python -X utf8 pipeline/agent_images.py <作業フォルダ> --par 4`。途中で止まっても `images/_lovart.json` から続きを受け取れるので、同じコマンドをもう一度動かす。
 6. 動く絵：章ごとに1つ以上＋見どころ（peak）。`bash pipeline/agent_motion.sh <作業フォルダ> <id,id>` をバックグラウンドで動かす（できた絵から順に頼み、上限で落ちたら3分待つ）。取れなかった物は止まった絵のままでよい。枠が付いた絵は agent_shared/tools/frame_crop.py で切る。
-7. 組み立て：作業フォルダに写す物＝前回の横動画の config.json（K/config.json は古いので使わない）・K/素材/bgm/amacha3.wav を bgm_amacha3.wav という名前で・K/素材/sfx/ の wav を sfx/ に。`python -X utf8 agent_shared/skill/scripts/build_long.py <作業フォルダ>` をバックグラウンドで動かす。全カットの1コマを並べた一覧（check/ に置く）を目で見て、絵とセリフのずれ・切れた文字・偽の文字を直す。
+7. 組み立て：作業フォルダに写す物＝前回の横動画の config.json（K/config.json は古いので使わない）・K/素材/bgm/amacha3.wav を bgm_amacha3.wav という名前で・K/素材/sfx/ の wav を sfx/ に。`python -X utf8 agent_shared/skill/scripts/build_long.py <作業フォルダ>` をバックグラウンドで動かす。全カットの1コマを並べた一覧（check/ に置く）を目で見て、絵とセリフのずれ・切れた文字・偽の文字を直す（実際の画像のカットは、写本の崩し字や浮世絵の画風は直さなくてよい。語りと中身が合っているかだけ見る）。
 8. 音量：`python -X utf8 agent_shared/tools/loudnorm2.py long.mp4 long_final.mp4`。測った LUFS を記録する。gate_video.py はこのチャンネルでは使わない。7 の一覧と LUFS・3秒以上の無音が無いことの確認で代える（無音は ffmpeg の silencedetect=n=-45dB:d=3）。
 9. サムネ：_thumb_<番号>_<神>/script.json で T1・T2 を作り（手本どおり。上下の4分の1はあける）、良い方を thumb_bg.png にする。thumb.json（手本どおり size long・shade both・2段の字）を書き、`python -X utf8 agent_shared/skill/scripts/make_thumb.py <作業フォルダ>`。点検 NG 0 と thumb_small.jpg が1秒で読めるかを見る。タイトルと同じ言い回しをくり返さない（誰の話か分かるための神の名・物の名は入れてよい）。
    - サムネの字（thumb.json の texts。2026-11-04 追加）：上の段と下の段を続けて読むと、自然な1文になるように書く。字だけで誰の・何の話か分かるよう、主語か対象（神の名・物）を入れる。助詞を省かない。語の途中で行を割らない。数字は台本・調査メモにある物だけ使う。悪い例は「あと1歩で言った／余計な一言」（誰が言ったのか分からない）。良い例は「白兎があと1歩で言った／余計な一言」。

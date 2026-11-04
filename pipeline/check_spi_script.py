@@ -310,7 +310,7 @@ def main():
     for c in cuts:
         cd = c.get("card")
         if not cd:
-            if c.get("image") or c.get("same_as"):
+            if c.get("image") or c.get("same_as") or c.get("real_src"):  # real_src＝実際の画像を置いたカット（real_images.py が image を外す。2026-11-05）
                 cards["photo"] += 1
             else:
                 ng.append(f"{c['id']} に card も image（場面の絵）も same_as も無い")
@@ -493,7 +493,7 @@ def main():
     # 13. 画面の配分・人のいない場面（§6）
     p = cards["photo"] / max(1, sum(cards.values()))
     (ok if 0.45 <= p <= 0.65 else warn).append(f"場面の絵 {cards['photo']}・図のカード {cards['図解']}（場面 {p:.0%}。5〜6割）")
-    scene = [c for c in cuts if (c.get("image") or c.get("image_en")) and (not c.get("card") or c["card"].get("type") == "photo")]
+    scene = [c for c in cuts if (c.get("image") or c.get("image_en") or c.get("real_src")) and (not c.get("card") or c["card"].get("type") == "photo")]
     nob = [c["id"] for c in scene if not c.get("chars")]
     q = len(nob) / max(1, len(scene))
     (ok if q <= 0.3 else warn).append(f"登場人物のいない場面 {len(nob)}枚（場面の絵の {q:.0%}。3割まで）")
