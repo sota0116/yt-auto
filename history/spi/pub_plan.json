@@ -140,5 +140,19 @@
   "line_copy": 3,
   "sub_copy": 2,
   "made": "2026-11-02"
+ },
+ "015_b_shinshi_ushi": {
+  "neta_id": "b_shinshi_ushi",
+  "type": "B",
+  "frame": "B-2",
+  "pub_date": "2026-11-23",
+  "window": [
+   "2026-11-07",
+   "2027-04-06"
+  ],
+  "hook_type": "日付",
+  "line_copy": 1,
+  "sub_copy": 3,
+  "made": "2026-11-04"
  }
 }
