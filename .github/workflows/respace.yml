@@ -1,0 +1,79 @@
+# 予約の付け替え（2026-11-04 新設。手で回すだけ。定時は無し）
+# ・本人「同じチャンネルで動画と動画の間は少なくとも時間は空けて。1日2本なら昼と夜、3本なら朝昼夜」
+# ・day_slots.py の決まりを入れる前に予約した分（横 19:00 とショート 20:10 など）を、前後3時間あく枠へ移す（pipeline/respace.py）
+# ・動かすのはショートと予告だけ。横どうしが近い組は一覧に出すだけ（横を移す時は watch の move 入力を使う）
+# ・枠は watch（見張りと同じ記録を書くので、同時に動かさない）
+name: respace
+on:
+  workflow_dispatch:
+    inputs:
+      channels:
+        description: "対象のチャンネル（空白で区切る。空なら全部）"
+        required: false
+        default: "job psy spi kakure shimei nihongi okinu"
+      dry:
+        description: "移さずに、移し先だけ出す（true / false）"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  respace:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 鍵を置く（中身は画面に出さない）
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_JOB: ${{ secrets.YT_TOKEN_JOB }}
+          YT_TOKEN_SPI: ${{ secrets.YT_TOKEN_SPI }}
+          YT_TOKEN_PSY: ${{ secrets.YT_TOKEN_PSY }}
+          YT_TOKEN_NIHONGI: ${{ secrets.YT_TOKEN_NIHONGI }}
+          YT_TOKEN_OKINU: ${{ secrets.YT_TOKEN_OKINU }}
+          YT_TOKEN_KAKURE: ${{ secrets.YT_TOKEN_KAKURE }}
+          YT_TOKEN_SHIMEI: ${{ secrets.YT_TOKEN_SHIMEI }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          [ -n "$YT_TOKEN_JOB" ] && printf '%s' "$YT_TOKEN_JOB" > "$YT_SECRETS_DIR/token_job.json"
+          [ -n "$YT_TOKEN_SPI" ] && printf '%s' "$YT_TOKEN_SPI" > "$YT_SECRETS_DIR/token_spi.json"
+          [ -n "$YT_TOKEN_PSY" ] && printf '%s' "$YT_TOKEN_PSY" > "$YT_SECRETS_DIR/token_psy.json"
+          [ -n "$YT_TOKEN_NIHONGI" ] && printf '%s' "$YT_TOKEN_NIHONGI" > "$YT_SECRETS_DIR/token_nihongi.json"
+          [ -n "$YT_TOKEN_OKINU" ] && printf '%s' "$YT_TOKEN_OKINU" > "$YT_SECRETS_DIR/token_okinu.json"
+          [ -n "$YT_TOKEN_KAKURE" ] && printf '%s' "$YT_TOKEN_KAKURE" > "$YT_SECRETS_DIR/token_kakure.json"
+          [ -n "$YT_TOKEN_SHIMEI" ] && printf '%s' "$YT_TOKEN_SHIMEI" > "$YT_SECRETS_DIR/token_shimei.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: 付け替える
+        env:
+          CHS: ${{ inputs.channels }}
+          DRY: ${{ inputs.dry == 'true' && '--dry' || '' }}
+        run: |
+          python -X utf8 pipeline/respace.py $CHS $DRY
+          echo "---- 付け替えの後、3時間あいていない組 ----"
+          python -X utf8 pipeline/day_slots.py $CHS
+      - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always()
+        run: |
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet && exit 0
+          git commit -qm "予約の付け替え：$(date +%F_%H%M)"
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
+      - name: 鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"
