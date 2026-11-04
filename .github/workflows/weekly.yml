@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: "7 12 * * 0"   # 日曜 21:07 JST
   workflow_dispatch:
+    inputs:
+      stats_only:
+        description: "時間帯の数字を取るだけ（週報は書かない。2026-11-04 の試し用）"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,8 +39,10 @@ jobs:
         with:
           python-version: "3.13"
       - name: 道具を入れる（版を固定）
+        if: ${{ !inputs.stats_only }}
         run: npm install -g @anthropic-ai/claude-code@2.1.296
       - name: Claude のアカウントを選ぶ（pipeline/pick_claude.sh。CLAUDE_SUB_UNTIL を過ぎたら元で試し、使えなければ新しい方）
+        if: ${{ !inputs.stats_only }}
         env:
           MAIN_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           HAS_SUB: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB != '' }}
@@ -70,6 +77,7 @@ jobs:
         if: always()
         run: rm -rf "$RUNNER_TEMP/secrets"
       - name: 週報を書く
+        if: ${{ !inputs.stats_only }}
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           GH_TOKEN: ${{ github.token }}
