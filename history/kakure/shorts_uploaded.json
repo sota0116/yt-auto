@@ -44,5 +44,27 @@
   "uploaded_at": "2026-11-02T00:08:05+09:00",
   "missing": false,
   "playlist": "図鑑"
+ },
+ {
+  "work": "S007_切出_大黒様の袋",
+  "video_id": "AaUOAbsFmkU",
+  "title": "七福神の大黒様は、なぜ大きな袋をかついでいるのか【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-05T19:00:00+09:00",
+  "uploaded_at": "2026-11-04T19:08:33+09:00",
+  "missing": false
+ },
+ {
+  "work": "S008_格付け_名前の多い神",
+  "video_id": "y1yj9-6lfXU",
+  "title": "日本神話でいちばん名前の多い神は誰か【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-06T19:00:00+09:00",
+  "uploaded_at": "2026-11-04T19:11:21+09:00",
+  "missing": false
  }
 ]

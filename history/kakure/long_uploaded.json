@@ -54,5 +54,19 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "元ネタ"
+ },
+ {
+  "work": "005_エピメテウス",
+  "video_id": "XtniHrVFxhU",
+  "title": "パンドラの箱を開けた女の夫は、なぜ贈り物を受け取ったのか【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-07T20:00:00+09:00",
+  "uploaded_at": "2026-11-04T19:05:27+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "物語"
  }
 ]
