@@ -53,6 +53,16 @@ def history_titles(skip_num=""):
             k = None
         if k:
             out.append(k)
+    # 作りかけの回（上げる前）の題も比べる。台本の点検では通って、上げる段の title_guard で止まり約35分むだになった
+    # （2026-11-04 S110「財布のお札に…」が作りかけの S109「家計簿の隣に…」と 0.71）。videos\ は回の中だけ、wip\ は回をまたぐ控え
+    for p in glob.glob(os.path.join(CH_DIR, "videos", "*", "script.json")) + glob.glob(os.path.join(hist, "wip", "*", "script.json")):
+        if num_of(os.path.dirname(p)) == skip_num:
+            continue
+        try:
+            x = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            continue
+        out += [k for k in [x.get("title")] + list(x.get("titles") or []) if k]
     return sorted(set(out))
 
 
@@ -200,6 +210,10 @@ def check(work, kind=None):
         t = s.get("title", "")
         if not re.match(r"^【[^】]+】", t) or len(t) > 30:
             ng.append(f"題が【年代】で始まる20字前後の形でない（{len(t)}字）：{t}")
+        import title_guard  # 上げる段は種類を問わず同じ線で止める（upload_okinu_auto.py）。切り出しも台本の段で先に止める
+        for r, o in title_guard.similar(t, history_titles(num_of(work)))[:1]:
+            if r >= TITLE_LINE:
+                ng.append(f"題がほかの回の題と似すぎ（title_guard の線 {TITLE_LINE}・{r:.2f}）：「{o}」。置き場所・物・言い回しを替える")
         if kind == "short":
             imgs = [c["id"] for c in cuts if c.get("image_en") and not c.get("same_as")]
             if not 7 <= len(imgs) <= 8:
@@ -326,6 +340,10 @@ def check_short(work, s, cuts, voiced, text, desc, ng, warn):
         ng.append(f"題が短すぎる／長すぎる（{len(t)}字。ショートの型 v2 は20〜28字）：{t}")
     elif not 20 <= len(t) <= 28:
         warn.append(f"題 {len(t)}字（20〜28字）：{t}")
+    import title_guard  # 上げる段（upload_okinu_auto.py）と同じ線で、台本の段で先に止める（2026-11-04 S110）
+    for r, o in title_guard.similar(t, history_titles(num_of(work)))[:1]:
+        if r >= TITLE_LINE:
+            ng.append(f"題がほかの回の題と似すぎ（title_guard の線 {TITLE_LINE}・{r:.2f}）：「{o}」。置き場所・物・言い回しを替える")
     imgs = [c["id"] for c in cuts if c.get("image_en") and not c.get("same_as")]
     if not 7 <= len(imgs) <= 9:
         ng.append(f"絵の数 {len(imgs)}（単独は7〜9枚。同じ絵の使い回しは same_as＋shots）")
