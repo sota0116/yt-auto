@@ -1,1 +1,19 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/016_b_torii_2026",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading"
+ ],
+ "started": "2026-11-05T07:33:46+09:00",
+ "tries": 0,
+ "code": "455f8716534f",
+ "stage": "images",
+ "updated": "2026-11-05T07:50:35+09:00",
+ "busy": {
+  "images": 1
+ }
+}

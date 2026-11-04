@@ -154,5 +154,19 @@
   "line_copy": 1,
   "sub_copy": 3,
   "made": "2026-11-04"
+ },
+ "016_b_torii_2026": {
+  "neta_id": "b_torii_2026",
+  "type": "B",
+  "frame": "B-1",
+  "pub_date": "2026-11-25",
+  "window": [
+   "2026-11-08",
+   "2027-04-07"
+  ],
+  "hook_type": "場面",
+  "line_copy": 2,
+  "sub_copy": 3,
+  "made": "2026-11-05"
  }
 }
