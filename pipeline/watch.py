@@ -29,12 +29,13 @@ from notify import issue, ping, stale, jload, now, JST
 from run_daily import hpath, jsave
 from upload_job import api, API
 import ustore
+import day_slots  # 同じチャンネルの公開どうしを3時間以上あける枠（2026-11-04）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
 VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
-TEASER_AFTER = 150  # 長尺の公開から何分後に予告を出すか（19:00 の長尺なら 21:30。ショートの 20:10 から1時間20分あける）
+TEASER_AFTER = 190  # 長尺の公開から何分後に予告を出すか（19:00 の長尺なら 22:10）。2026-11-04 本人「動画と動画の間は時間を空けて」で 150（21:30。ショート20:10と80分）から変えた。前後3時間に何かあれば次の日（day_slots.py）
 WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27、spi は 2026-10-29 に毎日の制作へ入れたので外した。
 # spi（千年こよみ）は 2026-10-28 に見張りへ入れた（本人の指示）。手で作って上げるので、在庫0本・26時間公開なしの Issue と明日の予約はしない
 
@@ -273,13 +274,14 @@ def schedule_tomorrow(ch, up, dry, tom=None):
     # 手元で作っている回のために空けておく枠（profile.json の reserved_slots。種類ごとのチャンネルと同じ。spi 002 酉の市 2026-10-29）
     if f"{tom.isoformat()}T{hh}:{mm}" in (jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("reserved_slots") or []):
         return f"明日 {hh}:{mm} は手元で作っている回のために空けてある枠（profile.json の reserved_slots）"
+    warn = "".join(f"（注意：{w} {t:%m/%d %H:%M} と3時間あいていません。day_slots.py）" for t, w in day_slots.near(ch, at)[:1])
     if dry:
-        return f"（--dry）{e['work']} を {at.isoformat()} に予約する"
+        return f"（--dry）{e['work']} を {at.isoformat()} に予約する{warn}"
     st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
               "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
     api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
     e["publish_at"] = at.isoformat()
-    return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました"
+    return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました{warn}"
 
 
 def schedule_tomorrow_kinds(ch, up, dry, tom=None):
@@ -294,6 +296,8 @@ def schedule_tomorrow_kinds(ch, up, dry, tom=None):
     live = [e for e in up if not e.get("missing") and not e.get("retired")]
     taken = {t.strftime("%Y-%m-%dT%H:%M") for t in (ts(e.get("publish_at")) or ts(e.get("published_at")) for e in live) if t}
     taken |= set(pf.get("reserved_slots") or [])
+    rows = day_slots.booked(ch) if ch in day_slots.PLAN else None
+    new_ats = []  # この実行で入れた予約（記録への書き込みは後なので、間をあける判定に足す）
     out = []
     for kind, kc in ks.items():
         if kc.get("start_date") and tom.isoformat() < kc["start_date"]:
@@ -311,10 +315,23 @@ def schedule_tomorrow_kinds(ch, up, dry, tom=None):
                 and e.get("privacy_now") == "private"]
         pool.sort(key=lambda e: e.get("uploaded_at", ""))
         slots = list(kc.get("slots") or [prof(ch, "publish_time", "PUBLISH_TIME", "19:00")])
+        extra = kc.get("extra_slot")
+        if kind == "short" and rows is not None:
+            # 2026-11-04〜 本人「1日2本なら昼と夜、3本なら朝昼夜」：ショートの枠は day_slots.py の PLAN（横の日と無い日で変わる）
+            slots = day_slots.short_times(ch, tom, rows=rows)
+            extra = day_slots.PLAN[ch].get("extra_on" if day_slots.long_day(ch, tom, rows) else "extra_off")
         free = [x for x in slots if f"{tom.isoformat()}T{x}" not in taken]
-        if kc.get("extra_slot") and f"{tom.isoformat()}T{kc['extra_slot']}" not in taken \
+        if extra and extra not in free and f"{tom.isoformat()}T{extra}" not in taken \
                 and len(pool) - len(free) >= int(kc.get("extra_min_stock") or 99):
-            free.insert(0, kc["extra_slot"])  # 在庫があふれそうな日だけ、昼の枠を足す
+            free.insert(0, extra)  # 在庫があふれそうな日だけ、枠を1つ足す
+        if rows is not None:
+            ok = [x for x in free if day_slots.gap_ok(ch, day_slots.at_of(tom, x), extra=new_ats, rows=rows)]
+            if kind == "short":
+                if len(ok) < len(free):
+                    out.append(f"{kind}：{'・'.join(x for x in free if x not in ok)} は前後3時間に別の公開があるので入れない")
+                free = ok
+            elif len(ok) < len(free):
+                out.append(f"{kind}：注意 {'・'.join(x for x in free if x not in ok)} は前後3時間に別の公開があります（横は時刻を動かさない）")
         if not free:
             out.append(f"{kind}：明日の枠は全部入っている")
             continue
@@ -336,6 +353,7 @@ def schedule_tomorrow_kinds(ch, up, dry, tom=None):
             api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
             e["publish_at"] = at.isoformat()
             taken.add(at.strftime("%Y-%m-%dT%H:%M"))
+            new_ats.append(at)
             out.append(f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました")
     return "／".join(out) or None
 
@@ -347,6 +365,7 @@ def schedule_teasers(ch, up, dry):
     tz = jload(p, {})
     by = {e.get("video_id"): e for e in up if not e.get("missing")}
     used = {ts(t["publish_at"]).date() for t in tz.values() if t.get("publish_at")}
+    new_ats = []
     out = []
     for w, t in tz.items():
         e = by.get(t.get("long_id"))
@@ -354,9 +373,11 @@ def schedule_teasers(ch, up, dry):
         if t.get("publish_at") or not base:
             continue
         at = (base + datetime.timedelta(minutes=TEASER_AFTER)).replace(second=0, microsecond=0)
-        while at < now() + datetime.timedelta(minutes=30) or at.date() in used:
-            at += datetime.timedelta(days=1)
+        while at < now() + datetime.timedelta(minutes=30) or at.date() in used \
+                or not day_slots.gap_ok(ch, at, skip_vid=t.get("video_id"), extra=new_ats):
+            at += datetime.timedelta(days=1)  # 2026-11-04〜 前後3時間に同じチャンネルの公開があれば次の日（day_slots.py）
         used.add(at.date())
+        new_ats.append(at)
         if dry:
             out.append(f"（--dry）{w} の予告を {at.strftime('%m/%d %H:%M')} に予約する")
             continue

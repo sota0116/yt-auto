@@ -14,11 +14,14 @@
 # ・非公開で上げて publishAt で公開の予約。AI の申告（containsSyntheticMedia）はオン、子ども向けではない
 # ・script.json に "playlist"（物語・謎・元ネタ・図鑑）があれば、その再生リストに足す（ID は history\kakure\playlists.json）
 # ・二重に上げない：history\kakure\*_uploaded.json に同じ作業フォルダがある時と、チャンネルに同じタイトルがある時
+# ・2026-11-04〜 本人「動画と動画の間は時間を空けて。1日2本なら昼と夜、3本なら朝昼夜」：ショートの枠は day_slots.py の PLAN から取り、
+#   横も含めて同じチャンネルの公開・予約と3時間以上あける（--at で指定した時も、近すぎれば止める）。横は時刻を動かさず注意だけ出す
 import argparse, datetime, glob, json, os, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import ROOT, api, API, channel_titles
 from upload_nihongi import probe, up1440, live  # check_after は nihongi のログインで動くので借りない
 import long_day_guard
+import day_slots
 
 CH = "kakure"
 TITLE = "かくれ神語り"
@@ -55,8 +58,10 @@ def load(p):
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else []
 
 
-def next_slot(hist, long_):
+def next_slot(hist, long_, plan=()):
     """空いている一番近い枠（今から1時間より後）。横動画は、前の横動画から LONG_GAP 日あける"""
+    if not long_:  # 2026-11-04〜 ショートは day_slots.py の枠（横の日と無い日で変わる。前後3時間に何も無い枠）
+        return day_slots.next_short(CH, used=[p["publish_at"] for p in plan]) or sys.exit("【止まりました】60日先まで枠が埋まっています")
     now = datetime.datetime.now(JST)
     hh, mm = map(int, (LONG_AT if long_ else SHORT_AT).split(":"))
     taken = {h["publish_at"][:10] for h in hist if h.get("publish_at") and live(h)}
@@ -110,9 +115,14 @@ def prepare(work, at_s, plan):
     if any(x["work"] == name and live(x) for x in hist):
         return None  # もう上げてある
     at = (datetime.datetime.fromisoformat(at_s).replace(tzinfo=JST) if at_s
-          else next_slot(hist + [p for p in plan if (p["format"] == "long") == long_], long_))
+          else next_slot(hist + [p for p in plan if (p["format"] == "long") == long_], long_, plan))
     if at < datetime.datetime.now(JST) + datetime.timedelta(minutes=30):
         sys.exit(f"【止まりました】{name}：予約の時刻 {at:%m/%d %H:%M} が近すぎるか過ぎています")
+    if not long_:
+        day_slots.check(CH, at, extra=[p["publish_at"] for p in plan])  # 同じチャンネルの公開と3時間以上あける（2026-11-04）
+    else:
+        for t, w in day_slots.near(CH, at, extra=[p["publish_at"] for p in plan])[:1]:
+            print(f"（注意）{name}：{w}（{t:%m/%d %H:%M}）と3時間あいていません。ショートを動かす（day_slots.py）")
     if long_:
         long_day_guard.check(CH, at)  # 横動画は同じ日に2本以上出さない
         if any(p["format"] == "long" and p["publish_at"][:10] == at.date().isoformat() for p in plan):

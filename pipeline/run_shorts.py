@@ -1,7 +1,7 @@
 # ショートの1日分（手順書 §12）：題選び → 台本 → 点検 → 声 → 画面 → 組み立て →（自動公開がオンの時だけ）明日の予約
 #   python -X utf8 pipeline\run_shorts.py [--n 2] [--no-upload] [--routine-only --at 2026-11-03T18:10]
 # ・統計ショートを先に作り、後ろの枠を1日の流れに回す（本数は shorts_learn.json の判定か profile.json の routine_per_day）。1日の流れが作れない時は、その枠を統計ショートに戻す
-# ・本数と予約の時刻は profile.json の shorts（per_day・times・auto_publish）。auto_publish が false の間は作るだけ（本人のOKの後に true にする）
+# ・本数は profile.json の shorts（per_day・auto_publish）。予約の時刻は 2026-11-04〜 day_slots.py の PLAN["job"]（times は記録として残す）。auto_publish が false の間は作るだけ（本人のOKの後に true にする）
 # ・作業フォルダは channels\job\shorts\<日時>_<種類>\（git に入れない）。使った題は history\job\shorts.json
 # ・台本の点検で NG が残った時は1回だけ書き直させ、それでも NG ならその本は捨てて次の題へ（題は使ったことにする）
 import argparse, datetime, json, os, subprocess, sys, time
@@ -98,7 +98,15 @@ def main():
         sys.exit(0 if res[0].startswith("○") else 1)
     n = a.n or cfg.get("per_day", 2)
     tom = (datetime.datetime.now(JST) + datetime.timedelta(days=1)).date()
-    slots = [f"{tom.isoformat()}T{t}" for t in cfg.get("times", ["12:10", "20:10"])]
+    # 2026-11-04〜 枠は day_slots.py の PLAN["job"]（07:10・12:10。横 19:00・予告 22:10 と3時間以上あける）。
+    #   翌日から順に、空いていて前後3時間に何も無い枠を取る（埋まっていれば次の日へ）
+    import day_slots
+    picked = []
+    for _ in range(n):
+        t = day_slots.next_short("job", used=picked, after=datetime.datetime.combine(tom, datetime.time(0, 0), JST))
+        if t:
+            picked.append(t)
+    slots = [t.strftime("%Y-%m-%dT%H:%M") for t in picked]
     # 1日の流れの本数は、数字の判定（short_learn.py）があればそれ、無ければ profile.json。統計を先に作り、1日の流れを後ろの枠に回す
     lp = os.path.join(ROOT, "history", "job", "shorts_learn.json")
     judged = (json.load(open(lp, encoding="utf-8")) if os.path.exists(lp) else {}).get("1日の流れ", {}).get("1日の本数")

@@ -7,28 +7,37 @@
 #   after（切り出し。最後に「続きは本編で」）：本編の公開より後の最初の空き枠
 #   solo（単独で完結。説明欄とコメントで関連の本編へ）：今から先の最初の空き枠
 # ・どの枠も、今から30分より先。ほかのショートの公開か予約が入っている枠は使わない
+# ・2026-11-04〜 本人「1日2本なら昼と夜、3本なら朝昼夜」：枠は day_slots.py の PLAN["spi"] から取る。
+#   本編（18:00）の日は 07:15・11:15、本編の無い日は 11:15・19:15。横も含めて前後3時間に何かある枠は使わない
 import datetime
+import day_slots
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 TIMES = ((11, 15), (19, 15))
 KINDS = ("teaser", "after", "solo")
 
 
-def slots_from(day):
-    while True:
-        for t in TIMES:
-            yield datetime.datetime.combine(day, datetime.time(*t), JST)
+def slots_from(day, rows=None):
+    rows = day_slots.booked("spi") if rows is None else rows
+    for _ in range(120):
+        for hm in day_slots.short_times("spi", day, rows=rows):
+            yield day_slots.at_of(day, hm)
         day += datetime.timedelta(days=1)
+
+
+def _free(at, used, rows):
+    return at not in used and day_slots.gap_ok("spi", at, extra=used, rows=rows)
 
 
 def slot(kind, long_at, used, now):
     """kind：teaser / after / solo。long_at：本編の公開（予約）の日時か None。used：ほかのショートの公開・予約の日時の集まり"""
     soon = now + datetime.timedelta(minutes=30)
+    rows = day_slots.booked("spi")
     if kind == "teaser":
         if not long_at:
             return None
         start = max(soon, long_at - datetime.timedelta(hours=48))
-        ok = [at for at in _range(start.astimezone(JST).date(), long_at) if start <= at < long_at and at not in used]
+        ok = [at for at in _range(start.astimezone(JST).date(), long_at, rows) if start <= at < long_at and _free(at, used, rows)]
         return ok[-1] if ok else None
     if kind == "after":
         if not long_at:
@@ -36,14 +45,14 @@ def slot(kind, long_at, used, now):
         start = max(soon, long_at + datetime.timedelta(seconds=1))
     else:
         start = soon
-    for at in slots_from(start.astimezone(JST).date()):
-        if at >= start and at not in used:
+    for at in slots_from(start.astimezone(JST).date(), rows):
+        if at >= start and _free(at, used, rows):
             return at
 
 
-def _range(day, end):
+def _range(day, end, rows=None):
     out = []
-    for at in slots_from(day):
+    for at in slots_from(day, rows):
         if at >= end:
             return out
         out.append(at)

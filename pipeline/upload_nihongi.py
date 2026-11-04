@@ -12,10 +12,13 @@
 # ・非公開で上げて publishAt で公開の予約。AI の申告（containsSyntheticMedia）はオン、子ども向けではない
 # ・二重に上げない：history\nihongi\shorts_uploaded.json に同じ作業フォルダがある時と、チャンネルに同じタイトルがある時
 # ・上げた後、動画が残っていて断られていないかを数分見張る
+# ・2026-11-04〜 本人「動画と動画の間は時間を空けて。1日2本なら昼と夜、3本なら朝昼夜」：ショートの枠は day_slots.py の PLAN から取り、
+#   横も含めて同じチャンネルの公開・予約と3時間以上あける（--at で指定した時も、近すぎれば止める）。横は時刻を動かさず注意だけ出す
 import argparse, datetime, json, os, subprocess, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import ROOT, api, API, channel_titles
 import long_day_guard
+import day_slots
 
 CH = "nihongi"
 CH_ID = "UCPUDU140U5U8xXWYFLPHZKg"
@@ -56,6 +59,10 @@ def live(h):
 
 
 def next_slot(hist, three=False):
+    # 2026-11-04〜 day_slots.py の枠（横の日 07:00・12:10、無い日 12:10・20:00、--three で無い日の 07:00 も）。SLOTS・EXTRA は記録
+    t = day_slots.next_short(CH, extra=three)
+    if t:
+        return t
     # 毎日の制作（クラウド）が上げた分（history/nihongi/uploaded.json。2026-10-29 から）の予約も枠に数える
     import ustore
     taken = {h["publish_at"][:16] for h in list(hist) + ustore.load(CH) if h.get("publish_at") and live(h)}
@@ -140,6 +147,10 @@ def main():
         sys.exit(f"【止まりました】予約の時刻 {at:%m/%d %H:%M} が近すぎるか過ぎています")
     if a.long:
         long_day_guard.check(CH, at)  # 横動画は同じ日に2本以上出さない（2026-10-29）
+        for t, w in day_slots.near(CH, at)[:1]:
+            print(f"（注意）{w}（{t:%m/%d %H:%M}）と3時間あいていません。ショートを動かす（day_slots.py）")
+    else:
+        day_slots.check(CH, at)  # 同じチャンネルの公開と3時間以上あける（2026-11-04）
     print(f"動画 {sec:.1f}秒・{w}x{h}・{os.path.getsize(video) / 1e6:.1f}MB")
     print("タイトル：", title)
     print("予約：", at.isoformat())

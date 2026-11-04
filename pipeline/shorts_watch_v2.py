@@ -19,7 +19,7 @@ from run_daily import hpath, jsave
 from upload_job import api, API
 from watch import comment, refresh, report, ts
 from short_slot_spi import slot as slot_spi
-from shorts_watch import slot_after as slot_psy  # psy は本編の日の 20:10 から 12:10/20:10 の空き枠（2026-10-28 本人「ショートは毎日1～3本」）
+from shorts_watch import slot_after as slot_psy  # psy は本編より後の空き枠（day_slots.py の PLAN["psy"]。2026-11-04〜 どの2本も3時間以上あける）
 
 TIME = {"psy": (12, 10), "spi": (19, 15)}
 

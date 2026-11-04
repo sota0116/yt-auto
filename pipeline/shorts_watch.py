@@ -13,19 +13,16 @@ from notify import jload, now, JST
 from run_daily import hpath, jsave
 from upload_job import api, API
 from watch import refresh, report, ts
+import day_slots
 
-TIMES = ((7, 10), (12, 10), (20, 10))  # 本編は 19:00 なので、その日のショートは本編のあと。07:10 は 2026-10-29 に足した（1回から最大4本のショート。make_short_psy.py の EXTRA_MAX）
+TIMES = ((7, 10), (12, 10), (20, 10))  # 2026-11-04 までの枠（記録として残す）。今は day_slots.py の PLAN["psy"] を使う
+# 2026-11-04 本人「1日2本なら昼と夜、3本なら朝昼夜」：本編（19:00）の日は 07:10・12:10・22:10、本編の無い日は 07:10・12:10・20:10。
+#   どの2本も3時間以上あける（day_slots.py）
 
 
-def slot_after(when, used):
-    """本編の公開（when）より後で、30分より先で、ほかのショートが入っていない最初の枠"""
-    day = when.date()
-    while True:
-        for t in TIMES:
-            at = datetime.datetime.combine(day, datetime.time(*t), JST)
-            if at > when and at >= now() + datetime.timedelta(minutes=30) and at not in used:
-                return at
-        day += datetime.timedelta(days=1)
+def slot_after(when, used, ch="psy"):
+    """本編の公開（when）より後で、1時間より先で、空いていて、前後3時間に何も無い最初の枠（day_slots.py）"""
+    return day_slots.next_short(ch, used=used, after=when)
 
 
 def schedule(ch, shorts, longs, dry):

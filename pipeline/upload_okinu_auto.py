@@ -93,8 +93,8 @@ def main():
     title_guard.check(title, channel_titles(ch))  # ほかの回の題の言い換えは止める
     if kind == "long":
         pd = (json.load(open(os.path.join(ROOT, "history", ch, "pub_plan.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "history", ch, "pub_plan.json")) else {}).get(name, {}).get("pub_date")
-        if pd:  # 公開日が決まっている時だけ（長尺は日本時間 19:00 の枠）
-            long_day_guard.check(ch, datetime.datetime.fromisoformat(pd + "T19:00:00").replace(tzinfo=JST))
+        if pd:  # 公開日が決まっている時だけ（長尺は日本時間 18:00 の枠。profile の long.slots に合わせた 2026-11-04）
+            long_day_guard.check(ch, datetime.datetime.fromisoformat(pd + "T18:00:00").replace(tzinfo=JST))
         else:
             print("【メモ】公開日が決まっていないので、横動画の同じ日の確かめ（long_day_guard）は予約の時（watch.py の枠・every_days）に任せます")
     if a.dry:
