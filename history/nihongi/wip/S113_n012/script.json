@@ -1,0 +1,280 @@
+{
+ "format": "short",
+ "title": "もしも長篠の戦いで、鉄砲が10倍あったら。9割が撃てない #もしも #日本史 #戦国時代",
+ "promise": "長篠の戦い（1575年）の鉄砲は3000挺といわれるが、『信長公記』には「鉄砲千挺ばかり」とあり、鉄砲の弾の鉛も火薬の硝石も多くを海外から買っていた。だから鉄砲だけ10倍にしても撃てない、史実で先に弾切れになったのは武田の鉄砲とみられる、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※長篠の戦いで鉄砲が10倍の3万挺あった話と、信長のセリフは作り話です。長篠の戦い（1575年）、『信長公記』の「鉄砲千挺計」と馬防の柵の記述、弾の鉛と火薬の硝石の多くを輸入に頼ったこと、戦のあと武田勝頼が鉄砲1挺に玉薬2〜300発の用意を命じたことは史実をもとにしています。鉄砲の数（3000挺）は諸説あります。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "戦国時代",
+  "長篠の戦い",
+  "織田信長",
+  "武田勝頼",
+  "火縄銃",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "弾に泣くのは信長"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：長篠の戦いで、織田・徳川方の鉄砲が通説（3000挺）の10倍の3万挺ある。弾の鉛と火薬（硝石）の量は史実のまま（海の向こうから買える量は増えない）なので、弾があるのはもとの数の鉄砲の分だけ",
+  "信長は、自分の鉄砲の数と、蔵の弾と火薬が足りないことを知っている。『信長公記』という書名・「3000挺といわれる」「諸説」・勝頼が戦のあと出す命令は知らない（どれも語り手が言う）。信長のセリフ（n09）は弾が無いことだけを言う",
+  "勝頼は、織田方の鉄砲の数を前もって知らない。勝頼のセリフは無い。勝頼の命令（1挺に玉薬2〜300発）は史実で、語り手が言う",
+  "「1575年」「3000挺といわれる」「千挺ばかり」「海の向こうから買った」「9割」「とみられる」「2〜300発」「10倍の世界なら」は語り手の文"
+ ],
+ "world_terms": [
+  "鉄砲",
+  "3万挺",
+  "弾",
+  "千挺",
+  "信長公記",
+  "命令",
+  "9割"
+ ],
+ "voices": {
+  "nobunaga": 21
+ },
+ "facts": [
+  "天正3年（1575年）、三河の長篠城・設楽原で、武田勝頼と織田信長・徳川家康が戦った（長篠・設楽原の戦い）。出どころ：観光庁 多言語解説文データベース「歴史に残る鉄砲戦：長篠の戦い」 www.mlit.go.jp/tagengo-db/R4-00138.html（2026-11-05 に本文を読んで確認。この解説は鉄砲隊を「3000人」と書く）",
+  "史料の本文：太田牛一『信長公記』巻之中（甫喜山景雄 刊・1881年、国立国会図書館デジタルコレクション 781193・請求記号 128-97）に「信長者　家康陣所に高松山とて小高き山御座候に被取上…被仰含鉄砲千挺計、佐々蔵介・前田又左衛門・野々村三十郎・福富平左衛門・塙九郎左衛門御奉行として近く足軽懸られ」とある。同じページに「家康滝川陣取の前に馬防の為柵を付させられ」「身がくしとして鉄炮にて待請うたせられ候へハ過半打倒され」「五月廿一日　日出より寅卯の方へ向て未刻迄入替々々相戦」。2026-11-05 に国立国会図書館 次世代デジタルライブラリー（lab.ndl.go.jp）の全文で探し、ページの画像（IIIF R0000006）を見て、活字の本文を一字ずつ確かめた。同じ文は『史籍集覧』19（近藤出版部・1921年、NDL 1920322）の417ページの全文にもある（OCR で確認）",
+  "「鉄砲3000挺・三段撃ち」は小瀬甫庵『信長記』などをもとに参謀本部『日本戦史』が広めた通説で、『信長公記』も写本によって1000挺・3000挺と数が違う（池田家文庫本は「千」の上に「三」を書き足す）。三段撃ちには疑問が出ている。出どころ：president.jp/articles/-/70430（2026-11-05 に検索の抜粋で確認）。台本は「3000挺といわれる」",
+  "鉄砲の使用が広がると鉛の需要は爆発的に増え、国内産では到底賄えず海外からの輸入が増えた。火薬の原料の硝石も海外からの輸入に頼っていた。出どころ：平山優（日本中世史）の解説、ニューズウィーク日本版 www.newsweekjapan.jp/articles/-/52196?page=4（元は PRESIDENT Online。2026-11-05 に本文を読んで確認）。硝石も鉛も大半を輸入に依存したという解説：president.jp/articles/-/58188（検索の抜粋で確認）",
+  "長篠で見つかった鉛玉は、国産・中国華南／朝鮮産・東南アジア産に分かれた。武田軍の鉄砲衆は早い段階で弾切れとなり、沈黙を余儀なくされたとみられる。武田勝頼は長篠戦後の軍役改訂で「鉄砲一挺につき、2〜300発ずつ玉薬を用意せよ」と指示した（それまで弾と火薬の数を決めたことは無かった）。出どころ：平山優「PRESIDENT Online」president.jp/articles/-/70284?page=3（2026-11-05 に本文を読んで確認）。台本は「とみられる」",
+  "長篠の戦いで鉄砲が10倍の3万挺あったこと、9割が撃てなかったこと、信長のセリフは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "鉄砲が\n10倍",
+   "narration": "長篠の鉄砲を3万挺にしたら、信長が弾切れになった。",
+   "tts_text": "ながしのの鉄砲を、さんまんちょうにしたら、信長が、たまぎれになった。",
+   "highlight": [
+    "弾切れ"
+   ],
+   "image_en": "Oda Nobunaga stands behind a long wooden palisade on a misty battlefield at dawn, clutching his head with a strained, troubled face, while endless rows of matchlock guns lean against the fence behind him as far as the eye can see.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "image": "Oda Nobunaga stands behind a long wooden palisade on a misty battlefield at dawn, clutching his head with a strained, troubled face, while endless rows of matchlock guns lean against the fence behind him as far as the eye can see.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1575年、長篠の戦い。織田・徳川が武田勝頼を破った。",
+   "tts_text": "せんごひゃくななじゅうごねん、ながしののたたかい。おだ、とくがわが、たけだかつよりを破った。",
+   "highlight": [
+    "1575年"
+   ],
+   "image_en": "A wide view of a narrow river valley in early summer: Takeda cavalry in red lacquered armor charge across a small stream toward a long wooden palisade, where foot soldiers fire matchlock guns, white gun smoke drifting over green fields. Plain banners with no writing.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "A wide view of a narrow river valley in early summer: Takeda cavalry in red lacquered armor charge across a small stream toward a long wooden palisade, where foot soldiers fire matchlock guns, white gun smoke drifting over green fields. Plain banners with no writing."
+  },
+  {
+   "id": "n03",
+   "narration": "鉄砲は3000挺といわれる。信長公記には千挺ばかり。",
+   "tts_text": "鉄砲は、さんぜんちょうといわれる。しんちょうこうきには、せんちょうばかり。",
+   "highlight": [
+    "千挺ばかり"
+   ],
+   "image_en": "Inside a dim samurai study lit by a paper lantern, an elderly scribe in a plain grey kimono and topknot writes with a brush on a long paper scroll, his face serious; the brush strokes on the scroll are only faint blurred ink lines, no readable characters.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [],
+   "image": "Inside a dim samurai study lit by a paper lantern, an elderly scribe in a plain grey kimono and topknot writes with a brush on a long paper scroll, his face serious; the brush strokes on the scroll are only faint blurred ink lines, no readable characters."
+  },
+  {
+   "id": "n04",
+   "narration": "馬を防ぐ柵を立て、その陰から撃ったと記される。",
+   "tts_text": "馬を防ぐ、さくを立て、その陰から撃ったと、しるされる。",
+   "highlight": [
+    "柵"
+   ],
+   "image_en": "Close view along a rough wooden palisade of tied logs: kneeling foot soldiers in plain conical hats aim matchlock guns through the gaps, fuses glowing, while horsemen gallop toward them across the field.",
+   "real": "Battle of Nagashino folding screen",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Battle of Nagashino.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Battle_of_Nagashino.jpg/1920px-Battle_of_Nagashino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Battle_of_Nagashino.jpg",
+    "検索語": "Battle of Nagashino folding screen"
+   }
+  },
+  {
+   "id": "n05",
+   "narration": "もしも、この鉄砲が10倍の3万挺あったら。",
+   "tts_text": "もしも、この鉄砲が、じゅうばいの、さんまんちょうあったら。",
+   "highlight": [
+    "3万挺"
+   ],
+   "image_en": "A huge camp field seen from above: countless matchlock guns stacked in neat wooden racks stretching to the horizon, foot soldiers carrying more bundles of guns on their shoulders, warm morning light.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "A huge camp field seen from above: countless matchlock guns stacked in neat wooden racks stretching to the horizon, foot soldiers carrying more bundles of guns on their shoulders, warm morning light."
+  },
+  {
+   "id": "n06",
+   "narration": "柵の後ろに鉄砲がずらり。信長は勝ちを確信する。",
+   "tts_text": "さくの後ろに鉄砲がずらり。信長は、勝ちを確信する。",
+   "image_en": "Oda Nobunaga on a small hill behind the wooden palisade grins confidently with his arms folded, looking down at row after row of gunners lined up shoulder to shoulder along the fence below.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [
+    "nobunaga"
+   ],
+   "image": "Oda Nobunaga on a small hill behind the wooden palisade grins confidently with his arms folded, looking down at row after row of gunners lined up shoulder to shoulder along the fence below."
+  },
+  {
+   "id": "n07",
+   "narration": "ところが、蔵の弾と火薬が、まるで足りない。",
+   "tts_text": "ところが、くらの、たまと火薬が、まるで足りない。",
+   "highlight": [
+    "まるで足りない"
+   ],
+   "image_en": "Inside a dim wooden storehouse, a foot soldier in plain armor kneels by a nearly empty wooden box with only a handful of small grey lead balls at the bottom and one small powder pouch, looking up in shock at the long racks of guns behind him.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "image": "Inside a dim wooden storehouse, a foot soldier in plain armor kneels by a nearly empty wooden box with only a handful of small grey lead balls at the bottom and one small powder pouch, looking up in shock at the long racks of guns behind him."
+  },
+  {
+   "id": "n08",
+   "narration": "弾の鉛も火薬の硝石も、多くは海の向こうから買った。",
+   "tts_text": "たまの、なまりも、火薬の、しょうせきも、多くは、海の向こうから買った。",
+   "highlight": [
+    "海の向こう"
+   ],
+   "image_en": "A busy harbor of a Japanese trading port in the sixteenth century: a large foreign sailing ship at anchor, porters unloading heavy wooden crates and straw-wrapped sacks onto a wooden pier, merchants in kimono watching. No writing on any crate or sail.",
+   "shots": [
+    "n08",
+    "n08@right"
+   ],
+   "chars": [],
+   "image": "A busy harbor of a Japanese trading port in the sixteenth century: a large foreign sailing ship at anchor, porters unloading heavy wooden crates and straw-wrapped sacks onto a wooden pier, merchants in kimono watching. No writing on any crate or sail."
+  },
+  {
+   "id": "n09",
+   "narration": "弾の無い鉄砲など、ただの棒じゃ。",
+   "tts_text": "たまの無い鉄砲など、ただの、ぼうじゃ。",
+   "voice": "nobunaga",
+   "image_en": "Oda Nobunaga holds up a single unloaded matchlock gun in one hand and glares at it in fury, teeth clenched, inside a dim camp tent lit by a lantern.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [
+    "nobunaga"
+   ],
+   "image": "Oda Nobunaga holds up a single unloaded matchlock gun in one hand and glares at it in fury, teeth clenched, inside a dim camp tent lit by a lantern."
+  },
+  {
+   "id": "n10",
+   "narration": "3万挺のうち、9割は柵の後ろで黙っていた。",
+   "tts_text": "さんまんちょうのうち、きゅうわりは、さくの後ろで黙っていた。",
+   "highlight": [
+    "9割"
+   ],
+   "image_en": "Along a very long wooden palisade, only a few gunners at the near end fire with bursts of white smoke, while hundreds of gunners further down the line just stand holding silent guns, looking at each other in confusion.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "Along a very long wooden palisade, only a few gunners at the near end fire with bursts of white smoke, while hundreds of gunners further down the line just stand holding silent guns, looking at each other in confusion.",
+   "motion": true
+  },
+  {
+   "id": "n11",
+   "narration": "史実では、早く弾切れで黙ったのは武田の鉄砲とみられる。",
+   "tts_text": "史実では、早く、たまぎれで黙ったのは、たけだの鉄砲とみられる。",
+   "highlight": [
+    "武田の鉄砲"
+   ],
+   "image_en": "On the other side of the battlefield, Takeda foot soldiers in red lacquered armor kneel behind a low earth bank, one of them turning an empty bullet pouch upside down with a dismayed face, his gun lowered. Faded old-memory colors.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": [],
+   "image": "On the other side of the battlefield, Takeda foot soldiers in red lacquered armor kneel behind a low earth bank, one of them turning an empty bullet pouch upside down with a dismayed face, his gun lowered. Faded old-memory colors."
+  },
+  {
+   "id": "n12",
+   "narration": "戦のあと勝頼は、1挺に玉薬2〜300発の用意を命じた。",
+   "tts_text": "いくさのあと、かつよりは、いっちょうに、たまぐすり、にさんびゃっぱつの用意を命じた。",
+   "highlight": [
+    "2〜300発"
+   ],
+   "image_en": "Takeda Katsuyori, a stern Japanese warlord about thirty with a chonmage topknot, wearing a dark red kimono with a black haori, sits on a raised floor of a castle hall and points sharply at a heavy wooden box full of small grey lead balls, while kneeling retainers bow. Faded old-memory colors.",
+   "shots": [
+    "n12",
+    "n12@face"
+   ],
+   "chars": [],
+   "image": "Takeda Katsuyori, a stern Japanese warlord about thirty with a chonmage topknot, wearing a dark red kimono with a black haori, sits on a raised floor of a castle hall and points sharply at a heavy wooden box full of small grey lead balls, while kneeling retainers bow. Faded old-memory colors."
+  },
+  {
+   "id": "n13",
+   "narration": "10倍の世界なら、その命令を出すのは信長だ。",
+   "tts_text": "じゅうばいの世界なら、その命令を出すのは信長だ。",
+   "highlight": [
+    "信長"
+   ],
+   "image_en": "Oda Nobunaga sits alone on a camp stool at dusk with a heavy sigh, an empty wooden ammunition box at his feet and long rows of silent guns leaning on the palisade behind him in the sunset.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": [
+    "nobunaga"
+   ],
+   "image": "Oda Nobunaga sits alone on a camp stool at dusk with a heavy sigh, an empty wooden ammunition box at his feet and long rows of silent guns leaning on the palisade behind him in the sunset."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "The quiet battlefield valley at sunset after the battle, a long wooden palisade casting long shadows, thin smoke fading into an orange sky. No people.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [],
+   "image": "The quiet battlefield valley at sunset after the battle, a long wooden palisade casting long shadows, thin smoke fading into an orange sky. No people."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

@@ -1,17 +1,15 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S112_n017",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S113_n012",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion"
+  "voice"
  ],
- "started": "2026-11-05T01:02:22+09:00",
- "tries": 3,
+ "started": "2026-11-05T07:34:17+09:00",
+ "tries": 0,
  "code": "455f8716534f",
  "stage": "gate_images",
- "updated": "2026-11-05T01:49:29+09:00",
+ "updated": "2026-11-05T07:46:42+09:00",
  "images_back": true
 }
