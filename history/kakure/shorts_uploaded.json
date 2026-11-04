@@ -67,5 +67,28 @@
   "publish_at": "2026-11-06T19:00:00+09:00",
   "uploaded_at": "2026-11-04T19:11:21+09:00",
   "missing": false
+ },
+ {
+  "work": "S009_切出_花嫁になった雷神",
+  "video_id": "ypSm_dbBt1A",
+  "title": "北欧の雷の神トールは、なぜ花嫁の衣を着たのか【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-07T19:00:00+09:00",
+  "uploaded_at": "2026-11-04T23:32:29+09:00",
+  "missing": false
+ },
+ {
+  "work": "S010_図鑑_八咫烏",
+  "video_id": "Cw_FzMUKSY8",
+  "title": "3本足と書かれていない神の烏【かくれ神図鑑 #3】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-08T19:00:00+09:00",
+  "uploaded_at": "2026-11-04T23:34:28+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
