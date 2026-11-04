@@ -1,0 +1,1015 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】ペリー来航が逆向きだったら｜開国を迫った日本の黒船が、アメリカでタダで直された世界線",
+ "promise": "1860年に咸臨丸で太平洋を渡った艦長の勝海舟は、ひどい船酔いで部屋から出られなかったこと、『日本人だけで渡った』と書いた福沢諭吉と『日本人は頼り切っていた』と書いたブルックの記録の食い違い、アメリカが修理代を受け取らなかったことを、人に話せる",
+ "desc": "もしもペリーの黒船が逆向きで、1860年に太平洋を渡った日本の軍艦・咸臨丸が、アメリカに「国を開け」と迫る手紙を運んでいたら。\n艦長の勝海舟は船酔いで寝込み、嵐の帆はアメリカ人の手を借りた。それでも福沢諭吉は「日本人だけで渡った」と書いた。サンフランシスコで待っていたのは、祝砲と歓迎と、受け取ってもらえない修理代だった。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※咸臨丸が将軍からアメリカへの「開国の手紙」を運ぶこと、サンフランシスコでその手紙を渡す場面とアメリカの返事の手紙、手紙をめぐるブルックのセリフは作り話です。咸臨丸の航海（1860年）、勝海舟の船酔い、祝砲、水の話、測量の話、メア・アイランドでの修理と代金の話、ワシントンの子孫の話、帰国と桜田門外の変は、福沢諭吉『福翁自伝』（1899年初版・国立国会図書館デジタルコレクション）、ブルックの『咸臨丸日記』、国立国会図書館・コトバンクの解説をもとにしています（日付・人数には資料によって違いがあります）。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "幕末",
+  "咸臨丸",
+  "勝海舟",
+  "福沢諭吉",
+  "ペリー来航",
+  "黒船",
+  "遣米使節"
+ ],
+ "thumb": {
+  "top": "日本の黒船がアメリカに来たら",
+  "big": "艦長は船酔いで寝たきり",
+  "hl_top": "日本の黒船",
+  "hl_big": "船酔い",
+  "bg": "D05"
+ },
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：1860年の咸臨丸が、ペリーの逆をする『日本の黒船』として、将軍からアメリカあての『国を開け』という手紙を運ぶ。航海の日付・乗った人・船の上とサンフランシスコとメア・アイランドで起きたことは史実（福翁自伝・ブルックの日記など）のまま",
+  "手紙の中身を知っているのは、木村摂津守と勝麟太郎の2人だけ。福沢・万次郎・水夫・ブルックたちアメリカ人は、サンフランシスコで手紙が渡されるまで中身を知らない",
+  "サンフランシスコの人は、手紙が渡されるまで、咸臨丸を使節の付き添いの船として迎えている（歓迎・祝砲・修理・代金を受け取らなかったことは史実のまま）",
+  "この世界線で変わるのは、サンフランシスコで手紙が渡されることと、アメリカからの返事の手紙を持ち帰ることの2つ。返事の文は作り話。それ以外の年・人・出来事は本当の歴史",
+  "人物のセリフは、その人がその時に知っていることだけ。勝・佐々倉・ブルックの船の上のセリフは福翁自伝の書いた言葉をもとにする。史実と作り話をつないで言うのは語り手だけ"
+ ],
+ "world_terms": [
+  "手紙",
+  "開国",
+  "国を開",
+  "黒船",
+  "返事",
+  "世界線",
+  "開いて"
+ ],
+ "voices": {
+  "katsu": 11,
+  "sasakura": 53,
+  "brooke": 52,
+  "fukuzawa": 12
+ },
+ "facts": [
+  "咸臨丸：幕府の注文で1856年オランダのホップ・スミット造船所で起工、1857年に長崎へ。木造・3本マスト・100馬力の蒸気船。1860年2月10日（安政7年1月19日）浦賀発、3月17日サンフランシスコ着（約37日）。使節の乗るポーハタン号の随行。出どころ：コトバンク「咸臨丸」（日本大百科全書・百科事典マイペディア・ブリタニカ・山川日本史小辞典）kotobank.jp/word/咸臨丸-49774。出航日は資料により2月9日（serai.jp）・旧暦1月13日品川沖（gendai.media/articles/-/69481）もある",
+  "万延元年遣米使節：日米修好通商条約の批准書交換のため。正使 新見正興・副使 村垣範正・目付 小栗忠順、計77名。アメリカ軍艦ポーハタン号。幕府は咸臨丸（艦長勝海舟）を警固を名目に往路サンフランシスコまで随伴させた。出どころ：コトバンク「万延元年遣米使節」（日本大百科全書・山川日本史小辞典・ブリタニカ）",
+  "ペリー来航：嘉永6年6月3日（1853年7月8日）、東インド艦隊司令長官ペリーが軍艦4隻で浦賀に来航、フィルモア大統領の親書を渡す。翌年再び来て日米和親条約。出どころ：コトバンク「ペリー」「開国」「井戸弘道」「浦賀」",
+  "乗員：日本人90余名、木村摂津守（軍艦奉行）がリーダー、福沢諭吉は木村の従者（gendai.media/articles/-/69481、慶應義塾「三田評論」齋藤秀彦 www.keio.ac.jp/ja/about/public-relations/mita-hyoron/around-yukichi-fukuzawa/202203-1/）。ブルック大尉ら米国人11名。ブルックたちは浦賀で難破した測量船フェニモア・クーパー号の乗組員で、帰国の便船を待っていた（和樂web intojapanwaraku.com/rock/culture-rock/168013/。ブルックの日記の訳の引用を含む二次の記事）",
+  "勝海舟：1823年生まれ。長崎海軍伝習所に入る。1860年咸臨丸を指揮して太平洋を横断（百科事典マイペディア）、咸臨丸の艦長として日本人による初の太平洋横断（精選版日本国語大辞典）。のち軍艦奉行、江戸無血開城。出どころ：コトバンク「勝海舟」kotobank.jp/word/勝海舟-15669。帰国後に神戸に海軍の訓練所を作ったことは大田区立勝海舟記念館の解説（検索の抜粋で確認）",
+  "【史料・ページ画像と翻刻で照らした】福沢諭吉『福翁自伝』初版（時事新報社、1899年6月、国立国会図書館デジタルコレクション pid 2387720、コマ95〜106＝176〜199ページ）を、IIIF のページ画像で読み、全集（岩波書店『福澤諭吉全集』第7巻）を写した翻刻 sybrma.sakura.ne.jp/98hukuoujiden.html と並べた。182ページ：「勝麟太郎と云ふ人は艦長木村の次に居て指揮官であるが至極船に弱い人で航海中は病人同様自分の部屋の外に出ることは出来なかつた」（初版は句読点なし、全集版は読点あり。字は同じ）。福沢は木村を『艦長』、勝を『指揮官』と書く（事典は勝を艦長とする）",
+  "『福翁自伝』初版のページ画像で読んだ所：176ページ 百馬力の船・毎日の暴風・ボート4艘のうち2艘を波に取られた。178ページ 37〜38度傾くのは毎度、45度で沈むという・37日でサンフランシスコに着いた。179ページ ハワイに寄らず直航と決め水を倹約、アメリカの水夫が水を使うのでブルックが『水を使ったら直に鉄砲で殺してくれ、共同の敵だ』と言った、96人無事に着いた。181ページ 航海中は一切外国人ブルックの助力は借りない、測量も日本人自身で、アメリカ人も自分で測量し後で見合わせるだけ。182〜183ページ 着港で祝砲、勝は『なまじ応砲してやり損なうより打たぬ方がよい』、運用方の佐々倉桐太郎が『打てないことはない、おれが打って見せる』、勝『できたらおれの首をやる』、佐々倉は砂時計で時をはかり見事に応砲、『勝の首はおれの物、航海中は用も多いから当人に預けておく』と船中を笑わせた。アメリカ人はペリーの日本行きから8年目に日本人が自分で航海して来たのを、自分の学校の生徒が実業に就いたように喜んだと福沢は見る",
+  "『福翁自伝』初版のページ画像で読んだ所（続き）：184ページ 上陸すると馬車で迎え、ホテルへ。メア・アイランドの海軍港の官舎を宿に貸し、船は損所ができたのでドックに入れて修復、日本人は魚が好きと知って毎日魚を持って来て、毎日風呂を立ててくれた。185ページ 高価な絨毯の上を靴で歩くのに驚く。188ページ 招かれたオランダ人医師の家で、おかみさんが周旋奔走し亭主が客の相手、日本とアベコベ。191〜192ページ ワシントンの子孫はどうしているかと聞くと『女がいるはずだが今どうしているか知らない』と冷淡な答え、頼朝・家康の子孫を思う日本人には不思議だった。193ページ 修理などの代金を払いたいと言うと、先方は笑って『代金など何のことだ』という調子で取り合わなかった。福沢と通弁の中浜万次郎がウェブスターの辞書を1冊ずつ買い、これが日本へのウェブスターの輸入の初め（福沢の言）。197ページ サンフランシスコで写真屋の娘と写真を撮った。198〜199ページ 5月5日の午前に浦賀に着いた、出帆から浦賀まで6か月便りなし、迎えの島安太郎に『何か変わった事はないか』と聞くと大変な事があったと言うので、福沢が『言うな、当ててみせる。水戸の浪人が掃部様の邸に暴れ込んだのではないか』と当てた",
+  "帰港：咸臨丸が浦賀に帰港したのは万延元（1860）年5月5日（慶應義塾「三田評論」齋藤秀彦 2022年3月）。帰路はハワイ経由（gendai.media/articles/-/69481）。メア・アイランドは当時太平洋側唯一の海軍造船所で、無償で修理された（同）",
+  "ブルックの日記：咸臨丸に乗り組み浦賀からサンフランシスコへの航行を指導したジョン・ブルックの「Kanrin Maru Journal（咸臨丸日記）」。提督（軍艦奉行の木村摂津守）は誰にも部署・当直を割り当てず、もとのままにしておくことを望んでいる、と書く（国立国会図書館 憲政資料室「日記の世界」www.ndl.go.jp/nikki/column/01。原文は『万延元年遣米使節史料集成 第5巻』風間書房1961所収）。『日本人達は全く我々に頼り切っている』『日本人も経験を積むに従って腕をあげ』、勝は『全航海中病気にて殆ど臥床』は、清岡暎一訳の引用を載せた和樂webの二次の記事による（台本では『と書いた』『と伝わる』）。乗っていた斎藤留蔵の日記の『初めての荒天に遭って皆大変疲労、狼狽し』『帆布を縮長上下する等の事は全てアメリカ人の助力を受けた』も同じ記事",
+  "桜田門外の変：安政7年（万延元年、1860年）3月3日、大老井伊直弼が江戸城桜田門外で水戸・薩摩の浪士らに殺された。井伊は勅許を得ずに日米修好通商条約に調印した。出どころ：コトバンク「桜田門外の変」（精選版日本国語大辞典・旺文社日本史事典・百科事典マイペディア）",
+  "サンフランシスコのリンカーンパークに、1960年に大阪市が寄贈した咸臨丸入港百年記念碑がある（serai.jp/tour/346228）",
+  "使わない：勝が帰国後に老中へ『アメリカでは上に立つ者が賢い』と答えた話（氷川清話の本文を確かめられなかった）、船底のペンキの話（出どころを確かめられなかった）、ブルックの日記が公表された年の話（確かめられなかった）、勝・福沢の年齢"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "1860年3月、サンフランシスコ。日本の軍艦から、真っ青な顔の艦長が出てきた。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; stepping out of a cabin hatch onto the wooden deck of a small black three-masted steam warship, face pale green and sweaty, gripping the rail; behind him the 1860 San Francisco harbor with wooden piers, hills of houses and crowds of American townspeople staring. Place the main person slightly right of center.",
+   "image": "Pale seasick Katsu Kaishu stepping onto deck in San Francisco harbor",
+   "chars": [],
+   "label": "1860年3月",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "勝海舟。ペリーの黒船から7年、太平洋を逆向きに渡ってきた日本の船の艦長だ。",
+   "image_en": "Wide view of a stormy Pacific Ocean at sunset; a small black wooden three-masted steam warship with a plain white flag with a red circle plows through huge waves heading east, alone on the vast sea.",
+   "image": "A small Japanese steam warship crossing the stormy Pacific alone",
+   "chars": [],
+   "label": "ペリーの逆",
+   "strong": true,
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "青い顔の勝が、胸に抱えていたのは、将軍の手紙だった。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; he staggers onto the wooden deck of a small sailing steamship clutching a sealed lacquered letter box to his chest, his face pale green and sweaty with seasickness, sailors watching. Place the main person slightly right of center.",
+   "image": "Pale seasick Katsu Kaishu on deck clutching a sealed letter box",
+   "chars": [],
+   "label": "将軍の手紙"
+  },
+  {
+   "id": "A04",
+   "narration": "足すルールは1つ。その手紙が、アメリカに国を開けと迫る手紙だったら。",
+   "image_en": "Close-up of a black lacquered letter box tied with a thick purple silk cord, resting on a wooden table in a ship's cabin, a ship's lantern swinging above, sea spray on the small round window. No writing anywhere. No people.",
+   "image": "A sealed lacquered letter box in a swaying ship cabin",
+   "chars": [],
+   "tts_text": "足すルールは1つ。その手紙が、アメリカに国を開けとせまる手紙だったら。"
+  },
+  {
+   "id": "A05",
+   "narration": "年と人と、航海で起きたことは本当の歴史。開国の手紙だけが作り話です。",
+   "image_en": "Close-up of a low wooden desk: an old blank logbook, a brush, an ink stone, a brass compass and a hand-drawn chart of the Pacific showing only coastlines, warm lantern light. No writing. No people.",
+   "image": "Desk with a blank logbook, brush, compass and an old Pacific chart",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "1853年、浦賀の沖に、黒い船が4隻あらわれた。ペリーの艦隊だ。",
+   "image_en": "Four large black American steam warships with tall funnels anchored off a green Japanese coast, Japanese townspeople and samurai on the shore staring in fear, small wooden boats around.",
+   "image": "Four black American warships off the Japanese coast, townspeople staring",
+   "chars": [],
+   "chapter": "逆向きの黒船",
+   "label": "1853年",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B02",
+   "narration": "ペリーは大統領の手紙を渡し、国を開けと迫った。",
+   "image_en": "An old Japanese woodblock print style scene of a black American steamship with smoke, seen by startled Japanese people on the shore.",
+   "chars": [],
+   "real": "Perry black ship Japanese woodblock print",
+   "tts_text": "ペリーは大統領の手紙を渡し、国を開けとせまった。",
+   "real_src": {
+    "題": "File:The Mission of Commodore Perry to Japan in 1854 (BM 2013,3002.1 111).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/The_Mission_of_Commodore_Perry_to_Japan_in_1854_%28BM_2013%2C3002.1_111%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:The_Mission_of_Commodore_Perry_to_Japan_in_1854_(BM_2013,3002.1_111).jpg",
+    "検索語": "Perry black ship Japanese woodblock print"
+   }
+  },
+  {
+   "id": "B03",
+   "narration": "翌年には日米和親条約。1858年には、日米修好通商条約が結ばれた。",
+   "image_en": "A formal meeting hall where Japanese officials in kamishimo and American officers in navy uniforms sit across a long low table with blank documents. Faded old-memory colors.",
+   "image": "Japanese officials and American officers at a treaty table",
+   "chars": [],
+   "label": "1858年"
+  },
+  {
+   "id": "B04",
+   "narration": "その約束を正式なものにするため、1860年、幕府はアメリカへ使節を送る。",
+   "image_en": "A procession of Japanese envoys in formal kamishimo with swords, carrying lacquered boxes, walking along a harbor toward a big American paddle steamship.",
+   "image": "Japanese envoys in kamishimo walking toward an American paddle steamer",
+   "chars": [],
+   "label": "遣米使節"
+  },
+  {
+   "id": "B05",
+   "narration": "正使は新見正興。一行は77人で、アメリカの軍艦ポーハタン号に乗った。",
+   "image_en": "An 1860 photograph-like scene of Japanese samurai envoys in formal robes posing together.",
+   "chars": [],
+   "real": "Japanese Embassy to the United States 1860",
+   "tts_text": "正使はしんみまさおき。一行は77人で、アメリカの軍艦ポーハタン号に乗った。",
+   "real_src": {
+    "題": "File:Japanese-Embassy-to-the-United-States-Group-Photo-1860.png",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Japanese-Embassy-to-the-United-States-Group-Photo-1860.png/1920px-Japanese-Embassy-to-the-United-States-Group-Photo-1860.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Japanese-Embassy-to-the-United-States-Group-Photo-1860.png",
+    "検索語": "Japanese Embassy to the United States 1860"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "幕府はそこに、日本の軍艦を1隻、付き添わせた。咸臨丸だ。",
+   "image_en": "A small black wooden three-masted steam warship with one funnel and a plain white flag with a red circle, anchored in a calm Japanese bay in winter, a much bigger American paddle steamer in the distance.",
+   "image": "The small Kanrin Maru beside a much bigger American paddle steamer",
+   "chars": [],
+   "label": "咸臨丸"
+  },
+  {
+   "id": "B07",
+   "narration": "オランダで造られ、1857年に長崎へ来た、木造の蒸気船だ。",
+   "image_en": "A new small black wooden steam warship arriving in Nagasaki harbor in 1857, green hills and Japanese wooden boats around, a few Dutch officers on deck. Faded old-memory colors.",
+   "image": "The new steam warship arriving in Nagasaki harbor in 1857",
+   "chars": [],
+   "label": "1857年"
+  },
+  {
+   "id": "B08",
+   "narration": "乗っていた福沢諭吉は、百馬力の小さな船だったと書いている。",
+   "image_en": "Inside the cramped engine room of a small wooden steamship: a modest steam engine, coal heaped on the floor, a sweaty stoker shoveling coal, dim lantern light.",
+   "image": "Cramped engine room of a small wooden steamship",
+   "chars": [],
+   "label": "百馬力"
+  },
+  {
+   "id": "B09",
+   "narration": "この世界線では、咸臨丸にだけ、もう1通の手紙が積まれた。",
+   "image_en": "Night at a harbor: a samurai official carefully hands the black lacquered letter box tied with a purple cord to a ship's officer at the gangway of a small black steam warship, lanterns glowing. No writing.",
+   "image": "A samurai official handing the lacquered letter box onto the ship at night",
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "将軍からアメリカへ。今度は、そちらが国を開く番だ、と。",
+   "same_as": "A04",
+   "label": "開国の手紙",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "1860年2月10日、咸臨丸は浦賀を出た。",
+   "image_en": "A small black wooden three-masted steam warship with a plain white flag with a red circle leaving a Japanese harbor in winter, black smoke from its funnel, people waving from small boats.",
+   "image": "The Kanrin Maru leaving a Japanese harbor in winter",
+   "chars": [],
+   "chapter": "咸臨丸に乗った人",
+   "label": "2月10日",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "乗った日本人は90人あまり。いちばん上は、軍艦奉行の木村摂津守。",
+   "image_en": "Kimura Settsu-no-kami, a dignified young Japanese samurai commodore about thirty: gentle oval face, chonmage topknot, formal black haori and grey hakama, standing calmly on a ship's deck with about a dozen samurai sailors lined up behind him. Place the main person slightly right of center.",
+   "image": "Commodore Kimura on deck with samurai sailors behind him",
+   "chars": [],
+   "label": "木村摂津守"
+  },
+  {
+   "id": "C03",
+   "narration": "船の上では、提督と呼ばれた人だ。",
+   "image_en": "Portrait of a Japanese samurai official of the 1860s in formal clothes.",
+   "chars": [],
+   "real": "Kimura Kaisyu",
+   "real_src": {
+    "題": "File:Kimura Settsu-no-Kami by Kawamura Kiyoo (Edo-Tokyo Museum).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Kimura_Settsu-no-Kami_by_Kawamura_Kiyoo_%28Edo-Tokyo_Museum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Kimura_Settsu-no-Kami_by_Kawamura_Kiyoo_(Edo-Tokyo_Museum).jpg",
+    "検索語": "Kimura Kaisyu"
+   }
+  },
+  {
+   "id": "C04",
+   "narration": "艦長は、勝麟太郎。のちの勝海舟だ。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; standing proudly at the rail of a ship in harbor, arms folded, determined look. Place the main person slightly right of center.",
+   "image": "Katsu Kaishu standing proudly at the ship's rail",
+   "chars": [],
+   "label": "勝麟太郎",
+   "tts_text": "艦長は、かつりんたろう。のちの勝海舟だ。"
+  },
+  {
+   "id": "C05",
+   "narration": "長崎の海軍伝習所で、オランダ人から船を学んだ1人だった。",
+   "image_en": "Young Japanese samurai students sitting on a wooden floor learning from a Dutch naval officer pointing at a model sailing ship, in a training hall in Nagasaki. Faded old-memory colors.",
+   "image": "Samurai students learning from a Dutch officer with a model ship",
+   "chars": [],
+   "label": "海軍伝習所"
+  },
+  {
+   "id": "C06",
+   "narration": "木村の家来として、20代の福沢諭吉も乗っていた。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono and hakama; climbing aboard a small wooden ship with a bundle on his back, eyes shining with curiosity. Place the main person slightly right of center.",
+   "image": "Young Fukuzawa Yukichi climbing aboard with a bundle",
+   "chars": [],
+   "label": "福沢諭吉"
+  },
+  {
+   "id": "C07",
+   "narration": "通訳は中浜万次郎。アメリカで学んだ、ジョン万次郎だ。",
+   "image_en": "Nakahama Manjiro, a Japanese man in his thirties with a weathered sun-tanned face and short hair tied back, wearing a plain kimono, standing on deck and talking with an American sailor, smiling. Place the main person slightly right of center.",
+   "image": "John Manjiro talking with an American sailor on deck",
+   "chars": [],
+   "label": "ジョン万次郎",
+   "tts_text": "通訳は、なかはままんじろう。アメリカで学んだ、ジョン万次郎だ。"
+  },
+  {
+   "id": "C08",
+   "narration": "そしてアメリカ人が11人。ブルック大尉と、その部下たちだ。",
+   "image_en": "Lieutenant John Brooke, an American naval officer in his thirties: full dark beard, dark blue 1860 US Navy uniform coat and peaked cap; standing on the deck of a small Japanese ship with ten American sailors in striped shirts behind him, Japanese samurai looking at them warily. Place the main person slightly right of center.",
+   "image": "Lieutenant Brooke and American sailors on a Japanese ship",
+   "chars": [],
+   "label": "11人"
+  },
+  {
+   "id": "C09",
+   "narration": "浦賀で測量船が難破し、帰りの船を待っていた人たちだった。",
+   "image_en": "Portrait photograph of an American naval officer of the 1850s.",
+   "chars": [],
+   "real": "John Mercer Brooke wmm",
+   "real_src": {
+    "題": "File:Deep Sea Sounding Device wmm.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Deep_Sea_Sounding_Device_wmm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Deep_Sea_Sounding_Device_wmm.jpg",
+    "検索語": "John Mercer Brooke wmm"
+   }
+  },
+  {
+   "id": "C10",
+   "narration": "この世界線で、開国の手紙の中身を知るのは、木村と勝の2人だけ。",
+   "image_en": "In a small lamp-lit ship's cabin, a dignified young samurai commodore in a black haori and a lean samurai captain in a dark navy haori look down at a sealed black lacquered letter box on the table between them, serious faces. Place the main person slightly right of center.",
+   "image": "Kimura and Katsu looking at the sealed letter box in a cabin",
+   "chars": []
+  },
+  {
+   "id": "C11",
+   "narration": "手紙は、艦長の部屋の箱に、しまわれた。",
+   "image_en": "Close-up of hands placing the black lacquered letter box into a wooden chest in a ship's cabin, a lantern swinging. No writing. No faces.",
+   "image": "Hands putting the letter box into a wooden chest",
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "浦賀を出てすぐ、海は荒れた。福沢は、毎日が嵐だったと書く。",
+   "image_en": "A small black wooden three-masted steamship tossed by gigantic dark waves in a violent winter storm, rain lashing, torn sails flapping.",
+   "image": "The small steamship tossed by huge waves in a winter storm",
+   "chars": [],
+   "chapter": "37日の嵐",
+   "label": "毎日の嵐",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D02",
+   "narration": "船は37、8度かたむくのが当たり前。45度で沈むといわれていた。",
+   "image_en": "Inside a ship's wooden corridor tilted steeply sideways, Japanese sailors clinging to ropes and beams, objects sliding across the floor, water splashing in.",
+   "image": "Sailors clinging inside a steeply tilted ship corridor",
+   "chars": [],
+   "label": "45度",
+   "tts_text": "船は37、8度かたむくのが当たり前。45度で沈むといわれていた。"
+  },
+  {
+   "id": "D03",
+   "narration": "4そうあったボートのうち、2そうが波にさらわれた。",
+   "image_en": "A huge wave smashing over the side of a small wooden warship and tearing a small wooden rowboat away from its ropes into the dark sea.",
+   "image": "A huge wave tearing a rowboat off the ship",
+   "chars": [],
+   "label": "ボート2そう"
+  },
+  {
+   "id": "D04",
+   "narration": "そのころ、艦長の部屋では。",
+   "image_en": "A closed wooden cabin door inside a rolling ship, a lantern swinging wildly, a wooden bucket sliding along the floor. No people.",
+   "image": "A closed cabin door in a rolling ship",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "勝は、ひどい船酔いで寝込んでいた。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; lying in a narrow swaying ship bunk, face pale green, eyes rolling, clutching a wooden bucket, sweat on his forehead, exaggerated misery. His face in the vertical middle of the picture with wide empty dark space above and below. Place the main person slightly right of center.",
+   "image": "Katsu Kaishu seasick in his bunk clutching a bucket",
+   "chars": [],
+   "label": "船酔い",
+   "strong": true,
+   "anim": "kling",
+   "peak": true,
+   "highlight": [
+    "船酔い"
+   ],
+   "motion": true
+  },
+  {
+   "id": "D06",
+   "narration": "福沢は書く。勝という人はひどく船に弱く、航海中は病人同様だった、と。",
+   "same_as": "D05",
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "自分の部屋の外に、出ることもできなかったという。",
+   "image_en": "Close-up of Katsu Kaishu's hand weakly hanging out of a ship bunk beside an overturned cup, the cabin door shut. Faded lantern light.",
+   "image": "Katsu's hand hanging weakly from the bunk",
+   "chars": [],
+   "label": "部屋から出られない"
+  },
+  {
+   "id": "D08",
+   "narration": "では、嵐の中で帆を上げ下ろしし、舵を握ったのは誰か。",
+   "image_en": "A painting of a small sailing warship struggling in rough seas.",
+   "chars": [],
+   "real": "Kanrin Maru on rough seas",
+   "real_src": {
+    "題": "File:Kanrin Maru on rough seas.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Kanrin_Maru_on_rough_seas.jpg/1920px-Kanrin_Maru_on_rough_seas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Kanrin_Maru_on_rough_seas.jpg",
+    "検索語": "Kanrin Maru on rough seas"
+   }
+  },
+  {
+   "id": "D09",
+   "narration": "乗っていた斎藤留蔵の日記には、初めての大しけで、皆がうろたえたとある。",
+   "image_en": "Japanese samurai sailors on a storm-swept deck, exhausted and panicked, some slumped against the mast, others vomiting over the rail, rain pouring.",
+   "image": "Exhausted, panicked Japanese sailors on a storm-swept deck",
+   "chars": [],
+   "label": "斎藤留蔵の日記",
+   "tts_text": "乗っていた、さいとうとめぞうの日記には、初めての大しけで、皆がうろたえたとある。"
+  },
+  {
+   "id": "D10",
+   "narration": "帆を縮めるのも上げ下ろしも、全部アメリカ人の助けを受けた、とも書く。",
+   "image_en": "American sailors in striped shirts high on the yards of a small sailing ship in a storm, reefing the sails with strong hands, Japanese sailors watching from below.",
+   "image": "American sailors reefing the sails high up in a storm",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D11",
+   "narration": "ブルックの日記は、もっとはっきり書いている。",
+   "image_en": "Lieutenant John Brooke, an American naval officer in his thirties: full dark beard, dark blue 1860 US Navy uniform coat; writing in a leather journal by lamplight in a tiny swaying cabin, frowning. The pages show only blurred lines, no readable letters. Place the main person slightly right of center.",
+   "image": "Lieutenant Brooke writing in his journal by lamplight",
+   "chars": [],
+   "label": "ブルックの日記"
+  },
+  {
+   "id": "D12",
+   "narration": "日本人たちは、すっかり我々に頼り切っている。",
+   "same_as": "D11",
+   "voice": "brooke",
+   "chars": []
+  },
+  {
+   "id": "D13",
+   "narration": "提督の木村は、誰にも当直を割り当てない、とも書いた。",
+   "image_en": "Kimura Settsu-no-kami, a dignified young Japanese samurai commodore about thirty: gentle oval face, chonmage topknot, formal black haori; sitting politely in his cabin while a bearded American officer gestures impatiently at him. Place the main person slightly right of center.",
+   "image": "Kimura sitting calmly while Brooke gestures impatiently",
+   "chars": [],
+   "label": "当直なし"
+  },
+  {
+   "id": "D14",
+   "narration": "ここで問題です。傷んだ咸臨丸は、アメリカで直してもらう。その修理代は、いくらだったでしょう。",
+   "image_en": "A battered small wooden warship with broken railings and torn sails limping across a calm sea at dawn.",
+   "image": "The battered warship limping across a calm sea at dawn",
+   "chars": [],
+   "label": "問題",
+   "tease": true
+  },
+  {
+   "id": "E01",
+   "narration": "嵐の次に困ったのは、水だった。",
+   "image_en": "Close-up of a nearly empty wooden water barrel on a ship's deck, a ladle scraping the bottom, harsh sunlight.",
+   "image": "A nearly empty water barrel on deck",
+   "chars": [],
+   "chapter": "2つの記録",
+   "label": "水",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E02",
+   "narration": "途中のハワイに寄らず、まっすぐ行くと決めたので、水を節約していた。",
+   "image_en": "A Japanese samurai officer rationing water from a barrel into small cups for a line of thirsty sailors on deck.",
+   "image": "An officer rationing water to a line of thirsty sailors",
+   "chars": [],
+   "label": "水の節約"
+  },
+  {
+   "id": "E03",
+   "narration": "ところが、アメリカの水夫たちが、水を勝手に使ってしまう。",
+   "image_en": "Two American sailors in striped shirts secretly scooping water from a barrel to wash their faces, Japanese sailors glaring at them from behind.",
+   "image": "American sailors secretly washing with the ship's water",
+   "chars": []
+  },
+  {
+   "id": "E04",
+   "narration": "福沢の自伝では、ブルックはこう言ったという。",
+   "image_en": "Lieutenant John Brooke, an American naval officer in his thirties: full dark beard, dark blue 1860 US Navy uniform coat and peaked cap; standing stern-faced in front of his own sailors on deck, pointing firmly at the water barrel. Place the main person slightly right of center.",
+   "image": "Brooke sternly pointing at the water barrel before his sailors",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "水を使う者は、すぐに撃ってかまわない。みんなの敵だ。",
+   "same_as": "E04",
+   "voice": "brooke",
+   "chars": []
+  },
+  {
+   "id": "E06",
+   "narration": "それからは水が守られ、96人が無事に着いた、と福沢は書く。",
+   "image_en": "Sailors of two nations, Japanese and American, sharing small cups of water calmly on deck at sunset, the sea now calm.",
+   "image": "Japanese and American sailors sharing water at sunset",
+   "chars": [],
+   "label": "96人"
+  },
+  {
+   "id": "E07",
+   "narration": "では、この船を動かしたのは、日本人か、アメリカ人か。",
+   "image_en": "A wooden ship's wheel with one Japanese hand and one American hand both reaching for it, dramatic storm light.",
+   "image": "A Japanese hand and an American hand reaching for the ship's wheel",
+   "chars": []
+  },
+  {
+   "id": "E08",
+   "narration": "福沢は、アメリカ人の手は一切借りなかったと書いた。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; sitting at a low desk writing with a brush, proud confident face, blank paper. Place the main person slightly right of center.",
+   "image": "Fukuzawa proudly writing with a brush",
+   "chars": [],
+   "label": "福沢の記録"
+  },
+  {
+   "id": "E09",
+   "narration": "測量も日本人が自分でした。アメリカ人も別に測り、あとで見比べただけ、と。",
+   "image_en": "A Japanese navigator in a kimono measuring the sun with a brass sextant on deck, while an American officer does the same a few steps away, both concentrating.",
+   "image": "A Japanese navigator and an American officer each using a sextant",
+   "chars": [],
+   "label": "測量"
+  },
+  {
+   "id": "E10",
+   "narration": "ブルックは、日本人は頼り切っていると書いた。同じ船の、同じ37日だ。",
+   "image_en": "Two open old journals lying side by side on a ship's wooden table, one Japanese bound with string and one American leather-bound, the pages showing only blurred lines with no readable writing, a lantern between them. No people.",
+   "image": "Two journals side by side on a table",
+   "chars": [],
+   "label": "食い違う2つの記録",
+   "strong": true
+  },
+  {
+   "id": "E11",
+   "narration": "ただブルックも、日本人は慣れるにつれて腕を上げた、と書いている。",
+   "image_en": "Japanese sailors confidently handling ropes and sails on a sunny day, an American bearded officer nodding approvingly in the background.",
+   "image": "Japanese sailors confidently handling the sails, Brooke nodding",
+   "chars": []
+  },
+  {
+   "id": "E12",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。よかったら、チャンネル登録で応援してください。",
+   "same_as": "A02",
+   "label": "チャンネル登録",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "1860年3月17日、咸臨丸はサンフランシスコに入った。",
+   "image_en": "A small black wooden three-masted steam warship with a plain white flag with a red circle sailing into 1860 San Francisco bay on a bright day, wooden piers crowded with people, many tall-masted ships at anchor.",
+   "image": "The Kanrin Maru sailing into a crowded San Francisco bay",
+   "chars": [],
+   "chapter": "サンフランシスコの祝砲",
+   "label": "3月17日",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "見物人は黒山のよう。町の重立った人たちが、船まで祝いに来た。",
+   "image_en": "A huge crowd of American townspeople in 1860 clothes and top hats packing the pier, waving hats, while well-dressed gentlemen climb aboard a small Japanese warship to greet samurai officers.",
+   "image": "Crowds on the pier and gentlemen boarding to greet the samurai",
+   "chars": [],
+   "label": "黒山の見物人"
+  },
+  {
+   "id": "F03",
+   "narration": "港に着くと、勝は部屋を出て、指揮をとった。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; standing on deck again, a little pale but stern, giving orders with a pointed fan. Place the main person slightly right of center.",
+   "image": "Katsu back on deck giving orders, still a little pale",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "サンフランシスコで撮ったとされる、このころの勝の写真だ。",
+   "image_en": "An old portrait photograph of a Japanese samurai of 1860.",
+   "chars": [],
+   "real": "Kaishu Katsu 1",
+   "real_src": {
+    "題": "File:Katsu Kaishu jinja.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Katsu_Kaishu_jinja.jpg/1920px-Katsu_Kaishu_jinja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Katsu_Kaishu_jinja.jpg",
+    "検索語": "Kaishu Katsu 1"
+   }
+  },
+  {
+   "id": "F05",
+   "narration": "陸から祝砲が鳴った。撃たれたら、撃ち返して応えるのが礼儀だ。",
+   "image_en": "Cannons firing a salute from a shore fort on a hill above the bay, white smoke puffing, the small Japanese warship below.",
+   "image": "A shore fort firing a salute above the bay",
+   "chars": [],
+   "label": "祝砲"
+  },
+  {
+   "id": "F07",
+   "narration": "なまじ撃ってしくじるより、撃たぬ方がよい。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; close-up, waving his hand dismissively with a sour, cautious face, the harbor and smoke of the shore salute behind him. Place the main person slightly right of center.",
+   "image": "Katsu waving his hand dismissively",
+   "chars": [],
+   "voice": "katsu",
+   "tts_text": "なまじ撃ってしくじるより、うたぬ方がよい。"
+  },
+  {
+   "id": "F08",
+   "narration": "言い返したのは、運用方の佐々倉桐太郎。",
+   "image_en": "Sasakura Kiritaro, a sturdy Japanese samurai sailor in his thirties: square jaw, confident grin, chonmage topknot, sleeves tied back, dark work kimono; slapping the barrel of a ship's cannon with his palm. Place the main person slightly right of center.",
+   "image": "Sasakura grinning and slapping the barrel of a cannon",
+   "chars": [],
+   "label": "佐々倉桐太郎",
+   "tts_text": "言い返したのは、うんようかたの、ささくらきりたろう。"
+  },
+  {
+   "id": "F09",
+   "narration": "いや、撃てないことはない。おれが撃ってみせる。",
+   "same_as": "F08",
+   "voice": "sasakura",
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "馬鹿を言え。できたら、おれの首をやる。",
+   "same_as": "F07",
+   "voice": "katsu",
+   "chars": []
+  },
+  {
+   "id": "F11",
+   "narration": "佐々倉は砂時計で間をはかり、見事に撃ち返した。",
+   "image_en": "Japanese samurai gunners firing a salute from the small wooden warship's cannons in a perfect row, white smoke bursting, one man holding up an hourglass to time the shots, the crowd on the pier cheering.",
+   "image": "Samurai gunners firing a perfect salute timed with an hourglass",
+   "chars": [],
+   "label": "応砲",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F12",
+   "narration": "勝さんの首はおれの物だ。だが航海中は用も多い。当分、預けておく。",
+   "image_en": "Sasakura Kiritaro, a sturdy Japanese samurai sailor in his thirties: square jaw, confident grin, chonmage topknot, sleeves tied back, dark work kimono; throwing an arm around the shoulders of his gunners beside the smoking cannon, laughing loudly with a cocky grin. Place the main person slightly right of center.",
+   "image": "Sasakura laughing with an arm around his gunners",
+   "chars": [],
+   "voice": "sasakura"
+  },
+  {
+   "id": "F13",
+   "narration": "船じゅうが笑った、と福沢は書く。日本の黒船の大砲は、礼を返すので精一杯だった。",
+   "image_en": "Japanese sailors roaring with laughter on deck, slapping each other's backs, while a lean captain in a dark navy haori turns away with a sour face.",
+   "image": "Sailors roaring with laughter, the captain turning away sourly",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "narration": "上陸した一行を待っていたのは、馬車と、町じゅうの歓迎だった。",
+   "image_en": "Japanese samurai officers in kimono and hakama with swords riding in an open horse-drawn carriage through a busy 1860 San Francisco street, Americans waving from wooden sidewalks and balconies.",
+   "image": "Samurai riding in a horse carriage through cheering San Francisco",
+   "chars": [],
+   "chapter": "開国の手紙",
+   "label": "歓迎",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "福沢は、そのわけをこう見た。日本を開いたのは、アメリカ人だ。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; looking out of a carriage window at the cheering American crowd, thoughtful. Place the main person slightly right of center.",
+   "image": "Fukuzawa looking thoughtfully at the cheering crowd",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "その日本人が、ペリーから8年目に、自分で船を出してやって来た。",
+   "image_en": "A cheering crowd of Americans in 1860 clothes clapping as Japanese samurai officers step down a gangway onto the pier, children on their fathers' shoulders.",
+   "image": "Americans clapping as samurai step onto the pier",
+   "chars": [],
+   "label": "8年目"
+  },
+  {
+   "id": "G04",
+   "narration": "教え子が育って会いに来たような気持ちだったのだろう、と。",
+   "image_en": "An old American sea captain with white whiskers shaking hands warmly with a young samurai officer, smiling like a proud teacher, harbor behind them.",
+   "image": "An old American captain warmly shaking hands with a samurai",
+   "chars": [],
+   "label": "教え子"
+  },
+  {
+   "id": "G05",
+   "narration": "この世界線では、木村がここで、開国の手紙を差し出した。",
+   "image_en": "Kimura Settsu-no-kami, a dignified young Japanese samurai commodore about thirty: gentle oval face, chonmage topknot, formal black haori and grey hakama; bowing and solemnly holding out the black lacquered letter box to a group of American gentlemen in frock coats and top hats in a hotel hall. Place the main person slightly right of center.",
+   "image": "Kimura solemnly presenting the letter box to American gentlemen",
+   "chars": []
+  },
+  {
+   "id": "G06",
+   "narration": "手紙を読んだ町の人たちは、顔を見合わせて、笑い出した。",
+   "image_en": "American gentlemen in frock coats laughing kindly while holding an unfolded blank letter, samurai officers looking confused. The paper shows no writing.",
+   "image": "American gentlemen laughing kindly over the unfolded letter",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G07",
+   "narration": "この港は、とっくに世界中に開いていますよ。",
+   "image_en": "Lieutenant John Brooke, an American naval officer in his thirties: full dark beard, dark blue 1860 US Navy uniform coat and peaked cap; gently explaining with an open hand toward the busy harbor full of ships from many countries, amused smile. Place the main person slightly right of center.",
+   "image": "Brooke smiling and gesturing toward the busy harbor",
+   "chars": [],
+   "voice": "brooke"
+  },
+  {
+   "id": "G08",
+   "narration": "開けさせるはずの国は、もう開いていた。",
+   "same_as": "G06",
+   "label": "もう開いていた",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "実際、一行が見たのは、日本とあべこべのことばかりだった。",
+   "image_en": "Samurai officers standing in the doorway of a grand 1860 hotel lobby, staring in astonishment at chandeliers and a thick patterned carpet covering the whole floor.",
+   "image": "Samurai astonished at a grand hotel lobby with a huge carpet",
+   "chars": [],
+   "label": "あべこべ"
+  },
+  {
+   "id": "G10",
+   "narration": "高そうなじゅうたんを、広間いっぱいに敷き、その上を靴のまま歩く。",
+   "image_en": "Close-up of American men's leather boots walking across a rich patterned carpet, while a samurai in white tabi socks stands frozen at the edge holding his sandals.",
+   "image": "Boots walking on a rich carpet, a samurai frozen at the edge",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "招かれた家では、奥さんが走り回り、ご主人が客の相手。日本とまるで逆だ、と福沢は書く。",
+   "image_en": "Inside an 1860 American home dining room: the wife hurrying around serving dishes while her husband sits chatting with samurai guests, the samurai looking puzzled.",
+   "image": "A wife hurrying with dishes while her husband chats with samurai guests",
+   "chars": [],
+   "label": "日本と逆"
+  },
+  {
+   "id": "G13",
+   "narration": "福沢は、ワシントンの子孫は今どうしているか、と聞いてみた。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; eagerly asking a question to an American gentleman at a dinner table. Place the main person slightly right of center.",
+   "image": "Fukuzawa eagerly asking an American gentleman a question",
+   "chars": [],
+   "label": "ワシントンの子孫"
+  },
+  {
+   "id": "G14",
+   "narration": "答えは、女の子孫がいるはずだが、今どうしているかは知らない。",
+   "image_en": "An American gentleman at a dinner table shrugging casually with a fork in hand, uninterested.",
+   "image": "An American gentleman shrugging casually",
+   "chars": []
+  },
+  {
+   "id": "G15",
+   "narration": "頼朝や家康の子孫を思う福沢には、不思議な冷たさだった。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; sitting at a western dinner table with his mouth open in astonishment, his hands frozen in the air. Place the main person slightly right of center.",
+   "image": "Fukuzawa frozen in astonishment at the dinner table",
+   "chars": []
+  },
+  {
+   "id": "G16",
+   "narration": "福沢は町の写真屋で、店の娘と並んで写真まで撮っている。",
+   "image_en": "An old photograph of a young samurai standing beside an American girl in a photo studio, 1860.",
+   "image": "Fukuzawa with the girl of the photo studio",
+   "chars": [],
+   "real": "Fukuzawa Yukichi with the girl of the photo studio",
+   "label": "写真屋の娘"
+  },
+  {
+   "id": "H01",
+   "narration": "傷んだ咸臨丸は、近くのメア・アイランドに回された。",
+   "image_en": "The battered small black wooden warship being towed into a big naval shipyard with dry docks, cranes and brick workshops beside a river, 1860.",
+   "image": "The battered warship towed into a big naval shipyard",
+   "chars": [],
+   "chapter": "タダで直された黒船",
+   "label": "メア・アイランド",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H02",
+   "narration": "当時、太平洋の側でただ1つの、アメリカ海軍の造船所だ。",
+   "image_en": "An old photograph of a 19th century American naval shipyard with dry docks and ships.",
+   "chars": [],
+   "real": "Mare Island Navy Yard 19th century",
+   "real_src": {
+    "題": "File:USS St. Mary's (1844) in drydock at Mare Island.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/USS_St._Mary%27s_%281844%29_in_drydock_at_Mare_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:USS_St._Mary%27s_(1844)_in_drydock_at_Mare_Island.jpg",
+    "検索語": "Mare Island Navy Yard 19th century"
+   }
+  },
+  {
+   "id": "H03",
+   "narration": "船はドックに入れられ、傷んだ所を直してもらった。",
+   "image_en": "American shipwrights on scaffolding repairing the hull of a small black wooden warship in a dry dock, sawing and hammering, Japanese sailors watching in amazement.",
+   "image": "American shipwrights repairing the warship in a dry dock",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "一行は海軍の官舎に泊めてもらった。",
+   "image_en": "Samurai sailors unpacking their bundles in a tidy wooden naval barracks room with bunk beds and big windows.",
+   "image": "Samurai sailors settling into a naval barracks room",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "日本人は魚が好きだと知ると、毎日魚を持って来て、毎日風呂も立ててくれた。",
+   "image_en": "A friendly American cook carrying a big basket of fresh fish to grinning samurai sailors, a steaming wooden bathtub in the background.",
+   "image": "An American cook bringing fish to grinning samurai sailors",
+   "chars": [],
+   "label": "毎日の魚と風呂"
+  },
+  {
+   "id": "H06",
+   "narration": "帰る日が来た。木村は、修理の代金を払いたいと申し出た。",
+   "image_en": "Kimura Settsu-no-kami, a dignified young Japanese samurai commodore about thirty: gentle oval face, chonmage topknot, formal black haori; bowing deeply and holding out a heavy purple cloth bundle of coins with both hands to an American naval commander in a shipyard office. Place the main person slightly right of center.",
+   "image": "Kimura bowing and offering a heavy bundle of coins",
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "答えは、0。アメリカ側は笑って、受け取らなかった。",
+   "image_en": "A white-whiskered American naval commander laughing heartily and gently pushing back the purple cloth bundle of coins, while a dignified young samurai commodore in a black haori stares wide-eyed in shock. Place the main person slightly right of center.",
+   "image": "The American commander laughing and pushing back the coins",
+   "chars": [],
+   "label": "修理代は0",
+   "strong": true,
+   "anim": "kling",
+   "peak": true,
+   "payoff": true,
+   "highlight": [
+    "0"
+   ],
+   "motion": true
+  },
+  {
+   "id": "H08",
+   "narration": "代金など何のことだ、という調子で、まるで話にならなかった、と福沢は書く。",
+   "image_en": "An American naval commander with white whiskers waving both hands with a big laugh in a shipyard office, refusing, a samurai official bowing again and again in confusion. Place the main person slightly right of center.",
+   "image": "The commander laughing and waving off the payment",
+   "chars": []
+  },
+  {
+   "id": "H09",
+   "narration": "開国を迫りに来た黒船が、タダで直されて帰る。",
+   "image_en": "The small black wooden warship freshly repaired and gleaming in the dry dock at sunset, new ropes and sails, samurai sailors staring at it in disbelief.",
+   "image": "The freshly repaired warship gleaming at sunset",
+   "chars": [],
+   "label": "タダで修理",
+   "tts_text": "開国をせまりに来た黒船が、タダで直されて帰る。"
+  },
+  {
+   "id": "H10",
+   "narration": "この世界線では、木村に、アメリカからの返事の手紙も渡された。",
+   "image_en": "An American naval commander handing a folded letter sealed with red wax to a dignified samurai commodore in a black haori, both smiling. The letter shows no writing.",
+   "image": "An American commander handing a wax-sealed reply letter to Kimura",
+   "chars": []
+  },
+  {
+   "id": "H11",
+   "narration": "港も造船所も、見たければいつでも来るといい。そう書いてあった。",
+   "image_en": "Kimura Settsu-no-kami, a dignified young Japanese samurai commodore about thirty: gentle oval face, chonmage topknot, formal black haori; reading an unfolded blank letter on the deck of a ship with wide surprised eyes. The paper shows no writing. Place the main person slightly right of center.",
+   "image": "Kimura reading the reply letter with surprised eyes",
+   "chars": [],
+   "label": "返事の手紙"
+  },
+  {
+   "id": "H12",
+   "narration": "福沢と万次郎は、ウェブスターの辞書を1冊ずつ買った。日本にこの辞書が入った初めだ、と福沢は書く。",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; holding a thick heavy dictionary with a plain leather cover in a bookshop, delighted, a sun-tanned Japanese man beside him holding another. Place the main person slightly right of center.",
+   "image": "Fukuzawa delighted, holding a thick dictionary in a bookshop",
+   "chars": [],
+   "label": "ウェブスターの辞書"
+  },
+  {
+   "id": "I01",
+   "narration": "帰りはハワイに寄って、日本へ向かった。",
+   "image_en": "The small black wooden warship sailing past a green tropical island with palm trees under a bright calm sky.",
+   "image": "The warship sailing past a tropical island",
+   "chars": [],
+   "chapter": "帰ってきた黒船",
+   "label": "ハワイ",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I02",
+   "narration": "万延元年5月5日、咸臨丸は浦賀に帰った。出てから半年、日本の便りは何もなかった。",
+   "image_en": "The small black wooden warship returning into a green Japanese bay in early summer, fishermen in small boats looking up.",
+   "image": "The warship returning to a green Japanese bay in early summer",
+   "chars": [],
+   "label": "万延元年5月5日",
+   "tts_text": "まんえんがんねん5月5日、咸臨丸は浦賀に帰った。出てから半年、日本の便りは何もなかった。"
+  },
+  {
+   "id": "I04",
+   "narration": "迎えの知り合いに、福沢は聞いた。何か変わったことはないか。相手の顔色が変わった。",
+   "label": "何か変わったことは",
+   "image_en": "young Fukuzawa Yukichi, a Japanese samurai in his twenties: broad forehead, calm curious eyes, chonmage topknot, plain dark brown kimono; stepping onto a wooden pier and greeting a samurai acquaintance whose face suddenly turns grave. Place the main person slightly right of center.",
+   "image": "Fukuzawa greeting an acquaintance whose face turns grave",
+   "chars": []
+  },
+  {
+   "id": "I06",
+   "narration": "待て、言うな。当ててみせよう。",
+   "image_en": "Close-up of young Fukuzawa Yukichi raising one hand to stop the other man from speaking, eyes narrowed in thought. Place the main person slightly right of center.",
+   "image": "Fukuzawa raising a hand, eyes narrowed in thought",
+   "chars": [],
+   "voice": "fukuzawa"
+  },
+  {
+   "id": "I07",
+   "narration": "水戸の浪人が、掃部様の屋敷に暴れ込んだのではないか。",
+   "same_as": "I06",
+   "voice": "fukuzawa",
+   "tts_text": "水戸の浪人が、かもんさまの屋敷に暴れ込んだのではないか。",
+   "chars": []
+  },
+  {
+   "id": "I08",
+   "narration": "当たっていた。大老の井伊直弼が、江戸城の桜田門の外で殺されていた。",
+   "image_en": "A snowy morning outside a great stone castle gate in Edo, an overturned palanquin and scattered umbrellas in the snow, samurai retainers in shock, no blood shown. Faded old-memory colors.",
+   "image": "Snowy castle gate with an overturned palanquin",
+   "chars": [],
+   "label": "桜田門外の変",
+   "strong": true,
+   "tts_text": "当たっていた。大老の、いいなおすけが、江戸城の桜田門の外で殺されていた。"
+  },
+  {
+   "id": "I09",
+   "narration": "安政7年3月3日。咸臨丸が、アメリカにいる間のことだった。",
+   "tts_text": "あんせい7年3月3日。咸臨丸が、アメリカにいる間のことだった。",
+   "image_en": "An old Japanese woodblock print of samurai fighting in the snow outside a castle gate.",
+   "chars": [],
+   "real": "Sakuradamon incident ukiyo-e",
+   "real_src": {
+    "題": "File:Sakuradamon incident 1860.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Sakuradamon_incident_1860.jpg/1920px-Sakuradamon_incident_1860.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Sakuradamon_incident_1860.jpg",
+    "検索語": "Sakuradamon incident ukiyo-e"
+   }
+  },
+  {
+   "id": "I10",
+   "narration": "井伊は、天皇の許しを待たずに、日米修好通商条約に調印した大老だ。",
+   "image_en": "A stern Japanese great elder in formal black kamishimo pressing his seal onto a blank document in a castle room, officials bowing around him. Faded old-memory colors.",
+   "image": "A stern elder pressing his seal onto a document",
+   "chars": [],
+   "label": "井伊直弼",
+   "tts_text": "いいは、天皇の許しを待たずに、日米修好通商条約に調印した大老だ。"
+  },
+  {
+   "id": "I11",
+   "narration": "この世界線の返事の手紙は、国を開いた大老のいない江戸に届いた。",
+   "image_en": "The wax-sealed reply letter resting unopened on a lacquered tray in an empty castle room, pale light through paper screens. No writing. No people.",
+   "image": "The unopened reply letter on a tray in an empty castle room",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "narration": "ペリーの黒船は、日本に国を開かせた。",
+   "image_en": "Four black American steam warships with tall funnels anchored off a Japanese coast at sunset, seen from far away, quiet and heavy. Faded old-memory colors.",
+   "image": "Perry's black ships at sunset, faded",
+   "chars": [],
+   "anim": "kling",
+   "chapter": "おわりに",
+   "motion": true
+  },
+  {
+   "id": "J02",
+   "narration": "逆向きの黒船が持ち帰ったのは、タダで直された船と、2冊の辞書。",
+   "image_en": "Two thick dictionaries with plain leather covers resting on the deck of a freshly repaired wooden warship at sunset, the sea calm. No writing visible.",
+   "image": "Two dictionaries on the deck of the repaired ship at sunset",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J03",
+   "narration": "そして、日本とあべこべの国を見てきた人たちだった。",
+   "image_en": "Samurai sailors and a young samurai in a brown kimono standing at the rail looking back toward the horizon at sunset, thoughtful faces.",
+   "image": "Samurai at the rail looking back toward the horizon at sunset",
+   "chars": []
+  },
+  {
+   "id": "J04",
+   "narration": "船酔いの艦長、勝はこのあと海軍づくりに力を注ぎ、神戸に海軍の訓練所を開く。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, intense eyes, chonmage topknot, dark navy haori over grey hakama; standing confidently in front of young trainees by a harbor, healthy and energetic. Place the main person slightly right of center.",
+   "image": "Katsu standing confidently before young naval trainees",
+   "chars": [],
+   "label": "神戸の訓練所"
+  },
+  {
+   "id": "J05",
+   "narration": "サンフランシスコには今も、咸臨丸の入港を記念する碑がある。",
+   "image_en": "A stone memorial monument in a park overlooking the sea.",
+   "chars": [],
+   "real": "Memorial to the Kanrin Maru",
+   "real_src": {
+    "題": "File:Memorial to the Kanrin Maru.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Memorial_to_the_Kanrin_Maru.jpg/1920px-Memorial_to_the_Kanrin_Maru.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Memorial_to_the_Kanrin_Maru.jpg",
+    "検索語": "Memorial to the Kanrin Maru"
+   }
+  },
+  {
+   "id": "J06",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "Katsu Kaishu, a lean Japanese samurai naval captain in his late thirties: thin sharp face, chonmage topknot, dark navy haori; standing on the deck of the small black warship at sunset beside a young samurai in a brown kimono, both looking out at the calm sea, a faint wry smile. Place the main person slightly right of center.",
+   "image": "Katsu and Fukuzawa on deck looking at the calm sunset sea",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J07",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "A02",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

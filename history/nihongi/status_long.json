@@ -2,11 +2,17 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L105_long_s102",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice"
  ],
  "started": "2026-11-02T20:48:04+09:00",
  "tries": 0,
- "code": "6da8e04a7ee7",
- "stage": "gate_script",
- "gate_fails": 1
+ "code": "fd3642cfe6b3",
+ "stage": "images",
+ "gate_fails": 1,
+ "updated": "2026-11-05T01:34:00+09:00",
+ "busy": {
+  "images": 1
+ }
 }

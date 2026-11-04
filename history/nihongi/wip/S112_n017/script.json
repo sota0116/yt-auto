@@ -1,0 +1,280 @@
+{
+ "format": "short",
+ "title": "もしもあなたが、江戸の長屋で1日暮らしたら。部屋は6畳で風呂なし #もしも #日本史 #江戸時代",
+ "promise": "江戸の町人が住んだ九尺二間の長屋は土間込みで6畳ほど、井戸と便所は長屋のみんなで使い、風呂は家に無く湯屋に通った。天保の改革で湯銭は大人8文に決められ、1杯16文といわれる屋台のそばの半分だった、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※今の人（あなた）が江戸の長屋で1日暮らす話と、隣の鳶の親方のセリフは作り話です。九尺二間の長屋の広さ、井戸・便所・ごみためを住人みんなで使ったこと、江戸の庶民は家に湯殿が無く湯屋（銭湯）に通ったこと、天保の改革で湯銭が大人8文に決められたこと、そばが1杯16文といわれることは史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "長屋",
+  "九尺二間",
+  "銭湯",
+  "湯屋",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "風呂代はそばの半分"
+ ],
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：今の人（あなた）が1人、天保のころの江戸の裏長屋で1日暮らす。長屋の広さ・井戸と便所の共用・家に風呂が無いこと・湯屋の数・湯銭8文・そば16文は史実のまま",
+  "あなたは今の暮らし（家に風呂とトイレがある）を知っている。江戸の湯屋の場所と湯銭は、隣の親方に聞くまで知らない",
+  "鳶の親方（隣に住む江戸の人）は、湯屋の場所と湯銭（8文）を町の常識として知っている。今の暮らし・メートル・天保の改革という呼び名・湯屋の軒数は知らない。親方のセリフ（n09）は湯屋の場所と湯銭だけを言う",
+  "「2.7m」「3.6m」「6畳」「4畳」「600軒」「天保の改革」「16文といわれる」「その半分」「そば半分」「そば1杯より安かった」は、語り手が言う文。あなたは声を出さない（セリフは親方の1カットだけ）"
+ ],
+ "world_terms": [
+  "あなた",
+  "8文",
+  "16文",
+  "湯屋",
+  "風呂",
+  "6畳"
+ ],
+ "voices": {
+  "oyakata": 53
+ },
+ "facts": [
+  "九尺二間は、間口九尺（約2.7メートル）奥行二間（約3.6メートル）の家で、江戸時代、最も狭い住居の大きさ。転じて裏長屋をいう。出どころ：精選版 日本国語大辞典・デジタル大辞泉「九尺二間」（kotobank.jp/word/九尺二間、2026-11-05 に本文を読んで確認）。1.5間×2間＝3坪＝6畳ほど（計算）",
+  "裏店（裏長屋）は、長屋1戸が間口9尺・奥行2間（俗に9尺2間の棟割長屋）が標準で、一画には住人共用の井戸・便所・ごみためが必ずまとまって置かれていた。住人は大工・左官・桶職などの職人、棒手振の小商人、鳶や其日稼の者など。出どころ：改訂新版 世界大百科事典「裏店」・世界大百科事典（旧版）「長屋」（kotobank.jp/word/裏店、2026-11-05 に本文を読んで確認）",
+  "最小の九尺二間の棟割長屋は面積約9.72m2で、入口の土間に水がめ・流し・かまど、奥に4畳余りの居間兼寝室。路地の奥に共同の井戸・便所・ごみ溜め。出どころ：磯田道史 監修『新版 江戸の家計簿』（宝島社）の抜粋 president.jp/articles/-/85985（2026-11-05 に本文を読んで確認）",
+  "江戸時代には、上士屋敷とか大家以外は自家内に湯殿の設備がないので、一般庶民はすべて銭湯を利用した。出どころ：日本大百科全書（ニッポニカ）「銭湯」（kotobank.jp/word/銭湯、2026-11-05 に本文を読んで確認）",
+  "江戸の湯屋は天保以降、幕末まで約600軒。湯銭は大人10文くらいだったが、天保の改革（天保12年＝1841年の府命）で大人8文・子供6文・小児4文に定められた（喜田川守貞『守貞謾稿』をもとにした解説）。出どころ：nippon.com「お江戸銭湯よもやま話：『守貞漫稿』（その10）」 www.nippon.com/ja/japan-topics/g01098/（2026-11-05 に本文を読んで確認）",
+  "史料の本文：『諸事留』[8] 天保度御改正 諸事留 二（国立国会図書館デジタルコレクション 2547389・請求記号 803-11）に「天保十三寅年二月廿九日 町々湯屋共御趣意に付湯銭八文…」とある（国立国会図書館 次世代デジタルライブラリーの全文検索 lab.ndl.go.jp で OCR の本文を確認）。2026-11-05 にページの画像（IIIF）も見た：表紙で書名・巻・請求記号を確かめ、コマ40・44・47・50・53 の朱書きの日付が天保十三寅年二月十八日→廿五日→廿七日と進み、コマ53 の湯屋の記事の1行目に「八文」の字を見た。くずし字のため、湯銭の一文を一字ずつ読み切ることはできなかった。台本は『天保の改革で大人8文に決められた』とだけ言い、年は言わない",
+  "二八そばは、江戸末期、1杯16文であるところから『二八、一六』とも考えられた。出どころ：精選版 日本国語大辞典・デジタル大辞泉・世界の料理がわかる辞典「二八蕎麦」（kotobank.jp/word/二八蕎麦、2026-11-05 に本文を読んで確認）。台本は『といわれる』",
+  "今の人（あなた）が江戸の長屋で1日暮らすこと、隣の鳶の親方のセリフは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "あなたが\n長屋へ",
+   "narration": "あなたの江戸の部屋には、風呂もトイレも無い。",
+   "highlight": [
+    "風呂もトイレも"
+   ],
+   "image_en": "First-person view from the eyes of a modern visitor: the viewer's own two hands, in plain grey modern sleeves, slide open a worn paper sliding door of an Edo-period back-alley row house, revealing one tiny dim room with a small dirt-floor entry, a clay water jar, a small stove and a few worn tatami mats, no bath anywhere. The viewer's face is never shown.",
+   "shots": [
+    "n01",
+    "n01@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "First-person view from the eyes of a modern visitor: the viewer's own two hands, in plain grey modern sleeves, slide open a worn paper sliding door of an Edo-period back-alley row house, revealing one tiny dim room with a small dirt-floor entry, a clay water jar, a small stove and a few worn tatami mats, no bath anywhere. The viewer's face is never shown.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "その代わり、町の風呂は、そば1杯より安かった。",
+   "tts_text": "その代わり、町の風呂は、そばいっぱいより安かった。",
+   "highlight": [
+    "そば1杯より安かった"
+   ],
+   "image_en": "First-person view on an Edo-period street at dusk: the viewer's own open palm in a plain grey modern sleeve holds a few small round copper coins with square holes, and just ahead at the street corner the low wooden entrance of a big public bathhouse glows warmly with white steam rising from its roof. No writing on any curtain or lantern.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "First-person view on an Edo-period street at dusk: the viewer's own open palm in a plain grey modern sleeve holds a few small round copper coins with square holes, and just ahead at the street corner the low wooden entrance of a big public bathhouse glows warmly with white steam rising from its roof. No writing on any curtain or lantern."
+  },
+  {
+   "id": "n03",
+   "narration": "部屋は九尺二間。間口2.7m、奥行き3.6m。",
+   "tts_text": "部屋は、くしゃくにけん。まぐちにてんななメートル、おくゆきさんてんろくメートル。",
+   "highlight": [
+    "九尺二間"
+   ],
+   "image_en": "First-person view from the doorway into a very small Edo-period row-house room: the viewer's own arms in plain grey modern sleeves stretched out to both sides almost touch the two side walls; worn tatami, one small paper window, warm morning light.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [],
+   "image": "First-person view from the doorway into a very small Edo-period row-house room: the viewer's own arms in plain grey modern sleeves stretched out to both sides almost touch the two side walls; worn tatami, one small paper window, warm morning light."
+  },
+  {
+   "id": "n04",
+   "narration": "土間を入れて6畳ほど。寝る所は4畳ほど。",
+   "tts_text": "土間を入れて、ろくじょうほど。寝る所は、よじょうほど。",
+   "highlight": [
+    "6畳ほど"
+   ],
+   "image_en": "Looking down from above into a tiny Edo-period row-house room: a dirt-floor kitchen corner with a clay stove, a wooden sink and a water jar by the door, and behind it a small area of four worn tatami mats with a folded futon and a small wooden chest. No people.",
+   "shots": [
+    "n04",
+    "n04@left"
+   ],
+   "chars": [],
+   "image": "Looking down from above into a tiny Edo-period row-house room: a dirt-floor kitchen corner with a clay stove, a wooden sink and a water jar by the door, and behind it a small area of four worn tatami mats with a folded futon and a small wooden chest. No people."
+  },
+  {
+   "id": "n05",
+   "narration": "朝、路地の奥に、長屋みんなの井戸。",
+   "highlight": [
+    "みんなの井戸"
+   ],
+   "image_en": "First-person view: the viewer's own hands in plain grey modern sleeves pull a rope with a wooden bucket from a shared wooden well at the back of an Edo-period alley at morning, while several row-house women in plain kimono with sleeves tied up wash vegetables and rice around the well and glance at the viewer curiously.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "First-person view: the viewer's own hands in plain grey modern sleeves pull a rope with a wooden bucket from a shared wooden well at the back of an Edo-period alley at morning, while several row-house women in plain kimono with sleeves tied up wash vegetables and rice around the well and glance at the viewer curiously."
+  },
+  {
+   "id": "n06",
+   "narration": "便所も、ごみための場所も、みんなと一緒。",
+   "image_en": "The far end of a narrow Edo-period back alley in morning light: a small plain wooden shared outhouse with a half-height wooden door, a wooden refuse bin box beside it and the shared well, a row-house man in a plain kimono waiting his turn with arms folded. No writing anywhere.",
+   "shots": [
+    "n06",
+    "n06@right"
+   ],
+   "chars": [],
+   "image": "The far end of a narrow Edo-period back alley in morning light: a small plain wooden shared outhouse with a half-height wooden door, a wooden refuse bin box beside it and the shared well, a row-house man in a plain kimono waiting his turn with arms folded. No writing anywhere."
+  },
+  {
+   "id": "n07",
+   "narration": "隣は鳶の親方。向かいは大工。",
+   "tts_text": "隣は、とびの親方。向かいは大工。",
+   "image_en": "First-person view in a narrow Edo-period back alley at morning: the Edo foreman steps out of the next row-house door tying his white headband and nods at the viewer, while across the alley an Edo-period carpenter in a plain brown work kimono shoulders a wooden toolbox and a saw.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [
+    "oyakata"
+   ],
+   "image": "First-person view in a narrow Edo-period back alley at morning: the Edo foreman steps out of the next row-house door tying his white headband and nods at the viewer, while across the alley an Edo-period carpenter in a plain brown work kimono shoulders a wooden toolbox and a saw."
+  },
+  {
+   "id": "n08",
+   "narration": "夜、汗をかいたあなたは、部屋で風呂を探す。",
+   "image_en": "First-person view at night inside a tiny Edo-period row-house room lit by one paper lantern with no writing: the viewer's own hands in plain grey modern sleeves hold up a damp hand towel, looking around the bare room with only a stove, a water jar and tatami, no bath.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "image": "First-person view at night inside a tiny Edo-period row-house room lit by one paper lantern with no writing: the viewer's own hands in plain grey modern sleeves hold up a damp hand towel, looking around the bare room with only a stove, a water jar and tatami, no bath."
+  },
+  {
+   "id": "n09",
+   "narration": "湯屋なら、角を曲がってすぐだ。8文持ってきな。",
+   "tts_text": "湯屋なら、角を曲がってすぐだ。はちもん持ってきな。",
+   "voice": "oyakata",
+   "image_en": "At night in a narrow Edo-period back alley lit by a paper lantern with no writing, the Edo foreman leans in the doorway of the next row house, grinning and pointing down the alley with his thumb, a hand towel over his shoulder, looking straight at the viewer.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [
+    "oyakata"
+   ],
+   "image": "At night in a narrow Edo-period back alley lit by a paper lantern with no writing, the Edo foreman leans in the doorway of the next row house, grinning and pointing down the alley with his thumb, a hand towel over his shoulder, looking straight at the viewer."
+  },
+  {
+   "id": "n10",
+   "narration": "町人の家に湯殿は無い。みんな湯屋へ通った。",
+   "tts_text": "町人の家に、ゆどのは無い。みんな、ゆやへ通った。",
+   "highlight": [
+    "湯屋"
+   ],
+   "image_en": "A crowded Edo-period public bathhouse interior drawn as an old woodblock-print scene: townsmen with hand towels washing at wooden buckets on a wet wooden floor, steam rising, a low wooden entrance to the hot bath at the back. Shoulders up only, modest.",
+   "real": "Edo period public bath ukiyo-e",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Woman Relaxing after Her Bath, Utamaro, MET JP144.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Woman_Relaxing_after_Her_Bath%2C_Utamaro%2C_MET_JP144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Woman_Relaxing_after_Her_Bath,_Utamaro,_MET_JP144.jpg",
+    "検索語": "Edo period public bath ukiyo-e"
+   }
+  },
+  {
+   "id": "n11",
+   "narration": "天保のころから幕末まで、江戸の湯屋は約600軒。",
+   "tts_text": "てんぽうのころから幕末まで、江戸のゆやは、やくろっぴゃっけん。",
+   "highlight": [
+    "約600軒"
+   ],
+   "image_en": "A wide evening view over the tiled and shingled roofs of an Edo-period town at dusk, with thin columns of steam and smoke rising from bathhouse chimneys at many street corners, warm lantern light in the streets below.",
+   "shots": [
+    "n11",
+    "n11@right"
+   ],
+   "chars": [],
+   "image": "A wide evening view over the tiled and shingled roofs of an Edo-period town at dusk, with thin columns of steam and smoke rising from bathhouse chimneys at many street corners, warm lantern light in the streets below."
+  },
+  {
+   "id": "n12",
+   "narration": "湯銭は、天保の改革で大人8文に決められた。",
+   "tts_text": "ゆせんは、てんぽうの改革で、大人はちもんに決められた。",
+   "highlight": [
+    "大人8文"
+   ],
+   "image_en": "First-person view at the raised wooden counter of an Edo-period bathhouse entrance at night: the viewer's own hand in a plain grey modern sleeve places a few small round copper coins with square holes into the open palm of the old bathhouse keeper sitting at the counter, steam behind a plain cloth curtain.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "image": "First-person view at the raised wooden counter of an Edo-period bathhouse entrance at night: the viewer's own hand in a plain grey modern sleeve places a few small round copper coins with square holes into the open palm of the old bathhouse keeper sitting at the counter, steam behind a plain cloth curtain."
+  },
+  {
+   "id": "n13",
+   "narration": "屋台のそばは1杯16文といわれる。風呂はその半分。",
+   "tts_text": "屋台のそばは、いっぱいじゅうろくもんといわれる。風呂は、その半分。",
+   "highlight": [
+    "その半分"
+   ],
+   "image_en": "First-person view at a night soba stall on an Edo street: the viewer's own hands in plain grey modern sleeves hold a steaming bowl of soba with chopsticks in the foreground, and down the street behind it the warm glowing entrance of a bathhouse with steam rising, the stall vendor in a plain headband smiling. No writing on the lantern or curtains.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "First-person view at a night soba stall on an Edo street: the viewer's own hands in plain grey modern sleeves hold a steaming bowl of soba with chopsticks in the foreground, and down the street behind it the warm glowing entrance of a bathhouse with steam rising, the stall vendor in a plain headband smiling. No writing on the lantern or curtains.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "部屋は狭い。でも町に、そば半分の大きな風呂があった。",
+   "image_en": "First-person view from inside a large steamy Edo-period bathhouse bath at night: the viewer's own hands rest on the wooden edge of a big hot tub, the Edo foreman soaking up to his shoulders beside the viewer, smiling with eyes closed, other townsmen in the steam. Shoulders up only.",
+   "shots": [
+    "n14",
+    "n14@face"
+   ],
+   "chars": [
+    "oyakata"
+   ],
+   "image": "First-person view from inside a large steamy Edo-period bathhouse bath at night: the viewer's own hands rest on the wooden edge of a big hot tub, the Edo foreman soaking up to his shoulders beside the viewer, smiling with eyes closed, other townsmen in the steam. Shoulders up only."
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "First-person view walking back into a narrow Edo-period back alley at night with a damp hand towel over the viewer's own arm in a plain grey modern sleeve, paper lanterns with no writing glowing softly at the row-house doors, steam fading into the dark sky.",
+   "shots": [
+    "n15"
+   ],
+   "chars": [],
+   "image": "First-person view walking back into a narrow Edo-period back alley at night with a damp hand towel over the viewer's own arm in a plain grey modern sleeve, paper lanterns with no writing glowing softly at the row-house doors, steam fading into the dark sky."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
