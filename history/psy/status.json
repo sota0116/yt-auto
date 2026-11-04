@@ -1,12 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/012_yoru_kangae",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/013_jiman_hito",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading"
  ],
- "started": "2026-11-02T17:39:53+09:00",
- "tries": 2,
- "code": "6da8e04a7ee7",
- "stage": "gate_script",
- "gate_fails": 2
+ "started": "2026-11-04T17:09:33+09:00",
+ "tries": 0,
+ "code": "e82568790817",
+ "stage": "images",
+ "updated": "2026-11-04T17:33:16+09:00",
+ "busy": {
+  "images": 1
+ }
 }
