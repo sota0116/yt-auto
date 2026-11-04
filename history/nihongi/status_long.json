@@ -5,7 +5,7 @@
   "write"
  ],
  "started": "2026-11-02T20:48:04+09:00",
- "tries": 1,
+ "tries": 0,
  "code": "6da8e04a7ee7",
  "stage": "gate_script",
  "gate_fails": 1
