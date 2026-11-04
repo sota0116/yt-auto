@@ -18,7 +18,7 @@
   "seconds": 38,
   "title_now": "【60代】財布の底に、使えない10円玉がある人へ",
   "synthetic_on": null,
-  "views_now": 1171,
+  "views_now": 1176,
   "published": true,
   "published_at": "2026-11-01T19:00:00+09:00",
   "comment_id": "Ugy0EVapQkJuL77B9aR4AaABAg",
@@ -68,7 +68,7 @@
   "seconds": 38,
   "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
   "synthetic_on": null,
-  "views_now": 803,
+  "views_now": 1222,
   "published": true,
   "published_at": "2026-11-03T19:00:29+09:00",
   "comment_id": "UgzD4kv4_V8vv8eWSSN4AaABAg",
@@ -93,7 +93,7 @@
   "seconds": 41,
   "title_now": "【60代】財布に入れておくとお金が逃げる物3選",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-11-04T19:00:22+09:00",
   "comment_id": "UgyNaHSBf2gGGfIDi1l4AaABAg",
@@ -114,7 +114,7 @@
   ],
   "comment": "あなたの財布には、いくつありましたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-05T12:00:00+09:00",
+  "publish_at": "2026-11-05T03:00:00Z",
   "seconds": 43,
   "title_now": "【60代】実は貧乏な人に多い財布の特徴3選",
   "synthetic_on": null,
@@ -176,11 +176,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-04T18:39:23+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】家計簿の隣に「これ」絶対置かないで"
   ],
-  "comment": "あなたの財布は、家計簿の横で口を開けていませんか。"
+  "comment": "あなたの財布は、家計簿の横で口を開けていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-07T19:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】家計簿の隣に「これ」絶対置かないで",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

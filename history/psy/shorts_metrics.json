@@ -42,6 +42,13 @@
    "averageViewDuration": 0,
    "subscribersGained": 0,
    "取った日": "2026-11-01"
+  },
+  "d7": {
+   "views": 9,
+   "averageViewPercentage": 122.98,
+   "averageViewDuration": 52,
+   "subscribersGained": 0,
+   "取った日": "2026-11-04"
   }
  },
  "003_yonaka_mezame": {
@@ -73,7 +80,14 @@
   ],
   "kind": "after",
   "title": "【心理学】修道女300人の14年後｜声をかけないと、年が上の人ほど昔の自分を明るく思い出した #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 1138,
+   "averageViewPercentage": 41.57,
+   "averageViewDuration": 19,
+   "subscribersGained": 1,
+   "取った日": "2026-11-04"
+  }
  },
  "005_kofuku_toshi:short_2": {
   "type": "幸せの心理",
@@ -158,5 +172,16 @@
   "kind": "after",
   "title": "【心理学】同じひとりの時間なのに、気分が沈む日と軽い日がある人の正体 #shorts",
   "publish_slot": "07:10"
+ },
+ "007_kotowarenai": {
+  "type": "人づきあい",
+  "video_id": "d90sb3IODWo",
+  "hook": "誘いを断ったら、嫌われる。そう思って、つい出かけてしまいませんか？",
+  "band": [
+   "断ったら嫌われる？"
+  ],
+  "kind": "after",
+  "title": "【心理学】誘いを断れない人、実は相手の気持ちを読みちがえています #shorts",
+  "publish_slot": "20:10"
  }
 }
