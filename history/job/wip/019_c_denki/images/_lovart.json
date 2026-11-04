@@ -470,5 +470,15 @@
   "秒": 1131,
   "元": "images/_lovart/C708/lovart_1908cfcbcc64.jpeg",
   "注意": ""
+ },
+ "C406": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 2
+ },
+ "C107": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
  }
 }
