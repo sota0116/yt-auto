@@ -1,0 +1,229 @@
+{
+ "title": "【60代】期限切れのクーポン券、財布で眠らせないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。人物は出さず、67歳の女性の手元と財布だけを見せる",
+  "クーポン券はお得に使うつもりでためてきた物で、気づいた時にはどれも期限が過ぎている",
+  "言い伝えは「昔から〜と言われています」「〜そうです」の距離で言い、効き目は言い切らない"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お得なはずのこれ、財布で眠らせていませんか。",
+   "subs": [
+    "お得なはずの\nこれ、",
+    "財布で\n眠らせて",
+    "いませんか。"
+   ],
+   "image_en": "Extreme close-up of an older woman's hands slowly opening a worn brown leather wallet on a wooden kitchen table; a thick bundle of small blank paper slips is crammed inside and sticking out of the bill compartment, bending the wallet open. The slips are plain with no printing. The wallet fills more than half of the vertical frame. Soft morning window light.",
+   "hook": "お得な紙が\n金運止める",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "これ"
+   ],
+   "image": "Extreme close-up of an older woman's hands slowly opening a worn brown leather wallet on a wooden kitchen table; a thick bundle of small blank paper slips is crammed inside and sticking out of the bill compartment, bending the wallet open. The slips are plain with no printing. The wallet fills more than half of the vertical frame. Soft morning window light."
+  },
+  {
+   "id": "C02",
+   "narration": "期限が過ぎた、クーポン券です。",
+   "subs": [
+    "期限が過ぎた、\nクーポン券です。"
+   ],
+   "image_en": "Close-up of a fan of small rectangular paper coupons spread on a wooden table, edges curled, dog-eared and slightly yellowed with age, all turned face down so only their blank backs show. The coupons fill more than half of the vertical frame. Warm light, shallow depth of field.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "クーポン券"
+   ],
+   "image": "Close-up of a fan of small rectangular paper coupons spread on a wooden table, edges curled, dog-eared and slightly yellowed with age, all turned face down so only their blank backs show. The coupons fill more than half of the vertical frame. Warm light, shallow depth of field."
+  },
+  {
+   "id": "C03",
+   "narration": "縁起でいうと、財布の巡りをふさぐ紙とされます。",
+   "subs": [
+    "縁起でいうと、",
+    "財布の巡りを\nふさぐ紙と",
+    "されます。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  },
+  {
+   "id": "C04",
+   "narration": "67歳、お得に使うつもりで、ためてきた券。",
+   "subs": [
+    "67歳、",
+    "お得に使う\nつもりで、",
+    "ためてきた券。"
+   ],
+   "image_en": "Close-up of an older woman's hands in a beige knit cardigan sleeve, carefully counting a small stack of blank paper coupon slips on a kitchen table, the stack held between her fingers. No face visible. The hands and slips fill more than half of the vertical frame. Gentle evening light.",
+   "tts_text": "ろくじゅうななさい、お得に使うつもりで、ためてきた券。",
+   "image": "Close-up of an older woman's hands in a beige knit cardigan sleeve, carefully counting a small stack of blank paper coupon slips on a kitchen table, the stack held between her fingers. No face visible. The hands and slips fill more than half of the vertical frame. Gentle evening light."
+  },
+  {
+   "id": "C05",
+   "narration": "日付の過ぎた券は、もう使えない紙切れ。",
+   "subs": [
+    "日付の過ぎた\n券は、",
+    "もう使えない\n紙切れ。"
+   ],
+   "image_en": "Close-up of an open palm holding a few crumpled, faded, yellowed small paper slips with soft creases, blank with no printing, a few lying limp at the fingertips. The hand fills more than half of the vertical frame. Muted cool light.",
+   "highlight": [
+    "紙切れ"
+   ],
+   "image": "Close-up of an open palm holding a few crumpled, faded, yellowed small paper slips with soft creases, blank with no printing, a few lying limp at the fingertips. The hand fills more than half of the vertical frame. Muted cool light."
+  },
+  {
+   "id": "C06",
+   "narration": "昔から、出番の無い物をため込むと、",
+   "subs": [
+    "昔から、",
+    "出番の無い物を\nため込むと、"
+   ],
+   "image_en": "Close-up of an overstuffed brown wallet lying on a table that cannot close, its clasp held open by a thick wedge of old blank paper slips jammed in the opening; the wallet bulges at the seams. The wallet fills more than half of the vertical frame. Dim warm light.",
+   "image": "Close-up of an overstuffed brown wallet lying on a table that cannot close, its clasp held open by a thick wedge of old blank paper slips jammed in the opening; the wallet bulges at the seams. The wallet fills more than half of the vertical frame. Dim warm light."
+  },
+  {
+   "id": "C07",
+   "narration": "気の巡りが滞ると言われています。",
+   "subs": [
+    "気の巡りが\n滞ると",
+    "言われています。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@close"
+   ],
+   "tts_text": "きのめぐりがとどこおると言われています。"
+  },
+  {
+   "id": "C08",
+   "narration": "巡りの止まった財布には、お金も寄りつきにくいそうです。",
+   "subs": [
+    "巡りの止まった\n財布には、",
+    "お金も\n寄りつきにくい",
+    "そうです。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@full"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "では、日付の過ぎた券は、財布に残してもいいか。",
+   "subs": [
+    "では、",
+    "日付の過ぎた\n券は、",
+    "財布に残しても\nいいか。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@full"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "いいえ、家に戻ったら、すぐ抜いてね。",
+   "subs": [
+    "いいえ、",
+    "家に戻ったら、",
+    "すぐ抜いてね。"
+   ],
+   "image_en": "Close-up of an older woman's hand pulling a whole bundle of old blank paper slips out of a brown wallet in one smooth motion, the wallet now loosening and closing easily, beside a small plain wooden tray at a home entrance shelf. The hand and wallet fill more than half of the vertical frame. Bright soft light.",
+   "motion": true,
+   "anim": "kling",
+   "peak": true,
+   "strong": true,
+   "highlight": [
+    "すぐ抜いて"
+   ],
+   "image": "Close-up of an older woman's hand pulling a whole bundle of old blank paper slips out of a brown wallet in one smooth motion, the wallet now loosening and closing easily, beside a small plain wooden tray at a home entrance shelf. The hand and wallet fill more than half of the vertical frame. Bright soft light."
+  },
+  {
+   "id": "C11",
+   "narration": "まだ使える券は、封筒にまとめて、",
+   "subs": [
+    "まだ使える\n券は、",
+    "封筒に\nまとめて、"
+   ],
+   "image_en": "Close-up of an older woman's hands sliding a few blank paper coupon slips into a plain unmarked white paper envelope on a wooden table. No writing anywhere. The hands and envelope fill more than half of the vertical frame. Warm light.",
+   "tts_text": "まだ使える券は、ふうとうにまとめて、",
+   "image": "Close-up of an older woman's hands sliding a few blank paper coupon slips into a plain unmarked white paper envelope on a wooden table. No writing anywhere. The hands and envelope fill more than half of the vertical frame. Warm light."
+  },
+  {
+   "id": "C12",
+   "narration": "買い物に行く日だけ、持って出るの。",
+   "subs": [
+    "買い物に\n行く日だけ、",
+    "持って出るの。"
+   ],
+   "same_as": "C11",
+   "shots": [
+    "C11@close"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "財布には、お札と今使える券だけ。",
+   "subs": [
+    "財布には、",
+    "お札と\n今使える券だけ。"
+   ],
+   "image_en": "Close-up of a neat, slim brown wallet lying open on a table, holding only a few smoothly aligned plain folded paper bills with no visible design and a single blank slip, the wallet flat and closing easily. The wallet fills more than half of the vertical frame. Clear morning light.",
+   "tts_text": "財布には、おさつと今使える券だけ。",
+   "image": "Close-up of a neat, slim brown wallet lying open on a table, holding only a few smoothly aligned plain folded paper bills with no visible design and a single blank slip, the wallet flat and closing easily. The wallet fills more than half of the vertical frame. Clear morning light."
+  },
+  {
+   "id": "C14",
+   "narration": "使いそびれたのは、お得を大事にしてきたしるし。",
+   "subs": [
+    "使いそびれたのは、",
+    "お得を大事に\nしてきたしるし。"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@full"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "あなたの財布の券、期限はいつまでですか。",
+   "subs": [
+    "あなたの\n財布の券、",
+    "期限は\nいつまでですか。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ],
+   "highlight": [
+    "期限"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布の券、期限はいつまでですか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #期限切れのクーポン券",
+ "tags": [
+  "金運",
+  "財布",
+  "期限切れのクーポン券",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布の券、期限はいつまでですか。"
+}
