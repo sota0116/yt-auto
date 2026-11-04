@@ -23,11 +23,24 @@ import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
 LOVART = os.environ.get("LOVART_SKILL", r"C:\Users\koneb\OneDrive\ClaudeBackup\tools\lovart\agent_skill.py")
-PROJECT = os.environ.get("LOVART_PROJECT", "2o6natm73im8")
+PROJECTS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lovart_projects.json")
 MODEL = {"IMAGE": ["generate_image_nano_banana_2"]}
 W, H = 1920, 1080
 WAIT_MAX = int(os.environ.get("LOVART_WAIT_MAX", 4 * 3600))  # 全体で待つ上限（秒）
 THREAD_MAX = 40 * 60  # 1枚を待つ上限（秒）。超えたら頼み直す（1カット2回まで）
+
+
+def project_for(ch):
+    """チャンネルごとの Lovart プロジェクト（pipeline/lovart_projects.json）。LOVART_PROJECT があればそちらを優先（手動指定・AI美女などの共有運用）。
+    2026-11-04：全チャンネルが AI美女用のプロジェクトを黙って共有していた問題の修正（本人「うん」で承認）"""
+    override = os.environ.get("LOVART_PROJECT")
+    if override:
+        return override
+    try:
+        projects = json.load(open(PROJECTS_FILE, encoding="utf-8"))
+    except Exception:
+        projects = {}
+    return projects.get(ch, "2o6natm73im8")
 
 
 def client():
@@ -117,7 +130,7 @@ def sheet_prompt(style, ch):
             "Do not ask questions. Call the image generator exactly once and stop: no editing, upscaling, cropping or post-processing.")
 
 
-def make_sheets(sk, chars, need, style, par):
+def make_sheets(sk, chars, need, style, par, project):
     """設定画が無い人物の設定画を作る（無料モード。confirm はしない）。できなかった人物の id を返す"""
     todo = [k for k in need if not os.path.exists(chars[k]["sheet"])]
     waiting, t_end = {}, time.time() + WAIT_MAX
@@ -127,7 +140,7 @@ def make_sheets(sk, chars, need, style, par):
         while todo and len(waiting) < par:
             k = todo.pop(0)
             try:
-                waiting[k] = (sk.send(sheet_prompt(style, chars[k]), PROJECT, prefer_models=MODEL,
+                waiting[k] = (sk.send(sheet_prompt(style, chars[k]), project, prefer_models=MODEL,
                                       include_tools=MODEL["IMAGE"], mode="fast"), time.time())
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
@@ -224,6 +237,7 @@ def main():
     sk = client()
     free = lambda: is_free(sk)
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
+    project = project_for(ch)
     from lovart_boost import add_spent, can_join, unit
     fast = not a.boost and not free()
     joined, paused = fast and can_join(ch), fast and not can_join(ch)
@@ -260,7 +274,7 @@ def main():
     if unknown:
         sys.exit(f"【止まりました】characters.json にも script.json の characters にも無い人物：{unknown}")
     need_c = sorted({k for i in todo for k in cuts[i].get("chars", [])})
-    if make_sheets(sk, chars, need_c, en["_style"], a.par):
+    if make_sheets(sk, chars, need_c, en["_style"], a.par, project):
         sys.exit("【止まりました】設定画ができていない人物がいます（もう一度動かすと作り直す）")
     sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
     attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
@@ -284,7 +298,7 @@ def main():
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
                 tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])], rules, portrait),
-                              PROJECT, attachments=attach(i) or None, prefer_models=MODEL,
+                              project, attachments=attach(i) or None, prefer_models=MODEL,
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す

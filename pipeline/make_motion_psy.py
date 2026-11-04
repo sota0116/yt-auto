@@ -13,7 +13,7 @@
 import argparse, json, os, shutil, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from make_images_lovart import client, is_free, PROJECT  # noqa: E402
+from make_images_lovart import client, is_free, project_for  # noqa: E402
 from lovart_boost import add_spent, left_today, unit  # noqa: E402
 
 MODEL = "generate_video_kling_v2_6"
@@ -35,6 +35,7 @@ def main():
     a = a.parse_args()
     deadline = float(os.environ.get("MOTION_DEADLINE") or time.time() + 3 * 3600)
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
+    project = project_for(ch)
     img = os.path.join(a.work, "images")
     s = json.load(open(os.path.join(a.work, "script.json"), encoding="utf-8"))
     only = set(filter(None, a.only.split(",")))
@@ -77,7 +78,7 @@ def main():
             tries = log.get(i, {}).get("回", 0) + 1 if not a.force else 1
             try:
                 url = sk.upload_file(os.path.join(img, i + ".png"))
-                tid = sk.send(MOTION.format(scene=cuts[i]["image"]), PROJECT, attachments=[url],
+                tid = sk.send(MOTION.format(scene=cuts[i]["image"]), project, attachments=[url],
                               prefer_models={"VIDEO": [MODEL]}, include_tools=[MODEL])
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時の上限（絵と分け合う）は待って頼み直す
