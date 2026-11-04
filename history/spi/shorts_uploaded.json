@@ -240,5 +240,78 @@
   "published_at": "2026-11-02T11:15:02+09:00",
   "comment_id": "UgyyoRPRWBSWFZvbMyh4AaABAg",
   "comment_at": "2026-11-02T19:49:41+09:00"
+ },
+ {
+  "work": "015_b_shinshi_ushi",
+  "name": "short",
+  "kind": "teaser",
+  "video_id": "itXwtWVr3NE",
+  "title": "天満宮の牛は、なぜそろって伏せた姿をしているのか #shorts",
+  "type": "B",
+  "long_video_id": "e9lR9mhC2o4",
+  "hook": "天満宮の牛は、なぜ、そろって伏せた姿をしているのか。",
+  "band": [
+   "天満宮の牛は",
+   "なぜ伏せている？"
+  ],
+  "privacy_now": "private",
+  "publish_at": "2026-11-23T11:15:00+09:00",
+  "comment": "本編（11月23日（月）公開・約9分）はこちらです。\nhttps://youtu.be/e9lR9mhC2o4",
+  "uploaded_at": "2026-11-05T01:46:29+09:00",
+  "comment_after": "2026-11-23T18:00:00+09:00"
+ },
+ {
+  "work": "015_b_shinshi_ushi",
+  "name": "short_2",
+  "kind": "after",
+  "video_id": "oZgNx9sfZpE",
+  "title": "太宰府天満宮の御本殿は、なぜその場所に建っているのか #shorts",
+  "type": "B",
+  "long_video_id": "e9lR9mhC2o4",
+  "hook": "太宰府天満宮の御本殿は、なぜ、その場所に建っているのか。",
+  "band": [
+   "太宰府の御本殿は",
+   "なぜこの場所に？"
+  ],
+  "privacy_now": "private",
+  "publish_at": "2026-11-24T11:15:00+09:00",
+  "comment": "本編（11月23日（月）公開・約9分）はこちらです。\nhttps://youtu.be/e9lR9mhC2o4",
+  "uploaded_at": "2026-11-05T01:46:32+09:00"
+ },
+ {
+  "work": "015_b_shinshi_ushi",
+  "name": "short_3",
+  "kind": "after",
+  "video_id": "T1ebYZQQT6c",
+  "title": "天神さまの牛は、道真公が丑年生まれだからお使いになったのか #shorts",
+  "type": "B",
+  "long_video_id": "e9lR9mhC2o4",
+  "hook": "11月23日、月曜日は丑の日。天神さまの牛は、丑年だからお使いなのか。",
+  "band": [
+   "天神さまの牛は",
+   "丑年だけが理由？"
+  ],
+  "privacy_now": "private",
+  "publish_at": "2026-11-24T19:15:00+09:00",
+  "comment": "本編（11月23日（月）公開・約9分）はこちらです。\nhttps://youtu.be/e9lR9mhC2o4",
+  "uploaded_at": "2026-11-05T01:46:35+09:00"
+ },
+ {
+  "work": "015_b_shinshi_ushi",
+  "name": "short_4",
+  "kind": "solo",
+  "video_id": "d2s64mPF1bk",
+  "title": "太宰府天満宮の延寿王院の前の牛は、なぜ背中がなだらかなのか #shorts",
+  "type": "B",
+  "long_video_id": "e9lR9mhC2o4",
+  "hook": "太宰府天満宮の、延寿王院の前の牛。その背中は、なぜ、なだらかな曲線なのか。",
+  "band": [
+   "撫で牛の背中は",
+   "なぜなだらか？"
+  ],
+  "privacy_now": "private",
+  "publish_at": "2026-11-05T11:15:00+09:00",
+  "comment": "もっとくわしいお話は、本編（約9分）でしています。\nhttps://youtu.be/e9lR9mhC2o4",
+  "uploaded_at": "2026-11-05T01:46:38+09:00"
  }
 ]
