@@ -16,6 +16,13 @@
    "averageViewDuration": 14,
    "subscribersGained": 0,
    "取った日": "2026-10-31"
+  },
+  "d7": {
+   "views": 447,
+   "averageViewPercentage": 31.95,
+   "averageViewDuration": 14,
+   "subscribersGained": 0,
+   "取った日": "2026-11-04"
   }
  },
  "002_hitori_yasumu": {
@@ -139,5 +146,17 @@
   "kind": "after",
   "title": "【心理学】ひとりの夕飯もさらりと過ごす人、実は気分のゆれが小さめです。 #shorts",
   "publish_slot": "20:10"
+ },
+ "006_hitori_suki:short_4": {
+  "type": "ひとりの時間",
+  "video_id": "dsZI6Zj2yKw",
+  "hook": "同じ家で、同じひとりなのに、気分が沈む日と軽い日があるのは、なぜでしょうか？",
+  "band": [
+   "同じひとりでも",
+   "気分が真逆"
+  ],
+  "kind": "after",
+  "title": "【心理学】同じひとりの時間なのに、気分が沈む日と軽い日がある人の正体 #shorts",
+  "publish_slot": "07:10"
  }
 }

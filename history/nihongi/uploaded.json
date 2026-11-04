@@ -18,7 +18,7 @@
   "seconds": 48,
   "title_now": "もしも江戸の小判が、しゃべれたら。幕府の儲けが消えた #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 2915,
+  "views_now": 2950,
   "published": true,
   "published_at": "2026-11-01T18:00:24+09:00"
  },
@@ -89,7 +89,7 @@
   "seconds": 45,
   "title_now": "もしも日本が、アメリカに黒船を送ったら。舵はアメリカ人 #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 1706,
+  "views_now": 1864,
   "published": true,
   "published_at": "2026-11-02T18:00:23+09:00"
  },
@@ -112,7 +112,7 @@
   "seconds": 45,
   "title_now": "もしも坂本龍馬の会社に、現代の営業マンがいたら。薩長同盟の保証人に #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 1861,
+  "views_now": 1952,
   "published": true,
   "published_at": "2026-11-02T21:00:38+09:00"
  },
@@ -135,7 +135,7 @@
   "seconds": 46,
   "title_now": "もしも桶狭間の日に、雨が降らなかったら。3千の旗が丸見え #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1305,
+  "views_now": 1988,
   "published": true,
   "published_at": "2026-11-03T18:00:30+09:00"
  },
@@ -158,7 +158,7 @@
   "seconds": 44,
   "title_now": "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 796,
+  "views_now": 1471,
   "published": true,
   "published_at": "2026-11-03T21:00:10+09:00"
  },
@@ -176,11 +176,13 @@
    "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-04T09:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 42,
   "title_now": "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 189,
+  "published": true,
+  "published_at": "2026-11-04T18:00:16+09:00"
  }
 ]

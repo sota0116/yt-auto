@@ -10,6 +10,15 @@
    "直す所": [],
    "取った日": "2026-10-31",
    "再生（公開ページ）": 4621
+  },
+  "d7": {
+   "views": 4868,
+   "averageViewPercentage": 107.06,
+   "averageViewDuration": 48,
+   "subscribersGained": 5,
+   "直す所": [],
+   "取った日": "2026-11-04",
+   "再生（公開ページ）": 4931
   }
  },
  "S002_信長自身の数字": {
@@ -139,7 +148,16 @@
  },
  "S101_n007": {
   "type": null,
-  "video_id": "jpXbQgHDIxY"
+  "video_id": "jpXbQgHDIxY",
+  "h72": {
+   "views": 1883,
+   "averageViewPercentage": 123.8,
+   "averageViewDuration": 59,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-04",
+   "再生（公開ページ）": 2950
+  }
  },
  "S102_n015": {
   "type": null,
@@ -160,5 +178,9 @@
  "S106_n009": {
   "type": null,
   "video_id": "kJdeaY6mpRI"
+ },
+ "S107_n011": {
+  "type": null,
+  "video_id": "3fELaqiDljo"
  }
 }
