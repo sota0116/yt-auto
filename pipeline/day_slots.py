@@ -16,7 +16,8 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 MIN_GAP = datetime.timedelta(hours=3)
 
 PLAN = {
-    "job": {"long": "19:00", "wd": [0, 1, 2, 3, 4, 5, 6], "on": ["07:10", "12:10"], "off": ["07:10", "12:10"], "late": "22:10"},
+    # job は毎日が横の日なので off は使わない（決まりの確かめで「2本なら昼と夜」に合うよう 12:10・19:10 にしておく。2026-11-04）
+    "job": {"long": "19:00", "wd": [0, 1, 2, 3, 4, 5, 6], "on": ["07:10", "12:10"], "off": ["12:10", "19:10"], "late": "22:10"},
     "psy": {"long": "19:00", "wd": [0, 2, 4, 5, 6], "on": ["07:10", "12:10", "22:10"], "off": ["07:10", "12:10", "20:10"]},
     "spi": {"long": "18:00", "wd": [0, 2, 4, 6], "on": ["07:15", "11:15"], "off": ["11:15", "19:15"]},
     "kakure": {"long": "20:00", "every": 2, "on": ["12:00"], "off": ["19:00"]},
@@ -24,6 +25,57 @@ PLAN = {
     "nihongi": {"long": "20:00", "every": 2, "on": ["07:00", "12:10"], "off": ["12:10", "20:00"], "extra_off": "07:00"},
     "okinu": {"long": "18:00", "every": 2, "on": ["12:00"], "off": ["19:00"], "extra_on": "07:00", "extra_off": "12:00"},
 }
+BASE = json.loads(json.dumps(PLAN))  # 上の書いたままの枠（週次が直した分は入らない）
+
+# 週次（weekly.py → slot_apply.py）が数字を見て直したショートの枠。ここに書いた分が上の PLAN より優先する（2026-11-04〜）
+#   形：{"<ch>": {"on": [...], "off": [...], "extra_on": "HH:MM", "extra_off": "HH:MM"}, "_log": [{日付, ch, key, from, to, 根拠}]}
+#   元に戻す時は、その ch の行を消す（PLAN の書いたままに戻る）
+OVERRIDE_PATH = os.path.join(ROOT, "history", "slot_plan.json")
+AUTO_KEYS = ("on", "off", "extra_on", "extra_off")  # 週次が直してよいのはショートの枠だけ（横の時刻・予告の late は人が決める）
+try:
+    _ov = json.load(open(OVERRIDE_PATH, encoding="utf-8"))
+except (OSError, ValueError):
+    _ov = {}
+for _ch, _v in _ov.items():
+    if _ch in PLAN and isinstance(_v, dict):
+        PLAN[_ch].update({k: x for k, x in _v.items() if k in AUTO_KEYS})
+
+
+def band(hm):
+    """朝（5:00〜9:59）・昼（10:00〜15:59）・夜（16:00〜）"""
+    h = int(hm[:2])
+    return "朝" if h < 10 else ("昼" if h < 16 else "夜")
+
+
+def plan_problems(pl):
+    """枠の決まりに合わない所（[文]）。本人の決まり：どの2本も3時間以上あける。1日2本なら昼と夜、3本なら朝昼夜（4本の日は夜が2本）"""
+    out = []
+    days = {"横の日": [pl["long"]] + list(pl["on"]) + ([pl["late"]] if pl.get("late") else []),
+            "横の日（在庫が多い日）": [pl["long"]] + list(pl["on"]) + ([pl["late"]] if pl.get("late") else []) + ([pl["extra_on"]] if pl.get("extra_on") else []),
+            "横の無い日": list(pl["off"]),
+            "横の無い日（在庫が多い日）": list(pl["off"]) + ([pl["extra_off"]] if pl.get("extra_off") else [])}
+    if pl.get("wd") is not None and len(pl["wd"]) == 7:
+        days = {k: v for k, v in days.items() if k.startswith("横の日")}
+    allt = []
+    for name, ts in days.items():
+        if any(not re.fullmatch(r"([01]\d|2[0-3]):[0-5]\d", t) for t in ts):
+            out.append(f"{name}：時刻の形が違う {ts}")
+            continue
+        ts = sorted(set(ts))
+        allt += ts
+        if any(not ("06:00" <= t <= "23:30") for t in ts):
+            out.append(f"{name}：6:00〜23:30 の外がある {ts}")
+        mins = [int(t[:2]) * 60 + int(t[3:]) for t in ts]
+        if any(b - a < MIN_GAP.total_seconds() // 60 for a, b in zip(mins, mins[1:])):
+            out.append(f"{name}：3時間あいていない {ts}")
+        need = {2: ["昼", "夜"], 3: ["朝", "昼", "夜"], 4: ["朝", "昼", "夜", "夜"]}.get(len(ts))
+        if need and [band(t) for t in ts] != need:
+            out.append(f"{name}：{len(ts)}本なら {'・'.join(need)}（いまは {'・'.join(band(t) for t in ts)} {ts}）")
+    if allt:
+        lo, hi = min(allt), max(allt)
+        if (24 * 60 - (int(hi[:2]) * 60 + int(hi[3:]))) + int(lo[:2]) * 60 + int(lo[3:]) < MIN_GAP.total_seconds() // 60:
+            out.append(f"夜の最後 {hi} と次の朝の最初 {lo} が3時間あいていない")
+    return out
 
 
 def _ts(s):
@@ -139,6 +191,9 @@ if __name__ == "__main__":
     now = datetime.datetime.now(JST)
     bad = 0
     for ch in sys.argv[1:] or list(PLAN):
+        for x in plan_problems(PLAN[ch]):
+            bad += 1
+            print(f"{ch}: 枠の決まり：{x}")
         rows = sorted(r for r in booked(ch) if r[0] > now)
         for (a, al, _, aw), (b, bl, _, bw) in zip(rows, rows[1:]):
             if b - a < MIN_GAP:

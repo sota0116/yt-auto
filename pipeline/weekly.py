@@ -13,14 +13,25 @@
 # ・千年こよみ（spi。2026-10-28 本人「どんどん作ってどんどん数値分析してどんどんPDCA回していけるように」）：psy と同じく
 #   history\spi\学び.md を書かせる。台本を書く時（Claude Code が手で作る。手順書 §14）に必ず読む。
 #   ショートは種類（kind：teaser 予告・after 切り出し・solo 単独）ごとと、枠の時刻（11:15・19:15）ごとに比べる
+# ・公開の時間帯と間隔（2026-11-04 本人「同じチャンネルで動画と動画の間は時間を空けて。毎週アナリティクスの数字を取って分析して仮説を立てて修正して」）：
+#   weekly.yml が鍵を置いて slot_stats.py を回し（history\<ch>\slot_stats.json）、鍵を消してから、ここが週報を書かせる。
+#   Claude は 8 で、時刻・間隔・その日の本数ごとの数字から仮説を history\weekly\枠の仮説.md に足し、枠の案を history\weekly\<日付>_枠の案.json に書く。
+#   案は slot_apply.py が決まり（ショートの枠だけ・本数そのまま・3時間あける・数字3本以上・1チャンネル週1件・14日あける）に合う物だけ
+#   history\slot_plan.json に書く（day_slots.py が読む）。結果は週報の最後に足す
+# ・kakure・shimei・nihongi・okinu は 3（健康）・4（数字）・8（時間帯）だけ書かせる（1〜7 の全部は job・psy・spi）
 import argparse, datetime, json, os, re, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, ping
 from run_daily import jsave, verify_checksums
+import day_slots as ds
+from slot_apply import apply as slot_apply
 from write_script import DOCS, SECRET_ENV, doc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOVART_FREE_END = {"Nano Banana 2": "2027-02-28", "Nano Banana Pro": "2027-01-19"}  # 2026-10-24 時点の残り127日・87日（設計書 §7）
+
+
+FULL = ("job", "psy", "spi")  # 週報の 1〜7 の全部を書くチャンネル。ほかは 3・4・8 だけ
 
 
 def h(ch, name, d):
@@ -61,7 +72,13 @@ def gather(chs):
         d["期限"][f"Lovart の無料（{k}）"] = {"切れる日": v, "1か月以内": (end - today).days <= 31}
     week_ago = (today - datetime.timedelta(days=7)).isoformat()
     for ch in chs:
-        up, metrics, w = h(ch, "uploaded.json", []), h(ch, "metrics.json", {}), h(ch, "watch.json", {})
+        up, metrics, w = h(ch, "uploaded.json", []) or h(ch, "long_uploaded.json", []), h(ch, "metrics.json", {}), h(ch, "watch.json", {})  # kakure・shimei の横は long_uploaded.json
+        if isinstance(up, dict):
+            up = list(up.values())
+        for e in up:  # long_uploaded.json には published が無いので、公開の時刻を過ぎた物は公開済みとして数える
+            t = ds._ts(e.get("publish_at")) if isinstance(e, dict) and not e.get("published") else None
+            if t and t <= now():
+                e["published"] = True
         if not isinstance(metrics, dict):  # 日本紀・おきぬは一覧の形（stats_<ch>.py）。見張りの数字は metrics_auto.json（watch.py）
             metrics = h(ch, "metrics_auto.json", {})
         prod, cost, last = h(ch, "produced.json", []), h(ch, "cost.json", {}), h(ch, "last_run.json", {})
@@ -84,6 +101,8 @@ def gather(chs):
                                "競合リサーチが足した行": [r["title"] for r in board if r.get("from") == "競合リサーチ" and r["id"] not in used]},
                      "ショート": {"上げた本数": len(h(ch, "shorts_uploaded.json", [])), "area ごと": per_type(sm), "回ごとの数字": sm,
                                 "作れなかった回": [p["work"] for p in prod if p.get("short_video_id") == "上げられなかった"]}}
+        elif ch not in FULL:  # kakure・shimei・nihongi・okinu はネタ帳の形がちがい、週報も 3・4・8 だけなので数えない
+            extra = {}
         else:
             extra = {"ネタ帳": {"残り": sum(1 for r in board if r["id"] not in used and not r.get("hold")),
                                "データ待ち（facts_cmd が無い）": [r["id"] for r in board if r["id"] not in used and not r.get("facts_cmd")]}}
@@ -93,8 +112,16 @@ def gather(chs):
                 # 手順書 §12 の投稿：作るのは Chrome の画面からなので、予約が切れる前に足せるよう残りを出す
                 posts = h(ch, "posts.json", [])
                 left = [p for p in posts if p["日"] > now().strftime("%Y-%m-%d")]
-                last = max((p["日"] for p in left), default=None)
-                extra["投稿"] = {"予約の残り": len(left), "最後の予約": last, "足す時期": last is None or last <= (now() + datetime.timedelta(days=7)).strftime("%Y-%m-%d")}
+                lp = max((p["日"] for p in left), default=None)  # last（最後の毎日の実行）と名前を分ける（2026-11-04 まで上書きしていて週報が落ちた）
+                extra["投稿"] = {"予約の残り": len(left), "最後の予約": lp, "足す時期": lp is None or lp <= (now() + datetime.timedelta(days=7)).strftime("%Y-%m-%d")}
+        st = h(ch, "slot_stats.json", {})
+        ov = jload(ds.OVERRIDE_PATH, {})
+        slots = {"枠（いま）": ds.PLAN.get(ch), "枠（day_slots.py に書いたまま）": ds.BASE.get(ch),
+                 "週次が直した記録": [x for x in ov.get("_log", []) if x.get("ch") == ch],
+                 "数字の状態": st.get("状態") or "まだ取っていない", "数字の更新": st.get("更新"), "確定待ち": st.get("確定待ち"),
+                 "まとめ（確定した分）": st.get("まとめ") or {},
+                 "1本ごと（確定した分）": {v.get("work") or k: {x: v.get(x) for x in ("時刻", "曜日", "その日の本数", "前との間隔", "後との間隔", "横", "数字")}
+                                       for k, v in (st.get("videos") or {}).items() if v.get("確定")}}
         d["チャンネル"][ch] = {
             "在庫": sum(1 for e in up if not e.get("published") and not e.get("missing")),
             "来週の予約が無い日": [x for x in nxt if x not in booked],
@@ -105,6 +132,7 @@ def gather(chs):
             "回ごとの数字": metrics,
             "差し替え": {e["work"]: e["swaps"] for e in up if e.get("swaps")},
             "見張り": {k: w.get(k) for k in ("ctr_api", "comments_off", "comment_gone", "明後日の予約", "AIの申告がオフ", "type_hold", "予約")},
+            "時間帯": slots,
             **extra,
         }
     return d
@@ -124,10 +152,13 @@ def design_doc():
 
 def prompt(path, chs):
     rel = lambda p: os.path.relpath(p, ROOT)
+    light = [c for c in chs if c not in FULL]
+    plan_p = os.path.join(ROOT, "history", "weekly", os.path.basename(path)[:-5] + "_枠の案.json")
+    hypo = os.path.join(ROOT, "history", "weekly", "枠の仮説.md")
     design = design_doc()
-    docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs)
+    docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs if ch in FULL)
     memos = "\n".join(f"- {rel(m)}（{ch} の競合メモ。research.py が毎日書く。§7〜9 の提案を 6 の改善案の材料にする）"
-                      for ch in chs for m in [os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")] if os.path.exists(m))
+                      for ch in chs if ch in FULL for m in [os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")] if os.path.exists(m))
     if "job" in chs and os.path.exists(os.path.join(ROOT, "history", "job", "学び.md")):  # learn_job.py が毎日書く。6 の改善案は「続ける」になった試しを手順書に移す案にしてよい
         memos += f"\n- {rel(os.path.join(ROOT, 'history', 'job', '学び.md'))}（job の毎日の学び。learn_job.py が書く。「続ける」になった試しを手順書に移す案を 6 の材料にする）"
     learn = os.path.join(ROOT, "history", "psy", "学び.md")
@@ -154,6 +185,10 @@ def prompt(path, chs):
   ・手順書の決まりの中で守れることだけ（手順書とぶつかる事は書かず、6 の改善案に回す）
   ・数字がまだ2本に満たない時は、前の {rel(learn)} の行を残し、無ければ「まだ数字が足りない（{now().date().isoformat()}）」の1行だけにする
 """
+    light_note = "" if not light else f"""
+## {"・".join(light)} について
+- このチャンネルは 3（健康）・4（数字）・8（時間帯）だけを書く。1・2・5・6・7 は job・psy・spi の分だけ書く（「今週あなたがやること」に入れるのは、止まり・予約の無い日だけ）。
+"""
     return f"""あなたは YouTube の自動チャンネルの週報の書き手です。読む人はこの仕組みの持ち主で、専門用語が苦手です。日本語で、短い文で書きます。
 
 ## 先に全部読むファイル
@@ -174,7 +209,19 @@ def prompt(path, chs):
 6. 改善案を1つ（手順書のどこを、どう書き換えるか。差し替えで勝った文言があれば「勝ちパターン」に足す案。競合メモの「手順書を変える案」と、
    今週作った回の competitor_note（競合メモから取り入れた物）の回の数字も材料にする。取り入れた回とそうでない回の差は、2本以上ずつある時だけ比べる）。「採用」か「見送り」をコメントで返すよう書き添える。
 7. 細かいこと：差し替えた回、データ待ちで飛ばしているネタ帳の行、回した理由、コメントの状態、型の後回し。
-{psy}{spi}
+8. 公開の時間帯と間隔（全チャンネル。数字の「時間帯」を使う）：
+   ・チャンネルごとに、横・縦それぞれの表を出す（時刻ごと・その日の本数ごと・前後の間隔ごと。本数・再生の中央値・平均視聴率・1万回あたりの登録）。
+     確定した数字（公開から6日後まで）だけを使う。「数字の状態」が「アナリティクス不可」のチャンネルはそう書いて、表は出さない。
+   ・先に {rel(hypo)} を全部読み（無ければ新しく作る）、前の週に立てた仮説を今週の数字で確かめ、その行の後ろに「→ 確かめた日付：当たり／外れ／まだ分からない（根拠の数字）」を足す。
+   ・今週の仮説を1チャンネル1つまで、{rel(hypo)} の最後に足す（「日付｜ch｜仮説｜比べる物｜何本で判定するか」の1行）。
+     比べる群がそれぞれ3本以上ある時だけ仮説にする。足りない時は「数字待ち（あと何本）」と書くだけにする。中央値で比べ、平均だけが高い時（1本だけ跳ねた）は仮説にしない。
+   ・数字が仮説を支える時だけ、枠の案を {rel(plan_p)} に JSON の一覧で書く（無ければ書かない）。形：
+     [{{"ch": "psy", "key": "off", "to": ["07:10", "12:10", "21:10"], "根拠": "20:10 の縦4本の中央値 800 回、21:08 の縦3本の中央値 1,500 回", "比べた本数": "4本と3本"}}]
+     key は on（横の日のショート）・off（横の無い日のショート）・extra_on・extra_off（在庫が多い日の足し）だけ。いまの枠は「枠（いま）」を見る。
+     本数は今と同じにする。どの2本も3時間以上あけ、2本なら昼と夜、3本なら朝・昼・夜（朝は10時前・昼は16時前・夜はそれ以降）。横の時刻と予告（late）は案にせず、6 に書く。
+     1チャンネル1件まで。「週次が直した記録」に14日以内の物があるチャンネルは、その結果を確かめるだけで案は出さない。
+     案はプログラムが決まりを確かめてから枠に入れる（合わない案は見送られる）。入れた結果は週報の最後に足される。
+{psy}{spi}{light_note}
 ## 決まり
 - 水平線（--- など）は使わない。「—」「→」の多用もしない。
 - 結果を約束しない。数字が少ない時は「まだ判定できない」と書く。
@@ -184,7 +231,7 @@ def prompt(path, chs):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu"])
+    a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei"])
     a.add_argument("--no-issue", action="store_true")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"
@@ -203,6 +250,13 @@ def main():
         open(md, "w", encoding="utf-8").write("## 週報を Claude が書けませんでした\n今週の数字だけ置きます。PC で Claude Code にこの Issue を貼って「このIssueを直して」と言ってください。\n\n```json\n"
                                               + open(path, encoding="utf-8").read()[:60000] + "\n```\n")
     body = open(md, encoding="utf-8").read()
+    try:  # Claude の枠の案を、決まりに合う物だけ枠に入れる（slot_apply.py）
+        lines = slot_apply(path[:-5] + "_枠の案.json")
+    except Exception as e:
+        lines = [f"枠の自動の直しが止まりました：{e}"]
+    body += "\n\n## 枠の自動の直し（slot_apply.py）\n" + "\n".join(f"- {x}" for x in lines) + \
+            "\n- 効くのは次に予約する分から。戻す時は history/slot_plan.json のそのチャンネルの行を消す\n"
+    open(md, "w", encoding="utf-8").write(body)
     title = f"週報 {now().date().isoformat()}"
     if a.no_issue or not shutil.which("gh") or not os.environ.get("GH_TOKEN"):
         print(f"（Issue にせず、{md} に置きました）")
