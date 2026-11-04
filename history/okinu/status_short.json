@@ -1,12 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S108_玄関に置くとお金が出てい",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S110_財布の輪ゴム",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
- "started": "2026-11-02T17:39:41+09:00",
- "tries": 2,
- "code": "6da8e04a7ee7",
- "stage": "gate_script",
- "gate_fails": 2
+ "started": "2026-11-04T18:40:54+09:00",
+ "tries": 1,
+ "code": "e82568790817",
+ "stage": "upload",
+ "updated": "2026-11-04T20:18:11+09:00"
 }
