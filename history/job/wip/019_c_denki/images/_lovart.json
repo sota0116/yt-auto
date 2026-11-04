@@ -213,12 +213,9 @@
   "注意": ""
  },
  "C402": {
-  "状態": "できた",
-  "thread": "d6e23750-8c6c-4671-ba02-5fa1f2f488a8",
-  "回": 2,
-  "秒": 571,
-  "元": "images/_lovart/C402/lovart_f19f969c0a90.jpeg",
-  "注意": ""
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
  },
  "C403": {
   "状態": "できた",
@@ -381,12 +378,9 @@
   "注意": ""
  },
  "C605": {
-  "状態": "できた",
-  "thread": "4d03f68e-e792-4282-a8ca-4fd235b83937",
-  "回": 1,
-  "秒": 36,
-  "元": "images/_lovart/C605/lovart_a03674856fc6.png",
-  "注意": ""
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
  },
  "C606b": {
   "状態": "できた",
@@ -484,6 +478,11 @@
   "回": 1
  },
  "C509": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C308": {
   "状態": "失敗",
   "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
   "回": 1
