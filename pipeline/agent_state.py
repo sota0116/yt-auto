@@ -86,7 +86,14 @@ def upload(key, tar_path, tmp):
     for n in names:
         m = re.match(re.escape(key) + r"-(\d{14})\.", n)
         if m and m.group(1) not in keep:
-            gh("release", "delete-asset", TAG, n, "-y")
+            # 古い保存の片付け。新しい保存は上げ終えているので、GitHub 側の一時的な失敗（500 など）で回を落とさない。
+            # 消し残りは次の保存の時にまた消す（2026-11-04 kakure が delete-asset の 500 で failure になった）
+            for _ in range(2):
+                if subprocess.run(["gh", "release", "delete-asset", TAG, n, "-y", "-R", REPO]).returncode == 0:
+                    break
+                time.sleep(10)
+            else:
+                print(f"【注意】古い保存 {n} を消せませんでした（次の保存の時にまた消します）", flush=True)
     print(f"{key} を保存しました（{len(parts)} ファイル）", flush=True)
 
 
