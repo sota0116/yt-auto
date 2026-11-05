@@ -6,16 +6,27 @@
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "images"
+  "reading"
  ],
  "started": "2026-11-05T12:29:05+09:00",
  "tries": 0,
  "code": "e369ac04bc34",
- "stage": "motion",
- "updated": "2026-11-06T00:48:30+09:00",
+ "stage": "gate_images",
+ "updated": "2026-11-06T02:02:59+09:00",
  "busy": {
-  "images": 1,
   "motion": 1
- }
+ },
+ "restored": {
+  "日時": "2026-11-06T01:45:02+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "yomi",
+   "reading",
+   "images"
+  ]
+ },
+ "images_back": true
 }
