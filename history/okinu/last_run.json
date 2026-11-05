@@ -1,6 +1,6 @@
 {
  "ch": "okinu",
- "started": "2026-11-06T01:44:22+09:00",
+ "started": "2026-11-06T03:45:02+09:00",
  "made": [],
  "stopped": "絵ゲートの不合格が残りました（images\\_gate.json）（short）／build で止まりました（終了コード 1）：声：167カット・14.4分（速さ 1.0・間 0.3）\nA13：4 枚・1枚 1.19 秒・4.77 秒 → /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/103_洗面所/images/A13.mp4\n\n【止まりました】絵（images/<id>.png）が無いカット：['T04']（1カット）（long）",
  "在庫": {
@@ -11,6 +11,6 @@
   "short": 2,
   "long": 1
  },
- "ended": "2026-11-06T01:50:47+09:00",
+ "ended": "2026-11-06T03:45:56+09:00",
  "今月の制作費_円": 0.0
 }
