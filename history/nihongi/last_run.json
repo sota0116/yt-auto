@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-05T07:34:17+09:00",
+ "started": "2026-11-05T09:25:14+09:00",
  "made": [],
- "stopped": "絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します（short）／絵ゲートの不合格が残りました（images\\_gate.json）（long）",
+ "stopped": "絵ゲートの不合格が残りました（images\\_gate.json）（short）／絵ゲートの不合格が残りました（images\\_gate.json）（long）",
  "在庫": {
   "short": 2,
   "long": 0
@@ -11,9 +11,6 @@
   "short": 2,
   "long": 1
  },
- "飛ばした回": [
-  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S112_n017"
- ],
- "ended": "2026-11-05T07:46:42+09:00",
+ "ended": "2026-11-05T09:28:05+09:00",
  "今月の制作費_円": 0.0
 }

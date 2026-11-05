@@ -9,7 +9,7 @@
   "motion"
  ],
  "started": "2026-11-02T20:48:04+09:00",
- "tries": 2,
+ "tries": 3,
  "code": "455f8716534f",
  "stage": "gate_images",
  "gate_fails": 1,
