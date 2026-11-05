@@ -110,5 +110,19 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "物語"
+ },
+ {
+  "work": "009_セイレーン",
+  "video_id": "kg8qqvMNMXY",
+  "title": "警報のサイレンの名のもとになった怪物セイレーン 古代の壺に描かれた本当の姿【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-15T20:00:00+09:00",
+  "uploaded_at": "2026-11-05T22:44:42+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "元ネタ"
  }
 ]
