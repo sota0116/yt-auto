@@ -47,6 +47,8 @@ def unit(kind):
 def cap_today(ch):
     b = budget()
     d = now().date().isoformat()
+    if d < b.get("cap_from", ""):  # 2026-11-05 本人：使い切ったので 11/17 まではクレジットを使わない
+        return 0
     cap = next((x["cap"] for x in b.get("schedule", []) if x["from"] <= d <= x["to"]), b.get("cap_after", 0))
     return int(cap * b.get("share", {}).get(ch, 0))
 
@@ -85,9 +87,9 @@ def left_today(ch):
     """その日に使える残り＝自分の割り当ての残り＋ほかのチャンネルの割り当ての使っていない分の半分（2026-10-29 本人「うまくやって」）。
     割り当てを使い切るほど詰まるチャンネルは限られ、使わない分は 11/17 に失効するので、詰まった回が借りる。半分にするのは、同じ夜に
     詰まったほかのチャンネルの分を残すため（並んで動く実行が同じ時に数えると、合計で1日の上限を少し超えることがある）"""
-    own = max(0, cap_today(ch) - spent_today(ch))
-    others = sum(max(0, cap_today(c) - spent_today(c)) for c in budget().get("share", {}) if c != ch)
-    return int(own + others // 2)
+    # 2026-11-05 借りるのをやめた：並んで動く回が同じ空き枠を同時に数え、1日の上限の2.5〜4.4倍を使って 11/4 に使い切った（ルール違反）。
+    # 自分の割り当てだけなら、全チャンネルの合計は1日の上限を超えない
+    return int(max(0, cap_today(ch) - spent_today(ch)))
 
 
 def client():
