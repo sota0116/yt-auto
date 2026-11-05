@@ -49,8 +49,20 @@ def cap_today(ch):
     d = now().date().isoformat()
     if d < b.get("cap_from", ""):  # 2026-11-05 本人：使い切ったので 11/17 まではクレジットを使わない
         return 0
-    cap = next((x["cap"] for x in b.get("schedule", []) if x["from"] <= d <= x["to"]), b.get("cap_after", 0))
-    return int(cap * b.get("share", {}).get(ch, 0))
+    share = b.get("share", {}).get(ch, 0)
+    x = next((x for x in b.get("schedule", []) if x["from"] <= d <= x["to"]), None)
+    if not x:
+        return int(b.get("cap_after", 0) * share)
+    base = x["cap"] * share
+    if not x.get("carry"):
+        return int(base)
+    # 2026-11-05 本人「予想より使ってなかったら徐々に使用料を切り替わりのタイミングまでに増やすのはOK。ただし切り替わりよりずっと前になくなるのはなし」
+    # 昨日までに使わなかった分（使いすぎた分はマイナス）を、今日を含む残りの日数で割って足す。期間の合計（cap×日数×割合）は超えない
+    day = datetime.date.fromisoformat
+    passed = (day(d) - day(x["from"])).days
+    left_days = (day(x["to"]) - day(d)).days + 1
+    unused = base * passed - spent_between(ch, x["from"], d)
+    return int(max(0, base + unused / left_days))
 
 
 def expiring():
@@ -72,6 +84,12 @@ def can_join(ch):
 
 def spent_today(ch):
     return jload(os.path.join(ROOT, "history", ch, "lovart_credits.json"), {}).get(now().date().isoformat(), {}).get("計", 0)
+
+
+def spent_between(ch, start, end):
+    """start の日から end の前の日までに使った量"""
+    c = jload(os.path.join(ROOT, "history", ch, "lovart_credits.json"), {})
+    return sum(v.get("計", 0) for k, v in c.items() if start <= k < end)
 
 
 def add_spent(ch, n, what):
