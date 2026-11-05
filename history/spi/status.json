@@ -11,9 +11,8 @@
  "started": "2026-11-05T07:33:46+09:00",
  "tries": 0,
  "code": "455f8716534f",
- "stage": "images",
- "updated": "2026-11-05T07:50:35+09:00",
- "busy": {
-  "images": 1
- }
+ "stage": "gate_images",
+ "updated": "2026-11-05T09:24:46+09:00",
+ "busy": {},
+ "images_back": true
 }
