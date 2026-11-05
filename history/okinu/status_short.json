@@ -12,6 +12,17 @@
  "tries": 1,
  "code": "e369ac04bc34",
  "stage": "gate_images",
- "updated": "2026-11-05T12:31:55+09:00",
- "images_back": true
+ "updated": "2026-11-06T01:44:58+09:00",
+ "images_back": true,
+ "restored": {
+  "日時": "2026-11-06T01:44:22+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "images",
+   "motion"
+  ]
+ }
 }
