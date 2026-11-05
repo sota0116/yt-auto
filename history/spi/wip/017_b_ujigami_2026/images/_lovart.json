@@ -1,0 +1,222 @@
+{
+ "P01": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "P03": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "P04": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "P06": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "P08": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A04": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A06": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A07": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A09": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A10": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "A11": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "B07": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "B11": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "B17": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "B18": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C05": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C11": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C06": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C09": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "C12": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D03": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D05": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D12": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D07": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D08": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D14": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D09": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D10": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "D11": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E04": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E05": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E10": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E12": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E16": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E14": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "E15": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "F06": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "F07": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "F08": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "G05": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "W01": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "W02": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "W03": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ },
+ "THUMB": {
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
+ }
+}
