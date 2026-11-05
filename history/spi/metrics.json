@@ -36,7 +36,16 @@
  },
  "006_b_ennichi_2026": {
   "type": "B",
-  "video_id": "AV1QEbR3IiQ"
+  "video_id": "AV1QEbR3IiQ",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-05",
+   "再生（公開ページ）": 0
+  }
  },
  "007_b_kamidana_2026": {
   "type": "B",

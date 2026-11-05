@@ -99,7 +99,14 @@
   ],
   "kind": "after",
   "title": "【心理学】冬になると昔を思い出す人の「意外な特徴」｜少し寒い部屋で、懐かしさが強まった #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 67,
+   "averageViewPercentage": 95.87,
+   "averageViewDuration": 39,
+   "subscribersGained": 0,
+   "取った日": "2026-11-05"
+  }
  },
  "005_kofuku_toshi:short_3": {
   "type": "幸せの心理",
@@ -111,7 +118,14 @@
   ],
   "kind": "after",
   "title": "【心理学】散々だった旅行が、あとで楽しい思い出に変わる人の特徴 #shorts",
-  "publish_slot": "12:10"
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 108,
+   "averageViewPercentage": 64.15,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "取った日": "2026-11-05"
+  }
  },
  "005_kofuku_toshi:short_4": {
   "type": "幸せの心理",
@@ -183,5 +197,28 @@
   "kind": "after",
   "title": "【心理学】誘いを断れない人、実は相手の気持ちを読みちがえています #shorts",
   "publish_slot": "20:10"
+ },
+ "007_kotowarenai:short_2": {
+  "type": "人づきあい",
+  "video_id": "DuSOgVippJU",
+  "hook": "電話なら断れるのに、玄関先で頼まれると断れないのは、なぜでしょうか？",
+  "band": [
+   "顔を見て頼まれると",
+   "断れない"
+  ],
+  "kind": "after",
+  "title": "【心理学】顔を見て頼まれると断れない人の「意外な特徴」 #shorts",
+  "publish_slot": "07:10"
+ },
+ "007_kotowarenai:short_3": {
+  "type": "人づきあい",
+  "video_id": "4HB0HTT9bTI",
+  "hook": "たったひと言、「できません」が言えないのは、なぜでしょうか？",
+  "band": [
+   "断るひと言が重い"
+  ],
+  "kind": "after",
+  "title": "【心理学】断るひと言が重い人に共通する特徴｜図書館の本の実験 #shorts",
+  "publish_slot": "12:10"
  }
 }

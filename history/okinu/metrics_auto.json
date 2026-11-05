@@ -64,6 +64,19 @@
    ],
    "取った日": "2026-11-01",
    "再生（公開ページ）": 1257
+  },
+  "d7": {
+   "views": 676,
+   "averageViewPercentage": 64.74,
+   "averageViewDuration": 22,
+   "subscribersGained": 2,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-05",
+   "再生（公開ページ）": 1258
   }
  },
  "S002_ポイントカード": {
@@ -76,6 +89,15 @@
    "subscribersGained": 0,
    "直す所": [],
    "取った日": "2026-11-01",
+   "再生（公開ページ）": 1271
+  },
+  "d7": {
+   "views": 1270,
+   "averageViewPercentage": 119.87,
+   "averageViewDuration": 39,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-05",
    "再生（公開ページ）": 1271
   }
  },
@@ -186,7 +208,16 @@
  },
  "S102_通帳": {
   "type": null,
-  "video_id": "kEwYOtfhQ2s"
+  "video_id": "kEwYOtfhQ2s",
+  "h72": {
+   "views": 1461,
+   "averageViewPercentage": 115.16999999999999,
+   "averageViewDuration": 46,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-05",
+   "再生（公開ページ）": 1471
+  }
  },
  "S103_使い終わった古い財布": {
   "type": null,
@@ -199,5 +230,13 @@
  "S104_財布に入れてはいけない物": {
   "type": null,
   "video_id": "DuF-YE4539g"
+ },
+ "S105_実は貧乏な人に多い財布の": {
+  "type": null,
+  "video_id": "6u4iqraepck"
+ },
+ "006_台所のNG5": {
+  "type": "okinu",
+  "video_id": "OvYmHAfxZso"
  }
 }

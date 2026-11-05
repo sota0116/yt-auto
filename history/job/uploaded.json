@@ -216,6 +216,10 @@
    {
     "日時": "2026-11-01T19:17:00+09:00",
     "内容": "タイトルを「施工管理の建築と土木、年収は建築の勝ち。でも長く勤めているのは土木」に、サムネをB案に"
+   },
+   {
+    "日時": "2026-11-05T19:38:27+09:00",
+    "内容": "タイトルを「施工管理に進むなら建築か土木か、年収だけで選ぶと見落とすこと」に"
    }
   ]
  },
@@ -241,7 +245,7 @@
   "seconds": 500,
   "title_now": "大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円",
   "synthetic_on": null,
-  "views_now": 58,
+  "views_now": 61,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -279,7 +283,7 @@
   "seconds": 534,
   "title_now": "【給与逆転】もし初任給が30万円になったら、30代前半の先輩の半分以上が新人より下",
   "synthetic_on": null,
-  "views_now": 43,
+  "views_now": 47,
   "retitled": {
    "日時": "2026-10-30T02:35:28",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -287,7 +291,13 @@
   "published": true,
   "published_at": "2026-11-02T19:00:22+09:00",
   "comment_id": "UgzLLsQi8_gYS7v2afV4AaABAg",
-  "comment_at": "2026-11-02T19:49:16+09:00"
+  "comment_at": "2026-11-02T19:49:16+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-05T19:38:34+09:00",
+    "内容": "タイトルを「平均的な会社が初任給を30万円にした結果…焦ったのは新人ではなく先輩だった」に、サムネをB案に"
+   }
+  ]
  },
  {
   "work": "009_a_taxi",
@@ -343,7 +353,7 @@
   "seconds": 511,
   "title_now": "【時給の罠】プログラマー、稼ぎが近い仕事でトップなのに時給では勝てない相手がいた",
   "synthetic_on": null,
-  "views_now": 316,
+  "views_now": 317,
   "published": true,
   "published_at": "2026-11-01T19:00:33+09:00",
   "comment_id": "Ugws8Uh7WfDGJI_seZd4AaABAg",
@@ -371,7 +381,7 @@
   "seconds": 503,
   "title_now": "【悲報】プログラマー、隣のSEより年収311万円少ない。差は残業ではなかった",
   "synthetic_on": null,
-  "views_now": 15,
+  "views_now": 23,
   "published": true,
   "published_at": "2026-11-03T19:00:20+09:00",
   "comment_id": "UgzYNiJz_-rmFXypvOV4AaABAg",
@@ -399,7 +409,7 @@
   "seconds": 399,
   "title_now": "【給与逆転】タクシー運転手は年収が近い仕事で一番稼ぐのに、なぜ時給では勝てないのか",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-11-04T19:00:06+09:00",
   "comment_id": "UgyIBv9sF6BIW86PKlV4AaABAg",
@@ -422,12 +432,16 @@
    "あなたの残業代、消えても平気？ もし会社が残業をゼロにしたら"
   ],
   "comment": "年齢別 転職で年収が上がった人・下がった人の割合の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
-  "privacy_now": "private",
-  "publish_at": "2026-11-05T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 518,
   "title_now": "【悲報】残業ゼロを宣言した平均的な会社、45歳の課長より給料が減った人がいた",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-05T19:00:08+09:00",
+  "comment_id": "UgyJO5OqbR9Rhk362EB4AaABAg",
+  "comment_at": "2026-11-05T19:37:54+09:00"
  },
  {
   "work": "014_a_chori",

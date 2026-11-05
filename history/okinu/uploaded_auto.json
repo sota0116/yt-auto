@@ -43,7 +43,7 @@
   "seconds": 40,
   "title_now": "【60代】通帳を財布に入れて持ち歩く人へ",
   "synthetic_on": null,
-  "views_now": 1464,
+  "views_now": 1471,
   "published": true,
   "published_at": "2026-11-02T19:00:13+09:00",
   "comment_id": "Ugzys4XNIRHYA2j-4HJ4AaABAg",
@@ -68,7 +68,7 @@
   "seconds": 38,
   "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
   "synthetic_on": null,
-  "views_now": 1276,
+  "views_now": 1546,
   "published": true,
   "published_at": "2026-11-03T19:00:29+09:00",
   "comment_id": "UgzD4kv4_V8vv8eWSSN4AaABAg",
@@ -93,7 +93,7 @@
   "seconds": 41,
   "title_now": "【60代】財布に入れておくとお金が逃げる物3選",
   "synthetic_on": null,
-  "views_now": 281,
+  "views_now": 475,
   "published": true,
   "published_at": "2026-11-04T19:00:22+09:00",
   "comment_id": "UgyNaHSBf2gGGfIDi1l4AaABAg",
@@ -113,13 +113,17 @@
    "【60代】実は貧乏な人に多い財布の特徴3選"
   ],
   "comment": "あなたの財布には、いくつありましたか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-05T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 43,
   "title_now": "【60代】実は貧乏な人に多い財布の特徴3選",
   "synthetic_on": null,
-  "views_now": 0,
-  "_respaced": "2026-11-05T19:00:00+09:00 → 2026-11-05T12:00:00+09:00（2026-11-04 respace.py。3時間あける）"
+  "views_now": 8,
+  "_respaced": "2026-11-05T19:00:00+09:00 → 2026-11-05T12:00:00+09:00（2026-11-04 respace.py。3時間あける）",
+  "published": true,
+  "published_at": "2026-11-05T12:00:13+09:00",
+  "comment_id": "UgxjL8w9whSUnv5X-154AaABAg",
+  "comment_at": "2026-11-05T19:38:46+09:00"
  },
  {
   "work": "102_カバン",
@@ -197,13 +201,18 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-05T03:02:20+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】輪ゴムで留めたお札は、金運が止まります",
    "【60代】お札を輪ゴムで束ねる人が、お金に困る理由",
    "【60代】お札に輪ゴムをかけると、お金が逃げます"
   ],
-  "comment": "あなたの財布のお札は、輪ゴムで締められていませんか。"
+  "comment": "あなたの財布のお札は、輪ゴムで締められていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-08T12:00:00+09:00",
+  "seconds": 45,
+  "title_now": "【60代】輪ゴムで留めたお札は、金運が止まります",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
