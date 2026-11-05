@@ -1,1 +1,17 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/103_洗面所",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images"
+ ],
+ "started": "2026-11-05T20:30:09+09:00",
+ "tries": 1,
+ "code": "e369ac04bc34",
+ "stage": "build",
+ "updated": "2026-11-05T23:27:52+09:00"
+}

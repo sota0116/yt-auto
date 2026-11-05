@@ -1,0 +1,2155 @@
+{
+ "format": "long",
+ "title": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
+ "titles": [
+  "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
+  "洗面台の〇〇で決まる！拭いたのにお金が残らない人の洗面所NG5選【金運】",
+  "洗面所で決まる！タオルと〇〇でお金が出ていく家の特徴5選【金運】"
+ ],
+ "thumb": {
+  "layout": "split",
+  "left": "F02",
+  "right": "E11",
+  "line1": "夜の洗面台に",
+  "line2": "●●を残して寝る",
+  "left_label": "お金が出ていく家",
+  "right_label": "お金が残る家",
+  "hl": [
+   "●●"
+  ]
+ },
+ "thumb_kind": "split",
+ "desc_lead": "あなたの洗面所は、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね",
+ "tags": [
+  "金運",
+  "金運アップ",
+  "洗面所",
+  "洗面台",
+  "風水",
+  "洗面所風水",
+  "タオル",
+  "盛り塩",
+  "開運",
+  "年金",
+  "60代",
+  "50代",
+  "お金の習慣"
+ ],
+ "promise": "お金が残る人が洗面所でしない5つ（試供品をためこむ・脱いだ服をかごに山にする・ごわごわのタオルを使い続ける・洗面台に物を出しっぱなし・洗面台の水気を拭かずに寝る）の言い伝えのわけと、お金をかけずにできる直し方、旅先の歯ブラシ・封を開けていない試供品・洗濯機の中・残り湯・古いタオルを雑巾に・毎日替える洗濯・物の出しっぱなし・お化粧の道具・朝まとめて拭く・鏡・家族が多い時の「やっていいか」の答えと、洗面所で厄を落とす色、盛り塩のやり方が持ち帰れる",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん（62歳）・澄江さんは架空の人物（同じ団地の2人）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "金運の話は言い伝えとして話す。効き目の数字は出さない"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "とされ",
+  "風水",
+  "厄",
+  "邪気",
+  "陰の気",
+  "そうです"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "毎朝きれいに拭いている洗面台に、化粧水も、歯ブラシも、出したままになっていませんか。",
+   "tts_text": "毎朝きれいに拭いているせんめんだいに、けしょうすいも、はぶらしも、出したままになっていませんか。",
+   "image_en": "Early dim morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome single-lever faucet, a plain mirror cabinet above it, cream walls, a small old white washing machine beside the vanity. The basin has just been wiped and shines, but its edge is lined with plain unlabeled lotion bottles, a cup of toothbrushes, a hairbrush and a hair dryer with its cord coiled. Grey bluish light from a small frosted window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Early dim morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome single-lever faucet, a plain mirror cabinet above it, cream walls, a small old white washing machine beside the vanity. The basin has just been wiped and shines, but its edge is lined with plain unlabeled lotion bottles, a cup of toothbrushes, a hairbrush and a hair dryer with its cord coiled. Grey bluish light from a small frosted window. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A02",
+   "narration": "金運の世界では、物が出たままの洗面台は、お金が流れ出ていく家のしるしだと言われています。",
+   "tts_text": "きんうんの世界では、物が出たままのせんめんだいは、お金が流れ出ていくいえのしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "物が出たままの洗面台は",
+     "big": "お金が流れ出るしるし",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A03",
+   "narration": "お金が残る人には、洗面所で、絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人には、せんめんじょで、絶対にしないことがいつつあります。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人が洗面所で",
+    "text2": "絶対にしない、5つのこと",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A04",
+   "narration": "あなたは、いくつやっているか、指を折って数えてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "指を折って数えてください",
+    "text2": "いくつやっている？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "佐和子さん、62歳。年金は月11万円。",
+   "tts_text": "さわこさん、ろくじゅうにさい。年金は月じゅういちまんえん。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "62歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A06",
+   "narration": "朝、顔を洗ったら、洗面台をきれいに拭く。それが、佐和子さんの決まりです。",
+   "tts_text": "朝、顔を洗ったら、せんめんだいをきれいに拭く。それが、さわこさんの決まりです。",
+   "same_as": "A01"
+  },
+  {
+   "id": "A07",
+   "narration": "同じ団地の澄江さんも、年金はほとんど同じです。",
+   "tts_text": "同じ団地のすみえさんも、年金はほとんど同じです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A08",
+   "narration": "なのに、月末の財布に、千円札が残っているのは、澄江さんのほうでした。",
+   "tts_text": "なのに、げつまつの財布に、せんえんさつが残っているのは、すみえさんのほうでした。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月末の千円札　0枚",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月末の千円札　残る"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "毎朝、きれいにしているのに。",
+   "card": {
+    "type": "big_text",
+    "text": "洗面所は",
+    "text2": "毎朝、きれいにしているのに",
+    "kicker": "毎朝"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "A10",
+   "narration": "2人の洗面所を並べてみると、違いは、拭いたあとの洗面台にありました。",
+   "tts_text": "ふたりのせんめんじょを並べてみると、違いは、拭いたあとのせんめんだいにありました。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の違いは",
+    "text2": "拭いたあとの洗面台に",
+    "accent": "拭いたあと"
+   }
+  },
+  {
+   "id": "A11",
+   "narration": "洗面所は、顔と手を洗って、1日の厄を落とす場所だと言われます。",
+   "tts_text": "せんめんじょは、顔と手を洗って、いちにちのやくを落とす場所だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "洗面所は",
+     "big": "1日の厄を落とす場所",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "A11a",
+   "narration": "昔の人も、朝いちばんに、顔と手を水で清めてから、1日を始めました。",
+   "tts_text": "むかしの人も、あさいちばんに、顔と手を水で清めてから、いちにちを始めました。",
+   "image_en": "Edo period Japanese woodblock print style: a woman in a kimono washing her face at a wooden wash basin in the early morning, a small towel over her shoulder. Muted traditional colors. No readable text.",
+   "real": "Utamaro woman washing face ukiyo-e",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Edo period Japanese woodblock print style: a woman in a kimono washing her face at a wooden wash basin in the early morning, a small towel over her shoulder. Muted traditional colors. No readable text."
+  },
+  {
+   "id": "A12",
+   "narration": "落とした厄と、毎日の水がたまる所。だから、少しの乱れが、お金の流れに出やすいのです。",
+   "tts_text": "落としたやくと、毎日の水がたまる所。だから、少しの乱れが、お金の流れに出やすいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "厄と水がたまる所だから",
+    "text2": "少しの乱れが、お金に出る",
+    "accent": "お金"
+   }
+  },
+  {
+   "id": "A13",
+   "narration": "お金が残らない人は、洗面所で、この5つをやっています。",
+   "tts_text": "お金が残らない人は、せんめんじょで、このいつつをやっています。",
+   "montage": [
+    "B01",
+    "C01",
+    "D01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　●●●をためこむ",
+    "第4位　脱いだ●を、かごに山にする",
+    "第3位　●●●●のタオルを使い続ける",
+    "第2位　洗面台に●を出しっぱなし"
+   ]
+  },
+  {
+   "id": "A14",
+   "narration": "第1位は、きれい好きな人ほど、夜に見落としていることです。",
+   "tts_text": "だいいちいは、きれい好きな人ほど、夜に見落としていることです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "洗面台の●●を●●ずに寝る",
+    "sub": "きれい好きな人ほど、見落とす",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "A15",
+   "narration": "どれも、お金をかけずに、家にある物で直せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どれも",
+     "big": "家にある物で直せる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。試供品を、ためこむ。",
+   "tts_text": "だいごい。しきょうひんを、ためこむ。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "試供品をためこむ",
+    "sub": "いつか使うから、と取っておく"
+   },
+   "yt_chapter": "第5位 試供品をためこむ",
+   "chapter": "第5位 試供品をためこむ"
+  },
+  {
+   "id": "B01",
+   "narration": "洗面台の引き出しに、化粧品の小さな袋と、泊まった宿の歯ブラシ。",
+   "tts_text": "せんめんだいの引き出しに、けしょうひんの小さな袋と、泊まったやどのはぶらし。",
+   "image_en": "Close-up looking down into an open drawer under the white washbasin vanity in the small washroom of a modest present-day Japanese public housing apartment (danchi): the drawer is crammed with dozens of small plain cosmetic sample sachets, tiny unlabeled trial bottles and several wrapped hotel toothbrushes, all jumbled together. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up looking down into an open drawer under the white washbasin vanity in the small washroom of a modest present-day Japanese public housing apartment (danchi): the drawer is crammed with dozens of small plain cosmetic sample sachets, tiny unlabeled trial bottles and several wrapped hotel toothbrushes, all jumbled together. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B02",
+   "narration": "いつか使うからと、取っておいていませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "風水では、試供品は、もらったらすぐに使う物だと言われています。",
+   "tts_text": "ふうすいでは、しきょうひんは、もらったらすぐに使う物だと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "試供品は",
+     "big": "もらったら、すぐ使う",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B04",
+   "narration": "洗面台に出しっぱなしも、引き出しに入れっぱなしも、よくない、とされます。",
+   "tts_text": "せんめんだいに出しっぱなしも、引き出しに入れっぱなしも、よくない、とされます。",
+   "card": {
+    "type": "big_text",
+    "text": "出しっぱなしも",
+    "text2": "入れっぱなしも、よくない",
+    "accent": "入れっぱなし"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "使われずに眠っている物は、気が止まった物。",
+   "card": {
+    "type": "big_text",
+    "text": "使われずに眠る物は",
+    "text2": "気が、止まった物",
+    "accent": "止まった"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "止まった物がたまる所には、お金の流れも、止まりやすいと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "止まった物がたまると",
+     "big": "お金の流れも止まる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "B07",
+   "narration": "小さな袋ひとつでも、たまれば、引き出しひとつ分になります。",
+   "card": {
+    "type": "big_text",
+    "text": "小さな袋ひとつでも",
+    "text2": "たまれば、引き出しひとつ分",
+    "accent": "ひとつ分"
+   }
+  },
+  {
+   "id": "B08",
+   "narration": "佐和子さんの引き出しからは、試供品が、両手いっぱい出てきました。",
+   "tts_text": "さわこさんの引き出しからは、しきょうひんが、両手いっぱい出てきました。",
+   "image_en": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls, a small old white washing machine. Sawako crouches at the open vanity drawer holding a big double handful of small plain cosmetic sample sachets and tiny trial bottles, her eyes wide and mouth open in surprise. Soft dim light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls, a small old white washing machine. Sawako crouches at the open vanity drawer holding a big double handful of small plain cosmetic sample sachets and tiny trial bottles, her eyes wide and mouth open in surprise. Soft dim light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B09",
+   "narration": "こんなに、ためてたなんて。",
+   "card": {
+    "type": "big_text",
+    "text": "試供品を",
+    "text2": "こんなに、ためてたなんて",
+    "kicker": "こんなに"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B10",
+   "narration": "いちばん古いのは、いつもらったのか、思い出せない化粧水でした。",
+   "tts_text": "いちばん古いのは、いつもらったのか、思い出せないけしょうすいでした。",
+   "same_as": "B08"
+  },
+  {
+   "id": "B11",
+   "narration": "澄江さんの引き出しは、半分が、空いています。",
+   "tts_text": "すみえさんの引き出しは、はんぶんが、空いています。",
+   "image_en": "Close-up looking down into a neat open drawer under a clean white washbasin vanity in the small washroom of a modest present-day Japanese public housing apartment (danchi): only a few plain items are lined up in a row, a spare toothbrush and two small plain bottles, and half of the drawer is empty clean space. Soft morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up looking down into a neat open drawer under a clean white washbasin vanity in the small washroom of a modest present-day Japanese public housing apartment (danchi): only a few plain items are lined up in a row, a spare toothbrush and two small plain bottles, and half of the drawer is empty clean space. Soft morning light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B12",
+   "narration": "試供品は、もらったその週のうちに、使ってしまうのだそうです。",
+   "tts_text": "しきょうひんは、もらったその週のうちに、使ってしまうのだそうです。",
+   "same_as": "B11"
+  },
+  {
+   "id": "B13",
+   "narration": "直し方は、もらった試供品を、その週のうちに使うこと。",
+   "tts_text": "直し方は、もらったしきょうひんを、その週のうちに使うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "もらったら、その週に使う",
+     "古い物は、ありがとうと手放す",
+     "使わない物は、受け取らない"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "いつの物か分からない古い物は、ありがとうと言って、手放します。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "もらったら、その週に使う",
+     "古い物は、ありがとうと手放す",
+     "使わない物は、受け取らない"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B15",
+   "narration": "そして、使わない物は、はじめから受け取らない。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "もらったら、その週に使う",
+     "古い物は、ありがとうと手放す",
+     "使わない物は、受け取らない"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "空いた所に、新しい物と、新しい運が入ってくる。昔から、そう考えられてきました。",
+   "tts_text": "空いた所に、新しい物と、新しい運がはいってくる。昔から、そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "空いた所に",
+     "big": "新しい運が入る",
+     "size": 120
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B17",
+   "narration": "旅先でもらった、歯ブラシも？",
+   "tts_text": "たびさきでもらった、はぶらしも？",
+   "card": {
+    "type": "big_text",
+    "text": "旅先でもらった",
+    "text2": "歯ブラシも、同じ？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B18",
+   "narration": "同じだと言われます。ためずに、ふだんの歯ブラシとして、使ってしまえばいいのです。",
+   "tts_text": "同じだと言われます。ためずに、ふだんのはぶらしとして、使ってしまえばいいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "ためずに、ふだん使いに",
+    "text2": "歯ブラシも、同じ",
+    "accent": "同じ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B19",
+   "narration": "封を開けていない物なら、取っておいていいの？",
+   "tts_text": "ふうを開けていない物なら、取っておいていいの？",
+   "card": {
+    "type": "big_text",
+    "text": "封を開けていない",
+    "text2": "試供品なら、いい？",
+    "kicker": "封"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B20",
+   "narration": "開けていなくても、眠らせたままなら、同じだと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "眠らせたままなら",
+    "text2": "開けていなくても、同じ",
+    "accent": "同じ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "佐和子さんは、その週のうちに、化粧水の袋を3つ、使い切りました。",
+   "tts_text": "さわこさんは、その週のうちに、けしょうすいの袋をみっつ、使い切りました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "化粧水の袋を3つ、使い切った",
+    "accent": "3つ"
+   }
+  },
+  {
+   "id": "T01",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "T02",
+   "narration": "風水には、洗面所に置くと、厄を落とすと言われる色があります。",
+   "tts_text": "ふうすいには、せんめんじょに置くと、やくを落とすと言われる色があります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "洗面所に置くと",
+     "big": "厄を落とす色",
+     "size": 130
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "T03",
+   "narration": "その色は、赤と、薄紫。どちらでしょう。",
+   "tts_text": "その色は、あかと、うすむらさき。どちらでしょう。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "赤",
+      "sub": "？"
+     },
+     {
+      "head": "薄紫",
+      "sub": "？"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "T04",
+   "narration": "あなたは、どちらだと思いますか。",
+   "same_as": "T03"
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。脱いだ服を、かごに山にする。",
+   "tts_text": "だいよんい。脱いだ服を、かごにやまにする。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "脱いだ服を、かごに山にする",
+    "sub": "まとめて洗えば、楽だから"
+   },
+   "yt_chapter": "第4位 脱いだ服を、かごに山にする",
+   "chapter": "第4位 脱いだ服を、かごに山にする"
+  },
+  {
+   "id": "C01",
+   "narration": "洗面所の洗濯かごに、2日分、3日分の、脱いだ服。",
+   "tts_text": "せんめんじょの洗濯かごに、ふつかぶん、みっかぶんの、脱いだ服。",
+   "image_en": "Inside the dim small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: an open plastic laundry basket with no lid overflows with a heap of worn clothes, socks and a crumpled bath towel spilling over the rim onto the floor. Gloomy dim light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Inside the dim small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: an open plastic laundry basket with no lid overflows with a heap of worn clothes, socks and a crumpled bath towel spilling over the rim onto the floor. Gloomy dim light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C02",
+   "narration": "まとめて洗った方が、楽だと思っていませんか。",
+   "tts_text": "まとめて洗ったほうが、楽だと思っていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "風水では、脱いだ服には、その日1日の厄がついていると考えます。",
+   "tts_text": "ふうすいでは、脱いだ服には、その日いちにちのやくがついていると考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "脱いだ服には",
+     "big": "1日の厄がついている",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C04",
+   "narration": "汚れた洗濯物をためておくと、陰の気が生まれる、とも言われます。",
+   "tts_text": "汚れた洗濯物をためておくと、いんのきが生まれる、とも言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "汚れた洗濯物をためると",
+    "text2": "陰の気が、生まれる",
+    "accent": "陰の気"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "厄を落とすはずの洗面所に、厄の山を置いておく。",
+   "tts_text": "やくを落とすはずのせんめんじょに、やくのやまを置いておく。",
+   "card": {
+    "type": "big_text",
+    "text": "厄を落とす洗面所に",
+    "text2": "厄の山を、置いておく",
+    "accent": "厄の山"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "それでは、せっかく落とした厄が、また家にたまってしまうと言われています。",
+   "tts_text": "それでは、せっかく落としたやくが、またいえにたまってしまうと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "落とした厄が",
+     "big": "また家にたまる",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "C07",
+   "narration": "佐和子さんの洗濯かごは、いつも、服があふれそうなほど、いっぱいでした。",
+   "tts_text": "さわこさんの洗濯かごは、いつも、服があふれそうなほど、いっぱいでした。",
+   "image_en": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: Sawako lifts a heavy overflowing laundry basket piled high with worn clothes, frowning with a tired troubled face, a sock about to fall off the top. Soft dim evening light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: Sawako lifts a heavy overflowing laundry basket piled high with worn clothes, frowning with a tired troubled face, a sock about to fall off the top. Soft dim evening light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C08",
+   "narration": "1人分だし、3日に1回で、いいと思ってた。",
+   "tts_text": "ひとりぶんだし、みっかにいっかいで、いいと思ってた。",
+   "card": {
+    "type": "big_text",
+    "text": "洗濯は",
+    "text2": "3日に1回で、いいと思ってた",
+    "kicker": "3日に1回"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C09",
+   "narration": "お風呂上がりのバスタオルも、その上に、重ねていました。",
+   "same_as": "C07"
+  },
+  {
+   "id": "C10",
+   "narration": "澄江さんの洗濯かごには、手ぬぐいが1枚、かぶせてあります。",
+   "tts_text": "すみえさんの洗濯かごには、てぬぐいがいちまい、かぶせてあります。",
+   "image_en": "Inside a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: a woven laundry basket neatly covered with a plain pale blue cotton cloth so the clothes inside cannot be seen; the floor is clear and dry. Soft morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Inside a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi), beside a small old white washing machine: a woven laundry basket neatly covered with a plain pale blue cotton cloth so the clothes inside cannot be seen; the floor is clear and dry. Soft morning light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C11",
+   "narration": "中の服が、目に入らないようにして、毎日、1日分ずつ洗っているのです。",
+   "tts_text": "中の服が、目に入らないようにして、毎日、いちにちぶんずつ洗っているのです。",
+   "same_as": "C10"
+  },
+  {
+   "id": "C12",
+   "narration": "直し方は、脱いだ服を、ためずに洗うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "脱いだ服は、ためずに洗う",
+     "かごには、ふたか布をかける",
+     "洗濯機に、一晩入れたままにしない"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C13",
+   "narration": "かごには、ふたをするか、手ぬぐいを1枚かけます。",
+   "tts_text": "かごには、ふたをするか、てぬぐいをいちまいかけます。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "脱いだ服は、ためずに洗う",
+     "かごには、ふたか布をかける",
+     "洗濯機に、一晩入れたままにしない"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C14",
+   "narration": "そして、洗濯機の中に、一晩入れたままにしない。",
+   "tts_text": "そして、洗濯機の中に、ひとばん入れたままにしない。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "脱いだ服は、ためずに洗う",
+     "かごには、ふたか布をかける",
+     "洗濯機に、一晩入れたままにしない"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "汚れ物が目に入らない洗面所は、それだけで、気が軽くなると言われます。",
+   "tts_text": "汚れものが目に入らないせんめんじょは、それだけで、気が軽くなると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "汚れ物が見えないと",
+     "big": "洗面所の気が軽くなる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "C16",
+   "narration": "洗濯機の中に入れておけば、いいでしょう？",
+   "card": {
+    "type": "big_text",
+    "text": "かごの代わりに",
+    "text2": "洗濯機の中なら、いい？",
+    "kicker": "洗濯機"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C17",
+   "narration": "洗濯機の中に一晩も、よくないと言われます。入れたら、その日のうちに回します。",
+   "tts_text": "洗濯機の中にひとばんも、よくないと言われます。入れたら、その日のうちに回します。",
+   "card": {
+    "type": "big_text",
+    "text": "入れたら、その日のうちに回す",
+    "text2": "洗濯機に一晩も、よくない",
+    "accent": "一晩",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "お風呂の残り湯で、洗濯してもいいの？",
+   "tts_text": "おふろののこりゆで、洗濯してもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "お風呂の",
+    "text2": "残り湯で洗濯して、いい？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C19",
+   "narration": "残り湯は、体の厄を落とした水だと言う人もいます。使うなら、すすぎは、きれいな水で。",
+   "tts_text": "のこりゆは、体のやくを落とした水だと言う人もいます。使うなら、すすぎは、きれいな水で。",
+   "card": {
+    "type": "big_text",
+    "text": "残り湯は、厄を落とした水",
+    "text2": "すすぎは、きれいな水で",
+    "accent": "すすぎ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C20",
+   "narration": "佐和子さんは、その晩から、洗濯物を、1日分ずつ回すことにしました。",
+   "tts_text": "さわこさんは、そのばんから、洗濯物を、いちにちぶんずつ回すことにしました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "1日分ずつ、回すことにした",
+    "accent": "1日分"
+   }
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "●●●●のタオルを使い続ける",
+     "洗面台に●を出しっぱなし",
+     "洗面台の●●を●●ずに寝る"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、毎日、何気なくしている、手元のくせです。",
+   "tts_text": "残りのみっつは、毎日、なにげなくしている、手元のくせです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "●●●●のタオルを使い続ける",
+     "洗面台に●を出しっぱなし",
+     "洗面台の●●を●●ずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "チャンネル登録をしておくと、次の金運のお話が届きます。",
+   "tts_text": "チャンネル登録をしておくと、次のきんうんのお話が届きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。ごわごわのタオルを、使い続ける。",
+   "tts_text": "だいさんい。ごわごわのタオルを、使い続ける。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "ごわごわのタオルを使い続ける",
+    "sub": "まだ拭けるから、と替えない"
+   },
+   "yt_chapter": "第3位 ごわごわのタオルを使い続ける",
+   "chapter": "第3位 ごわごわのタオルを使い続ける"
+  },
+  {
+   "id": "D01",
+   "narration": "洗面台の横に、色のあせた、ごわごわのタオル。",
+   "tts_text": "せんめんだいの横に、色のあせた、ごわごわのタオル。",
+   "image_en": "Close-up beside a white washbasin in the dim small washroom of a modest present-day Japanese public housing apartment (danchi): an old faded thin hand towel, stiff and rough with frayed edges and grey stains, hangs damp and crumpled on a chrome towel ring. Gloomy dim light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up beside a white washbasin in the dim small washroom of a modest present-day Japanese public housing apartment (danchi): an old faded thin hand towel, stiff and rough with frayed edges and grey stains, hangs damp and crumpled on a chrome towel ring. Gloomy dim light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D02",
+   "narration": "湿ったまま、何日も、掛けっぱなしになっていませんか。",
+   "tts_text": "しめったまま、なんにちも、かけっぱなしになっていませんか。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D03",
+   "narration": "タオルは、肌に触れて、邪気を吸い取ってくれる物だと言われます。",
+   "tts_text": "タオルは、はだに触れて、じゃきを吸い取ってくれる物だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "タオルは",
+     "big": "邪気を吸い取る物",
+     "size": 120
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "D04",
+   "narration": "顔や手を拭くタオルは、厄落としの、仕上げの道具です。",
+   "tts_text": "顔や手を拭くタオルは、やくおとしの、仕上げの道具です。",
+   "card": {
+    "type": "big_text",
+    "text": "顔や手を拭くタオルは",
+    "text2": "厄落としの、仕上げ",
+    "accent": "仕上げ"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "古くなって水を吸わなくなったタオルは、邪気を吸う力も弱まる、とされます。",
+   "tts_text": "古くなって水を吸わなくなったタオルは、じゃきを吸う力も弱まる、とされます。",
+   "card": {
+    "type": "big_text",
+    "text": "水を吸わないタオルは",
+    "text2": "邪気を吸う力も、弱まる",
+    "accent": "弱まる"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "湿ったタオルは、陰の気を出し、洗った顔に、悪い気を戻すとも言われています。",
+   "tts_text": "しめったタオルは、いんのきを出し、洗った顔に、悪い気を戻すとも言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "湿ったタオルは",
+     "big": "悪い気を顔に戻す",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "D07",
+   "narration": "せっかく洗って落とした厄を、拭く時に、また顔に戻してしまうのです。",
+   "tts_text": "せっかく洗って落としたやくを、拭く時に、また顔に戻してしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "洗って落とした厄を",
+    "text2": "拭く時に、また戻す",
+    "accent": "戻す"
+   }
+  },
+  {
+   "id": "D08",
+   "narration": "佐和子さんは、顔を洗うたびに、同じタオルで拭いていました。",
+   "tts_text": "さわこさんは、顔を洗うたびに、同じタオルで拭いていました。",
+   "image_en": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako presses an old faded stiff hand towel to her wet face after washing, frowning with a puzzled uncomfortable look, water drops on her chin. Soft dim morning light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako presses an old faded stiff hand towel to her wet face after washing, frowning with a puzzled uncomfortable look, water drops on her chin. Soft dim morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D09",
+   "narration": "洗ったばかりなのに、なんだか、すっきりしない。",
+   "card": {
+    "type": "big_text",
+    "text": "顔を洗ったのに",
+    "text2": "なんだか、すっきりしない",
+    "kicker": "すっきり"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D10",
+   "narration": "そのタオルは、ずっと前に、お店でもらった物でした。",
+   "same_as": "D08"
+  },
+  {
+   "id": "D11",
+   "narration": "澄江さんの棚には、白いタオルが、たたんで重ねてあります。",
+   "tts_text": "すみえさんのたなには、白いタオルが、たたんで重ねてあります。",
+   "image_en": "Close-up of an open shelf in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): a neat stack of soft fluffy plain white hand towels folded the same way, and an older woman's hand taking the top one. Only the hand, no face. Bright soft morning light. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up of an open shelf in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): a neat stack of soft fluffy plain white hand towels folded the same way, and an older woman's hand taking the top one. Only the hand, no face. Bright soft morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D12",
+   "narration": "顔と手を拭くタオルは、毎日、1枚ずつ替えているのです。",
+   "tts_text": "顔と手を拭くタオルは、毎日、いちまいずつ替えているのです。",
+   "same_as": "D11"
+  },
+  {
+   "id": "D13",
+   "narration": "直し方は、顔と手を拭くタオルを、毎日替えること。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "顔と手のタオルは、毎日替える",
+     "掛ける時は、広げて乾かす",
+     "ごわごわになったら、替える"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "掛ける時は、たたまずに広げて、乾かします。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "顔と手のタオルは、毎日替える",
+     "掛ける時は、広げて乾かす",
+     "ごわごわになったら、替える"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "そして、ごわごわになったら、新しいタオルに替える。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "顔と手のタオルは、毎日替える",
+     "掛ける時は、広げて乾かす",
+     "ごわごわになったら、替える"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D16",
+   "narration": "見た目がきれいでも、半年から1年で替えるのがいい、と言われています。",
+   "tts_text": "見た目がきれいでも、はんとしからいちねんで替えるのがいい、と言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "タオルの替えどきは",
+     "big": "半年から1年",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "D17",
+   "narration": "古いタオルは、雑巾にしてもいいの？",
+   "tts_text": "古いタオルは、ぞうきんにしてもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "古いタオルを",
+    "text2": "雑巾にして、いい？",
+    "kicker": "雑巾"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D18",
+   "narration": "ここは、言い方が分かれます。雑巾に回していいという人も、邪気を家中に広げるという人もいます。",
+   "tts_text": "ここは、言い方が分かれます。ぞうきんに回していいという人も、じゃきをいえじゅうに広げるという人もいます。",
+   "card": {
+    "type": "big_text",
+    "text": "雑巾にいい／邪気を広げる",
+    "text2": "言い方が、分かれる",
+    "accent": "分かれる",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D19",
+   "narration": "迷ったら、小さく切って、1回拭いたら手放す。それなら、汚れを広げずにすみます。",
+   "tts_text": "迷ったら、小さく切って、いっかい拭いたら手放す。それなら、汚れを広げずにすみます。",
+   "card": {
+    "type": "big_text",
+    "text": "迷ったら",
+    "text2": "1回拭いたら、手放す",
+    "accent": "手放す"
+   }
+  },
+  {
+   "id": "D20",
+   "narration": "毎日替えたら、洗濯物が増えるでしょう？",
+   "card": {
+    "type": "big_text",
+    "text": "タオルを毎日替えたら",
+    "text2": "洗濯物が、増える？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D21",
+   "narration": "顔を拭く小さなタオルなら、1日1枚でも、かごの中は、ほとんど変わりません。",
+   "tts_text": "顔を拭く小さなタオルなら、いちにちいちまいでも、かごの中は、ほとんど変わりません。",
+   "card": {
+    "type": "big_text",
+    "text": "小さなタオルなら",
+    "text2": "1日1枚でも、変わらない",
+    "accent": "1日1枚",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D22",
+   "narration": "佐和子さんは、押し入れの奥から、しまったままの、新しいタオルを出しました。",
+   "tts_text": "さわこさんは、おしいれの奥から、しまったままの、新しいタオルを出しました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "しまったままのタオルを出した",
+    "accent": "新しい"
+   }
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。洗面台に、物を出しっぱなし。",
+   "tts_text": "だいにい。せんめんだいに、物を出しっぱなし。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "洗面台に物を出しっぱなし",
+    "sub": "毎日使うから、出しておく"
+   },
+   "yt_chapter": "第2位 洗面台に物を出しっぱなし",
+   "chapter": "第2位 洗面台に物を出しっぱなし"
+  },
+  {
+   "id": "E01",
+   "narration": "化粧水に、乳液に、ヘアブラシ。歯ブラシのコップに、ドライヤー。",
+   "tts_text": "けしょうすいに、にゅうえきに、ヘアブラシ。はぶらしのコップに、ドライヤー。",
+   "image_en": "Close-up of the cluttered counter of a white washbasin in the dim small washroom of a modest present-day Japanese public housing apartment (danchi): plain unlabeled lotion bottles, a hairbrush with hair in it, a cup crowded with toothbrushes, a squeezed toothpaste tube, makeup brushes and a hair dryer with its cord tangled, all crowding the edge of the basin, the clutter reflected in the mirror above. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up of the cluttered counter of a white washbasin in the dim small washroom of a modest present-day Japanese public housing apartment (danchi): plain unlabeled lotion bottles, a hairbrush with hair in it, a cup crowded with toothbrushes, a squeezed toothpaste tube, makeup brushes and a hair dryer with its cord tangled, all crowding the edge of the basin, the clutter reflected in the mirror above. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E02",
+   "narration": "毎日使うから、出しておく方が、便利ですよね。",
+   "tts_text": "毎日使うから、出しておくほうが、便利ですよね。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E03",
+   "narration": "風水では、物が雑然と出ていると、気の流れが止まると考えます。",
+   "tts_text": "ふうすいでは、物がざつぜんと出ていると、気の流れが止まると考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "物が雑然と出ていると",
+     "big": "気の流れが止まる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "E04",
+   "narration": "洗面台の上が散らかると、それが、そのまま鏡に映ります。",
+   "tts_text": "せんめんだいの上が散らかると、それが、そのままかがみに映ります。",
+   "card": {
+    "type": "big_text",
+    "text": "洗面台の散らかりは",
+    "text2": "そのまま、鏡に映る",
+    "accent": "鏡"
+   }
+  },
+  {
+   "id": "E05",
+   "narration": "鏡に映った散らかりは、乱れを2倍にする、と言われます。",
+   "tts_text": "かがみに映った散らかりは、乱れをにばいにする、と言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "鏡に映った散らかりは",
+    "text2": "乱れが、2倍になる",
+    "accent": "2倍"
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "気の流れが止まった家には、お金も、流れてこないと言われています。",
+   "tts_text": "気の流れが止まったいえには、お金も、流れてこないと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "気が止まった家には",
+     "big": "お金も流れてこない",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "E07",
+   "narration": "それに、ドライヤーは火の気を持つ道具。水の気が集まる洗面所とは、相性が悪いとも言われます。",
+   "tts_text": "それに、ドライヤーはひのきを持つ道具。みずのきが集まるせんめんじょとは、相性が悪いとも言われます。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "ドライヤー",
+      "sub": "火の気"
+     },
+     {
+      "head": "洗面所",
+      "sub": "水の気"
+     }
+    ],
+    "sep": "×"
+   }
+  },
+  {
+   "id": "E08",
+   "narration": "佐和子さんは、拭いたばかりの洗面台を、鏡ごしに見つめました。",
+   "tts_text": "さわこさんは、拭いたばかりのせんめんだいを、かがみごしに見つめました。",
+   "image_en": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako stands in front of the cluttered counter crowded with plain bottles, a toothbrush cup and a hair dryer, one hand on her cheek, a troubled frowning face, looking at the clutter. Soft dim light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako stands in front of the cluttered counter crowded with plain bottles, a toothbrush cup and a hair dryer, one hand on her cheek, a troubled frowning face, looking at the clutter. Soft dim light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E09",
+   "narration": "拭いたのに、なんだか、ごちゃごちゃして見える。",
+   "card": {
+    "type": "big_text",
+    "text": "洗面台を",
+    "text2": "拭いたのに、ごちゃごちゃ",
+    "kicker": "ごちゃごちゃ"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E10",
+   "narration": "毎朝、物を1つずつ持ち上げては、その下を拭いていたのです。",
+   "tts_text": "毎朝、物をひとつずつ持ち上げては、その下を拭いていたのです。",
+   "same_as": "E08"
+  },
+  {
+   "id": "E11",
+   "narration": "澄江さんの洗面台の上には、ハンドソープが1つだけ。",
+   "tts_text": "すみえさんのせんめんだいの上には、ハンドソープがひとつだけ。",
+   "image_en": "A clean bright small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a gleaming dry chrome faucet and a spotless dry basin; the counter is completely clear except for one plain white unlabeled soap pump; the mirror cabinet door is slightly open showing toothbrushes and bottles neatly stored inside. Warm soft morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "A clean bright small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a gleaming dry chrome faucet and a spotless dry basin; the counter is completely clear except for one plain white unlabeled soap pump; the mirror cabinet door is slightly open showing toothbrushes and bottles neatly stored inside. Warm soft morning light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E12",
+   "narration": "ほかの物は、鏡の裏の棚と、下の扉の中に、しまってあります。",
+   "tts_text": "ほかの物は、かがみの裏のたなと、したの扉の中に、しまってあります。",
+   "same_as": "E11"
+  },
+  {
+   "id": "E13",
+   "narration": "直し方は、使った物を、扉の中へ戻すこと。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "使ったら、扉の中へ戻す",
+     "出しておく物は、1つか2つ",
+     "お化粧は、洗面台でしない"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E14",
+   "narration": "出しておく物は、ハンドソープなど、1つか2つだけにします。",
+   "tts_text": "出しておく物は、ハンドソープなど、ひとつかふたつだけにします。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "使ったら、扉の中へ戻す",
+     "出しておく物は、1つか2つ",
+     "お化粧は、洗面台でしない"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E15",
+   "narration": "そして、お化粧は、洗面台の前でしない。",
+   "tts_text": "そして、おけしょうは、せんめんだいの前でしない。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "使ったら、扉の中へ戻す",
+     "出しておく物は、1つか2つ",
+     "お化粧は、洗面台でしない"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "洗面所は、厄を落とす場所。お化粧は、別の部屋の鏡の前で、と言われます。",
+   "tts_text": "せんめんじょは、やくを落とす場所。おけしょうは、べつのへやのかがみの前で、と言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お化粧は",
+     "big": "別の部屋の鏡の前で",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "E17",
+   "narration": "洗面所に、物を出しっぱなしにしても、いいの？",
+   "tts_text": "せんめんじょに、物を出しっぱなしにしても、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "洗面所に",
+    "text2": "出しっぱなしは、だめ？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E18",
+   "narration": "毎日使う歯ブラシなら、出しておいてもいい、と言われます。ただし、水気を切って、キャップをして。",
+   "tts_text": "毎日使うはぶらしなら、出しておいてもいい、と言われます。ただし、みずけを切って、キャップをして。",
+   "card": {
+    "type": "big_text",
+    "text": "水気を切って、キャップをして",
+    "text2": "歯ブラシなら、いい",
+    "accent": "歯ブラシ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E19",
+   "narration": "お化粧の道具だけなら、出しておいても、いいの？",
+   "tts_text": "おけしょうの道具だけなら、出しておいても、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "洗面台に",
+    "text2": "お化粧の道具は、いい？",
+    "kicker": "お化粧"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E20",
+   "narration": "お化粧の道具は、出しっぱなしにしない方がいい、と言われています。使ったら、ポーチに戻します。",
+   "tts_text": "おけしょうの道具は、出しっぱなしにしないほうがいい、と言われています。使ったら、ポーチに戻します。",
+   "card": {
+    "type": "big_text",
+    "text": "使ったら、ポーチへ",
+    "text2": "お化粧の道具は、しまう",
+    "accent": "しまう",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E21",
+   "narration": "佐和子さんは、ドライヤーを、下の扉の中にしまいました。",
+   "tts_text": "さわこさんは、ドライヤーを、したの扉の中にしまいました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "ドライヤーを、扉の中へ",
+    "accent": "扉の中"
+   }
+  },
+  {
+   "id": "E22",
+   "narration": "物が少ない洗面台は、拭くのも、あっという間に終わります。",
+   "tts_text": "物が少ないせんめんだいは、拭くのも、あっというまに終わります。",
+   "same_as": "E11"
+  },
+  {
+   "id": "P01",
+   "narration": "4つが出そろいました。残るは、第1位です。",
+   "tts_text": "よっつが出そろいました。残るは、だいいちいです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "ごわごわのタオルを使い続ける",
+     "洗面台に物を出しっぱなし",
+     "洗面台の●●を●●ずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "第1位は、毎朝きれいにしている人ほど、やっていることです。",
+   "tts_text": "だいいちいは、毎朝きれいにしている人ほど、やっていることです。",
+   "card": {
+    "type": "big_text",
+    "text": "毎朝きれいにする人ほど",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、洗面台の水気を、拭かずに寝ること。",
+   "tts_text": "だいいちいは、せんめんだいのみずけを、拭かずに寝ること。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "洗面台の水気を拭かずに寝る",
+    "sub": "きれい好きな人ほど、見落とす"
+   },
+   "yt_chapter": "第1位 きれい好きな人ほど見落とすこと",
+   "chapter": "第1位 きれい好きな人ほど見落とすこと"
+  },
+  {
+   "id": "F02",
+   "narration": "夜、歯をみがいたあと、ボウルにも、蛇口にも、水が残ったまま、明かりを消す。",
+   "tts_text": "夜、歯をみがいたあと、ボウルにも、じゃぐちにも、水が残ったまま、明かりを消す。",
+   "image_en": "Night inside the dark small washroom of a modest present-day Japanese public housing apartment (danchi): close on a white washbasin with a chrome faucet; water droplets and splashes cover the wet basin, the counter and the base of the faucet, a small puddle sits around the drain, a drop hangs from the faucet tip, toothpaste splashes dot the mirror. Only a faint cold light from a small frosted window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "peak": true,
+   "strong": true,
+   "highlight": "拭かずに寝る",
+   "image": "Night inside the dark small washroom of a modest present-day Japanese public housing apartment (danchi): close on a white washbasin with a chrome faucet; water droplets and splashes cover the wet basin, the counter and the base of the faucet, a small puddle sits around the drain, a drop hangs from the faucet tip, toothpaste splashes dot the mirror. Only a faint cold light from a small frosted window. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F03",
+   "narration": "朝はきれいに拭くのに、夜は、そのまま寝てしまう。",
+   "card": {
+    "type": "big_text",
+    "text": "朝は拭くのに",
+    "text2": "夜は、そのまま寝てしまう",
+    "accent": "夜"
+   }
+  },
+  {
+   "id": "F04",
+   "narration": "朝、拭くからいい。そう思う人ほど、夜を見落としているのです。",
+   "card": {
+    "type": "big_text",
+    "text": "朝、拭くからいい",
+    "text2": "そう思う人ほど、夜を見落とす",
+    "accent": "見落とす"
+   }
+  },
+  {
+   "id": "F05",
+   "narration": "風水では、水は、お金をあらわす、財の象徴です。",
+   "tts_text": "ふうすいでは、水は、お金をあらわす、ざいのしょうちょうです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "水は",
+     "big": "お金をあらわす",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "F06",
+   "narration": "きれいな水が流れる所には、いい気が集まると言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "きれいな水が流れる所に",
+    "text2": "いい気が、集まる",
+    "accent": "集まる"
+   }
+  },
+  {
+   "id": "F07",
+   "narration": "反対に、流れずに残った水は、よどんだ水。",
+   "card": {
+    "type": "big_text",
+    "text": "流れずに残った水は",
+    "text2": "よどんだ水",
+    "accent": "よどんだ"
+   }
+  },
+  {
+   "id": "F08",
+   "narration": "一晩残った水は、水あかとぬめりになり、金運のよどみにつながると言われています。",
+   "tts_text": "ひとばん残った水は、みずあかとぬめりになり、きんうんのよどみにつながると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "一晩残った水は",
+     "big": "金運のよどみ",
+     "size": 130
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "F09",
+   "narration": "洗面所は、もともと、湿気がこもりやすい場所です。",
+   "tts_text": "せんめんじょは、もともと、しっけがこもりやすい場所です。",
+   "card": {
+    "type": "big_text",
+    "text": "洗面所は、もともと",
+    "text2": "湿気が、こもりやすい",
+    "accent": "湿気"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "水気は、邪気をとどめる、とも言われます。夜の水は、朝まで、そこにとどまるのです。",
+   "tts_text": "みずけは、じゃきをとどめる、とも言われます。夜の水は、朝まで、そこにとどまるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "水気は、邪気をとどめる",
+    "text2": "夜の水は、朝までとどまる",
+    "accent": "朝まで"
+   }
+  },
+  {
+   "id": "F11",
+   "narration": "朝、拭いた時には、もう一晩分のよどみが、たまったあと。そう考えられてきました。",
+   "tts_text": "朝、拭いた時には、もうひとばんぶんのよどみが、たまったあと。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "朝拭いた時には",
+     "big": "一晩分のよどみのあと",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "F12",
+   "narration": "佐和子さんは、毎朝、蛇口の白い水あかを、こすっていました。",
+   "tts_text": "さわこさんは、毎朝、じゃぐちの白いみずあかを、こすっていました。",
+   "image_en": "Morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Close on Sawako scrubbing chalky white water spots at the base of the chrome faucet with a cloth, leaning in with a tired puzzled face. Soft grey morning light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "image": "Morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Close on Sawako scrubbing chalky white water spots at the base of the chrome faucet with a cloth, leaning in with a tired puzzled face. Soft grey morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F13",
+   "narration": "毎朝拭いているのに、どうして、白くなるんだろう。",
+   "card": {
+    "type": "big_text",
+    "text": "蛇口が",
+    "text2": "毎朝拭いても、白くなる",
+    "kicker": "どうして"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F14",
+   "narration": "その白い跡は、夜のうちに、乾いた水の跡だったのです。",
+   "same_as": "F12"
+  },
+  {
+   "id": "F15",
+   "narration": "佐和子さんは、はっとしました。汚していたのは、朝ではなく、夜だったのです。",
+   "tts_text": "さわこさんは、はっとしました。汚していたのは、朝ではなく、夜だったのです。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "汚していたのは",
+     "big": "朝ではなく、夜",
+     "size": 120
+    }
+   },
+   "img_from": "pose:s02_A07"
+  },
+  {
+   "id": "F16",
+   "narration": "澄江さんは、寝る前に、その日使ったタオルで、洗面台をさっと拭きます。",
+   "tts_text": "すみえさんは、寝る前に、その日使ったタオルで、せんめんだいをさっと拭きます。",
+   "image_en": "Night close-up in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): an older woman's hands wipe the wet white washbasin and the base of a chrome faucet dry with a used plain white hand towel. Only the hands, no face. Warm soft lamp light. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Night close-up in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): an older woman's hands wipe the wet white washbasin and the base of a chrome faucet dry with a used plain white hand towel. Only the hands, no face. Warm soft lamp light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F17",
+   "narration": "ボウルも、蛇口も、鏡の水はねも。1分もかかりません。",
+   "tts_text": "ボウルも、じゃぐちも、かがみのみずはねも。いっぷんもかかりません。",
+   "same_as": "F16"
+  },
+  {
+   "id": "F18",
+   "narration": "拭いたタオルは、そのまま、洗濯かごへ入れます。",
+   "same_as": "F16"
+  },
+  {
+   "id": "F19",
+   "narration": "直し方は、寝る前に、ボウルと蛇口の水を拭くこと。",
+   "tts_text": "直し方は、寝る前に、ボウルとじゃぐちの水を拭くこと。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、ボウルと蛇口を拭く",
+     "拭くのは、その日のタオルで",
+     "仕上げに、換気扇か窓をあける"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F20",
+   "narration": "拭くのは、洗濯に出す前の、その日のタオルで。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、ボウルと蛇口を拭く",
+     "拭くのは、その日のタオルで",
+     "仕上げに、換気扇か窓をあける"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F21",
+   "narration": "仕上げに、換気扇を回すか、窓を少しあけておきます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、ボウルと蛇口を拭く",
+     "拭くのは、その日のタオルで",
+     "仕上げに、換気扇か窓をあける"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F22",
+   "narration": "乾いた洗面台で眠れば、朝は、よどみのない水から、1日が始まると言われます。",
+   "tts_text": "かわいたせんめんだいで眠れば、朝は、よどみのない水から、いちにちが始まると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "乾いた洗面台で眠れば",
+     "big": "よどみのない朝",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "F23",
+   "narration": "朝、まとめて拭けば、いいんじゃないの？",
+   "card": {
+    "type": "big_text",
+    "text": "水気は",
+    "text2": "朝、まとめて拭けばいい？",
+    "kicker": "まとめて"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F24",
+   "narration": "朝だけでは、足りないと言われます。水がよどむのは、夜から朝のあいだだからです。",
+   "card": {
+    "type": "big_text",
+    "text": "よどむのは、夜から朝",
+    "text2": "朝だけでは、足りない",
+    "accent": "足りない",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F25",
+   "narration": "鏡の水はねも、毎晩拭かないと、いけないの？",
+   "tts_text": "かがみのみずはねも、まいばん拭かないと、いけないの？",
+   "card": {
+    "type": "big_text",
+    "text": "鏡の水はねも",
+    "text2": "毎晩、拭かないとだめ？",
+    "kicker": "鏡"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F26",
+   "narration": "鏡は、朝のひと拭きでいいと言われます。夜は、水がたまるボウルと蛇口を先に。",
+   "tts_text": "かがみは、朝のひとふきでいいと言われます。夜は、水がたまるボウルとじゃぐちを先に。",
+   "card": {
+    "type": "big_text",
+    "text": "夜は、ボウルと蛇口を先に",
+    "text2": "鏡は、朝のひと拭きでいい",
+    "accent": "ひと拭き",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F27",
+   "narration": "家族が多くて、最後に使う人が、決まらない時は？",
+   "tts_text": "かぞくが多くて、さいごに使う人が、決まらない時は？",
+   "card": {
+    "type": "big_text",
+    "text": "家族が多くて",
+    "text2": "最後の人が決まらない時は？",
+    "kicker": "家族"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F28",
+   "narration": "寝る前、自分が洗面所を出る時に、ひと拭き。そう決めておけば、続きます。",
+   "tts_text": "寝る前、自分がせんめんじょを出る時に、ひとふき。そう決めておけば、続きます。",
+   "card": {
+    "type": "big_text",
+    "text": "自分が出る時に、ひと拭き",
+    "text2": "そう決めておけば、続く",
+    "accent": "決めて",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F29",
+   "narration": "佐和子さんも、その晩から、寝る前のひと拭きを、始めました。",
+   "tts_text": "さわこさんも、そのばんから、寝る前のひとふきを、始めました。",
+   "image_en": "Bright fresh morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako smiles gently with relief as she looks at the dry spotless basin and gleaming faucet with no white water spots, one hand resting on the edge of the counter. Warm morning sunlight. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "image": "Bright fresh morning inside the small washroom of a modest present-day Japanese public housing apartment (danchi): a white washbasin vanity with a chrome faucet, a plain mirror cabinet, cream walls. Sawako smiles gently with relief as she looks at the dry spotless basin and gleaming faucet with no white water spots, one hand resting on the edge of the counter. Warm morning sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F30",
+   "narration": "次の朝、蛇口には、白い跡が、ありませんでした。",
+   "tts_text": "次の朝、じゃぐちには、白いあとが、ありませんでした。",
+   "same_as": "F29"
+  },
+  {
+   "id": "F31",
+   "narration": "朝の掃除が、半分の時間で、すむようになったのです。",
+   "tts_text": "朝の掃除が、はんぶんの時間で、すむようになったのです。",
+   "card": {
+    "type": "big_text",
+    "text": "朝の掃除が",
+    "text2": "半分の時間で、すむ",
+    "accent": "半分"
+   }
+  },
+  {
+   "id": "Q01",
+   "narration": "色の問題の答えは、薄紫。ラベンダーの色です。",
+   "tts_text": "色の問題の答えは、うすむらさき。ラベンダーの色です。",
+   "card": {
+    "type": "big_text",
+    "text": "洗面所で厄を落とす色は",
+    "text2": "薄紫",
+    "accent": "薄紫",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q02",
+   "narration": "洗面所には、厄が満ちると言われます。ラベンダー色には、その厄を落とす働きがあるそうです。",
+   "tts_text": "せんめんじょには、やくが満ちると言われます。ラベンダーいろには、そのやくを落とす働きがあるそうです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "ラベンダー色は",
+     "big": "厄を落とす色",
+     "size": 130
+    }
+   },
+   "img_from": "pose:C09"
+  },
+  {
+   "id": "Q03",
+   "narration": "白も、清めの色として、いいとされます。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "薄紫",
+      "sub": "厄を落とす"
+     },
+     {
+      "head": "白",
+      "sub": "清める"
+     }
+    ],
+    "sep": "×"
+   }
+  },
+  {
+   "id": "Q04",
+   "narration": "新しく買わなくても、家にある白か薄紫のタオルを、1枚かけておけば十分です。",
+   "tts_text": "新しく買わなくても、いえにある白かうすむらさきのタオルを、いちまいかけておけば十分です。",
+   "card": {
+    "type": "big_text",
+    "text": "家にあるタオルで",
+    "text2": "白か薄紫を、1枚",
+    "accent": "1枚"
+   }
+  },
+  {
+   "id": "G00",
+   "narration": "逆に、洗面所で、金運が上がると言われる行いを、1つ。",
+   "tts_text": "ぎゃくに、せんめんじょで、きんうんが上がると言われる行いを、ひとつ。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "小皿に塩を盛る",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "金運が上がる洗面所の習慣",
+   "chapter": "金運が上がる洗面所の習慣"
+  },
+  {
+   "id": "G01",
+   "narration": "小さなお皿に、塩を、ひとつまみ盛って、置いておくことです。",
+   "image_en": "Bright fresh morning in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): an older woman's hands set a small plain white saucer holding a neat little cone of white salt onto a dry wooden shelf beside the washbasin. Only the hands, no face. Warm morning sunlight. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Bright fresh morning in a clean tidy small washroom of a modest present-day Japanese public housing apartment (danchi): an older woman's hands set a small plain white saucer holding a neat little cone of white salt onto a dry wooden shelf beside the washbasin. Only the hands, no face. Warm morning sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G02",
+   "narration": "盛り塩は、昔から、場を清めるために、置かれてきました。",
+   "tts_text": "もりじおは、昔から、ばを清めるために、置かれてきました。",
+   "image_en": "A small cone of pure white salt on a small plain white saucer placed at the entrance of a traditional Japanese building, wooden floor, soft daylight. No people. No readable text.",
+   "real": "Morishio salt cone Japan",
+   "card": {
+    "type": "photo"
+   },
+   "image": "A small cone of pure white salt on a small plain white saucer placed at the entrance of a traditional Japanese building, wooden floor, soft daylight. No people. No readable text."
+  },
+  {
+   "id": "G03",
+   "narration": "洗面所は、水を使って、傷みやすい場所。だから、清めの塩がいる、と言われます。",
+   "tts_text": "せんめんじょは、水を使って、いたみやすい場所。だから、清めの塩がいる、と言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "水を使う洗面所にこそ",
+    "text2": "清めの塩",
+    "accent": "塩"
+   }
+  },
+  {
+   "id": "G04",
+   "narration": "清めた洗面所には、お金の流れを止める厄が、たまりにくいと言われています。",
+   "tts_text": "清めたせんめんじょには、お金の流れを止めるやくが、たまりにくいと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "清めた洗面所には",
+     "big": "厄がたまりにくい",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "G05",
+   "narration": "ふつうは週に1回ですが、洗面所では、3、4日に1回、取り替えるといいそうです。",
+   "tts_text": "ふつうはしゅうにいっかいですが、せんめんじょでは、さん、よっかにいっかい、取り替えるといいそうです。",
+   "card": {
+    "type": "rules",
+    "title": "洗面所に盛り塩",
+    "items": [
+     "小皿に、塩をひとつまみ",
+     "3、4日に1回、取り替える",
+     "水がはねない棚に置く"
+    ],
+    "show": 2,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "置くのは、水がはねない、棚の上です。",
+   "card": {
+    "type": "rules",
+    "title": "洗面所に盛り塩",
+    "items": [
+     "小皿に、塩をひとつまみ",
+     "3、4日に1回、取り替える",
+     "水がはねない棚に置く"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G07",
+   "narration": "塩は、台所の塩をひとつまみ。お金は、かかりません。",
+   "tts_text": "しおは、だいどころのしおをひとつまみ。お金は、かかりません。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G08",
+   "narration": "澄江さんの洗面所の棚にも、白い小皿が、1枚のっていました。",
+   "tts_text": "すみえさんのせんめんじょのたなにも、白いこざらが、いちまいのっていました。",
+   "same_as": "A07"
+  },
+  {
+   "id": "G09",
+   "narration": "佐和子さんも、白い小皿を1枚、棚に置きました。",
+   "tts_text": "さわこさんも、白いこざらをいちまい、たなに置きました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんも",
+    "text2": "白い小皿を、棚に1枚",
+    "accent": "小皿"
+   }
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人が洗面所でしない5つを、もう一度。",
+   "tts_text": "お金が残る人がせんめんじょでしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "ごわごわのタオルを使い続ける",
+     "洗面台に物を出しっぱなし",
+     "洗面台の水気を拭かずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ",
+   "chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、試供品をためこむ。第4位、脱いだ服を、かごに山にする。第3位、ごわごわのタオルを使い続ける。",
+   "tts_text": "だいごい、しきょうひんをためこむ。だいよんい、脱いだ服を、かごにやまにする。だいさんい、ごわごわのタオルを使い続ける。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "ごわごわのタオルを使い続ける",
+     "洗面台に物を出しっぱなし",
+     "洗面台の水気を拭かずに寝る"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、洗面台に物を出しっぱなし。そして第1位、洗面台の水気を拭かずに寝る。",
+   "tts_text": "だいにい、せんめんだいに物を出しっぱなし。そしてだいいちい、せんめんだいのみずけを拭かずに寝る。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が洗面所でしないこと　5つ",
+    "items": [
+     "試供品をためこむ",
+     "脱いだ服を、かごに山にする",
+     "ごわごわのタオルを使い続ける",
+     "洗面台に物を出しっぱなし",
+     "洗面台の水気を拭かずに寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上当てはまった人は、まず第1位。寝る前に、その日のタオルで、ひと拭きしてみてください。",
+   "tts_text": "みっつ以上当てはまった人は、まずだいいちい。寝る前に、その日のタオルで、ひとふきしてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上当てはまったら",
+    "text2": "まず、寝る前のひと拭き",
+    "accent": "ひと拭き"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "次に、ドライヤーとお化粧の道具を、扉の中へ。どちらも、すぐにできます。",
+   "tts_text": "次に、ドライヤーとおけしょうの道具を、扉の中へ。どちらも、すぐにできます。",
+   "card": {
+    "type": "big_text",
+    "text": "ひと拭きの次は",
+    "text2": "ドライヤーを、扉の中へ",
+    "accent": "扉の中"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "直しても、すぐにお金が増えるとは、限りません。",
+   "card": {
+    "type": "big_text",
+    "text": "直しても",
+    "text2": "すぐにお金が増えるとは限らない",
+    "accent": "すぐに"
+   }
+  },
+  {
+   "id": "K07",
+   "narration": "それでも、朝、洗面所の明かりをつけた時の景色は、次の日から変わります。",
+   "tts_text": "それでも、朝、せんめんじょの明かりをつけた時の景色は、次の日から変わります。",
+   "same_as": "F29"
+  },
+  {
+   "id": "K08",
+   "narration": "あなたの洗面所は、5つのうち、いくつ当てはまりましたか？ コメントで、数を教えてくださいね。",
+   "tts_text": "あなたのせんめんじょは、いつつのうち、いくつ当てはまりましたか？ コメントで、かずを教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "desc": "あなたの洗面所は、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "comment": "あなたの洗面所は、5つのうち、いくつ当てはまりましたか？ コメントで、数を教えてくださいね。"
+}
