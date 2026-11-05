@@ -202,12 +202,9 @@
   "注意": ""
  },
  "C10": {
-  "状態": "できた",
-  "thread": "731159b0-d417-4849-b65b-1a36bbc8da31",
-  "回": 2,
-  "秒": 235,
-  "元": "images/_lovart/C10/lovart_ddc3e0660409.png",
-  "注意": ""
+  "状態": "失敗",
+  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
+  "回": 1
  },
  "C11": {
   "状態": "できた",
