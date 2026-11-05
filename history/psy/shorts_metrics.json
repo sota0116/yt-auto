@@ -68,6 +68,13 @@
    "averageViewDuration": 36,
    "subscribersGained": 0,
    "取った日": "2026-11-01"
+  },
+  "d7": {
+   "views": 13,
+   "averageViewPercentage": 74.49,
+   "averageViewDuration": 36,
+   "subscribersGained": 0,
+   "取った日": "2026-11-06"
   }
  },
  "005_kofuku_toshi": {
@@ -137,7 +144,14 @@
   ],
   "kind": "after",
   "title": "【心理学】昔の悔しさが、いつのまにか薄れている人の「意外な特徴」 #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 66,
+   "averageViewPercentage": 62.419999999999995,
+   "averageViewDuration": 26,
+   "subscribersGained": 0,
+   "取った日": "2026-11-06"
+  }
  },
  "006_hitori_suki": {
   "type": "ひとりの時間",
@@ -220,5 +234,16 @@
   "kind": "after",
   "title": "【心理学】断るひと言が重い人に共通する特徴｜図書館の本の実験 #shorts",
   "publish_slot": "12:10"
+ },
+ "007_kotowarenai:short_4": {
+  "type": "人づきあい",
+  "video_id": "JzWeahXJSw0",
+  "hook": "頼まれると断れないのに、自分からは頼めない。そんなことはありませんか？",
+  "band": [
+   "自分からは頼めない"
+  ],
+  "kind": "after",
+  "title": "【心理学】自分からは頼めない人、実は相手の迷惑を多めに見積もっています #shorts",
+  "publish_slot": "20:10"
  }
 }

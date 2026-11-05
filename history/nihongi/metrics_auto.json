@@ -120,6 +120,17 @@
    ],
    "取った日": "2026-11-01",
    "再生（公開ページ）": 2263
+  },
+  "d7": {
+   "views": 2276,
+   "averageViewPercentage": 137.45,
+   "averageViewDuration": 45,
+   "subscribersGained": 4,
+   "直す所": [
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 2280
   }
  },
  "S005_消防士が江戸の大火へ": {
@@ -213,11 +224,33 @@
  },
  "L101_long_s006": {
   "type": null,
-  "video_id": "HD6cOt0s_Sw"
+  "video_id": "HD6cOt0s_Sw",
+  "h72": {
+   "views": 10,
+   "averageViewPercentage": 38.44,
+   "averageViewDuration": 192,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 107
+  }
  },
  "S104_n014": {
   "type": null,
-  "video_id": "xcdbXE3LhCI"
+  "video_id": "xcdbXE3LhCI",
+  "h72": {
+   "views": 1776,
+   "averageViewPercentage": 64.73,
+   "averageViewDuration": 29,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "11%あたりで急に落ちる（14%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 2290
+  }
  },
  "S105_n010": {
   "type": null,
@@ -238,5 +271,9 @@
  "S110_n003": {
   "type": null,
   "video_id": "EhbONpF6Y8M"
+ },
+ "S111_n006": {
+  "type": null,
+  "video_id": "IEvLXcM__Q8"
  }
 }
