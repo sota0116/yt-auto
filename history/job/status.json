@@ -1,26 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/020_a4_37adb804",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/021_c_seibi",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "images",
-  "charts",
-  "gate_images",
-  "build",
-  "gate_video",
-  "thumb",
-  "teaser"
+  "reading"
  ],
- "started": "2026-11-05T09:24:13+09:00",
+ "started": "2026-11-06T01:45:04+09:00",
  "tries": 0,
  "code": "e369ac04bc34",
- "stage": "teaser",
- "updated": "2026-11-06T01:00:51+09:00",
+ "stage": "images",
+ "updated": "2026-11-06T02:09:41+09:00",
  "busy": {
-  "images": 2
+  "images": 1
  }
 }
