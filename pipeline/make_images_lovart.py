@@ -19,6 +19,8 @@
 # ・詰まった時（2026-10-29）：--boost は run_daily.py が速いモード（lovart_boost.fast_mode）にした間だけ使う。--only の残りを順番待ちを捨てて頼み直し、
 #   頼んだ数だけ history\<ch>\lovart_credits.json に足す。--boost でない時に速いモードになっていたら（別の回が使っている間）、新しく頼まずに待つ
 #   失効前（lovart_boost.expiring）は最初から速いモードの回が多く、待つと無料の回が毎回止まるので、その日の上限の分は一緒に頼んで数える（2026-10-31）
+# ・数え漏れの直し（2026-11-05。実際の減りが記録の約1.6倍だった）：無料で頼んだ絵も、速いモードを見た後にできたら受け取った時に数える。
+#   設定画も数える。止まっている間も60秒ごとにモードを見直す。新しく頼む前に毎回その日の残りを確かめる。--boost で捨てる順番待ちも数える
 import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
@@ -55,7 +57,7 @@ def client():
 
 def is_free(sk, waits=(30, 90, 240)):
     """無料モードか。回数の上限（429）は待って聞き直す（心理学chが、絵の後の4時間分をこの1回の問い合わせで落とした。2026-10-31）。
-    それでも答えが取れない時は False（クレジットを使わないよう新しく頼まず、頼んである分だけ受け取る）"""
+    それでも答えが取れない時は None（偽として扱われる。クレジットを使わないよう新しく頼まず、頼んである分だけ受け取る。一緒に頼むこともしない）"""
     for wait in waits + (None,):
         try:
             return sk.query_mode().get("unlimited") is True
@@ -64,7 +66,7 @@ def is_free(sk, waits=(30, 90, 240)):
                 raise
             if wait is None:
                 print("Lovart の回数の上限でモードを確かめられないので、新しく頼まずに待ちます", flush=True)
-                return False
+                return None
             time.sleep(wait)
 
 
@@ -130,18 +132,32 @@ def sheet_prompt(style, ch):
             "Do not ask questions. Call the image generator exactly once and stop: no editing, upscaling, cropping or post-processing.")
 
 
-def make_sheets(sk, chars, need, style, par, project):
-    """設定画が無い人物の設定画を作る（無料モード。confirm はしない）。できなかった人物の id を返す"""
+def make_sheets(sk, chars, need, style, par, project, mode=lambda: "free", spend=lambda what: None):
+    """設定画が無い人物の設定画を作る（confirm はしない）。できなかった人物の id を返す。
+    mode() は "free"／"join"／"boost"／"pause"（main の mode_now）。速いモードの間に頼んだ物と、速いモードの間にできた物は spend で数える
+    （2026-11-05：設定画は数えておらず、実際の減りが記録の約1.6倍になった一因）。"pause" の間は新しく頼まない"""
     todo = [k for k in need if not os.path.exists(chars[k]["sheet"])]
     waiting, t_end = {}, time.time() + WAIT_MAX
+    m, checked = (mode(), time.time()) if todo else ("free", 0)
     if todo:
         print("設定画を先に作る：", todo, flush=True)
     while (todo or waiting) and time.time() < t_end:
-        while todo and len(waiting) < par:
+        if time.time() - checked > 60:
+            m, checked = mode(), time.time()
+        if m != "free":
+            for w in waiting.values():
+                w["速い"] = True
+        if m == "pause" and not waiting:
+            print("Lovart が速いモードで今日の上限も無いので、設定画は頼まずに止めます（次の回で作る）", flush=True)
+            break
+        while todo and m != "pause" and len(waiting) < par:
             k = todo.pop(0)
             try:
-                waiting[k] = (sk.send(sheet_prompt(style, chars[k]), project, prefer_models=MODEL,
-                                      include_tools=MODEL["IMAGE"], mode="fast"), time.time())
+                waiting[k] = {"thread": sk.send(sheet_prompt(style, chars[k]), project, prefer_models=MODEL,
+                                                include_tools=MODEL["IMAGE"], mode="fast"),
+                              "t0": time.time(), "速い": m != "free", "数えた": m != "free"}
+                if m != "free":
+                    spend(f"{k} の設定画")
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
                     print(k, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)  # 2026-10-30 黙って45秒ごとに頼み直すと、断られた分まで毎時600回の枠を食い、全員が4時間止まった
@@ -149,7 +165,8 @@ def make_sheets(sk, chars, need, style, par, project):
                 print(k, "設定画を頼めなかった", str(e)[:120], flush=True)
         time.sleep(15)
         for k in list(waiting):
-            tid, t0 = waiting[k]
+            w = waiting[k]
+            tid, t0 = w["thread"], w["t0"]
             try:
                 if sk.get_status(tid)["status"] not in ("done", "abort") and time.time() - t0 < THREAD_MAX:
                     continue
@@ -164,6 +181,8 @@ def make_sheets(sk, chars, need, style, par, project):
                    if x.get("local_path") and x.get("type") == "image"]
             if got:
                 to_png(got[0], chars[k]["sheet"])
+                if w["速い"] and not w["数えた"]:
+                    spend(f"{k} の設定画（無料で頼み、速いモードの間にできた）")
             print(k, "設定画できた" if got else "設定画ができない", flush=True)
     return [k for k in need if not os.path.exists(chars[k]["sheet"])]
 
@@ -238,9 +257,20 @@ def main():
     free = lambda: is_free(sk)
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
     project = project_for(ch)
-    from lovart_boost import add_spent, can_join, unit
-    fast = not a.boost and not free()
-    joined, paused = fast and can_join(ch), fast and not can_join(ch)
+    from lovart_boost import add_spent, can_join, left_today, unit
+
+    def mode_now():
+        """boost＝この回が速いモードにした／free＝無料モード／join＝別の回の速いモードに上限の分だけ相乗り／pause＝速いモードだが上限が無い・モードが分からない"""
+        if a.boost:
+            return "boost"
+        f = free()
+        if f:
+            return "free"
+        return "join" if f is False and can_join(ch) else "pause"
+
+    m = mode_now()
+    joined, paused = m == "join", m == "pause"
+    spend = lambda what: add_spent(ch, unit("image"), f"{os.path.basename(a.work)} {what}")
     if joined:
         print("Lovart が速いモードです（別の回が使っている間）。失効前のクレジットがあるので、一緒に頼みます", flush=True)
     if paused:
@@ -263,10 +293,28 @@ def main():
     for i in todo:
         if log.get(i, {}).get("状態") == "できた" and log[i].get("thread") and i not in fix and not a.force:
             log[i] = {"状態": "待ち", "thread": log[i]["thread"], "頼んだ時刻": time.time(), "回": log[i].get("回", 1), "受け取り直し": True}
+    if a.boost:  # 捨てる順番待ち（40分以内に無料で頼んだ物）は、速いモードの間に動いてクレジットを使うことがあるので、安全側に倒して数える（2026-11-05）
+        for i in todo:
+            e = log.get(i, {})
+            if (e.get("状態") == "待ち" and not e.get("受け取り直し") and not e.get("数えた")
+                    and time.time() - e.get("頼んだ時刻", 0) < THREAD_MAX):
+                spend(f"{i} の絵（無料で頼んであった分。速いモードの間に動いたとみなす）")
+                e["数えた"] = True
     waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and i not in fix and not a.force
                and (not a.boost or log[i].get("受け取り直し"))}
     queue = [i for i in todo if i not in waiting]
     checked = [time.time()]
+
+    def mark_fast():
+        """速いモードを見た時、無料で頼んで待っている絵に印を付ける。受け取った時に数える（2026-11-05 本人「なぜ規定量を決めてるのにその1.6倍も使うの？」。
+        速いモードはアカウント全体に効くので、無料で頼んだ絵も速いモードの間に動けばクレジットを使う。前は頼んだ時にしか数えていなかった）"""
+        for w in waiting.values():
+            if not w.get("受け取り直し") and not w.get("速い"):
+                w["速い"] = True
+        save()
+
+    if m != "free":
+        mark_fast()
     en = scenes_en(a.work, s, set(cuts))
     ref_url = sk.upload_file(a.ref) if a.ref else ""
     chars = load_chars(a.work, s)
@@ -274,7 +322,7 @@ def main():
     if unknown:
         sys.exit(f"【止まりました】characters.json にも script.json の characters にも無い人物：{unknown}")
     need_c = sorted({k for i in todo for k in cuts[i].get("chars", [])})
-    if make_sheets(sk, chars, need_c, en["_style"], a.par, project):
+    if make_sheets(sk, chars, need_c, en["_style"], a.par, project, mode_now, spend):
         sys.exit("【止まりました】設定画ができていない人物がいます（もう一度動かすと作り直す）")
     sheet_url = {k: sk.upload_file(chars[k]["sheet"]) for k in need_c}
     attach = lambda i: [sheet_url[k] for k in cuts[i].get("chars", [])] + ([ref_url] if ref_url else [])
@@ -283,17 +331,26 @@ def main():
     print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
     while ((queue and not paused) or waiting) and time.time() < t_end:
-        if not paused and time.time() - checked[0] > 60:
+        if time.time() - checked[0] > 60:  # 2026-11-05：止まっている間も見直す（前は一度止まると見直さず、速いモードの間にできた絵を数えなかった）
             checked[0] = time.time()
             if a.boost:  # 並んで動く別の回が先に終わって無料モードへ戻した時は、速いモードへ戻す
                 if free():
                     sk.set_mode(unlimited=False)
-            else:  # 途中で別の回が速いモードにしたら、一緒に頼むか、新しく頼むのをやめる
-                fast = not free()
-                joined, paused = fast and can_join(ch), fast and not can_join(ch)
-                if paused:
+            else:  # 途中で別の回が速いモードにしたら、一緒に頼むか、新しく頼むのをやめる。無料に戻ったら、また頼む
+                was = paused
+                m = mode_now()
+                joined, paused = m == "join", m == "pause"
+                if m != "free":
+                    mark_fast()
+                if paused and not was:
                     print("Lovart が速いモードになったので、新しく頼むのをやめて、頼んである絵だけ待ちます", flush=True)
+                elif was and not paused:
+                    print("Lovart が無料モードに戻った（または一緒に頼める）ので、また頼みます", flush=True)
         while queue and not paused and len(waiting) < a.par:
+            if (a.boost or joined) and left_today(ch) < unit("image"):  # 1枚ごとに上限を確かめる（頼み直しの分も上限の中）
+                print("今日の上限に届いたので、新しく頼むのをやめて、頼んである絵だけ待ちます", flush=True)
+                joined, paused = False, True
+                break
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
             try:
@@ -307,10 +364,11 @@ def main():
                 log[i] = {"状態": "失敗", "理由": f"頼めなかった：{type(e).__name__} {str(e)[:200]}", "回": tries}; save()
                 print(i, log[i]["理由"], flush=True)  # クラウドでは _lovart.json が見えないので、理由をログにも出す（2026-10-25）
                 continue
-            waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries}
+            paid = a.boost or joined
+            waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries, "速い": paid, "数えた": paid}
+            if paid:
+                spend(f"{i} の絵")
             save()
-            if a.boost or joined:
-                add_spent(ch, unit("image"), f"{os.path.basename(a.work)} {i} の絵")
         time.sleep(15)
         for i in list(waiting):
             w = waiting[i]
@@ -336,6 +394,8 @@ def main():
                    if d.get("local_path") and d.get("type") == "image"]
             if got:
                 to_png(got[0], os.path.join(img, i + ".png"), portrait)
+                if w.get("速い") and not w.get("数えた"):
+                    spend(f"{i} の絵（無料で頼み、速いモードの間にできた）")
                 log[i] = {"状態": "できた", "thread": w["thread"], "回": w["回"],
                           "秒": round(time.time() - w["頼んだ時刻"]), "元": os.path.relpath(got[0], a.work),
                           "注意": ("あとの編集はクレジットが要るので頼んでいない" if st == "pending" else "")

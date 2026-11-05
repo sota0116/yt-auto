@@ -10,6 +10,8 @@
 # ・詰まった時（2026-10-29）：--boost は run_daily.py が速いモードにした間だけ使う。順番待ちを捨てて頼み直し、クレジットの確認が出たら
 #   見積もりが1本の上限（目安の2倍）以下で、その日の残り（lovart_boost.left_today）に収まる時だけ confirm して、使った量を足す。
 #   --boost でない時に速いモードになっていたら（別の回が使っている間）、新しく頼まずに「まだ待ち」（3）で終える
+# ・数え漏れの直し（2026-11-05。実際の減りが記録の約1.6倍だった）：無料で頼んだ動く絵も、速いモードを見た後にできたら受け取った時に数える。
+#   --boost で確認が出ずにできた物と、捨てる順番待ちも数える。止まっている間も60秒ごとにモードを見直す。--boost で新しく頼む前に、その日の残りを確かめる
 import argparse, json, os, shutil, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -66,14 +68,40 @@ def main():
             log[i] = {"状態": "待ち", "thread": log[i]["thread"], "頼んだ時刻": time.time(), "回": log[i].get("回", 1), "受け取り直し": True}
     waiting = {i: log[i] for i in todo if log.get(i, {}).get("状態") == "待ち" and not a.force
                and (not a.boost or log[i].get("受け取り直し"))}
+    if a.boost:  # 捨てる順番待ちは、速いモードの間に動いてクレジットを使うことがあるので、安全側で数える（2026-11-05）
+        for i in todo:
+            w = log.get(i, {})
+            if (i not in waiting and w.get("状態") == "待ち" and not w.get("受け取り直し") and not w.get("数えた")
+                    and time.time() - w.get("頼んだ時刻", 0) <= THREAD_MAX):
+                add_spent(ch, unit("video"), f"{os.path.basename(a.work)} {i} の動く絵（捨てた順番待ち）")
+                w["数えた"] = True
+        save()
     queue = [i for i in todo if i not in waiting]
     checked = time.time()
+
+    def mark_fast():
+        """速いモードを見た時、無料で頼んで待っている動く絵に印を付け、受け取った時に数える（速いモードはアカウント全体に効く）"""
+        for w in waiting.values():
+            if not w.get("受け取り直し") and not w.get("速い"):
+                w["速い"] = True
+        save()
+
+    if paused:
+        mark_fast()
     print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Kling 2.6）：新しく頼む {len(queue)} 本・前回の続き {len(waiting)} 本（同時に{a.par}本・{log.get('_runs', 0)}回目の実行）", flush=True)
     while (queue and not paused and time.time() < deadline) or (waiting and time.time() < deadline + 20 * 60):
-        if not a.boost and not paused and time.time() - checked > 60:
+        if not a.boost and time.time() - checked > 60:  # 2026-11-05：止まっている間も見直す（無料に戻ったらまた頼む）
             checked = time.time()
-            paused = not free()
+            was, paused = paused, not free()
+            if paused:
+                mark_fast()
+            if was != paused:
+                print("速いモードを見たので新しく頼むのを止めます" if paused else "無料モードに戻ったので、また頼みます", flush=True)
         while queue and not paused and len(waiting) < a.par and time.time() < deadline:
+            if a.boost and left_today(ch) < unit("video"):
+                print("今日の上限に届いたので、新しく頼むのをやめて、頼んである動く絵だけ待ちます", flush=True)
+                paused = True
+                break
             i = queue.pop(0)
             tries = log.get(i, {}).get("回", 0) + 1 if not a.force else 1
             try:
@@ -87,7 +115,7 @@ def main():
                 log[i] = {"状態": "失敗", "理由": f"頼めなかった：{type(e).__name__} {str(e)[:200]}", "回": tries}; save()
                 print(i, log[i]["理由"], flush=True)
                 continue
-            waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries}
+            waiting[i] = log[i] = {"状態": "待ち", "thread": tid, "頼んだ時刻": time.time(), "回": tries, "速い": a.boost or paused}
             save()
         time.sleep(20)
         for i in list(waiting):
@@ -121,7 +149,8 @@ def main():
                         print(i, "確認を送れなかった（あとでもう一度）", str(e)[:120], flush=True)
                         continue
                     add_spent(ch, cost, f"{os.path.basename(a.work)} {i} の動く絵")
-                    w.update({"confirmed": True, "頼んだ時刻": time.time()})
+                    w.update({"confirmed": True, "数えた": True, "頼んだ時刻": time.time()})
+                    save()
                     print(i, f"クレジット {cost:g} で進めました（今日の残り {left_today(ch)}）", flush=True)
                     continue
                 print(i, f"見積もり {cost:g} が上限を超えるので進めない（今日の残り {left_today(ch)}）", flush=True)
@@ -130,7 +159,9 @@ def main():
             got = [d["local_path"] for d in sk.download_artifacts(r, tmp, "lovart") if d.get("local_path") and d.get("type") == "video"]
             if got:
                 shutil.copyfile(got[0], os.path.join(img, i + ".mp4"))
-                log[i] = {"状態": "できた", "thread": w["thread"], "回": w["回"], "秒": round(time.time() - w["頼んだ時刻"])}
+                if w.get("速い") and not w.get("数えた"):
+                    add_spent(ch, unit("video"), f"{os.path.basename(a.work)} {i} の動く絵（速いモードの間にできた）")
+                log[i] ={"状態": "できた", "thread": w["thread"], "回": w["回"], "秒": round(time.time() - w["頼んだ時刻"])}
             elif st == "pending":
                 log[i] = {"状態": "失敗", "理由": "クレジットを使う確認が出た（confirm していない）", "thread": w["thread"], "回": 2}
             else:
