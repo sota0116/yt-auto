@@ -7,14 +7,6 @@
   "元": "images/_lovart/A01/lovart_ab836324a000.jpeg",
   "注意": ""
  },
- "A02": {
-  "状態": "できた",
-  "thread": "404f4b98-1fa1-42f8-ab1b-3108f4f30440",
-  "回": 3,
-  "秒": 1779,
-  "元": "images/_lovart/A02/lovart_73631c032c15.jpeg",
-  "注意": ""
- },
  "A03": {
   "状態": "できた",
   "thread": "bc2ed5cc-7f2e-4e12-a26b-7efa306eb224",
@@ -45,14 +37,6 @@
   "回": 3,
   "秒": 1760,
   "元": "images/_lovart/B01/lovart_a62e05c55ee7.png",
-  "注意": ""
- },
- "B02": {
-  "状態": "できた",
-  "thread": "c3a9a6b7-7ca0-4d64-8eb3-e8f82f7f0300",
-  "回": 3,
-  "秒": 1921,
-  "元": "images/_lovart/B02/lovart_f0d39734c1d1.jpeg",
   "注意": ""
  },
  "B03": {
@@ -95,28 +79,12 @@
   "元": "images/_lovart/B08/lovart_696283a442e7.png",
   "注意": ""
  },
- "B10": {
-  "状態": "できた",
-  "thread": "f7cba257-99d2-47c7-8da3-81693e251553",
-  "回": 3,
-  "秒": 1272,
-  "元": "images/_lovart/B10/lovart_91fd1a1d8ea5.jpeg",
-  "注意": ""
- },
  "B11": {
   "状態": "できた",
   "thread": "73b5d354-6480-4a3e-8030-4e101c3ebd30",
   "回": 3,
   "秒": 1254,
   "元": "images/_lovart/B11/lovart_671f0beb41e1.png",
-  "注意": ""
- },
- "B12": {
-  "状態": "できた",
-  "thread": "4669a800-5c30-4827-9fe5-2b0bd31647c1",
-  "回": 3,
-  "秒": 762,
-  "元": "images/_lovart/B12/lovart_68b1850ab1c5.png",
   "注意": ""
  },
  "B13": {
@@ -159,22 +127,6 @@
   "元": "images/_lovart/C03/lovart_f9d65f6a3835.jpeg",
   "注意": ""
  },
- "C04": {
-  "状態": "できた",
-  "thread": "88e4ad9c-0b62-4763-8b6c-8c1e56933795",
-  "回": 3,
-  "秒": 836,
-  "元": "images/_lovart/C04/lovart_552094968c8f.jpeg",
-  "注意": ""
- },
- "C05": {
-  "状態": "できた",
-  "thread": "5c882b3f-1438-4857-828e-25f62bfdd0a9",
-  "回": 3,
-  "秒": 408,
-  "元": "images/_lovart/C05/lovart_4e5e7d489203.png",
-  "注意": ""
- },
  "C06": {
   "状態": "できた",
   "thread": "55d8fa10-827f-4833-af9a-e348d093ec25",
@@ -189,22 +141,6 @@
   "回": 3,
   "秒": 366,
   "元": "images/_lovart/C07/lovart_106ada8c9005.png",
-  "注意": ""
- },
- "C08": {
-  "状態": "できた",
-  "thread": "9f9d042c-6e5a-4e07-8a44-5ed272367e1d",
-  "回": 3,
-  "秒": 367,
-  "元": "images/_lovart/C08/lovart_04ec56e31ce7.jpeg",
-  "注意": ""
- },
- "C09": {
-  "状態": "できた",
-  "thread": "f9a24fc7-6b28-4469-a74b-0a71fe5d0672",
-  "回": 3,
-  "秒": 368,
-  "元": "images/_lovart/C09/lovart_fcc92fd14a5c.png",
   "注意": ""
  },
  "C10": {
@@ -229,14 +165,6 @@
   "回": 2,
   "秒": 685,
   "元": "images/_lovart/D02/lovart_393c16368741.png",
-  "注意": ""
- },
- "D03": {
-  "状態": "できた",
-  "thread": "202900c6-d56f-4a1e-a487-22a42212d174",
-  "回": 2,
-  "秒": 364,
-  "元": "images/_lovart/D03/lovart_f0322c151407.png",
   "注意": ""
  },
  "D05": {
@@ -279,14 +207,6 @@
   "元": "images/_lovart/D10/lovart_55d64e5ea58f.png",
   "注意": ""
  },
- "D11": {
-  "状態": "できた",
-  "thread": "a7d69e6a-230d-4544-8a83-81cc85287d5f",
-  "回": 2,
-  "秒": 363,
-  "元": "images/_lovart/D11/lovart_d7d246ab2194.png",
-  "注意": ""
- },
  "E01": {
   "状態": "できた",
   "thread": "f5473daa-f59c-4812-89ae-e86485216c4e",
@@ -303,36 +223,12 @@
   "元": "images/_lovart/E02/lovart_c24c16328f4a.jpeg",
   "注意": ""
  },
- "E04": {
-  "状態": "できた",
-  "thread": "0214fe13-b14d-447a-9638-d08ae96dc051",
-  "回": 2,
-  "秒": 408,
-  "元": "images/_lovart/E04/lovart_b50c24a7b03c.png",
-  "注意": ""
- },
  "E05": {
   "状態": "できた",
   "thread": "9acd2964-edb0-40a7-a913-4ef9fa6afcec",
   "回": 2,
   "秒": 409,
   "元": "images/_lovart/E05/lovart_a8212c4488a3.jpeg",
-  "注意": ""
- },
- "E06": {
-  "状態": "できた",
-  "thread": "6cf0b1e7-d4ee-4694-9854-216d22b4fcfb",
-  "回": 2,
-  "秒": 408,
-  "元": "images/_lovart/E06/lovart_086ec39efd7a.jpeg",
-  "注意": ""
- },
- "E07": {
-  "状態": "できた",
-  "thread": "386940c5-eb8e-47e3-9a91-4158a008a2e1",
-  "回": 2,
-  "秒": 409,
-  "元": "images/_lovart/E07/lovart_11d8d059ae8c.jpeg",
   "注意": ""
  },
  "E08": {
@@ -447,36 +343,12 @@
   "元": "images/_lovart/G01/lovart_50330300fd73.jpeg",
   "注意": ""
  },
- "G03": {
-  "状態": "できた",
-  "thread": "d9f60332-6f50-439a-8c0b-72e6391bb52b",
-  "回": 2,
-  "秒": 438,
-  "元": "images/_lovart/G03/lovart_493841ddd46a.png",
-  "注意": ""
- },
  "G04": {
   "状態": "できた",
   "thread": "36958832-4d53-4055-ac76-ab099ec65df1",
   "回": 2,
   "秒": 419,
   "元": "images/_lovart/G04/lovart_d5fd681bee32.png",
-  "注意": ""
- },
- "G06": {
-  "状態": "できた",
-  "thread": "76ae239c-2fb4-46a3-999d-4e3fbd94bca9",
-  "回": 2,
-  "秒": 420,
-  "元": "images/_lovart/G06/lovart_c17c48b5cedb.jpeg",
-  "注意": ""
- },
- "G07": {
-  "状態": "できた",
-  "thread": "22c74919-6e21-4698-b8d2-2b7dd90b74a9",
-  "回": 2,
-  "秒": 422,
-  "元": "images/_lovart/G07/lovart_8c8fbe74ab8a.jpeg",
   "注意": ""
  },
  "G08": {
@@ -487,14 +359,6 @@
   "元": "images/_lovart/G08/lovart_bbeb474ba108.png",
   "注意": ""
  },
- "G09": {
-  "状態": "できた",
-  "thread": "4e2b75c6-e4d9-441d-ba0c-7bd84298d5fb",
-  "回": 2,
-  "秒": 410,
-  "元": "images/_lovart/G09/lovart_91c0ae6bde89.png",
-  "注意": ""
- },
  "G10": {
   "状態": "できた",
   "thread": "3b494f27-45fb-4159-a880-13e0ec58af75",
@@ -503,44 +367,12 @@
   "元": "images/_lovart/G10/lovart_fcb5116f0e8a.png",
   "注意": ""
  },
- "G11": {
-  "状態": "できた",
-  "thread": "ea0ab3dd-3d36-4818-86b3-14d1a3a314a9",
-  "回": 2,
-  "秒": 408,
-  "元": "images/_lovart/G11/lovart_47c15e4006c0.jpeg",
-  "注意": ""
- },
  "G12": {
   "状態": "できた",
   "thread": "590a558b-5ccf-4d49-abd7-045f10b11085",
   "回": 2,
   "秒": 409,
   "元": "images/_lovart/G12/lovart_4ef7efbb40c0.png",
-  "注意": ""
- },
- "G13": {
-  "状態": "できた",
-  "thread": "7d65d589-bb63-41bc-8d3f-043581197a6f",
-  "回": 2,
-  "秒": 408,
-  "元": "images/_lovart/G13/lovart_cdd13ffc9383.jpeg",
-  "注意": ""
- },
- "G14": {
-  "状態": "できた",
-  "thread": "91ff86f2-3bb0-41ba-96a6-ed8619a4ba10",
-  "回": 2,
-  "秒": 409,
-  "元": "images/_lovart/G14/lovart_fb95fb5fd383.jpeg",
-  "注意": ""
- },
- "G15": {
-  "状態": "できた",
-  "thread": "03aae2e3-a804-44f9-a5c3-62f8e6515073",
-  "回": 2,
-  "秒": 411,
-  "元": "images/_lovart/G15/lovart_daf2492e07f2.png",
   "注意": ""
  },
  "G17": {
@@ -575,22 +407,6 @@
   "元": "images/_lovart/H04/lovart_9c02e03c5b8a.png",
   "注意": ""
  },
- "H05": {
-  "状態": "できた",
-  "thread": "7e739140-44ae-46d9-83fd-f2f1e5811576",
-  "回": 2,
-  "秒": 348,
-  "元": "images/_lovart/H05/lovart_9c0adc77be6a.png",
-  "注意": ""
- },
- "H06": {
-  "状態": "できた",
-  "thread": "fbe8ee77-79d1-423b-a784-c60f383f5f7d",
-  "回": 2,
-  "秒": 349,
-  "元": "images/_lovart/H06/lovart_fc2476d40974.png",
-  "注意": ""
- },
  "H07": {
   "状態": "できた",
   "thread": "9191ccb0-7d2e-45f0-994f-bc1a143ebc32",
@@ -606,79 +422,5 @@
   "秒": 383,
   "元": "images/_lovart/H09/lovart_2934b18f0d94.jpeg",
   "注意": ""
- },
- "I01": {
-  "状態": "できた",
-  "thread": "d3e178de-1c0a-4d0b-96f5-3a8559ab19bf",
-  "回": 2,
-  "秒": 367,
-  "元": "images/_lovart/I01/lovart_dfd5ecae891e.jpeg",
-  "注意": ""
- },
- "I02": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "e8756e9f-da0d-44c1-9939-4f7ab37bb19a",
-  "回": 2
- },
- "I04": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "220aa5c4-8f4f-4875-80d4-79d088a1f928",
-  "回": 2
- },
- "I05": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "ba36a49e-d7fd-4db8-b014-0168a1ebf746",
-  "回": 2
- },
- "I06": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "934907ac-e8a2-45c2-be21-8d84196149dd",
-  "回": 2
- },
- "I07": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "e4c98b97-1dcf-4115-a8db-314d780069f4",
-  "回": 2
- },
- "I09": {
-  "状態": "失敗",
-  "理由": "絵が返ってこない：",
-  "thread": "44ab2507-205c-4676-9c59-9d907b39b612",
-  "回": 2
- },
- "I10": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
- },
- "J01": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
- },
- "J02": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
- },
- "J03": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
- },
- "J04": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
- },
- "J05": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 2
  }
 }
