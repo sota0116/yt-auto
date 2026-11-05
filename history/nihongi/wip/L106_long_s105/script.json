@@ -1,0 +1,1085 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】桶狭間の日に、雨が降らなかったら｜信長が今川義元を討ち取れなかった世界線",
+ "promise": "桶狭間の戦い（1560年）で、信長公記では信長が雨のさなかではなく、雨がやんでから攻めかかったこと、家老が『こちらの少なさが敵から丸見え』と止めたこと、義元の首と左文字の刀のその後、家康が今川から離れたきっかけを、人に話せる",
+ "desc": "もしも1560年5月19日の桶狭間に、雨が1滴も降らなかったら。今川の見張りは、坂を上ってくる織田の旗に気づく。\n桶狭間は「雨にまぎれた奇襲」とよく言われます。でも、本当にそうだったのか。太田牛一の『信長公記』には、信長が槍を取ったのは「空が晴れるのを見て」からだと書かれています。家老が「こちらの少なさが敵から丸見えです」と馬にしがみついた話、義元の首を駿河へ送り返した話、義元の刀「左文字」のその後、そして桶狭間でいちばん運命が変わった人物まで。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※桶狭間に雨が降らない話、今川の見張りが織田軍に気づく場面、義元が輿で沓掛城へ逃げ切る場面、信長が清洲へ引き返す場面、松平元康（家康）が今川方のまま大高城を守る場面と元康のセリフは作り話です。桶狭間の戦い（永禄3年・1560年）の日付・人物・人数・雨・討ち取りの様子・首の扱い・左文字の刀・家康のその後は、『信長公記』首巻（1881年刊の活字本・国立国会図書館デジタルコレクション）、豊明市・名古屋市・名古屋市博物館の解説、コトバンクの事典（世界大百科事典・山川日本史小辞典）、建勲神社の案内をもとにしています（兵の数や戦い方には諸説あります）。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "戦国時代",
+  "桶狭間の戦い",
+  "織田信長",
+  "今川義元",
+  "徳川家康",
+  "信長公記"
+ ],
+ "thumb": {
+  "top": "桶狭間に雨が降らなかったら",
+  "big": "家康は今川の家来のまま",
+  "hl_top": "雨が降らなかった",
+  "hl_big": "家来のまま",
+  "bg": "I07"
+ },
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：永禄3年5月19日（1560年）の桶狭間に、雨が1滴も降らない（昼じゅう晴れ）。雨より前の出来事（18日夜の知らせ・敦盛・6騎で熱田・鷲津丸根の煙・佐々と千秋の討ち死に・義元の謡と言葉・中島砦での家老の言葉・信長の言葉）は信長公記のまま",
+  "本当の歴史で雨が降ったことを知っているのは語り手だけ。信長も今川方も、雨を待っていない。信長のセリフは信長公記の言葉だけ",
+  "この世界線で変わるのは4つ：今川の見張りが山際の織田軍に気づく／今川勢が崩れず、義元は輿で沓掛城へ退く／毛利新介は義元の首を取れず、左文字の刀は義元の腰に残る／松平元康（家康）は今川方のまま大高城を守る。その先（家康が天下を取るか）は分からないとだけ言う",
+  "元康が知っているのは、使いが伝えた『義元は無事』ということだけ。信長が清洲へ引き返したことは知らない",
+  "家老の『敵から丸見え』は、中島へ移る道について信長公記に本当にある言葉。晴れた空で織田軍が見つかるのは、この世界線だけ"
+ ],
+ "world_terms": [
+  "雨",
+  "晴れ",
+  "丸見え",
+  "見え",
+  "気づ",
+  "世界線",
+  "無事",
+  "沓掛"
+ ],
+ "voices": {
+  "nobunaga": 21,
+  "yoshimoto": 67,
+  "karo": 53,
+  "motoyasu": 100
+ },
+ "facts": [
+  "史料の本文（ページ画像で一字ずつ確認）：太田牛一『信長公記』巻之上（甫喜山景雄 刊・1881年、国立国会図書館デジタルコレクション 781192）の首巻部分、コマ16（11〜12ページ）。2026-11-05 に国立国会図書館 次世代デジタルライブラリー（lab.ndl.go.jp）の全文検索で「熱田大明神の神軍」から本を見つけ、IIIF のページ画像（dl.ndl.go.jp/api/iiif/781192/R0000016）を読んだ。読めた文：18日夜「其夜の御はなし軍の行は努々無之色々世間の御雑談迄にて」、家老の衆「運の末には智慧の鏡も曇る」とあざ笑う／「人間五十年下天の内をくらぶれば夢幻の如く也」と舞う／「螺ふけ具足よこせよ」「たちながら御食を参り」／「主従六騎あつた迄三里一時にかけさせられ」／「辰剋に源太夫殿宮のまへより東を御覧しいへは鷲津丸根落去と覚しくて煙上り」／「御敵今川義元は四万五千引率し、おけはさま山に人馬の休息在之」／「午剋戌亥に向て人数を備」「謡を三番うたはせられ」／「家康は朱武者にて先懸をさせられ大高へ兵粮入鷲津丸根にて手を砕」／佐々隼人正・千秋四郎「人数三百計」「五十騎計討死」／「義元か戈先には天魔鬼神も不可忍心地はよしと悦て緩々として謡をうたはせ陣を居られ候」",
+  "同じコマ16：中島へ移ろうとする信長に家老の衆「脇は深田の足入一騎打の道也、無勢の様躰敵方よりさたかに相見え候」と轡に取り付いて止めた。振り切って中島へ。「此時二千に不足御人数の由」。信長の言葉「あの武者宵に兵粮つかひて夜もすから来り…辛労してつかれたる武者也、こなたは新手也」「小軍にして大敵を怖るゝこと莫れ、運は天に在り」「分捕をなすへからず、打捨になすへし、軍に勝ぬれは此場へ乗たる者は家の面目末代の高名たるへし」。「山際迄御人数被寄候処、俄急雨石氷を投打様に敵の輔に打付る、身方は後の方に降かゝる、沓懸の到下の松の本に二かい三かいの楠の木雨に東へ降倒るゝ、余の事に熱田大明神の神軍かと申候也、空晴るゝを御覧し信長鎗をおつ取て大音声を上てすはかゝれ〳〵と被仰、黒煙立て懸るを見て水をまくるか如く後ろへくはつと崩れたり」",
+  "同じ本のコマ17（12〜13ページ）：「今川義元の塗輿も捨てくつれ逃けり」「未刻東へ向てかゝり給ふ、初は三百騎計真丸になつて義元を囲み退けるか、二三度四五度帰し合〳〵次第〳〵に無人に成て後には五十騎計に成たる也」「服部小平太義元にかゝりあひ膝の口きられ倒伏、毛利新介義元を伐臥頸をとる」「おけはさまと云所ははさまくてみ深田足入高みひきみ茂り節所と云事限りなし、深田へ逃入者は所をさらすはいづりまはる」「頸数三千余あり」、同朋の下方九郎左衛門が生け捕られ首を見知って名を言った、信長は褒美を与え「十人之僧衆を御仕立にて義元之頸同朋に相添駿河へ送被遣」、清洲から二十町南の須賀口に「義元塚とて築せられ、弔の為にとて千部経をよませ大卒都婆を立置」、「義元不断さゝれたる秘蔵之名誉の左文字の刀めし上られ…信長不断させられ候也」「家康は岡崎之城へ楯籠御居城也」",
+  "この刊本の首巻は桶狭間の年を「天文廿一年」と書くが、桶狭間の戦いは永禄3年（1560年）5月19日（豊明市・名古屋市博物館・コトバンク世界大百科事典）。名古屋市博物館は首巻を桶狭間の様子について信頼性が高いとする。首巻は年月日の誤りが多いともいわれる。台本は年を1560年で言う",
+  "豊明市「桶狭間古戦場伝説地」www.city.toyoake.lg.jp/2001.htm（2026-11-05 本文を読んで確認）：今川義元は約2万5千で5月12日に駿府を出て18日に沓掛城に入った。信長は19日未明に敦盛を舞って清洲を出、熱田で約千、合戦時は約3千。桶狭間の松林で休む義元を、天候の急変（夕立）で動揺したところへ太子ヶ根から本陣を急襲。服部小平太が槍で突き、毛利新助が組み付いて首を取った。戦死は今川約2500・織田約830。七石表は1771年（明和8年）12月に尾張藩士が建てた",
+  "人数は資料で違う：信長公記は今川を四万五千、織田を二千足らずと書く。山川日本史小辞典は今川2万5千、世界大百科事典は『最大は4万5000、最小は8000余騎で定め難いが、歩騎合計2万前後が妥当』。台本は信長公記の4万5千と、事典の2万5千を並べて言う（コトバンク「桶狭間の戦」kotobank.jp/word/桶狭間の戦-822681、2026-11-05 確認）",
+  "戦い方の説（説を言い切らない）：世界大百科事典は『迂回奇襲し敗死させた』『にわかの大驟雨に助けられ察知されず』、百科事典マイペディアは『風雨をついて奇襲し』、山川日本史小辞典は『桶狭間山で休息中の義元前軍に攻撃をかけた』とだけ書く（コトバンク、同上）。信長公記（コマ16・17）には、まわり道をした言葉は無く、攻めたのは『空晴るゝを御覧し』てから。1912年の藤田明『参考中等日本歴史地図』（NDL 770150）に『太子ケ根を經て俄然桶狭間を襲ふ』（国立国会図書館 全文検索の OCR で確認）。正面から攻めたとみる説は藤本正行が1982年から唱えたとされ、歴史学者の渡邊大門は『現在では正面攻撃説を支持する研究者が多い』と述べる（president.jp の記事、検索の抜粋で確認）。台本では『〜という説もある』『議論が続いている』で言う",
+  "研究者の論文：服部英雄「桶狭間合戦考」『名古屋城調査研究センター研究紀要』第2号（2021年）は、合戦を伊勢湾北部の制海権に関わる戦いとして捉え直し、キーワードに降雹を挙げる（検索の要旨で確認）。PDF は保存できたが、この環境では PDF の字を取り出す道具（pdftoppm・pypdf・node）の実行が許されず、本文は読めなかった。奈良文化財研究所の全国遺跡報告総覧の要旨ページは 429 で読めなかった。台本ではこの論文の中身を使わない",
+  "家康：山川日本史小辞典『6歳から織田信秀，8歳から19歳まで今川義元の人質』、改訂新版世界大百科事典『織田勢力の包囲に孤立していた大高城の兵糧入れに成功』、義元の敗死を機に『岡崎に入城して今川氏から自立』、山川『三河の松平(徳川)氏もこれをきっかけに今川氏から独立，信長と同盟した』（コトバンク「徳川家康」kotobank.jp/word/徳川家康-19082・「桶狭間の戦」、2026-11-05 確認）。信長公記も『家康は岡崎之城へ楯籠』。台本は同盟の年を言わない（事典で書き方が違う）",
+  "義元左文字：建勲神社の案内に『建勲神社蔵の重要文化財「義元左文字（宗三左文字）」』（kenkun-jinja.org、2026-11-05 確認）。刀に『永禄三年五月十九日 義元討捕刻彼所持刀』『織田尾張守信長』と刻むことは一般の記事（和樂web）だけなので、台本は『刻まれていると伝わる』",
+  "名古屋市緑区「桶狭間周辺のみどころ一覧」（S105 で本文確認）：緑区にも桶狭間古戦場公園があり、信長公記の『おけはざま山』を引く。古戦場は豊明市（国の史跡・桶狭間古戦場伝説地）と名古屋市緑区の2か所",
+  "使わない：大樹寺で家康が自害しかけた話（公的な本文で確かめられなかった）、信長塀（出どころ未確認）、旧暦5月19日の今の暦の日付、清洲同盟の年、義元が太っていて馬に乗れなかった話",
+  "作り話：雨が降らないこと、今川の見張りが気づく場面、今川勢が崩れず義元が輿で沓掛城へ退く場面、信長が清洲へ引き返す場面、元康が今川方のまま大高城を守る場面と元康のセリフ"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "1560年5月19日の昼、桶狭間。今川の見張りが、坂を上ってくる織田の旗に気づいた。",
+   "tts_text": "1560年5月19日の昼、おけはざま。今川の見張りが、坂を上ってくる織田の旗に気づいた。",
+   "image_en": "Bright cloudless midday in hilly pine woods of feudal Japan. An Imagawa lookout soldier on a hilltop points down in shock at a long column of plain unmarked Oda war banners climbing the slope below, sunlight glinting on spear tips. Place the main person slightly right of center.",
+   "image": "Bright cloudless midday in hilly pine woods of feudal Japan. An Imagawa lookout soldier on a hilltop points down",
+   "label": "1560年5月19日",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "坂の上は、今川義元の本陣。信長は、義元の首まであと一息の所まで来ていた。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord about forty with a refined pale face, thin moustache, a tall black court cap and ornate white-and-gold armor, sitting on a camp stool inside plain curtains on a sunny hilltop, turning in alarm toward the slope where enemy spear tips appear just below. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, sitting on a camp stool on a sunny hilltop, turning in alarm toward enemy spear tips below",
+   "label": "今川義元の本陣",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "見上げた空には、雨雲がひとつも無い。",
+   "image_en": "A harsh blazing sun in a perfectly clear blue sky above pine-covered hills, plain war banners hanging limp without wind, heat haze over the valley. No people in focus.",
+   "image": "A harsh blazing sun in a perfectly clear blue sky above pine-covered hills, plain war banners hanging limp",
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "その青空の下、信長は2千足らずの兵で、義元の本陣へ坂を上る。",
+   "image_en": "Oda Nobunaga in dark armor, spear in hand, leading a thin line of foot soldiers up a bare sunlit slope among sparse pine trees toward an enemy camp of plain curtains on the hilltop, under a clear cloudless blue sky with nowhere to hide, his face tense and sweating. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga leading a thin line of soldiers up a bare sunlit slope toward the enemy camp under a clear blue sky",
+   "label": "隠れる雨が無い",
+   "strong": true,
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A05",
+   "narration": "足すルールは1つ。本当はこの日に降った激しい雨が、1滴も降らない。",
+   "tts_text": "足すルールは1つ。本当はこの日に降った激しい雨が、いってきも降らない。",
+   "same_as": "A03",
+   "label": "雨が降らない",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "A06",
+   "narration": "年と人と、雨より前の出来事は本当の歴史。雨が降らないことから先が、作り話です。",
+   "image_en": "Close-up of a low wooden desk: an old hand-bound Japanese book lying open with blank pages, a brush, an ink stone and a dry folded straw raincoat beside it, warm lantern light. No people.",
+   "image": "Close-up of a low wooden desk: an old hand-bound Japanese book lying open with blank pages",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "話は、前の日の夜に戻る。尾張の清洲城に、砦の味方から知らせが届いた。",
+   "tts_text": "話は、前の日の夜に戻る。尾張のきよす城に、とりでの味方から知らせが届いた。",
+   "image_en": "Night at a Japanese castle residence in the Sengoku period: a messenger samurai kneeling and panting in a torch-lit courtyard, retainers gathering around him.",
+   "image": "Night at a Japanese castle residence in the Sengoku period: a messenger samurai kneeling",
+   "chapter": "清洲を出た朝",
+   "label": "清洲城",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B02",
+   "narration": "夜が明けたら、今川が織田の砦を攻めてくる。",
+   "tts_text": "夜が明けたら、今川が織田のとりでを攻めてくる。",
+   "image_en": "A small wooden hilltop fort with palisades at night, surrounded far away by countless torches of an enemy army on the hills.",
+   "image": "A small wooden hilltop fort with palisades at night, surrounded far away by countless torches",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "それでも信長は、家老たちと世間話をするだけで、戦の相談をしなかった。",
+   "image_en": "Oda Nobunaga, lounging and chatting casually in a lantern-lit hall while elderly retainers in formal clothes stare at him with worried faces. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, lounging and chatting casually in a lantern-lit hall while elderly retainers stare",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "B04",
+   "narration": "帰り道、家老たちは、運が尽きると知恵の鏡も曇る、とあざ笑ったという。",
+   "image_en": "Two elderly samurai retainers walking out of a castle gate at night, one sneering and shaking his head, paper lanterns in hand.",
+   "image": "Two elderly samurai retainers walking out of a castle gate at night, one sneering and shaking his head",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "夜明け前、砦が攻められたと知らせが入る。信長は扇を手に、敦盛を舞った。",
+   "tts_text": "夜明け前、とりでが攻められたと知らせが入る。信長は扇を手に、あつもりを舞った。",
+   "image_en": "Oda Nobunaga, dancing alone with a folding fan in a dim hall before dawn, one lantern glowing, his sleeves swirling, intense calm face. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, dancing alone with a folding fan in a dim hall before dawn, one lantern glowing",
+   "chars": [
+    "nobunaga"
+   ],
+   "label": "敦盛"
+  },
+  {
+   "id": "B06",
+   "narration": "人間五十年、下天の内をくらぶれば、夢幻のごとくなり。",
+   "tts_text": "にんげんごじゅうねん、げてんのうちをくらぶれば、ゆめまぼろしのごとくなり。",
+   "same_as": "B05",
+   "voice": "nobunaga",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "ほら貝を吹け、具足をよこせ。信長は立ったまま飯を食べ、かぶとをかぶった。",
+   "tts_text": "ほらがいを吹け、ぐそくをよこせ。信長は立ったまま飯を食べ、かぶとをかぶった。",
+   "image_en": "Oda Nobunaga, eating rice standing up while pages hurriedly tie his armor, a conch-shell trumpeter blowing in the background, torches. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, eating rice standing up while pages hurriedly tie his armor",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "B08",
+   "narration": "ついて来たのは、わずか6騎。熱田まで3里、およそ12キロを一気に駆けた。",
+   "tts_text": "ついて来たのは、わずかろっき。あつたまでさんり、およそ12キロを一気に駆けた。",
+   "image_en": "Oda Nobunaga, galloping on a black horse along a dark country road at dawn, only six riders following him, dust flying. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, galloping on a black horse along a dark country road at dawn, only six riders",
+   "label": "わずか6騎",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B09",
+   "narration": "朝8時ごろ。熱田の神社の前から東を見ると、砦の方に煙が上がっていた。",
+   "tts_text": "朝8時ごろ。あつたの神社の前から東を見ると、とりでの方に煙が上がっていた。",
+   "image_en": "The great wooden gate of an old Shinto shrine in a forest at morning, with columns of smoke rising far away to the east beyond the trees.",
+   "real": "Atsuta Shrine",
+   "chars": [],
+   "real_src": {
+    "題": "File:Atsuta Shrine.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/1920px-Atsuta_Shrine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Atsuta_Shrine.jpg",
+    "検索語": "Atsuta Shrine"
+   }
+  },
+  {
+   "id": "B10",
+   "narration": "鷲津と丸根。織田の2つの砦は、もう落ちたらしい。",
+   "tts_text": "わしづと、まるね。織田の2つのとりでは、もう落ちたらしい。",
+   "image_en": "Two small hilltop wooden forts burning in the morning, black smoke rising, enemy soldiers swarming over the palisades.",
+   "image": "Two small hilltop wooden forts burning in the morning, black smoke rising",
+   "label": "鷲津・丸根",
+   "chars": []
+  },
+  {
+   "id": "B11",
+   "narration": "丸根の砦を攻めた今川の先陣には、赤い鎧の若武者がいた。",
+   "tts_text": "まるねのとりでを攻めた今川の先陣には、赤いよろいの若武者がいた。",
+   "image_en": "young Matsudaira Motoyasu, a serious young samurai about nineteen with a round face and calm eyes, topknot, in bright vermilion-red armor, leading soldiers up to a burning wooden fort. Place the main person slightly right of center.",
+   "image": "young Matsudaira Motoyasu, a serious young samurai about nineteen in bright vermilion-red armor",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "松平元康。のちの徳川家康だ。",
+   "tts_text": "まつだいらもとやす。のちの徳川家康だ。",
+   "image_en": "Close-up of young Matsudaira Motoyasu, a serious young samurai about nineteen with a round face and calm eyes, topknot, in bright vermilion-red armor, sweat and soot on his face. Place the main person slightly right of center.",
+   "image": "Close-up of young Matsudaira Motoyasu in bright vermilion-red armor, sweat and soot on his face",
+   "label": "のちの家康",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "B13",
+   "narration": "元康は前の夜、織田に囲まれた大高城へ、兵糧を運び込んでいた。",
+   "tts_text": "もとやすは前の夜、織田に囲まれたおおだか城へ、ひょうろうを運び込んでいた。",
+   "image_en": "Night. A line of soldiers and pack horses carrying rice bales slipping into a small castle gate, young Matsudaira Motoyasu in vermilion-red armor directing them. Place the main person slightly right of center.",
+   "image": "Night. A line of soldiers and pack horses carrying rice bales slipping into a small castle gate",
+   "label": "大高城",
+   "chars": []
+  },
+  {
+   "id": "B14",
+   "narration": "8歳から19歳まで、今川義元の人質として暮らした若者だ。",
+   "image_en": "A small boy in a plain kimono sitting alone on the veranda of a large samurai mansion, looking at a distant mountain. Faded old-memory colors.",
+   "image": "A small boy in a plain kimono sitting alone on the veranda of a large samurai mansion",
+   "label": "人質",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "そのころ今川義元は、桶狭間の山で、兵と馬を休ませていた。",
+   "tts_text": "そのころ今川義元は、おけはざまの山で、兵と馬を休ませていた。",
+   "image_en": "Imagawa Yoshimoto, a dignified Japanese warlord about forty with a refined pale face, thin moustache, a tall black court cap and ornate white-and-gold armor, sitting on a camp stool in a pine-wood camp surrounded by plain curtains, horses resting nearby. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, a dignified Japanese warlord about forty, sitting on a camp stool in a pine-wood camp",
+   "chapter": "義元の昼",
+   "label": "今川義元",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "駿河と遠江と三河、3つの国を治める大名だ。",
+   "tts_text": "するがと、とおとうみと、みかわ、3つの国を治める大名だ。",
+   "image_en": "An old Japanese hanging-scroll portrait of a seated warlord in formal court robes and a tall black cap. Faded old-memory colors.",
+   "image": "An old Japanese hanging-scroll portrait of a seated warlord in formal court robes",
+   "real": "Imagawa Yoshimoto portrait",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "連れてきた兵は、信長公記では4万5千。今の事典には、2万5千とある物もある。",
+   "tts_text": "連れてきた兵は、しんちょうこうきでは4万5千。今の事典には、2万5千とある物もある。",
+   "image_en": "A vast army camp spreading over green hills seen from above, thousands of soldiers, plain banners and horses, midday.",
+   "image": "A vast army camp spreading over green hills seen from above, thousands of soldiers",
+   "label": "4万5千？",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "対する信長の兵は、2千に足りなかったと、信長公記は書く。",
+   "tts_text": "対する信長の兵は、2千に足りなかったと、しんちょうこうきは書く。",
+   "image_en": "A small band of Oda foot soldiers and a few riders gathered on a narrow dirt road between rice paddies, looking tense, plain banners.",
+   "image": "A small band of Oda foot soldiers and a few riders gathered on a narrow dirt road between rice paddies",
+   "label": "2千足らず",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "義元は、2つの砦が落ちたと聞いて大いに喜び、謡を3番うたわせた。",
+   "tts_text": "義元は、2つのとりでが落ちたと聞いて大いに喜び、うたいを3番うたわせた。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord with a refined pale face, thin moustache, tall black court cap and white-and-gold armor, smiling with satisfaction while retainers chant a Noh song in his camp. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, smiling with satisfaction while retainers chant a Noh song in his camp",
+   "chars": []
+  },
+  {
+   "id": "C06",
+   "narration": "そこへ織田方の佐々と千秋が、300人ほどで攻めかかった。",
+   "tts_text": "そこへ織田方のさっさと、せんしゅうが、300人ほどで攻めかかった。",
+   "image_en": "A small group of Oda samurai charging uphill with spears toward a huge enemy line, shouting.",
+   "image": "A small group of Oda samurai charging uphill with spears toward a huge enemy line",
+   "label": "300人",
+   "chars": []
+  },
+  {
+   "id": "C07",
+   "narration": "今川勢はどっと押し返し、2人をはじめ、50騎ほどが討ち死にした。",
+   "tts_text": "今川勢はどっと押し返し、2人をはじめ、ごじっきほどが討ち死にした。",
+   "image_en": "A huge wave of Imagawa soldiers pushing back a small band of attackers on a slope, spears clashing, dust, no blood.",
+   "image": "A huge wave of Imagawa soldiers pushing back a small band of attackers on a slope",
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "知らせを聞いた義元は、ますます機嫌をよくした。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord with a refined pale face, thin moustache, tall black court cap and white-and-gold armor, laughing proudly with a war fan raised. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, laughing proudly with a war fan raised",
+   "chars": []
+  },
+  {
+   "id": "C08b",
+   "narration": "わしの矛先には、天魔鬼神もかなうまい。心地よいわ。",
+   "tts_text": "わしのほこさきには、てんまきじんもかなうまい。ここちよいわ。",
+   "same_as": "C08",
+   "voice": "yoshimoto",
+   "chars": []
+  },
+  {
+   "id": "C09",
+   "narration": "そしてまた、ゆるゆると謡をうたわせ、陣を動かさなかった。",
+   "tts_text": "そしてまた、ゆるゆるとうたいをうたわせ、陣を動かさなかった。",
+   "image_en": "A relaxed army camp at noon under pine trees, soldiers sitting and eating, a Noh chanter singing before a curtained enclosure.",
+   "image": "A relaxed army camp at noon under pine trees, soldiers sitting and eating",
+   "chars": []
+  },
+  {
+   "id": "C10",
+   "narration": "ここで問題です。信長公記で、信長が攻めかかったのは、雨の最中か、やんだ後か。",
+   "tts_text": "ここで問題です。しんちょうこうきで、信長が攻めかかったのは、雨のさいちゅうか、やんだ後か。",
+   "image_en": "Dark storm clouds gathering over a pine-covered hill while a lone samurai on horseback waits at the foot of the hill, dramatic light.",
+   "image": "Dark storm clouds gathering over a pine-covered hill while a lone samurai on horseback waits",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "信長は、善照寺の砦まで来ていた。その先にあるのが、中島の砦だ。",
+   "tts_text": "信長は、ぜんしょうじのとりでまで来ていた。その先にあるのが、なかじまのとりでだ。",
+   "image_en": "Oda Nobunaga, on horseback at a hilltop wooden fort, looking down toward a smaller fort in low marshy ground. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, on horseback at a hilltop wooden fort, looking down toward a smaller fort",
+   "chapter": "丸見えの道",
+   "label": "善照寺砦",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D02",
+   "narration": "中島へ移ろうとする信長の馬に、家老たちがしがみついた。",
+   "tts_text": "なかじまへ移ろうとする信長の馬に、家老たちがしがみついた。",
+   "image_en": "Oda Nobunaga, on a rearing horse while several elderly armored retainers grab the reins and bridle desperately, shouting. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, on a rearing horse while several elderly armored retainers grab the reins",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D03",
+   "narration": "両わきは深い田、1騎ずつしか通れぬ道。こちらの少なさが、敵から丸見えでござる。",
+   "tts_text": "両わきは深い田、いっきずつしか通れぬ道。こちらの少なさが、敵から丸見えでござる。",
+   "image_en": "Close-up of an elderly Oda retainer with a grey topknot in dark armor, gripping a horse's bridle, pleading with wide desperate eyes. Place the main person slightly right of center.",
+   "image": "Close-up of an elderly Oda retainer with a grey topknot in dark armor, gripping a horse's bridle",
+   "voice": "karo",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "これは作り話ではない。信長公記に本当にある、家老たちの言葉だ。",
+   "tts_text": "これは作り話ではない。しんちょうこうきに本当にある、家老たちの言葉だ。",
+   "image_en": "An old printed Japanese book lying open, columns of vertical text on yellowed paper, seen from above. Faded old-memory colors.",
+   "real": "https://dl.ndl.go.jp/api/iiif/781192/R0000016/full/2000,/0/default.jpg",
+   "label": "敵から丸見え",
+   "strong": true,
+   "chars": [],
+   "real_src": {
+    "題": "https://dl.ndl.go.jp/api/iiif/781192/R0000016/full/2000,/0/default.jpg",
+    "url": "https://dl.ndl.go.jp/api/iiif/781192/R0000016/full/2000,/0/default.jpg",
+    "説明ページ": "https://dl.ndl.go.jp/api/iiif/781192/R0000016/full/2000,/0/default.jpg",
+    "検索語": "https://dl.ndl.go.jp/api/iiif/781192/R0000016/full/2000,/0/default.jpg"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "中島への道は、細いあぜ道。まわりの山から、見下ろされる場所だった。",
+   "tts_text": "なかじまへの道は、細いあぜ道。まわりの山から、見下ろされる場所だった。",
+   "image_en": "A narrow raised path running through deep muddy rice paddies toward a small fort, wooded hills rising on both sides, seen from a hilltop.",
+   "image": "A narrow raised path running through deep muddy rice paddies toward a small fort",
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "信長は、家老の手を振り切って中島へ移った。",
+   "tts_text": "信長は、家老の手を振り切ってなかじまへ移った。",
+   "image_en": "Oda Nobunaga, riding fast along a narrow path between rice paddies with a small band of soldiers running behind. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, riding fast along a narrow path between rice paddies",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "D07",
+   "narration": "さらに前へ出ようとする信長を、家老たちはまた止めた。信長は、兵に向かって言った。",
+   "image_en": "Oda Nobunaga, standing in front of his gathered soldiers at a small fort, raising his arm and speaking with blazing eyes. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, standing in front of his gathered soldiers at a small fort, raising his arm",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "D08",
+   "narration": "敵は夜通し歩き、砦を攻めて疲れておる。こちらは新手だ。",
+   "tts_text": "敵は夜通し歩き、とりでを攻めて疲れておる。こちらはあらてだ。",
+   "image_en": "Close-up of Oda Nobunaga, shouting with fierce confidence, sweat on his brow, spear in hand. Place the main person slightly right of center.",
+   "image": "Close-up of Oda Nobunaga, shouting with fierce confidence, sweat on his brow",
+   "voice": "nobunaga",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "D09",
+   "narration": "小勢だからと、大敵を恐れるな。運は、天にあるぞ。",
+   "tts_text": "こぜいだからと、たいてきを恐れるな。運は、天にあるぞ。",
+   "same_as": "D07",
+   "voice": "nobunaga",
+   "chars": []
+  },
+  {
+   "id": "D10",
+   "narration": "首は取るな、捨てておけ。勝てば、ここにいた者は家の名誉だ。",
+   "image_en": "Oda Nobunaga, pointing his spear forward toward the enemy hills, soldiers behind him clenching their weapons with fierce eyes. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, pointing his spear forward toward the enemy hills",
+   "chars": [
+    "nobunaga"
+   ],
+   "voice": "nobunaga"
+  },
+  {
+   "id": "D11",
+   "narration": "首を拾う間に、少ない兵の足を止めさせない。そのための命令だと読める。",
+   "image_en": "Oda foot soldiers running past fallen enemy helmets and dropped banners without stopping, determined faces.",
+   "image": "Oda foot soldiers running past fallen enemy helmets and dropped banners without stopping",
+   "chars": []
+  },
+  {
+   "id": "D12",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。面白いと思ったら、チャンネル登録で応援してください。",
+   "same_as": "A03",
+   "label": "チャンネル登録",
+   "chars": []
+  },
+  {
+   "id": "E01",
+   "narration": "信長は、山のふもとまで兵を寄せた。本当の歴史では、ここで空が変わる。",
+   "image_en": "Oda soldiers creeping up to the foot of a wooded hill, sky suddenly turning dark with heavy black clouds. Faded old-memory colors.",
+   "image": "Oda soldiers creeping up to the foot of a wooded hill, sky suddenly turning dark",
+   "chapter": "雨が来ない",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "にわか雨が、石や氷を投げつけるように、今川勢の顔を打った。",
+   "image_en": "A violent sudden storm of rain and hail lashing into the faces of Imagawa soldiers on a hill, men shielding their eyes, banners whipping. Faded old-memory colors.",
+   "image": "A violent sudden storm of rain and hail lashing into the faces of Imagawa soldiers on a hill",
+   "label": "本当の歴史",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E03",
+   "narration": "織田勢には、雨は背中から降りかかった。",
+   "same_as": "E02",
+   "chars": []
+  },
+  {
+   "id": "E04",
+   "narration": "沓掛の峠では、2かかえも3かかえもある楠が、雨で東へ倒れたという。",
+   "tts_text": "くつかけの峠では、ふたかかえも、みかかえもある、くすのきが、雨で東へ倒れたという。",
+   "image_en": "A gigantic camphor tree crashing down sideways in a fierce rainstorm beside pine trees on a mountain pass. Faded old-memory colors.",
+   "image": "A gigantic camphor tree crashing down sideways in a fierce rainstorm on a mountain pass",
+   "label": "楠が倒れた",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "あまりのことに、熱田の神さまの軍勢か、と言い合ったと記録にある。",
+   "tts_text": "あまりのことに、あつたの神さまの軍勢か、と言い合ったと記録にある。",
+   "image_en": "Soldiers kneeling in the pouring rain, looking up in awe at lightning over a dark forest. Faded old-memory colors.",
+   "image": "Soldiers kneeling in the pouring rain, looking up in awe at lightning over a dark forest",
+   "chars": []
+  },
+  {
+   "id": "E06",
+   "narration": "でも、この世界線の空は、晴れたままだ。",
+   "image_en": "Oda soldiers at the foot of a pine hill squinting up into a blazing sun in a clear blue sky, sweat running down their faces, no clouds at all.",
+   "image": "Oda soldiers at the foot of a pine hill squinting up into a blazing sun in a clear blue sky",
+   "label": "晴れのまま",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E07",
+   "narration": "楠は倒れない。旗は、風にも揺れない。",
+   "tts_text": "くすのきは倒れない。旗は、風にも揺れない。",
+   "image_en": "A huge camphor tree standing perfectly still in bright sunshine on a mountain pass, plain banners hanging motionless nearby.",
+   "image": "A huge camphor tree standing perfectly still in bright sunshine on a mountain pass",
+   "chars": []
+  },
+  {
+   "id": "E08",
+   "narration": "今川勢は、北西に向けて陣を構えていた。その正面の坂を、織田の旗が上ってくる。",
+   "image_en": "View from behind Imagawa soldiers on a hilltop: down the sunny slope in front of them, a column of plain Oda banners is climbing toward them in full view.",
+   "image": "View from behind Imagawa soldiers on a hilltop: down the sunny slope a column of plain Oda banners climbs",
+   "chars": []
+  },
+  {
+   "id": "E09",
+   "narration": "雨音で消えるはずの足音も、具足の音も、よく聞こえる。",
+   "tts_text": "あまおとで消えるはずの足音も、ぐそくの音も、よく聞こえる。",
+   "image_en": "Close-up of armored feet and spear butts marching on dry dusty ground in harsh sunlight, small stones bouncing.",
+   "image": "Close-up of armored feet and spear butts marching on dry dusty ground in harsh sunlight",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "見張りが叫ぶ。義元のまわりに、旗本たちが集まった。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord with a refined pale face, thin moustache, tall black court cap and white-and-gold armor, rising from his stool in alarm as bodyguards rush to surround him under the bright sun. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, rising from his stool in alarm as bodyguards rush to surround him",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "それでも信長は、槍を取って大声を上げた。",
+   "image_en": "Oda Nobunaga, seizing a long spear and roaring at the foot of a sunlit hill, soldiers behind him raising their weapons. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, seizing a long spear and roaring at the foot of a sunlit hill",
+   "chapter": "輿は谷を抜けた",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "すわ、かかれ、かかれ！",
+   "same_as": "F01",
+   "voice": "nobunaga",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "本当の歴史では、ここで今川勢は、水をまくように後ろへ崩れた。",
+   "image_en": "Imagawa soldiers fleeing backward in panic through wet pine woods after a storm, dropping bows, spears and banners. Faded old-memory colors.",
+   "image": "Imagawa soldiers fleeing backward in panic through wet pine woods after a storm",
+   "label": "本当の歴史",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "でも晴れた空の下では、今川勢は崩れない。弓と鉄砲が、坂の下を向く。",
+   "tts_text": "でも晴れた空の下では、今川勢は崩れない。弓とてっぽうが、坂の下を向く。",
+   "image_en": "A disciplined line of Imagawa archers and matchlock gunners kneeling on a sunny hilltop, aiming down the slope at charging Oda soldiers, dust rising.",
+   "image": "A disciplined line of Imagawa archers and matchlock gunners kneeling on a sunny hilltop",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F05",
+   "narration": "義元は、漆を塗った輿に乗り込んだ。",
+   "tts_text": "義元は、うるしを塗ったこしに乗り込んだ。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord with a refined pale face, thin moustache, tall black court cap and white-and-gold armor, climbing into a black lacquered palanquin held by bearers. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, climbing into a black lacquered palanquin held by bearers",
+   "label": "塗りの輿",
+   "chars": []
+  },
+  {
+   "id": "F06",
+   "narration": "旗本300騎ほどが、輿をまん丸に囲んで、東へ下がっていく。",
+   "tts_text": "はたもと、さんびゃっきほどが、こしをまん丸に囲んで、東へ下がっていく。",
+   "image_en": "A tight circle of mounted samurai bodyguards surrounding a black lacquered palanquin, retreating east along a sunny forest road.",
+   "image": "A tight circle of mounted samurai bodyguards surrounding a black lacquered palanquin",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "織田の若武者、毛利新介と服部小平太が、槍を手に追いすがる。",
+   "tts_text": "織田の若武者、もうりしんすけと、はっとりこへいたが、槍を手に追いすがる。",
+   "image_en": "Two young Oda samurai with spears sprinting uphill after a retreating palanquin, desperate faces, sunlight. Place the main person slightly right of center.",
+   "image": "Two young Oda samurai with spears sprinting uphill after a retreating palanquin",
+   "chars": []
+  },
+  {
+   "id": "F08",
+   "narration": "でも、輿までの間には、まだ今川の兵が厚く並んでいる。",
+   "tts_text": "でも、こしまでの間には、まだ今川の兵が厚く並んでいる。",
+   "image_en": "A thick wall of Imagawa spearmen blocking a narrow forest road, two young Oda samurai stopped in front of them, panting.",
+   "image": "A thick wall of Imagawa spearmen blocking a narrow forest road",
+   "chars": []
+  },
+  {
+   "id": "F09",
+   "narration": "義元の輿は谷を抜け、夕方、沓掛城へ入った。",
+   "tts_text": "義元のこしは谷を抜け、夕方、くつかけじょうへ入った。",
+   "image_en": "A black lacquered palanquin surrounded by mounted samurai escaping through a valley pass toward a small hill castle at golden sunset, long shadows, triumphant and dramatic.",
+   "image": "A black lacquered palanquin surrounded by mounted samurai escaping through a valley pass at sunset",
+   "label": "義元が生き残った",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "highlight": [
+    "沓掛城"
+   ],
+   "motion": true
+  },
+  {
+   "id": "F10",
+   "narration": "この世界線では、義元の首は、だれにも取られない。左文字の刀も、義元の腰に残る。",
+   "tts_text": "この世界線では、義元の首は、だれにも取られない。さもんじの刀も、義元の腰に残る。",
+   "image_en": "Close-up of a fine Japanese sword in an ornate scabbard at the waist of a warlord in white-and-gold armor, warm sunset light. No writing.",
+   "image": "Close-up of a fine Japanese sword in an ornate scabbard at the waist of a warlord",
+   "chars": []
+  },
+  {
+   "id": "F11",
+   "narration": "信長は兵をまとめ、清洲へ引き返した。",
+   "tts_text": "信長は兵をまとめ、きよすへ引き返した。",
+   "image_en": "Oda Nobunaga, riding back at dusk with a tired small army, jaw clenched, looking back over his shoulder at the distant hills. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, riding back at dusk with a tired small army, jaw clenched",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "G01",
+   "narration": "では、本当の桶狭間では、何が起きたのか。",
+   "tts_text": "では、本当のおけはざまでは、何が起きたのか。",
+   "image_en": "Wet pine woods on a hill just after a storm, sunlight breaking through clouds, steam rising from the ground. Faded old-memory colors.",
+   "image": "Wet pine woods on a hill just after a storm, sunlight breaking through clouds",
+   "chapter": "本当の桶狭間",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "さっきの問題の答えは、雨がやんだ後だ。",
+   "same_as": "G01",
+   "label": "雨のあと",
+   "strong": true,
+   "payoff": true,
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "信長公記には、空が晴れるのを見て、信長が槍を取ったとある。",
+   "tts_text": "しんちょうこうきには、空が晴れるのを見て、信長が槍を取ったとある。",
+   "image_en": "Oda Nobunaga, looking up as the storm clouds part above him, gripping a long spear, wet armor shining. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Oda Nobunaga, looking up as the storm clouds part above him, gripping a long spear",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "G04",
+   "narration": "記録の上では、雨のさなかではなく、雨がやんでから攻めかかっている。",
+   "image_en": "Rain stopping over a pine forest, the last drops falling from branches while armored soldiers rise from crouching positions, sunlight returning. Faded old-memory colors.",
+   "image": "Rain stopping over a pine forest, the last drops falling while armored soldiers rise",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "今川勢は崩れ、義元の塗りの輿も、捨てられたと書かれている。",
+   "tts_text": "今川勢は崩れ、義元のぬりのこしも、捨てられたと書かれている。",
+   "image_en": "An old printed Japanese book lying open, columns of vertical text on yellowed paper. Faded old-memory colors.",
+   "real": "https://dl.ndl.go.jp/api/iiif/781192/R0000017/full/2000,/0/default.jpg",
+   "chars": [],
+   "real_src": {
+    "題": "https://dl.ndl.go.jp/api/iiif/781192/R0000017/full/2000,/0/default.jpg",
+    "url": "https://dl.ndl.go.jp/api/iiif/781192/R0000017/full/2000,/0/default.jpg",
+    "説明ページ": "https://dl.ndl.go.jp/api/iiif/781192/R0000017/full/2000,/0/default.jpg",
+    "検索語": "https://dl.ndl.go.jp/api/iiif/781192/R0000017/full/2000,/0/default.jpg"
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "午後2時ごろ、信長は東へ向かって攻めた。",
+   "image_en": "Oda soldiers charging east through muddy pine woods after rain, spears forward, sunlight on wet leaves. Faded old-memory colors.",
+   "image": "Oda soldiers charging east through muddy pine woods after rain",
+   "label": "午後2時ごろ",
+   "chars": []
+  },
+  {
+   "id": "G07",
+   "narration": "義元を囲む300騎は、何度も引き返して戦い、50騎ほどに減っていった。",
+   "tts_text": "義元を囲む、さんびゃっきは、何度も引き返して戦い、ごじっきほどに減っていった。",
+   "image_en": "A shrinking circle of exhausted Imagawa bodyguards turning to fight off attackers in muddy woods, swords flashing, sparks. Faded old-memory colors.",
+   "image": "A shrinking circle of exhausted Imagawa bodyguards turning to fight off attackers in muddy woods",
+   "label": "300騎→50騎",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G08",
+   "narration": "服部小平太が義元に向かい、ひざを切られて倒れた。",
+   "tts_text": "はっとりこへいたが義元に向かい、ひざを切られて倒れた。",
+   "image_en": "A young Oda samurai falling to one knee in the mud after a clash with an armored warlord in white-and-gold armor, rain dripping from the pines. Faded old-memory colors.",
+   "image": "A young Oda samurai falling to one knee in the mud after a clash with an armored warlord",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "そして毛利新介が義元を切り伏せ、首を取った。",
+   "tts_text": "そして、もうりしんすけが義元を切り伏せ、首を取った。",
+   "image_en": "A young Oda samurai raising his sword in triumph over a fallen figure in white-and-gold armor hidden behind tall grass, steam rising, no blood shown. Faded old-memory colors.",
+   "image": "A young Oda samurai raising his sword in triumph, fallen figure hidden behind tall grass",
+   "label": "毛利新介",
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "桶狭間は、深い田と茂みの入り組んだ場所。田に逃げた兵は、はい回ったという。",
+   "tts_text": "おけはざまは、深い田と茂みの入り組んだ場所。田に逃げた兵は、はい回ったという。",
+   "image_en": "Soldiers struggling waist-deep in muddy rice paddies between thickets, crawling and slipping. Faded old-memory colors.",
+   "image": "Soldiers struggling waist-deep in muddy rice paddies between thickets",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "その日のうちに清洲へ戻った信長が、翌日調べた首は、3千あまり。",
+   "tts_text": "その日のうちにきよすへ戻った信長が、翌日調べた首は、3千あまり。",
+   "image_en": "A solemn castle courtyard with rows of plain closed wooden boxes on straw mats, samurai officials writing in ledgers. Faded old-memory colors.",
+   "image": "A solemn castle courtyard with rows of plain closed wooden boxes on straw mats",
+   "label": "3千あまり",
+   "chars": []
+  },
+  {
+   "id": "G12",
+   "narration": "義元のそばにいた下方九郎左衛門が捕まり、首の名を1つずつ言い当てた。",
+   "tts_text": "義元のそばにいた、しもかたくろうざえもんが捕まり、首の名を1つずつ言い当てた。",
+   "image_en": "A captured shaven-headed attendant monk in plain robes kneeling in a courtyard, pointing and naming while officials write. Faded old-memory colors.",
+   "image": "A captured shaven-headed attendant monk kneeling in a courtyard, pointing and naming",
+   "chars": []
+  },
+  {
+   "id": "G13",
+   "narration": "信長は褒美を与え、10人の僧をつけて、義元の首を駿河へ送り返した。",
+   "tts_text": "信長はほうびを与え、10人の僧をつけて、義元の首をするがへ送り返した。",
+   "image_en": "A quiet procession of ten Buddhist monks walking along a country road at dawn, escorting a plain covered wooden box. Faded old-memory colors.",
+   "image": "A quiet procession of ten Buddhist monks walking along a country road at dawn",
+   "label": "10人の僧",
+   "chars": []
+  },
+  {
+   "id": "G14",
+   "narration": "清洲の南には義元塚を築き、千部のお経を読ませて弔ったと記録にある。",
+   "tts_text": "きよすの南には、よしもとづかを築き、せんぶのお経を読ませて弔ったと記録にある。",
+   "image_en": "A small earthen burial mound beside a road with a tall plain wooden memorial post, monks chanting before it. Faded old-memory colors.",
+   "image": "A small earthen burial mound beside a road with a tall plain wooden memorial post",
+   "label": "義元塚",
+   "chars": []
+  },
+  {
+   "id": "G15",
+   "narration": "そして信長は、義元がいつも差していた左文字の刀を、自分の物にした。",
+   "tts_text": "そして信長は、義元がいつも差していた、さもんじの刀を、自分の物にした。",
+   "image_en": "Oda Nobunaga, holding up a fine Japanese sword and studying its blade with sharp eyes in a lantern-lit room. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, holding up a fine Japanese sword and studying its blade",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "G16",
+   "narration": "その刀は義元左文字と呼ばれ、今は京都の建勲神社にある。国の重要文化財だ。",
+   "tts_text": "その刀は、よしもとさもんじと呼ばれ、今は京都のけんくんじんじゃにある。国の重要文化財だ。",
+   "image_en": "A single old Japanese katana blade displayed on a stand against a dark background, soft museum light. No writing.",
+   "real": "Souza Samonji",
+   "label": "義元左文字",
+   "chars": [],
+   "real_src": {
+    "題": "File:Polymanga 2018 (40288921355).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Polymanga_2018_%2840288921355%29.jpg/1920px-Polymanga_2018_%2840288921355%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Polymanga_2018_(40288921355).jpg",
+    "検索語": "Souza Samonji"
+   }
+  },
+  {
+   "id": "G17",
+   "narration": "刀には、義元を討ち取った日付が、信長の手で刻まれていると伝わる。",
+   "image_en": "Extreme close-up of the steel of an old Japanese sword blade with a fine wavy temper line, gold glints, no letters visible.",
+   "image": "Extreme close-up of the steel of an old Japanese sword blade with a fine wavy temper line",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "narration": "桶狭間といえば、山をまわり込んで本陣を突いた奇襲。そう覚えた人も多いだろう。",
+   "tts_text": "おけはざまといえば、山をまわり込んで本陣を突いた奇襲。そう覚えた人も多いだろう。",
+   "image_en": "Samurai cavalry sweeping down a forested ridge in a heavy rainstorm toward a curtained camp, classic heroic war scene. Faded old-memory colors.",
+   "image": "Samurai cavalry sweeping down a forested ridge in a heavy rainstorm toward a curtained camp",
+   "chapter": "奇襲だったのか",
+   "label": "奇襲？",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H02",
+   "narration": "桶狭間は、色あざやかな錦絵にも、何度も描かれてきた。",
+   "tts_text": "おけはざまは、色あざやかなにしきえにも、何度も描かれてきた。",
+   "image_en": "A colorful old Japanese woodblock print triptych of a samurai battle in the rain. Faded old-memory colors.",
+   "real": "Battle of Okehazama ukiyo-e",
+   "chars": [],
+   "real_src": {
+    "題": "File:Bishū Okehazama-gassen.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bish%C5%AB_Okehazama-gassen.jpg/1920px-Bish%C5%AB_Okehazama-gassen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Bish%C5%AB_Okehazama-gassen.jpg",
+    "検索語": "Battle of Okehazama ukiyo-e"
+   }
+  },
+  {
+   "id": "H03",
+   "narration": "100年以上前の歴史の地図帳には、太子ケ根を通って桶狭間を襲う、とある。",
+   "tts_text": "100年以上前の歴史の地図帳には、たいしがねを通って、おけはざまを襲う、とある。",
+   "image_en": "An old school history atlas lying open on a desk, showing a hand-drawn map of hills and roads with arrows, no letters readable. Faded old-memory colors.",
+   "image": "An old school history atlas lying open on a desk, showing a hand-drawn map of hills and roads",
+   "label": "太子ケ根",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "今の事典にも、にわか雨に助けられ、気づかれずに近づいた、と書く物がある。",
+   "image_en": "A thick modern reference book lying closed on a library table beside a window with rain streaks, soft light. No writing visible.",
+   "image": "A thick modern reference book lying closed on a library table beside a window with rain streaks",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "でも、信長公記には、まわり道をしたという言葉は出てこない。",
+   "tts_text": "でも、しんちょうこうきには、まわり道をしたという言葉は出てこない。",
+   "image_en": "A hand turning the pages of an old hand-bound Japanese book by lantern light, columns of faint brush text too small to read. Faded old-memory colors.",
+   "image": "A hand turning the pages of an old hand-bound Japanese book by lantern light",
+   "chars": []
+  },
+  {
+   "id": "H06",
+   "narration": "別の事典は、山で休む義元の前の軍に攻めかかった、とだけ書く。",
+   "image_en": "A camp of resting soldiers in front of a hill being suddenly hit by an attack from the front, men scrambling up. Faded old-memory colors.",
+   "image": "A camp of resting soldiers in front of a hill being suddenly hit by an attack from the front",
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "今は、正面から攻めたとみる研究者が多いともいわれる。奇襲か正面か、議論は続いている。",
+   "image_en": "Two scholars in modern clothes leaning over an old map spread on a table, debating, warm desk lamp light. Place the main person slightly right of center.",
+   "image": "Two scholars in modern clothes leaning over an old map spread on a table, debating",
+   "label": "奇襲か正面か",
+   "chars": []
+  },
+  {
+   "id": "H08",
+   "narration": "戦った場所も、1つに決まっていない。古戦場は、愛知県豊明市と名古屋市緑区の2か所にある。",
+   "tts_text": "戦った場所も、1つに決まっていない。古戦場は、愛知県とよあけしと、名古屋市みどりくの2か所にある。",
+   "image_en": "A quiet small park with old stone monuments among trees on a sunny afternoon in present-day Japan. No writing visible.",
+   "real": "Okehazama Battlefield Toyoake",
+   "label": "古戦場は2か所",
+   "chars": [],
+   "real_src": {
+    "題": "File:Okehazama Old Battlefield, Sakae-cho Toyoake 2012.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Okehazama_Old_Battlefield%2C_Sakae-cho_Toyoake_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Okehazama_Old_Battlefield,_Sakae-cho_Toyoake_2012.JPG",
+    "検索語": "Okehazama Battlefield Toyoake"
+   }
+  },
+  {
+   "id": "H09",
+   "narration": "豊明市の古戦場には、1771年に尾張藩の人が建てた石の碑が7つ立つ。",
+   "tts_text": "とよあけしの古戦場には、1771年に尾張藩の人が建てた石の碑が7つ立つ。",
+   "image_en": "Several weathered old stone markers standing among trees in a quiet park, dappled sunlight. No writing visible.",
+   "image": "Several weathered old stone markers standing among trees in a quiet park",
+   "label": "7つの碑",
+   "chars": []
+  },
+  {
+   "id": "H10",
+   "narration": "名古屋市緑区には、桶狭間古戦場公園がある。2つの町が、それぞれに戦いの跡を伝えている。",
+   "tts_text": "名古屋市みどりくには、おけはざまこせんじょう公園がある。2つの町が、それぞれに戦いの跡を伝えている。",
+   "image_en": "A small Japanese park with a bronze statue of two warriors and a pond, trees around, clear afternoon. Place the main person slightly right of center.",
+   "real": "Okehazama Kosenjo Park Nagoya",
+   "chars": [],
+   "real_src": {
+    "題": "File:Okehazama Kosenjo Park, Okehazama-Kita Midori Ward Nagoya 2020.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Okehazama_Kosenjo_Park%2C_Okehazama-Kita_Midori_Ward_Nagoya_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Okehazama_Kosenjo_Park,_Okehazama-Kita_Midori_Ward_Nagoya_2020.jpg",
+    "検索語": "Okehazama Kosenjo Park Nagoya"
+   }
+  },
+  {
+   "id": "I01",
+   "narration": "では、雨が降らなかった世界で、いちばん運命が変わるのはだれか。",
+   "image_en": "Bright midday sun over a small hill castle surrounded by rice fields, clear sky, plain banners on the walls.",
+   "image": "Bright midday sun over a small hill castle surrounded by rice fields",
+   "chapter": "家康の世界線",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I02",
+   "narration": "信長ではない。大高城にいた、松平元康だ。",
+   "tts_text": "信長ではない。おおだか城にいた、まつだいらもとやすだ。",
+   "image_en": "young Matsudaira Motoyasu, a serious young samurai about nineteen with a round face and calm eyes, topknot, in bright vermilion-red armor, sitting on a camp stool inside a small castle, looking up sharply as a messenger arrives. Place the main person slightly right of center.",
+   "image": "young Matsudaira Motoyasu in vermilion-red armor, looking up sharply as a messenger arrives",
+   "label": "松平元康",
+   "chars": []
+  },
+  {
+   "id": "I03",
+   "narration": "本当の歴史では、義元が討たれると、元康は岡崎城に入った。",
+   "tts_text": "本当の歴史では、義元が討たれると、もとやすは岡崎城に入った。",
+   "image_en": "A Japanese castle with white walls and a multi-tiered keep on stone walls, trees around, clear sky.",
+   "real": "Okazaki Castle",
+   "label": "岡崎城",
+   "chars": [],
+   "real_src": {
+    "題": "File:Okazaki Castle and Oto River.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Okazaki_Castle_and_Oto_River.JPG/1920px-Okazaki_Castle_and_Oto_River.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Okazaki_Castle_and_Oto_River.JPG",
+    "検索語": "Okazaki Castle"
+   }
+  },
+  {
+   "id": "I04",
+   "narration": "そして今川から離れ、やがて信長と手を結ぶ。",
+   "image_en": "Oda Nobunaga and a young samurai in vermilion-red armor with a round face facing each other across a hall, both bowing slightly. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Oda Nobunaga and a young samurai in vermilion-red armor facing each other across a hall",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "I05",
+   "narration": "8歳からの人質暮らしが、桶狭間の雨の日に終わった、ともいえる。",
+   "tts_text": "8歳からの人質暮らしが、おけはざまの雨の日に終わった、ともいえる。",
+   "image_en": "young Matsudaira Motoyasu in vermilion-red armor riding through a castle gate in the rain, retainers bowing on both sides, a determined look. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "young Matsudaira Motoyasu riding through a castle gate in the rain, retainers bowing",
+   "chars": []
+  },
+  {
+   "id": "I06",
+   "narration": "でも、この世界線では、義元が生きて沓掛城にいる。",
+   "tts_text": "でも、この世界線では、義元が生きて、くつかけじょうにいる。",
+   "image_en": "Imagawa Yoshimoto, a dignified warlord with a refined pale face, thin moustache, tall black court cap and white-and-gold armor, sitting calmly in a castle hall at night, writing a letter by lantern light. Place the main person slightly right of center.",
+   "image": "Imagawa Yoshimoto, sitting calmly in a castle hall at night, writing a letter by lantern light",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "元康は大高城を守ったまま、今川の家来であり続ける。",
+   "tts_text": "もとやすは、おおだか城を守ったまま、今川の家来であり続ける。",
+   "image_en": "young Matsudaira Motoyasu, a serious young samurai about nineteen with a round face and calm eyes, topknot, in bright vermilion-red armor, standing on a castle wall under a cloudless blazing sky, face troubled, the head and shoulders in the vertical middle with wide empty sky above and ground below. Place the main person slightly right of center.",
+   "image": "young Matsudaira Motoyasu in bright vermilion-red armor, standing on a castle wall under a cloudless sky",
+   "label": "今川の家来のまま",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I08",
+   "narration": "義元さまは、ご無事か。ならば、わしはこの城を守るのみ。",
+   "same_as": "I07",
+   "voice": "motoyasu",
+   "chars": []
+  },
+  {
+   "id": "I09",
+   "narration": "岡崎へ戻る道も、信長と結ぶ道も、晴れた空がふさいでしまった。",
+   "image_en": "A lonely road leading away from a small castle toward distant hills, empty under harsh sunlight, a closed wooden gate in the foreground.",
+   "image": "A lonely road leading away from a small castle toward distant hills, empty under harsh sunlight",
+   "chars": []
+  },
+  {
+   "id": "I10",
+   "narration": "その先、家康が天下を取る日は来るのか。この世界線では、だれにも分からない。",
+   "image_en": "young Matsudaira Motoyasu in vermilion-red armor seen from behind, looking out at a vast landscape of hills and rivers at dusk. Place the main person slightly right of center.",
+   "image": "young Matsudaira Motoyasu in vermilion-red armor seen from behind, looking out at a vast landscape",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "narration": "この世界で消えたのは、1回のにわか雨だけだった。",
+   "image_en": "A single raindrop-free sky at sunset over pine-covered hills, a quiet empty battlefield, golden light.",
+   "image": "Sunset over pine-covered hills, a quiet empty battlefield, golden light",
+   "chapter": "おわりに",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J02",
+   "narration": "それだけで、義元の首も、左文字の刀も、家康の独立も、どこかへ消えてしまう。",
+   "tts_text": "それだけで、義元の首も、さもんじの刀も、家康の独立も、どこかへ消えてしまう。",
+   "image_en": "An empty black lacquered palanquin resting in a quiet castle courtyard at dusk, a fine sword in its scabbard laid across it, long shadows. No people.",
+   "image": "An empty black lacquered palanquin resting in a quiet castle courtyard at dusk",
+   "chars": []
+  },
+  {
+   "id": "J03",
+   "narration": "本当の桶狭間で、信長が槍を取ったのは、雨がやんで空が晴れた時だった。",
+   "tts_text": "本当のおけはざまで、信長が槍を取ったのは、雨がやんで空が晴れた時だった。",
+   "image_en": "Oda Nobunaga, standing in wet armor as the clouds break, a beam of sunlight falling on him, spear raised. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, standing in wet armor as the clouds break, a beam of sunlight falling on him",
+   "chars": [
+    "nobunaga"
+   ]
+  },
+  {
+   "id": "J04",
+   "narration": "雨を味方にできたのは、運だけではなかったのかもしれない。",
+   "image_en": "Rain clouds drifting away over the hills of Okehazama at late afternoon, sunlight streaming down on wet pine woods and rice paddies. No people.",
+   "image": "Rain clouds drifting away over hills at late afternoon, sunlight streaming on wet pine woods",
+   "chars": []
+  },
+  {
+   "id": "J05",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "Oda Nobunaga, sitting on a rock at sunset with his helmet off beside him, looking at the sky with a faint smile. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, sitting on a rock at sunset with his helmet off beside him",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J06",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "J01",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
