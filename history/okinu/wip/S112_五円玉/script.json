@@ -1,0 +1,218 @@
+{
+ "title": "【60代】財布の五円玉、ほかの小銭と混ぜないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。名乗らない。物（五円玉）が主役",
+  "すみえ（sumie）は答えの手前の C09 の絵にだけ出る。名前は言わず、セリフも無い",
+  "言い伝えは facts.json で確かめた2つ（五円＝ご縁でお賽銭・種銭に5円）だけを「言われています」で言う"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お賽銭用に取っておいたこれ、レジで払っていませんか。",
+   "subs": [
+    "お賽銭用に\n取っておいたこれ、",
+    "レジで\n払っていませんか。"
+   ],
+   "image_en": "Extreme close-up, vertical 1080x1920: an older woman's hand placing a single shiny gold-colored coin with a round hole in the center onto a small plain grey cash tray at a shop counter. The coin fills the center of the frame; the coin surface is plain with no markings or text. Only the hand and wrist are visible, no face. Warm store light, no signs, no letters anywhere.",
+   "hook": "財布のこれ\n払わないで",
+   "motion": true,
+   "anim": "kling",
+   "image": "Extreme close-up, vertical 1080x1920: an older woman's hand placing a single shiny gold-colored coin with a round hole in the center onto a small plain grey cash tray at a shop counter. The coin fills the center of the frame; the coin surface is plain with no markings or text. Only the hand and wrist are visible, no face. Warm store light, no signs, no letters anywhere."
+  },
+  {
+   "id": "C02",
+   "narration": "穴のあいた、五円玉です。",
+   "subs": [
+    "穴のあいた、\n五円玉です。"
+   ],
+   "image_en": "Very close-up, vertical: an open palm of an older woman holding five gold-colored coins, each with a round hole in the center, filling more than half of the frame. Plain coin faces with no markings or text. Soft window light, warm muted colors, no face visible.",
+   "highlight": [
+    "五円玉"
+   ],
+   "image": "Very close-up, vertical: an open palm of an older woman holding five gold-colored coins, each with a round hole in the center, filling more than half of the frame. Plain coin faces with no markings or text. Soft window light, warm muted colors, no face visible."
+  },
+  {
+   "id": "C03",
+   "narration": "ほかの小銭と混ぜたままは、金運のNGです。",
+   "subs": [
+    "ほかの小銭と\n混ぜたままは、",
+    "金運のNGです。"
+   ],
+   "image_en": "Close-up from above, vertical: an open brown leather coin purse stuffed with a jumble of silver, copper and gold-colored coins, a few gold coins with round holes buried among them. The coin purse fills more than half of the frame. Plain coins with no markings or text, on a wooden table.",
+   "highlight": [
+    "NG"
+   ],
+   "image": "Close-up from above, vertical: an open brown leather coin purse stuffed with a jumble of silver, copper and gold-colored coins, a few gold coins with round holes buried among them. The coin purse fills more than half of the frame. Plain coins with no markings or text, on a wooden table."
+  },
+  {
+   "id": "C04",
+   "narration": "昔から、五円は「ご縁」に通じると言われています。",
+   "subs": [
+    "昔から、\n五円は「ご縁」に",
+    "通じると\n言われています。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ],
+   "highlight": [
+    "ご縁"
+   ]
+  },
+  {
+   "id": "C05",
+   "narration": "だからお賽銭に五円玉を選ぶ人が多いのです。",
+   "subs": [
+    "だからお賽銭に\n五円玉を選ぶ人が",
+    "多いのです。"
+   ],
+   "image_en": "Close-up, vertical: a gold-colored coin with a round hole falling into the wooden slats of a plain wooden offering box at a Japanese shrine. The offering box fills more than half of the frame; a thick braided rope hangs in the soft-focus background. No writing, no characters, no signs on the box.",
+   "real": "Saisen box shrine",
+   "real_src": {
+    "題": "File:Saisen Box at Ōsaka Tenman-gū.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Saisen_Box_at_%C5%8Csaka_Tenman-g%C5%AB.jpg/1920px-Saisen_Box_at_%C5%8Csaka_Tenman-g%C5%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Saisen_Box_at_%C5%8Csaka_Tenman-g%C5%AB.jpg",
+    "検索語": "Saisen box shrine"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "財布に入れる種銭にも、五円がいいと言われています。",
+   "subs": [
+    "財布に入れる\n種銭にも、",
+    "五円がいいと\n言われています。"
+   ],
+   "image_en": "Close-up, vertical: an open long brown wallet lying on a wooden table, a small plain white paper envelope tucked into one of its card slots, and one gold-colored coin with a round hole resting on top of the envelope. The wallet fills more than half of the frame. Nothing written on the envelope, no text anywhere. Warm soft light.",
+   "image": "Close-up, vertical: an open long brown wallet lying on a wooden table, a small plain white paper envelope tucked into one of its card slots, and one gold-colored coin with a round hole resting on top of the envelope. The wallet fills more than half of the frame. Nothing written on the envelope, no text anywhere. Warm soft light."
+  },
+  {
+   "id": "C07",
+   "narration": "せっかくのご縁を、",
+   "subs": [
+    "せっかくのご縁を、"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "支払いで手放すのは、惜しいわね。",
+   "subs": [
+    "支払いで\n手放すのは、",
+    "惜しいわね。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "では、お賽銭と同じ五円玉を、財布に入れていいのかしら。",
+   "subs": [
+    "では、お賽銭と\n同じ五円玉を、",
+    "財布に入れて\nいいのかしら。"
+   ],
+   "image_en": "Sumie sits at a small kitchen table in a modest present-day Japanese apartment, holding one gold-colored coin with a round hole up between her fingers and her open wallet in the other hand, eyes wide with a startled, sudden-realization expression. The coin and her hands are large in the foreground. Evening light, no text anywhere.",
+   "chars": [
+    "sumie"
+   ],
+   "image": "Sumie sits at a small kitchen table in a modest present-day Japanese apartment, holding one gold-colored coin with a round hole up between her fingers and her open wallet in the other hand, eyes wide with a startled, sudden-realization expression. The coin and her hands are large in the foreground. Evening light, no text anywhere."
+  },
+  {
+   "id": "C10",
+   "narration": "入れて大丈夫。分けて入れればいいの。",
+   "subs": [
+    "入れて大丈夫。",
+    "分けて\n入れればいいの。"
+   ],
+   "image_en": "Extreme close-up, vertical: an older woman's fingers slowly sliding one shiny gold-colored coin with a round hole into a small plain white paper envelope, an open brown wallet just below. The hands, coin and envelope fill more than half of the frame. No face, nothing written on the envelope, no text anywhere. Warm soft light.",
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "入れて大丈夫"
+   ],
+   "image": "Extreme close-up, vertical: an older woman's fingers slowly sliding one shiny gold-colored coin with a round hole into a small plain white paper envelope, an open brown wallet just below. The hands, coin and envelope fill more than half of the frame. No face, nothing written on the envelope, no text anywhere. Warm soft light."
+  },
+  {
+   "id": "C11",
+   "narration": "1枚だけ小さなポチ袋に入れて、財布の種銭に。",
+   "subs": [
+    "1枚だけ\n小さなポチ袋に",
+    "入れて、\n財布の種銭に。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ],
+   "highlight": [
+    "1枚だけ"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "残りは別の小袋に入れて、お参りの日まで取っておくの。",
+   "subs": [
+    "残りは\n別の小袋に入れて、",
+    "お参りの日まで\n取っておくの。"
+   ],
+   "image_en": "Close-up, vertical: a small plain indigo cloth drawstring pouch, slightly open, with several gold-colored coins with round holes peeking out, set beside a closed brown wallet on a wooden table. The pouch fills more than half of the frame. Plain fabric with no patterns of letters, no text anywhere. Warm morning light.",
+   "tts_text": "残りは別のこぶくろに入れて、おまいりの日まで取っておくの。",
+   "image": "Close-up, vertical: a small plain indigo cloth drawstring pouch, slightly open, with several gold-colored coins with round holes peeking out, set beside a closed brown wallet on a wooden table. The pouch fills more than half of the frame. Plain fabric with no patterns of letters, no text anywhere. Warm morning light."
+  },
+  {
+   "id": "C13",
+   "narration": "何も変わらない月があっても、気にせず続けてみてね。",
+   "subs": [
+    "何も変わらない\n月があっても、",
+    "気にせず\n続けてみてね。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@full"
+   ],
+   "tts_text": "なにも変わらないつきがあっても、気にせず続けてみてね。"
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの財布の五円玉は、小銭と混ざっていませんか。",
+   "subs": [
+    "あなたの財布の\n五円玉は、",
+    "小銭と混ざって\nいませんか。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@full"
+   ],
+   "highlight": [
+    "五円玉"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布の五円玉は、小銭と混ざっていませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #五円玉",
+ "tags": [
+  "金運",
+  "財布",
+  "五円玉",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布の五円玉は、小銭と混ざっていませんか。"
+}
