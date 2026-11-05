@@ -1,20 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/019_c_denki",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/020_a4_37adb804",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "charts",
-  "images"
+  "reading"
  ],
- "started": "2026-11-04T17:09:24+09:00",
- "tries": 3,
+ "started": "2026-11-05T09:24:13+09:00",
+ "tries": 0,
  "code": "455f8716534f",
- "stage": "gate_images",
- "updated": "2026-11-05T01:32:45+09:00",
- "busy": {},
- "images_back": true
+ "stage": "images",
+ "updated": "2026-11-05T09:40:56+09:00",
+ "busy": {
+  "images": 1
+ }
 }

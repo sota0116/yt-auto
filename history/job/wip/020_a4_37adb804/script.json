@@ -1,0 +1,1208 @@
+{
+ "format": "long",
+ "type": "A",
+ "frame": "A-4",
+ "hook_type": "場面",
+ "sub_copy": 3,
+ "line_copy": 3,
+ "pub_date": "",
+ "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+ "fun_core": "謎：年収は介護職員や販売店員とほぼ横並び、近い仕事の中では上の方なのに、なぜ美容師は1時間の値段でいちばん下まで落ちるのか｜自分ごと：あなたの1時間の値段は、美容師より上か下か｜判定：美容師は長く店に立つ時間で年収を作る仕事。1時間の値段で比べる人には割に合わず、同じ年収を短い時間でほしいならリハビリ職の形が得",
+ "key_numbers": [
+  "ひと月19時間",
+  "約1,790円",
+  "年に約29日分"
+ ],
+ "promise": "年収をひと月の働いた時間で割る式で、自分の1時間の値段が、年収の近い6つの仕事のどこに入るかを確かめられるようになる",
+ "characters": {
+  "biyoshi": {
+   "name": "沙織（美容師）",
+   "desc_en": "Saori, a Japanese hairdresser around thirty: slim, medium-length dark brown hair tied back loosely, lively eyes, wears a black apron over a plain charcoal shirt, with a pair of scissors and combs in a small waist pouch."
+  },
+  "kaigo": {
+   "name": "和子（介護職員）",
+   "desc_en": "Kazuko, a Japanese care worker in her mid-forties: sturdy build, short black hair pinned back, warm round face, wears a light green care-worker polo shirt and navy work trousers with comfortable white shoes."
+  },
+  "rihabiri": {
+   "name": "拓也（理学療法士）",
+   "desc_en": "Takuya, a Japanese physical therapist in his mid-thirties: athletic build, short neat black hair, calm confident face, wears a white short-sleeved medical tunic and navy trousers with a name badge without readable text."
+  },
+  "sensei": {
+   "name": "恵（幼稚園の先生）",
+   "desc_en": "Megumi, a Japanese kindergarten teacher in her late thirties: medium build, shoulder-length black hair in a ponytail, bright cheerful face, wears a pale pink apron over a white long-sleeved T-shirt and beige trousers."
+  },
+  "hanbai": {
+   "name": "正人（販売店員）",
+   "desc_en": "Masato, a Japanese clothing shop clerk in his early forties: lean build, short wavy black hair, friendly face, wears a dark navy shop apron over a light grey knit and black trousers."
+  },
+  "helper": {
+   "name": "節子（ヘルパー）",
+   "desc_en": "Setsuko, a Japanese home-visit care helper in her early fifties: small build, short permed greyish-black hair, kind wrinkled smile, wears a light blue work jacket over a white polo shirt and dark trousers, carrying a cloth tote bag."
+  }
+ },
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "avoid": "読める文字、実在の企業のロゴと制服、有名なキャラクターに似た顔、血やけが、裸",
+ "title": "【時給の落とし穴】美容師、年収が近い仕事の中では上の方なのに、なぜ時給は安いのか",
+ "titles": [
+  "【時給の落とし穴】美容師、年収が近い仕事の中では上の方なのに、なぜ時給は安いのか",
+  "美容師・理容師は割に合うのか。年収約389万円を、店に立った時間で割った結果",
+  "あなたの時給は美容師より上？ 年収が同じくらいの介護職員と比べたら"
+ ],
+ "thumb_kind": "落差",
+ "thumb_top": "介護職員と稼ぎはほぼ同じなのに",
+ "thumb_text": "美容師の1時間は？",
+ "thumb_lines": [
+  "美容師の",
+  "1時間は？"
+ ],
+ "thumb_band": "長く店に立つ人ほど、損をしているのか",
+ "thumb_bg": "C305",
+ "tags": [
+  "美容師",
+  "美容師 年収",
+  "理容師",
+  "介護職員",
+  "理学療法士",
+  "時給",
+  "年収",
+  "仕事"
+ ],
+ "competitor_note": "競合メモ7の1（サムネの上の段に食い違いの前半「介護職員と稼ぎはほぼ同じなのに」、下の段に答えを伏せた問い「美容師の1時間は？」）と7の2（場面の回で1文目に見る人を「あなた」にして夜9時の美容室の役を渡し、最初の30秒の統計の数字を約389万円の1つにした）を取り入れた",
+ "learn_note": "試す_11-05：最初の30秒で声に出した統計の数字は C003 の「約389万円」の1つだけにし、順位・勝ち負けは言わず（もう1つの謎は数字の無い「店の外では髪を切れないのが原則」）、その前の C002 で聞き手に年収を「介護より下」と予想させて外し（数字は言わせない）、法律の豆知識の C005 は聞き手の驚き C005b で受けた",
+ "desc": "美容師の年収と、美容師を含む産業の離職率を、ほかの職業と並べた表。主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第1表 職種（小分類）別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229855\n・美容師法 第7条・第12条の3（e-Gov法令検索）https://laws.e-gov.go.jp/law/332AC1000000163\n・美容師法施行令 第4条（e-Gov法令検索）https://laws.e-gov.go.jp/law/332CO0000000277\n・理学療法士及び作業療法士法 第2条（e-Gov法令検索）https://laws.e-gov.go.jp/law/340AC0000000137\n・就学前の子どもに関する教育、保育等の総合的な提供の推進に関する法律 第15条（e-Gov法令検索）https://laws.e-gov.go.jp/law/418AC0000000077\n時給に直した額は、年収÷（所定内実労働時間数＋超過実労働時間数）÷12 で計算しています。\n厚生労働省「令和7年賃金構造基本統計調査」を加工して作成\nこのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。\n\n人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。\n\nチャプター\n{CHAPTERS}\n\n音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+ "cuts": [
+  {
+   "id": "C001",
+   "speaker": "narrator",
+   "narration": "夜9時。最後のお客さんを見送って、あなたは美容室の床の髪を、ほうきで掃いています。",
+   "image": "寄り：閉店後の美容室で、沙織がほうきを握って床の髪を掃きながら、壁の時計をちらりと見上げている。窓の外は真っ暗。時計の文字盤は読めない。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "夜9時、まだ店の中"
+  },
+  {
+   "id": "C002",
+   "speaker": "listener",
+   "narration": "こんなに遅くまでいて、年収は介護より下でしょ。",
+   "image": "見上げ：麻衣が、スマホを持ったまま目を丸くし、気の毒そうに眉を下げている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C003",
+   "speaker": "narrator",
+   "narration": "実は、美容師と理容師の年収は約389万円。介護職員や販売店員、訪問介護のヘルパーと、ほぼ横並びです。",
+   "image": "引き：昼の商店街で、美容室と介護施設の入り口が並び、それぞれの前で沙織と和子が会釈を交わしている。看板の字は見えない。",
+   "chars": [
+    "biyoshi",
+    "kaigo"
+   ],
+   "wow": true,
+   "label": "年収 約389万円"
+  },
+  {
+   "id": "C005",
+   "speaker": "narrator",
+   "narration": "年収は横並びなのに、帰る時刻はばらばら。しかも美容師は、法律で、店の外では髪を切れないのが原則です。",
+   "image": "見下ろし：夜の住宅街。明かりの消えた洋服店と介護施設の並びで、美容室だけがまだ明るく、中で沙織が鏡を拭いている。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "店の外では切れない"
+  },
+  {
+   "id": "C005b",
+   "speaker": "listener",
+   "narration": "ハサミを持ってるのに、店を出たら使えないの？",
+   "same_as": "C005"
+  },
+  {
+   "id": "C006",
+   "speaker": "narrator",
+   "narration": "では、閉店後の掃除まで入れて1時間あたりに直すと、美容師はどこに立つのか。あなたの1時間と比べる手がかりは、ひと月に働いた時間です。",
+   "image": "目線：美容室の大きな鏡に、ハサミを持った沙織の疲れた顔と、背後の壁の時計が映っている。時計の文字盤は読めない。",
+   "chars": [
+    "biyoshi"
+   ],
+   "label": "あなたの1時間は上？",
+   "tease": true
+  },
+  {
+   "id": "C101",
+   "chapter": "年収 上と下で約62万円の団子",
+   "speaker": "narrator",
+   "narration": "年収が近い6つの仕事。いちばん年収が低いのは、どれだと思いますか。",
+   "image": "引き：朝の駅前の交差点で、沙織と拓也が信号待ちをしている。沙織は腰にハサミの入った小さな袋、拓也は白い上着。",
+   "chars": [
+    "biyoshi",
+    "rihabiri"
+   ]
+  },
+  {
+   "id": "C102",
+   "speaker": "listener",
+   "narration": "立ちっぱなしの美容師さんかな。",
+   "image": "寄り：麻衣が、腕を組んで自信ありげにうなずいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C103",
+   "speaker": "narrator",
+   "narration": "外れです。いちばん下は、訪問介護のヘルパー。その上が、販売店員です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 2
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C104",
+   "speaker": "narrator",
+   "narration": "ヘルパーは、利用する人の家を、1軒ずつ自転車で回ります。坂道でも、雨でもです。",
+   "image": "見下ろし：住宅街の坂道を、節子が前かごに布の袋を載せた自転車で、立ちこぎで上っていく。",
+   "chars": [
+    "helper"
+   ]
+  },
+  {
+   "id": "C105",
+   "speaker": "listener",
+   "narration": "雨の日の坂道、考えただけで足が重い。",
+   "same_as": "C104"
+  },
+  {
+   "id": "C106",
+   "speaker": "narrator",
+   "narration": "販売店員は、開店前に棚の服をたたみ直すところから、1日が始まります。",
+   "image": "引き：開店前の洋服店で、正人が棚の前にしゃがみ、崩れたセーターの山を手早くたたみ直している。",
+   "chars": [
+    "hanbai"
+   ]
+  },
+  {
+   "id": "C107",
+   "speaker": "listener",
+   "narration": "せっかくたたんだ服、すぐ崩されるやつ。",
+   "same_as": "C106"
+  },
+  {
+   "id": "C108",
+   "speaker": "narrator",
+   "narration": "4位は介護職員。そして3位が、美容師と理容師です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 4,
+    "highlight": "美容師・理容師"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C109",
+   "speaker": "listener",
+   "narration": "美容師さん、真ん中より上なんだ。",
+   "image": "見上げ：麻衣が、意外そうに眉を上げ、口をすぼめている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C110",
+   "speaker": "narrator",
+   "narration": "残るのは、リハビリ職と幼稚園の先生。年収の1位はどちらか。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "年収",
+    "choices": [
+     "リハビリ職",
+     "幼稚園の先生"
+    ]
+   },
+   "quiz": true,
+   "anim": "card"
+  },
+  {
+   "id": "C111",
+   "speaker": "listener",
+   "narration": "子どもを預かる先生の方が、上でしょ。",
+   "same_as": "C110"
+  },
+  {
+   "id": "C112",
+   "speaker": "narrator",
+   "narration": "2位は、幼稚園の先生と保育教諭。1位との差は、ほんのわずかです。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 5
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C113",
+   "speaker": "narrator",
+   "narration": "保育教諭は、幼稚園の先生の免許と保育士の登録、その両方が無いとなれません。",
+   "image": "寄り：幼稚園の教室で、恵が2枚の書類を左右の手に1枚ずつ掲げ、得意げに胸を張っている。書類の面は見えない向き。",
+   "chars": [
+    "sensei"
+   ],
+   "wow": true,
+   "label": "免許と登録の両方"
+  },
+  {
+   "id": "C114",
+   "speaker": "listener",
+   "narration": "資格2つ持ちでも、1位に届かないんだ。",
+   "same_as": "C113"
+  },
+  {
+   "id": "C115",
+   "speaker": "narrator",
+   "narration": "1位は、理学療法士などのリハビリ職。患者さんの歩く練習を、隣で支える仕事です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 6,
+    "highlight": "理学療法士など（リハビリ職）"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C116",
+   "speaker": "narrator",
+   "narration": "ただしリハビリは、自分の判断だけでは始められません。医師の指示の下で行う決まりです。",
+   "image": "寄り：病院のリハビリ室で、拓也が患者の腕を支えながら、医師から渡された紙に目を落としている。紙の面は見えない向き。",
+   "chars": [
+    "rihabiri"
+   ],
+   "wow": true,
+   "label": "医師の指示の下で",
+   "tts_text": "ただしリハビリは、自分の判断だけでは始められません。医師の指示のもとで行う決まりです。"
+  },
+  {
+   "id": "C117",
+   "speaker": "listener",
+   "narration": "1位でも、自分の判断では動けないんだ。",
+   "same_as": "C116"
+  },
+  {
+   "id": "C118",
+   "speaker": "narrator",
+   "narration": "6つの年収は、いちばん上と下で、約62万円しか離れていません。ほぼ団子です。",
+   "chart": {
+    "kind": "range",
+    "measure": "年収"
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C119",
+   "speaker": "listener",
+   "narration": "じゃあ、どれを選んでも同じですよね。",
+   "image": "寄り：麻衣が、両手で小さな丸を作って顔の前に並べ、苦笑いしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C120",
+   "speaker": "narrator",
+   "narration": "求人サイトを年収の高い順に並べ替えて、いちばん上の数件だけ開いて閉じる。",
+   "image": "見下ろし：夜の部屋のベッドで、健二がうつぶせでスマホを操作し、大きなあくびをしている。画面は見えない向き。",
+   "chars": [
+    "kenji"
+   ],
+   "wow": true,
+   "label": "上だけ開いて閉じる",
+   "tts_text": "求人サイトを年収の高い順に並べ替えて、いちばんうえの数件だけ開いて閉じる。"
+  },
+  {
+   "id": "C121",
+   "speaker": "listener",
+   "narration": "年収の欄しか見てないの、バレてる。",
+   "same_as": "C120"
+  },
+  {
+   "id": "C122",
+   "speaker": "narrator",
+   "narration": "違いが出るのは、そのお金を受け取るまでに職場にいた時間。いちばん遅くまで残るのは、どの仕事か。",
+   "image": "引き：夕方の美容室を外から見た所。中で沙織がまだお客さんの髪を乾かしていて、窓の外を仕事帰りの和子が通り過ぎていく。",
+   "chars": [
+    "biyoshi",
+    "kaigo"
+   ],
+   "label": "遅くまで残るのは？"
+  },
+  {
+   "id": "C201",
+   "chapter": "働く時間 いちばん遅くまで店にいるのは",
+   "speaker": "narrator",
+   "narration": "ひと月に働いた時間。いちばん短いのは、どの仕事だと思いますか。",
+   "image": "見上げ：夕方のオフィス街の交差点で、和子と拓也が信号待ちをしている。空は茜色。",
+   "chars": [
+    "kaigo",
+    "rihabiri"
+   ]
+  },
+  {
+   "id": "C202",
+   "speaker": "listener",
+   "narration": "子どもが早く帰る、幼稚園の先生！",
+   "image": "寄り：麻衣が、勢いよく手を挙げて答えている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C203",
+   "speaker": "narrator",
+   "narration": "いちばん短いのは、リハビリ職。年収1位が、働く時間ではいちばん少ないんです。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 1,
+    "highlight": "理学療法士など（リハビリ職）"
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C204",
+   "speaker": "listener",
+   "narration": "稼いで早く帰る、理想の形じゃないですか。",
+   "same_as": "C203"
+  },
+  {
+   "id": "C205",
+   "speaker": "narrator",
+   "narration": "次に短いのが、介護職員。施設では、夜勤の人へ引き継いでから帰ります。",
+   "image": "引き：夕方の介護施設の詰め所で、和子が夜勤の同僚に記録の束を手渡し、笑顔で上着を手に取っている。記録の字は読めない。",
+   "chars": [
+    "kaigo"
+   ]
+  },
+  {
+   "id": "C206",
+   "speaker": "narrator",
+   "narration": "その上に、ヘルパーと販売店員が、同じ時間で並びます。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 4
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C207",
+   "speaker": "listener",
+   "narration": "家を回る人とお店の人が、同じなんだ。",
+   "same_as": "C206"
+  },
+  {
+   "id": "C208",
+   "speaker": "narrator",
+   "narration": "残るのは、美容師と幼稚園の先生。ひと月にいちばん長く働いているのは、どちらか。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "月の労働時間",
+    "choices": [
+     "美容師・理容師",
+     "幼稚園の先生"
+    ]
+   },
+   "quiz": true,
+   "anim": "card"
+  },
+  {
+   "id": "C209",
+   "speaker": "listener",
+   "narration": "運動会の準備がある、先生の方かな。",
+   "same_as": "C208"
+  },
+  {
+   "id": "C210",
+   "speaker": "narrator",
+   "narration": "幼稚園の先生は、ヘルパーや販売店員と同じ時間。3つが並んで2番目です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 5
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C211",
+   "speaker": "narrator",
+   "narration": "いちばん長いのは、美容師と理容師。ひと月181時間です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 6,
+    "highlight": "美容師・理容師"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "ひと月181時間"
+  },
+  {
+   "id": "C212",
+   "speaker": "listener",
+   "narration": "え、年収3位なのに、いちばん長く働いてる？",
+   "image": "寄り：麻衣が、口を半開きにして固まり、持っていたペンを落としかけている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C213",
+   "speaker": "narrator",
+   "narration": "リハビリ職と比べると、ひと月で19時間長く、店に立っています。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "美容師・理容師",
+     "理学療法士など（リハビリ職）"
+    ]
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C214",
+   "speaker": "listener",
+   "narration": "週に半日ぶん、よけいに立ってる感じ？",
+   "same_as": "C213"
+  },
+  {
+   "id": "C215",
+   "speaker": "narrator",
+   "narration": "しかもその時間は、ほぼ全部が店の中。美容師は、店の外では髪を切れないのが原則です。",
+   "image": "見下ろし：雨の夜の美容室。沙織が1人で、鏡の前の椅子を1つずつ並べ直している。外の通りは人影がまばら。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "店の外は原則ダメ"
+  },
+  {
+   "id": "C216",
+   "speaker": "listener",
+   "narration": "出張カットって、ダメなんですか。",
+   "image": "見上げ：麻衣が、手でハサミの形を作って首をかしげている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C217",
+   "speaker": "narrator",
+   "narration": "外でできるのは、病気で店に来られない人や、婚礼の直前の支度などに限られます。",
+   "image": "寄り：結婚式場の控室で、沙織が花嫁の髪に飾りを差している。花嫁は後ろ姿。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "外は病気や婚礼など"
+  },
+  {
+   "id": "C218",
+   "speaker": "listener",
+   "narration": "花嫁さんの支度は、外でもいいんだ。",
+   "same_as": "C217"
+  },
+  {
+   "id": "C219",
+   "speaker": "narrator",
+   "narration": "さらに、美容師が2人以上いる店には、店ごとに管理美容師を置く決まりがあります。",
+   "image": "引き：昼の美容室で、沙織が若い美容師たちの手元を後ろから見回り、消毒した道具の並びを指さしている。",
+   "chars": [
+    "biyoshi"
+   ],
+   "label": "店ごとに管理美容師"
+  },
+  {
+   "id": "C220",
+   "speaker": "listener",
+   "narration": "店の中の見張り役まで、法律で決まってるの？",
+   "image": "寄り：麻衣が、目を丸くして自分の胸に手を当てている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C221",
+   "speaker": "narrator",
+   "narration": "閉店間際に駆け込んできたお客さんに、つい笑顔で「どうぞ」と言ってしまう。",
+   "image": "目線：美容室の奥から見た入り口。息を切らした健二がドアを開け、振り向いた沙織が笑顔で手招きしている。",
+   "chars": [
+    "kenji",
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "閉店間際の駆け込み"
+  },
+  {
+   "id": "C222",
+   "speaker": "listener",
+   "narration": "その笑顔のぶん、帰りが遅くなるやつ。",
+   "same_as": "C221"
+  },
+  {
+   "id": "C223",
+   "speaker": "listener",
+   "narration": "長く立つ美容師さん、損してる気がしてきた。",
+   "image": "寄り：麻衣が、頬づえをついて口をとがらせている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C224",
+   "speaker": "narrator",
+   "narration": "美容師の年収と、美容師を含む産業の離職率を、ほかの職業と並べた表を作りました。概要欄のLINEから受け取れます。",
+   "chart": {
+    "kind": "tokuten"
+   },
+   "anim": "card",
+   "line": true,
+   "label": "LINEで一覧表"
+  },
+  {
+   "id": "C225",
+   "speaker": "narrator",
+   "narration": "長く立つほど、年収は積み上がる。では、その年収を時間で割ると、年収3位の美容師は何位に動くのか。",
+   "image": "寄り：夜の店の鏡の前で、沙織が給与明細とハサミを見比べて首をかしげている。明細の面は見えない向き。",
+   "chars": [
+    "biyoshi"
+   ],
+   "label": "割ると何位？"
+  },
+  {
+   "id": "C301",
+   "chapter": "1時間の値段 年収3位の美容師はどこへ",
+   "speaker": "narrator",
+   "narration": "年収を、1年に働いた時間で割る。これで、1時間あたりの値段が出ます。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 1年に働いた時間"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C302",
+   "speaker": "listener",
+   "narration": "年収3位なら、時給でも3位あたりでしょ。",
+   "image": "見上げ：麻衣が、指を3本立てて自信満々に笑っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C303",
+   "speaker": "narrator",
+   "narration": "1時間の値段がいちばん安いのは、美容師と理容師。年収3位から、最下位です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 1,
+    "highlight": "美容師・理容師"
+   },
+   "anim": "card",
+   "peak": true,
+   "strong": true,
+   "label": "年収3位→時給最下位",
+   "wow": true,
+   "payoff": true
+  },
+  {
+   "id": "C304",
+   "speaker": "listener",
+   "narration": "えっ、いきなり一番下まで落ちた！",
+   "image": "寄り：麻衣が、両手で頬を押さえて目を見開き、口を大きく開けている。背景は暗い紺。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C305",
+   "speaker": "narrator",
+   "narration": "美容師の1時間は、約1,790円。年収は横並びでも、1時間ではいちばん安くなります。",
+   "image": "寄り：夜遅くを指す壁の時計がある暗い美容室で、2人の胸から上を大きく写す。右寄りの沙織は、ハサミを握ったまま給与明細を見つめて青ざめ、目を見開き、口を大きく開け、冷や汗を流している。その隣で和子が目を丸くし、口元を手で押さえて思わず笑いそうになっている。顔は画面の高さの4割以上で、顔と体にだけ強い光。背景は暗く濃い紺。画面の上と下の2割をあけ、左側に空きを残す。時計の文字盤と明細の字は読めない。",
+   "chars": [
+    "biyoshi",
+    "kaigo"
+   ],
+   "wow": true,
+   "label": "1時間 約1,790円"
+  },
+  {
+   "id": "C306",
+   "speaker": "listener",
+   "narration": "いちばん長く立って、いちばん安いって。",
+   "same_as": "C305"
+  },
+  {
+   "id": "C307",
+   "speaker": "narrator",
+   "narration": "5位はヘルパー、4位は販売店員、3位は介護職員です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 4
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C307b",
+   "speaker": "narrator",
+   "narration": "介護職員の1時間は、美容師より上。年収はほとんど同じなのに、です。",
+   "image": "寄り：介護施設の食堂で、和子が入居者の手を取って笑顔で話しかけている。",
+   "chars": [
+    "kaigo"
+   ],
+   "wow": true,
+   "label": "年収は同じなのに"
+  },
+  {
+   "id": "C308",
+   "speaker": "narrator",
+   "narration": "年収で美容師より下にいた3つが、そろって美容師を追い越しました。",
+   "image": "引き：夕方の商店街で、和子と正人が仕事帰りに並んで歩き、すれ違いざまに明るい美容室の中をのぞき込んでいる。",
+   "chars": [
+    "kaigo",
+    "hanbai"
+   ],
+   "wow": true,
+   "label": "下の3つが追い越す"
+  },
+  {
+   "id": "C309",
+   "speaker": "listener",
+   "narration": "抜かれ方が、きれいすぎません？",
+   "same_as": "C308"
+  },
+  {
+   "id": "C310",
+   "speaker": "narrator",
+   "narration": "ヘルパーの節目は、1軒の家を出て、次の家のチャイムを押すまでの道のりです。",
+   "image": "目線：自転車のハンドル越しに見た、夕方の住宅街の細い道。前かごの布の袋の向こうに、次の家の門が見える。",
+   "chars": []
+  },
+  {
+   "id": "C311",
+   "speaker": "listener",
+   "narration": "坂道の自転車、それだけで体力勝負です。",
+   "image": "寄り：麻衣が、ペンの頭をあごに当てて考え込んでいる。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C312",
+   "speaker": "narrator",
+   "narration": "そんなヘルパーの1時間でも、美容師よりは上。年収の最下位から、1つ抜け出しています。",
+   "image": "見下ろし：住宅の玄関先で、節子が自転車を止め、腕時計を見ながら息を整えている。",
+   "chars": [
+    "helper"
+   ]
+  },
+  {
+   "id": "C313",
+   "speaker": "narrator",
+   "narration": "残るのは、またもリハビリ職と幼稚園の先生。1時間の値段の1位は、どちらか。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "時給に直した額",
+    "choices": [
+     "リハビリ職",
+     "幼稚園の先生"
+    ]
+   },
+   "quiz": true,
+   "anim": "card"
+  },
+  {
+   "id": "C314",
+   "speaker": "listener",
+   "narration": "今度こそ、幼稚園の先生が勝つ番！",
+   "same_as": "C313"
+  },
+  {
+   "id": "C315",
+   "speaker": "narrator",
+   "narration": "2位は、幼稚園の先生。またしても、あと一歩でした。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 5
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C316",
+   "speaker": "narrator",
+   "narration": "1位はリハビリ職。年収でも、1時間でも、いちばん上です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 6,
+    "highlight": "理学療法士など（リハビリ職）"
+   },
+   "anim": "card",
+   "wow": true,
+   "tts_text": "1位はリハビリ職。年収でも、1時間でも、いちばんうえです。"
+  },
+  {
+   "id": "C317",
+   "speaker": "listener",
+   "narration": "上は動かず、美容師さんだけ大きく落ちた。",
+   "image": "寄り：麻衣が、両手を広げてお手上げのポーズをしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C318",
+   "speaker": "narrator",
+   "narration": "1位のリハビリ職と最下位の美容師では、1時間で約490円の差があります。",
+   "chart": {
+    "kind": "bar_gap",
+    "measure": "時給に直した額",
+    "pair": [
+     "理学療法士など（リハビリ職）",
+     "美容師・理容師"
+    ]
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C319",
+   "speaker": "listener",
+   "narration": "1時間ごとに、お弁当1つぶん違うんだ。",
+   "same_as": "C318"
+  },
+  {
+   "id": "C320",
+   "speaker": "narrator",
+   "narration": "閉店後の店で、マネキンの頭を相手にカットの練習が始まる。",
+   "image": "見下ろし：照明を半分落とした閉店後の美容室で、沙織がマネキンの頭の髪をハサミで切る練習をしている。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "閉店後に練習"
+  },
+  {
+   "id": "C321",
+   "speaker": "listener",
+   "narration": "練習まで入れたら、もっと安くなりそう。",
+   "same_as": "C320"
+  },
+  {
+   "id": "C413",
+   "speaker": "narrator",
+   "narration": "次の回も、別の職場の数字を届けます。見逃したくない方は、チャンネル登録をしておいてください。",
+   "image": "引き：夕暮れの商店街の入り口で、沙織と和子が仕事帰りに並んで手を振っている。",
+   "chars": [
+    "biyoshi",
+    "kaigo"
+   ],
+   "subscribe": true,
+   "tts_text": "次の回も、別の職場の数字を届けます。見逃したくないかたは、チャンネル登録をしておいてください。"
+  },
+  {
+   "id": "C322",
+   "speaker": "narrator",
+   "narration": "年収は横並びなのに、なぜ美容師だけが最下位まで落ちたのか。手がかりは、ひと月の19時間です。",
+   "image": "寄り：沙織が、閉店後の店のレジ横で、自分の手のひらに指で何かを数えながら眉を寄せている。",
+   "chars": [
+    "biyoshi"
+   ],
+   "label": "手がかりは19時間"
+  },
+  {
+   "id": "C401",
+   "chapter": "答え ひと月の差は、1年で約29日分",
+   "speaker": "narrator",
+   "narration": "年収の順位と、1時間の順位。大きく動いた3つの仕事を並べます。",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 0
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C402",
+   "speaker": "narrator",
+   "narration": "美容師は、年収3位から最下位へ。3つも順位を落としました。6つの中で、いちばん大きな動きです。",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 1,
+    "highlight": "美容師・理容師"
+   },
+   "anim": "card",
+   "wow": true
+  },
+  {
+   "id": "C403",
+   "speaker": "listener",
+   "narration": "介護職員と販売店員は、逆に上がった？",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 1,
+    "highlight": "美容師・理容師"
+   }
+  },
+  {
+   "id": "C404",
+   "speaker": "narrator",
+   "narration": "はい、2つとも1つずつ上がっています。分かれ目は、年収ではなく時間でした。",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 3
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C404b",
+   "speaker": "narrator",
+   "narration": "介護職員は、年収では美容師とほぼ同じ。それでも働く時間が短いぶん、1時間では上に立ちました。",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 3,
+    "highlight": "介護職員（施設）"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C405",
+   "speaker": "listener",
+   "narration": "つまり、長く働いたぶん薄まったってこと？",
+   "image": "寄り：麻衣が、コップの水にジュースを注ぎ足して、薄くなった色を見て顔をしかめている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C406",
+   "speaker": "narrator",
+   "narration": "そうです。ひと月19時間の差を、1年分積み上げると、何日分になるか。",
+   "image": "見下ろし：店の休憩室の壁のカレンダーの前で、沙織が指で日付のマスを1つずつなぞっている。カレンダーの数字は読めない。",
+   "chars": [
+    "biyoshi"
+   ]
+  },
+  {
+   "id": "C407",
+   "speaker": "narrator",
+   "narration": "1日8時間で数えると、年に約29日分です。",
+   "chart": {
+    "kind": "calendar_days",
+    "ref": "言い直し.月の労働時間の差（いちばん長いと短い）.8時間の日に直すと_日"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年に約29日分",
+   "tts_text": "1日8時間で数えると、ねんに約29日分です。"
+  },
+  {
+   "id": "C408",
+   "speaker": "listener",
+   "narration": "ほぼ1か月ぶん、よけいに店にいる計算！",
+   "image": "寄り：麻衣が、カレンダーを両手で抱えて、目を見開いてのけぞっている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C408b",
+   "speaker": "narrator",
+   "narration": "では、その長い時間の正体は、残業でしょうか。",
+   "image": "見下ろし：閉店後の美容室のバックヤードで、沙織がタオルの山を洗濯機に押し込みながら、壁の時計を気にしている。時計の文字盤は読めない。",
+   "chars": [
+    "biyoshi"
+   ]
+  },
+  {
+   "id": "C408c",
+   "speaker": "listener",
+   "narration": "どうせ、残業が多いんでしょ。",
+   "image": "寄り：麻衣が、腕を組んで横目でにらみ、口をへの字にしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C408d",
+   "speaker": "narrator",
+   "narration": "外れです。美容師の残業などは、リハビリ職とほとんど変わりません。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "美容師・理容師",
+     "理学療法士など（リハビリ職）"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "残業はほぼ同じ"
+  },
+  {
+   "id": "C408e",
+   "speaker": "narrator",
+   "narration": "長いのは、決まった勤務の時間そのもの。店を開けている時間が、最初から長いんです。",
+   "image": "引き：朝の美容室で、沙織がシャッターを上げ、まだ人通りの少ない通りに向かって看板を出している。看板の字は見えない。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "最初から長い勤務"
+  },
+  {
+   "id": "C408f",
+   "speaker": "listener",
+   "narration": "残業を減らしても、縮まらない差なんだ。",
+   "image": "寄り：麻衣が、両手で頭を抱えて天井を見上げている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C408g",
+   "speaker": "narrator",
+   "narration": "開店前の準備も、閉店後の片付けも、店の中で済ませてから帰ります。",
+   "image": "見下ろし：夜の美容室で、沙織が洗い終えたクシやブラシを1本ずつ消毒の容器に並べている。",
+   "chars": [
+    "biyoshi"
+   ]
+  },
+  {
+   "id": "C408h",
+   "speaker": "narrator",
+   "narration": "店の外で切れない決まりがあるから、働く時間は、そのまま店にいる時間です。",
+   "image": "目線：閉店後の美容室の入り口から見た、ガラス戸の向こうの暗い通り。ガラスに、帰り支度をする沙織の姿がうっすら映っている。",
+   "chars": [
+    "biyoshi"
+   ]
+  },
+  {
+   "id": "C408i",
+   "speaker": "listener",
+   "narration": "店を開けてる時間が、まるごと仕事か。",
+   "same_as": "C408h"
+  },
+  {
+   "id": "C409",
+   "speaker": "narrator",
+   "narration": "年収が横並びに見えたのは、この長い時間で積み上げていたからです。",
+   "image": "引き：夜の商店街。暗い店が並ぶ中、美容室の窓だけが明るく、中で沙織が最後のお客さんの髪を乾かしている。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "時間で積んだ年収"
+  },
+  {
+   "id": "C409b",
+   "speaker": "narrator",
+   "narration": "長く開けるほど、お客さんは入る。でもそのぶん、1時間あたりの値段は薄まります。",
+   "same_as": "C409"
+  },
+  {
+   "id": "C410",
+   "speaker": "listener",
+   "narration": "じゃあ、早く閉まるお店に移ればいい？",
+   "image": "見上げ：麻衣が、人差し指を立てて名案を思いついた顔をしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C411",
+   "speaker": "narrator",
+   "narration": "同じ年収で早く帰れるなら、1時間の値段はそのまま上がります。割り算ですから。",
+   "image": "寄り：夕方、拓也が病院の通用口を出て、まだ明るい空を見上げて大きく伸びをしている。",
+   "chars": [
+    "rihabiri"
+   ]
+  },
+  {
+   "id": "C412",
+   "speaker": "listener",
+   "narration": "早く帰れる人が、いちばん得してたんだ。",
+   "same_as": "C411"
+  },
+  {
+   "id": "C412b",
+   "speaker": "narrator",
+   "narration": "同じ年収なら、早く帰れる職場にいる人ほど、1時間の値段では得をしています。",
+   "same_as": "C411"
+  },
+  {
+   "id": "C414",
+   "speaker": "narrator",
+   "narration": "判定です。美容師は、長い時間で年収を作る仕事。1時間の値段で比べる人には、割に合いません。",
+   "image": "寄り：閉店後の店で、沙織が腕を組み、鏡の中の自分をまっすぐ見つめている。顔に強い光。",
+   "chars": [
+    "biyoshi"
+   ],
+   "wow": true,
+   "label": "時給では割に合わない"
+  },
+  {
+   "id": "C415",
+   "speaker": "listener",
+   "narration": "じゃあ、どんな人なら得なんですか。",
+   "image": "見上げ：麻衣が、身を乗り出して前のめりに聞いている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C416",
+   "speaker": "narrator",
+   "narration": "短い時間で同じ年収がほしいなら、リハビリ職の形。長く立っても腕を磨きたい人には、美容師の形が合います。",
+   "image": "引き：昼の明るい通りで、病院へ向かう拓也と、美容室の前でハサミを手入れする沙織が、それぞれ前を向いている。",
+   "chars": [
+    "rihabiri",
+    "biyoshi"
+   ],
+   "label": "時間か、腕か"
+  },
+  {
+   "id": "C416b",
+   "speaker": "listener",
+   "narration": "腕を磨く時間も、店の中なんですね。",
+   "same_as": "C416"
+  },
+  {
+   "id": "C416c",
+   "speaker": "narrator",
+   "narration": "年収の順位だけを見ていたら、この入れ替わりには最後まで気づけません。",
+   "image": "見下ろし：夜の部屋のこたつで、健二がスマホの求人の一覧を眺めたまま、手を止めて考え込んでいる。画面は見えない向き。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C416d",
+   "speaker": "narrator",
+   "narration": "求人票の年収の隣に、ひと月の時間を書き足す。それだけで、6つの見え方が変わります。",
+   "image": "寄り：健二が、印刷した求人票の余白に、ペンで小さく書き込みをしている。紙の字は読めない。",
+   "chars": [
+    "kenji"
+   ],
+   "label": "年収の隣に時間を"
+  },
+  {
+   "id": "C501",
+   "chapter": "まとめ あなたの1時間は、約1,790円より上か",
+   "speaker": "narrator",
+   "narration": "あなたの1時間の値段は、年収を12で割り、ひと月に働いた時間で割ると出ます。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 12 ÷ ひと月に働いた時間"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C502",
+   "speaker": "listener",
+   "narration": "やってみたら、美容師さんより上でした。",
+   "image": "寄り：麻衣が、電卓を片手に、得意げに親指を立てている。電卓の画面は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C503",
+   "speaker": "narrator",
+   "narration": "約1,790円より上なら、あなたの1時間は美容師より高い。下なら、年収より先に働く時間を見る番です。",
+   "image": "見下ろし：夜の台所のテーブルで、陽子が給与明細と電卓を並べ、ペンを止めて考えている。明細の面は見えない向き。",
+   "chars": [
+    "yoko"
+   ],
+   "label": "あなたの1時間は？"
+  },
+  {
+   "id": "C503b",
+   "speaker": "narrator",
+   "narration": "年収が同じでも、ひと月の時間が短い職場なら、1時間の値段は美容師を超えます。",
+   "same_as": "C503"
+  },
+  {
+   "id": "C504",
+   "speaker": "narrator",
+   "narration": "あなたの職場は、年収と働く時間、どちらで胸を張れますか。コメントで教えてください。",
+   "image": "引き：夕方の駅の改札を、健二と陽子が仕事帰りの人波にまじって通り抜けていく。",
+   "chars": [
+    "kenji",
+    "yoko"
+   ]
+  },
+  {
+   "id": "C505",
+   "speaker": "listener",
+   "narration": "私は、帰る時刻の方は自慢できません。",
+   "image": "寄り：麻衣が、苦笑いしながら頭をかいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C506",
+   "speaker": "narrator",
+   "narration": "駅の時計が目に入ったら、今月あと何時間職場にいるか、1度だけ数えてください。",
+   "image": "見上げ：夜の駅のホームで、健二が大きな時計を見上げ、指を折って数えている。時計の文字盤は読めない。",
+   "chars": [
+    "kenji"
+   ]
+  }
+ ]
+}
