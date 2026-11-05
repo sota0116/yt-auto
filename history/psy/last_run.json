@@ -1,9 +1,14 @@
 {
  "ch": "psy",
- "started": "2026-11-05T09:25:46+09:00",
+ "started": "2026-11-05T12:29:05+09:00",
  "made": [],
- "stopped": "絵ゲートの不合格が残りました（images\\_gate.json）",
+ "stopped": "絵がまだ途中（残り146枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）",
  "在庫": 3,
- "ended": "2026-11-05T09:28:21+09:00",
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/013_jiman_hito"
+ ],
+ "待ち": true,
+ "途中": true,
+ "ended": "2026-11-05T12:59:27+09:00",
  "今月の制作費_円": 0.0
 }

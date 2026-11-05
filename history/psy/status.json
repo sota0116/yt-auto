@@ -1,22 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/013_jiman_hito",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/014_ikigai_yakuwari",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "images",
-  "motion"
+  "reading"
  ],
- "started": "2026-11-04T17:09:33+09:00",
- "tries": 3,
+ "started": "2026-11-05T12:29:05+09:00",
+ "tries": 0,
  "code": "455f8716534f",
- "stage": "gate_images",
- "updated": "2026-11-05T05:44:02+09:00",
+ "stage": "images",
+ "updated": "2026-11-05T12:52:50+09:00",
  "busy": {
   "images": 1
- },
- "images_back": true
+ }
 }
