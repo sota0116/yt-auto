@@ -10,11 +10,12 @@
  ],
  "started": "2026-11-05T12:29:05+09:00",
  "tries": 0,
- "code": "e369ac04bc34",
- "stage": "gate_images",
+ "code": "a9783a4cb1e6",
+ "stage": "images",
  "updated": "2026-11-06T02:02:59+09:00",
  "busy": {
-  "motion": 1
+  "motion": 1,
+  "images": 1
  },
  "restored": {
   "日時": "2026-11-06T01:45:02+09:00",
