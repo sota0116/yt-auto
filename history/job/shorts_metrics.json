@@ -85,9 +85,18 @@
    "再生の出どころ": "Analytics（区切り）",
    "score": 382.7
   },
-  "取った日": "2026-11-02T08:57:26+09:00",
+  "取った日": "2026-11-05T10:07:32+09:00",
   "編集の版": 1,
-  "bgm": null
+  "bgm": null,
+  "7d": {
+   "views": 561,
+   "averageViewPercentage": 68.22,
+   "averageViewDuration": 28,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 382.7
+  }
  },
  "20261027_2111_1": {
   "video_id": "Healw8hWQFw",
@@ -109,9 +118,18 @@
    "再生の出どころ": "Analytics（区切り）",
    "score": 719.3
   },
-  "取った日": "2026-11-02T08:57:26+09:00",
+  "取った日": "2026-11-05T10:07:32+09:00",
   "編集の版": 1,
-  "bgm": null
+  "bgm": null,
+  "7d": {
+   "views": 1089,
+   "averageViewPercentage": 65.51,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 713.4
+  }
  },
  "20261028_0905_0": {
   "video_id": "Fdd9bhSAr5Y",
@@ -304,5 +322,76 @@
   "編集の版": 1,
   "bgm": null,
   "取った日": "2026-11-04T10:00:59+09:00"
+ },
+ "20261101_0851_0": {
+  "48h": {
+   "views": 983,
+   "averageViewPercentage": 63.89,
+   "averageViewDuration": 19,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 628.0
+  },
+  "video_id": "f8axBAHXfvQ",
+  "title": "大工と自動車整備士、年収はほぼ同じでもボーナスは約1.8倍違う #年収 #仕事",
+  "topic_id": "duel_大工_自動車整備士_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "hook": "同じ年収\n賞与は？",
+  "banner": [
+   "賞与くらべ",
+   "大工と整備士"
+  ],
+  "編集の版": 1,
+  "bgm": null,
+  "取った日": "2026-11-05T10:07:32+09:00"
+ },
+ "20261101_0852_1": {
+  "48h": {
+   "views": 1064,
+   "averageViewPercentage": 133.71,
+   "averageViewDuration": 42,
+   "subscribersGained": 1,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 1622.7
+  },
+  "video_id": "CxRpDlh9FCk",
+  "title": "医療・福祉で勤続年数が長い5つ｜1位と5位は約3年差 #年収 #仕事",
+  "topic_id": "rank_医療・福祉_勤続_hi",
+  "kind": "rank",
+  "measure": "勤続",
+  "hook": "長く続く\n仕事は？",
+  "banner": [
+   "勤続が長い順",
+   "医療・福祉の仕事"
+  ],
+  "編集の版": 1,
+  "bgm": null,
+  "取った日": "2026-11-05T10:07:32+09:00"
+ },
+ "20261102_0114_r0": {
+  "48h": {
+   "views": 1054,
+   "averageViewPercentage": 64.96,
+   "averageViewDuration": 34,
+   "subscribersGained": 1,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 884.7,
+   "一番落ちた位置": 10,
+   "半分の位置に残った割合": 0.6
+  },
+  "video_id": "Wp-pJp2iUk0",
+  "title": "大型トラック運転手の1日｜棚が埋まる前の夜、荷待ちと休息の決まり #年収 #仕事",
+  "topic_id": "routine_大型トラック運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "hook": "棚が埋まる\nその前の夜",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "取った日": "2026-11-05T10:07:32+09:00"
  }
 }
