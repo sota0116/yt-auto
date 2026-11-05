@@ -1,6 +1,6 @@
 # ⑨完成動画ゲート（アナザー日本紀・2026-10-29 新設）：出来上がった動画を、上げる前に機械と Claude で見る
 #   python -X utf8 pipeline/gate_video_nihongi.py <作業フォルダ> [--video short.mp4|long.mp4] [--motion-only]
-# ・形：ショートは 1080x1920・59.5秒以内（台本は30〜45秒が目安・手順書 §3）／横動画は 1920x1080・8〜15分
+# ・形：ショートは 1080x1920・59.5秒以内（台本は30〜45秒が目安・手順書 §3）／横動画は 1920x1080・profile.json の min_sec（5分）〜15.5分。8分未満は注意だけ（2026-11-06・制作ルール v2.2）
 # ・声の大きさ：−14 LUFS の ±1.5 以内（loudnorm2 で整えた後。ffmpeg の ebur128）
 # ・無音：ショートは2秒以上、横動画は3秒以上続く無音が無い（silencedetect −45dB）
 # ・動く絵：ショートは images/<id>.mp4 が2カット以上で、見どころ（peak）が動く絵（手順書 §3・動画スキル references/16）。
@@ -12,7 +12,7 @@ import argparse, glob, json, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_video import ff, length, moving  # noqa: E402
+from gate_video import ff, length, moving, min_sec  # noqa: E402
 from nihongi_common import kind_of_work  # noqa: E402
 
 LUFS, TOL = -14, 1.5
@@ -63,8 +63,11 @@ def main():
     else:
         if (w, h) != (1920, 1080):
             bad.append(f"大きさ {w}x{h}（横動画は 1920x1080）")
-        if not 480 <= sec <= 930:
-            bad.append(f"長さ {sec / 60:.1f}分（8〜15分）")
+        lo = min_sec(work)  # 2026-11-06：前は8分未満で落としていた。制作ルール v2.2「8分は決まりではない・引き延ばさない」に合わせた
+        if not lo <= sec <= 930:
+            bad.append(f"長さ {sec / 60:.1f}分（{lo / 60:.0f}〜15.5分）")
+        elif sec < 480:
+            print(f"  注意：長さが{sec / 60:.1f}分（8分未満。途中の広告は付かないが、引き延ばさずこのまま出す・制作ルール §7）")
     sil_d = 2.0 if kind == "short" else 3.0
     log = ff("-i", v, "-vn", "-af", f"ebur128,silencedetect=n=-45dB:d={sil_d}", "-f", "null", "-")
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", log)

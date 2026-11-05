@@ -1,7 +1,7 @@
 # ⑩アップ（アナザー日本紀の毎日の自動制作・2026-10-29 新設）：非公開で上げるだけ。公開の予約は見張り（watch.py）が非公開の在庫から枠に入れる
 #   python -X utf8 pipeline/upload_nihongi_auto.py <作業フォルダ> --channel nihongi [--privacy private] [--video short.mp4] [--dry]
 # ・手で作った分の upload_nihongi.py（予約つき）とは別の道具。記録は history/nihongi/uploaded.json（手で作った分の shorts_uploaded.json・long_uploaded.json は読むだけ。git で衝突させない）
-# ・種類（short／long）と format は台本から。ショートは 1080x1920・60秒以内、横動画は 1920x1080・8分以上・サムネ thumb_a.jpg つき・説明文の最後に chapters.txt
+# ・種類（short／long）と format は台本から。ショートは 1080x1920・60秒以内、横動画は 1920x1080・profile.json の min_sec 以上（5分）・サムネ thumb_a.jpg つき・説明文の最後に chapters.txt
 # ・説明文：AI の1行・「作り話です」の行・VOICEVOX のクレジット（voice/_credits.txt の全員。「音声：VOICEVOX:青山龍星、VOICEVOX:…」の形）が無ければ止まる
 #   ショートの {LONG_URL} の行は消す（横動画はまだ無い。上がった後に見張りが差し替えない）
 # ・上げる前に、ログイン中のチャンネルが アナザー日本紀（CH_ID）かを確かめる。二重アップ：記録に同じ作業フォルダ・チャンネルに同じタイトルがあれば止まる
@@ -10,7 +10,7 @@ import argparse, datetime, json, os, re, subprocess, sys, time, urllib.error
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import ROOT, api, API, channel_titles  # noqa: E402
-from upload_nihongi import CH_ID, probe, up1440, check_after, get, live  # noqa: E402
+from upload_nihongi import CH_ID, probe, up1440, check_after, get, live, min_long_sec  # noqa: E402
 import ustore  # noqa: E402
 from nihongi_common import kind_of_work, AI_LINE  # noqa: E402
 
@@ -73,7 +73,7 @@ def main():
         thumb = os.path.join(work, a.thumb)
         if not os.path.exists(thumb):
             sys.exit(f"【止まりました】サムネがありません：{thumb}")
-        if (w, h) != (1920, 1080) or sec < 480:
+        if (w, h) != (1920, 1080) or sec < min_long_sec(work):  # profile.json の min_sec（2026-11-06 から5分。前は8分）
             sys.exit(f"【止まりました】横動画の形ではありません（{w}x{h}・{sec:.1f}秒）")
     elif (w, h) != (1080, 1920) or sec > 60:
         sys.exit(f"【止まりました】ショートの形ではありません（{w}x{h}・{sec:.1f}秒）")

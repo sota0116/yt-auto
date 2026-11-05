@@ -1,0 +1,8 @@
+{
+  "_説明": "アナザー日本紀の横動画の見た目設定（2026-11-04 OneDrive の アナザー日本紀/config.json から写した。2026-11-06 リポジトリへ）。スキルは作業フォルダ（channels/nihongi/videos/<番号>/）の config.json しか読まないので、pipeline/build_nihongi.py が横動画の組み立て前に作業フォルダへ写す（作業フォルダに config.json がもうある時は触らない）。ショートには使わない。直す時は OneDrive 側と両方そろえる",
+  "_見た目": "2026-11-04 物理解析v1の1・3・4を反映（調査\\物理解析_2026-11-04\\）。open_still=冒頭60秒は寄りだけ／grade=彩度・光のにじみ・明るさの上限／open_grade=冒頭だけ青緑＋光の中心を上へ／sub_color=字幕の地の色を白でなく明るい灰。数値はかくれ神語り 001 の試し書き出し4回（v1〜v4）で確定（2026-11-04）。冒頭60秒の実測 y_p99 184・白とび0・彩度0.37（詳しくは 物理解析レポート_v1.1_2026-11-04.md）",
+  "open_still": {"sec": 60, "zoom_per_sec": 0.003},
+  "grade": {"sat": 1.1, "glow": 0.2, "glow_sigma": 25, "glow_from": 0.6, "knee": 160, "cap": 192, "ui_max": 185},
+  "open_grade": {"balance": "rs=-0.08:gs=0.02:bs=0.10:rm=-0.08:gm=0.01:bm=0.06:rh=-0.12:gh=0.01:bh=0.12", "vignette": "angle=0.2:x0=w/2:y0=h*0.25"},
+  "sub_color": "#DCDCDC"
+}

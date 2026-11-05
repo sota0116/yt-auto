@@ -3,7 +3,7 @@
 # ・--go を付けた時だけ上げる（付けない時は、タイトル・説明文・予約の時刻・確かめの結果だけ出す）
 # ・--at が無い時は、毎日の枠（SLOTS：18:00・21:00）のうち、まだ予約が入っていない一番近い枠に入れる（今から1時間より後）
 #   1日3本の日は --three で昼の 12:10 も使う
-# ・横動画（長尺）は --long --thumb thumb.jpg --at 2026-10-29T20:00（2026-10-28 足した）。1920x1080・8分以上を確かめ、
+# ・横動画（長尺）は --long --thumb thumb.jpg --at 2026-10-29T20:00（2026-10-28 足した）。1920x1080・profile.json の min_sec 以上（2026-11-06 から5分。前は8分）を確かめ、
 #   作業フォルダの chapters.txt を説明文の最後に足し、サムネを付ける。記録は history\nihongi\long_uploaded.json（ショートの枠には数えない）
 #   同じ日に横動画がもう入っていれば止まる（long_day_guard.py。2026-10-29 本人「横動画は同じ日に2本以上は載せない」）
 # ・作り直して上げ直す時は、古い記録に "retired": true を付ける（付けた記録は二重アップの確かめと枠から外す）
@@ -32,6 +32,12 @@ CREDIT = "VOICEVOX:青山龍星"
 
 def get(url):
     return json.load(api(CH, "GET", url, timeout=60))
+
+
+def min_long_sec(work):
+    """横動画で止める長さ（秒）。チャンネルの profile.json の min_sec（無ければ8分）。2026-11-06：制作ルール v2.2 で8分は決まりでなくなった"""
+    p = os.path.normpath(os.path.join(work, "..", "..", "profile.json"))
+    return (json.load(open(p, encoding="utf-8")).get("min_sec") if os.path.exists(p) else None) or 480
 
 
 def probe(path):
@@ -129,8 +135,8 @@ def main():
     sec, w, h = probe(video)
     thumb = os.path.join(work, a.thumb) if a.long else None
     if a.long:
-        if not (w == 1920 and h == 1080) or sec < 480:
-            sys.exit(f"【止まりました】横動画の形ではありません（{w}x{h}・{sec:.1f}秒。1920x1080・8分以上）")
+        if not (w == 1920 and h == 1080) or sec < min_long_sec(work):
+            sys.exit(f"【止まりました】横動画の形ではありません（{w}x{h}・{sec:.1f}秒。1920x1080・{min_long_sec(work)}秒以上）")
         if not os.path.exists(thumb):
             sys.exit(f"【止まりました】サムネがありません：{thumb}")
     elif not (w == 1080 and h == 1920) or sec > 60:

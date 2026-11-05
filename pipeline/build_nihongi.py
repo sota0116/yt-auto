@@ -3,7 +3,9 @@
 # ・ショートは short.mp4（1080x1920）、横動画は long.mp4（1920x1080。chapters.txt も作る）。字幕・帯・hook・セーフゾーンはスキルの build_*.py が台本どおりに作る（制作ルール §6）
 # ・スキルの出力は _raw.mp4 に作り、loudnorm2 で整えた物を最終の名前にして、_raw.mp4 は消す
 # ・ショートは safezone_check.png も残る（gate_video_nihongi が見る）
-import os, subprocess, sys
+# ・横動画は channels/nihongi/config_long.json（色と光と冒頭。制作ルール v2.3・§7）を作業フォルダの config.json に写してから組み立てる（2026-11-06。
+#   スキルは作業フォルダの config.json しか読まないため、それまで v2.3 が自動の制作に効いていなかった）。作業フォルダに config.json がもうある時は触らない
+import os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from nihongi_common import vendor_ok, vendor_run, kind_of_work  # noqa: E402
@@ -18,6 +20,10 @@ def main():
     kind = kind_of_work(work)
     raw = os.path.join(work, "_raw.mp4")
     out = os.path.join(work, "long.mp4" if kind == "long" else "short.mp4")
+    cfg = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "channels", "nihongi", "config_long.json")
+    if kind == "long" and os.path.exists(cfg) and not os.path.exists(os.path.join(work, "config.json")):
+        shutil.copyfile(cfg, os.path.join(work, "config.json"))
+        print("色と光と冒頭の設定（config_long.json・制作ルール v2.3）を作業フォルダへ写しました")
     r = vendor_run("build_long.py" if kind == "long" else "build_short.py", work, "--out", raw, capture=False)
     if r.returncode or not os.path.exists(raw):
         sys.exit(f"【止まりました】組み立てに失敗しました（終了コード {r.returncode}）")
