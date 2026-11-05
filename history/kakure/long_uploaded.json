@@ -82,5 +82,19 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "謎"
+ },
+ {
+  "work": "007_星座",
+  "video_id": "s63VgWnzY6Q",
+  "title": "いて座の射手は誰か 古代の星座の本は英雄の先生ケイローンと書かなかった【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-11T20:00:00+09:00",
+  "uploaded_at": "2026-11-05T10:38:34+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "元ネタ"
  }
 ]

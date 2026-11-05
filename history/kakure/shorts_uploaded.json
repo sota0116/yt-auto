@@ -90,5 +90,27 @@
   "uploaded_at": "2026-11-04T23:34:28+09:00",
   "missing": false,
   "playlist": "図鑑"
+ },
+ {
+  "work": "S011_切出_箱ではなかった甕",
+  "video_id": "Aa3h6MUpMwQ",
+  "title": "パンドラが開けたのは、箱ではなく人の背丈ほどの甕だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-07T12:00:00+09:00",
+  "uploaded_at": "2026-11-05T10:41:01+09:00",
+  "missing": false
+ },
+ {
+  "work": "S012_格付け_子だくさんの神",
+  "video_id": "fr84IEfsoIo",
+  "title": "大国主の子は181柱 古事記と日本書紀が数えた子だくさんの神ベスト3【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-09T12:00:00+09:00",
+  "uploaded_at": "2026-11-05T10:42:58+09:00",
+  "missing": false
  }
 ]
