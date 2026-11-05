@@ -157,5 +157,28 @@
   "publish_at": "2026-11-13T12:00:00+09:00",
   "uploaded_at": "2026-11-05T22:48:56+09:00",
   "missing": false
+ },
+ {
+  "work": "S017_切出_櫛を投げるな",
+  "video_id": "UfWGymbHuOI",
+  "title": "夜に櫛を投げてはいけない、の始まりは日本書紀の黄泉の国の話だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-14T19:00:00+09:00",
+  "uploaded_at": "2026-11-06T04:43:54+09:00",
+  "missing": false
+ },
+ {
+  "work": "S018_図鑑_件",
+  "video_id": "WHPkzeeJnLU",
+  "title": "牛の体に人の顔の妖怪・件が告げたのは災いではなく大豊作だった【かくれ神図鑑 #5】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-15T12:00:00+09:00",
+  "uploaded_at": "2026-11-06T04:46:23+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
