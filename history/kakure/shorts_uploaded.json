@@ -112,5 +112,28 @@
   "publish_at": "2026-11-09T12:00:00+09:00",
   "uploaded_at": "2026-11-05T10:42:58+09:00",
   "missing": false
+ },
+ {
+  "work": "S013_切出_火曜日の神",
+  "video_id": "HyRV4U0NiV8",
+  "title": "狼の口に手を入れた神 火曜日の名前に残る北欧のティュール【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-10T19:00:00+09:00",
+  "uploaded_at": "2026-11-05T14:01:44+09:00",
+  "missing": false
+ },
+ {
+  "work": "S014_図鑑_土蜘蛛",
+  "video_id": "TFEaEMfs-KA",
+  "title": "妖怪の土蜘蛛は、いちばん古い記録では蜘蛛ではなかった【かくれ神図鑑 #4】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-11T12:00:00+09:00",
+  "uploaded_at": "2026-11-05T14:04:23+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
