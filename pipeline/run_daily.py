@@ -333,6 +333,8 @@ def opening_point(g):
     pt = (g.get("続きを見たくなるか") or {}).get("最初の30秒")
     if not isinstance(pt, dict) or any(k != "続きを見たくなるか" and isinstance(v, dict) and v.get("合格") is False for k, v in g.items()):
         return -1
+    if pt.get("1文目で得る物が分かる") is False:  # 2026-11-05：1文目で得る物が分からない版は、点が高くても不合格の線（6）より上にしない
+        return min(pt.get("点", -1), 6)
     return pt.get("点", -1)
 
 

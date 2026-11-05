@@ -5,11 +5,12 @@
 # ・似すぎは、1本目（golden\script_001.json）と history\psy\scripts\ の過去回と比べる
 # ・THUMB（サムネの背景のカット）は語りが無いので、語りを見る所では外す
 # ・2026-11-01 本人：研究と合っているか・禁止表現・広告は回さない。合否は最初の30秒だけで、章・全体の点は記録だけ（gate_script.py の hook_result）
+# ・2026-11-05 本人「何が得られるか（結論・ベネフィット）を1秒目から」：1文目で得る物が分からない回は最初の30秒で不合格（gate_script.py の BENEFIT_GATE）
 # ・『続きを見たくなるか』の名前は run_daily.py の record() が点を拾う名前にそろえた（2026-10-29 まで「続きを聞きたくなるか」で拾われていなかった）
 import argparse, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result  # noqa: E402
+from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result, BENEFIT_GATE, HOOK_PT  # noqa: E402
 
 CPS = 5.15  # 読む速さ（字/秒）。1本目 5,254字（句読点を除く）・17分01秒から
 
@@ -142,6 +143,8 @@ def gate_hook(s, use):
 3. 全体：最後まで楽しく見られるか。後ろの特徴ほど意外になっているか。見終わったあとに人に話したい事が1つ以上残るか
 このチャンネルの決まりとして、つかみに「そんな経験は、ありませんか？」の問いと「今回は、〇〇な人に共通する、N個の特徴を〜」の予告、特徴の章の頭に「〇つ目の特徴は、〇〇です。」、
 まとめに登録の呼びかけと決まった挨拶が入ります。入っていること自体は減点しないでください。語り口はゆっくりで、やさしく話しかける形です。
+ただし 2026-11-05 から、つかみの問い「ありませんか」と予告は1文目ではなく、その前の1文目で「この回を聞くと、〇〇な人の何が分かるか」を言うのが決まりです（下の「1秒目の決まり」）。
+{BENEFIT_GATE}
 点が低い所は、どこをどう直すと上がるかを1文で書いてください。病気・治し方・効果の約束を足す案、facts.json に無い数字や研究を足す案は出さないでください。甘く付けないでください。
 
 最初の30秒：
@@ -151,7 +154,7 @@ def gate_hook(s, use):
 {body}
 """
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
-    sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "全体": pt},
+    sch = {"type": "object", "properties": {"最初の30秒": HOOK_PT, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "全体": pt},
            "required": ["最初の30秒", "章", "全体"]}
     return hook_result(ask_json(p, sch, use))
 

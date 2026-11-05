@@ -8,11 +8,12 @@
 # ・文脈の判定（決まりの食い違い・続きを見たくなるか・電子ゴミ）は gemini.ask（ふだんは Claude（claude -p）。JUDGE=gemini で Gemini）
 # ・2026-11-01 本人：史実と出どころ・禁止表現・広告は回さない。合否は最初の30秒だけで、決まりの食い違いと電子ゴミは記録だけ（gate_script.py の hook_result・note_only）
 # ・『続きを見たくなるか』の名前は run_daily.py の record() が点を拾う名前にそろえた
+# ・2026-11-05：1カット目の1文目で「この動画で何が見られるか（ずらしたルールと、何がひっくり返るか）」が分からない回は不合格（gate_script.py の BENEFIT_GATE／HOOK_PT）
 import argparse, json, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ask_json, items, S, trigram, cost, hook_result, note_only  # noqa: E402
+from gate_script import ask_json, items, S, trigram, cost, hook_result, note_only, BENEFIT_GATE, HOOK_PT  # noqa: E402
 from nihongi_common import ROOT, CH, CDIR, HIST, VENDOR, jload, kind_of_work, past_works, FIXED_END, AI_LINE, vendor_ok  # noqa: E402
 from pick_neta_nihongi import same_fact  # noqa: E402
 
@@ -229,7 +230,9 @@ SUB_OK = ("横動画の途中（30〜70%）に1回だけある、チャンネル
           "このチャンネルの決まりで入れる物です。それ自体は当たらない／減点しない（2026-10-29：見本どおりの文を名乗り・メタ・引っ張りで落としていた）。"
           "同じ形の呼びかけが2回以上ある・物語の続きがあるように見せて登録を促す時は当たる。")
 RULE_OK = ("横動画の最初の30秒にある『足すルールは1つ。…』の1文と『年と人と出来事は本当の歴史。…だけが作り話です。』の1文は、"
-           "このチャンネルの決まり（見本 L002 の A04・A05）で入れる物なので、それ自体は減点しない。それ以外の設定の説明が長い・同じ驚きの言い換えが続くのは減点する。")
+           "このチャンネルの決まり（見本 L002 の A04・A05）で入れる物なので、それ自体は減点しない。それ以外の設定の説明が長い・同じ驚きの言い換えが続くのは減点する。"
+           "2026-11-05 から、最初の1文は『ずらしたルールと意外な結果』（例「信長に裏切る確率が見えたら、光秀だけ99%でした。」）を言い、年・場所の場面はその次の文から始める決まり。"
+           "この1文目は設定の説明ではないので減点しない。")
 
 
 def gate_ng(s, use):
@@ -283,11 +286,13 @@ def gate_hook(s, kind, use):
     unit = "場面" if kind == "short" else "章"
     p = f"""あなたは YouTube の{'ショート（30〜45秒）' if kind == 'short' else '横動画（約8〜10分）'}の編集者です。雑学が好きで、見終わったあと『へえ』と言いたい人として、下の台本を採点してください。教科書の名前を少し覚えている程度の知識の人です。
 採点（10点満点・整数。甘く付けない）
-1. 最初の{'3秒（hook と最初の1文）' if kind == 'short' else '30秒'}：ここで離脱せず、続きを見たくなるか。何をずらしたかが1文で分かるか。説明が要る設定になっていないか
+1. 最初の{'3秒（hook と最初の1文）' if kind == 'short' else '30秒'}：ここで離脱せず、続きを見たくなるか。1文目で、何をずらしたかと、史実の誰・何がひっくり返るか（結果そのものか、結果を問う形）が分かるか。説明が要る設定になっていないか
 2. 各{unit}（台本の【{unit}】ごと。全部を採点する）：本当にあった出来事（年・人・場所）が『へえ』として残るか・画面が変わる{'テンポ' if kind == 'short' else '場面'}があるか・{unit}の終わりで次も見たくなるか（『答えは最後に』のような先送りではなく、中身で引いているか）
 3. 山場（"peak" の付いたカットのあたり）：いちばん面白い場面として、ずらしたルールのせいで史実が少しだけひっくり返るのが伝わるか。持ち帰れる『へえ』が残るか
 このチャンネルの決まりとして、最後は『あなたなら、どこで歴史を変える？コメントで教えて。』の決まった一言で終わります。入っていること自体は減点しないでください。名乗り・あいさつはしない決まりです。
 {'' if kind == 'short' else SUB_OK + chr(10) + RULE_OK + chr(10)}点が低い所は、どこをどう直すと上がるかを1文で書いてください。中身の無い引っ張り・メタな言い方・評価の植え付け（『あなたも〇〇ですよね』）を足す案は出さないでください。
+
+{BENEFIT_GATE}このチャンネルでは、1文目で『何が見られる動画か』＝ずらしたルールと、史実の誰・何がどうなるかです（例「もしも江戸で白いご飯が禁止されたら、江戸わずらいはどうなったか。」「信長に裏切る確率が見えたら、光秀だけ99%でした。」）。年・場所から入る1文目（「1657年1月18日、昼すぎの江戸。」）や、ルールだけで結果の向きが分からない1文目は false。{'' if kind == 'short' else '直す案は、A04・A05 の決まった文を残し、年・場所の場面を2文目へ回す形にしてください。'}
 
 最初の{'3秒' if kind == 'short' else '30秒'}：
 {lines(first)}
@@ -296,7 +301,7 @@ def gate_hook(s, kind, use):
 {body}
 """
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
-    sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt}, "required": ["最初の30秒", "章", "山場"]}
+    sch = {"type": "object", "properties": {"最初の30秒": HOOK_PT, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt}, "required": ["最初の30秒", "章", "山場"]}
     return hook_result(ask_json(p, sch, use))
 
 

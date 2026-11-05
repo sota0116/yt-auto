@@ -6,11 +6,12 @@
 # ・似すぎ：1本目（golden/script_001.json）と history/spi/scripts/ の過去回と比べる（3文字の重なり 0.35 未満・同じ1文目なし）
 # ・文脈の判定（続き）は gemini.ask（2026-10-24 から、ふだんは Claude（claude -p・契約の範囲内）。JUDGE=gemini で Gemini）
 # ・2026-11-01 本人：暦と出典・禁止表現・広告は回さない。合否は最初の30秒だけで、章・山場の点は記録だけ（gate_script.py の hook_result）
+# ・2026-11-05 本人「何が得られるか（結論・ベネフィット）を1秒目から」：1文目で得る物が分からない回は最初の30秒で不合格（gate_script.py の BENEFIT_GATE）
 # ・「続きを見たくなるか」の名前は run_daily.py の record() が点を拾う名前にそろえた（仕事chと同じ）
 import argparse, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gemini  # noqa: E402
-from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result  # noqa: E402
+from gate_script import ROOT, ask_json, items, S, trigram, cost, hook_result, BENEFIT_GATE, HOOK_PT  # noqa: E402
 
 CPS = 6.0  # 読む速さ（字/秒）。check_script.py・check_spi_script.py と同じ
 SKILL_CHECK = os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts", "check_script.py")
@@ -207,12 +208,12 @@ def gate_hook(s, use):
     body = "\n\n".join(f"【章：{c['name']}】\n" + lines(c["cuts"]) for c in chapters(s))
     p = f"""あなたは YouTube の長尺動画の編集者です。家で家事の合間に、耳だけで聞いている50〜60代の女性（カレンダーに印をつけ、神社にはときどき行く人）として、下の台本を採点してください。
 採点（10点満点・整数）
-1. 最初の30秒（下の「最初の30秒」）：ここで離脱せず、続きを聞きたくなるか。いちばん驚く日付か由来を言い切っているか。「みんなが思っていること」と暦の計算の結果の食い違いがあるか
+1. 最初の30秒（下の「最初の30秒」）：ここで離脱せず、続きを聞きたくなるか。1文目で、この回を聞くと何が分かるか・何ができるか（その日にすること・やめること・次はいつか）を言っているか。いちばん驚く日付か由来を言い切っているか。「みんなが思っていること」と暦の計算の結果の食い違いがあるか
 2. 各章（台本の【章】ごと。全部の章を採点する）：耳だけで日付と話が分かるか・家で起きそうな「あるある」の場面があるか・章の終わりの1文で、次の章も聞きたくなるか（進み方を言うのではなく、中身で引いているか）
 3. 山場（"peak" の付いたカットのあたり。無ければいちばん盛り上がる所）：持ち帰れる事実（日付・由来・やり方）として残るか
 このチャンネルの決まりとして、40〜45%あたりに LINE の案内、65%あたりに登録の呼びかけ、締めにコメントへの問いかけの決まった文が入ります。入っていること自体は減点しないでください。
 語り口はやわらかい です・ます で、名乗りやお礼のあいさつはしない決まりです。
-点が低い所は、どこをどう直すと上がるかを1文で書いてください。具体的な結果の保証・病気や健康の効果・答えを先に延ばすだけの文・動画や回のことを話す言い方を足す案は出さないでください。甘く付けないでください。
+{BENEFIT_GATE}点が低い所は、どこをどう直すと上がるかを1文で書いてください。具体的な結果の保証・病気や健康の効果・答えを先に延ばすだけの文・動画や回のことを話す言い方を足す案は出さないでください。甘く付けないでください。
 
 最初の30秒：
 {lines(first30)}
@@ -221,7 +222,7 @@ def gate_hook(s, use):
 {body}
 """
     pt = {"type": "object", "properties": {"点": {"type": "integer"}, "直すなら": S}, "required": ["点", "直すなら"]}
-    sch = {"type": "object", "properties": {"最初の30秒": pt, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt},
+    sch = {"type": "object", "properties": {"最初の30秒": HOOK_PT, "章": items(章=S, 点={"type": "integer"}, 直すなら=S), "山場": pt},
            "required": ["最初の30秒", "章", "山場"]}
     return hook_result(ask_json(p, sch, use))
 
