@@ -44,7 +44,7 @@
 - 手本 S001 と同じ script.json の形。テロップは "subs_bottom": true・"highlight"・"stamp"（1本に3つまで）。人物の頭が上の帯（縦270〜587）にかからない構図で絵を頼む。
 - 絵：`python -X utf8 K/道具/make_images_short.py <作業フォルダ> --par 4`（縦の絵はこの道具。読む欄は image_en）。動く絵は1カット目と見どころの2つ。
 - 組み立て：`python -X utf8 K/道具/build_short_shimei.py <作業フォルダ>` → loudnorm2.py で 完成.mp4 → safezone_check.png と全カットの一覧を目で見る。check_script.py <作業フォルダ> --short の NG 0。
-- 上げる準備：upload.json を `{"video": "完成.mp4", "format": "short"}` で置く。この実行の後の段が1本ずつ上げ、次の空き枠（毎日 12:00・19:00）に入れる。
+- 上げる準備：upload.json を `{"video": "完成.mp4", "format": "short"}` で置く。この実行の後の段が1本ずつ上げ、次の空き枠に入れる（2026-11-07〜 ショートは1日1本：横の日 12:00・横の無い日 19:00。横2日おきに2本で毎日1本になる）。
 
 #### 詰まった時
 - 横動画は、次の枠に間に合わなくても品質の線を下げない。次の空いた枠に入る。
