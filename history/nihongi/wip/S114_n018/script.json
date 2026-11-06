@@ -1,0 +1,258 @@
+{
+ "format": "short",
+ "title": "もしも今の旅行者が、都だった平城京に迷い込んだら。道幅は御堂筋の倍近い #もしも #日本史 #奈良時代",
+ "promise": "今の奈良で見る朱雀門は、本物を見た人がいないまま、発掘と古い寺を手がかりに1998年に建て直した門だと分かる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※今の旅行者が、都だったころの平城京に迷い込む話は作り話です。平城京が710年から784年までの都だったこと、朱雀大路の幅（約75m）、都が移ったあと跡が田畑になったこと、朱雀門（1998年）と第一次大極殿（2010年）の復原は、史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "奈良時代",
+  "平城京",
+  "朱雀門",
+  "朱雀大路",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "旅行者だけ本物を見た"
+ ],
+ "fiction": true,
+ "world_rules": [
+  "今の旅行者（1人）だけが、奈良時代の平城京へ迷い込む。都の人々は、旅行者が未来から来たことを知らない",
+  "旅行者は迷い込む直前に、今の平城宮跡で平成の朱雀門をスマホで撮っていた。その写真はスマホに残っている",
+  "旅行者が知っている未来（都が移ること・跡が田畑になること・朱雀門が1998年・大極殿が2010年に建て直されること・朱雀門は元の姿が分からず法隆寺と薬師寺を手がかりにしたこと）は、旅行者が今の平城宮跡で読んだ案内と、学校で習ったことから来ている。都の人々は知らない",
+  "朱雀門の元の姿が分かっていない、ということは今の世の話。都の人々にとっては毎日見ている門",
+  "スマホの写真を見るのは旅行者だけ。都の人々には見せない",
+  "語り手は、本当の歴史（年・幅・建て直しの手がかり）を知っていて語る"
+ ],
+ "world_terms": [
+  "スマホ",
+  "写真",
+  "撮",
+  "知っている",
+  "答え合わせ",
+  "平成",
+  "見比べ"
+ ],
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "voices": {},
+ "characters_dir": "../../characters",
+ "facts": [
+  "平城京は、和銅3年（710年）に藤原京から移ってきた都で、延暦3年（784年）に長岡京へ移るまで続いた（「710年(和銅3)から784年(延暦3)まで現在の奈良市に存続した都城」山川 日本史小辞典。デジタル大辞泉・世界大百科事典・ニッポニカも同じ年）。出どころ：コトバンク「平城京」kotobank.jp/word/平城京-125991。ブリタニカ国際大百科事典 小項目事典は「74年間の都」",
+  "朱雀大路は、平城京の正門の羅城門から平城宮の正門の朱雀門まで約4km続き、幅は約75m（「約75mもの幅をもつ朱雀大路がまっすぐ北に向かってのびていました」「その4km先には平城宮の正門である朱雀門が建っていた」）。出どころ：奈良文化財研究所 平城宮跡資料館「宮跡案内」www.nabunken.go.jp/heijo/museum/guide.html。幅は事典で72m・73.4m・80m・83mと書き方が分かれる（コトバンク「平城京」の山川・世界大百科・ニッポニカ・旺文社）ので、台本は奈良文化財研究所の「約75m」",
+  "都が移ったあと、平城上皇の平城遷都の計画は失敗し、「50年あまり後には平城旧京の道路は耕されて田畑となる」。江戸時代の末に北浦定政が研究した。出どころ：国土交通省 近畿地方整備局 国営飛鳥歴史公園事務所「平城宮跡歴史公園保存の経緯」www.kkr.mlit.go.jp/asuka/initiatives-heijo/course.html",
+  "平成10年（1998年）に「朱雀門、東院庭園の復原が完成する」、平成22年（2010年）に「第一次大極殿の復原が完成する」。出どころ：同上（国営飛鳥歴史公園事務所「平城宮跡歴史公園保存の経緯」）。平城宮跡歴史公園の公式サイト www.heijo-park.jp も「「大極殿」は2010年（平成22年）…に復原され」",
+  "朱雀門の復原は、昭和39年度の発掘調査から始まり、二重門の基本構造は「古代に於いて唯一の遺構である法隆寺中門に倣いました」、様式は「同年代の薬師寺東塔を参考にしました」。出どころ：奈良文化財研究所 平城宮跡資料館「宮跡案内」www.nabunken.go.jp/heijo/museum/guide.html",
+  "御堂筋（大阪）の幅員は44m・延長は約4.2km。出どころ：大阪市建設局の資料（www.city.osaka.lg.jp/kensetsu/cmsfiles/contents/0000611/611119/michi1.pdf。PDF の本文はこの環境で字を取り出せず、検索の抜粋で確認）。75÷44≒1.7 で「倍近い」は計算",
+  "今の旅行者が奈良時代の平城京に迷い込むこと、スマホで本物の朱雀門を撮ること、平成の門と見比べることは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "旅行者が\n平城京へ",
+   "narration": "もしも平城京に迷い込んだら、復元の朱雀門はどうなるか。",
+   "tts_text": "もしもへいじょうきょうに迷い込んだら、復元のすざくもんはどうなるか。",
+   "highlight": [
+    "復元の朱雀門"
+   ],
+   "image_en": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat, navy backpack and white sneakers stands frozen in astonishment on bare earth before a towering two-storey vermilion palace gate with a sweeping tiled roof in ancient Nara, early morning light, robed people walking past.",
+   "shots": [
+    "n01",
+    "n01@close",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat, navy backpack and white sneakers stands frozen in astonishment on bare earth before a towering two-storey vermilion palace gate with a sweeping tiled roof in ancient Nara, early morning light, robed people walking past.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "710年から784年までの都、平城京だ。",
+   "tts_text": "ななひゃくじゅうねんから、ななひゃくはちじゅうよねんまでの都、へいじょうきょうだ。",
+   "highlight": [
+    "710年"
+   ],
+   "image_en": "A wide view of the ancient capital Heijo-kyo at dawn: a vast grid of straight earthen avenues, low tiled-roof buildings and earthen walls stretching toward green hills, the vermilion palace gate small in the distance.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "A wide view of the ancient capital Heijo-kyo at dawn: a vast grid of straight earthen avenues, low tiled-roof buildings and earthen walls stretching toward green hills, the vermilion palace gate small in the distance."
+  },
+  {
+   "id": "n03",
+   "narration": "門の前に、まっすぐな大通りが延びていた。",
+   "image_en": "Seen from behind, a Japanese woman traveler about thirty with a short black bob, plain beige trench coat, navy backpack and white sneakers stands small at the foot of a huge vermilion gate, looking down an enormously wide straight earthen avenue lined with trees running far to the horizon.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [],
+   "image": "Seen from behind, a Japanese woman traveler about thirty with a short black bob, plain beige trench coat, navy backpack and white sneakers stands small at the foot of a huge vermilion gate, looking down an enormously wide straight earthen avenue lined with trees running far to the horizon."
+  },
+  {
+   "id": "n04",
+   "narration": "朱雀大路。幅は約75m、大阪の御堂筋の倍近い。",
+   "tts_text": "すざくおおじ。幅は約ななじゅうごメートル、大阪のみどうすじの倍近い。",
+   "highlight": [
+    "約75m",
+    "倍近い"
+   ],
+   "image_en": "A low dramatic view across an immensely wide earthen avenue in ancient Nara: a Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack, tiny at the center, mouth open, while an ox cart and robed officials look like dots on the far side.",
+   "shots": [
+    "n04",
+    "n04@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "A low dramatic view across an immensely wide earthen avenue in ancient Nara: a Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack, tiny at the center, mouth open, while an ox cart and robed officials look like dots on the far side.",
+   "motion": true
+  },
+  {
+   "id": "n05",
+   "narration": "南の羅城門まで、約4km続く。",
+   "tts_text": "南のらじょうもんまで、約よんキロ続く。",
+   "image_en": "Nara-period court officials in long round-collared robes and black cloth headwear walk along a vast straight earthen avenue lined with trees that runs to a distant gate on the horizon, warm morning light.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "Nara-period court officials in long round-collared robes and black cloth headwear walk along a vast straight earthen avenue lined with trees that runs to a distant gate on the horizon, warm morning light."
+  },
+  {
+   "id": "n06",
+   "narration": "旅行者は知っている。都が移ると、ここは田畑になる。",
+   "highlight": [
+    "田畑"
+   ],
+   "image_en": "Close-up of a Japanese woman traveler about thirty with a short black bob and plain beige trench coat, her face turning sad and thoughtful as she looks at busy robed people passing on the grand avenue of ancient Nara.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "image": "Close-up of a Japanese woman traveler about thirty with a short black bob and plain beige trench coat, her face turning sad and thoughtful as she looks at busy robed people passing on the grand avenue of ancient Nara."
+  },
+  {
+   "id": "n07",
+   "narration": "本当は50年あまりで、道は耕され田畑になった。",
+   "image_en": "Quiet green rice paddies and farmers in plain clothes working where a great avenue once ran, low hills behind, soft evening light, no buildings left.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "image": "Quiet green rice paddies and farmers in plain clothes working where a great avenue once ran, low hills behind, soft evening light, no buildings left."
+  },
+  {
+   "id": "n08",
+   "narration": "今の朱雀門は、1998年に建て直された門だ。",
+   "tts_text": "今のすざくもんは、せんきゅうひゃくきゅうじゅうはちねんに建て直された門だ。",
+   "highlight": [
+    "1998年"
+   ],
+   "image_en": "The present-day reconstructed vermilion two-storey palace gate of the Heijo Palace site in Nara standing on a wide grassy plain under a blue sky.",
+   "real": "Suzakumon Heijo Palace Nara",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Heijokyo Suzakumon 05.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Heijokyo_Suzakumon_05.JPG/1920px-Heijokyo_Suzakumon_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Heijokyo_Suzakumon_05.JPG",
+    "検索語": "Suzakumon Heijo Palace Nara"
+   }
+  },
+  {
+   "id": "n09",
+   "narration": "元の姿を見た人はいない。形は法隆寺と薬師寺に倣った。",
+   "image_en": "The East Pagoda of Yakushiji temple in Nara, a slender wooden pagoda with layered roofs, under a clear sky.",
+   "real": "Yakushiji East Pagoda",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Yakushiji Temple West Pagoda & East Pagoda.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Yakushiji_Temple_West_Pagoda_%26_East_Pagoda.jpg/1920px-Yakushiji_Temple_West_Pagoda_%26_East_Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Yakushiji_Temple_West_Pagoda_%26_East_Pagoda.jpg",
+    "検索語": "Yakushiji East Pagoda"
+   }
+  },
+  {
+   "id": "n10",
+   "narration": "旅行者は、本物の朱雀門を見上げてスマホで撮った。",
+   "tts_text": "旅行者は、本物のすざくもんを見上げてスマホで撮った。",
+   "image_en": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack raises a plain smartphone, its back facing the viewer, toward a towering vermilion palace gate of ancient Nara, sunlight on the tiled roof.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "image": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack raises a plain smartphone, its back facing the viewer, toward a towering vermilion palace gate of ancient Nara, sunlight on the tiled roof."
+  },
+  {
+   "id": "n11",
+   "narration": "スマホには、迷い込む前に撮った平成の門も残っている。",
+   "image_en": "Close view of the hands of a woman in a plain beige trench coat holding a plain smartphone with its back facing the viewer, a towering vermilion ancient gate blurred behind, her eyes wide above the phone.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "image": "Close view of the hands of a woman in a plain beige trench coat holding a plain smartphone with its back facing the viewer, a towering vermilion ancient gate blurred behind, her eyes wide above the phone."
+  },
+  {
+   "id": "n12",
+   "narration": "推測で建てた門が、写真で確かめられる門に変わった。",
+   "highlight": [
+    "確かめられる"
+   ],
+   "image_en": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack, smiling with tears in her eyes, standing alone on a wide grassy plain before a vermilion gate at sunset.",
+   "shots": [
+    "n12",
+    "n12@face"
+   ],
+   "chars": [],
+   "image": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack, smiling with tears in her eyes, standing alone on a wide grassy plain before a vermilion gate at sunset."
+  },
+  {
+   "id": "n13",
+   "narration": "次は、2010年に建て直された大極殿の、元の姿を撮る。",
+   "tts_text": "次は、にせんじゅうねんに建て直されただいごくでんの、元の姿を撮る。",
+   "image_en": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack walks briskly toward a grand vermilion hall with a huge tiled hipped roof on a raised stone platform in ancient Nara, robed officials in the courtyard.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "image": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack walks briskly toward a grand vermilion hall with a huge tiled hipped roof on a raised stone platform in ancient Nara, robed officials in the courtyard."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack sits on stone steps of an ancient vermilion gate at dusk, looking out over the vast avenue of ancient Nara.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [],
+   "image": "A Japanese woman traveler about thirty with a short black bob, plain beige trench coat and navy backpack sits on stone steps of an ancient vermilion gate at dusk, looking out over the vast avenue of ancient Nara."
+  }
+ ],
+ "bgm": null,
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
