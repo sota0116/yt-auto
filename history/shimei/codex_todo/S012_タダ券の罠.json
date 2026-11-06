@@ -1,0 +1,72 @@
+{
+ "ch": "shimei",
+ "work": "S012_タダ券の罠",
+ "portrait": true,
+ "made": "2026-11-07 03:40",
+ "style_en": "白い何もない空間に置いたミニチュアの模型（ジオラマ）の3DCG。人物は顔の細かい所が無い、つるんとしたフィギュア。色は白と灰色が中心で、大事な物だけ赤",
+ "avoid_en": "",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "白い台の上に、赤い封筒と2枚の白い券",
+   "image_en": "a single open red envelope lying on a small white pedestal in the middle of the frame, two plain blank white tickets with no text sliding out of it, a soft spotlight on it",
+   "en": "a single open red envelope lying on a small white pedestal in the middle of the frame, two plain blank white tickets with no text sliding out of it, a soft spotlight on it"
+  },
+  {
+   "id": "a02",
+   "image": "白い空間に、白い柱の大きな建物と並木の街のジオラマ",
+   "image_en": "a small winter city diorama with plain white government-style buildings with columns and bare trees in the middle of the frame, no flags, no signs, no text",
+   "en": "a small winter city diorama with plain white government-style buildings with columns and bare trees in the middle of the frame, no flags, no signs, no text"
+  },
+  {
+   "id": "a03",
+   "image": "小さな家の模型が何十軒も並び、どの郵便受けにも赤い封筒",
+   "image_en": "dozens of tiny plain house models in neat rows in the middle of the frame, each with a small plain mailbox holding a single red envelope, no text",
+   "en": "dozens of tiny plain house models in neat rows in the middle of the frame, each with a small plain mailbox holding a single red envelope, no text"
+  },
+  {
+   "id": "a04",
+   "image": "赤い封筒を開いて喜ぶ男のフィギュア",
+   "image_en": "a faceless man figurine in a plain gray sweatshirt and jeans stands in the lower-middle of the frame holding an opened red envelope and two blank white tickets up high, his whole posture excited, empty white space above his head",
+   "en": "a faceless man figurine in a plain gray sweatshirt and jeans stands in the lower-middle of the frame holding an opened red envelope and two blank white tickets up high, his whole posture excited, empty white space above his head"
+  },
+  {
+   "id": "a05",
+   "image": "白い空間に、小さなアメフトの競技場の模型（ロゴ・文字なし）",
+   "image_en": "a small plain American football stadium model in the middle of the frame, green field with plain white lines, empty stands, no logos, no team colors, no text, soft light",
+   "en": "a small plain American football stadium model in the middle of the frame, green field with plain white lines, empty stands, no logos, no team colors, no text, soft light"
+  },
+  {
+   "id": "a06",
+   "image": "空っぽの小さなオフィスに、電話だけが置かれている",
+   "image_en": "a tiny empty office room diorama in the middle of the frame: a bare desk with only a plain old telephone on it, empty chair, blank walls, no text",
+   "en": "a tiny empty office room diorama in the middle of the frame: a bare desk with only a plain old telephone on it, empty chair, blank walls, no text"
+  },
+  {
+   "id": "a07",
+   "image": "会場の模型に、蝶ネクタイの案内係・チアリーダー・鳥の着ぐるみのフィギュア",
+   "image_en": "a small convention hall diorama in the middle of the frame with round brunch tables: faceless figurines of ushers in black tuxedos, cheerleaders in plain red-and-white outfits with no letters, and one big plain yellow bird mascot costume stand around smiling-postured, all placed low with empty space above",
+   "en": "a small convention hall diorama in the middle of the frame with round brunch tables: faceless figurines of ushers in black tuxedos, cheerleaders in plain red-and-white outfits with no letters, and one big plain yellow bird mascot costume stand around smiling-postured, all placed low with empty space above"
+  },
+  {
+   "id": "a08",
+   "image": "会場のテーブルの客のフィギュアを、案内係たちが囲む",
+   "image_en": "the same small convention hall diorama in the middle of the frame: seated faceless guest figurines in casual clothes at round tables are suddenly surrounded by the faceless ushers in black tuxedos, who stand close behind each chair; the bird mascot stands at the back; tense moment, figures placed low with empty space above",
+   "en": "the same small convention hall diorama in the middle of the frame: seated faceless guest figurines in casual clothes at round tables are suddenly surrounded by the faceless ushers in black tuxedos, who stand close behind each chair; the bird mascot stands at the back; tense moment, figures placed low with empty space above"
+  },
+  {
+   "id": "a09",
+   "image": "空になった会場の丸テーブルに、食べかけの朝食の皿が残る",
+   "image_en": "the small convention hall diorama in the middle of the frame, now empty of people: round tables with half-eaten brunch plates and blank white tickets left behind, chairs pushed back",
+   "en": "the small convention hall diorama in the middle of the frame, now empty of people: round tables with half-eaten brunch plates and blank white tickets left behind, chairs pushed back"
+  },
+  {
+   "id": "a10",
+   "image": "天秤の模型。左に小さなコインの山、右に大きなコインの山",
+   "image_en": "a plain balance scale model in the middle of the frame: a tiny pile of plain coins with no markings on the left pan, a much bigger pile on the right pan, the right side sinking",
+   "en": "a plain balance scale model in the middle of the frame: a tiny pile of plain coins with no markings on the left pan, a much bigger pile on the right pan, the right side sinking"
+  }
+ ]
+}

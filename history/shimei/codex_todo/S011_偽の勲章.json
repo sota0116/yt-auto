@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S011_偽の勲章",
+ "portrait": true,
+ "made": "2026-11-07 03:40",
+ "style_en": "白い何もない空間に置いたミニチュアの模型（ジオラマ）の3DCG。人物は顔の細かい所が無い、つるんとしたフィギュア。色は白と灰色が中心で、大事な物だけ赤",
+ "avoid_en": "",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a02",
+   "image": "捜査員2人と、ひげの男が車の横で話す",
+   "image_en": "two faceless agent figurines in plain navy windbreakers with no letters talk with a faceless man figurine with a buzz-cut, short brown beard and plain olive-green field jacket beside a plain gray sedan, all standing in the lower-middle of the frame with empty white space above their heads",
+   "en": "two faceless agent figurines in plain navy windbreakers with no letters talk with a faceless man figurine with a buzz-cut, short brown beard and plain olive-green field jacket beside a plain gray sedan, all standing in the lower-middle of the frame with empty white space above their heads"
+  },
+  {
+   "id": "a03",
+   "image": "夜の松林の中で、人影たちがたき火を囲む",
+   "image_en": "a small night field diorama among tall pine trees in the middle of the frame: a group of small faceless figurines in plain dark everyday clothes stand in a circle around a small campfire, seen from a distance, quiet and ominous, no symbols",
+   "en": "a small night field diorama among tall pine trees in the middle of the frame: a group of small faceless figurines in plain dark everyday clothes stand in a circle around a small campfire, seen from a distance, quiet and ominous, no symbols"
+  },
+  {
+   "id": "a04",
+   "image": "机の上に白紙の書類と小さなハンコ",
+   "image_en": "a plain wooden desk in the middle of the frame with a stack of blank papers, a small rubber stamp and a plain army cap; the faceless bearded man in the olive-green field jacket sits at the desk writing, placed low in the frame with empty space above his head",
+   "en": "a plain wooden desk in the middle of the frame with a stack of blank papers, a small rubber stamp and a plain army cap; the faceless bearded man in the olive-green field jacket sits at the desk writing, placed low in the frame with empty space above his head"
+  },
+  {
+   "id": "a05",
+   "image": "ひげの男の胸に勲章が3つ",
+   "image_en": "the faceless bearded man in a plain olive-green field jacket stands in the lower-middle of the frame with three shiny medals pinned on his chest, empty white space above his head, spotlight on the medals",
+   "en": "the faceless bearded man in a plain olive-green field jacket stands in the lower-middle of the frame with three shiny medals pinned on his chest, empty white space above his head, spotlight on the medals"
+  },
+  {
+   "id": "a06",
+   "image": "暗い中で、ひげの男の影が大きく壁に伸びる",
+   "image_en": "the faceless bearded man in a plain olive-green field jacket stands small in the lower-middle of the frame in a dim space, his long shadow stretching tall and dark across the white wall behind him",
+   "en": "the faceless bearded man in a plain olive-green field jacket stands small in the lower-middle of the frame in a dim space, his long shadow stretching tall and dark across the white wall behind him"
+  },
+  {
+   "id": "a07",
+   "image": "ろうそくの明かりの古い紙と、赤いインクのペン（文字は無い）",
+   "image_en": "an old blank parchment sheet with no writing on a dark plain table in the middle of the frame, a plain pen with a red ink tip and a small red wax seal beside it, candlelight",
+   "en": "an old blank parchment sheet with no writing on a dark plain table in the middle of the frame, a plain pen with a red ink tip and a small red wax seal beside it, candlelight"
+  },
+  {
+   "id": "a08",
+   "image": "夜の野原の入り口で、懐中電灯を持って立つひげの男",
+   "image_en": "the faceless bearded man in a plain olive-green field jacket stands at the entrance of a dirt path into a night field diorama, in the lower-middle of the frame, holding a plain flashlight whose beam cuts across the grass; a small campfire glows far behind; empty dark space above his head",
+   "en": "the faceless bearded man in a plain olive-green field jacket stands at the entrance of a dirt path into a night field diorama, in the lower-middle of the frame, holding a plain flashlight whose beam cuts across the grass; a small campfire glows far behind; empty dark space above his head"
+  },
+  {
+   "id": "a09",
+   "image": "車の中で電話をかけるひげの男",
+   "image_en": "inside a plain dark SUV at night seen as a cutaway model with the roof removed, in the middle of the frame: the faceless bearded man in a plain olive-green field jacket sits in the driver's seat holding a plain phone to his ear, a small red recording device glowing under the seat",
+   "en": "inside a plain dark SUV at night seen as a cutaway model with the roof removed, in the middle of the frame: the faceless bearded man in a plain olive-green field jacket sits in the driver's seat holding a plain phone to his ear, a small red recording device glowing under the seat"
+  }
+ ]
+}

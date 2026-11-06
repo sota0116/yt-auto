@@ -1,0 +1,475 @@
+{
+ "ch": "shimei",
+ "work": "L007_風船150万個",
+ "portrait": false,
+ "made": "2026-11-07 03:40",
+ "style_en": "Miniature diorama 3D CG render set in an empty pure white space. People are smooth faceless figurines with no eyes, nose or mouth details, told apart only by clothes, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and light gray colors; only the key objects (the balloons) are red. The setting is Cleveland, Ohio, USA, on the shore of Lake Erie, in 1986.",
+ "avoid_en": "logos, emblems, badges or patches of real companies, groups, agencies or the coast guard, any readable text, letters or numbers anywhere (all signs, papers, screens, boats and shirts are blank), national flags, blood, injuries, faces resembling real people, split panels or comic frames",
+ "rules": {},
+ "characters": {
+  "staff": {
+   "desc_en": "the organizer, a faceless man figurine in his thirties with a smooth featureless face (no eyes, nose or mouth details), short curly brown hair, plain red windbreaker without any print, khaki trousers, white sneakers"
+  },
+  "students": {
+   "desc_en": "teenage volunteer figurines with smooth featureless faces (no eyes, nose or mouth details), plain white t-shirts without any print, blue jeans, various short hairstyles"
+  },
+  "fishers": {
+   "desc_en": "two faceless middle-aged man figurines with smooth featureless faces (no eyes, nose or mouth details): one in a plain yellow raincoat and plain gray cap, the other in a plain orange raincoat and plain dark-blue cap, both in dark trousers and rubber boots"
+  },
+  "guard": {
+   "desc_en": "rescue crew figurines with smooth featureless faces (no eyes, nose or mouth details), plain navy jackets with no patches or badges, orange life vests with no text, dark trousers"
+  }
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "image": "白い空間の街の模型の上空が、無数の赤と白の小さな風船で埋まっている",
+   "image_en": "A miniature city diorama of a 1980s American downtown with gray towers in the white space. The whole sky above it is filled with countless tiny red and white balloons rising in a huge dense cloud. Wide view from slightly above.",
+   "en": "A miniature city diorama of a 1980s American downtown with gray towers in the white space. The whole sky above it is filled with countless tiny red and white balloons rising in a huge dense cloud. Wide view from slightly above."
+  },
+  {
+   "id": "A02",
+   "image": "広場の模型に小さな人のフィギュアがぎっしり集まり、全員が上を見上げている",
+   "image_en": "A miniature city square diorama packed with hundreds of tiny faceless figurines in plain everyday 1980s clothes, all tilting their heads up toward the sky. A few red balloons float above them.",
+   "en": "A miniature city square diorama packed with hundreds of tiny faceless figurines in plain everyday 1980s clothes, all tilting their heads up toward the sky. A few red balloons float above them."
+  },
+  {
+   "id": "A03",
+   "image": "灰色の雨雲の下、赤い風船が街の模型の屋根や道に落ちてくる",
+   "image_en": "Under a low dark gray rain cloud, hundreds of small red and white balloons are falling down onto the roofs and streets of a miniature city diorama. Light rain streaks. Gloomy mood.",
+   "en": "Under a low dark gray rain cloud, hundreds of small red and white balloons are falling down onto the roofs and streets of a miniature city diorama. Light rain streaks. Gloomy mood."
+  },
+  {
+   "id": "A04",
+   "image": "小さな滑走路に赤い風船が散らばり、小さな飛行機が止まっている",
+   "image_en": "A small airport runway diorama on a lakeshore. Many red and white balloons are scattered across the gray runway, and a small plain white propeller plane waits at the end, stopped. No markings on the plane.",
+   "en": "A small airport runway diorama on a lakeshore. Many red and white balloons are scattered across the gray runway, and a small plain white propeller plane waits at the end, stopped. No markings on the plane."
+  },
+  {
+   "id": "A05",
+   "image": "灰色の湖の水面が赤い風船でおおわれ、小さな捜索の船が進めずにいる",
+   "image_en": "A gray choppy lake diorama whose surface is covered with floating red and white balloons. A small plain dark-blue rescue boat with tiny figurines in plain navy jackets is stuck among the balloons, searching. No markings on the boat.",
+   "chars": [
+    "guard"
+   ],
+   "en": "A gray choppy lake diorama whose surface is covered with floating red and white balloons. A small plain dark-blue rescue boat with tiny figurines in plain navy jackets is stuck among the balloons, searching. No markings on the boat."
+  },
+  {
+   "id": "A06",
+   "image": "灰色の湖の岸に、空っぽの小さな木のボートが1そう",
+   "image_en": "On a gray lakeshore of the white space, one small empty wooden fishing boat sits alone near a stone breakwall. Overcast, quiet and sad mood. No people.",
+   "en": "On a gray lakeshore of the white space, one small empty wooden fishing boat sits alone near a stone breakwall. Overcast, quiet and sad mood. No people."
+  },
+  {
+   "id": "A07",
+   "image": "赤い風船の形の大きな影が、小さな湖と岸の模型をおおっている",
+   "image_en": "A giant dark shadow in the shape of a balloon falls over a small lake and shoreline diorama, covering it. Ominous mood. Only one small red balloon floats above.",
+   "en": "A giant dark shadow in the shape of a balloon falls over a small lake and shoreline diorama, covering it. Ominous mood. Only one small red balloon floats above."
+  },
+  {
+   "id": "A08",
+   "image": "紺の上着の年配の男のフィギュアが、マイクの模型の前に立つ",
+   "image_en": "An older faceless man figurine with short gray hair in a plain navy jacket with no patches stands in front of a single plain microphone on a stand, in the white space. Calm, serious mood.",
+   "en": "An older faceless man figurine with short gray hair in a plain navy jacket with no patches stands in front of a single plain microphone on a stand, in the white space. Calm, serious mood."
+  },
+  {
+   "id": "A09",
+   "image": "コルクボードに、赤い風船の写真と、空のボートの写真。間を赤い糸と赤い？がつなぐ",
+   "image_en": "A miniature cork board on the white floor. Two plain photos are pinned on it: one of a red balloon, one of a small empty boat on a lake. A red thread connects them, and a big red question mark shape hangs in the middle. No text.",
+   "en": "A miniature cork board on the white floor. Two plain photos are pinned on it: one of a red balloon, one of a small empty boat on a lake. A red thread connects them, and a big red question mark shape hangs in the middle. No text."
+  },
+  {
+   "id": "A10",
+   "image": "広場の模型の上空に、西から大きな灰色の雨雲が迫っている",
+   "image_en": "A miniature city square diorama with a large boxy structure covered by netting in the middle. From the left side, a huge dark gray rain cloud is approaching over the city. Tense mood.",
+   "en": "A miniature city square diorama with a large boxy structure covered by netting in the middle. From the left side, a huge dark gray rain cloud is approaching over the city. Tense mood."
+  },
+  {
+   "id": "A11",
+   "image": "白い机の上に、古い新聞の束と、カセットテープと、赤い風船が1つ",
+   "image_en": "On a plain white desk: a stack of old blank newspapers with no readable text, an old cassette tape and one small red balloon tied to the stack. Soft spotlight.",
+   "en": "On a plain white desk: a stack of old blank newspapers with no readable text, an old cassette tape and one small red balloon tied to the stack. Soft spotlight."
+  },
+  {
+   "id": "B01",
+   "image": "湖のほとりの工業の街のジオラマ。煙突と灰色のビル、手前に湖",
+   "image_en": "A miniature diorama of a 1980s industrial American lakeside city: gray office towers, old factory chimneys (no smoke) and a wide gray lake in the foreground. Overcast soft light. Seen from slightly above.",
+   "en": "A miniature diorama of a 1980s industrial American lakeside city: gray office towers, old factory chimneys (no smoke) and a wide gray lake in the foreground. Overcast soft light. Seen from slightly above."
+  },
+  {
+   "id": "B02",
+   "image": "白い空間に、大きな透明の募金箱の模型。小さな人のフィギュアがコインを入れている",
+   "image_en": "In the white space, a big transparent donation box model with no text on it. Small faceless figurines line up and drop coins into it. Warm, kind mood.",
+   "en": "In the white space, a big transparent donation box model with no text on it. Small faceless figurines line up and drop coins into it. Warm, kind mood."
+  },
+  {
+   "id": "B03",
+   "image": "白い台座の上に、金色のトロフィーの模型。その上に赤い風船が1つ",
+   "image_en": "On a white pedestal stands a shiny gold trophy model with no text. One red balloon is tied to the trophy, floating above it. Spotlight from above.",
+   "en": "On a white pedestal stands a shiny gold trophy model with no text. One red balloon is tied to the trophy, floating above it. Spotlight from above."
+  },
+  {
+   "id": "B04",
+   "image": "遠くに小さな遊園地の模型、そこから白い風船の雲が上がる",
+   "image_en": "Far in the white space, a small generic amusement park diorama with a plain fairy-tale castle and a carousel (no logos, no characters). A big cloud of white balloons is rising from it.",
+   "en": "Far in the white space, a small generic amusement park diorama with a plain fairy-tale castle and a carousel (no logos, no characters). A big cloud of white balloons is rising from it."
+  },
+  {
+   "id": "B05",
+   "image": "白い空間に、赤い風船の山が2つ積み上がっている",
+   "image_en": "In the white space, a huge mountain of red balloons piled up, twice as big as a smaller white balloon pile next to it. Seen from the front.",
+   "en": "In the white space, a huge mountain of red balloons piled up, twice as big as a smaller white balloon pile next to it. Seen from the front."
+  },
+  {
+   "id": "B06",
+   "image": "白い空間に、カレンダーの模型のページが6枚めくれていく（数字は読めない）",
+   "image_en": "In the white space, a plain wall calendar model with six blank pages flipping up in the air. No numbers or letters on the pages.",
+   "en": "In the white space, a plain wall calendar model with six blank pages flipping up in the air. No numbers or letters on the pages."
+  },
+  {
+   "id": "B07",
+   "image": "広場の模型に、鉄の足場で組んだ3階建ての高さの四角い箱。作業員の小さなフィギュア",
+   "image_en": "A miniature city square diorama. In one corner stands a huge box-shaped frame made of gray steel scaffolding, as tall as a three-story building, its sides covered with plain white sheets. Tiny worker figurines in plain white hard hats are building it.",
+   "chars": [
+    "staff"
+   ],
+   "en": "A miniature city square diorama. In one corner stands a huge box-shaped frame made of gray steel scaffolding, as tall as a three-story building, its sides covered with plain white sheets. Tiny worker figurines in plain white hard hats are building it."
+  },
+  {
+   "id": "B08",
+   "image": "足場の箱を上から見下ろす。上面に1枚の網、網の下に赤い風船がぎっしり",
+   "image_en": "Seen from above: the huge scaffolding box in the city square, its open top closed by one single big white mesh net. Under the net, the box is packed full with red and white balloons pressing up against the mesh.",
+   "en": "Seen from above: the huge scaffolding box in the city square, its open top closed by one single big white mesh net. Under the net, the box is packed full with red and white balloons pressing up against the mesh."
+  },
+  {
+   "id": "B10",
+   "image": "白いTシャツの高校生のフィギュアたちが、ボンベの前で赤い風船をふくらませている",
+   "image_en": "A long row of teenage figurines in plain white t-shirts and jeans stand at tables with gray helium tanks, each filling a red balloon from a nozzle. Many filled balloons float behind them. Busy, cheerful mood.",
+   "chars": [
+    "students"
+   ],
+   "en": "A long row of teenage figurines in plain white t-shirts and jeans stand at tables with gray helium tanks, each filling a red balloon from a nozzle. Many filled balloons float behind them. Busy, cheerful mood."
+  },
+  {
+   "id": "B11",
+   "image": "たたんだ無地の白いTシャツが1枚、台の上に置かれている",
+   "image_en": "One neatly folded plain white t-shirt with no print lies on a small white table, under a spotlight. One small red balloon is tied to the table leg.",
+   "en": "One neatly folded plain white t-shirt with no print lies on a small white table, under a spotlight. One small red balloon is tied to the table leg."
+  },
+  {
+   "id": "B12",
+   "image": "高校生のフィギュアが1人、ボンベの前で風船をふくらませ、足元に風船の山",
+   "image_en": "Close view: one teenage figurine in a plain white t-shirt fills a red balloon from a gray helium tank. Behind, a huge growing pile of filled red balloons. A small plain clock model with no numbers sits on the table.",
+   "chars": [
+    "students"
+   ],
+   "en": "Close view: one teenage figurine in a plain white t-shirt fills a red balloon from a gray helium tank. Behind, a huge growing pile of filled red balloons. A small plain clock model with no numbers sits on the table."
+  },
+  {
+   "id": "B13",
+   "image": "子どものフィギュアが、赤い風船2個と1枚の緑の紙幣を差し出している（文字は無い）",
+   "image_en": "A small child figurine holds up two red balloons in one hand and a single plain green paper bill with no printing in the other, offering them. Simple and sweet.",
+   "en": "A small child figurine holds up two red balloons in one hand and a single plain green paper bill with no printing in the other, offering them. Simple and sweet."
+  },
+  {
+   "id": "B14",
+   "image": "広場の足場の箱の前に、高校生と子どものフィギュアが並ぶ",
+   "image_en": "In front of the huge scaffolding box filled with balloons in the city square, a line of teenage figurines in plain white t-shirts and small child figurines stand together, looking up at it proudly.",
+   "chars": [
+    "students"
+   ],
+   "en": "In front of the huge scaffolding box filled with balloons in the city square, a line of teenage figurines in plain white t-shirts and small child figurines stand together, looking up at it proudly."
+  },
+  {
+   "id": "C01",
+   "image": "朝の広場の模型に人が集まり始めている。足場の箱が中央に",
+   "image_en": "A miniature city square diorama in the morning: the huge scaffolding box full of balloons stands in the middle, and crowds of tiny faceless figurines are starting to gather around it. Pale cloudy sky.",
+   "en": "A miniature city square diorama in the morning: the huge scaffolding box full of balloons stands in the middle, and crowds of tiny faceless figurines are starting to gather around it. Pale cloudy sky."
+  },
+  {
+   "id": "C03",
+   "image": "足場の箱の網が、風船に押されて上にふくらんでいる",
+   "image_en": "Side view of the huge scaffolding box in the square: its top net bulges upward, pushed by thousands of red and white balloons packed inside. Tiny figurines look up at it.",
+   "en": "Side view of the huge scaffolding box in the square: its top net bulges upward, pushed by thousands of red and white balloons packed inside. Tiny figurines look up at it."
+  },
+  {
+   "id": "C04",
+   "image": "広場の模型の遠く、西の空に黒っぽい雲の帯",
+   "image_en": "A miniature city skyline diorama; far on the horizon, a long band of dark gray storm clouds is building up. The rest of the sky is pale. Quiet, uneasy mood.",
+   "en": "A miniature city skyline diorama; far on the horizon, a long band of dark gray storm clouds is building up. The rest of the sky is pale. Quiet, uneasy mood."
+  },
+  {
+   "id": "C06",
+   "image": "赤い上着の男のフィギュアと数人が、空を見上げながら輪になって話している",
+   "image_en": "A small group of faceless adult figurines stands in a circle on the edge of the square, talking: among them the organizer in a plain red windbreaker. They glance up at a dark cloud. Tense mood.",
+   "chars": [
+    "staff"
+   ],
+   "en": "A small group of faceless adult figurines stands in a circle on the edge of the square, talking: among them the organizer in a plain red windbreaker. They glance up at a dark cloud. Tense mood."
+  },
+  {
+   "id": "C07",
+   "image": "白い空間に、赤い風船が1つと、その上に小さな灰色の雨雲",
+   "image_en": "In the white space, one single red balloon floats, and a small dark gray rain cloud model hovers just above it. Simple, centered composition.",
+   "en": "In the white space, one single red balloon floats, and a small dark gray rain cloud model hovers just above it. Simple, centered composition."
+  },
+  {
+   "id": "C09",
+   "image": "赤い上着の男のフィギュアが、腕時計を見ながら片手を上げて合図している",
+   "image_en": "The organizer figurine in a plain red windbreaker checks a plain wristwatch and raises one hand high to give a signal. Behind him the huge net box full of balloons. A dark cloud on the horizon.",
+   "chars": [
+    "staff"
+   ],
+   "en": "The organizer figurine in a plain red windbreaker checks a plain wristwatch and raises one hand high to give a signal. Behind him the huge net box full of balloons. A dark cloud on the horizon."
+  },
+  {
+   "id": "C10",
+   "image": "足場の箱の網がはずされ、風船が一斉に上へ飛び出し始める",
+   "image_en": "The top net of the huge scaffolding box is pulled away, and a massive column of red and white balloons begins to burst upward out of the box into the sky. The crowd figurines below raise their arms.",
+   "en": "The top net of the huge scaffolding box is pulled away, and a massive column of red and white balloons begins to burst upward out of the box into the sky. The crowd figurines below raise their arms."
+  },
+  {
+   "id": "C11",
+   "image": "広場から、赤と白の風船の巨大な柱が空へ伸びている",
+   "image_en": "From the city square diorama, a gigantic tower of red and white balloons rises into the sky, taller than the office buildings. Tiny crowds below. Majestic wide view.",
+   "en": "From the city square diorama, a gigantic tower of red and white balloons rises into the sky, taller than the office buildings. Tiny crowds below. Majestic wide view."
+  },
+  {
+   "id": "C13",
+   "image": "赤い上着の男のフィギュアが、両手を上げて空の風船を見上げている",
+   "image_en": "The organizer figurine in a plain red windbreaker raises both arms in joy, looking up at a sky full of red and white balloons. Bright moment.",
+   "chars": [
+    "staff"
+   ],
+   "en": "The organizer figurine in a plain red windbreaker raises both arms in joy, looking up at a sky full of red and white balloons. Bright moment."
+  },
+  {
+   "id": "D01",
+   "image": "空に上がった風船の雲が、雨雲にぶつかって横に広がり、下に垂れ始める",
+   "image_en": "Over the miniature city, the huge cloud of red and white balloons meets a dark gray rain cloud and spreads sideways, starting to sag downward. Rain streaks begin. Dramatic, uneasy mood.",
+   "en": "Over the miniature city, the huge cloud of red and white balloons meets a dark gray rain cloud and spreads sideways, starting to sag downward. Rain streaks begin. Dramatic, uneasy mood."
+  },
+  {
+   "id": "D02",
+   "image": "雨のしずくが当たった赤い風船が、ふくらんだまま下へ沈んでいく",
+   "image_en": "Close view: several red balloons, still fully inflated, covered in cold rain droplets, are being pushed down toward gray rooftops below. Rain streaks.",
+   "en": "Close view: several red balloons, still fully inflated, covered in cold rain droplets, are being pushed down toward gray rooftops below. Rain streaks."
+  },
+  {
+   "id": "D04",
+   "image": "風に流される風船の群れが、街の模型から湖の上へ広がっていく",
+   "image_en": "A swarm of red and white balloons is blown sideways by strong wind, streaming from the miniature city out over a wide gray lake. Rain and wind streaks.",
+   "en": "A swarm of red and white balloons is blown sideways by strong wind, streaming from the miniature city out over a wide gray lake. Rain and wind streaks."
+  },
+  {
+   "id": "D06",
+   "image": "滑走路で作業員のフィギュアたちが、赤い風船を大きな袋に拾い集めている",
+   "image_en": "On the gray airport runway diorama, worker figurines in plain orange vests with no text pick up red balloons and stuff them into big plain gray bags. Light rain.",
+   "en": "On the gray airport runway diorama, worker figurines in plain orange vests with no text pick up red balloons and stuff them into big plain gray bags. Light rain."
+  },
+  {
+   "id": "D07",
+   "image": "湖ぞいの道で、無地の車が数台つながって止まり、まわりに赤い風船",
+   "image_en": "A lakeside highway diorama in light rain: a line of about ten plain 1980s cars without logos or plates has bumped into each other in a chain and stopped. Red balloons lie on the road around them. No people hurt, no damage details.",
+   "en": "A lakeside highway diorama in light rain: a line of about ten plain 1980s cars without logos or plates has bumped into each other in a chain and stopped. Red balloons lie on the road around them. No people hurt, no damage details."
+  },
+  {
+   "id": "D09",
+   "image": "緑の牧場の模型で、白い馬が前足を上げて驚き、まわりに赤い風船が落ちている",
+   "image_en": "A small green pasture diorama with a white wooden fence. A white Arabian horse rears up in fright, front legs high, as red balloons drop onto the grass around it. No people.",
+   "en": "A small green pasture diorama with a white wooden fence. A white Arabian horse rears up in fright, front legs high, as red balloons drop onto the grass around it. No people."
+  },
+  {
+   "id": "D10",
+   "image": "白い空間に、裁判所の小槌と、小さな馬の模型が並ぶ",
+   "image_en": "In the white space, a wooden judge's gavel lies on its block next to a small white horse figurine. Plain and quiet. No text.",
+   "en": "In the white space, a wooden judge's gavel lies on its block next to a small white horse figurine. Plain and quiet. No text."
+  },
+  {
+   "id": "D11",
+   "image": "遠い砂浜の模型に、しぼんだ赤い風船がたくさん打ち上げられている",
+   "image_en": "A small sandy beach diorama on a calm gray lake: many deflated, wrinkled red and white balloons lie washed up along the shoreline among pebbles and driftwood. No people.",
+   "en": "A small sandy beach diorama on a calm gray lake: many deflated, wrinkled red and white balloons lie washed up along the shoreline among pebbles and driftwood. No people."
+  },
+  {
+   "id": "E01",
+   "image": "夕方の湖の模型を、小さな木のボートが進む。黄色い雨がっぱの男が2人乗っている",
+   "image_en": "A gray lake diorama at dusk. A small wooden fishing boat with an outboard motor heads out from a stone breakwall. Two faceless middle-aged man figurines sit in it: one in a plain yellow raincoat and a plain gray cap, one in a plain orange raincoat and a plain dark-blue cap, holding fishing rods.",
+   "chars": [
+    "fishers"
+   ],
+   "en": "A gray lake diorama at dusk. A small wooden fishing boat with an outboard motor heads out from a stone breakwall. Two faceless middle-aged man figurines sit in it: one in a plain yellow raincoat and a plain gray cap, one in a plain orange raincoat and a plain dark-blue cap, holding fishing rods."
+  },
+  {
+   "id": "E02",
+   "image": "白い空間に置かれた、小さな木の釣りボートの模型を横から",
+   "image_en": "Side view of a small plain wooden fishing boat model with an outboard motor, about five meters long, placed on the white floor. Two fishing rods lean on its seat. No text or numbers on the boat.",
+   "en": "Side view of a small plain wooden fishing boat model with an outboard motor, about five meters long, placed on the white floor. Two fishing rods lean on its seat. No text or numbers on the boat."
+  },
+  {
+   "id": "E03",
+   "image": "夜の湖、高い波。遠くに小さなボートの影",
+   "image_en": "A dark night lake diorama with high rough waves and heavy wind. Far away, the small silhouette of a tiny fishing boat tossed on the waves. Cold blue light. No people visible clearly.",
+   "en": "A dark night lake diorama with high rough waves and heavy wind. Far away, the small silhouette of a tiny fishing boat tossed on the waves. Cold blue light. No people visible clearly."
+  },
+  {
+   "id": "E04",
+   "image": "朝の家の模型の玄関で、女性のフィギュアが電話の受話器を持っている",
+   "image_en": "A small 1980s house diorama in the morning with the front wall removed: inside, a faceless woman figurine in a plain cardigan holds a corded telephone receiver to her ear, standing by the kitchen. Worried mood.",
+   "en": "A small 1980s house diorama in the morning with the front wall removed: inside, a faceless woman figurine in a plain cardigan holds a corded telephone receiver to her ear, standing by the kitchen. Worried mood."
+  },
+  {
+   "id": "E06",
+   "image": "湖の上を、紺の上着の隊員が乗った小さな船と、白いヘリコプターが進む",
+   "image_en": "A gray lake diorama: a small plain dark-blue rescue boat with figurines in plain navy jackets and orange life vests (no patches) moves across the water, and a small plain white helicopter with no markings flies above it.",
+   "chars": [
+    "guard"
+   ],
+   "en": "A gray lake diorama: a small plain dark-blue rescue boat with figurines in plain navy jackets and orange life vests (no patches) moves across the water, and a small plain white helicopter with no markings flies above it."
+  },
+  {
+   "id": "E07",
+   "image": "白い空間に、浮き輪とロープと小さな救助艇の模型",
+   "image_en": "In the white space, a plain orange-and-white life ring, a coiled rope and a small plain rescue boat model are arranged neatly. No text or emblems.",
+   "en": "In the white space, a plain orange-and-white life ring, a coiled rope and a small plain rescue boat model are arranged neatly. No text or emblems."
+  },
+  {
+   "id": "E08",
+   "image": "捜索の船の上から、赤い風船が雨のように降ってくる",
+   "image_en": "Above the small dark-blue rescue boat on the gray lake, red and white balloons rain down from the sky. The figurines in navy jackets look up. Rain streaks.",
+   "chars": [
+    "guard"
+   ],
+   "en": "Above the small dark-blue rescue boat on the gray lake, red and white balloons rain down from the sky. The figurines in navy jackets look up. Rain streaks."
+  },
+  {
+   "id": "E09",
+   "image": "上から見た湖の水面いちめんに、赤と白の風船が浮かんでいる",
+   "image_en": "Top-down view of a gray lake surface completely covered by tens of thousands of floating red and white balloons, packed edge to edge. A tiny rescue boat is a small dot among them.",
+   "en": "Top-down view of a gray lake surface completely covered by tens of thousands of floating red and white balloons, packed edge to edge. A tiny rescue boat is a small dot among them."
+  },
+  {
+   "id": "E10",
+   "image": "船の上から双眼鏡で水面を見る隊員。水面には丸い風船ばかり",
+   "image_en": "A figurine in a plain navy jacket and orange life vest looks through binoculars from the edge of the rescue boat at the lake surface, which is full of round floating red and white balloons. Searching, worried pose.",
+   "chars": [
+    "guard"
+   ],
+   "en": "A figurine in a plain navy jacket and orange life vest looks through binoculars from the edge of the rescue boat at the lake surface, which is full of round floating red and white balloons. Searching, worried pose."
+  },
+  {
+   "id": "E11",
+   "image": "白いヘリコプターの模型が、宙に浮かぶ無数の風船の間を飛ぶ",
+   "image_en": "A small plain white helicopter model with no markings flies through a dense swarm of floating red and white balloons in the gray sky, like flying through an asteroid field.",
+   "en": "A small plain white helicopter model with no markings flies through a dense swarm of floating red and white balloons in the gray sky, like flying through an asteroid field."
+  },
+  {
+   "id": "E12",
+   "image": "夕方の岸で、紺の上着の隊員のフィギュアたちが、船を岸につないでいる",
+   "image_en": "At dusk on a gray lakeshore, figurines in plain navy jackets tie the small rescue boat to the dock and walk away slowly. Sad, tired mood.",
+   "chars": [
+    "guard"
+   ],
+   "en": "At dusk on a gray lakeshore, figurines in plain navy jackets tie the small rescue boat to the dock and walk away slowly. Sad, tired mood."
+  },
+  {
+   "id": "E13",
+   "image": "灰色の岸辺に、白い布が2つ置かれている。遠くに湖",
+   "image_en": "On a gray pebble lakeshore, two plain white sheets lie on the ground side by side, covering shapes. A single small red deflated balloon lies nearby. Quiet, respectful, sad. No people, no body parts visible.",
+   "en": "On a gray pebble lakeshore, two plain white sheets lie on the ground side by side, covering shapes. A single small red deflated balloon lies nearby. Quiet, respectful, sad. No people, no body parts visible."
+  },
+  {
+   "id": "E15",
+   "image": "白い空間に、封をした灰色の封筒が1つ（文字は無い）",
+   "image_en": "In the white space, one sealed plain gray envelope lies alone on a small table, closed with a red wax seal with no symbol. Spotlight. No text.",
+   "en": "In the white space, one sealed plain gray envelope lies alone on a small table, closed with a red wax seal with no symbol. Spotlight. No text."
+  },
+  {
+   "id": "F02",
+   "image": "白い空間に、無地の画面のスマホとテレビの模型がたくさん並び、どれも赤い風船の絵を映している",
+   "image_en": "In the white space, many small phones and old TV models stand in rows, every screen showing the same picture of red balloons over a lake. No text on screens.",
+   "en": "In the white space, many small phones and old TV models stand in rows, every screen showing the same picture of red balloons over a lake. No text on screens."
+  },
+  {
+   "id": "F03",
+   "image": "紺の上着の年配の男のフィギュアが、岸の小さな事務所の窓から湖を見ている",
+   "image_en": "Inside a small plain lakeside office diorama, the older faceless man figurine with short gray hair in a plain navy jacket with no patches stands at a window, looking out at the gray lake. A plain desk with blank papers. No text or emblems.",
+   "en": "Inside a small plain lakeside office diorama, the older faceless man figurine with short gray hair in a plain navy jacket with no patches stands at a window, looking out at the gray lake. A plain desk with blank papers. No text or emblems."
+  },
+  {
+   "id": "F05",
+   "image": "古い新聞社の机で、眼鏡の男のフィギュアが原稿を書いている（文字は読めない）",
+   "image_en": "At a newspaper office desk diorama, a faceless man figurine with glasses and a plain white shirt types on an old typewriter. Blank papers pile around him. No readable text.",
+   "en": "At a newspaper office desk diorama, a faceless man figurine with glasses and a plain white shirt types on an old typewriter. Blank papers pile around him. No readable text."
+  },
+  {
+   "id": "F07a",
+   "image": "昼の湖。防波堤のそばの水面が赤と白の風船でおおわれている（F07 の前の絵）",
+   "image_en": "Daytime view of a gray lake by a stone breakwall, its surface covered by floating red and white balloons. Overcast sky. No boat, no people.",
+   "en": "Daytime view of a gray lake by a stone breakwall, its surface covered by floating red and white balloons. Overcast sky. No boat, no people."
+  },
+  {
+   "id": "F07",
+   "image": "嵐の夜の同じ湖。風船は1つも無く、空っぽのボートだけが波に揺れている（前の絵 F07a から切り替える）",
+   "image_en": "The same gray lake by the stone breakwall, but at night in a storm: no balloons at all, high dark waves, and only the small empty wooden fishing boat tossed on the water. Cold blue light, heavy rain.",
+   "en": "The same gray lake by the stone breakwall, but at night in a storm: no balloons at all, high dark waves, and only the small empty wooden fishing boat tossed on the water. Cold blue light, heavy rain."
+  },
+  {
+   "id": "F09",
+   "image": "白い空間に、針の無い時計の模型",
+   "image_en": "In the white space, a plain round clock model with no hands and no numbers on its face, under a dim spotlight. Mysterious mood.",
+   "en": "In the white space, a plain round clock model with no hands and no numbers on its face, under a dim spotlight. Mysterious mood."
+  },
+  {
+   "id": "F13",
+   "image": "白い空間で、赤い風船の模型と空のボートの模型が、赤い糸で結ばれている",
+   "image_en": "In the white space, a red balloon model and a small empty boat model sit apart on the floor, tied together by one long red thread stretched between them.",
+   "en": "In the white space, a red balloon model and a small empty boat model sit apart on the floor, tied together by one long red thread stretched between them."
+  },
+  {
+   "id": "G01",
+   "image": "白い台の上に、厚い本の模型が開いている。ページの上に小さな赤い風船（文字は読めない）",
+   "image_en": "On a white stand, a thick open record book model with blank pages and no readable text. A tiny red balloon floats just above the open pages. Spotlight.",
+   "en": "On a white stand, a thick open record book model with blank pages and no readable text. A tiny red balloon floats just above the open pages. Spotlight."
+  },
+  {
+   "id": "G03",
+   "image": "白い台座の上のトロフィーに、灰色の布がかけられている",
+   "image_en": "On a white pedestal, the gold trophy model is now covered with a plain gray cloth. The red balloon that was tied to it lies deflated at the base.",
+   "en": "On a white pedestal, the gold trophy model is now covered with a plain gray cloth. The red balloon that was tied to it lies deflated at the base."
+  },
+  {
+   "id": "G04",
+   "image": "白い空間に、からっぽの透明の募金箱と、赤い下向きの矢印の模型",
+   "image_en": "In the white space, the big transparent donation box model is now empty. Next to it, a large red arrow model points downward. No text.",
+   "en": "In the white space, the big transparent donation box model is now empty. Next to it, a large red arrow model points downward. No text."
+  },
+  {
+   "id": "G05",
+   "image": "白い空間に、赤い風船の模型と、その前に大きな赤い×印",
+   "image_en": "In the white space, a single red balloon model stands on a short string, and in front of it a big flat red X mark model stands upright. Clean, simple composition.",
+   "en": "In the white space, a single red balloon model stands on a short string, and in front of it a big flat red X mark model stands upright. Clean, simple composition."
+  },
+  {
+   "id": "G06",
+   "image": "灰色の岸で、ごみ袋を持ったフィギュアたちが、しぼんだ赤い風船を拾っている",
+   "image_en": "On a gray rocky lakeshore diorama, a few faceless figurines in plain gray jackets pick up deflated red and white balloons and put them into plain gray trash bags. Overcast, quiet mood.",
+   "en": "On a gray rocky lakeshore diorama, a few faceless figurines in plain gray jackets pick up deflated red and white balloons and put them into plain gray trash bags. Overcast, quiet mood."
+  },
+  {
+   "id": "H01",
+   "image": "子どもと高校生のフィギュアが、1つの赤い風船を手放す瞬間",
+   "image_en": "A small child figurine and a teenage figurine in a plain white t-shirt stand together on the white floor, both just letting go of one red balloon that starts to rise. Gentle, hopeful mood.",
+   "chars": [
+    "students"
+   ],
+   "en": "A small child figurine and a teenage figurine in a plain white t-shirt stand together on the white floor, both just letting go of one red balloon that starts to rise. Gentle, hopeful mood."
+  },
+  {
+   "id": "H02",
+   "image": "遠い畑の模型に、しぼんだ赤い風船が1つだけ落ちている",
+   "image_en": "A wide quiet farm field diorama far from any city. In the middle of the field, one single deflated red balloon lies on the grass with its string. Soft light, lonely mood.",
+   "en": "A wide quiet farm field diorama far from any city. In the middle of the field, one single deflated red balloon lies on the grass with its string. Soft light, lonely mood."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S014_記者の質問",
+ "portrait": true,
+ "made": "2026-11-07 03:40",
+ "style_en": "白い何もない空間に置いたミニチュアの模型（ジオラマ）の3DCG。人物は顔の細かい所が無い、つるんとしたフィギュア。色は白と灰色が中心で、大事な物だけ赤",
+ "avoid_en": "",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "コルクボードに顔を黒く塗った写真が10枚、赤いピン",
+   "image_en": "a miniature cork board in the middle of the frame with ten plain photos pinned in two rows by red push pins; the face area of every photo is painted solid black, no text, no numbers, a single spotlight, dim gray background",
+   "en": "a miniature cork board in the middle of the frame with ten plain photos pinned in two rows by red push pins; the face area of every photo is painted solid black, no text, no numbers, a single spotlight, dim gray background"
+  },
+  {
+   "id": "a02",
+   "image": "1940年代の事務所で、帽子の記者がメモ帳を手に机の向こうの男に話しかける",
+   "image_en": "a 1940s office diorama in the lower-middle of the frame: a faceless reporter figurine in a plain gray suit and fedora hat holds a small notepad and leans toward a faceless man figurine in a dark suit sitting behind a wooden desk, empty space above their heads, no text",
+   "en": "a 1940s office diorama in the lower-middle of the frame: a faceless reporter figurine in a plain gray suit and fedora hat holds a small notepad and leans toward a faceless man figurine in a dark suit sitting behind a wooden desk, empty space above their heads, no text"
+  },
+  {
+   "id": "a03",
+   "image": "記者のメモ帳の上に赤い？の形",
+   "image_en": "close view in the middle of the frame: an open blank notepad and a pencil on a wooden desk, a big red question mark shape standing on the notepad, no text",
+   "en": "close view in the middle of the frame: an open blank notepad and a pencil on a wooden desk, a big red question mark shape standing on the notepad, no text"
+  },
+  {
+   "id": "a04",
+   "image": "古い新聞の束が積まれ、小さな人たちが読んでいる（文字は読めない）",
+   "image_en": "a stack of old newspapers with no readable text in the middle of the frame, several small faceless figurines in 1940s coats and hats stand around it reading copies, empty space above their heads",
+   "en": "a stack of old newspapers with no readable text in the middle of the frame, several small faceless figurines in 1940s coats and hats stand around it reading copies, empty space above their heads"
+  },
+  {
+   "id": "a05",
+   "image": "机の上に、革表紙の台帳が開かれている（文字は読めない）",
+   "image_en": "a thick old leather ledger lying open on a wooden desk in the middle of the frame, blank pages with no readable text, a fountain pen beside it, warm spotlight",
+   "en": "a thick old leather ledger lying open on a wooden desk in the middle of the frame, blank pages with no readable text, a fountain pen beside it, warm spotlight"
+  },
+  {
+   "id": "a06",
+   "image": "食卓で新聞を広げた男のフィギュアが、写真を指さしている（文字は読めない）",
+   "image_en": "a small 1950s kitchen diorama in the lower-middle of the frame: a faceless man figurine in a plain white shirt sits at a table holding an open newspaper with no readable text and points at a small photo on it whose face area is solid black; a red telephone on the table, empty space above his head",
+   "en": "a small 1950s kitchen diorama in the lower-middle of the frame: a faceless man figurine in a plain white shirt sits at a table holding an open newspaper with no readable text and points at a small photo on it whose face area is solid black; a red telephone on the table, empty space above his head"
+  },
+  {
+   "id": "a07",
+   "image": "小さな人のフィギュアがたくさん並び、その3割ほどが赤い服",
+   "image_en": "a big crowd of small faceless figurines standing in neat rows in the middle of the frame; about one third of them wear red, the rest gray, seen from slightly above",
+   "en": "a big crowd of small faceless figurines standing in neat rows in the middle of the frame; about one third of them wear red, the rest gray, seen from slightly above"
+  },
+  {
+   "id": "a10",
+   "image": "住宅街の掲示板の模型の前で、女性のフィギュアが立ち止まる（貼り紙の文字は無い）",
+   "image_en": "a quiet suburban street diorama in the lower-middle of the frame: a faceless woman figurine in a plain coat stops in front of a small community board with blank posters whose face areas are solid black, holding a phone, empty space above her head, no text",
+   "en": "a quiet suburban street diorama in the lower-middle of the frame: a faceless woman figurine in a plain coat stops in front of a small community board with blank posters whose face areas are solid black, holding a phone, empty space above her head, no text"
+  }
+ ]
+}
