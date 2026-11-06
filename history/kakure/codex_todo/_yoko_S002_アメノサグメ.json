@@ -1,0 +1,48 @@
+{
+ "ch": "kakure",
+ "work": "_yoko_S002_アメノサグメ",
+ "portrait": false,
+ "made": "2026-11-07 02:32",
+ "style_en": "日本のアニメ調、くっきりした主線、落ち着いた色、少し暗めの光、古墳時代の日本（みずら・衣褌・勾玉）、和紙のような淡い質感。全話で同じ絵柄",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "amenosagume": {
+   "desc_en": "Amenosagume, a slender goddess of ancient Japan in her late 20s, long straight black hair tied low at the back, calm unreadable eyes, a pale white Kofun-period tunic with a long pleated skirt in dull indigo, a thin string of pale green magatama beads",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "Z01",
+   "image": "夕暮れの深い森の中、画面の真ん中に一人の女神が静かに立ち、木の枝を見上げている。全身、表情は読み取れない",
+   "chars": [
+    "amenosagume"
+   ],
+   "en": ""
+  },
+  {
+   "id": "Z02",
+   "image": "館の門の前の大きな桂の木の枝に一羽の雉がとまり、木の下で女神が見上げ、そばに若い神が立っている。朝の光",
+   "chars": [
+    "amenosagume"
+   ],
+   "en": ""
+  },
+  {
+   "id": "Z03",
+   "image": "若い神が大きな弓を引きしぼり、木の上の鳥を狙っている。朝の光、画面の真ん中に大きく",
+   "en": ""
+  },
+  {
+   "id": "Z04",
+   "image": "夜明け前の暗い空から、一本の光る矢がまっすぐ下へ落ちてくる。下に高い床の館の屋根と、中で眠る若い神の影。血は描かない",
+   "en": ""
+  },
+  {
+   "id": "Z05",
+   "image": "海の近くの小さな古い神社、木の鳥居、松の木、夕方、人はいない、文字は無い",
+   "en": ""
+  }
+ ]
+}

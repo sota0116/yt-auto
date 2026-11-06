@@ -1,0 +1,148 @@
+{
+ "ch": "kakure",
+ "work": "_chara_001_ヒルコ",
+ "portrait": false,
+ "made": "2026-11-07 02:32",
+ "style_en": "日本のアニメ調、くっきりした主線、落ち着いた色、明るく均一な光、古墳時代の日本（みずら・衣褌・勾玉）。全話で同じ絵柄。背景は必ず真っ白",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "izanagi": {
+   "desc_en": "Izanagi, a dignified young male god of ancient Japan in his mid-20s, black hair tied in mizura loops beside both ears, clean-shaven, white Kofun-period kinu tunic with a dark blue sash and white hakama trousers tied below the knees with red cords, a green magatama bead necklace, a straight sword at the waist",
+   "channel": true
+  },
+  "izanami": {
+   "desc_en": "Izanami, a gentle young goddess of ancient Japan in her early 20s, long black hair with the top tied in a loop, white Kofun-period kinu tunic over a long pale vermilion mo skirt, a sheer pale scarf over the shoulders, a green magatama bead necklace, soft kind eyes",
+   "channel": true
+  },
+  "amaterasu": {
+   "desc_en": "Amaterasu, the sun goddess, a serene young woman with very long straight black hair and a thin golden circlet, white and gold Kofun-period robe with a long white mo skirt, a magatama bead necklace, a soft golden glow around her",
+   "channel": true
+  },
+  "hiruko_god": {
+   "desc_en": "Hiruko as a god, a slender young man about 18 years old with a calm, slightly lonely face, black hair in mizura loops, pale sea-blue and white Kofun-period tunic and trousers, a string of white shells as a necklace, a faint sea-blue glow, barefoot",
+   "channel": true
+  },
+  "ebisu": {
+   "desc_en": "Ebisu, the god of fortune, a plump cheerful elderly man with a round smiling face and narrow laughing eyes, a tall black eboshi hat, a kariginu hunting robe in muted gold and green, holding a bamboo fishing rod in his right hand and a large red sea bream under his left arm",
+   "channel": true
+  },
+  "fisher": {
+   "desc_en": "a humble fisherman of old Japan, middle-aged, tanned skin, a cloth headband, a simple patched indigo short kimono tied with a rope belt, bare legs and straw sandals",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "ebisu_smile",
+   "image": "えびす様が、大きな鯛を片腕に抱え、にっこり笑って立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "ebisu"
+   ],
+   "en": ""
+  },
+  {
+   "id": "hiruko_boat",
+   "image": "葦を束ねて作った小さな舟。中に白い布にくるまれた赤ん坊が眠っている。舟を少し斜め横から見た姿。人は赤ん坊だけ。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "en": ""
+  },
+  {
+   "id": "hiruko_baby",
+   "image": "白い布にくるまれた赤ん坊が、目を閉じて眠っている。赤ん坊だけで、抱いている人はいない。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "en": ""
+  },
+  {
+   "id": "hiruko_child_sit",
+   "image": "3歳くらいの子どもが、両脚を前に投げ出して座り、立てずに上を見上げている。古墳時代の白い衣。さびしそうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "en": ""
+  },
+  {
+   "id": "hiruko_god",
+   "image": "ヒルコの神が、穏やかにほほえんで、まっすぐ立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "hiruko_god"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanagi_stand",
+   "image": "イザナキが、まっすぐ立っている全身。落ち着いた顔。腰の剣はまっすぐな古い剣。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanagi_frown",
+   "image": "イザナキが、眉をひそめ、腕を組んで立っている全身。不満そうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanagi_point",
+   "image": "イザナキが、片手で前を指さして、強く何かを告げている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanami_stand",
+   "image": "イザナミが、まっすぐ立っている全身。やさしい顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanami_speak",
+   "image": "イザナミが、片手を胸の前にそえ、口を開いて語りかけている全身。うれしそうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "izanami_down",
+   "image": "イザナミが、うつむいて、悲しそうに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "izanami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "amaterasu_stand",
+   "image": "アマテラスが、背筋をのばし、堂々と立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "amaterasu"
+   ],
+   "en": ""
+  },
+  {
+   "id": "fisher_net",
+   "image": "漁師が、両手で重い網をたぐり寄せ、ふんばっている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "fisher"
+   ],
+   "en": ""
+  },
+  {
+   "id": "fisher_surprise",
+   "image": "漁師が、目を見開いて驚き、少しのけぞっている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "fisher"
+   ],
+   "en": ""
+  },
+  {
+   "id": "fisher_pray",
+   "image": "漁師が、両手を合わせて目を閉じ、祈っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "fisher"
+   ],
+   "en": ""
+  }
+ ]
+}

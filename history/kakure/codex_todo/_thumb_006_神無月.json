@@ -1,0 +1,35 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_006_神無月",
+ "portrait": false,
+ "made": "2026-11-07 02:32",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, slightly dim lighting, a faint washi-paper texture. The same art style in every episode.",
+ "avoid_en": "any text, letters, numbers, logos, modern buildings or clothes, Chinese-style clothing, nudity, blood",
+ "rules": {},
+ "characters": {
+  "ebisu": {
+   "desc_en": "Ebisu, the god of fortune, a plump cheerful elderly man with a round smiling face and narrow laughing eyes, a tall black eboshi hat, a kariginu hunting robe in muted gold and green, holding a bamboo fishing rod in his right hand and a large red sea bream under his left arm",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "左右2つに分けた比べる絵。左半分：夜の暗い海の上を、たくさんの光の玉が尾を引いて遠くの島（出雲）へ飛んでいく、冷たい青い光。右半分：誰もいない夕暮れの村の家の縁側に、えびす様がひとりで座り、鯛を抱えてちょっと困ったように笑っている、暖かい行灯の光。2つとも画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い空と暗い地面だけで何も描かない",
+   "image_en": "A split comparison picture. LEFT half: over a dark night sea, many glowing orbs of light with trailing tails fly toward a distant island (Izumo), cold blue light. RIGHT half: in an empty village at dusk, Ebisu sits alone on the veranda of a house, holding a red sea bream, smiling a little awkwardly, warm paper-lantern light. Both are drawn large at the vertical middle of the picture; the top quarter and the bottom quarter of the picture show only dark sky and dark ground with nothing drawn.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "A split comparison picture. LEFT half: over a dark night sea, many glowing orbs of light with trailing tails fly toward a distant island (Izumo), cold blue light. RIGHT half: in an empty village at dusk, Ebisu sits alone on the veranda of a house, holding a red sea bream, smiling a little awkwardly, warm paper-lantern light. Both are drawn large at the vertical middle of the picture; the top quarter and the bottom quarter of the picture show only dark sky and dark ground with nothing drawn."
+  },
+  {
+   "id": "T2",
+   "image": "画面の真ん中に、えびす様が鯛を抱えたまま片手を上げて、夜空へ飛び去っていくたくさんの光の玉を見送っている上半身を大きく。光の玉は画面の左上へ遠ざかる。えびす様には暖かい光、まわりは暗い村と海。画面の上の4分の1と下の4分の1は暗い空と暗い地面だけで何も描かない",
+   "image_en": "In the center of the picture, a large upper-body view of Ebisu holding a red sea bream and raising one hand to see off many glowing orbs of light flying away into the night sky toward the upper left. Warm light on Ebisu, a dark village and sea around him. The top quarter and the bottom quarter of the picture show only dark sky and dark ground with nothing drawn.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "In the center of the picture, a large upper-body view of Ebisu holding a red sea bream and raising one hand to see off many glowing orbs of light flying away into the night sky toward the upper left. Warm light on Ebisu, a dark village and sea around him. The top quarter and the bottom quarter of the picture show only dark sky and dark ground with nothing drawn."
+  }
+ ]
+}

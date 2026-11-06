@@ -1,0 +1,42 @@
+{
+ "ch": "kakure",
+ "work": "_yoko_S010_八咫烏",
+ "portrait": false,
+ "made": "2026-11-07 02:32",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, slightly dim lighting, a faint washi-paper texture, ancient Japan of the Kofun period. The same art style in every episode.",
+ "avoid_en": "any text, letters, numbers, logos, emblems, modern buildings or clothes, Chinese-style clothing, nudity, blood, a three-legged bird, visible bird feet",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "Z01",
+   "image": "夜明けの熊野の深い山並みの上を、翼を大きく広げた大きな黒い烏が1羽、こちらへ向かって飛ぶ。足は体の下に隠れて見えない。朝日の光が翼のふちを照らす。烏は画面の真ん中",
+   "image_en": "At dawn, one large black crow with wings spread wide flies toward the viewer above the deep layered mountains of Kumano. Its feet are tucked under its body and not visible. Morning sunlight rims its wings. The crow is in the center of the picture.",
+   "en": "At dawn, one large black crow with wings spread wide flies toward the viewer above the deep layered mountains of Kumano. Its feet are tucked under its body and not visible. Morning sunlight rims its wings. The crow is in the center of the picture."
+  },
+  {
+   "id": "Z02",
+   "image": "霧の深い山道を、古墳時代の服と弓を持った兵たちの小さな列が進む。その先の空で、大きな黒い烏が振り返りながら道を導く。足は見えない。烏は画面の真ん中",
+   "image_en": "On a mountain path deep in fog, a small line of soldiers in Kofun-period clothes carrying bows walks forward; in the sky ahead a large black crow looks back as it leads the way. Its feet are not visible. The crow is in the center of the picture, the soldiers are small.",
+   "en": "On a mountain path deep in fog, a small line of soldiers in Kofun-period clothes carrying bows walks forward; in the sky ahead a large black crow looks back as it leads the way. Its feet are not visible. The crow is in the center of the picture, the soldiers are small."
+  },
+  {
+   "id": "Z03",
+   "image": "夜の古代の陣、かがり火、太い木の柵の上に大きな黒い烏がとまり、くちばしを大きく開けて鳴いている。陣の中から、弓を引きしぼる男の黒い影が烏をねらう。烏の足は柵の陰で見えない。烏は画面の真ん中",
+   "image_en": "An ancient Japanese camp at night with bonfires: a large black crow perches on top of a thick wooden palisade, beak wide open, crying out. Inside the camp, the dark silhouette of a man draws a bow and aims at the crow. The crow's feet are hidden behind the palisade. The crow is in the center of the picture.",
+   "en": "An ancient Japanese camp at night with bonfires: a large black crow perches on top of a thick wooden palisade, beak wide open, crying out. Inside the camp, the dark silhouette of a man draws a bow and aims at the crow. The crow's feet are hidden behind the palisade. The crow is in the center of the picture."
+  },
+  {
+   "id": "Z04",
+   "image": "朝の熊野の山あいにある古い神社の木の社殿、杉の大木、霧が流れる、人はいない。社殿は画面の真ん中",
+   "image_en": "A wooden shrine hall of an old shrine in the mountains of Kumano in the morning, huge cedar trees, drifting mist. No people. The shrine hall is in the center of the picture.",
+   "en": "A wooden shrine hall of an old shrine in the mountains of Kumano in the morning, huge cedar trees, drifting mist. No people. The shrine hall is in the center of the picture."
+  },
+  {
+   "id": "Z05",
+   "image": "夕焼けの空に、大きな赤い太陽。太陽の円の中に、黒い烏の影が1羽だけ浮かぶ。古い東洋の絵のような雰囲気、文字は無い。太陽は画面の真ん中",
+   "image_en": "A huge red sun in a sunset sky; inside the disc of the sun floats the black silhouette of a single crow. The feeling of an old East Asian painting, no letters. The sun is in the center of the picture.",
+   "en": "A huge red sun in a sunset sky; inside the disc of the sun floats the black silhouette of a single crow. The feeling of an old East Asian painting, no letters. The sun is in the center of the picture."
+  }
+ ]
+}
