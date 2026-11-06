@@ -243,6 +243,56 @@ def to_png(src, dst, portrait=False):
     im.save(dst)
 
 
+CODEX_URL = os.environ.get("CODEX_IMAGES_URL", "https://github.com/sota0116/yt-auto/releases/download/codex-images/")
+
+
+def codex_name(ch, work, cut):
+    """PC の Codex（ChatGPT の画像生成）で先に作った絵の名前（make_images_codex.py と同じ決まり）。
+    場面の文が変わったら別の名前になり、古い絵は使わない"""
+    import hashlib
+    h = lambda x, n: hashlib.sha1(x.encode("utf-8")).hexdigest()[:n]
+    return f"{ch}__{h(os.path.basename(os.path.normpath(work)), 10)}__{cut['id']}__{h(cut.get('image_en') or cut.get('image', ''), 6)}.jpg"
+
+
+def codex_fill(work, ch, cuts, ids, log, portrait):
+    """2026-11-07：Lovart のクレジットが 11/16 まで0で、無料モードでは1本100枚以上が終わらないため、
+    PC の Codex で作って GitHub の release（codex-images）に置いた絵を先に受け取る。無い絵（404）は今までどおり Lovart で作る。
+    鍵は要らない（公開の release）。CODEX_IMAGES_URL を空にすると使わない"""
+    if not CODEX_URL or not ids:
+        return []
+    import urllib.request, urllib.error, tempfile
+    from concurrent.futures import ThreadPoolExecutor
+    img = os.path.join(work, "images")
+
+    def one(i):
+        try:
+            with urllib.request.urlopen(CODEX_URL + codex_name(ch, work, cuts[i]), timeout=60) as r:
+                data = r.read()
+        except urllib.error.HTTPError as e:
+            return None if e.code == 404 else f"{i} Codex の絵を受け取れない：{e.code}"
+        except Exception as e:
+            return f"{i} Codex の絵を受け取れない：{type(e).__name__}"
+        with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as f:
+            f.write(data)
+        try:
+            to_png(f.name, os.path.join(img, i + ".png"), portrait)
+        finally:
+            os.remove(f.name)
+        return i
+
+    with ThreadPoolExecutor(8) as ex:
+        res = list(ex.map(one, ids))
+    got = [r for r in res if r in ids]
+    for r in res:
+        if r and r not in ids:
+            print(r, flush=True)
+    for i in got:
+        log[i] = {"状態": "できた", "元": "codex", "回": log.get(i, {}).get("回", 1)}
+    if got:
+        print(f"Codex で作ってあった絵を {len(got)} 枚受け取りました", flush=True)
+    return got
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
@@ -253,6 +303,23 @@ def main():
     a.add_argument("--fix", action="append", default=[], help="<id>=<追加の指示>（絵ゲートで落ちた所の作り直し用）")
     a.add_argument("--boost", action="store_true", help="速いモードの間だけ（run_daily.py が使う）。--only の残りを頼み直し、使った量を数える")
     a = a.parse_args()
+    if not a.force and not a.boost:  # Codex で作ってあった絵を先に受け取る。全部そろえば Lovart は呼ばない（2026-11-07）
+        s0 = json.load(open(os.path.join(a.work, "script.json"), encoding="utf-8"))
+        fx0 = {f.split("=", 1)[0] for f in a.fix}
+        only0 = set(filter(None, a.only.split(","))) | fx0
+        cuts0 = {c["id"]: c for c in s0["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")
+                 and (not only0 or c["id"] in only0)}
+        img0 = os.path.join(a.work, "images")
+        os.makedirs(img0, exist_ok=True)
+        need0 = [i for i in cuts0 if i not in fx0 and not os.path.exists(os.path.join(img0, i + ".png"))]
+        lp0 = os.path.join(img0, "_lovart.json")
+        log0 = json.load(open(lp0, encoding="utf-8")) if os.path.exists(lp0) else {}
+        ch0 = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
+        if codex_fill(a.work, ch0, cuts0, need0, log0, s0.get("format") == "short"):
+            json.dump(log0, open(lp0, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if not fx0 and all(os.path.exists(os.path.join(img0, i + ".png")) for i in cuts0):
+            print(f"できた {len(cuts0)} 枚／できていない 0 枚 []（Lovart は呼んでいない）")
+            sys.exit(0)
     sk = client()
     free = lambda: is_free(sk)
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))

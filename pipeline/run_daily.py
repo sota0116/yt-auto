@@ -674,10 +674,31 @@ def make_one(ch, st, upload, kind=None):
     if T("charts", "make_charts_job.py"):
         step("charts", lambda: run(work, "charts", [T("charts", "make_charts_job.py"), work], ch))
 
+    def codex_ready():
+        """2026-11-07：絵の段へ戻すのは1回だけだが、PC の Codex（make_images_codex.py）が足りない絵を release に置いた後なら、
+        もう一度戻して受け取る（Lovart が0の間、okinu S113・nihongi S114 が「まだ絵が無いカット」で止まり続けたため）"""
+        try:
+            import urllib.request
+            import make_images_lovart as ML
+        except Exception:
+            return False
+        if not ML.CODEX_URL:
+            return False
+        s = jload(os.path.join(work, "script.json"), {})
+        for c in s.get("cuts", []):
+            if not c.get("image") or c.get("same_as") or c.get("chart") or os.path.exists(os.path.join(work, "images", c["id"] + ".png")):
+                continue
+            try:
+                urllib.request.urlopen(ML.CODEX_URL + ML.codex_name(ch, work, c), timeout=30).close()
+                return True
+            except Exception:
+                continue
+        return False
+
     def images_back():
         """絵が足りないのに「絵の段は済み」のままだと、同じ所で毎回止まる（2026-10-30 nihongi L101 は J05・J06 が待ちのまま、okinu 101 は D01 が
         Lovart のエラーで2回失敗したまま止まり続けた）。絵の段へ1回だけ戻す。失敗の印は消して頼み直し、待ちの絵は受け取り直す"""
-        if st.get("images_back"):
+        if st.get("images_back") and not codex_ready():
             return
         st["images_back"] = True
         lp = os.path.join(work, "images", "_lovart.json")
