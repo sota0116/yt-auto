@@ -1,0 +1,249 @@
+{
+ "title": "【60代】袋分けの封筒から借りてる人、空にしないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。名乗らず、物（袋分けの封筒）を主役にして話す",
+  "人物は C10 の答えの場面だけ（さわこ・名乗らない）。物語の場面は入れない",
+  "封筒には字を書かない（無地の白い封筒）。金額は食費の封筒から足りない分の千円だけ"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "袋分けの封筒で、お金が逃げるこれをしていませんか。",
+   "tts_text": "ふくろわけのふうとうで、お金が逃げるこれをしていませんか。",
+   "subs": [
+    "袋分けの封筒で、",
+    "お金が逃げる\nこれを",
+    "していませんか。"
+   ],
+   "hook": "封筒の\nこれはNG",
+   "image_en": "Vertical close-up of an older woman's hands on a wooden kitchen table, fanning out five plain blank white paper envelopes with no writing on them; one envelope in the middle is open and visibly empty. Warm evening light. The envelopes fill more than half of the frame.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "これ"
+   ],
+   "image": "Vertical close-up of an older woman's hands on a wooden kitchen table, fanning out five plain blank white paper envelopes with no writing on them; one envelope in the middle is open and visibly empty. Warm evening light. The envelopes fill more than half of the frame."
+  },
+  {
+   "id": "C02",
+   "narration": "食費の封筒が、月末に足りなくなる。",
+   "tts_text": "しょくひのふうとうが、げつまつに足りなくなる。",
+   "subs": [
+    "食費の封筒が、",
+    "月末に\n足りなくなる。"
+   ],
+   "image_en": "Vertical close-up of a single plain blank white envelope lying open on a wooden table, with only one thin folded paper bill without visible design peeking out. Soft light. The envelope fills more than half of the frame.",
+   "image": "Vertical close-up of a single plain blank white envelope lying open on a wooden table, with only one thin folded paper bill without visible design peeking out. Soft light. The envelope fills more than half of the frame."
+  },
+  {
+   "id": "C03",
+   "narration": "そこで、雑費の封筒から千円借りる。",
+   "tts_text": "そこで、ざっぴのふうとうから、せんえん借りる。",
+   "subs": [
+    "そこで、\n雑費の封筒から",
+    "千円借りる。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hand pulling one folded plain paper bill without visible design out of one plain blank white envelope and moving it toward another plain blank white envelope on a wooden table. No faces. The envelopes fill more than half of the frame.",
+   "image": "Vertical close-up of an older woman's hand pulling one folded plain paper bill without visible design out of one plain blank white envelope and moving it toward another plain blank white envelope on a wooden table. No faces. The envelopes fill more than half of the frame."
+  },
+  {
+   "id": "C04",
+   "narration": "気づけば、借りた方の封筒が空っぽ。",
+   "tts_text": "気づけば、かりたほうのふうとうが、からっぽ。",
+   "subs": [
+    "気づけば、",
+    "借りた方の\n封筒が空っぽ。"
+   ],
+   "image_en": "Vertical extreme close-up of one plain blank white paper envelope held open by fingertips, completely empty inside, the inner paper softly lit and slightly creased. The empty envelope fills most of the frame.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "空っぽ"
+   ],
+   "image": "Vertical extreme close-up of one plain blank white paper envelope held open by fingertips, completely empty inside, the inner paper softly lit and slightly creased. The empty envelope fills most of the frame."
+  },
+  {
+   "id": "C05",
+   "narration": "この空の封筒が、お金が逃げる入れ物です。",
+   "tts_text": "このからのふうとうが、お金が逃げるいれものです。",
+   "subs": [
+    "この空の封筒が、",
+    "お金が逃げる\n入れ物です。"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@close"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "昔から、お金は寂しがり屋と言われています。",
+   "subs": [
+    "昔から、\nお金は",
+    "寂しがり屋と",
+    "言われています。"
+   ],
+   "image_en": "Vertical close-up of a small pile of plain gold and silver coins without visible designs gathered closely together on a dark wooden table, with a single lonely coin set apart at the edge. Warm soft light. The coins fill more than half of the frame.",
+   "highlight": [
+    "寂しがり屋"
+   ],
+   "image": "Vertical close-up of a small pile of plain gold and silver coins without visible designs gathered closely together on a dark wooden table, with a single lonely coin set apart at the edge. Warm soft light. The coins fill more than half of the frame."
+  },
+  {
+   "id": "C07",
+   "narration": "お金のある所に、お金は集まるの。",
+   "tts_text": "お金のあるところに、お金は集まるの。",
+   "subs": [
+    "お金のある所に、",
+    "お金は集まるの。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@close"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "空っぽの封筒は、お金がひとりもいない家です。",
+   "tts_text": "からっぽのふうとうは、お金がひとりもいないいえです。",
+   "subs": [
+    "空っぽの封筒は、",
+    "お金がひとりも\nいない家です。"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@full"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "では、別の封筒から借りてもいいのか。",
+   "tts_text": "では、べつのふうとうから借りてもいいのか。",
+   "subs": [
+    "では、\n別の封筒から",
+    "借りても\nいいのか。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "借りるのは、かまいません。",
+   "subs": [
+    "借りるのは、\nかまいません。"
+   ],
+   "image_en": "Vertical shot of Sawako sitting at a small wooden kitchen table in a modest present-day Japanese home, holding a plain blank white envelope in both hands close to her chest, her eyes wide with a sudden look of realization. Several plain blank envelopes lie on the table in front of her. Warm evening light.",
+   "chars": [
+    "sawako"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "peak": true,
+   "strong": true,
+   "highlight": [
+    "かまいません"
+   ],
+   "image": "Vertical shot of Sawako sitting at a small wooden kitchen table in a modest present-day Japanese home, holding a plain blank white envelope in both hands close to her chest, her eyes wide with a sudden look of realization. Several plain blank envelopes lie on the table in front of her. Warm evening light."
+  },
+  {
+   "id": "C11",
+   "narration": "ただし、借りた封筒を空にしないこと。",
+   "tts_text": "ただし、かりたふうとうを、からにしないこと。",
+   "subs": [
+    "ただし、\n借りた封筒を",
+    "空にしないこと。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "10円玉を1枚、底に残しておいてください。",
+   "tts_text": "じゅうえんだまをいちまい、そこに残しておいてください。",
+   "subs": [
+    "10円玉を1枚、",
+    "底に残して\nおいてください。"
+   ],
+   "image_en": "Vertical extreme close-up of an older woman's fingertips dropping a single plain copper-colored coin without visible design into the bottom of an open plain blank white envelope on a wooden table. No faces. The envelope and coin fill more than half of the frame.",
+   "highlight": [
+    "10円玉"
+   ],
+   "image": "Vertical extreme close-up of an older woman's fingertips dropping a single plain copper-colored coin without visible design into the bottom of an open plain blank white envelope on a wooden table. No faces. The envelope and coin fill more than half of the frame."
+  },
+  {
+   "id": "C13",
+   "narration": "次のお金が入るまでの、留守番です。",
+   "tts_text": "つぎのお金がはいるまでの、るすばんです。",
+   "subs": [
+    "次のお金が\n入るまでの、",
+    "留守番です。"
+   ],
+   "same_as": "C12",
+   "shots": [
+    "C12@close"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "足りない月があっても、大丈夫。",
+   "subs": [
+    "足りない月が\nあっても、",
+    "大丈夫。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@full"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "また翌月、封筒に入れ直せばいいの。",
+   "tts_text": "また、よくげつ、ふうとうに入れ直せばいいの。",
+   "subs": [
+    "また翌月、\n封筒に",
+    "入れ直せば\nいいの。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands calmly sliding folded plain paper bills without visible design into a row of plain blank white envelopes standing upright in a small wooden box on a table. Morning light. The envelopes fill more than half of the frame.",
+   "image": "Vertical close-up of an older woman's hands calmly sliding folded plain paper bills without visible design into a row of plain blank white envelopes standing upright in a small wooden box on a table. Morning light. The envelopes fill more than half of the frame."
+  },
+  {
+   "id": "C16",
+   "narration": "あなたの袋分けの封筒に、空っぽのものはありませんか。",
+   "tts_text": "あなたの、ふくろわけのふうとうに、からっぽのものはありませんか。",
+   "subs": [
+    "あなたの\n袋分けの封筒に、",
+    "空っぽのものは\nありませんか。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの袋分けの封筒に、空っぽのものはありませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #封筒の袋分け",
+ "tags": [
+  "金運",
+  "財布",
+  "封筒の袋分け",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの袋分けの封筒に、空っぽのものはありませんか。"
+}

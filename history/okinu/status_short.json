@@ -1,16 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S114_エコバッグの底のレシート",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S115_封筒の袋分け",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice"
  ],
- "started": "2026-11-07T05:14:59+09:00",
+ "started": "2026-11-07T08:49:48+09:00",
  "tries": 0,
  "code": "8e6a092b3616",
- "stage": "gate_images",
- "updated": "2026-11-07T07:04:20+09:00",
- "busy": {},
- "images_back": true
+ "stage": "images",
+ "updated": "2026-11-07T08:53:57+09:00",
+ "busy": {
+  "images": 1
+ }
 }
