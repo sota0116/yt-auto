@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-06T09:16:58+09:00",
+ "started": "2026-11-06T12:25:40+09:00",
  "made": [],
- "stopped": "絵がまだ途中（残り12枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）（short）／絵ゲートの不合格が残りました（images\\_gate.json）（long）",
+ "stopped": "絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します（short）／絵がまだ途中（残り91枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）（long）",
  "在庫": {
   "short": 0,
   "long": 0
@@ -11,9 +11,11 @@
   "short": 2,
   "long": 1
  },
+ "待ち": true,
+ "途中": true,
  "飛ばした回": [
-  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S113_n012"
+  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L106_long_s105"
  ],
- "ended": "2026-11-06T09:36:00+09:00",
+ "ended": "2026-11-06T12:56:24+09:00",
  "今月の制作費_円": 0.0
 }
