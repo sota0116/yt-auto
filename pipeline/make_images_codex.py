@@ -8,6 +8,9 @@
 # ・その回だけの人物（script.json の characters）の設定画は Actions のキャッシュにしか無いので、PC で Codex に設定画を作らせて添付する
 # ・回数の上限らしい失敗が3回続いたら止める（ChatGPT の枠は不明）
 # ・release は公開（リポジトリが公開のため）。動画で公開する絵なので、そのまま置く
+# ・--auto（2026-11-07 追加。PC のタスクスケジューラが30分ごとに動かす）：回を指定せず、
+#   history\<ch>\codex_todo\*.json（agent.yml のチャンネル＝shimei・kakure の注文書。codex_todo.py export が書く）と
+#   history\<ch>\wip\*\script.json を全部見て、ショート → 注文書 → その他 の順に作る。3回続けて失敗したら90分休む（_pause_until）
 import argparse, glob, json, os, shutil, subprocess, sys, tempfile, threading, time
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
@@ -91,8 +94,9 @@ def plan(ch, wk):
     return s, cuts
 
 
-def sheets(ch, wk, s, need):
-    """人物の設定画のパス。チャンネルの人は git の characters\\、その回だけの人は PC で Codex に作らせる"""
+def sheets(ch, wk, s, need, chan=None):
+    """人物の設定画のパス。チャンネルの人は git の characters\\、その回だけの人は PC で Codex に作らせる。
+    chan（注文書の "channel": true の人）は、git に設定画が無ければ PC で作り、チャンネル単位で使い回す"""
     cdir = os.path.join(ROOT, "channels", ch, "characters")
     cp = os.path.join(cdir, "characters.json")
     chars = {}
@@ -100,8 +104,10 @@ def sheets(ch, wk, s, need):
         for k, v in json.load(open(cp, encoding="utf-8")).get("chars", {}).items():
             chars[k] = {"desc_en": v["desc_en"], "sheet": os.path.join(cdir, v.get("sheet", k + ".png"))}
     style = s.get("style_en") or s.get("style", "")
-    for k, v in (s.get("characters") or {}).items():
-        p = os.path.join(OUT, "_chars", f"{ch}__{wk}__{k}.png")
+    todo = [(k, v, os.path.join(OUT, "_chars", f"{ch}__{wk}__{k}.png")) for k, v in (s.get("characters") or {}).items()]
+    todo += [(k, v, os.path.join(OUT, "_chars", f"{ch}__{k}.png")) for k, v in (chan or {}).items()
+             if not (k in chars and os.path.exists(chars[k]["sheet"]))]
+    for k, v, p in todo:
         chars[k] = {"desc_en": v["desc_en"], "sheet": p}
         if k in need and not os.path.exists(p):
             os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -114,36 +120,87 @@ def sheets(ch, wk, s, need):
     return chars
 
 
+def rules_of(ch):
+    p = os.path.join(ROOT, "channels", ch, "profile.json")
+    return (json.load(open(p, encoding="utf-8")).get("image_rules_en") or {}) if os.path.exists(p) else {}
+
+
+def wip_spec(ch, wk):
+    s, cuts = plan(ch, wk)
+    return {"ch": ch, "wk": wk, "s": s, "cuts": cuts, "rules": rules_of(ch), "chan": None,
+            "portrait": s.get("format") == "short", "todo": False}
+
+
+def todo_spec(p):
+    """codex_todo.py export の注文書（agent.yml のチャンネル。台本は暗号の保存にあり、PC には絵の注文だけが来る）"""
+    d = json.load(open(p, encoding="utf-8"))
+    chars = d.get("characters") or {}
+    s = {"style_en": d.get("style_en", ""), "avoid_en": d.get("avoid_en", ""),
+         "characters": {k: v for k, v in chars.items() if not v.get("channel")}}
+    return {"ch": d["ch"], "wk": d["work"], "s": s, "cuts": d["cuts"], "rules": d.get("rules") or {},
+            "chan": {k: v for k, v in chars.items() if v.get("channel")}, "portrait": bool(d.get("portrait")), "todo": True}
+
+
+def auto_specs():
+    out = []
+    for p in glob.glob(os.path.join(ROOT, "history", "*", "codex_todo", "*.json")):
+        try:
+            out.append(todo_spec(p))
+        except Exception as e:
+            print(f"{p}：注文書を読めない（{type(e).__name__}）", flush=True)
+    for sp in glob.glob(os.path.join(ROOT, "history", "*", "wip", "*", "script.json")):
+        wk = os.path.basename(os.path.dirname(sp))
+        ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.dirname(sp))))
+        try:
+            out.append(wip_spec(ch, wk))
+        except Exception as e:
+            print(f"{ch}/{wk}：台本を読めない（{type(e).__name__}）", flush=True)
+    return sorted(out, key=lambda x: (not x["portrait"], not x["todo"], x["ch"], x["wk"]))
+
+
+PAUSE = os.path.join(OUT, "_pause_until")
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("works", nargs="*")
+    a.add_argument("--auto", action="store_true", help="注文書と wip を全部見て作る（タスクスケジューラ用）")
     a.add_argument("--par", type=int, default=3)
     a.add_argument("--limit", type=int, default=0, help="作る枚数の上限（0＝全部）")
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
     os.makedirs(OUT, exist_ok=True)
+    if a.auto and not a.dry and os.path.exists(PAUSE):
+        try:
+            until = float(open(PAUSE).read().strip())
+        except Exception:
+            until = 0
+        if time.time() < until:
+            print(f"休み中（Codex の失敗が続いたため）：{time.strftime('%m-%d %H:%M', time.localtime(until))} まで", flush=True)
+            return
+        os.remove(PAUSE)
     have = set() if a.dry else have_assets()
+    if a.auto:
+        specs = auto_specs()
+    else:
+        specs = [wip_spec(*w.replace("\\", "/").split("/", 1)) for w in (a.works or ORDER)]
     jobs = []
-    for w in a.works or ORDER:
-        ch, wk = w.replace("\\", "/").split("/", 1)
-        s, cuts = plan(ch, wk)
-        rules = (json.load(open(os.path.join(ROOT, "channels", ch, "profile.json"), encoding="utf-8")).get("image_rules_en") or {}) \
-            if os.path.exists(os.path.join(ROOT, "channels", ch, "profile.json")) else {}
+    for sp in specs:
+        ch, wk, s, cuts, rules, portrait = sp["ch"], sp["wk"], sp["s"], sp["cuts"], sp["rules"], sp["portrait"]
         work_like = os.path.join("channels", ch, "videos", wk)  # 名前は回の名前とチャンネルだけで決まる
         todo = [c for c in cuts if ML.codex_name(ch, work_like, c) not in have]
-        print(f"{ch}/{wk}：絵 {len(cuts)} 枚のうち、まだ release に無い {len(todo)} 枚", flush=True)
+        print(f"{ch}/{wk}{'（注文書）' if sp['todo'] else ''}{'（縦）' if portrait else ''}：絵 {len(cuts)} 枚のうち、まだ release に無い {len(todo)} 枚", flush=True)
         if a.dry or not todo:
             continue
         need = sorted({k for c in todo for k in c.get("chars", [])})
-        chars = sheets(ch, wk, s, need)
+        chars = sheets(ch, wk, s, need, sp["chan"])
         en = {"_style": s.get("style_en") or s.get("style", "")}
         if s.get("avoid_en") or s.get("avoid"):
             en["_avoid"] = s.get("avoid_en") or s.get("avoid")
-        portrait = s.get("format") == "short"
         for c in todo:
             ok_chars = [chars[k] for k in c.get("chars", []) if k in chars and os.path.exists(chars[k]["sheet"])]
-            en[c["id"]] = c.get("image_en") or ("(The scene is written in Japanese; draw it, but write no Japanese or any text in the picture) "
-                                                + c["image"])
+            en[c["id"]] = c.get("en") or c.get("image_en") or ("(The scene is written in Japanese; draw it, but write no Japanese or any text in the picture) "
+                                                               + c["image"])
             p = ("Use your image generation tool to create the picture below. Do not write any files yourself.\n"
                  + ML.prompt(en, c, False, "", ok_chars, rules, portrait))
             jobs.append((ch, wk, c["id"], ML.codex_name(ch, work_like, c), p, [x["sheet"] for x in ok_chars]))
@@ -178,6 +235,8 @@ def main():
     with ThreadPoolExecutor(a.par) as ex:
         list(ex.map(one, jobs))
     if stop.is_set():
+        if a.auto:
+            open(PAUSE, "w").write(str(time.time() + 90 * 60))
         print("【止まりました】Codex の失敗が3回続いた（ChatGPT の回数の上限の可能性）。時間をあけてもう一度動かすと続きから作ります", flush=True)
         sys.exit(2)
 
