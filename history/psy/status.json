@@ -1,35 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/014_ikigai_yakuwari",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/015_kanojo_iya",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
   "yomi",
-  "reading",
-  "images",
-  "motion"
+  "reading"
  ],
- "started": "2026-11-05T12:29:05+09:00",
- "tries": 3,
+ "started": "2026-11-06T12:24:46+09:00",
+ "tries": 0,
  "code": "a9783a4cb1e6",
- "stage": "gate_images",
- "updated": "2026-11-06T05:57:50+09:00",
+ "stage": "images",
+ "updated": "2026-11-06T12:59:00+09:00",
  "busy": {
-  "motion": 1,
   "images": 1
- },
- "restored": {
-  "日時": "2026-11-06T01:45:02+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "yomi",
-   "reading",
-   "images"
-  ]
- },
- "images_back": true
+ }
 }
