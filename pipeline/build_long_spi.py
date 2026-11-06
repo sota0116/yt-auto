@@ -78,6 +78,12 @@ def webm(src, b):
 
 def card_spec(work, cuts, c, n, b):
     from pathlib import Path
+    tgt, seen = c, set()  # same_as の先がカード（2択など）なら、そのカードを使い回す（2026-11-07 okinu 103 の T04 が絵を探して止まった）
+    while not tgt.get("card") and tgt.get("same_as") and tgt["id"] not in seen:
+        seen.add(tgt["id"])
+        tgt = next((x for x in cuts if x["id"] == tgt["same_as"]), {"id": ""})
+    if not c.get("card") and tgt.get("card") and tgt["card"].get("type") != "photo":
+        c = dict(c, card=tgt["card"])
     if c.get("card"):
         spec = dict(c["card"], seed=n)
         if c.get("era") and spec.get("type") == "photo":
