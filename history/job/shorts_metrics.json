@@ -151,9 +151,18 @@
    "再生の出どころ": "公開の数字",
    "score": 391.2
   },
-  "取った日": "2026-11-02T08:57:26+09:00",
+  "取った日": "2026-11-06T10:10:49+09:00",
   "編集の版": 1,
-  "bgm": null
+  "bgm": null,
+  "7d": {
+   "views": 620,
+   "averageViewPercentage": 63.1,
+   "averageViewDuration": 22,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 391.2
+  }
  },
  "20261028_0906_1": {
   "video_id": "zSKFxwus8n0",
@@ -175,9 +184,18 @@
    "再生の出どころ": "公開の数字",
    "score": 835.4
   },
-  "取った日": "2026-11-02T08:57:26+09:00",
+  "取った日": "2026-11-06T10:10:49+09:00",
   "編集の版": 1,
-  "bgm": null
+  "bgm": null,
+  "7d": {
+   "views": 1114,
+   "averageViewPercentage": 75.17,
+   "averageViewDuration": 28,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 837.4
+  }
  },
  "20261029_0928_0": {
   "video_id": "Zfwy4UlNBrw",
@@ -393,5 +411,29 @@
   "編集の版": 1,
   "bgm": null,
   "取った日": "2026-11-05T10:07:32+09:00"
+ },
+ "20261102_1740_0": {
+  "48h": {
+   "views": 345,
+   "averageViewPercentage": 50.38,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 173.8
+  },
+  "video_id": "7vTtkWnUz-4",
+  "title": "現場の仕事で働く時間が短い5つ｜1位と5位は月に9時間差 #年収 #仕事",
+  "topic_id": "rank_現場_労働時間_lo",
+  "kind": "rank",
+  "measure": "労働時間",
+  "hook": "働く時間\n最短は？",
+  "banner": [
+   "時間が短い順",
+   "現場の仕事8から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "取った日": "2026-11-06T10:10:49+09:00"
  }
 }
