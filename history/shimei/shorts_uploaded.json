@@ -108,5 +108,49 @@
   "publish_at": "2026-11-05T12:00:00+09:00",
   "uploaded_at": "2026-11-04T17:58:44+09:00",
   "missing": false
+ },
+ {
+  "work": "S011_偽の勲章",
+  "video_id": "go8QMdVd8Yo",
+  "title": "KKKの見張り役は、偽物の勲章で入りこんだ #実話 #FBI",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-07T12:00:00+09:00",
+  "uploaded_at": "2026-11-07T06:58:56+09:00",
+  "missing": false
+ },
+ {
+  "work": "S012_タダ券の罠",
+  "video_id": "yFzj2oCw1DI",
+  "title": "招待状を送っただけで、指名手配犯が101人つかまった #実話 #捜査",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-08T19:00:00+09:00",
+  "uploaded_at": "2026-11-07T07:00:26+09:00",
+  "missing": false
+ },
+ {
+  "work": "S013_落ちた風船",
+  "video_id": "yk8_zuJMPvM",
+  "title": "空に放った風船150万個が、街に降ってきた理由 #実話 #海外の事件",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-09T12:00:00+09:00",
+  "uploaded_at": "2026-11-07T07:02:30+09:00",
+  "missing": false
+ },
+ {
+  "work": "S014_記者の質問",
+  "video_id": "KKgIA_ktXoU",
+  "title": "FBIの「指名手配10人」は、記者の質問から生まれた #実話 #FBI",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-10T19:00:00+09:00",
+  "uploaded_at": "2026-11-07T07:04:05+09:00",
+  "missing": false
  }
 ]
