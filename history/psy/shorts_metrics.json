@@ -201,7 +201,14 @@
   ],
   "kind": "after",
   "title": "【心理学】ひとりの夕飯もさらりと過ごす人、実は気分のゆれが小さめです。 #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 1007,
+   "averageViewPercentage": 188.87,
+   "averageViewDuration": 92,
+   "subscribersGained": 0,
+   "取った日": "2026-11-07"
+  }
  },
  "006_hitori_suki:short_4": {
   "type": "ひとりの時間",
@@ -259,5 +266,17 @@
   "kind": "after",
   "title": "【心理学】自分からは頼めない人、実は相手の迷惑を多めに見積もっています #shorts",
   "publish_slot": "20:10"
+ },
+ "008_mono_herasu": {
+  "type": "幸せの心理",
+  "video_id": "fOdshuVUziY",
+  "hook": "家に帰ったのに、玄関でため息が出るのは、なぜでしょうか？",
+  "band": [
+   "玄関でため息が",
+   "夕方まで続く"
+  ],
+  "kind": "after",
+  "title": "【心理学】家を「散らかってる」と話す妻たち、実は夕方の気分まで沈みがちでした #shorts",
+  "publish_slot": "22:10"
  }
 }
