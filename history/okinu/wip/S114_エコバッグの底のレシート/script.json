@@ -1,0 +1,226 @@
+{
+ "title": "【60代】エコバッグにレシートためてる人、今すぐ出して",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ。1人で話し、名乗らない",
+  "絵に出る人は「やっていいか」の答えの場面（C07）の澄江だけ。名前は言わない",
+  "言い伝えは facts.json で確かめた3つ（バッグの紙の邪気・寝る前までに出す・口を広げて気を入れ換える）だけを「言われています」の距離で話す"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "金運を下げるレシート、これをバッグにためていませんか。",
+   "subs": [
+    "金運を下げる\nレシート、",
+    "これを\nバッグに",
+    "ためて\nいませんか。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands holding open a plain beige canvas tote shopping bag with no print, looking down into it; the bottom of the bag is in shadow so its contents cannot be seen, a brown wallet resting near the opening. The bag fills more than half of the frame. Warm kitchen light. No text, no logos.",
+   "hook": "バッグの底\nすぐ空けて",
+   "highlight": [
+    "金運"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical close-up of an older woman's hands holding open a plain beige canvas tote shopping bag with no print, looking down into it; the bottom of the bag is in shadow so its contents cannot be seen, a brown wallet resting near the opening. The bag fills more than half of the frame. Warm kitchen light. No text, no logos."
+  },
+  {
+   "id": "C02",
+   "narration": "買い物帰りに増えていく、くしゃくしゃのレシートの山。",
+   "subs": [
+    "買い物帰りに\n増えていく、",
+    "くしゃくしゃの\nレシートの山。"
+   ],
+   "image_en": "Vertical extreme close-up looking straight down into the bottom of a plain beige canvas tote bag, where many crumpled and curled small strips of blank white paper with no printing are piled up in the corner seams. The paper pile fills more than half of the frame. Soft warm light, no text.",
+   "highlight": [
+    "レシート"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical extreme close-up looking straight down into the bottom of a plain beige canvas tote bag, where many crumpled and curled small strips of blank white paper with no printing are piled up in the corner seams. The paper pile fills more than half of the frame. Soft warm light, no text."
+  },
+  {
+   "id": "C03",
+   "narration": "1枚でも底にあれば、要注意です。",
+   "subs": [
+    "1枚でも\n底にあれば、",
+    "要注意です。"
+   ],
+   "image_en": "Vertical close-up of one single crumpled strip of blank white paper with no printing left alone at the bottom of an otherwise empty plain beige canvas tote bag, lit by a narrow beam of light. The bag bottom and the paper fill more than half of the frame. No text.",
+   "highlight": [
+    "要注意"
+   ],
+   "tts_text": "いちまいでもそこにあれば、要注意です。",
+   "image": "Vertical close-up of one single crumpled strip of blank white paper with no printing left alone at the bottom of an otherwise empty plain beige canvas tote bag, lit by a narrow beam of light. The bag bottom and the paper fill more than half of the frame. No text."
+  },
+  {
+   "id": "C04",
+   "narration": "要らない紙は、邪気を吸うと言われています。",
+   "subs": [
+    "要らない紙は、\n邪気を吸うと",
+    "言われています。"
+   ],
+   "image_en": "Vertical close-up of a heap of old crumpled blank white paper strips with no printing at the bottom of a plain canvas bag, slightly greyed and wrinkled, in dim bluish evening light with a faint dusty haze around them. The papers fill more than half of the frame. Quiet gloomy mood, no text.",
+   "highlight": [
+    "邪気"
+   ],
+   "tts_text": "いらない紙は、じゃきを吸うと言われています。",
+   "image": "Vertical close-up of a heap of old crumpled blank white paper strips with no printing at the bottom of a plain canvas bag, slightly greyed and wrinkled, in dim bluish evening light with a faint dusty haze around them. The papers fill more than half of the frame. Quiet gloomy mood, no text."
+  },
+  {
+   "id": "C05",
+   "narration": "そばにある財布の運気まで、下げてしまうそうよ。",
+   "subs": [
+    "そばにある\n財布の運気まで、",
+    "下げてしまう\nそうよ。"
+   ],
+   "image_en": "Vertical close-up inside a plain beige canvas tote bag: a brown leather wallet lying directly on top of a pile of crumpled blank white paper strips with no printing. The wallet and papers fill more than half of the frame. Dim warm light, no text.",
+   "image": "Vertical close-up inside a plain beige canvas tote bag: a brown leather wallet lying directly on top of a pile of crumpled blank white paper strips with no printing. The wallet and papers fill more than half of the frame. Dim warm light, no text."
+  },
+  {
+   "id": "C06",
+   "narration": "家計簿で使うから、捨てられない方も多いはずね。",
+   "subs": [
+    "家計簿で\n使うから、",
+    "捨てられない方も\n多いはずね。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@full"
+   ],
+   "tts_text": "かけいぼで使うから、捨てられないかたも多いはずね。"
+  },
+  {
+   "id": "C07",
+   "narration": "入れて帰るのは、大丈夫よ。",
+   "subs": [
+    "入れて帰るのは、\n大丈夫よ。"
+   ],
+   "image_en": "Vertical medium close-up of Sumie standing at her kitchen table, eyes wide in a sudden realization, holding up a small bunch of crumpled blank white paper strips with no printing in one hand and a plain beige canvas tote bag in the other. The papers and the bag take up a large part of the frame. Warm window light, no text.",
+   "chars": [
+    "sumie"
+   ],
+   "highlight": [
+    "大丈夫"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical medium close-up of Sumie standing at her kitchen table, eyes wide in a sudden realization, holding up a small bunch of crumpled blank white paper strips with no printing in one hand and a plain beige canvas tote bag in the other. The papers and the bag take up a large part of the frame. Warm window light, no text."
+  },
+  {
+   "id": "C08",
+   "narration": "ただ、寝る前までには出して。",
+   "subs": [
+    "ただ、\n寝る前までには",
+    "出して。"
+   ],
+   "same_as": "C07",
+   "shots": [
+    "C07@close"
+   ],
+   "highlight": [
+    "寝る前まで"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "戻ってすぐ、エコバッグをひっくり返して振ります。",
+   "subs": [
+    "戻ってすぐ、\nエコバッグを",
+    "ひっくり返して\n振ります。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands turning a plain beige canvas tote bag upside down over a wooden kitchen table, a few crumpled blank white paper strips with no printing falling out of it. The bag and hands fill more than half of the frame. No face visible. Warm light, no text.",
+   "image": "Vertical close-up of an older woman's hands turning a plain beige canvas tote bag upside down over a wooden kitchen table, a few crumpled blank white paper strips with no printing falling out of it. The bag and hands fill more than half of the frame. No face visible. Warm light, no text."
+  },
+  {
+   "id": "C10",
+   "narration": "出したレシートは、台所の木の盆へ。",
+   "subs": [
+    "出した\nレシートは、",
+    "台所の\n木の盆へ。"
+   ],
+   "image_en": "Vertical close-up of an older woman's fingers placing a small neat stack of blank white paper strips with no printing, face down, into a small plain wooden tray on a kitchen shelf. The tray and the stack fill more than half of the frame. No face visible. Warm light, no text.",
+   "tts_text": "出したレシートは、だいどころのきのぼんへ。",
+   "image": "Vertical close-up of an older woman's fingers placing a small neat stack of blank white paper strips with no printing, face down, into a small plain wooden tray on a kitchen shelf. The tray and the stack fill more than half of the frame. No face visible. Warm light, no text."
+  },
+  {
+   "id": "C11",
+   "narration": "空いたバッグは、口を広げて窓のそばへ。",
+   "subs": [
+    "空いたバッグは、",
+    "口を広げて\n窓のそばへ。"
+   ],
+   "image_en": "Vertical close-up of an empty plain beige canvas tote bag with no print standing on a wooden chair by a bright window, its opening spread wide, soft breeze and morning light flowing in. The bag fills more than half of the frame. Fresh calm mood, no text.",
+   "tts_text": "あいたバッグは、くちを広げてまどのそばへ。",
+   "image": "Vertical close-up of an empty plain beige canvas tote bag with no print standing on a wooden chair by a bright window, its opening spread wide, soft breeze and morning light flowing in. The bag fills more than half of the frame. Fresh calm mood, no text."
+  },
+  {
+   "id": "C12",
+   "narration": "こもった気が抜けて、新しい気と入れ換わるとか。",
+   "subs": [
+    "こもった気が\n抜けて、",
+    "新しい気と\n入れ換わるとか。"
+   ],
+   "same_as": "C11",
+   "shots": [
+    "C11@close"
+   ],
+   "highlight": [
+    "入れ換わる"
+   ],
+   "tts_text": "こもったきが抜けて、あたらしいきといれかわるとか。"
+  },
+  {
+   "id": "C13",
+   "narration": "何も変わらない気がする日も、底は軽いままで。",
+   "subs": [
+    "何も変わらない\n気がする日も、",
+    "底は\n軽いままで。"
+   ],
+   "same_as": "C09",
+   "shots": [
+    "C09@full"
+   ],
+   "tts_text": "何も変わらない気がする日も、そこは軽いままで。"
+  },
+  {
+   "id": "C14",
+   "narration": "あなたのエコバッグの底は、いま空ですか。",
+   "subs": [
+    "あなたの\nエコバッグの",
+    "底は、\nいま空ですか。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ],
+   "highlight": [
+    "空"
+   ],
+   "tts_text": "あなたのエコバッグのそこは、いまからですか。"
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたのエコバッグの底は、いま空ですか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #エコバッグの底のレシ",
+ "tags": [
+  "金運",
+  "財布",
+  "エコバッグの底のレシ",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたのエコバッグの底は、いま空ですか。"
+}

@@ -1,16 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S113_新札",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S114_エコバッグの底のレシート",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice"
  ],
- "started": "2026-11-06T09:17:04+09:00",
+ "started": "2026-11-07T05:14:59+09:00",
  "tries": 0,
  "code": "8e6a092b3616",
- "stage": "gate_images",
- "updated": "2026-11-06T21:46:27+09:00",
- "busy": {},
- "images_back": true
+ "stage": "images",
+ "updated": "2026-11-07T05:26:02+09:00",
+ "busy": {
+  "images": 1
+ }
 }
