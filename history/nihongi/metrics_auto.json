@@ -147,6 +147,17 @@
    ],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 1355
+  },
+  "d7": {
+   "views": 1391,
+   "averageViewPercentage": 87.87,
+   "averageViewDuration": 31,
+   "subscribersGained": 2,
+   "直す所": [
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1393
   }
  },
  "S006_刀に心があったら": {
@@ -254,7 +265,18 @@
  },
  "S105_n010": {
   "type": null,
-  "video_id": "tOv3nwu0X-4"
+  "video_id": "tOv3nwu0X-4",
+  "h72": {
+   "views": 2023,
+   "averageViewPercentage": 80.07,
+   "averageViewDuration": 36,
+   "subscribersGained": 3,
+   "直す所": [
+    "11%あたりで急に落ちる（9%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 2473
+  }
  },
  "S106_n009": {
   "type": null,

@@ -82,6 +82,15 @@
    "直す所": [],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 2
+  },
+  "d7": {
+   "views": 8,
+   "averageViewPercentage": 1.43,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 12
   }
  },
  "005_kofuku_toshi": {
@@ -117,5 +126,9 @@
  "007_kotowarenai": {
   "type": "人づきあい",
   "video_id": "iFnGAfBm-p0"
+ },
+ "008_mono_herasu": {
+  "type": "幸せの心理",
+  "video_id": "mu4FkBUf1x8"
  }
 }

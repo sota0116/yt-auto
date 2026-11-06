@@ -116,6 +116,19 @@
    ],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 1326
+  },
+  "d7": {
+   "views": 614,
+   "averageViewPercentage": 72.49,
+   "averageViewDuration": 26,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "13%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1332
   }
  },
  "002_家じゅうの小銭": {
@@ -131,6 +144,15 @@
    ],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 94
+  },
+  "d7": {
+   "views": 136,
+   "averageViewPercentage": 36.71,
+   "averageViewDuration": 223,
+   "subscribersGained": 3,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 147
   }
  },
  "S003_お札の向き": {
@@ -144,6 +166,15 @@
    "直す所": [],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 1355
+  },
+  "d7": {
+   "views": 1365,
+   "averageViewPercentage": 114.82999999999998,
+   "averageViewDuration": 36,
+   "subscribersGained": 4,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1361
   }
  },
  "003_玄関のNG5": {
@@ -221,11 +252,29 @@
  },
  "S103_使い終わった古い財布": {
   "type": null,
-  "video_id": "QYrMa7dJfcA"
+  "video_id": "QYrMa7dJfcA",
+  "h72": {
+   "views": 1024,
+   "averageViewPercentage": 149.49,
+   "averageViewDuration": 56,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1677
+  }
  },
  "005_寝室のNG5": {
   "type": "okinu",
-  "video_id": "r35vevoBSkY"
+  "video_id": "r35vevoBSkY",
+  "h72": {
+   "views": 10,
+   "averageViewPercentage": 37.34,
+   "averageViewDuration": 295,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 234
+  }
  },
  "S104_財布に入れてはいけない物": {
   "type": null,
@@ -238,5 +287,9 @@
  "006_台所のNG5": {
   "type": "okinu",
   "video_id": "OvYmHAfxZso"
+ },
+ "S106_財布の中の家族の写真": {
+  "type": null,
+  "video_id": "f4Ii5nTRfFw"
  }
 }
