@@ -1,28 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S112_五円玉",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S113_新札",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion"
+  "voice"
  ],
- "started": "2026-11-05T09:24:35+09:00",
- "tries": 3,
+ "started": "2026-11-06T09:17:04+09:00",
+ "tries": 0,
  "code": "a9783a4cb1e6",
- "stage": "gate_images",
- "updated": "2026-11-06T01:44:58+09:00",
- "images_back": true,
- "restored": {
-  "日時": "2026-11-06T01:44:22+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "images",
-   "motion"
-  ]
+ "stage": "images",
+ "updated": "2026-11-06T09:28:06+09:00",
+ "busy": {
+  "images": 1
  }
 }

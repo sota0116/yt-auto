@@ -1,0 +1,237 @@
+{
+ "title": "【60代】財布に「新札」絶対ため込まないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ。1人で話し、名乗らない",
+  "絵に出る人は第1位の答えの場面（C08）の佐和子だけ。名前は言わない",
+  "言い伝えは facts.json で確かめた3つだけを「言われています」の距離で話す"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お金が逃げる新札を、財布にこれ以上ためていませんか。",
+   "subs": [
+    "お金が逃げる\n新札を、",
+    "財布に\nこれ以上",
+    "ためて\nいませんか。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands slowly opening a worn brown long wallet on a wooden kitchen table, the bill compartment still in shadow so its contents cannot be seen. The wallet fills more than half of the frame. Warm soft window light. No text.",
+   "hook": "縁起物でも\nためないで",
+   "highlight": [
+    "お金が逃げる"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical close-up of an older woman's hands slowly opening a worn brown long wallet on a wooden kitchen table, the bill compartment still in shadow so its contents cannot be seen. The wallet fills more than half of the frame. Warm soft window light. No text."
+  },
+  {
+   "id": "C02",
+   "narration": "お祝いでもらった、ピンとした新札です。",
+   "subs": [
+    "お祝いで\nもらった、",
+    "ピンとした\n新札です。"
+   ],
+   "image_en": "Vertical extreme close-up of a small fan of perfectly crisp, flat, brand-new plain paper banknotes with no visible designs, numbers or text, held between an older woman's fingers, catching a soft glow of light. The bills fill more than half of the frame. Warm muted colors.",
+   "highlight": [
+    "新札"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical extreme close-up of a small fan of perfectly crisp, flat, brand-new plain paper banknotes with no visible designs, numbers or text, held between an older woman's fingers, catching a soft glow of light. The bills fill more than half of the frame. Warm muted colors."
+  },
+  {
+   "id": "C03",
+   "narration": "使わずに2枚以上ためているなら、NGです。",
+   "subs": [
+    "使わずに\n2枚以上",
+    "ためて\nいるなら、",
+    "NGです。"
+   ],
+   "highlight": [
+    "NG"
+   ],
+   "image_en": "Vertical close-up looking into the deepest back pocket of an open brown long wallet, where several crisp untouched plain paper banknotes with no designs are tucked flat and hidden behind the other compartments. The wallet fills more than half of the frame. Soft dim light.",
+   "image": "Vertical close-up looking into the deepest back pocket of an open brown long wallet, where several crisp untouched plain paper banknotes with no designs are tucked flat and hidden behind the other compartments. The wallet fills more than half of the frame. Soft dim light."
+  },
+  {
+   "id": "C04",
+   "narration": "ためるほど、お札は財布で眠るだけ。",
+   "subs": [
+    "ためるほど、",
+    "お札は財布で\n眠るだけ。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ],
+   "tts_text": "ためるほど、おさつは財布で眠るだけ。"
+  },
+  {
+   "id": "C05",
+   "narration": "風水では、使うことが金運の土作りと言われています。",
+   "subs": [
+    "風水では、",
+    "使うことが\n金運の土作りと",
+    "言われています。"
+   ],
+   "image_en": "Vertical close-up of an older woman's hand gently placing one plain paper banknote with no designs onto a small round cash tray on a wooden shop counter. The hand and the tray fill more than half of the frame. No face visible. Warm light, no signs, no text.",
+   "highlight": [
+    "使うこと"
+   ],
+   "tts_text": "風水では、使うことが金運のつちづくりと言われています。",
+   "image": "Vertical close-up of an older woman's hand gently placing one plain paper banknote with no designs onto a small round cash tray on a wooden shop counter. The hand and the tray fill more than half of the frame. No face visible. Warm light, no signs, no text."
+  },
+  {
+   "id": "C06",
+   "narration": "しまい込むだけでは、土作りにならないの。",
+   "subs": [
+    "しまい込む\nだけでは、",
+    "土作りに\nならないの。"
+   ],
+   "image_en": "Vertical close-up of a closed brown long wallet lying still inside a half-open wooden drawer in dim evening light, the edge of a crisp plain banknote just peeking out of it. The wallet fills more than half of the frame. Quiet mood, no text.",
+   "tts_text": "しまい込むだけでは、つちづくりにならないの。",
+   "image": "Vertical close-up of a closed brown long wallet lying still inside a half-open wooden drawer in dim evening light, the edge of a crisp plain banknote just peeking out of it. The wallet fills more than half of the frame. Quiet mood, no text."
+  },
+  {
+   "id": "C07",
+   "narration": "では、新札をとっておくのも、だめなのか。",
+   "subs": [
+    "では、新札を",
+    "とっておくのも、",
+    "だめなのか。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@full"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "とっておくのは、1枚きりにして。",
+   "subs": [
+    "とっておくのは、",
+    "1枚きりにして。"
+   ],
+   "image_en": "Vertical medium close-up of Sawako at her kitchen table, eyes wide in a sudden realization, holding up a single crisp plain paper banknote with no designs in front of her chest, her open brown wallet in the other hand. The banknote and her hands take up a large part of the frame. Warm window light.",
+   "chars": [
+    "sawako"
+   ],
+   "highlight": [
+    "1枚きり"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical medium close-up of Sawako at her kitchen table, eyes wide in a sudden realization, holding up a single crisp plain paper banknote with no designs in front of her chest, her open brown wallet in the other hand. The banknote and her hands take up a large part of the frame. Warm window light."
+  },
+  {
+   "id": "C09",
+   "narration": "新札は、厄のついていないお札と言われてきました。",
+   "subs": [
+    "新札は、",
+    "厄のついていない\nお札と",
+    "言われて\nきました。"
+   ],
+   "image_en": "Vertical close-up of one perfectly flat, brand-new plain paper banknote with no designs resting on a folded sheet of clean white Japanese paper on a low wooden table, soft clean morning light. The banknote fills more than half of the frame. No text.",
+   "tts_text": "新札は、やくのついていないおさつと言われてきました。",
+   "image": "Vertical close-up of one perfectly flat, brand-new plain paper banknote with no designs resting on a folded sheet of clean white Japanese paper on a low wooden table, soft clean morning light. The banknote fills more than half of the frame. No text."
+  },
+  {
+   "id": "C10",
+   "narration": "その1枚は、お札入れの奥へそっと。",
+   "subs": [
+    "その1枚は、",
+    "お札入れの\n奥へそっと。"
+   ],
+   "image_en": "Vertical close-up of an older woman's fingers sliding one crisp plain paper banknote with no designs into the deepest slot of an open brown long wallet, the other compartments neat and nearly empty. The wallet fills more than half of the frame. No face visible. Warm light.",
+   "tts_text": "そのいちまいは、おさついれの奥へそっと。",
+   "image": "Vertical close-up of an older woman's fingers sliding one crisp plain paper banknote with no designs into the deepest slot of an open brown long wallet, the other compartments neat and nearly empty. The wallet fills more than half of the frame. No face visible. Warm light."
+  },
+  {
+   "id": "C11",
+   "narration": "残りの新札は、気持ちよく使って。",
+   "subs": [
+    "残りの新札は、",
+    "気持ちよく\n使って。"
+   ],
+   "same_as": "C05",
+   "shots": [
+    "C05@full"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "払う時は、心の中で、またねと声をかけて。",
+   "subs": [
+    "払う時は、",
+    "心の中で、\nまたねと",
+    "声をかけて。"
+   ],
+   "same_as": "C05",
+   "shots": [
+    "C05@close"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "すぐに変わらなくても、気にしないでね。",
+   "subs": [
+    "すぐに\n変わらなくても、",
+    "気にしないでね。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@full"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "まずは財布の新札を、数えてみて。",
+   "subs": [
+    "まずは財布の\n新札を、",
+    "数えてみて。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "あなたの財布の新札は、いま何枚ですか。",
+   "subs": [
+    "あなたの財布の\n新札は、",
+    "いま何枚ですか。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ],
+   "highlight": [
+    "新札"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布の新札は、いま何枚ですか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #新札",
+ "tags": [
+  "金運",
+  "財布",
+  "新札",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布の新札は、いま何枚ですか。"
+}
