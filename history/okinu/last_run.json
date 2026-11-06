@@ -1,8 +1,8 @@
 {
  "ch": "okinu",
- "started": "2026-11-06T12:24:48+09:00",
+ "started": "2026-11-06T16:56:05+09:00",
  "made": [],
- "stopped": "絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します（short）／build で止まりました（終了コード 1）：声：167カット・14.4分（速さ 1.0・間 0.3）\nA13：4 枚・1枚 1.19 秒・4.77 秒 → /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/103_洗面所/images/A13.mp4\n\n【止まりました】絵（images/<id>.png）が無いカット：['T04']（1カット）（long）",
+ "stopped": "絵がまだ途中（残り8枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）（short）／build で止まりました（終了コード 1）：声：167カット・14.4分（速さ 1.0・間 0.3）\nA13：4 枚・1枚 1.19 秒・4.77 秒 → /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/103_洗面所/images/A13.mp4\n\n【止まりました】絵（images/<id>.png）が無いカット：['T04']（1カット）（long）",
  "在庫": {
   "short": 3,
   "long": 1
@@ -11,6 +11,6 @@
   "short": 2,
   "long": 1
  },
- "ended": "2026-11-06T12:25:32+09:00",
+ "ended": "2026-11-06T16:56:49+09:00",
  "今月の制作費_円": 0.0
 }
