@@ -8,10 +8,9 @@
  ],
  "started": "2026-11-07T11:46:47+09:00",
  "tries": 0,
- "code": "8e6a092b3616",
- "stage": "images",
- "updated": "2026-11-07T16:16:07+09:00",
- "busy": {
-  "images": 1
- }
+ "code": "dd0b4e155771",
+ "stage": "gate_images",
+ "updated": "2026-11-07T19:49:07+09:00",
+ "busy": {},
+ "images_back": true
 }
