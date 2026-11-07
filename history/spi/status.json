@@ -2,11 +2,19 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/018_b_yakudoshi_2026",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading"
  ],
  "started": "2026-11-07T08:44:59+09:00",
  "tries": 1,
  "code": "8e6a092b3616",
- "stage": "gate_script",
- "gate_fails": 1
+ "stage": "images",
+ "gate_fails": 1,
+ "updated": "2026-11-07T11:52:30+09:00",
+ "busy": {
+  "images": 1
+ }
 }
