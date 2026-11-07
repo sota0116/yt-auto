@@ -1,0 +1,133 @@
+{
+ "ch": "kakure",
+ "work": "_chara_010_ヤマタノオロチ",
+ "portrait": false,
+ "made": "2026-11-08 01:28",
+ "style_en": "Japanese TV anime style, clean bold line art, cel shading, calm muted colors, bright even light. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. Full body fully inside the image, filling the height, one single character centered.",
+ "avoid_en": "text, letters, logo, modern clothes, Chinese-style clothing, nudity, blood, multiple characters, background scenery",
+ "rules": {},
+ "characters": {
+  "kushinada": {
+   "desc_en": "Kushinada-hime, a young maiden of ancient Izumo about 16 years old, long straight black hair tied low at the back with a white cord, a few rice-plant ornaments in her hair, a simple white Kofun-period kinu tunic over a long pale green mo skirt, a thin string of small red magatama beads, barefoot, a quiet serious face with large dark eyes",
+   "channel": true
+  },
+  "susanoo": {
+   "desc_en": "Susanoo, a wild young male storm god of ancient Japan about 25 years old, untidy long black hair partly tied in rough mizura loops, a short stubble beard, fierce sharp eyes, a dark indigo Kofun-period kinu tunic with a rope belt and grey hakama trousers tied below the knees, a long straight iron sword (totsuka no tsurugi) at the waist, barefoot",
+   "channel": true
+  },
+  "ashinazuchi": {
+   "desc_en": "Ashinazuchi, an old earthly god of Izumo about 70 years old, a thin bent old man with white hair tied in small mizura loops and a long white beard, a worn pale brown Kofun-period tunic and trousers, a straw rope belt, barefoot, a tired sorrowful face",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "kushinada_stand",
+   "image": "クシナダヒメが、両手を体の前で軽く重ね、まっすぐ立っている全身。静かで真剣な顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime standing straight with her hands lightly folded in front of her, a quiet serious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime standing straight with her hands lightly folded in front of her, a quiet serious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "kushinada_fear",
+   "image": "クシナダヒメが、両腕で自分の肩を抱き、身をすくめておびえている全身。目を見開き、遠くを見る。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime hugging her own shoulders with both arms and shrinking back in fear, eyes wide open looking into the distance, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime hugging her own shoulders with both arms and shrinking back in fear, eyes wide open looking into the distance, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "kushinada_down",
+   "image": "クシナダヒメが、うつむいて目を伏せ、悲しそうに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime standing with her head bowed and eyes lowered, a sad face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime standing with her head bowed and eyes lowered, a sad face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "kushinada_kneel",
+   "image": "クシナダヒメが、地面にひざをついて座り、両手を胸の前で合わせて祈っている全身。目を閉じている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime kneeling and praying with both hands together in front of her chest, eyes closed, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime kneeling and praying with both hands together in front of her chest, eyes closed, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "kushinada_look",
+   "image": "クシナダヒメが、体を少し横に向け、肩ごしに後ろを振り返っている全身。不安そうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime turned slightly sideways, looking back over her shoulder with an anxious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime turned slightly sideways, looking back over her shoulder with an anxious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "kushinada_calm",
+   "image": "クシナダヒメが、顔を上げて、少しだけほほえんで立っている全身。おだやかな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Kushinada-hime standing with her face raised and a faint gentle smile, a calm peaceful face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "kushinada"
+   ],
+   "en": "Kushinada-hime standing with her face raised and a faint gentle smile, a calm peaceful face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "susanoo_stand",
+   "image": "スサノオが、腕を組み、足を開いて堂々と立っている全身。強い目。腰にまっすぐな長い剣。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Susanoo standing boldly with his arms crossed and feet apart, strong fierce eyes, a long straight sword at his waist, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "susanoo"
+   ],
+   "en": "Susanoo standing boldly with his arms crossed and feet apart, strong fierce eyes, a long straight sword at his waist, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "susanoo_sword",
+   "image": "スサノオが、両手でまっすぐな長い剣を振り上げ、斬りかかろうとしている全身。けわしい顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Susanoo raising a long straight sword with both hands, about to strike, a stern intense face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "susanoo"
+   ],
+   "en": "Susanoo raising a long straight sword with both hands, about to strike, a stern intense face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "susanoo_ask",
+   "image": "スサノオが、片手を前に出し、何かをたずねるように話しかけている全身。まじめな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Susanoo holding one hand forward as he speaks, asking a question, a serious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "susanoo"
+   ],
+   "en": "Susanoo holding one hand forward as he speaks, asking a question, a serious face, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "ashinazuchi_cry",
+   "image": "アシナヅチが、片手で目元をおさえて泣いている全身。白いひげの老人。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ashinazuchi, an old man with a white beard, weeping with one hand covering his eyes, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "ashinazuchi"
+   ],
+   "en": "Ashinazuchi, an old man with a white beard, weeping with one hand covering his eyes, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "ashinazuchi_speak",
+   "image": "アシナヅチが、両手を少し広げ、悲しそうに何かを語っている全身。白いひげの老人。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ashinazuchi, an old man with a white beard, speaking sorrowfully with both hands slightly open, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "ashinazuchi"
+   ],
+   "en": "Ashinazuchi, an old man with a white beard, speaking sorrowfully with both hands slightly open, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  },
+  {
+   "id": "ashinazuchi_bow",
+   "image": "アシナヅチが、両ひざをついて深く頭を下げている全身。白いひげの老人。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ashinazuchi, an old man with a white beard, kneeling on both knees and bowing his head deeply, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines.",
+   "chars": [
+    "ashinazuchi"
+   ],
+   "en": "Ashinazuchi, an old man with a white beard, kneeling on both knees and bowing his head deeply, full body. Plain pure white background, no floor, no shadow, full body centered, one character only, clear outlines."
+  }
+ ]
+}
