@@ -2,11 +2,15 @@
  "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/016_yoru_kangae",
  "done": [
   "pick",
-  "write"
+  "write",
+  "gate_script",
+  "voice",
+  "yomi"
  ],
  "started": "2026-11-07T08:45:02+09:00",
  "tries": 1,
  "code": "8e6a092b3616",
- "stage": "gate_script",
- "gate_fails": 1
+ "stage": "reading",
+ "gate_fails": 1,
+ "updated": "2026-11-07T11:56:20+09:00"
 }
