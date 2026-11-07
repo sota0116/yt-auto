@@ -18,7 +18,7 @@
   "seconds": 38,
   "title_now": "【60代】財布の底に、使えない10円玉がある人へ",
   "synthetic_on": null,
-  "views_now": 1180,
+  "views_now": 1182,
   "published": true,
   "published_at": "2026-11-01T19:00:00+09:00",
   "comment_id": "Ugy0EVapQkJuL77B9aR4AaABAg",
@@ -93,7 +93,7 @@
   "seconds": 41,
   "title_now": "【60代】財布に入れておくとお金が逃げる物3選",
   "synthetic_on": null,
-  "views_now": 1236,
+  "views_now": 1246,
   "published": true,
   "published_at": "2026-11-04T19:00:22+09:00",
   "comment_id": "UgyNaHSBf2gGGfIDi1l4AaABAg",
@@ -118,7 +118,7 @@
   "seconds": 43,
   "title_now": "【60代】実は貧乏な人に多い財布の特徴3選",
   "synthetic_on": null,
-  "views_now": 8,
+  "views_now": 9,
   "_respaced": "2026-11-05T19:00:00+09:00 → 2026-11-05T12:00:00+09:00（2026-11-04 respace.py。3時間あける）",
   "published": true,
   "published_at": "2026-11-05T12:00:13+09:00",
@@ -169,7 +169,7 @@
   "seconds": 35,
   "title_now": "【60代】財布に「これ」入れてる人、今すぐ出して",
   "synthetic_on": null,
-  "views_now": 184,
+  "views_now": 239,
   "published": true,
   "published_at": "2026-11-06T19:00:22+09:00",
   "comment_id": "Ugzap9_j9TiXLkbP4Rt4AaABAg",
@@ -228,7 +228,6 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-07T02:20:57+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
@@ -237,7 +236,13 @@
   ],
   "comment": "あなたの洗面所は、5つのうち、いくつ当てはまりましたか？ コメントで、数を教えてくださいね。",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-10T18:00:00+09:00",
+  "seconds": 864,
+  "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S113_新札",
@@ -248,12 +253,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-07T05:13:58+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】財布に「新札」絶対ため込まないで"
   ],
-  "comment": "あなたの財布の新札は、いま何枚ですか。"
+  "comment": "あなたの財布の新札は、いま何枚ですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-09T19:00:00+09:00",
+  "seconds": 39,
+  "title_now": "【60代】財布に「新札」絶対ため込まないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S114_エコバッグの底のレシート",
@@ -264,11 +274,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-07T08:48:47+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】エコバッグにレシートためてる人、今すぐ出して"
   ],
-  "comment": "あなたのエコバッグの底は、いま空ですか。"
+  "comment": "あなたのエコバッグの底は、いま空ですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-10T12:00:00+09:00",
+  "seconds": 35,
+  "title_now": "【60代】エコバッグにレシートためてる人、今すぐ出して",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

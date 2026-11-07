@@ -220,7 +220,14 @@
   ],
   "kind": "after",
   "title": "【心理学】同じひとりの時間なのに、気分が沈む日と軽い日がある人の正体 #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 20,
+   "averageViewPercentage": 60.8,
+   "averageViewDuration": 30,
+   "subscribersGained": 0,
+   "取った日": "2026-11-07"
+  }
  },
  "007_kotowarenai": {
   "type": "人づきあい",
@@ -278,5 +285,29 @@
   "kind": "after",
   "title": "【心理学】家を「散らかってる」と話す妻たち、実は夕方の気分まで沈みがちでした #shorts",
   "publish_slot": "22:10"
+ },
+ "008_mono_herasu:short_2": {
+  "type": "幸せの心理",
+  "video_id": "uO3bG-5ILtE",
+  "hook": "自分の物だけ、なぜか高く見えてしまうのは、なぜでしょうか？",
+  "band": [
+   "持っただけで",
+   "値段が2倍"
+  ],
+  "kind": "after",
+  "title": "【心理学】もらって間もないマグカップに、持ち主は2倍ほどの値段をつけた｜物を手放せない心 #shorts",
+  "publish_slot": "07:10"
+ },
+ "008_mono_herasu:short_3": {
+  "type": "幸せの心理",
+  "video_id": "qK71dzk9iWA",
+  "hook": "思い出の品が、どうしても手放せないのは、なぜでしょうか？",
+  "band": [
+   "思い出の品は",
+   "写真1枚で手放す"
+  ],
+  "kind": "after",
+  "title": "【心理学】思い出の物を手放せる人の意外な特徴｜写真1枚で、寄付が80個増えた #shorts",
+  "publish_slot": "12:10"
  }
 }
