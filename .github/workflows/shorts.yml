@@ -64,6 +64,8 @@ jobs:
           CLAUDE_ACCOUNT: ${{ vars.CLAUDE_ACCOUNT }}
           CLAUDE_SUB_UNTIL: ${{ vars.CLAUDE_SUB_UNTIL }}
         run: bash pipeline/pick_claude.sh
+      - name: Claude の入口を PATH の先頭に置く（pipeline/bin/claude。上限・ログイン切れで止まったら、もう一方のアカウントで頼み直す）
+        run: echo "$GITHUB_WORKSPACE/pipeline/bin" >> "$GITHUB_PATH"
       - name: 動画スキルを置く（共通の部品 common.py を使う。Secrets から戻す）
         env:
           VENDOR_SKILL_B64: ${{ secrets.VENDOR_SKILL_B64 }}
@@ -93,6 +95,7 @@ jobs:
         if: vars.PAUSED != '1'
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LOVART_ACCESS_KEY: ${{ secrets.LOVART_ACCESS_KEY }}
           LOVART_SECRET_KEY: ${{ secrets.LOVART_SECRET_KEY }}

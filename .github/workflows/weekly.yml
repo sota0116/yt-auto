@@ -49,6 +49,8 @@ jobs:
           CLAUDE_ACCOUNT: ${{ vars.CLAUDE_ACCOUNT }}
           CLAUDE_SUB_UNTIL: ${{ vars.CLAUDE_SUB_UNTIL }}
         run: bash pipeline/pick_claude.sh
+      - name: Claude の入口を PATH の先頭に置く（pipeline/bin/claude。上限・ログイン切れで止まったら、もう一方のアカウントで頼み直す）
+        run: echo "$GITHUB_WORKSPACE/pipeline/bin" >> "$GITHUB_PATH"
       - name: YouTube の鍵を置く（時間帯の数字を取る段だけで使う。中身は画面に出さない）
         env:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -80,6 +82,7 @@ jobs:
         if: ${{ !inputs.stats_only }}
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
           GH_TOKEN: ${{ github.token }}
           HC_WEEKLY: ${{ secrets.HC_PING_WEEKLY }}   # 無くてもよい（無ければ合図を送らない。週報の見張りは watch がする）
         run: python -X utf8 pipeline/weekly.py $CHANNELS

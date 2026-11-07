@@ -229,7 +229,8 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
     if "OAuth token revoked" in out or "Failed to authenticate" in out:
         # 台本の失敗ではない。前は「台本ゲートで3回不合格」と出て失敗の数に入り、その回を飛ばすおそれがあった（2026-10-30 全チャンネルで起きた）
         raise Wait(f"{stage} で Claude のログインが切れています（GitHub の Secrets の CLAUDE_CODE_OAUTH_TOKEN を入れ直すと、次の実行で続きから作ります）")
-    m = re.search(r"You've hit your (?:\w+ )?limit[^\n]*|usage limit reached[^\n]*", out)
+    # 「You've hit your org's monthly spend limit」も拾う（2026-11-07 psy/spi/nihongi で取りこぼし、台本ゲートの不合格に数えていた）
+    m = re.search(r"You've hit your [^\n]*?limit[^\n]*|usage limit reached[^\n]*", out)
     if m:
         # Claude の利用枠の上限も台本の失敗ではない。前は「台本ゲートで5回不合格」と数えられ、その回を捨てて次の回も同じく空振りした（nihongi 2026-11-02）
         raise Wait(f"{stage} で Claude の利用枠の上限に届きました（{m.group(0).strip()[:80]}）。枠が戻った後の実行で続きから作ります")
