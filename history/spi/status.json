@@ -1,22 +1,12 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/017_b_ujigami_2026",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/018_b_yakudoshi_2026",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images",
-  "motion"
+  "write"
  ],
- "started": "2026-11-06T07:40:39+09:00",
- "tries": 3,
+ "started": "2026-11-07T08:44:59+09:00",
+ "tries": 1,
  "code": "8e6a092b3616",
- "stage": "gate_images",
- "updated": "2026-11-06T16:57:01+09:00",
- "busy": {
-  "images": 1
- },
- "images_back": true
+ "stage": "gate_script",
+ "gate_fails": 1
 }
