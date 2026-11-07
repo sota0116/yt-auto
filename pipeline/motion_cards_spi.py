@@ -7,6 +7,8 @@
 #   Playwright の chromium の時は H.264 の動画が読めないことがあるので、build_long_spi.py が動く絵を VP9（webm）に直してから渡す（uses_bundled()）
 # ・1つのカードで落ちたら、ブラウザを立ち上げ直して2回までやり直す
 # ・時間で決まる描き方なので、何度作っても同じ動画になる
+# ・v10（2026-11-07）：型に GSAP のカード（kinetic・count）と three.js の背景（spec.bg3d）を足した。
+#   ライブラリは pipeline/vendor_js の写しを読む（ネットに取りに行かない）。three.js が動かない時は背景だけ飛ばしてカードは描く
 import argparse, json, os, subprocess, sys, tempfile
 from pathlib import Path
 
@@ -48,7 +50,8 @@ def font_css():
 
 def page_file():
     """字の読み込みを差し込んだ型を、一時ファイルに書く（元の型は書き換えない）"""
-    t = HTML.read_text(encoding="utf-8").replace("/*@FONTS@*/", font_css(), 1)
+    # v10：GSAP と three.js は pipeline/vendor_js に置いた写しを読む（一時ファイルは別の場所に書くので、絶対パスにする）
+    t = HTML.read_text(encoding="utf-8").replace("/*@FONTS@*/", font_css(), 1).replace("@VENDOR@", (HERE / "vendor_js").as_uri())
     fd, p = tempfile.mkstemp(prefix="motion_cards_spi_", suffix=".html", dir=str(HERE.parent / "_tmp") if (HERE.parent / "_tmp").is_dir() else None)
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         f.write(t)
