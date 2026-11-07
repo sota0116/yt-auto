@@ -1,0 +1,240 @@
+{
+ "title": "【60代】お札の間にお釣りの小銭、絶対しまわないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ。物が主役で、人物は答えのカット（C09）にだけ名乗らずに出る",
+  "言い伝えは「昔から〜と言われています」の距離で話し、効果は言い切らない"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お札の間に小銭、お金が逃げるこれをしていませんか。",
+   "tts_text": "おさつのあいだに小銭、お金が逃げるこれをしていませんか。",
+   "subs": [
+    "お札の間に\n小銭、",
+    "お金が逃げる\nこれを",
+    "して\nいませんか。"
+   ],
+   "image_en": "Extreme close-up of an older woman's hands at a shop checkout counter, taking a few plain coins from a small plain tray and pushing them straight into the bill compartment of an open, worn brown leather wallet. No screens, no signs, no text anywhere. Warm light. Vertical framing, the wallet and coins fill more than half of the frame.",
+   "hook": "お札の間に\nこれNG",
+   "highlight": [
+    "お金が逃げる"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Extreme close-up of an older woman's hands at a shop checkout counter, taking a few plain coins from a small plain tray and pushing them straight into the bill compartment of an open, worn brown leather wallet. No screens, no signs, no text anywhere. Warm light. Vertical framing, the wallet and coins fill more than half of the frame."
+  },
+  {
+   "id": "C02",
+   "narration": "会計で受け取ったお釣りを、札入れへ挟むことです。",
+   "tts_text": "会計で受け取ったお釣りを、さついれへはさむことです。",
+   "subs": [
+    "会計で\n受け取った",
+    "お釣りを、",
+    "札入れへ\n挟むことです。"
+   ],
+   "image_en": "Very close top-down view of an open brown leather wallet: several plain coins are wedged between folded plain paper bills, the bills bent and creased by the coins. A finger presses one more coin in. No text, no printed patterns. Vertical framing, the wallet fills more than half of the frame.",
+   "highlight": [
+    "お釣り"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Very close top-down view of an open brown leather wallet: several plain coins are wedged between folded plain paper bills, the bills bent and creased by the coins. A finger presses one more coin in. No text, no printed patterns. Vertical framing, the wallet fills more than half of the frame."
+  },
+  {
+   "id": "C03",
+   "narration": "硬貨で波打つ財布は、金運を遠ざけるそうです。",
+   "tts_text": "こうかでなみうつ財布は、金運をとおざけるそうです。",
+   "subs": [
+    "硬貨で波打つ\n財布は、",
+    "金運を\n遠ざけるそうです。"
+   ],
+   "image_en": "Close-up of a fat, bulging brown leather wallet lying on a wooden kitchen table, so full of coins that its flap cannot close, a few plain coins spilling out onto the table. No text. Soft evening light. Vertical framing, the wallet fills more than half of the frame.",
+   "image": "Close-up of a fat, bulging brown leather wallet lying on a wooden kitchen table, so full of coins that its flap cannot close, a few plain coins spilling out onto the table. No text. Soft evening light. Vertical framing, the wallet fills more than half of the frame."
+  },
+  {
+   "id": "C04",
+   "narration": "昔から、お札と小銭は格が違うと言われています。",
+   "tts_text": "昔から、おさつと小銭は、かくが違うと言われています。",
+   "subs": [
+    "昔から、\nお札と小銭は",
+    "格が違うと\n言われています。"
+   ],
+   "image_en": "Close-up on a folded cream cloth on a low wooden table: on the left a neat flat stack of plain paper bills, on the right a small separate pile of plain coins, with clear space between them. No printed patterns, no text. Calm warm light. Vertical framing, the bills and coins fill more than half of the frame.",
+   "highlight": [
+    "格"
+   ],
+   "image": "Close-up on a folded cream cloth on a low wooden table: on the left a neat flat stack of plain paper bills, on the right a small separate pile of plain coins, with clear space between them. No printed patterns, no text. Calm warm light. Vertical framing, the bills and coins fill more than half of the frame."
+  },
+  {
+   "id": "C05",
+   "narration": "お札に硬貨を挟むのは、避けたい形です。",
+   "tts_text": "おさつに硬貨をはさむのは、さけたいかたちです。",
+   "subs": [
+    "お札に\n硬貨を挟むのは、",
+    "避けたい\n形です。"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@close"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "お札は折れ、留め具も閉まりません。",
+   "tts_text": "おさつはおれ、とめぐもしまりません。",
+   "subs": [
+    "お札は折れ、",
+    "留め具も\n閉まりません。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "金運の入る隙間が無いとも聞きます。",
+   "tts_text": "金運のはいるすきまが無いとも聞きます。",
+   "subs": [
+    "金運の入る\n隙間が",
+    "無いとも\n聞きます。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@full"
+   ],
+   "highlight": [
+    "隙間"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "では、レジ前でしまうのも、だめでしょうか。",
+   "tts_text": "では、レジまえでしまうのも、だめでしょうか。",
+   "subs": [
+    "では、\nレジ前で",
+    "しまうのも、",
+    "だめでしょうか。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "レジ前でしまって、大丈夫です。",
+   "tts_text": "レジまえでしまって、だいじょうぶです。",
+   "subs": [
+    "レジ前で\nしまって、",
+    "大丈夫です。"
+   ],
+   "image_en": "Sumie stands at a shop checkout counter holding her open brown wallet in both hands, coins in her palm, looking down at the wallet with a sudden startled face as if she just realized something, eyebrows raised and mouth slightly open. The counter is plain wood, no screens or signs visible. Vertical framing, the wallet and her hands large in the lower half, her face in the upper half.",
+   "motion": true,
+   "anim": "kling",
+   "chars": [
+    "sumie"
+   ],
+   "highlight": [
+    "大丈夫"
+   ],
+   "peak": true,
+   "strong": true,
+   "image": "Sumie stands at a shop checkout counter holding her open brown wallet in both hands, coins in her palm, looking down at the wallet with a sudden startled face as if she just realized something, eyebrows raised and mouth slightly open. The counter is plain wood, no screens or signs visible. Vertical framing, the wallet and her hands large in the lower half, her face in the upper half."
+  },
+  {
+   "id": "C10",
+   "narration": "大事なのは、硬貨を小銭入れだけへ落とすこと。",
+   "subs": [
+    "大事なのは、",
+    "硬貨を\n小銭入れだけへ",
+    "落とすこと。"
+   ],
+   "image_en": "Close-up of an older woman's hands dropping plain coins one by one into the separate zipped coin pocket of a brown leather wallet, while the bill section stays flat and neat. No text. Warm light. Vertical framing, the wallet fills more than half of the frame.",
+   "highlight": [
+    "小銭入れ"
+   ],
+   "image": "Close-up of an older woman's hands dropping plain coins one by one into the separate zipped coin pocket of a brown leather wallet, while the bill section stays flat and neat. No text. Warm light. Vertical framing, the wallet fills more than half of the frame."
+  },
+  {
+   "id": "C11",
+   "narration": "札入れには、一枚も混ぜないのが決め手。",
+   "tts_text": "さついれには、いちまいも混ぜないのが決め手。",
+   "subs": [
+    "札入れには、",
+    "一枚も\n混ぜないのが",
+    "決め手。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ],
+   "highlight": [
+    "一枚も"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "帰宅したら、余った硬貨は小皿へ移しておくの。",
+   "tts_text": "帰宅したら、あまった硬貨は、こざらへ移しておくの。",
+   "subs": [
+    "帰宅したら、",
+    "余った硬貨は\n小皿へ",
+    "移しておくの。"
+   ],
+   "image_en": "Close-up of an older woman's hands tipping plain coins from a brown leather wallet into a small round plain ceramic dish on a wooden kitchen table. The wallet now looks slim. No text. Soft evening light. Vertical framing, the dish and wallet fill more than half of the frame.",
+   "highlight": [
+    "小皿"
+   ],
+   "image": "Close-up of an older woman's hands tipping plain coins from a brown leather wallet into a small round plain ceramic dish on a wooden kitchen table. The wallet now looks slim. No text. Soft evening light. Vertical framing, the dish and wallet fill more than half of the frame."
+  },
+  {
+   "id": "C13",
+   "narration": "変化の無い月も、気楽に続けてみてね。",
+   "subs": [
+    "変化の無い月も、",
+    "気楽に\n続けてみてね。"
+   ],
+   "same_as": "C12",
+   "shots": [
+    "C12@full"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの札入れに、いま硬貨は挟まっていませんか。",
+   "tts_text": "あなたのさついれに、いま硬貨は、はさまっていませんか。",
+   "subs": [
+    "あなたの\n札入れに、",
+    "いま硬貨は\n挟まって",
+    "いませんか。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの札入れに、いま硬貨は挟まっていませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #お釣りの小銭",
+ "tags": [
+  "金運",
+  "財布",
+  "お釣りの小銭",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの札入れに、いま硬貨は挟まっていませんか。"
+}

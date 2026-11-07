@@ -1,20 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S115_封筒の袋分け",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S116_お釣りの小銭",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion"
+  "voice"
  ],
- "started": "2026-11-07T08:49:48+09:00",
- "tries": 3,
+ "started": "2026-11-08T05:50:01+09:00",
+ "tries": 0,
  "code": "b49729292a8e",
- "stage": "gate_images",
- "updated": "2026-11-07T19:41:26+09:00",
+ "stage": "images",
+ "updated": "2026-11-08T05:58:00+09:00",
  "busy": {
   "images": 1
- },
- "images_back": true
+ }
 }

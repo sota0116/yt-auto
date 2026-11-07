@@ -1,8 +1,8 @@
 {
  "ch": "okinu",
- "started": "2026-11-08T03:23:27+09:00",
+ "started": "2026-11-08T05:50:01+09:00",
  "made": [],
- "stopped": "絵ゲートの不合格が残りました（images\\_gate.json）（short）",
+ "stopped": "絵がまだ途中（残り7枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）（short）",
  "在庫": {
   "short": 3,
   "long": 2
@@ -11,6 +11,11 @@
   "short": 2,
   "long": 0
  },
- "ended": "2026-11-08T03:23:29+09:00",
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S115_封筒の袋分け"
+ ],
+ "待ち": true,
+ "途中": true,
+ "ended": "2026-11-08T05:58:05+09:00",
  "今月の制作費_円": 0.0
 }
