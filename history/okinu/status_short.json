@@ -9,8 +9,10 @@
  "started": "2026-11-07T08:49:48+09:00",
  "tries": 0,
  "code": "8e6a092b3616",
- "stage": "gate_images",
+ "stage": "images",
  "updated": "2026-11-07T11:46:42+09:00",
- "busy": {},
+ "busy": {
+  "images": 1
+ },
  "images_back": true
 }
