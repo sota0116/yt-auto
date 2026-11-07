@@ -1,22 +1,12 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/015_kanojo_iya",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/016_yoru_kangae",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images",
-  "motion"
+  "write"
  ],
- "started": "2026-11-06T12:24:46+09:00",
- "tries": 3,
+ "started": "2026-11-07T08:45:02+09:00",
+ "tries": 1,
  "code": "8e6a092b3616",
- "stage": "gate_images",
- "updated": "2026-11-07T01:19:38+09:00",
- "busy": {
-  "images": 1
- },
- "images_back": true
+ "stage": "gate_script",
+ "gate_fails": 1
 }
