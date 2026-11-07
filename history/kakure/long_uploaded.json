@@ -138,5 +138,19 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "謎"
+ },
+ {
+  "work": "011_アメノウズメ",
+  "video_id": "f_zbld560DA",
+  "title": "天岩戸の前で踊ったアメノウズメ 隠れた太陽の神を外へ出した一言【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-19T20:00:00+09:00",
+  "uploaded_at": "2026-11-07T21:28:44+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "物語"
  }
 ]

@@ -180,5 +180,27 @@
   "uploaded_at": "2026-11-06T04:46:23+09:00",
   "missing": false,
   "playlist": "図鑑"
+ },
+ {
+  "work": "S019_切出_セイレーンの歌",
+  "video_id": "vSIUgJvbSXE",
+  "title": "怪物セイレーンが歌で約束したのは恋ではなく「すべてを知っている」だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-16T19:00:00+09:00",
+  "uploaded_at": "2026-11-07T21:31:00+09:00",
+  "missing": false
+ },
+ {
+  "work": "S020_格付け_大きい数",
+  "video_id": "sWColSHb2CM",
+  "title": "八百万の神は日本書紀では八十万だった 古事記の神話でいちばん大きい数ベスト3【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-17T12:00:00+09:00",
+  "uploaded_at": "2026-11-07T21:32:36+09:00",
+  "missing": false
  }
 ]
