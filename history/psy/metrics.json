@@ -125,10 +125,25 @@
  },
  "007_kotowarenai": {
   "type": "人づきあい",
-  "video_id": "iFnGAfBm-p0"
+  "video_id": "iFnGAfBm-p0",
+  "h72": {
+   "views": 145,
+   "averageViewPercentage": 22.69,
+   "averageViewDuration": 253,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 212
+  }
  },
  "008_mono_herasu": {
   "type": "幸せの心理",
   "video_id": "mu4FkBUf1x8"
+ },
+ "009_zenbu_hitonome": {
+  "type": "人づきあい",
+  "video_id": "X4TbcBQKT0k"
  }
 }

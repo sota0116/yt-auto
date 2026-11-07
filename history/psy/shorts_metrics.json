@@ -238,7 +238,14 @@
   ],
   "kind": "after",
   "title": "【心理学】誘いを断れない人、実は相手の気持ちを読みちがえています #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 119,
+   "averageViewPercentage": 594.6,
+   "averageViewDuration": 261,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  }
  },
  "007_kotowarenai:short_2": {
   "type": "人づきあい",
@@ -309,5 +316,17 @@
   "kind": "after",
   "title": "【心理学】思い出の物を手放せる人の意外な特徴｜写真1枚で、寄付が80個増えた #shorts",
   "publish_slot": "12:10"
+ },
+ "008_mono_herasu:short_4": {
+  "type": "幸せの心理",
+  "video_id": "DXGFL1rnjK8",
+  "hook": "使っていない物でも、高かった物ほど捨てにくいのは、なぜでしょうか？",
+  "band": [
+   "高かった物ほど",
+   "捨てられない"
+  ],
+  "kind": "after",
+  "title": "【心理学】高かった物ほど手放せない人の正体｜半分を超える人が、楽しくない旅を選んだ #shorts",
+  "publish_slot": "22:10"
  }
 }
