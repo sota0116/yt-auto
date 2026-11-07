@@ -9,12 +9,11 @@
   "reading"
  ],
  "started": "2026-11-07T08:45:02+09:00",
- "tries": 1,
- "code": "8e6a092b3616",
- "stage": "images",
+ "tries": 0,
+ "code": "dd0b4e155771",
+ "stage": "gate_images",
  "gate_fails": 1,
- "updated": "2026-11-07T16:08:56+09:00",
- "busy": {
-  "images": 1
- }
+ "updated": "2026-11-07T19:48:57+09:00",
+ "busy": {},
+ "images_back": true
 }
