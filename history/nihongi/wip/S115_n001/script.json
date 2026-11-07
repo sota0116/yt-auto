@@ -1,0 +1,283 @@
+{
+ "format": "short",
+ "title": "もしも伊能忠敬が、江戸から出られなかったら。地球1周分歩いても地球は測れない #もしも #日本史 #江戸時代",
+ "promise": "伊能忠敬が全国を歩いた本当のねらいは、日本地図ではなく地球の大きさ（緯度1度の長さ）を測ることだった、と分かる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※伊能忠敬が江戸から出られない話は作り話です。忠敬が50歳で江戸に出て高橋至時に学んだこと、緯度1度の長さを求めて深川から浅草までを測ったこと、1800年に55歳で蝦夷地へ向かったこと、約17年で約4万kmを歩いたといわれること、1821年に地図が完成したことは史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "伊能忠敬",
+  "日本地図",
+  "高橋至時",
+  "雑学"
+ ],
+ "banner": [
+  "アナザー日本紀",
+  "地図は江戸だけ"
+ ],
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：伊能忠敬と、忠敬の測量隊（弟子）は、江戸の外へ一歩も出られない（江戸の中は歩ける）。ほかの町の人は出入りできる",
+  "忠敬は自分が江戸を出られないことを知っている（千住の先で足が止まる場面で知る）",
+  "高橋至時の「浅草まででは短すぎる」は、決まりが分かる前の史実の場面（語り手が「と伝わる」で話す）",
+  "本当の歴史（1800年に蝦夷地へ出たこと・約4万km・28.2里・1821年の地図）は語り手だけが話す。忠敬は自分の死後の地図を知らない",
+  "江戸の中で約4万km歩いた・地図が江戸だけ、は作り話の結果で、語り手が話す"
+ ],
+ "world_terms": [
+  "出られ",
+  "江戸",
+  "蝦夷地",
+  "千住",
+  "4万",
+  "地球",
+  "地図",
+  "28.2"
+ ],
+ "voices": {
+  "tadataka": 53
+ },
+ "facts": [
+  "伊能忠敬（1745〜1818）は高橋至時（1764〜1804）に天文学を学び、終生至時を師と仰いだ。至時と忠敬の仕事の一つは、観測によって緯度1度の正確な距離を測ることだった。1821年に完成した忠敬の地図は幕府に秘匿され、明治まで人の眼に触れなかった。出どころ：国立天文台 暦計算室 貴重資料展示室 eco.mtk.nao.ac.jp/koyomi/exhibition/018/",
+  "忠敬は49歳で隠居し、50歳で天文暦学を学ぶために江戸へ移り、19歳年下の高橋至時に弟子入りした。深川黒江町から浅草までの距離を測って緯度1度の長さを出そうとしたが、至時に「深川から浅草まででは短すぎる」と言われ、少なくとも江戸から蝦夷地ほどの長さが要ったと伝わる。55歳で第1次測量へ出て、約17年に10回の測量で約4万kmを歩いたといわれる。1818年に73歳で亡くなり、死後3年で弟子と幕府の天文方が『大日本沿海輿地全図』を仕上げた。出どころ：千葉県公式観光サイト ちば観光ナビ「伊能忠敬の知られざる生涯」maruchiba.jp/feature/detail_286.html（深川から浅草の歩測図は香取市 伊能忠敬記念館の所蔵と書かれている）",
+  "最初の測量は、地球の大きさを決めるため、緯度1度あたりの子午線の長さを決めるものだった。出どころ：東京地学協会の講演資料 www.geog.or.jp/files/h27-autumn_02.pdf（本文の字はこの環境で取り出せず、検索の抜粋で確認）",
+  "1800年（寛政12年）、忠敬は深川黒江町の隠宅を出て浅草の暦局に寄り、千住から蝦夷地へ向かった（4月19日は「地図の日」の由来）。出どころ：鉄道フォーラム「伊能忠敬測量日数」www.railforum.jp（PDF）、サライ serai.jp/hobby/1028538、記念日の解説 bestcalendar.jp/dates/kinenbi/2033（どれも検索の抜粋で確認）",
+  "忠敬は1801年（第2次）の奥州街道の測量で得た値をもとに「緯度差1度＝28.2里」とした。出どころ：J-STAGE『地学雑誌』129巻2号 285ページの論文（www.jstage.jst.go.jp/article/jgeography/129/2/129_129.285/_pdf。冒頭の文を検索の抜粋で確認）",
+  "1816年に測量が終わり、高橋景保のもとで『大日本沿海輿地全図』が作られ、1821年（文政4年）に幕府へ納められた。出どころ：岐阜県図書館の資料 www.library.pref.gifu.lg.jp/uploads/2019/10/02.pdf（検索の抜粋で確認）",
+  "忠敬が江戸から出られない決まり、江戸の中だけで約4万km歩いたこと、江戸だけの地図は作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "江戸から\n出られない",
+   "narration": "江戸を出られぬ伊能忠敬は、17年歩いても地球を測れない。",
+   "highlight": [
+    "地球を測れない"
+   ],
+   "image_en": "At night on the edge of Edo, the surveyor stands frozen with wide shocked eyes at an old wooden boundary post on a dirt road, one foot raised as if stopped by an invisible wall, a huge starry sky above him.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "anim": "kling",
+   "image": "At night on the edge of Edo, the surveyor stands frozen with wide shocked eyes at an old wooden boundary post on a dirt road, one foot raised as if stopped by an invisible wall, a huge starry sky above him.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "50歳で江戸に出て、19歳下の高橋至時に学ぶ。",
+   "highlight": [
+    "19歳下"
+   ],
+   "tts_text": "50歳で江戸に出て、19歳下のたかはしよしときに学ぶ。",
+   "image_en": "Inside a lantern-lit Edo astronomer's study with brass instruments, the surveyor bows deeply on the tatami to a young astronomer about thirty, slim with a gentle clever face, black topknot and a dark blue kamishimo.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "Inside a lantern-lit Edo astronomer's study with brass instruments, the surveyor bows deeply on the tatami to a young astronomer about thirty, slim with a gentle clever face, black topknot and a dark blue kamishimo."
+  },
+  {
+   "id": "n03",
+   "narration": "ねらいは地図ではなく、地球の大きさだった。",
+   "highlight": [
+    "地球の大きさ"
+   ],
+   "image_en": "On the wooden platform of the Asakusa observatory at night, the surveyor looks up through a large wooden quadrant at the stars, the whole sky glowing above the dark roofs of Edo.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "On the wooden platform of the Asakusa observatory at night, the surveyor looks up through a large wooden quadrant at the stars, the whole sky glowing above the dark roofs of Edo."
+  },
+  {
+   "id": "n04",
+   "narration": "深川から浅草まで歩き、緯度1度の長さを出す。",
+   "tts_text": "深川から浅草まで歩き、緯度いちどの長さを出す。",
+   "image_en": "At dawn along a canal in Edo, the surveyor walks with careful even steps along a dirt street, counting on his fingers, wooden houses and small bridges behind him.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "At dawn along a canal in Edo, the surveyor walks with careful even steps along a dirt street, counting on his fingers, wooden houses and small bridges behind him."
+  },
+  {
+   "id": "n05",
+   "narration": "至時は、浅草まででは短すぎると言ったと伝わる。",
+   "tts_text": "よしときは、浅草まででは短すぎると言ったと伝わる。",
+   "image_en": "In the lantern-lit study, the young astronomer about thirty, slim with a gentle clever face, black topknot and a dark blue kamishimo, shakes his head with a wry smile and points far away to the north.",
+   "shots": [
+    "n05",
+    "n05@face"
+   ],
+   "chars": [],
+   "image": "In the lantern-lit study, the young astronomer about thirty, slim with a gentle clever face, black topknot and a dark blue kamishimo, shakes his head with a wry smile and points far away to the north."
+  },
+  {
+   "id": "n06",
+   "narration": "だがこの世界の忠敬は、江戸から一歩も出られない。",
+   "highlight": [
+    "一歩も出られない"
+   ],
+   "image_en": "Early morning at the edge of Edo town, the surveyor in travel clothes with a straw hat strains forward with clenched teeth, his straw sandal stuck in the air above the road as if blocked by an invisible wall.",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "Early morning at the edge of Edo town, the surveyor in travel clothes with a straw hat strains forward with clenched teeth, his straw sandal stuck in the air above the road as if blocked by an invisible wall."
+  },
+  {
+   "id": "n07",
+   "narration": "1800年、55歳。蝦夷地へ向かう千住の先で、足が止まる。",
+   "tts_text": "1800年、55歳。えぞちへ向かうせんじゅの先で、足が止まる。",
+   "image_en": "At a wooden bridge over a wide river at the northern edge of Edo, the surveyor and three young disciples with surveying poles and ropes all stand stuck at the foot of the bridge, straining forward with shocked faces, while ordinary travelers cross the bridge freely past them.",
+   "shots": [
+    "n07",
+    "n07@left"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "At a wooden bridge over a wide river at the northern edge of Edo, the surveyor and three young disciples with surveying poles and ropes all stand stuck at the foot of the bridge, straining forward with shocked faces, while ordinary travelers cross the bridge freely past them."
+  },
+  {
+   "id": "n08",
+   "narration": "ならば江戸の中を、歩き尽くすまでよ。",
+   "voice": "tadataka",
+   "image_en": "Close on the surveyor's face at dusk, jaw set, eyes burning with stubborn resolve, gripping a long surveying rope in both hands.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "Close on the surveyor's face at dusk, jaw set, eyes burning with stubborn resolve, gripping a long surveying rope in both hands."
+  },
+  {
+   "id": "n09",
+   "narration": "江戸の道だけを17年。歩いた距離は約4万キロ。",
+   "highlight": [
+    "約4万キロ"
+   ],
+   "tts_text": "江戸の道だけを17年。歩いた距離はやく4万キロ。",
+   "image_en": "Many seasons blur together: the surveyor, now older and greyer, walks the same narrow Edo streets with his disciples stretching a rope, cherry blossoms and snow falling at once around them.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "Many seasons blur together: the surveyor, now older and greyer, walks the same narrow Edo streets with his disciples stretching a rope, cherry blossoms and snow falling at once around them."
+  },
+  {
+   "id": "n10",
+   "narration": "地球1周分歩いても、地球の大きさは分からない。",
+   "highlight": [
+    "分からない"
+   ],
+   "image_en": "On the observatory platform at night, the old surveyor drops to his knees in despair, staring up at the vast starry sky, his worn-out straw sandals piled high beside him.",
+   "shots": [
+    "n10",
+    "n10@face"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "anim": "kling",
+   "peak": true,
+   "image": "On the observatory platform at night, the old surveyor drops to his knees in despair, staring up at the vast starry sky, his worn-out straw sandals piled high beside him.",
+   "motion": true
+  },
+  {
+   "id": "n11",
+   "narration": "本当の忠敬は江戸の外を測り、1度を28.2里と出した。",
+   "highlight": [
+    "28.2里"
+   ],
+   "tts_text": "本当の忠敬は江戸の外を測り、いちどを、にじゅうはってんにりと出した。",
+   "image_en": "Along a long coastal road in northern Japan, the surveyor and his disciples measure the ground with a rope and a tall wooden pole, waves and distant mountains behind them under a bright sky.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "Along a long coastal road in northern Japan, the surveyor and his disciples measure the ground with a rope and a tall wooden pole, waves and distant mountains behind them under a bright sky."
+  },
+  {
+   "id": "n12",
+   "narration": "死後の1821年、弟子たちが地図を仕上げた。",
+   "highlight": [
+    "1821年"
+   ],
+   "real": "Dai Nihon Enkai Yochi Zenzu Ino map",
+   "image_en": "An old hand-painted map of the Japanese coastline spread on a wooden floor, the coast drawn in fine red lines with tiny survey marks and no labels, warm lantern light. No people.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Dai Nihon enkai yochi zenzu LOC 2001620020-8.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Dai_Nihon_enkai_yochi_zenzu_LOC_2001620020-8.jpg/1920px-Dai_Nihon_enkai_yochi_zenzu_LOC_2001620020-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Dai_Nihon_enkai_yochi_zenzu_LOC_2001620020-8.jpg",
+    "検索語": "Dai Nihon Enkai Yochi Zenzu Ino map"
+   }
+  },
+  {
+   "id": "n13",
+   "narration": "この世界の地図は、江戸の外が真っ白。",
+   "highlight": [
+    "真っ白"
+   ],
+   "image_en": "A huge sheet of paper spread on a tatami floor: only one small town in the middle is drawn in dense fine detail, and the rest of the wide sheet is completely empty white; three disciples stare at it in silence.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "image": "A huge sheet of paper spread on a tatami floor: only one small town in the middle is drawn in dense fine detail, and the rest of the wide sheet is completely empty white; three disciples stare at it in silence."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "The old surveyor sits on the edge of the observatory platform at dawn, looking out past the roofs of Edo toward distant mountains with a quiet smile.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [
+    "tadataka"
+   ],
+   "image": "The old surveyor sits on the edge of the observatory platform at dawn, looking out past the roofs of Edo toward distant mountains with a quiet smile."
+  }
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "tempo": 1.35,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
