@@ -1,6 +1,9 @@
 <!doctype html>
 <html><head><meta charset="utf-8">
 <!-- motion_cards_spi.py が読み込む図解カードの型（motion_cards_v8.html の写し・2026-10-29。2026-10-30：v9 の rank カードと rules の nums を足した。rules の大きい字（76px・行の間150px）は金運おきぬ＝body.kinun の時だけ＝spi の見た目は v8 のまま。字の読み込みを style の頭の印にして、Windows と Linux で motion_cards_spi.py が差し込む）。draw(t) で t 秒目の1コマを描く（時間で決まるので、何度描いても同じ絵になる） -->
+<!-- v10（2026-11-07）：GSAP のカード kinetic（1字ずつ落ちる大きい字）と count（数え上がる数字）、three.js の背景 bg3d（spec.bg3d を付けたカードだけ）を足した。既存のカードの見た目は変えない。
+     ライブラリは pipeline/vendor_js/ に置いた写し（GSAP 3.14.2・three r185）。@VENDOR@ の印を motion_cards_spi.py がその場所に差し替える。GSAP は止めた timeline を draw(t) で seek するので、時間で決まる描き方のまま -->
+<script src="@VENDOR@/gsap-3.14.2.min.js"></script>
 <style>
 /*@FONTS@*/
 html,body{margin:0;width:1920px;height:1080px;overflow:hidden}
@@ -151,6 +154,20 @@ body.kinun .rl .no{width:96px;height:96px;font-size:58px}
 .kg .kf{position:absolute;inset:0;border:7px solid var(--shu);border-radius:6px;background:rgba(196,62,44,.12);opacity:0}
 /* 補足札は題と重ならないよう表の下・左に出す（題が長いので右上は使わない） */
 .kg-note{right:auto;top:716px;font-size:42px;padding:14px 30px}
+/* v10（2026-11-07）：GSAP のカード（kinetic・count）と three.js の背景（#bg3d）。名前は gk- / gc- / bg3d で始めて、既存のクラスと混ぜない */
+#bg3d{position:absolute;left:0;top:0;width:1920px;height:1080px;pointer-events:none}
+.gk{position:absolute;left:80px;right:80px;top:0;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.gk .gk-l1{font-size:84px;font-weight:600;white-space:nowrap}
+.gk .gk-l2{font-size:140px;font-weight:800;white-space:nowrap;letter-spacing:.02em}
+.gk .kicker{position:static;margin-bottom:10px}
+.gk .acc,.gc .acc{display:inline-block}
+.gc{position:absolute;left:80px;right:80px;top:150px;height:650px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px}
+.gc-row{display:flex;align-items:baseline;justify-content:center;white-space:nowrap;color:var(--shu);font-family:JSans;font-weight:900;font-size:250px;line-height:1}
+.gc-v{display:inline-block;text-align:right;font-variant-numeric:tabular-nums}
+.gc-p,.gc-u{display:inline-block;font-size:.44em;font-weight:800;margin:0 .12em}
+.gc-bar{width:960px;height:12px;background:var(--gold)}
+.gc-tx{font-size:66px;font-weight:800;white-space:nowrap}
+body.koyomi .gk,body.koyomi .gc-tx{font-family:JSerif}
 </style></head>
 <body class="kinun"><div id="bg"></div><div id="grain"></div><div id="dust"></div><div id="zoom"><div id="stage"></div></div>
 <script>
@@ -497,18 +514,112 @@ tally(s){
       const mine=order.filter(o=>o.i===i),last=mine.length?mine[mine.length-1].k:-1;
       r.querySelector('.ct').style.opacity=out(P(t,last<0?.5+i*.12:.5+last*sp+.2,.3))});
     order.forEach(o=>{o.e.style.transform=`scale(${Math.max(0,back(P(t,.5+o.k*sp,.35)))})`})}}},
+// v10（2026-11-07）：GSAP のカード。止めた timeline を draw(t) で seek するので、時間で決まる描き方のまま。GSAP が読めない時は自前の動きで同じ並びに描く
+// kinetic：{kicker, text:"上の小さい行", text2:"大きい行", accent:"朱にして下線を引く語", style:"drop"（既定・上から落ちる）|"pop"（その場で弾む）, source}
+kinetic(s){ZOOM=.035;
+  const root=H(`<div class="gk">${s.kicker?`<div class="kicker">${esc(s.kicker)}</div>`:''}${s.text?`<div class="gk-l1">${chars(s.text,s.text2?null:s.accent)}</div>`:''}${s.text2?`<div class="gk-l2">${chars(s.text2,s.accent)}</div>`:''}</div>`);
+  const l1=root.querySelector('.gk-l1'),l2=root.querySelector('.gk-l2'),k=root.querySelector('.kicker'),acc=root.querySelector('.acc'),ul=root.querySelector('.ul');
+  if(s.source)H(`<div class="src">${esc(s.source)}</div>`);
+  const c1=l1?[...l1.querySelectorAll('.ch')]:[],c2=l2?[...l2.querySelectorAll('.ch')]:[],pop=s.style==='pop';
+  const t2=l1?.15+c1.length*.035+.2:.2,tu=l2?t2+c2.length*.05+.4:.15+c1.length*.035+.4,tp=tu+.5;
+  let tl=null;
+  return{layout(){if(l1)fit(l1,1700);if(l2)fit(l2,1720);
+    if(!window.gsap)return;
+    tl=gsap.timeline({paused:true});
+    if(k)tl.from(k,{opacity:0,y:-24,duration:.4,ease:'power3.out'},0);
+    if(c1.length)tl.from(c1,{opacity:0,y:-50,duration:.45,ease:'back.out(1.6)',stagger:.035},.15);
+    if(c2.length)tl.from(c2,pop?{opacity:0,scale:0,duration:.5,ease:'back.out(2.6)',stagger:.05}
+      :{opacity:0,y:-150,rotation:i=>i%2?7:-7,duration:.6,ease:'expo.out',stagger:.05},t2);
+    if(ul)tl.fromTo(ul,{scaleX:0},{scaleX:1,duration:.5,ease:'expo.out'},tu);
+    if(acc){const n=Math.floor((DUR-tp)/1.2);if(n>0)tl.to(acc,{scale:1.06,duration:.6,ease:'sine.inOut',yoyo:true,repeat:n*2-1},tp)}
+  },draw(t){if(tl){tl.seek(t,false);return}
+    if(k){const a=out(P(t,0,.4));show(k,a,0,(1-a)*-24)}
+    c1.forEach((e,i)=>{const p=P(t,.15+i*.035,.45);e.style.opacity=clamp(p*2.5);e.style.transform=`translateY(${(1-back(p))*-50}px)`});
+    c2.forEach((e,i)=>{const p=P(t,t2+i*.05,pop?.5:.6),a=out(p);e.style.opacity=clamp(p*2.5);
+      e.style.transform=pop?`scale(${Math.max(0,back(p))})`:`translateY(${(1-a)*-150}px) rotate(${(1-a)*(i%2?7:-7)}deg)`});
+    if(ul)ul.style.transform=`scaleX(${out(P(t,tu,.5))})`;
+    if(acc)acc.style.transform=`scale(${t>tp?1+.03*(1-Math.cos(2*Math.PI*(t-tp)/1.2)):1})`}}},
+// count：{title, value:数, from:始めの数（既定0）, prefix:"約", unit:"日", decimals:小数の桁（既定0）, text:"下の一言", accent, note, source}
+count(s){ZOOM=.03;
+  const d=s.decimals||0,v1=+s.value,v0=+(s.from||0),fmt=x=>(d?x:Math.round(x)).toLocaleString('ja-JP',{minimumFractionDigits:d,maximumFractionDigits:d});
+  const ti=s.title?H(`<div class="title">${esc(s.title)}</div>`):null;
+  const root=H(`<div class="gc"><div class="gc-row">${s.prefix?`<span class="gc-p">${esc(s.prefix)}</span>`:''}<span class="gc-v">${fmt(v1)}</span>${s.unit?`<span class="gc-u">${esc(s.unit)}</span>`:''}</div><div class="gc-bar"></div>${s.text?`<div class="gc-tx">${chars(s.text,s.accent)}</div>`:''}</div>`);
+  const row=root.querySelector('.gc-row'),num=root.querySelector('.gc-v'),pre=root.querySelector('.gc-p'),un=root.querySelector('.gc-u'),bar=root.querySelector('.gc-bar'),tx=root.querySelector('.gc-tx'),ul=root.querySelector('.ul');
+  const ct=tx?[...tx.querySelectorAll('.ch')]:[];
+  const note=s.note?H(`<div class="note">${esc(s.note)}</div>`):null;
+  if(s.source)H(`<div class="src">${esc(s.source)}</div>`);
+  const cd=Math.min(2.2,Math.max(.8,DUR*.45)),te=.25+cd,tt=te+.1,tn=tt+ct.length*.04+.2,o={v:v0};
+  let tl=null;
+  return{layout(){fit(row,1700);num.style.minWidth=num.getBoundingClientRect().width+'px';if(tx)fit(tx,1700);  // 桁が増えても単位の位置が動かないよう、数の幅を最後の数で決めておく
+    if(!window.gsap)return;
+    tl=gsap.timeline({paused:true});
+    if(ti)tl.from(ti,{opacity:0,duration:.4,ease:'power2.out'},0);
+    tl.from(row,{opacity:0,y:40,duration:.5,ease:'power3.out'},.1);
+    if(pre)tl.from(pre,{opacity:0,x:-30,duration:.4,ease:'power2.out'},.2);
+    tl.to(o,{v:v1,duration:cd,ease:'power3.out'},.25);
+    if(un)tl.from(un,{opacity:0,scale:0,duration:.5,ease:'back.out(2.5)',transformOrigin:'0% 80%'},te-.25);
+    tl.to(row,{scale:1.04,duration:.18,ease:'power1.out',yoyo:true,repeat:1},te);
+    tl.fromTo(bar,{scaleX:0},{scaleX:1,duration:.6,ease:'expo.out'},te-.1);
+    if(ct.length)tl.from(ct,{opacity:0,y:30,duration:.4,ease:'power3.out',stagger:.04},tt);
+    if(ul)tl.fromTo(ul,{scaleX:0},{scaleX:1,duration:.45,ease:'expo.out'},tn);
+    if(note)tl.from(note,{opacity:0,x:50,duration:.5,ease:'power3.out'},te+.4);
+  },draw(t){if(tl){tl.seek(t,false);num.textContent=fmt(o.v);return}
+    if(ti)ti.style.opacity=out(P(t,0,.4));
+    {const a=out(P(t,.1,.5));show(row,a,0,(1-a)*40)}
+    if(pre)pre.style.opacity=out(P(t,.2,.4));
+    num.textContent=fmt(v0+(v1-v0)*out(P(t,.25,cd)));
+    if(un){const p=P(t,te-.25,.5);un.style.opacity=clamp(p*3);un.style.transform=`scale(${Math.max(0,back(p))})`}
+    bar.style.transform=`scaleX(${out(P(t,te-.1,.6))})`;
+    ct.forEach((e,i)=>{const a=out(P(t,tt+i*.04,.4));show(e,a,0,(1-a)*30)});
+    if(ul)ul.style.transform=`scaleX(${out(P(t,tn,.45))})`;
+    if(note){const a=out(P(t,te+.4,.5));show(note,a,(1-a)*50)}}}},
 };
+// v10（2026-11-07）：three.js の背景。spec.bg3d:"stars" のカードだけ、金の粒の球と星をゆっくり回して後ろに薄く重ねる。
+// 粒の位置は spec.seed で決め、回転は t で決める（同じ絵になる）。描き手は1つを使い回す（カードごとに作ると WebGL の数の上限に当たる）。読めない時は背景なしでカードだけ描く
+let G3=null,BG3D=null;
+function rng(seed){let a=(seed>>>0)||1;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+async function setupBg3d(spec,theme){
+  BG3D=null;if(G3){G3.r.domElement.style.display='none';G3.scene.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material)o.material.dispose()});G3.scene.clear()}
+  if(!spec.bg3d)return;
+  try{
+    if(!G3){const T=await import('@VENDOR@/three-r185/three.module.min.js');
+      const r=new T.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true});
+      r.setPixelRatio(1);r.setSize(1920,1080,false);r.setClearColor(0x000000,0);r.domElement.id='bg3d';
+      document.getElementById('bg').after(r.domElement);
+      const c=document.createElement('canvas');c.width=c.height=64;const x=c.getContext('2d'),g=x.createRadialGradient(32,32,0,32,32,32);
+      g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.45,'rgba(255,255,255,.75)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(0,0,64,64);
+      G3={T,r,scene:new T.Scene(),cam:new T.PerspectiveCamera(45,1920/1080,.1,100),dot:new T.CanvasTexture(c)};G3.cam.position.set(0,0,7)}
+    const {T,r,scene,cam,dot}=G3,css=getComputedStyle(document.body),R=rng(spec.seed||1);
+    if(spec.bg3d!=='stars')console.warn('bg3d：知らない名前なので stars で描きます',spec.bg3d);
+    const gold=new T.Color(css.getPropertyValue('--gold').trim()),shu=new T.Color(css.getPropertyValue('--shu').trim());
+    // 金の粒の球（フィボナッチ球で均等に置き、1割を朱にする）
+    const N=1400,ps=new Float32Array(N*3),cs=new Float32Array(N*3);
+    for(let i=0;i<N;i++){const y=1-2*(i+.5)/N,rr=Math.sqrt(1-y*y),th=i*2.399963,k=2.3*(1+(R()-.5)*.06),c=R()<.1?shu:gold;
+      ps.set([Math.cos(th)*rr*k,y*k,Math.sin(th)*rr*k],i*3);cs.set([c.r,c.g,c.b],i*3)}
+    const g1=new T.BufferGeometry();g1.setAttribute('position',new T.BufferAttribute(ps,3));g1.setAttribute('color',new T.BufferAttribute(cs,3));
+    const sph=new T.Points(g1,new T.PointsMaterial({size:.07,map:dot,vertexColors:true,transparent:true,depthWrite:false,opacity:.95}));
+    sph.position.set(0,.45,0);scene.add(sph);
+    // 奥の星（画面全体にまばらに）
+    const M=520,qs=new Float32Array(M*3);for(let i=0;i<M;i++)qs.set([(R()-.5)*18,(R()-.5)*10,-1-R()*6],i*3);
+    const g2=new T.BufferGeometry();g2.setAttribute('position',new T.BufferAttribute(qs,3));
+    const st=new T.Points(g2,new T.PointsMaterial({size:.06,map:dot,color:gold,transparent:true,depthWrite:false,opacity:.7}));scene.add(st);
+    r.domElement.style.opacity=theme==='job'?.85:.55;r.domElement.style.display='block';
+    BG3D=t=>{sph.rotation.y=.25+t*.12;sph.rotation.x=.35+.04*Math.sin(t*.3);st.rotation.z=t*.006;st.position.x=-t*.03;r.render(scene,cam)};
+  }catch(e){console.warn('bg3d を描けないので飛ばします：'+e);BG3D=null;if(G3)G3.r.domElement.style.display='none'}}
 // 金の粉（ゆっくり上る）
 const dust=document.getElementById('dust');const DOTS=[];
 for(let i=0;i<18;i++){const e=document.createElement('div');e.className='dot';const r=3+(i*7)%6;e.style.width=e.style.height=r*2+'px';dust.appendChild(e);DOTS.push(e)}
 function drawDust(t){DOTS.forEach((e,i)=>{const x=(i*331+97)%1920+40*Math.sin(t*.35+i),y=1100-((t*16+i*173)%1180);e.style.left=x+'px';e.style.top=y+'px';e.style.opacity=.10+.12*((Math.sin(t*.8+i*1.7)+1)/2)})}
 async function setup(spec,dur,theme,data){
   document.body.className=theme;DUR=dur;ZOOM=0;stage.innerHTML='';
+  // v10：GSAP は既定で translate3d を使い、Chrome が字を別の層で描く時機がずれてコマが毎回変わる。2D の変形だけにして、同じ絵にする
+  if(window.gsap)gsap.config({force3D:false});
   CARD=CARDS[spec.type](spec,data||{});
   // SVG の fill/stroke 属性では var() が効かないので style に移す
   stage.querySelectorAll('[fill*="var("],[stroke*="var("]').forEach(e=>['fill','stroke'].forEach(a=>{const v=e.getAttribute(a);if(v&&v.includes('var(')){e.style[a]=v;e.removeAttribute(a)}}));
   await document.fonts.ready;if(CARD.ready)await CARD.ready;
   await document.fonts.load('800 60px JSerif');await document.fonts.load('800 60px JSans');
+  await setupBg3d(spec,theme);  // v10：spec.bg3d が無いカードでは、前のカードの背景を隠すだけ
   if(CARD.layout)CARD.layout();await draw(0);return true}
-async function draw(t){drawDust(t);document.getElementById('zoom').style.transform=`scale(${1+ZOOM*t/DUR})`;const r=CARD.draw(t);if(r&&r.then)await r;return true}
+async function draw(t){drawDust(t);if(BG3D)BG3D(t);document.getElementById('zoom').style.transform=`scale(${1+ZOOM*t/DUR})`;const r=CARD.draw(t);if(r&&r.then)await r;return true}
 </script></body></html>

@@ -38,7 +38,8 @@ LINE_COPY = {
 LINE_COPY["C2"] = LINE_COPY["A"]
 TOKUTEN = {"A": "今月と来月の吉日と行事のカレンダー", "C2": "今月と来月の吉日と行事のカレンダー", "B": "今月と来月の吉日と行事のカレンダー",
            "C": "2027年 年間の吉日カレンダー", "D": "言い伝え早見表"}
-CARD_TYPES = {"photo", "big_text", "quote", "chapter_title", "rules", "calendar", "next_table", "tally", "timeline", "kgrid", "two_cards"}
+CARD_TYPES = {"photo", "big_text", "quote", "chapter_title", "rules", "calendar", "next_table", "tally", "timeline", "kgrid", "two_cards",
+              "kinetic", "count"}  # kinetic・count は 2026-11-07 に足した GSAP のカード（motion_cards_spi.html v10）
 META = ["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後", "このあと", "次の章", "見ていきます", "紹介します",
         "おさらい", "採点結果です", "ありがとうございました", "ご覧いただき", "今日", "今夜", "今宵", "舞台裏", "概要欄に残して", "ひより",
         "最後に言います", "発表します", "最後の章で", "後半で", "最後まで見て", "お見せします"]
@@ -322,6 +323,8 @@ def main():
             continue
         if c.get("motion"):
             ng.append(f"{c['id']} card のあるカットに motion（動く絵は card の無い場面の絵だけ）")
+        if cd.get("bg3d") not in (None, "stars"):  # 2026-11-07：three.js の背景は "stars" だけ
+            ng.append(f"{c['id']} card の bg3d「{cd.get('bg3d')}」は描けない（\"stars\" だけ）")
         cards["photo" if cd["type"] == "photo" else "図解"] += 1
         try:
             if cd["type"] == "calendar":
@@ -395,6 +398,17 @@ def main():
                 for p, iso in zip(cd["points"], ds):
                     if "最強開運日" in p.get("text", "") and iso not in meta["saikyo_kaiun"]:
                         ng.append(f"{c['id']} {p['label']} は最強開運日ではない")
+            elif cd["type"] == "kinetic":  # 2026-11-07：1字ずつ出る大きい字。字が多いと小さくなりすぎる
+                if not cd.get("text"):
+                    ng.append(f"{c['id']} kinetic のカードに text が無い")
+                for k in ("text", "text2"):
+                    if len(cd.get(k) or "") > 14:
+                        warn.append(f"{c['id']} kinetic の {k} が {len(cd[k])}字（1行14字まで。大きい字で見せるカード）")
+            elif cd["type"] == "count":  # 2026-11-07：数え上がる数字。数は "koyomi" か sources の値だけ（声と同じ決まり）
+                float(cd["value"])
+                float(cd.get("from") or 0)
+                if not cd.get("title") and not cd.get("text"):
+                    warn.append(f"{c['id']} count のカードに title も text も無い（何の数か分からない）")
             elif cd["type"] == "kgrid":
                 for key, md in (cd.get("dates") or {}).items():
                     mm, dd = map(int, md.split("/"))
@@ -475,7 +489,7 @@ def main():
             ng.append(f"{c['id']} 締めのカットに peak（締めには付けない）")
         cd = c.get("card") or {}
         n = sum([bool(cd and cd.get("type") != "photo") or bool(c.get("motion")), bool(c.get("strong") or c.get("emo") == "strong"),
-                 bool((cd.get("pop") or (c.get("photo") or {}).get("pop")) or cd.get("type") in ("big_text", "quote", "next_table"))])
+                 bool((cd.get("pop") or (c.get("photo") or {}).get("pop")) or cd.get("type") in ("big_text", "quote", "next_table", "kinetic", "count"))])
         if n < 2:
             warn.append(f"{c['id']} 見どころなのに、動き・強調（strong）・言葉の札のうち {n} つ（2つ以上で目立たせる）")
     mot = [c["id"] for c in cuts if c.get("motion")]

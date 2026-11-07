@@ -10,6 +10,7 @@
 # ・Claude は書いたあと check_spi_script.py を自分で回し、NG が0件になるまで直す。最後にここでもう一度回して確かめる
 # ・--fix：gate_script.json（台本ゲートの不合格）を読ませて、不合格の所だけ直させる（書き直しは2回まで。run_daily.py が数える）
 # ・モデルは環境変数 CLAUDE_WRITER_MODEL（無ければ opus）
+# ・2026-11-07：カードの型に kinetic・count と、背景 bg3d:"stars" を足した（motion_cards_spi.html v10）。説明は prompt() の card の所
 # ・決まった値（型・骨組み・公開日・つかみの型・案内文の番号・画風・描かない物・声・速さ）は、書いたあとにプログラムが入れる
 import argparse, json, os, shutil, subprocess, sys
 
@@ -94,6 +95,12 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
   - 章の頭のカットに "chapter": "章の名前"（001 の yt_chapter の代わり。目次と点検が使う）と、001 と同じ chapter_title のカードを付ける。
   - 図のカット："card" に 001 と同じ形のカード（big_text・quote・rules・calendar・next_table・tally・timeline・kgrid・two_cards・chapter_title）。
     型と項目は 001 で使っている物だけにする（描く道具 motion_cards_spi.html がその形しか描けない）。
+    ただし 2026-11-07 に足した次の2つは 001 に無くても使ってよい（1本に合わせて2〜4枚まで。同じ型を続けない）：
+    ・kinetic（大きい字が1字ずつ落ちる・弾む）：{{"type": "kinetic", "kicker": "小見出し（任意）", "text": "1行目", "text2": "2行目（任意）",
+      "accent": "色を変える語（text か text2 の中の語）", "style": "drop" か "pop"}}。1行14字まで。言い切りの1文・山場の答えに使う（big_text と同じ役で、もっと動く）。
+    ・count（数え上がる数字）：{{"type": "count", "title": "何の数か", "value": 60, "unit": "日", "prefix": "約"（任意）, "decimals": 0,
+      "text": "数の下の1行（任意）", "accent": "text の中の色を変える語", "note": "右上の小さい注（任意）"}}。value は数だけ（"koyomi" の数か、sources にある数）。
+    ・どの図のカードにも "bg3d": "stars" を足すと、後ろに金の粒の球がゆっくり回る。山場（peak）か章の頭の1〜2枚だけに付ける（全部に付けない）。
   - 場面の絵のカット：card を付けない。"image" に、絵を作るAIへの頼み方を日本語で書く（季節・時間帯・場所・人が何をしているか・表情。手順書 §6）。
     人は "chars": ["kazue"] のように characters.json の id で（1カット2人まで）。人のいない絵は "nobody": true（場面の絵の3割まで）。
     写真の上に出す札は "photo": {{"pop": {{"small", "big", "side"}}, "tag", "tag_sub", "tate": {{"text", "by"}}}}（001 の photo カードの pop・tag・tate と同じ形）。
