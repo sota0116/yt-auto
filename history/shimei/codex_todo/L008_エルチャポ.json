@@ -1,0 +1,665 @@
+{
+ "ch": "shimei",
+ "work": "L008_エルチャポ",
+ "portrait": false,
+ "made": "2026-11-07 20:22",
+ "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red.",
+ "avoid_en": "logos or emblems of real companies or government agencies, readable text, detailed national flags, blood, faces resembling real people, guns pointed at the viewer",
+ "rules": {},
+ "characters": {
+  "chapo": {
+   "desc_en": "the drug lord, a short stocky faceless man figurine in his fifties with a smooth featureless face (no eyes, nose or mouth details), short black hair, a thick black mustache shape, plain black baseball cap without any logo, plain dark-blue button shirt, dark jeans"
+  },
+  "tech": {
+   "desc_en": "the technician, a slim faceless young man figurine with a smooth featureless face (no eyes, nose or mouth details), short neat brown hair, thin black-rimmed glasses, plain light-blue shirt without any print, gray trousers"
+  },
+  "agents": {
+   "desc_en": "investigator figurines with smooth featureless faces (no eyes, nose or mouth details), plain navy windbreakers with no letters, patches or badges, gray trousers"
+  },
+  "marines": {
+   "desc_en": "marine figurines with smooth featureless faces (no eyes, nose or mouth details), plain dark gray-green uniforms with no patches, flags or letters, plain black helmets, weapons always pointed down"
+  }
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "image": "白い空間に置かれた法廷の模型。真ん中に大きな古いスピーカーの模型があり、赤い音の波の形が広がっている",
+   "image_en": "A miniature courtroom diorama in the white space, seen from slightly above. In the center stands one large old-fashioned plain speaker box, with red sound-wave rings spreading out from it. Small faceless figurines sit in the jury box, all turned toward the speaker. No text, no emblems.",
+   "en": "A miniature courtroom diorama in the white space, seen from slightly above. In the center stands one large old-fashioned plain speaker box, with red sound-wave rings spreading out from it. Small faceless figurines sit in the jury box, all turned toward the speaker. No text, no emblems."
+  },
+  {
+   "id": "A02",
+   "image": "白い空間に、黒い帽子と黒い口ひげの、背の低いがっしりした男のフィギュアが1体、腕を組んで立っている",
+   "image_en": "the drug lord figurine standing alone in the white space with arms crossed, a small red spotlight circle on the floor around him. Low angle, imposing mood.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "the drug lord figurine standing alone in the white space with arms crossed, a small red spotlight circle on the floor around him. Low angle, imposing mood."
+  },
+  {
+   "id": "A03",
+   "image": "白い空間に、無地の黒い携帯電話の模型が1台。まわりを厚い鉄の箱の壁と赤い南京錠が囲んでいる",
+   "image_en": "A plain black old smartphone with a physical keyboard (no logo, blank dark screen) placed inside a thick open steel box, a big red padlock hanging on the box. White space, soft shadows.",
+   "en": "A plain black old smartphone with a physical keyboard (no logo, blank dark screen) placed inside a thick open steel box, a big red padlock hanging on the box. White space, soft shadows."
+  },
+  {
+   "id": "A04",
+   "image": "白い空間に、ヘッドホンをつけた紺の上着の捜査官のフィギュアが3体、録音の機械の前に座っている",
+   "image_en": "Three investigator figurines wearing headphones sit at a long table with old reel-to-reel and digital recording machines (no text on them), listening intently. White space.",
+   "chars": [
+    "agents"
+   ],
+   "en": "Three investigator figurines wearing headphones sit at a long table with old reel-to-reel and digital recording machines (no text on them), listening intently. White space."
+  },
+  {
+   "id": "A05",
+   "image": "白い空間で、メガネの細身の技術者のフィギュアが、赤い鍵の模型を、紺の上着の手にそっと渡している",
+   "image_en": "the technician figurine handing a large red key model to the hand of an investigator figurine in a plain navy windbreaker. Only the two figures, white space, a quiet secretive mood.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine handing a large red key model to the hand of an investigator figurine in a plain navy windbreaker. Only the two figures, white space, a quiet secretive mood."
+  },
+  {
+   "id": "A06",
+   "image": "白い空間に、高い塀の刑務所の模型。塀の外に、黒い帽子の男のフィギュアの小さな後ろ姿",
+   "image_en": "A miniature high-walled gray prison diorama in the white space. Outside the wall, the small back view of the drug lord figurine walking away. Dusk light.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "A miniature high-walled gray prison diorama in the white space. Outside the wall, the small back view of the drug lord figurine walking away. Dusk light."
+  },
+  {
+   "id": "A07",
+   "image": "白い空間に3つの模型が並ぶ。洗濯物のカート、持ち上がった浴槽と階段、床の四角い穴",
+   "image_en": "Three small separate dioramas lined up in a row in the white space: a canvas laundry cart full of white sheets, a bathtub lifted up revealing a dark stairway below, and a square hole in a tiled shower floor. Even lighting.",
+   "en": "Three small separate dioramas lined up in a row in the white space: a canvas laundry cart full of white sheets, a bathtub lifted up revealing a dark stairway below, and a square hole in a tiled shower floor. Even lighting."
+  },
+  {
+   "id": "A08",
+   "image": "白い空間に、メガネの技術者のフィギュアと、黒い帽子の男のフィギュアが背中合わせに立ち、その間に赤い糸",
+   "image_en": "the technician figurine and the drug lord figurine standing back to back in the white space, a single red thread stretched between them. Tense mood.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine and the drug lord figurine standing back to back in the white space, a single red thread stretched between them. Tense mood."
+  },
+  {
+   "id": "A09",
+   "image": "コルクボードの模型。顔が黒く塗られた写真が2枚、赤い糸、地図の形の紙（文字は読めない）",
+   "image_en": "A cork board in the white space with two pinned photos whose face areas are painted solid black, red threads connecting them to a plain outline map sketch and small blank paper notes. No readable text.",
+   "en": "A cork board in the white space with two pinned photos whose face areas are painted solid black, red threads connecting them to a plain outline map sketch and small blank paper notes. No readable text."
+  },
+  {
+   "id": "B01",
+   "image": "白い空間に置かれた、乾いた山あいの小さな村のジオラマ。土の家と細い道",
+   "image_en": "A miniature diorama of a small dry mountain village in northwestern Mexico: a few adobe houses, a narrow dirt road, scrub trees on brown hills. Placed in the white space, warm afternoon light.",
+   "en": "A miniature diorama of a small dry mountain village in northwestern Mexico: a few adobe houses, a narrow dirt road, scrub trees on brown hills. Placed in the white space, warm afternoon light."
+  },
+  {
+   "id": "B02",
+   "image": "白い空間で、背の低い黒い帽子の男のフィギュアが、背の高い2体のフィギュアの間に立っている",
+   "image_en": "the drug lord figurine standing between two much taller plain gray figurines, clearly the shortest of the three. White space.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "the drug lord figurine standing between two much taller plain gray figurines, clearly the shortest of the three. White space."
+  },
+  {
+   "id": "B03",
+   "image": "白い空間に、ピラミッドの形に並んだ小さなフィギュアたち。いちばん上に黒い帽子の男",
+   "image_en": "Many small plain faceless figurines arranged in a pyramid formation in the white space, with the drug lord figurine standing alone at the very top. Dramatic side light.",
+   "en": "Many small plain faceless figurines arranged in a pyramid formation in the white space, with the drug lord figurine standing alone at the very top. Dramatic side light."
+  },
+  {
+   "id": "B04",
+   "image": "白い空間に、国境の柵の模型。その下をくぐって、白い包みを積んだ小さなトラックが進む",
+   "image_en": "A long miniature border fence in the white space running across a desert diorama. A small plain truck loaded with white wrapped packages drives along beside it toward the north. No flags, no text.",
+   "en": "A long miniature border fence in the white space running across a desert diorama. A small plain truck loaded with white wrapped packages drives along beside it toward the north. No flags, no text."
+  },
+  {
+   "id": "B05",
+   "image": "白い空間に、灰色の刑務所の模型。鉄格子の窓の奥に黒い帽子の男のフィギュア",
+   "image_en": "A gray concrete prison building model in the white space; behind one barred window the drug lord figurine stands looking out. Cold, quiet light.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "A gray concrete prison building model in the white space; behind one barred window the drug lord figurine stands looking out. Cold, quiet light."
+  },
+  {
+   "id": "B06",
+   "image": "同じ刑務所の模型。鉄格子の窓の奥の部屋が空っぽで、扉が開いている",
+   "image_en": "A gray concrete prison cell model with its heavy door standing open and nobody inside, an empty bed. Cold light, white space.",
+   "en": "A gray concrete prison cell model with its heavy door standing open and nobody inside, an empty bed. Cold light, white space."
+  },
+  {
+   "id": "B07",
+   "image": "刑務所の廊下の模型を、白いシーツを山盛りにした洗濯物のカートが進んでいく",
+   "image_en": "A long prison corridor diorama; a canvas laundry cart piled high with white sheets is being pushed along by a faceless guard figurine in a plain gray uniform without badges. Something hidden under the sheets.",
+   "en": "A long prison corridor diorama; a canvas laundry cart piled high with white sheets is being pushed along by a faceless guard figurine in a plain gray uniform without badges. Something hidden under the sheets."
+  },
+  {
+   "id": "B08",
+   "image": "白い空間で、灰色の制服のフィギュアの手に、札束の形の灰色の包みが渡される",
+   "image_en": "A close view in the white space: a faceless guard figurine in a plain gray uniform receives a thick bundle of plain green banknotes (no printing visible) from an unseen hand. Shadowy mood.",
+   "en": "A close view in the white space: a faceless guard figurine in a plain gray uniform receives a thick bundle of plain green banknotes (no printing visible) from an unseen hand. Shadowy mood."
+  },
+  {
+   "id": "B10",
+   "image": "白い空間に、表彰台のような段の模型。上の段に並ぶスーツの人のフィギュアの中に、黒い帽子の男がまじっている",
+   "image_en": "A tiered white podium model in the white space with many faceless figurines in dark suits standing on the steps like a ranking; among them stands the drug lord figurine in his black cap. No text.",
+   "en": "A tiered white podium model in the white space with many faceless figurines in dark suits standing on the steps like a ranking; among them stands the drug lord figurine in his black cap. No text."
+  },
+  {
+   "id": "B11",
+   "image": "白い空間に、緑の札束の包みが山のように積まれ、上に小さな赤い旗のピン",
+   "image_en": "A huge pile of plain green banknote bundles (no printing visible) stacked like a mountain in the white space, a tiny red pin on top. Dramatic light.",
+   "en": "A huge pile of plain green banknote bundles (no printing visible) stacked like a mountain in the white space, a tiny red pin on top. Dramatic light."
+  },
+  {
+   "id": "B12",
+   "image": "白い空間に、ピラミッドに並んだフィギュアたち。全員が小さな携帯電話を耳に当てている",
+   "image_en": "Small faceless figurines arranged in a pyramid in the white space, every one of them holding a small plain phone to its ear. One red phone glows at the top.",
+   "en": "Small faceless figurines arranged in a pyramid in the white space, every one of them holding a small plain phone to its ear. One red phone glows at the top."
+  },
+  {
+   "id": "C01",
+   "image": "白い空間に、携帯電話の模型から伸びる電波の線。その途中に、大きなヘッドホンの模型がかかっている",
+   "image_en": "A small plain mobile phone model in the white space sends out wavy radio lines across the air; halfway along the lines hangs a large pair of headphones, catching them. Clean, symbolic.",
+   "en": "A small plain mobile phone model in the white space sends out wavy radio lines across the air; halfway along the lines hangs a large pair of headphones, catching them. Clean, symbolic."
+  },
+  {
+   "id": "C02",
+   "image": "白い空間で、メガネの細身の技術者のフィギュアが、ノートパソコンを開いて机に向かっている",
+   "image_en": "the technician figurine sitting at a small plain desk with an open plain laptop, focused, in the white space. Soft light.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine sitting at a small plain desk with an open plain laptop, focused, in the white space. Soft light."
+  },
+  {
+   "id": "C03",
+   "image": "白い空間に、数台の黒い携帯の模型が、赤い線の網で互いにつながっている。網は閉じた輪になっている",
+   "image_en": "Several plain black keyboard smartphones standing in a circle in the white space, all connected to each other by a closed network of glowing red lines. No logos.",
+   "en": "Several plain black keyboard smartphones standing in a circle in the white space, all connected to each other by a closed network of glowing red lines. No logos."
+  },
+  {
+   "id": "C04",
+   "image": "白い空間で、口の形の模型から出た音の波が、管の中を通ると、ばらばらの小さな灰色の立方体に変わっている",
+   "image_en": "Sound waves come out of one end of a long clear tube in the white space and turn into a jumble of tiny plain gray cubes as they pass through it. No letters, no numbers.",
+   "en": "Sound waves come out of one end of a long clear tube in the white space and turn into a jumble of tiny plain gray cubes as they pass through it. No letters, no numbers."
+  },
+  {
+   "id": "C05",
+   "image": "白い空間で、メガネの技術者のフィギュアが、赤い鍵の模型を手のひらに乗せている",
+   "image_en": "the technician figurine holding a single large red key model on his open palm, looking at it. White space, spotlight on the key.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine holding a single large red key model on his open palm, looking at it. White space, spotlight on the key."
+  },
+  {
+   "id": "C06",
+   "image": "白い空間に、雪の積もった小さな建物の模型。中に黒いサーバーの棚が3つ並び、赤い線が外へ伸びる",
+   "image_en": "A small snowy building diorama in the white space with its roof removed; inside stand three black server racks with tiny lights, red cables running out of the building. No logos, no text.",
+   "en": "A small snowy building diorama in the white space with its roof removed; inside stand three black server racks with tiny lights, red cables running out of the building. No logos, no text."
+  },
+  {
+   "id": "C07",
+   "image": "白い空間の真ん中に、大きな金庫の扉の模型が閉じている",
+   "image_en": "A big closed round steel vault door model standing alone in the middle of the white space. Dramatic top light.",
+   "en": "A big closed round steel vault door model standing alone in the middle of the white space. Dramatic top light."
+  },
+  {
+   "id": "C08",
+   "image": "金庫の扉の模型の前に、赤い鍵を持ったメガネの技術者のフィギュアが立っている",
+   "image_en": "the technician figurine standing right in front of a big closed round steel vault door, holding a large red key ready. White space.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine standing right in front of a big closed round steel vault door, holding a large red key ready. White space."
+  },
+  {
+   "id": "C09",
+   "image": "白い空間に、紺の上着の捜査官のフィギュアが2体、机の上の写真の模型をのぞきこんでいる（写真の顔は黒い）",
+   "image_en": "Two investigator figurines leaning over a table looking at a few pinned photos whose face areas are painted solid black, a magnifying glass on the table. White space, focused mood.",
+   "chars": [
+    "agents"
+   ],
+   "en": "Two investigator figurines leaning over a table looking at a few pinned photos whose face areas are painted solid black, a magnifying glass on the table. White space, focused mood."
+  },
+  {
+   "id": "C10",
+   "image": "白い空間に、屋根の外れた高級ホテルの一室の模型。窓の外に高いビルの模型",
+   "image_en": "A miniature luxury hotel room diorama with the roof removed, seen from above: a small table with two chairs, a window with tall city tower models outside. Evening light. No signs.",
+   "en": "A miniature luxury hotel room diorama with the roof removed, seen from above: a small table with two chairs, a window with tall city tower models outside. Evening light. No signs."
+  },
+  {
+   "id": "C11",
+   "image": "ホテルの部屋の模型で、黒いロングコートの男のフィギュアが、メガネの技術者のフィギュアと机をはさんで座る",
+   "image_en": "Inside the hotel room diorama, the technician figurine sits at a small table facing a faceless man figurine in a long black overcoat and dark scarf. Tense meeting mood.",
+   "chars": [
+    "tech"
+   ],
+   "en": "Inside the hotel room diorama, the technician figurine sits at a small table facing a faceless man figurine in a long black overcoat and dark scarf. Tense meeting mood."
+  },
+  {
+   "id": "C13",
+   "image": "ホテルの部屋の模型。黒いコートの男のフィギュアの影だけが壁に大きく映り、影は紺の上着の捜査官の形になっている",
+   "image_en": "In the hotel room diorama, the man in the long black overcoat casts a large shadow on the wall, and the shadow has the shape of an investigator in a plain windbreaker. Dramatic side light.",
+   "en": "In the hotel room diorama, the man in the long black overcoat casts a large shadow on the wall, and the shadow has the shape of an investigator in a plain windbreaker. Dramatic side light."
+  },
+  {
+   "id": "C14",
+   "image": "白い空間に、赤い線の網に囲まれた携帯の模型。外側で紺の上着の捜査官のフィギュアが立ち止まっている",
+   "image_en": "A group of phones enclosed by a dense glowing red net in the white space; an investigator figurine stands outside the net, unable to get in, hand on chin.",
+   "chars": [
+    "agents"
+   ],
+   "en": "A group of phones enclosed by a dense glowing red net in the white space; an investigator figurine stands outside the net, unable to get in, hand on chin."
+  },
+  {
+   "id": "D01",
+   "image": "白い空間で、メガネの技術者のフィギュアと紺の上着の捜査官のフィギュアが、机の上で書類に向き合っている（文字は読めない）",
+   "image_en": "the technician figurine and an investigator figurine sitting across a plain table with a few blank papers between them, the technician's hand resting near a pen. Serious mood, white space.",
+   "chars": [
+    "tech",
+    "agents"
+   ],
+   "en": "the technician figurine and an investigator figurine sitting across a plain table with a few blank papers between them, the technician's hand resting near a pen. Serious mood, white space."
+  },
+  {
+   "id": "D02",
+   "image": "白い空間に、壁かけカレンダーの模型が2つ並び、その間に赤い？の形（数字は読めない）",
+   "image_en": "Two plain wall calendar models hanging side by side in the white space with a big red question-mark shape between them. No readable numbers or letters.",
+   "en": "Two plain wall calendar models hanging side by side in the white space with a big red question-mark shape between them. No readable numbers or letters."
+  },
+  {
+   "id": "D03",
+   "image": "白い空間で、メガネの技術者のフィギュアが、黒いサーバーの棚の扉を開け、工具を持っている",
+   "image_en": "the technician figurine opening the door of a black server rack with a small screwdriver in hand, calm as if doing routine maintenance. White space.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine opening the door of a black server rack with a small screwdriver in hand, calm as if doing routine maintenance. White space."
+  },
+  {
+   "id": "D04",
+   "image": "白い空間に、海をはさんだ2つの小さな陸の模型。左の雪の建物から右の運河の町の建物へ、黒いサーバーの箱が3つ運ばれていく",
+   "image_en": "Two small land dioramas on either side of a blue ocean in the white space: on the left a snowy building, on the right a canal town with narrow gabled houses. Three black server boxes travel along a red dotted line from left to right. No flags, no text.",
+   "en": "Two small land dioramas on either side of a blue ocean in the white space: on the left a snowy building, on the right a canal town with narrow gabled houses. Three black server boxes travel along a red dotted line from left to right. No flags, no text."
+  },
+  {
+   "id": "D06",
+   "image": "運河の町の模型の中で、黒いサーバーの棚の前に、紺の上着のフィギュアが2体立っている",
+   "image_en": "Inside a small canal-town building diorama, two investigator figurines stand in front of three black server racks, one pointing at the cables. No text, no badges.",
+   "en": "Inside a small canal-town building diorama, two investigator figurines stand in front of three black server racks, one pointing at the cables. No text, no badges."
+  },
+  {
+   "id": "D07",
+   "image": "白い空間に、録音の入った無地の灰色の箱が、壁のように高く積まれている",
+   "image_en": "Hundreds of small plain gray archive boxes stacked into a tall wall in the white space, one box glowing red. No labels, no text.",
+   "en": "Hundreds of small plain gray archive boxes stacked into a tall wall in the white space, one box glowing red. No labels, no text."
+  },
+  {
+   "id": "D09",
+   "image": "白い空間で、黒い帽子の男のフィギュアが、メガネの技術者のフィギュアに、黒い携帯を何台も手渡している",
+   "image_en": "the drug lord figurine handing a stack of several plain black keyboard smartphones to the technician figurine. White space, dim moody light.",
+   "chars": [
+    "chapo",
+    "tech"
+   ],
+   "en": "the drug lord figurine handing a stack of several plain black keyboard smartphones to the technician figurine. White space, dim moody light."
+  },
+  {
+   "id": "D10",
+   "image": "白い空間に、黒い携帯の模型。画面の中に、小さな赤い目の形のしるしが光っている",
+   "image_en": "A plain black keyboard smartphone model in the white space; on its dark screen glows a small red eye-shaped symbol. No other text or icons.",
+   "en": "A plain black keyboard smartphone model in the white space; on its dark screen glows a small red eye-shaped symbol. No other text or icons."
+  },
+  {
+   "id": "D11",
+   "image": "白い空間に、黒い携帯の模型が50台ほど、きれいに並んでいる。どれも画面に小さな赤い光",
+   "image_en": "About fifty plain black keyboard smartphones lined up in neat rows on the white floor, each screen showing a tiny red glow. Seen from above. No logos.",
+   "en": "About fifty plain black keyboard smartphones lined up in neat rows on the white floor, each screen showing a tiny red glow. Seen from above. No logos."
+  },
+  {
+   "id": "D12",
+   "image": "白い空間に、スーツの男のフィギュア数体と、ドレスの女性のフィギュア数体が輪になり、全員が黒い携帯を持っている",
+   "image_en": "A circle of faceless figurines in the white space: several men in dark suits and several women in plain elegant dresses, each holding a plain black phone. Soft shadows.",
+   "en": "A circle of faceless figurines in the white space: several men in dark suits and several women in plain elegant dresses, each holding a plain black phone. Soft shadows."
+  },
+  {
+   "id": "D13",
+   "image": "白い空間に、3枚の大きなカードの模型。吹き出しの形、受話器の形、マイクの形",
+   "image_en": "Three large blank cards standing in a row in the white space, each with one simple red shape: a speech bubble, a phone receiver, a microphone. No text.",
+   "en": "Three large blank cards standing in a row in the white space, each with one simple red shape: a speech bubble, a phone receiver, a microphone. No text."
+  },
+  {
+   "id": "D14",
+   "image": "白い空間で、黒い帽子の男のフィギュアが、たくさんの小さな画面に囲まれて座っている",
+   "image_en": "the drug lord figurine sitting alone on a chair, surrounded by a ring of many small glowing phone screens floating around him. Dark room, cold blue light.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "the drug lord figurine sitting alone on a chair, surrounded by a ring of many small glowing phone screens floating around him. Dark room, cold blue light."
+  },
+  {
+   "id": "D15",
+   "image": "白い空間で、ドレスの女性のフィギュアが、黒い携帯を遠ざけるように持ち、窓の外を気にしている",
+   "image_en": "A faceless woman figurine in a plain dress holding a black phone at arm's length as if distrusting it, glancing toward a window. Uneasy mood, white space.",
+   "en": "A faceless woman figurine in a plain dress holding a black phone at arm's length as if distrusting it, glancing toward a window. Uneasy mood, white space."
+  },
+  {
+   "id": "D16",
+   "image": "暗い小部屋の模型。黒い帽子の男のフィギュアが1人、手元の携帯の青い光をのぞきこんでいる。部屋は狭く、まわりは暗い",
+   "image_en": "A tight close view of a small dark room diorama: the drug lord figurine sits alone at a table, his face lit only by the blue glow of the phone in his hands. Nothing else visible around him, dark edges.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "A tight close view of a small dark room diorama: the drug lord figurine sits alone at a table, his face lit only by the blue glow of the phone in his hands. Nothing else visible around him, dark edges."
+  },
+  {
+   "id": "D17",
+   "image": "引いた絵。暗い小部屋の模型で画面を見る黒い帽子の男。その壁の向こうの明るい部屋で、紺の上着の捜査官たちが、同じ青い光の大きな画面を見ている",
+   "image_en": "A wide pulled-back view of the same small dark room diorama with the drug lord figurine looking at his glowing phone; now we see that just behind its thin wall there is a larger bright room where three investigator figurines in plain navy windbreakers sit watching a big screen glowing with the same blue light. Cut-away dollhouse view, dramatic contrast.",
+   "chars": [
+    "chapo",
+    "agents"
+   ],
+   "en": "A wide pulled-back view of the same small dark room diorama with the drug lord figurine looking at his glowing phone; now we see that just behind its thin wall there is a larger bright room where three investigator figurines in plain navy windbreakers sit watching a big screen glowing with the same blue light. Cut-away dollhouse view, dramatic contrast."
+  },
+  {
+   "id": "D18",
+   "image": "白い空間に、たくさんの吹き出しの形の白い札が、紙の束になって紺の上着の捜査官のフィギュアの机に積まれている（文字は読めない）",
+   "image_en": "Stacks of many blank white speech-bubble-shaped cards piled on the desk of an investigator figurine in a plain navy windbreaker. No readable text. White space.",
+   "en": "Stacks of many blank white speech-bubble-shaped cards piled on the desk of an investigator figurine in a plain navy windbreaker. No readable text. White space."
+  },
+  {
+   "id": "D19",
+   "image": "白い空間に、黒い携帯の模型の画面が窓になっていて、その奥からいくつもの小さな目の形の赤い光がこちらを見ている",
+   "image_en": "A large plain black phone model standing in the white space whose screen is an open window; from inside the window several small red eye-shaped lights look outward. Symbolic, eerie.",
+   "en": "A large plain black phone model standing in the white space whose screen is an open window; from inside the window several small red eye-shaped lights look outward. Symbolic, eerie."
+  },
+  {
+   "id": "D21",
+   "image": "白い空間に、赤い線の網が切れて垂れ下がり、黒い携帯の模型が床に散らばっている",
+   "image_en": "A broken network of red lines hanging loose in the white space, several plain black phones lying scattered on the floor below. Abandoned mood.",
+   "en": "A broken network of red lines hanging loose in the white space, several plain black phones lying scattered on the floor below. Abandoned mood."
+  },
+  {
+   "id": "D22",
+   "image": "白い空間で、メガネの技術者のフィギュアが、夜の机でノートパソコンに向かっている。背中が丸まっている",
+   "image_en": "the technician figurine hunched over his laptop at a desk late at night, a single small lamp the only light. Lonely, tired mood.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine hunched over his laptop at a desk late at night, a single small lamp the only light. Lonely, tired mood."
+  },
+  {
+   "id": "D23",
+   "image": "白い空間で、メガネの技術者のフィギュアが、頭を抱えて椅子に座り、まわりの床に黒い携帯が落ちている",
+   "image_en": "the technician figurine sitting on a chair holding his head in both hands, a few plain black phones lying on the floor around him. Heavy, quiet mood.",
+   "chars": [
+    "tech"
+   ],
+   "en": "the technician figurine sitting on a chair holding his head in both hands, a few plain black phones lying on the floor around him. Heavy, quiet mood."
+  },
+  {
+   "id": "E01",
+   "image": "白い空間に置かれた、海辺の白い大きな屋敷の模型。門の前に灰色の制服の警察官のフィギュアが並ぶ",
+   "image_en": "A miniature large white seaside villa with palm trees and a pool in the white space; a line of faceless police figurines in plain gray uniforms without badges stands at the gate. Early morning light.",
+   "en": "A miniature large white seaside villa with palm trees and a pool in the white space; a line of faceless police figurines in plain gray uniforms without badges stands at the gate. Early morning light."
+  },
+  {
+   "id": "E02",
+   "image": "屋敷の模型の中の部屋。椅子の上に黒い帽子だけが残り、誰もいない",
+   "image_en": "Inside the villa diorama, an empty elegant room; only a plain black baseball cap is left on a chair. Nobody there. Quiet, missed-by-minutes mood.",
+   "en": "Inside the villa diorama, an empty elegant room; only a plain black baseball cap is left on a chair. Nobody there. Quiet, missed-by-minutes mood."
+  },
+  {
+   "id": "E03",
+   "image": "白い空間に置かれた、ふつうの住宅街の模型。その中の1軒だけが赤く照らされている",
+   "image_en": "A miniature ordinary Mexican city neighborhood diorama of low concrete houses in the white space; one house in the middle is lit with a red glow. Before dawn.",
+   "en": "A miniature ordinary Mexican city neighborhood diorama of low concrete houses in the white space; one house in the middle is lit with a red glow. Before dawn."
+  },
+  {
+   "id": "E04",
+   "image": "家の模型の前で、黒いヘルメットの海軍の兵士のフィギュアが、分厚い鉄の扉を開けようとしている",
+   "image_en": "In front of the house diorama, marine figurines push against a thick reinforced steel door that will not open, one holding a battering ram. No weapons pointed at viewer, no flags.",
+   "chars": [
+    "marines"
+   ],
+   "en": "In front of the house diorama, marine figurines push against a thick reinforced steel door that will not open, one holding a battering ram. No weapons pointed at viewer, no flags."
+  },
+  {
+   "id": "E05",
+   "image": "家の中の模型。誰もいない部屋で、テレビの模型と椅子だけが残っている",
+   "image_en": "Inside the house diorama, an empty living room with a plain dark TV, a sofa and an overturned chair. Nobody there. Gray morning light.",
+   "en": "Inside the house diorama, an empty living room with a plain dark TV, a sofa and an overturned chair. Nobody there. Gray morning light."
+  },
+  {
+   "id": "E06",
+   "image": "浴室の模型。白い浴槽が斜めに持ち上がり、その下に暗い階段が見えている",
+   "image_en": "A small white tiled bathroom diorama: the white bathtub is raised up on hydraulic arms, tilted, revealing a dark concrete stairway going down underneath it. Dramatic light from below.",
+   "en": "A small white tiled bathroom diorama: the white bathtub is raised up on hydraulic arms, tilted, revealing a dark concrete stairway going down underneath it. Dramatic light from below."
+  },
+  {
+   "id": "E07",
+   "image": "白い空間に、町の模型の断面。地下に下水道の管が網のように通り、小さな人影が遠くへ進んでいる",
+   "image_en": "A cross-section diorama of a city: houses on the surface, and below them a network of concrete sewer tunnels; one tiny dark figure moves far away along a tunnel. No water splashes.",
+   "en": "A cross-section diorama of a city: houses on the surface, and below them a network of concrete sewer tunnels; one tiny dark figure moves far away along a tunnel. No water splashes."
+  },
+  {
+   "id": "E09",
+   "image": "白い空間で、黒いTシャツの大柄な男のフィギュアが、小さな携帯の画面を見ている。画面から赤い電波の輪が広がる",
+   "image_en": "A large faceless bodyguard figurine in a plain black t-shirt looks down at a small phone in his hand; red radio-wave rings spread out from the phone. White space.",
+   "en": "A large faceless bodyguard figurine in a plain black t-shirt looks down at a small phone in his hand; red radio-wave rings spread out from the phone. White space."
+  },
+  {
+   "id": "E10",
+   "image": "白い空間に、海岸線の地図の模型。赤い点線が北から海辺の町の1点へのび、赤いピンが刺さる",
+   "image_en": "A plain relief map model of a Pacific coastline in the white space; a red dotted line runs down the coast and ends at one red pin in a seaside town. No text, no flags.",
+   "en": "A plain relief map model of a Pacific coastline in the white space; a red dotted line runs down the coast and ends at one red pin in a seaside town. No text, no flags."
+  },
+  {
+   "id": "E11",
+   "image": "白い空間に、海辺の12階建ての白いマンションの模型。4階の窓が1つだけ明るい",
+   "image_en": "A miniature twelve-story white beachfront condominium tower beside a small strip of beach in the white space; only one window on the fourth floor is lit. Pre-dawn blue light. No signs.",
+   "en": "A miniature twelve-story white beachfront condominium tower beside a small strip of beach in the white space; only one window on the fourth floor is lit. Pre-dawn blue light. No signs."
+  },
+  {
+   "id": "E12",
+   "image": "マンションの模型の廊下。黒いヘルメットの兵士のフィギュアが、401号室の扉の前に並んでいる",
+   "image_en": "A narrow hallway diorama inside the condominium; marine figurines line up quietly beside an apartment door. Weapons pointed down. Pre-dawn light. No numbers or signs readable.",
+   "chars": [
+    "marines"
+   ],
+   "en": "A narrow hallway diorama inside the condominium; marine figurines line up quietly beside an apartment door. Weapons pointed down. Pre-dawn light. No numbers or signs readable."
+  },
+  {
+   "id": "E13",
+   "image": "部屋の模型の床に、黒い帽子の男のフィギュアがひざをつき、まわりを兵士のフィギュアが囲む",
+   "image_en": "Inside a small apartment diorama, the drug lord figurine kneels on the floor with his hands behind his head, surrounded by marine figurines. Calm, no blood, no injuries.",
+   "chars": [
+    "chapo",
+    "marines"
+   ],
+   "en": "Inside a small apartment diorama, the drug lord figurine kneels on the floor with his hands behind his head, surrounded by marine figurines. Calm, no blood, no injuries."
+  },
+  {
+   "id": "F01",
+   "image": "白い空間に、高い塀と見張りの塔に囲まれた、大きな灰色の刑務所の模型",
+   "image_en": "A large gray maximum-security prison diorama in the white space, surrounded by high double walls and watchtowers, seen from above. Flat open land around it. No flags.",
+   "en": "A large gray maximum-security prison diorama in the white space, surrounded by high double walls and watchtowers, seen from above. Flat open land around it. No flags."
+  },
+  {
+   "id": "F02",
+   "image": "白い空間に、見張りの画面の模型が並ぶ。真ん中の画面だけ、空っぽの独房を映している",
+   "image_en": "A wall of small plain security monitor models in the white space; the center screen shows an empty grey prison cell with a small shower corner. No text on screens.",
+   "en": "A wall of small plain security monitor models in the white space; the center screen shows an empty grey prison cell with a small shower corner. No text on screens."
+  },
+  {
+   "id": "F03",
+   "image": "独房の模型。低い仕切りの奥のシャワーの所に、黒い帽子の男の後ろ姿が消えかけている",
+   "image_en": "A small prison cell diorama seen from above; the drug lord figurine (without his cap, short black hair) is stepping behind a low concrete partition into the shower corner, only his back visible.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "A small prison cell diorama seen from above; the drug lord figurine (without his cap, short black hair) is stepping behind a low concrete partition into the shower corner, only his back visible."
+  },
+  {
+   "id": "F04",
+   "image": "シャワーの床の模型に、四角い穴。穴の下へ、はしごが続いている",
+   "image_en": "A close view of a tiled shower floor diorama with a neat square hole cut into it; a metal ladder goes down into darkness. Light from below.",
+   "en": "A close view of a tiled shower floor diorama with a neat square hole cut into it; a metal ladder goes down into darkness. Light from below."
+  },
+  {
+   "id": "F05",
+   "image": "白い空間に、地面の断面の模型。刑務所から遠くの小さな建物まで、細いトンネルが長く伸びている",
+   "image_en": "A long cross-section diorama of the ground: on the left a prison building, on the far right a small unfinished brick house, connected underground by one very long thin tunnel. Clean, wide view.",
+   "en": "A long cross-section diorama of the ground: on the left a prison building, on the far right a small unfinished brick house, connected underground by one very long thin tunnel. Clean, wide view."
+  },
+  {
+   "id": "F06",
+   "image": "狭いトンネルの模型の中。天井に小さな電球、壁に管、床に細いレール",
+   "image_en": "Inside a narrow dirt tunnel diorama, seen from one end: small light bulbs along the ceiling, a plastic air pipe along the wall, thin metal rails on the floor vanishing into the distance.",
+   "en": "Inside a narrow dirt tunnel diorama, seen from one end: small light bulbs along the ceiling, a plastic air pipe along the wall, thin metal rails on the floor vanishing into the distance."
+  },
+  {
+   "id": "F07",
+   "image": "トンネルの模型の中のレールの上に、小さな台車をつけた古いバイクの模型が置かれている",
+   "image_en": "Inside the narrow tunnel diorama, an old small motorcycle modified to run on the thin rails, attached to a small flat cart. Nobody on it. Dim bulbs.",
+   "en": "Inside the narrow tunnel diorama, an old small motorcycle modified to run on the thin rails, attached to a small flat cart. Nobody on it. Dim bulbs."
+  },
+  {
+   "id": "F09",
+   "image": "白い空間に置かれた、海に近い平らな町の模型。夜明け前の暗い青",
+   "image_en": "A flat coastal Mexican town diorama of low houses and straight streets in the white space, in dark pre-dawn blue light. No signs.",
+   "en": "A flat coastal Mexican town diorama of low houses and straight streets in the white space, in dark pre-dawn blue light. No signs."
+  },
+  {
+   "id": "F10",
+   "image": "町の模型の1軒の家を、兵士のフィギュアが取り囲んでいる。窓から白い光がもれている",
+   "image_en": "Marine figurines surround one house in the town diorama, crouching behind a plain truck; bright white light flashes from the windows. No blood, no fire.",
+   "chars": [
+    "marines"
+   ],
+   "en": "Marine figurines surround one house in the town diorama, crouching behind a plain truck; bright white light flashes from the windows. No blood, no fire."
+  },
+  {
+   "id": "F11",
+   "image": "町の模型の道路の上を、1台の小さな灰色の車が走っていく。後ろにマンホールが開いている",
+   "image_en": "A small plain gray car speeding along a straight town road diorama; behind it an open manhole on the road. The drug lord figurine is barely visible in the driver seat. Early morning.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "A small plain gray car speeding along a straight town road diorama; behind it an open manhole on the road. The drug lord figurine is barely visible in the driver seat. Early morning."
+  },
+  {
+   "id": "F12",
+   "image": "道路の模型で、灰色の車の前に白い警察の車が止まり、制服の警官のフィギュアが立っている",
+   "image_en": "On a highway diorama, a plain white police car blocks the small gray car; faceless police figurines in plain dark uniforms without badges stand beside it. No text on the car.",
+   "en": "On a highway diorama, a plain white police car blocks the small gray car; faceless police figurines in plain dark uniforms without badges stand beside it. No text on the car."
+  },
+  {
+   "id": "F13",
+   "image": "道の模型で、黒い帽子の男のフィギュアが札束を差し出し、警官のフィギュアが手を横に振っている",
+   "image_en": "On the road diorama, the drug lord figurine holds out a bundle of plain green banknotes toward a police figurine, who raises a hand in refusal. Clear gesture.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "On the road diorama, the drug lord figurine holds out a bundle of plain green banknotes toward a police figurine, who raises a hand in refusal. Clear gesture."
+  },
+  {
+   "id": "G01",
+   "image": "白い空間に、夜の滑走路の模型。白い小さな飛行機に、両側を人に囲まれた男のフィギュアが乗り込む",
+   "image_en": "A night airport runway diorama in the white space; a small plain white jet with no markings, and a figurine in a plain gray outfit being escorted up the stairs by investigator figurines. Floodlights.",
+   "en": "A night airport runway diorama in the white space; a small plain white jet with no markings, and a figurine in a plain gray outfit being escorted up the stairs by investigator figurines. Floodlights."
+  },
+  {
+   "id": "G03",
+   "image": "法廷の模型の証人の席に、メガネの技術者のフィギュアが座っている",
+   "image_en": "Inside the courtroom diorama, the technician figurine sits in the witness box, hands folded, a single plain microphone in front of him.",
+   "chars": [
+    "tech"
+   ],
+   "en": "Inside the courtroom diorama, the technician figurine sits in the witness box, hands folded, a single plain microphone in front of him."
+  },
+  {
+   "id": "G04",
+   "image": "白い空間に、画板の模型。描きかけの人の絵の顔の所だけが、白く空いている",
+   "image_en": "A sketch board on an easel in the white space with an unfinished pencil drawing of a seated man; the face area is left completely blank white. No writing.",
+   "en": "A sketch board on an easel in the white space with an unfinished pencil drawing of a seated man; the face area is left completely blank white. No writing."
+  },
+  {
+   "id": "G06",
+   "image": "法廷の模型の被告の席に黒いスーツの背の低い男のフィギュア。前のスピーカーの模型から赤い音の波",
+   "image_en": "Inside the courtroom diorama, the drug lord figurine in a plain dark suit (no cap) sits at the defense table; red sound-wave rings come from a speaker in front of the jury.",
+   "chars": [
+    "chapo"
+   ],
+   "en": "Inside the courtroom diorama, the drug lord figurine in a plain dark suit (no cap) sits at the defense table; red sound-wave rings come from a speaker in front of the jury."
+  },
+  {
+   "id": "G07",
+   "image": "白い空間に、2つの音の波の形の模型が上下に並び、形がぴったり重なっている",
+   "image_en": "Two red sound-wave shapes made of thin bent wire, one above the other in the white space, matching each other perfectly. Clean, symbolic.",
+   "en": "Two red sound-wave shapes made of thin bent wire, one above the other in the white space, matching each other perfectly. Clean, symbolic."
+  },
+  {
+   "id": "G08",
+   "image": "法廷の模型の大きな画面に、吹き出しの形がいくつも並んでいる（文字は読めない）",
+   "image_en": "A large screen in the courtroom diorama showing many blank speech-bubble shapes in a chat layout, no readable text; small juror figurines look at it.",
+   "en": "A large screen in the courtroom diorama showing many blank speech-bubble shapes in a chat layout, no readable text; small juror figurines look at it."
+  },
+  {
+   "id": "G09",
+   "image": "法廷の模型の上から見た裁判官の席。小槌が振り下ろされる",
+   "image_en": "A view from above of the judge's bench in the courtroom diorama, a wooden gavel coming down onto its block. Strong light.",
+   "en": "A view from above of the judge's bench in the courtroom diorama, a wooden gavel coming down onto its block. Strong light."
+  },
+  {
+   "id": "G11",
+   "image": "白い空間に、大きな札束の山の輪郭だけが白い線で描かれ、中身は空っぽ",
+   "image_en": "A large outline of a mountain of banknote bundles drawn with thin white wire in the white space, but the inside is completely empty. Symbolic.",
+   "en": "A large outline of a mountain of banknote bundles drawn with thin white wire in the white space, but the inside is completely empty. Symbolic."
+  },
+  {
+   "id": "G12",
+   "image": "白い空間に、山のふもとの低いコンクリートの刑務所の模型。雪の山",
+   "image_en": "A low gray concrete prison complex model at the foot of snowy mountains in the white space, surrounded by fences. Cold, isolated mood. No flags.",
+   "en": "A low gray concrete prison complex model at the foot of snowy mountains in the white space, surrounded by fences. Cold, isolated mood. No flags."
+  },
+  {
+   "id": "G14",
+   "image": "白い空間に、2つの模型が並ぶ。左は携帯電話、右は白い警察の車",
+   "image_en": "Two small separate models side by side in the white space: on the left a plain small phone with red radio-wave rings, on the right a plain white police car with no markings.",
+   "en": "Two small separate models side by side in the white space: on the left a plain small phone with red radio-wave rings, on the right a plain white police car with no markings."
+  },
+  {
+   "id": "H01",
+   "image": "白い空間に、大きな金庫の扉の模型が開き、中から白い光がもれている。扉の前に赤い鍵",
+   "image_en": "A big round steel vault door standing wide open in the white space, white light pouring out from inside; a large red key lies on the floor in front of it.",
+   "en": "A big round steel vault door standing wide open in the white space, white light pouring out from inside; a large red key lies on the floor in front of it."
+  },
+  {
+   "id": "H03",
+   "image": "白い空間に、今のスマホの模型が並び、そのうち1台の画面に小さな赤い目のしるし",
+   "image_en": "A row of modern plain smartphones (no logos) standing in the white space; on one of them glows a small red eye-shaped symbol. Clean product-shot style.",
+   "en": "A row of modern plain smartphones (no logos) standing in the white space; on one of them glows a small red eye-shaped symbol. Clean product-shot style."
+  },
+  {
+   "id": "H04",
+   "image": "白い空間で、ふつうの服の人のフィギュアの手から、別の人の手へ、スマホが渡されている",
+   "image_en": "A plain modern smartphone being handed from one faceless figurine in casual clothes to another. Everyday mood, white space.",
+   "en": "A plain modern smartphone being handed from one faceless figurine in casual clothes to another. Everyday mood, white space."
+  },
+  {
+   "id": "H05",
+   "image": "白い空間に、スマホの模型と、虫めがねの模型",
+   "image_en": "A plain modern smartphone lying on the white floor with a large magnifying glass hovering over it. Clean, calm.",
+   "en": "A plain modern smartphone lying on the white floor with a large magnifying glass hovering over it. Clean, calm."
+  }
+ ]
+}
