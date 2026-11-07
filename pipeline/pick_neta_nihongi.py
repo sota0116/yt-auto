@@ -4,6 +4,8 @@
 #   選び方（制作ルール §2）：①前のショートと同じずらし方は選ばない（2本続けない） ②『へえ』の主役の史実を過去に使った回と同じにしない
 #   ③時代の配分（江戸5〜6割・戦国2〜3割・幕末1〜2割）に直近10本がいちばん足りない時代の行を先に ④直近4本で使っていないずらし方を先に
 #   使っていない行が3つ以下になったら、先に claude -p（WebSearch で史実を確かめる）で10行を足す
+# ・2026-11-07（手順書 v2.5 §2）：ずらし方の主力を「見える化＋1人だけ異常値」「時代ワープ」の2つにした。①②の次に、主力を先に選ぶ（主力以外は直近7本に1本まで。
+#   主力の行が無ければ主力以外でも選ぶ）。前のショートと違う主力の行が切れていたら、その行を多めに補充する。③④はその次
 # ・横動画（long）：公開済み（または予約済み）のショートのうち、まだ横動画にしていない1本を選ぶ（再生が多い順。数字がまだ無ければ番号の若い順）。
 #   手で作った S001〜S005 は L001・L002 に入っているので選ばない（ネタ帳.json の long_done_from）。企画・ずらし方・時代・史実は元のショートと同じ
 # ・番号：毎日の制作が作る回は S101・L101 から（手で作った S001〜S010・L001〜L002 と衝突しない）。作業フォルダは channels/nihongi/videos/S101_<ネタの id>
@@ -16,6 +18,9 @@ import ustore  # noqa: E402
 
 JST = dt.timezone(dt.timedelta(hours=9))
 REFILL_AT = 3  # 使っていない行がこの数以下なら、先に補充する
+# 主力のずらし方（2026-11-07 手順書 v2.5 §2。本人「わかりづらくなってる」。S110 寿司＝時代ワープ 6911回・S001 裏切り確率＝見える化 3201回）。
+# 残りの5つは、直近7本のショートに1本まで（7本の中に既にあれば後回し。主力の行が無い時は選んでよい＝止めない）
+MAIN = ("見える化＋1人だけ異常値", "時代ワープ")
 
 
 def log(*a):
@@ -38,8 +43,12 @@ def same_fact(a, b):
     return bool(ta and tb) and len(ta & tb) / min(len(ta), len(tb)) >= 0.5
 
 
-def refill(rows, past, n=10):
-    """claude -p で新しい行を足す（使っていない行が少なくなった時）。WebSearch で史実を確かめさせる。足せなかったら何もしない"""
+def is_main(distort):
+    return any(m in (distort or "") for m in MAIN)
+
+
+def refill(rows, past, n=10, need=""):
+    """claude -p で新しい行を足す（使っていない行が少なくなった時・主力のずらし方の行が切れた時）。WebSearch で史実を確かめさせる。足せなかったら何もしない"""
     book_ = book()
     p = f"""あなたは YouTube チャンネル「アナザー日本紀」（歴史に、ありえないルールを1つだけ足して、史実が少しだけひっくり返る『もしも歴史』のショート）の企画係です。
 先に channels/nihongi/手順書.md の §0〜§4 と §10 を最後の行まで読んでください。
@@ -48,7 +57,8 @@ def refill(rows, past, n=10):
 決まり
 - 道具を置くだけの企画は作らない。置いた結果、史実の何が変わるか・見えるかまで言える物だけ。説明が要る設定は使わない（1文目で分かる）。
 - fact_main は WebSearch で本当にあったことを確かめ、出どころを note に書く。説・逸話は『といわれる』と書く。確かめられない物は入れない。
-- 時代の配分は 江戸5〜6割・戦国2〜3割・幕末1〜2割。ずらし方は7つを偏らせず混ぜる（同じずらし方を2つ続けて並べない）。
+- 時代の配分は 江戸5〜6割・戦国2〜3割・幕末1〜2割。ずらし方は主力の2つ（{'・'.join(MAIN)}）を{n}行のうち7〜8行にし、残りの5つは合わせて2〜3行（2026-11-07 手順書 §2。同じずらし方を2つ続けて並べない）。{('今回は特に「' + need + '」の行を多めに。') if need else ''}
+- オチは、和歌・遺言・史料の中身を知らなくても、絵を見て分かる結果1つにできる企画だけ（手順書 §3）。
 - 昭和の戦争の死者・被害を笑いにする物、実在の人の性・病気・民族を笑いの種にする物、今も遺族や関係者がいる近現代の事件は使わない。
 - 次の史実は『へえ』の主役に使い済み。同じ物を作らない：{json.dumps(used_facts(past), ensure_ascii=False)}
 - 次の企画は未使用の行として既にある。重ねない：{json.dumps([r['企画'] for r in rows], ensure_ascii=False)}
@@ -94,10 +104,13 @@ def pick_short(today):
     wip_ids = {jload(os.path.join(VDIR, d, "neta.json"), {}).get("id") for d in (os.listdir(VDIR) if os.path.isdir(VDIR) else [])}
     prod_ids = {p.get("neta_id") for p in jload(os.path.join(HIST, "produced.json"), [])}
     unused = [r for r in rows if r["id"] not in wip_ids | prod_ids]
-    if len(unused) <= REFILL_AT:
-        unused += refill(unused, past)
     last = shorts[-1] if shorts else {}
+    # 主力のずらし方で、前のショートと違う行が切れていたら、その行を多めに補充する（2026-11-07）
+    need = [m for m in MAIN if m != last.get("distort") and not any(m in (r.get("distort") or "") for r in unused)]
+    if len(unused) <= REFILL_AT or need:
+        unused += refill(unused, past, need="・".join(need))
     last4 = [x.get("distort") for x in shorts[-4:]]
+    sub7 = sum(1 for x in shorts[-7:] if not is_main(x.get("distort")))
     last10 = shorts[-10:]
     mix = book().get("era_mix", {})
     cnt = lambda era: sum(1 for x in last10 if (x.get("era") or "その他") == era)
@@ -111,14 +124,17 @@ def pick_short(today):
             continue
         era = r.get("era") if r.get("era") in mix else "その他"
         deficit = mix.get(era, 0.03) * (len(last10) + 1) - cnt(era)
-        cands.append((-round(deficit, 3), last4.count(r["distort"]), rows.index(r), r))
+        sub = 0 if is_main(r["distort"]) else (1 if sub7 >= 1 else 0)
+        idx = rows.index(r) if r in rows else len(rows) + unused.index(r)
+        cands.append((sub, -round(deficit, 3), last4.count(r["distort"]), idx, r))
     if not cands:
         log(json.dumps({"選ばなかった行": skipped}, ensure_ascii=False))
         sys.exit("【止まりました】nihongi：今出せるネタがありません（ネタ帳.json に行を足すか、補充を確かめる）")
-    cands.sort(key=lambda c: c[:3])
-    r = cands[0][3]
+    cands.sort(key=lambda c: c[:4])
+    r = cands[0][4]
     no = f"S{next_no('S')}"
-    return r, no, f"時代の配分でいちばん足りない時代（{r.get('era')}）で、直近4本で使っていないずらし方（{r['distort']}）。前のショート（{last.get('no')}：{last.get('distort')}）と違う"
+    kind_ = "主力のずらし方" if is_main(r["distort"]) else f"主力以外のずらし方（直近7本で主力以外は{sub7}本）"
+    return r, no, f"{kind_}「{r['distort']}」で、時代の配分でいちばん足りない時代（{r.get('era')}）を先に。前のショート（{last.get('no')}：{last.get('distort')}）と違う"
 
 
 def pick_long():
