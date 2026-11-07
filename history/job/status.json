@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/021_c_seibi",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/019_c_keibi",
  "done": [
   "pick",
   "write",
@@ -8,12 +8,12 @@
   "yomi",
   "reading"
  ],
- "started": "2026-11-06T01:45:04+09:00",
+ "started": "2026-11-07T09:45:32+09:00",
  "tries": 0,
  "code": "8e6a092b3616",
  "stage": "images",
- "updated": "2026-11-06T02:09:41+09:00",
+ "updated": "2026-11-07T10:02:23+09:00",
  "busy": {
-  "images": 11
+  "images": 1
  }
 }
