@@ -94,6 +94,13 @@
    "averageViewDuration": 19,
    "subscribersGained": 1,
    "取った日": "2026-11-04"
+  },
+  "d7": {
+   "views": 1281,
+   "averageViewPercentage": 38.68,
+   "averageViewDuration": 18,
+   "subscribersGained": 1,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_2": {
@@ -293,7 +300,14 @@
   ],
   "kind": "after",
   "title": "【心理学】自分からは頼めない人、実は相手の迷惑を多めに見積もっています #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 56,
+   "averageViewPercentage": 48.85,
+   "averageViewDuration": 20,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
+  }
  },
  "008_mono_herasu": {
   "type": "幸せの心理",
@@ -366,5 +380,17 @@
   "kind": "after",
   "title": "【心理学】人前で緊張が顔に出ていると思う人、実はほとんど見抜かれていません #shorts",
   "publish_slot": "12:10"
+ },
+ "009_zenbu_hitonome:short_3": {
+  "type": "人づきあい",
+  "video_id": "9E3QlsClusY",
+  "hook": "新しい服で出かけると、みんなに見られている気がするのは、なぜでしょうか？",
+  "band": [
+   "気づいた人は",
+   "4人に1人"
+  ],
+  "kind": "after",
+  "title": "【心理学】まわりの目が気になる人の意外な特徴｜恥ずかしいシャツに気づいたのは4人に1人 #shorts",
+  "publish_slot": "22:10"
  }
 }
