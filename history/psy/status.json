@@ -10,12 +10,12 @@
  ],
  "started": "2026-11-07T08:45:02+09:00",
  "tries": 0,
- "code": "b49729292a8e",
+ "code": "57a522bca8fe",
  "stage": "images",
  "gate_fails": 1,
  "updated": "2026-11-07T19:48:57+09:00",
  "busy": {
-  "images": 7
+  "images": 8
  },
  "images_back": true
 }
