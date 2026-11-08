@@ -1,1 +1,10 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/104_クローゼットと押し入れ",
+ "done": [
+  "pick"
+ ],
+ "started": "2026-11-08T19:46:41+09:00",
+ "tries": 0,
+ "code": "57a522bca8fe",
+ "stage": "gate_script"
+}
