@@ -249,6 +249,15 @@
    "直す所": [],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 2950
+  },
+  "d7": {
+   "views": 3040,
+   "averageViewPercentage": 115.16999999999999,
+   "averageViewDuration": 55,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 3080
   }
  },
  "S102_n015": {
@@ -357,7 +366,16 @@
  },
  "S110_n003": {
   "type": null,
-  "video_id": "EhbONpF6Y8M"
+  "video_id": "EhbONpF6Y8M",
+  "h72": {
+   "views": 8142,
+   "averageViewPercentage": 133.44,
+   "averageViewDuration": 49,
+   "subscribersGained": 5,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 15738
+  }
  },
  "S111_n006": {
   "type": null,

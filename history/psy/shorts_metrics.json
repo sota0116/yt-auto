@@ -257,7 +257,14 @@
   ],
   "kind": "after",
   "title": "【心理学】顔を見て頼まれると断れない人の「意外な特徴」 #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 110,
+   "averageViewPercentage": 36.89,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  }
  },
  "007_kotowarenai:short_3": {
   "type": "人づきあい",
@@ -268,7 +275,14 @@
   ],
   "kind": "after",
   "title": "【心理学】断るひと言が重い人に共通する特徴｜図書館の本の実験 #shorts",
-  "publish_slot": "12:10"
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 62,
+   "averageViewPercentage": 62.36999999999999,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  }
  },
  "007_kotowarenai:short_4": {
   "type": "人づきあい",
@@ -328,5 +342,29 @@
   "kind": "after",
   "title": "【心理学】高かった物ほど手放せない人の正体｜半分を超える人が、楽しくない旅を選んだ #shorts",
   "publish_slot": "22:10"
+ },
+ "009_zenbu_hitonome": {
+  "type": "人づきあい",
+  "video_id": "amjywC33V7Q",
+  "hook": "昔お世話になった人に、お礼の手紙を出せずにいるのは、なぜでしょうか？",
+  "band": [
+   "お礼の手紙の",
+   "うまさ何点？"
+  ],
+  "kind": "after",
+  "title": "【心理学】お礼の手紙を「うまく書けなかった」と思う人の意外な特徴｜受け取った側の点は別だった #shorts",
+  "publish_slot": "07:10"
+ },
+ "009_zenbu_hitonome:short_2": {
+  "type": "人づきあい",
+  "video_id": "ReZ7O_Wocng",
+  "hook": "人前で話す時、緊張が顔に出ている気がするのは、なぜでしょうか？",
+  "band": [
+   "その緊張",
+   "ばれてない"
+  ],
+  "kind": "after",
+  "title": "【心理学】人前で緊張が顔に出ていると思う人、実はほとんど見抜かれていません #shorts",
+  "publish_slot": "12:10"
  }
 }

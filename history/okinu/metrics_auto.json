@@ -244,6 +244,18 @@
    ],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 1171
+  },
+  "d7": {
+   "views": 1180,
+   "averageViewPercentage": 52.839999999999996,
+   "averageViewDuration": 20,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 1182
   }
  },
  "004_トイレのNG5": {
@@ -257,6 +269,17 @@
    "直す所": [],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 184
+  },
+  "d7": {
+   "views": 208,
+   "averageViewPercentage": 30.45,
+   "averageViewDuration": 233,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 211
   }
  },
  "S102_通帳": {
@@ -313,11 +336,29 @@
  },
  "S105_実は貧乏な人に多い財布の": {
   "type": null,
-  "video_id": "6u4iqraepck"
+  "video_id": "6u4iqraepck",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 10
+  }
  },
  "006_台所のNG5": {
   "type": "okinu",
-  "video_id": "OvYmHAfxZso"
+  "video_id": "OvYmHAfxZso",
+  "h72": {
+   "views": 32,
+   "averageViewPercentage": 41.28,
+   "averageViewDuration": 322,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 40
+  }
  },
  "S106_財布の中の家族の写真": {
   "type": null,
@@ -326,5 +367,13 @@
  "S109_家計簿のノート": {
   "type": null,
   "video_id": "gIgpozyehS8"
+ },
+ "102_カバン": {
+  "type": null,
+  "video_id": "JGgdeMePMEs"
+ },
+ "S110_財布の輪ゴム": {
+  "type": null,
+  "video_id": "DJuPy4-TMws"
  }
 }
