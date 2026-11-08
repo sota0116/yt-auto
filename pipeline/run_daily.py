@@ -968,7 +968,7 @@ def main():
                     nk = 1  # 作り途中の回は、在庫が目標に届いていても最後まで作る
                 jobs.append((k, nk))
             res["作る本数"] = {k or "-": nk for k, nk in jobs}
-        # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-10-27 から1日おき・publish_weekdays＝心理学chは 2026-10-29 から週5本）は、
+        # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-11-08 から1日おき・publish_weekdays＝心理学chは週3本・千年こよみは週1本）は、
         # 在庫が目標に届いていて作り途中の回も無ければ作らない（毎日作ると在庫がたまり続けるため。空いた時間はショートに回す）
         pf = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
         if not KS and not a.count.isdigit() and (int(pf.get("publish_every_days") or 1) > 1 or len(pf.get("publish_weekdays") or range(7)) < 7) \

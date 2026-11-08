@@ -15,8 +15,8 @@
 # ・型の後回し：同じ型の直近5本（7日後の数字がある回）の平均視聴率が30%未満なら history\<ch>\type_hold.json に書く（pick_neta.py が後ろに回す）
 # ・在庫・公開の見張り：在庫が0本、26時間公開がない、明後日の公開予約がない（審査前。月曜はまだ無ければ Issue）
 #   審査の後（STOCK_PHASE=post）は、明日の公開予約が無ければ在庫から1本を PUBLISH_TIME（無ければ 19:00）に予約する
-#   （profile.json の publish_every_days が2以上のチャンネルは、前の公開からその日数があく日だけ。仕事chは 2026-10-27 から1日おき）
-#   （profile.json の publish_weekdays があるチャンネルは、その曜日だけ。心理学chは 2026-10-29 から週5本＝月水金土日）
+#   （profile.json の publish_every_days が2以上のチャンネルは、前の公開からその日数があく日だけ。仕事chは 2026-11-08 から1日おき）
+#   （profile.json の publish_weekdays があるチャンネルは、その曜日だけ。心理学chは 2026-11-08 から週3本＝水金日）
 # ・予告ショート（history\<ch>\teasers.json。make_teaser_job.py が非公開で上げる）：長尺の公開の TEASER_AFTER 分後に公開を予約する（2026-10-28）
 # ・見張り役どうしの見張り：毎日の実行が26時間ない、週報が8日ない → Issue。最後に heartbeat.json の watch を書き、HC_WATCH に合図
 # ・種類ごとのチャンネル（アナザー日本紀。2026-10-29。profile.json の kinds）：ショートは1日に複数の枠（kinds.short.slots）、横動画は何日おき（every_days）の
@@ -234,7 +234,7 @@ def every(ch):
 
 
 def weekdays(ch):
-    """長尺を出す曜日（0＝月〜6＝日）。profile.json の publish_weekdays（心理学chは 2026-10-29 から週5本）。無ければ毎日"""
+    """長尺を出す曜日（0＝月〜6＝日）。profile.json の publish_weekdays（心理学chは 2026-11-08 から週3本）。無ければ毎日"""
     w = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("publish_weekdays")
     return sorted(set(w)) if w else list(range(7))
 

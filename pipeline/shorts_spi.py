@@ -2,10 +2,10 @@
 #   python -X utf8 pipeline/shorts_spi.py <作業フォルダ> [--dry] [--offline]
 # ・本編の絵（images/_v3）はアップの後に消すので、ショートは本編と同じ実行の中で作る（手順書 §12）
 # ・本数と種類（§12「teaser 1本・after 2本を基本にし、余った枠を solo で埋める」）：
-#     本編に予約あり → teaser（予告の枠が空いている時だけ。無ければ solo）・after・after・solo の4本
-#     本編が公開済み → after・after・solo
+#     本編に予約あり → teaser（予告の枠が空いている時だけ。無ければ solo）・after・after・solo・solo の5本
+#     本編が公開済み → after・after・solo・solo
 #     本編の日が未定 → solo・solo（after と teaser は本編の公開の日が要る）
-#   千年こよみの本編は週4本・ショートの枠は毎日2つ（週14）なので、1本の本編から4本で枠がほぼ埋まる
+#   千年こよみの本編は 2026-11-08 から週1本。1本の本編からショート5本（本編と合わせて、1日に上げられる約6本に収める。7本にすると超える）
 # ・流れ：本編の状態を読む（_long.json）→ 台本の書き手（claude -p・鍵なし）が short.json … を書き、make_short_spi.py --check --offline で NG 0件まで直す
 #   → ここでもう一度点検 → 組み立て → 全カットの1コマを並べて Claude が見る（§14 電子ゴミの線 1・3・4）→ 合格だけ upload_short_spi.py
 #   点検・組み立て・見た目で落ちた物は、理由を渡して1回だけ書き直させる。それでも落ちた物は上げない（品質の門は下げない）
@@ -43,9 +43,9 @@ def plan(work, lg):
     at = lg["when"] and datetime.datetime.fromisoformat(lg["when"].replace("Z", "+00:00"))
     if lg["privacy"] == "private" and at:
         teaser_ok = slot("teaser", at, used_slots(jload(HIST, [])), datetime.datetime.now(JST)) is not None
-        kinds = ["teaser" if teaser_ok else "solo", "after", "after", "solo"]
+        kinds = ["teaser" if teaser_ok else "solo", "after", "after", "solo", "solo"]
     elif at:
-        kinds = ["after", "after", "solo"]
+        kinds = ["after", "after", "solo", "solo"]
     else:
         kinds = ["solo", "solo"]
     pl = {("short" if i == 0 else f"short_{i + 1}"): k for i, k in enumerate(kinds)}
@@ -132,7 +132,7 @@ def write(work, pl, lg, names, fixes):
            "--allowedTools", *tools, "--permission-mode", "acceptEdits", "--output-format", "json"]
     if os.path.isdir(DOCS):
         cmd += ["--add-dir", DOCS]
-    r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(work, pl, lg, names, fixes), capture_output=True, text=True, encoding="utf-8", timeout=2700)
+    r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(work, pl, lg, names, fixes), capture_output=True, text=True, encoding="utf-8", timeout=3400)
     open(os.path.join(work, "_write_shorts.log"), "a", encoding="utf-8").write(r.stdout + "\n" + r.stderr + "\n")
     try:
         out = json.loads(r.stdout)

@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 心理学（psy）は 2026-10-27 から毎日公開。千年こよみ（spi）は 2026-10-29 から（週4本・月水金日 18:00）。アナザー日本紀（nihongi）は 2026-10-30 から（ショート毎日2本＋横動画2日に1本。profile.json の kinds）。金運おきぬ（okinu）は 2026-10-29 に足した（ショート19:00＋長尺3日に1本・18:00）
+        # 心理学（psy）は 2026-10-27 から毎日公開。千年こよみ（spi）は 2026-10-29 から（2026-11-08 から週1本・水 18:00）。アナザー日本紀（nihongi）は 2026-10-30 から（ショート毎日2本＋横動画2日に1本。profile.json の kinds）。金運おきぬ（okinu）は 2026-10-29 に足した（ショート19:00＋長尺3日に1本・18:00）
         ch: ${{ fromJSON((inputs.ch && inputs.ch != 'all') && format('["{0}"]', inputs.ch) || '["job", "psy", "spi", "nihongi", "okinu"]') }}
     concurrency:
       group: daily-${{ matrix.ch }}
