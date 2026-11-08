@@ -1,0 +1,2106 @@
+{
+ "format": "long",
+ "title": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
+ "titles": [
+  "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
+  "【要注意】押し入れにコレをためる家は、お金が入ってこない。NG5選【金運】",
+  "【要注意】着ない服をしまう押し入れは、お金の入り口をふさぎます。NG5選【金運】"
+ ],
+ "thumb": {
+  "layout": "shock",
+  "bg": "F02",
+  "face": "F14",
+  "line1": "クローゼットに",
+  "line2": "●●をしまう人",
+  "judge": "貧乏神が居座る",
+  "hl": [
+   "●●"
+  ]
+ },
+ "thumb_kind": "shock",
+ "desc_lead": "あなたのクローゼットと押し入れは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね",
+ "desc": "あなたのクローゼットと押し入れは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "tags": [
+  "金運",
+  "金運アップ",
+  "クローゼット",
+  "押し入れ",
+  "風水",
+  "収納",
+  "衣替え",
+  "断捨離",
+  "開運",
+  "年金",
+  "60代",
+  "50代",
+  "お金の習慣"
+ ],
+ "promise": "お金が残る人がクローゼットと押し入れでしない5つ（服をばらばらに掛ける・中身の分からない紙袋をためる・ぎゅうぎゅうに詰めこむ・着ない服をしまい続ける・脱いだ服をすぐしまう）の言い伝えのわけと、お金をかけずにできる直し方、冬のコート・空き箱・すき間・布団・着ない服・形見の着物・冠婚葬祭の服・椅子・コートの「やっていいか」の答えと、江戸時代の衣替えの回数と虫干しが持ち帰れる",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん・澄江さんは架空の人物（002〜006 と同じ団地の2人。佐和子さんは66歳・年金は月11万円）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "金運の話は言い伝えとして話す。効き目の数字は出さない。衣替えの回数・日付は暦の歴史として話す"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "風水",
+  "そうです",
+  "昔から",
+  "運の貯金箱"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "お金が残る人が、クローゼットと押し入れで、絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人が、クローゼットとおしいれで、絶対にしないことがいつつあります。",
+   "image_en": "Night inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi), with a built-in oshiire closet with sliding paper fusuma doors and a narrow wardrobe closet with a hanging rod: the oshiire fusuma doors are half open and the closet is crammed to bursting with old sweaters, folded clothes, plain paper shopping bags and old boxes, some clothes spilling out onto the tatami. Only a dim cold light from the window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Night inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi), with a built-in oshiire closet with sliding paper fusuma doors and a narrow wardrobe closet with a hanging rod: the oshiire fusuma doors are half open and the closet is crammed to bursting with old sweaters, folded clothes, plain paper shopping bags and old boxes, some clothes spilling out onto the tatami. Only a dim cold light from the window. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A02",
+   "narration": "いつか着るかもと、もう着ない服を、押し入れの奥に押しこんでいませんか。",
+   "tts_text": "いつか着るかもと、もう着ない服を、おしいれの奥に押しこんでいませんか。",
+   "same_as": "A01"
+  },
+  {
+   "id": "A03",
+   "narration": "金運の世界では、それは、お金の入る場所をふさいでいる家のしるしだと言われています。",
+   "tts_text": "きんうんの世界では、それは、お金のはいる場所をふさいでいるいえのしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "押しこんだ服は",
+     "big": "お金の入る場所をふさぐ",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A04",
+   "narration": "あなたは、そのうち、いくつやっているか、数えながら見てください。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人がクローゼットと押し入れで",
+    "text2": "絶対にしない、5つのこと",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "クローゼットや押し入れは、運の貯金箱とも言われる場所です。",
+   "tts_text": "クローゼットやおしいれは、うんのちょきんばことも言われる場所です。",
+   "image_en": "An antique Edo-period Japanese wooden tansu clothing chest with dark iron fittings and several drawers, standing in a dim old Japanese room with tatami. No people. No readable text, no logos, no brand names.",
+   "real": "Edo period tansu chest",
+   "card": {
+    "type": "photo"
+   },
+   "image": "An antique Edo-period Japanese wooden tansu clothing chest with dark iron fittings and several drawers, standing in a dim old Japanese room with tatami. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A06",
+   "narration": "これは、昔のたんすです。昔の人も、着物を、家の大切な財産として、しまってきました。",
+   "tts_text": "これは、昔のたんすです。昔の人も、着物を、いえの大切な財産として、しまってきました。",
+   "same_as": "A05"
+  },
+  {
+   "id": "A07",
+   "narration": "佐和子さん、66歳。年金は月11万円。",
+   "tts_text": "さわこさん、ろくじゅうろくさい。年金は月じゅういちまんえん。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "66歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A08",
+   "narration": "同じ団地の澄江さんも、年金は、ほとんど同じです。",
+   "tts_text": "同じ団地のすみえさんも、年金は、ほとんど同じです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A09",
+   "narration": "それなのに、月の終わりに、お財布に余裕があるのは、澄江さんのほうでした。",
+   "tts_text": "それなのに、月の終わりに、おさいふによゆうがあるのは、すみえさんのほうでした。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月の終わり　ぎりぎり",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月の終わり　余裕あり"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "2人の家で、いちばん違っていたのは、クローゼットと押し入れの中でした。",
+   "tts_text": "ふたりのいえで、いちばん違っていたのは、クローゼットとおしいれの中でした。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の家でいちばん違ったのは",
+    "text2": "クローゼットと押し入れ",
+    "accent": "押し入れ"
+   }
+  },
+  {
+   "id": "A11",
+   "narration": "お金が残らない人は、クローゼットと押し入れで、この5つをやっています。",
+   "tts_text": "お金が残らない人は、クローゼットとおしいれで、このいつつをやっています。",
+   "montage": [
+    "B01",
+    "C01",
+    "D01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　服を●●●●に掛ける",
+    "第4位　中身の分からない●●をためる",
+    "第3位　●●●●●●に詰めこむ",
+    "第2位　着ない●を、しまい続ける"
+   ]
+  },
+  {
+   "id": "A12",
+   "narration": "第1位は、疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "tts_text": "だいいちいは、疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "脱いだ●を、●●しまう",
+    "sub": "疲れた夜に、ついやってしまう",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "A13",
+   "narration": "どれも、お金をかけずに、今ある物で直せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どれも",
+     "big": "お金をかけずに直せる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。服を、ばらばらに掛ける。",
+   "tts_text": "だいごい。服を、ばらばらに掛ける。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "服を、ばらばらに掛ける",
+    "sub": "長いのも短いのも、濃いのも明るいのも"
+   },
+   "yt_chapter": "第5位 服の掛け方のくせ",
+   "chapter": "第5位 服の掛け方のくせ"
+  },
+  {
+   "id": "B01",
+   "narration": "長いコートの隣に、短いブラウス。黒いズボンの隣に、白いシャツ。",
+   "image_en": "Close-up inside the narrow wardrobe closet of a modest present-day Japanese public housing apartment (danchi): on the hanging rod, clothes are hung in a jumbled random order, a long dark winter coat next to a short pale summer blouse, black trousers next to a white shirt, mismatched hangers of different kinds. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up inside the narrow wardrobe closet of a modest present-day Japanese public housing apartment (danchi): on the hanging rod, clothes are hung in a jumbled random order, a long dark winter coat next to a short pale summer blouse, black trousers next to a white shirt, mismatched hangers of different kinds. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B02",
+   "narration": "空いた所に、手に取った順で、掛けていませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "風水では、クローゼットの中にも、気の流れがあると考えます。",
+   "tts_text": "ふうすいでは、クローゼットの中にも、気の流れがあると考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "クローゼットにも",
+     "big": "気の流れがある",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B04",
+   "narration": "左には、重い物、長い物、濃い色の物。",
+   "card": {
+    "type": "big_text",
+    "text": "左は",
+    "text2": "重い・長い・濃い色",
+    "accent": "重い"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "右には、軽い物、短い物、明るい色の物を掛けるといい、と言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "右は",
+    "text2": "軽い・短い・明るい色",
+    "accent": "明るい"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "重さと色の並びがそろうと、気が、すっと流れる。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "並びがそろうと",
+     "big": "気がすっと流れる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "B07",
+   "narration": "ばらばらに掛けた服は、気の流れも、ばらばらにしてしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "ばらばらの服は",
+    "text2": "気の流れも、ばらばら",
+    "accent": "ばらばら"
+   }
+  },
+  {
+   "id": "B08",
+   "narration": "佐和子さんのクローゼットは、買った順、着た順に、服が並んでいました。",
+   "tts_text": "さわこさんのクローゼットは、買った順、着た順に、服が並んでいました。",
+   "image_en": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: Sawako stands at the open wardrobe closet, pushing through a jumbled row of mixed long and short clothes on the rod, searching with a troubled frowning face. Soft dim morning light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: Sawako stands at the open wardrobe closet, pushing through a jumbled row of mixed long and short clothes on the rod, searching with a troubled frowning face. Soft dim morning light."
+  },
+  {
+   "id": "B09",
+   "narration": "毎朝、どこに何があるか、探してばかり。",
+   "card": {
+    "type": "big_text",
+    "text": "毎朝",
+    "text2": "どこに何があるか、探してばかり",
+    "kicker": "探して"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B10",
+   "narration": "重いコートの奥から、夏のブラウスが出てくることもありました。",
+   "same_as": "B08"
+  },
+  {
+   "id": "B11",
+   "narration": "澄江さんのクローゼットは、左から右へ、長い服から短い服へ。",
+   "tts_text": "すみえさんのクローゼットは、左から右へ、長い服から短い服へ。",
+   "image_en": "Inside a clean tidy narrow wardrobe closet of a modest present-day Japanese danchi apartment: clothes on matching plain wooden hangers are arranged neatly from left to right, long dark coats on the left gradually changing to short light-colored blouses on the right, with small gaps between hangers. Soft bright morning light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Inside a clean tidy narrow wardrobe closet of a modest present-day Japanese danchi apartment: clothes on matching plain wooden hangers are arranged neatly from left to right, long dark coats on the left gradually changing to short light-colored blouses on the right, with small gaps between hangers. Soft bright morning light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B12",
+   "narration": "色も、濃い色から、明るい色へと、なだらかに並んでいます。",
+   "same_as": "B11"
+  },
+  {
+   "id": "B13",
+   "narration": "直し方は、重い服と長い服を、左に寄せること。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "重い服・長い服は、左へ",
+     "軽い服・明るい服は、右へ",
+     "季節外れの服は、押し入れへ"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "軽い服と明るい色の服は、右に寄せます。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "重い服・長い服は、左へ",
+     "軽い服・明るい服は、右へ",
+     "季節外れの服は、押し入れへ"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B15",
+   "narration": "そして、季節外れの服は、押し入れにしまう。",
+   "tts_text": "そして、季節外れの服は、おしいれにしまう。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "重い服・長い服は、左へ",
+     "軽い服・明るい服は、右へ",
+     "季節外れの服は、押し入れへ"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "並べ替えるだけなら、お金は1円もかかりません。",
+   "tts_text": "並べ替えるだけなら、お金はいちえんもかかりません。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "並べ替えるだけ",
+     "big": "お金はかからない",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B17",
+   "narration": "冬のコートも、一緒に掛けておいていいの？",
+   "card": {
+    "type": "big_text",
+    "text": "夏でも",
+    "text2": "冬のコートを掛けていい？",
+    "kicker": "コート"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B18",
+   "narration": "クローゼットには、今の季節の服だけ。季節外れの服は、しまうといい、と言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "季節外れは、しまう",
+    "text2": "今の季節の服だけ",
+    "accent": "今の季節",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B19",
+   "narration": "佐和子さんは、その晩、コートを3着、左の端へ寄せました。",
+   "tts_text": "さわこさんは、その晩、コートをさんちゃく、左のはしへ寄せました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "コートを3着、左の端へ",
+    "accent": "左の端"
+   }
+  },
+  {
+   "id": "B20",
+   "narration": "毎朝、迷わずに服を選べる。それだけで、朝の気が軽くなると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "迷わず選べる朝は",
+     "big": "気が軽くなる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "B21",
+   "narration": "目に見えるクローゼットより、見えない押し入れの奥に、ためている人が多い物があります。",
+   "tts_text": "目に見えるクローゼットより、見えないおしいれの奥に、ためている人が多い物があります。",
+   "card": {
+    "type": "big_text",
+    "text": "押し入れの奥に",
+    "text2": "ためている人が多い物",
+    "accent": "押し入れの奥"
+   }
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。中身の分からない紙袋を、ためる。",
+   "tts_text": "だいよんい。中身の分からないかみぶくろを、ためる。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "中身の分からない紙袋をためる",
+    "sub": "いつか使うと、押し入れの奥へ"
+   },
+   "yt_chapter": "第4位 押し入れの奥の物",
+   "chapter": "第4位 押し入れの奥の物"
+  },
+  {
+   "id": "C01",
+   "narration": "押し入れの奥に、お店の紙袋と、もらい物の空き箱。",
+   "tts_text": "おしいれの奥に、お店のかみぶくろと、もらい物のあきばこ。",
+   "image_en": "Close-up into the back of a dim Japanese oshiire closet: a jumble of plain paper shopping bags stuffed inside one another, old plain gift boxes and shoe boxes piled unevenly, some bags bulging with unknown contents, dust on top. Dark gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up into the back of a dim Japanese oshiire closet: a jumble of plain paper shopping bags stuffed inside one another, old plain gift boxes and shoe boxes piled unevenly, some bags bulging with unknown contents, dust on top. Dark gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C02",
+   "narration": "いつか使うから。そう思って、取っておいていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "その紙袋の中に、何が入っているか、言えますか。",
+   "tts_text": "そのかみぶくろの中に、何がはいっているか、言えますか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C04",
+   "narration": "古い物や使わない物をためこむと、気が滞って、新しい気が入りにくくなると言われています。",
+   "tts_text": "古い物や使わない物をためこむと、気がとどこおって、新しい気がはいりにくくなると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "使わない物をためると",
+     "big": "新しい気が入らない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C05",
+   "narration": "中身の分からない物は、忘れられた物。",
+   "card": {
+    "type": "big_text",
+    "text": "中身の分からない物は",
+    "text2": "忘れられた物",
+    "accent": "忘れられた"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "忘れられた物のまわりでは、気が止まってしまう、と考えます。",
+   "card": {
+    "type": "big_text",
+    "text": "忘れられた物は",
+    "text2": "気が、止まる",
+    "accent": "止まる"
+   }
+  },
+  {
+   "id": "C07",
+   "narration": "何がどこにあるか分かる押し入れに、運もお金も、集まってくる。そう考えられてきました。",
+   "tts_text": "何がどこにあるか分かるおしいれに、運もお金も、集まってくる。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "何がどこか分かる押し入れに",
+     "big": "運もお金も集まる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "C08",
+   "narration": "佐和子さんは、押し入れの奥から、紙袋を1つ引っぱり出しました。",
+   "tts_text": "さわこさんは、おしいれの奥から、かみぶくろをひとつ引っぱり出しました。",
+   "image_en": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a built-in oshiire closet with sliding paper fusuma doors: Sawako kneels on the tatami in front of the open oshiire and pulls out a dusty bulging plain paper bag from the very back, her eyes wide in surprise. Soft dim light. No readable text.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a built-in oshiire closet with sliding paper fusuma doors: Sawako kneels on the tatami in front of the open oshiire and pulls out a dusty bulging plain paper bag from the very back, her eyes wide in surprise. Soft dim light. No readable text."
+  },
+  {
+   "id": "C09",
+   "narration": "これ、何が入っていたかしら。",
+   "card": {
+    "type": "big_text",
+    "text": "押し入れの紙袋",
+    "text2": "何が入っていたかしら",
+    "kicker": "紙袋"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C10",
+   "narration": "中から出てきたのは、5年前にもらって、一度も使わなかったタオルでした。",
+   "tts_text": "中から出てきたのは、ごねんまえにもらって、いちども使わなかったタオルでした。",
+   "same_as": "C08"
+  },
+  {
+   "id": "C11",
+   "narration": "澄江さんの押し入れには、中身の見える、透明なケースが並んでいます。",
+   "tts_text": "すみえさんのおしいれには、中身の見える、透明なケースが並んでいます。",
+   "image_en": "Inside a clean tidy Japanese oshiire closet with the fusuma slid open: clear plastic storage cases neatly lined up with folded clothes visible inside, one plain paper bag neatly folded flat at the side, and open empty space above. Soft bright light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Inside a clean tidy Japanese oshiire closet with the fusuma slid open: clear plastic storage cases neatly lined up with folded clothes visible inside, one plain paper bag neatly folded flat at the side, and open empty space above. Soft bright light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C12",
+   "narration": "紙袋は、決めた数だけ、1つにまとめていました。",
+   "tts_text": "かみぶくろは、決めた数だけ、ひとつにまとめていました。",
+   "same_as": "C11"
+  },
+  {
+   "id": "C13",
+   "narration": "直し方は、紙袋の数を決めて、1か所にまとめること。",
+   "tts_text": "直し方は、かみぶくろの数を決めて、いっかしょにまとめること。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "紙袋は、数を決めて1か所に",
+     "中身の分からない箱は、開けてみる",
+     "中身が見えるように、しまう"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C14",
+   "narration": "中身の分からない箱は、1日1つずつ、開けてみます。",
+   "tts_text": "中身の分からない箱は、いちにちひとつずつ、開けてみます。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "紙袋は、数を決めて1か所に",
+     "中身の分からない箱は、開けてみる",
+     "中身が見えるように、しまう"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "そして、中身が見えるように、しまう。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "紙袋は、数を決めて1か所に",
+     "中身の分からない箱は、開けてみる",
+     "中身が見えるように、しまう"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C16",
+   "narration": "もらい物の空き箱、きれいだから、捨てにくいのよね。",
+   "tts_text": "もらい物のあきばこ、きれいだから、捨てにくいのよね。",
+   "card": {
+    "type": "big_text",
+    "text": "きれいな",
+    "text2": "もらい物の空き箱は？",
+    "kicker": "空き箱"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C17",
+   "narration": "箱は、中に入れる物が決まっている分だけ。入れる物の無い箱は、手放していい、と考えます。",
+   "card": {
+    "type": "big_text",
+    "text": "入れる物の無い箱は",
+    "text2": "手放していい",
+    "accent": "手放して",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "紙袋1つ、箱1つ。それだけでも、奥に、風の通る道ができます。",
+   "tts_text": "かみぶくろひとつ、はこひとつ。それだけでも、奥に、風の通る道ができます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "紙袋1つでも",
+     "big": "奥に風の道ができる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "C19",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "C20",
+   "narration": "昔の人は、季節が変わるたびに、着る物を入れ替えてきました。衣替えです。",
+   "tts_text": "昔の人は、季節が変わるたびに、着る物を入れ替えてきました。ころもがえです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "季節ごとに着る物を替える",
+     "big": "衣替え",
+     "size": 130
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "C21",
+   "narration": "江戸時代の衣替えは、年に何回だったでしょう。2回か、4回か。",
+   "tts_text": "えどじだいのころもがえは、年に何回だったでしょう。にかいか、よんかいか。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "2回",
+      "sub": "？"
+     },
+     {
+      "head": "4回",
+      "sub": "？"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "C22",
+   "narration": "あなたは、どちらだと思いますか。",
+   "same_as": "C21"
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "●●●●●●に詰めこむ",
+     "着ない●を、しまい続ける",
+     "脱いだ●を、●●しまう"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、もっと多くの人が、やってしまっています。",
+   "tts_text": "残りのみっつは、もっと多くの人が、やってしまっています。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "●●●●●●に詰めこむ",
+     "着ない●を、しまい続ける",
+     "脱いだ●を、●●しまう"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "おきぬは、お金をかけずにできる金運の決まりを、お伝えしています。",
+   "tts_text": "おきぬは、お金をかけずにできるきんうんの決まりを、お伝えしています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "M04",
+   "narration": "次のお話も見たい方は、チャンネル登録をしておくと、新しいお話が届きます。",
+   "tts_text": "次のお話もみたいかたは、チャンネル登録をしておくと、新しいお話が届きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:M04"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。ぎゅうぎゅうに、詰めこむ。",
+   "tts_text": "だいさんい。ぎゅうぎゅうに、詰めこむ。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "ぎゅうぎゅうに詰めこむ",
+    "sub": "ハンガーが、動かない"
+   },
+   "yt_chapter": "第3位 しまう量のくせ",
+   "chapter": "第3位 しまう量のくせ"
+  },
+  {
+   "id": "D01",
+   "narration": "クローゼットのパイプに、すき間なく掛けた服。",
+   "image_en": "Close-up of a wardrobe closet hanging rod in a modest Japanese danchi apartment: dozens of clothes on hangers jammed together so tightly there is no gap at all, the rod bending slightly, sleeves crushed and wrinkled, a stuffed shelf above. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up of a wardrobe closet hanging rod in a modest Japanese danchi apartment: dozens of clothes on hangers jammed together so tightly there is no gap at all, the rod bending slightly, sleeves crushed and wrinkled, a stuffed shelf above. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D02",
+   "narration": "1枚取ろうとすると、隣の服まで、一緒に落ちてきませんか。",
+   "tts_text": "いちまい取ろうとすると、隣の服まで、一緒に落ちてきませんか。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D03",
+   "narration": "風水では、収納は、8割まで、と言われます。",
+   "tts_text": "ふうすいでは、収納は、はちわりまで、と言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "収納は",
+     "big": "8割まで",
+     "size": 130
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "D04",
+   "narration": "残りの2割は、空けておく。",
+   "tts_text": "残りのにわりは、空けておく。",
+   "card": {
+    "type": "big_text",
+    "text": "残りの2割は",
+    "text2": "空けておく",
+    "accent": "2割"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "すき間の無い所には、新しい気も、新しいお金も、入る場所がありません。",
+   "tts_text": "すき間の無い所には、新しい気も、新しいお金も、はいる場所がありません。",
+   "card": {
+    "type": "big_text",
+    "text": "すき間が無いと",
+    "text2": "新しいお金の、入る場所が無い",
+    "accent": "入る場所"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "詰めこんだ服は、気が動かずに、よどんでいくと考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "詰めこんだ服は",
+     "big": "気がよどむ",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "D07",
+   "narration": "佐和子さんは、ぎゅうぎゅうのクローゼットから、ブラウスを引っぱり出そうとしていました。",
+   "tts_text": "さわこさんは、ぎゅうぎゅうのクローゼットから、ブラウスを引っぱり出そうとしていました。",
+   "image_en": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: Sawako tugs hard with both hands at a blouse stuck between tightly jammed clothes on the wardrobe rod, other hangers tilting and about to fall, a strained exasperated face. Soft dim light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: Sawako tugs hard with both hands at a blouse stuck between tightly jammed clothes on the wardrobe rod, other hangers tilting and about to fall, a strained exasperated face. Soft dim light."
+  },
+  {
+   "id": "D08",
+   "narration": "もう、1枚も入らないわ。",
+   "tts_text": "もう、いちまいもはいらないわ。",
+   "card": {
+    "type": "big_text",
+    "text": "クローゼットに",
+    "text2": "もう1枚も入らない",
+    "kicker": "1枚も"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D09",
+   "narration": "押し入れも、ふすまが閉まりきらないほど、物が入っていました。",
+   "tts_text": "おしいれも、ふすまが閉まりきらないほど、物がはいっていました。",
+   "same_as": "D07"
+  },
+  {
+   "id": "D10",
+   "narration": "澄江さんのクローゼットは、ハンガーとハンガーの間に、指が2本入るくらいのすき間。",
+   "tts_text": "すみえさんのクローゼットは、ハンガーとハンガーの間に、ゆびがにほんはいるくらいのすき間。",
+   "image_en": "Close-up of a tidy wardrobe closet rod in a modest Japanese danchi apartment: a modest number of clothes on matching plain hangers with even comfortable gaps between them, and a clearly empty section of the rod on the right. Clean soft light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up of a tidy wardrobe closet rod in a modest Japanese danchi apartment: a modest number of clothes on matching plain hangers with even comfortable gaps between them, and a clearly empty section of the rod on the right. Clean soft light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D11",
+   "narration": "服が、ゆったりと掛かっています。",
+   "same_as": "D10"
+  },
+  {
+   "id": "D12",
+   "narration": "直し方は、収納を、8割までにすること。",
+   "tts_text": "直し方は、収納を、はちわりまでにすること。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "収納は、8割までにする",
+     "ハンガーの間に、すき間をあける",
+     "1枚入れたら、1枚出す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D13",
+   "narration": "ハンガーとハンガーの間に、すき間をあけます。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "収納は、8割までにする",
+     "ハンガーの間に、すき間をあける",
+     "1枚入れたら、1枚出す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "そして、1枚入れたら、1枚出す。",
+   "tts_text": "そして、いちまい入れたら、いちまい出す。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "収納は、8割までにする",
+     "ハンガーの間に、すき間をあける",
+     "1枚入れたら、1枚出す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "すき間があると、服もしわにならず、長持ちします。",
+   "card": {
+    "type": "big_text",
+    "text": "すき間があると",
+    "text2": "服も、長持ちする",
+    "accent": "長持ち"
+   }
+  },
+  {
+   "id": "D16",
+   "narration": "空いている所に、何か入れたくなるんだけど？",
+   "card": {
+    "type": "big_text",
+    "text": "2割のすき間",
+    "text2": "何か入れたくなる？",
+    "kicker": "すき間"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D17",
+   "narration": "そこは、新しい運が入ってくる場所。空けておくのがいい、と言われます。",
+   "tts_text": "そこは、新しい運がはいってくる場所。空けておくのがいい、と言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "空けておくのがいい",
+    "text2": "新しい運の入る場所",
+    "accent": "新しい運",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D18",
+   "narration": "押し入れの布団も、同じなの？",
+   "tts_text": "おしいれのふとんも、同じなの？",
+   "card": {
+    "type": "big_text",
+    "text": "押し入れの",
+    "text2": "布団も、同じ？",
+    "kicker": "布団"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D19",
+   "narration": "同じだと考えます。布団も、使う分だけにして、上に物を積まないことです。",
+   "card": {
+    "type": "big_text",
+    "text": "上に物を積まない",
+    "text2": "布団も、使う分だけ",
+    "accent": "使う分",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D20",
+   "narration": "8割の押し入れは、ふすまを開けた時の景色が、まるで違います。",
+   "tts_text": "はちわりのおしいれは、ふすまを開けた時の景色が、まるで違います。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "8割の押し入れは",
+     "big": "開けた時の景色が違う",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "D21",
+   "narration": "そのすき間を埋めているのは、多くの家で、着ない服です。",
+   "tts_text": "そのすき間を埋めているのは、多くのいえで、着ない服です。",
+   "card": {
+    "type": "big_text",
+    "text": "すき間を埋めるのは",
+    "text2": "多くの家で、着ない服",
+    "accent": "着ない服"
+   }
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。着ない服を、しまい続ける。",
+   "tts_text": "だいにい。着ない服を、しまい続ける。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "着ない服を、しまい続ける",
+    "sub": "いつか着るかもしれないから"
+   },
+   "yt_chapter": "第2位 いつか着る、の服",
+   "chapter": "第2位 いつか着る、の服"
+  },
+  {
+   "id": "E01",
+   "narration": "押し入れのケースに、もう何年も着ていない、セーターとカーディガン。",
+   "tts_text": "おしいれのケースに、もう何年も着ていない、セーターとカーディガン。",
+   "image_en": "Close-up of an open storage case inside a dim Japanese oshiire closet: old faded sweaters covered in pills, a cardigan with thin worn elbows and a small hole, folded and pressed flat for years, slightly dusty. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up of an open storage case inside a dim Japanese oshiire closet: old faded sweaters covered in pills, a cardigan with thin worn elbows and a small hole, folded and pressed flat for years, slightly dusty. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E02",
+   "narration": "毛玉のついたセーター。ひじの薄くなった、カーディガン。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E03",
+   "narration": "いつか着るかもしれない。そう思って、しまったままになっていませんか。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E04",
+   "narration": "風水では、しまったまま着ない服は、マイナスの気を帯びると言われています。",
+   "tts_text": "ふうすいでは、しまったまま着ない服は、マイナスの気をおびると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "しまったままの服は",
+     "big": "マイナスの気を帯びる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "E05",
+   "narration": "服は、着てもらって、はじめて生きる物。",
+   "card": {
+    "type": "big_text",
+    "text": "服は",
+    "text2": "着てもらって、生きる",
+    "accent": "生きる"
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "着ない服は、押し入れの中で、少しずつ、気を重くしていくと考えます。",
+   "tts_text": "着ない服は、おしいれの中で、少しずつ、気を重くしていくと考えます。",
+   "card": {
+    "type": "big_text",
+    "text": "着ない服は",
+    "text2": "押し入れの気を、重くする",
+    "accent": "重く"
+   }
+  },
+  {
+   "id": "E07",
+   "narration": "毛玉や穴のある服も、運気を下げると言われ、手放すように勧められています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "毛玉や穴のある服も",
+     "big": "運気を下げる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "E08",
+   "narration": "佐和子さんは、押し入れのケースから、昔のセーターを取り出しました。",
+   "tts_text": "さわこさんは、おしいれのケースから、昔のセーターを取り出しました。",
+   "image_en": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a built-in oshiire closet: Sawako kneels by an open storage case and holds up an old pilled sweater with both hands, looking at it with a wistful, hesitant face. Soft afternoon light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a built-in oshiire closet: Sawako kneels by an open storage case and holds up an old pilled sweater with both hands, looking at it with a wistful, hesitant face. Soft afternoon light."
+  },
+  {
+   "id": "E09",
+   "narration": "これ、高かったのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "このセーター",
+    "text2": "高かったのよ",
+    "kicker": "高かった"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E10",
+   "narration": "最後に着たのがいつか、思い出せませんでした。",
+   "same_as": "E08"
+  },
+  {
+   "id": "E11",
+   "narration": "同じようなセーターが、ケースの中に、あと4枚。",
+   "tts_text": "同じようなセーターが、ケースの中に、あとよんまい。",
+   "same_as": "E08"
+  },
+  {
+   "id": "E12",
+   "narration": "澄江さんは、衣替えのたびに、着なかった服を、1枚ずつ見直していました。",
+   "tts_text": "すみえさんは、ころもがえのたびに、着なかった服を、いちまいずつ見直していました。",
+   "card": {
+    "type": "big_text",
+    "text": "澄江さんは",
+    "text2": "衣替えのたびに、見直す",
+    "accent": "見直す"
+   }
+  },
+  {
+   "id": "E13",
+   "narration": "着ない服を、しまっておいてもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "着ない服",
+    "text2": "しまっておいていい？",
+    "kicker": "着ない服"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E14",
+   "narration": "3年着ていない服は、手放す目安だと言われます。",
+   "tts_text": "さんねん着ていない服は、手放す目安だと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "3年着ていない服は",
+    "text2": "手放す目安",
+    "accent": "3年",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E15",
+   "narration": "3回の冬を越しても着なかった服は、この先も、着ないことが多いのです。",
+   "tts_text": "さんかいの冬を越しても着なかった服は、この先も、着ないことが多いのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "3回の冬に着なかった服は",
+     "big": "この先も着ない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "E16",
+   "narration": "母の形見の着物も、手放さないといけないの？",
+   "tts_text": "ははのかたみの着物も、手放さないといけないの？",
+   "card": {
+    "type": "big_text",
+    "text": "母の",
+    "text2": "形見の着物は？",
+    "kicker": "形見"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E17",
+   "narration": "手放せない物は、ときどき出して、風に当てればいい、と言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "手放せない物は",
+    "text2": "ときどき、風に当てる",
+    "accent": "風",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E18",
+   "narration": "しまいこむのではなく、時々出して、眺めてあげる。それも、大切な形見の生かし方です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "形見は",
+     "big": "時々出して眺める",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C09"
+  },
+  {
+   "id": "E19",
+   "narration": "直し方は、3年着ていない服を、手放すこと。",
+   "tts_text": "直し方は、さんねん着ていない服を、手放すこと。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "3年着ていない服は、手放す",
+     "毛玉や穴のある服も、手放す",
+     "形見は、時々出して風に当てる"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E20",
+   "narration": "毛玉や穴のある服も、一緒に手放します。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "3年着ていない服は、手放す",
+     "毛玉や穴のある服も、手放す",
+     "形見は、時々出して風に当てる"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E21",
+   "narration": "形見の服は、時々出して、風に当てる。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "3年着ていない服は、手放す",
+     "毛玉や穴のある服も、手放す",
+     "形見は、時々出して風に当てる"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E22",
+   "narration": "手放す時は、ありがとうと言って、きれいにたたんでから出します。",
+   "image_en": "Close-up: an older woman's hands gently fold an old sweater neatly on a tatami floor beside a plain paper bag, soft and respectful. Only the hands, no face. Warm soft light. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up: an older woman's hands gently fold an old sweater neatly on a tatami floor beside a plain paper bag, soft and respectful. Only the hands, no face. Warm soft light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E23",
+   "narration": "佐和子さんは、セーターを4枚、紙袋に入れて、資源回収の日に出しました。",
+   "tts_text": "さわこさんは、セーターをよんまい、かみぶくろに入れて、しげんかいしゅうの日に出しました。",
+   "same_as": "E22"
+  },
+  {
+   "id": "E24",
+   "narration": "ためていた紙袋が、やっと役に立ちました。",
+   "tts_text": "ためていたかみぶくろが、やっと役に立ちました。",
+   "card": {
+    "type": "big_text",
+    "text": "ためていた紙袋が",
+    "text2": "やっと、役に立った",
+    "accent": "役に立った"
+   }
+  },
+  {
+   "id": "E25",
+   "narration": "冠婚葬祭の服は、年に1回も着ないけど？",
+   "tts_text": "かんこんそうさいの服は、年にいっかいも着ないけど？",
+   "card": {
+    "type": "big_text",
+    "text": "冠婚葬祭の服",
+    "text2": "年に1回も着ないけど？",
+    "kicker": "冠婚葬祭"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E26",
+   "narration": "着る時が決まっている服は、着ない服とは違います。手入れをして、しまっておけばいい、と考えます。",
+   "card": {
+    "type": "big_text",
+    "text": "着る時が決まっている服は",
+    "text2": "しまっておいていい",
+    "accent": "しまって",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E27",
+   "narration": "着ない服が出ていくと、そこに風が通り、新しい運の入る場所ができると言われます。",
+   "tts_text": "着ない服が出ていくと、そこに風が通り、新しい運のはいる場所ができると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "着ない服を手放すと",
+     "big": "新しい運の場所ができる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "E28",
+   "narration": "そして第1位は、着ない服ではなく、毎日着ている服の話です。",
+   "tts_text": "そしてだいいちいは、着ない服ではなく、毎日着ている服の話です。",
+   "card": {
+    "type": "big_text",
+    "text": "第1位は",
+    "text2": "毎日着ている服の話",
+    "accent": "毎日"
+   }
+  },
+  {
+   "id": "P01",
+   "narration": "ここまでで、4つ。残るは、第1位だけです。",
+   "tts_text": "ここまでで、よっつ。残るは、だいいちいだけです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "ぎゅうぎゅうに詰めこむ",
+     "着ない服を、しまい続ける",
+     "脱いだ●を、●●しまう"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "いよいよ、第1位です。",
+   "tts_text": "いよいよ、だいいちいです。",
+   "card": {
+    "type": "big_text",
+    "text": "いよいよ",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、脱いだ服を、すぐにしまうこと。",
+   "tts_text": "だいいちいは、脱いだ服を、すぐにしまうこと。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "脱いだ服を、すぐしまう",
+    "sub": "疲れた夜に、ついやってしまう"
+   },
+   "yt_chapter": "第1位 疲れた夜に、ついやってしまうこと",
+   "chapter": "第1位 疲れた夜に、ついやってしまうこと"
+  },
+  {
+   "id": "F02",
+   "narration": "1日着たカーディガンを、脱いでそのまま、クローゼットに押しこんで、扉を閉める。",
+   "tts_text": "いちにち着たカーディガンを、脱いでそのまま、クローゼットに押しこんで、扉を閉める。",
+   "image_en": "Night inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: a just-worn, slightly crumpled beige cardigan is shoved onto the jammed wardrobe rod among other clothes, its sleeve hanging limply, and the closet door is half closing on it. The room is dark except for a faint cold light from the window. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "peak": true,
+   "strong": true,
+   "highlight": "すぐにしまう",
+   "image": "Night inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: a just-worn, slightly crumpled beige cardigan is shoved onto the jammed wardrobe rod among other clothes, its sleeve hanging limply, and the closet door is half closing on it. The room is dark except for a faint cold light from the window. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F03",
+   "narration": "疲れた夜に、ほとんどの人が、ついやってしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "脱いですぐしまうのは",
+    "text2": "疲れた夜に、つい",
+    "accent": "疲れた夜"
+   }
+  },
+  {
+   "id": "F04",
+   "narration": "1日着た服は、汗と湿気を、たっぷり吸っています。",
+   "tts_text": "いちにち着た服は、あせとしっけを、たっぷり吸っています。",
+   "card": {
+    "type": "big_text",
+    "text": "1日着た服は",
+    "text2": "汗と湿気を、吸っている",
+    "accent": "湿気"
+   }
+  },
+  {
+   "id": "F05",
+   "narration": "風水では、風の通らない収納は、気が滞りやすいと言われています。",
+   "tts_text": "ふうすいでは、風の通らない収納は、気がとどこおりやすいと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "風の通らない収納は",
+     "big": "気が滞る",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "F06",
+   "narration": "湿った服を閉じこめると、その湿り気が、クローゼットの中に、こもってしまう。",
+   "tts_text": "しめった服を閉じこめると、そのしめりけが、クローゼットの中に、こもってしまう。",
+   "card": {
+    "type": "big_text",
+    "text": "湿った服を閉じこめると",
+    "text2": "湿り気が、こもる",
+    "accent": "こもる"
+   }
+  },
+  {
+   "id": "F07",
+   "narration": "運の貯金箱に、湿った空気を、毎晩しまっているようなものです。",
+   "tts_text": "うんのちょきんばこに、しめった空気を、毎晩しまっているようなものです。",
+   "card": {
+    "type": "big_text",
+    "text": "運の貯金箱に",
+    "text2": "湿った空気を、毎晩しまう",
+    "accent": "毎晩"
+   }
+  },
+  {
+   "id": "F08",
+   "narration": "こもった空気は、ほかの服の気まで、重くすると考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "こもった空気は",
+     "big": "ほかの服まで重くする",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "F09",
+   "narration": "それに、湿気は、においとカビのもとにもなります。",
+   "tts_text": "それに、しっけは、においとカビのもとにもなります。",
+   "card": {
+    "type": "big_text",
+    "text": "湿気は",
+    "text2": "においとカビのもと",
+    "accent": "カビ"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "佐和子さんは、帰ってくると、すぐにカーディガンを脱いで、クローゼットへ。",
+   "tts_text": "さわこさんは、帰ってくると、すぐにカーディガンを脱いで、クローゼットへ。",
+   "image_en": "Evening inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: a tired Sawako, in her white blouse and navy trousers, quickly pushes her just-taken-off beige cardigan into the crowded wardrobe closet with one hand, her face weary, shoulders slumped. Dim warm lamp light.",
+   "chars": [
+    "sawako"
+   ],
+   "image": "Evening inside a small six-tatami Japanese-style bedroom of a modest present-day Japanese public housing apartment (danchi) with a narrow wardrobe closet: a tired Sawako, in her white blouse and navy trousers, quickly pushes her just-taken-off beige cardigan into the crowded wardrobe closet with one hand, her face weary, shoulders slumped. Dim warm lamp light."
+  },
+  {
+   "id": "F11",
+   "narration": "出しっぱなしは、だらしないと思って。",
+   "card": {
+    "type": "big_text",
+    "text": "脱いだ服を",
+    "text2": "出しっぱなしは、だらしない",
+    "kicker": "だらしない"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F12",
+   "narration": "きちんとしているつもりで、毎晩、湿った服を、閉じこめていたのです。",
+   "tts_text": "きちんとしているつもりで、毎晩、しめった服を、閉じこめていたのです。",
+   "same_as": "F10"
+  },
+  {
+   "id": "F13",
+   "narration": "クローゼットを開けると、なんとなく、むっとしたにおいがしました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんのクローゼットは",
+    "text2": "むっとした、におい",
+    "accent": "におい"
+   }
+  },
+  {
+   "id": "F14",
+   "narration": "その理由が、毎晩の、すぐにしまうくせだったのです。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:s02_A07"
+  },
+  {
+   "id": "F15",
+   "narration": "澄江さんは、脱いだ服を、まず、窓のそばのハンガーに掛けます。",
+   "tts_text": "すみえさんは、脱いだ服を、まず、窓のそばのハンガーに掛けます。",
+   "image_en": "Evening by a window in a tidy modest Japanese danchi room: an older woman's hands hang a just-worn olive-green cardigan on a plain hanger on a wall hook near a slightly open window, the curtain moving gently in the breeze. Only the hands, no face. Soft lamp light. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Evening by a window in a tidy modest Japanese danchi room: an older woman's hands hang a just-worn olive-green cardigan on a plain hanger on a wall hook near a slightly open window, the curtain moving gently in the breeze. Only the hands, no face. Soft lamp light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F16",
+   "narration": "一晩、風に当ててから、朝、クローゼットにしまうのです。",
+   "tts_text": "ひとばん、風に当ててから、朝、クローゼットにしまうのです。",
+   "same_as": "F15"
+  },
+  {
+   "id": "F17",
+   "narration": "直し方は、脱いだ服を、一晩、ハンガーに掛けておくこと。",
+   "tts_text": "直し方は、脱いだ服を、ひとばん、ハンガーに掛けておくこと。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "脱いだ服は、一晩ハンガーに掛ける",
+     "朝、乾いてからしまう",
+     "雨の日は、扉を開けて風を通す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F18",
+   "narration": "朝、乾いてから、クローゼットにしまいます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "脱いだ服は、一晩ハンガーに掛ける",
+     "朝、乾いてからしまう",
+     "雨の日は、扉を開けて風を通す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F19",
+   "narration": "雨の日は、クローゼットの扉を開けて、風を通す。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "脱いだ服は、一晩ハンガーに掛ける",
+     "朝、乾いてからしまう",
+     "雨の日は、扉を開けて風を通す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F20",
+   "narration": "ハンガーは、今ある物でかまいません。風の通る所に、1本掛けるだけです。",
+   "tts_text": "ハンガーは、今ある物でかまいません。風の通る所に、いっぽん掛けるだけです。",
+   "card": {
+    "type": "big_text",
+    "text": "ハンガー1本を",
+    "text2": "風の通る所に、掛けるだけ",
+    "accent": "1本"
+   }
+  },
+  {
+   "id": "F21",
+   "narration": "風を通してからしまう服は、クローゼットの気を、軽くしてくれる。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "風を通した服が",
+     "big": "クローゼットの気を軽くする",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "F22",
+   "narration": "椅子の背に、掛けておくのは、いいの？",
+   "tts_text": "いすのせに、掛けておくのは、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "脱いだ服を",
+    "text2": "椅子に掛けてもいい？",
+    "kicker": "椅子"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F23",
+   "narration": "一晩だけなら、いいと言われます。困るのは、何日も、掛けっぱなしにすることです。",
+   "tts_text": "ひとばんだけなら、いいと言われます。困るのは、何日も、掛けっぱなしにすることです。",
+   "card": {
+    "type": "big_text",
+    "text": "困るのは、掛けっぱなし",
+    "text2": "一晩だけなら、いい",
+    "accent": "一晩",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F24",
+   "narration": "外で着たコートも、同じなの？",
+   "card": {
+    "type": "big_text",
+    "text": "外で着た",
+    "text2": "コートも、同じ？",
+    "kicker": "コート"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F25",
+   "narration": "同じだと言われます。コートこそ、外の湿気を吸っています。一晩休ませてから、しまいます。",
+   "tts_text": "同じだと言われます。コートこそ、外のしっけを吸っています。ひとばん休ませてから、しまいます。",
+   "card": {
+    "type": "big_text",
+    "text": "外の湿気を吸っている",
+    "text2": "コートこそ、一晩休ませる",
+    "accent": "一晩",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F26",
+   "narration": "佐和子さんも、その晩から、カーディガンを、窓のそばに掛けるようになりました。",
+   "tts_text": "さわこさんも、その晩から、カーディガンを、窓のそばに掛けるようになりました。",
+   "same_as": "F15"
+  },
+  {
+   "id": "F27",
+   "narration": "1週間たつと、クローゼットを開けた時の、むっとしたにおいが、消えていました。",
+   "tts_text": "いっしゅうかんたつと、クローゼットを開けた時の、むっとしたにおいが、消えていました。",
+   "same_as": "D10"
+  },
+  {
+   "id": "F28",
+   "narration": "毎晩の小さな手間が、運の貯金箱を、守ってくれるのです。",
+   "tts_text": "毎晩の小さな手間が、うんのちょきんばこを、守ってくれるのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "毎晩の小さな手間が",
+     "big": "運の貯金箱を守る",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "Q01",
+   "narration": "衣替えの問題の答えは、4回です。",
+   "tts_text": "ころもがえの問題の答えは、よんかいです。",
+   "card": {
+    "type": "big_text",
+    "text": "江戸時代の衣替えは",
+    "text2": "年に4回",
+    "accent": "4回",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q02",
+   "narration": "平安時代の宮中では、衣替えは年に2回。更衣と呼ばれていました。",
+   "tts_text": "へいあんじだいのきゅうちゅうでは、ころもがえは年ににかい。こういと呼ばれていました。",
+   "image_en": "An old Japanese painting in the classical Yamato-e style showing Heian-period court ladies in many-layered silk robes inside a palace room with sliding screens. No people in modern clothes. No readable text, no logos.",
+   "real": "Heian period court lady junihitoe painting",
+   "card": {
+    "type": "photo"
+   },
+   "image": "An old Japanese painting in the classical Yamato-e style showing Heian-period court ladies in many-layered silk robes inside a palace room with sliding screens. No people in modern clothes. No readable text, no logos."
+  },
+  {
+   "id": "Q03",
+   "narration": "江戸時代になると、武家で年に4回と決められ、町の人にも広がりました。",
+   "tts_text": "えどじだいになると、ぶけで年によんかいと決められ、町の人にも広がりました。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "平安時代",
+      "sub": "年に2回"
+     },
+     {
+      "head": "江戸時代",
+      "sub": "年に4回"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "Q04",
+   "narration": "今の6月1日と10月1日の衣替えは、明治の初めに決まったものです。",
+   "tts_text": "今のろくがつついたちとじゅうがつついたちのころもがえは、めいじの初めに決まったものです。",
+   "card": {
+    "type": "big_text",
+    "text": "今の衣替えは",
+    "text2": "6月1日と10月1日",
+    "accent": "6月1日"
+   }
+  },
+  {
+   "id": "Q05",
+   "narration": "衣替えの日は、着ない服を見直す、いちばんいい日です。",
+   "tts_text": "ころもがえの日は、着ない服を見直す、いちばんいい日です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "衣替えの日は",
+     "big": "着ない服を見直す日",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "G00",
+   "narration": "そして、逆に、金運が上がると言われる行いを、1つ。",
+   "tts_text": "そして、逆に、きんうんが上がると言われる行いを、ひとつ。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "晴れた日に、押し入れに風を通す",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "金運が上がる押し入れの習慣",
+   "chapter": "金運が上がる押し入れの習慣"
+  },
+  {
+   "id": "G01",
+   "narration": "晴れた日に、押し入れのふすまを開けて、風を通すことです。",
+   "tts_text": "晴れた日に、おしいれのふすまを開けて、風を通すことです。",
+   "image_en": "Bright sunny day inside a clean modest Japanese danchi tatami room: the oshiire fusuma doors are slid wide open, a light breeze moves the lace curtain at the open window, sunlight falls on neatly stacked futons and clear storage cases with space above. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Bright sunny day inside a clean modest Japanese danchi tatami room: the oshiire fusuma doors are slid wide open, a light breeze moves the lace curtain at the open window, sunlight falls on neatly stacked futons and clear storage cases with space above. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G02",
+   "narration": "昔から、夏の土用のころの晴れた日には、着物や本を干して、風に当ててきました。虫干しです。",
+   "tts_text": "昔から、夏のどようのころの晴れた日には、着物や本を干して、風に当ててきました。むしぼしです。",
+   "image_en": "A traditional Japanese scene of airing kimono: several colorful kimono hung on bamboo poles in the shade of an old wooden house veranda on a sunny summer day. No people. No readable text, no logos, no brand names.",
+   "real": "Mushiboshi airing kimono",
+   "card": {
+    "type": "photo"
+   },
+   "image": "A traditional Japanese scene of airing kimono: several colorful kimono hung on bamboo poles in the shade of an old wooden house veranda on a sunny summer day. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G03",
+   "narration": "カビや虫から、大切な着物を守るための、昔からの知恵です。",
+   "same_as": "G02"
+  },
+  {
+   "id": "G04",
+   "narration": "風を通した押し入れは、気が入れ替わり、新しい運が入ってくると言われています。",
+   "tts_text": "風を通したおしいれは、気が入れ替わり、新しい運がはいってくると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "風を通すと",
+     "big": "気が入れ替わる",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "G05",
+   "narration": "晴れて乾いた日に、ふすまを開けます。",
+   "card": {
+    "type": "rules",
+    "title": "晴れた日に、押し入れに風を通す",
+    "items": [
+     "晴れて乾いた日に、ふすまを開ける",
+     "ふすまを真ん中に寄せて、両はしを開ける",
+     "しまった服も、時々出して風に当てる"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "ふすまを真ん中に寄せると、両はしから、風が通ります。",
+   "card": {
+    "type": "rules",
+    "title": "晴れた日に、押し入れに風を通す",
+    "items": [
+     "晴れて乾いた日に、ふすまを開ける",
+     "ふすまを真ん中に寄せて、両はしを開ける",
+     "しまった服も、時々出して風に当てる"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "G07",
+   "narration": "しまったままの服も、時々出して、風に当てる。",
+   "card": {
+    "type": "rules",
+    "title": "晴れた日に、押し入れに風を通す",
+    "items": [
+     "晴れて乾いた日に、ふすまを開ける",
+     "ふすまを真ん中に寄せて、両はしを開ける",
+     "しまった服も、時々出して風に当てる"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G08",
+   "narration": "澄江さんは、天気のいい日には、押し入れを開けたまま、買い物に出かけるそうです。",
+   "tts_text": "すみえさんは、天気のいい日には、おしいれを開けたまま、買い物に出かけるそうです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "G09",
+   "narration": "佐和子さんも、次の晴れた日に、押し入れを、思いきり開けました。",
+   "tts_text": "さわこさんも、次の晴れた日に、おしいれを、思いきり開けました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人が、クローゼットと押し入れでしない5つを、もう一度。",
+   "tts_text": "お金が残る人が、クローゼットとおしいれでしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "ぎゅうぎゅうに詰めこむ",
+     "着ない服を、しまい続ける",
+     "脱いだ服を、すぐしまう"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ",
+   "chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、服をばらばらに掛ける。第4位、中身の分からない紙袋をためる。第3位、ぎゅうぎゅうに詰めこむ。",
+   "tts_text": "だいごい、服をばらばらに掛ける。だいよんい、中身の分からないかみぶくろをためる。だいさんい、ぎゅうぎゅうに詰めこむ。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "ぎゅうぎゅうに詰めこむ",
+     "着ない服を、しまい続ける",
+     "脱いだ服を、すぐしまう"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、着ない服をしまい続ける。そして第1位、脱いだ服をすぐしまう。",
+   "tts_text": "だいにい、着ない服をしまい続ける。そしてだいいちい、脱いだ服をすぐしまう。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がクローゼットと押し入れでしないこと　5つ",
+    "items": [
+     "服を、ばらばらに掛ける",
+     "中身の分からない紙袋をためる",
+     "ぎゅうぎゅうに詰めこむ",
+     "着ない服を、しまい続ける",
+     "脱いだ服を、すぐしまう"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上やっていた人は、まず第1位。脱いだ服を、ハンガーに1本、掛けてみてください。",
+   "tts_text": "みっつ以上やっていた人は、まずだいいちい。脱いだ服を、ハンガーにいっぽん、掛けてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上やっていたら",
+    "text2": "まず、脱いだ服をハンガーへ",
+    "accent": "ハンガー"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "直したからといって、すぐにお金が増えるわけではありません。",
+   "card": {
+    "type": "big_text",
+    "text": "直したからといって",
+    "text2": "すぐに増えるわけではない",
+    "accent": "すぐに"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "それでも、扉を開けた時の空気は、その晩から変わります。",
+   "same_as": "D10"
+  },
+  {
+   "id": "K07",
+   "narration": "あなたのクローゼットと押し入れは、5つのうち、いくつ当てはまりましたか？",
+   "tts_text": "あなたのクローゼットとおしいれは、いつつのうち、いくつ当てはまりましたか？",
+   "card": {
+    "type": "big_text",
+    "text": "あなたは、5つのうち",
+    "text2": "いくつ当てはまった？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "K08",
+   "narration": "コメントで、数を教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "comment": "コメントで、数を教えてくださいね。"
+}
