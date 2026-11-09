@@ -1,18 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S115_n001",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-11-07T11:46:47+09:00",
- "tries": 0,
- "code": "18ca6126926f",
- "stage": "images",
- "updated": "2026-11-07T19:49:07+09:00",
- "busy": {
-  "images": 15
- },
- "images_back": true
-}
+{}
