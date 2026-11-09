@@ -1,17 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S116_お釣りの小銭",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-11-08T05:50:01+09:00",
- "tries": 0,
- "code": "18ca6126926f",
- "stage": "images",
- "updated": "2026-11-08T05:58:00+09:00",
- "busy": {
-  "images": 12
- }
-}
+{}
