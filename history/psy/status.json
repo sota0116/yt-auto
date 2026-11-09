@@ -5,19 +5,29 @@
   "write",
   "gate_script",
   "voice",
-  "yomi",
-  "reading",
-  "images",
-  "motion"
+  "yomi"
  ],
  "started": "2026-11-07T08:45:02+09:00",
  "tries": 0,
  "code": "18ca6126926f",
- "stage": "gate_images",
+ "stage": "reading",
  "gate_fails": 1,
- "updated": "2026-11-10T05:30:57+09:00",
+ "updated": "2026-11-10T06:36:24+09:00",
  "busy": {
   "images": 15
  },
- "images_back": true
+ "images_back": true,
+ "restored": {
+  "日時": "2026-11-10T06:27:35+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "yomi",
+   "reading",
+   "images",
+   "motion"
+  ]
+ }
 }
