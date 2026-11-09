@@ -202,5 +202,28 @@
   "publish_at": "2026-11-17T12:00:00+09:00",
   "uploaded_at": "2026-11-07T21:32:36+09:00",
   "missing": false
+ },
+ {
+  "work": "S021_切出_欠けた剣",
+  "video_id": "LhkMDHKccLo",
+  "title": "三種の神器の草薙の剣はヤマタノオロチの尾から出た スサノオの剣が欠けて見つかった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-18T19:00:00+09:00",
+  "uploaded_at": "2026-11-10T00:26:35+09:00",
+  "missing": false
+ },
+ {
+  "work": "S022_図鑑_鵺",
+  "video_id": "2BZNUcaaxH0",
+  "title": "頭は猿で尾は蛇の怪物・鵺 平家物語では怪物の名ではなく鳴き声が似た鳥の名だった【かくれ神図鑑 #6】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-19T12:00:00+09:00",
+  "uploaded_at": "2026-11-10T00:28:37+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
