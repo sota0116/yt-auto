@@ -1,0 +1,164 @@
+{
+ "ch": "kakure",
+ "work": "_chara_005_エピメテウス",
+ "portrait": false,
+ "made": "2026-11-10 05:47",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, bright even lighting. The same art style in every episode. The background is always pure white.",
+ "avoid_en": "any text, letters, numbers, logos, modern clothes, Roman armor, comic-book costumes, Japanese or Chinese clothing, nudity, blood",
+ "rules": {},
+ "characters": {
+  "epimetheus": {
+   "desc_en": "Epimetheus, a Titan of Greek myth, a gentle good-natured young man about 25 with soft wavy chestnut-brown hair to the jaw, a short light beard, wide honest eyes and a slightly absent-minded look, Archaic Greek clothing: a knee-length undyed off-white wool chiton belted with a cord, a faded olive-green himation cloak over one shoulder, leather sandals, no armor, no crown",
+   "channel": true
+  },
+  "pandora": {
+   "desc_en": "Pandora, the first woman of Greek myth, a young woman about 20 with long dark-brown hair partly tied up with a thin gold band, large curious eyes, Archaic Greek clothing: a long ivory peplos dress with a woven border of small red and dark-blue patterns, a fine pale veil on her shoulders, gold earrings and a thin golden crown of leaves",
+   "channel": true
+  },
+  "prometheus": {
+   "desc_en": "Prometheus, a Titan of Greek myth, the elder brother, a lean sharp-eyed man about 35 with short dark-brown hair, a neat dark beard, a keen serious face, Archaic Greek clothing: a knee-length dark-blue wool chiton with a plain cloak, leather sandals, no armor",
+   "channel": true
+  },
+  "zeus": {
+   "desc_en": "Zeus, the king of the Greek gods, a tall powerful man about 50 with thick wavy gray-streaked dark hair, a full curly beard, stern eyes, Archaic Greek clothing: a long white chiton with a deep purple himation draped over his left shoulder, a wreath of oak leaves, holding a long scepter, no armor",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "epimetheus_stand",
+   "image": "エピメテウスが、両手を体の横に下ろし、人のよさそうな顔でまっすぐ立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus stands straight with his arms relaxed at his sides, a kind, good-natured face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus stands straight with his arms relaxed at his sides, a kind, good-natured face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "epimetheus_smile",
+   "image": "エピメテウスが、両腕を前に広げて、うれしそうに誰かを迎え入れている全身。にこにこした顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus opens both arms forward to welcome someone, beaming with a happy smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus opens both arms forward to welcome someone, beaming with a happy smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "epimetheus_shock",
+   "image": "エピメテウスが、目を見開き、口を開けて、のけぞって驚いている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus leans back in shock, eyes wide and mouth open. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus leans back in shock, eyes wide and mouth open. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "epimetheus_regret",
+   "image": "エピメテウスが、両手で頭を抱え、うなだれて後悔している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus holds his head in both hands and hangs it low, full of regret. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus holds his head in both hands and hangs it low, full of regret. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "epimetheus_confused",
+   "image": "エピメテウスが、片手で頭をかき、困ったように首をかしげている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus scratches his head with one hand and tilts it, puzzled and troubled. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus scratches his head with one hand and tilts it, puzzled and troubled. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "epimetheus_kneel",
+   "image": "エピメテウスが、片ひざをついてしゃがみ、さびしそうに下を見つめている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Epimetheus kneels on one knee, looking down at the ground with a lonely, sad face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "epimetheus"
+   ],
+   "en": "Epimetheus kneels on one knee, looking down at the ground with a lonely, sad face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pandora_stand",
+   "image": "パンドラが、両手で大きな素焼きの甕（取っ手が2つの、ひざまでの高さの壺。ふたつき）を胸の前に抱えて立っている全身。静かな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Pandora stands holding in front of her chest a large lidded earthenware storage jar (a pithos with two handles); a calm face. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pandora"
+   ],
+   "en": "Pandora stands holding in front of her chest a large lidded earthenware storage jar (a pithos with two handles); a calm face. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pandora_open",
+   "image": "パンドラが、大きな素焼きの甕のふたを片手で少し持ち上げ、中をのぞきこんでいる全身。好奇心のある顔。甕は足もとに置いてある。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Pandora lifts the lid of a large earthenware storage jar (a pithos standing at her feet) a little with one hand and peers inside with a curious face. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pandora"
+   ],
+   "en": "Pandora lifts the lid of a large earthenware storage jar (a pithos standing at her feet) a little with one hand and peers inside with a curious face. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pandora_shock",
+   "image": "パンドラが、大きな素焼きの甕のふたを両手で押さえつけ、目を見開いておびえている全身。甕は足もとにある。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Pandora presses the lid back down onto a large earthenware storage jar (a pithos at her feet) with both hands, eyes wide with fear. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pandora"
+   ],
+   "en": "Pandora presses the lid back down onto a large earthenware storage jar (a pithos at her feet) with both hands, eyes wide with fear. It is a jar, not a box. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "prometheus_stand",
+   "image": "プロメテウスが、腕を組んで、遠くを見すえて立っている全身。鋭い目。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Prometheus stands with his arms folded, gazing far ahead with sharp eyes. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "prometheus"
+   ],
+   "en": "Prometheus stands with his arms folded, gazing far ahead with sharp eyes. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "prometheus_warn",
+   "image": "プロメテウスが、人さし指を立てて、真剣な顔で強く注意している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Prometheus raises his index finger and gives a stern, serious warning. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "prometheus"
+   ],
+   "en": "Prometheus raises his index finger and gives a stern, serious warning. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "prometheus_down",
+   "image": "プロメテウスが、うつむいて、つらそうに目を閉じて立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Prometheus stands with his head bowed and eyes closed, in pain and sorrow. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "prometheus"
+   ],
+   "en": "Prometheus stands with his head bowed and eyes closed, in pain and sorrow. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "zeus_stand",
+   "image": "ゼウスが、長い王の杖を片手に持ち、堂々と立っている全身。厳しい顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Zeus stands majestically holding a long royal scepter in one hand, a stern face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "zeus"
+   ],
+   "en": "Zeus stands majestically holding a long royal scepter in one hand, a stern face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "zeus_angry",
+   "image": "ゼウスが、片手を振り上げ、眉をつり上げて激しく怒っている全身。手に稲妻の光。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Zeus raises one hand in fierce anger, eyebrows raised, a flash of lightning in his hand. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "zeus"
+   ],
+   "en": "Zeus raises one hand in fierce anger, eyebrows raised, a flash of lightning in his hand. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "zeus_smirk",
+   "image": "ゼウスが、あごに手を当て、口の端だけで冷たく笑っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Zeus rests a hand on his chin and smiles coldly with only the corner of his mouth. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "zeus"
+   ],
+   "en": "Zeus rests a hand on his chin and smiles coldly with only the corner of his mouth. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  }
+ ]
+}
