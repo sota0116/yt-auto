@@ -43,7 +43,7 @@
   "seconds": 501,
   "title_now": "【もしも歴史】刀に「心」があったら｜刀狩の夜、1本だけ家に帰った刀の世界線",
   "synthetic_on": null,
-  "views_now": 243,
+  "views_now": 247,
   "published": true,
   "published_at": "2026-11-02T20:00:05+09:00"
  },
@@ -137,7 +137,7 @@
   "seconds": 46,
   "title_now": "もしも桶狭間の日に、雨が降らなかったら。3千の旗が丸見え #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 2504,
+  "views_now": 2505,
   "published": true,
   "published_at": "2026-11-03T18:00:30+09:00"
  },
@@ -160,7 +160,7 @@
   "seconds": 44,
   "title_now": "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1556,
+  "views_now": 1557,
   "published": true,
   "published_at": "2026-11-03T21:00:10+09:00"
  },
@@ -183,7 +183,7 @@
   "seconds": 42,
   "title_now": "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1821,
+  "views_now": 1822,
   "published": true,
   "published_at": "2026-11-04T18:00:16+09:00"
  },
@@ -206,7 +206,7 @@
   "seconds": 37,
   "title_now": "もしも今の寿司職人が、江戸の屋台で握ったら。客は小さいと怒る #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 16109,
+  "views_now": 16255,
   "published": true,
   "published_at": "2026-11-05T12:10:01+09:00"
  },
@@ -229,7 +229,7 @@
   "seconds": 43,
   "title_now": "もしも今のマラソン選手が、江戸の飛脚と競走したら。区間は全勝で負ける #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 3449,
+  "views_now": 3452,
   "published": true,
   "published_at": "2026-11-05T20:00:31+09:00"
  },
@@ -242,12 +242,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-09T22:06:45+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも伊能忠敬が、江戸から出られなかったら。地球1周分歩いても地球は測れない #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-11T12:10:00+09:00",
+  "seconds": 42,
+  "title_now": "もしも伊能忠敬が、江戸から出られなかったら。地球1周分歩いても地球は測れない #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S116_r009",
@@ -258,11 +263,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-09T23:50:46+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも黒船が来た日、江戸の人の「あわて度」が見えたら。みんな100%で、お茶を飲む町人だけ0% #もしも #日本史 #幕末"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-11T20:00:00+09:00",
+  "seconds": 45,
+  "title_now": "もしも黒船が来た日、江戸の人の「あわて度」が見えたら。みんな100%で、お茶を飲む町人だけ0% #もしも #日本史 #幕末",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
