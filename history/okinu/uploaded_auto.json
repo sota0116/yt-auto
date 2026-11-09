@@ -336,12 +336,58 @@
   "titles": [
    "【60代】もらったポチ袋、財布に空のまま入れないで"
   ],
-  "comment": "あなたの財布の中に、空のポチ袋はありませんか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-12T12:00:00+09:00",
-  "seconds": 39,
-  "title_now": "【60代】もらったポチ袋、財布に空のまま入れないで",
-  "synthetic_on": null,
-  "views_now": 0
+  "comment": "あなたの財布の中に、空のポチ袋はありませんか。"
+ },
+ {
+  "work": "S118_へそくり",
+  "video_id": "3rkvzLGvBxg",
+  "title": "【60代】へそくり、家のあちこちに絶対分けないで",
+  "kind": "short",
+  "format": "short",
+  "video": "short.mp4",
+  "privacy": "private",
+  "uploaded_at": "2026-11-10T04:33:43+09:00",
+  "missing": false,
+  "type": null,
+  "titles": [
+   "【60代】へそくり、家のあちこちに絶対分けないで"
+  ],
+  "comment": "あなたのへそくりは、いま何か所ですか。"
+ },
+ {
+  "work": "S119_年金の振込日の記帳",
+  "video_id": "w2h7iXjAQkM",
+  "title": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
+  "kind": "short",
+  "format": "short",
+  "video": "short.mp4",
+  "privacy": "private",
+  "uploaded_at": "2026-11-10T04:59:11+09:00",
+  "missing": false,
+  "type": null,
+  "titles": [
+   "【60代】年金が入った日、通帳を記帳せずに下ろさないで"
+  ],
+  "comment": "あなたの通帳の最後の記帳は、何月ですか。"
+ },
+ {
+  "work": "104_クローゼットと押し入れ",
+  "video_id": "usVVILkewF0",
+  "title": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
+  "kind": "long",
+  "format": "long",
+  "video": "long.mp4",
+  "privacy": "private",
+  "uploaded_at": "2026-11-10T06:14:25+09:00",
+  "missing": false,
+  "type": null,
+  "titles": [
+   "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
+   "【要注意】押し入れにコレをためる家は、お金が入ってこない。NG5選【金運】",
+   "【要注意】着ない服をしまう押し入れは、お金の入り口をふさぎます。NG5選【金運】"
+  ],
+  "comment": "コメントで、数を教えてくださいね。",
+  "thumb_set": true,
+  "thumb": "thumb_a.jpg"
  }
 ]
