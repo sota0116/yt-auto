@@ -54,6 +54,15 @@
    "直す所": [],
    "取った日": "2026-11-05",
    "再生（公開ページ）": 0
+  },
+  "d7": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 1
   }
  },
  "007_b_kamidana_2026": {
@@ -72,5 +81,9 @@
  "011_b_shinshi_hebi": {
   "type": "B",
   "video_id": "IRS3nnrK8ZE"
+ },
+ "008_b_komainu_2026": {
+  "type": "B",
+  "video_id": "RIsnnWfQeOo"
  }
 }

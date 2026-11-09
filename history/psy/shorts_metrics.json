@@ -120,6 +120,13 @@
    "averageViewDuration": 39,
    "subscribersGained": 0,
    "取った日": "2026-11-05"
+  },
+  "d7": {
+   "views": 83,
+   "averageViewPercentage": 88.94,
+   "averageViewDuration": 36,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_3": {
@@ -139,6 +146,13 @@
    "averageViewDuration": 27,
    "subscribersGained": 0,
    "取った日": "2026-11-05"
+  },
+  "d7": {
+   "views": 112,
+   "averageViewPercentage": 65.46,
+   "averageViewDuration": 28,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_4": {
@@ -158,6 +172,13 @@
    "averageViewDuration": 26,
    "subscribersGained": 0,
    "取った日": "2026-11-06"
+  },
+  "d7": {
+   "views": 176,
+   "averageViewPercentage": 76.77,
+   "averageViewDuration": 32,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "006_hitori_suki": {
@@ -392,5 +413,41 @@
   "kind": "after",
   "title": "【心理学】まわりの目が気になる人の意外な特徴｜恥ずかしいシャツに気づいたのは4人に1人 #shorts",
   "publish_slot": "22:10"
+ },
+ "009_zenbu_hitonome:short_4": {
+  "type": "人づきあい",
+  "video_id": "lwA-GjuA3cw",
+  "hook": "小さな失敗を、帰り道まで何度も思い出してしまうのは、なぜでしょうか？",
+  "band": [
+   "失敗した日の",
+   "点数のずれ"
+  ],
+  "kind": "after",
+  "title": "【心理学】小さな失敗をいつまでも思い出す人の正体｜まわりが付けた点は、予想より高かった #shorts",
+  "publish_slot": "07:10"
+ },
+ "010_niwa_shokubutsu": {
+  "type": "ひとりの時間",
+  "video_id": "6Ih7okYWhA0",
+  "hook": "庭で新しい芽を見つけると、思わず「わぁ」と声が出るのは、なぜでしょうか？",
+  "band": [
+   "「わぁ」を探すと",
+   "写真の自分が小さく"
+  ],
+  "kind": "after",
+  "title": "【心理学】「わぁ」と心が動く散歩を続けた人、実は写真の自分がどんどん小さくなっていました #shorts",
+  "publish_slot": "12:10"
+ },
+ "010_niwa_shokubutsu:short_2": {
+  "type": "ひとりの時間",
+  "video_id": "TRbVHAc3bKI",
+  "hook": "いやなことがあった日に、気づくと庭の草むしりをしているのは、なぜでしょうか？",
+  "band": [
+   "いやな日ほど",
+   "草むしりしたくなる"
+  ],
+  "kind": "after",
+  "title": "【心理学】いやなことがあった日、つい草むしりをする人の正体｜本を読んだ組は、気分がさらに下がった #shorts",
+  "publish_slot": "20:10"
  }
 }

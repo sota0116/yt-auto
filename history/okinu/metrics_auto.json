@@ -293,6 +293,15 @@
    "直す所": [],
    "取った日": "2026-11-05",
    "再生（公開ページ）": 1471
+  },
+  "d7": {
+   "views": 1477,
+   "averageViewPercentage": 115.16,
+   "averageViewDuration": 46,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 1479
   }
  },
  "S103_使い終わった古い財布": {
@@ -362,7 +371,18 @@
  },
  "S106_財布の中の家族の写真": {
   "type": null,
-  "video_id": "f4Ii5nTRfFw"
+  "video_id": "f4Ii5nTRfFw",
+  "h72": {
+   "views": 235,
+   "averageViewPercentage": 96.08,
+   "averageViewDuration": 33,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 348
+  }
  },
  "S109_家計簿のノート": {
   "type": null,
@@ -375,5 +395,9 @@
  "S110_財布の輪ゴム": {
   "type": null,
   "video_id": "DJuPy4-TMws"
+ },
+ "S113_新札": {
+  "type": null,
+  "video_id": "uuSoK7C08VM"
  }
 }
