@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-10T13:38:32+09:00",
+ "started": "2026-11-10T17:28:11+09:00",
  "made": [],
- "stopped": "絵がまだ途中（残り16枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（2回目）（short）／絵の使い回しが15%を超えました（絵ゲート）。その回は止め、在庫で公開をつなぐ（long）",
+ "stopped": "絵がまだ途中（残り16枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（3回目）（short）／gate_images で Claude の利用枠の上限に届きました（You've hit your org's monthly spend limit · ask your admin to raise it at https:）。枠が戻った後の実行で続きから作ります（long）",
  "在庫": {
   "short": 4,
   "long": 0
@@ -11,6 +11,7 @@
   "short": 2,
   "long": 1
  },
- "ended": "2026-11-10T13:44:52+09:00",
+ "待ち": true,
+ "ended": "2026-11-10T17:30:05+09:00",
  "今月の制作費_円": 0.0
 }
