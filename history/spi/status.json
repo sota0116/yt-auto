@@ -1,34 +1,19 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/018_b_yakudoshi_2026",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/spi/videos/019_b_nirei_2026",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
-  "yomi"
+  "yomi",
+  "reading"
  ],
- "started": "2026-11-07T08:44:59+09:00",
+ "started": "2026-11-10T09:41:03+09:00",
  "tries": 0,
  "code": "18ca6126926f",
- "stage": "reading",
- "gate_fails": 1,
- "updated": "2026-11-10T06:33:24+09:00",
+ "stage": "images",
+ "updated": "2026-11-10T09:56:47+09:00",
  "busy": {
-  "images": 16,
-  "motion": 1
- },
- "images_back": true,
- "restored": {
-  "日時": "2026-11-10T06:28:20+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "yomi",
-   "reading",
-   "images",
-   "motion"
-  ]
+  "images": 1
  }
 }
