@@ -2,7 +2,7 @@
  "ch": "shimei",
  "work": "L008_エルチャポ",
  "portrait": false,
- "made": "2026-11-10 01:20",
+ "made": "2026-11-10 09:22",
  "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red.",
  "avoid_en": "logos or emblems of real companies or government agencies, readable text, detailed national flags, blood, faces resembling real people, guns pointed at the viewer",
  "rules": {},
@@ -13,48 +13,11 @@
   "tech": {
    "desc_en": "the technician, a slim faceless young man figurine with a smooth featureless face (no eyes, nose or mouth details), short neat brown hair, thin black-rimmed glasses, plain light-blue shirt without any print, gray trousers"
   },
-  "agents": {
-   "desc_en": "investigator figurines with smooth featureless faces (no eyes, nose or mouth details), plain navy windbreakers with no letters, patches or badges, gray trousers"
-  },
   "marines": {
    "desc_en": "marine figurines with smooth featureless faces (no eyes, nose or mouth details), plain dark gray-green uniforms with no patches, flags or letters, plain black helmets, weapons always pointed down"
   }
  },
  "cuts": [
-  {
-   "id": "D14",
-   "image": "白い空間で、黒い帽子の男のフィギュアが、たくさんの小さな画面に囲まれて座っている",
-   "image_en": "the drug lord figurine sitting alone on a chair, surrounded by a ring of many small glowing phone screens floating around him. Dark room, cold blue light.",
-   "chars": [
-    "chapo"
-   ],
-   "en": "the drug lord figurine sitting alone on a chair, surrounded by a ring of many small glowing phone screens floating around him. Dark room, cold blue light."
-  },
-  {
-   "id": "D15",
-   "image": "白い空間で、ドレスの女性のフィギュアが、黒い携帯を遠ざけるように持ち、窓の外を気にしている",
-   "image_en": "A faceless woman figurine in a plain dress holding a black phone at arm's length as if distrusting it, glancing toward a window. Uneasy mood, white space.",
-   "en": "A faceless woman figurine in a plain dress holding a black phone at arm's length as if distrusting it, glancing toward a window. Uneasy mood, white space."
-  },
-  {
-   "id": "D16",
-   "image": "暗い小部屋の模型。黒い帽子の男のフィギュアが1人、手元の携帯の青い光をのぞきこんでいる。部屋は狭く、まわりは暗い",
-   "image_en": "A tight close view of a small dark room diorama: the drug lord figurine sits alone at a table, his face lit only by the blue glow of the phone in his hands. Nothing else visible around him, dark edges.",
-   "chars": [
-    "chapo"
-   ],
-   "en": "A tight close view of a small dark room diorama: the drug lord figurine sits alone at a table, his face lit only by the blue glow of the phone in his hands. Nothing else visible around him, dark edges."
-  },
-  {
-   "id": "D17",
-   "image": "引いた絵。暗い小部屋の模型で画面を見る黒い帽子の男。その壁の向こうの明るい部屋で、紺の上着の捜査官たちが、同じ青い光の大きな画面を見ている",
-   "image_en": "A wide pulled-back view of the same small dark room diorama with the drug lord figurine looking at his glowing phone; now we see that just behind its thin wall there is a larger bright room where three investigator figurines in plain navy windbreakers sit watching a big screen glowing with the same blue light. Cut-away dollhouse view, dramatic contrast.",
-   "chars": [
-    "chapo",
-    "agents"
-   ],
-   "en": "A wide pulled-back view of the same small dark room diorama with the drug lord figurine looking at his glowing phone; now we see that just behind its thin wall there is a larger bright room where three investigator figurines in plain navy windbreakers sit watching a big screen glowing with the same blue light. Cut-away dollhouse view, dramatic contrast."
-  },
   {
    "id": "D18",
    "image": "白い空間に、たくさんの吹き出しの形の白い札が、紙の束になって紺の上着の捜査官のフィギュアの机に積まれている（文字は読めない）",
