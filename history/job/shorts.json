@@ -675,5 +675,47 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-09T09:14:59+09:00"
+ },
+ {
+  "work": "20261110_1159_0",
+  "topic_id": "duel_訪問介護員（ヘルパー）_警備員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:40+09:00"
+ },
+ {
+  "work": "20261110_1159_r1",
+  "topic_id": "routine_バス運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:45+09:00"
+ },
+ {
+  "work": "20261110_1159_1",
+  "topic_id": "rank_現場_時給_hi",
+  "kind": "rank",
+  "measure": "時給",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:50+09:00"
  }
 ]
