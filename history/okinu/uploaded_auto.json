@@ -68,7 +68,7 @@
   "seconds": 38,
   "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
   "synthetic_on": null,
-  "views_now": 1695,
+  "views_now": 1697,
   "published": true,
   "published_at": "2026-11-03T19:00:29+09:00",
   "comment_id": "UgzD4kv4_V8vv8eWSSN4AaABAg",
@@ -148,7 +148,7 @@
   "seconds": 814,
   "title_now": "【今すぐチェック】カバンに〇〇を入れたままは要注意！破産する人の特徴5選【金運】",
   "synthetic_on": null,
-  "views_now": 28,
+  "views_now": 32,
   "published": true,
   "published_at": "2026-11-08T18:00:16+09:00",
   "comment_id": "Ugw91s8VBfk7CUYMsQB4AaABAg",
@@ -173,7 +173,7 @@
   "seconds": 35,
   "title_now": "【60代】財布に「これ」入れてる人、今すぐ出して",
   "synthetic_on": null,
-  "views_now": 348,
+  "views_now": 349,
   "published": true,
   "published_at": "2026-11-06T19:00:22+09:00",
   "comment_id": "Ugzap9_j9TiXLkbP4Rt4AaABAg",
@@ -225,7 +225,7 @@
   "seconds": 45,
   "title_now": "【60代】輪ゴムで留めたお札は、金運が止まります",
   "synthetic_on": null,
-  "views_now": 1292,
+  "views_now": 1294,
   "published": true,
   "published_at": "2026-11-08T12:00:09+09:00",
   "comment_id": "UgzZyhlOKWDRgKIg8dF4AaABAg",
@@ -249,12 +249,16 @@
   "comment": "あなたの洗面所は、5つのうち、いくつ当てはまりましたか？ コメントで、数を教えてくださいね。",
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
-  "privacy_now": "private",
-  "publish_at": "2026-11-10T09:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-10T18:00:33+09:00",
+  "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
+  "comment_at": "2026-11-10T19:55:36+09:00"
  },
  {
   "work": "S113_新札",
@@ -275,7 +279,7 @@
   "seconds": 39,
   "title_now": "【60代】財布に「新札」絶対ため込まないで",
   "synthetic_on": null,
-  "views_now": 236,
+  "views_now": 400,
   "published": true,
   "published_at": "2026-11-09T19:00:03+09:00",
   "comment_id": "Ugwewxrt_y-FFmZgLcd4AaABAg",
@@ -295,12 +299,16 @@
    "【60代】エコバッグにレシートためてる人、今すぐ出して"
   ],
   "comment": "あなたのエコバッグの底は、いま空ですか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-10T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 35,
   "title_now": "【60代】エコバッグにレシートためてる人、今すぐ出して",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 82,
+  "published": true,
+  "published_at": "2026-11-10T12:00:13+09:00",
+  "comment_id": "UgySXSbCx1hO5DzRMLZ4AaABAg",
+  "comment_at": "2026-11-10T19:55:37+09:00"
  },
  {
   "work": "S116_お釣りの小銭",
@@ -317,7 +325,7 @@
   ],
   "comment": "あなたの札入れに、いま硬貨は挟まっていませんか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-11T19:00:00+09:00",
+  "publish_at": "2026-11-11T10:00:00Z",
   "seconds": 37,
   "title_now": "【60代】お札の間にお釣りの小銭、絶対しまわないで",
   "synthetic_on": null,
@@ -336,7 +344,13 @@
   "titles": [
    "【60代】もらったポチ袋、財布に空のまま入れないで"
   ],
-  "comment": "あなたの財布の中に、空のポチ袋はありませんか。"
+  "comment": "あなたの財布の中に、空のポチ袋はありませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-12T03:00:00Z",
+  "seconds": 39,
+  "title_now": "【60代】もらったポチ袋、財布に空のまま入れないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S118_へそくり",
@@ -347,12 +361,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-10T04:33:43+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】へそくり、家のあちこちに絶対分けないで"
   ],
-  "comment": "あなたのへそくりは、いま何か所ですか。"
+  "comment": "あなたのへそくりは、いま何か所ですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-13T19:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S119_年金の振込日の記帳",
@@ -363,12 +382,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-10T04:59:11+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】年金が入った日、通帳を記帳せずに下ろさないで"
   ],
-  "comment": "あなたの通帳の最後の記帳は、何月ですか。"
+  "comment": "あなたの通帳の最後の記帳は、何月ですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-14T12:00:00+09:00",
+  "seconds": 36,
+  "title_now": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "104_クローゼットと押し入れ",
@@ -379,7 +403,6 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-10T06:14:25+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
@@ -388,6 +411,12 @@
   ],
   "comment": "コメントで、数を教えてくださいね。",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-12T18:00:00+09:00",
+  "seconds": 822,
+  "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

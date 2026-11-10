@@ -180,7 +180,7 @@
   "seconds": 48,
   "title_now": "【心理学】ひとりで15分考えるより、電気の刺激を選んだ人の正体 #shorts",
   "synthetic_on": null,
-  "views_now": 843,
+  "views_now": 844,
   "published": true,
   "published_at": "2026-11-03T07:10:00+09:00"
  },
@@ -224,7 +224,7 @@
   "seconds": 49,
   "title_now": "【心理学】ひとりの夕飯もさらりと過ごす人、実は気分のゆれが小さめです。 #shorts",
   "synthetic_on": null,
-  "views_now": 1133,
+  "views_now": 1134,
   "published": true,
   "published_at": "2026-11-03T20:10:35+09:00"
  },
@@ -398,7 +398,7 @@
   "seconds": 40,
   "title_now": "【心理学】思い出の物を手放せる人の意外な特徴｜写真1枚で、寄付が80個増えた #shorts",
   "synthetic_on": null,
-  "views_now": 1075,
+  "views_now": 1076,
   "published": true,
   "published_at": "2026-11-07T12:10:26+09:00"
  },
@@ -443,7 +443,7 @@
   "seconds": 42,
   "title_now": "【心理学】お礼の手紙を「うまく書けなかった」と思う人の意外な特徴｜受け取った側の点は別だった #shorts",
   "synthetic_on": null,
-  "views_now": 996,
+  "views_now": 997,
   "published": true,
   "published_at": "2026-11-08T07:10:40+09:00"
  },
@@ -487,7 +487,7 @@
   "seconds": 39,
   "title_now": "【心理学】まわりの目が気になる人の意外な特徴｜恥ずかしいシャツに気づいたのは4人に1人 #shorts",
   "synthetic_on": null,
-  "views_now": 938,
+  "views_now": 1032,
   "_respaced": "2026-11-08T20:10:00+09:00 → 2026-11-08T22:10:00+09:00（2026-11-04 respace.py。3時間あける）",
   "published": true,
   "published_at": "2026-11-08T22:10:01+09:00"
@@ -510,7 +510,7 @@
   "seconds": 39,
   "title_now": "【心理学】小さな失敗をいつまでも思い出す人の正体｜まわりが付けた点は、予想より高かった #shorts",
   "synthetic_on": null,
-  "views_now": 629,
+  "views_now": 835,
   "published": true,
   "published_at": "2026-11-09T07:10:14+09:00"
  },
@@ -532,7 +532,7 @@
   "seconds": 50,
   "title_now": "【心理学】「わぁ」と心が動く散歩を続けた人、実は写真の自分がどんどん小さくなっていました #shorts",
   "synthetic_on": null,
-  "views_now": 244,
+  "views_now": 262,
   "published": true,
   "published_at": "2026-11-09T12:10:13+09:00"
  },
@@ -554,7 +554,7 @@
   "seconds": 44,
   "title_now": "【心理学】いやなことがあった日、つい草むしりをする人の正体｜本を読んだ組は、気分がさらに下がった #shorts",
   "synthetic_on": null,
-  "views_now": 537,
+  "views_now": 822,
   "published": true,
   "published_at": "2026-11-09T20:10:26+09:00"
  },
@@ -571,12 +571,14 @@
    "24%が53%に"
   ],
   "uploaded_at": "2026-11-01T11:07:40+09:00",
-  "privacy_now": "private",
-  "publish_at": "2026-11-09T22:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 43,
   "title_now": "【心理学】玄関先に花を置く人の「意外な特徴」｜何もない38軒の玄関に、鉢を置いてみた研究 #shorts",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1,
+  "published": true,
+  "published_at": "2026-11-10T07:10:21+09:00"
  },
  {
   "work": "010_niwa_shokubutsu",
@@ -591,11 +593,13 @@
    "実は明るい"
   ],
   "uploaded_at": "2026-11-01T11:07:42+09:00",
-  "privacy_now": "private",
-  "publish_at": "2026-11-10T03:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 49,
   "title_now": "【心理学】ひとりで庭いじりをする人、実は誰かと一緒に土をいじる時と同じくらい明るいんです。 #shorts",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 103,
+  "published": true,
+  "published_at": "2026-11-10T12:10:37+09:00"
  }
 ]

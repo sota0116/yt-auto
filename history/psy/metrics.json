@@ -178,7 +178,16 @@
  },
  "009_zenbu_hitonome": {
   "type": "人づきあい",
-  "video_id": "X4TbcBQKT0k"
+  "video_id": "X4TbcBQKT0k",
+  "h72": {
+   "views": 6,
+   "averageViewPercentage": 1.8799999999999997,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-10",
+   "再生（公開ページ）": 15
+  }
  },
  "010_niwa_shokubutsu": {
   "type": "ひとりの時間",
