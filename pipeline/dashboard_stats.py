@@ -22,6 +22,7 @@ PC を閉じていても動くよう、yt-auto の GitHub Actions（dashboard.ym
 import argparse
 import json
 import os
+import re
 import subprocess
 from datetime import datetime, timedelta, timezone
 
@@ -141,7 +142,8 @@ def pipeline_of(repo, ch):
 
 
 def weekly_of(repo):
-    names = [n for n in repo.names("history/weekly") if n.endswith(".json")]
+    # 日付だけの名前（2026-11-09.json）が週次の本体。2026-11-09_枠の案.json などの付属ファイルは選ばない
+    names = sorted(n for n in repo.names("history/weekly") if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", n))
     if not names:
         return None
     w = repo.read(f"history/weekly/{names[-1]}") or {}
