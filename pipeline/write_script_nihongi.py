@@ -13,7 +13,7 @@
 import argparse, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 from nihongi_common import (ROOT, CH, CDIR, HIST, VENDOR, jload, characters, kind_of_work, past_works, claude_env, vendor_ok,  # noqa: E402
                             SHORT_STYLE, LONG_STYLE, AVOID, AI_LINE, FIXED_END)
 
@@ -146,6 +146,7 @@ def prompt(work, fix):
 5. 最後に、語りの字数・カット数・使った史実の出どころ・ずらしたルールを1行ずつ書いて終える。
 
 {HOOK_ASK}
+{ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
 {LEVELUP_ASK}

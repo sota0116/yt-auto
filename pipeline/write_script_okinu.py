@@ -16,7 +16,7 @@
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CH_DIR = os.path.join(ROOT, "channels", "okinu")
@@ -223,6 +223,7 @@ def prompt(work, fix):
 5. 最後に、字数・カット数・絵の数（新しい絵）・使った言い伝えの確かめ方を1行ずつ書いて終える。
 
 {HOOK_ASK}
+{ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
 {LEVELUP_ASK}

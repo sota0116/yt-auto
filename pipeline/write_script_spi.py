@@ -15,7 +15,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 from write_script_psy import recent  # noqa: E402
 import koyomi_spi as KS  # noqa: E402
 
@@ -137,6 +137,7 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
 5. 最後に、語りの字数・カット数・章の名前・LINE の案内と登録の呼びかけの位置（%）・使った出典の数を1行ずつ書いて終える。
 
 {HOOK_ASK}
+{ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
 {LEVELUP_ASK}
