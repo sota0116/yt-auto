@@ -1,0 +1,33 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_001_ヒルコ",
+ "portrait": false,
+ "made": "2026-11-12 02:59",
+ "style_en": "日本のアニメ調、くっきりした主線、落ち着いた色、少し暗めの光、古墳時代の日本（みずら・衣褌・勾玉）、和紙のような淡い質感。全話で同じ絵柄",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "ebisu": {
+   "desc_en": "Ebisu, the god of fortune, a plump cheerful elderly man with a round smiling face and narrow laughing eyes, a tall black eboshi hat, a kariginu hunting robe in muted gold and green, holding a bamboo fishing rod in his right hand and a large red sea bream under his left arm",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "左右2つに分けた比べる絵。左半分：夜の暗い海に、葦を束ねた小さな舟が浮かび、白い布にくるまれた赤ん坊が泣いている。冷たい青い月明かり。右半分：えびす様が大きな鯛を抱えて、満面の笑みで立っている。暖かい金色の光が当たって明るい。2人とも画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い空と暗い海だけで何も描かない",
+   "chars": [
+    "ebisu"
+   ],
+   "en": ""
+  },
+  {
+   "id": "T2",
+   "image": "画面の真ん中に、えびす様が鯛を抱えて笑っている上半身を大きく。その背後に重なるように、暗い海に流されていく葦の小さな舟と泣く赤ん坊の姿が、青い影のように薄く浮かぶ。えびす様には暖かい光、まわりは暗い。画面の上の4分の1と下の4分の1は暗い空と暗い海だけで何も描かない",
+   "chars": [
+    "ebisu"
+   ],
+   "en": ""
+  }
+ ]
+}

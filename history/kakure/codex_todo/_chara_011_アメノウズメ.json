@@ -2,7 +2,7 @@
  "ch": "kakure",
  "work": "_chara_011_アメノウズメ",
  "portrait": false,
- "made": "2026-11-11 22:55",
+ "made": "2026-11-12 02:59",
  "style_en": "Japanese TV anime style, clean bold line art, cel shading, muted colors, bright even light, Kofun-period ancient Japan. Pure white background.",
  "avoid_en": "text, letters, logo, modern clothes or buildings, Chinese-style robes, nudity, exposed skin, low neckline, blood",
  "rules": {},
@@ -25,6 +25,15 @@
   }
  },
  "cuts": [
+  {
+   "id": "uzume_dance",
+   "image": "アメノウズメが、片足を上げて両腕を大きく広げ、笹の葉の束を振りながら楽しそうに踊っている全身。服はきちんと着ている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume dancing joyfully, one foot raised, both arms spread wide, waving a bundle of bamboo grass leaves, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume dancing joyfully, one foot raised, both arms spread wide, waving a bundle of bamboo grass leaves, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
   {
    "id": "uzume_stomp",
    "image": "アメノウズメが、伏せた大きな木の桶の上に立ち、片足で強く踏み鳴らしている全身。髪が揺れ、目を閉じて神がかったような顔。服はきちんと着ている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。桶ごと全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
