@@ -517,7 +517,16 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-06T10:10:49+09:00"
+  "取った日": "2026-11-11T09:57:24+09:00",
+  "7d": {
+   "views": 348,
+   "averageViewPercentage": 51.33,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 178.6
+  }
  },
  "20261103_1141_0": {
   "48h": {
@@ -732,5 +741,53 @@
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
   "取った日": "2026-11-10T11:59:32+09:00"
+ },
+ "20261107_0931_1": {
+  "48h": {
+   "views": 1065,
+   "averageViewPercentage": 72.3,
+   "averageViewDuration": 23,
+   "subscribersGained": 0,
+   "likes": 3,
+   "再生の出どころ": "公開の数字",
+   "score": 770.0
+  },
+  "video_id": "HopZvFVZYHg",
+  "title": "乗り物の仕事で時給が安い5つ｜1位と5位は約1,230円差 #年収 #仕事",
+  "topic_id": "rank_乗り物_時給_lo",
+  "kind": "rank",
+  "measure": "時給",
+  "hook": "時給最安は\nどの仕事？",
+  "banner": [
+   "時給が低い順",
+   "乗り物の仕事7から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "取った日": "2026-11-11T09:57:24+09:00"
+ },
+ "20261108_0901_0": {
+  "48h": {
+   "views": 1037,
+   "averageViewPercentage": 65.9,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 683.4
+  },
+  "video_id": "ty1zMzLZBac",
+  "title": "ホール係と美容師のボーナスを比べると｜年収は近いのに約3.0倍の差 #年収 #仕事",
+  "topic_id": "duel_ホール係（飲食物給仕）_美容師・理容師_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "hook": "ボーナス\n同じ？",
+  "banner": [
+   "ボーナス比較",
+   "ホール係と美容師"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "取った日": "2026-11-11T09:57:24+09:00"
  }
 }
