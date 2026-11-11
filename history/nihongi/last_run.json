@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-11T07:19:48+09:00",
+ "started": "2026-11-11T09:05:36+09:00",
  "made": [],
- "stopped": "絵がまだ途中（残り16枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（8回目）（short）／gate_images で Claude の利用枠の上限に届きました（You've hit your org's monthly spend limit · ask your admin to raise it at https:）。枠が戻った後の実行で続きから作ります（long）",
+ "stopped": "絵がまだ途中（残り16枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（9回目）（short）／write で Claude の利用枠の上限に届きました（You've hit your org's monthly spend limit · ask your admin to raise it at https:）。枠が戻った後の実行で続きから作ります（long）",
  "在庫": {
   "short": 4,
   "long": 0
@@ -12,6 +12,12 @@
   "long": 1
  },
  "待ち": true,
- "ended": "2026-11-11T07:21:43+09:00",
+ "長く止まって飛ばした回": [
+  "L108_long_s111（gate_images の段・2026-11-08T07:46 から）"
+ ],
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L108_long_s111"
+ ],
+ "ended": "2026-11-11T09:05:42+09:00",
  "今月の制作費_円": 0.0
 }
