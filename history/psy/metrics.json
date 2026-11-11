@@ -161,6 +161,18 @@
    ],
    "取った日": "2026-11-08",
    "再生（公開ページ）": 212
+  },
+  "d7": {
+   "views": 232,
+   "averageViewPercentage": 22.02,
+   "averageViewDuration": 246,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 238
   }
  },
  "008_mono_herasu": {
@@ -191,6 +203,15 @@
  },
  "010_niwa_shokubutsu": {
   "type": "ひとりの時間",
-  "video_id": "liv4Sr8aVbA"
+  "video_id": "liv4Sr8aVbA",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 2
+  }
  }
 }

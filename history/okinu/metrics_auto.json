@@ -363,6 +363,15 @@
    "直す所": [],
    "取った日": "2026-11-08",
    "再生（公開ページ）": 1250
+  },
+  "d7": {
+   "views": 1255,
+   "averageViewPercentage": 112.43,
+   "averageViewDuration": 46,
+   "subscribersGained": 4,
+   "直す所": [],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 1255
   }
  },
  "S105_実は貧乏な人に多い財布の": {
@@ -425,11 +434,36 @@
  },
  "102_カバン": {
   "type": null,
-  "video_id": "JGgdeMePMEs"
+  "video_id": "JGgdeMePMEs",
+  "h72": {
+   "views": 27,
+   "averageViewPercentage": 17.98,
+   "averageViewDuration": 146,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 36
+  }
  },
  "S110_財布の輪ゴム": {
   "type": null,
-  "video_id": "DJuPy4-TMws"
+  "video_id": "DJuPy4-TMws",
+  "h72": {
+   "views": 144,
+   "averageViewPercentage": 55.48,
+   "averageViewDuration": 24,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 1295
+  }
  },
  "S113_新札": {
   "type": null,
@@ -442,5 +476,9 @@
  "S114_エコバッグの底のレシート": {
   "type": null,
   "video_id": "vC8LKtlxRLY"
+ },
+ "S116_お釣りの小銭": {
+  "type": null,
+  "video_id": "E8G0Afqrhpw"
  }
 }
