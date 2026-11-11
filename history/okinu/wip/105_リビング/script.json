@@ -1,0 +1,2078 @@
+{
+ "format": "long",
+ "title": "【60代】リビングのテーブルに〇〇を置いたまま寝る家は要注意！特徴5選【金運】",
+ "titles": [
+  "【60代】リビングのテーブルに〇〇を置いたまま寝る家は要注意！特徴5選【金運】",
+  "【今すぐチェック】リビングの床に〇〇を置いてたら要注意！特徴5選【金運】",
+  "【年金11万円】リビングでわかる、お金が残る人・残らない人の違い5選【金運】"
+ ],
+ "promise": "お金が残る人がリビングでしない5つ（枯れかけの花をそのまま・切れた電球をそのまま・床に物を直に置く・窓を閉めきったまま・テーブルに物を出したまま寝る）の言い伝えのわけと、お金をかけずにできる直し方、ドライフラワー・孫がくれた花・電池切れのリモコン・物を置いたまま・孫のおもちゃ・冬の窓・空気清浄機・毎日の薬・かご・お客さんの夜の「やっていいか」10問の答えと、お金の気が集まると言われる奥の隅（財気位）が持ち帰れる",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん（65歳・年金は月11万円）・澄江さんは架空の人物（同じ団地の2人）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "佐和子さんの家には孫や近所の人がよく来る。孫は話の中に出るだけで、絵とセリフには出ない",
+  "金運の話は言い伝えとして話す。効き目の数字や、お金が増えたという結果は出さない"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "そうです",
+  "風水",
+  "財気位",
+  "陰の気",
+  "陽の気"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "tags": [
+  "金運",
+  "金運アップ",
+  "リビング",
+  "風水",
+  "リビング風水",
+  "片付け",
+  "開運",
+  "年金",
+  "60代",
+  "50代",
+  "お金の習慣",
+  "財気位"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "お金が残る人が、リビングで絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人が、リビングで絶対にしないことがいつつあります。",
+   "image_en": "Night. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: the low table in the middle of the room is completely covered with clutter left out: tea cups, a medicine pouch, reading glasses, a TV remote, envelopes lying face down, a snack bag. The ceiling light is off; only a cold dim glow from the window. Gloomy and heavy. Slow camera push toward the table. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Night. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: the low table in the middle of the room is completely covered with clutter left out: tea cups, a medicine pouch, reading glasses, a TV remote, envelopes lying face down, a snack bag. The ceiling light is off; only a cold dim glow from the window. Gloomy and heavy. Slow camera push toward the table. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A02",
+   "narration": "夜のテーブルに、薬の袋や郵便物を広げたまま、寝ていませんか。",
+   "same_as": "A01"
+  },
+  {
+   "id": "A03",
+   "narration": "金運の世界では、それは、お金の居場所がなくなっていく家のしるしだと言われています。",
+   "tts_text": "きんうんの世界では、それは、お金の居場所がなくなっていくいえのしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "物で埋まったリビングは",
+     "big": "お金の居場所がない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A04",
+   "narration": "家族やお客さんが集まる部屋ほど、この5つが、たまりやすいのです。",
+   "tts_text": "かぞくやお客さんが集まる部屋ほど、このいつつが、たまりやすいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人がリビングで",
+    "text2": "絶対にしない5つ",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "あなたは、いくつやっているか、指を折って数えながら見てください。",
+   "card": {
+    "type": "big_text",
+    "text": "数えながら見てください",
+    "text2": "いくつやっている？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "A06",
+   "narration": "佐和子さん、65歳。年金は月11万円です。",
+   "tts_text": "さわこさん、ろくじゅうごさい。年金は月じゅういちまんえんです。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "65歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A07",
+   "narration": "同じ団地の澄江さんも、年金はほとんど同じ。",
+   "tts_text": "同じ団地のすみえさんも、年金はほとんど同じ。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A08",
+   "narration": "佐和子さんの家には、孫も、近所の人も、よく遊びに来ます。",
+   "tts_text": "さわこさんのいえには、孫も、近所の人も、よく遊びに来ます。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんの家は",
+    "text2": "人がよく集まる家",
+    "accent": "集まる"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "それなのに、月末に財布のお札が残っているのは、澄江さんの方だけでした。",
+   "tts_text": "それなのに、げつまつに財布のおさつが残っているのは、すみえさんのほうだけでした。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月末のお札　0枚",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月末のお札　残る"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "2人の家で、いちばん違っていたのは、リビングでした。",
+   "tts_text": "ふたりのいえで、いちばん違っていたのは、リビングでした。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の家でいちばん違ったのは",
+    "text2": "リビングだった",
+    "accent": "リビング"
+   }
+  },
+  {
+   "id": "A11",
+   "narration": "リビングは、家族とお客さんを迎える、家の顔だと言われます。",
+   "tts_text": "リビングは、かぞくとお客さんを迎える、いえの顔だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "リビングは",
+     "big": "家の顔",
+     "size": 130
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "A12",
+   "narration": "人が集まり、くつろぐ場所に、金運が宿る。風水では、そう考えます。",
+   "tts_text": "人が集まり、くつろぐ場所に、きんうんが宿る。ふうすいでは、そう考えます。",
+   "card": {
+    "type": "big_text",
+    "text": "人が集まり、くつろぐ場所に",
+    "text2": "金運が宿る",
+    "accent": "金運"
+   }
+  },
+  {
+   "id": "A13",
+   "narration": "お金が残らない人は、リビングで、この5つをやっています。",
+   "tts_text": "お金が残らない人は、リビングで、このいつつをやっています。",
+   "montage": [
+    "B01",
+    "C01",
+    "D01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　枯れかけの●をそのまま",
+    "第4位　切れた●●をそのまま",
+    "第3位　●に物を直に置く",
+    "第2位　●を閉めきったまま"
+   ]
+  },
+  {
+   "id": "A14",
+   "narration": "第1位は、疲れた夜に、ほとんどの人がそのまま寝てしまう、あのくせです。",
+   "tts_text": "だいいちいは、疲れた夜に、ほとんどの人がそのまま寝てしまう、あのくせです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "●●●●に●を出したまま寝る",
+    "sub": "疲れた夜に、ついやってしまう",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "A15",
+   "narration": "どれも、買い足す物はいりません。今ある物で直せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どれも",
+     "big": "今ある物で直せる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。枯れかけた花を、そのまま飾っておく。",
+   "tts_text": "だいごい。枯れかけた花を、そのまま飾っておく。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "枯れかけの花をそのまま",
+    "sub": "まだ少し、きれいだから"
+   },
+   "yt_chapter": "第5位 枯れかけの花をそのまま"
+  },
+  {
+   "id": "B01",
+   "narration": "花びんの花が、首を垂れている。棚の鉢植えの葉も、茶色く縮んでいる。",
+   "tts_text": "花びんの花が、首を垂れている。棚のはちうえの葉も、茶色く縮んでいる。",
+   "image_en": "Close-up on a shelf by the window in the living room of a modest present-day Japanese public housing apartment (danchi): a glass vase of wilted flowers with drooping heads and fallen petals, next to a small potted plant whose leaves are brown, curled and dry, dry pale soil. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on a shelf by the window in the living room of a modest present-day Japanese public housing apartment (danchi): a glass vase of wilted flowers with drooping heads and fallen petals, next to a small potted plant whose leaves are brown, curled and dry, dry pale soil. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B02",
+   "narration": "まだ少しきれいだからと、そのままにしていませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "金運の世界では、生きている植物は、部屋の気を整えてくれると考えます。",
+   "tts_text": "きんうんの世界では、生きている植物は、部屋の気を整えてくれると考えます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "生きている植物は",
+     "big": "部屋の気を整える",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B04",
+   "narration": "ところが、枯れた花は、反対に、陰の気を出すと言われます。",
+   "tts_text": "ところが、枯れた花は、反対に、いんのきを出すと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "枯れた花は",
+    "text2": "陰の気を、出す",
+    "accent": "陰の気"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "植物は、部屋の悪い気を、吸ってくれる物だとも言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "植物は",
+    "text2": "悪い気を、吸ってくれる",
+    "accent": "吸って"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "枯れたまま置いておくと、吸っていた悪い気が、部屋にもどってくる。そう考えられてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "枯れたまま置くと",
+    "text2": "悪い気が、もどってくる",
+    "accent": "もどって"
+   }
+  },
+  {
+   "id": "B07",
+   "narration": "昔の絵にも、季節の花を生けて楽しむ人の姿が、よく描かれています。",
+   "image_en": "Edo period Japanese ukiyo-e woodblock print style: a woman in kimono kneels and arranges fresh seasonal flowers in a vase in a tatami room. Soft traditional colors. No readable text, no logos, no brand names.",
+   "real": "ikebana ukiyo-e woman arranging flowers",
+   "image": "Edo period Japanese ukiyo-e woodblock print style: a woman in kimono kneels and arranges fresh seasonal flowers in a vase in a tatami room. Soft traditional colors. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B08",
+   "narration": "佐和子さんの家では、孫がくれた花が、窓辺で茶色くなっていました。",
+   "tts_text": "さわこさんのいえでは、孫がくれた花が、窓辺で茶色くなっていました。",
+   "image_en": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako stands by the window looking at a vase of wilted brown flowers on the windowsill, one hand on her cheek, a guilty troubled face. Soft dim light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako stands by the window looking at a vase of wilted brown flowers on the windowsill, one hand on her cheek, a guilty troubled face. Soft dim light."
+  },
+  {
+   "id": "B09",
+   "narration": "せっかく、孫がくれた花だもの。",
+   "card": {
+    "type": "big_text",
+    "text": "捨てられない",
+    "text2": "孫がくれた花だもの",
+    "kicker": "孫"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B10",
+   "narration": "隣の鉢植えの土も、乾いて、白くなっていました。",
+   "tts_text": "隣のはちうえの土も、乾いて、白くなっていました。",
+   "same_as": "B08"
+  },
+  {
+   "id": "B11",
+   "narration": "澄江さんの窓辺には、小さな鉢植えが1つだけ。葉は、つやつやしています。",
+   "tts_text": "すみえさんの窓辺には、小さなはちうえがひとつだけ。葉は、つやつやしています。",
+   "image_en": "Bright morning. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): on the windowsill, a single small potted green plant with glossy healthy leaves, the sill wiped clean, sunlight through plain curtains. No people. No readable text, no logos, no brand names.",
+   "image": "Bright morning. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): on the windowsill, a single small potted green plant with glossy healthy leaves, the sill wiped clean, sunlight through plain curtains. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B12",
+   "narration": "花がしおれたら、その日のうちに、ありがとうと言って、下げていました。",
+   "same_as": "B11"
+  },
+  {
+   "id": "B13",
+   "narration": "直し方は、しおれた花を、その日のうちに下げること。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "しおれた花は、その日に下げる",
+     "鉢植えの茶色い葉を、摘む",
+     "花びんの水を、毎朝替える"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "鉢植えは、茶色くなった葉を、指で摘んでおきます。",
+   "tts_text": "はちうえは、茶色くなった葉を、指で摘んでおきます。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "しおれた花は、その日に下げる",
+     "鉢植えの茶色い葉を、摘む",
+     "花びんの水を、毎朝替える"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B15",
+   "narration": "そして、花びんの水を、毎朝替える。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "しおれた花は、その日に下げる",
+     "鉢植えの茶色い葉を、摘む",
+     "花びんの水を、毎朝替える"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "たくさん飾らなくても、元気な緑が1つあれば、それで十分です。",
+   "tts_text": "たくさん飾らなくても、元気な緑がひとつあれば、それで十分です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "元気な緑なら",
+     "big": "1つで十分",
+     "size": 130
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B17",
+   "narration": "ドライフラワーなら、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "飾っておく",
+    "text2": "ドライフラワーは？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B18",
+   "narration": "ドライフラワーは、枯れた花と同じだと見る考え方があります。飾るなら、生きた花か、緑を。",
+   "card": {
+    "type": "big_text",
+    "text": "枯れた花と同じと見る",
+    "text2": "生きた花か、緑を",
+    "accent": "生きた",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B19",
+   "narration": "孫がくれた花は、どうしたらいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "捨てにくい",
+    "text2": "孫がくれた花は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B20",
+   "narration": "1輪だけ、押し花にしておく。気持ちは、それで残せます。",
+   "tts_text": "いちりんだけ、押し花にしておく。気持ちは、それで残せます。",
+   "card": {
+    "type": "big_text",
+    "text": "気持ちは、残せる",
+    "text2": "1輪だけ、押し花に",
+    "accent": "押し花",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "佐和子さんは、その日のうちに、茶色くなった花を、紙に包みました。",
+   "tts_text": "さわこさんは、その日のうちに、茶色くなった花を、紙に包みました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "枯れた花を、紙に包んだ",
+    "accent": "包んだ"
+   }
+  },
+  {
+   "id": "B22",
+   "narration": "花は少なくても、生きていれば、それで十分です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "花は少なくても",
+     "big": "生きていればいい",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B23",
+   "narration": "次は、毎晩つけているのに、切れても気づきにくい物です。",
+   "card": {
+    "type": "big_text",
+    "text": "毎晩つけているのに",
+    "text2": "切れても、気づかない物",
+    "accent": "気づかない"
+   }
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。切れた電球を、そのままにしておく。",
+   "tts_text": "だいよんい。切れた電球を、そのままにしておく。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "切れた電球をそのまま",
+    "sub": "ほかが点くから、まあいいか"
+   },
+   "yt_chapter": "第4位 切れた電球をそのまま"
+  },
+  {
+   "id": "C01",
+   "narration": "天井の明かりの電球が1つ切れて、部屋の隅だけが、薄暗い。",
+   "tts_text": "天井の明かりの電球がひとつ切れて、部屋のすみだけが、薄暗い。",
+   "image_en": "Evening. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: a ceiling light fixture with two bulbs where one bulb is dead and dark, leaving one corner of the room in heavy shadow; a dusty lamp shade. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "image": "Evening. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: a ceiling light fixture with two bulbs where one bulb is dead and dark, leaving one corner of the room in heavy shadow; a dusty lamp shade. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C02",
+   "narration": "ほかが点いているから、まあいいか。そう思っていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "金運の世界では、部屋の明るさを、とても大事にします。",
+   "tts_text": "きんうんの世界では、部屋の明るさを、とても大事にします。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "金運の世界では",
+     "big": "部屋の明るさが大事",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C04",
+   "narration": "暗い隅のある部屋は、そこにいる人の気分まで、沈ませてしまうからです。",
+   "tts_text": "暗いすみのある部屋は、そこにいる人の気分まで、沈ませてしまうからです。",
+   "card": {
+    "type": "big_text",
+    "text": "暗い隅は",
+    "text2": "気分まで、沈ませる",
+    "accent": "沈ませる"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "切れた電球は、壊れた物。壊れた物を置いたままの家は、運が滞ると言われます。",
+   "tts_text": "切れた電球は、壊れた物。壊れた物を置いたままのいえは、運がとどこおると言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "壊れた物を置いたままの家は",
+    "text2": "運が、滞る",
+    "accent": "滞る"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "これは、昔の行灯です。昔の人は、油を足しながら、毎晩、明かりをともしていました。",
+   "tts_text": "これは、昔のあんどんです。昔の人は、油を足しながら、毎晩、明かりをともしていました。",
+   "image_en": "A traditional Japanese Edo period andon paper lantern lamp glowing softly on a tatami floor at night, wooden frame and washi paper. No people. No readable text, no logos, no brand names.",
+   "real": "andon lamp Edo period",
+   "real_src": {
+    "題": "File:Edo no nishiki, Andon by Ikeda Terukata.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edo_no_nishiki%2C_Andon_by_Ikeda_Terukata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Edo_no_nishiki,_Andon_by_Ikeda_Terukata.jpg",
+    "検索語": "andon lamp Edo period"
+   }
+  },
+  {
+   "id": "C07",
+   "narration": "日の入らない部屋は、明かりで補う。風水の先生も、そう教えています。",
+   "tts_text": "日のはいらない部屋は、明かりで補う。ふうすいの先生も、そう教えています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "日の入らない部屋は",
+     "big": "明かりで補う",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "C08",
+   "narration": "佐和子さんは、ソファに座って、薄暗い天井を見上げました。",
+   "tts_text": "さわこさんは、ソファに座って、薄暗い天井を見上げました。",
+   "image_en": "Evening. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits on the small sofa and looks up at the ceiling light where one bulb is dark, her eyes widening in surprise, one hand raised to her chin. Dim light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Evening. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits on the small sofa and looks up at the ceiling light where one bulb is dark, her eyes widening in surprise, one hand raised to her chin. Dim light."
+  },
+  {
+   "id": "C09",
+   "narration": "いつから、切れていたかしら。",
+   "card": {
+    "type": "big_text",
+    "text": "電球は",
+    "text2": "いつから切れていたの",
+    "kicker": "いつから"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C10",
+   "narration": "電球が切れたのは、夏の終わり。もう、2か月も前のことでした。",
+   "tts_text": "電球が切れたのは、夏の終わり。もう、にかげつも前のことでした。",
+   "same_as": "C08"
+  },
+  {
+   "id": "C11",
+   "narration": "替えの電球は、台所の引き出しに、ちゃんと入っていたのです。",
+   "tts_text": "替えの電球は、だいどころの引き出しに、ちゃんとはいっていたのです。",
+   "card": {
+    "type": "big_text",
+    "text": "替えの電球は",
+    "text2": "引き出しに、あった",
+    "accent": "あった"
+   }
+  },
+  {
+   "id": "C12",
+   "narration": "澄江さんのリビングは、夜でも、隅まで明るい。",
+   "tts_text": "すみえさんのリビングは、夜でも、すみまで明るい。",
+   "image_en": "Night. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): every corner evenly lit by a warm ceiling light, a clean lamp shade, plain curtains closed, a low table with nothing on it. Warm cozy light. No people. No readable text, no logos, no brand names.",
+   "image": "Night. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): every corner evenly lit by a warm ceiling light, a clean lamp shade, plain curtains closed, a low table with nothing on it. Warm cozy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C13",
+   "narration": "電球が切れたら、次の日には、もう替えていました。",
+   "same_as": "C12"
+  },
+  {
+   "id": "C14",
+   "narration": "直し方は、切れた電球を、気づいた日に替えること。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "切れた電球は、気づいた日に替える",
+     "替えの電球を、1つ置いておく",
+     "かさのほこりを、拭く"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "替えの電球を1つ、決まった所に置いておきます。",
+   "tts_text": "替えの電球をひとつ、決まった所に置いておきます。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "切れた電球は、気づいた日に替える",
+     "替えの電球を、1つ置いておく",
+     "かさのほこりを、拭く"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C16",
+   "narration": "そして、明かりのかさのほこりも、拭いておく。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "切れた電球は、気づいた日に替える",
+     "替えの電球を、1つ置いておく",
+     "かさのほこりを、拭く"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C17",
+   "narration": "高い所は、無理をしないで、家族か、管理人さんに頼みます。",
+   "tts_text": "高い所は、無理をしないで、かぞくか、管理人さんに頼みます。",
+   "card": {
+    "type": "big_text",
+    "text": "高い所は",
+    "text2": "無理をしないで、頼む",
+    "accent": "頼む"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "電池の切れたリモコンも、同じなの？",
+   "card": {
+    "type": "big_text",
+    "text": "動かない",
+    "text2": "電池切れのリモコンは？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C19",
+   "narration": "同じだと言われます。電池を替えるか、使わない物なら、手放します。",
+   "card": {
+    "type": "big_text",
+    "text": "壊れた物と、同じ",
+    "text2": "電池を替えるか、手放す",
+    "accent": "替える",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C20",
+   "narration": "明るいリビングには、人が集まります。人が集まる場所に、金運は宿るのでしたね。",
+   "tts_text": "明るいリビングには、人が集まります。人が集まる場所に、きんうんは宿るのでしたね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "人が集まる場所に",
+     "big": "金運は宿る",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "C21",
+   "narration": "次は、毎日歩いている所に、つい置いてしまう物です。",
+   "card": {
+    "type": "big_text",
+    "text": "毎日歩く所に",
+    "text2": "つい置いてしまう物",
+    "accent": "置いて"
+   }
+  },
+  {
+   "id": "Q01",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "Q02",
+   "narration": "リビングには、お金の気が集まると言われる場所があります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "リビングには",
+     "big": "お金の気が集まる場所",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "Q03",
+   "narration": "それは、入り口のすぐそばか、入り口から見て、いちばん奥の隅か。",
+   "tts_text": "それは、入り口のすぐそばか、入り口から見て、いちばん奥のすみか。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "入り口のそば",
+      "sub": "？"
+     },
+     {
+      "head": "いちばん奥の隅",
+      "sub": "？"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "Q04",
+   "narration": "あなたは、どちらだと思いますか。",
+   "same_as": "Q03"
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "●に物を●●置く",
+     "●を●●●●たまま",
+     "●●●●に●を出したまま寝る"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、もっと多くの人が、毎日やってしまっています。",
+   "tts_text": "残りのみっつは、もっと多くの人が、毎日やってしまっています。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "●に物を●●置く",
+     "●を●●●●たまま",
+     "●●●●に●を出したまま寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "お金をかけずにできる金運の決まりを、毎週お届けしています。",
+   "tts_text": "お金をかけずにできるきんうんの決まりを、毎週お届けしています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "M04",
+   "narration": "次のお話も見たい方は、チャンネル登録をしておくと、新しいお話が届きます。",
+   "tts_text": "次のお話もみたいかたは、チャンネル登録をしておくと、新しいお話が届きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:M04"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。床に、物を直に置く。",
+   "tts_text": "だいさんい。ゆかに、物をじかに置く。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "床に物を直に置く",
+    "sub": "とりあえず、ここに"
+   },
+   "yt_chapter": "第3位 床に物を直に置く"
+  },
+  {
+   "id": "D01",
+   "narration": "床の上に、紙袋と、古新聞の束と、届いたままの段ボール箱。",
+   "tts_text": "ゆかの上に、紙袋と、古新聞の束と、届いたままの段ボール箱。",
+   "image_en": "Close-up on the floor of the living room of a modest present-day Japanese public housing apartment (danchi): plain paper shopping bags, a tied bundle of old newspapers seen from the blank folded side, an unopened plain cardboard box and a cushion piled directly on the floor along the wall, dust in the corner. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on the floor of the living room of a modest present-day Japanese public housing apartment (danchi): plain paper shopping bags, a tied bundle of old newspapers seen from the blank folded side, an unopened plain cardboard box and a cushion piled directly on the floor along the wall, dust in the corner. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D02",
+   "narration": "とりあえず置いたまま、何日もそこにある物は、ありませんか。",
+   "tts_text": "とりあえず置いたまま、なんにちもそこにある物は、ありませんか。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D03",
+   "narration": "金運の世界では、床に物が散らばった所は、悪い気の吹きだまりになると言われます。",
+   "tts_text": "きんうんの世界では、ゆかに物が散らばった所は、悪い気の吹きだまりになると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "床に散らばった物は",
+     "big": "悪い気の吹きだまり",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "D04",
+   "narration": "床に置いた物の陰には、ほこりがたまります。",
+   "tts_text": "ゆかに置いた物のかげには、ほこりがたまります。",
+   "card": {
+    "type": "big_text",
+    "text": "床の物の陰に",
+    "text2": "ほこりが、たまる",
+    "accent": "ほこり"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "床に物があるほど、掃除もしにくくなって、吹きだまりは大きくなっていくのです。",
+   "tts_text": "ゆかに物があるほど、掃除もしにくくなって、吹きだまりは大きくなっていくのです。",
+   "card": {
+    "type": "big_text",
+    "text": "床に物があるほど",
+    "text2": "吹きだまりが、大きくなる",
+    "accent": "吹きだまり"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "反対に、床がよく見える部屋ほど、気がすっと通ると言われます。",
+   "tts_text": "反対に、ゆかがよく見える部屋ほど、気がすっと通ると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "床が見える部屋ほど",
+     "big": "気がすっと通る",
+     "size": 110
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "D07",
+   "narration": "佐和子さんのリビングの床には、孫のおもちゃの箱と、届いた段ボールが並んでいます。",
+   "tts_text": "さわこさんのリビングのゆかには、孫のおもちゃの箱と、届いた段ボールが並んでいます。",
+   "image_en": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako carefully steps between a toy box, plain cardboard boxes and paper bags crowding the floor, holding a tray of tea cups, looking down with a worried tense face. Soft light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako carefully steps between a toy box, plain cardboard boxes and paper bags crowding the floor, holding a tray of tea cups, looking down with a worried tense face. Soft light."
+  },
+  {
+   "id": "D08",
+   "narration": "あとで、片付けるつもりだったのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "床の物は",
+    "text2": "あとで片付けるつもり",
+    "kicker": "あとで"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D09",
+   "narration": "お客さんが来る時は、全部まとめて、隣の部屋へ押しこんでいました。",
+   "same_as": "D07"
+  },
+  {
+   "id": "D10",
+   "narration": "澄江さんのリビングは、床が、よく見えます。",
+   "tts_text": "すみえさんのリビングは、ゆかが、よく見えます。",
+   "image_en": "Bright day. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): the floor is completely clear and visible, a plain woven basket with a lid sits on a low shelf, cushions stacked neatly on the sofa. Soft daylight. No people. No readable text, no logos, no brand names.",
+   "image": "Bright day. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): the floor is completely clear and visible, a plain woven basket with a lid sits on a low shelf, cushions stacked neatly on the sofa. Soft daylight. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D11",
+   "narration": "物を置くのは、棚の上か、ふたつきのかごの中と、決めていました。",
+   "same_as": "D10"
+  },
+  {
+   "id": "D12",
+   "narration": "直し方は、床に、物を直に置かないこと。",
+   "tts_text": "直し方は、ゆかに、物をじかに置かないこと。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "床に、物を直に置かない",
+     "置くなら、棚かかごの中",
+     "届いた箱は、その日に開ける"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D13",
+   "narration": "置くなら、棚の上か、かごの中へ。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "床に、物を直に置かない",
+     "置くなら、棚かかごの中",
+     "届いた箱は、その日に開ける"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "届いた段ボールは、その日のうちに開けて、たたみます。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "床に、物を直に置かない",
+     "置くなら、棚かかごの中",
+     "届いた箱は、その日に開ける"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "リビングに、物を置いたままにしても、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "リビングに",
+    "text2": "物を置いたままで、いい？",
+    "kicker": "置いたまま"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D16",
+   "narration": "置き場所が決まっている物なら、いい、と言われます。困るのは、行き場のない物が、床にたまることです。",
+   "tts_text": "置き場所が決まっている物なら、いい、と言われます。困るのは、行き場のない物が、ゆかにたまることです。",
+   "card": {
+    "type": "big_text",
+    "text": "困るのは、行き場のない物",
+    "text2": "置き場所があれば、いい",
+    "accent": "置き場所",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D17",
+   "narration": "孫のおもちゃは、出しておいてもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "遊びに来た",
+    "text2": "孫のおもちゃは？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D18",
+   "narration": "遊んでいる間は、いいと言われます。帰ったら、かご1つに戻す。それだけです。",
+   "tts_text": "遊んでいる間は、いいと言われます。帰ったら、かごひとつに戻す。それだけです。",
+   "card": {
+    "type": "big_text",
+    "text": "遊ぶ間は、いい",
+    "text2": "帰ったら、かごに戻す",
+    "accent": "かご",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D19",
+   "narration": "床が広く見えるだけで、部屋は、ひと回り広く感じられます。",
+   "tts_text": "ゆかが広く見えるだけで、部屋は、ひと回り広く感じられます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "床が見えるだけで",
+     "big": "部屋がひと回り広い",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "D20",
+   "narration": "次は、寒い季節ほど、ついやってしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "寒い季節ほど",
+    "text2": "ついやってしまうこと",
+    "accent": "寒い"
+   }
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。窓を、閉めきったままにする。",
+   "tts_text": "だいにい。窓を、閉めきったままにする。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "窓を閉めきったまま",
+    "sub": "寒いから、面倒だから"
+   },
+   "yt_chapter": "第2位 窓を閉めきったまま"
+  },
+  {
+   "id": "E01",
+   "narration": "昼でもカーテンを引いたまま。窓は、何日も開けていない。",
+   "tts_text": "昼でもカーテンを引いたまま。窓は、なんにちも開けていない。",
+   "image_en": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: heavy curtains fully drawn over a closed window in the middle of the day, only a thin line of light at the edge, the air looks stale and still, the room dim and stuffy. No people. No readable text, no logos, no brand names.",
+   "image": "Daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: heavy curtains fully drawn over a closed window in the middle of the day, only a thin line of light at the edge, the air looks stale and still, the room dim and stuffy. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E02",
+   "narration": "寒いからと、閉めきったままになっていませんか。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E03",
+   "narration": "金運の世界では、運は、動いているものに宿ると言われます。",
+   "tts_text": "きんうんの世界では、運は、動いているものに宿ると言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "運は",
+     "big": "動いているものに宿る",
+     "size": 110
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "E04",
+   "narration": "閉めきった部屋では、空気が動きません。",
+   "card": {
+    "type": "big_text",
+    "text": "閉めきった部屋は",
+    "text2": "空気が、動かない",
+    "accent": "動かない"
+   }
+  },
+  {
+   "id": "E05",
+   "narration": "よどんだ空気の中では、お金の流れも、止まってしまう。そう考えられてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "よどんだ空気では",
+    "text2": "お金の流れも、止まる",
+    "accent": "止まる"
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "これは、昔の家の障子です。紙1枚を通して、外の光と風が、部屋に入っていました。",
+   "tts_text": "これは、昔のいえの障子です。紙いちまいを通して、外の光と風が、部屋にはいっていました。",
+   "image_en": "A traditional Japanese house interior with sliding shoji paper screens half open onto a veranda, soft daylight and a breeze coming through, tatami floor. No people. No readable text, no logos, no brand names.",
+   "real": "shoji screen traditional Japanese house",
+   "image": "A traditional Japanese house interior with sliding shoji paper screens half open onto a veranda, soft daylight and a breeze coming through, tatami floor. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E07",
+   "narration": "風水の基本は、一に掃除、二に換気、と言う先生もいるほどです。",
+   "tts_text": "ふうすいの基本は、いちに掃除、にに換気、と言う先生もいるほどです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "風水の基本は",
+     "big": "一に掃除、二に換気",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "E08",
+   "narration": "佐和子さんは寒がりで、冬のあいだ、窓をほとんど開けませんでした。",
+   "tts_text": "さわこさんは寒がりで、冬のあいだ、窓をほとんど開けませんでした。",
+   "image_en": "Winter daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits hunched on the sofa wrapped in a thick blanket in the dim curtained room, a small electric heater at her feet, frowning with a stuffy tired face, rubbing her arms. Dim light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Winter daytime. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits hunched on the sofa wrapped in a thick blanket in the dim curtained room, a small electric heater at her feet, frowning with a stuffy tired face, rubbing her arms. Dim light."
+  },
+  {
+   "id": "E09",
+   "narration": "開けたら、せっかくの暖かい空気が、逃げちゃうじゃない。",
+   "card": {
+    "type": "big_text",
+    "text": "窓を開けたら",
+    "text2": "暖かい空気が逃げる",
+    "kicker": "逃げる"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E10",
+   "narration": "部屋には、夕ごはんのにおいが、次の日まで残っていました。",
+   "tts_text": "部屋には、ゆうごはんのにおいが、次の日まで残っていました。",
+   "same_as": "E08"
+  },
+  {
+   "id": "E11",
+   "narration": "澄江さんは、朝起きると、まず窓を開けます。",
+   "tts_text": "すみえさんは、朝起きると、まず窓を開けます。",
+   "image_en": "Early morning. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): Sumie slides open the window with a calm bright face, morning sunlight and fresh air pouring in, the plain curtains lifting in the breeze.",
+   "chars": [
+    "sumie"
+   ],
+   "image": "Early morning. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): Sumie slides open the window with a calm bright face, morning sunlight and fresh air pouring in, the plain curtains lifting in the breeze."
+  },
+  {
+   "id": "E12",
+   "narration": "冬でも、5分だけ。その間に、やかんでお湯をわかすのだそうです。",
+   "tts_text": "冬でも、ごふんだけ。その間に、やかんでお湯をわかすのだそうです。",
+   "same_as": "E11"
+  },
+  {
+   "id": "E13",
+   "narration": "直し方は、朝いちばんに、窓を開けること。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "朝いちばんに、窓を開ける",
+     "風の通り道を、2か所あける",
+     "昼は、カーテンを開ける"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E14",
+   "narration": "窓を2か所あけると、部屋の中を、風が通ります。",
+   "tts_text": "窓をにかしょあけると、部屋の中を、風が通ります。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "朝いちばんに、窓を開ける",
+     "風の通り道を、2か所あける",
+     "昼は、カーテンを開ける"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E15",
+   "narration": "昼は、カーテンを開けて、光も入れる。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "朝いちばんに、窓を開ける",
+     "風の通り道を、2か所あける",
+     "昼は、カーテンを開ける"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "寒い冬も、窓を開けなきゃだめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "寒い冬も",
+    "text2": "窓を開けなきゃだめ？",
+    "kicker": "冬"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E17",
+   "narration": "冬は、5分で大丈夫です。空気が入れかわれば、それで十分です。",
+   "tts_text": "冬は、ごふんで大丈夫です。空気が入れかわれば、それで十分です。",
+   "card": {
+    "type": "big_text",
+    "text": "空気が入れかわればいい",
+    "text2": "冬は、5分でいい",
+    "accent": "5分",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E18",
+   "narration": "空気清浄機があれば、いいでしょう？",
+   "card": {
+    "type": "big_text",
+    "text": "うちには",
+    "text2": "空気清浄機があるけど？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E19",
+   "narration": "窓を開けて、外の空気を入れる方がいい、と言われます。新しい気は、外から入ってくるからです。",
+   "tts_text": "窓を開けて、外の空気を入れるほうがいい、と言われます。新しい気は、外からはいってくるからです。",
+   "card": {
+    "type": "big_text",
+    "text": "新しい気は、外から",
+    "text2": "窓を開ける方が、いい",
+    "accent": "窓",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E20",
+   "narration": "朝の風が通った部屋には、新しい運が入ってくる。そう言われています。",
+   "tts_text": "朝の風が通った部屋には、新しい運がはいってくる。そう言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "朝の風が通る部屋に",
+     "big": "新しい運が入る",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "E21",
+   "narration": "そして第1位は、1日の終わりに、ほとんどの人がやってしまうことです。",
+   "tts_text": "そしてだいいちいは、いちにちの終わりに、ほとんどの人がやってしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "1日の終わりに",
+    "text2": "ほとんどの人がやること",
+    "accent": "終わり"
+   }
+  },
+  {
+   "id": "P01",
+   "narration": "ここまでで、4つ。残るは、第1位だけです。",
+   "tts_text": "ここまでで、よっつ。残るは、だいいちいだけです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "床に物を直に置く",
+     "窓を閉めきったまま",
+     "●●●●に●を出したまま寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "いよいよ、第1位です。",
+   "tts_text": "いよいよ、だいいちいです。",
+   "card": {
+    "type": "big_text",
+    "text": "いよいよ",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、テーブルに、物を出したまま寝ること。",
+   "tts_text": "だいいちいは、テーブルに、物を出したまま寝ること。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "テーブルに物を出したまま寝る",
+    "sub": "疲れた夜に、ついやってしまう"
+   },
+   "yt_chapter": "第1位 疲れた夜に、ついやってしまうこと"
+  },
+  {
+   "id": "F02",
+   "narration": "湯のみ、薬の袋、めがね、郵便物、テレビのリモコン。全部テーブルに出したまま、電気を消す。",
+   "image_en": "Night, close-up. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: the low wooden table is crowded with things left out: several used tea cups, a medicine pouch, reading glasses, envelopes lying face down, a TV remote, an open snack bag. The ceiling light clicks off and the room falls into darkness, only a faint cold glow from the window over the cluttered table. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "peak": true,
+   "strong": true,
+   "highlight": "出したまま寝る",
+   "image": "Night, close-up. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: the low wooden table is crowded with things left out: several used tea cups, a medicine pouch, reading glasses, envelopes lying face down, a TV remote, an open snack bag. The ceiling light clicks off and the room falls into darkness, only a faint cold glow from the window over the cluttered table. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F03",
+   "narration": "疲れた夜に、ほとんどの人が、ついそのままにしてしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "出したまま寝るのは",
+    "text2": "疲れた夜に、つい",
+    "accent": "疲れた夜"
+   }
+  },
+  {
+   "id": "F04",
+   "narration": "リビングのテーブルは、家族とお客さんが、顔を合わせる場所です。",
+   "tts_text": "リビングのテーブルは、かぞくとお客さんが、顔を合わせる場所です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "リビングのテーブルは",
+     "big": "人が顔を合わせる場所",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "F05",
+   "narration": "そこが物で埋まっていると、新しい人も、新しいお金も、入る場所がありません。",
+   "tts_text": "そこが物で埋まっていると、新しい人も、新しいお金も、はいる場所がありません。",
+   "card": {
+    "type": "big_text",
+    "text": "テーブルが埋まると",
+    "text2": "お金の入る場所が、ない",
+    "accent": "入る場所"
+   }
+  },
+  {
+   "id": "F06",
+   "narration": "出しっぱなしの物には、古い気がたまる、と言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "出しっぱなしの物には",
+    "text2": "古い気が、たまる",
+    "accent": "古い気"
+   }
+  },
+  {
+   "id": "F07",
+   "narration": "そして朝、目を覚まして最初に見るのが、昨日のままのテーブル。",
+   "tts_text": "そして朝、目を覚まして最初に見るのが、きのうのままのテーブル。",
+   "same_as": "F02"
+  },
+  {
+   "id": "F08",
+   "narration": "寝る前に片付けると、次の朝を、まっさらな気で始められる。そう話す風水の先生もいます。",
+   "tts_text": "寝る前に片付けると、次の朝を、まっさらな気で始められる。そう話すふうすいの先生もいます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "寝る前に片付けると",
+     "big": "まっさらな朝になる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "F09",
+   "narration": "片付けないまま寝ると、昨日の気を、そのまま次の日へ持ちこんでしまうのです。",
+   "tts_text": "片付けないまま寝ると、きのうの気を、そのまま次の日へ持ちこんでしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "片付けずに寝ると",
+    "text2": "昨日の気を、持ちこむ",
+    "accent": "持ちこむ"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "孫たちが帰った夜、佐和子さんは、いつもソファで、ぐったりしていました。",
+   "tts_text": "孫たちが帰った夜、さわこさんは、いつもソファで、ぐったりしていました。",
+   "image_en": "Night. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako slumps exhausted on the left side of the small sofa, eyes half closed, one hand pressed to her forehead, beside a low table crowded with used tea cups, snack wrappers and a TV remote. Dark moody light from a single lamp, empty dark space on the right of the picture.",
+   "chars": [
+    "sawako"
+   ],
+   "image": "Night. Inside the living room of a modest present-day Japanese public housing apartment (danchi): a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako slumps exhausted on the left side of the small sofa, eyes half closed, one hand pressed to her forehead, beside a low table crowded with used tea cups, snack wrappers and a TV remote. Dark moody light from a single lamp, empty dark space on the right of the picture."
+  },
+  {
+   "id": "F11",
+   "narration": "片付けは、明日でいいわよね。",
+   "tts_text": "片付けは、あしたでいいわよね。",
+   "card": {
+    "type": "big_text",
+    "text": "今は無理",
+    "text2": "片付けは、明日でいい",
+    "kicker": "明日"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F12",
+   "narration": "テーブルには、孫のお菓子の袋と、湯のみが5つ。",
+   "tts_text": "テーブルには、孫のお菓子の袋と、湯のみがいつつ。",
+   "same_as": "F10"
+  },
+  {
+   "id": "F13",
+   "narration": "次の日、お客さんが来る前に、慌てて全部を、紙袋に押しこみました。",
+   "card": {
+    "type": "big_text",
+    "text": "お客さんが来る前に",
+    "text2": "全部、紙袋に押しこんだ",
+    "accent": "紙袋"
+   }
+  },
+  {
+   "id": "F14",
+   "narration": "その紙袋は、第3位の床の上に、また1つ増えていきました。",
+   "tts_text": "その紙袋は、だいさんいのゆかの上に、またひとつ増えていきました。",
+   "card": {
+    "type": "big_text",
+    "text": "その紙袋は",
+    "text2": "床の上に、また1つ",
+    "accent": "床"
+   }
+  },
+  {
+   "id": "F15",
+   "narration": "澄江さんは、寝る前に、テーブルの物を、かご1つにまとめます。",
+   "tts_text": "すみえさんは、寝る前に、テーブルの物を、かごひとつにまとめます。",
+   "image_en": "Night close-up. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): an older woman's hands gather reading glasses, a medicine pouch and a remote from a low wooden table into a plain woven basket. Only the hands, no face. Warm soft lamp light. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Night close-up. A clean tidy living room of a modest present-day Japanese public housing apartment (danchi): an older woman's hands gather reading glasses, a medicine pouch and a remote from a low wooden table into a plain woven basket. Only the hands, no face. Warm soft lamp light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F16",
+   "narration": "テーブルの上には、何も残しません。ふきんで、さっと拭いて、おしまい。",
+   "same_as": "F15"
+  },
+  {
+   "id": "F17",
+   "narration": "直し方は、寝る前に、テーブルを空にすること。",
+   "tts_text": "直し方は、寝る前に、テーブルをからにすること。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、テーブルを空にする",
+     "迷う物は、かご1つにまとめる",
+     "最後に、ふきんで拭く"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F18",
+   "narration": "どこにしまうか迷う物は、とりあえず、かご1つにまとめます。",
+   "tts_text": "どこにしまうか迷う物は、とりあえず、かごひとつにまとめます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、テーブルを空にする",
+     "迷う物は、かご1つにまとめる",
+     "最後に、ふきんで拭く"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F19",
+   "narration": "仕上げに、ふきんで、ひと拭き。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "寝る前に、テーブルを空にする",
+     "迷う物は、かご1つにまとめる",
+     "最後に、ふきんで拭く"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F20",
+   "narration": "かかるのは、5分ほど。頑張って片付けなくて、いいのです。",
+   "tts_text": "かかるのは、ごふんほど。頑張って片付けなくて、いいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "かかるのは",
+    "text2": "5分ほどでいい",
+    "accent": "5分"
+   }
+  },
+  {
+   "id": "F21",
+   "narration": "空のテーブルで迎える朝は、まっさらな気で始まる。だから、片付けは寝る前なのです。",
+   "tts_text": "からのテーブルで迎える朝は、まっさらな気で始まる。だから、片付けは寝る前なのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "空のテーブルの朝は",
+     "big": "まっさらな気で始まる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "F22",
+   "narration": "薬は、出しておかないと、飲み忘れるのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "毎日の薬は",
+    "text2": "出しておかないと忘れる",
+    "kicker": "薬"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F23",
+   "narration": "毎日使う物は、小さなお盆1つにまとめれば、いいそうです。置き場所の決まった物は、出しっぱなしとは違います。",
+   "tts_text": "毎日使う物は、小さなお盆ひとつにまとめれば、いいそうです。置き場所の決まった物は、出しっぱなしとは違います。",
+   "card": {
+    "type": "big_text",
+    "text": "置き場所が決まった物は",
+    "text2": "お盆1つに、まとめる",
+    "accent": "お盆",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F24",
+   "narration": "かごの中が、いっぱいになったら？",
+   "card": {
+    "type": "big_text",
+    "text": "まとめた",
+    "text2": "かごがいっぱいになったら？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F25",
+   "narration": "週に1回、かごを空にします。かごは一時置き場。物置にしないことです。",
+   "tts_text": "しゅうにいっかい、かごをからにします。かごはいちじおきば。物置にしないことです。",
+   "card": {
+    "type": "big_text",
+    "text": "かごは、一時置き場",
+    "text2": "週に1回、空にする",
+    "accent": "空に",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F26",
+   "narration": "お客さんが来た夜は、どうしても片付けられないわ。",
+   "card": {
+    "type": "big_text",
+    "text": "お客さんの夜は",
+    "text2": "どうしても片付かない",
+    "kicker": "お客さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F27",
+   "narration": "せめて、湯のみとお皿だけでも、台所へ下げておく。それだけで、朝のテーブルは、ずいぶん違います。",
+   "tts_text": "せめて、湯のみとお皿だけでも、だいどころへ下げておく。それだけで、朝のテーブルは、ずいぶん違います。",
+   "card": {
+    "type": "big_text",
+    "text": "朝のテーブルが、違う",
+    "text2": "せめて、湯のみだけ下げる",
+    "accent": "湯のみ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F28",
+   "narration": "佐和子さんも、その夜から、テーブルを空にして寝るようになりました。",
+   "tts_text": "さわこさんも、その夜から、テーブルをからにして寝るようになりました。",
+   "same_as": "F15"
+  },
+  {
+   "id": "F29",
+   "narration": "朝、リビングに入るのが、少し楽しみになったのです。",
+   "tts_text": "朝、リビングにはいるのが、少し楽しみになったのです。",
+   "card": {
+    "type": "big_text",
+    "text": "朝のリビングが",
+    "text2": "少し、楽しみになった",
+    "accent": "楽しみ"
+   }
+  },
+  {
+   "id": "Q05",
+   "narration": "部屋の問題の答えは、入り口から見て、いちばん奥の隅です。",
+   "tts_text": "部屋の問題の答えは、入り口から見て、いちばん奥のすみです。",
+   "card": {
+    "type": "big_text",
+    "text": "お金の気が集まるのは",
+    "text2": "入り口から見て、奥の隅",
+    "accent": "奥の隅",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q06",
+   "narration": "入り口から、対角線を引いた先の隅。そこは、財気位と呼ばれます。",
+   "tts_text": "入り口から、たいかくせんを引いた先のすみ。そこは、ざいきいと呼ばれます。",
+   "image_en": "View from the doorway of a clean tidy living room of a modest present-day Japanese public housing apartment (danchi): the far corner diagonally opposite the door is softly lit by the window, with a small sofa and a single healthy potted green plant in that corner, the floor clear. Calm warm daylight. No people. No readable text, no logos, no brand names.",
+   "image": "View from the doorway of a clean tidy living room of a modest present-day Japanese public housing apartment (danchi): the far corner diagonally opposite the door is softly lit by the window, with a small sofa and a single healthy potted green plant in that corner, the floor clear. Calm warm daylight. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "Q07",
+   "narration": "良い気が集まる場所で、ここで長く過ごすと、運が上がると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "奥の隅は",
+     "big": "良い気が集まる場所",
+     "size": 100
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "Q08",
+   "narration": "ソファやいすを置いて、座る場所にするといいそうです。",
+   "card": {
+    "type": "big_text",
+    "text": "奥の隅には",
+    "text2": "座る場所をつくる",
+    "accent": "座る"
+   }
+  },
+  {
+   "id": "G00",
+   "narration": "逆に、金運が上がると言われる行いも、1つお伝えします。",
+   "tts_text": "逆に、きんうんが上がると言われる行いも、ひとつお伝えします。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "奥の隅を空けて、そこに座る",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "金運が上がるリビングの習慣"
+  },
+  {
+   "id": "G01",
+   "narration": "奥の隅を片付けて、そこで、ゆっくり座ることです。",
+   "tts_text": "奥のすみを片付けて、そこで、ゆっくり座ることです。",
+   "image_en": "Bright morning. Inside the living room of a modest present-day Japanese public housing apartment (danchi), now clean and tidy: a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits relaxed on a single chair placed in the far corner diagonally opposite the door, holding a cup of tea in both hands, smiling softly, morning sunlight from the window, the floor and table clear.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Bright morning. Inside the living room of a modest present-day Japanese public housing apartment (danchi), now clean and tidy: a low wooden table, a small two-seat fabric sofa, a TV stand, a window with plain curtains, cream walls: Sawako sits relaxed on a single chair placed in the far corner diagonally opposite the door, holding a cup of tea in both hands, smiling softly, morning sunlight from the window, the floor and table clear."
+  },
+  {
+   "id": "G02",
+   "narration": "座っている間に、良い気をためられる、と言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "奥の隅に座ると",
+     "big": "良い気がたまる",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "G03",
+   "narration": "奥の隅には、物を積まない。",
+   "tts_text": "奥のすみには、物を積まない。",
+   "card": {
+    "type": "rules",
+    "title": "奥の隅を空けて、そこに座る",
+    "items": [
+     "奥の隅には、物を積まない",
+     "いすかソファを置いて、座る",
+     "ときどき窓を開けて、風を通す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G04",
+   "narration": "いすか、ソファを置いて、そこでお茶を飲む。",
+   "card": {
+    "type": "rules",
+    "title": "奥の隅を空けて、そこに座る",
+    "items": [
+     "奥の隅には、物を積まない",
+     "いすかソファを置いて、座る",
+     "ときどき窓を開けて、風を通す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "G05",
+   "narration": "そして、ときどき窓を開けて、空気を動かします。",
+   "card": {
+    "type": "rules",
+    "title": "奥の隅を空けて、そこに座る",
+    "items": [
+     "奥の隅には、物を積まない",
+     "いすかソファを置いて、座る",
+     "ときどき窓を開けて、風を通す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "佐和子さんは、奥の隅に積んでいた段ボールを片付けて、いすを1つ置きました。",
+   "tts_text": "さわこさんは、奥のすみに積んでいた段ボールを片付けて、いすをひとつ置きました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G07",
+   "narration": "朝、そこでお茶を飲むのが、毎日の楽しみになりました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G08",
+   "narration": "ひと月たつと、テーブルにも、床にも、物が残らない日が増えていきました。",
+   "tts_text": "ひとつきたつと、テーブルにも、ゆかにも、物が残らない日が増えていきました。",
+   "card": {
+    "type": "big_text",
+    "text": "ひと月たつと",
+    "text2": "テーブルも床も、空いてきた",
+    "accent": "空いて"
+   }
+  },
+  {
+   "id": "G09",
+   "narration": "孫が来ても、すぐに座ってもらえるのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "片付いたら",
+    "text2": "孫がすぐ座れる",
+    "kicker": "孫"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "G10",
+   "narration": "澄江さんも、片付いたリビングに、お茶を飲みに来るようになりました。",
+   "tts_text": "すみえさんも、片付いたリビングに、お茶を飲みに来るようになりました。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人がリビングでしない5つを、もう一度。",
+   "tts_text": "お金が残る人がリビングでしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "床に物を直に置く",
+     "窓を閉めきったまま",
+     "テーブルに物を出したまま寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、枯れかけの花をそのまま。第4位、切れた電球をそのまま。第3位、床に物を直に置く。",
+   "tts_text": "だいごい、枯れかけの花をそのまま。だいよんい、切れた電球をそのまま。だいさんい、ゆかに物をじかに置く。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "床に物を直に置く",
+     "窓を閉めきったまま",
+     "テーブルに物を出したまま寝る"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、窓を閉めきったまま。そして第1位、テーブルに物を出したまま寝る。",
+   "tts_text": "だいにい、窓を閉めきったまま。そしてだいいちい、テーブルに物を出したまま寝る。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がリビングでしないこと　5つ",
+    "items": [
+     "枯れかけの花をそのまま",
+     "切れた電球をそのまま",
+     "床に物を直に置く",
+     "窓を閉めきったまま",
+     "テーブルに物を出したまま寝る"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上やっていた人は、まず第1位。寝る前に、テーブルを空にしてみてください。",
+   "tts_text": "みっつ以上やっていた人は、まずだいいちい。寝る前に、テーブルをからにしてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上やっていたら",
+    "text2": "まず、テーブルを空にして寝る",
+    "accent": "テーブル"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "次に、朝、窓を5分だけ開ける。どちらも、お金はかかりません。",
+   "tts_text": "次に、朝、窓をごふんだけ開ける。どちらも、お金はかかりません。",
+   "card": {
+    "type": "big_text",
+    "text": "テーブルの次は",
+    "text2": "朝、窓を5分だけ開ける",
+    "accent": "窓"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "片付けたからといって、すぐにお金が増えるとは限りません。",
+   "card": {
+    "type": "big_text",
+    "text": "片付けても",
+    "text2": "すぐ増えるとは限らない",
+    "accent": "すぐ"
+   }
+  },
+  {
+   "id": "K07",
+   "narration": "それでも、朝のリビングの景色は、その夜から変わります。",
+   "same_as": "Q06"
+  },
+  {
+   "id": "K08",
+   "narration": "あなたのリビングは、5つのうち、いくつ当てはまりましたか？",
+   "tts_text": "あなたのリビングは、いつつのうち、いくつ当てはまりましたか？",
+   "card": {
+    "type": "big_text",
+    "text": "あなたのリビングは",
+    "text2": "5つのうち、いくつ？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "K09",
+   "narration": "コメントで、数を教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "thumb": {
+  "layout": "person",
+  "bg": "F10",
+  "line1": "夜のテーブルが",
+  "line2": "●●だらけの家",
+  "judge": "破産します",
+  "hl": [
+   "●●"
+  ]
+ },
+ "thumb_kind": "person",
+ "desc_lead": "枯れかけたままの花、切れたままの電球、床に置いたままの段ボール。年金がほとんど同じでも、お金が残る人と残らない人では、リビングがこれだけ違います。金運の世界で、お金が残る人がリビングでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れた夜に、ほとんどの人がついやってしまうことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、ドライフラワーならいいか・リビングに物を置いたままでいいか・冬も窓を開けるのか、お金の気が集まると言われる部屋の場所もお伝えします。\n\nあなたのリビングは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね🍵",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "desc": "枯れかけたままの花、切れたままの電球、床に置いたままの段ボール。年金がほとんど同じでも、お金が残る人と残らない人では、リビングがこれだけ違います。金運の世界で、お金が残る人がリビングでしないと言われる5つを、第5位から第1位まで順番にお話しします。\n第1位は、疲れた夜に、ほとんどの人がついやってしまうことです。それぞれ昔から言われているわけと、お金をかけずにできる直し方、ドライフラワーならいいか・リビングに物を置いたままでいいか・冬も窓を開けるのか、お金の気が集まると言われる部屋の場所もお伝えします。\n\nあなたのリビングは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね🍵\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "comment": "コメントで、数を教えてくださいね。"
+}

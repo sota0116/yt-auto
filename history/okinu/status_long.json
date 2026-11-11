@@ -1,10 +1,17 @@
 {
  "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/105_リビング",
  "done": [
-  "pick"
+  "pick",
+  "write",
+  "gate_script",
+  "voice"
  ],
  "started": "2026-11-10T20:44:38+09:00",
  "tries": 0,
  "code": "18ca6126926f",
- "stage": "gate_script"
+ "stage": "images",
+ "updated": "2026-11-11T17:02:17+09:00",
+ "busy": {
+  "images": 1
+ }
 }
