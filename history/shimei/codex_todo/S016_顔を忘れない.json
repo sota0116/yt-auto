@@ -2,7 +2,7 @@
  "ch": "shimei",
  "work": "S016_顔を忘れない",
  "portrait": true,
- "made": "2026-11-07 20:22",
+ "made": "2026-11-12 03:17",
  "style_en": "Miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high camera angle. Mostly white and gray, only key objects in red. Vertical phone frame: keep the top 35% of the frame as plain background with no heads or key objects; place the main subject between 35% and 68% of the height.",
  "avoid_en": "logos or emblems of real companies or government agencies, police insignia, readable text, detailed national flags, blood, faces resembling real people",
  "rules": {},
@@ -49,12 +49,6 @@
    "image": "壁一面の写真に赤いピンが次々に刺さっている",
    "image_en": "a large cork board wall filled with hundreds of small blank photo cards, many of them marked with red push pins, placed in the middle of the frame, dramatic spotlight, no text",
    "en": "a large cork board wall filled with hundreds of small blank photo cards, many of them marked with red push pins, placed in the middle of the frame, dramatic spotlight, no text"
-  },
-  {
-   "id": "a08",
-   "image": "コンピューターの模型の前に、赤いピンが1本だけ刺さった小さな板",
-   "image_en": "a plain gray computer tower and monitor model in the white space, next to it a small cork board with only one single red push pin, placed in the middle of the frame, no text on the screen",
-   "en": "a plain gray computer tower and monitor model in the white space, next to it a small cork board with only one single red push pin, placed in the middle of the frame, no text on the screen"
   },
   {
    "id": "a09",

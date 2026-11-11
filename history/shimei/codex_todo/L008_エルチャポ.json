@@ -2,7 +2,7 @@
  "ch": "shimei",
  "work": "L008_エルチャポ",
  "portrait": false,
- "made": "2026-11-10 09:22",
+ "made": "2026-11-12 03:17",
  "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red.",
  "avoid_en": "logos or emblems of real companies or government agencies, readable text, detailed national flags, blood, faces resembling real people, guns pointed at the viewer",
  "rules": {},
@@ -18,12 +18,6 @@
   }
  },
  "cuts": [
-  {
-   "id": "D18",
-   "image": "白い空間に、たくさんの吹き出しの形の白い札が、紙の束になって紺の上着の捜査官のフィギュアの机に積まれている（文字は読めない）",
-   "image_en": "Stacks of many blank white speech-bubble-shaped cards piled on the desk of an investigator figurine in a plain navy windbreaker. No readable text. White space.",
-   "en": "Stacks of many blank white speech-bubble-shaped cards piled on the desk of an investigator figurine in a plain navy windbreaker. No readable text. White space."
-  },
   {
    "id": "D19",
    "image": "白い空間に、黒い携帯の模型の画面が窓になっていて、その奥からいくつもの小さな目の形の赤い光がこちらを見ている",
