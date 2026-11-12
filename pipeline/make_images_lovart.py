@@ -116,6 +116,8 @@ def load_chars(work, s):
     cp = os.path.join(cdir, "characters.json")
     if os.path.exists(cp):
         for k, v in json.load(open(cp, encoding="utf-8")).get("chars", {}).items():
+            if not v.get("desc_en"):  # 声だけの役（絵に出ない。shinshiten 2026-11-06）
+                continue
             out[k] = {"desc_en": v["desc_en"], "sheet": os.path.join(cdir, v.get("sheet", k + ".png"))}
     for k, v in (s.get("characters") or {}).items():
         out[k] = {"desc_en": v["desc_en"], "sheet": os.path.join(work, "images", "_chars", k + ".png")}

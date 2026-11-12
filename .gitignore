@@ -17,6 +17,8 @@ __pycache__/
 vendor/youtube-video-maker/
 # ・motion graphics の見本集（1.2GB。手元で見るだけ。2026-11-03）
 vendor/mg-styles-15/
+# ・よその OSS の参照用 clone（hyperframes・impeccable・remotion skills。手元で読むだけ。2026-11-06）
+vendor/_ref/
 # ・animate の書き出し（作業フォルダの中に作る。念のため）
 **/_anim/**/frames/
 # ・LINE 特典の本体と絵（LINE に登録した人だけに渡す物。毎日の制作は使わない）

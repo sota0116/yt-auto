@@ -12,6 +12,7 @@
 # ・作ったあとに点検を出す（いちばん大きい字の横幅・字の面積・行数・色を変えた語）。NG があっても絵は保存する
 # v2（2026-10-28）：hl・glow・center・shade "both"・点検を足した。前の版は make_thumb_v1_文字入れのみ.py
 # v3（2026-10-29）：edge・marks を足した（金運の競合の「破産します」型。references/15 の参考5）。前の版は make_thumb_v2_2026-10-28.py
+# v3.1（2026-11-08）：帯（box）の上の字に黒い影・太い黒縁を付けない（黄色い札の黒い字がつぶれて読めなかった）
 import json, os, sys
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "vendor", "youtube-video-maker", "scripts"))  # common（vendor の写し）
@@ -77,8 +78,12 @@ def draw_text(im, t, cfg):
     if t.get("glow"):  # 黒い縁の外側に色の光（暗い絵の上で字が浮いて見える）
         glow = outline.filter(ImageFilter.MaxFilter(ow * 2 + 1)).filter(ImageFilter.GaussianBlur(s // 7))
         im.paste(hex_rgb(t["glow"]), (0, 0, W, H), glow.point(lambda v: min(255, int(v * 1.6))))
-    im.paste((0, 0, 0), (s // 22, s // 18, W + s // 22, H + s // 18), outline.filter(ImageFilter.GaussianBlur(s // 14)).point(lambda v: int(v * 0.8)))
-    im.paste((0, 0, 0), (0, 0, W, H), outline)
+    if t.get("box"):  # 帯の上の字：影は付けない。暗い字は縁なし、明るい字は細い黒縁だけ（太い黒縁と影で字がつぶれるのを防ぐ・2026-11-08）
+        cs = colors(t.get("color", "#FFFFFF")); lum = sum(0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2] for c in cs) / len(cs)
+        if lum >= 128: im.paste((0, 0, 0), (0, 0, W, H), mask.filter(ImageFilter.MaxFilter(max(3, ow // 2) | 1)))
+    else:
+        im.paste((0, 0, 0), (s // 22, s // 18, W + s // 22, H + s // 18), outline.filter(ImageFilter.GaussianBlur(s // 14)).point(lambda v: int(v * 0.8)))
+        im.paste((0, 0, 0), (0, 0, W, H), outline)
     if inner: im.paste(hex_rgb(t["edge"]), (0, 0, W, H), inner)
     im.paste(gradient((W, H), colors(t.get("color", "#FFFFFF"))), (0, 0), mask)
     if hl_mask.getbbox():

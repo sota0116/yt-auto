@@ -535,6 +535,49 @@ def main():
             if neta.get(k) is not None and s.get(k) != neta.get(k):
                 ng.append(f"台本の {k}={s.get(k)} が neta.json の {neta.get(k)} と違う（ネタ選びが決めた値のまま）")
 
+    # 15. 原文のカード（quote）の字が、出典の原文（sources の note）の続いた一部か（改善ログ 016 の「次に上げること」。2026-11-10）
+    before = len(ng)
+    srcs = f.get("sources") if isinstance(f.get("sources"), dict) else {}
+    ids = {c["id"] for c in cuts}
+    by_cut = {}
+    for i, q in enumerate(f.get("quotes") or []):
+        if not isinstance(q, dict) or not all(q.get(k) for k in ("cut", "text", "source")):
+            ng.append(f"facts.json の quotes[{i}] に cut・text・source のどれかが無い")
+            continue
+        cut, txt, key = q["cut"], q["text"], q["source"]
+        by_cut.setdefault(cut, []).append(norm(txt))
+        if cut not in ids:
+            ng.append(f"facts.json の quotes[{i}] の cut「{cut}」というカットが台本に無い")
+        src = srcs.get(key)
+        if not isinstance(src, dict):
+            ng.append(f"facts.json の quotes[{i}]（{cut}）の source「{key}」が sources に無い")
+            continue
+        note = src.get("note") or ""
+        if not note:
+            ng.append(f"facts.json の quotes[{i}]（{cut}）の出典「{key}」に note（出典から読めた原文）が無い")
+        elif norm(txt) not in norm(note):
+            ng.append(f"facts.json の quotes[{i}]（{cut}）の字が、出典「{key}」の原文（note）の続いた一部でない：{txt[:28]}")
+        elif cut in ids and key not in [k for k, v in srcs.items() if cut in (v.get("used_for") or [])]:
+            warn.append(f"facts.json の quotes[{i}] の出典「{key}」の used_for に {cut} が無い")
+    for c in cuts:
+        cd = c.get("card") or {}
+        if cd.get("type") != "quote":
+            continue
+        t = cd.get("text") or ""
+        if not t:
+            ng.append(f"{c['id']} 原文のカードに text が無い")
+            continue
+        got = by_cut.get(c["id"]) or []
+        if not got:
+            ng.append(f"{c['id']} 原文のカードなのに、facts.json の quotes に {c['id']} の行が無い（原文と照らせない）")
+        elif norm(t) not in got:
+            ng.append(f"{c['id']} 原文のカードの字が、facts.json の quotes の原文と1字違う：{t[:28]}")
+        if not cd.get("by"):
+            warn.append(f"{c['id']} 原文のカードに by（出典の名前）が無い")
+    nq = sum(1 for c in cuts if (c.get("card") or {}).get("type") == "quote")
+    if nq and len(ng) == before:
+        ok.append(f"原文のカード {nq}枚が、facts.json の quotes と出典の原文（note）と1字も違わない")
+
     rep = ["OK: " + x for x in ok] + ["注意: " + x for x in warn] + ["NG: " + x for x in ng]
     print("\n".join(rep))
     print("→ NG 0件" if not ng else f"→ NG {len(ng)}件。直してから進める")

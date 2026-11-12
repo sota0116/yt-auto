@@ -2,6 +2,8 @@
 #   予約を入れる道具（upload_nihongi.py --long・reschedule_nihongi.py・upload_okinu.py・reschedule_okinu.py）が、
 #   予約の前に check(ch, at) を呼ぶ。同じ日（日本時間）に公開済みか予約中の横動画が既にあれば止まる
 # ・横かショートか：記録の format → ファイル名（long_uploaded.json は横・shorts の付く物はショート）→ 作業フォルダの名前（S001_… はショート）
+# ・2026-11-07：記録を探す形を *uploaded.json → *uploaded*.json に直した。別系統の自動が書く uploaded_auto.json に
+#   当たらず、そちらで入れた横動画（102_カバン・11/8 18:00）を同じ日の重なりとして数えられなかったため（旧版は pipeline\_old\long_day_guard_before_globfix_2026-11-07.py）
 # ・数えない記録：消えた（missing）・差し替えた（retired）・予約も公開も無い（非公開のまま）物
 # ・job・psy は見張り（watch.py）が「明日の予約が無い日だけ1本」入れるので、もともと1日1本まで
 import datetime, glob, json, os, re, sys
@@ -31,7 +33,7 @@ def day_of(s):
 def same_day(ch, at, skip_vid=None):
     """at（日本時間）と同じ日に公開済みか予約中の、同じチャンネルの横動画の記録"""
     hits = []
-    for p in glob.glob(os.path.join(ROOT, "history", ch, "*uploaded.json")):
+    for p in glob.glob(os.path.join(ROOT, "history", ch, "*uploaded*.json")):
         for h in json.load(open(p, encoding="utf-8")):
             if not isinstance(h, dict) or h.get("missing") or h.get("retired") or h.get("video_id") == skip_vid:
                 continue
@@ -42,7 +44,7 @@ def same_day(ch, at, skip_vid=None):
 
 def check_vid(ch, vid, at):
     """予約を動かす時（reschedule_*.py）：動かす動画が横動画の時だけ、行き先の日を確かめる"""
-    for p in glob.glob(os.path.join(ROOT, "history", ch, "*uploaded.json")):
+    for p in glob.glob(os.path.join(ROOT, "history", ch, "*uploaded*.json")):
         for h in json.load(open(p, encoding="utf-8")):
             if isinstance(h, dict) and h.get("video_id") == vid:
                 if is_long(p, h):
