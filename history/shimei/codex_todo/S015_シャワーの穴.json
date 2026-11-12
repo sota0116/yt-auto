@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S015_シャワーの穴",
+ "portrait": true,
+ "made": "2026-11-07 20:22",
+ "style_en": "Miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high camera angle. Mostly white and gray, only key objects in red. Vertical phone frame: keep the top 35% of the frame as plain background with no heads or key objects; place the main subject between 35% and 68% of the height.",
+ "avoid_en": "logos or emblems of real companies or government agencies, readable text, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "独房のシャワーの床に開いた四角い穴を、上から見た模型",
+   "image_en": "a small tiled prison shower floor diorama seen from above, a neat square dark hole cut into the floor in the middle of the frame, a metal ladder going down, cold light, no people",
+   "en": "a small tiled prison shower floor diorama seen from above, a neat square dark hole cut into the floor in the middle of the frame, a metal ladder going down, cold light, no people"
+  },
+  {
+   "id": "a02",
+   "image": "高い塀と見張りの塔に囲まれた灰色の刑務所の模型",
+   "image_en": "a large gray maximum-security prison diorama with high double walls and watchtowers, placed in the middle of the frame on a white floor, seen from slightly above, no flags, no text",
+   "en": "a large gray maximum-security prison diorama with high double walls and watchtowers, placed in the middle of the frame on a white floor, seen from slightly above, no flags, no text"
+  },
+  {
+   "id": "a03",
+   "image": "独房の模型で、低い仕切りの奥へ入っていく男の後ろ姿",
+   "image_en": "a small prison cell diorama seen from above, a short stocky faceless man figurine with short black hair and a thick black mustache shape, plain gray prison clothes, stepping behind a low concrete partition into the shower corner, only his back visible, figure placed low in the frame",
+   "en": "a small prison cell diorama seen from above, a short stocky faceless man figurine with short black hair and a thick black mustache shape, plain gray prison clothes, stepping behind a low concrete partition into the shower corner, only his back visible, figure placed low in the frame"
+  },
+  {
+   "id": "a04",
+   "image": "誰もいない独房の模型。ベッドと低い仕切りだけ",
+   "image_en": "an empty small prison cell diorama with a plain bed and a low concrete shower partition, nobody inside, cold quiet light",
+   "en": "an empty small prison cell diorama with a plain bed and a low concrete shower partition, nobody inside, cold quiet light"
+  },
+  {
+   "id": "a06",
+   "image": "地面の断面の模型。刑務所の下から細いトンネルが遠くへ伸びる",
+   "image_en": "a cross-section diorama of the ground: a gray prison building on top, and from under it one very thin tunnel stretching far away underground toward a small house, the tunnel placed in the middle of the frame",
+   "en": "a cross-section diorama of the ground: a gray prison building on top, and from under it one very thin tunnel stretching far away underground toward a small house, the tunnel placed in the middle of the frame"
+  },
+  {
+   "id": "a08",
+   "image": "狭いトンネルの模型の中。天井に小さな電球、壁に管",
+   "image_en": "inside a narrow dirt tunnel diorama seen from one end, small light bulbs along the ceiling, a plastic air pipe along the wall, thin metal rails on the floor vanishing into the distance",
+   "en": "inside a narrow dirt tunnel diorama seen from one end, small light bulbs along the ceiling, a plastic air pipe along the wall, thin metal rails on the floor vanishing into the distance"
+  },
+  {
+   "id": "a09",
+   "image": "トンネルの中のレールの上に、台車をつけた古いバイク",
+   "image_en": "inside the narrow tunnel diorama, an old small motorcycle modified to run on thin rails, attached to a small flat cart, placed in the middle of the frame, nobody on it, dim bulbs",
+   "en": "inside the narrow tunnel diorama, an old small motorcycle modified to run on thin rails, attached to a small flat cart, placed in the middle of the frame, nobody on it, dim bulbs"
+  },
+  {
+   "id": "a10",
+   "image": "野原の中の建てかけのれんがの家の模型",
+   "image_en": "a small unfinished brick house diorama standing alone in an empty field, no roof finished, placed in the middle of the frame, evening light, no people",
+   "en": "a small unfinished brick house diorama standing alone in an empty field, no roof finished, placed in the middle of the frame, evening light, no people"
+  }
+ ]
+}

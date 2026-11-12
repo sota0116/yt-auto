@@ -116,6 +116,19 @@
    ],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 1326
+  },
+  "d7": {
+   "views": 614,
+   "averageViewPercentage": 72.49,
+   "averageViewDuration": 26,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "13%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1332
   }
  },
  "002_家じゅうの小銭": {
@@ -131,6 +144,15 @@
    ],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 94
+  },
+  "d7": {
+   "views": 136,
+   "averageViewPercentage": 36.71,
+   "averageViewDuration": 223,
+   "subscribersGained": 3,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 147
   }
  },
  "S003_お札の向き": {
@@ -144,6 +166,15 @@
    "直す所": [],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 1355
+  },
+  "d7": {
+   "views": 1365,
+   "averageViewPercentage": 114.82999999999998,
+   "averageViewDuration": 36,
+   "subscribersGained": 4,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1361
   }
  },
  "003_玄関のNG5": {
@@ -157,6 +188,15 @@
    "直す所": [],
    "取った日": "2026-11-03",
    "再生（公開ページ）": 46
+  },
+  "d7": {
+   "views": 46,
+   "averageViewPercentage": 41.66,
+   "averageViewDuration": 277,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-07",
+   "再生（公開ページ）": 47
   }
  },
  "S004_種銭": {
@@ -174,6 +214,19 @@
    ],
    "取った日": "2026-11-03",
    "再生（公開ページ）": 1233
+  },
+  "d7": {
+   "views": 1233,
+   "averageViewPercentage": 63.81,
+   "averageViewDuration": 21,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 1236
   }
  },
  "S101_母の形見の10円玉": {
@@ -191,6 +244,18 @@
    ],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 1171
+  },
+  "d7": {
+   "views": 1180,
+   "averageViewPercentage": 52.839999999999996,
+   "averageViewDuration": 20,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 1182
   }
  },
  "004_トイレのNG5": {
@@ -204,6 +269,17 @@
    "直す所": [],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 184
+  },
+  "d7": {
+   "views": 208,
+   "averageViewPercentage": 30.45,
+   "averageViewDuration": 233,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 211
   }
  },
  "S102_通帳": {
@@ -217,26 +293,192 @@
    "直す所": [],
    "取った日": "2026-11-05",
    "再生（公開ページ）": 1471
+  },
+  "d7": {
+   "views": 1477,
+   "averageViewPercentage": 115.16,
+   "averageViewDuration": 46,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 1479
   }
  },
  "S103_使い終わった古い財布": {
   "type": null,
-  "video_id": "QYrMa7dJfcA"
+  "video_id": "QYrMa7dJfcA",
+  "h72": {
+   "views": 1024,
+   "averageViewPercentage": 149.49,
+   "averageViewDuration": 56,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 1677
+  },
+  "d7": {
+   "views": 1686,
+   "averageViewPercentage": 132.16,
+   "averageViewDuration": 50,
+   "subscribersGained": 4,
+   "直す所": [],
+   "取った日": "2026-11-10",
+   "再生（公開ページ）": 1697
+  }
  },
  "005_寝室のNG5": {
   "type": "okinu",
-  "video_id": "r35vevoBSkY"
+  "video_id": "r35vevoBSkY",
+  "h72": {
+   "views": 10,
+   "averageViewPercentage": 37.34,
+   "averageViewDuration": 295,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 234
+  },
+  "d7": {
+   "views": 439,
+   "averageViewPercentage": 19.53,
+   "averageViewDuration": 154,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-10",
+   "再生（公開ページ）": 450
+  }
  },
  "S104_財布に入れてはいけない物": {
   "type": null,
-  "video_id": "DuF-YE4539g"
+  "video_id": "DuF-YE4539g",
+  "h72": {
+   "views": 508,
+   "averageViewPercentage": 119.41999999999999,
+   "averageViewDuration": 48,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 1250
+  },
+  "d7": {
+   "views": 1255,
+   "averageViewPercentage": 112.43,
+   "averageViewDuration": 46,
+   "subscribersGained": 4,
+   "直す所": [],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 1255
+  }
  },
  "S105_実は貧乏な人に多い財布の": {
   "type": null,
-  "video_id": "6u4iqraepck"
+  "video_id": "6u4iqraepck",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 10
+  }
  },
  "006_台所のNG5": {
   "type": "okinu",
-  "video_id": "OvYmHAfxZso"
+  "video_id": "OvYmHAfxZso",
+  "h72": {
+   "views": 32,
+   "averageViewPercentage": 41.28,
+   "averageViewDuration": 322,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 40
+  }
+ },
+ "S106_財布の中の家族の写真": {
+  "type": null,
+  "video_id": "f4Ii5nTRfFw",
+  "h72": {
+   "views": 235,
+   "averageViewPercentage": 96.08,
+   "averageViewDuration": 33,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 348
+  }
+ },
+ "S109_家計簿のノート": {
+  "type": null,
+  "video_id": "gIgpozyehS8",
+  "h72": {
+   "views": 975,
+   "averageViewPercentage": 54.59,
+   "averageViewDuration": 20,
+   "subscribersGained": 3,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "13%あたりで急に落ちる（9%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-10",
+   "再生（公開ページ）": 1053
+  }
+ },
+ "102_カバン": {
+  "type": null,
+  "video_id": "JGgdeMePMEs",
+  "h72": {
+   "views": 27,
+   "averageViewPercentage": 17.98,
+   "averageViewDuration": 146,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 36
+  }
+ },
+ "S110_財布の輪ゴム": {
+  "type": null,
+  "video_id": "DJuPy4-TMws",
+  "h72": {
+   "views": 144,
+   "averageViewPercentage": 55.48,
+   "averageViewDuration": 24,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 1295
+  }
+ },
+ "S113_新札": {
+  "type": null,
+  "video_id": "uuSoK7C08VM"
+ },
+ "103_洗面所": {
+  "type": null,
+  "video_id": "dn9l3F1AQio"
+ },
+ "S114_エコバッグの底のレシート": {
+  "type": null,
+  "video_id": "vC8LKtlxRLY"
+ },
+ "S116_お釣りの小銭": {
+  "type": null,
+  "video_id": "E8G0Afqrhpw"
  }
 }

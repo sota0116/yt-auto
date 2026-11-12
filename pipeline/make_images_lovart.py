@@ -21,6 +21,9 @@
 #   失効前（lovart_boost.expiring）は最初から速いモードの回が多く、待つと無料の回が毎回止まるので、その日の上限の分は一緒に頼んで数える（2026-10-31）
 # ・数え漏れの直し（2026-11-05。実際の減りが記録の約1.6倍だった）：無料で頼んだ絵も、速いモードを見た後にできたら受け取った時に数える。
 #   設定画も数える。止まっている間も60秒ごとにモードを見直す。新しく頼む前に毎回その日の残りを確かめる。--boost で捨てる順番待ちも数える
+# ・クレジット不足（2026-11-07 本人「OpenAI の API なしで Codex で」）：Lovart が「クレジットが足りない」で断ったら、その回は残りを Lovart に頼まない
+#   （前は残りの全カットを1枚ずつ頼んで全部断られ、回数の枠だけ食っていた）。残りは「失敗」にし、PC の Codex（make_images_codex.py）が
+#   作って release に置いた絵を次の回で受け取る（run_daily.py の codex_ready が絵の段へ戻す）。お金のかかる手は使わない
 import argparse, importlib.util, json, os, sys, time
 from PIL import Image
 
@@ -137,7 +140,8 @@ def sheet_prompt(style, ch):
 def make_sheets(sk, chars, need, style, par, project, mode=lambda: "free", spend=lambda what: None):
     """設定画が無い人物の設定画を作る（confirm はしない）。できなかった人物の id を返す。
     mode() は "free"／"join"／"boost"／"pause"（main の mode_now）。速いモードの間に頼んだ物と、速いモードの間にできた物は spend で数える
-    （2026-11-05：設定画は数えておらず、実際の減りが記録の約1.6倍になった一因）。"pause" の間は新しく頼まない"""
+    （2026-11-05：設定画は数えておらず、実際の減りが記録の約1.6倍になった一因）。"pause" の間は新しく頼まない。
+    Lovart がクレジット不足で断ったら、残りは頼まない（2026-11-07。PC の Codex は設定画も自分で作る）"""
     todo = [k for k in need if not os.path.exists(chars[k]["sheet"])]
     waiting, t_end = {}, time.time() + WAIT_MAX
     m, checked = (mode(), time.time()) if todo else ("free", 0)
@@ -161,10 +165,15 @@ def make_sheets(sk, chars, need, style, par, project, mode=lambda: "free", spend
                 if m != "free":
                     spend(f"{k} の設定画")
             except Exception as e:
+                if no_credit(e):  # 頼めていない（減ってもいない）。残りは Lovart に頼まない
+                    print(k, "Lovart のクレジットが足りないので、設定画は Lovart に頼まない（PC の Codex の絵を待つ）", str(e)[:120], flush=True)
+                    todo.clear(); break
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
                     print(k, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)  # 2026-10-30 黙って45秒ごとに頼み直すと、断られた分まで毎時600回の枠を食い、全員が4時間止まった
                     todo.insert(0, k); time.sleep(120); break
                 print(k, "設定画を頼めなかった", str(e)[:120], flush=True)
+        if not todo and not waiting:
+            break
         time.sleep(15)
         for k in list(waiting):
             w = waiting[k]
@@ -245,6 +254,62 @@ def to_png(src, dst, portrait=False):
     im.save(dst)
 
 
+CODEX_URL = os.environ.get("CODEX_IMAGES_URL", "https://github.com/sota0116/yt-auto/releases/download/codex-images/")
+
+
+def codex_name(ch, work, cut):
+    """PC の Codex（ChatGPT の画像生成）で先に作った絵の名前（make_images_codex.py と同じ決まり）。
+    場面の文が変わったら別の名前になり、古い絵は使わない"""
+    import hashlib
+    h = lambda x, n: hashlib.sha1(x.encode("utf-8")).hexdigest()[:n]
+    return f"{ch}__{h(os.path.basename(os.path.normpath(work)), 10)}__{cut['id']}__{h(cut.get('image_en') or cut.get('image', ''), 6)}.jpg"
+
+
+def codex_fill(work, ch, cuts, ids, log, portrait):
+    """2026-11-07：Lovart のクレジットが 11/16 まで0で、無料モードでは1本100枚以上が終わらないため、
+    PC の Codex で作って GitHub の release（codex-images）に置いた絵を先に受け取る。無い絵（404）は今までどおり Lovart で作る。
+    鍵は要らない（公開の release）。CODEX_IMAGES_URL を空にすると使わない"""
+    if not CODEX_URL or not ids:
+        return []
+    import urllib.request, urllib.error, tempfile
+    from concurrent.futures import ThreadPoolExecutor
+    img = os.path.join(work, "images")
+
+    def one(i):
+        try:
+            with urllib.request.urlopen(CODEX_URL + codex_name(ch, work, cuts[i]), timeout=60) as r:
+                data = r.read()
+        except urllib.error.HTTPError as e:
+            return None if e.code == 404 else f"{i} Codex の絵を受け取れない：{e.code}"
+        except Exception as e:
+            return f"{i} Codex の絵を受け取れない：{type(e).__name__}"
+        with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as f:
+            f.write(data)
+        try:
+            to_png(f.name, os.path.join(img, i + ".png"), portrait)
+        finally:
+            os.remove(f.name)
+        return i
+
+    with ThreadPoolExecutor(8) as ex:
+        res = list(ex.map(one, ids))
+    got = [r for r in res if r in ids]
+    for r in res:
+        if r and r not in ids:
+            print(r, flush=True)
+    for i in got:
+        log[i] = {"状態": "できた", "元": "codex", "回": log.get(i, {}).get("回", 1)}
+    if got:
+        print(f"Codex で作ってあった絵を {len(got)} 枚受け取りました", flush=True)
+    return got
+
+
+def no_credit(e):
+    """Lovart の「クレジットが足りない」の断りか（"You don't have enough Lovart credits for this generation. No task was submitted…"）"""
+    s = str(e).lower()
+    return "enough lovart credits" in s or ("credit" in s and any(w in s for w in ("not enough", "insufficient", "don't have enough")))
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("work")
@@ -255,6 +320,23 @@ def main():
     a.add_argument("--fix", action="append", default=[], help="<id>=<追加の指示>（絵ゲートで落ちた所の作り直し用）")
     a.add_argument("--boost", action="store_true", help="速いモードの間だけ（run_daily.py が使う）。--only の残りを頼み直し、使った量を数える")
     a = a.parse_args()
+    if not a.force and not a.boost:  # Codex で作ってあった絵を先に受け取る。全部そろえば Lovart は呼ばない（2026-11-07）
+        s0 = json.load(open(os.path.join(a.work, "script.json"), encoding="utf-8"))
+        fx0 = {f.split("=", 1)[0] for f in a.fix}
+        only0 = set(filter(None, a.only.split(","))) | fx0
+        cuts0 = {c["id"]: c for c in s0["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")
+                 and (not only0 or c["id"] in only0)}
+        img0 = os.path.join(a.work, "images")
+        os.makedirs(img0, exist_ok=True)
+        need0 = [i for i in cuts0 if i not in fx0 and not os.path.exists(os.path.join(img0, i + ".png"))]
+        lp0 = os.path.join(img0, "_lovart.json")
+        log0 = json.load(open(lp0, encoding="utf-8")) if os.path.exists(lp0) else {}
+        ch0 = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
+        if codex_fill(a.work, ch0, cuts0, need0, log0, s0.get("format") == "short"):
+            json.dump(log0, open(lp0, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if not fx0 and all(os.path.exists(os.path.join(img0, i + ".png")) for i in cuts0):
+            print(f"できた {len(cuts0)} 枚／できていない 0 枚 []（Lovart は呼んでいない）")
+            sys.exit(0)
     sk = client()
     free = lambda: is_free(sk)
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(a.work))))
@@ -332,6 +414,17 @@ def main():
     portrait = s.get("format") == "short"
     print(f"Lovart（{'速いモード' if a.boost else '無料モード'}・Nano Banana 2）：新しく頼む {len(queue)} 枚・前回の続き {len(waiting)} 枚（同時に{a.par}本）", flush=True)
     t_end = time.time() + WAIT_MAX
+    nocred = []
+
+    def stop_nocred():
+        """Lovart がクレジット不足で断った後の残り（queue）は頼まずに「失敗」にする。頼めていないので「回」は増やさない（2026-11-07）"""
+        for i in queue:
+            log[i] = {"状態": "失敗", "理由": "Lovart のクレジットが足りない。PC の Codex が作るのを待つ（次の回で受け取る）",
+                      "回": log.get(i, {}).get("回", 0) if not (a.force or i in fix) else 0}
+        nocred.extend(queue)
+        queue.clear()
+        save()
+
     while ((queue and not paused) or waiting) and time.time() < t_end:
         if time.time() - checked[0] > 60:  # 2026-11-05：止まっている間も見直す（前は一度止まると見直さず、速いモードの間にできた絵を数えなかった）
             checked[0] = time.time()
@@ -360,6 +453,9 @@ def main():
                               project, attachments=attach(i) or None, prefer_models=MODEL,
                               include_tools=MODEL["IMAGE"], mode="fast")
             except Exception as e:
+                if no_credit(e):  # 頼めていない（減ってもいない）。残りも Lovart に頼まず、PC の Codex を待つ（2026-11-07）
+                    print(i, "Lovart のクレジットが足りないので、残りは Lovart に頼まない", str(e)[:120], flush=True)
+                    queue.insert(0, i); stop_nocred(); break
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時に頼める数の上限・回数の上限は、待って頼み直す
                     print(i, "順番待ち（2分あけて頼み直す）", str(e)[:80], flush=True)  # 2026-10-30 黙って45秒ごとに頼み直すと、断られた分まで毎時600回の枠を食い、全員が4時間止まった
                     queue.insert(0, i); time.sleep(120); break
@@ -371,6 +467,8 @@ def main():
             if paid:
                 spend(f"{i} の絵")
             save()
+        if not queue and not waiting:
+            break
         time.sleep(15)
         for i in list(waiting):
             w = waiting[i]
@@ -415,6 +513,8 @@ def main():
     for i in waiting:
         print(i, "まだ待ち（もう一度動かすと続きを受け取る）", flush=True)
     bad = [i for i in todo if log.get(i, {}).get("状態") != "できた"]
+    if nocred:
+        print(f"Lovart のクレジット不足で頼まなかった {len(nocred)} 枚は、PC の Codex が release に置いたら次の回で受け取ります", flush=True)
     print(f"できた {len(todo) - len(bad)} 枚／できていない {len(bad)} 枚 {bad}")
     sys.exit(1 if bad else 0)
 

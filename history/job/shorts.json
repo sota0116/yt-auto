@@ -483,5 +483,377 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-05T10:13:10+09:00"
+ },
+ {
+  "work": "20261106_1010_0",
+  "topic_id": "rank_会社員_労働時間_lo",
+  "kind": "rank",
+  "measure": "労働時間",
+  "title": "会社員の仕事で、働く時間が短い5つ｜1位と5位は月に23時間差 #年収 #仕事",
+  "hook": "早く帰れる\n会社員は？",
+  "banner": [
+   "時間が短い順",
+   "会社員の仕事10から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-06T10:12:14+09:00"
+ },
+ {
+  "work": "20261106_1012_r1",
+  "topic_id": "routine_タクシー運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": "タクシー運転手の1日｜客を乗せる前の朝5時、13時間の決まり #年収 #仕事",
+  "hook": "乗せる前の\n朝5時",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-06T10:14:47+09:00"
+ },
+ {
+  "work": "20261106_1014_1",
+  "topic_id": "duel_介護職員（施設）_警備員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": "介護職員と警備員の残業を比べると｜年収はほぼ同じなのに #年収 #仕事",
+  "hook": "年収同じ\n残業は？",
+  "banner": [
+   "残業くらべ",
+   "年収が近い2職業"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-06T10:16:08+09:00"
+ },
+ {
+  "work": "20261107_0927_0",
+  "topic_id": "duel_タクシー運転手_バス運転手_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "title": "タクシー運転手とバス運転手のボーナスを比べると｜年収はほぼ同じなのに #年収 #仕事",
+  "hook": "同じ年収\n何が違う？",
+  "banner": [
+   "ボーナス差",
+   "タクシーとバス"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-07T09:28:40+09:00"
+ },
+ {
+  "work": "20261107_0928_r1",
+  "topic_id": "routine_バス運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": "バス運転手の1日｜客が乗る前の朝5時、拘束13時間の決まり #年収 #仕事",
+  "hook": "客が乗る前の\n営業所",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-07T09:31:12+09:00"
+ },
+ {
+  "work": "20261107_0931_1",
+  "topic_id": "rank_乗り物_時給_lo",
+  "kind": "rank",
+  "measure": "時給",
+  "title": "乗り物の仕事で時給が安い5つ｜1位と5位は約1,230円差 #年収 #仕事",
+  "hook": "時給最安は\nどの仕事？",
+  "banner": [
+   "時給が低い順",
+   "乗り物の仕事7から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-07T09:32:39+09:00"
+ },
+ {
+  "work": "20261108_0901_0",
+  "topic_id": "duel_ホール係（飲食物給仕）_美容師・理容師_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "title": "ホール係と美容師のボーナスを比べると｜年収は近いのに約3.0倍の差 #年収 #仕事",
+  "hook": "ボーナス\n同じ？",
+  "banner": [
+   "ボーナス比較",
+   "ホール係と美容師"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-08T09:03:16+09:00"
+ },
+ {
+  "work": "20261108_0903_r1",
+  "topic_id": "routine_医師",
+  "kind": "routine",
+  "measure": "1日_医療・福祉",
+  "title": "医師の1日｜夜の病院で、夕方5時15分から始まる当直 #年収 #仕事",
+  "hook": "白衣のまま\n迎える朝",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-08T09:06:15+09:00"
+ },
+ {
+  "work": "20261108_0906_1",
+  "topic_id": "duel_タクシー運転手_幼稚園の先生・保育教諭_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": "タクシー運転手と幼稚園の先生の残業を比べると｜年収はほぼ同じなのに #年収 #仕事",
+  "hook": "ほぼ同年収\n残業は？",
+  "banner": [
+   "残業くらべ",
+   "タクシーと保育教諭"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-08T09:07:38+09:00"
+ },
+ {
+  "work": "20261109_0909_0",
+  "topic_id": "rank_全体_労働時間_hi",
+  "kind": "rank",
+  "measure": "労働時間",
+  "title": "月に一番長く働く5つの仕事｜1位と5位は月に22時間差 #年収 #仕事",
+  "hook": "一番長く\n働くのは？",
+  "banner": [
+   "長く働く順",
+   "主な職業38から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-09T09:10:48+09:00"
+ },
+ {
+  "work": "20261109_0910_r1",
+  "topic_id": "routine_医師",
+  "kind": "routine",
+  "measure": "1日_医療・福祉",
+  "title": "医師の1日｜病院が眠ったあと、夕方6時から朝8時の仕事 #年収 #仕事",
+  "hook": "病院が眠る\nあとの廊下",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-09T09:13:39+09:00"
+ },
+ {
+  "work": "20261109_0913_1",
+  "topic_id": "duel_介護職員（施設）_美容師・理容師_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "title": "介護職員と美容師のボーナスを比べると｜年収はほぼ同じなのに約5.1倍の差 #年収 #仕事",
+  "hook": "年収同じ\n賞与は？",
+  "banner": [
+   "ボーナス比較",
+   "介護職員と美容師"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-09T09:14:59+09:00"
+ },
+ {
+  "work": "20261110_1159_0",
+  "topic_id": "duel_訪問介護員（ヘルパー）_警備員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:40+09:00"
+ },
+ {
+  "work": "20261110_1159_r1",
+  "topic_id": "routine_バス運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:45+09:00"
+ },
+ {
+  "work": "20261110_1159_1",
+  "topic_id": "rank_現場_時給_hi",
+  "kind": "rank",
+  "measure": "時給",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-10T11:59:50+09:00"
+ },
+ {
+  "work": "20261111_0957_0",
+  "topic_id": "duel_歯科衛生士_警備員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-11T09:57:30+09:00"
+ },
+ {
+  "work": "20261111_0957_r1",
+  "topic_id": "routine_訪問介護員（ヘルパー）",
+  "kind": "routine",
+  "measure": "1日_医療・福祉",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-11T09:57:35+09:00"
+ },
+ {
+  "work": "20261111_0957_1",
+  "topic_id": "duel_大型トラック運転手_大工_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-11T09:57:40+09:00"
+ },
+ {
+  "work": "20261111_2008_0",
+  "topic_id": "rank_会社員_労働時間_hi",
+  "kind": "rank",
+  "measure": "労働時間",
+  "title": "会社員の仕事で働く時間が長い5つ｜1位と5位は月に13時間差 #年収 #仕事",
+  "hook": "184時間\n働く仕事",
+  "banner": [
+   "長く働く順",
+   "会社員の10職業"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-11T20:09:52+09:00"
+ },
+ {
+  "work": "20261111_2009_r1",
+  "topic_id": "routine_訪問介護員（ヘルパー）",
+  "kind": "routine",
+  "measure": "1日_医療・福祉",
+  "title": "訪問介護員の1日｜他人の台所に立つ朝9時から夕方5時半 #年収 #仕事",
+  "hook": "他人の家を\n渡り歩く1日",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-11T20:13:27+09:00"
+ },
+ {
+  "work": "20261111_2013_1",
+  "topic_id": "duel_ケアマネージャー_バス運転手_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": "ケアマネージャーとバス運転手の残業を比べると｜年収が近いのに分かれた #年収 #仕事",
+  "hook": "年収同じ\n残業は？",
+  "banner": [
+   "残業くらべ",
+   "ケアマネとバス運転手"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-11T20:14:37+09:00"
+ },
+ {
+  "work": "20261112_1103_0",
+  "topic_id": "duel_介護職員（施設）_販売店員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": "介護職員と販売店員の残業を比べると｜年収はほぼ同じなのに2倍差 #年収 #仕事",
+  "hook": "年収同じ\n残業2倍？",
+  "banner": [
+   "残業くらべ",
+   "介護職員と販売店員"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-12T11:04:10+09:00"
+ },
+ {
+  "work": "20261112_1104_r1",
+  "topic_id": "routine_電車の運転士",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": "電車の運転士の1日｜仮眠室で終わる、午後2時からの勤務 #年収 #仕事",
+  "hook": "電車を降りて\n向かう先",
+  "banner": null,
+  "編集の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-12T11:06:43+09:00"
+ },
+ {
+  "work": "20261112_1106_1",
+  "topic_id": "rank_現場_年齢_hi",
+  "kind": "rank",
+  "measure": "年齢",
+  "title": "現場の仕事で平均年齢が高い5つ｜1位と5位は約9歳差 #年収 #仕事",
+  "hook": "平均年齢\n最高は？",
+  "banner": [
+   "年齢が高い順",
+   "現場の仕事8から"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-12T11:07:34+09:00"
  }
 ]

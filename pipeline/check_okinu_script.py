@@ -380,6 +380,13 @@ def check_layout(th, cuts, ng, warn, num):
         v = th.get(k)
         if v and (v not in by_id or not (by_id[v].get("image_en") or by_id[v].get("image") or by_id[v].get("img_from") or by_id[v].get("same_as"))):
             ng.append(f"thumb.{k}「{v}」が、絵のあるカットの id でない")
+            continue
+        r, seen = v, set()  # same_as をたどった元のカット。共有ポーズ絵はどの回も同じ絵なので、サムネには使わない（手順書 v1.9 §9）
+        while r and r in by_id and by_id[r].get("same_as") and r not in seen:
+            seen.add(r)
+            r = by_id[r]["same_as"]
+        if r and (by_id.get(r) or {}).get("img_from"):
+            ng.append(f"thumb.{k}「{v}」が共有ポーズ絵（{by_id[r]['img_from']}）。サムネの絵は、この回で新しく作る絵（image_en）のカットにする（同じ絵を回をまたいで使わない。手順書 v1.9 §9）")
     j = th.get("judge") or ""
     if j and not 4 <= len(j) <= 9:
         warn.append(f"判定の語 {len(j)}字「{j}」（画面の幅の6割以上に収まる4〜9字）")

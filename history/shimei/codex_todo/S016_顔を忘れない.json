@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S016_顔を忘れない",
+ "portrait": true,
+ "made": "2026-11-12 03:17",
+ "style_en": "Miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high camera angle. Mostly white and gray, only key objects in red. Vertical phone frame: keep the top 35% of the frame as plain background with no heads or key objects; place the main subject between 35% and 68% of the height.",
+ "avoid_en": "logos or emblems of real companies or government agencies, police insignia, readable text, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "顔の無い写真が壁一面に並び、その前に立つ警察官のフィギュアの後ろ姿",
+   "image_en": "a wall covered with many small blank photo cards (faces left as smooth blank shapes, no details) in the white space, a faceless police officer figurine in a plain dark uniform without badges standing in front of it seen from behind, figure placed low in the frame",
+   "en": "a wall covered with many small blank photo cards (faces left as smooth blank shapes, no details) in the white space, a faceless police officer figurine in a plain dark uniform without badges standing in front of it seen from behind, figure placed low in the frame"
+  },
+  {
+   "id": "a02",
+   "image": "白い空間に並ぶ、紺の制服の警察官のフィギュア数体",
+   "image_en": "a small group of five faceless police officer figurines in plain dark uniforms without badges or text, standing in a row in the middle of the frame, white space, soft shadows",
+   "en": "a small group of five faceless police officer figurines in plain dark uniforms without badges or text, standing in a row in the middle of the frame, white space, soft shadows"
+  },
+  {
+   "id": "a03",
+   "image": "白い人のフィギュアが100体並び、1体だけが赤い",
+   "image_en": "a hundred tiny plain white faceless figurines arranged in a neat grid on the white floor, exactly one of them in red, grid placed in the middle of the frame",
+   "en": "a hundred tiny plain white faceless figurines arranged in a neat grid on the white floor, exactly one of them in red, grid placed in the middle of the frame"
+  },
+  {
+   "id": "a04",
+   "image": "夜の街の模型。割れた店の窓と、遠くの白い光",
+   "image_en": "a miniature night street diorama of a city with row houses and small shops, a few shop windows broken, distant white light, no fire, no people, no signs, placed in the middle of the frame",
+   "en": "a miniature night street diorama of a city with row houses and small shops, a few shop windows broken, distant white light, no fire, no people, no signs, placed in the middle of the frame"
+  },
+  {
+   "id": "a05",
+   "image": "白い空間に、ぼやけた人影の写真が山のように積まれている",
+   "image_en": "a big pile of small printed photos showing blurry dark human silhouettes (no faces visible) heaped on a white table in the middle of the frame, a small security camera model beside it",
+   "en": "a big pile of small printed photos showing blurry dark human silhouettes (no faces visible) heaped on a white table in the middle of the frame, a small security camera model beside it"
+  },
+  {
+   "id": "a06",
+   "image": "長い机に並んで画面を見る警察官のフィギュアたち",
+   "image_en": "a long table in the white space with a row of faceless police officer figurines in plain dark uniforms, each looking at a plain screen showing blurry silhouettes, seen from behind and above, figures placed low in the frame",
+   "en": "a long table in the white space with a row of faceless police officer figurines in plain dark uniforms, each looking at a plain screen showing blurry silhouettes, seen from behind and above, figures placed low in the frame"
+  },
+  {
+   "id": "a07",
+   "image": "壁一面の写真に赤いピンが次々に刺さっている",
+   "image_en": "a large cork board wall filled with hundreds of small blank photo cards, many of them marked with red push pins, placed in the middle of the frame, dramatic spotlight, no text",
+   "en": "a large cork board wall filled with hundreds of small blank photo cards, many of them marked with red push pins, placed in the middle of the frame, dramatic spotlight, no text"
+  },
+  {
+   "id": "a09",
+   "image": "虫めがねと書類の束が置かれた机",
+   "image_en": "a desk in the white space with a large magnifying glass and a stack of blank documents, placed in the middle of the frame, no readable text",
+   "en": "a desk in the white space with a large magnifying glass and a stack of blank documents, placed in the middle of the frame, no readable text"
+  }
+ ]
+}

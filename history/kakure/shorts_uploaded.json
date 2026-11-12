@@ -157,5 +157,95 @@
   "publish_at": "2026-11-13T12:00:00+09:00",
   "uploaded_at": "2026-11-05T22:48:56+09:00",
   "missing": false
+ },
+ {
+  "work": "S017_切出_櫛を投げるな",
+  "video_id": "UfWGymbHuOI",
+  "title": "夜に櫛を投げてはいけない、の始まりは日本書紀の黄泉の国の話だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-14T19:00:00+09:00",
+  "uploaded_at": "2026-11-06T04:43:54+09:00",
+  "missing": false
+ },
+ {
+  "work": "S018_図鑑_件",
+  "video_id": "WHPkzeeJnLU",
+  "title": "牛の体に人の顔の妖怪・件が告げたのは災いではなく大豊作だった【かくれ神図鑑 #5】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-15T12:00:00+09:00",
+  "uploaded_at": "2026-11-06T04:46:23+09:00",
+  "missing": false,
+  "playlist": "図鑑"
+ },
+ {
+  "work": "S019_切出_セイレーンの歌",
+  "video_id": "vSIUgJvbSXE",
+  "title": "怪物セイレーンが歌で約束したのは恋ではなく「すべてを知っている」だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-16T19:00:00+09:00",
+  "uploaded_at": "2026-11-07T21:31:00+09:00",
+  "missing": false
+ },
+ {
+  "work": "S020_格付け_大きい数",
+  "video_id": "sWColSHb2CM",
+  "title": "八百万の神は日本書紀では八十万だった 古事記の神話でいちばん大きい数ベスト3【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-17T12:00:00+09:00",
+  "uploaded_at": "2026-11-07T21:32:36+09:00",
+  "missing": false
+ },
+ {
+  "work": "S021_切出_欠けた剣",
+  "video_id": "LhkMDHKccLo",
+  "title": "三種の神器の草薙の剣はヤマタノオロチの尾から出た スサノオの剣が欠けて見つかった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-18T19:00:00+09:00",
+  "uploaded_at": "2026-11-10T00:26:35+09:00",
+  "missing": false
+ },
+ {
+  "work": "S022_図鑑_鵺",
+  "video_id": "2BZNUcaaxH0",
+  "title": "頭は猿で尾は蛇の怪物・鵺 平家物語では怪物の名ではなく鳴き声が似た鳥の名だった【かくれ神図鑑 #6】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-19T12:00:00+09:00",
+  "uploaded_at": "2026-11-10T00:28:37+09:00",
+  "missing": false,
+  "playlist": "図鑑"
+ },
+ {
+  "work": "S023_切出_星になったカニ",
+  "video_id": "qZ9vqyg_XTA",
+  "title": "かに座のカニはなぜ12星座になったのか 英雄ヘラクレスの足にかみついたほうびだった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-20T19:00:00+09:00",
+  "uploaded_at": "2026-11-11T22:53:19+09:00",
+  "missing": false
+ },
+ {
+  "work": "S024_格付け_長い名前の神",
+  "video_id": "wZs5wsTaU5U",
+  "title": "古事記でいちばん長い名前の神は20字 上位3柱は全員が初代天皇の祖先だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-21T12:00:00+09:00",
+  "uploaded_at": "2026-11-11T22:54:57+09:00",
+  "missing": false
  }
 ]

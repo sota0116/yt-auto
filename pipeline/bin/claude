@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# claude の入口（2026-11-07）。Actions で PATH の先頭に置き、本物の claude に渡す。
+# ・pick_claude.sh はジョブの最初に1回だけアカウントを選ぶ。途中で元のアカウントが上限（月の利用額・週の枠）に届くと、
+#   その後の Claude は全部すぐ失敗していた（2026-11-04〜07 の daily：psy・spi・nihongi が「台本ゲートで5回不合格」）。
+# ・ここでは、上限・ログイン切れで失敗した時だけ、同じ依頼をもう一方のアカウント（CLAUDE_TOKEN_ALT）で頼み直す。
+#   うまくいった方を $RUNNER_TEMP/claude_token_switched に覚え、そのジョブの残りは最初からそちらを使う。
+# ・CLAUDE_TOKEN_ALT は本物の claude には渡さない（書く作業・判定の作業から見えないようにする）。
+# ・CLAUDE_TOKEN_ALT が無い・同じ鍵の時は、何もせず本物の claude にそのまま渡す。
+self_dir=$(cd "$(dirname "$0")" && pwd)
+real=""
+IFS=: read -ra dirs <<< "$PATH"
+for d in "${dirs[@]}"; do
+  [ -n "$d" ] || continue
+  dd=$(cd "$d" 2>/dev/null && pwd) || continue
+  [ "$dd" = "$self_dir" ] && continue
+  if [ -f "$d/claude" ] && [ -x "$d/claude" ]; then real="$d/claude"; break; fi
+done
+[ -n "$real" ] || { echo "claude（本物）が PATH に見つかりません" >&2; exit 127; }
+
+alt="${CLAUDE_TOKEN_ALT:-}"
+unset CLAUDE_TOKEN_ALT
+cur="${CLAUDE_CODE_OAUTH_TOKEN:-}"
+if [ -z "$alt" ] || [ "$alt" = "$cur" ]; then
+  exec "$real" "$@"
+fi
+
+flag="${RUNNER_TEMP:-/tmp}/claude_token_switched"
+first="$cur"; second="$alt"
+if [ -f "$flag" ]; then first="$alt"; second="$cur"; fi
+
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+if [ -p /dev/stdin ] || [ -f /dev/stdin ]; then cat > "$tmp/in"; else : > "$tmp/in"; fi
+
+attempt() {  # $1=鍵 残り=claude の引数
+  local tok="$1"; shift
+  CLAUDE_CODE_OAUTH_TOKEN="$tok" "$real" "$@" < "$tmp/in" > "$tmp/out" 2> "$tmp/err"
+  rc=$?
+}
+
+blocked() {  # 上限・ログイン切れで失敗したか（失敗した時だけ見る。台本の中身の「limit」には反応しない）
+  if [ "$rc" -eq 0 ] && ! grep -Eq '"is_error" *: *true' "$tmp/out"; then return 1; fi
+  { tail -c 8000 "$tmp/out"; tail -c 8000 "$tmp/err"; } | grep -Eqi \
+    "hit your [^\"]*limit|usage limit|spend limit|limit reached|rate_limit_error|credit balance is too low|OAuth token (revoked|has expired)|Failed to authenticate|authentication_error|Please run /login"
+}
+
+attempt "$first" "$@"
+if blocked; then
+  echo "（Claude：片方のアカウントが使えないため、もう一方のアカウントで頼み直します）" >&2
+  attempt "$second" "$@"
+  if ! blocked; then
+    if [ -f "$flag" ]; then rm -f "$flag"; else date -u +%FT%TZ > "$flag"; fi
+    echo "（Claude：もう一方のアカウントで動きました。このジョブの残りはこちらを使います）" >> "$tmp/err"
+  fi
+fi
+cat "$tmp/out"
+cat "$tmp/err" >&2
+exit "$rc"

@@ -10,9 +10,9 @@
 #   週報には「データ待ちで飛ばしているネタ帳の行」を出す）
 # ・心理学ch（psy。2026-10-27）：型の代わりに area（人づきあい・ひとりの時間・眠りと夜・幸せの心理）で比べる。ショートの数字（shorts_watch.py）も集める。
 #   数字から分かったことを history\psy\学び.md に書かせる。毎日の台本の書き手（write_script_psy.py）がこれを読む（手順書は変えない。手順書を変える案は週報に出して持ち主が決める）
-# ・千年こよみ（spi。2026-10-28 本人「どんどん作ってどんどん数値分析してどんどんPDCA回していけるように」）：psy と同じく
-#   history\spi\学び.md を書かせる。台本を書く時（Claude Code が手で作る。手順書 §14）に必ず読む。
-#   ショートは種類（kind：teaser 予告・after 切り出し・solo 単独）ごとと、枠の時刻（11:15・19:15）ごとに比べる
+# ・spi は 2026-11-11 から翠仙（白蛇弁財天の金運祈祷。千年こよみは作るのをやめ、動画は非公開にした）。制作の仕組みはまだ無く、手で作る。
+#   手順書もまだ無いので、決まりは research.py の SPI_RULES を見せる。history\spi\学び.md は翠仙の分から新しく書かせる
+#   （千年こよみまでの分は 学び_千年こよみまで_2026-11-11.md に残した）。uploaded.json などの古い記録は同じチャンネルの記録として読む
 # ・公開の時間帯と間隔（2026-11-04 本人「同じチャンネルで動画と動画の間は時間を空けて。毎週アナリティクスの数字を取って分析して仮説を立てて修正して」）：
 #   weekly.yml が鍵を置いて slot_stats.py を回し（history\<ch>\slot_stats.json）、鍵を消してから、ここが週報を書かせる。
 #   Claude は 8 で、時刻・間隔・その日の本数ごとの数字から仮説を history\weekly\枠の仮説.md に足し、枠の案を history\weekly\<日付>_枠の案.json に書く。
@@ -86,15 +86,10 @@ def gather(chs):
         booked = {(e.get("publish_at") or "")[:10] for e in up if not e.get("missing")}
         board = jload(os.path.join(ROOT, "channels", ch, "ネタ帳.json"), [])
         used = {p.get("neta_id") for p in prod}
-        if ch == "spi":  # 手で作る。ネタ帳は手順書 §2 の行事・暦の日付から選ぶ
+        if ch == "spi":  # 翠仙（2026-11-11〜）。制作の仕組みはまだ無く手で作る。ショートの枠もまだ決めていない
             sm = h(ch, "shorts_metrics.json", {})
-            su = h(ch, "shorts_uploaded.json", [])
-            by_kind = per_type({k: {**v, "type": v.get("kind") or "after"} for k, v in sm.items()})
-            by_slot = per_type({k: {**v, "type": v.get("publish_slot") or "?"} for k, v in sm.items()})
-            extra = {"ショート": {"上げた本数": sum(1 for x in su if not x.get("retired") and not x.get("missing")),
-                                "来週の枠（11:15・19:15）で空いている数": 14 - sum(1 for x in su if not x.get("missing") and not x.get("retired")
-                                                                   and (x.get("publish_at") or "")[:10] in nxt),
-                                "種類ごと": by_kind, "時刻ごと": by_slot, "回ごとの数字": sm}}
+            extra = {"翠仙": "2026-11-11 に千年こよみから替えた。制作の仕組みはまだ無く手で作る（千年こよみの動画は全部非公開）",
+                     "ショート": {"回ごとの数字": sm} if sm else "まだ無い"}
         elif ch == "psy":  # 研究は書く段が調べるので「データ待ち」は無い。ネタ帳は競合リサーチが足す
             sm = h(ch, "shorts_metrics.json", {})
             extra = {"ネタ帳": {"残り": sum(1 for r in board if r["id"] not in used and not r.get("hold")),
@@ -156,23 +151,29 @@ def prompt(path, chs):
     plan_p = os.path.join(ROOT, "history", "weekly", os.path.basename(path)[:-5] + "_枠の案.json")
     hypo = os.path.join(ROOT, "history", "weekly", "枠の仮説.md")
     design = design_doc()
-    docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs if ch in FULL)
+    docs = "\n".join(f"- {doc(ch, '手順書.md')}（{ch} の手順書。全部読む）" for ch in chs if ch in FULL and ch != "spi")  # spi（翠仙）は手順書がまだ無い
     memos = "\n".join(f"- {rel(m)}（{ch} の競合メモ。research.py が毎日書く。§7〜9 の提案を 6 の改善案の材料にする）"
                       for ch in chs if ch in FULL for m in [os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md")] if os.path.exists(m))
     if "job" in chs and os.path.exists(os.path.join(ROOT, "history", "job", "学び.md")):  # learn_job.py が毎日書く。6 の改善案は「続ける」になった試しを手順書に移す案にしてよい
         memos += f"\n- {rel(os.path.join(ROOT, 'history', 'job', '学び.md'))}（job の毎日の学び。learn_job.py が書く。「続ける」になった試しを手順書に移す案を 6 の材料にする）"
     learn = os.path.join(ROOT, "history", "psy", "学び.md")
     learn_spi = os.path.join(ROOT, "history", "spi", "学び.md")
+    try:  # 翠仙の決まり（手順書がまだ無いので research.py が持つ）
+        from research import SPI_RULES
+    except Exception:
+        SPI_RULES = "（決まりを読めなかった。pipeline/research.py の SPI_RULES を読む）"
     spi = "" if "spi" not in chs else f"""
-## 千年こよみ（spi）について
-- 本編は手で作る（週3〜4本。月・水・金・日 18:00）。判定会（2）は spi を別の1行で書く。型D と「早い見直し」は job だけ。
-- 4 の表のあとに、ショートの種類ごと（teaser 予告・after 切り出し・solo 単独）と時刻ごと（11:15・19:15）の数字（本数・平均再生・平均視聴率・登録）を書く。
-  つかみの文（hook）と上の帯の字（band）ごとの違いも書く（2本以上ある時だけ比べる）。来週の枠の空きが多い時は「今週あなたがやること」ではなく 7 に書く（作るのは Claude）。
-- 最後に {rel(learn_spi)} を書き直す（30行まで。Claude Code が千年こよみの台本・ショートを書く前に毎回読む。手順書は変えない）：
-  ・うちの回の数字から分かったことだけ。1行に1つ、根拠（回の名前と数字・何本中何本か）をつける。1本だけの傾向は書かない
-  ・長尺（つかみ・章の引き・題とサムネの言葉）とショート（種類・時刻・つかみの文・帯の字）に分ける
+## 翠仙（spi）について
+- 2026-11-11 に千年こよみ（星占い）から翠仙（白蛇弁財天の金運祈祷師）に替えた。同じチャンネルなので、古い回の数字は千年こよみの回。
+  千年こよみの動画は全部非公開にしたので、古い回は 4 の表に入れず、翠仙の回（題で分かる）だけで書く。翠仙の回がまだ無い時は「数字待ち」と書く。
+- 本編は手で作る（制作の仕組みはまだ無い）。判定会（2）は spi を別の1行で書く。型D と「早い見直し」は job だけ。
+- 決まり（手順書の代わり。6 の改善案は、この決まりのどこをどう変えるかで書く）：
+{SPI_RULES}
+- 最後に {rel(learn_spi)} を書き直す（30行まで。翠仙の台本・ショートを書く前に毎回読む。千年こよみまでの分は 学び_千年こよみまで_2026-11-11.md にあり、ここには持ち込まない）：
+  ・翠仙の回の数字から分かったことだけ。1行に1つ、根拠（回の名前と数字・何本中何本か）をつける。1本だけの傾向は書かない
+  ・長尺（つかみ・章の引き・題とサムネの言葉）とショート（つかみの文・帯の字）に分ける
   ・最後に「次の1週間で試すこと」を1つだけ書く（1度に変えるのは1つ。何を比べ、何本で判定するか）
-  ・数字がまだ2本に満たない時は、前の {rel(learn_spi)} の行を残し、無ければ「まだ数字が足りない（{now().date().isoformat()}）」の1行だけにする
+  ・翠仙の回の数字がまだ2本に満たない時は、前の {rel(learn_spi)} の行を残し、無ければ「まだ数字が足りない（{now().date().isoformat()}）」の1行だけにする
 """
     psy = "" if "psy" not in chs else f"""
 ## 心理学ch（psy）について

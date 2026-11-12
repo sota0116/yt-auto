@@ -1,0 +1,1066 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】東海道五十三次で、現代のマラソン選手が飛脚と勝負したら｜選手は2日目の夜に倒れ、飛脚のリレーは3日で京都へ",
+ "promise": "江戸の継飛脚は2人1組で宿場ごとに箱を継ぎ、昼も夜も止まらずに、急ぎなら江戸〜京都を3日ほど（66〜68時間）で運んだこと、70年ほどで14時間縮んだこと、大井川の川越しと川留め、そして日本で最初の駅伝（1917年）が計画の時『マラソン・リレー』と呼ばれていたことが、1本で分かる",
+ "desc": "もしも今のマラソン選手が1人、1763年の江戸に飛ばされ、幕府の手紙を運ぶ継飛脚と、京都まで約500kmの東海道を競走したら。持って行けたのは、走る足だけ。\n飛脚は1人で長い道を走り通した、と思われがちです。でも、本当にそうだったのか。宿場の決まりをまとめた『五駅便覧』には、急ぎの御状箱は京都・大坂から江戸まで「三拾三四時程三日」とあります。2人1組で宿場ごとに箱を継ぐ継飛脚、箱根の山、橋の無い大井川と川留め、町飛脚の「定六」、そして日本で最初の駅伝と金栗四三まで。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※マラソン選手が江戸に行って継飛脚と競走する話、鳶の親方と飛脚のセリフ、選手が2日目の夜に倒れて箱に抜かれる場面、京都の飛脚とのやりとり、選手が5日目の朝に京都に着く場面、選手が大井川を肩車で渡る場面、選手が江戸で鳶の若い衆とたすきをつなぐ競走を始める場面は作り話です。継飛脚の運び方と刻限、東海道と宿場、箱根の関所、大井川の川越しと川留め、町飛脚・七里飛脚、1917年の駅伝、金栗四三は、『五駅便覧』（日本交通史料集成 第3輯・国立国会図書館デジタルコレクション）、コトバンクの事典（山川 日本史小辞典・ブリタニカ・日本大百科全書・世界大百科事典・日本国語大辞典）、国土交通省 横浜国道事務所、島田市、箱根町の観光案内をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "江戸時代",
+  "飛脚",
+  "継飛脚",
+  "東海道五十三次",
+  "駅伝",
+  "マラソン",
+  "タイムスリップ"
+ ],
+ "thumb": {
+  "top": "260年前の飛脚と、今のマラソン選手が勝負",
+  "big": "選手は区間全勝で負けた",
+  "hl_top": "マラソン選手",
+  "hl_big": "負けた",
+  "bg": "G05"
+ },
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：今のマラソン選手が1人、宝暦13年（1763年）の江戸に飛ばされ、伝馬町から京都の三条大橋まで、急ぎの御状箱を運ぶ継飛脚と競走する。東海道の道のり（約500km・宿場は53）・継飛脚の運び方（2人1組・宿場ごとに継ぐ・昼も夜も）・急ぎの刻限（三拾三四時程＝66〜68時間・3日）は史実のまま",
+  "選手が持って来たのは走る足だけ。時計も地図も無い。選手が知っているのは今のマラソン（42.195km）と自分の速さ、東京と京都がおよそ500km離れていることだけで、継飛脚が宿場ごとに人を替えることも、刻限も、走る前は知らない",
+  "鳶の親方と飛脚（江戸の人）は、継飛脚が宿場で次の2人に箱を渡すことを町の常識として知っている。選手が未来から来たこと・マラソン・駅伝・1917年・金栗四三は知らない。京都の飛脚が選手の1人旅を知るのは、選手が自分で話したから（H07）",
+  "『66〜68時間』『約500km』『約300km』『区間は全勝』『1日以上』『150年以上』『世界線』は語り手が言う文。選手は自分が何時間で走ったかを口にしない",
+  "この世界線で変わるのは1つ：負けた選手が江戸に戻り、鳶の若い衆と、区間ごとに人を置いてたすきをつなぐ競走を始める（江戸の駅伝）。年・人・出来事・刻限は本当の歴史。実際の歴史に戻るのは最後の章の J01 から"
+ ],
+ "world_terms": [
+  "知って",
+  "知ら",
+  "区間",
+  "刻限",
+  "時間",
+  "500km",
+  "300km",
+  "マラソン",
+  "駅伝",
+  "世界線",
+  "1917"
+ ],
+ "voices": {
+  "runner": 11,
+  "oyakata": 53,
+  "hikyaku": 12
+ },
+ "facts": [
+  "史料の本文（ページ画像で一字ずつ確認）：『五駅便覧』（日本交通史料集成 第3輯、国際交通文化協会 1938年、国立国会図書館デジタルコレクション 1108751）のコマ44・69ページ。2026-11-08 に lab.ndl.go.jp の全文検索（keyword=急御用三拾三四時）で本を見つけ、全文 JSON でコマ44を割り出し、IIIF のページ画像（dl.ndl.go.jp/api/iiif/1108751/R0000044）を読んだ。「九 京（都大阪）ゟ江戸迄御證文宿繼御狀箱（刻付御定）／一急御用 三拾三四時程三日（但一時ハ今ノ二時間ニ當ル）／一中（急）御用 四日程／一常躰（體） 五日程／右ハ繼飛脚之持送リ候分」「右ハ繼飛脚之者持送リニ而御老中方御證文附宿繼御狀箱傳馬町ゟ持送リ品川宿名主方ニ而取斗」「此儀繼飛脚と唱申候」「大坂迄ハ右刻限ニ日限一日增」。台本は『急ぎは三十三、四時ほど・3日』『今の66〜68時間』『箱は伝馬町から品川宿へ』『大坂はさらに1日』に使う",
+  "継飛脚：「御状箱をかつぐ人足とその交代人足が2人で勤め」「昼夜を問わず出され」「1763年(宝暦13)には，江戸―京都間は普通で5日ほど，急御用で68時間ほどかかった」。出どころ：山川 日本史小辞典 改訂新版「継飛脚」（kotobank.jp/word/継飛脚-581627、2026-11-08 本文で確認）",
+  "元禄9年（1696）の定めでは江戸―京都を急行41時（82時間）・普通45時（90時間）。継飛脚は東海道で行われたのが最初。出どころ：ブリタニカ国際大百科事典 小項目事典「継飛脚」（同ページ、2026-11-08 確認）。台本は『元禄9年の定めでは急ぎで82時間』『70年ほどで14時間縮んだ』（82−68＝14、1763−1696＝67年は計算）",
+  "継飛脚は「川留(かわどめ)に際しては最初に渡河し、江戸―大坂間では4～5日で通行している」（日本大百科全書（ニッポニカ）「飛脚」）、「川留解除には最初に渡河した」（改訂新版 世界大百科事典「飛脚」）。kotobank.jp/word/飛脚-121131、2026-11-08 確認",
+  "七里飛脚：「七里ごとに小舎を設け、脚夫を配置して公用信書や飛脚荷、その他の逓送にあたらせたもの」（精選版 日本国語大辞典）、「尾州，紀州，姫路，雲州などの七里飛脚が有名」（世界大百科事典）。kotobank.jp/word/七里飛脚、2026-11-08 確認",
+  "町飛脚：「幕府の許可を受けて寛文3年（1663）に開業」（デジタル大辞泉）、「江戸・大坂・京都の三都の商人が、幕府公許の下に三都往復の飛脚業を開始」「『定六』ともいった」（精選版 日本国語大辞典）、「東海道を6日かかって運行した」（世界大百科事典（旧版））。kotobank.jp/word/町飛脚-136416、2026-11-08 確認。日本国語大辞典は『往復に六日』と書くので、台本は世界大百科事典の『東海道を6日で運んだ』の言い方にとどめる",
+  "東海道五十三次：「江戸日本橋から京都三条大橋」「全長一二五里二〇町（約五〇〇キロメートル）」「慶長六年（一六〇一）制定」（精選版 日本国語大辞典）、「53の宿場」（デジタル大辞泉）。kotobank.jp/word/東海道五十三次、2026-11-08 確認。マラソン（42.195km）の約12本分、1区間の平均10km未満（500÷54）は計算",
+  "1601年（慶長6）正月、幕府は東海道の各宿に徳川家康の伝馬朱印状と『御伝馬之定』を交付し、宿駅伝馬制度が敷かれたと一般に理解されている。出どころ：国土交通省 関東地方整備局 横浜国道事務所『東海道Q&A』（www.ktr.mlit.go.jp/yokohama/tokaido/02_tokaido/04_qa/index1/a0102.htm、検索の抜粋と本文の要約で確認）、静岡市（www.city.shizuoka.lg.jp/s6725/p009497.html、検索の抜粋）。台本は『置いたとされる』",
+  "箱根関所：「江戸時代初期の元和5（1619）年に現在の場所に置かれました」。出どころ：箱根町観光協会 箱根ナビ（www.hakonenavi.jp/feature/10112、2026-11-08 本文で確認）。箱根八里の距離は公的な本文で確かめられなかったので言わない",
+  "大井川：「駿河と遠江の国境であったため、幕府の防衛政策などにより架橋・通船が禁じられました」「旅人は川札と呼ばれるチケットを購入して、川越人足を雇わなければなりませんでした」「川越人足の肩にまたがり越します」「水位が高い場合は…連台（れんだい）という梯子のような乗り物」「普段の水位は二尺五寸（約76cm）で、四尺五寸（約136cm）を超えると川留め」。出どころ：島田市公式「川越制度の歴史」（www.city.shimada.shizuoka.jp/shimahaku/docs/kawagoshi-seido.html、2026-11-08 本文で確認）。島田宿大井川川越遺跡（国指定史跡）に川会所・番宿などが残る（同市・コトバンク、検索の抜粋）",
+  "日本最初の駅伝：「1917年（大正6）4月27日から3日間にわたって行われた東海道五十三次駅伝徒歩競走」「京都・三条大橋から東京・上野不忍池までの516キロメートル（新聞発表507km・世界大百科事典508km）」「23区間」「読売新聞社社会部長の土岐善麿」「駅馬・伝馬…にちなみ『駅伝』と名づけたという」（日本大百科全書（ニッポニカ））。読売新聞1917年3月1日の記事「その名称をマラソン・リレーとしておいた」（精選版 日本国語大辞典の用例）。kotobank.jp/word/駅伝競走、2026-11-08 確認。命名者には武田千代三郎とする説もある（検索の抜粋）ので、台本は名づけた人を言わない",
+  "金栗四三（1891〜1983）：「1912年ストックホルム五輪に日本で初めて出場するが、体調不良で途中棄権」「20年には箱根駅伝を創設した」（共同通信ニュース用語解説）、三島弥彦とともに出場し「マラソンに出場したが，疲労して18kmで倒れ棄権した」（世界大百科事典）、「日本マラソンの父」（20世紀日本人名事典）。kotobank.jp/word/金栗四三、2026-11-08 確認。1917年の駅伝で最終区間を走ったという話は一般の記事にしか無く、公的な本文で確かめられなかったので台本に入れない",
+  "作り話：選手が江戸に行って継飛脚と競走すること、鳶の親方と飛脚のセリフ、選手の走った時刻と場所（小田原の昼・沼津の夕方・2日目の朝の大井川・2日目の夜の浜名湖・5日目の朝の京都）、選手が肩車で大井川を渡ること、選手が倒れて箱に抜かれること、選手が江戸でたすきをつなぐ競走を始めること",
+  "使わない：箱根八里の距離、関所で継飛脚が調べを受けたかどうか、なんば走り、飛脚の1日の走る距離の言い伝え、1文の今のお金の値（どれも公的な本文で確かめられなかった）"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "今のマラソン選手が江戸の飛脚と京都まで競うと、1日以上遅れて負けます。足は速いのに負ける理由で、江戸の手紙の運び方が分かります。",
+   "image_en": "Blue-green pre-dawn light on an old Edo-period highway lined with tall pine trees, thin mist, soft light falling from above. A modern marathon runner (a lean Japanese man about thirty, short black hair, plain dark navy running singlet and shorts, plain white running shoes, no logos, letters, numbers or watch) kneels exhausted at the roadside, while two Edo-period couriers in headbands and short tucked-up plain cotton kimono run past him, one carrying a small black lacquered box tied to a short pole on his shoulder. Place the main person slightly right of center.",
+   "image": "Exhausted modern runner kneeling by a misty pine-lined Edo highway as two couriers with a black box run past",
+   "label": "1日以上遅れて負ける",
+   "strong": true,
+   "highlight": [
+    "負ける"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "1763年、江戸の伝馬町。夜明け前に、黒い箱を担いだ男が走り出した。",
+   "image_en": "Blue-green light before dawn in a quiet Edo-period street of wooden houses, light falling from above through mist. An Edo courier in a white headband and short tucked-up plain cotton kimono bursts into a run with a small black lacquered box tied to a short pole on his shoulder, a second lightly dressed courier running beside him. Place the main person slightly right of center.",
+   "image": "Edo courier with a black box on a pole starting to run in a blue-green pre-dawn street",
+   "label": "1763年 江戸",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "箱の中身は、幕府の手紙。京都までの約500kmを、急ぎなら3日ほどで運ぶ。",
+   "same_as": "A02",
+   "label": "京都まで約500km",
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "その横で、今のマラソン選手が1人、靴ひもを結び直していた。",
+   "image_en": "Blue-green pre-dawn light in an Edo-period street, mist, soft light from above. The modern marathon runner (a lean Japanese man about thirty, short black hair, plain dark navy running singlet and shorts, plain white running shoes, no logos, letters, numbers or watch) crouches to retie his shoelaces, while Edo townspeople in plain kimono stare at his strange clothes. Place the main person slightly right of center.",
+   "image": "Modern runner retying his shoelaces in a misty Edo street, townspeople staring",
+   "chars": []
+  },
+  {
+   "id": "A05",
+   "narration": "足すルールは1つ。今のマラソン選手が1人、江戸の飛脚と京都まで競走する。持って行けたのは、走る足だけ。",
+   "same_as": "A04",
+   "label": "足すルールは1つ",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "A06",
+   "narration": "年と道と飛脚の運び方は本当の歴史。選手だけが作り話です。",
+   "image_en": "Close-up of a low wooden desk in pale blue-green morning light from a paper window: an old hand-drawn route scroll showing only a long road, rivers, mountains and the sea, with no writing, and a pair of plain white modern running shoes placed beside it. No people.",
+   "image": "Old blank route scroll and a pair of modern running shoes on a wooden desk",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "宝暦13年。選手が目を開けると、まだ暗い江戸の町の、土の道に寝ていた。",
+   "tts_text": "ほうれき13年。選手が目を開けると、まだ暗い江戸の町の、土の道に寝ていた。",
+   "image_en": "Blue-green light before dawn, mist. The modern marathon runner (a lean Japanese man about thirty, short black hair, plain dark navy running singlet and shorts, plain white running shoes, no logos or watch) waking up lying on a dirt street in an Edo-period town, confused, wooden houses around him. Place the main person slightly right of center.",
+   "image": "Modern runner waking up on a dark Edo dirt street",
+   "chapter": "伝馬町の夜明け",
+   "label": "宝暦13年",
+   "chars": []
+  },
+  {
+   "id": "B02",
+   "narration": "まわりでは、提灯を下げた男たちが、馬と荷物の間を急いでいる。",
+   "image_en": "Blue-green pre-dawn light at a busy Edo-period post office yard, men with plain paper lanterns hurrying between packhorses and bundles of baggage, steam of breath in the cold air.",
+   "image": "Busy Edo post office yard before dawn with lanterns, horses and baggage",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "ここは伝馬町。幕府の手紙の箱は、ここから品川宿へ運ばれる。",
+   "tts_text": "ここはてんまちょう。幕府の手紙の箱は、ここから品川宿へ運ばれる。",
+   "image_en": "Close-up in blue-green dawn light: an official's hands placing a small black lacquered letter box with a plain silk cord onto a wooden counter, a courier's hands ready to take it. No writing.",
+   "image": "Official handing a black lacquered letter box to a courier",
+   "label": "伝馬町",
+   "chars": []
+  },
+  {
+   "id": "B04",
+   "narration": "東海道は1601年、徳川家康が宿場と伝馬の決まりを置いたとされる道だ。",
+   "tts_text": "東海道は1601年、徳川家康が宿場とてんまの決まりを置いたとされる道だ。",
+   "image_en": "Tokugawa Ieyasu (a Japanese warlord about sixty: round face, sturdy heavy build, calm quiet eyes, chonmage topknot, dark brown kimono with a grey haori) seated in a castle hall handing a sealed blank document to kneeling officials, morning light. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Elderly Ieyasu handing a sealed document to kneeling officials",
+   "label": "1601年",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "始まりは江戸の日本橋。終わりは京都の三条大橋。宿場は53ある。",
+   "image_en": "A large arched wooden bridge in Edo at dawn with a procession crossing it, an old woodblock print look.",
+   "real": "Hiroshige Nihonbashi Tokaido Hoeido",
+   "label": "東海道五十三次",
+   "chars": [],
+   "real_src": {
+    "題": "File:Hiroshige-53-Stations-Hoeido-01-Nihonbashi-BM-03.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Hiroshige-53-Stations-Hoeido-01-Nihonbashi-BM-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Hiroshige-53-Stations-Hoeido-01-Nihonbashi-BM-03.jpg",
+    "検索語": "Hiroshige Nihonbashi Tokaido Hoeido"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "道のりは、およそ500km。今のマラソンにすると、12本分だ。",
+   "image_en": "A vast bird's-eye view of an old Japanese highway winding along the sea coast, over mountains and across wide rivers toward a far horizon, Mount Fuji in the distance, morning light.",
+   "image": "Bird's-eye view of the long Tokaido highway winding along coast and mountains",
+   "label": "マラソン12本分",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "選手に声をかけてきたのは、ねじりはちまきの鳶の親方だった。",
+   "tts_text": "選手に声をかけてきたのは、ねじりはちまきのとびの親方だった。",
+   "image_en": "the tobi foreman, standing with arms folded and looking curiously at the modern marathon runner (lean Japanese man, plain dark navy running singlet and shorts, plain white running shoes) in an Edo street at dawn. Place the main person slightly right of center.",
+   "image": "Tobi foreman looking curiously at the modern runner",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "B08",
+   "narration": "見ねえ格好だな。足には、ずいぶん自信がありそうだ。",
+   "image_en": "Close-up of the tobi foreman grinning and pointing his chin at the runner's legs, dawn light. Place the main person slightly right of center.",
+   "image": "Close-up of the grinning tobi foreman",
+   "chars": [
+    "oyakata"
+   ],
+   "voice": "oyakata"
+  },
+  {
+   "id": "B09",
+   "narration": "選手はうなずいた。42.195kmなら、2時間と少しで走ってきた。",
+   "tts_text": "選手はうなずいた。よんじゅうにてんいちきゅうごキロなら、2時間と少しで走ってきた。",
+   "image_en": "the modern marathon runner (lean Japanese man about thirty, short black hair, plain dark navy running singlet and shorts, plain white running shoes, no logos) nodding with a confident smile, stretching his calf in an Edo street. Place the main person slightly right of center.",
+   "image": "Confident modern runner stretching and nodding",
+   "label": "42.195km",
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "なら、あの箱と京都まで走ってみな。",
+   "image_en": "the tobi foreman, laughing and pointing down the street with his thumb toward couriers getting ready. Place the main person slightly right of center.",
+   "image": "Tobi foreman laughing and pointing toward couriers",
+   "chars": [
+    "oyakata"
+   ],
+   "voice": "oyakata"
+  },
+  {
+   "id": "B11",
+   "narration": "親方が指さした先に、黒い箱を担いだ男と、身軽な男がもう1人いた。",
+   "image_en": "Two Edo-period couriers standing ready at a post office gate at dawn: one with a small black lacquered box tied to a short pole on his shoulder, the other lightly dressed, both in white headbands and short tucked-up plain cotton kimono with straw sandals, lean and muscular. Place the main person slightly right of center.",
+   "image": "Two Edo couriers ready at a gate, one with a black box on a pole",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "幕府の手紙を運ぶ、継飛脚だ。",
+   "tts_text": "幕府の手紙を運ぶ、つぎびきゃくだ。",
+   "image_en": "Two Edo-period couriers sprinting out of a wooden post office gate onto a dirt street at dawn, one with a small black lacquered box on a pole over his shoulder, dust flying, townspeople stepping aside. Place the main person slightly right of center.",
+   "image": "Two couriers sprinting out of a gate with the black box",
+   "label": "継飛脚",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B13",
+   "narration": "選手は、ふっと笑った。2人とはいえ、500kmを走り通せるはずがない。",
+   "image_en": "Close-up of the modern marathon runner (lean Japanese man about thirty, short black hair, plain dark navy running singlet) smirking confidently, dawn light. Place the main person slightly right of center.",
+   "image": "Close-up of the runner smirking",
+   "chars": []
+  },
+  {
+   "id": "B14",
+   "narration": "マラソンの選手が、飛脚に負けるもんか。",
+   "same_as": "B13",
+   "voice": "runner",
+   "chars": []
+  },
+  {
+   "id": "B15",
+   "narration": "選手も、箱の後ろから走り出した。",
+   "image_en": "The modern marathon runner (lean Japanese man, plain dark navy running singlet and shorts, plain white running shoes) chasing two Edo couriers with a black box down a long dirt street at sunrise, townspeople watching from the doorways. Place the main person slightly right of center.",
+   "image": "Runner chasing two couriers down an Edo street at sunrise",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "最初の宿場は、品川宿。選手は、すぐに箱を引き離した。",
+   "tts_text": "最初の宿場は、しながわしゅく。選手は、すぐに箱を引き離した。",
+   "image_en": "The modern marathon runner (lean Japanese man, plain dark navy running singlet and shorts, plain white running shoes) running alone along a seaside road at sunrise, the bay sparkling on one side, two small couriers far behind. Place the main person slightly right of center.",
+   "image": "Runner alone along a seaside road at sunrise, couriers far behind",
+   "chapter": "宿場で替わる2人",
+   "label": "品川宿",
+   "chars": []
+  },
+  {
+   "id": "C02",
+   "narration": "品川で振り返ると、箱はまだ見えない。",
+   "image_en": "The modern marathon runner looking back over his shoulder at an empty road at a busy seaside post town of wooden inns in the morning. Place the main person slightly right of center.",
+   "image": "Runner looking back over his shoulder at an empty road",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "だが、品川に着いた箱は、そこで止まらなかった。",
+   "image_en": "At a post station yard in the morning, a sweating Edo courier hands a small black lacquered box on a pole to a fresh courier who is already running, a second fresh courier beside him. Place the main person slightly right of center.",
+   "image": "Sweating courier handing the box to a fresh courier already running",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C04",
+   "narration": "宿場で待っていた別の2人に、箱がそのまま渡されたのだ。",
+   "image_en": "Two fresh Edo couriers in headbands bursting out of a post station gate with the black lacquered box, two exhausted couriers sitting down behind them, morning. Place the main person slightly right of center.",
+   "image": "Two fresh couriers bursting out, two tired ones sitting behind",
+   "label": "宿場で交代",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "継飛脚は2人で1組。箱を担ぐ者と、その替わりの者だ。",
+   "tts_text": "つぎびきゃくは2人で1組。箱を担ぐ者と、その替わりの者だ。",
+   "image_en": "Two Edo couriers running side by side on a dirt highway, one carrying the black lacquered box on a pole, the other running empty-handed ready to take over, pine trees, morning. Place the main person slightly right of center.",
+   "image": "Two couriers side by side, one with the box, one ready to swap",
+   "label": "2人で1組",
+   "chars": []
+  },
+  {
+   "id": "C06",
+   "narration": "昼も夜も関係なく、宿場ごとに次の2人へ、箱を継いでいく。",
+   "image_en": "A chain of Edo post towns along a highway seen from above, at each town a pair of couriers waiting at the gate, one pair running between them with the black box, morning haze.",
+   "image": "Chain of post towns, a pair of couriers waiting at each",
+   "chars": []
+  },
+  {
+   "id": "C07",
+   "narration": "選手の相手は、2人ではなかった。宿場の数だけ、新しい足が待っている。",
+   "image_en": "Close-up of the modern marathon runner (lean Japanese man, plain dark navy running singlet) wide-eyed with shock as he realizes, a fresh pair of couriers waiting at a post town gate behind him. Place the main person slightly right of center.",
+   "image": "Runner wide-eyed with shock, fresh couriers waiting behind",
+   "label": "相手は2人じゃない",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "宿場は53。1つの区間は、ならすと10kmにも届かない。",
+   "image_en": "Short stretch of a pine-lined Edo highway between two small post towns, seen from a low hill, a pair of couriers small in the middle, morning.",
+   "image": "Short pine-lined stretch between two post towns",
+   "label": "1区間 10km未満",
+   "chars": []
+  },
+  {
+   "id": "C09",
+   "narration": "宿場の決まりをまとめた本、五駅便覧には、この箱の刻限が載っている。",
+   "tts_text": "宿場の決まりをまとめた本、ごえきびんらんには、この箱のこくげんが載っている。",
+   "image_en": "Close-up of an old printed Japanese book lying open on a wooden desk, warm light. No people. No writing.",
+   "real": "https://dl.ndl.go.jp/api/iiif/1108751/R0000044/full/2000,/0/default.jpg",
+   "label": "五駅便覧",
+   "chars": [],
+   "real_src": {
+    "題": "https://dl.ndl.go.jp/api/iiif/1108751/R0000044/full/2000,/0/default.jpg",
+    "url": "https://dl.ndl.go.jp/api/iiif/1108751/R0000044/full/2000,/0/default.jpg",
+    "説明ページ": "https://dl.ndl.go.jp/api/iiif/1108751/R0000044/full/2000,/0/default.jpg",
+    "検索語": "https://dl.ndl.go.jp/api/iiif/1108751/R0000044/full/2000,/0/default.jpg"
+   }
+  },
+  {
+   "id": "C10",
+   "narration": "京都や大坂から江戸まで、急ぎの御用は、三十三、四時ほどで3日。",
+   "tts_text": "京都や大坂から江戸まで、急ぎのごようは、さんじゅうさん、よんときほどで、みっか。",
+   "same_as": "C09",
+   "label": "急御用 三十三、四時",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C11",
+   "narration": "江戸の1時は、今の2時間。急ぎなら、66〜68時間で京都に着く。",
+   "tts_text": "江戸のひととき は、今の2時間。急ぎなら、ろくじゅうろくから、ろくじゅうはち時間で京都に着く。",
+   "image_en": "An Edo-period post station official at night striking a temple-style bell under lantern light while a courier runs past with the black box, stars above. Place the main person slightly right of center.",
+   "image": "Station official striking a bell at night as a courier runs past",
+   "label": "66〜68時間",
+   "chars": []
+  },
+  {
+   "id": "C12",
+   "narration": "大坂までなら、そこにもう1日を足した。",
+   "same_as": "C11",
+   "label": "大坂は＋1日",
+   "chars": []
+  },
+  {
+   "id": "C13",
+   "narration": "ここで問題です。70年ほど前の元禄のころ、この箱は京都まで何時間かかったでしょう。",
+   "tts_text": "ここで問題です。70年ほど前のげんろくのころ、この箱は京都まで何時間かかったでしょう。",
+   "image_en": "A pair of Edo couriers with the black box running through an older, simpler post town in faded colors, few houses, dusty road. Faded old-memory colors.",
+   "image": "Couriers running through an older simpler post town, faded colors",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "C14",
+   "narration": "川崎宿で、選手は振り返った。箱を担いだ新しい2人が、すぐ後ろにいた。",
+   "tts_text": "かわさきしゅくで、選手は振り返った。箱を担いだ新しい2人が、すぐ後ろにいた。",
+   "image_en": "The modern marathon runner looking back in surprise on a bridge at a riverside post town, two fresh Edo couriers with the black box only a few steps behind him, morning sun. Place the main person slightly right of center.",
+   "image": "Runner looking back in surprise, fresh couriers just behind",
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "昼すぎ、小田原。目の前に、箱根の山がそびえていた。",
+   "image_en": "The modern marathon runner (lean Japanese man, plain dark navy running singlet and shorts, plain white running shoes) stopping at the foot of steep forested mountains, a castle town behind him, midday sun. Place the main person slightly right of center.",
+   "image": "Runner at the foot of steep forested mountains near a castle town",
+   "chapter": "箱根の山",
+   "label": "小田原",
+   "chars": []
+  },
+  {
+   "id": "D02",
+   "narration": "ここから三島までは、峠を越える長い山道が続く。",
+   "image_en": "Steep forested mountains with a narrow road climbing to a pass and a lake beyond, an old woodblock print look.",
+   "real": "Hiroshige Hakone Tokaido",
+   "label": "箱根の峠",
+   "chars": [],
+   "real_src": {
+    "題": "File:Hakone No. 11. Hakone one of the fifty-three noted places on Tokaido. Painted by Hiroshige (titel op object) De Tôkaidô van Hiroshige (serietitel) Hiroshige no fude Tôkaidô (serietitel op object), RP-P-2010-310-95-11.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Hakone_No._11._Hakone_one_of_the_fifty-three_noted_places_on_Tokaido._Painted_by_Hiroshige_%28titel_op_object%29_De_T%C3%B4kaid%C3%B4_van_Hiroshige_%28serietitel%29_Hiroshige_no_fude_T%C3%B4kaid%C3%B4_%28serietitel_op_object%29%2C_RP-P-2010-310-95-11.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Hakone_No._11._Hakone_one_of_the_fifty-three_noted_places_on_Tokaido._Painted_by_Hiroshige_(titel_op_object)_De_T%C3%B4kaid%C3%B4_van_Hiroshige_(serietitel)_Hiroshige_no_fude_T%C3%B4kaid%C3%B4_(serietitel_op_object),_RP-P-2010-310-95-11.jpg",
+    "検索語": "Hiroshige Hakone Tokaido"
+   }
+  },
+  {
+   "id": "D03",
+   "narration": "選手は、上り坂でもペースを落とさない。区間ごとなら、まだ勝っている。",
+   "image_en": "The modern marathon runner climbing a steep stone-paved mountain road among tall cedar trees, determined face, sweat flying. Place the main person slightly right of center.",
+   "image": "Runner climbing a stone-paved mountain road among cedars",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "でも、峠が近づくにつれ、太ももが重くなってきた。",
+   "image_en": "Close-up of the modern marathon runner grimacing and pressing his hand on his thigh on a steep stone-paved slope, cedar forest. Place the main person slightly right of center.",
+   "image": "Runner grimacing and pressing his thigh on a steep slope",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "後ろから、短い掛け声が近づいてくる。",
+   "image_en": "Two fresh Edo couriers in headbands running up a steep stone-paved mountain road among cedars with the black lacquered box on a pole, steady and light-footed. Place the main person slightly right of center.",
+   "image": "Fresh couriers running up the stone-paved mountain road",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D06",
+   "narration": "箱根で替わった2人は、山の道を毎日のように走っている足だった。",
+   "image_en": "Close-up of the bare calves and straw sandals of an Edo courier stepping firmly on wet mossy stones of a mountain road. No faces.",
+   "image": "Courier's calves and straw sandals on mossy stones",
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "峠の先、芦ノ湖のほとりには、1619年に置かれた箱根の関所がある。",
+   "tts_text": "峠の先、あしのこのほとりには、1619年に置かれた箱根の関所がある。",
+   "image_en": "An old wooden checkpoint gate and guardhouse beside a mountain lake, cedar trees, morning mist.",
+   "real": "Hakone Sekisho checkpoint",
+   "label": "1619年 箱根の関所",
+   "chars": [],
+   "real_src": {
+    "題": "File:Hakone Sekisho.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hakone_Sekisho.jpg/1920px-Hakone_Sekisho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Hakone_Sekisho.jpg",
+    "検索語": "Hakone Sekisho checkpoint"
+   }
+  },
+  {
+   "id": "D08",
+   "narration": "湖の横を下りながら、選手は、はじめて息が上がった。",
+   "image_en": "The modern marathon runner running downhill beside a calm mountain lake, gasping with his mouth open, afternoon light. Place the main person slightly right of center.",
+   "image": "Runner gasping as he runs downhill beside a lake",
+   "chars": []
+  },
+  {
+   "id": "D09",
+   "narration": "なんで、あいつらは疲れないんだ。",
+   "image_en": "Close-up of the modern marathon runner panting heavily, looking back in disbelief, sweat on his face. Place the main person slightly right of center.",
+   "image": "Close-up of the runner panting and looking back in disbelief",
+   "chars": [],
+   "voice": "runner"
+  },
+  {
+   "id": "D10",
+   "narration": "三島に下りた時、箱は選手の背中の、すぐ後ろにあった。",
+   "image_en": "At the bottom of a mountain road at a post town, the modern marathon runner just ahead, two Edo couriers with the black box only a few meters behind him, late afternoon light. Place the main person slightly right of center.",
+   "image": "Runner just ahead of the couriers at the foot of the mountain",
+   "chars": []
+  },
+  {
+   "id": "E01",
+   "narration": "日が暮れた。選手は、沼津の宿場の前で足を止めた。",
+   "image_en": "Dusk at an Edo-period post town street with warm glowing lanterns and inns, the modern marathon runner standing still with his hands on his knees. Place the main person slightly right of center.",
+   "image": "Runner stopping with hands on knees at a lantern-lit post town at dusk",
+   "chapter": "止まらない箱",
+   "label": "1日目の夕方",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "水を飲みたい。何か食べたい。少しだけ、座りたい。",
+   "image_en": "The modern marathon runner gulping water from a wooden ladle at a well beside an inn, lantern light. Place the main person slightly right of center.",
+   "image": "Runner gulping water from a wooden ladle at a well",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "その前を、提灯の灯りと一緒に、箱が走り抜けていった。",
+   "image_en": "Night at a post town, two Edo couriers running past with the black lacquered box and a small plain paper lantern swinging, the modern marathon runner sitting by a well turning to look. Place the main person slightly right of center.",
+   "image": "Couriers with a lantern running past the seated runner at night",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E04",
+   "narration": "夜の宿場でも、次の2人は起きて、箱を待っていた。",
+   "image_en": "Two Edo couriers in headbands crouching by a fire at a post station gate late at night, waiting, lanterns glowing. Place the main person slightly right of center.",
+   "image": "Two couriers waiting by a fire at a station gate at night",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "同じ道には、町の人の手紙を運ぶ、町飛脚もいた。",
+   "tts_text": "同じ道には、町の人の手紙を運ぶ、まちびきゃくもいた。",
+   "image_en": "An Edo-period courier running with a wrapped bundle of letters on a pole, an old woodblock print look.",
+   "real": "Hikyaku courier ukiyo-e",
+   "label": "町飛脚",
+   "chars": [],
+   "real_src": {
+    "題": "File:Meido no hikyaku, Umegawa by Kitano Tsunetomi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Meido_no_hikyaku%2C_Umegawa_by_Kitano_Tsunetomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Meido_no_hikyaku,_Umegawa_by_Kitano_Tsunetomi.jpg",
+    "検索語": "Hikyaku courier ukiyo-e"
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "1663年に、江戸・京都・大坂の商人が、幕府の許しを得て始めたものだ。",
+   "image_en": "Three Edo-period merchants in formal haori bowing together before an official in a reception hall, warm light. Faded old-memory colors.",
+   "image": "Three merchants bowing before an official",
+   "label": "1663年",
+   "chars": []
+  },
+  {
+   "id": "E07",
+   "narration": "東海道を6日かけて運んだので、定六とも呼ばれた。",
+   "tts_text": "東海道を6日かけて運んだので、じょうろくとも呼ばれた。",
+   "image_en": "A courier of a private delivery house carrying bundles along a pine-lined highway at a steady pace, travelers on the road. Faded old-memory colors.",
+   "image": "Private courier carrying bundles along the highway",
+   "label": "定六",
+   "chars": []
+  },
+  {
+   "id": "E08",
+   "narration": "尾張や紀州の大名は、7里ごとに小屋を置く、七里飛脚を持っていた。",
+   "tts_text": "おわりやきしゅうの大名は、しちりごとに小屋を置く、しちりびきゃくを持っていた。",
+   "image_en": "A small wooden relay hut by a highway with a courier in a domain uniform waiting outside, a crest-less plain banner, afternoon. Faded old-memory colors.",
+   "image": "Small relay hut with a domain courier waiting",
+   "label": "七里飛脚",
+   "chars": []
+  },
+  {
+   "id": "E09",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になる方は、チャンネル登録で応援してください。",
+   "tts_text": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になるかたは、チャンネル登録で応援してください。",
+   "same_as": "A04",
+   "label": "チャンネル登録",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "選手は、また立ち上がった。区間ごとなら、まだ抜き返せる。",
+   "image_en": "The modern marathon runner standing up from beside a well with a determined face, lanterns glowing on a night street. Place the main person slightly right of center.",
+   "image": "Runner standing up with determination on a night street",
+   "chars": []
+  },
+  {
+   "id": "E11",
+   "narration": "夜の東海道を走る。富士の黒い影が、横を過ぎていく。",
+   "image_en": "Night on a pine-lined coastal highway under a starry sky, the dark silhouette of Mount Fuji, the small figure of the modern marathon runner running alone. Place the main person slightly right of center.",
+   "image": "Runner alone on a night highway, dark silhouette of Mount Fuji",
+   "chars": []
+  },
+  {
+   "id": "E12",
+   "narration": "夜が白むころ、選手は海ぞいの道で、箱をもう1度抜き返していた。",
+   "image_en": "Early dawn on a narrow road between steep hills and the sea, the modern marathon runner passing two Edo couriers with the black box, waves crashing below. Place the main person slightly right of center.",
+   "image": "Runner overtaking the couriers on a seaside road at dawn",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "2日目の朝。島田宿の先に、大井川が広がっていた。",
+   "tts_text": "2日目の朝。しまだしゅくの先に、おおいがわが広がっていた。",
+   "image_en": "A very wide shallow river with many channels, travelers being carried across on porters' shoulders and on wooden platforms, an old woodblock print look.",
+   "real": "Hiroshige Shimada Oi River",
+   "chapter": "橋の無い大井川",
+   "label": "大井川",
+   "chars": [],
+   "real_src": {
+    "題": "File:東海道五十三次 嶋田 大井川-Shimada; Oigawa Shun-Gan, Banks of the Oi River MET DP122850.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1_%E5%B6%8B%E7%94%B0_%E5%A4%A7%E4%BA%95%E5%B7%9D-Shimada%3B_Oigawa_Shun-Gan%2C_Banks_of_the_Oi_River_MET_DP122850.jpg/1920px-%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1_%E5%B6%8B%E7%94%B0_%E5%A4%A7%E4%BA%95%E5%B7%9D-Shimada%3B_Oigawa_Shun-Gan%2C_Banks_of_the_Oi_River_MET_DP122850.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1_%E5%B6%8B%E7%94%B0_%E5%A4%A7%E4%BA%95%E5%B7%9D-Shimada;_Oigawa_Shun-Gan,_Banks_of_the_Oi_River_MET_DP122850.jpg",
+    "検索語": "Hiroshige Shimada Oi River"
+   }
+  },
+  {
+   "id": "F02",
+   "narration": "大井川には、橋が無い。渡し舟も無い。",
+   "image_en": "The modern marathon runner standing stunned on a wide gravel riverbank, a vast shallow river with no bridge and no boats, morning light. Place the main person slightly right of center.",
+   "image": "Runner stunned at a wide river with no bridge or boats",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "駿河と遠江の国ざかい。幕府の守りの考えなどから、橋も舟も禁じられていた。",
+   "tts_text": "するがととおとうみの国ざかい。幕府の守りの考えなどから、橋も舟も禁じられていた。",
+   "image_en": "A wide river seen from a hill as a border between two provinces, guards on the near bank, no bridge anywhere. Faded old-memory colors.",
+   "image": "Wide border river with guards and no bridge",
+   "label": "橋も舟も禁止",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "旅人は川札を買い、川越人足に担いでもらって渡る。",
+   "tts_text": "旅人はかわふだを買い、かわごしにんそくに担いでもらって渡る。",
+   "image_en": "Muscular river porters in loincloths waiting on the riverbank while a traveler hands one of them a small blank paper ticket, morning. Place the main person slightly right of center.",
+   "image": "Traveler handing a blank ticket to a river porter",
+   "label": "川札",
+   "chars": []
+  },
+  {
+   "id": "F05",
+   "narration": "浅ければ肩車。深ければ、連台という、はしごのような台に乗る。",
+   "tts_text": "浅ければ肩車。深ければ、れんだいという、はしごのような台に乗る。",
+   "image_en": "In a wide river, one traveler riding on a porter's shoulders and another seated on a ladder-like wooden platform carried by four porters, water splashing.",
+   "image": "Traveler on a porter's shoulders and another on a carried platform",
+   "chars": []
+  },
+  {
+   "id": "F05b",
+   "narration": "ふだんの深さは約76cm。それをこえると、手助けの人足がもう1人付き、川札も2枚いる。",
+   "tts_text": "ふだんの深さはやく76センチ。それをこえると、手助けの人足がもう1人付き、かわふだも2枚いる。",
+   "image_en": "A traveler on a river porter's shoulders crossing chest-deep water, a second porter wading beside them holding the traveler steady, morning light. Place the main person slightly right of center.",
+   "image": "Traveler on a porter's shoulders with a helper porter beside them",
+   "label": "川札2枚",
+   "chars": []
+  },
+  {
+   "id": "F06",
+   "narration": "水が約136cmをこえると、川留め。誰も渡れなくなる。",
+   "tts_text": "水がやく136センチをこえると、かわどめ。誰も渡れなくなる。",
+   "image_en": "A swollen brown river after rain with strong currents, crowds of travelers waiting on the bank, porters sitting idle. Faded old-memory colors.",
+   "image": "Swollen river with crowds waiting on the bank",
+   "label": "川留め",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "この朝、水は低かった。選手は、人足の肩にまたがった。",
+   "image_en": "The modern marathon runner (lean Japanese man, plain dark navy running singlet and shorts, plain white running shoes) riding awkwardly on the shoulders of a grinning muscular river porter wading through a shallow river, morning sun. Place the main person slightly right of center.",
+   "image": "Runner riding awkwardly on a porter's shoulders across a river",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F08",
+   "narration": "自分で走ったほうが、ずっと速いのに。",
+   "image_en": "Close-up of the modern marathon runner on a porter's shoulders, frowning impatiently, river water sparkling below. Place the main person slightly right of center.",
+   "image": "Close-up of the runner frowning impatiently on the porter's shoulders",
+   "chars": [],
+   "voice": "runner"
+  },
+  {
+   "id": "F09",
+   "narration": "もし川留めでも、継飛脚は、川留めが解けると最初に渡れた。",
+   "tts_text": "もしかわどめでも、つぎびきゃくは、かわどめが解けると最初に渡れた。",
+   "image_en": "On a riverbank crowded with waiting travelers, two Edo couriers with the black lacquered box are the first to be carried into the river by porters, travelers watching. Place the main person slightly right of center.",
+   "image": "Couriers with the box carried into the river first, travelers watching",
+   "label": "最初に渡る",
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "島田には今も、川越人足が集まった宿の跡が残っている。",
+   "tts_text": "しまだには今も、かわごしにんそくが集まった宿の跡が残っている。",
+   "image_en": "A preserved row of old wooden buildings along a quiet street near a river, daytime.",
+   "real": "Shimada-juku Oigawa Kawagoshi Iseki",
+   "image": "Real image: photo of the Shimada river-crossing site",
+   "label": "川越遺跡",
+   "chars": []
+  },
+  {
+   "id": "F11",
+   "narration": "向こう岸で降ろされた選手の横に、もう箱が降ろされていた。",
+   "image_en": "On the far gravel riverbank, the modern marathon runner just set down by a porter turns to see two Edo couriers with the black box being set down right beside him, both groups starting to run. Place the main person slightly right of center.",
+   "image": "Runner set down on the far bank, couriers set down right beside him",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "narration": "2日目の夜。浜名湖を過ぎたあたりで、選手の足が止まった。",
+   "tts_text": "2日目の夜。はまなこを過ぎたあたりで、選手の足が止まった。",
+   "image_en": "Night on a dark pine-lined highway near a wide lake, the modern marathon runner stumbling to a stop, moonlight on the water. Place the main person slightly right of center.",
+   "image": "Runner stumbling to a stop on a dark road by a lake at night",
+   "chapter": "2日目の夜",
+   "label": "2日目の夜",
+   "chars": []
+  },
+  {
+   "id": "G02",
+   "narration": "走った道のりは、もう300km近い。マラソンなら、7本分だ。",
+   "image_en": "Close-up of the modern marathon runner's worn running shoes and swollen ankles on a dirt road at night, moonlight.",
+   "image": "Worn running shoes and swollen ankles on a dirt road at night",
+   "label": "約300km",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "足の裏がしびれる。選手は、松の根もとに倒れこんだ。",
+   "image_en": "The modern marathon runner collapsed on the ground at the foot of a big pine tree beside the highway at night, eyes half closed, exhausted. Place the main person slightly right of center.",
+   "image": "Runner collapsed at the foot of a pine tree at night",
+   "chars": []
+  },
+  {
+   "id": "G04",
+   "narration": "暗い道の向こうに、小さな灯りが1つ、揺れながら近づいてきた。",
+   "image_en": "A dark highway at night between pine trees, a single small paper lantern light approaching from far away, swaying.",
+   "image": "Single small lantern light approaching on a dark highway",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "継飛脚の箱が、座りこんだ選手の横を、すっと抜けていった。",
+   "tts_text": "つぎびきゃくの箱が、座りこんだ選手の横を、すっと抜けていった。",
+   "image_en": "Night on a pine-lined highway: two Edo couriers with a swinging paper lantern and the black lacquered box on a pole run swiftly past the modern marathon runner, who sits exhausted against a pine tree, staring after them with wide eyes and open mouth. Place the main person slightly right of center.",
+   "image": "Couriers with a lantern and the box running past the exhausted runner at night",
+   "label": "抜かれた",
+   "strong": true,
+   "highlight": [
+    "抜けていった"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "G06",
+   "narration": "選手は、自分が走った区間では、1度も負けていなかった。",
+   "image_en": "Close-up of the modern marathon runner's face at night, lantern light fading away, tears of frustration in his eyes. Place the main person slightly right of center.",
+   "image": "Close-up of the runner's frustrated face at night",
+   "label": "区間は全勝",
+   "chars": []
+  },
+  {
+   "id": "G07",
+   "narration": "それでも、勝負は負けた。",
+   "image_en": "The tiny lantern light disappearing far down a dark highway, the silhouette of the runner sitting alone under a pine tree in the foreground.",
+   "image": "Lantern light disappearing down the dark highway, runner alone",
+   "label": "勝負は負け",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "G08",
+   "narration": "選手の足は2本だけ。飛脚の足は、宿場の数だけあった。",
+   "image_en": "A long line of Edo post towns at night seen from above, each with a pair of couriers waiting with a lantern at the gate, like a string of lights along the highway.",
+   "image": "Post towns at night like a string of lights, couriers waiting at each",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "選手は、松並木の下で、そのまま朝まで眠った。",
+   "image_en": "The modern marathon runner asleep curled up under a big pine tree beside the highway at dawn, dew on the grass. Place the main person slightly right of center.",
+   "image": "Runner asleep under a pine tree at dawn",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "narration": "箱が京都の三条大橋に着いたのは、走り出してから68時間ほど。",
+   "tts_text": "箱が京都のさんじょうおおはしに着いたのは、走り出してから68時間ほど。",
+   "image_en": "A long wooden bridge across a river in Kyoto with travelers crossing and mountains behind, an old woodblock print look.",
+   "real": "Hiroshige Sanjo Ohashi Kyoto Tokaido",
+   "chapter": "三条大橋",
+   "label": "68時間ほど",
+   "chars": [],
+   "real_src": {
+    "題": "File:Kyoto, Sanjo-ohashi (5758996859).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Kyoto%2C_Sanjo-ohashi_%285758996859%29.jpg/1920px-Kyoto%2C_Sanjo-ohashi_%285758996859%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Kyoto,_Sanjo-ohashi_(5758996859).jpg",
+    "検索語": "Hiroshige Sanjo Ohashi Kyoto Tokaido"
+   }
+  },
+  {
+   "id": "H02",
+   "narration": "伝馬町を出てから、4日目の夜明け前だった。",
+   "tts_text": "てんまちょうを出てから、4日目の夜明け前だった。",
+   "image_en": "Before dawn at the end of a long wooden bridge in Kyoto, two Edo couriers handing the black lacquered box to an official holding a lantern. Place the main person slightly right of center.",
+   "image": "Couriers handing the box to an official at a Kyoto bridge before dawn",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "元禄9年の定めでは、急ぎでも82時間かかった。",
+   "tts_text": "げんろく9年の定めでは、急ぎでも82時間かかった。",
+   "image_en": "An older generation of Edo couriers running with a box along a rougher road in faded colors, fewer post houses. Faded old-memory colors.",
+   "image": "Older couriers running on a rougher road, faded colors",
+   "label": "元禄は82時間",
+   "payoff": true,
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "70年ほどで、同じ道のりが14時間も縮んでいたのだ。",
+   "image_en": "Two Edo couriers running fast with the black box past a well-kept post town with neat inns, morning sun. Place the main person slightly right of center.",
+   "image": "Couriers running fast past a well-kept post town",
+   "label": "14時間短く",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H04b",
+   "narration": "急がない普通の御用なら、京都まで5日ほどかかった。",
+   "tts_text": "急がない普通のごようなら、京都まで5日ほどかかった。",
+   "image_en": "Edo couriers walking at an easy pace with a box along a pine-lined highway past rice fields, afternoon. Faded old-memory colors.",
+   "image": "Couriers walking at an easy pace along the highway",
+   "label": "普通は5日ほど",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "選手が三条大橋にたどり着いたのは、5日目の朝だった。",
+   "tts_text": "選手がさんじょうおおはしにたどり着いたのは、5日目の朝だった。",
+   "image_en": "The modern marathon runner limping slowly onto a long wooden bridge in Kyoto in the morning, holding the railing, townspeople turning to look. Place the main person slightly right of center.",
+   "image": "Runner limping onto a Kyoto bridge in the morning",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H06",
+   "narration": "箱より、1日以上も遅れていた。",
+   "same_as": "H05",
+   "label": "1日以上の差",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "江戸から1人で走ってきたと話すと、橋のたもとの京都の飛脚は目を丸くした。",
+   "image_en": "A Kyoto courier in a headband sitting at the end of a bridge with a cup of tea, looking at the exhausted modern runner with an amused, astonished face. Place the main person slightly right of center.",
+   "image": "Kyoto courier looking at the runner with an amused face",
+   "chars": []
+  },
+  {
+   "id": "H08",
+   "narration": "あんた、ひとりで走って来たのかい。そりゃ無茶だ。",
+   "image_en": "Close-up of the Kyoto courier laughing kindly and shaking his head, morning light. Place the main person slightly right of center.",
+   "image": "Close-up of the Kyoto courier laughing and shaking his head",
+   "chars": [],
+   "voice": "hikyaku"
+  },
+  {
+   "id": "H09",
+   "narration": "継飛脚は、江戸と大坂の間なら、4〜5日で通ったという。",
+   "tts_text": "つぎびきゃくは、江戸と大坂の間なら、4から5日で通ったという。",
+   "image_en": "Couriers with the black box running along a riverside road toward a big merchant city with many warehouses and boats, evening. Faded old-memory colors.",
+   "image": "Couriers running toward a big merchant city with warehouses",
+   "label": "大坂まで4〜5日",
+   "chars": []
+  },
+  {
+   "id": "H10",
+   "narration": "選手は橋の上で、たすきのように肩にかけたタオルを、じっと見つめた。",
+   "image_en": "The modern marathon runner standing on a Kyoto bridge looking down thoughtfully at a plain white towel draped diagonally over his shoulder like a sash, river below. Place the main person slightly right of center.",
+   "image": "Runner on a bridge looking at a plain towel over his shoulder like a sash",
+   "chars": []
+  },
+  {
+   "id": "I01",
+   "narration": "江戸に戻った選手は、親方の家の戸をたたいた。",
+   "image_en": "the tobi foreman, opening the wooden door of his house in surprise to find the modern marathon runner standing there, evening. Place the main person slightly right of center.",
+   "image": "Tobi foreman opening his door in surprise to the runner",
+   "chapter": "江戸のたすき",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "I02",
+   "narration": "親方、若い衆を10人、貸してくれ。",
+   "image_en": "The modern marathon runner bowing deeply in front of the tobi foreman's doorway, earnest face. Place the main person slightly right of center.",
+   "image": "Runner bowing deeply at the foreman's doorway",
+   "chars": [],
+   "voice": "runner"
+  },
+  {
+   "id": "I03",
+   "narration": "選手が考えたのは、1人では走らない競走だった。",
+   "image_en": "The modern marathon runner drawing a long line with dots on the ground with a stick, young tobi workers crouching around him, curious. Place the main person slightly right of center.",
+   "image": "Runner drawing a line with dots on the ground, young tobi men watching",
+   "chars": []
+  },
+  {
+   "id": "I04",
+   "narration": "区間ごとに人を置き、箱の代わりに、1本のたすきを渡していく。",
+   "image_en": "Close-up of hands passing a plain white cloth sash from one young Edo man to another. No writing.",
+   "image": "Hands passing a plain white sash",
+   "label": "たすき",
+   "chars": []
+  },
+  {
+   "id": "I05",
+   "narration": "そいつは、継飛脚のまねじゃねえか。",
+   "image_en": "the tobi foreman, laughing with his arms folded, raising one eyebrow. Place the main person slightly right of center.",
+   "image": "Tobi foreman laughing with arms folded",
+   "chars": [
+    "oyakata"
+   ],
+   "voice": "oyakata"
+  },
+  {
+   "id": "I06",
+   "narration": "そうだ。今度は、町の組どうしで競うんだ。",
+   "same_as": "I03",
+   "voice": "runner",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "日本橋から品川、川崎へ。鳶の組どうしの競走が始まった。",
+   "tts_text": "日本橋から品川、川崎へ。とびの組どうしの競走が始まった。",
+   "image_en": "Young Edo tobi workers in plain indigo happi coats and headbands sprinting down a wide street with plain white sashes across their chests, crowds cheering on both sides, morning sun. Place the main person slightly right of center.",
+   "image": "Young tobi men sprinting with white sashes, crowds cheering",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I08",
+   "narration": "息を切らした若い衆が、次の走者の肩に、たすきをかけた。",
+   "image_en": "At a post town gate, a panting young tobi man throwing a plain white sash over the shoulder of the next runner who is already starting to run, the tobi foreman shouting encouragement behind. Place the main person slightly right of center.",
+   "image": "Panting young man passing the white sash to the next runner",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "I09",
+   "narration": "道の両側には、見物の町人が鈴なりになった。",
+   "image_en": "Edo townspeople, children and old people lining both sides of a highway, leaning out and cheering as a runner with a white sash passes. Place the main person slightly right of center.",
+   "image": "Townspeople crowding both sides of the road cheering",
+   "chars": []
+  },
+  {
+   "id": "I10",
+   "narration": "この世界線では、駅伝は江戸で生まれた。1917年より、150年以上も早く。",
+   "image_en": "A young tobi runner with a plain white sash crossing a big arched wooden bridge in Edo as the finish, the modern marathon runner and the tobi foreman waiting with open arms, crowd cheering, golden afternoon light. Place the main person slightly right of center.",
+   "image": "Young runner crossing a bridge as the finish, runner and foreman waiting",
+   "label": "150年以上早い",
+   "strong": true,
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "I11",
+   "narration": "日本橋で、選手は、たすきをつないだ若い衆を抱きとめた。",
+   "image_en": "The modern marathon runner hugging an exhausted young tobi runner wearing a plain white sash on an arched wooden bridge, the crowd throwing their hands up, sunset. Place the main person slightly right of center.",
+   "image": "Runner hugging the young tobi runner with the white sash at sunset",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "narration": "実際の歴史では、駅伝が生まれたのは1917年の4月27日。",
+   "image_en": "Early twentieth-century Japanese runners in white running shirts at the start of a road race beside a long bridge, crowds in kimono and bowler hats watching, sepia tones.",
+   "image": "Early 1900s Japanese road race start by a bridge, sepia",
+   "chapter": "本当の駅伝",
+   "label": "1917年",
+   "chars": []
+  },
+  {
+   "id": "J02",
+   "narration": "京都の三条大橋から、東京の上野不忍池まで。23区間を3日かけて走った。",
+   "tts_text": "京都のさんじょうおおはしから、東京のうえのしのばずのいけまで。23区間を3日かけて走った。",
+   "image_en": "A stone monument beside a pond in a city park, trees around, daytime.",
+   "real": "Ekiden monument Shinobazu pond Ueno",
+   "image": "Real image: photo of the ekiden birthplace monument at Shinobazu pond",
+   "label": "23区間",
+   "chars": []
+  },
+  {
+   "id": "J03",
+   "narration": "昔の道の、駅馬と伝馬の決まりにちなんで、駅伝と名づけられたという。",
+   "tts_text": "昔の道の、えきばとてんまの決まりにちなんで、えきでんと名づけられたという。",
+   "image_en": "Packhorses and porters waiting at an old post station on a highway, a relay of horses being changed. Faded old-memory colors.",
+   "image": "Relay of packhorses being changed at an old post station",
+   "label": "駅馬と伝馬",
+   "chars": []
+  },
+  {
+   "id": "J04",
+   "narration": "計画を発表した時の名前は、マラソン・リレーだった。",
+   "image_en": "Close-up of a 1910s Japanese newspaper office desk with a folded newspaper, the printed side facing down, a fountain pen and a cup of tea, sepia tones. No readable writing.",
+   "image": "1910s newspaper office desk, newspaper face down",
+   "label": "マラソン・リレー",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "J05",
+   "narration": "1920年に箱根駅伝を始めたのは、金栗四三。",
+   "tts_text": "1920年に箱根駅伝を始めたのは、かなくりしそう。",
+   "image_en": "Black and white portrait photograph of a young Japanese athlete in a running shirt in the 1910s.",
+   "real": "Shizo Kanakuri",
+   "label": "金栗四三",
+   "chars": [],
+   "real_src": {
+    "題": "File:Shiso Kanaguri 1924.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Shiso_Kanaguri_1924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Shiso_Kanaguri_1924.jpg",
+    "検索語": "Shizo Kanakuri"
+   }
+  },
+  {
+   "id": "J06",
+   "narration": "1912年、日本から初めてオリンピックに出た選手の1人だ。",
+   "image_en": "A Japanese marathon runner in a white running shirt running through a European city street in 1912, spectators in hats, sepia tones. Place the main person slightly right of center.",
+   "image": "Japanese runner in a 1912 European city marathon, sepia",
+   "label": "1912年",
+   "chars": []
+  },
+  {
+   "id": "J07",
+   "narration": "そのマラソンでは、18kmのあたりで倒れて、棄権している。",
+   "image_en": "A Japanese runner in a white running shirt sitting exhausted under a tree beside a country road in Sweden in summer, sepia tones. Place the main person slightly right of center.",
+   "image": "Exhausted Japanese runner sitting under a tree by a road, sepia",
+   "chars": []
+  },
+  {
+   "id": "J08",
+   "narration": "マラソンで倒れた人が、のちに、たすきをつなぐ競走を始めた。そこだけは、2つの世界で同じだった。",
+   "image_en": "The modern marathon runner and the tobi foreman sitting side by side on the edge of an arched wooden bridge at sunset, a plain white sash in the runner's hands, young tobi men resting behind them. Place the main person slightly right of center.",
+   "image": "Runner and foreman on a bridge at sunset holding the white sash",
+   "label": "ここだけは同じ",
+   "chars": [
+    "oyakata"
+   ]
+  },
+  {
+   "id": "J09",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "The modern marathon runner handing a plain white sash to a smiling young tobi runner on a pine-lined highway at golden sunset, the tobi foreman watching proudly. Place the main person slightly right of center.",
+   "image": "Runner handing the white sash to a young tobi runner at sunset",
+   "chars": [
+    "oyakata"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J10",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "J08",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

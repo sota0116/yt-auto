@@ -112,6 +112,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python -X utf8 pipeline/agent_run.py pick "$CH"
+      - name: Codex の絵を受け取る（PC の Codex が release に置いた絵）
+        if: steps.pick.outputs.run == 'true'
+        continue-on-error: true
+        run: python -X utf8 pipeline/codex_todo.py fetch-all "$CH" || true
       - name: 作る
         if: steps.pick.outputs.run == 'true'
         timeout-minutes: 255
@@ -154,6 +158,10 @@ jobs:
           printf '%s' "$YT_TOKEN" > "$YT_SECRETS_DIR/token_$CH.json"
           chmod 600 "$YT_SECRETS_DIR"/*
           python -X utf8 pipeline/agent_run.py finish "$CH"
+      - name: Codex に頼む絵を書き出す（絵の場面だけ。history/<ch>/codex_todo に置き、下の commit で PC へ渡る）
+        if: always() && steps.restore.outcome == 'success'
+        continue-on-error: true
+        run: python -X utf8 pipeline/codex_todo.py export "$CH" || true
       - name: 素材を保存する
         if: always() && steps.restore.outcome == 'success'
         env:

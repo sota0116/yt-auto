@@ -16,7 +16,7 @@
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CH_DIR = os.path.join(ROOT, "channels", "okinu")
@@ -146,12 +146,14 @@ rank／rules／big_text（text・text2・accent・kicker）／two_cards（items[
 - 実際の画像（2026-11-05。AI の絵ばかりで単調になるのを崩す）：意味づけ（昔から〜と言われています）のカットのうち、本物の資料を見せた方が伝わる2〜4カットに
   "real": "Wikimedia Commons で探す英語の検索語"（例 "Kan'ei Tsuho coin"・"Ebisu Daikoku ukiyo-e"・"Edo period kitchen kamado"）を書く。image_en もいつもどおり書く（見つからない時は AI の絵になる）。
   chars・motion・peak のカットと、サムネの背景に使うカットには付けない。声で「これは江戸時代の錦絵です」のように何の資料かを言ってよい（画面の文字は読ませない）。
-## サムネ（制作ルール v1.7 §9）
+## サムネ（制作ルール v1.9 §9）
 thumb の layout を次の4つから選ぶ。直近2本と同じ layout にしない（直近6本で同じ型は2回まで。下の「直近の回」のサムネの型を見る）。
 - "object"：物の寄りが背景。{"layout":"object","bg":"<物の絵のカットid>","line1":"枕元の","line2":"コレ","judge":"今すぐどけて"}（line2 は大きく黄色）
 - "person"：人物（左）＋右上に2行＋下に大きな赤の判定。{"layout":"person","bg":"<人物のカットid>","line1":"疲れた夜に","line2":"●●する人","judge":"大損してます","hl":["●●"]}
 - "split"：左右半分。左＝暗い悪い絵／右＝明るい良い絵。{"layout":"split","left":"<カットid>","right":"<カットid>","line1":"トイレの●●で","line2":"差がつく","left_label":"残らない家","right_label":"残る家"}
-- "shock"：左上に2行＋右に驚いた顔＋下に赤の判定。{"layout":"shock","bg":"<物の絵のカットid>","face":"<驚いた顔のカットid（s02_A07 を使った cut でもよい）>","line1":"玄関に●●を","line2":"出してる家","judge":"破産します"}
+- "shock"：左上に2行＋右に驚いた顔＋下に赤の判定。{"layout":"shock","bg":"<物の絵のカットid>","face":"<驚いた顔のカットid（この回で新しく作る絵のカット）>","line1":"玄関に●●を","line2":"出してる家","judge":"破産します"}
+サムネの絵（bg・face・left・right）は、この回で新しく作る絵（image_en）のカットから選ぶ。共有ポーズ絵（img_from）のカットと、それを same_as で引いたカットは使わない（どの回も同じ絵になる。2026-11-12 本人「サムネで同じ素材や画像を使わない」）。
+person・shock の人物は、直近の回と違う表情とポーズを image_en に具体的に書く（頭を抱える・目を見開く・指をさす・のぞき込む・のけぞる）。口に手を当てる形は当面使わない（001〜015 で10本使った）。
 文字は3段（上2行＝場面か悩み／下＝判定）。判定の語（破産します・大損・貧乏神）は題・サムネ・番号カード・見出しに使ってよい（本人の方針）。判定は画面の幅の6割以上・伏せ字は●。背景の絵は暗め。
 ## 題（§8）
 型 A〜F（手順書 §8）のどれか1つ。直近の回と同じ型を続けない。必ず【金運】で終える（頭の【】は型による）。26〜40字。titles に3案。
@@ -223,6 +225,7 @@ def prompt(work, fix):
 5. 最後に、字数・カット数・絵の数（新しい絵）・使った言い伝えの確かめ方を1行ずつ書いて終える。
 
 {HOOK_ASK}
+{ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
 {LEVELUP_ASK}

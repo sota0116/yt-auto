@@ -94,6 +94,13 @@
    "averageViewDuration": 25,
    "subscribersGained": 1,
    "取った日": "2026-11-02"
+  },
+  "d7": {
+   "views": 389,
+   "averageViewPercentage": 65.78,
+   "averageViewDuration": 25,
+   "subscribersGained": 1,
+   "取った日": "2026-11-06"
   }
  },
  "001_a4_saikyo_1216:short_5": {
@@ -113,6 +120,13 @@
    "averageViewDuration": 108,
    "subscribersGained": 0,
    "取った日": "2026-11-02"
+  },
+  "d7": {
+   "views": 203,
+   "averageViewPercentage": 289.25,
+   "averageViewDuration": 101,
+   "subscribersGained": 0,
+   "取った日": "2026-11-06"
   }
  },
  "012_b_shinshi_karasu:short_4": {
@@ -132,6 +146,13 @@
    "averageViewDuration": 25,
    "subscribersGained": 0,
    "取った日": "2026-11-05"
+  },
+  "d7": {
+   "views": 787,
+   "averageViewPercentage": 248.28,
+   "averageViewDuration": 116,
+   "subscribersGained": 1,
+   "取った日": "2026-11-09"
   }
  },
  "015_b_shinshi_ushi:short_4": {
@@ -144,6 +165,32 @@
   ],
   "kind": "solo",
   "title": "太宰府天満宮の延寿王院の前の牛は、なぜ背中がなだらかなのか #shorts",
-  "publish_slot": "11:15"
+  "publish_slot": "11:15",
+  "h72": {
+   "views": 930,
+   "averageViewPercentage": 81.04,
+   "averageViewDuration": 37,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
+  }
+ },
+ "016_b_torii_2026:short_4": {
+  "type": "B",
+  "video_id": "bEy33tEyPLM",
+  "hook": "鳥居は、なぜ、鳥という字で書くのか。",
+  "band": [
+   "鳥居の「鳥」は",
+   "どの鳥？"
+  ],
+  "kind": "solo",
+  "title": "鳥居は、なぜ「鳥」という字で書くのか｜神話の止まり木の言い伝え #shorts",
+  "publish_slot": "07:15",
+  "h72": {
+   "views": 15,
+   "averageViewPercentage": 2989.83,
+   "averageViewDuration": 1225,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
+  }
  }
 }

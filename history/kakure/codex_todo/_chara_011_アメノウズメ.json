@@ -1,0 +1,146 @@
+{
+ "ch": "kakure",
+ "work": "_chara_011_アメノウズメ",
+ "portrait": false,
+ "made": "2026-11-12 02:59",
+ "style_en": "Japanese TV anime style, clean bold line art, cel shading, muted colors, bright even light, Kofun-period ancient Japan. Pure white background.",
+ "avoid_en": "text, letters, logo, modern clothes or buildings, Chinese-style robes, nudity, exposed skin, low neckline, blood",
+ "rules": {},
+ "characters": {
+  "amaterasu": {
+   "desc_en": "Amaterasu, the sun goddess, a serene young woman with very long straight black hair and a thin golden circlet, white and gold Kofun-period robe with a long white mo skirt, a magatama bead necklace, a soft golden glow around her",
+   "channel": true
+  },
+  "uzume": {
+   "desc_en": "Ame-no-Uzume, a bold cheerful goddess of ancient Japan in her early 20s with round cheeks and bright confident eyes, long black hair tied up with a crown of green masaki vines, a sash of green hikage moss vines crossed over the shoulders as a tasuki, a fully covering white Kofun-period kinu tunic with long sleeves and a long deep red mo skirt, a small bundle of bamboo grass leaves in one hand, barefoot",
+   "channel": true
+  },
+  "tajikarao": {
+   "desc_en": "Ame-no-Tajikarao, a huge strong male god of ancient Japan about 35 years old, broad shoulders and thick arms, black hair in large mizura loops, a short black beard, a brown Kofun-period kinu tunic with rolled-up sleeves and white hakama trousers tied below the knees, a thick rope belt, barefoot",
+   "channel": true
+  },
+  "omoikane": {
+   "desc_en": "Omoikane, a wise elderly male god of ancient Japan about 60 years old, long grey hair in neat mizura loops, a long thin grey beard, calm thoughtful narrow eyes, a dark green Kofun-period kinu tunic with a white sash and white hakama trousers, a string of white magatama beads",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "uzume_dance",
+   "image": "アメノウズメが、片足を上げて両腕を大きく広げ、笹の葉の束を振りながら楽しそうに踊っている全身。服はきちんと着ている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume dancing joyfully, one foot raised, both arms spread wide, waving a bundle of bamboo grass leaves, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume dancing joyfully, one foot raised, both arms spread wide, waving a bundle of bamboo grass leaves, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "uzume_stomp",
+   "image": "アメノウズメが、伏せた大きな木の桶の上に立ち、片足で強く踏み鳴らしている全身。髪が揺れ、目を閉じて神がかったような顔。服はきちんと着ている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。桶ごと全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume standing on top of a large upturned wooden tub, stamping hard with one foot, hair swaying, eyes closed in a trance-like face, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body and tub fit without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume standing on top of a large upturned wooden tub, stamping hard with one foot, hair swaying, eyes closed in a trance-like face, fully clothed. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body and tub fit without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "uzume_laugh",
+   "image": "アメノウズメが、口を大きく開けて明るく笑い、片手を腰に当てて立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume standing with one hand on her hip, laughing brightly with her mouth wide open. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume standing with one hand on her hip, laughing brightly with her mouth wide open. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "uzume_speak",
+   "image": "アメノウズメが、片手を前に差し出し、自信のある顔で誰かに言葉を告げている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume holding one hand out forward, speaking to someone with a confident sly smile. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume holding one hand out forward, speaking to someone with a confident sly smile. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "uzume_face",
+   "image": "アメノウズメが、腕を組んで胸を張り、正面の見えない相手をまっすぐにらみ返している全身。おびえない強い目。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume standing tall with arms folded, glaring straight ahead at an unseen opponent with fearless strong eyes. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume standing tall with arms folded, glaring straight ahead at an unseen opponent with fearless strong eyes. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "uzume_think",
+   "image": "アメノウズメが、あごに指を当てて、少し考えこんでいる全身。静かな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Uzume standing with a finger on her chin, quietly thinking, calm face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "uzume"
+   ],
+   "en": "Full body of Ame-no-Uzume standing with a finger on her chin, quietly thinking, calm face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "tajikarao_stand",
+   "image": "アメノタヂカラオが、腕を組んで仁王立ちしている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Tajikarao standing firmly with arms folded. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "tajikarao"
+   ],
+   "en": "Full body of Ame-no-Tajikarao standing firmly with arms folded. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "tajikarao_pull",
+   "image": "アメノタヂカラオが、腰を落として片手を前に強く伸ばし、何かをつかんで引き寄せようとしている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Tajikarao crouching low with one arm stretched strongly forward, grabbing and pulling something toward him. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "tajikarao"
+   ],
+   "en": "Full body of Ame-no-Tajikarao crouching low with one arm stretched strongly forward, grabbing and pulling something toward him. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "tajikarao_hide",
+   "image": "アメノタヂカラオが、身をかがめて、何かの陰にひそんで待ち構えている全身（陰の物は描かない）。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Ame-no-Tajikarao crouching, hiding and waiting in ambush (do not draw what he hides behind). Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "tajikarao"
+   ],
+   "en": "Full body of Ame-no-Tajikarao crouching, hiding and waiting in ambush (do not draw what he hides behind). Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "omoikane_think",
+   "image": "オモイカネが、腕を組み目を閉じて、深く考えている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Omoikane standing with arms folded and eyes closed, thinking deeply. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "omoikane"
+   ],
+   "en": "Full body of Omoikane standing with arms folded and eyes closed, thinking deeply. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "omoikane_point",
+   "image": "オモイカネが、片手を上げて指示を出している全身。落ち着いた顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Omoikane raising one hand, giving instructions with a calm face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "omoikane"
+   ],
+   "en": "Full body of Omoikane raising one hand, giving instructions with a calm face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "amaterasu_peek",
+   "image": "アマテラスが、体を少し横に傾け、片手を何かに添えて、そっと外をのぞいている全身。不思議そうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Amaterasu leaning slightly sideways with one hand raised as if resting on a door edge (do not draw the door), peeking out curiously with a puzzled face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "amaterasu"
+   ],
+   "en": "Full body of Amaterasu leaning slightly sideways with one hand raised as if resting on a door edge (do not draw the door), peeking out curiously with a puzzled face. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  },
+  {
+   "id": "amaterasu_down",
+   "image": "アマテラスが、顔を伏せ、両手で胸の前の袖を握って、閉じこもるように悲しげに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Full body of Amaterasu standing with her face lowered, both hands gripping her sleeves in front of her chest, withdrawn and sorrowful. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines.",
+   "chars": [
+    "amaterasu"
+   ],
+   "en": "Full body of Amaterasu standing with her face lowered, both hands gripping her sleeves in front of her chest, withdrawn and sorrowful. Plain pure white background (#FFFFFF). No floor, ground, shadow, scenery or frame. The whole body fits without cropping, filling the image top to bottom, exactly one figure centered. Clear outlines."
+  }
+ ]
+}

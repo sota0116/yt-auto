@@ -82,6 +82,15 @@
    "直す所": [],
    "取った日": "2026-11-02",
    "再生（公開ページ）": 2
+  },
+  "d7": {
+   "views": 8,
+   "averageViewPercentage": 1.43,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-06",
+   "再生（公開ページ）": 12
   }
  },
  "005_kofuku_toshi": {
@@ -95,6 +104,19 @@
    "直す所": [],
    "取った日": "2026-11-04",
    "再生（公開ページ）": 68
+  },
+  "d7": {
+   "views": 70,
+   "averageViewPercentage": 14.29,
+   "averageViewDuration": 150,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "61%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 76
   }
  },
  "006_hitori_suki": {
@@ -112,10 +134,84 @@
    ],
    "取った日": "2026-11-05",
    "再生（公開ページ）": 165
+  },
+  "d7": {
+   "views": 201,
+   "averageViewPercentage": 19.87,
+   "averageViewDuration": 209,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 204
   }
  },
  "007_kotowarenai": {
   "type": "人づきあい",
-  "video_id": "iFnGAfBm-p0"
+  "video_id": "iFnGAfBm-p0",
+  "h72": {
+   "views": 145,
+   "averageViewPercentage": 22.69,
+   "averageViewDuration": 253,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-08",
+   "再生（公開ページ）": 212
+  },
+  "d7": {
+   "views": 232,
+   "averageViewPercentage": 22.02,
+   "averageViewDuration": 246,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 238
+  }
+ },
+ "008_mono_herasu": {
+  "type": "幸せの心理",
+  "video_id": "mu4FkBUf1x8",
+  "h72": {
+   "views": 4,
+   "averageViewPercentage": 71.68,
+   "averageViewDuration": 817,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-09",
+   "再生（公開ページ）": 30
+  }
+ },
+ "009_zenbu_hitonome": {
+  "type": "人づきあい",
+  "video_id": "X4TbcBQKT0k",
+  "h72": {
+   "views": 6,
+   "averageViewPercentage": 1.8799999999999997,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-10",
+   "再生（公開ページ）": 15
+  }
+ },
+ "010_niwa_shokubutsu": {
+  "type": "ひとりの時間",
+  "video_id": "liv4Sr8aVbA",
+  "h72": {
+   "views": 0,
+   "averageViewPercentage": 0,
+   "averageViewDuration": 0,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-11",
+   "再生（公開ページ）": 2
+  }
  }
 }

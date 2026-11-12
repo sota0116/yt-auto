@@ -1,0 +1,1009 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】現代の寿司職人が、江戸の屋台で握ったら｜1皿2貫の理由が逆さまになった世界線",
+ "promise": "江戸の握りずしが屋台で売る早くて安い食べ物で、1つ8文・今の2、3倍の大きさだったこと、トロが好まれず赤身をしょうゆに漬けたこと、与兵衛ずしが天保の改革で召し捕られた記録、そして1皿2貫は大きな握りを切った名残といわれる話が、1本で分かる",
+ "desc": "もしも現代の寿司職人が1人、1841年の江戸・両国の屋台に飛ばされたら。持って行けたのは、腕と知識だけ。いつもの大きさで握ると、江戸の客は「小せえ」と怒りだします。\n回転寿司の1皿2貫は、江戸の大きな握りを2つに切った名残、とよく言われます。でも、江戸の握りは本当にそんなに大きく、そんなに安かったのか。江戸の終わりの風俗の本『守貞謾稿』には、握り1つがおよそ8文、玉子巻は16文ほどとあります。トロが好まれなかった江戸の魚の話、赤い酢飯の正体、両国の与兵衛ずし、天保の改革で鮓屋が召し捕られた記録、歌川広重が描いた高輪の屋台まで。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※寿司職人が江戸に行く話、屋台の親父と大工の客、職人の握りが小さいので客が2つずつ頼み「1皿2つ」が生まれる場面、職人がトロを出す場面、職人と与兵衛の会話、職人が天保の改革を前もって知らせる場面、職人の屋台が役人に見逃される場面、職人の屋台が高輪に出てまわりの屋台が2つずつ出し始める場面は作り話です。握りずしの値段・種・大きさ・粕酢・与兵衛ずし・天保の改革・二十六夜待の屋台などは、『守貞謾稿』（『日本米食史』1913年の引用・国立国会図書館デジタルコレクション）、喜多村信節『聞のまにまに』（同）、国立国会図書館「本の万華鏡」、東京観光財団 GO TOKYO、コトバンクの事典、ミツカンの解説などをもとにしています（握りを考えた人や、1皿2貫の由来には諸説あります）。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "江戸時代",
+  "寿司",
+  "江戸前寿司",
+  "握りずし",
+  "守貞謾稿",
+  "天保の改革",
+  "タイムスリップ"
+ ],
+ "thumb": {
+  "top": "江戸の屋台で、今の寿司を握ったら",
+  "big": "客が「小さすぎる」と怒った",
+  "hl_top": "今の寿司",
+  "hl_big": "小さすぎる",
+  "bg": "C05"
+ },
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：現代の寿司職人が1人、天保12年（1841年）の春の江戸・両国に飛ばされる。持って来たのは腕と知識だけ。冷蔵庫も今の酢も無く、使えるのは江戸の屋台にある物（粕酢の酢飯・江戸前の魚・熊笹）だけ",
+  "今の握りの大きさ・トロの人気・1皿2貫の今の形・天保の改革で鮓屋が召し捕られることを知っているのは、未来から来た職人だけ。屋台の親父・大工・与兵衛など江戸の人は知らない",
+  "職人は歴史の出来事を変えない。天保の改革も、与兵衛の鮓が召し捕られたことも、本当の歴史のまま。職人の知らせを与兵衛は聞き入れない",
+  "この世界線で変わるのは1つ：職人の握りが今の大きさで小さいので、客が2つずつ頼み、職人が最初から2つ並べて出す『1皿2つ』が、職人のまわりの屋台で生まれる。年・人・出来事・値段は本当の歴史"
+ ],
+ "world_terms": [
+  "知って",
+  "知らせ",
+  "世界線",
+  "小さ",
+  "2つ",
+  "召し捕",
+  "トロ"
+ ],
+ "voices": {
+  "shokunin": 11,
+  "daiku": 53,
+  "yohei": 52,
+  "oyaji": 12
+ },
+ "facts": [
+  "史料の本文（ページ画像で一字ずつ確認）：岡崎桂一郎『日本米食史 附・食米と脚気病との史的関係考』（丸山舎書籍部・1913年、国立国会図書館デジタルコレクション 980938）のコマ598（1058〜1059ページ「飯、粥、鮨及び餅の故事（鮨）」）。2026-11-06 に国立国会図書館 次世代デジタルライブラリー（lab.ndl.go.jp）の全文検索で「鮓 大略八文」から本を見つけ、全文の JSON でコマ番号を探し、IIIF のページ画像（dl.ndl.go.jp/api/iiif/980938/R0000598）を読んだ。1059ページに喜多村季荘『守貞漫稿』（写本・嘉永頃）として「江戸今製するは握鮓也、鶏卵焼、車海老、海老そぼろ、白魚、まぐろさしみ、こはだ、あなご甘煮長のまゝ也。以上大略八文鮓也、其中玉子巻は十六文許也、添之に新生薑の酢漬、姫蓼等也、又隔等には熊笹を用ひ」「江戸は鮓店甚だ多く毎町一二戸あり、鮓屋名あるは屋台見世を置かず、普通の見世は専ら之を置く、又屋台見世のみにて売も多し」。同じページの頭注は「八文鮓」「江戸には鮓店多く毎町一二戸あり」",
+  "同じコマ598の1058ページ：『武総両岸考』に「鯛比良目いつも風味は与兵衛すし買手は見世にまつて折詰」「こみあひて待くたびれる与平鮨客も諸とも手を握りけり」の狂歌。その前に「流行鮓屋町々在 此頃新開両国東 路次奥名与兵衛 客来争坐二間中」の詩。続けて喜多村信節翁の『聞のまにまに』に「天保十三年四月十八日照降町に種々高価の衣類を仕立て商ふ店有…是等皆召捕れ土蔵に封印付て御改有（中略）大橋安宅の松の鮓、両国元町の与兵衛が鮓、是等も召捕れたり」。頭注は「天保御趣意騒動に松の鮓及与兵衛鮓が咎を蒙むる」。台本は『1842年の随筆に、与兵衛の鮓も召し捕られたと書かれている』と言い、日付は言わない",
+  "『守貞謾稿』の押し鮓の文：「三都とも押鮓なりしが、江戸はいつ比より歟押たる筥鮓廃し、握り鮓のみとなる。筥鮓の廃せしは五六十年以来漸くに廃すと也」（東京市日本橋区『日本橋区史』第3冊・1916年 NDL 951553、『日本社会事彙』下巻・1902年 NDL 1805636 の引用。lab.ndl.go.jp の全文検索の OCR で確認。ページ画像は見ていない）。日本社会事彙は「この著天保八年起稿」と注する",
+  "国立国会図書館「本の万華鏡」第30回 第3章 www.ndl.go.jp/kaleido/entry/30/3.html（2026-11-06 本文を読んで確認）：宝暦年間（1751〜64）に酢を用いて酸味を付ける早鮨が料理屋や屋台で売られるようになった／箱鮨に発展し、屋台で売られる箱鮨は食べやすいようにあらかじめ切れ目が入っていた／この一切れぶんを手で握るようになったものが現在の握り鮨とされる／握り鮨の正確な誕生時期は不明だが文政年間（1818〜1831）以前と考えられている／江戸前とは江戸城前の海や川でとれる美味な魚／鮪は遠隔地から運ばれる過程で鮮度が大きく落ちるため下魚とされた／当時の江戸では脂ののったトロは好まれず、赤身を醤油漬けにして食べていた／図版「宝暦年間頃の両国の鮨屋台」（『絵本江戸みやげ』）、豊国『二十四好今様美人』「寿し好」（文久3）",
+  "コトバンク「与兵衛ずし」kotobank.jp/word/与兵衛ずし-1433467（世界大百科事典（旧版）の抜粋、2026-11-06 確認）：「握りずしは文政年間(1818‐30)ころ江戸両国の与兵衛ずしが売り始めたもの」、初代 花(華)屋与兵衛(1799‐1858)の「創案になるとする説がある」、それ以前に試みた人がいたともいわれ、与兵衛は完成・定着させた人とみる考えもある。台本は『といわれる』『説がある』で言う",
+  "nippon.com「寿司は江戸の昔からお手軽ファストフードだった：『守貞漫稿』(その3)」www.nippon.com/ja/japan-topics/g00962/（2026-11-06 本文を読んで確認）：『守貞漫稿』は屋台見世が「鮓、天麩羅を専とす」と記す。鮓1貫は8文、玉子焼き16文。卵は1個7〜20文して高かった。白魚は佃島周辺で獲れた江戸前の食材。与兵衛はコハダを酢でしめ岡持ちで売り歩き、屋台を経て文政7年（1824）東両国に店を構えた。二十六夜待（旧暦1月と7月の26日）の高輪海岸に寿司屋台が並んだ。1文≒12円の換算は記事の目安なので台本では使わない",
+  "大きさ：東京観光財団 GO TOKYO（東京都の公式観光サイト）www.gotokyo.org/jp/tourists/info/basic_info/basic/dento/tokusan2.html（2026-11-06 本文を読んで確認）「江戸時代には、そうした箱寿司がそば、てんぷらと一緒に屋台で出され」「ある屋台主が箱ではなく、酢飯のおにぎりに魚の切り身をのせて提供し始めた」「当時の「握り」は今の2、3倍も大きかった」",
+  "1皿2貫の由来：杉並区立柿木図書館「かきのき」2025年12月号（PDF www.library.city.suginami.tokyo.jp/fs/6/3/5/1/_/____12__-2.pdf。参考資料：篠田統『すしの本』・日比野光敏『すしの歴史を訪ねる』ほか）に「江戸時代の握りずしは今より2〜3倍も大きかったため、切り分けて食べられていたようで、1皿に2貫盛る今のスタイルは当時の名残のよう」（S110 の時、2026-11-04 に本文を読んで確認）。2026-11-06 に PDF をもう一度保存したが、この環境では PDF の字を取り出せず（pdftoppm なし・python の実行は許可が要る）読み直せていない。台本は『といわれる』で言う",
+  "粕酢：三菱電機 club-me「ミツカン 食酢エキスパート 赤野裕文さん」インタビュー www.mitsubishielectric.co.jp/club-me/knowledge/washoku03/06su/interview.html（2026-11-06 本文を読んで確認）「熟成した酒粕を原料とした酒粕酢――赤酢だったんです」「1804年の文化元年、この半田で初代の中野又左衛門が創業」「記録では1810年頃には酢を大量に出荷できるようになっています」「握りずしは1787年から1827年の間に誕生し、1827年から1853年の間に大成したと言われています」。台本は『といわれる』",
+  "天保の改革：コトバンク「天保改革」kotobank.jp/word/天保改革-854580（2026-11-06 確認）改訂新版世界大百科事典「41年家斉が没すると，老中首座の水野忠邦は…幕政の改革を開始」「奢侈の抑制は微細にわたり」「ぜいたくな料理の販売禁止など」「43年閏9月には老中を罷免され…中止」。百科事典マイペディア「1841年水野忠邦は老中首座につき，奢侈禁止，倹約奨励を唱え」",
+  "歌川広重『東都名所 高輪二十六夜待遊興之図』：東京都江戸東京博物館の所蔵（museumcollection.tokyo/works/6239560、天保12〜13年＝1841〜42年ごろ、パブリックドメイン）。寿司屋・天ぷら屋・蕎麦屋などの屋台が描かれている（検索の抜粋で確認。美術手帖は1837〜44とする）。台本は『天保の改革のころの作とされる』",
+  "川柳：『俳風柳多留』に「妖術といふ身で握る鮓の飯」（nippon.com 同上の記事、2026-11-06 確認）。台本は書名と年を言わない",
+  "両国橋のたもとは火除地の広小路で盛り場になった（L002 の facts：内閣府 1657明暦江戸大火 報告書 第3章）",
+  "使わない：1文の今のお金の値（記事の目安だけ）、戦後の委託加工で握りが小さくなった話（公的な出どころが無い）、のれんで手をふいた話、与兵衛がわさびを挟んだ話、天保の改革で200人余りが捕まった話（どれも公的な本文で確かめられなかった）",
+  "作り話：寿司職人が江戸に行くこと、屋台の親父と大工、職人の握りが小さいので客が2つずつ頼み1皿2つが生まれる場面、職人がトロを出す場面、職人と与兵衛の会話、職人が天保の改革を前もって知らせる場面、職人の屋台が役人に見逃される場面、職人の屋台が高輪に出てまわりの屋台が2つずつ出し始める場面"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "現代の寿司職人が江戸で握ると、1皿2貫は大きすぎでなく、小さすぎで生まれる。1841年、両国の屋台で、大工が握りをつまんで固まった。",
+   "tts_text": "現代の寿司職人が江戸で握ると、ひとさらにかんは大きすぎでなく、小さすぎで生まれる。1841年、りょうごくの屋台で、大工が握りをつまんで固まった。",
+   "highlight": [
+    "小さすぎ"
+   ],
+   "image_en": "Blue-green dusk light over a wide river in Edo-period Japan, mist on the water, a long wooden arched bridge in the background. On the riverbank stands a small wooden sushi street stall with a plain unmarked cloth curtain; a stocky Edo carpenter customer with a twisted cloth headband and short plain indigo happi coat stares wide-eyed at a tiny piece of sushi pinched between his fingers. Soft light falling from above. Place the main person slightly right of center.",
+   "image": "Blue-green dusk at an Edo riverside sushi stall, a carpenter staring wide-eyed at a tiny sushi",
+   "label": "1841年 両国",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "江戸の握りは今の2、3倍。切って2つにした名残が、1皿2貫といわれる。なのに、この屋台の握りはひと口大だ。",
+   "tts_text": "江戸の握りは今のにさんばい。切ってふたつにしたなごりが、ひとさらにかんといわれる。なのに、この屋台の握りはひとくちだいだ。",
+   "image_en": "Inside a small wooden Edo sushi stall at blue-green dusk, pale light falling from above, mist on the river behind: on the left end of the plain wooden counter, one huge Edo-style nigiri as big as a rice ball lies cut in two halves on a green bamboo leaf with a knife beside it; on the right end, one tiny modern-size nigiri sits alone on another bamboo leaf. Behind the counter the modern sushi chef (a Japanese man in his forties, short neat black hair, clean-shaven, plain white chef's jacket, plain white cap and a plain dark apron, no logos or letters) looks from one to the other, bewildered. No writing anywhere. Place the main person slightly right of center.",
+   "image": "Huge Edo nigiri cut in two on the left, a tiny modern nigiri on the right, the bewildered modern chef behind the counter",
+   "label": "史実は大きすぎて2つ",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "足すルールは1つ。現代の寿司職人が1人、江戸の屋台に飛ばされる。持って行けたのは、腕と知識だけ。",
+   "same_as": "A02",
+   "label": "足すルールは1つ",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "年と人と出来事は本当の歴史。寿司職人だけが作り話です。",
+   "image_en": "Close-up of a low wooden desk in pale blue-green morning light from a window: an old hand-bound Japanese book lying open with blank pages, a brush, an ink stone, and a small wooden board with two pieces of sushi on a green bamboo leaf. No people. No writing.",
+   "image": "Old blank book, brush and two sushi on a bamboo leaf on a desk",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "天保12年の春。職人が目を開けると、そこは夕暮れの川べりだった。",
+   "tts_text": "てんぽう12年の春。職人が目を開けると、そこは夕暮れの川べりだった。",
+   "image_en": "the modern sushi chef (a Japanese man in his forties, short neat black hair, clean-shaven, plain white chef's jacket, plain white cap and a plain dark apron, no logos) waking up lying on the grassy riverbank of the Sumida river in Edo at dusk, curious townspeople in plain kimono leaning over him. Place the main person slightly right of center.",
+   "image": "The modern sushi chef waking up on an Edo riverbank, townspeople leaning over him",
+   "chapter": "両国の屋台",
+   "label": "天保12年",
+   "chars": []
+  },
+  {
+   "id": "B02",
+   "narration": "大きな木の橋。行き交う人。並んだ屋台から、油と酢のにおいがする。",
+   "image_en": "A lively riverside plaza at the end of a long wooden bridge in Edo at dusk, crowds of townspeople walking, small food stalls with plain curtains, steam and smoke rising from frying pots.",
+   "image": "Lively plaza at the end of a wooden bridge with food stalls at dusk",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B03",
+   "narration": "隅田川に架かる両国橋。そのたもとは、江戸でも指折りの盛り場だった。",
+   "tts_text": "隅田川に架かるりょうごくばし。そのたもとは、江戸でも指折りの盛り場だった。",
+   "image_en": "A long wooden arched bridge over a wide river in Edo crowded with people, boats below, an old woodblock print look.",
+   "real": "Ryogoku Bridge Hiroshige",
+   "label": "両国橋",
+   "chars": [],
+   "real_src": {
+    "題": "File:Utagawa Hiroshige - Enjoying the fireworks and the cool of the evening at Ryogoku bridge in the Eastern Capital - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Utagawa_Hiroshige_-_Enjoying_the_fireworks_and_the_cool_of_the_evening_at_Ryogoku_bridge_in_the_Eastern_Capital_-_Google_Art_Project.jpg/1920px-Utagawa_Hiroshige_-_Enjoying_the_fireworks_and_the_cool_of_the_evening_at_Ryogoku_bridge_in_the_Eastern_Capital_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Enjoying_the_fireworks_and_the_cool_of_the_evening_at_Ryogoku_bridge_in_the_Eastern_Capital_-_Google_Art_Project.jpg",
+    "検索語": "Ryogoku Bridge Hiroshige"
+   }
+  },
+  {
+   "id": "B04",
+   "narration": "江戸の終わりの暮らしを書いた本、守貞謾稿には、こうある。",
+   "tts_text": "江戸の終わりの暮らしを書いた本、もりさだまんこうには、こうある。",
+   "image_en": "Close-up of an old hand-bound Japanese book with blank pages lying open beside a brush and a small oil lamp, warm light. No people. No writing.",
+   "image": "Old hand-bound Japanese book open beside a brush and lamp",
+   "label": "守貞謾稿",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "屋台は、すしと天ぷらを主に売る。江戸の鮓屋はとても多く、町ごとに1、2軒ある、と。",
+   "tts_text": "屋台は、すしと天ぷらを主に売る。江戸のすしやはとても多く、町ごとにいち、にけんある、と。",
+   "image_en": "An Edo street corner in the evening with a sushi stall and a tempura stall side by side, customers standing and eating, paper lanterns without any writing.",
+   "image": "Sushi stall and tempura stall side by side on an Edo street corner",
+   "label": "町ごとに1、2軒",
+   "chars": []
+  },
+  {
+   "id": "B05b",
+   "narration": "名のある鮓屋は屋台を出さない。屋台だけで売る者も多かった、とも書かれている。",
+   "tts_text": "名のあるすしやは屋台を出さない。屋台だけで売る者も多かった、とも書かれている。",
+   "image_en": "Contrast in one Edo street at evening: a respectable sushi shop with a plain closed wooden front on one side, and a tiny portable sushi stall with a lone cook on the other side, customers crowding the stall.",
+   "image": "Respectable sushi shop versus tiny portable stall on one street",
+   "chars": []
+  },
+  {
+   "id": "B06",
+   "narration": "職人の目の前の屋台で、年寄りの親父が腰を押さえてうずくまっていた。",
+   "image_en": "the old stall owner (a thin elderly Edo man with a grey topknot and a plain faded kimono) crouching in pain and holding his lower back beside his small wooden sushi stall, the modern sushi chef in a plain white chef's jacket and white cap bending toward him. Place the main person slightly right of center.",
+   "image": "Old stall owner crouching in pain beside his sushi stall, the chef bending toward him",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "すまねえ、兄さん。ちょいと代わりに握っちゃくれねえか。",
+   "image_en": "Close-up of the old stall owner (a thin elderly Edo man with a grey topknot and a plain faded kimono), grimacing and pleading with a hand raised. Place the main person slightly right of center.",
+   "image": "Close-up of the old stall owner grimacing and pleading",
+   "chars": [],
+   "voice": "oyaji"
+  },
+  {
+   "id": "B08",
+   "narration": "職人は台の上を見た。おひつの酢飯が、ほんのり赤い。",
+   "image_en": "Close-up of a round wooden rice tub full of vinegared rice with a light reddish-brown tint, on a plain wooden counter, the hands of the modern sushi chef in white sleeves reaching toward it, lantern light.",
+   "image": "Wooden rice tub of reddish vinegared rice, chef's hands reaching",
+   "label": "赤い酢飯",
+   "chars": []
+  },
+  {
+   "id": "B09",
+   "narration": "酒かすから作る、粕酢の色だ。赤酢とも呼ばれる。",
+   "tts_text": "さけかすから作る、かすずの色だ。あかずとも呼ばれる。",
+   "image_en": "A dim Edo-period vinegar brewery storehouse with large wooden vats and stacked straw-wrapped barrels, warm light through a small window. No writing.",
+   "image": "Edo-period vinegar brewery with large wooden vats",
+   "label": "粕酢",
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "尾張の半田で、中野又左衛門が始め、江戸へ送った酢だといわれる。",
+   "tts_text": "尾張のはんだで、なかのまたざえもんが始め、江戸へ送った酢だといわれる。",
+   "image_en": "A canal lined with black wooden warehouses in a small Japanese port town, an old cargo boat on the water.",
+   "real": "Handa canal Mizkan",
+   "label": "尾張の半田",
+   "chars": [],
+   "real_src": {
+    "題": "File:Warehouses of Mizkan along Handa canal.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Warehouses_of_Mizkan_along_Handa_canal.jpg/1920px-Warehouses_of_Mizkan_along_Handa_canal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Warehouses_of_Mizkan_along_Handa_canal.jpg",
+    "検索語": "Handa canal Mizkan"
+   }
+  },
+  {
+   "id": "B11",
+   "narration": "1810年ごろには、もう大量に江戸へ送り出せるようになっていたという。",
+   "image_en": "Wooden cargo ships with plain white sails loaded with straw-wrapped barrels sailing toward Edo bay, sunny sea.",
+   "image": "Cargo ships loaded with barrels sailing toward Edo",
+   "label": "1810年ごろ",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "酢飯さえあれば、握れる。職人は、袖をまくった。",
+   "image_en": "the modern sushi chef (a Japanese man in his forties, short neat black hair, plain white chef's jacket, plain white cap, plain dark apron) rolling up his sleeves with a determined smile behind a small wooden Edo sushi stall at evening, lanterns glowing. Place the main person slightly right of center.",
+   "image": "The chef rolling up his sleeves behind an Edo sushi stall",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "最初の客は、仕事帰りの大工だった。",
+   "image_en": "the carpenter customer (a stocky Edo carpenter about thirty-five, chonmage topknot, twisted cloth headband, short plain indigo happi coat) arriving at a small sushi stall in the evening with a wooden toolbox on his shoulder, grinning. Place the main person slightly right of center.",
+   "image": "The carpenter customer arriving at the sushi stall with a toolbox",
+   "chapter": "小せえ！",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "職人は、いつもの手つきで、いつもの大きさに握った。",
+   "image_en": "Close-up of the hands of the modern sushi chef in white sleeves shaping a small neat piece of nigiri sushi with a slice of fish on top, lantern light, plain wooden counter.",
+   "image": "Chef's hands shaping a small neat nigiri sushi",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "ひと口で食べられる、今の店と同じ大きさだ。",
+   "image_en": "A single small modern-size piece of nigiri sushi resting alone on a large green bamboo leaf on a plain wooden counter, lantern light. No people.",
+   "image": "A single small nigiri on a large bamboo leaf",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "大工は握りを指でつまみ上げ、しばらく黙って見ていた。",
+   "image_en": "the carpenter customer (a stocky Edo carpenter, chonmage topknot, twisted cloth headband, short plain indigo happi coat) holding up a tiny piece of sushi between two fingers and staring at it in silent disbelief. Place the main person slightly right of center.",
+   "image": "The carpenter staring in disbelief at a tiny sushi between his fingers",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "おい、こんなちっこいので、8文取ろうってのかい！",
+   "tts_text": "おい、こんなちっこいので、はちもん取ろうってのかい！",
+   "image_en": "the carpenter customer (a stocky Edo carpenter, chonmage topknot, twisted cloth headband, short plain indigo happi coat) shouting angrily with eyes bulging, slamming his hand on the stall counter, the modern sushi chef in a plain white chef's jacket and white cap flinching behind the counter, dramatic lantern light. Place the main person slightly right of center.",
+   "image": "The carpenter shouting angrily at the chef, slamming the counter",
+   "label": "小せえ！",
+   "strong": true,
+   "chars": [],
+   "voice": "daiku"
+  },
+  {
+   "id": "C06",
+   "narration": "8文。守貞謾稿が書く、江戸の握り1つの値だ。",
+   "tts_text": "はちもん。もりさだまんこうが書く、江戸の握りひとつの値だ。",
+   "image_en": "A few old Edo-period copper coins with square holes lying on a wooden counter next to a piece of sushi, lantern light. No writing.",
+   "real": "Morisada Manko",
+   "label": "1つ8文",
+   "chars": [],
+   "real_src": {
+    "題": "File:Simotaya in Edo.jpeg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Simotaya_in_Edo.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Simotaya_in_Edo.jpeg",
+    "検索語": "Morisada Manko"
+   }
+  },
+  {
+   "id": "C07",
+   "narration": "同じ本には、玉子巻は16文ほど、とある。卵は1つ7文から20文もしたという。",
+   "tts_text": "同じ本には、たまごまきはじゅうろくもんほど、とある。卵はひとつななもんからにじゅうもんもしたという。",
+   "image_en": "A thick golden rolled omelette sushi roll cut in pieces on a wooden board beside a basket of a few brown eggs, warm light. No people.",
+   "image": "Rolled omelette sushi beside a basket of eggs",
+   "label": "玉子巻16文",
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "職人は、隣の屋台の握りを見て、言葉を失った。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) leaning out of his stall and staring in shock at the next stall, where huge pieces of nigiri sushi as big as rice balls are lined up. Place the main person slightly right of center.",
+   "image": "The chef staring in shock at huge sushi at the next stall",
+   "chars": []
+  },
+  {
+   "id": "C09",
+   "narration": "でかい。1つが、今の握りの何個分もある。",
+   "image_en": "Close-up of huge Edo-style nigiri sushi as big as rice balls, with thick slices of vinegared fish on reddish rice, lined up on bamboo leaves on a wooden stall counter. No people.",
+   "image": "Huge Edo-style nigiri sushi as big as rice balls on bamboo leaves",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C10",
+   "narration": "江戸の握りは、今の2、3倍の大きさだったといわれる。",
+   "tts_text": "江戸の握りは、今のにさんばいの大きさだったといわれる。",
+   "same_as": "C09",
+   "label": "今の2〜3倍",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C11",
+   "narration": "酢飯のおにぎりに、魚の切り身をのせたような物だったと伝わる。",
+   "image_en": "Close-up of a hand holding a big rice ball topped with a thick slice of fish, compared in the same hand with nothing else, lantern light, Edo stall background blurred.",
+   "image": "A hand holding a big rice ball topped with a fish slice",
+   "chars": []
+  },
+  {
+   "id": "C12",
+   "narration": "職人は、あわてて大きく握ろうとした。だが、手が止まった。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) frozen with a large lump of rice in his hands, sweating and frowning behind his stall. Place the main person slightly right of center.",
+   "image": "The chef frozen with a large lump of rice in his hands, sweating",
+   "chars": []
+  },
+  {
+   "id": "C13",
+   "narration": "この大きさだと、ネタの厚みも、握る力も、全部ちがう。",
+   "image_en": "the modern sushi chef in a plain white chef's jacket and white cap staring down at a lopsided oversized sushi falling apart in his palm, frustrated face. Place the main person slightly right of center.",
+   "image": "The chef staring at an oversized sushi falling apart in his palm",
+   "chars": [],
+   "voice": "shokunin"
+  },
+  {
+   "id": "C14",
+   "narration": "ここで問題です。今の寿司屋の人気ネタで、江戸の人が好まなかった物は何でしょう。",
+   "image_en": "A plain wooden counter at night with an empty green bamboo leaf and a sharp sushi knife, one lantern glowing, mysterious mood. No people. No writing.",
+   "image": "Empty bamboo leaf and a sushi knife on a counter at night",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "次の朝早く、職人は日本橋の魚河岸へ向かった。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) walking briskly through a crowded early-morning Edo fish market by a river, fishmongers carrying baskets on poles. Place the main person slightly right of center.",
+   "image": "The chef walking through a crowded early-morning Edo fish market",
+   "chapter": "冷蔵庫のない江戸前",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D02",
+   "narration": "江戸前の魚が、朝から山のように並ぶ。",
+   "tts_text": "えどまえの魚が、朝から山のように並ぶ。",
+   "image_en": "A bustling Edo fish market by a bridge, crowds of fishmongers, tubs and baskets full of fish, old woodblock print look.",
+   "real": "Nihonbashi fish market ukiyo-e",
+   "chars": [],
+   "real_src": {
+    "題": "File:Nihonbashi-Fish-Market-Prosperity-Ukiyoe-Utagawa-Kuniyasu.png",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Nihonbashi-Fish-Market-Prosperity-Ukiyoe-Utagawa-Kuniyasu.png/1920px-Nihonbashi-Fish-Market-Prosperity-Ukiyoe-Utagawa-Kuniyasu.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Nihonbashi-Fish-Market-Prosperity-Ukiyoe-Utagawa-Kuniyasu.png",
+    "検索語": "Nihonbashi fish market ukiyo-e"
+   }
+  },
+  {
+   "id": "D03",
+   "narration": "江戸前とは、江戸城の前の海や川でとれる、うまい魚のことだ。",
+   "tts_text": "えどまえとは、江戸城の前の海や川でとれる、うまい魚のことだ。",
+   "image_en": "A calm shallow bay in front of a distant white Japanese castle, small fishing boats casting nets at dawn.",
+   "image": "Shallow bay before a distant castle with small fishing boats",
+   "label": "江戸前",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "けれど、氷の冷蔵庫も、冷たい運び箱も無い。",
+   "image_en": "the modern sushi chef in a plain white chef's jacket and white cap looking around a fish stall in dismay, fish lying in open wooden tubs in the warming sun, no ice anywhere. Place the main person slightly right of center.",
+   "image": "The chef looking in dismay at fish in open tubs without ice",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "だから江戸の握りは、魚にひと手間かけた。こはだは酢でしめ、あなごは甘く煮る。",
+   "image_en": "Close-up of an Edo sushi maker's hands: small silver gizzard shad fillets soaking in a shallow bowl of vinegar, and conger eel simmering in a small iron pot of sweet dark sauce, lantern light.",
+   "image": "Shad fillets in vinegar and eel simmering in sweet sauce",
+   "label": "酢でしめる",
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "守貞謾稿は、江戸の握りの種を、こう並べる。",
+   "tts_text": "もりさだまんこうは、江戸の握りの種を、こう並べる。",
+   "image_en": "An Edo-period woodblock print of a fashionable woman holding a piece of sushi, with a box of assorted sushi beside her.",
+   "image": "Edo woodblock print of a woman eating sushi",
+   "real": "Nijushiko imayo bijin sushi",
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "玉子焼き、車海老、海老そぼろ、白魚、まぐろの刺身、こはだ、あなごの甘煮。",
+   "tts_text": "たまごやき、くるまえび、えびそぼろ、しらうお、まぐろのさしみ、こはだ、あなごのあまに。",
+   "image_en": "A row of large Edo-style nigiri sushi on bamboo leaves: sweet omelette, prawn, shrimp flakes, tiny white fish, red tuna, silver shad and dark glazed eel, lantern light. No people.",
+   "image": "Row of seven kinds of large Edo nigiri on bamboo leaves",
+   "label": "江戸の握りの種",
+   "chars": []
+  },
+  {
+   "id": "D08",
+   "narration": "白魚は、佃島のあたりでとれた、江戸前の魚だ。",
+   "tts_text": "しらうおは、つくだじまのあたりでとれた、えどまえの魚だ。",
+   "image_en": "Night fishing for small white fish with nets and torches from boats near a small island in Edo bay, old woodblock print look.",
+   "image": "Night net fishing with torches near Tsukudajima, woodblock look",
+   "real": "Tsukudajima whitebait fishing Hiroshige",
+   "label": "佃島",
+   "chars": []
+  },
+  {
+   "id": "D09",
+   "narration": "職人は、まぐろの腹の身を見つけて、目を輝かせた。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) with shining eyes holding up a pale pink fatty slab of tuna belly at a fish stall, a fishmonger looking puzzled. Place the main person slightly right of center.",
+   "image": "The chef with shining eyes holding up fatty tuna belly",
+   "chars": []
+  },
+  {
+   "id": "D10",
+   "narration": "脂ののった、今ならいちばんの人気ネタ、トロだ。",
+   "image_en": "Close-up of a piece of nigiri sushi topped with marbled pale pink fatty tuna, glistening in lantern light, on a bamboo leaf. No people.",
+   "image": "Close-up of fatty tuna nigiri glistening",
+   "chars": []
+  },
+  {
+   "id": "D11",
+   "narration": "なんでえ、このぎとぎとした所は。猫も食わねえや。",
+   "image_en": "the carpenter customer (a stocky Edo carpenter, chonmage topknot, twisted cloth headband, short plain indigo happi coat) grimacing in disgust and pushing away a piece of fatty tuna sushi, the modern sushi chef in white looking stunned. Place the main person slightly right of center.",
+   "image": "The carpenter grimacing and pushing away fatty tuna sushi",
+   "chars": [],
+   "voice": "daiku"
+  },
+  {
+   "id": "D12",
+   "narration": "さっきの問題の答えは、トロ。",
+   "image_en": "A lone piece of fatty tuna sushi left untouched on a bamboo leaf on an empty stall counter, lantern light. No people.",
+   "image": "A lone untouched fatty tuna sushi on a bamboo leaf",
+   "label": "トロ",
+   "strong": true,
+   "payoff": true,
+   "chars": []
+  },
+  {
+   "id": "D13",
+   "narration": "当時の江戸では、脂ののったトロは好まれなかった。",
+   "same_as": "D12",
+   "chars": []
+  },
+  {
+   "id": "D14",
+   "narration": "まぐろは、赤身をしょうゆに漬けて食べていた。",
+   "image_en": "Blocks of deep red tuna soaking in a wooden tub of dark soy sauce in an Edo kitchen, lantern light. No people.",
+   "image": "Red tuna blocks soaking in a tub of soy sauce",
+   "label": "赤身をしょうゆ漬け",
+   "chars": []
+  },
+  {
+   "id": "D15",
+   "narration": "まぐろのような赤身の魚は、遠くから運ぶうちに傷みやすかったからだ。",
+   "image_en": "Porters carrying a large tuna on a pole along a long dusty road toward Edo under a hot sun, sweating. Faded old-memory colors.",
+   "image": "Porters carrying a large tuna on a pole along a dusty road",
+   "chars": []
+  },
+  {
+   "id": "D16",
+   "narration": "職人は、トロを下げ、赤身をしょうゆに漬けた。今の寿司屋でいう、づけだ。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) carefully lowering red tuna slices into a bowl of soy sauce behind his stall, focused face. Place the main person slightly right of center.",
+   "image": "The chef lowering red tuna slices into soy sauce",
+   "chars": []
+  },
+  {
+   "id": "E01",
+   "narration": "それでも、職人の握りは、小さいままだった。",
+   "image_en": "the modern sushi chef in a plain white chef's jacket and white cap neatly placing small nigiri on his counter in the evening, a few customers walking past without stopping. Place the main person slightly right of center.",
+   "image": "The chef placing small nigiri while customers walk past",
+   "chapter": "2つ並べた日",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "ところが3日目、あの大工が、仲間を連れて戻ってきた。",
+   "image_en": "the carpenter customer (a stocky Edo carpenter, chonmage topknot, twisted cloth headband, short plain indigo happi coat) walking up to the sushi stall at dusk with three fellow workmen, grinning. Place the main person slightly right of center.",
+   "image": "The carpenter returning with three fellow workmen",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "兄さん、こはだだ。小せえから、いっぺんに2つ握ってくんな。",
+   "image_en": "Close-up of the carpenter customer (chonmage topknot, twisted cloth headband, short plain indigo happi coat) holding up two fingers with a cheeky grin at the stall. Place the main person slightly right of center.",
+   "image": "The carpenter holding up two fingers with a cheeky grin",
+   "chars": [],
+   "voice": "daiku"
+  },
+  {
+   "id": "E04",
+   "narration": "1つで足りないなら、2つ頼めばいい。",
+   "image_en": "Workmen at the sushi stall each holding up two fingers, laughing, the modern sushi chef in white busily shaping rice. Place the main person slightly right of center.",
+   "image": "Workmen each holding up two fingers at the stall",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "次の客も、その次の客も、2つずつ頼んだ。",
+   "image_en": "A line of Edo townspeople waiting at a small sushi stall in the evening, lanterns glowing, everyone chatting.",
+   "image": "A line of townspeople waiting at the sushi stall",
+   "chars": []
+  },
+  {
+   "id": "E06",
+   "narration": "江戸の握りには、仕切りに熊笹を切って使い、しょうがの酢漬けを添えたという。",
+   "image_en": "Close-up of a plain wooden counter with cut green bamboo grass leaves and a small heap of pink pickled ginger, lantern light. No people.",
+   "image": "Cut bamboo grass leaves and pickled ginger on a counter",
+   "label": "熊笹",
+   "chars": []
+  },
+  {
+   "id": "E07",
+   "narration": "職人は、笹の葉の上に、最初から2つ並べて出すことにした。",
+   "image_en": "Close-up of the hands of the modern sushi chef in white sleeves placing two small matching pieces of shad nigiri side by side on a green bamboo leaf, lantern light.",
+   "image": "The chef's hands placing two small nigiri side by side on a bamboo leaf",
+   "chars": []
+  },
+  {
+   "id": "E08",
+   "narration": "この世界線の1皿2つは、握りが小さすぎたせいで生まれた。",
+   "tts_text": "この世界線のひとさらふたつは、握りが小さすぎたせいで生まれた。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) proudly presenting two small nigiri side by side on a bamboo leaf to the delighted carpenter customer and his laughing workmen, warm lantern glow, dramatic. Place the main person slightly right of center.",
+   "image": "The chef presenting two nigiri side by side to delighted customers",
+   "label": "1皿2つの誕生",
+   "strong": true,
+   "highlight": [
+    "小さすぎた"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "E09",
+   "narration": "では、本当の歴史の1皿2つは、どこから来たのか。",
+   "tts_text": "では、本当の歴史のひとさらふたつは、どこから来たのか。",
+   "image_en": "A big Edo-style nigiri as large as a rice ball on a bamboo leaf, a knife resting beside it, warm light. Faded old-memory colors. No people.",
+   "image": "A big Edo nigiri with a knife beside it",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "江戸の握りは大きすぎて、2つに切り分けて食べていたようだ。",
+   "image_en": "An Edo sushi maker cutting a large nigiri in half with a knife on a wooden board, two halves side by side. Faded old-memory colors. Place the main person slightly right of center.",
+   "image": "An Edo sushi maker cutting a large nigiri in half",
+   "chars": []
+  },
+  {
+   "id": "E11",
+   "narration": "1皿に2つ並べる今の形は、その名残だといわれる。",
+   "tts_text": "ひとさらにふたつ並べる今の形は、そのなごりだといわれる。",
+   "same_as": "E10",
+   "label": "切った名残",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "E12",
+   "narration": "大きすぎて切った2つと、小さすぎて頼んだ2つ。理由が、逆さまだ。",
+   "image_en": "the modern sushi chef in a plain white chef's jacket and white cap looking down thoughtfully at two small nigiri on a bamboo leaf at night, lantern light on his face. Place the main person slightly right of center.",
+   "image": "The chef looking thoughtfully at two small nigiri at night",
+   "label": "理由が逆さま",
+   "chars": []
+  },
+  {
+   "id": "E13",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。気に入ったら、チャンネル登録で応援してください。",
+   "same_as": "A02",
+   "label": "チャンネル登録",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "ある晩、職人の屋台を、1人の男がじっと見ていた。",
+   "image_en": "Hanaya Yohei (an Edo sushi maker in his forties, lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back by a cord) standing in the shadows across the street at night with arms folded, watching a small sushi stall. Place the main person slightly right of center.",
+   "image": "Hanaya Yohei watching the stall from the shadows at night",
+   "chapter": "両国の与兵衛",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "両国で鮓屋を開いていた、与兵衛だった。",
+   "tts_text": "りょうごくですしやを開いていた、よへえだった。",
+   "image_en": "Hanaya Yohei (lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back by a cord) stepping into the lantern light with a confident half smile. Place the main person slightly right of center.",
+   "image": "Hanaya Yohei stepping into lantern light with a half smile",
+   "label": "与兵衛",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "握りずしは、文政のころ、両国の与兵衛ずしが売り始めたといわれる。",
+   "tts_text": "握りずしは、ぶんせいのころ、りょうごくのよへえずしが売り始めたといわれる。",
+   "image_en": "A small busy Edo sushi shop at the end of a narrow alley in the evening, customers crowding inside, plain unmarked curtain. Faded old-memory colors.",
+   "image": "Small busy sushi shop at the end of a narrow alley",
+   "label": "文政のころ",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "初代の与兵衛は1799年の生まれ。握りを考え出した人だという説がある。",
+   "tts_text": "初代のよへえは1799年の生まれ。握りを考え出した人だという説がある。",
+   "image_en": "Hanaya Yohei (lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back) shaping a large nigiri with intense concentration in his small shop. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Hanaya Yohei shaping a nigiri with intense concentration",
+   "label": "1799年生まれ",
+   "chars": []
+  },
+  {
+   "id": "F04b",
+   "narration": "はじめは、酢でしめたこはだを岡持ちに入れ、夜の町を売り歩いたと伝わる。",
+   "image_en": "Hanaya Yohei (lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back) walking a dark Edo street at night carrying a plain wooden carry box of sushi by its handle, a paper lantern without writing in his other hand. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Young Yohei selling sushi from a carry box on a night street",
+   "chars": []
+  },
+  {
+   "id": "F04c",
+   "narration": "屋台を経て、1824年に東両国に店を構えたとされる。",
+   "tts_text": "屋台を経て、1824年にひがしりょうごくに店を構えたとされる。",
+   "image_en": "A small new sushi shop on the east side of a long wooden bridge in Edo, a plain unmarked curtain at the entrance, customers going in, daytime. Faded old-memory colors.",
+   "image": "Small new sushi shop on the east side of a wooden bridge",
+   "chars": [],
+   "label": "1824年"
+  },
+  {
+   "id": "F05",
+   "narration": "それより前に試した人がいて、与兵衛が広めて根付かせた、という見方もある。",
+   "tts_text": "それより前に試した人がいて、よへえが広めて根付かせた、という見方もある。",
+   "image_en": "Several Edo sushi sellers carrying wooden boxes of sushi on their shoulders walking through a town at night. Faded old-memory colors.",
+   "image": "Edo sushi sellers carrying boxes through town at night",
+   "chars": []
+  },
+  {
+   "id": "F06",
+   "narration": "当時の詩には、両国の東、路地の奥の与兵衛の店で、客が席を争った、とある。",
+   "tts_text": "当時の詩には、りょうごくの東、路地の奥のよへえの店で、客が席を争った、とある。",
+   "image_en": "Customers squeezing and jostling for space in a tiny crowded Edo sushi shop, laughing and reaching for sushi. Faded old-memory colors.",
+   "image": "Customers jostling in a tiny crowded sushi shop",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "狂歌にも、待ちくたびれる与平鮨、と詠まれている。",
+   "tts_text": "きょうかにも、待ちくたびれるよへいずし、とよまれている。",
+   "image_en": "A long line of tired Edo townspeople waiting outside a small sushi shop, some yawning, others sitting on the ground. Faded old-memory colors.",
+   "image": "A long line of tired townspeople waiting outside a sushi shop",
+   "label": "待ちくたびれる",
+   "chars": []
+  },
+  {
+   "id": "F07b",
+   "narration": "同じ歌は、客もいっしょに手を握りけり、と結ぶ。握りずしにかけたしゃれだ。",
+   "tts_text": "同じ歌は、客もいっしょに手をにぎりけり、と結ぶ。握りずしにかけたしゃれだ。",
+   "same_as": "F07",
+   "chars": []
+  },
+  {
+   "id": "F07c",
+   "narration": "江戸の川柳には、鮓を握る手つきを、妖術にたとえた句まである。",
+   "tts_text": "江戸のせんりゅうには、すしを握る手つきを、ようじゅつにたとえた句まである。",
+   "image_en": "Close-up of an Edo sushi maker's hands swiftly shaping rice, motion lines of speed, customers' amazed faces blurred in the background, lantern light.",
+   "image": "Edo sushi maker's hands shaping rice swiftly, amazed customers",
+   "label": "妖術",
+   "chars": []
+  },
+  {
+   "id": "F08",
+   "narration": "その与兵衛が、職人の小さな握りを2つ、黙って食べた。",
+   "tts_text": "そのよへえが、職人の小さな握りをふたつ、黙って食べた。",
+   "image_en": "Hanaya Yohei (lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back) silently eating a small nigiri at the stall counter while the modern sushi chef in white watches nervously. Place the main person slightly right of center.",
+   "image": "Yohei silently eating a small nigiri while the chef watches",
+   "chars": []
+  },
+  {
+   "id": "F09",
+   "narration": "おめえさん、ずいぶん小さく握るんだな。",
+   "image_en": "Close-up of Hanaya Yohei (lean face, sharp eyes, chonmage topknot) raising an eyebrow with a curious smile. Place the main person slightly right of center.",
+   "image": "Close-up of Yohei raising an eyebrow with a curious smile",
+   "chars": [],
+   "voice": "yohei"
+  },
+  {
+   "id": "F10",
+   "narration": "わたしのいた所では、これが当たり前なんです。",
+   "image_en": "Close-up of the modern sushi chef (short neat black hair, plain white chef's jacket, plain white cap) answering with a sincere, slightly embarrassed face. Place the main person slightly right of center.",
+   "image": "Close-up of the chef answering sincerely",
+   "chars": [],
+   "voice": "shokunin"
+  },
+  {
+   "id": "F11",
+   "narration": "すしってのは、もとは箱に詰めて押すもんだったんだぜ。",
+   "image_en": "Hanaya Yohei (chonmage topknot, plain dark brown kimono with sleeves tied back) laughing and pressing his palm down as if pressing a box, explaining to the chef. Place the main person slightly right of center.",
+   "image": "Yohei laughing and miming pressing a box",
+   "chars": [],
+   "voice": "yohei"
+  },
+  {
+   "id": "F12",
+   "narration": "本当の歴史でも、宝暦のころには、酢で酸っぱくする早鮨が屋台で売られていた。",
+   "tts_text": "本当の歴史でも、ほうれきのころには、酢で酸っぱくするはやずしが屋台で売られていた。",
+   "image_en": "An old Edo-period woodblock illustration of a sushi street stall by a bridge with customers.",
+   "image": "Old woodblock illustration of a sushi stall by a bridge",
+   "real": "Ehon Edo miyage sushi stall",
+   "label": "宝暦のころ",
+   "chars": []
+  },
+  {
+   "id": "F13",
+   "narration": "屋台の箱鮨には、食べやすいように、前もって切れ目が入っていた。",
+   "tts_text": "屋台のはこずしには、食べやすいように、前もって切れ目が入っていた。",
+   "image_en": "Close-up of a square wooden box of pressed sushi with fish on top, pre-cut into pieces with straight knife lines, on a stall counter. No people.",
+   "image": "Square box of pressed sushi pre-cut into pieces",
+   "label": "箱鮨",
+   "chars": []
+  },
+  {
+   "id": "F14",
+   "narration": "その1切れ分を、手で握るようにしたのが、今の握りずしとされる。",
+   "tts_text": "そのひときれぶんを、手で握るようにしたのが、今の握りずしとされる。",
+   "image_en": "Close-up of hands lifting one cut piece of pressed sushi from a box and shaping a similar piece by hand beside it, lantern light.",
+   "image": "Hands shaping by hand a piece like the cut pressed sushi",
+   "chars": []
+  },
+  {
+   "id": "F15",
+   "narration": "守貞謾稿も、江戸では押す箱鮓がすたれ、握りだけになった、と書いた。",
+   "tts_text": "もりさだまんこうも、江戸では押すはこずしがすたれ、握りだけになった、と書いた。",
+   "image_en": "A dusty unused wooden sushi press box lying in the corner of a busy Edo sushi stall while the cook shapes nigiri by hand. Faded old-memory colors.",
+   "image": "Unused sushi press box in a corner while the cook shapes nigiri",
+   "label": "握りだけに",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "narration": "その年、江戸の空気が変わった。",
+   "image_en": "Edo officials in formal kamishimo walking stiffly through a quiet shopping street, shopkeepers bowing nervously and hiding fine goods. Place the main person slightly right of center.",
+   "image": "Officials walking stiffly through a quiet shopping street",
+   "chapter": "天保の改革",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "1841年、老中の水野忠邦が、天保の改革を始めたのだ。",
+   "tts_text": "1841年、ろうじゅうのみずのただくにが、てんぽうの改革を始めたのだ。",
+   "image_en": "A Japanese hanging-scroll portrait of a seated samurai statesman in formal robes.",
+   "real": "Mizuno Tadakuni",
+   "label": "天保の改革",
+   "strong": true,
+   "chars": [],
+   "real_src": {
+    "題": "File:Mizuno Tadakuni.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Mizuno_Tadakuni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Mizuno_Tadakuni.jpg",
+    "検索語": "Mizuno Tadakuni"
+   }
+  },
+  {
+   "id": "G03",
+   "narration": "ぜいたくは禁止。ぜいたくな料理を売ることも禁じられた。",
+   "image_en": "An Edo official in formal kamishimo reading out an order to a crowd of worried shopkeepers in front of a blank notice board. Faded old-memory colors.",
+   "image": "Official reading an order to worried shopkeepers",
+   "chars": []
+  },
+  {
+   "id": "G04",
+   "narration": "職人は知っていた。名の売れた鮓屋が、このあと捕まることを。",
+   "tts_text": "職人は知っていた。名の売れたすしやが、このあと捕まることを。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) standing pale and tense as officials pass his stall, clutching a towel. Place the main person slightly right of center.",
+   "image": "The chef standing pale as officials pass his stall",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "職人は、与兵衛の店に走った。",
+   "tts_text": "職人は、よへえの店に走った。",
+   "image_en": "the modern sushi chef in a plain white chef's jacket and white cap running down a narrow Edo alley at dusk toward a small shop. Place the main person slightly right of center.",
+   "image": "The chef running down a narrow alley at dusk",
+   "chars": []
+  },
+  {
+   "id": "G06",
+   "narration": "高い握りは、しばらく出さないでください。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap) bowing urgently before Hanaya Yohei in his small shop, Yohei frowning. Place the main person slightly right of center.",
+   "image": "The chef bowing urgently before Yohei in his shop",
+   "chars": [],
+   "voice": "shokunin"
+  },
+  {
+   "id": "G07",
+   "narration": "うちの客は、うちの握りを待ってんだ。",
+   "image_en": "Hanaya Yohei (lean face, sharp eyes, chonmage topknot, plain dark brown kimono with sleeves tied back) turning his back proudly and returning to his counter, waving a hand dismissively. Place the main person slightly right of center.",
+   "image": "Yohei turning his back proudly and waving dismissively",
+   "chars": [],
+   "voice": "yohei"
+  },
+  {
+   "id": "G08",
+   "narration": "1842年。江戸の学者、喜多村信節が、随筆にこう書き残している。",
+   "tts_text": "1842年。江戸の学者、きたむらのぶよが、随筆にこう書き残している。",
+   "image_en": "An elderly Edo scholar in a plain grey kimono writing with a brush by lamplight at a low desk piled with books. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Elderly scholar writing by lamplight",
+   "label": "1842年",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "高い品を売る店の者が、次々に召し捕られた。",
+   "tts_text": "高い品を売る店の者が、次々にめしとられた。",
+   "image_en": "Edo constables leading away shopkeepers with their hands tied in front, townspeople watching from doorways. Faded old-memory colors.",
+   "image": "Constables leading away shopkeepers, townspeople watching",
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "その中に、両国元町の与兵衛の鮓の名もある。",
+   "tts_text": "その中に、りょうごくもとまちのよへえのすしの名もある。",
+   "image_en": "An old printed Japanese book page in vertical lines of type.",
+   "real": "https://dl.ndl.go.jp/api/iiif/980938/R0000598/full/2000,/0/default.jpg",
+   "label": "与兵衛の鮓も",
+   "strong": true,
+   "chars": [],
+   "real_src": {
+    "題": "https://dl.ndl.go.jp/api/iiif/980938/R0000598/full/2000,/0/default.jpg",
+    "url": "https://dl.ndl.go.jp/api/iiif/980938/R0000598/full/2000,/0/default.jpg",
+    "説明ページ": "https://dl.ndl.go.jp/api/iiif/980938/R0000598/full/2000,/0/default.jpg",
+    "検索語": "https://dl.ndl.go.jp/api/iiif/980938/R0000598/full/2000,/0/default.jpg"
+   }
+  },
+  {
+   "id": "G11",
+   "narration": "本当の歴史と同じことが、この世界線でも起きた。",
+   "image_en": "Hanaya Yohei (chonmage topknot, plain dark brown kimono) being led away by constables at dawn, looking back over his shoulder with a calm face, the modern sushi chef in white watching from a distance. Place the main person slightly right of center.",
+   "image": "Yohei being led away by constables, the chef watching",
+   "chars": []
+  },
+  {
+   "id": "G12",
+   "narration": "一方、1つ8文の小さな握りは、ぜいたくには見えなかった。",
+   "tts_text": "一方、ひとつはちもんの小さな握りは、ぜいたくには見えなかった。",
+   "image_en": "Officials walking past the modern sushi chef's small stall without a glance, two small nigiri on a bamboo leaf on the counter, the chef holding his breath. Place the main person slightly right of center.",
+   "image": "Officials walking past the chef's small stall without a glance",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "narration": "その夏、職人は屋台を担いで、高輪の海辺へ向かった。",
+   "tts_text": "その夏、職人は屋台を担いで、たかなわの海辺へ向かった。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) carrying a small wooden stall on a shoulder pole along a seaside road at sunset, the carpenter customer helping. Place the main person slightly right of center.",
+   "image": "The chef carrying his stall on a pole along a seaside road at sunset",
+   "chapter": "高輪の二十六夜待",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H02",
+   "narration": "二十六夜待。夜遅くに出る月を拝もうと、海辺に人が集まる行事だ。",
+   "tts_text": "にじゅうろくやまち。夜遅くに出る月を拝もうと、海辺に人が集まる行事だ。",
+   "image_en": "Crowds of Edo townspeople gathered on a seaside road at night waiting for the moon to rise over the dark sea, lanterns glowing.",
+   "image": "Crowds on a seaside road at night waiting for the moonrise",
+   "label": "二十六夜待",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "歌川広重は、高輪の浜に並ぶ、すしや天ぷら、そばの屋台を描いた。",
+   "tts_text": "うたがわひろしげは、たかなわの浜に並ぶ、すしや天ぷら、そばの屋台を描いた。",
+   "image_en": "An Edo-period woodblock print of a seaside festival at night with many food stalls and crowds along the shore.",
+   "image": "Woodblock print of seaside food stalls and crowds at night",
+   "real": "Takanawa Nijurokuya Hiroshige",
+   "label": "歌川広重",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "描かれたのは、ちょうど天保の改革のころとされる。",
+   "tts_text": "描かれたのは、ちょうどてんぽうの改革のころとされる。",
+   "image_en": "A busy row of small food stalls along a moonlit beach, sushi, tempura and soba being served, paper lanterns without writing.",
+   "image": "Row of food stalls along a moonlit beach",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "職人の屋台にも、人が並んだ。誰も、1つでは頼まない。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) busily serving pairs of small nigiri on bamboo leaves to a long line of townspeople on a moonlit beach. Place the main person slightly right of center.",
+   "image": "The chef serving pairs of small nigiri to a long line on the beach",
+   "chars": []
+  },
+  {
+   "id": "H06",
+   "narration": "兄さんとこの握りは、2つで1人前だからな。",
+   "tts_text": "兄さんとこの握りは、ふたつでいちにんまえだからな。",
+   "image_en": "the carpenter customer (chonmage topknot, twisted cloth headband, short plain indigo happi coat) proudly explaining to newcomers in the line, pointing at two nigiri on a leaf. Place the main person slightly right of center.",
+   "image": "The carpenter explaining to newcomers, pointing at two nigiri",
+   "chars": [],
+   "voice": "daiku"
+  },
+  {
+   "id": "H07",
+   "narration": "職人のまわりの屋台でも、小さな握りを2つで出す店が出てきた。",
+   "image_en": "Neighboring sushi stalls on the beach copying the style, each cook placing two small nigiri side by side on bamboo leaves, the modern sushi chef in white watching with a wry smile. Place the main person slightly right of center.",
+   "image": "Neighboring stalls copying the two-small-nigiri style",
+   "chars": []
+  },
+  {
+   "id": "I01",
+   "narration": "職人が江戸に持って行ったのは、腕と知識だけだった。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) standing alone by the river at dawn beside his small stall, looking at the long wooden bridge. Place the main person slightly right of center.",
+   "image": "The chef standing alone by the river at dawn beside his stall",
+   "chapter": "おわりに",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I02",
+   "narration": "けれど江戸で教わったことの方が、多かったのかもしれない。",
+   "same_as": "D16",
+   "chars": []
+  },
+  {
+   "id": "I03",
+   "narration": "赤い酢飯。酢でしめたこはだ。しょうゆに漬けた赤身。",
+   "image_en": "Close-up of three large Edo-style nigiri on a bamboo leaf: silver vinegared shad, deep red soy-marinated tuna and glazed eel on reddish rice, morning light. No people.",
+   "image": "Three large Edo nigiri on a bamboo leaf",
+   "chars": []
+  },
+  {
+   "id": "I04",
+   "narration": "冷蔵庫の無い町で、魚をおいしく食べるための知恵だった。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap, plain dark apron) carefully wiping vinegared shad with a cloth beside a tub of soy-marinated tuna at his Edo stall in the morning, a respectful smile. Place the main person slightly right of center.",
+   "image": "The chef preparing vinegared shad and soy-marinated tuna, respectful smile",
+   "chars": []
+  },
+  {
+   "id": "I05",
+   "narration": "本当の歴史の1皿2つは、大きすぎた握りを切った名残といわれる。",
+   "tts_text": "本当の歴史のひとさらふたつは、大きすぎた握りを切ったなごりといわれる。",
+   "same_as": "E10",
+   "chars": []
+  },
+  {
+   "id": "I06",
+   "narration": "この世界線の1皿2つは、小さすぎた握りを2つ頼んだ跡だ。",
+   "tts_text": "この世界線のひとさらふたつは、小さすぎた握りをふたつ頼んだあとだ。",
+   "same_as": "E08",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "どちらにしても、今の1皿2つの向こうには、江戸の屋台がある。",
+   "tts_text": "どちらにしても、今のひとさらふたつの向こうには、江戸の屋台がある。",
+   "image_en": "A small wooden Edo sushi stall glowing with a single lantern by the river at night, two nigiri on a bamboo leaf on the counter, the wooden bridge beyond. No people.",
+   "image": "Edo sushi stall glowing by the river at night with two nigiri",
+   "chars": []
+  },
+  {
+   "id": "I08",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "the modern sushi chef (plain white chef's jacket, plain white cap) and the carpenter customer (chonmage topknot, twisted cloth headband, indigo happi coat) sitting side by side on the riverbank at sunset eating nigiri, tired but smiling. Place the main person slightly right of center.",
+   "image": "The chef and the carpenter sitting on the riverbank at sunset",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I09",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "I01",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

@@ -9,7 +9,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
 
 GOLDEN = os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
@@ -109,7 +109,7 @@ def prompt(work, ch, fix):
    ・見どころ：この回でいちばん驚く所（最後の特徴の章の、驚く数字が出る所など）のカット1つに "peak": true を書き、motion・label・strong のうち2つ以上を付ける。締めの10カットには付けない。
    ・「その答えは後半で」「答えは次の章で」「最後まで見て」のような、答えを先に延ばすだけの文は書かない。締めのお礼は「見てくださって、ありがとうございました。」（「最後まで」を付けない）。
 3. ショートを書く：手順書 §10 の決まりで、script.json に "short"（1本目）と "extra_shorts"（2本目から。同じ形の並び）を書く。
-   特徴の章1つにつきショート1本で、合わせて4本まで（extra_shorts は3本まで。予約の枠が1日3つ・長尺は週5本のため）。
+   特徴の章1つにつきショート1本で、合わせて4本まで（extra_shorts は3本まで。予約の枠が1日3つ・長尺は週3本のため）。
    1本目はいちばん驚く特徴、extra_shorts は残りの特徴を驚く順に1本ずつ。
    どのショートも、その特徴の章の絵（from）と研究だけで1つの話にし、題・S01 の問い・上の帯の字は1本ずつ別にする。サムネの B案（thumb の "lines_b"。§6）も忘れずに。
 4. 終わる前に必ず `python -X utf8 pipeline/check_psy_script.py {rel(work)}` と `python -X utf8 pipeline/make_short_psy.py {rel(work)} --check` を回し、
@@ -117,6 +117,7 @@ def prompt(work, ch, fix):
 5. 最後に、語りの字数・カット数・章の名前・使った研究（key と cite）・登録の呼びかけの位置（%）・ショートの字数とカット数を1行ずつ書いて終える。
 
 {HOOK_ASK}
+{ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
 {LEVELUP_ASK}

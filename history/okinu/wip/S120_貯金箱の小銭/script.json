@@ -1,0 +1,241 @@
+{
+ "title": "【60代】貯金箱の小銭、空になるまで絶対崩さないで",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ1人。人物は答えのカット（C08）のすみえの手元と顔だけで、名乗らない",
+  "貯金箱はラベルも字も無い透明なガラスの瓶。中の硬貨は細かい絵柄が読めない寄りにし、お札も絵柄が見えないよう折って写す",
+  "言い伝えは facts.json で確かめた「お金はお金のある所に集まる」と、たとえに使う種銭の2つだけ。両替そのものの言い伝えは言わない"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "貯金箱を空にするとお金が逃げる、これをしていませんか。",
+   "tts_text": "ちょきんばこをからにするとおかねがにげる、これをしていませんか。",
+   "subs": [
+    "貯金箱を\n空にすると",
+    "お金が逃げる、",
+    "これを\nしていませんか。"
+   ],
+   "hook": "貯金箱は\n空っぽNG",
+   "highlight": [
+    "空にする"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands on a wooden kitchen table, holding a plain clear glass jar with no label that is half full of coins, a few folded bills with no visible design lying beside it. The jar fills more than half of the frame. Warm morning light.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical close-up of an older woman's hands on a wooden kitchen table, holding a plain clear glass jar with no label that is half full of coins, a few folded bills with no visible design lying beside it. The jar fills more than half of the frame. Warm morning light."
+  },
+  {
+   "id": "C02",
+   "narration": "全部崩さず、底が隠れるくらい残せばいいの。",
+   "tts_text": "ぜんぶくずさず、そこがかくれるくらいのこせばいいの。",
+   "subs": [
+    "全部崩さず、",
+    "底が隠れるくらい\n残せばいいの。"
+   ],
+   "highlight": [
+    "残せば"
+   ],
+   "image_en": "Vertical close-up of an older woman's hand lifting a few coins out of a plain clear glass jar with no label, while a layer of coins still covers the whole glass bottom of the jar. The jar and hand fill more than half of the frame. Soft daylight on a wooden table.",
+   "image": "Vertical close-up of an older woman's hand lifting a few coins out of a plain clear glass jar with no label, while a layer of coins still covers the whole glass bottom of the jar. The jar and hand fill more than half of the frame. Soft daylight on a wooden table."
+  },
+  {
+   "id": "C03",
+   "narration": "底まで崩す、その崩し方が問題なの。",
+   "tts_text": "そこまでくずす、そのくずしかたがもんだいなの。",
+   "subs": [
+    "底まで崩す、",
+    "その崩し方が\n問題なの。"
+   ],
+   "highlight": [
+    "崩し方"
+   ],
+   "image_en": "Top-down close-up looking into a plain clear glass jar with no label on a wooden table, only three or four coins left lying on the bare glass bottom. The jar fills more than half of the vertical frame. Soft afternoon light. No people.",
+   "image": "Top-down close-up looking into a plain clear glass jar with no label on a wooden table, only three or four coins left lying on the bare glass bottom. The jar fills more than half of the vertical frame. Soft afternoon light. No people."
+  },
+  {
+   "id": "C04",
+   "narration": "空になるまで崩すのは、お金が逃げる使い方なの。",
+   "tts_text": "からになるまでくずすのは、おかねがにげるつかいかたなの。",
+   "subs": [
+    "空になるまで\n崩すのは、",
+    "お金が逃げる\n使い方なの。"
+   ],
+   "highlight": [
+    "お金が逃げる"
+   ],
+   "image_en": "Close-up of an empty plain clear glass jar with no label standing alone on a dim wooden table, a single coin rolling away from it toward the edge, cool shadowy light from the side. The jar fills more than half of the vertical frame. No people.",
+   "image": "Close-up of an empty plain clear glass jar with no label standing alone on a dim wooden table, a single coin rolling away from it toward the edge, cool shadowy light from the side. The jar fills more than half of the vertical frame. No people."
+  },
+  {
+   "id": "C05",
+   "narration": "風水では、お金はお金のある所に集まると言われています。",
+   "tts_text": "ふうすいでは、おかねはおかねのあるところにあつまるといわれています。",
+   "subs": [
+    "風水では、",
+    "お金はお金の\nある所に",
+    "集まると\n言われています。"
+   ],
+   "highlight": [
+    "集まる"
+   ],
+   "image_en": "Close-up of a plain clear glass jar with no label piled high with coins on a wooden table, a few more coins falling in from above, glowing in warm golden window light. The jar fills more than half of the vertical frame. Calm, hopeful mood. No people.",
+   "image": "Close-up of a plain clear glass jar with no label piled high with coins on a wooden table, a few more coins falling in from above, glowing in warm golden window light. The jar fills more than half of the vertical frame. Calm, hopeful mood. No people."
+  },
+  {
+   "id": "C06",
+   "narration": "空っぽの貯金箱には、呼び寄せる仲間がいないの。",
+   "tts_text": "からっぽのちょきんばこには、よびよせるなかまがいないの。",
+   "subs": [
+    "空っぽの\n貯金箱には、",
+    "呼び寄せる仲間が\nいないの。"
+   ],
+   "same_as": "C04",
+   "shots": [
+    "C04@close"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "では、お札に両替するのはいけないのかしら。",
+   "tts_text": "では、おさつにりょうがえするのはいけないのかしら。",
+   "subs": [
+    "では、",
+    "お札に\n両替するのは",
+    "いけないのかしら。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  },
+  {
+   "id": "C08",
+   "narration": "両替は、してかまいません。",
+   "tts_text": "りょうがえは、してかまいません。",
+   "subs": [
+    "両替は、",
+    "してかまいません。"
+   ],
+   "highlight": [
+    "かまいません"
+   ],
+   "image_en": "Sumie sits at her kitchen table holding a plain clear glass jar of coins with no label in both hands, eyes wide with a sudden look of realization. The jar is large in the foreground of the vertical frame. Warm morning light.",
+   "chars": [
+    "sumie"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Sumie sits at her kitchen table holding a plain clear glass jar of coins with no label in both hands, eyes wide with a sudden look of realization. The jar is large in the foreground of the vertical frame. Warm morning light."
+  },
+  {
+   "id": "C09",
+   "narration": "気をつけるのは、全部を両替しないことなの。",
+   "tts_text": "きをつけるのは、ぜんぶをりょうがえしないことなの。",
+   "subs": [
+    "気をつけるのは、",
+    "全部を両替\nしないことなの。"
+   ],
+   "highlight": [
+    "全部"
+   ],
+   "same_as": "C08",
+   "shots": [
+    "C08@close"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "両替する時は、小銭をひとつかみ残しておくの。",
+   "tts_text": "りょうがえするときは、こぜにをひとつかみのこしておくの。",
+   "subs": [
+    "両替する時は、",
+    "小銭をひとつかみ\n残しておくの。"
+   ],
+   "highlight": [
+    "ひとつかみ"
+   ],
+   "image_en": "Vertical close-up of an older woman's hand gently dropping a small handful of coins back into a plain clear glass jar with no label, her other hand holding a few folded bills with no visible design. The jar and hands fill more than half of the frame. Warm soft light.",
+   "image": "Vertical close-up of an older woman's hand gently dropping a small handful of coins back into a plain clear glass jar with no label, her other hand holding a few folded bills with no visible design. The jar and hands fill more than half of the frame. Warm soft light."
+  },
+  {
+   "id": "C11",
+   "narration": "お金の種を残す、種銭と同じ考え方ね。",
+   "tts_text": "おかねのたねをのこす、たねせんとおなじかんがえかたね。",
+   "subs": [
+    "お金の種を残す、",
+    "種銭と同じ\n考え方ね。"
+   ],
+   "highlight": [
+    "種銭"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "もう空にしてしまった人も、大丈夫。",
+   "tts_text": "もうからにしてしまったひとも、だいじょうぶ。",
+   "subs": [
+    "もう空にして\nしまった人も、",
+    "大丈夫。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@full"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "次のお釣りから、また1枚ずつ入れればいいの。",
+   "tts_text": "つぎのおつりから、またいちまいずついれればいいの。",
+   "subs": [
+    "次のお釣りから、",
+    "また1枚ずつ\n入れればいいの。"
+   ],
+   "image_en": "Extreme close-up of an older woman's fingers dropping a single coin into a plain clear glass jar with no label that holds only a few coins on its bottom, the coin caught mid-fall. The jar and fingers fill more than half of the vertical frame. Warm evening light.",
+   "image": "Extreme close-up of an older woman's fingers dropping a single coin into a plain clear glass jar with no label that holds only a few coins on its bottom, the coin caught mid-fall. The jar and fingers fill more than half of the vertical frame. Warm evening light."
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの貯金箱は、いま空っぽになっていませんか。",
+   "tts_text": "あなたのちょきんばこは、いまからっぽになっていませんか。",
+   "subs": [
+    "あなたの貯金箱は、",
+    "いま空っぽに\nなっていませんか。"
+   ],
+   "highlight": [
+    "空っぽ"
+   ],
+   "same_as": "C05",
+   "shots": [
+    "C05@full"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの貯金箱は、いま空っぽになっていませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #貯金箱の小銭",
+ "tags": [
+  "金運",
+  "財布",
+  "貯金箱の小銭",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの貯金箱は、いま空っぽになっていませんか。"
+}

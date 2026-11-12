@@ -1,29 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/103_洗面所",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/105_リビング",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images"
+  "voice"
  ],
- "started": "2026-11-05T20:30:09+09:00",
- "tries": 1,
- "code": "e369ac04bc34",
- "stage": "build",
- "updated": "2026-11-06T01:50:11+09:00",
- "restored": {
-  "日時": "2026-11-06T01:44:58+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "images",
-   "motion",
-   "gate_images"
-  ]
+ "started": "2026-11-10T20:44:38+09:00",
+ "tries": 0,
+ "code": "0580823e1567",
+ "stage": "images",
+ "updated": "2026-11-11T17:02:17+09:00",
+ "busy": {
+  "images": 7
  }
 }

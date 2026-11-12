@@ -229,7 +229,8 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
     if "OAuth token revoked" in out or "Failed to authenticate" in out:
         # 台本の失敗ではない。前は「台本ゲートで3回不合格」と出て失敗の数に入り、その回を飛ばすおそれがあった（2026-10-30 全チャンネルで起きた）
         raise Wait(f"{stage} で Claude のログインが切れています（GitHub の Secrets の CLAUDE_CODE_OAUTH_TOKEN を入れ直すと、次の実行で続きから作ります）")
-    m = re.search(r"You've hit your (?:\w+ )?limit[^\n]*|usage limit reached[^\n]*", out)
+    # 「You've hit your org's monthly spend limit」も拾う（2026-11-07 psy/spi/nihongi で取りこぼし、台本ゲートの不合格に数えていた）
+    m = re.search(r"You've hit your [^\n]*?limit[^\n]*|usage limit reached[^\n]*", out)
     if m:
         # Claude の利用枠の上限も台本の失敗ではない。前は「台本ゲートで5回不合格」と数えられ、その回を捨てて次の回も同じく空振りした（nihongi 2026-11-02）
         raise Wait(f"{stage} で Claude の利用枠の上限に届きました（{m.group(0).strip()[:80]}）。枠が戻った後の実行で続きから作ります")
@@ -674,10 +675,31 @@ def make_one(ch, st, upload, kind=None):
     if T("charts", "make_charts_job.py"):
         step("charts", lambda: run(work, "charts", [T("charts", "make_charts_job.py"), work], ch))
 
+    def codex_ready():
+        """2026-11-07：絵の段へ戻すのは1回だけだが、PC の Codex（make_images_codex.py）が足りない絵を release に置いた後なら、
+        もう一度戻して受け取る（Lovart が0の間、okinu S113・nihongi S114 が「まだ絵が無いカット」で止まり続けたため）"""
+        try:
+            import urllib.request
+            import make_images_lovart as ML
+        except Exception:
+            return False
+        if not ML.CODEX_URL:
+            return False
+        s = jload(os.path.join(work, "script.json"), {})
+        for c in s.get("cuts", []):
+            if not c.get("image") or c.get("same_as") or c.get("chart") or os.path.exists(os.path.join(work, "images", c["id"] + ".png")):
+                continue
+            try:
+                urllib.request.urlopen(ML.CODEX_URL + ML.codex_name(ch, work, c), timeout=30).close()
+                return True
+            except Exception:
+                continue
+        return False
+
     def images_back():
         """絵が足りないのに「絵の段は済み」のままだと、同じ所で毎回止まる（2026-10-30 nihongi L101 は J05・J06 が待ちのまま、okinu 101 は D01 が
         Lovart のエラーで2回失敗したまま止まり続けた）。絵の段へ1回だけ戻す。失敗の印は消して頼み直し、待ちの絵は受け取り直す"""
-        if st.get("images_back"):
+        if st.get("images_back") and not codex_ready():
             return
         st["images_back"] = True
         lp = os.path.join(work, "images", "_lovart.json")
@@ -946,7 +968,7 @@ def main():
                     nk = 1  # 作り途中の回は、在庫が目標に届いていても最後まで作る
                 jobs.append((k, nk))
             res["作る本数"] = {k or "-": nk for k, nk in jobs}
-        # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-10-27 から1日おき・publish_weekdays＝心理学chは 2026-10-29 から週5本）は、
+        # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-11-08 から1日おき・publish_weekdays＝心理学chは週3本・千年こよみは週1本）は、
         # 在庫が目標に届いていて作り途中の回も無ければ作らない（毎日作ると在庫がたまり続けるため。空いた時間はショートに回す）
         pf = jload(os.path.join(ROOT, "channels", ch, "profile.json"), {})
         if not KS and not a.count.isdigit() and (int(pf.get("publish_every_days") or 1) > 1 or len(pf.get("publish_weekdays") or range(7)) < 7) \

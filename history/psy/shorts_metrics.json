@@ -94,6 +94,13 @@
    "averageViewDuration": 19,
    "subscribersGained": 1,
    "取った日": "2026-11-04"
+  },
+  "d7": {
+   "views": 1281,
+   "averageViewPercentage": 38.68,
+   "averageViewDuration": 18,
+   "subscribersGained": 1,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_2": {
@@ -113,6 +120,13 @@
    "averageViewDuration": 39,
    "subscribersGained": 0,
    "取った日": "2026-11-05"
+  },
+  "d7": {
+   "views": 83,
+   "averageViewPercentage": 88.94,
+   "averageViewDuration": 36,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_3": {
@@ -132,6 +146,13 @@
    "averageViewDuration": 27,
    "subscribersGained": 0,
    "取った日": "2026-11-05"
+  },
+  "d7": {
+   "views": 112,
+   "averageViewPercentage": 65.46,
+   "averageViewDuration": 28,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "005_kofuku_toshi:short_4": {
@@ -151,6 +172,13 @@
    "averageViewDuration": 26,
    "subscribersGained": 0,
    "取った日": "2026-11-06"
+  },
+  "d7": {
+   "views": 176,
+   "averageViewPercentage": 76.77,
+   "averageViewDuration": 32,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
   }
  },
  "006_hitori_suki": {
@@ -163,7 +191,21 @@
   ],
   "kind": "after",
   "title": "【心理学】ひとりで15分考えるより、電気の刺激を選んだ人の正体 #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 118,
+   "averageViewPercentage": 95.36,
+   "averageViewDuration": 45,
+   "subscribersGained": 0,
+   "取った日": "2026-11-06"
+  },
+  "d7": {
+   "views": 198,
+   "averageViewPercentage": 73.34,
+   "averageViewDuration": 35,
+   "subscribersGained": 1,
+   "取った日": "2026-11-10"
+  }
  },
  "006_hitori_suki:short_2": {
   "type": "ひとりの時間",
@@ -175,7 +217,21 @@
   ],
   "kind": "after",
   "title": "【心理学】部屋にひとりでも、さびしくない人の「意外な特徴」 #shorts",
-  "publish_slot": "12:10"
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 47,
+   "averageViewPercentage": 68.09,
+   "averageViewDuration": 32,
+   "subscribersGained": 0,
+   "取った日": "2026-11-06"
+  },
+  "d7": {
+   "views": 53,
+   "averageViewPercentage": 59.760000000000005,
+   "averageViewDuration": 28,
+   "subscribersGained": 0,
+   "取った日": "2026-11-10"
+  }
  },
  "006_hitori_suki:short_3": {
   "type": "ひとりの時間",
@@ -187,7 +243,21 @@
   ],
   "kind": "after",
   "title": "【心理学】ひとりの夕飯もさらりと過ごす人、実は気分のゆれが小さめです。 #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 1007,
+   "averageViewPercentage": 188.87,
+   "averageViewDuration": 92,
+   "subscribersGained": 0,
+   "取った日": "2026-11-07"
+  },
+  "d7": {
+   "views": 1133,
+   "averageViewPercentage": 168.6,
+   "averageViewDuration": 82,
+   "subscribersGained": 0,
+   "取った日": "2026-11-11"
+  }
  },
  "006_hitori_suki:short_4": {
   "type": "ひとりの時間",
@@ -199,7 +269,21 @@
   ],
   "kind": "after",
   "title": "【心理学】同じひとりの時間なのに、気分が沈む日と軽い日がある人の正体 #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 20,
+   "averageViewPercentage": 60.8,
+   "averageViewDuration": 30,
+   "subscribersGained": 0,
+   "取った日": "2026-11-07"
+  },
+  "d7": {
+   "views": 23,
+   "averageViewPercentage": 60.8,
+   "averageViewDuration": 30,
+   "subscribersGained": 0,
+   "取った日": "2026-11-11"
+  }
  },
  "007_kotowarenai": {
   "type": "人づきあい",
@@ -210,7 +294,21 @@
   ],
   "kind": "after",
   "title": "【心理学】誘いを断れない人、実は相手の気持ちを読みちがえています #shorts",
-  "publish_slot": "20:10"
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 119,
+   "averageViewPercentage": 594.6,
+   "averageViewDuration": 261,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  },
+  "d7": {
+   "views": 133,
+   "averageViewPercentage": 523.35,
+   "averageViewDuration": 230,
+   "subscribersGained": 0,
+   "取った日": "2026-11-12"
+  }
  },
  "007_kotowarenai:short_2": {
   "type": "人づきあい",
@@ -222,7 +320,14 @@
   ],
   "kind": "after",
   "title": "【心理学】顔を見て頼まれると断れない人の「意外な特徴」 #shorts",
-  "publish_slot": "07:10"
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 110,
+   "averageViewPercentage": 36.89,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  }
  },
  "007_kotowarenai:short_3": {
   "type": "人づきあい",
@@ -233,7 +338,14 @@
   ],
   "kind": "after",
   "title": "【心理学】断るひと言が重い人に共通する特徴｜図書館の本の実験 #shorts",
-  "publish_slot": "12:10"
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 62,
+   "averageViewPercentage": 62.36999999999999,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "取った日": "2026-11-08"
+  }
  },
  "007_kotowarenai:short_4": {
   "type": "人づきあい",
@@ -244,6 +356,206 @@
   ],
   "kind": "after",
   "title": "【心理学】自分からは頼めない人、実は相手の迷惑を多めに見積もっています #shorts",
+  "publish_slot": "20:10",
+  "h72": {
+   "views": 56,
+   "averageViewPercentage": 48.85,
+   "averageViewDuration": 20,
+   "subscribersGained": 0,
+   "取った日": "2026-11-09"
+  }
+ },
+ "008_mono_herasu": {
+  "type": "幸せの心理",
+  "video_id": "fOdshuVUziY",
+  "hook": "家に帰ったのに、玄関でため息が出るのは、なぜでしょうか？",
+  "band": [
+   "玄関でため息が",
+   "夕方まで続く"
+  ],
+  "kind": "after",
+  "title": "【心理学】家を「散らかってる」と話す妻たち、実は夕方の気分まで沈みがちでした #shorts",
+  "publish_slot": "22:10",
+  "h72": {
+   "views": 182,
+   "averageViewPercentage": 52.239999999999995,
+   "averageViewDuration": 25,
+   "subscribersGained": 0,
+   "取った日": "2026-11-10"
+  }
+ },
+ "008_mono_herasu:short_2": {
+  "type": "幸せの心理",
+  "video_id": "uO3bG-5ILtE",
+  "hook": "自分の物だけ、なぜか高く見えてしまうのは、なぜでしょうか？",
+  "band": [
+   "持っただけで",
+   "値段が2倍"
+  ],
+  "kind": "after",
+  "title": "【心理学】もらって間もないマグカップに、持ち主は2倍ほどの値段をつけた｜物を手放せない心 #shorts",
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 14,
+   "averageViewPercentage": 44.96,
+   "averageViewDuration": 18,
+   "subscribersGained": 0,
+   "取った日": "2026-11-10"
+  }
+ },
+ "008_mono_herasu:short_3": {
+  "type": "幸せの心理",
+  "video_id": "qK71dzk9iWA",
+  "hook": "思い出の品が、どうしても手放せないのは、なぜでしょうか？",
+  "band": [
+   "思い出の品は",
+   "写真1枚で手放す"
+  ],
+  "kind": "after",
+  "title": "【心理学】思い出の物を手放せる人の意外な特徴｜写真1枚で、寄付が80個増えた #shorts",
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 164,
+   "averageViewPercentage": 53.88,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "取った日": "2026-11-10"
+  }
+ },
+ "008_mono_herasu:short_4": {
+  "type": "幸せの心理",
+  "video_id": "DXGFL1rnjK8",
+  "hook": "使っていない物でも、高かった物ほど捨てにくいのは、なぜでしょうか？",
+  "band": [
+   "高かった物ほど",
+   "捨てられない"
+  ],
+  "kind": "after",
+  "title": "【心理学】高かった物ほど手放せない人の正体｜半分を超える人が、楽しくない旅を選んだ #shorts",
+  "publish_slot": "22:10",
+  "h72": {
+   "views": 1054,
+   "averageViewPercentage": 82.1,
+   "averageViewDuration": 34,
+   "subscribersGained": 2,
+   "取った日": "2026-11-11"
+  }
+ },
+ "009_zenbu_hitonome": {
+  "type": "人づきあい",
+  "video_id": "amjywC33V7Q",
+  "hook": "昔お世話になった人に、お礼の手紙を出せずにいるのは、なぜでしょうか？",
+  "band": [
+   "お礼の手紙の",
+   "うまさ何点？"
+  ],
+  "kind": "after",
+  "title": "【心理学】お礼の手紙を「うまく書けなかった」と思う人の意外な特徴｜受け取った側の点は別だった #shorts",
+  "publish_slot": "07:10",
+  "h72": {
+   "views": 5,
+   "averageViewPercentage": 21.1,
+   "averageViewDuration": 8,
+   "subscribersGained": 0,
+   "取った日": "2026-11-11"
+  }
+ },
+ "009_zenbu_hitonome:short_2": {
+  "type": "人づきあい",
+  "video_id": "ReZ7O_Wocng",
+  "hook": "人前で話す時、緊張が顔に出ている気がするのは、なぜでしょうか？",
+  "band": [
+   "その緊張",
+   "ばれてない"
+  ],
+  "kind": "after",
+  "title": "【心理学】人前で緊張が顔に出ていると思う人、実はほとんど見抜かれていません #shorts",
+  "publish_slot": "12:10",
+  "h72": {
+   "views": 12,
+   "averageViewPercentage": 80.71,
+   "averageViewDuration": 35,
+   "subscribersGained": 0,
+   "取った日": "2026-11-11"
+  }
+ },
+ "009_zenbu_hitonome:short_3": {
+  "type": "人づきあい",
+  "video_id": "9E3QlsClusY",
+  "hook": "新しい服で出かけると、みんなに見られている気がするのは、なぜでしょうか？",
+  "band": [
+   "気づいた人は",
+   "4人に1人"
+  ],
+  "kind": "after",
+  "title": "【心理学】まわりの目が気になる人の意外な特徴｜恥ずかしいシャツに気づいたのは4人に1人 #shorts",
+  "publish_slot": "22:10",
+  "h72": {
+   "views": 938,
+   "averageViewPercentage": 91.35,
+   "averageViewDuration": 35,
+   "subscribersGained": 2,
+   "取った日": "2026-11-12"
+  }
+ },
+ "009_zenbu_hitonome:short_4": {
+  "type": "人づきあい",
+  "video_id": "lwA-GjuA3cw",
+  "hook": "小さな失敗を、帰り道まで何度も思い出してしまうのは、なぜでしょうか？",
+  "band": [
+   "失敗した日の",
+   "点数のずれ"
+  ],
+  "kind": "after",
+  "title": "【心理学】小さな失敗をいつまでも思い出す人の正体｜まわりが付けた点は、予想より高かった #shorts",
+  "publish_slot": "07:10"
+ },
+ "010_niwa_shokubutsu": {
+  "type": "ひとりの時間",
+  "video_id": "6Ih7okYWhA0",
+  "hook": "庭で新しい芽を見つけると、思わず「わぁ」と声が出るのは、なぜでしょうか？",
+  "band": [
+   "「わぁ」を探すと",
+   "写真の自分が小さく"
+  ],
+  "kind": "after",
+  "title": "【心理学】「わぁ」と心が動く散歩を続けた人、実は写真の自分がどんどん小さくなっていました #shorts",
+  "publish_slot": "12:10"
+ },
+ "010_niwa_shokubutsu:short_2": {
+  "type": "ひとりの時間",
+  "video_id": "TRbVHAc3bKI",
+  "hook": "いやなことがあった日に、気づくと庭の草むしりをしているのは、なぜでしょうか？",
+  "band": [
+   "いやな日ほど",
+   "草むしりしたくなる"
+  ],
+  "kind": "after",
+  "title": "【心理学】いやなことがあった日、つい草むしりをする人の正体｜本を読んだ組は、気分がさらに下がった #shorts",
   "publish_slot": "20:10"
+ },
+ "010_niwa_shokubutsu:short_3": {
+  "type": "ひとりの時間",
+  "video_id": "dnWHidejzgY",
+  "hook": "玄関先の花を見ると、ふっと気持ちがゆるむのは、なぜでしょうか？",
+  "band": [
+   "鉢を置いた38軒",
+   "24%が53%に"
+  ],
+  "kind": "after",
+  "title": "【心理学】玄関先に花を置く人の「意外な特徴」｜何もない38軒の玄関に、鉢を置いてみた研究 #shorts",
+  "publish_slot": "07:10"
+ },
+ "010_niwa_shokubutsu:short_4": {
+  "type": "ひとりの時間",
+  "video_id": "LQJwNOpv6qI",
+  "hook": "ひとりで庭いじりをしていると、気づけば鼻歌が出ているのは、なぜでしょうか？",
+  "band": [
+   "ひとりの庭仕事",
+   "実は明るい"
+  ],
+  "kind": "after",
+  "title": "【心理学】ひとりで庭いじりをする人、実は誰かと一緒に土をいじる時と同じくらい明るいんです。 #shorts",
+  "publish_slot": "12:10"
  }
 }

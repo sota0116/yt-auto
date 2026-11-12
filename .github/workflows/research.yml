@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 100  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）
     env:
       TZ: Asia/Tokyo
-      CHANNELS: job psy spi nihongi okinu   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi（千年こよみ）は 2026-10-29 に channels/spi/competitors.json を作って足した
+      CHANNELS: job psy spi nihongi okinu   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi は 2026-11-11 から翠仙の競合（channels/spi/competitors.json を替えた。千年こよみの分は competitors_千年こよみまで_2026-11-11.json）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,6 +41,8 @@ jobs:
           CLAUDE_ACCOUNT: ${{ vars.CLAUDE_ACCOUNT }}
           CLAUDE_SUB_UNTIL: ${{ vars.CLAUDE_SUB_UNTIL }}
         run: bash pipeline/pick_claude.sh
+      - name: Claude の入口を PATH の先頭に置く（pipeline/bin/claude。上限・ログイン切れで止まったら、もう一方のアカウントで頼み直す）
+        run: echo "$GITHUB_WORKSPACE/pipeline/bin" >> "$GITHUB_PATH"
       - name: 鍵を置く（中身は画面に出さない）
         env:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -63,6 +65,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
         run: |
           bad=0
           for ch in $CHANNELS; do python -X utf8 pipeline/research.py "$ch" || bad=1; done
@@ -72,6 +75,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
         run: python -X utf8 pipeline/learn_job.py job
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()

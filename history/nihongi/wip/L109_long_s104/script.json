@@ -1,0 +1,948 @@
+{
+ "format": "long",
+ "title": "【もしも歴史】坂本龍馬の会社に、現代の営業マンが入ったら｜敵同士の薩摩と長州に同じ名刺を配り、同盟の手紙の裏に朱でサイン",
+ "promise": "1865年に長崎でできた亀山社中が、幕府ににらまれた長州のために薩摩藩の名前で銃や船を買い、長州が米で返し、1866年の薩長同盟の約束に龍馬が朱で保証を書くまでの流れと、そのあと寺田屋・いろは丸・大政奉還へ進んだ2年が、1本で分かる",
+ "desc": "もしも坂本龍馬の亀山社中に、今の営業マンが1人入ったら。持って行けたのは、名刺と営業のやり方だけ。敵どうしの薩摩と長州に同じ名刺を配り、銃と船と米の取り引きをつなぎ、薩長同盟の約束の手紙の裏に、朱で保証を書くことになる。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※営業マンが亀山社中で働く話（名刺を配る・兵糧米のお返しを言い出す・ユニオン号の決めごとを紙に書いて回る・薩長同盟の約束の手紙に朱で裏書を書く・いろは丸の談判の席にいる）と、営業マン・坂本龍馬のセリフは作り話です。亀山社中の成立（1865年）、薩摩藩名義での小銃や蒸気船の買い入れ、ユニオン号（桜島丸・乙丑丸）、長州の兵糧米、1866年の薩長同盟と龍馬の朱の裏書、寺田屋の襲撃、第二次長州征討、海援隊、いろは丸事件、大政奉還、龍馬の死は、国立国会図書館「近代日本人の肖像」・文化遺産オンライン・国土交通省の多言語解説・事典（コトバンク）などをもとにしています。亀山社中の取り引きが薩長同盟につながったこと、お龍の知らせ、万国公法の談判、いろは丸の賠償額などは、そういわれている話です。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "日本史",
+  "幕末",
+  "坂本龍馬",
+  "亀山社中",
+  "薩長同盟",
+  "海援隊",
+  "タイムスリップ"
+ ],
+ "thumb": {
+  "top": "龍馬の亀山社中に、令和の営業マンが入社したら",
+  "big": "薩長同盟を営業マンが保証",
+  "hl_top": "営業マン",
+  "hl_big": "保証",
+  "bg": "H07"
+ },
+ "fiction": true,
+ "world_rules": [
+  "作り話は1つだけ：今の営業マンが1人、1865年に長崎の亀山社中に入って働く。持って来たのは名刺の束と営業のやり方だけ。社中の成立、薩摩藩名義での小銃と蒸気船の買い入れ、ユニオン号をめぐるもめごと、長州の兵糧米、1866年1月の6か条の約束、木戸孝允が裏書を求めたこと、寺田屋の襲撃、第二次長州征討、海援隊、いろは丸、大政奉還、龍馬の死は史実のまま",
+  "営業マンが未来から来たことを知っているのは本人だけ。龍馬・薩摩・長州・紀州の人は、名刺という紙を配る変わった社中の者と思っている。営業マンが覚えている先の歴史は、教科書で読んだ程度（寺田屋や近江屋の日付は覚えていない。L03）。営業マンは先の出来事を口に出さない",
+  "名刺を受け取ったのは、社中の仲間と、取り引きで営業マンが会った薩摩・長州の人だけ。だから敵どうしの両方の藩に同じ名刺が残る（C12・F07・L06）",
+  "この世界で変わるのは3つだけ：①兵糧米のお返しを言い出したのが営業マン（F03・F05。本当は龍馬が長州に頼んだ）②ユニオン号の決めごとを営業マンが紙に書いて両方に見せて回る（E07・E08。もめごと自体は史実どおり起きる）③木戸が求めた約束の手紙の裏書を、龍馬から筆を渡された営業マンが朱で書く（H05〜H08。本当は龍馬）",
+  "龍馬が営業マンに筆を渡す理由は、薩摩にも長州にも営業マンの名刺が残っていて、両方の藩が営業マンの顔を知っているから（H06）。木戸は、裏書を龍馬の社中に頼んだので、礼の手紙は龍馬に届く（I10）",
+  "「本当の歴史では」と現実に戻るのは語り手だけで、H09（裏書をしたのは龍馬）と L07（両藩をつないだのは社中の取り引きといわれる）の2回だけ。どちらも章の終わり。人物は本当の歴史の話をしない"
+ ],
+ "world_terms": [
+  "名刺",
+  "営業マン",
+  "裏書",
+  "保証",
+  "お返し",
+  "本当の歴史",
+  "この世界",
+  "未来",
+  "覚えて"
+ ],
+ "voices": {
+  "eigyoman": 12,
+  "ryoma": 11
+ },
+ "facts": [
+  "慶応元（1865）年、坂本龍馬は薩摩藩や長崎の豪商の支援を受けて、長崎の亀山に「亀山社中」を設立。日本初の民間貿易会社で、私設の海軍の役割も有していたと言われる。海運業・貿易業などを行い、坂本が会長。業績の一つに、長州藩のために薩摩藩名義で大量の小銃や蒸気船の購入をしたことがあり、これが慶応2年の薩長同盟につながったといわれる。慶応3年に土佐藩付属の「海援隊」に改名、坂本の暗殺後に分裂し明治元（1868）年に解散。出どころ：国立国会図書館「近代日本人の肖像」坂本龍馬 www.ndl.go.jp/portrait/pickup/029（2026-11-11 に本文を読んで確認）",
+  "亀山社中は、1865年に廃止された神戸海軍操練所の修業生のうち、坂本竜馬を中心とする20余名が薩摩藩の保護をえて、同年5月下旬に長崎で成立させた。長崎の豪商小曾根家の援助をえた。薩長両藩などの武器・艦船の輸入を仲介し、海運業に従事。慶応3年（1867）竜馬が隊長となって海援隊と改称、土佐藩に属する形に。竜馬の暗殺後に衰え、1868年閏4月に藩命により解散。出どころ：コトバンク「海援隊」（改訂新版 世界大百科事典・デジタル大辞泉）kotobank.jp/word/海援隊、コトバンク「亀山社中」（世界大百科事典 旧版の海援隊の項）（2026-11-11 に読んで確認）",
+  "亀山社中は「日本最初の会社のような組織で、貿易をしたり、船を使ってものを運ぶ仕事をしたりした」。龍馬は日本で最初にブーツをはいた一人といわれる（台本 B12 は「早くにブーツをはいた1人ともいわれる」）。出どころ：長崎市こどもページ「長崎の偉人 その7 坂本龍馬」www.city.nagasaki.lg.jp/site/kodomo/90278.html（2026-11-11 に読んで確認）。社中の跡は修復・復元され、2009年から長崎市亀山社中記念館（長崎市伊良林2-7-24）として公開（tabi-mag.jp/ns0022・gltjp.com の検索の抜粋で確認。公的なページの本文は見つからず）",
+  "1864年（元治元年）7月19日（ブリタニカは18日夜）の禁門の変：長州藩に対し会津藩・薩摩藩らの諸藩が戦い、長州勢は完敗し敗走。7月24日に長州追討の朝命が下り、第1次長州征伐の発端となった。出どころ：コトバンク「禁門の変」（2026-11-11 に読んで確認）。当時、薩摩藩と長州藩は仲が悪かった（長崎市こどもページ）",
+  "幕府の監視下にあった長州藩は海外から新式銃や軍艦を自由に買えなかった。薩摩藩の名義で買って長州藩に回す案が出て、伊藤博文らが長崎に入り、グラバー商会のトーマス・グラバーから兵器を買った。龍馬が長州藩に薩摩藩への兵糧米の供与を頼むと、長州は承知して米を用意した。出どころ：ダイヤモンド・オンライン 増田賢作（小和田哲男 監修『リーダーは日本史に学べ』より）diamond.jp/articles/-/348275（S104 で読んで確認。公的な解説は見つからず、台本の兵糧米は「用意した」の事実だけを言い、誰が言い出したかはこの世界の作り話として F04 で分けた）。薩摩藩家老の小松帯刀が、長州藩の長崎での銃器購入に便宜を図った（鹿児島県広報誌 PDF www.pref.kagoshima.jp/kohokocho/kouhoushi/kohosi/gurakago/h30/documents/66720_20180807111056-1.pdf の検索の抜粋で確認。PDF 本文は読めず。台本 C08 は「といわれる」）。伊藤博文は長州藩出身で、明治18年（1885）に初代総理大臣（コトバンク「伊藤博文」で確認）",
+  "トーマス・グラバーは1859年に来日（国土交通省 観光庁 多言語解説 グラバー園 www.mlit.go.jp/tagengo-db/R1-00714.html で確認）。グラバー園は長崎市南山手町8-1にあり、旧グラバー住宅が残る（gltjp.com・mlit の検索の抜粋で確認）",
+  "ユニオン号：1865年、長州藩が資金を用意し、グラバー商会を通じて薩摩藩名義で購入、亀山社中が操船することになった。薩摩では桜島丸、長州では乙丑丸と呼ばれた。旗は島津家のものを借り、長州藩の士官も乗り組む取り決め。近藤長次郎と井上馨の間の協定の履行をめぐり、長州藩と社中の間でもめごと（ユニオン号事件・桜島丸事件）が起きた。出どころ：samurai-archives.com Itchu-maru（Union → Sakurajima-maru → Choshu で改名）、pedia.3rd-in.co.jp「ユニオン号」・tabi-mag.jp/ns0022 の検索の抜粋（購入年を1866年とする記事もあり、台本は年を言わない）。公的な解説の本文は見つからなかった。NDL の「長州藩のために薩摩藩名義で…蒸気船の購入」とは合う",
+  "薩長同盟：慶応2年（1866）1月、京都で成立。改訂新版 世界大百科事典は正月21日調印・長州再征の対処案6ヵ条、マイペディアは「京都で会見し，６ヵ条からなる盟約」、ブリタニカは京都の薩摩藩邸で薩摩側から小松帯刀・西郷隆盛、長州側から桂小五郎（木戸孝允）。日本大百科全書は1月20日とする（日付は割れるので台本は「1866年1月」だけ）。出どころ：コトバンク「薩長同盟」「坂本龍馬」（2026-11-11 に読んで確認）。締結地は小松帯刀の住まいの近衛家別邸御花畑屋敷とする資料が多い（検索の抜粋。Wikimedia Commons に「近衛家別邸御花畑屋敷 薩長同盟締結の地」の石碑の写真）",
+  "裏書：薩長盟約に慎重だった桂（木戸孝允）は龍馬に裏書を求め、龍馬は盟約の内容を記した龍馬宛の書状に保証の朱書の裏書をして返した。慶応二年二月二十二日付の木戸から龍馬あての書状（重要文化財・京都国立博物館蔵）は、その裏書への礼状で、伏見寺田屋で龍馬が襲撃されたことへの見舞いも兼ねる。桂は龍馬が用心が足りないと心配している。出どころ：文化遺産オンライン「坂本龍馬関係書状 慶応二年二月二十二日 木戸孝允より龍馬あて」online.bunka.go.jp/heritages/detail/575896（2026-11-11 に読んで確認）。龍馬が朱書の裏書をした書状は宮内庁の木戸家文書に残る（京都国立博物館「龍馬の翔けた時代」概要 www.nact.jp/artcommons/user/detail/8419。S104 で確認。木戸家文書が宮内庁書陵部にあることは国立国会図書館 リサーチ・ナビ ndlsearch.ndl.go.jp/rnavi/kensei/kidokemonnjo1 の検索の抜粋で確認）。裏書の日付は今回確かめられず、台本は日付を言わない",
+  "寺田屋：1866年3月9日（慶応2年1月23日）の夜、伏見奉行所の役人が寺田屋に泊まる坂本龍馬と三吉慎蔵を捕らえようとした。階下の小さな木の浴槽で入浴していたお龍（楢崎龍）が、着物をちゃんと着ないまま二階へ駆け上がって知らせた。三吉は槍を構え、龍馬はスミス&ウェッソンの拳銃を撃ち、2人は薩摩藩邸へ逃れたが、龍馬は手に深い傷を負った。龍馬とお龍はまもなく結婚し、薩摩の霧島温泉への旅は日本で最初の新婚旅行といわれる。出どころ：国土交通省 観光庁 多言語解説「Teradaya Incident」www.mlit.go.jp/tagengo-db/en/R1-01296.html（2026-11-11 に読んで確認）、コトバンク「坂本龍馬」（日本大百科全書：同盟成立直後の23日、伏見寺田屋で幕吏の襲撃）。寺田屋の建物は鳥羽伏見の戦いで焼けたのち再建とされる（検索の抜粋）",
+  "第2次長州征討（1865〜66）：薩摩藩の出兵拒否などで反対の空気が強く、戦況も不利で、将軍徳川家茂の死を機に撤兵し、幕府の権威は失墜。出どころ：コトバンク「長州征討」（2026-11-11 に読んで確認）",
+  "いろは丸事件：1867年（慶応3年）4月23日、海援隊のいろは丸と紀州藩の明光丸が瀬戸内海（備中の六島沖）で衝突、いろは丸は沈没、死者は出なかったとされる。龍馬は万国公法を持ち出して談判したと伝わる。国際法では右に舵を切る決まりだが、いろは丸は左に切っていたとされる。紀州藩が支払うことで決着した額は「8万3526両198文」とする紹介がある（ドラマ解説は83000両）。出どころ：PRESIDENT Online 西沢泰生（2024-08-10）president.jp/articles/-/84524（日付・明光丸・万国公法・舵）、tabi-mag.jp/hm0195・hm0242 の検索の抜粋（場所・死者なし・額）。福山市の PDF は字を取り出せず読めなかった。台本は「〜と伝わる」「8万両をこえたともいわれる」。鞆の浦にいろは丸展示館がある（rurubu・tabi-mag の検索の抜粋）",
+  "大政奉還：慶応3年10月14日（1867年）、第15代将軍徳川慶喜が朝廷へ政権返上を申し出、翌15日に勅許。出どころ：コトバンク「大政奉還」（2026-11-11 に読んで確認）。龍馬は慶応3年11月15日夜、京都の下宿近江屋で襲われ死去（コトバンク「坂本龍馬」日本大百科全書・ブリタニカ）",
+  "実際の画像：Wikimedia Commons で台本を書く前に、real_images.py と同じ条件（filetype:bitmap・幅800以上）で引いて確かめた。Beato の長崎の通り（KITLV 89900・1863〜65年ごろ）、Kameyama-company01.jpg（亀山社中の跡）、Sakamoto_Ryoma.jpg（1024px）、Former Glover House（2017年）、近衛家別邸御花畑屋敷 薩長同盟締結の地.jpg、Smith and Wesson Army No2 of Sakamoto Ryoma.jpg、Teradaya fg2.jpg、Irohamaru tenjikan01st3200.jpg。裏書の写真（542px）とグラバーの肖像（629px・685px）は幅が足りず、検索語のままだと銅像が選ばれるので使わなかった",
+  "使わない：鉄砲の数（ミニエー銃4300挺など。公的な出どころが見つからない）、龍馬が西郷と木戸を説き伏せた場面の言葉、薩長が互いに先に言い出さなかった逸話、龍馬の写真の撮影場所、いろは丸の今のお金の換算"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "坂本龍馬の会社に今の営業マンがいたら、薩長同盟の保証人は営業マンになる。1866年1月、京都で薩摩と長州が手を結んだ。",
+   "image_en": "Pre-dawn blue-green mist over the tiled roofs and quiet garden of a large samurai mansion in Kyoto in winter, pale light falling from above through the clouds, thin snow on the stone lanterns. No people.",
+   "image": "Pre-dawn blue-green mist over the tiled roofs and quiet garden of a large samurai mansion in Kyoto in winter, pale light falling from above through the clouds, thin snow on the stone lanterns. No people.",
+   "label": "1866年 京都",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "長く仲の悪かった2つの藩。この同盟から2年たたずに、江戸幕府は政権を朝廷に返す。",
+   "image_en": "Blue-green morning mist over the massive stone walls and wide moat of a Japanese castle, shafts of pale light from above, a heavy silent mood. No people.",
+   "image": "Blue-green morning mist over the massive stone walls and wide moat of a Japanese castle, shafts of pale light from above, a heavy silent mood. No people.",
+   "label": "2年たたずに",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "その少し前の長崎に、スーツ姿の男が1人立っていた。手には、名刺の束。",
+   "image_en": "The modern Japanese salesman (about thirty, short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie, black leather shoes) standing alone and stunned on a steep stone-paved slope in 1865 Nagasaki at misty dawn, holding a thick stack of small plain white cards, the harbor with sailing ships far below in blue-green light. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (about thirty, short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie, black leather shoes) standing alone and stunned on a steep stone-paved slope in 1865 Nagasaki at misty dawn, holding a thick stack of small plain white cards, the harbor with sailing ships far below in blue-green light. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "足すルールは1つ。今の営業マンが1人、1865年の亀山社中に入る。持って行けたのは、名刺と営業のやり方だけ。",
+   "same_as": "A03",
+   "label": "足すルールは1つ",
+   "chars": []
+  },
+  {
+   "id": "A05",
+   "narration": "年と人と出来事は本当の歴史。営業マンだけが作り話です。",
+   "image_en": "Close-up of a low wooden desk in pale blue-green morning light from a paper window: a blank folded letter, a brush, a small dish of red ink, and a hand-drawn old map of a harbor showing only coastlines and hills. No people.",
+   "image": "Close-up of a low wooden desk in pale blue-green morning light from a paper window: a blank folded letter, a brush, a small dish of red ink, and a hand-drawn old map of a harbor showing only coastlines and hills. No people.",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "chapter": "1865年 長崎の亀山社中",
+   "narration": "慶応元年、1865年の長崎。港には、外国の大きな船が並んでいた。",
+   "image_en": "The harbor of Nagasaki in 1865 seen from a hillside in early morning mist, Western sailing ships and a few black steamships at anchor among small Japanese boats, pale light from above.",
+   "image": "The harbor of Nagasaki in 1865 seen from a hillside in early morning mist, Western sailing ships and a few black steamships at anchor among small Japanese boats, pale light from above.",
+   "label": "1865年 長崎",
+   "chars": [],
+   "tts_text": "けいおう元年、1865年の長崎。港には、外国の大きな船が並んでいた。"
+  },
+  {
+   "id": "B02",
+   "narration": "これは、このころの長崎の通り。外国の写真家が撮った1枚だ。",
+   "real": "Beato Street at Nagasaki in Japan presumably 1863-1865",
+   "image_en": "An old sepia photograph-like view of a narrow street in 1860s Nagasaki with wooden houses, stone steps and a few townspeople. No writing.",
+   "label": "幕末の長崎",
+   "chars": [],
+   "real_src": {
+    "題": "File:KITLV - 89900 - Beato, Felice - Street at Nagasaki in Japan - presumably 1863-1865.tif",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/KITLV_-_89900_-_Beato%2C_Felice_-_Street_at_Nagasaki_in_Japan_-_presumably_1863-1865.tif/lossy-page1-1920px-KITLV_-_89900_-_Beato%2C_Felice_-_Street_at_Nagasaki_in_Japan_-_presumably_1863-1865.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:KITLV_-_89900_-_Beato,_Felice_-_Street_at_Nagasaki_in_Japan_-_presumably_1863-1865.tif",
+    "検索語": "Beato Street at Nagasaki in Japan presumably 1863-1865"
+   }
+  },
+  {
+   "id": "B03",
+   "narration": "営業マンが目を覚ましたのは、港を見下ろす山の中腹の家だった。",
+   "image_en": "The modern Japanese salesman (about thirty, short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie) sitting up in surprise on the tatami of an old wooden house, sunlight through paper doors, the harbor visible through an open veranda. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (about thirty, short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie) sitting up in surprise on the tatami of an old wooden house, sunlight through paper doors, the harbor visible through an open veranda. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "B04",
+   "narration": "ここが亀山社中。龍馬たちが作ったばかりの、会社のような集まりだ。",
+   "image_en": "A modest two-story wooden Japanese house with a tiled roof on a green hillside above the harbor of Nagasaki, young men in worn kimono coming and going at the gate, warm morning sun.",
+   "image": "A modest two-story wooden Japanese house with a tiled roof on a green hillside above the harbor of Nagasaki, young men in worn kimono coming and going at the gate, warm morning sun.",
+   "label": "亀山社中",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B05",
+   "narration": "集まったのは、神戸の海軍の学校で学んだ若者たち、20人あまり。",
+   "image_en": "About twenty rough young ronin in worn kimono and hakama sitting and talking loudly in a crowded tatami room, some studying a nautical chart with no writing, sea light from the window.",
+   "image": "About twenty rough young ronin in worn kimono and hakama sitting and talking loudly in a crowded tatami room, some studying a nautical chart with no writing, sea light from the window.",
+   "label": "20人あまり",
+   "chars": []
+  },
+  {
+   "id": "B06",
+   "narration": "薩摩藩と、長崎の大商人の小曾根家が、お金を出して支えていた。",
+   "image_en": "A wealthy Nagasaki merchant in a fine brown haori and a dignified Satsuma samurai in a black kimono sitting side by side, sliding small wooden boxes of coins across the tatami toward the young ronin. Place the main person slightly right of center.",
+   "image": "A wealthy Nagasaki merchant in a fine brown haori and a dignified Satsuma samurai in a black kimono sitting side by side, sliding small wooden boxes of coins across the tatami toward the young ronin. Place the main person slightly right of center.",
+   "chars": [],
+   "tts_text": "薩摩藩と、長崎の大商人のこそねけが、お金を出して支えていた。"
+  },
+  {
+   "id": "B07",
+   "narration": "仕事は、船で物を運ぶことと、外国との取り引き。",
+   "image_en": "Young ronin loading plain unmarked wooden crates onto a small sailing ship at a Nagasaki pier, a foreign merchant ship behind them, bright day.",
+   "image": "Young ronin loading plain unmarked wooden crates onto a small sailing ship at a Nagasaki pier, a foreign merchant ship behind them, bright day.",
+   "chars": []
+  },
+  {
+   "id": "B08",
+   "narration": "その跡は今、長崎の伊良林で、記念館になっている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kameyama-company01.jpg",
+   "image_en": "A restored modest old wooden Japanese house on a hillside lane in Nagasaki today, quiet, green trees. No people, no signs.",
+   "label": "亀山社中の跡",
+   "chars": [],
+   "tts_text": "その跡は今、長崎のいらばやしで、記念館になっている。",
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kameyama-company01.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kameyama-company01.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kameyama-company01.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kameyama-company01.jpg"
+   }
+  },
+  {
+   "id": "B09",
+   "narration": "営業マンは、まず全員に名刺を配った。",
+   "image_en": "The modern Japanese salesman (short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie) bowing politely and offering a small plain white card with both hands to a group of rough young ronin sitting on the tatami; the ronin squint at the card in confusion, its face turned away from the viewer. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, clean-shaven friendly face, plain navy business suit, white shirt, plain navy tie) bowing politely and offering a small plain white card with both hands to a group of rough young ronin sitting on the tatami; the ronin squint at the card in confusion, its face turned away from the viewer. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "背の高い男が、名刺を指でつまんで、明かりにすかした。坂本龍馬だ。",
+   "image_en": "Sakamoto Ryoma (tall, about thirty, wavy unkempt hair tied in a loose topknot, sharp cheerful eyes, faded dark kimono and hakama, worn black leather boots) holding up a small plain white card between two fingers against the window light, grinning with curiosity, the back of the card toward the viewer. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, about thirty, wavy unkempt hair tied in a loose topknot, sharp cheerful eyes, faded dark kimono and hakama, worn black leather boots) holding up a small plain white card between two fingers against the window light, grinning with curiosity, the back of the card toward the viewer. Place the main person slightly right of center.",
+   "label": "坂本龍馬",
+   "chars": []
+  },
+  {
+   "id": "B11",
+   "narration": "名前と仕事が、1枚に書いてあるがか。こりゃ、便利じゃのう。",
+   "same_as": "B10",
+   "voice": "ryoma",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "今に残る、坂本龍馬の写真。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+   "image_en": "An old faded sepia studio photograph-like portrait of a tall Japanese ronin in kimono and hakama leaning on a stand. No writing.",
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg"
+   }
+  },
+  {
+   "id": "B13",
+   "narration": "龍馬は、日本で早くにブーツをはいた1人ともいわれる。",
+   "image_en": "Close-up of a pair of worn black leather Western boots under the hem of a faded dark hakama, standing on a stone-paved slope in Nagasaki.",
+   "image": "Close-up of a pair of worn black leather Western boots under the hem of a faded dark hakama, standing on a stone-paved slope in Nagasaki.",
+   "label": "ブーツ",
+   "chars": []
+  },
+  {
+   "id": "B14",
+   "narration": "龍馬は、もらった名刺を、着物のふところに大事そうにしまった。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama) tucking a small plain white card carefully into the front fold of his kimono, smiling at the modern salesman in a navy suit who bows back. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama) tucking a small plain white card carefully into the front fold of his kimono, smiling at the modern salesman in a navy suit who bows back. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "chapter": "1864年 銃を買えない長州",
+   "narration": "社中の最初の大きな客は、長州藩だった。",
+   "image_en": "A young Choshu samurai about twenty-five with a lean sharp face, neat topknot, dark brown kimono and grey hakama, clenching his fists on a Nagasaki pier as he stares at a foreign trading ship, while two stern officials in black haori watch him from behind. Place the main person slightly right of center.",
+   "image": "A young Choshu samurai about twenty-five with a lean sharp face, neat topknot, dark brown kimono and grey hakama, clenching his fists on a Nagasaki pier as he stares at a foreign trading ship, while two stern officials in black haori watch him from behind. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "C02",
+   "narration": "前の年の1864年、長州は京都の御所のまわりで、会津や薩摩と戦って敗れた。",
+   "image_en": "Smoke and fire around a great wooden palace gate in Kyoto, samurai with spears and matchlock guns clashing, one side retreating, plain banners without marks. Faded old-memory colors.",
+   "image": "Smoke and fire around a great wooden palace gate in Kyoto, samurai with spears and matchlock guns clashing, one side retreating, plain banners without marks. Faded old-memory colors.",
+   "label": "禁門の変 1864年",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C03",
+   "narration": "このあと朝廷から、長州を討てという命令が出る。長州は、外国から銃や船を自由に買えなくなった。",
+   "label": "長州追討",
+   "image_en": "A court official in black formal robes reading a blank scroll aloud before kneeling samurai lords in a dim hall. Faded old-memory colors.",
+   "image": "A court official in black formal robes reading a blank scroll aloud before kneeling samurai lords in a dim hall. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "しかも薩摩と長州は、仲が悪かった。その戦いで、敵どうしだったからだ。",
+   "image_en": "A huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and a lean young Choshu samurai in a dark brown kimono glaring at each other across a narrow street, townspeople backing away.",
+   "image": "A huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and a lean young Choshu samurai in a dark brown kimono glaring at each other across a narrow street, townspeople backing away.",
+   "chars": []
+  },
+  {
+   "id": "C06",
+   "narration": "営業マンは紙を広げ、客の困りごとを書き出した。前の会社でのくせだった。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling at a low desk by lantern light, writing busily with a brush on a sheet of blank paper, sleeves rolled up. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling at a low desk by lantern light, writing busily with a brush on a sheet of blank paper, sleeves rolled up. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "C07",
+   "narration": "長州さんの困りごとは、買えないこと。売れる名前があれば、話は早い。",
+   "same_as": "C06",
+   "voice": "eigyoman",
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "長州が自分の名前で買えないなら、別の藩の名前で買えばいい。",
+   "image_en": "Two plain blank wooden name boards leaning side by side against a wall, one with a dark cloth, one with a pale cloth, warm lantern light. No writing. No people.",
+   "image": "Two plain blank wooden name boards leaning side by side against a wall, one with a dark cloth, one with a pale cloth, warm lantern light. No writing. No people.",
+   "chars": []
+  },
+  {
+   "id": "C09",
+   "narration": "その名前を貸したのが、薩摩藩の家老、小松帯刀だったといわれる。",
+   "image_en": "Komatsu Tatewaki, a slender refined Satsuma chief retainer about thirty with a calm intelligent face, neat topknot and formal pale grey kamishimo, sitting upright in a quiet room and nodding slowly. Place the main person slightly right of center.",
+   "image": "Komatsu Tatewaki, a slender refined Satsuma chief retainer about thirty with a calm intelligent face, neat topknot and formal pale grey kamishimo, sitting upright in a quiet room and nodding slowly. Place the main person slightly right of center.",
+   "label": "小松帯刀",
+   "chars": [],
+   "tts_text": "その名前を貸したのが、薩摩藩の家老、こまつたてわきだったといわれる。"
+  },
+  {
+   "id": "C10",
+   "narration": "1865年、長州から若い藩士が長崎に来た。のちの初代総理大臣、伊藤博文もいた。",
+   "image_en": "Two young Choshu samurai in dark brown and dark green kimono with travel hats in hand standing at the gate of the wooden house on the Nagasaki hillside; the modern salesman in a navy suit holds out two small plain white cards to them with both hands, the faces of the cards turned away. Place the main person slightly right of center.",
+   "image": "Two young Choshu samurai in dark brown and dark green kimono with travel hats in hand standing at the gate of the wooden house on the Nagasaki hillside; the modern salesman in a navy suit holds out two small plain white cards to them with both hands, the faces of the cards turned away. Place the main person slightly right of center.",
+   "label": "伊藤博文",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C11",
+   "narration": "営業マンは小松帯刀にも、同じ名刺を差し出していた。",
+   "image_en": "Komatsu Tatewaki (slender, calm face, neat topknot, pale grey kamishimo) receiving a small plain white card with both hands from the modern salesman in a navy suit who bows deeply, the face of the card turned away. Place the main person slightly right of center.",
+   "image": "Komatsu Tatewaki (slender, calm face, neat topknot, pale grey kamishimo) receiving a small plain white card with both hands from the modern salesman in a navy suit who bows deeply, the face of the card turned away. Place the main person slightly right of center.",
+   "chars": [],
+   "tts_text": "営業マンはこまつたてわきにも、同じ名刺を差し出していた。"
+  },
+  {
+   "id": "C12",
+   "narration": "敵どうしの薩摩と長州。その両方の手に、同じ男の名刺がわたった。",
+   "image_en": "Two hands from opposite sides of the picture, one in a black kimono sleeve and one in a dark brown kimono sleeve, each holding an identical small plain white card, the card faces turned away, lantern light between them.",
+   "image": "Two hands from opposite sides of the picture, one in a black kimono sleeve and one in a dark brown kimono sleeve, each holding an identical small plain white card, the card faces turned away, lantern light between them.",
+   "label": "同じ名刺",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "chapter": "1865年 薩摩の名前で銃と船を買う",
+   "narration": "売り手は、長崎のイギリス商人、グラバー。",
+   "image_en": "Thomas Glover, a young Scottish merchant in his late twenties with side whiskers and a dark Victorian frock coat, standing confidently in a Western-style wooden warehouse full of plain crates, smiling. Place the main person slightly right of center.",
+   "image": "Thomas Glover, a young Scottish merchant in his late twenties with side whiskers and a dark Victorian frock coat, standing confidently in a Western-style wooden warehouse full of plain crates, smiling. Place the main person slightly right of center.",
+   "label": "グラバー",
+   "chars": []
+  },
+  {
+   "id": "D02",
+   "narration": "1859年、長崎が外国に開かれたころに日本へ来た、若い商人だ。",
+   "image_en": "A Western sailing ship arriving at the harbor of Nagasaki in 1859, small Japanese boats rowing out to meet it, green hills around the bay. Faded old-memory colors.",
+   "image": "A Western sailing ship arriving at the harbor of Nagasaki in 1859, small Japanese boats rowing out to meet it, green hills around the bay. Faded old-memory colors.",
+   "label": "1859年",
+   "chars": []
+  },
+  {
+   "id": "D03",
+   "narration": "その住まいは今も、長崎の南山手の丘に残っている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/2/21/Former_Glover_House%2C_Glover_Garden%2C_Nagasaki%2C_July_2017.jpg",
+   "image_en": "A single-story Western colonial-style wooden house with a wide veranda in a garden on a hill overlooking a harbor. No people, no signs.",
+   "image": "A single-story Western colonial-style wooden house with a wide veranda in a garden on a hill overlooking a harbor. No people, no signs.",
+   "label": "旧グラバー住宅",
+   "chars": [],
+   "tts_text": "その住まいは今も、長崎のみなみやまての丘に残っている。"
+  },
+  {
+   "id": "D04",
+   "narration": "営業マンはグラバーの前で、長州と薩摩の話を、1枚の紙にまとめた。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) and Thomas Glover (side whiskers, dark frock coat) leaning over a table with a sheet of blank paper, the salesman pointing at it, Glover rubbing his chin. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) and Thomas Glover (side whiskers, dark frock coat) leaning over a table with a sheet of blank paper, the salesman pointing at it, Glover rubbing his chin. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "買い手の名前は薩摩、お金と使い道は長州、運ぶのは社中。",
+   "same_as": "D04",
+   "voice": "eigyoman",
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "長州は、グラバーから新しい小銃をたくさん買った。書類の上の買い手は、薩摩だ。",
+   "image_en": "Long rows of new rifles being unpacked from plain wooden crates in a dim warehouse, a young Choshu samurai lifting one with shining eyes.",
+   "image": "Long rows of new rifles being unpacked from plain wooden crates in a dim warehouse, a young Choshu samurai lifting one with shining eyes.",
+   "label": "たくさんの小銃",
+   "chars": []
+  },
+  {
+   "id": "D08",
+   "narration": "ここで問題です。この取り引きの先にある薩長同盟。その約束の手紙は、今どこにあるでしょう。",
+   "image_en": "A folded old Japanese letter tied with a cord lying on a dark lacquered tray in a shaft of light, mysterious mood. No writing visible. No people.",
+   "image": "A folded old Japanese letter tied with a cord lying on a dark lacquered tray in a shaft of light, mysterious mood. No writing visible. No people.",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "D09",
+   "narration": "銃の箱は船に積まれ、長州へ運ばれていった。",
+   "image_en": "Porters carrying plain unmarked wooden crates up a gangplank onto a black steamship at a Nagasaki pier at sunset, smoke rising from the funnel, the ship starting to pull away.",
+   "image": "Porters carrying plain unmarked wooden crates up a gangplank onto a black steamship at a Nagasaki pier at sunset, smoke rising from the funnel, the ship starting to pull away.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E01",
+   "narration": "長州は、銃のほかに、蒸気船も欲しがった。",
+   "image_en": "A young Choshu samurai in a dark brown kimono standing on a pier and gazing up at a sleek black steamship with one funnel and two masts, the ship plain with no name or marks.",
+   "image": "A young Choshu samurai in a dark brown kimono standing on a pier and gazing up at a sleek black steamship with one funnel and two masts, the ship plain with no name or marks.",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "これも薩摩の名前で、グラバーから買った。イギリスの船、ユニオン号だ。",
+   "image_en": "A sleek black British steamship with one funnel and two masts at anchor in Nagasaki harbor, sailors working on deck, no name or letters on the hull, bright afternoon.",
+   "image": "A sleek black British steamship with one funnel and two masts at anchor in Nagasaki harbor, sailors working on deck, no name or letters on the hull, bright afternoon.",
+   "label": "ユニオン号",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "薩摩での名前は、桜島丸。長州での名前は、乙丑丸。1隻に、名前が3つあった。",
+   "image_en": "Close-up of the bow of a black steamship where two sailors, one in Satsuma black and one in Choshu brown, each hold up a different blank wooden name board and argue, the sea behind them. No writing on the boards.",
+   "image": "Close-up of the bow of a black steamship where two sailors, one in Satsuma black and one in Choshu brown, each hold up a different blank wooden name board and argue, the sea behind them. No writing on the boards.",
+   "chars": [],
+   "label": "名前が3つ",
+   "strong": true,
+   "tts_text": "薩摩での名前は、さくらじままる。長州での名前は、いっちゅうまる。1隻に、名前が3つあった。"
+  },
+  {
+   "id": "E04",
+   "narration": "お金を出したのは長州。動かすのは亀山社中。旗は、薩摩の島津家の物を借りた。",
+   "image_en": "A plain dark-blue flag with no marks being raised on the mast of a black steamship, young ronin pulling the rope on deck, wind and sea spray.",
+   "image": "A plain dark-blue flag with no marks being raised on the mast of a black steamship, young ronin pulling the rope on deck, wind and sea spray.",
+   "label": "旗は薩摩",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "ところが、この船を誰がどう使うかで、長州と社中がもめた。",
+   "image_en": "A Choshu samurai and a young ronin of the company arguing face to face on the deck of a steamship, others pulling them apart, tense.",
+   "image": "A Choshu samurai and a young ronin of the company arguing face to face on the deck of a steamship, others pulling them apart, tense.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E06",
+   "narration": "決めごとは、最初に紙で。1行ずつ、両方で読み合わせましょう。",
+   "image_en": "Close-up of the modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) holding up a sheet of paper with both hands, earnest face, the paper's back toward the viewer. Place the main person slightly right of center.",
+   "image": "Close-up of the modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) holding up a sheet of paper with both hands, earnest face, the paper's back toward the viewer. Place the main person slightly right of center.",
+   "chars": [],
+   "voice": "eigyoman"
+  },
+  {
+   "id": "E07",
+   "narration": "営業マンは、船の使い方を書き出し、長州にも社中にも見せて回った。",
+   "image_en": "The modern salesman in a navy suit walking along a pier with a sheet of paper, showing it to a frowning Choshu samurai while young ronin wait behind, the black steamship in the background. Place the main person slightly right of center.",
+   "image": "The modern salesman in a navy suit walking along a pier with a sheet of paper, showing it to a frowning Choshu samurai while young ronin wait behind, the black steamship in the background. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "E08",
+   "narration": "もめごとは続いた。ただ、話し合いの席には毎回、同じ名刺の男がいた。",
+   "image_en": "A tense meeting in a harbor storehouse: Choshu samurai and young ronin of the company shouting across a low table, and in the middle the modern salesman in a navy suit sitting calmly with a sheet of paper. Place the main person slightly right of center.",
+   "image": "A tense meeting in a harbor storehouse: Choshu samurai and young ronin of the company shouting across a low table, and in the middle the modern salesman in a navy suit sitting calmly with a sheet of paper. Place the main person slightly right of center.",
+   "chars": [],
+   "label": "毎回同じ男"
+  },
+  {
+   "id": "E09",
+   "narration": "やがて船は薩摩の旗をかかげ、長州の侍も乗せて、海へ出た。",
+   "image_en": "The black steamship with a plain dark-blue flag sailing out of the harbor with smoke streaming from its funnel, samurai and ronin together on deck, golden evening sea.",
+   "image": "The black steamship with a plain dark-blue flag sailing out of the harbor with smoke streaming from its funnel, samurai and ronin together on deck, golden evening sea.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F01",
+   "chapter": "お返しは米で",
+   "narration": "銃と船を手にした長州。では、名前を貸した薩摩は、何を得るのか。",
+   "image_en": "Komatsu Tatewaki (slender, calm face, pale grey kamishimo) sitting with his arms folded, thinking, in a lamp-lit room, a closed fan on the tatami. Place the main person slightly right of center.",
+   "image": "Komatsu Tatewaki (slender, calm face, pale grey kamishimo) sitting with his arms folded, thinking, in a lamp-lit room, a closed fan on the tatami. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "F02",
+   "narration": "営業マンは、取り引きは片方だけが得をすると続かないと考えた。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) sitting between a Satsuma samurai in black and a Choshu samurai in dark brown, raising one finger as he speaks, lantern light. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) sitting between a Satsuma samurai in black and a Choshu samurai in dark brown, raising one finger as he speaks, lantern light. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "お返しは、お米でいかがでしょう。",
+   "same_as": "F02",
+   "voice": "eigyoman",
+   "chars": []
+  },
+  {
+   "id": "F05",
+   "narration": "この世界で米を言い出したのは、営業マン。長州は、薩摩のために兵糧米を用意した。",
+   "image_en": "Workers stacking many straw rice bales onto carts and a ship at a busy harbor, a Choshu samurai checking them off with a brush, bright day.",
+   "image": "Workers stacking many straw rice bales onto carts and a ship at a busy harbor, a Choshu samurai checking them off with a brush, bright day.",
+   "label": "兵糧米",
+   "chars": [],
+   "tts_text": "この世界で米を言い出したのは、営業マン。長州は、薩摩のためにひょうろうまいを用意した。",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F06",
+   "narration": "物の行き来が、仲の悪い2つの藩の間に、細い道を作り始めた。",
+   "image_en": "A wide view of a strait between two coasts at sunset, one ship carrying crates and another carrying rice bales passing each other on the water.",
+   "image": "A wide view of a strait between two coasts at sunset, one ship carrying crates and another carrying rice bales passing each other on the water.",
+   "label": "細い道",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "薩摩の屋敷にも、長州の屋敷にも、同じ名刺が1枚ずつ置かれていた。",
+   "image_en": "Two different lantern-lit tatami rooms shown as one wide continuous scene divided by a sliding door, each with a lacquered desk on which lies one identical small plain white card, card faces turned away. No people.",
+   "image": "Two different lantern-lit tatami rooms shown as one wide continuous scene divided by a sliding door, each with a lacquered desk on which lies one identical small plain white card, card faces turned away. No people.",
+   "chars": []
+  },
+  {
+   "id": "F08",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になる方は、チャンネル登録で応援してください。",
+   "same_as": "A03",
+   "label": "チャンネル登録",
+   "tts_text": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になるかたは、チャンネル登録で応援してください。",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "chapter": "1866年1月 京都の6か条",
+   "narration": "1866年1月。長州の木戸孝允が、雪の京都に入った。",
+   "image_en": "Kido Takayoshi, a lean handsome Choshu samurai in his early thirties with a neat topknot, serious cautious eyes, dark grey kimono and black haori, walking through a snowy Kyoto street with a wide straw hat in hand, glancing around warily. Place the main person slightly right of center.",
+   "image": "Kido Takayoshi, a lean handsome Choshu samurai in his early thirties with a neat topknot, serious cautious eyes, dark grey kimono and black haori, walking through a snowy Kyoto street with a wide straw hat in hand, glancing around warily. Place the main person slightly right of center.",
+   "label": "1866年1月",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "話し合いの場は、京都にあった薩摩側の屋敷だった。",
+   "image_en": "The gate of a large samurai mansion in Kyoto covered with light snow at dusk, two guards in black standing still. No signs.",
+   "image": "The gate of a large samurai mansion in Kyoto covered with light snow at dusk, two guards in black standing still. No signs.",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "京都には今、薩長同盟が結ばれた地を示す石碑が立っている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E8%BF%91%E8%A1%9B%E5%AE%B6%E5%88%A5%E9%82%B8%E5%BE%A1%E8%8A%B1%E7%95%91%E5%B1%8B%E6%95%B7_%E8%96%A9%E9%95%B7%E5%90%8C%E7%9B%9F%E7%B7%A0%E7%B5%90%E3%81%AE%E5%9C%B0.jpg",
+   "image_en": "A tall stone monument standing by a quiet street wall in Kyoto today. No readable writing.",
+   "image": "A tall stone monument standing by a quiet street wall in Kyoto today. No readable writing.",
+   "label": "締結の地",
+   "chars": []
+  },
+  {
+   "id": "G04",
+   "narration": "薩摩からは西郷隆盛と小松帯刀。長州からは木戸孝允。部屋は、静まり返っていた。",
+   "image_en": "A tense tatami room lit by lanterns: on one side a huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and the slender Komatsu Tatewaki in pale grey kamishimo, on the other side Kido Takayoshi in a dark grey kimono and black haori, all sitting formally in silence.",
+   "image": "A tense tatami room lit by lanterns: on one side a huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and the slender Komatsu Tatewaki in pale grey kamishimo, on the other side Kido Takayoshi in a dark grey kimono and black haori, all sitting formally in silence.",
+   "label": "西郷と木戸",
+   "chars": [],
+   "tts_text": "薩摩からは西郷隆盛とこまつたてわき。長州からは木戸孝允。部屋は、静まり返っていた。"
+  },
+  {
+   "id": "G06",
+   "narration": "営業マンは、ふすまの外で、正座して待っていた。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling formally on a cold wooden corridor outside closed sliding doors, lantern light leaking through the paper, his breath white. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling formally on a cold wooden corridor outside closed sliding doors, lantern light leaking through the paper, his breath white. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "G07",
+   "narration": "お二人は、もう取り引きのお相手です。初めて会う敵ではありません。",
+   "same_as": "G06",
+   "voice": "eigyoman",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "銃と船と米の1年で、相手の顔はもう知っていた。薩摩と長州は、6か条の約束を結んだ。",
+   "image_en": "Close-up of hands of samurai placing a folded blank document on a lacquered tray between two sides, lantern light, solemn. No writing visible.",
+   "image": "Close-up of hands of samurai placing a folded blank document on a lacquered tray between two sides, lantern light, solemn. No writing visible.",
+   "label": "6か条",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "幕府がまた長州を攻めてきた時、どう動くか。その取り決めが中心だった。",
+   "image_en": "A huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and Kido Takayoshi in a dark grey kimono leaning together over a plain hand-drawn map of western Japan with no writing, lantern light, serious faces.",
+   "image": "A huge stout Satsuma samurai with thick eyebrows and big round eyes in a black kimono and Kido Takayoshi in a dark grey kimono leaning together over a plain hand-drawn map of western Japan with no writing, lantern light, serious faces.",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "西郷と木戸が、向かい合って、深く頭を下げた。",
+   "image_en": "The huge stout Satsuma samurai in a black kimono and Kido Takayoshi in a dark grey kimono and black haori bowing deeply to each other at the same moment across the tatami, lantern light, the slender Komatsu watching with a faint smile.",
+   "image": "The huge stout Satsuma samurai in a black kimono and Kido Takayoshi in a dark grey kimono and black haori bowing deeply to each other at the same moment across the tatami, lantern light, the slender Komatsu watching with a faint smile.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H01",
+   "chapter": "朱で書いた保証",
+   "narration": "けれど、木戸は用心深かった。口だけの約束は、あとで消えるかもしれない。",
+   "image_en": "Close-up of Kido Takayoshi (lean handsome face, neat topknot, serious cautious eyes, dark grey kimono and black haori) frowning at a lamp at night, deep in thought. Place the main person slightly right of center.",
+   "image": "Close-up of Kido Takayoshi (lean handsome face, neat topknot, serious cautious eyes, dark grey kimono and black haori) frowning at a lamp at night, deep in thought. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "木戸は、約束の中身を手紙に書いて龍馬に送り、裏に保証を書いてほしいと頼んだ。",
+   "image_en": "Kido Takayoshi (dark grey kimono, black haori) writing a long letter with a brush at a low desk by lamplight, the paper seen from the side so no writing is visible. Place the main person slightly right of center.",
+   "image": "Kido Takayoshi (dark grey kimono, black haori) writing a long letter with a brush at a low desk by lamplight, the paper seen from the side so no writing is visible. Place the main person slightly right of center.",
+   "label": "裏書",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "裏書。手紙の裏に、この中身にまちがいないと書き添えることだ。",
+   "image_en": "Close-up of a long folded Japanese letter turned over on a desk, its blank back side facing up, a brush and a small dish of bright red ink beside it, lamplight.",
+   "image": "Close-up of a long folded Japanese letter turned over on a desk, its blank back side facing up, a brush and a small dish of bright red ink beside it, lamplight.",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "龍馬は筆を取った。そして、その筆を営業マンに差し出した。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, sharp cheerful eyes, faded dark kimono and hakama) holding out a brush dipped in red ink toward the startled modern salesman in a navy suit across a low desk with a letter on it, lamplight. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, sharp cheerful eyes, faded dark kimono and hakama) holding out a brush dipped in red ink toward the startled modern salesman in a navy suit across a low desk with a letter on it, lamplight. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "H06",
+   "narration": "薩摩にも長州にも、おまんの名刺がある。書くのは、おまんじゃ。",
+   "same_as": "H05",
+   "voice": "ryoma",
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "営業マンは朱の墨で、約束の手紙の裏に、保証の字を書き入れた。",
+   "image_en": "The modern Japanese salesman (short neat black hair, clean-shaven face, plain navy business suit, white shirt, plain navy tie) kneeling at a low desk, writing with a brush in bright red ink on the back of a long folded letter, intense focused face lit by a lamp, Sakamoto Ryoma watching over his shoulder with a grin; the strokes are seen from the side and are not readable. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, clean-shaven face, plain navy business suit, white shirt, plain navy tie) kneeling at a low desk, writing with a brush in bright red ink on the back of a long folded letter, intense focused face lit by a lamp, Sakamoto Ryoma watching over his shoulder with a grin; the strokes are seen from the side and are not readable. Place the main person slightly right of center.",
+   "label": "保証人は営業マン",
+   "strong": true,
+   "highlight": [
+    "朱の墨"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "H08",
+   "narration": "この世界の薩長同盟。その保証人は、名刺を配った営業マンになった。",
+   "image_en": "Close-up of the back of a long folded Japanese letter with fresh bright red brush strokes drying in lamplight, a business-suit sleeve and a kimono sleeve resting on either side of it. The strokes are blurred and unreadable.",
+   "image": "Close-up of the back of a long folded Japanese letter with fresh bright red brush strokes drying in lamplight, a business-suit sleeve and a kimono sleeve resting on either side of it. The strokes are blurred and unreadable.",
+   "chars": []
+  },
+  {
+   "id": "H09",
+   "narration": "本当の歴史では、朱で裏書をしたのは龍馬で、その手紙は今も宮内庁に残る。",
+   "image_en": "An old long Japanese letter laid out flat in a quiet archive under soft light, faint red strokes on its back, an archivist's white gloves beside it. Faded old-memory colors. No readable writing.",
+   "image": "An old long Japanese letter laid out flat in a quiet archive under soft light, faint red strokes on its back, an archivist's white gloves beside it. Faded old-memory colors. No readable writing.",
+   "label": "宮内庁",
+   "chars": [],
+   "payoff": true
+  },
+  {
+   "id": "I01",
+   "chapter": "1866年 寺田屋の夜",
+   "narration": "約束が結ばれて間もない夜。龍馬は、京都の伏見の宿、寺田屋に泊まっていた。",
+   "image_en": "A two-story wooden inn by a canal in Fushimi at night, paper lanterns glowing at the entrance, a riverboat moored in front, quiet and cold.",
+   "image": "A two-story wooden inn by a canal in Fushimi at night, paper lanterns glowing at the entrance, a riverboat moored in front, quiet and cold.",
+   "label": "寺田屋",
+   "chars": []
+  },
+  {
+   "id": "I02",
+   "narration": "そこへ、伏見奉行所の捕り方が、宿を囲んだ。",
+   "image_en": "Many shogunate constables in dark clothes with headbands holding long staffs and lanterns silently surrounding a wooden inn at night.",
+   "image": "Many shogunate constables in dark clothes with headbands holding long staffs and lanterns silently surrounding a wooden inn at night.",
+   "chars": [],
+   "tts_text": "そこへ、ふしみぶぎょうしょのとりかたが、宿を囲んだ。"
+  },
+  {
+   "id": "I03",
+   "narration": "下の風呂にいたお龍が、それに気づいた。",
+   "image_en": "A young Japanese woman with her hair up, startled, looking toward a small steamy window from inside a small wooden bathroom, lantern light outside the window. Shown only from the shoulders up, modest.",
+   "image": "A young Japanese woman with her hair up, startled, looking toward a small steamy window from inside a small wooden bathroom, lantern light outside the window. Shown only from the shoulders up, modest.",
+   "label": "お龍",
+   "chars": [],
+   "tts_text": "下の風呂にいたおりょうが、それに気づいた。"
+  },
+  {
+   "id": "I04",
+   "narration": "お龍は着物もちゃんと着ないまま階段をかけ上がり、龍馬たちに知らせたという。",
+   "image_en": "A young Japanese woman clutching a loosely wrapped plain kimono at her chest, rushing up a steep dark wooden staircase toward a lamp-lit room, fearful face, modest.",
+   "image": "A young Japanese woman clutching a loosely wrapped plain kimono at her chest, rushing up a steep dark wooden staircase toward a lamp-lit room, fearful face, modest.",
+   "chars": [],
+   "tts_text": "おりょうは着物もちゃんと着ないまま階段をかけ上がり、龍馬たちに知らせたという。",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I05",
+   "narration": "龍馬はピストルを撃ち、仲間の三吉慎蔵は槍を構えた。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) firing a small revolver toward a doorway in a dark tatami room, a samurai companion beside him holding a spear ready, constables' lanterns at the door. No blood.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) firing a small revolver toward a doorway in a dark tatami room, a samurai companion beside him holding a spear ready, constables' lanterns at the door. No blood.",
+   "chars": [],
+   "tts_text": "龍馬はピストルを撃ち、仲間のみよししんぞうは槍を構えた。"
+  },
+  {
+   "id": "I06",
+   "narration": "撃ったのは、アメリカのスミス・アンド・ウェッソンの拳銃だった。",
+   "real": "Smith and Wesson Army No2 of Sakamoto Ryoma",
+   "image_en": "A small 19th-century American revolver lying on a dark cloth, lamplight. No people.",
+   "image": "A small 19th-century American revolver lying on a dark cloth, lamplight. No people.",
+   "label": "アメリカの拳銃",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "2人は薩摩藩の屋敷へ逃げこんだ。龍馬は、手に深い傷を負った。",
+   "image_en": "Two men running through a dark narrow alley at night toward the gate of a large samurai mansion, one of them clutching his bandaged hand. No blood.",
+   "image": "Two men running through a dark narrow alley at night toward the gate of a large samurai mansion, one of them clutching his bandaged hand. No blood.",
+   "chars": []
+  },
+  {
+   "id": "I08",
+   "narration": "寺田屋は、今も伏見にある。ただ、建物はのちに建て直された物とされる。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Teradaya_fg2.jpg",
+   "image_en": "A two-story old wooden inn with lanterns in Fushimi, Kyoto today, daytime. No people, no signs.",
+   "image": "A two-story old wooden inn with lanterns in Fushimi, Kyoto today, daytime. No people, no signs.",
+   "label": "今の寺田屋",
+   "chars": []
+  },
+  {
+   "id": "I09",
+   "narration": "このあと龍馬とお龍は、薩摩の霧島の温泉へ向かう。日本で最初の新婚旅行ともいわれる。",
+   "image_en": "A young Japanese couple, a tall ronin in a faded dark kimono and a young woman in a plain kimono, walking side by side on a mountain path with steam rising from hot springs among green peaks. Place the main person slightly right of center.",
+   "image": "A young Japanese couple, a tall ronin in a faded dark kimono and a young woman in a plain kimono, walking side by side on a mountain path with steam rising from hot springs among green peaks. Place the main person slightly right of center.",
+   "label": "新婚旅行",
+   "chars": [],
+   "tts_text": "このあと龍馬とおりょうは、薩摩の霧島の温泉へ向かう。日本で最初の新婚旅行ともいわれる。"
+  },
+  {
+   "id": "I10",
+   "narration": "2月22日、木戸から龍馬に手紙が届いた。裏書のお礼と、寺田屋の見舞いだった。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) with a bandaged hand reading a long letter with a wry smile, the modern salesman in a navy suit sitting beside him and peering at it, morning light. The letter seen from behind. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) with a bandaged hand reading a long letter with a wry smile, the modern salesman in a navy suit sitting beside him and peering at it, morning light. The letter seen from behind. Place the main person slightly right of center.",
+   "label": "2月22日",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "chapter": "1866年 幕府が長州に勝てない",
+   "narration": "1866年、幕府は、もう一度長州を攻めた。",
+   "image_en": "A large shogunate army with plain banners and old matchlocks marching along a coastal road toward distant hills, dust rising, summer sky.",
+   "image": "A large shogunate army with plain banners and old matchlocks marching along a coastal road toward distant hills, dust rising, summer sky.",
+   "label": "第二次長州征討",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J02",
+   "narration": "けれど薩摩は、この戦いに兵を出すのを断った。",
+   "image_en": "Komatsu Tatewaki (slender, calm face, pale grey kamishimo) calmly pushing a blank scroll back across the tatami toward a shogunate messenger, who looks shocked. Place the main person slightly right of center.",
+   "image": "Komatsu Tatewaki (slender, calm face, pale grey kamishimo) calmly pushing a blank scroll back across the tatami toward a shogunate messenger, who looks shocked. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "J03",
+   "narration": "長州には、長崎から届いた銃と船があった。戦いは、幕府に不利に進んだ。",
+   "image_en": "Choshu soldiers in plain dark uniforms with new rifles kneeling in a line on a hillside, a black steamship offshore behind them, morning light.",
+   "image": "Choshu soldiers in plain dark uniforms with new rifles kneeling in a line on a hillside, a black steamship offshore behind them, morning light.",
+   "chars": []
+  },
+  {
+   "id": "J05",
+   "narration": "将軍の徳川家茂が亡くなったのをきっかけに、幕府は兵を引いた。",
+   "image_en": "A darkened castle room with a bowed group of shogunate officials in black kamishimo, a single candle, an empty raised seat. Faded old-memory colors.",
+   "image": "A darkened castle room with a bowed group of shogunate officials in black kamishimo, a single candle, an empty raised seat. Faded old-memory colors.",
+   "label": "家茂の死",
+   "chars": [],
+   "tts_text": "将軍の徳川いえもちが亡くなったのをきっかけに、幕府は兵を引いた。"
+  },
+  {
+   "id": "J07",
+   "narration": "幕府の船が、長州の海から引き上げていく。幕府の力は、大きく落ちた。",
+   "image_en": "Old shogunate sailing warships turning away and leaving a strait at sunset, Choshu soldiers watching from the shore with raised rifles.",
+   "image": "Old shogunate sailing warships turning away and leaving a strait at sunset, Choshu soldiers watching from the shore with raised rifles.",
+   "chars": []
+  },
+  {
+   "id": "K01",
+   "chapter": "1867年 いろは丸と8万両",
+   "narration": "1867年、亀山社中は名前を変える。土佐藩に属する、海援隊だ。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama, black boots) standing proudly in front of the young members of his company on a pier, a plain flag with no marks fluttering behind them, morning sea. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama, black boots) standing proudly in front of the young members of his company on a pier, a plain flag with no marks fluttering behind them, morning sea. Place the main person slightly right of center.",
+   "label": "海援隊",
+   "chars": []
+  },
+  {
+   "id": "K02",
+   "narration": "その年の4月、海援隊の船いろは丸が、瀬戸内海で紀州藩の船とぶつかった。",
+   "image_en": "Night on the Seto Inland Sea: a large steamship ramming the side of a smaller steamship, splintering wood, sailors shouting, lanterns swinging, waves. No fire, no blood.",
+   "image": "Night on the Seto Inland Sea: a large steamship ramming the side of a smaller steamship, splintering wood, sailors shouting, lanterns swinging, waves. No fire, no blood.",
+   "label": "1867年4月",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "K03",
+   "narration": "相手は明光丸。いろは丸は沈んだが、死んだ人はいなかったとされる。",
+   "image_en": "A small steamship sinking at dawn while its crew climb ropes onto a larger steamship alongside, calm sea, islands in the distance.",
+   "image": "A small steamship sinking at dawn while its crew climb ropes onto a larger steamship alongside, calm sea, islands in the distance.",
+   "chars": [],
+   "tts_text": "相手はめいこうまる。いろは丸は沈んだが、死んだ人はいなかったとされる。"
+  },
+  {
+   "id": "K04",
+   "narration": "紀州藩は、徳川の御三家の1つ。海援隊には、大きすぎる相手だ。",
+   "image_en": "A row of stern Kishu domain officials in formal dark kamishimo sitting high-handedly across a negotiating room, looking down. Place the main person slightly right of center.",
+   "image": "A row of stern Kishu domain officials in formal dark kamishimo sitting high-handedly across a negotiating room, looking down. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "K05",
+   "narration": "龍馬は、外国どうしの決まりを書いた本、万国公法を持ち出して談判したと伝わる。",
+   "image_en": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) slapping a thick Western-bound book with a plain cover onto the table in front of the Kishu officials, confident grin, the modern salesman in a navy suit beside him. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono) slapping a thick Western-bound book with a plain cover onto the table in front of the Kishu officials, confident grin, the modern salesman in a navy suit beside him. Place the main person slightly right of center.",
+   "label": "万国公法",
+   "chars": [],
+   "tts_text": "龍馬は、外国どうしの決まりを書いた本、ばんこくこうほうを持ち出して談判したと伝わる。"
+  },
+  {
+   "id": "K07",
+   "narration": "話し合いの末、紀州藩が大きな額を払うことで決まった。8万両をこえたともいわれる。",
+   "image_en": "Heavy wooden chests of gold coins being carried into a room while the Kishu officials sit with bowed heads and the young members of the company exchange astonished looks.",
+   "image": "Heavy wooden chests of gold coins being carried into a room while the Kishu officials sit with bowed heads and the young members of the company exchange astonished looks.",
+   "label": "8万両あまり",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "K08",
+   "narration": "ただ、決まりと逆の向きに舵を切ったのは、いろは丸のほうだったともいわれる。",
+   "image_en": "Close-up of a ship's wooden steering wheel being turned hard by a sailor's hands at night, lantern light, spray.",
+   "image": "Close-up of a ship's wooden steering wheel being turned hard by a sailor's hands at night, lantern light, spray.",
+   "chars": []
+  },
+  {
+   "id": "K09",
+   "narration": "ぶつかった海に近い鞆の浦には今、いろは丸展示館がある。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Irohamaru_tenjikan01st3200.jpg",
+   "image_en": "An old white-plastered storehouse museum by a small harbor in Tomonoura today, fishing boats in front. No people, no signs.",
+   "image": "An old white-plastered storehouse museum by a small harbor in Tomonoura today, fishing boats in front. No people, no signs.",
+   "label": "鞆の浦",
+   "chars": [],
+   "tts_text": "ぶつかった海に近いとものうらには今、いろは丸展示館がある。"
+  },
+  {
+   "id": "K10",
+   "narration": "長崎の浜で、海援隊の若者たちが、肩をたたき合った。",
+   "image_en": "Young members of the company in worn kimono cheering and slapping each other's shoulders on a Nagasaki beach at sunset, the modern salesman in a navy suit laughing among them. Place the main person slightly right of center.",
+   "image": "Young members of the company in worn kimono cheering and slapping each other's shoulders on a Nagasaki beach at sunset, the modern salesman in a navy suit laughing among them. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "L01",
+   "chapter": "1867年11月 名刺が残った",
+   "narration": "1867年10月、将軍の徳川慶喜は、政権を朝廷に返した。大政奉還だ。",
+   "image_en": "A grand castle hall where a dignified shogun in formal court robes sits before rows of bowing lords, a solemn historic moment, soft autumn light. Faded old-memory colors.",
+   "image": "A grand castle hall where a dignified shogun in formal court robes sits before rows of bowing lords, a solemn historic moment, soft autumn light. Faded old-memory colors.",
+   "label": "大政奉還",
+   "chars": [],
+   "tts_text": "1867年10月、将軍の徳川よしのぶは、政権を朝廷に返した。たいせいほうかんだ。",
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "L02",
+   "narration": "その翌月の11月15日の夜、龍馬は京都の近江屋で襲われ、命を落とした。",
+   "image_en": "A narrow two-story wooden townhouse in Kyoto on a cold November night, a single lantern by the door and a dark empty street. No people, no blood.",
+   "image": "A narrow two-story wooden townhouse in Kyoto on a cold November night, a single lantern by the door and a dark empty street. No people, no blood.",
+   "label": "近江屋",
+   "chars": [],
+   "tts_text": "その翌月の11月15日の夜、龍馬は京都のおうみやで襲われ、命を落とした。"
+  },
+  {
+   "id": "L03",
+   "narration": "営業マンは、教科書で読んだその日付を、とうとう思い出せなかった。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling alone in an empty room at dawn, head bowed, holding a small plain white card in both hands, the face of the card turned away. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) kneeling alone in an empty room at dawn, head bowed, holding a small plain white card in both hands, the face of the card turned away. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "L05",
+   "narration": "海援隊は、翌年に解散する。営業マンの名刺入れは、空になっていた。",
+   "image_en": "Close-up of an empty plain black leather card case lying open on a wooden veranda in evening light, the Nagasaki harbor blurred in the distance.",
+   "image": "Close-up of an empty plain black leather card case lying open on a wooden veranda in evening light, the Nagasaki harbor blurred in the distance.",
+   "label": "名刺入れは空",
+   "chars": []
+  },
+  {
+   "id": "L06",
+   "narration": "敵どうしだった2つの藩が、同じ男の名前を知っていた。そこから話が動いた。",
+   "same_as": "C12",
+   "chars": []
+  },
+  {
+   "id": "L07",
+   "narration": "本当の歴史で2つの藩をつないだのは、亀山社中の銃と船の取り引きだったといわれる。",
+   "image_en": "A wide view of Nagasaki harbor at sunset with a black steamship leaving, the wooden house of the company on the hillside in the foreground. Faded old-memory colors.",
+   "image": "A wide view of Nagasaki harbor at sunset with a black steamship leaving, the wooden house of the company on the hillside in the foreground. Faded old-memory colors.",
+   "label": "社中の取り引き",
+   "chars": []
+  },
+  {
+   "id": "L08",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) and Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama, black boots) sitting side by side on a hillside above Nagasaki harbor at sunset, laughing. Place the main person slightly right of center.",
+   "image": "The modern Japanese salesman (short neat black hair, plain navy business suit, white shirt, plain navy tie) and Sakamoto Ryoma (tall, wavy unkempt hair in a loose topknot, faded dark kimono and hakama, black boots) sitting side by side on a hillside above Nagasaki harbor at sunset, laughing. Place the main person slightly right of center.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "L09",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "A03",
+   "chars": []
+  }
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "tempo": 1.15,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

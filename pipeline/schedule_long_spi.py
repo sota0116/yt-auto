@@ -16,7 +16,7 @@ from upload_job import ROOT, API, api
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 CH = "spi"
-DAYS, TIME = (0, 2, 4, 6), (18, 0)  # 月・水・金・日（月曜が0）、18:00（2026-10-28 週2本 → 週4本）
+DAYS, TIME = (2,), (18, 0)  # 水曜（月曜が0）、18:00（2026-10-28 週2本 → 週4本、2026-11-08 週1本。曜日の中央比がいちばん高い水を残した）
 
 
 def taken():

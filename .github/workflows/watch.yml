@@ -36,7 +36,7 @@ jobs:
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       AXIS_TYPES: ${{ vars.AXIS_TYPES }}
       PUBLISH_TIME: ${{ vars.PUBLISH_TIME }}
-      CHANNELS: job psy spi nihongi okinu   # okinu（金運おきぬ）は 2026-10-29 に足した（kinds。手で上げた uploaded.json は読むだけ）。 nihongi（アナザー日本紀）は 2026-10-30 から毎日の制作に入れた（ショート1日2本＋横動画2日に1本の枠の予約は watch.py の schedule_tomorrow_kinds）。spi（千年こよみ）は 2026-10-28 から見るだけ、2026-10-29 から毎日の制作に入れたので予約もする（公開日は pub_plan.json の pub_date を守る）
+      CHANNELS: job psy nihongi okinu   # spi は 2026-11-11 から外した（チャンネルを作り変え中。古い動画の予約と新しい制作を止める）。 okinu（金運おきぬ）は 2026-10-29 に足した（kinds。手で上げた uploaded.json は読むだけ）。 nihongi（アナザー日本紀）は 2026-10-30 から毎日の制作に入れた（ショート1日2本＋横動画2日に1本の枠の予約は watch.py の schedule_tomorrow_kinds）。spi（千年こよみ）は 2026-10-28 から見るだけ、2026-10-29 から毎日の制作に入れたので予約もする（公開日は pub_plan.json の pub_date を守る）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -75,7 +75,7 @@ jobs:
         run: python -X utf8 pipeline/watch.py $CHANNELS --ahead "$AHEAD" --move "$MOVE"
       - name: ショートを見張る（心理学ch 12:10・千年こよみ 19:15。本編の予約が入ったら次の日に予約・本編へのコメント・72時間と7日の数字）
         if: always()
-        run: python -X utf8 pipeline/shorts_watch_v2.py psy spi
+        run: python -X utf8 pipeline/shorts_watch_v2.py psy
       - name: Lovart が速いモードのままになっていないか（なっていたら無料モードに戻す。2回続いたら Issue。2026-10-29）
         if: always()
         env:

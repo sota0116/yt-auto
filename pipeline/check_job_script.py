@@ -697,7 +697,7 @@ def check_c(sc, facts, cuts, ng, warn):
     frame = sc.get("frame")
     fr = facts.get("骨組み", {}).get(frame)
     if fr is None:
-        ng.append(f"型C の frame は C-1・C-2・C-3 のどれか：{frame}")
+        ng.append(f"型C の frame は C-1・C-2・C-3・C-4 のどれか：{frame}")
     elif not fr.get("使える"):
         ng.append(f"骨組み {frame} は使えない：{fr.get('理由', '')}（facts.json の骨組み）")
     check_intro_name(cuts, facts.get("主役", {}).get("呼び方"), ng, warn)
@@ -705,6 +705,14 @@ def check_c(sc, facts, cuts, ng, warn):
         want = set(tokens(fr.get("値", {}).get("声_年収の差", "")))
         if want and not want & {t for c in cuts for t in tokens(c["narration"])}:
             warn.append(f"C-3 の山場の数字（2人の年収の差 {fr['値']['声_年収の差']}）を声で言っていない")
+    if frame == "C-4" and fr and facts.get("一生"):
+        said = {t for c in cuts for t in tokens(c["narration"])}
+        me = facts["一生"]["この職業"]["声_一生の年収"]
+        if not set(tokens(me)) & said:
+            warn.append(f"C-4 の山場の数字（一生の年収 {me}）を声で言っていない")
+        body = "".join(c["narration"] for c in cuts)
+        if re.search(r"あなたは一生|この人は一生|一生で.{0,6}稼ぐあなた", body):
+            ng.append("C-4 を同じ人の記録のように言っている（facts.json の一生の言い方。年齢ごとに別の人たちの平均を足した数）")
 
 
 HEDGE = re.compile(r"(この職業|この仕事)だけの(値|数字)ではありません|同じ人が年を取った数字ではありません|業界の数字なので")

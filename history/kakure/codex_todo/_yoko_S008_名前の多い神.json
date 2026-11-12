@@ -1,0 +1,57 @@
+{
+ "ch": "kakure",
+ "work": "_yoko_S008_名前の多い神",
+ "portrait": false,
+ "made": "2026-11-12 02:59",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, slightly dim lighting, a faint washi-paper texture. The same art style in every episode. The main subject is in the center of the picture.",
+ "avoid_en": "any text, letters, numbers, logos, modern buildings or clothes, Chinese-style clothing, nudity, blood",
+ "rules": {},
+ "characters": {
+  "amaterasu": {
+   "desc_en": "Amaterasu, the sun goddess, a serene young woman with very long straight black hair and a thin golden circlet, white and gold Kofun-period robe with a long white mo skirt, a magatama bead necklace, a soft golden glow around her",
+   "channel": true
+  },
+  "ookuninushi": {
+   "desc_en": "Okuninushi, the ruler of Izumo, a gentle tired man in his 50s with a short black beard streaked with gray, black hair in mizura loops, a deep indigo Kofun-period robe with white trousers, a large green magatama necklace",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "Z01",
+   "image": "暗い社の中、長く広げられた古い巻物の上に、たくさんの光る名札のような光の粒が浮かぶ、灯明、文字は読めない、人はいない",
+   "image_en": "Inside a dark ancient Japanese shrine, a long old scroll is unrolled on the floor and many small glowing lights float above it like name tags, lamplight; any writing is blurred and unreadable. No people. The scroll and lights are in the center.",
+   "en": "Inside a dark ancient Japanese shrine, a long old scroll is unrolled on the floor and many small glowing lights float above it like name tags, lamplight; any writing is blurred and unreadable. No people. The scroll and lights are in the center."
+  },
+  {
+   "id": "Z02",
+   "image": "暗闇の中、炎に包まれて生まれる小さな火の神の赤ん坊、まわりに火の粉が渦を巻く、画面の真ん中、血は描かない",
+   "image_en": "In the darkness, a small baby fire god is born wrapped in swirling flames, sparks spiraling around, in the center of the picture, no blood.",
+   "en": "In the darkness, a small baby fire god is born wrapped in swirling flames, sparks spiraling around, in the center of the picture, no blood."
+  },
+  {
+   "id": "Z03",
+   "image": "朝日の昇る雲の上に立つ太陽の女神、まわりに金色の光の輪、画面の真ん中に大きく",
+   "image_en": "The sun goddess stands on clouds as the morning sun rises, a ring of golden light around her, large in the center of the picture.",
+   "chars": [
+    "amaterasu"
+   ],
+   "en": "The sun goddess stands on clouds as the morning sun rises, a ring of golden light around her, large in the center of the picture."
+  },
+  {
+   "id": "Z04",
+   "image": "出雲の海辺の夕暮れ、穏やかな顔の大国主が立ち、その背後に少しずつ姿の違う同じ神の影が4つ並んで重なる、画面の真ん中",
+   "image_en": "Dusk on the Izumo seashore: Okuninushi stands with a gentle face, and behind him four shadowy figures of the same god, each slightly different in look, stand overlapping in a row, in the center of the picture.",
+   "chars": [
+    "ookuninushi"
+   ],
+   "en": "Dusk on the Izumo seashore: Okuninushi stands with a gentle face, and behind him four shadowy figures of the same god, each slightly different in look, stand overlapping in a row, in the center of the picture."
+  },
+  {
+   "id": "Z05",
+   "image": "夕暮れの日本の山と野を空から見た景色、あちこちの村に小さな社の灯りがともり、点々と広がる、人はいない",
+   "image_en": "An aerial view of the mountains and fields of ancient Japan at dusk, small shrine lights glowing in villages here and there, spreading out like dots. No people.",
+   "en": "An aerial view of the mountains and fields of ancient Japan at dusk, small shrine lights glowing in villages here and there, spreading out like dots. No people."
+  }
+ ]
+}
