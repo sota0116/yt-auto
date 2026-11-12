@@ -1,0 +1,58 @@
+{
+ "_説明": "シン視点事件簿の声と人物（2026-11-06 作成。2026-11-07 声を持ち主の試聴で入れ替え、顔の決まりを手順書_v5 §5 に合わせた）。実在の人物は AI の絵で顔を似せない（法廷スケッチ風の被告は例外）。容疑者・被告の顔写真は使ってよい。被害者の顔は使わない。写真を使う時は sources.md に出どころURLを書く",
+ "style_en": "Dark Japanese documentary illustration: muted desaturated colors, cold blue-grey shadows with a single warm light source, soft film grain, realistic proportions, quiet tense atmosphere. Hand-drawn painterly look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game.",
+ "chars": {
+  "kikite": {
+   "name": "聞き手（全回）",
+   "sheet": null,
+   "desc_en": null,
+   "voice": 2,
+   "voice_name": "四国めたん（ノーマル）",
+   "_役": "見る人の代わりに短く聞く。1回1文・章に1〜2回まで。答えは語り手が言う。画面に立ち絵は出さない",
+   "voice_params": {
+    "speed": 1.0,
+    "pitch": 0.0,
+    "intonation": 1.0
+   },
+   "voice_prev": "3 ずんだもん（ノーマル）＝2026-11-07まで"
+  },
+  "kiroku": {
+   "name": "記録の声（全回）",
+   "sheet": null,
+   "desc_en": null,
+   "voice": 84,
+   "voice_name": "青山龍星（しっとり）＝語りと同じ",
+   "_役": "判決文・供述・報道の一節を読む。v5 では語りの声で読む（持ち主が選んだ3声に記録の声が無いため。仮の決め）",
+   "voice_params": {
+    "speed": 1.0,
+    "pitch": 0.0,
+    "intonation": 1.0
+   }
+  },
+  "hannin": {
+   "name": "犯人・被告（回ごとに入れ替わる）",
+   "sheet": null,
+   "desc_en": null,
+   "voice": 41,
+   "voice_name": "玄野武宏（悲しみ）・暗く低く遅く",
+   "voice_alt": 98,
+   "voice_alt_name": "中部つるぎ（絶望と敗北）＝v4までの声",
+   "_役": "法廷の供述・手記など記録に残る言葉だけを、再現として読む。記録に無いセリフは作らない。1本で数か所（3〜6カット）だけ。ほかは黒地の言葉カード",
+   "voice_params": {
+    "speed": 0.9,
+    "pitch": -0.04,
+    "intonation": 0.75
+   }
+  }
+ },
+ "_声": "2026-11-07 持ち主が voice_samples_20261107 を試聴して決めた：語り 青山龍星しっとり 84／聞き手 四国めたん 2（2026-11-07 夜に持ち主が 3_聞き手_四国めたん_2 へ変更）／犯人 玄野武宏悲しみ 41（speed 0.9・pitch −0.04・抑揚 0.75）／記録 → 語りと同じ 84。全体の speed は script.json の tempo（1.1）が別にかかる。声は make_voice_roles_v1_20261107.py で作る（voice_params を読む）。概要欄の音声の行は voice/_credits.txt から書く。各キャラの VOICEVOX 規約は初めて公開する前に確かめる",
+ "narrator": {
+  "voice": 84,
+  "voice_name": "青山龍星（しっとり）",
+  "voice_params": {
+   "speed": 1.0,
+   "pitch": 0.0,
+   "intonation": 1.0
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "_説明": "シン視点事件簿の横動画の見た目設定（2026-11-06 nihongi の config_long.json から写した）。組み立て前に作業フォルダ（channels/shinshiten/videos/<番号>/）へ config.json として写す",
+  "_見た目": "nihongi の物理解析v1の数値をそのまま使い、冒頭の色だけ事件chに合わせて変えた：open_grade の色を冷たい青灰に寄せ、彩度を下げる（grade.sat 1.0）。1本目を書き出したら冒頭60秒の明るさ・彩度を測って直す",
+  "open_still": {
+    "sec": 60,
+    "zoom_per_sec": 0.003
+  },
+  "grade": {
+    "sat": 1.0,
+    "glow": 0.2,
+    "glow_sigma": 25,
+    "glow_from": 0.6,
+    "knee": 160,
+    "cap": 192,
+    "ui_max": 185
+  },
+  "open_grade": {
+    "balance": "rs=-0.10:gs=-0.02:bs=0.08:rm=-0.10:gm=-0.02:bm=0.06:rh=-0.08:gh=0.0:bh=0.08",
+    "vignette": "angle=0.2:x0=w/2:y0=h*0.25"
+  },
+  "sub_color": "#DCDCDC"
+}

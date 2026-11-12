@@ -1,0 +1,86 @@
+{
+ "_説明": "シン視点事件簿（shinshiten）の固定の設定。2026-11-06 作成。形は channels/nihongi/profile.json に合わせた。横動画（長尺）だけを週1〜2本出す。道具がまだ無い段は null（run_daily.py はその段を飛ばす）。毎日の制作に入れるのは、1本目を手で作って手順書が固まってから",
+ "gate_rewrites": 4,
+ "min_sec": 300,
+ "_min_sec": "5分未満は組み立ての崩れとして止める。長さは目的にしない（2026-11-06 本人「長さは目的にしない」）。中身が薄い引き延ばしはしない",
+ "channel": "シン視点事件簿",
+ "topic": "実際に起きた事件を2つの型でたどる長尺。型A 犯人視点＝犯人（容疑者・被告を含む）の側から 生い立ち → つまずき → 心の動き → 事件当日 → 法廷 の順に、どこで分かれ道があったかを記録で見せる。型B 未解決＝犯人が分かっていない事件を、残された物（遺留品・目撃・声明）から犯人の足取りを逆にたどり、何が分かって何がまだ見つかっていないか・どの説がどの事実で支えられるかを見せる。本数は A：B ＝おおむね 1：1（2026-11-12 本人「未解決事件もっと扱おう」）。IF は入れない（v5〜）",
+ "viewer": "事件の報道は見たが『なぜそこまで行ったのか』『なぜまだ捕まらないのか』が分からず、モヤモヤが残っている人。事件系・ルポ・犯罪心理・未解決事件の動画をよく見る人",
+ "tts_engine": "voicevox",
+ "voicevox": {
+  "narrator": {
+   "name": "青山龍星",
+   "style": "しっとり",
+   "speaker": 84
+  },
+  "credit": "VOICEVOX:青山龍星",
+  "_説明": "聞き手・記録の声・犯人の声は characters/characters.json の voice。概要欄の音声の行は、声を作ったあとの voice/_credits.txt から全員分を書く。各キャラの VOICEVOX 規約は、初めて公開する前に確かめる"
+ },
+ "stock_phase": "post",
+ "uploaded_files": [
+  "uploaded.json"
+ ],
+ "reserved_slots": [],
+ "kinds": {
+  "long": {
+   "slots": [
+    "21:00"
+   ],
+   "weekdays": [
+    "水",
+    "日"
+   ],
+   "_slots": "仮決め（2026-11-06）。週1〜2本。事件系の競合の公開時刻をまとめて決め直す（14 の「公開の枠を固定する」）。決めたら当分動かさない",
+   "start_date": null,
+   "stock_goal": [
+    2,
+    1
+   ],
+   "make_max": 1,
+   "_stock": "在庫は1週間分＝2本。最初の公開は本人のOKのあと",
+   "tools": {
+    "thumb": null
+   }
+  },
+  "short": {
+   "slots": [],
+   "start_date": null,
+   "stock_goal": [
+    0,
+    0
+   ],
+   "make_max": 0,
+   "_説明": "仮の置き場（2026-11-11）。型は手順書 §8 で決める。長尺1本につき、単体で成り立つ物を1〜2本。枠（slots と day_slots.py の on・off）と start_date は、型が固まって持ち主がOKしてから入れる。それまでは作らない・上げない",
+   "tools": {}
+  }
+ },
+ "build": {
+  "tempo_long": 1.1,
+  "lufs": -14,
+  "height": 1440,
+  "_説明": "横 1920x1080。音量は -14 LUFS。語りは落ち着いた速さにする（事件の重さに合わせて nihongi の 1.15 より少し遅く）"
+ },
+ "image_rules_en": {
+  "with_chars": "The people named in the scene keep exactly the face, hairstyle and clothing of their character sheets. Do not add people the scene does not mention.",
+  "without_chars": "Draw only the people the scene mentions, as anonymous figures seen from behind or in silhouette. Never draw a real, recognizable person's face, except in a courtroom sketch scene (see court_sketch).",
+  "nobody": "Draw no people at all.",
+  "always": "Dark Japanese documentary illustration: muted desaturated colors, cold blue-grey shadows with a single warm light source, film grain, quiet tense atmosphere. ONE single moment seen from ONE camera viewpoint. No blood, no wounds, no bodies, no weapons pointed at anyone, no fire engulfing people. No writing of any kind: signs and papers stay blank.",
+  "court_sketch": "Courtroom sketch style like a Japanese newspaper court artist: pencil lines with light watercolor wash on off-white paper, loose hand-drawn strokes, no photorealism. The defendant may be shown seated or standing in the dock as described in news reports. Never show victims or their families' faces. No writing."
+ },
+ "image_gate_item3": "血・遺体・けが・人に向けた凶器・燃える人が描かれている。実在の人物の顔に似せている（写真は別。写真は出どころURLを記録して使う。法廷スケッチ風の絵で被告を描くのは可＝2026-11-07〜）。被害者の顔がある。時代（年代・服・街並み）が事件の年と合っていない",
+ "tools": {
+  "pick": null,
+  "write": null,
+  "gate_script": null,
+  "voice": null,
+  "motion": null,
+  "charts": null,
+  "build": null,
+  "gate_video": null,
+  "upload": "upload_shinshiten.py",
+  "_upload": "2026-11-11 足した。投稿案 md からタイトル・概要欄・タグを取り、非公開＋公開の予約で上げる。公開の前に司令室の確認カードで持ち主のOKを取る。毎日の制作（run_daily.py）にはまだつないでいない",
+  "_説明": "1本目は手で作る。道具は 2本目までに nihongi の道具を写して作る（run_daily.py の段ごとの道具。null はその段を飛ばす）"
+ },
+ "_顔の決まり_20261107": "持ち主の指示で「容疑者の顔は使わない」を外した。容疑者・被告の顔写真（報道・逮捕時・子ども時代）は本編とサムネで使ってよい。AIで似せるのは法廷スケッチだけ。被害者の顔は写真もAIも使わない。テレビ映像は静止画の切り抜きで使う。手順書_v5 §5",
+ "_顔の決まり_未解決_20261112": "型B（未解決）の回：犯人の顔は誰にも分からないので、AIで犯人の顔を作らない（影・後ろ姿・顔の無い人形まで）。警察が公開した似顔絵・防犯カメラの画像は出どころつきで使ってよい。疑われた人・取り調べを受けた人・報道で名前が出た人の顔写真と実名は使わない（亡くなった人も）。被害者の顔は型Aと同じく使わない。手順書_未解決編_v1.md"
+}
