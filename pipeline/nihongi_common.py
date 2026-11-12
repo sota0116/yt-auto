@@ -16,6 +16,19 @@ LONG_STYLE = ("劇画寄りの歴史漫画。太く力強い主線、陰の濃�
               "人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない")
 AVOID = "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが"
 AI_LINE = "※映像とナレーションはAIを使って作っています。"
+# 昭和（2026-11-12 手順書 v2.7 §4。本人「昭和も扱っていこう」）：台本の書き手（write_script_nihongi.py）と台本ゲート（gate_script_nihongi.py）が使う
+SHOWA = "昭和"
+SHOWA_CONDOLENCE = "戦争で亡くなられたすべての方に、哀悼の意を表します。"  # 昭和の戦争の回の概要欄に、毎回同じ文で入れる（§4 の10）
+SHOWA_STRONG = ("地獄", "全滅", "皆殺し", "惨殺")  # 昭和の回の題・帯・サムネに使わない言葉（§4 の9）
+SHOWA_WAR = ("戦争", "戦場", "空襲", "原爆", "特攻", "戦死", "開戦", "終戦", "敗戦", "海戦", "玉砕", "出征", "召集", "爆撃")
+
+
+def showa_war(s, n):
+    """昭和の回で、題・概要欄・語りに戦争の言葉がある＝戦争の回（哀悼の1文が要る）"""
+    if (n or {}).get("era") != SHOWA:
+        return False
+    text = (s.get("title") or "") + (s.get("desc") or "") + "".join(c.get("narration") or "" for c in s.get("cuts") or [])
+    return any(w in text for w in SHOWA_WAR)
 
 
 def jload(p, default=None):
