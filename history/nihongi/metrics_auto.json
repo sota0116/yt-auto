@@ -455,6 +455,15 @@
    "直す所": [],
    "取った日": "2026-11-08",
    "再生（公開ページ）": 15738
+  },
+  "d7": {
+   "views": 13779,
+   "averageViewPercentage": 123.74000000000001,
+   "averageViewDuration": 45,
+   "subscribersGained": 7,
+   "直す所": [],
+   "取った日": "2026-11-12",
+   "再生（公開ページ）": 16393
   }
  },
  "S111_n006": {
@@ -477,5 +486,25 @@
  "S116_r009": {
   "type": null,
   "video_id": "wPgI_f4Fw7g"
+ },
+ "S117_r005": {
+  "type": null,
+  "video_id": "wEdNSwThU4c"
+ },
+ "S118_r001": {
+  "type": null,
+  "video_id": "55nNpLDdYkY"
+ },
+ "L008_江戸に正確な時計があったら": {
+  "type": null,
+  "video_id": "DoikAo7IE0A"
+ },
+ "L007_参勤交代が毎月だったら": {
+  "type": null,
+  "video_id": "97adMGGHV9U"
+ },
+ "L010_鎖国が逆だったら": {
+  "type": null,
+  "video_id": "RBQIRTxzsWk"
  }
 }

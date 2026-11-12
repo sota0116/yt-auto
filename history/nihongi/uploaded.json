@@ -137,7 +137,7 @@
   "seconds": 46,
   "title_now": "もしも桶狭間の日に、雨が降らなかったら。3千の旗が丸見え #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 2508,
+  "views_now": 2510,
   "published": true,
   "published_at": "2026-11-03T18:00:30+09:00"
  },
@@ -160,7 +160,7 @@
   "seconds": 44,
   "title_now": "もしも中野の犬小屋の犬が、しゃべり出したら。閉じたのは綱吉 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1559,
+  "views_now": 1562,
   "published": true,
   "published_at": "2026-11-03T21:00:10+09:00"
  },
@@ -206,7 +206,7 @@
   "seconds": 37,
   "title_now": "もしも今の寿司職人が、江戸の屋台で握ったら。客は小さいと怒る #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 16360,
+  "views_now": 16393,
   "published": true,
   "published_at": "2026-11-05T12:10:01+09:00"
  },
@@ -252,7 +252,7 @@
   "seconds": 42,
   "title_now": "もしも伊能忠敬が、江戸から出られなかったら。地球1周分歩いても地球は測れない #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1220,
+  "views_now": 1269,
   "published": true,
   "published_at": "2026-11-11T12:10:38+09:00"
  },
@@ -275,7 +275,7 @@
   "seconds": 45,
   "title_now": "もしも黒船が来た日、江戸の人の「あわて度」が見えたら。みんな100%で、お茶を飲む町人だけ0% #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 639,
+  "views_now": 1428,
   "published": true,
   "published_at": "2026-11-11T20:00:01+09:00"
  },
@@ -293,12 +293,14 @@
    "もしも大坂夏の陣で「家康の陣に届く確率」が見えたら。真田幸村の頭の上だけ100% #もしも #日本史 #戦国時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-11T22:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 53,
   "title_now": "もしも大坂夏の陣で「家康の陣に届く確率」が見えたら。真田幸村の頭の上だけ100% #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 300,
+  "published": true,
+  "published_at": "2026-11-12T07:00:13+09:00"
  },
  {
   "work": "S118_r001",
@@ -314,11 +316,13 @@
    "もしも忠臣蔵で、赤穂の家臣に「討ち入る確率」が見えたら。家老4人のうち大石内蔵助だけ100% #もしも #日本史 #江戸時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-12T03:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 53,
   "title_now": "もしも忠臣蔵で、赤穂の家臣に「討ち入る確率」が見えたら。家老4人のうち大石内蔵助だけ100% #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 2,
+  "published": true,
+  "published_at": "2026-11-12T12:10:21+09:00"
  }
 ]
