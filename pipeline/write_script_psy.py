@@ -9,9 +9,9 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
 
-GOLDEN = os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
+GOLDEN =os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
 FRAME = os.path.join(ROOT, "channels", "psy", "golden", "構成見本_v4_2026-10-29.md")  # 競合の伸びた回の骨組み（手順書 v4.0 §3）
 
@@ -54,7 +54,8 @@ def extra_docs(ch):
     """あれば読む物：競合メモ（research.py が毎日書く）と、学び（weekly.py が毎週書く。数字から分かったこと）"""
     out = []
     for p, what in ((os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md"),
-                     "競合メモ（毎日の競合リサーチ。§3〜7 の型と「次の回で試すこと」を、手順書の決まりの中で1つ取り入れてよい。文・題は写さない）"),
+                     "競合メモ（毎日の競合リサーチ。題材・ネタ・章の並び・つかみと題の型は、ここの伸びた回から借りる。§2〜7 と「次の回で試すこと」から合う物を取り入れる。"
+                     "研究の決まり・禁止表現・点検の決まりが先。文は写さず、題は型だけ借りて言葉は変える）"),
                     (os.path.join(ROOT, "history", ch, "学び.md"),
                      "学び（うちの回の数字から週報が書いた物。手順書の決まりの中で守る。手順書とぶつかる時は手順書が勝つ）"),
                     (levelup(ch), "改善ログ（作るたびに1行ずつ足す記録。いちばん下の「次に上げること」をこの回に入れる）")):
@@ -116,6 +117,7 @@ def prompt(work, ch, fix):
    どちらも NG が0件になるまで直す（注意は、直せる物は直す）。
 5. 最後に、語りの字数・カット数・章の名前・使った研究（key と cite）・登録の呼びかけの位置（%）・ショートの字数とカット数を1行ずつ書いて終える。
 
+{TTP_ASK}
 {HOOK_ASK}
 {ARC_ASK}
 {IMAGE_ASK}

@@ -16,7 +16,7 @@
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, SECRET_ENV, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
 import check_okinu_script as CK  # noqa: E402
 
 CH_DIR = os.path.join(ROOT, "channels", "okinu")
@@ -70,7 +70,8 @@ def recent(ch="okinu"):
 def extra_docs():
     out = []
     for p, what in ((os.path.join(ROOT, "history", "okinu", "学び.md"), "学び（週報が書いた物。手順書とぶつかる時は手順書が勝つ）"),
-                    (os.path.join(ROOT, "history", "okinu", "competitors", "競合メモ.md"), "競合メモ（型と『次の回で試すこと』を手順書の決まりの中で1つ取り入れてよい。題・文は写さない）"),
+                    (os.path.join(ROOT, "history", "okinu", "competitors", "競合メモ.md"), "競合メモ（題材・ネタ・順位に入れる物・章の並び・つかみと題の型は、ここの伸びた回から借りる。『次の回で試すこと』からも合う物を取り入れる。"
+                                                                                           "言い伝えの確かめ・禁止表現・点検の決まりが先。文は写さない）"),
                     (LEVELUP_CH, "改善ログ（手で作った回の分）"), (levelup("okinu"), "改善ログ（自動で作った回の分）")):
         if os.path.exists(p):
             out.append((p, what))
@@ -224,6 +225,7 @@ def prompt(work, fix):
 4. 終わる前に必ず `python -X utf8 pipeline/check_okinu_script.py {rel(work)}` を回し、NG が0件になるまで直す（注意は直せる物は直す）。概要欄は書いたあとにプログラムが入れるので、「概要欄に〜が無い」の NG は気にしなくてよい（finish で入る）。
 5. 最後に、字数・カット数・絵の数（新しい絵）・使った言い伝えの確かめ方を1行ずつ書いて終える。
 
+{TTP_ASK}
 {HOOK_ASK}
 {ARC_ASK}
 {IMAGE_ASK}

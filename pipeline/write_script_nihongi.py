@@ -14,7 +14,7 @@
 import argparse, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import DOCS, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
 from nihongi_common import (ROOT, CH, CDIR, HIST, VENDOR, jload, characters, kind_of_work, past_works, claude_env, vendor_ok,  # noqa: E402
                             SHORT_STYLE, LONG_STYLE, AVOID, AI_LINE, FIXED_END, SHOWA, SHOWA_CONDOLENCE, showa_war)
 
@@ -26,8 +26,9 @@ rel = lambda p: os.path.relpath(p, ROOT).replace("\\", "/")
 def extra_docs():
     out = []
     for p, what in ((os.path.join(HIST, "学び.md"), "学び（週報が書いた、うちの回の数字から。全部読む。手順書とぶつかる時は手順書が勝つ）"),
-                    (os.path.join(HIST, "competitors", "競合メモ.md"), "競合メモ（毎日の競合リサーチ。型・構成・フック1行目だけを取り入れてよい。文・題は写さない）"),
-                    (os.path.join(CDIR, "competitors.json"), "競合の一覧（看板・横動画上位。型の参考。写さない）"),
+                    (os.path.join(HIST, "competitors", "競合メモ.md"), "競合メモ（毎日の競合リサーチ。題材の見せ方・ネタ・章の並び・つかみと題の型は、ここの伸びた回から借りる。"
+                                                                      "史実の確かめ・禁止表現・点検の決まりが先。文は写さず、題は型だけ借りて言葉は変える）"),
+                    (os.path.join(CDIR, "competitors.json"), "競合の一覧（看板・横動画上位。題の型と構成はここの伸びた回に寄せる。文は写さない）"),
                     (LEVELUP_HAND, "改善ログ（手で作った回の分）"),
                     (levelup(CH), "改善ログ（毎日の制作の分。いちばん下の『次に上げること』をこの回に入れる）")):
         if os.path.exists(p):
@@ -176,6 +177,7 @@ def prompt(work, fix):
    出る『決まりと照らすカット』の一覧は1つずつ読み、その人が見られない・知らないことを言っていないか確かめる。
 5. 最後に、語りの字数・カット数・使った史実の出どころ・ずらしたルールを1行ずつ書いて終える。
 
+{TTP_ASK}
 {HOOK_ASK}
 {ARC_ASK}
 {IMAGE_ASK}

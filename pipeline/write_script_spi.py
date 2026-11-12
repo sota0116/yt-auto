@@ -15,7 +15,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
 from write_script_psy import recent  # noqa: E402
 import koyomi_spi as KS  # noqa: E402
 
@@ -34,7 +34,8 @@ def extra_docs(ch):
     for p, what in ((os.path.join(ROOT, "history", ch, "学び.md"),
                      "学び（うちの回の数字から週報が書いた物。全部読む。手順書とぶつかる時は手順書が勝つ）"),
                     (os.path.join(ROOT, "history", ch, "competitors", "競合メモ.md"),
-                     "競合メモ（毎日の競合リサーチ。型と「次の回で試すこと」を、手順書の決まりの中で1つ取り入れてよい。文・題は写さない）"),
+                     "競合メモ（毎日の競合リサーチ。題材・ネタ・章の並び・つかみと題の型は、ここの伸びた回から借りる。「次の回で試すこと」からも合う物を取り入れる。"
+                     "暦の値・出典の決まり・禁止表現・点検の決まりが先。文は写さず、題は型だけ借りて言葉は変える）"),
                     (LEVELUP_CH, "改善ログ（手で作った回の分）"),
                     (levelup(ch), "改善ログ（自動で作った回の分）")):
         if os.path.exists(p):
@@ -136,6 +137,7 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
 4. 終わる前に必ず `python -X utf8 pipeline/check_spi_script.py {rel(work)}` を回し、NG が0件になるまで直す（注意は、直せる物は直す）。
 5. 最後に、語りの字数・カット数・章の名前・LINE の案内と登録の呼びかけの位置（%）・使った出典の数を1行ずつ書いて終える。
 
+{TTP_ASK}
 {HOOK_ASK}
 {ARC_ASK}
 {IMAGE_ASK}
