@@ -1,0 +1,269 @@
+{
+ "format": "short",
+ "title": "もしも今の医師が、目安箱から生まれた江戸の無料病院で診たら。ガラガラの門に一晩で大行列 #もしも #日本史 #江戸時代",
+ "promise": "1722年、町医者の小川笙船の目安箱への投書から、貧しい人がただで診てもらえる小石川養生所ができたのに、初めは患者がほとんど来ず、名主たちに中を見学させてから増えた（40人の定員が翌年100人に）、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※今の医師が江戸の小石川養生所に来て、長屋を回り、一晩で行列ができる話は作り話です。1722年（享保7年）に町医者・小川笙船の目安箱への投書をきっかけに小石川薬園の中に小石川養生所が開かれたこと、貧しい病人が無料で診てもらえ、食べ物や着物も出たこと、初めは患者が少なかったこと、幕府が名主に見学させて患者が増えたこと、収容人数がはじめ40人で翌年100人になったこと、養生所の井戸が今も小石川植物園に残ることは史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "小石川養生所",
+  "目安箱",
+  "徳川吉宗",
+  "赤ひげ",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "空の病院に大行列"
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：開いたばかりの小石川養生所に、今の医師が1人だけタイムスリップして来て、養生所の医師として診る。足したのはこの1つだけ",
+  "医師は自分が今の時代から来たことを知っている。江戸の人は医師がどこから来たかを知らず、聴診器は『耳に入れた妙な管』にしか見えない",
+  "医師が知っているのは、目の前で見たことと、養生所ではただで診て、入れば食べ物や着物も出ること（養生所で聞いた）。医師は名主たちが手間をいやがったことを知らない（語り手だけが話す）",
+  "鳶の親方が知っているのは、自分が夜に診てもらったことと、そのとき医師から聞いた『養生所はただで、飯も着物も出る』ことだけ。親方は医師が未来から来たことを知らない",
+  "長屋の人が戸を閉める・親方だけが戸を開ける・翌朝に行列ができる、は作り話の結果で、語り手が話す",
+  "1722年の投書・養生所が開いたこと・初めは患者が少なかったこと・名主が手間をいやがったとされることは、作り話の世界の背景として語り手が同じ語り口で話す。現実へ戻るのは n13 の「実際は」の1カットだけで、そのあと作り話には戻らない"
+ ],
+ "world_terms": [
+  "医師",
+  "聴診器",
+  "管",
+  "今の",
+  "ただ",
+  "飯",
+  "着物",
+  "行列"
+ ],
+ "voices": {
+  "oyakata": 53
+ },
+ "facts": [
+  "8代将軍徳川吉宗が享保6年（1721）に目安箱を置き、翌年の正月、町医者の小川笙船が貧民救済のための施薬院の設置を投書した。小石川養生所は享保7年12月4日（西暦1723年1月10日）に小石川薬園内に開かれ、笙船は肝煎になった。出どころ：文春オンライン bunshun.jp/articles/-/5764（本文で確認）。開設の年は、事典では1722年（享保7）と書く（コトバンク「小石川養生所」デジタル大辞泉・日本大百科全書・山川 日本史小辞典・旺文社日本史事典 kotobank.jp/word/小石川養生所、本文で確認）。en.wikipedia「Ogawa Shosen」も 4 December 1722（Gregorian 10 January 1723）と書く。台本は事典にそろえて「1722年」",
+  "「1722年（享保7）江戸小石川の町医師小川笙船の目安箱への建議にもとづき，江戸幕府が小石川薬園内に設けた施療施設。収容人数ははじめ40人だったが，23年に100人，29年には150人に増加」。出どころ：コトバンク 山川 日本史小辞典 改訂新版「小石川養生所」（本文で確認）。日本大百科全書も「収容規模は最初40人、翌年には100人」。台本は「40人の所が翌年100人に」",
+  "対象は極貧の病人・独身で養生できない者・一家全員が病気の者で、町奉行の検査を受けたうえで無料治療が許され、入所者には食料・衣類・薪などが出た。出どころ：文春オンライン bunshun.jp/articles/-/5764（本文で確認）。ブリタニカ国際大百科事典も「非常に貧しく，看病人のいないことが患者の条件」（コトバンク、本文で確認）",
+  "初めは入所する患者が少なかった。患者を送る立場の町名主などが面倒を嫌ったためとされ、幕府は江戸中の名主に養生所を見学させ、患者を送るよう指導した。その結果、患者はしだいに増え、入所待ちの申込者が常にいる状態になった。出どころ：文春オンライン bunshun.jp/articles/-/5764（本文で確認。竹内誠の著作による）。台本では「とされる」。患者が来なかった理由を「薬の実験台にされるといううわさ」とする説明は、ウィキ系のサイトにしか無く、台本に入れない",
+  "小石川植物園は貞享元年（1684）に麻布御薬園が移った地で、享保7年に小石川養生所が置かれた。出どころ：文京区「東京大学大学院理学系研究科附属植物園（小石川植物園）」www.city.bunkyo.lg.jp/b014/p003748.html（本文で確認）。園内に旧養生所の井戸が残る：文春オンライン（本文で確認）",
+  "n04 の本当の画像：File:Old water well of Koishikawa Yojosho.jpg（1600×1200・CC BY-SA 3.0・作者 ZCU）。Wikimedia Commons の検索（Koishikawa Yojosho well、filetype:bitmap）で1件目に出て、幅800以上を台本に書く前に確かめた",
+  "今の医師が養生所に来ること、医師が長屋を回ること、長屋の人が戸を閉め、鳶の親方だけが戸を開けること、一晩で行列ができることは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "今の医師\n無料病院へ",
+   "narration": "今の医師一人で、がら空きの小石川養生所に行列ができる。",
+   "highlight": [
+    "小石川養生所"
+   ],
+   "image_en": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, a stethoscope around his neck, stands stunned at the open wooden gate of an empty Edo-period clinic courtyard at dawn; the thatched buildings and herb garden behind him are completely empty of people. His face is in the middle of the picture.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, a stethoscope around his neck, stands stunned at the open wooden gate of an empty Edo-period clinic courtyard at dawn; the thatched buildings and herb garden behind him are completely empty of people. His face is in the middle of the picture.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1722年、町医者の小川笙船が、目安箱に投書した。",
+   "highlight": [
+    "目安箱"
+   ],
+   "tts_text": "せんななひゃくにじゅうにねん、まちいしゃの、おがわしょうせんが、めやすばこに、とうしょした。",
+   "image_en": "An Edo-period town doctor about fifty, thin face with a grey topknot, plain brown kimono and a dark haori, carefully slips a folded paper letter into a plain wooden box with a slot standing before a castle gate, early morning, guards in the background.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "An Edo-period town doctor about fifty, thin face with a grey topknot, plain brown kimono and a dark haori, carefully slips a folded paper letter into a plain wooden box with a slot standing before a castle gate, early morning, guards in the background."
+  },
+  {
+   "id": "n03",
+   "narration": "貧しい病人を、ただで診る所を作ってほしい。",
+   "highlight": [
+    "ただで"
+   ],
+   "image_en": "An Edo-period town doctor about fifty, thin face with a grey topknot, plain brown kimono and a dark haori, kneels beside a poor thin old man lying on a thin futon in a dim cramped row-house room, lantern light, worried faces.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [],
+   "image": "An Edo-period town doctor about fifty, thin face with a grey topknot, plain brown kimono and a dark haori, kneels beside a poor thin old man lying on a thin futon in a dim cramped row-house room, lantern light, worried faces."
+  },
+  {
+   "id": "n04",
+   "narration": "吉宗が小石川の薬草園に開いた養生所。井戸は今も残る。",
+   "highlight": [
+    "養生所"
+   ],
+   "real": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Old_water_well_of_Koishikawa_Yojosho.jpg",
+   "image_en": "A quiet Edo-period clinic of simple wooden buildings with thatched roofs inside a large medicinal herb garden with neat rows of plants, a stone water well with a wooden frame in front, soft morning light, no people.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Old_water_well_of_Koishikawa_Yojosho.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Old_water_well_of_Koishikawa_Yojosho.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Old_water_well_of_Koishikawa_Yojosho.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Old_water_well_of_Koishikawa_Yojosho.jpg"
+   }
+  },
+  {
+   "id": "n05",
+   "narration": "ところが門の前はガラガラ。患者がほとんど来ない。",
+   "highlight": [
+    "ガラガラ"
+   ],
+   "image_en": "The wide open wooden gate of an Edo-period clinic with an empty dirt yard in front, a single dry leaf blowing past, two bored clinic attendants in plain grey kimono sitting on the step with their chins in their hands, late afternoon.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "The wide open wooden gate of an Edo-period clinic with an empty dirt yard in front, a single dry leaf blowing past, two bored clinic attendants in plain grey kimono sitting on the step with their chins in their hands, late afternoon."
+  },
+  {
+   "id": "n06",
+   "narration": "病人を送る名主たちが、手間をいやがったとされる。",
+   "tts_text": "びょうにんをおくる、なぬしたちが、てまを、いやがったとされる。",
+   "image_en": "Several Edo-period town headmen in formal grey haori sit at low desks in a town office, one waving his hand dismissively and turning away with an annoyed face while another yawns, lantern light.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "image": "Several Edo-period town headmen in formal grey haori sit at low desks in a town office, one waving his hand dismissively and turning away with an annoyed face while another yawns, lantern light."
+  },
+  {
+   "id": "n07",
+   "narration": "そこへ、首に聴診器を下げた今の医師がやって来る。",
+   "highlight": [
+    "聴診器"
+   ],
+   "image_en": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, a stethoscope around his neck, walks through the empty gate of the Edo-period clinic, while two attendants in plain grey kimono stare at his white coat with wide eyes.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, a stethoscope around his neck, walks through the empty gate of the Edo-period clinic, while two attendants in plain grey kimono stare at his white coat with wide eyes."
+  },
+  {
+   "id": "n08",
+   "narration": "医師は待たずに長屋を回り、胸の音を聞いた。",
+   "image_en": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, kneels in the doorway of a narrow Edo row-house and gently listens to a coughing old woman's back with his stethoscope, curious children peeking from the alley.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "image": "A modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a kind tired face, wearing a plain white coat over a light blue scrub top with no letters, badges or logos, kneels in the doorway of a narrow Edo row-house and gently listens to a coughing old woman's back with his stethoscope, curious children peeking from the alley."
+  },
+  {
+   "id": "n09",
+   "narration": "町の人は、耳に管を入れた妙な男に戸を閉める。",
+   "highlight": [
+    "戸を閉める"
+   ],
+   "tts_text": "まちのひとは、みみに、くだをいれた、みょうなおとこに、とをしめる。",
+   "image_en": "A narrow Edo row-house alley at dusk: suspicious townspeople in plain kimono slam their sliding wooden doors shut one after another, frowning and pointing at the stethoscope, while a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters stands alone in the middle of the alley with a dejected face.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [],
+   "image": "A narrow Edo row-house alley at dusk: suspicious townspeople in plain kimono slam their sliding wooden doors shut one after another, frowning and pointing at the stethoscope, while a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters stands alone in the middle of the alley with a dejected face."
+  },
+  {
+   "id": "n10",
+   "narration": "夜ふけ、熱で寝込む鳶の親方だけが、戸を開けた。",
+   "tts_text": "よふけ、ねつでねこむ、とびのおやかただけが、とをあけた。",
+   "image_en": "Late at night in a dim Edo row-house lit by one paper lantern, the tobi foreman, sweating with fever and wrapped in a thin quilt, slides his door open from his futon and looks up at a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters, a stethoscope around his neck, standing in the doorway.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [
+    "oyakata"
+   ],
+   "image": "Late at night in a dim Edo row-house lit by one paper lantern, the tobi foreman, sweating with fever and wrapped in a thin quilt, slides his door open from his futon and looks up at a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters, a stethoscope around his neck, standing in the doorway."
+  },
+  {
+   "id": "n11",
+   "narration": "ただで診て、飯も着物もくれるってよ！",
+   "voice": "oyakata",
+   "highlight": [
+    "飯も着物も"
+   ],
+   "image_en": "Next morning in an Edo row-house alley, the tobi foreman, recovered and grinning, stands in the middle shouting with both hands cupped around his mouth, while neighbors in plain kimono lean out of their doorways in surprise.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [
+    "oyakata"
+   ],
+   "image": "Next morning in an Edo row-house alley, the tobi foreman, recovered and grinning, stands in the middle shouting with both hands cupped around his mouth, while neighbors in plain kimono lean out of their doorways in surprise."
+  },
+  {
+   "id": "n12",
+   "narration": "翌朝、空だった養生所の門に、長い行列ができた。",
+   "highlight": [
+    "長い行列"
+   ],
+   "image_en": "Morning at the wooden gate of the Edo-period clinic inside the herb garden: a very long line of poor townspeople in plain patched kimono, old people, mothers with babies and workers, winds out of the gate and far down the dirt road, and at the front a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters, a stethoscope around his neck, looks out at them in amazement.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "Morning at the wooden gate of the Edo-period clinic inside the herb garden: a very long line of poor townspeople in plain patched kimono, old people, mothers with babies and workers, winds out of the gate and far down the dirt road, and at the front a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters, a stethoscope around his neck, looks out at them in amazement.",
+   "motion": true
+  },
+  {
+   "id": "n13",
+   "narration": "実際は名主に見学させ、40人の所が翌年100人に。",
+   "highlight": [
+    "100人"
+   ],
+   "tts_text": "じっさいは、なぬしに、けんがくさせ、よんじゅうにんのところが、よくねん、ひゃくにんに。",
+   "image_en": "Edo-period town headmen in formal grey haori walk in a group through the wooden clinic rooms, looking at rows of clean futons and patients being cared for by attendants, impressed faces, warm afternoon light.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "image": "Edo-period town headmen in formal grey haori walk in a group through the wooden clinic rooms, looking at rows of clean futons and patients being cared for by attendants, impressed faces, warm afternoon light."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "Sunset over the Edo-period clinic gate in the herb garden: a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters sits on the gate step resting, a stethoscope in his lap, with a calm tired smile, lantern beside him.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [],
+   "image": "Sunset over the Edo-period clinic gate in the herb garden: a modern Japanese male doctor in his late thirties with short black hair, rimless glasses and a plain white coat with no letters sits on the gate step resting, a stethoscope in his lap, with a calm tired smile, lantern beside him."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
