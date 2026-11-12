@@ -365,6 +365,146 @@
   "hold": false
  },
  {
+  "id": "c4_hoiku",
+  "title": "保育士の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "hoiku"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）"
+ },
+ {
+  "id": "c4_yakuzai",
+  "title": "薬剤師の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "yakuzai"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）"
+ },
+ {
+  "id": "c4_kaigo",
+  "title": "介護職員の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2026-12-20",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "kaigo"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）。この職業が主役の前の回から8週あけて 2026-12-20 から"
+ },
+ {
+  "id": "c4_se",
+  "title": "システムエンジニアの一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2026-12-25",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "se"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）。この職業が主役の前の回から8週あけて 2026-12-25 から"
+ },
+ {
+  "id": "c4_kango",
+  "title": "看護師の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2026-12-28",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "kango"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）。この職業が主役の前の回から8週あけて 2026-12-28 から"
+ },
+ {
+  "id": "c4_taxi",
+  "title": "タクシー運転手の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2026-12-25",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "taxi"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）。この職業が主役の前の回から8週あけて 2026-12-25 から"
+ },
+ {
+  "id": "c4_keibi",
+  "title": "警備員の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-05",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "keibi"
+  ],
+  "hold": false,
+  "メモ": "型C の骨組み C-4「〇〇の一生」（2026-11-12 本人「やって」）。値は isshou_facts.py が計算。同じ人が40年働いた記録ではない（facts.json の 一生 の注意）。この職業が主役の前の回から8週あけて 2027-01-05 から"
+ },
+ {
   "id": "a_kaigo",
   "title": "介護職員",
   "type": "A",
