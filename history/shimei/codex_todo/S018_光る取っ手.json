@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S018_光る取っ手",
+ "portrait": true,
+ "made": "2026-11-14 02:59",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Keep the top 35% of the frame empty white space with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos or emblems of car makers or government agencies, readable text or numbers, license plates with characters, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "暗いトランクの中で、赤く光るT字の取っ手",
+   "image_en": "inside a dark open car trunk seen from above, a small T-shaped release handle glowing soft red in the darkness, nothing else lit",
+   "en": "inside a dark open car trunk seen from above, a small T-shaped release handle glowing soft red in the darkness, nothing else lit"
+  },
+  {
+   "id": "a02",
+   "image": "内側から少し開いたトランクのふた",
+   "image_en": "a plain gray sedan model with its trunk lid opened slightly from the inside, a thin line of light through the gap, no logo, no license plate text",
+   "en": "a plain gray sedan model with its trunk lid opened slightly from the inside, a thin line of light through the gap, no logo, no license plate text"
+  },
+  {
+   "id": "a04",
+   "image": "夏の家の前に止まった車と、置かれた子どもの靴",
+   "image_en": "a quiet summer suburban driveway diorama with a plain gray sedan, its trunk closed, a pair of small children's sneakers left on the ground beside it, bright hot light",
+   "en": "a quiet summer suburban driveway diorama with a plain gray sedan, its trunk closed, a pair of small children's sneakers left on the ground beside it, bright hot light"
+  },
+  {
+   "id": "a05",
+   "image": "かくれんぼの形で開いたトランクをのぞく子どものフィギュア",
+   "image_en": "two small faceless child figurines peeking curiously into an open car trunk as if playing hide and seek, the trunk lid raised, sunny",
+   "en": "two small faceless child figurines peeking curiously into an open car trunk as if playing hide and seek, the trunk lid raised, sunny"
+  },
+  {
+   "id": "a06",
+   "image": "閉じたトランクの断面。中は暗く、取っ手が無い",
+   "image_en": "a cutaway model of a closed car trunk, the inside completely dark and empty, the inner side of the lid smooth with no handle at all",
+   "en": "a cutaway model of a closed car trunk, the inside completely dark and empty, the inner side of the lid smooth with no handle at all"
+  },
+  {
+   "id": "a07",
+   "image": "夜の道に止まった車の後ろ姿",
+   "image_en": "a plain dark sedan model parked on an empty night road under a single street lamp, seen from behind, trunk closed, tense mood",
+   "en": "a plain dark sedan model parked on an empty night road under a single street lamp, seen from behind, trunk closed, tense mood"
+  },
+  {
+   "id": "a08",
+   "image": "工場の組み立ての列に並ぶ車",
+   "image_en": "a miniature car factory assembly line with a row of identical plain gray sedans, trunk lids open, no logos, no text",
+   "en": "a miniature car factory assembly line with a row of identical plain gray sedans, trunk lids open, no logos, no text"
+  },
+  {
+   "id": "a09",
+   "image": "暗いトランクの中で光る取っ手に、小さな手が伸びる",
+   "image_en": "inside a dark car trunk, a small faceless hand reaching toward a softly glowing red T-shaped release handle, the glow is the only light",
+   "en": "inside a dark car trunk, a small faceless hand reaching toward a softly glowing red T-shaped release handle, the glow is the only light"
+  }
+ ]
+}
