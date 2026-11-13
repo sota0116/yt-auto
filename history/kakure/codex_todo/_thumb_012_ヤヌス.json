@@ -1,0 +1,30 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_012_ヤヌス",
+ "portrait": false,
+ "made": "2026-11-14 02:46",
+ "style_en": "",
+ "avoid_en": "",
+ "rules": {},
+ "characters": {
+  "janus": {
+   "desc_en": "Janus, the ancient Roman god of doors and gates, a dignified man about 50 with ONE head that has TWO bearded faces looking in opposite directions (one face looks left, the other looks right, sharing one head of short curly gray-brown hair), early Roman Republic clothing: a long off-white wool toga with a dark red border draped over a tunic, leather sandals, holding a large old bronze key in one hand and a long wooden staff in the other, no armor, no crown",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "暗い夜の地に、2つの顔を持つヤヌスの頭（左右反対を向いたひげの顔）を真ん中の高さに大きく。後ろに縦の門の光、目の高さで左右へのびる2本の金色の光。上下の4分の1は暗い地だけ",
+   "chars": [
+    "janus"
+   ],
+   "en": ""
+  },
+  {
+   "id": "T2",
+   "image": "暗い地に、バチカン美術館のヤヌスの胸像の写真を真ん中の高さに。顔に光。上下の4分の1は暗い地だけ",
+   "en": ""
+  }
+ ]
+}

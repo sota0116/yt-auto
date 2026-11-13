@@ -1,0 +1,93 @@
+{
+ "ch": "kakure",
+ "work": "_chara_006_えびす",
+ "portrait": false,
+ "made": "2026-11-14 02:46",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, bright even lighting. The same art style in every episode. The background is always pure white.",
+ "avoid_en": "any text, letters, numbers, logos, modern clothes, Chinese-style clothing, nudity, blood",
+ "rules": {},
+ "characters": {
+  "ebisu": {
+   "desc_en": "Ebisu, the god of fortune, a plump cheerful elderly man with a round smiling face and narrow laughing eyes, a tall black eboshi hat, a kariginu hunting robe in muted gold and green, holding a bamboo fishing rod in his right hand and a large red sea bream under his left arm",
+   "channel": true
+  },
+  "murabito": {
+   "desc_en": "an old Japanese village woman of the Edo period in her late 60s, gray hair tied in a simple low bun, a kind wrinkled round face, a faded indigo cotton kimono with a plain brown apron and a white tasuki cord, straw sandals",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "ebisu_stand",
+   "image": "えびす様が、釣り竿を肩にかけ、鯛を脇に抱えて、穏やかにほほえんで立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ebisu stands calmly with his bamboo fishing rod resting on his shoulder and the red sea bream under his arm, a gentle smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "Ebisu stands calmly with his bamboo fishing rod resting on his shoulder and the red sea bream under his arm, a gentle smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "ebisu_wave",
+   "image": "えびす様が、鯛を脇に抱えたまま、片手を高く上げて、遠くへ旅立つ誰かを見送るように手を振っている全身。にこにこ顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ebisu, still holding the red sea bream under one arm, raises his other hand high and waves as if seeing someone off on a long journey, a big cheerful smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "Ebisu, still holding the red sea bream under one arm, raises his other hand high and waves as if seeing someone off on a long journey, a big cheerful smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "ebisu_think",
+   "image": "えびす様が、首をかしげ、片手をあごに当てて考えこんでいる全身。鯛は脇に抱えている。少し困った顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ebisu tilts his head and rests one hand on his chin, thinking hard, the red sea bream under his other arm, a slightly puzzled face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "Ebisu tilts his head and rests one hand on his chin, thinking hard, the red sea bream under his other arm, a slightly puzzled face. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "ebisu_surprise",
+   "image": "えびす様が、目を丸く見開き、口を開けて驚き、少しのけぞっている全身。鯛を落としそうになっている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ebisu is startled, eyes wide open and mouth open, leaning back a little, almost dropping the red sea bream. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "Ebisu is startled, eyes wide open and mouth open, leaning back a little, almost dropping the red sea bream. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "ebisu_sit",
+   "image": "えびす様が、地面にあぐらをかいて座り、膝の上に大きな鯛を抱え、のんびり笑っている全身。釣り竿は横に置いている。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Ebisu sits cross-legged, holding a large red sea bream on his lap, laughing in a relaxed way, his fishing rod laid beside him. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "ebisu"
+   ],
+   "en": "Ebisu sits cross-legged, holding a large red sea bream on his lap, laughing in a relaxed way, his fishing rod laid beside him. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "murabito_pray",
+   "image": "村のおばあさんが、両手を合わせて目を閉じ、静かに祈っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "The old village woman puts her palms together and closes her eyes, praying quietly. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "murabito"
+   ],
+   "en": "The old village woman puts her palms together and closes her eyes, praying quietly. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "murabito_offer",
+   "image": "村のおばあさんが、ごはんとお団子をのせた小さなお膳を両手で前へ差し出している全身。やさしい笑顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "The old village woman holds out a small wooden tray with a bowl of rice and round rice dumplings in both hands, a kind smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "murabito"
+   ],
+   "en": "The old village woman holds out a small wooden tray with a bowl of rice and round rice dumplings in both hands, a kind smile. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "murabito_look",
+   "image": "村のおばあさんが、片手をひたいにかざして、遠くの空を見上げている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "The old village woman shades her eyes with one hand and looks up at the distant sky. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "murabito"
+   ],
+   "en": "The old village woman shades her eyes with one hand and looks up at the distant sky. Full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits in the picture without being cut off, filling the canvas from top to bottom, exactly one figure in the center. Clear outlines."
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_004_トール",
+ "portrait": false,
+ "made": "2026-11-14 02:46",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, deep rich colors, dark background with the main figure brightly lit, a faint washi-paper texture. Viking Age Scandinavian clothing.",
+ "avoid_en": "any text, letters, numbers, logos, modern buildings or clothes, horned helmets, comic-book superhero costumes or capes, nudity, blood",
+ "rules": {},
+ "characters": {
+  "thor": {
+   "desc_en": "Thor, the Norse god of thunder, a burly broad-chested man about 35 with a thick red beard and long red hair partly braided, fierce bright blue eyes, Viking Age clothing: a knee-length dark red wool tunic with woven trim, a thick leather belt with an iron buckle, gray wool trousers wrapped with leg bindings, leather shoes, iron gauntlets, and a heavy iron hammer with a short handle",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "嵐の夜、赤いひげの雷の神が鉄の槌を振り上げ、怒った顔でこちらをにらむ上半身。その左後ろの空に、大きく明るい木星が浮かぶ。上下の4分の1は暗い空と暗い海だけ",
+   "image_en": "A stormy night: the red-bearded thunder god raises his iron hammer and glares at the viewer with a furious face, upper body, lit by lightning. Behind him on the left, a huge glowing planet Jupiter with its banded stripes hangs in the dark sky. Both are drawn large at the vertical middle of the picture; the top quarter and the bottom quarter of the picture show only dark sky and dark sea with nothing in them.",
+   "chars": [
+    "thor"
+   ],
+   "en": "A stormy night: the red-bearded thunder god raises his iron hammer and glares at the viewer with a furious face, upper body, lit by lightning. Behind him on the left, a huge glowing planet Jupiter with its banded stripes hangs in the dark sky. Both are drawn large at the vertical middle of the picture; the top quarter and the bottom quarter of the picture show only dark sky and dark sea with nothing in them."
+  },
+  {
+   "id": "T2",
+   "image": "白い花嫁のヴェールをかぶった赤いひげの大男が、ヴェールの下からぎらりとこちらをにらみ、ひざの上の鉄の槌をつかむ上半身。暗い巨人の館、たき火の光。上下の4分の1は暗い壁と床だけ",
+   "image_en": "A big red-bearded man wearing a white bridal veil glares fiercely at the viewer from under the veil and grips the iron hammer lying on his lap, upper body, in a dark giant's hall lit by firelight; a slightly comical but intense mood. He is drawn large at the vertical middle of the picture; the top quarter and the bottom quarter show only dark wall and dark floor with nothing in them.",
+   "chars": [
+    "thor"
+   ],
+   "en": "A big red-bearded man wearing a white bridal veil glares fiercely at the viewer from under the veil and grips the iron hammer lying on his lap, upper body, in a dark giant's hall lit by firelight; a slightly comical but intense mood. He is drawn large at the vertical middle of the picture; the top quarter and the bottom quarter show only dark wall and dark floor with nothing in them."
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "ch": "kakure",
+ "work": "_chara_003_因幡の白兎",
+ "portrait": false,
+ "made": "2026-11-14 02:46",
+ "style_en": "日本のアニメ調、くっきりした主線、落ち着いた色、明るく均一な光、古墳時代の日本（みずら・衣褌・勾玉）。全話で同じ絵柄。背景は必ず真っ白",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "oanamuji": {
+   "desc_en": "Oanamuji, the young Okuninushi, a gentle slender young god about 19 years old with kind patient eyes, clean-shaven, black hair in mizura loops beside both ears, a plain undyed hemp Kofun-period tunic with a dull brown sash and pale trousers tied below the knees with cords, a small green magatama on a cord, barefoot, carrying a huge worn cloth sack on his back",
+   "channel": true
+  },
+  "usagi": {
+   "desc_en": "the Hare of Inaba, a small wild Japanese hare drawn as a real animal on four legs (not humanoid, wearing nothing), with long ears, soft white fur and dark clever eyes",
+   "channel": true
+  },
+  "yasogami": {
+   "desc_en": "the eldest of the Yasogami brother gods, an arrogant handsome man about 30 with a sneering mouth, black hair in mizura loops, a rich crimson Kofun-period tunic with a gold sash, white trousers tied with red cords, a large magatama necklace and an ornate sword at the waist",
+   "channel": true
+  },
+  "yakami": {
+   "desc_en": "Yakami-hime, the princess of Inaba, a composed young woman about 20 with clear direct eyes, long black hair with the top tied in a loop, a white Kofun-period kinu tunic over a long pale-gold pleated mo skirt, a thin string of magatama beads",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "oanamuji_stand",
+   "image": "若い神オオナムヂが、大きな布の袋を背負って、まっすぐ立っている全身。穏やかな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "oanamuji_walk",
+   "image": "若い神オオナムヂが、大きな布の袋の重さに背を丸めて、横向きに歩いている全身。疲れた顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "oanamuji_speak",
+   "image": "若い神オオナムヂが、大きな布の袋を背負ったまま、少し前かがみで片手をやさしく差し出して話しかけている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "oanamuji_kneel",
+   "image": "若い神オオナムヂが、片ひざをついて、低い所を心配そうにのぞきこんでいる全身。大きな袋は背中のまま。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "oanamuji_point",
+   "image": "若い神オオナムヂが、大きな布の袋を背負い、片手で遠くの水辺を指さして教えている全身。落ち着いた顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "oanamuji_smile",
+   "image": "若い神オオナムヂが、大きな布の袋を背負って顔を上げ、小さく微笑んでいる全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "oanamuji"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_sit",
+   "image": "白い毛の野うさぎが、後ろ足で座り、耳を立ててこちらを見ている全身。人のように立たない。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_smirk",
+   "image": "白い毛の野うさぎが、後ろ足で座って口元をゆがめ、ずるがしこく笑っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_hop",
+   "image": "白い毛の野うさぎが、横向きに大きく跳ねている空中の全身。得意げな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_cry",
+   "image": "毛がほとんど無く全身が赤みがかった淡い桃色の肌になった野うさぎが、体を丸めて伏せ、目に涙をためている全身。血は描かない。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_beg",
+   "image": "毛がほとんど無く全身が赤みがかった淡い桃色の肌になった野うさぎが、前足をそろえて上げ、見上げて訴えている全身。血は描かない。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "usagi_god",
+   "image": "白い毛の野うさぎが、静かに背筋を伸ばして座り、体のまわりに金色のかすかな光をまとっている全身。おごそかな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "chars": [
+    "usagi"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yasogami_stand",
+   "image": "八十神の長兄が、腕を組み、あごを上げて見下している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yasogami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yasogami_laugh",
+   "image": "八十神の長兄が、下を指さし、口を大きく開けて笑っている全身。意地の悪い顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yasogami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yasogami_angry",
+   "image": "八十神の長兄が、両手のこぶしを握りしめ、歯をむいて怒っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yasogami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yakami_stand",
+   "image": "八上比売が、両手を前で重ねて静かに立っている全身。澄んだ目。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yakami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yakami_speak",
+   "image": "八上比売が、片手を胸に当て、まっすぐ前を見て、きっぱりと答えている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yakami"
+   ],
+   "en": ""
+  },
+  {
+   "id": "yakami_turn",
+   "image": "八上比売が、背を向けかけて、肩ごしに冷たく振り返っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "chars": [
+    "yakami"
+   ],
+   "en": ""
+  }
+ ]
+}

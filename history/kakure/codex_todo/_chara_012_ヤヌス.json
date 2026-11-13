@@ -1,0 +1,71 @@
+{
+ "ch": "kakure",
+ "work": "_chara_012_ヤヌス",
+ "portrait": false,
+ "made": "2026-11-14 02:46",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, bright even lighting, ancient Rome (early Republic) clothing. Background must be pure white.",
+ "avoid_en": "text, letters, logos, modern buildings or clothes, nudity, blood, more than two faces, a second separate person",
+ "rules": {},
+ "characters": {
+  "janus": {
+   "desc_en": "Janus, the ancient Roman god of doors and gates, a dignified man about 50 with ONE head that has TWO bearded faces looking in opposite directions (one face looks left, the other looks right, sharing one head of short curly gray-brown hair), early Roman Republic clothing: a long off-white wool toga with a dark red border draped over a tunic, leather sandals, holding a large old bronze key in one hand and a long wooden staff in the other, no armor, no crown",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "janus_stand",
+   "image": "ヤヌスが、大きな古い青銅の鍵と長い杖を持って、まっすぐ立っている全身。1つの頭に、左右反対を向いた2つのひげの顔。落ち着いた顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus stands straight, full body, holding a large old bronze key and a long staff. One head with two bearded faces looking in opposite directions (left and right). Calm expression. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus stands straight, full body, holding a large old bronze key and a long staff. One head with two bearded faces looking in opposite directions (left and right). Calm expression. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "janus_point",
+   "image": "ヤヌスが、片手で前を指さして、何かを告げている全身。1つの頭に、左右反対を向いた2つのひげの顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus points forward with one hand, announcing something, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus points forward with one hand, announcing something, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "janus_key",
+   "image": "ヤヌスが、大きな古い青銅の鍵を両手で胸の前に掲げている全身。1つの頭に、左右反対を向いた2つのひげの顔。おごそかな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus holds a large old bronze key up in front of his chest with both hands, full body. One head with two bearded faces looking in opposite directions. Solemn expression. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus holds a large old bronze key up in front of his chest with both hands, full body. One head with two bearded faces looking in opposite directions. Solemn expression. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "janus_think",
+   "image": "ヤヌスが、あごに手を当てて考えこんでいる全身。1つの頭に、左右反対を向いた2つのひげの顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus stands with a hand on his chin, thinking, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus stands with a hand on his chin, thinking, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "janus_surprise",
+   "image": "ヤヌスが、両手を少し広げて驚いている全身。1つの頭に、左右反対を向いた2つのひげの顔。目を見開いた顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus is surprised, both hands slightly spread, eyes wide open, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus is surprised, both hands slightly spread, eyes wide open, full body. One head with two bearded faces looking in opposite directions (left and right). Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "janus_gate",
+   "image": "ヤヌスが、両手で大きな木の両開きの扉の片方を押して閉めようとしている全身（扉は1枚だけ描く）。1つの頭に、左右反対を向いた2つのひげの顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人（1つ）だけ。輪郭線ははっきり。",
+   "image_en": "Janus pushes a single large wooden door leaf with both hands to close it, full body (draw only one door leaf). One head with two bearded faces looking in opposite directions. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "janus"
+   ],
+   "en": "Janus pushes a single large wooden door leaf with both hands to close it, full body (draw only one door leaf). One head with two bearded faces looking in opposite directions. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  }
+ ]
+}
