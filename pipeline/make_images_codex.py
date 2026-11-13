@@ -11,6 +11,8 @@
 # ・--auto（2026-11-07 追加。PC のタスクスケジューラが30分ごとに動かす）：回を指定せず、
 #   history\<ch>\codex_todo\*.json（agent.yml のチャンネル＝shimei・kakure の注文書。codex_todo.py export が書く）と
 #   history\<ch>\wip\*\script.json を全部見て、ショート → 注文書 → その他 の順に作る。3回続けて失敗したら90分休む（_pause_until）
+# ・--auto は動き始めに、今いない回（status*.json・parked*.json・注文書のどれにも無い回）の絵を release から消し、
+#   作るのも今いる回だけにする（2026-11-13。release は1000件までで、満杯になって新しい絵を置けなくなった）
 import argparse, glob, json, os, shutil, subprocess, sys, tempfile, threading, time
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
@@ -38,15 +40,58 @@ def logline(**k):
 
 
 def have_assets():
-    r = subprocess.run(["gh", "api", "--paginate", f"repos/{REPO}/releases/tags/{TAG}", "--jq", ".assets[].name"],
-                       capture_output=True, text=True, encoding="utf-8")
-    names = set(r.stdout.split())
+    """release にある絵の「名前 → asset の番号」（番号は消す時に使う）"""
     rid = subprocess.run(["gh", "api", f"repos/{REPO}/releases/tags/{TAG}", "--jq", ".id"], capture_output=True, text=True).stdout.strip()
-    if rid:  # 30件を超える分（tags の答えは assets を全部は返さない）
-        r = subprocess.run(["gh", "api", "--paginate", f"repos/{REPO}/releases/{rid}/assets?per_page=100", "--jq", ".[].name"],
-                           capture_output=True, text=True, encoding="utf-8")
-        names |= set(r.stdout.split())
-    return names
+    if not rid:
+        return {}
+    r = subprocess.run(["gh", "api", "--paginate", f"repos/{REPO}/releases/{rid}/assets?per_page=100", "--jq", '.[] | "\\(.id) \\(.name)"'],
+                       capture_output=True, text=True, encoding="utf-8")
+    return {n: i for i, n in (ln.split(" ", 1) for ln in r.stdout.splitlines() if " " in ln)}
+
+
+def wanted():
+    """今いる回（作っている途中・後回し・注文書）の「(チャンネル, 回) → 作り始めた時刻」。
+    1つでも読めないファイルがあれば None（その時は消さない・絞らない）"""
+    out = {}
+    H = os.path.join(ROOT, "history")
+    try:
+        for p in glob.glob(os.path.join(H, "*", "status*.json")) + glob.glob(os.path.join(H, "*", "parked*.json")):
+            d = json.load(open(p, encoding="utf-8"))
+            for st in d if isinstance(d, list) else [d]:
+                if st.get("work"):
+                    out[(os.path.basename(os.path.dirname(p)), os.path.basename(st["work"].replace("\\", "/")))] = st.get("started") or ""
+        for p in glob.glob(os.path.join(H, "*", "codex_todo", "*.json")):
+            d = json.load(open(p, encoding="utf-8"))
+            out[(d["ch"], d["work"])] = ""
+    except Exception as e:
+        print(f"今いる回を読めない（{type(e).__name__} {e}）", flush=True)
+        return None
+    return out
+
+
+def clean(have, dry=False):
+    """今いない回（上げ終わった回・飛ばされた回）の絵を release から消す（2026-11-13）。
+    release は1つに1000件までで、満杯になると新しい絵を置けず、全チャンネルが絵の段で止まった。
+    絵は OUT にも残っているので、要る時は作り直さずに置き直せる"""
+    keep = wanted()
+    if not keep:
+        print("今いる回が分からないので、release の掃除はしない", flush=True)
+        return
+    pre = lambda n: "__".join(n.split("__")[:2])
+    ok = {pre(ML.codex_name(ch, os.path.join("channels", ch, "videos", wk), {"id": "", "image": ""})) for ch, wk in keep}
+    old = sorted(n for n in have if n.count("__") == 3 and n.endswith(".jpg") and pre(n) not in ok)
+    print(f"release の絵 {len(have)} 枚のうち、今いない回の絵 {len(old)} 枚を{'消す対象にする（--dry なので消さない）' if dry else '消します'}", flush=True)
+    if dry:
+        return
+    for n in old:  # 1枚ずつ、間をあけて（GitHub の書き込みの回数の制限に当たらないように）
+        r = subprocess.run(["gh", "api", "-X", "DELETE", f"repos/{REPO}/releases/assets/{have[n]}"], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
+        if r.returncode:
+            print(f"消せない（残りは次の回で消す）：{n} {r.stderr[-200:]}", flush=True)
+            break
+        del have[n]
+        time.sleep(1)
+    print(f"掃除のあとの release の絵：{len(have)} 枚", flush=True)
 
 
 def codex(prompt, images=()):
@@ -143,6 +188,7 @@ def todo_spec(p):
 
 def auto_specs():
     out = []
+    keep = wanted()
     for p in glob.glob(os.path.join(ROOT, "history", "*", "codex_todo", "*.json")):
         try:
             out.append(todo_spec(p))
@@ -151,11 +197,14 @@ def auto_specs():
     for sp in glob.glob(os.path.join(ROOT, "history", "*", "wip", "*", "script.json")):
         wk = os.path.basename(os.path.dirname(sp))
         ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.dirname(sp))))
+        if keep and (ch, wk) not in keep:
+            continue  # 飛ばされた回の控え（wip）は残り続ける。その絵は使われないので作らない（2026-11-13）
         try:
             out.append(wip_spec(ch, wk))
         except Exception as e:
             print(f"{ch}/{wk}：台本を読めない（{type(e).__name__}）", flush=True)
-    return sorted(out, key=lambda x: (not x["portrait"], not x["todo"], x["ch"], x["wk"]))
+    # 待ち始めが古い回を先に（72時間で飛ばされる前に届ける）
+    return sorted(out, key=lambda x: (not x["portrait"], not x["todo"], (keep or {}).get((x["ch"], x["wk"]), ""), x["ch"], x["wk"]))
 
 
 PAUSE = os.path.join(OUT, "_pause_until")
@@ -179,8 +228,9 @@ def main():
             print(f"休み中（Codex の失敗が続いたため）：{time.strftime('%m-%d %H:%M', time.localtime(until))} まで", flush=True)
             return
         os.remove(PAUSE)
-    have = set() if a.dry else have_assets()
+    have = have_assets()  # 読むだけなので --dry でも取る
     if a.auto:
+        clean(have, a.dry)
         specs = auto_specs()
     else:
         specs = [wip_spec(*w.replace("\\", "/").split("/", 1)) for w in (a.works or ORDER)]
@@ -208,6 +258,7 @@ def main():
         jobs = jobs[:a.limit]
     print(f"Codex で作る：{len(jobs)} 枚（同時に{a.par}本）", flush=True)
     stop = threading.Event()
+    full = threading.Event()
 
     def one(j):
         ch, wk, cid, name, p, imgs = j
@@ -231,9 +282,16 @@ def main():
         ok, err = upload(dst)
         print(f"{'○' if ok else '△'} {ch}/{wk} {cid} {round(time.time() - t0)}秒 {'' if ok else err}", flush=True)
         logline(ch=ch, work=wk, id=cid, ok=ok, sec=round(time.time() - t0), name=name, err="" if ok else err)
+        if not ok and "limited to 1000" in err:  # 満杯の間は何枚作っても置けないので、残りを試さない
+            full.set()
+            stop.set()
 
     with ThreadPoolExecutor(a.par) as ex:
         list(ex.map(one, jobs))
+    if full.is_set():
+        print("【止まりました】release「codex-images」が上限の1000件で、絵を置けない。--auto は動き始めに今いない回の絵を消すので、"
+              "それでも満杯なら、今いる回だけで1000枚を超えている", flush=True)
+        sys.exit(3)
     if stop.is_set():
         if a.auto:
             open(PAUSE, "w").write(str(time.time() + 90 * 60))

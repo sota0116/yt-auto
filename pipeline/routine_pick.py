@@ -1,7 +1,7 @@
 # 1日の流れショート①題選び（手順書 §12。2026-11-02 本人「その職業の1日ルーティンとかいいんじゃない」「自動でのせてPDCAで改善して」）
 #   python -X utf8 pipeline\routine_pick.py --out <作業フォルダ> [--list]
 # ・主な職業40から、普通は見えない時間帯のある職業の順に1つ選び、facts.json を作る（年収・時給・労働時間はプログラムが書く。Claude は計算しない）
-# ・作れた職業は2度出さない。作れなかった職業は1回だけもう一度試す
+# ・作れた職業は2度出さない。作れなかった職業は1回だけもう一度試す（絵＝Lovart で止まった回は職業のせいではないので数えない）
 # ・数字が集まったら（shorts_learn.json の「1日の流れ」）、3本に2本は点の高い仲間の職業を先に、1本は試す枠で順番どおりに選ぶ
 # ・先生2つは公立が調査の対象外で値が偏る（手順書 §8）。管理職は1日の形が決まらないので使わない
 import argparse, json, os, re, sys
@@ -40,7 +40,8 @@ def queue(rs):
 def choose(rs):
     h = [x for x in history() if x.get("kind") == "routine"]
     done = {x["topic_id"] for x in h if x.get("ok")}
-    bad = {t for t in {x["topic_id"] for x in h} if sum(x["topic_id"] == t and not x.get("ok") for x in h) >= 2}
+    bad = {t for t in {x["topic_id"] for x in h}
+           if sum(x["topic_id"] == t and not x.get("ok") and "make_images_lovart" not in (x.get("why") or "") for x in h) >= 2}
     q = [x for x in queue(rs) if tid(x) not in done | bad]
     if not q:
         sys.exit("【止まりました】1日の流れの職業が残っていません")

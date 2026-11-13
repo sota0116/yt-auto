@@ -6,12 +6,13 @@
 #   受け口の URL は環境変数 HC_DAILY_JOB・HC_DAILY_SPI・HC_WATCH（無ければ送らない）。PAUSED の間も成功の合図は送る
 # ・見張り役どうしの見張り：毎日の実行は「見張り（watch）が48時間ない」、見張りは「毎日の実行が26時間ない」、どちらも「週報が8日ない」で Issue
 # ・Issue は gh コマンド（GitHub Actions の GH_TOKEN）で立てる。手元で gh が無い時は画面に出すだけ
-import argparse, datetime, json, os, shutil, subprocess, sys, urllib.request
+import argparse, datetime, json, os, re, shutil, subprocess, sys, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = datetime.timezone(datetime.timedelta(hours=9))
 # 止まった理由ごとの「やること」（設計書 §9 の表。Issue の本文の最初の行）
-TODO = [("台本ゲート", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
+TODO = [("Codex", "PC がついているか、タスク yt-codex-images が動いているかを見る。分からなければ C:\\tmp\\codex_images\\_runner.log を Claude に見せる"),
+        ("台本ゲート", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("絵", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("完成", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("ハッシュ", "PC で Claude Code にこの Issue を貼って「このIssueを直して」と言う"),
@@ -72,6 +73,9 @@ def daily(ch, slot):
     if stopped and r.get("途中"):  # 時間の枠で区切っただけ（絵の順番待ちなど）。失敗ではないので、見張りには「動いている」と伝える
         print(f"途中で区切りました。次の実行で続きから作る（Issue にしない）：{stopped}")
         ping(f"HC_DAILY_{ch.upper()}")
+        # PC の Codex の絵を待つ「途中」が続く時だけは知らせる（5回に1回。2026-11-13：release が満杯で絵が6日届かず、Issue が1つも出なかった）
+        if any(int(n) % 5 == 0 for n in re.findall(r"PC の Codex[^／]*?（(\d+)回目）", stopped)):
+            issue(f"【止まりました】{ch}：PC の Codex の絵が届かない", f"{when}（{slot}）{stopped}")
     elif stopped and r.get("待ち") and slot != "late":
         print(f"Gemini の回数の上限で待ち。17:37 の実行で続きから作る（Issue にしない）：{stopped}")
     elif stopped and not paused:

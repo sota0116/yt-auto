@@ -18,6 +18,8 @@
 #      クレジットの失効前（〜2026-11-16）は、在庫が目標より少なければ「途中」を待たず、昼も最初から使う（2026-10-31 本人）
 #   3. 動く絵は、無料の実行3回でも終わらなければ残りを静止画のまま進める（make_motion_psy.py。前と同じ）
 #   4. 作り始めて72時間たっても上がらない回は飛ばして次のネタへ（Issue。作業フォルダは残すので、あとで続きから作れる）
+#      Lovart がクレジット不足で PC の Codex の絵を待っている回だけは168時間まで待つ（2026-11-13。飛ばして次のネタを作っても同じ絵の段で
+#      止まり、台本と声を作っては捨てることになった：psy・spi は 11/07 の週に0本）。5回続けて届かなければ通知の段が Issue にする
 #   5. 在庫が2本以下になったら、02:07 の実行の通知で Issue にする（notify.py）
 #   6. 完成動画ゲートで落ちたのが画面（絵の中の読める文字・崩れた絵）だけなら、そのカットの絵を作り直して組み立て直す（2回まで。bad_frame_cuts）。
 #      心理学ch 004 が、組み立てまで済んだ18分の回を、看板の英語1枚で止めた（2026-10-29）。前の絵は images/_video_gate_old/ に残す
@@ -446,6 +448,15 @@ def wip_restore(ch, work, st):
             "restored": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
 
 
+def codex_wait(ch, work):
+    """Lovart がクレジット不足で、PC の Codex の絵を待っている回か（images/_lovart.json の理由で見る。作業フォルダが無ければ history の控え）"""
+    for d in (work, wip_dir(ch, work)):
+        lg = jload(os.path.join(d, "images", "_lovart.json"), {})
+        if any(isinstance(v, dict) and "クレジットが足りない" in (v.get("理由") or "") for v in lg.values()):
+            return True
+    return False
+
+
 PARK_DAYS = 21  # 後回しにした回は、公開の予定日がこの日数以内に来たら戻す
 
 
@@ -657,6 +668,9 @@ def make_one(ch, st, upload, kind=None):
             env={"LOVART_WAIT_MAX": str(int(max(300, left() - 15 * 60)))})
         lg = jload(os.path.join(work, "images", "_lovart.json"), {})
         rest = [i for i in missing() if lg.get(i, {}).get("状態") == "待ち" or lg.get(i, {}).get("回", 0) < 2]
+        if rest and any("クレジットが足りない" in (lg.get(i, {}).get("理由") or "") for i in rest):
+            # 「PC の Codex」の字は notify.py が見る（5回続いたら Issue）
+            busy("images", f"絵がまだ途中（残り{len(rest)}枚。Lovart はクレジット不足で頼めないので、PC の Codex が作る絵を待っています）。次の実行で受け取ります")
         if rest:
             busy("images", f"絵がまだ途中（残り{len(rest)}枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります")
     step("images", images)
@@ -1003,8 +1017,8 @@ def main():
                   res.setdefault("飛ばした回", []).append(st["work"])
                   st = {}  # 3回続けて失敗した回・台本ゲートで2回止まった回は飛ばして次のネタへ（週報に出す）
               if st.get("work") and st.get("started") and "upload" not in st.get("done", []) \
-                      and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=72):
-                  # 詰まった時の決まり4：72時間たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
+                      and now() - datetime.datetime.fromisoformat(st["started"]) > datetime.timedelta(hours=168 if codex_wait(ch, st["work"]) else 72):
+                  # 詰まった時の決まり4：72時間（PC の Codex の絵を待っている回は168時間）たっても上がらない回は飛ばす（通知の段が Issue にする。作業フォルダは消さない）
                   res.setdefault("長く止まって飛ばした回", []).append(f"{os.path.basename(st['work'])}（{st.get('stage')} の段・{st['started'][:16]} から）")
                   res.setdefault("飛ばした回", []).append(st["work"])
                   st = {}

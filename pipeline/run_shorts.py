@@ -1,6 +1,7 @@
 # ショートの1日分（手順書 §12）：題選び → 台本 → 点検 → 声 → 画面 → 組み立て →（自動公開がオンの時だけ）明日の予約
 #   python -X utf8 pipeline\run_shorts.py [--n 2] [--no-upload] [--routine-only --at 2026-11-03T18:10]
 # ・統計ショートを先に作り、後ろの枠を1日の流れに回す（本数は shorts_learn.json の判定か profile.json の routine_per_day）。1日の流れが作れない時は、その枠を統計ショートに戻す
+#   1日の流れが絵（Lovart）で2回続けて止まったら、3日間は試さずに統計ショートを作る（images_down。3日たったら1回試す）
 # ・本数は profile.json の shorts（per_day・auto_publish）。予約の時刻は 2026-11-04〜 day_slots.py の PLAN["job"]（times は記録として残す）。auto_publish が false の間は作るだけ（本人のOKの後に true にする）
 # ・作業フォルダは channels\job\shorts\<日時>_<種類>\（git に入れない）。使った題は history\job\shorts.json
 # ・台本の点検で NG が残った時は1回だけ書き直させ、それでも NG ならその本は捨てて次の題へ（題は使ったことにする）
@@ -83,6 +84,14 @@ def routine_broken(k=3):
     return len(h) == k and not any(x.get("ok") for x in h)
 
 
+def images_down(days=3):
+    """1日の流れが直近2回とも絵（make_images_lovart）で止まっていて、最後の失敗から days 日たっていない。
+    この間は1日の流れを試さない（台本と声を作っては捨てるのをやめる。days 日たったら1回試す）"""
+    h = [x for x in (json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []) if x.get("kind") == "routine"][-2:]
+    return (len(h) == 2 and all(not x.get("ok") and "make_images_lovart" in (x.get("why") or "") and x.get("made_at") for x in h)
+            and datetime.datetime.now(JST) - datetime.datetime.fromisoformat(h[-1]["made_at"]) < datetime.timedelta(days=days))
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--n", type=int)
@@ -111,16 +120,19 @@ def main():
     lp = os.path.join(ROOT, "history", "job", "shorts_learn.json")
     judged = (json.load(open(lp, encoding="utf-8")) if os.path.exists(lp) else {}).get("1日の流れ", {}).get("1日の本数")
     rp = min(n, cfg.get("routine_per_day", 0) if judged is None else judged)
+    down = rp > 0 and images_down()  # 絵（Lovart）で2回続けて止まった後の3日間は、最初から統計ショートを作る（2026-11-13：9日続けて台本と声を捨てていた）
+    if down:
+        print("::warning::1日の流れは絵（Lovart）が作れないので見送り中です。3日おきに1回試します", flush=True)
     res = []
     for i in range(n):
         slot = slots[i] if i < len(slots) else None
-        got = routine(i, slot, upload) if i >= n - rp else None
+        got = routine(i, slot, upload) if i >= n - rp and not down else None
         if got and got.startswith("×"):
             print(f"1日の流れは今回作れなかったので、統計ショートに戻します：{got}", flush=True)
             got = None
         res.append(got or one(i, slot, upload))
     print("\n".join(["ショート：", *res]))
-    sys.exit(0 if all(x.startswith("○") for x in res) and not routine_broken() else 1)
+    sys.exit(0 if all(x.startswith("○") for x in res) and (down or not routine_broken()) else 1)
 
 
 if __name__ == "__main__":

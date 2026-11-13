@@ -80,7 +80,11 @@ def collect(ch, d):
         it = info.get(c["id"])
         if not it:
             continue
-        r = get(ch, "playlistItems", part="contentDetails", maxResults=15, playlistId=it["contentDetails"]["relatedPlaylists"]["uploads"])
+        try:
+            r = get(ch, "playlistItems", part="contentDetails", maxResults=15, playlistId=it["contentDetails"]["relatedPlaylists"]["uploads"])
+        except Exception as e:  # 動画を全部消したチャンネルは 404 になる（2026-11-13：1つのチャンネルで spi のリサーチ全体が落ちた）
+            print(f"  {c.get('name') or c['id']}：最近の動画を読めないので飛ばします（{type(e).__name__} {e}）")
+            continue
         units += 1
         for x in r.get("items", []):
             vids.append(x["contentDetails"]["videoId"])

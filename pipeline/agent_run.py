@@ -79,7 +79,8 @@ def pick(ch):
         open(cnt, "w").write(str(runs))
         if runs >= 6:  # 止めない。4回で1本ぐらいの見込みなので、6回を超える時は見てもらう
             from notify import issue
-            issue(f"【止まりました】{ch}：1本が {runs} 回の実行でも終わらない", f"{now():%m/%d %H:%M} {os.path.basename(r)}。_auto_run.md は暗号の保存の中にあります")
+            # 件名に回数を入れない（回数ごとに別の Issue が立っていた。同じ件名なら1つの Issue にコメントが足される）
+            issue(f"【止まりました】{ch}：1本が6回の実行でも終わらない", f"{now():%m/%d %H:%M} {os.path.basename(r)}（{runs}回目）。_auto_run.md は暗号の保存の中にあります")
         output(run="true", resume=r, why=f"途中の回の続き（{runs}回目）")
     elif n < TARGET:
         output(run="true", resume="", why=f"在庫 {n} 本（目標 {TARGET} 本）")
