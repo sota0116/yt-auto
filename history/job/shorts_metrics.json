@@ -651,7 +651,16 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-08T09:01:51+09:00"
+  "取った日": "2026-11-13T10:31:44+09:00",
+  "7d": {
+   "views": 1139,
+   "averageViewPercentage": 53.03,
+   "averageViewDuration": 18,
+   "subscribersGained": 0,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 604.0
+  }
  },
  "20261105_1007_0": {
   "48h": {
@@ -675,7 +684,16 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-08T09:01:51+09:00"
+  "取った日": "2026-11-13T10:31:44+09:00",
+  "7d": {
+   "views": 1323,
+   "averageViewPercentage": 106.89,
+   "averageViewDuration": 29,
+   "subscribersGained": 1,
+   "likes": 6,
+   "再生の出どころ": "公開の数字",
+   "score": 1614.2
+  }
  },
  "20261105_1011_1": {
   "48h": {
@@ -868,5 +886,29 @@
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
   "取った日": "2026-11-12T11:03:06+09:00"
+ },
+ "20261109_0913_1": {
+  "48h": {
+   "views": 999,
+   "averageViewPercentage": 74.67,
+   "averageViewDuration": 23,
+   "subscribersGained": 2,
+   "likes": 3,
+   "再生の出どころ": "公開の数字",
+   "score": 1146.0
+  },
+  "video_id": "YxJsPQ7C99s",
+  "title": "介護職員と美容師のボーナスを比べると｜年収はほぼ同じなのに約5.1倍の差 #年収 #仕事",
+  "topic_id": "duel_介護職員（施設）_美容師・理容師_ボーナス",
+  "kind": "duel",
+  "measure": "ボーナス",
+  "hook": "年収同じ\n賞与は？",
+  "banner": [
+   "ボーナス比較",
+   "介護職員と美容師"
+  ],
+  "編集の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-13T10:31:44+09:00"
  }
 }
