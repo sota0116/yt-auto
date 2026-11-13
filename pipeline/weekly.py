@@ -232,7 +232,7 @@ def prompt(path, chs):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei"])
+    a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei", "karada"])
     a.add_argument("--no-issue", action="store_true")
     a = a.parse_args()
     os.environ["TZ"] = "Asia/Tokyo"

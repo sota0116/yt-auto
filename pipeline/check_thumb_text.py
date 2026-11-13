@@ -240,7 +240,7 @@ def check(s, ch, llm=True):
 
 def guess_ch(work):
     p = os.path.abspath(work)
-    for name, ch in (("かくれ神語り", "kakure"), ("指名手配ボード", "shimei")):
+    for name, ch in (("かくれ神語り", "kakure"), ("指名手配ボード", "shimei"), ("カラダイブ", "karada")):
         if name in p:
             return ch
     m = re.search(r"channels[\\/](\w+)[\\/]", p)

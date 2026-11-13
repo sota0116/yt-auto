@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       ch:
-        description: "チャンネル（kakure・shimei）。空なら AGENT_CHANNELS の全部"
+        description: "チャンネル（kakure・shimei・karada）。空なら AGENT_CHANNELS の全部"
         default: ""
       dry:
         description: "作らずに環境だけ確かめる"
@@ -148,7 +148,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_TOKEN: ${{ matrix.ch == 'kakure' && secrets.YT_TOKEN_KAKURE || matrix.ch == 'shimei' && secrets.YT_TOKEN_SHIMEI || '' }}
+          YT_TOKEN: ${{ matrix.ch == 'kakure' && secrets.YT_TOKEN_KAKURE || matrix.ch == 'shimei' && secrets.YT_TOKEN_SHIMEI || matrix.ch == 'karada' && secrets.YT_TOKEN_KARADA || '' }}
         run: |
           [ -n "$YT_TOKEN" ] || { echo "::warning::$CH の YouTube のログイン（YT_TOKEN_<チャンネル>）がありません。上げるのは次の回にします"; exit 0; }
           export YT_SECRETS_DIR="$RUNNER_TEMP/secrets"

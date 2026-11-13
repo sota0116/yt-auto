@@ -32,6 +32,7 @@ jobs:
       STOCK_PHASE: ${{ vars.STOCK_PHASE }}
       CLAUDE_TOKEN_ISSUED: ${{ vars.CLAUDE_TOKEN_ISSUED }}
       CHANNELS: job psy spi kakure shimei nihongi okinu   # spi は 2026-11-11 から翠仙（千年こよみから替えた。history/spi/学び.md を新しく書く。手順書はまだ無く決まりは research.py の SPI_RULES）。psy は history/psy/学び.md も書く（毎日の台本の書き手が読む）
+      # karada（カラダイブ）はチャンネルを作って1本上げてから CHANNELS に足す（鍵の受け渡しの行は 2026-11-13 に先に入れた）
       # kakure・shimei・nihongi・okinu は 2026-11-04 から（健康・数字・時間帯の節だけ。weekly.py の FULL）
     steps:
       - uses: actions/checkout@v4
@@ -61,6 +62,7 @@ jobs:
           YT_TOKEN_OKINU: ${{ secrets.YT_TOKEN_OKINU }}
           YT_TOKEN_KAKURE: ${{ secrets.YT_TOKEN_KAKURE }}
           YT_TOKEN_SHIMEI: ${{ secrets.YT_TOKEN_SHIMEI }}
+          YT_TOKEN_KARADA: ${{ secrets.YT_TOKEN_KARADA }}
         run: |
           YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
           mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
@@ -72,6 +74,7 @@ jobs:
           [ -n "$YT_TOKEN_OKINU" ] && printf '%s' "$YT_TOKEN_OKINU" > "$YT_SECRETS_DIR/token_okinu.json"
           [ -n "$YT_TOKEN_KAKURE" ] && printf '%s' "$YT_TOKEN_KAKURE" > "$YT_SECRETS_DIR/token_kakure.json"
           [ -n "$YT_TOKEN_SHIMEI" ] && printf '%s' "$YT_TOKEN_SHIMEI" > "$YT_SECRETS_DIR/token_shimei.json"
+          [ -n "$YT_TOKEN_KARADA" ] && printf '%s' "$YT_TOKEN_KARADA" > "$YT_SECRETS_DIR/token_karada.json"
           chmod 600 "$YT_SECRETS_DIR"/*
       - name: 時間帯の数字を取る（pipeline/slot_stats.py。失敗しても週報は書く）
         run: python -X utf8 pipeline/slot_stats.py $CHANNELS || true

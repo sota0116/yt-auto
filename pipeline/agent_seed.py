@@ -11,7 +11,7 @@ import agent_state as a
 OD = r"C:\Users\koneb\OneDrive\YouTube自動チャンネル"
 TOOLS = r"C:\Users\koneb\OneDrive\ClaudeBackup\tools"
 SKILL = r"C:\Users\koneb\OneDrive\ClaudeBackup\skills\youtube-video-maker"
-NAMES = {"kakure": "かくれ神語り", "shimei": "指名手配ボード"}
+NAMES = {"kakure": "かくれ神語り", "shimei": "指名手配ボード", "karada": "カラダイブ"}
 
 
 def shared_items(chs):

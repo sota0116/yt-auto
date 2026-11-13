@@ -16,7 +16,8 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 TARGET = int(os.environ.get("AGENT_STOCK_TARGET") or 6)
 BUDGET_MIN = int(os.environ.get("AGENT_MINUTES") or 270)
 CHS = {"kakure": {"upload": "upload_kakure.py", "is_long": lambda n: bool(re.match(r"\d", n))},
-       "shimei": {"upload": "upload_shimei.py", "is_long": lambda n: n.startswith("L")}}
+       "shimei": {"upload": "upload_shimei.py", "is_long": lambda n: n.startswith("L")},
+       "karada": {"upload": "upload_karada.py", "is_long": lambda n: n.startswith("L")}}  # 横だけ・L<3桁>（2026-11-13）
 
 
 def now():
