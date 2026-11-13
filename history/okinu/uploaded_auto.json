@@ -448,12 +448,22 @@
   "titles": [
    "【60代】レジでお札を慌てて出す人、今すぐやめて"
   ],
-  "comment": "あなたの手は、レジでお札を放っていませんか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-15T12:00:00+09:00",
-  "seconds": 37,
-  "title_now": "【60代】レジでお札を慌てて出す人、今すぐやめて",
-  "synthetic_on": null,
-  "views_now": 0
+  "comment": "あなたの手は、レジでお札を放っていませんか。"
+ },
+ {
+  "work": "S122_買い物メモ",
+  "video_id": "CKUI_m1NhqU",
+  "title": "【60代】買い物メモ、お札と一緒に財布へ入れないで",
+  "kind": "short",
+  "format": "short",
+  "video": "short.mp4",
+  "privacy": "private",
+  "uploaded_at": "2026-11-14T01:49:08+09:00",
+  "missing": false,
+  "type": null,
+  "titles": [
+   "【60代】買い物メモ、お札と一緒に財布へ入れないで"
+  ],
+  "comment": "あなたの財布には、買い物メモが入っていませんか。"
  }
 ]

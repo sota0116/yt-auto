@@ -1,22 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/105_リビング",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/106_ベランダ",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "voice"
  ],
- "started": "2026-11-10T20:44:38+09:00",
- "tries": 1,
+ "started": "2026-11-14T01:58:33+09:00",
+ "tries": 0,
  "code": "3a668d019cdd",
- "stage": "thumb",
- "updated": "2026-11-13T21:42:57+09:00",
+ "stage": "images",
+ "updated": "2026-11-14T02:15:03+09:00",
  "busy": {
-  "images": 15
+  "images": 1
  }
 }

@@ -1,0 +1,1991 @@
+{
+ "format": "long",
+ "title": "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
+ "titles": [
+  "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
+  "【年金11万円】洗濯ばさみと物干し竿で分かる、お金が残るベランダの違い5選【金運】",
+  "【年金11万円】枯れた鉢を置いたベランダからお金が逃げる。残る人との違い5選【金運】"
+ ],
+ "thumb": {
+  "layout": "person",
+  "bg": "F11",
+  "line1": "干す時に●●で",
+  "line2": "服を汚す人は",
+  "judge": "お金が逃げる",
+  "hl": [
+   "●●"
+  ]
+ },
+ "thumb_kind": "person",
+ "desc_lead": "あなたのベランダは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね",
+ "tags": [
+  "金運",
+  "金運アップ",
+  "ベランダ",
+  "ベランダ風水",
+  "風水",
+  "物干し竿",
+  "洗濯ばさみ",
+  "植木鉢",
+  "開運",
+  "年金",
+  "60代",
+  "50代",
+  "お金の習慣"
+ ],
+ "promise": "お金が残る人がベランダでしない5つ（割れた洗濯ばさみを使い続ける・排水口に落ち葉と砂をためる・汚れたサンダルをはき続ける・枯れた鉢と空の鉢を置いたまま・物干し竿を拭かずに干す）の言い伝えのわけと、お金をかけずにできる直し方、テープで止めた洗濯ばさみ・マンションの排水口・スリッパで出る・使わない物を置く・母の形見の鉢・毎回拭くかの「やっていいか」の答えと、排水口のそばに置くといい物が持ち帰れる",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん（63歳）・澄江さんは架空の人物（同じ団地の2人。年金はほとんど同じ）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "佐和子さんの母は亡くなっていて、さつきの鉢は母が育てていた物（佐和子さんが知っている）",
+  "金運の話は言い伝えとして話す。効き目の数字は出さない"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "言いました",
+  "風水",
+  "陰の気",
+  "陽の気",
+  "第二の玄関"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "お金が残る人が、ベランダで絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人が、ベランダで絶対にしないことがいつつあります。",
+   "image_en": "Dusk on the small balcony of a modest present-day Japanese public housing apartment (danchi): grey concrete floor, a metal railing with frosted panels, an aluminum sliding glass door, a long metal laundry pole on wall brackets: the laundry pole is dull and grimy, a square plastic peg hanger with several cracked clothespins dangles from it, brown withered potted plants and a stack of empty clay pots sit in the corner, a pair of muddy plastic sandals lies tipped over, dry leaves gather near the drain. Gloomy dim bluish light. No people. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Dusk on the small balcony of a modest present-day Japanese public housing apartment (danchi): grey concrete floor, a metal railing with frosted panels, an aluminum sliding glass door, a long metal laundry pole on wall brackets: the laundry pole is dull and grimy, a square plastic peg hanger with several cracked clothespins dangles from it, brown withered potted plants and a stack of empty clay pots sit in the corner, a pair of muddy plastic sandals lies tipped over, dry leaves gather near the drain. Gloomy dim bluish light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A02",
+   "narration": "割れた洗濯ばさみに、枯れたままの鉢。ただ洗濯物を干すだけの場所だと、思っていませんか。",
+   "tts_text": "割れたせんたくばさみに、枯れたままのはち。ただせんたくものを干すだけの場所だと、思っていませんか。",
+   "same_as": "A01"
+  },
+  {
+   "id": "A03",
+   "narration": "風水では、ベランダは、第二の玄関とも言われています。",
+   "tts_text": "ふうすいでは、ベランダは、だいにのげんかんとも言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "ベランダは",
+     "big": "第二の玄関",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A04",
+   "narration": "干すだけの、じめじめした場所には、運気が寄りつきにくいと言われるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "干すだけの場所には",
+    "text2": "運気が寄りつきにくい",
+    "accent": "寄りつきにくい"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "違いは、たった5つ。あなたがいくつやっているか、数えながら見てください。",
+   "tts_text": "違いは、たったいつつ。あなたがいくつやっているか、数えながら見てください。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人がベランダで",
+    "text2": "絶対にしない、5つのこと",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A06",
+   "narration": "佐和子さん、63歳。年金は月11万円。",
+   "tts_text": "さわこさん、ろくじゅうさんさい。年金は月じゅういちまんえん。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "63歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A07",
+   "narration": "同じ団地の澄江さんも、年金はほとんど同じです。",
+   "tts_text": "同じ団地のすみえさんも、年金はほとんど同じです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A08",
+   "narration": "それなのに、月末に財布にお札が残るのは、澄江さんだけ。",
+   "tts_text": "それなのに、月末に財布におさつが残るのは、すみえさんだけ。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月末のお札　0枚",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月末のお札　残る"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "2人の家でいちばん違っていたのは、洗濯物を干す、ベランダでした。",
+   "tts_text": "ふたりのいえでいちばん違っていたのは、せんたくものを干す、ベランダでした。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の家でいちばん違ったのは",
+    "text2": "ベランダだった",
+    "accent": "ベランダ"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "ベランダなんて、お金と関係ないでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "ベランダなんて",
+    "text2": "お金と関係ないでしょう",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "A11",
+   "narration": "そう思って、何年も、ベランダのすみを見ないままの人は多いのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "そう思って",
+     "big": "何年も見ないまま",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "A12",
+   "narration": "お金が残らない人は、ベランダで、この5つをやっています。",
+   "tts_text": "お金が残らない人は、ベランダで、このいつつをやっています。",
+   "montage": [
+    "B01",
+    "C01",
+    "D01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　割れた●●●●●を使い続ける",
+    "第4位　●●●に落ち葉と砂をためる",
+    "第3位　汚れた●●●●をはき続ける",
+    "第2位　枯れた●と空の●を置いたまま"
+   ]
+  },
+  {
+   "id": "A13",
+   "narration": "第1位は、洗濯物を干す時に、ほとんどの人が、毎回やってしまうことです。",
+   "tts_text": "だいいちいは、せんたくものを干す時に、ほとんどの人が、毎回やってしまうことです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "●●●●を●●ずに干す",
+    "sub": "干すたびに、ついやってしまう",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "A14",
+   "narration": "どれも、お金をかけずに、家にある物で直せます。",
+   "tts_text": "どれも、お金をかけずに、いえにある物で直せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どれも",
+     "big": "家にある物で直せる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。割れた洗濯ばさみを、使い続ける。",
+   "tts_text": "だいごい。割れたせんたくばさみを、使い続ける。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "割れた洗濯ばさみを使い続ける",
+    "sub": "まだ、ほかのが使えるから"
+   },
+   "yt_chapter": "第5位 割れた洗濯ばさみを使い続ける"
+  },
+  {
+   "id": "B01",
+   "narration": "角ハンガーの洗濯ばさみが、いくつも割れて、ぶら下がったまま。",
+   "tts_text": "かくハンガーのせんたくばさみが、いくつも割れて、ぶら下がったまま。",
+   "image_en": "Close-up on the small balcony of a modest present-day Japanese public housing apartment (danchi): a faded square plastic peg hanger hanging from a metal laundry pole, several of its plastic clothespins cracked in half and dangling on their strings, one clothespin lying broken on the concrete floor below. Dim gloomy overcast light. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on the small balcony of a modest present-day Japanese public housing apartment (danchi): a faded square plastic peg hanger hanging from a metal laundry pole, several of its plastic clothespins cracked in half and dangling on their strings, one clothespin lying broken on the concrete floor below. Dim gloomy overcast light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B02",
+   "narration": "割れた所をよけて、残りの洗濯ばさみだけで、干していませんか。",
+   "tts_text": "割れた所をよけて、残りのせんたくばさみだけで、干していませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "金運の世界では、壊れた物は、悪い気をため込むと言われています。",
+   "tts_text": "きんうんの世界では、壊れた物は、わるいきをため込むと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "壊れた物は",
+     "big": "悪い気をため込む",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B04",
+   "narration": "洗濯ばさみは、毎日、家族の服をはさむ物です。",
+   "tts_text": "せんたくばさみは、毎日、かぞくの服をはさむ物です。",
+   "card": {
+    "type": "big_text",
+    "text": "洗濯ばさみは",
+    "text2": "毎日、服をはさむ物",
+    "accent": "毎日"
+   }
+  },
+  {
+   "id": "B05",
+   "narration": "壊れた物ではさんだ服を、毎日、家族が身につけることになるのです。",
+   "tts_text": "壊れた物ではさんだ服を、毎日、かぞくが身につけることになるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "壊れた物ではさんだ服を",
+    "text2": "毎日、身につける",
+    "accent": "身につける"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "悪い気がたまると、運気も、少しずつ下がっていくと言われます。",
+   "tts_text": "わるいきがたまると、うんきも、少しずつ下がっていくと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "悪い気がたまると",
+     "big": "運気が下がっていく",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "B07",
+   "narration": "佐和子さんがシャツを干そうとした時、洗濯ばさみが、ぱきっと割れました。",
+   "tts_text": "さわこさんがシャツを干そうとした時、せんたくばさみが、ぱきっと割れました。",
+   "image_en": "On the small balcony of a modest present-day Japanese public housing apartment (danchi): grey concrete floor, metal railing, a long metal laundry pole, Sawako reaches up to clip a white shirt onto a square plastic peg hanger, and a plastic clothespin snaps in half in her fingers; she flinches with a startled, annoyed face. Overcast morning light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "On the small balcony of a modest present-day Japanese public housing apartment (danchi): grey concrete floor, metal railing, a long metal laundry pole, Sawako reaches up to clip a white shirt onto a square plastic peg hanger, and a plastic clothespin snaps in half in her fingers; she flinches with a startled, annoyed face. Overcast morning light."
+  },
+  {
+   "id": "B08",
+   "narration": "また割れた。これで、いくつめかしら。",
+   "card": {
+    "type": "big_text",
+    "text": "洗濯ばさみが",
+    "text2": "また割れた",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B09",
+   "narration": "数えてみると、使えない洗濯ばさみが、9つもありました。",
+   "tts_text": "数えてみると、使えないせんたくばさみが、ここのつもありました。",
+   "same_as": "B07"
+  },
+  {
+   "id": "B10",
+   "narration": "澄江さんの角ハンガーは、洗濯ばさみが、全部そろっています。",
+   "tts_text": "すみえさんのかくハンガーは、せんたくばさみが、全部そろっています。",
+   "image_en": "Close-up on a clean tidy small balcony of a modest present-day Japanese public housing apartment (danchi): a clean square plastic peg hanger on a shining metal laundry pole, every clothespin intact and evenly lined up, a small basket of spare clothespins on a low shelf by the sliding door. Bright fresh morning sunlight. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on a clean tidy small balcony of a modest present-day Japanese public housing apartment (danchi): a clean square plastic peg hanger on a shining metal laundry pole, every clothespin intact and evenly lined up, a small basket of spare clothespins on a low shelf by the sliding door. Bright fresh morning sunlight. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B11",
+   "narration": "割れた物は、気づいたその日に外して、手放していました。",
+   "same_as": "B10"
+  },
+  {
+   "id": "B12",
+   "narration": "直し方は、割れた洗濯ばさみを、外すこと。",
+   "tts_text": "直しかたは、割れたせんたくばさみを、外すこと。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "割れた洗濯ばさみは、外す",
+     "ありがとうと言って、手放す",
+     "足りる分だけで、干す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B13",
+   "narration": "長く使った道具は、ありがとうと言って、手放します。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "割れた洗濯ばさみは、外す",
+     "ありがとうと言って、手放す",
+     "足りる分だけで、干す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B14",
+   "narration": "そして、残った洗濯ばさみで足りるように、干す物を並べ直す。",
+   "tts_text": "そして、残ったせんたくばさみで足りるように、干す物を並べ直す。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "割れた洗濯ばさみは、外す",
+     "ありがとうと言って、手放す",
+     "足りる分だけで、干す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B15",
+   "narration": "道具がそろうと、干す手も、気持ちよく動きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "道具がそろうと",
+     "big": "干す手が気持ちよく動く",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B16",
+   "narration": "1つ割れただけで、全部替えないとだめなの？",
+   "tts_text": "ひとつ割れただけで、全部替えないとだめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "1つ割れただけで",
+    "text2": "全部替えるの？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B17",
+   "narration": "割れた所だけ外せば、残りは使えます。困るのは、壊れた物を使い続けることです。",
+   "card": {
+    "type": "big_text",
+    "text": "困るのは、使い続けること",
+    "text2": "割れた所だけ外せばいい",
+    "accent": "外せば",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B18",
+   "narration": "割れたのを、テープで止めて使うのは、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "割れた洗濯ばさみ",
+    "text2": "テープで止めたら、いい？",
+    "kicker": "テープ"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B19",
+   "narration": "止めても、壊れた物は、壊れた物。すぐに片づけるのがいいと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "止めても、壊れた物は壊れた物",
+    "text2": "すぐに片づける",
+    "accent": "片づける",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B20",
+   "narration": "佐和子さんは、割れた9つを外して、袋にまとめました。",
+   "tts_text": "さわこさんは、割れたここのつを外して、ふくろにまとめました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "割れた9つを、外した",
+    "accent": "9つ"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "洗濯ばさみは、少なくても、割れていなければ、それで十分です。",
+   "tts_text": "せんたくばさみは、少なくても、割れていなければ、それで十分です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "洗濯ばさみは",
+     "big": "割れていなければいい",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。排水口に、落ち葉と砂をためる。",
+   "tts_text": "だいよんい。はいすいこうに、落ち葉と砂をためる。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "排水口に落ち葉と砂をためる",
+    "sub": "ベランダのすみの、見ない所"
+   },
+   "yt_chapter": "第4位 排水口に落ち葉と砂をためる"
+  },
+  {
+   "id": "C01",
+   "narration": "ベランダのすみの排水口に、茶色い落ち葉と、砂のかたまり。",
+   "tts_text": "ベランダのすみのはいすいこうに、茶色い落ち葉と、砂のかたまり。",
+   "image_en": "Extreme close-up of the small floor drain in the corner of a concrete balcony of a modest present-day Japanese public housing apartment (danchi): the drain grate is clogged with wet brown dead leaves, clumps of sand and grime, a shallow murky puddle of rainwater around it. Dim grey light. No people. No readable text, no logos, no brand names.",
+   "image": "Extreme close-up of the small floor drain in the corner of a concrete balcony of a modest present-day Japanese public housing apartment (danchi): the drain grate is clogged with wet brown dead leaves, clumps of sand and grime, a shallow murky puddle of rainwater around it. Dim grey light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C02",
+   "narration": "雨の次の日に、ベランダに水たまりが残っていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "風水では、陽の気は取り入れて、陰の気は外に出すのが、基本だと言われます。",
+   "tts_text": "ふうすいでは、ようのきは取り入れて、いんのきは外に出すのが、基本だと言われます。",
+   "image_en": "A simple black and white yin-yang symbol (taijitu) painted in ink on an old cream paper scroll, laid on a dark wooden table, soft side light. No people. No letters, no readable text.",
+   "real": "Yin yang taijitu symbol",
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "陽の気は入れて",
+     "big": "陰の気は出す",
+     "size": 120
+    }
+   },
+   "image": "A simple black and white yin-yang symbol (taijitu) painted in ink on an old cream paper scroll, laid on a dark wooden table, soft side light. No people. No letters, no readable text."
+  },
+  {
+   "id": "C04",
+   "narration": "落ち葉や砂ぼこりは、その陰の物だと考えられています。",
+   "tts_text": "落ち葉や砂ぼこりは、そのいんのものだと考えられています。",
+   "card": {
+    "type": "big_text",
+    "text": "落ち葉と砂ぼこりは",
+    "text2": "陰の物",
+    "accent": "陰"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "排水口は、水の気の出口。つまると、悪い気がとどまり、金運にひびくと言われています。",
+   "tts_text": "はいすいこうは、みずのきの出口。つまると、わるいきがとどまり、きんうんにひびくと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "排水口がつまると",
+     "big": "金運にひびく",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "C06",
+   "narration": "風水で嫌うのは、汚れた水がたまること。よどんだ水には、陰の気が集まると言われます。",
+   "tts_text": "ふうすいで嫌うのは、汚れた水がたまること。よどんだ水には、いんのきが集まると言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "よどんだ水には",
+    "text2": "陰の気が、集まる",
+    "accent": "集まる"
+   }
+  },
+  {
+   "id": "C07",
+   "narration": "佐和子さんは、雨の次の日、ベランダに水が残っているのに気づきました。",
+   "tts_text": "さわこさんは、雨の次の日、ベランダに水が残っているのに気づきました。",
+   "image_en": "On the concrete balcony of a modest present-day Japanese public housing apartment (danchi): metal railing, aluminum sliding door, Sawako crouches in the corner beside a murky puddle, peering closely at a floor drain clogged with wet dead leaves, her brows drawn together in a worried frown, one hand on her knee. Grey overcast light after rain.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "On the concrete balcony of a modest present-day Japanese public housing apartment (danchi): metal railing, aluminum sliding door, Sawako crouches in the corner beside a murky puddle, peering closely at a floor drain clogged with wet dead leaves, her brows drawn together in a worried frown, one hand on her knee. Grey overcast light after rain."
+  },
+  {
+   "id": "C08",
+   "narration": "どうして、水が引かないのかしら。",
+   "card": {
+    "type": "big_text",
+    "text": "ベランダの水が",
+    "text2": "どうして引かないの",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C09",
+   "narration": "しゃがんでのぞくと、排水口は、落ち葉で、すっかりふさがっていました。",
+   "tts_text": "しゃがんでのぞくと、はいすいこうは、落ち葉で、すっかりふさがっていました。",
+   "same_as": "C07"
+  },
+  {
+   "id": "C10",
+   "narration": "澄江さんは、古い軍手をはめて、月に1回、排水口の落ち葉を拾っていました。",
+   "tts_text": "すみえさんは、古いぐんてをはめて、月にいっかい、はいすいこうの落ち葉を拾っていました。",
+   "image_en": "Close-up on a clean concrete balcony floor of a modest present-day Japanese public housing apartment (danchi): an older woman's hands in old white cotton work gloves pick up a few dead leaves from a floor drain and put them into a small dustpan; the drain grate underneath is clear and clean. Only the hands, no face. Bright fresh morning light. No readable text, no logos, no brand names.",
+   "image": "Close-up on a clean concrete balcony floor of a modest present-day Japanese public housing apartment (danchi): an older woman's hands in old white cotton work gloves pick up a few dead leaves from a floor drain and put them into a small dustpan; the drain grate underneath is clear and clean. Only the hands, no face. Bright fresh morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C11",
+   "narration": "拾った物は、ちりとりで集めて、そのまま袋へ入れます。",
+   "same_as": "C10"
+  },
+  {
+   "id": "C12",
+   "narration": "直し方は、古い軍手をはめて、手で拾うこと。",
+   "tts_text": "直しかたは、古いぐんてをはめて、手で拾うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "古い軍手で、手で拾う",
+     "ちりとりで集めて、袋へ",
+     "雨の次の日に、のぞく"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C13",
+   "narration": "拾った落ち葉と砂は、ちりとりで集めて、袋に入れて捨てます。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "古い軍手で、手で拾う",
+     "ちりとりで集めて、袋へ",
+     "雨の次の日に、のぞく"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C14",
+   "narration": "そして、雨の次の日に、もう一度のぞいてみる。",
+   "tts_text": "そして、雨の次の日に、もういちどのぞいてみる。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "古い軍手で、手で拾う",
+     "ちりとりで集めて、袋へ",
+     "雨の次の日に、のぞく"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "マンションの排水口は、どこまで掃除していいの？",
+   "tts_text": "マンションのはいすいこうは、どこまで掃除していいの？",
+   "card": {
+    "type": "big_text",
+    "text": "マンションの排水口",
+    "text2": "どこまで掃除していい？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C16",
+   "narration": "手で取れる所まで、で十分です。たくさんの水で流したり、外したりはしません。",
+   "card": {
+    "type": "big_text",
+    "text": "水で流さない、外さない",
+    "text2": "手で取れる所まで",
+    "accent": "手で",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C17",
+   "narration": "下の階に、水がもれることがあるからです。つまりが続く時は、管理の人に相談します。",
+   "card": {
+    "type": "big_text",
+    "text": "つまりが続く時は",
+    "text2": "管理の人に、相談",
+    "accent": "相談"
+   }
+  },
+  {
+   "id": "C18",
+   "narration": "水がすっと流れるベランダには、陰の気がたまりにくい。そう考えられてきました。",
+   "tts_text": "水がすっと流れるベランダには、いんのきがたまりにくい。そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "水がすっと流れると",
+     "big": "陰の気がたまりにくい",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C19",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "C20",
+   "narration": "排水口のそばに置くと、気のよどみを払うと言われる物があります。",
+   "tts_text": "はいすいこうのそばに置くと、きのよどみを払うと言われる物があります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "排水口のそばに置くと",
+     "big": "よどみを払う物",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "C21",
+   "narration": "それは、緑の鉢植えと、石の置物。どちらでしょう。",
+   "tts_text": "それは、みどりのはちうえと、石のおきもの。どちらでしょう。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "緑の鉢植え",
+      "sub": "？"
+     },
+     {
+      "head": "石の置物",
+      "sub": "？"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "C22",
+   "narration": "あなたは、どちらだと思いますか。",
+   "same_as": "C21"
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れた●●●●をはき続ける",
+     "枯れた●と空の●を置いたまま",
+     "●●●●を●●ずに干す"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、もっと多くの人が、やってしまっています。",
+   "tts_text": "残りのみっつは、もっと多くの人が、やってしまっています。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れた●●●●をはき続ける",
+     "枯れた●と空の●を置いたまま",
+     "●●●●を●●ずに干す"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "お金をかけずにできる金運の決まりを、また見たい方は、チャンネル登録をしておいてくださいね。",
+   "tts_text": "お金をかけずにできるきんうんの決まりを、またみたいかたは、チャンネル登録をしておいてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。汚れたサンダルを、はき続ける。",
+   "tts_text": "だいさんい。汚れたサンダルを、はき続ける。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "汚れたサンダルをはき続ける",
+    "sub": "底が黒くなっても、そのまま"
+   },
+   "yt_chapter": "第3位 汚れたサンダルをはき続ける"
+  },
+  {
+   "id": "D01",
+   "narration": "ベランダのサンダルは、底が黒くなって、砂がこびりついたまま。",
+   "image_en": "Close-up on the concrete floor of a small balcony of a modest present-day Japanese public housing apartment (danchi), just outside an aluminum sliding glass door: a pair of old plastic balcony sandals caked with dried mud and sand, the soles blackened, one sandal flipped upside down with rainwater pooled in it. Dim gloomy light. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on the concrete floor of a small balcony of a modest present-day Japanese public housing apartment (danchi), just outside an aluminum sliding glass door: a pair of old plastic balcony sandals caked with dried mud and sand, the soles blackened, one sandal flipped upside down with rainwater pooled in it. Dim gloomy light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D02",
+   "narration": "片方がひっくり返ったまま、雨にぬれていませんか。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D03",
+   "narration": "サンダルは、足が、じかに触れる物です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "サンダルは",
+     "big": "足がじかに触れる物",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "D04",
+   "narration": "汚れたサンダルの汚れは、足の裏から、家の中まで持ち込まれます。",
+   "tts_text": "汚れたサンダルの汚れは、足の裏から、いえの中まで持ち込まれます。",
+   "card": {
+    "type": "big_text",
+    "text": "サンダルの汚れは",
+    "text2": "家の中まで、持ち込まれる",
+    "accent": "家の中"
+   }
+  },
+  {
+   "id": "D05",
+   "narration": "汚れを家に持ち込むと、運気を下げると言われています。",
+   "tts_text": "汚れをいえに持ち込むと、うんきを下げると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "汚れを家に持ち込むと",
+     "big": "運気が下がる",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "D05a",
+   "narration": "ベランダが第二の玄関なら、サンダルは、その玄関のはき物なのです。",
+   "tts_text": "ベランダがだいにのげんかんなら、サンダルは、そのげんかんのはきものなのです。",
+   "card": {
+    "type": "big_text",
+    "text": "ベランダのサンダルは",
+    "text2": "第二の玄関の、はき物",
+    "accent": "はき物"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "佐和子さんは、ベランダのサンダルのまま、ごみ出しにも行っていました。",
+   "tts_text": "さわこさんは、ベランダのサンダルのまま、ごみ出しにも行っていました。",
+   "image_en": "Outside the ground-floor entrance of a modest present-day Japanese public housing apartment building (danchi): Sawako walks carrying a small tied garbage bag, wearing old muddy plastic balcony sandals; she glances down at her dirty sandals with a slightly guilty, sheepish face. Grey morning light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Outside the ground-floor entrance of a modest present-day Japanese public housing apartment building (danchi): Sawako walks carrying a small tied garbage bag, wearing old muddy plastic balcony sandals; she glances down at her dirty sandals with a slightly guilty, sheepish face. Grey morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D07",
+   "narration": "近いんだから、いいと思って。",
+   "card": {
+    "type": "big_text",
+    "text": "ごみ出しくらい",
+    "text2": "近いからいいと思って",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D08",
+   "narration": "部屋に戻ると、床に、うっすら砂の足あとが残っていました。",
+   "same_as": "D06"
+  },
+  {
+   "id": "D09",
+   "narration": "澄江さんのサンダルは、壁に、そろえて立てかけてあります。",
+   "tts_text": "すみえさんのサンダルは、壁に、そろえて立てかけてあります。",
+   "image_en": "Close-up on a clean concrete balcony of a modest present-day Japanese public housing apartment (danchi): a pair of clean washed plastic balcony sandals neatly propped side by side against the wall under the eaves, next to the aluminum sliding door, an old toothbrush drying beside them. Bright fresh sunlight. No people. No readable text, no logos, no brand names.",
+   "image": "Close-up on a clean concrete balcony of a modest present-day Japanese public housing apartment (danchi): a pair of clean washed plastic balcony sandals neatly propped side by side against the wall under the eaves, next to the aluminum sliding door, an old toothbrush drying beside them. Bright fresh sunlight. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D10",
+   "narration": "ベランダの外では、はかないと決めていました。",
+   "same_as": "D09"
+  },
+  {
+   "id": "D11",
+   "narration": "直し方は、古い歯ブラシで、サンダルの底を洗うこと。",
+   "tts_text": "直しかたは、古い歯ブラシで、サンダルの底を洗うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "古い歯ブラシで、底を洗う",
+     "ベランダの外では、はかない",
+     "脱いだら、立てかける"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D12",
+   "narration": "ごみ出しや買い物には、はいて行かない。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "古い歯ブラシで、底を洗う",
+     "ベランダの外では、はかない",
+     "脱いだら、立てかける"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D13",
+   "narration": "脱いだら、そろえて、壁に立てかけておきます。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "古い歯ブラシで、底を洗う",
+     "ベランダの外では、はかない",
+     "脱いだら、立てかける"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D14",
+   "narration": "古いサンダルは、新しく買い替えないとだめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "古いサンダルは",
+    "text2": "買い替えないとだめ？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D15",
+   "narration": "洗えば、それでいいと言われます。替えるのは、すり切れてからで十分です。",
+   "card": {
+    "type": "big_text",
+    "text": "替えるのは、すり切れてから",
+    "text2": "洗えば、いい",
+    "accent": "洗えば",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D16",
+   "narration": "部屋のスリッパのまま、ベランダに出るのは、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "部屋のスリッパで",
+    "text2": "ベランダに出てもいい？",
+    "kicker": "スリッパ"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D17",
+   "narration": "ベランダには、ベランダ専用のはき物を、と言われます。分けておくのが、汚れを持ち込まない決まりです。",
+   "tts_text": "ベランダには、ベランダせんようのはきものを、と言われます。分けておくのが、汚れを持ち込まない決まりです。",
+   "card": {
+    "type": "big_text",
+    "text": "汚れを持ち込まない",
+    "text2": "ベランダ専用に、分ける",
+    "accent": "専用",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D18",
+   "narration": "佐和子さんは、その日のうちに、サンダルの底を洗いました。",
+   "tts_text": "さわこさんは、その日のうちに、サンダルの底を洗いました。",
+   "same_as": "D09"
+  },
+  {
+   "id": "D19",
+   "narration": "足元がきれいだと、ベランダに出るのが、少し楽しくなります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "足元がきれいだと",
+     "big": "出るのが楽しくなる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。枯れた鉢と、空の鉢を、置いたまま。",
+   "tts_text": "だいにい。枯れたはちと、からのはちを、置いたまま。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "枯れた鉢と空の鉢を置いたまま",
+    "sub": "いつか、また植えるから"
+   },
+   "yt_chapter": "第2位 枯れた鉢と空の鉢を置いたまま"
+  },
+  {
+   "id": "E01",
+   "narration": "すみに並んだ、茶色く枯れた鉢植え。その横に、重ねた空の植木鉢。",
+   "tts_text": "すみに並んだ、茶色く枯れたはちうえ。その横に、重ねたからのうえきばち。",
+   "image_en": "The corner of a small concrete balcony of a modest present-day Japanese public housing apartment (danchi): a row of clay pots holding completely withered brown plants with dry cracked soil, beside them a tall stack of empty dusty clay flower pots and a folded broken metal laundry stand leaning on the railing. Dim dusk light, cold shadows. No people. No readable text, no logos, no brand names.",
+   "image": "The corner of a small concrete balcony of a modest present-day Japanese public housing apartment (danchi): a row of clay pots holding completely withered brown plants with dry cracked soil, beside them a tall stack of empty dusty clay flower pots and a folded broken metal laundry stand leaning on the railing. Dim dusk light, cold shadows. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E02",
+   "narration": "いつか、また植えるから。そう思って、何年も置いていませんか。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E03",
+   "narration": "金運の世界では、枯れた植物は、死んだ気を出すと言われています。",
+   "tts_text": "きんうんの世界では、枯れた植物は、しんだきを出すと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "枯れた植物は",
+     "big": "死んだ気を出す",
+     "size": 130
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "E04",
+   "narration": "空の植木鉢は、欠けとして、はたらくとも言われます。",
+   "tts_text": "からのうえきばちは、かけとして、はたらくとも言われます。",
+   "image_en": "A tall stack of empty weathered terracotta flower pots on a concrete floor, one pot with a chipped rim, soft grey light. No people. No readable text, no logos, no brand names.",
+   "real": "Empty terracotta flower pots stacked",
+   "image": "A tall stack of empty weathered terracotta flower pots on a concrete floor, one pot with a chipped rim, soft grey light. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E05",
+   "narration": "使っていない物を置きっぱなしにすると、気の流れが乱れると言われるのです。",
+   "tts_text": "使っていない物を置きっぱなしにすると、きの流れが乱れると言われるのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "使わない物を置くと",
+     "big": "気の流れが乱れる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "E06",
+   "narration": "佐和子さんのベランダには、亡くなった母が育てていた、さつきの鉢がありました。",
+   "tts_text": "さわこさんのベランダには、亡くなったははが育てていた、さつきのはちがありました。",
+   "image_en": "On the small concrete balcony of a modest present-day Japanese public housing apartment (danchi): Sawako kneels in the dim corner holding an old clay pot with a withered brown azalea bush in both hands, looking down at it with sad, wistful eyes and pressed lips; empty pots are stacked behind her. Cold dusk light.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "On the small concrete balcony of a modest present-day Japanese public housing apartment (danchi): Sawako kneels in the dim corner holding an old clay pot with a withered brown azalea bush in both hands, looking down at it with sad, wistful eyes and pressed lips; empty pots are stacked behind her. Cold dusk light."
+  },
+  {
+   "id": "E07",
+   "narration": "枯れても、捨てられなかったのよ。",
+   "card": {
+    "type": "big_text",
+    "text": "母のさつきは",
+    "text2": "枯れても、捨てられない",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E08",
+   "narration": "その横には、空の鉢が7つと、壊れた物干し台。",
+   "tts_text": "その横には、からのはちがななつと、壊れたものほしだい。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E09",
+   "narration": "澄江さんのベランダには、元気な鉢が、2つだけ。",
+   "tts_text": "すみえさんのベランダには、元気なはちが、ふたつだけ。",
+   "image_en": "A clean bright small concrete balcony of a modest present-day Japanese public housing apartment (danchi): a shining clean metal laundry pole with neatly hung white towels, a swept bare floor, and just two healthy leafy green potted plants placed together in the corner beside the clear floor drain. Bright warm morning sunlight, fresh and airy. No people. No readable text, no logos, no brand names.",
+   "image": "A clean bright small concrete balcony of a modest present-day Japanese public housing apartment (danchi): a shining clean metal laundry pole with neatly hung white towels, a swept bare floor, and just two healthy leafy green potted plants placed together in the corner beside the clear floor drain. Bright warm morning sunlight, fresh and airy. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E10",
+   "narration": "空いた鉢は、重ねて、部屋の中にしまってありました。",
+   "tts_text": "空いたはちは、重ねて、部屋の中にしまってありました。",
+   "same_as": "E09"
+  },
+  {
+   "id": "E11",
+   "narration": "直し方は、枯れた鉢を、土ごと片づけること。",
+   "tts_text": "直しかたは、枯れたはちを、土ごと片づけること。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "枯れた鉢は、土ごと片づける",
+     "空の鉢は、重ねて部屋へ",
+     "元気な鉢を、1か所に"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E12",
+   "narration": "空の鉢は、重ねて、部屋の中へ。",
+   "tts_text": "からのはちは、重ねて、部屋の中へ。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "枯れた鉢は、土ごと片づける",
+     "空の鉢は、重ねて部屋へ",
+     "元気な鉢を、1か所に"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E13",
+   "narration": "元気な鉢だけを、1か所にまとめます。",
+   "tts_text": "元気なはちだけを、いっかしょにまとめます。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "枯れた鉢は、土ごと片づける",
+     "空の鉢は、重ねて部屋へ",
+     "元気な鉢を、1か所に"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E14",
+   "narration": "ベランダに、使わない物を置いておくのは、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "使わない物を",
+    "text2": "ベランダに置いていい？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E15",
+   "narration": "置かない方がいい、と言われます。使う道具だけ、すみにまとめるか、部屋にしまいます。",
+   "tts_text": "置かないほうがいい、と言われます。使う道具だけ、すみにまとめるか、部屋にしまいます。",
+   "card": {
+    "type": "big_text",
+    "text": "使う道具だけ、すみにまとめる",
+    "text2": "使わない物は、置かない",
+    "accent": "置かない",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "壊れた物干し台も、同じです。使わないなら、決まりの日に出します。",
+   "tts_text": "壊れたものほしだいも、同じです。使わないなら、決まりの日に出します。",
+   "card": {
+    "type": "big_text",
+    "text": "壊れた物干し台も",
+    "text2": "決まりの日に、出す",
+    "accent": "出す"
+   }
+  },
+  {
+   "id": "E17",
+   "narration": "母の形見の鉢も、片づけないとだめなの？",
+   "tts_text": "ははのかたみのはちも、片づけないとだめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "母の形見の鉢も",
+    "text2": "片づけないとだめ？",
+    "kicker": "形見"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E18",
+   "narration": "空のままにしないこと、と言われます。また何か植えるか、洗って部屋にしまえばいいのです。",
+   "tts_text": "からのままにしないこと、と言われます。また何か植えるか、洗って部屋にしまえばいいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "植えるか、洗って部屋へ",
+    "text2": "空のままにしない",
+    "accent": "空のまま",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E19",
+   "narration": "佐和子さんは、さつきの鉢を洗って、部屋の窓辺に置きました。",
+   "tts_text": "さわこさんは、さつきのはちを洗って、部屋の窓辺に置きました。",
+   "card": {
+    "type": "big_text",
+    "text": "佐和子さんは",
+    "text2": "母の鉢を、窓辺に",
+    "accent": "窓辺"
+   }
+  },
+  {
+   "id": "E20",
+   "narration": "思い出は、枯れた木でなくても、ちゃんと残せます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "思い出は",
+     "big": "枯れた木でなくても残せる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C09"
+  },
+  {
+   "id": "P01",
+   "narration": "ここまでで、4つ。残るは、第1位だけです。",
+   "tts_text": "ここまでで、よっつ。残るは、だいいちいだけです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れたサンダルをはき続ける",
+     "枯れた鉢と空の鉢を置いたまま",
+     "●●●●を●●ずに干す"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "いよいよ、第1位です。",
+   "tts_text": "いよいよ、だいいちいです。",
+   "card": {
+    "type": "big_text",
+    "text": "いよいよ",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、物干し竿を、拭かずに干すこと。",
+   "tts_text": "だいいちいは、ものほしざおを、ふかずに干すこと。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "物干し竿を拭かずに干す",
+    "sub": "干すたびに、ついやってしまう"
+   },
+   "yt_chapter": "第1位 物干し竿を拭かずに干す"
+  },
+  {
+   "id": "F02",
+   "narration": "洗い立ての白いシャツを、そのまま、竿にかける。",
+   "tts_text": "あらいたての白いシャツを、そのまま、さおにかける。",
+   "image_en": "Close-up on the balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands hang a freshly washed bright white shirt on a hanger over a long metal laundry pole that is visibly coated with grey dust, black grime streaks and dried rain spots. Only the hands, no face. Overcast flat light that makes the dirt on the pole stand out. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "peak": true,
+   "strong": true,
+   "highlight": "拭かずに干す",
+   "image": "Close-up on the balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands hang a freshly washed bright white shirt on a hanger over a long metal laundry pole that is visibly coated with grey dust, black grime streaks and dried rain spots. Only the hands, no face. Overcast flat light that makes the dirt on the pole stand out. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F03",
+   "narration": "洗濯物を干す時に、ほとんどの人が、毎回やってしまうことです。",
+   "tts_text": "せんたくものを干す時に、ほとんどの人が、毎回やってしまうことです。",
+   "card": {
+    "type": "big_text",
+    "text": "拭かずに干すのは",
+    "text2": "ほとんどの人が、毎回",
+    "accent": "毎回"
+   }
+  },
+  {
+   "id": "F04",
+   "narration": "竿は、雨と風と、砂ぼこりに、毎日さらされています。",
+   "tts_text": "さおは、雨と風と、砂ぼこりに、毎日さらされています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "物干し竿は",
+     "big": "毎日、雨と砂ぼこり",
+     "size": 110
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "F05",
+   "narration": "ぬれたタオルでなでると、タオルが、真っ黒になるほどです。",
+   "image_en": "Extreme close-up: a hand holds a damp white towel that has just been wiped along a metal laundry pole, the towel now showing a long thick black stripe of grime, the dirty pole visible behind it on a danchi balcony. Only the hand, no face. Soft daylight. No readable text, no logos, no brand names.",
+   "image": "Extreme close-up: a hand holds a damp white towel that has just been wiped along a metal laundry pole, the towel now showing a long thick black stripe of grime, the dirty pole visible behind it on a danchi balcony. Only the hand, no face. Soft daylight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F06",
+   "narration": "その竿に、洗ったばかりの服をかけたら、どうなるでしょう。",
+   "tts_text": "そのさおに、洗ったばかりの服をかけたら、どうなるでしょう。",
+   "same_as": "F05"
+  },
+  {
+   "id": "F07",
+   "narration": "洗濯物は、毎日、肌にじかに触れる物です。",
+   "tts_text": "せんたくものは、毎日、はだにじかに触れる物です。",
+   "image_en": "An old Japanese woodblock print style scene: women of the Edo period in plain kimono hanging washed cloth to dry on a long bamboo pole in a sunny courtyard. Muted traditional colors. No readable text, no seals, no letters.",
+   "real": "Ukiyo-e women drying laundry",
+   "real_src": {
+    "題": "File:Kitagawa Utamaro - Women Hanging Laundry to Dry on a Balcony - 1916.1119 - Cleveland Museum of Art.tif",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kitagawa_Utamaro_-_Women_Hanging_Laundry_to_Dry_on_a_Balcony_-_1916.1119_-_Cleveland_Museum_of_Art.tif/lossy-page1-1920px-Kitagawa_Utamaro_-_Women_Hanging_Laundry_to_Dry_on_a_Balcony_-_1916.1119_-_Cleveland_Museum_of_Art.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Kitagawa_Utamaro_-_Women_Hanging_Laundry_to_Dry_on_a_Balcony_-_1916.1119_-_Cleveland_Museum_of_Art.tif",
+    "検索語": "Ukiyo-e women drying laundry"
+   }
+  },
+  {
+   "id": "F08",
+   "narration": "風水では、陰の気を吸った洗濯物を身につけると、運気が下がるとも言われます。",
+   "tts_text": "ふうすいでは、いんのきを吸ったせんたくものを身につけると、うんきが下がるとも言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "陰の気を吸った服を着ると",
+     "big": "運気が下がる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "F09",
+   "narration": "せっかく洗っても、竿の汚れを、また服に移してしまうのです。",
+   "tts_text": "せっかく洗っても、さおの汚れを、また服に移してしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "せっかく洗っても",
+    "text2": "竿の汚れが、服に移る",
+    "accent": "服に移る"
+   }
+  },
+  {
+   "id": "F10",
+   "narration": "物干し竿は、干す前に一度、きれいにする。風水では、そう言われています。",
+   "tts_text": "ものほしざおは、干す前にいちど、きれいにする。ふうすいでは、そう言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "風水では",
+    "text2": "干す前に一度、きれいに",
+    "accent": "干す前"
+   }
+  },
+  {
+   "id": "F11",
+   "narration": "佐和子さんは、取り込んだ白いブラウスのえりに、灰色の線を見つけました。",
+   "tts_text": "さわこさんは、取り込んだ白いブラウスのえりに、はいいろの線を見つけました。",
+   "image_en": "Inside the small living room of a modest present-day Japanese public housing apartment (danchi), by the open balcony sliding door: Sawako holds up a white blouse she just took in, staring with wide shocked eyes at a straight grey dirty line across the inside of the collar, her other hand pointing at the stain. Afternoon light.",
+   "chars": [
+    "sawako"
+   ],
+   "image": "Inside the small living room of a modest present-day Japanese public housing apartment (danchi), by the open balcony sliding door: Sawako holds up a white blouse she just took in, staring with wide shocked eyes at a straight grey dirty line across the inside of the collar, her other hand pointing at the stain. Afternoon light."
+  },
+  {
+   "id": "F12",
+   "narration": "ちゃんと洗ったのに、どうして。",
+   "card": {
+    "type": "big_text",
+    "text": "ブラウスのえりに",
+    "text2": "ちゃんと洗ったのに",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F13",
+   "narration": "竿にかかっていた所に、まっすぐ、汚れの線がついていたのです。",
+   "tts_text": "さおにかかっていた所に、まっすぐ、汚れの線がついていたのです。",
+   "same_as": "F11"
+  },
+  {
+   "id": "F14",
+   "narration": "竿を拭いたことは、この団地に越してきてから、一度もありませんでした。",
+   "tts_text": "さおをふいたことは、この団地に越してきてから、いちどもありませんでした。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "越してきてから",
+     "big": "竿を拭いたことがない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:s02_A07"
+  },
+  {
+   "id": "F15",
+   "narration": "竿なんて、拭く物だと思わなかった。",
+   "tts_text": "さおなんて、ふくものだと思わなかった。",
+   "card": {
+    "type": "big_text",
+    "text": "物干し竿なんて",
+    "text2": "拭く物だと思わなかった",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F16",
+   "narration": "澄江さんは、干す前に、ぬれた古タオルで、竿をひと拭きしていました。",
+   "tts_text": "すみえさんは、干す前に、ぬれたふるタオルで、さおをひとふきしていました。",
+   "image_en": "Bright morning on a clean small balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands wipe a long metal laundry pole with a damp old towel in one smooth stroke, the wiped part shining; a basket of fresh laundry waits on the clean floor. Only the hands and arms, no face. Warm fresh morning sunlight. No readable text, no logos, no brand names.",
+   "image": "Bright morning on a clean small balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands wipe a long metal laundry pole with a damp old towel in one smooth stroke, the wiped part shining; a basket of fresh laundry waits on the clean floor. Only the hands and arms, no face. Warm fresh morning sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F17",
+   "narration": "かかるのは、端から端まで、ほんの10秒ほどです。",
+   "tts_text": "かかるのは、はしからはしまで、ほんのじゅうびょうほどです。",
+   "same_as": "F16"
+  },
+  {
+   "id": "F18",
+   "narration": "直し方は、干す前に、ぬれた古タオルで、竿をひと拭きすること。",
+   "tts_text": "直しかたは、干す前に、ぬれたふるタオルで、さおをひとふきすること。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "干す前に、竿をひと拭き",
+     "拭いたタオルは、洗濯機へ",
+     "洗濯ばさみも、一緒に拭く"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F19",
+   "narration": "拭いたタオルは、そのまま洗濯機へ入れます。",
+   "tts_text": "ふいたタオルは、そのまませんたっきへ入れます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "干す前に、竿をひと拭き",
+     "拭いたタオルは、洗濯機へ",
+     "洗濯ばさみも、一緒に拭く"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F20",
+   "narration": "洗濯ばさみも、一緒に、さっと拭いておく。",
+   "tts_text": "せんたくばさみも、一緒に、さっとふいておく。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "干す前に、竿をひと拭き",
+     "拭いたタオルは、洗濯機へ",
+     "洗濯ばさみも、一緒に拭く"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F21",
+   "narration": "手すりや物干し竿も、こまめに拭くといいと言われています。",
+   "tts_text": "てすりやものほしざおも、こまめにふくといいと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "手すりも物干し竿も",
+     "big": "こまめに拭く",
+     "size": 120
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "F22",
+   "narration": "毎日、拭かないとだめなの？",
+   "tts_text": "毎日、ふかないとだめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "物干し竿は",
+    "text2": "毎日拭かないとだめ？",
+    "kicker": "毎日"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F23",
+   "narration": "干す前に一度、と言われます。洗濯をする日だけで、十分です。",
+   "tts_text": "干す前にいちど、と言われます。せんたくをする日だけで、十分です。",
+   "card": {
+    "type": "big_text",
+    "text": "洗濯をする日だけ",
+    "text2": "干す前に、一度",
+    "accent": "一度",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F24",
+   "narration": "見て汚れていない日も、拭くの？",
+   "tts_text": "見て汚れていない日も、ふくの？",
+   "card": {
+    "type": "big_text",
+    "text": "汚れて見えない日も",
+    "text2": "拭くの？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F25",
+   "narration": "砂ぼこりは、目に見えなくても、のっています。白いタオルで拭けば、すぐに分かります。",
+   "tts_text": "砂ぼこりは、目に見えなくても、のっています。白いタオルでふけば、すぐに分かります。",
+   "card": {
+    "type": "big_text",
+    "text": "白いタオルで拭けば分かる",
+    "text2": "見えなくても、のっている",
+    "accent": "のっている",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F26",
+   "narration": "佐和子さんも、次の洗濯の日から、竿を拭くようになりました。",
+   "tts_text": "さわこさんも、次のせんたくの日から、さおをふくようになりました。",
+   "same_as": "F16"
+  },
+  {
+   "id": "F27",
+   "narration": "白いブラウスのえりは、もう、灰色になりません。",
+   "tts_text": "白いブラウスのえりは、もう、はいいろになりません。",
+   "card": {
+    "type": "big_text",
+    "text": "ブラウスのえりは",
+    "text2": "もう灰色にならない",
+    "accent": "灰色"
+   }
+  },
+  {
+   "id": "F28",
+   "narration": "竿を拭く10秒が、ただ干すだけの場所を、運を迎える場所に変えるのです。",
+   "tts_text": "さおをふくじゅうびょうが、ただ干すだけの場所を、うんを迎える場所に変えるのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "竿を拭く10秒で",
+     "big": "運を迎える場所に",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "Q01",
+   "narration": "排水口のそばに置くといい物、答えは、緑の鉢植えです。",
+   "tts_text": "はいすいこうのそばに置くといい物、答えは、みどりのはちうえです。",
+   "card": {
+    "type": "big_text",
+    "text": "排水口のそばに置くといい物は",
+    "text2": "緑の鉢植え",
+    "accent": "緑の鉢植え",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q02",
+   "narration": "排水口のそばは、気がよどみやすい所。植物が、そのよどみを払うと言われます。",
+   "tts_text": "はいすいこうのそばは、きがよどみやすい所。植物が、そのよどみを払うと言われます。",
+   "same_as": "E09"
+  },
+  {
+   "id": "Q03",
+   "narration": "枯れた鉢は片づけて、元気な鉢を1つだけ、排水口のそばへ。",
+   "tts_text": "枯れたはちは片づけて、元気なはちをひとつだけ、はいすいこうのそばへ。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "枯れた鉢",
+      "sub": "片づける",
+      "x": true
+     },
+     {
+      "head": "元気な鉢",
+      "sub": "排水口のそばへ"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "Q04",
+   "narration": "第2位で残した元気な鉢を、そのまま動かせばいいのです。",
+   "tts_text": "だいにいで残した元気なはちを、そのまま動かせばいいのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "残した鉢を",
+     "big": "排水口のそばへ",
+     "size": 120
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "G00",
+   "narration": "反対に、金運が上がると言われる行いを、1つ。",
+   "tts_text": "反対に、きんうんが上がると言われる行いを、ひとつ。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "朝、5分だけほうきで掃く",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "金運が上がるベランダの習慣"
+  },
+  {
+   "id": "G01",
+   "narration": "朝、ほうきで、ベランダを5分だけ掃くことです。",
+   "tts_text": "朝、ほうきで、ベランダをごふんだけ掃くことです。",
+   "image_en": "Bright early morning on a clean small concrete balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands hold a small straw broom and sweep a few leaves and sand toward a dustpan, morning sun streaming in through the railing, two green potted plants by the drain. Only the hands and lower arms, no face. Warm golden morning sunlight. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Bright early morning on a clean small concrete balcony of a modest present-day Japanese public housing apartment (danchi): an older woman's hands hold a small straw broom and sweep a few leaves and sand toward a dustpan, morning sun streaming in through the railing, two green potted plants by the drain. Only the hands and lower arms, no face. Warm golden morning sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G02",
+   "narration": "毎日5分のほうきがけで、いい気が入り続けると言われます。",
+   "tts_text": "毎日ごふんのほうきがけで、いいきが入り続けると言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "毎日5分のほうきがけで",
+    "text2": "いい気が、入り続ける",
+    "accent": "いい気"
+   }
+  },
+  {
+   "id": "G03",
+   "narration": "第二の玄関を、毎朝、掃き清める。玄関と同じ考え方です。",
+   "tts_text": "だいにのげんかんを、毎朝、掃き清める。げんかんと同じ考え方です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "第二の玄関を",
+     "big": "毎朝、掃き清める",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "G04",
+   "narration": "ほうきは、ベランダ専用の物を、1本だけ。",
+   "tts_text": "ほうきは、ベランダせんようの物を、いっぽんだけ。",
+   "card": {
+    "type": "rules",
+    "title": "朝、5分だけほうきで掃く",
+    "items": [
+     "朝、5分だけ掃く",
+     "ほうきは、ベランダ専用に",
+     "掃いたごみは、すぐ捨てる"
+    ],
+    "show": 2,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G05",
+   "narration": "掃いたごみは、ためずに、すぐ捨てます。",
+   "card": {
+    "type": "rules",
+    "title": "朝、5分だけほうきで掃く",
+    "items": [
+     "朝、5分だけ掃く",
+     "ほうきは、ベランダ専用に",
+     "掃いたごみは、すぐ捨てる"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "澄江さんは、洗濯物を干す前に、まず、ほうきで掃いていました。",
+   "tts_text": "すみえさんは、せんたくものを干す前に、まず、ほうきで掃いていました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G07",
+   "narration": "掃いていると、割れた洗濯ばさみも、排水口の落ち葉も、すぐ目に入る。澄江さんは、そう言いました。",
+   "tts_text": "掃いていると、割れたせんたくばさみも、はいすいこうの落ち葉も、すぐ目に入る。すみえさんは、そう言いました。",
+   "same_as": "A07"
+  },
+  {
+   "id": "G08",
+   "narration": "朝の5分で、ほかの4つにも、自然と気づけるのです。",
+   "tts_text": "朝のごふんで、ほかのよっつにも、自然と気づけるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "朝の5分で",
+    "text2": "ほかの4つにも、気づける",
+    "accent": "気づける"
+   }
+  },
+  {
+   "id": "G09",
+   "narration": "佐和子さんも、朝の5分を、続けるようになりました。",
+   "tts_text": "さわこさんも、朝のごふんを、続けるようになりました。",
+   "same_as": "E09"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人がベランダでしない5つを、もう一度。",
+   "tts_text": "お金が残る人がベランダでしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れたサンダルをはき続ける",
+     "枯れた鉢と空の鉢を置いたまま",
+     "物干し竿を拭かずに干す"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、割れた洗濯ばさみを使い続ける。第4位、排水口に落ち葉と砂をためる。第3位、汚れたサンダルをはき続ける。",
+   "tts_text": "だいごい、割れたせんたくばさみを使い続ける。だいよんい、はいすいこうに落ち葉と砂をためる。だいさんい、汚れたサンダルをはき続ける。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れたサンダルをはき続ける",
+     "枯れた鉢と空の鉢を置いたまま",
+     "物干し竿を拭かずに干す"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、枯れた鉢と空の鉢を置いたまま。そして第1位、物干し竿を拭かずに干す。",
+   "tts_text": "だいにい、枯れたはちとからのはちを置いたまま。そしてだいいちい、ものほしざおをふかずに干す。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人がベランダでしないこと　5つ",
+    "items": [
+     "割れた洗濯ばさみを使い続ける",
+     "排水口に落ち葉と砂をためる",
+     "汚れたサンダルをはき続ける",
+     "枯れた鉢と空の鉢を置いたまま",
+     "物干し竿を拭かずに干す"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上やっていた人は、まず第1位。次の洗濯の日に、竿をひと拭きしてみてください。",
+   "tts_text": "みっつ以上やっていた人は、まずだいいちい。次のせんたくの日に、さおをひとふきしてみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上やっていたら",
+    "text2": "まず、竿をひと拭き",
+    "accent": "ひと拭き"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "次に、枯れた鉢を片づける。どちらも、お金はかかりません。",
+   "tts_text": "次に、枯れたはちを片づける。どちらも、お金はかかりません。",
+   "card": {
+    "type": "big_text",
+    "text": "竿の次は",
+    "text2": "枯れた鉢を、片づける",
+    "accent": "枯れた鉢"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "直しても、すぐにお金が増えるわけではありません。",
+   "card": {
+    "type": "big_text",
+    "text": "直しても",
+    "text2": "すぐにお金が増えるわけではない",
+    "accent": "すぐに"
+   }
+  },
+  {
+   "id": "K07",
+   "narration": "それでも、洗濯物を干す朝の景色は、その日から変わります。",
+   "tts_text": "それでも、せんたくものを干す朝の景色は、その日から変わります。",
+   "same_as": "E09"
+  },
+  {
+   "id": "K08",
+   "narration": "あなたのベランダは、5つのうち、いくつ当てはまりましたか？",
+   "tts_text": "あなたのベランダは、いつつのうち、いくつ当てはまりましたか？",
+   "card": {
+    "type": "big_text",
+    "text": "あなたのベランダは、5つのうち",
+    "text2": "いくつ当てはまった？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "K09",
+   "narration": "コメントで、数を教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "desc": "あなたのベランダは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "comment": "コメントで、数を教えてくださいね。"
+}
