@@ -23,8 +23,10 @@ THREAD_MAX = 60 * 60  # 1本を待つ上限（秒）。超えたら頼み直す�
 RUNS_MAX = 3
 MOTION = ("添付の絵を、そのまま動き出す5秒の動画にしてください。説明の返事はいりません。\n"
           "絵柄・色・構図・キャラの形と顔は変えない。新しいキャラや物を足さない。文字・字幕を入れない。音はいらない。\n"
-          "動きは小さく、ゆっくり：キャラのまばたき・うなずき・顔の向き・手の小さな動き、湯気・葉・光のゆれ。"
-          "カメラはほとんど動かさない（ごくゆっくり寄るくらい）。\n場面：{scene}")
+          "{move}カメラはほとんど動かさない（ごくゆっくり寄るくらい）。\n場面：{scene}")
+MOVE = "動きは小さく、ゆっくり：キャラのまばたき・うなずき・顔の向き・手の小さな動き、湯気・葉・光のゆれ。"
+# 2026-11-13 psy 反映案4：カットに "act"（キャラの動作1つ）があれば、それだけはっきり動かす。無いカットは今までどおり（ほかのチャンネルも同じ）
+ACT = "キャラの動作を1つだけ、はっきり見える大きさで入れる：{act}。そのほかは小さく、ゆっくり（まばたき・湯気・葉・光のゆれ）。"
 
 
 def main():
@@ -106,7 +108,8 @@ def main():
             tries = log.get(i, {}).get("回", 0) + 1 if not a.force else 1
             try:
                 url = sk.upload_file(os.path.join(img, i + ".png"))
-                tid = sk.send(MOTION.format(scene=cuts[i]["image"]), project, attachments=[url],
+                move = ACT.format(act=cuts[i]["act"]) if cuts[i].get("act") else MOVE
+                tid = sk.send(MOTION.format(scene=cuts[i]["image"], move=move), project, attachments=[url],
                               prefer_models={"VIDEO": [MODEL]}, include_tools=[MODEL])
             except Exception as e:
                 if "409" in str(e) or "429" in str(e) or "limit" in str(e).lower():  # 同時の上限（絵と分け合う）は待って頼み直す
