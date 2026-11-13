@@ -13,7 +13,7 @@ from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVE
 
 GOLDEN =os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
-FRAME = os.path.join(ROOT, "channels", "psy", "golden", "構成見本_v4_2026-10-29.md")  # 競合の伸びた回の骨組み（手順書 v4.0 §3）
+FRAME = os.path.join(ROOT, "channels", "psy", "golden", "構成見本_v5_2026-11-13.md")  # 競合の伸びた回の骨組み（手順書 v4.0 §3。v5 はつかみだけ v4.4 の決まりに合わせた・2026-11-13）
 
 
 def recent(ch, n=9):
