@@ -1,5 +1,5 @@
 {
- "_runs": 2,
+ "_runs": 3,
  "A01": {
   "状態": "失敗",
   "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
