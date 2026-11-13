@@ -1,0 +1,164 @@
+{
+ "ch": "kakure",
+ "work": "_chara_014_海幸山幸",
+ "portrait": false,
+ "made": "2026-11-13 23:46",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, bright even lighting, ancient Japan Kofun-period clothing (mizura hair loops, kinu tunic, hakama trousers). Background must be pure white.",
+ "avoid_en": "text, letters, logos, modern buildings or clothes, Chinese-style robes, nudity, blood, a second separate person",
+ "rules": {},
+ "characters": {
+  "umisachi": {
+   "desc_en": "Umisachihiko (Hoderi), the elder brother, a sturdy fisherman god of ancient Japan about 30 years old, sun-tanned skin, a short neat black beard, black hair tied in mizura loops beside both ears, an indigo Kofun-period kinu tunic with a white rope sash and white hakama trousers tied below the knees, a string of white shell beads, barefoot, a stern proud face",
+   "channel": true
+  },
+  "yamasachi": {
+   "desc_en": "Yamasachihiko (Hoori), the younger brother, a slim young hunter god of ancient Japan about 20 years old, clean-shaven gentle face, black hair tied in mizura loops beside both ears, a moss-green Kofun-period kinu tunic with a brown leather sash and pale hakama trousers tied below the knees with red cords, a green magatama bead necklace, barefoot",
+   "channel": true
+  },
+  "toyotama": {
+   "desc_en": "Toyotamahime, the daughter of the sea god, a graceful young woman about 18 years old, very long black hair loosely tied at the back, a pale sea-green Kofun-period kinu tunic over a long white mo skirt, a sheer pale blue scarf over the shoulders, a necklace of pearls and blue jewels, calm deep eyes",
+   "channel": true
+  },
+  "watatsumi": {
+   "desc_en": "Watatsumi, the old god of the sea, a dignified elderly man with a long white beard and long white hair tied at the top, a deep blue Kofun-period robe with wave patterns and a white sash, a necklace of large pearls, kind but solemn face",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "umisachi_rod",
+   "image": "海幸彦が、長い竹の釣り竿を肩にかつぎ、胸を張って誇らしげに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko stands proudly with chest out, a long bamboo fishing rod resting on his shoulder, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame, no water. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko stands proudly with chest out, a long bamboo fishing rod resting on his shoulder, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame, no water. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "umisachi_demand",
+   "image": "海幸彦が、片手のひらを上に向けて前へ突き出し、「返せ」と強く迫っている全身。怒った顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko thrusts one open palm forward, demanding something back, an angry stern face, leaning forward, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko thrusts one open palm forward, demanding something back, an angry stern face, leaning forward, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "umisachi_refuse",
+   "image": "海幸彦が、腕を組み、顔をそむけてきっぱり断っている全身。かたくなな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko stands with arms firmly crossed, turning his face away, flatly refusing, a stubborn face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko stands with arms firmly crossed, turning his face away, flatly refusing, a stubborn face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "umisachi_drown",
+   "image": "海幸彦が、両腕を上に伸ばしてもがき、おびえた顔で助けを求めている全身（水は描かない）。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko struggles with both arms stretched upward, a frightened face, crying for help, full body, no water drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko struggles with both arms stretched upward, a frightened face, crying for help, full body, no water drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "umisachi_kneel",
+   "image": "海幸彦が、片ひざをつき、頭を深く下げて降参している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko kneels on one knee with his head bowed deeply in surrender, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko kneels on one knee with his head bowed deeply in surrender, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "umisachi_down",
+   "image": "海幸彦が、肩を落としてうつむき、くやしそうにこぶしを握って立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Umisachihiko stands with shoulders slumped and head down, fists clenched in frustration, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "umisachi"
+   ],
+   "en": "Umisachihiko stands with shoulders slumped and head down, fists clenched in frustration, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "yamasachi_bow",
+   "image": "山幸彦が、弓を片手に持ち、穏やかな顔で立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Yamasachihiko stands holding a wooden hunting bow in one hand, a calm gentle face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "yamasachi"
+   ],
+   "en": "Yamasachihiko stands holding a wooden hunting bow in one hand, a calm gentle face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "yamasachi_sad",
+   "image": "山幸彦が、浜に座りこみ、ひざを抱えて泣いている全身（海や砂は描かない）。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Yamasachihiko sits hugging his knees and weeping, full body, no sea or sand drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "yamasachi"
+   ],
+   "en": "Yamasachihiko sits hugging his knees and weeping, full body, no sea or sand drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "yamasachi_jewel",
+   "image": "山幸彦が、青く光る丸い玉を片手に高くかかげ、きりっとした顔で立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Yamasachihiko stands holding up a round glowing blue jewel high in one hand, a determined face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "yamasachi"
+   ],
+   "en": "Yamasachihiko stands holding up a round glowing blue jewel high in one hand, a determined face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "toyotama_stand",
+   "image": "豊玉毘売が、両手を前で重ね、静かにほほえんで立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Toyotamahime stands with her hands folded in front, a quiet gentle smile, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "toyotama"
+   ],
+   "en": "Toyotamahime stands with her hands folded in front, a quiet gentle smile, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "toyotama_turn",
+   "image": "豊玉毘売が、振り返りながら片手を前に出して「見ないで」と止めている全身。真剣な顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Toyotamahime looks back over her shoulder and holds one hand out as if to say do not look, a serious face, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "toyotama"
+   ],
+   "en": "Toyotamahime looks back over her shoulder and holds one hand out as if to say do not look, a serious face, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "toyotama_sad",
+   "image": "豊玉毘売が、うつむいて袖で顔を隠し、悲しそうに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Toyotamahime stands with her head bowed, hiding her face with her long sleeve, sad and ashamed, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "toyotama"
+   ],
+   "en": "Toyotamahime stands with her head bowed, hiding her face with her long sleeve, sad and ashamed, full body, fully clothed. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "watatsumi_stand",
+   "image": "綿津見神が、堂々と立ち、穏やかに見下ろしている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Watatsumi stands with dignity, looking down calmly, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "watatsumi"
+   ],
+   "en": "Watatsumi stands with dignity, looking down calmly, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "watatsumi_hook",
+   "image": "綿津見神が、小さな釣り針を指先でつまんで前に差し出している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Watatsumi holds out a small fishing hook pinched between his fingertips, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "watatsumi"
+   ],
+   "en": "Watatsumi holds out a small fishing hook pinched between his fingertips, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "watatsumi_jewels",
+   "image": "綿津見神が、両手にそれぞれ丸い玉（右手に青い玉、左手に白い玉）を持って差し出している全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Watatsumi holds out two round jewels, a glowing blue jewel in his right hand and a glowing white jewel in his left hand, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "watatsumi"
+   ],
+   "en": "Watatsumi holds out two round jewels, a glowing blue jewel in his right hand and a glowing white jewel in his left hand, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  }
+ ]
+}

@@ -247,5 +247,28 @@
   "publish_at": "2026-11-21T12:00:00+09:00",
   "uploaded_at": "2026-11-11T22:54:57+09:00",
   "missing": false
+ },
+ {
+  "work": "S025_切出_なまこの口",
+  "video_id": "Wo3nWgNtDVU",
+  "title": "なまこの口はなぜ裂けているのか 古事記では天岩戸の女神アメノウズメが小刀で裂いた【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-22T19:00:00+09:00",
+  "uploaded_at": "2026-11-13T23:43:40+09:00",
+  "missing": false
+ },
+ {
+  "work": "S026_図鑑_天狗",
+  "video_id": "xNGYP_NY0XE",
+  "title": "日本書紀の天狗は鼻の高い山の妖怪ではなく雷の音で流れた星だった【かくれ神図鑑 #7】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-23T12:00:00+09:00",
+  "uploaded_at": "2026-11-13T23:45:57+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
