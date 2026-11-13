@@ -1,0 +1,1236 @@
+{
+ "format": "long",
+ "type": "C",
+ "frame": "C-4",
+ "hook_type": "問い",
+ "sub_copy": 3,
+ "line_copy": 3,
+ "pub_date": "",
+ "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員（資格を取るために長く学ぶか迷っている人も含む）",
+ "fun_core": "謎：薬剤師は20代前半から働く人全体より高い年収で出るのに、40代前半で並ばれる。それでも64歳まで足すと差がつくのはなぜか｜自分ごと：あなたの1時間の値段は、薬剤師の40年あまりの約2,860円より上か（年収を、1年間に働いた時間で割る）｜判定：薬剤師は先に出て、並ばれても抜かれず、短い時間で前に残る仕事。割に合うかは、6年の大学を、約1460万円と短い働く時間で取り返せると見るかで決まる",
+ "key_numbers": [
+  "約595万円",
+  "約676万円",
+  "約1460万円多い"
+ ],
+ "promise": "薬剤師の年収が働く人全体とどの年代で並び、どこで差をつけるかが分かり、年収を1年間に働いた時間で割るだけで、自分の1時間の値段を薬剤師と比べられるようになる",
+ "cast": "40代後半の女性の薬剤師。すらりとした背丈、耳の下で切りそろえた黒髪のボブ、細い銀縁の眼鏡、白衣の下に淡い水色のシャツと紺のパンツ。",
+ "characters": {
+  "hero": {
+   "name": "銀縁眼鏡の主役",
+   "desc_en": "A Japanese pharmacist woman in her late forties: slender build, straight black bob cut at jaw length, thin silver-rimmed glasses, calm sharp eyes, wears a crisp white lab coat over a pale blue blouse and navy trousers."
+  },
+  "shinjin": {
+   "name": "のっぽの新人",
+   "desc_en": "A Japanese male pharmacist aged twenty-four: tall and lanky, short slightly messy black hair, earnest nervous face, wears a white lab coat that looks a little too new over a light grey shirt and black trousers."
+  },
+  "sanju": {
+   "name": "腕まくりの先輩",
+   "desc_en": "A Japanese male pharmacist in his early thirties: medium sturdy build, short neat brown-black hair, square jaw and quick expressive eyebrows, wears a white lab coat with rolled sleeves over a dark green polo shirt and beige trousers."
+  },
+  "veteran": {
+   "name": "口ひげのベテラン",
+   "desc_en": "A Japanese male pharmacist in his early sixties: slightly stooped medium build, short white hair and a neat white mustache, reading glasses perched on his nose, kind wrinkled eyes, wears a white lab coat over a brown knit vest and a white shirt."
+  }
+ },
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "avoid": "読める文字、実在の企業のロゴと制服、有名なキャラクターに似た顔、血やけが、裸",
+ "title": "【白衣の給料】薬剤師、40代前半で平均と同じ年収なのに、最後に差がつく理由",
+ "titles": [
+  "【白衣の給料】薬剤師、40代前半で平均と同じ年収なのに、最後に差がつく理由",
+  "薬剤師は割に合うのか。6年大学に通って資格を取り、64歳まで働いた結果",
+  "あなたの1時間は薬剤師より高い？ 処方箋を確かめる仕事と比べたら"
+ ],
+ "thumb_kind": "謎",
+ "thumb_top": "40代で並ばれた薬剤師",
+ "thumb_text": "一度も抜かれない？",
+ "thumb_lines": [
+  "一度も",
+  "抜かれない？"
+ ],
+ "thumb_band": "スタートは高いのに、途中で追いつかれる",
+ "thumb_bg": "C704",
+ "tags": [
+  "薬剤師",
+  "薬剤師 年収",
+  "薬剤師 給料",
+  "薬剤師 生涯年収",
+  "薬剤師 一生",
+  "年収",
+  "給料"
+ ],
+ "competitor_note": "競合メモ6の3（y7ELNcSonJA：章の名前を、年齢とその年齢で分かるお金か事実にし、答えの章に題の問いを書き直し、最後の章を見る人の今の職場に戻す）、7の1（答えの章を全体の80%より後ろに置き、登録の呼びかけと答えの章の間に場面の章（62歳 最後の処方箋）を1つ挟む）、7の3（タイトル1案目を「〜なのに、…差がつく理由」と、理由を書かずに「理由」で終える）を取り入れた。手順書 §3 C-4 のタイトル例の「｜」で2つに分ける形は使わず、競合の伸びた回の1文の形にした",
+ "learn_note": "試す_11-13：書き終えたあと、語り手の描写だけのカット（C101・C201・C301・C401・C408・C601・C603 など）に印を付け、続けて2つあった所が1か所あったので縮めた。4章 C408「閉店のあとは、棚の薬の箱を数えて、足りない分を発注します。」＋C408b「てっぺんの年代は、店の薬の在庫まで、まるごと背負っています。」→ C408b を消し、次を聞き手のツッコミ C409「それ、家計簿よりずっと細かそう。」にして、章の終わり C410 を「今度は、どの年代でしょうか。」の問いで閉じた。減った字は水増しせず、2章 C209 の言い直し（先行の貯金が減る年代）で足した",
+ "desc": "薬剤師を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第1表 職種（小分類）別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229855\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第5表 職種（小分類）、年齢階級別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計）（同上）\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 産業大分類 第1表（全産業の平均） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229868\n・20歳から64歳までの年収の合計は、20〜24歳から60〜64歳までの9つの年齢階級の年収を5年分ずつ足した数です（今年の、年齢ごとに別の人たちの平均。同じ人の記録ではありません）\n・学校教育法 第87条第2項（e-Gov法令検索）https://laws.e-gov.go.jp/law/322AC0000000026\n・薬剤師法 第15条・第19条・第24条（e-Gov法令検索）https://laws.e-gov.go.jp/law/335AC0000000146\n・保険医療機関及び保険医療養担当規則 第20条（e-Gov法令検索）https://laws.e-gov.go.jp/law/332M50000100015\n厚生労働省「令和7年賃金構造基本統計調査」を加工して作成\nこのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。\n\n人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。\n\nチャプター\n{CHAPTERS}\n\n音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+ "cuts": [
+  {
+   "id": "C001",
+   "speaker": "narrator",
+   "narration": "64歳までの年収を足すと、薬剤師は働く人全体よりいくら多いのか。6年も大学に通う仕事の答えで、あなたの1時間が薬剤師より高いかも分かります。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "40～44歳",
+     "45～49歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "64歳までにいくら多い？"
+  },
+  {
+   "id": "C002",
+   "speaker": "listener",
+   "narration": "そんなに通ったなら、億の差がつくでしょ。",
+   "image": "寄り：麻衣が、両手の指で大きな丸を作り、自信満々に胸を張っている。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "そんなにかよったなら、億の差がつくでしょ。"
+  },
+  {
+   "id": "C003",
+   "speaker": "narrator",
+   "narration": "ところが40代前半で、薬剤師の年収は働く人全体に並ばれます。どちらも約595万円。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "40～44歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "40代前半で並ぶ"
+  },
+  {
+   "id": "C004",
+   "speaker": "listener",
+   "narration": "長い勉強の分は、どこに消えたんですか？",
+   "image": "寄り：麻衣が、両手を広げて口をあんぐり開け、目を丸くしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C005",
+   "speaker": "narrator",
+   "narration": "しかも20代前半は、働く人全体よりはっきり高い所から出ています。統計の平均から作った、平均的な薬剤師さんを、24歳から年の順に追います。",
+   "image": "引き：開店前の薬局のカウンターの内側で、主役の薬剤師と新人の薬剤師が、並んで薬の棚を見上げている。棚の箱の字は見えない向き。",
+   "chars": [
+    "hero",
+    "shinjin"
+   ],
+   "label": "統計の平均から作った、平均的な薬剤師さん"
+  },
+  {
+   "id": "C006",
+   "speaker": "listener",
+   "narration": "先に出て並ばれたら、あとは抜かれていくだけ？",
+   "image": "寄り：麻衣が、眉をひそめて腕を組み、首をかしげている。",
+   "chars": [
+    "mai"
+   ],
+   "tease": true
+  },
+  {
+   "id": "C101",
+   "chapter": "24歳 6年通って、ようやく白衣",
+   "speaker": "narrator",
+   "narration": "24歳。新人の薬剤師が、初めて調剤室のカウンターに立ちます。白衣には、まだ折り目がついたままです。",
+   "image": "引き：明るい調剤室のカウンターの内側に、新人の薬剤師が緊張した顔で背すじを伸ばして立っている。",
+   "chars": [
+    "shinjin"
+   ],
+   "label": "24歳 白衣の新人"
+  },
+  {
+   "id": "C102",
+   "speaker": "listener",
+   "narration": "24歳で新人って、ちょっと遅くないですか？",
+   "image": "寄り：麻衣が、指を折って年を数えながら、首をかしげている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C103",
+   "speaker": "narrator",
+   "narration": "薬剤師の試験を受けるには、大学で薬学の6年の課程を卒業する必要があります。",
+   "image": "寄り：夜の大学の図書館で、新人の薬剤師が、分厚い教科書を何冊も積み上げた机に突っ伏しそうになっている。本の字は見えない向き。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "大学は6年"
+  },
+  {
+   "id": "C104",
+   "speaker": "listener",
+   "narration": "友だちが働き出しても、まだ学生なんだ。",
+   "same_as": "C103"
+  },
+  {
+   "id": "C104b",
+   "speaker": "narrator",
+   "narration": "大学を出たあと、国の試験に受かって、ようやく白衣を着られます。",
+   "same_as": "C103"
+  },
+  {
+   "id": "C105",
+   "speaker": "narrator",
+   "narration": "では遅れて出た新人の年収は、働く人全体の20代前半より低いでしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "薬剤師の20代前半の年収、働く人全体の20代前半より？",
+    "choices": [
+     "低い",
+     "高い"
+    ]
+   },
+   "anim": "card",
+   "label": "遅れた分、低い？"
+  },
+  {
+   "id": "C106",
+   "speaker": "listener",
+   "narration": "スタートが遅いなら、低いでしょ。",
+   "same_as": "C105"
+  },
+  {
+   "id": "C107",
+   "speaker": "narrator",
+   "narration": "高いんです。20代前半の薬剤師は、働く人全体の同じ年代を、はっきり上回ります。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "20代前半から高い"
+  },
+  {
+   "id": "C107b",
+   "speaker": "narrator",
+   "narration": "遅れて出た分を、最初の年収の高さで取り返しにいく形です。",
+   "same_as": "C107"
+  },
+  {
+   "id": "C108",
+   "speaker": "listener",
+   "narration": "遅れて出たのに、いきなり前にいる。",
+   "image": "寄り：麻衣が、目を見開いてのけぞり、手に持ったペンを落としかけている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C109",
+   "speaker": "narrator",
+   "narration": "そして、薬を売るために調剤していいのは、原則として薬剤師だけです。",
+   "image": "寄り：新人の薬剤師が、白いトレーの上の錠剤を、へらで慎重に数えている。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "調剤は薬剤師だけ"
+  },
+  {
+   "id": "C110",
+   "speaker": "listener",
+   "narration": "棚の薬、勝手に出したらアウトなんだ。",
+   "same_as": "C109"
+  },
+  {
+   "id": "C111",
+   "speaker": "narrator",
+   "narration": "高い所から出た線。担当を任される30代で、働く人全体との差はどう動くのか。",
+   "image": "引き：夕方の調剤室で、新人の薬剤師と30代の薬剤師が、並んで薬の箱を棚に戻している。",
+   "chars": [
+    "shinjin",
+    "sanju"
+   ]
+  },
+  {
+   "id": "C201",
+   "chapter": "33歳 処方箋の前でかける電話",
+   "speaker": "narrator",
+   "narration": "33歳。昼どきの薬局は、処方箋を持った人で、待合の椅子が埋まります。",
+   "image": "見下ろし：昼の薬局の待合で、椅子が人でいっぱいになり、カウンターの奥で30代の薬剤師が忙しく手を動かしている。",
+   "chars": [
+    "sanju"
+   ]
+  },
+  {
+   "id": "C202",
+   "speaker": "listener",
+   "narration": "早く薬をくれって、みんな顔に出てそう。",
+   "same_as": "C201",
+   "tts_text": "早く薬をくれって、みんなかおに出てそう。"
+  },
+  {
+   "id": "C203",
+   "speaker": "narrator",
+   "narration": "なのに薬剤師が、手を止めて受話器を取ることがあります。",
+   "image": "寄り：30代の薬剤師が、処方箋を片手に、真剣な顔で受話器を耳に当てている。紙の字は見えない向き。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "待たせて電話？"
+  },
+  {
+   "id": "C204",
+   "speaker": "listener",
+   "narration": "え、お客さんを待たせて電話ですか？",
+   "same_as": "C203"
+  },
+  {
+   "id": "C205",
+   "speaker": "narrator",
+   "narration": "処方箋に疑わしい点があれば、出した医師に確かめるまで、調剤してはいけません。",
+   "image": "見上げ：30代の薬剤師が、受話器を肩にはさんだまま、処方箋と薬の箱を見比べて眉を寄せている。字は見えない向き。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "確かめるまで出せない"
+  },
+  {
+   "id": "C206",
+   "speaker": "listener",
+   "narration": "お医者さんに、待ったをかける仕事なんだ。",
+   "image": "寄り：麻衣が、片手を前に突き出して「待った」のポーズをしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C206b",
+   "speaker": "narrator",
+   "narration": "問い合わせのあとで、薬の量や種類が変わることもあります。",
+   "image": "見下ろし：30代の薬剤師が、受話器を置いて、トレーの錠剤を別の箱の錠剤に取り替えている。箱の字は見えない向き。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "電話で薬が変わる"
+  },
+  {
+   "id": "C206c",
+   "speaker": "listener",
+   "narration": "薬剤師の一言で、薬が変わるんですか？",
+   "same_as": "C206b"
+  },
+  {
+   "id": "C207",
+   "speaker": "narrator",
+   "narration": "では30代前半、働く人全体との年収の差は、広がるでしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "30代前半、薬剤師と働く人全体の年収の差は？",
+    "choices": [
+     "広がる",
+     "縮まる"
+    ]
+   },
+   "anim": "card",
+   "label": "差は広がる？"
+  },
+  {
+   "id": "C208",
+   "speaker": "listener",
+   "narration": "経験を積んだら、差は広がるでしょ。",
+   "same_as": "C207"
+  },
+  {
+   "id": "C209",
+   "speaker": "narrator",
+   "narration": "縮まります。30代前半で、2本の線の差はぐっと小さくなります。先行の貯金が、目に見えて減る年代です。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "25～29歳",
+     "30～34歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "差がぐっと縮む"
+  },
+  {
+   "id": "C210",
+   "speaker": "listener",
+   "narration": "先に出た分の貯金が、もう減ってきた。",
+   "image": "寄り：麻衣が、空っぽの財布を逆さにして振り、がっかりしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C210b",
+   "speaker": "narrator",
+   "narration": "働く人全体の線は、20代後半から30代にかけて、急な坂を一気に登ってきます。",
+   "image": "見上げ：坂道の下で、30代の薬剤師が、自転車で勢いよく坂を登っていく会社員たちの背中を見送っている。",
+   "chars": [
+    "sanju"
+   ]
+  },
+  {
+   "id": "C211",
+   "speaker": "narrator",
+   "narration": "ちなみに病院でもらう処方箋には、使える期限があります。",
+   "image": "寄り：30代の薬剤師が、カウンター越しに受け取った処方箋の日付の欄を指でなぞっている。字は見えない向き。",
+   "chars": [
+    "sanju"
+   ]
+  },
+  {
+   "id": "C212",
+   "speaker": "listener",
+   "narration": "財布に入れっぱなしでも、平気ですよね？",
+   "image": "寄り：麻衣が、財布から折りたたんだ紙を取り出し、気まずそうに笑っている。紙の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C213",
+   "speaker": "narrator",
+   "narration": "原則、もらった日を含めて4日以内です。",
+   "image": "寄り：30代の薬剤師が、申し訳なさそうな顔で、両手で小さくバツ印を作っている。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "処方箋は4日以内"
+  },
+  {
+   "id": "C214b",
+   "speaker": "narrator",
+   "narration": "期限を過ぎた処方箋は、そのままでは薬に替えられません。",
+   "same_as": "C213"
+  },
+  {
+   "id": "C214",
+   "speaker": "listener",
+   "narration": "週末をはさんだら、すぐ切れちゃう。",
+   "same_as": "C213"
+  },
+  {
+   "id": "C215",
+   "speaker": "narrator",
+   "narration": "縮まり始めた差は、40代前半でどこまで来るのか。手がかりは、薬を最後に確かめる年代にあります。",
+   "image": "引き：閉店後の薬局で、30代の薬剤師が、レジを締める主役の薬剤師を横目で見ている。",
+   "chars": [
+    "sanju",
+    "hero"
+   ]
+  },
+  {
+   "id": "C301",
+   "chapter": "42歳 平均に並ばれた年",
+   "speaker": "narrator",
+   "narration": "42歳。この年代の薬剤師は、若手が用意した薬を、最後に確かめる側に回っています。",
+   "image": "見下ろし：調剤室の台で、主役の薬剤師が、新人の薬剤師がそろえた薬の袋を一つずつ開けて確かめている。",
+   "chars": [
+    "hero",
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C302",
+   "speaker": "narrator",
+   "narration": "この年代、薬剤師と働く人全体の年収の差は、どれくらいでしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "40代前半、薬剤師と働く人全体の年収の差は？",
+    "choices": [
+     "まだ大きい",
+     "ほぼゼロ"
+    ]
+   },
+   "anim": "card",
+   "label": "差はどれくらい？"
+  },
+  {
+   "id": "C303",
+   "speaker": "listener",
+   "narration": "あれだけ学んだんだし、まだ大きいでしょ。",
+   "same_as": "C302"
+  },
+  {
+   "id": "C304",
+   "speaker": "narrator",
+   "narration": "ほぼゼロです。40代前半は、薬剤師も働く人全体も、約595万円。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "30～34歳",
+     "40～44歳"
+    ]
+   },
+   "anim": "card",
+   "strong": true,
+   "wow": true,
+   "label": "どちらも約595万円"
+  },
+  {
+   "id": "C305",
+   "speaker": "narrator",
+   "narration": "20代前半ではっきりあった差が、ここでちょうど消えます。",
+   "image": "寄り：主役の薬剤師が、給与明細の封筒を手に、眼鏡の奥で目を細めている。封筒の字は見えない向き。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C305b",
+   "speaker": "narrator",
+   "narration": "6年かけて付けた先行を、40代の入り口でいったん使い切った形です。",
+   "image": "見下ろし：調剤室の机で、主役の薬剤師が、空になった砂時計を指でそっと倒している。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "先行を使い切る",
+   "tts_text": "6年かけてつけた先行を、40代の入り口でいったん使い切った形です。"
+  },
+  {
+   "id": "C306",
+   "speaker": "listener",
+   "narration": "じゃあ私の年収と比べたら、どっちが上？",
+   "image": "寄り：麻衣が、スマホを片手に首をかしげている。画面は見えない向き。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "じゃあ私の年収と比べたら、どっちがうえ？"
+  },
+  {
+   "id": "C307",
+   "speaker": "narrator",
+   "narration": "薬剤師の年収と、薬剤師を含む産業の離職率を、ほかの職業と並べた表を作りました。概要欄のLINEから受け取れます。",
+   "chart": {
+    "kind": "tokuten"
+   },
+   "anim": "card",
+   "line": true,
+   "label": "主な職業の一覧表"
+  },
+  {
+   "id": "C308",
+   "speaker": "narrator",
+   "narration": "表の中には、もう1つ気になる差があります。薬剤師の平均年齢は、働く人全体より若いんです。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "平均年齢",
+     "勤続年数"
+    ],
+    "highlight": "平均年齢"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "平均年齢は若め"
+  },
+  {
+   "id": "C309",
+   "speaker": "listener",
+   "narration": "若い人が多いなら、ベテランは少なめ？",
+   "image": "寄り：麻衣が、虫めがねをのぞくしぐさで目を細めている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C310",
+   "speaker": "narrator",
+   "narration": "今の勤め先にいる年数も、働く人全体より短めです。",
+   "image": "引き：薬局の休憩室で、主役の薬剤師が、送別の花束を抱えた同僚の薬剤師に拍手を送っている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "勤続年数も短め"
+  },
+  {
+   "id": "C311",
+   "speaker": "listener",
+   "narration": "同じ所に長くいないと、上がりにくいのに。",
+   "same_as": "C310",
+   "tts_text": "同じ所に長くいないと、あがりにくいのに。"
+  },
+  {
+   "id": "C312",
+   "speaker": "narrator",
+   "narration": "それでも線は、40代前半まで働く人全体を下回っていません。このまま抜かれていくのか、答えの一片は40代後半の調剤室にあります。",
+   "image": "見上げ：夜の調剤室で、主役の薬剤師が、天井まで届く薬の引き出しの壁を見上げている。引き出しの字は見えない。",
+   "chars": [
+    "hero"
+   ],
+   "label": "このまま抜かれる？"
+  },
+  {
+   "id": "C401",
+   "chapter": "47歳 並ばれた線のその先",
+   "speaker": "narrator",
+   "narration": "47歳。店のシフトを組み、新人の質問に次々と答えるのが、この年代の薬剤師です。",
+   "image": "引き：薬局の奥の机で、主役の薬剤師が、横から質問する新人の薬剤師にペンで指し示しながら答えている。",
+   "chars": [
+    "hero",
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C402",
+   "speaker": "narrator",
+   "narration": "では40代後半の薬剤師の年収は、働く人全体と比べてどうなるでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "question": "40代後半の薬剤師の年収、働く人全体と比べて？",
+    "choices": [
+     "抜かれる",
+     "また引き離す"
+    ]
+   },
+   "anim": "card",
+   "label": "ついに抜かれる？"
+  },
+  {
+   "id": "C403",
+   "speaker": "listener",
+   "narration": "一度並ばれたし、もう抜かれてるでしょ。",
+   "same_as": "C402"
+  },
+  {
+   "id": "C404",
+   "speaker": "narrator",
+   "narration": "また引き離します。40代後半の年収は、約676万円。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "40～44歳",
+     "45～49歳"
+    ]
+   },
+   "anim": "card",
+   "strong": true,
+   "wow": true,
+   "label": "40代後半 約676万円"
+  },
+  {
+   "id": "C405",
+   "speaker": "listener",
+   "narration": "並ばれた直後に、急に跳ねた！",
+   "image": "寄り：麻衣が、椅子から飛び上がりそうになって、両手をばんざいしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C405b",
+   "speaker": "narrator",
+   "narration": "入った頃の20代前半から登ってきた線の、いちばん高い所です。",
+   "same_as": "C404"
+  },
+  {
+   "id": "C406",
+   "speaker": "narrator",
+   "narration": "山のてっぺんで、働く人全体の同じ年代を、はっきり上回ります。",
+   "image": "見上げ：主役の薬剤師が、調剤室の脚立の上から、いちばん高い棚の薬の箱に手を伸ばしている。箱の字は見えない向き。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "ここが山の頂上"
+  },
+  {
+   "id": "C407",
+   "speaker": "listener",
+   "narration": "一回並ばれて、また逃げるんだ。",
+   "same_as": "C406"
+  },
+  {
+   "id": "C407b",
+   "speaker": "narrator",
+   "narration": "40代前半に並ばれてから、すぐ次の年代で引き離したことになります。",
+   "same_as": "C406"
+  },
+  {
+   "id": "C408",
+   "speaker": "narrator",
+   "narration": "閉店のあとは、棚の薬の箱を数えて、足りない分を発注します。",
+   "image": "見下ろし：閉店後の薬局で、主役の薬剤師が、引き出しの中の箱を指で一つずつ数えている。箱の字は見えない向き。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C409",
+   "speaker": "listener",
+   "narration": "それ、家計簿よりずっと細かそう。",
+   "same_as": "C408"
+  },
+  {
+   "id": "C410",
+   "speaker": "narrator",
+   "narration": "ただ山のてっぺんの先で、線はもう一度、同じ出来事にぶつかります。今度は、どの年代でしょうか。",
+   "image": "引き：夜の薬局の前で、主役の薬剤師がシャッターを下ろし、60代の薬剤師がその横で鍵を持って待っている。",
+   "chars": [
+    "hero",
+    "veteran"
+   ]
+  },
+  {
+   "id": "C501",
+   "chapter": "53歳 もう一度、並ばれる",
+   "speaker": "narrator",
+   "narration": "53歳。薬剤師の年収の線は、40代後半の山から少し下ります。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "45～49歳",
+     "50～54歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "山から少し下る"
+  },
+  {
+   "id": "C502",
+   "speaker": "narrator",
+   "narration": "一方、働く人全体の線は、50代になってもまだ登っています。上り坂は50代後半まで続きます。",
+   "image": "見上げ：主役の薬剤師が、駅の長い階段の下から、前を登っていく大勢の会社員の背中を見上げている。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C503",
+   "speaker": "listener",
+   "narration": "まさか、また並ばれる？",
+   "image": "寄り：麻衣が、両手で顔をおおい、指のすき間からのぞいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C504",
+   "speaker": "narrator",
+   "narration": "50代前半、2本の線は、もう一度ほとんど並びます。40代前半に続いて、二度目です。",
+   "image": "寄り：主役の薬剤師が、レジ横で、隣の店の会社員と同時に財布を開き、目を合わせて苦笑いしている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "50代でまた並ぶ"
+  },
+  {
+   "id": "C505",
+   "speaker": "listener",
+   "narration": "抜かれそうで抜かれない、ずっと接戦だ。",
+   "same_as": "C504"
+  },
+  {
+   "id": "C505b",
+   "speaker": "narrator",
+   "narration": "この年代は、お薬手帳をめくり、ほかの病院の薬との飲み合わせまで確かめます。",
+   "image": "寄り：60代の薬剤師が、老眼鏡をずらして、客の差し出した小さな手帳のページをめくっている。手帳の字は見えない向き。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "飲み合わせも確認"
+  },
+  {
+   "id": "C506",
+   "speaker": "narrator",
+   "narration": "では60代前半。働く人全体の年収は大きく下がります。薬剤師はどうでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "question": "60代前半の薬剤師の年収は？",
+    "choices": [
+     "同じく大きく下がる",
+     "下がり方が小さい"
+    ]
+   },
+   "anim": "card",
+   "label": "60代はどうなる？"
+  },
+  {
+   "id": "C507",
+   "speaker": "listener",
+   "narration": "60歳の区切りは、どこも一緒でしょ。",
+   "same_as": "C506"
+  },
+  {
+   "id": "C508",
+   "speaker": "narrator",
+   "narration": "薬剤師も下がります。ただ、下がり方は働く人全体より小さいんです。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "50～54歳",
+     "55～59歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "下がり方は小さい"
+  },
+  {
+   "id": "C509",
+   "speaker": "narrator",
+   "narration": "60代前半の薬剤師は、働く人全体の同じ年代を、また上回ります。下がり方の小ささが、そのまま差になります。",
+   "image": "寄り：60代の薬剤師が、カウンターで薬袋を手渡しながら、目じりにしわを寄せて笑っている。袋の字は見えない向き。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "60代で、また前へ"
+  },
+  {
+   "id": "C510",
+   "speaker": "listener",
+   "narration": "終盤で、また前に出るんだ。",
+   "same_as": "C509"
+  },
+  {
+   "id": "C511",
+   "speaker": "narrator",
+   "narration": "次の回も、別の職場の数字を届けます。見逃したくない方は、チャンネル登録をしておいてください。",
+   "image": "引き：夕方の薬局の前で、60代の薬剤師が、帰っていく年配の客に手を振っている。",
+   "chars": [
+    "veteran"
+   ],
+   "subscribe": true,
+   "label": "チャンネル登録",
+   "tts_text": "次の回も、別の職場の数字を届けます。見逃したくないかたは、チャンネル登録をしておいてください。"
+  },
+  {
+   "id": "C512",
+   "speaker": "narrator",
+   "narration": "並ばれては離す、をくり返した線。64歳までの働く時間を足すと、もう1つの差が出てきます。",
+   "image": "見下ろし：夜の調剤室の机に、60代の薬剤師が、使い込んだ腕時計を外して置いている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C601",
+   "chapter": "62歳 最後の処方箋",
+   "speaker": "narrator",
+   "narration": "62歳。ベテランの薬剤師が、カウンター越しに、年配の女性へ薬の飲み方を説明しています。",
+   "image": "引き：薬局のカウンターで、60代の薬剤師が身を乗り出し、白髪の女性に薬の袋を見せながら話している。袋の字は見えない向き。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C602",
+   "speaker": "listener",
+   "narration": "その説明、私なら何度も聞き直します。",
+   "same_as": "C601"
+  },
+  {
+   "id": "C603",
+   "speaker": "narrator",
+   "narration": "相手が分かるまで、言い方を変えてくり返す。後ろに列ができていても、早口にはなりません。",
+   "image": "寄り：60代の薬剤師が、指で朝・昼・夜を数えるしぐさをしながら、ゆっくり口を動かしている。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "分かるまで、くり返す"
+  },
+  {
+   "id": "C604",
+   "speaker": "narrator",
+   "narration": "ここで、20歳から64歳までに働いた時間を足してみます。薬剤師の方が、働く人全体より短い。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "20〜64歳の労働時間の合計"
+    ],
+    "highlight": "20〜64歳の労働時間の合計"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "働く時間の合計は短い"
+  },
+  {
+   "id": "C605",
+   "speaker": "listener",
+   "narration": "短いって、せいぜい数日でしょ？",
+   "image": "寄り：麻衣が、指を2本立てて、軽い調子で笑っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C606",
+   "speaker": "narrator",
+   "narration": "約3,300時間短い。",
+   "image": "寄り：60代の薬剤師が、壁の大きな丸時計を見上げ、眼鏡を指で押し上げている。時計に数字は無い。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "約3,300時間短い"
+  },
+  {
+   "id": "C606b",
+   "speaker": "narrator",
+   "narration": "1日8時間で数えると、約413日分少なく働く計算です。",
+   "image": "見下ろし：薬局の休憩室の壁に、めくり終えたカレンダーが何冊も積み重なっている。字は見えない。",
+   "wow": true,
+   "label": "約413日分少ない"
+  },
+  {
+   "id": "C607",
+   "speaker": "listener",
+   "narration": "時間は短いのに、年収の線は負けてない？",
+   "image": "寄り：麻衣が、目を細めて、手のひらの上で見えない天びんを量るしぐさをしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C608",
+   "speaker": "narrator",
+   "narration": "月の労働時間でも、薬剤師は働く人全体より短めです。1回ごとは小さな差でも、64歳まで積もります。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "月の労働時間"
+    ],
+    "highlight": "月の労働時間"
+   },
+   "anim": "card",
+   "label": "月の時間も短め"
+  },
+  {
+   "id": "C609",
+   "speaker": "listener",
+   "narration": "短く働いて並ぶなら、時間の値段は高い？",
+   "same_as": "C608"
+  },
+  {
+   "id": "C610",
+   "speaker": "narrator",
+   "narration": "ただ、並ばれた40代前半と50代前半は、年収の差がほとんどありません。",
+   "image": "見下ろし：閉店後の調剤室で、60代の薬剤師と主役の薬剤師が、机に広げた書類をはさんで腕を組んでいる。書類の字は読めない。",
+   "chars": [
+    "veteran",
+    "hero"
+   ]
+  },
+  {
+   "id": "C611",
+   "speaker": "listener",
+   "narration": "じゃあ足しても、差はたいしたことないかも。",
+   "same_as": "C610"
+  },
+  {
+   "id": "C611b",
+   "speaker": "narrator",
+   "narration": "20代で付けた先行も、40代前半で一度、きれいに使い切っています。",
+   "same_as": "C610"
+  },
+  {
+   "id": "C612",
+   "speaker": "narrator",
+   "narration": "差がほとんど無い年代もある。それでも、1年ずつ全部足した合計は、ごまかせません。",
+   "image": "引き：夜の薬局で、60代の薬剤師が白衣を脱ぎ、灯りの消えかけた調剤室を振り返っている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C701",
+   "chapter": "答え 並ばれた薬剤師は、どこで差をつけたのか",
+   "speaker": "narrator",
+   "narration": "64歳までの年収の合計を、働く人全体と並べます。薬剤師は約2億5800万円。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "20〜64歳の年収の合計"
+    ],
+    "highlight": "20〜64歳の年収の合計"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "合計 約2億5800万円"
+  },
+  {
+   "id": "C702",
+   "speaker": "listener",
+   "narration": "全体だって、億はいってるでしょ？",
+   "image": "寄り：麻衣が、身を乗り出して、ごくりとつばを飲み込んでいる。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "全体だって、億わいってるでしょ？"
+  },
+  {
+   "id": "C703",
+   "speaker": "narrator",
+   "narration": "働く人全体より、約1460万円多い。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "20〜64歳の年収の合計"
+    ],
+    "highlight": "20〜64歳の年収の合計"
+   },
+   "anim": "card",
+   "peak": true,
+   "strong": true,
+   "wow": true,
+   "label": "約1460万円多い"
+  },
+  {
+   "id": "C704",
+   "speaker": "listener",
+   "narration": "並ばれてたのに、そんなに差がつくの？",
+   "image": "寄り：夜の調剤室で、主役の薬剤師が、薄い給与明細を両手で握りしめ、眼鏡がずり落ちるほど目を大きく見開き、口を大きく開けて驚いている。背景は暗く、天井まで続く薬の引き出しの壁のシルエット、顔と胸から上にだけ強い光。主役は画面の真ん中の高さのやや右に、胸から上の大きさで写り、上と下に2割ずつ空きがある。明細の字は見えない向き。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C705",
+   "speaker": "narrator",
+   "narration": "まず、20代と30代の先行。",
+   "image": "引き：朝の調剤室で、新人の薬剤師と30代の薬剤師が、開店前の棚に並んで薬を補充している。",
+   "chars": [
+    "shinjin",
+    "sanju"
+   ]
+  },
+  {
+   "id": "C705b",
+   "speaker": "narrator",
+   "narration": "次に、40代後半の山。最後に、60代の下がりにくさです。",
+   "image": "見上げ：主役の薬剤師と60代の薬剤師が、薬局の前の坂の上に並んで立ち、下の町を見下ろしている。",
+   "chars": [
+    "hero",
+    "veteran"
+   ]
+  },
+  {
+   "id": "C705c",
+   "speaker": "narrator",
+   "narration": "並ばれた年代でも、一度も抜かれていません。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "30～34歳",
+     "40～44歳",
+     "45～49歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "payoff": true,
+   "wow": true,
+   "label": "一度も抜かれない"
+  },
+  {
+   "id": "C706",
+   "speaker": "listener",
+   "narration": "負けない年が、ずっと積み重なったんだ。",
+   "image": "寄り：麻衣が、積み木を一段ずつ積み上げるしぐさをして、感心した顔でうなずいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C706b",
+   "speaker": "narrator",
+   "narration": "並ばれるたびに、次の年代で前に出る。その積み重ねが、約1460万円です。",
+   "same_as": "C705c"
+  },
+  {
+   "id": "C707",
+   "speaker": "narrator",
+   "narration": "しかも働いた時間は短い。1時間の値段でも、薬剤師の方が高い。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "40年あまりを時給に直すと"
+    ],
+    "highlight": "40年あまりを時給に直すと"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "1時間でも上"
+  },
+  {
+   "id": "C709",
+   "speaker": "narrator",
+   "narration": "これは今年の、年齢ごとに別の人たちの平均を足した数です。同じ人の記録ではありません。",
+   "image": "見下ろし：調剤室の台の上に、使い込んだ薬さじと電卓と、新品の白衣がたたんで並んでいる。字は見えない。",
+   "tts_text": "これは今年の、年齢ごとに別の人たちの平均を足した数です。おなじひとの記録ではありません。"
+  },
+  {
+   "id": "C708",
+   "speaker": "listener",
+   "narration": "短く働いて、時間の値段でも勝つのか。",
+   "image": "寄り：麻衣が、腕時計と電卓を見比べ、悔しそうに唇をかんでいる。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C710",
+   "speaker": "narrator",
+   "narration": "判定です。薬剤師は、先に出て、並ばれても抜かれず、短い時間で前に残る仕事。",
+   "image": "寄り：主役の薬剤師が、白衣のえりを正し、眼鏡の奥からまっすぐ前を見ている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "短い時間で前に残る"
+  },
+  {
+   "id": "C711",
+   "speaker": "narrator",
+   "narration": "割に合うかは、6年の大学をどう見るかで決まります。",
+   "image": "引き：朝の薬局の前で、新人の薬剤師と60代の薬剤師が、並んでシャッターを上げている。",
+   "chars": [
+    "shinjin",
+    "veteran"
+   ]
+  },
+  {
+   "id": "C711b",
+   "speaker": "narrator",
+   "narration": "約1460万円と短い時間で取り返せると見るなら、割に合います。",
+   "image": "寄り：新人の薬剤師が、新しい白衣のえりを両手で引いて、胸を張って笑っている。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "取り返せるか"
+  },
+  {
+   "id": "C712",
+   "speaker": "listener",
+   "narration": "大学の学費と比べたら、私は迷うかも。",
+   "image": "寄り：麻衣が、片手で頬づえをつき、もう片方の手で指を折りながら悩んでいる。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C801",
+   "chapter": "まとめ 職場の時計で測る、あなたの1時間",
+   "speaker": "narrator",
+   "narration": "あなたの1時間の値段は、年収を、1年間に働いた時間で割ると出ます。",
+   "image": "見下ろし：夜の台所のテーブルで、陽子が源泉徴収票を伏せて置き、電卓をたたいている。紙の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ],
+   "label": "年収÷1年の時間"
+  },
+  {
+   "id": "C801b",
+   "speaker": "narrator",
+   "narration": "比べる相手は、薬剤師の64歳までの1時間、約2,860円です。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "40年あまりを時給に直すと"
+    ],
+    "highlight": "40年あまりを時給に直すと"
+   },
+   "anim": "card",
+   "label": "薬剤師 約2,860円"
+  },
+  {
+   "id": "C802",
+   "speaker": "listener",
+   "narration": "割ってみたら、薬剤師にぜんぜん届かない。",
+   "image": "寄り：麻衣が、電卓を持ったまま、ぽかんと口を開けている。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C803",
+   "speaker": "narrator",
+   "narration": "約2,860円より高ければ、薬剤師より1時間の値段が高い働き方です。",
+   "image": "寄り：会社の休憩室で、健二が電卓をたたき、眉を上げてのぞき込んでいる。電卓の字は見えない向き。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C803b",
+   "speaker": "narrator",
+   "narration": "低ければ、年収か働く時間で近づけます。",
+   "image": "引き：夕方のオフィスで、麻衣が壁の時計を見上げ、パソコンを閉じて立ち上がろうとしている。時計に数字は無い。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C804",
+   "speaker": "listener",
+   "narration": "どっちも、言うほど簡単じゃない。",
+   "image": "寄り：麻衣が、両手に見えない重りを持つしぐさで、左右を見比べている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C805",
+   "speaker": "narrator",
+   "narration": "薬剤師の給料は、高いスタートと、二度の並びと、短い時間でできていました。",
+   "image": "引き：朝の薬局のカウンターの内側に、新人の薬剤師・主役の薬剤師が並んで立ち、開店を待っている。",
+   "chars": [
+    "shinjin",
+    "hero"
+   ]
+  },
+  {
+   "id": "C806",
+   "speaker": "narrator",
+   "narration": "早く帰る人と残る人、職場で給料が高いのはどちら？コメントで教えてください。",
+   "image": "寄り：会社の休憩室で、茂が湯のみを持ち、陽子と笑いながら話している。",
+   "chars": [
+    "shigeru",
+    "yoko"
+   ]
+  },
+  {
+   "id": "C807",
+   "speaker": "narrator",
+   "narration": "定時に帰る先輩の1時間は、残業続きのあなたの1時間より、高いかもしれません。",
+   "image": "引き：夕方のオフィスで、茂がかばんを持って定時に席を立ち、健二がパソコンの前から振り返っている。画面は見えない向き。",
+   "chars": [
+    "shigeru",
+    "kenji"
+   ]
+  }
+ ]
+}
