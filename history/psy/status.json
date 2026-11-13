@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/017_kanojo_iya",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/018_ikigai_yakuwari",
  "done": [
   "pick",
   "write",
@@ -8,12 +8,12 @@
   "yomi",
   "reading"
  ],
- "started": "2026-11-10T09:40:38+09:00",
+ "started": "2026-11-13T12:25:00+09:00",
  "tries": 0,
  "code": "3e2c2eb1d6b4",
  "stage": "images",
- "updated": "2026-11-10T10:08:22+09:00",
+ "updated": "2026-11-13T12:53:25+09:00",
  "busy": {
-  "images": 23
+  "images": 1
  }
 }
