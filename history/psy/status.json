@@ -5,13 +5,16 @@
   "write",
   "gate_script",
   "voice",
-  "yomi"
+  "yomi",
+  "reading",
+  "images",
+  "motion"
  ],
  "started": "2026-11-13T17:46:26+09:00",
- "tries": 0,
- "code": "18ca6126926f",
- "stage": "reading",
- "updated": "2026-11-10T06:36:24+09:00",
+ "tries": 1,
+ "code": "3a668d019cdd",
+ "stage": "gate_images",
+ "updated": "2026-11-13T20:44:28+09:00",
  "images_back": true,
  "restored": {
   "日時": "2026-11-10T06:27:35+09:00",
@@ -25,5 +28,6 @@
    "images",
    "motion"
   ]
- }
+ },
+ "fixed": true
 }
