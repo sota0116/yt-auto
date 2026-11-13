@@ -1,0 +1,230 @@
+{
+ "title": "【60代】お菓子の缶の小銭、使い道を決めずにためないで",
+ "fiction": true,
+ "world_rules": [
+  "人物は答えのカット（C07）だけに出る、名前を言わない60代の女性（sumie の設定画）。",
+  "語り手のおきぬは姿を出さず、声だけで話す。"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お菓子の缶の小銭で、金運が滞るこれをしていませんか。",
+   "tts_text": "お菓子の缶の小銭で、金運がとどこおるこれをしていませんか。",
+   "subs": [
+    "お菓子の缶の\n小銭で、",
+    "金運が滞る\nこれを",
+    "していませんか。"
+   ],
+   "hook": "缶の小銭は\n寝かせない",
+   "highlight": [
+    "滞る"
+   ],
+   "image_en": "Vertical close-up of an older woman's hands slowly lifting the lid of a round plain metal cookie tin with no printing, revealing it packed to the brim with mixed coins. The tin fills more than half of the frame. Warm kitchen light, wooden table.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical close-up of an older woman's hands slowly lifting the lid of a round plain metal cookie tin with no printing, revealing it packed to the brim with mixed coins. The tin fills more than half of the frame. Warm kitchen light, wooden table."
+  },
+  {
+   "id": "C02",
+   "narration": "それは、使い道を決めずに、ため込むこと。",
+   "subs": [
+    "それは、",
+    "使い道を\n決めずに、",
+    "ため込むこと。"
+   ],
+   "highlight": [
+    "ため込む"
+   ],
+   "image_en": "Vertical close-up of a round plain metal cookie tin with no printing, pushed to the dim back of a kitchen cupboard shelf, coins visible through the slightly open lid, a little dust on the lid. The tin fills more than half of the frame.",
+   "image": "Vertical close-up of a round plain metal cookie tin with no printing, pushed to the dim back of a kitchen cupboard shelf, coins visible through the slightly open lid, a little dust on the lid. The tin fills more than half of the frame."
+  },
+  {
+   "id": "C03",
+   "narration": "65歳を過ぎて、缶はずしりと重いまま。",
+   "subs": [
+    "65歳を過ぎて、",
+    "缶はずしりと\n重いまま。"
+   ],
+   "image_en": "Vertical close-up of an older woman's two hands straining to lift a heavy round plain metal cookie tin full of coins off a shelf, wrists bent with the weight. No face in the frame. The tin fills more than half of the frame.",
+   "image": "Vertical close-up of an older woman's two hands straining to lift a heavy round plain metal cookie tin full of coins off a shelf, wrists bent with the weight. No face in the frame. The tin fills more than half of the frame."
+  },
+  {
+   "id": "C04",
+   "narration": "風水では、回さないお金は流れが滞ると言われています。",
+   "tts_text": "ふうすいでは、まわさないお金は流れがとどこおると言われています。",
+   "subs": [
+    "風水では、",
+    "回さないお金は\n流れが滞ると",
+    "言われています。"
+   ],
+   "highlight": [
+    "流れ"
+   ],
+   "image_en": "Vertical close-up of an old round wooden feng shui compass with concentric rings, resting on a low wooden table beside a few loose coins. No readable letters. The compass fills more than half of the frame. Soft window light.",
+   "real": "Luopan feng shui compass",
+   "real_src": {
+    "題": "File:Small Feng Shui Compass, c. 1800-1894.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Small_Feng_Shui_Compass%2C_c._1800-1894.jpg/1920px-Small_Feng_Shui_Compass%2C_c._1800-1894.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Small_Feng_Shui_Compass,_c._1800-1894.jpg",
+    "検索語": "Luopan feng shui compass"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "目的のない貯金も、金運にはつながらないそうです。",
+   "subs": [
+    "目的のない\n貯金も、",
+    "金運には\nつながらない",
+    "そうです。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ]
+  },
+  {
+   "id": "C06",
+   "narration": "缶の小銭、生活費に使ってもいいのでしょうか。",
+   "subs": [
+    "缶の小銭、",
+    "生活費に\n使っても",
+    "いいのでしょうか。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "答えは、使ってかまいません。",
+   "subs": [
+    "答えは、",
+    "使って\nかまいません。"
+   ],
+   "highlight": [
+    "かまいません"
+   ],
+   "image_en": "Vertical shot of Sumie sitting at her kitchen table holding an open round plain metal cookie tin full of coins in both hands, looking up with a sudden wide-eyed, startled-then-relieved expression, as if she just realized something. The tin is large in the foreground. Warm evening light.",
+   "chars": [
+    "sumie"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical shot of Sumie sitting at her kitchen table holding an open round plain metal cookie tin full of coins in both hands, looking up with a sudden wide-eyed, startled-then-relieved expression, as if she just realized something. The tin is large in the foreground. Warm evening light."
+  },
+  {
+   "id": "C08",
+   "narration": "大事なのは、使う前に行き先を決めること。",
+   "tts_text": "大事なのは、使う前にいきさきを決めること。",
+   "subs": [
+    "大事なのは、",
+    "使う前に\n行き先を",
+    "決めること。"
+   ],
+   "highlight": [
+    "行き先"
+   ],
+   "image_en": "Vertical close-up of an older woman's hand holding a pencil over a small blank slip of paper on a wooden table, next to an open round plain metal tin of coins. The paper shows no writing. No face in the frame.",
+   "image": "Vertical close-up of an older woman's hand holding a pencil over a small blank slip of paper on a wooden table, next to an open round plain metal tin of coins. The paper shows no writing. No face in the frame."
+  },
+  {
+   "id": "C09",
+   "narration": "小さな紙に、使い道を1つだけ書きます。",
+   "tts_text": "小さな紙に、使い道をひとつだけ書きます。",
+   "subs": [
+    "小さな紙に、",
+    "使い道を\n1つだけ書きます。"
+   ],
+   "same_as": "C08",
+   "shots": [
+    "C08@close"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "たとえば、冬の灯油代のように。",
+   "subs": [
+    "たとえば、",
+    "冬の灯油代の\nように。"
+   ],
+   "image_en": "Vertical close-up of a plain red plastic kerosene can with no printing, standing next to a small old-fashioned kerosene heater in a Japanese home in winter. The can fills more than half of the frame. Warm light.",
+   "image": "Vertical close-up of a plain red plastic kerosene can with no printing, standing next to a small old-fashioned kerosene heater in a Japanese home in winter. The can fills more than half of the frame. Warm light."
+  },
+  {
+   "id": "C11",
+   "narration": "その紙を、缶のふたの裏に貼っておきます。",
+   "subs": [
+    "その紙を、",
+    "缶のふたの裏に\n貼っておきます。"
+   ],
+   "image_en": "Vertical close-up of an older woman's fingers pressing a small slip of paper with a piece of tape onto the inside of a round plain metal tin lid. The paper is turned so no writing can be seen. The lid fills more than half of the frame.",
+   "image": "Vertical close-up of an older woman's fingers pressing a small slip of paper with a piece of tape onto the inside of a round plain metal tin lid. The paper is turned so no writing can be seen. The lid fills more than half of the frame."
+  },
+  {
+   "id": "C12",
+   "narration": "ふたを開けるたび、行き先が目に入ります。",
+   "tts_text": "ふたを開けるたび、いきさきが目に入ります。",
+   "subs": [
+    "ふたを\n開けるたび、",
+    "行き先が\n目に入ります。"
+   ],
+   "same_as": "C11",
+   "shots": [
+    "C11@full"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "変わらない月があっても、小銭は暮らしを支えています。",
+   "subs": [
+    "変わらない月が\nあっても、",
+    "小銭は暮らしを\n支えています。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの缶に、行き先のない小銭が眠っていませんか。",
+   "tts_text": "あなたの缶に、いきさきのない小銭が眠っていませんか。",
+   "subs": [
+    "あなたの缶に、",
+    "行き先のない\n小銭が",
+    "眠っていませんか。"
+   ],
+   "highlight": [
+    "行き先"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの缶に、行き先のない小銭が眠っていませんか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #お菓子の空き缶の貯金",
+ "tags": [
+  "金運",
+  "財布",
+  "お菓子の空き缶の貯金",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの缶に、行き先のない小銭が眠っていませんか。"
+}

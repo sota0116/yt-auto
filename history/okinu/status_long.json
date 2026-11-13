@@ -1,17 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/106_ベランダ",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-11-14T01:58:33+09:00",
- "tries": 0,
- "code": "3a668d019cdd",
- "stage": "images",
- "updated": "2026-11-14T02:15:03+09:00",
- "busy": {
-  "images": 1
- }
-}
+{}
