@@ -1,17 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S120_貯金箱の小銭",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S121_レジの前でお札を数える手",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice"
  ],
- "started": "2026-11-10T09:41:00+09:00",
+ "started": "2026-11-13T12:24:40+09:00",
  "tries": 0,
  "code": "3e2c2eb1d6b4",
  "stage": "images",
- "updated": "2026-11-10T09:49:58+09:00",
+ "updated": "2026-11-13T12:29:14+09:00",
  "busy": {
-  "images": 23
+  "images": 1
  }
 }
