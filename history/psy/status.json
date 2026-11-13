@@ -1,19 +1,29 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/018_ikigai_yakuwari",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/016_yoru_kangae",
  "done": [
   "pick",
   "write",
   "gate_script",
   "voice",
-  "yomi",
-  "reading"
+  "yomi"
  ],
- "started": "2026-11-13T12:25:00+09:00",
+ "started": "2026-11-13T17:46:26+09:00",
  "tries": 0,
- "code": "3e2c2eb1d6b4",
- "stage": "images",
- "updated": "2026-11-13T12:53:25+09:00",
- "busy": {
-  "images": 2
+ "code": "18ca6126926f",
+ "stage": "reading",
+ "updated": "2026-11-10T06:36:24+09:00",
+ "images_back": true,
+ "restored": {
+  "日時": "2026-11-10T06:27:35+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "yomi",
+   "reading",
+   "images",
+   "motion"
+  ]
  }
 }

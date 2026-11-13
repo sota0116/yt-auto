@@ -463,17 +463,19 @@ PARK_DAYS = 21  # 後回しにした回は、公開の予定日がこの日数�
 def unpark(ch, kind=None):
     """後回しにした回（history/<ch>/parked.json に status.json の中身を手で移した回）のうち、公開の予定日（pub_plan.json）が
     PARK_DAYS 日以内に来た回を1つ戻す。遠い日の回が台本ゲートで止まって、その間の近い空き枠の回が作られない時に使う
-    （spi 005 事始め 12/04 が止まり、11/02〜11/11 の枠が空いていた。2026-10-30 本人「その間の横動画は？」）"""
+    （spi 005 事始め 12/04 が止まり、11/02〜11/11 の枠が空いていた。2026-10-30 本人「その間の横動画は？」）
+    pub_plan.json が無いチャンネル（psy）は、予定日を見ずに parked.json の先頭から1つ戻す（2026-11-13。絵ができている
+    作り途中の回を、新しいネタより先に作るため）"""
     pp = hpath(ch, f"parked_{kind}.json" if kind else "parked.json")
     parked = jload(pp, [])
-    plan = jload(hpath(ch, "pub_plan.json"), {})
+    plan = jload(hpath(ch, "pub_plan.json"), None)
     lim = (now() + datetime.timedelta(days=PARK_DAYS)).date().isoformat()
     for i, st in enumerate(parked):
-        pub = (plan.get(os.path.basename(st.get("work", ""))) or {}).get("pub_date") or ""
-        if pub and pub <= lim:
+        pub = ((plan or {}).get(os.path.basename(st.get("work", ""))) or {}).get("pub_date") or ""
+        if plan is None or (pub and pub <= lim):
             parked.pop(i)
             jsave(pp, parked)
-            print(f"後回しにしていた {os.path.basename(st['work'])}（公開 {pub}）の続きを作ります", flush=True)
+            print(f"後回しにしていた {os.path.basename(st['work'])}（公開 {pub or '予定日なし'}）の続きを作ります", flush=True)
             return {**st, "started": now().isoformat(timespec="seconds")}  # 72時間で飛ばす決まりは、戻した時から数える
     return {}
 
