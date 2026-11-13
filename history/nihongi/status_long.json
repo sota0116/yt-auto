@@ -4,18 +4,26 @@
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images",
-  "build"
+  "voice"
  ],
  "started": "2026-11-11T09:05:39+09:00",
- "tries": 1,
+ "tries": 0,
  "code": "3a668d019cdd",
- "stage": "gate_video",
- "updated": "2026-11-13T21:11:57+09:00",
- "busy": {
-  "images": 15
- }
+ "stage": "build",
+ "updated": "2026-11-14T01:53:59+09:00",
+ "busy": {},
+ "restored": {
+  "日時": "2026-11-14T01:45:36+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "images",
+   "motion",
+   "gate_images",
+   "build"
+  ]
+ },
+ "images_back": true
 }
