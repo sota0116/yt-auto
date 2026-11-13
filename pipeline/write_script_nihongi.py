@@ -1,7 +1,7 @@
 # ③台本（アナザー日本紀・2026-10-29 新設。千年こよみ write_script_spi.py と同じ形）：Claude（claude -p）に、手順書と見本から script.json を書かせる
 #   python -X utf8 pipeline/write_script_nihongi.py <作業フォルダ> --ch nihongi [--fix]
 # ・作業フォルダには neta.json（pick_neta_nihongi.py が置く。kind が short か long）が先にあること
-# ・書く前に読ませる物：手順書（制作ルール v2.7。全部）・neta.json・見本（ショート S010／横動画 L002）・characters.json・禁止表現・改善ログ（2か所の最後の行）・
+# ・書く前に読ませる物：手順書（制作ルール v2.8。全部）・neta.json・見本（ショート S010／横動画 L002）・characters.json・禁止表現・改善ログ（2か所の最後の行）・
 #   直近の回・競合メモ（あれば）・学び（あれば）・元のショートの台本（横動画の時）
 # ・史実は書き手が WebSearch・WebFetch で調べて "facts" に出どころ付きで書く（手順書 §4）。ずらしたルールは "fiction": true・"world_rules"・"world_terms" に書く
 # ・書く作業には鍵を渡さない（write_script.py と同じ。子のプロセスから鍵の場所と鍵の環境変数を消して動かす）
@@ -152,7 +152,7 @@ def prompt(work, fix):
 作業フォルダ {rel(work)} に script.json を書いてください（今回は{'ショート' if kind == 'short' else '横動画'}）。
 
 ## 先に全部読むファイル（部分読み禁止。手順書は最後の行まで）
-1. {rel(doc(CH, '手順書.md'))}（制作ルール v2.7。このチャンネルの決まりの正本。§0〜§11 を全部読む。ショートは §2〜§6 と §10、横動画は §2〜§4・§5・§7・§10）
+1. {rel(doc(CH, '手順書.md'))}（制作ルール v2.8。このチャンネルの決まりの正本。§0〜§11 を全部読む。ショートは §2〜§6 と §10、横動画は §2〜§4・§5・§7・§10）
 2. {rel(os.path.join(work, 'neta.json'))}（この回の企画・ずらし方・時代・『へえ』の主役の史実。ネタ選びが決めた値。書き換えない）
 3. {rel(GOLDEN[kind])}（見本の台本。形・密度・1カットの長さ・image_en の書き方・決まった文の置き方を借りる。中身の場面・言い回しは写さない）
 4. {rel(os.path.join(CDIR, 'characters', 'characters.json'))}（絵に出る人物と声。chars に書けるのはこの id だけ）
