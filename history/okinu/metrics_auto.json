@@ -431,6 +431,15 @@
    ],
    "取った日": "2026-11-09",
    "再生（公開ページ）": 348
+  },
+  "d7": {
+   "views": 349,
+   "averageViewPercentage": 101.78,
+   "averageViewDuration": 35,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-13",
+   "再生（公開ページ）": 349
   }
  },
  "S109_家計簿のノート": {
@@ -498,11 +507,36 @@
  },
  "103_洗面所": {
   "type": null,
-  "video_id": "dn9l3F1AQio"
+  "video_id": "dn9l3F1AQio",
+  "h72": {
+   "views": 23,
+   "averageViewPercentage": 34.7,
+   "averageViewDuration": 299,
+   "subscribersGained": 0,
+   "直す所": [
+    "26%あたりで急に落ちる（11%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-13",
+   "再生（公開ページ）": 24
+  }
  },
  "S114_エコバッグの底のレシート": {
   "type": null,
-  "video_id": "vC8LKtlxRLY"
+  "video_id": "vC8LKtlxRLY",
+  "h72": {
+   "views": 45,
+   "averageViewPercentage": 57.93000000000001,
+   "averageViewDuration": 20,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "61%あたりで急に落ちる（11%）→ その章を後ろに回し、クイズか山場を手前に置く",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-13",
+   "再生（公開ページ）": 165
+  }
  },
  "S116_お釣りの小銭": {
   "type": null,
@@ -538,5 +572,13 @@
  "009_居間のNG5": {
   "type": "okinu",
   "video_id": "Yd5kxSUj5sc"
+ },
+ "S118_へそくり": {
+  "type": null,
+  "video_id": "3rkvzLGvBxg"
+ },
+ "011_階段と廊下のNG5": {
+  "type": "okinu",
+  "video_id": "TECS2Dr3lUE"
  }
 }
