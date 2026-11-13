@@ -234,6 +234,8 @@ def main():
             ng.append(f"概要欄に「{need}」が無い（§7）")
     if "PR" in d:
         ng.append("概要欄に PR の文字（§7）")
+    if d.strip().startswith(("🎁", "こんな方へ", "LINE")):  # 2026-11-13 v4.7：頭はこの回の場面（見本の古い並びを写さない）
+        ng.append("概要欄の1行目が LINE の段落。この回の場面2行と問い1行を先に置き、LINE の段落はその後ろ（§7）")
     if not 7 <= len(s.get("tags", [])) <= 12:
         warn.append(f"tags {len(s.get('tags', []))}個（7〜10個）")
     # 研究
