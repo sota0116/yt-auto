@@ -1,17 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S124_お菓子の空き缶の貯金",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-11-14T03:42:45+09:00",
- "tries": 0,
- "code": "3a668d019cdd",
- "stage": "images",
- "updated": "2026-11-14T03:46:28+09:00",
- "busy": {
-  "images": 1
- }
-}
+{}
