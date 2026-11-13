@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/023_c4_yakuzai",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/023_c_daiku",
  "done": [
   "pick",
   "write",
@@ -8,11 +8,11 @@
   "yomi",
   "reading"
  ],
- "started": "2026-11-13T20:50:46+09:00",
+ "started": "2026-11-14T02:03:51+09:00",
  "tries": 0,
  "code": "3a668d019cdd",
  "stage": "images",
- "updated": "2026-11-13T21:09:03+09:00",
+ "updated": "2026-11-14T02:30:14+09:00",
  "busy": {
   "images": 1
  }

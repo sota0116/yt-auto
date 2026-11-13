@@ -1,0 +1,22 @@
+{
+ "id": "c_daiku",
+ "title": "大工",
+ "type": "C",
+ "frame": "C",
+ "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+ "window_start": "",
+ "window_end": "",
+ "data_ref": "",
+ "premise_numbers": [],
+ "expected_top": "",
+ "facts_cmd": [
+  "c_facts.py",
+  "make",
+  "{work}",
+  "daiku"
+ ],
+ "hold": false,
+ "made": "2026-11-14",
+ "順番の型": "B",
+ "回した理由": "順番は型Bだったが、作れるネタが無いか決まりに当たるため型Cに回した"
+}
