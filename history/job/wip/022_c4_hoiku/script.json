@@ -1,0 +1,1195 @@
+{
+ "format": "long",
+ "type": "C",
+ "frame": "C-4",
+ "hook_type": "統計",
+ "sub_copy": 1,
+ "line_copy": 2,
+ "pub_date": "",
+ "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員（保育士の仕事を考えている人と、子どもを預けている親も含む）",
+ "fun_core": "謎：保育士は20代前半の年収が働く人全体とほとんど同じなのに、20歳から64歳まで足すと約4910万円少ない。差はどの年代で生まれるのか｜自分ごと：あなたの給料の線は山型か、平らな台地型か（今の年収を入った頃の年収で割り、保育士の約1.4倍と比べる）｜判定：保育士は平均と並んで出て、山の低さで離され、60代でもほとんど下がらない仕事。割に合うかは、高い山より長く平らな線をどう見るかで決まる",
+ "key_numbers": [
+  "約1億9400万円",
+  "約476万円",
+  "約4910万円少ない"
+ ],
+ "promise": "保育士の年収が働く人全体とどの年代で離れるかが分かり、今の年収を入った頃の年収で割るだけで、自分の給料の線が山型か台地型かを確かめられるようになる",
+ "cast": "40代後半の女性の保育士。中くらいの背丈、後ろで一つに結んだ黒髪、明るい目元、薄い桃色のエプロンに白い長袖のシャツと紺のジャージのズボン。",
+ "characters": {
+  "hero": {
+   "name": "40代後半の保育士（主役）",
+   "desc_en": "A Japanese nursery school teacher in her late forties: medium build, black hair tied back in a single low ponytail, bright warm eyes with faint smile lines, wears a pale pink apron over a white long-sleeved shirt and navy track pants."
+  },
+  "shinjin": {
+   "name": "新人の保育士（22歳）",
+   "desc_en": "A Japanese male nursery school teacher aged twenty-two: slim build, short neat black hair, eager boyish face, wears a light green apron over a grey T-shirt and black track pants, with a small towel tucked in his pocket."
+  },
+  "sanju": {
+   "name": "30代前半の保育士",
+   "desc_en": "A Japanese female nursery school teacher in her early thirties: slim athletic build, short brown bob haircut, energetic expressive face, wears a yellow apron with a big front pocket over a navy long-sleeved shirt and grey track pants."
+  },
+  "veteran": {
+   "name": "60代前半の保育士",
+   "desc_en": "A Japanese female nursery school teacher in her early sixties: small sturdy build, short grey permed hair, round glasses on a cord, gentle laugh lines, wears a lavender apron over a beige cardigan and dark brown trousers."
+  }
+ },
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "avoid": "読める文字、実在の企業のロゴと制服、有名なキャラクターに似た顔、血やけが、裸",
+ "title": "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
+ "titles": [
+  "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
+  "保育士として20歳から64歳まで働いたら、年収を全部足した結果は約1億9400万円",
+  "保育士より、あなたの給料の山は高い？ スタートは平均並みの仕事と比べたら"
+ ],
+ "thumb_kind": "落差",
+ "thumb_top": "新人の年収は人並みの保育士",
+ "thumb_text": "何歳で離される？",
+ "thumb_lines": [
+  "何歳で",
+  "離される？"
+ ],
+ "thumb_band": "差がつくのは、新人の時ではなかった",
+ "thumb_bg": "C606",
+ "tags": [
+  "保育士",
+  "保育士 年収",
+  "保育士 給料",
+  "保育士 生涯年収",
+  "保育士 一生",
+  "年収",
+  "給料"
+ ],
+ "competitor_note": "競合メモ6の3（y7ELNcSonJA：章の名前を、年齢とその年齢で分かるお金か事実にし、答えの章に題の問いを書き直し、最後の章を見る人の今に戻す）、7の1（答えの章を全体の80%より後ろに置き、登録の呼びかけと答えの章の間に場面の章（64歳 最後の卒園式）を1つ挟む）、7の3（タイトル1案目を「〜のに、…な差がつく理由」と、理由を書かずに「理由」で終える）を取り入れた。手順書 §3 C-4 のタイトル例の「｜」で2つに分ける形は使わず、競合の伸びた回の1文の形にした",
+ "learn_note": "試す_11-13：書き終えたあと章ごとに描写だけのカットに印を付け、続けて2つあった所を2か所縮めた。① 2章 C206「夕方のお迎えのあとは、壁に飾る作品づくりが待っています。」＋C206b「折り紙の花が、クラスの子の数だけそろうまで、手は止まりません。」→ C206b を消し、次を聞き手のツッコミ C207「それ、家に持ち帰ってやってません？」にした。② 1章 C102「この部屋では、保育士の人数に国の決まりがあります。」＋C102b「保育士の数は、部屋にいる子どもの年齢と人数で決まります。」→ C102 の1文にまとめ、次を聞き手の外れる問い C103「まさか、ひとりで部屋ごと見るんですか？」にした。字数は減った分を水増しせず、手がかりの文（C317・C410c）で足した",
+ "desc": "保育士を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第1表 職種（小分類）別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229855\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第5表 職種（小分類）、年齢階級別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計）（同上）\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 産業大分類 第1表（全産業の平均） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229868\n・20歳から64歳までの年収の合計は、20〜24歳から60〜64歳までの9つの年齢階級の年収を5年分ずつ足した数です（今年の、年齢ごとに別の人たちの平均。同じ人の記録ではありません）\n・児童福祉施設の設備及び運営に関する基準 第33条（e-Gov法令検索）https://laws.e-gov.go.jp/law/323M40000100063\n・児童福祉法 第18条の22・第18条の23（e-Gov法令検索）https://laws.e-gov.go.jp/law/322AC0000000164\n厚生労働省「令和7年賃金構造基本統計調査」を加工して作成\nこのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。\n\n人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。\n\nチャプター\n{CHAPTERS}\n\n音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+ "cuts": [
+  {
+   "id": "C001",
+   "speaker": "narrator",
+   "narration": "64歳まで足すと約1億9400万円の保育士の年収は、何歳で平均から離れるのか。それが分かると、あなたの給料の形も見えてきます。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "30～34歳",
+     "45～49歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "合計 約1億9400万円"
+  },
+  {
+   "id": "C002",
+   "speaker": "listener",
+   "narration": "億なら、もう勝ち組じゃないですか？",
+   "image": "寄り：麻衣が、目を輝かせて両手を大きく広げ、得意げに胸を張っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C003",
+   "speaker": "narrator",
+   "narration": "働く人全体の平均には、届きません。",
+   "image": "見下ろし：夕方の保育室で、主役の保育士が、子どもたちの小さな靴を一足ずつそろえている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "平均には届かない"
+  },
+  {
+   "id": "C004",
+   "speaker": "narrator",
+   "narration": "しかもスタートの20代前半は、働く人全体とほとんど同じ。並んで出た線が、どこかで大きく引き離されるんです。",
+   "image": "引き：桜の咲く4月の園庭で、新人の保育士が子どもたちに囲まれ、照れくさそうに笑っている。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "スタートは平均と同じ"
+  },
+  {
+   "id": "C005",
+   "speaker": "listener",
+   "narration": "同じスタートなのに、何歳で置いていかれるの？",
+   "image": "寄り：麻衣が、腕を組んで首を大きくかしげている。",
+   "chars": [
+    "mai"
+   ],
+   "tease": true
+  },
+  {
+   "id": "C006",
+   "speaker": "narrator",
+   "narration": "早く止まる山型か、平らに続く台地型か、あなたの給料の形も見分けられます。統計の平均から作った、平均的な保育士さんを、22歳から年の順に追います。",
+   "image": "引き：朝の園の門の前で、新人の保育士と主役の保育士が、並んで門を開けている。",
+   "chars": [
+    "shinjin",
+    "hero"
+   ],
+   "label": "統計の平均から作った、平均的な保育士さん"
+  },
+  {
+   "id": "C101",
+   "chapter": "22歳 名乗れるのは資格のある人だけ",
+   "speaker": "narrator",
+   "narration": "4月。22歳の新人が、初めて0歳の赤ちゃんの部屋に入ります。まだ寝返りも打てない子がいます。",
+   "image": "引き：ベビーベッドが並ぶ明るい保育室に、新人の保育士が緊張した顔で一歩入ってくる。",
+   "chars": [
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C102",
+   "speaker": "narrator",
+   "narration": "この部屋では、保育士の人数に国の決まりがあります。子どもの年齢と人数で決まるんです。",
+   "image": "見下ろし：床のマットの上で、新人の保育士が赤ちゃん3人に囲まれて座っている。",
+   "chars": [
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C103",
+   "speaker": "listener",
+   "narration": "まさか、ひとりで部屋ごと見るんですか？",
+   "image": "寄り：麻衣が、両手で頬を押さえて青ざめている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C104",
+   "speaker": "narrator",
+   "narration": "0歳の赤ちゃんなら、おおむね3人に保育士1人以上。",
+   "image": "寄り：新人の保育士が、両腕に1人ずつ赤ちゃんを抱き、足元でもう1人がズボンを引っぱっている。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "赤ちゃん3人に1人"
+  },
+  {
+   "id": "C105",
+   "speaker": "listener",
+   "narration": "全員いっせいに泣いたら、腕が足りない。",
+   "same_as": "C104"
+  },
+  {
+   "id": "C106",
+   "speaker": "narrator",
+   "narration": "そして保育士という名前は、資格を持つ人しか名乗れません。",
+   "image": "寄り：新人の保育士が、胸の名札を指でまっすぐに整え、少し誇らしげに胸を張っている。名札の字は読めない。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "名乗れるのは資格者だけ"
+  },
+  {
+   "id": "C107",
+   "speaker": "listener",
+   "narration": "資格がないのに名乗ったら、決まり違反なんだ。",
+   "same_as": "C106"
+  },
+  {
+   "id": "C108",
+   "speaker": "narrator",
+   "narration": "名前を守られた資格。では、新人の年収はどの高さから始まるのか。",
+   "image": "見上げ：園の廊下で、新人の保育士が、壁いっぱいの子どもの絵を見上げている。絵に字は無い。",
+   "chars": [
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C109",
+   "speaker": "narrator",
+   "narration": "保育士の20代前半の年収は、働く人全体の20代前半より、かなり下でしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "保育士の20代前半の年収、働く人全体の20代前半より？",
+    "choices": [
+     "かなり下",
+     "ほとんど同じ"
+    ]
+   },
+   "anim": "card",
+   "label": "かなり下？"
+  },
+  {
+   "id": "C110",
+   "speaker": "listener",
+   "narration": "給料が安いって聞くし、かなり下でしょ。",
+   "same_as": "C109"
+  },
+  {
+   "id": "C111",
+   "speaker": "narrator",
+   "narration": "ほとんど同じです。20代前半の保育士は、働く人全体と並んでスタートします。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "20代前半は平均並み"
+  },
+  {
+   "id": "C112",
+   "speaker": "listener",
+   "narration": "じゃあ新人のうちは、損してないんだ。",
+   "image": "寄り：麻衣が、ほっとした顔で胸に手を当てている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C113",
+   "speaker": "narrator",
+   "narration": "ただし新人の休み時間は、子どもの昼寝の間にやってきます。",
+   "image": "引き：カーテンを引いた薄暗い保育室で、子どもたちが並んで昼寝をし、新人の保育士がそっと見回っている。",
+   "chars": [
+    "shinjin"
+   ],
+   "wow": true,
+   "label": "休みは昼寝の間"
+  },
+  {
+   "id": "C114",
+   "speaker": "narrator",
+   "narration": "寝息を確かめながら、連絡帳にその日の様子を書く。手は止まりません。",
+   "image": "寄り：新人の保育士が、寝ている子の横で小さな机に向かい、ノートにペンを走らせている。ノートの字は見えない向き。",
+   "chars": [
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C115",
+   "speaker": "listener",
+   "narration": "それ、休憩って呼んでいいんですか？",
+   "same_as": "C114"
+  },
+  {
+   "id": "C116",
+   "speaker": "narrator",
+   "narration": "子どもが起きると、山のような着替えとおむつ替え。泣く子を抱いたまま、次の子の服を探します。",
+   "image": "見下ろし：起きたばかりの子どもたちが、新人の保育士の服を引っぱって集まってくる。",
+   "chars": [
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C116b",
+   "speaker": "listener",
+   "narration": "着替えだけで、ひと仕事終わりそう。",
+   "image": "寄り：麻衣が、山積みの洗濯物を思い浮かべて、げんなりした顔をしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C117",
+   "speaker": "narrator",
+   "narration": "平均と並んで出た線。担任を任される30歳になると、その線はどう動くのか。",
+   "image": "引き：夕方の園庭で、新人の保育士と30代の保育士が、並んで砂場のおもちゃを片付けている。",
+   "chars": [
+    "shinjin",
+    "sanju"
+   ]
+  },
+  {
+   "id": "C201",
+   "chapter": "30歳 25人の前に立つ年",
+   "speaker": "narrator",
+   "narration": "30歳。担任するのは、4歳の子どもたちのクラスです。朝の出席をとるだけで、ひと仕事です。",
+   "image": "引き：明るい保育室で、30代の保育士が、床に座った大勢の子どもたちの前に立ち、両手を広げている。",
+   "chars": [
+    "sanju"
+   ]
+  },
+  {
+   "id": "C202",
+   "speaker": "narrator",
+   "narration": "4歳以上の子どもなら、保育士はおおむね25人に1人以上。",
+   "image": "見下ろし：30代の保育士1人の前に、大勢の子どもたちが座って、いっせいに手を挙げている。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "4歳以上は25人に1人"
+  },
+  {
+   "id": "C203",
+   "speaker": "listener",
+   "narration": "赤ちゃんの時と比べて、急に増えすぎでしょ。",
+   "same_as": "C202"
+  },
+  {
+   "id": "C204",
+   "speaker": "narrator",
+   "narration": "あちこちから、先生見てと呼ばれ続けます。顔を向けるたびに、別の子が手を挙げています。",
+   "image": "寄り：30代の保育士が、四方から子どもたちに袖を引っぱられ、笑いながら目を回している。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "先生見ての嵐"
+  },
+  {
+   "id": "C205",
+   "speaker": "listener",
+   "narration": "トイレに行くひまも、なさそう。",
+   "same_as": "C204"
+  },
+  {
+   "id": "C206",
+   "speaker": "narrator",
+   "narration": "夕方のお迎えのあとは、壁に飾る作品づくりが待っています。",
+   "image": "寄り：誰もいない夕方の保育室で、30代の保育士が、色紙を切って大きな飾りを作っている。",
+   "chars": [
+    "sanju"
+   ],
+   "wow": true,
+   "label": "飾りも手づくり"
+  },
+  {
+   "id": "C207",
+   "speaker": "listener",
+   "narration": "それ、家に持ち帰ってやってません？",
+   "same_as": "C206"
+  },
+  {
+   "id": "C208",
+   "speaker": "narrator",
+   "narration": "では、30代前半の年収は、20代前半から大きく上がったでしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "30代前半の保育士の年収、20代前半から？",
+    "choices": [
+     "大きく上がる",
+     "少しずつ上がる"
+    ]
+   },
+   "anim": "card",
+   "label": "大きく上がる？"
+  },
+  {
+   "id": "C209",
+   "speaker": "listener",
+   "narration": "クラスを任されたなら、大きく上がるでしょ。",
+   "same_as": "C208"
+  },
+  {
+   "id": "C210",
+   "speaker": "narrator",
+   "narration": "少しずつです。線は上がりますが、傾きはだんだんゆるやかになります。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "25～29歳",
+     "30～34歳",
+     "35～39歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "傾きがゆるやかに"
+  },
+  {
+   "id": "C210b",
+   "speaker": "narrator",
+   "narration": "20代後半までの登りに比べると、30代の登りは、小さな段差くらいです。",
+   "image": "見上げ：30代の保育士が、大きな段ボールを抱えて、園の階段の低い段を一段ずつ上っている。",
+   "chars": [
+    "sanju"
+   ]
+  },
+  {
+   "id": "C211",
+   "speaker": "listener",
+   "narration": "任される子は増えたのに、上がり方は小さいんだ。",
+   "image": "寄り：麻衣が、口をとがらせて電卓をにらんでいる。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C212",
+   "speaker": "narrator",
+   "narration": "今の勤め先にいる年数も、保育士は働く人全体の平均より短めです。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "勤続年数",
+     "平均年齢"
+    ],
+    "highlight": "勤続年数"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "勤め先の年数は短め"
+  },
+  {
+   "id": "C213",
+   "speaker": "listener",
+   "narration": "長くいる人が少ないと、上がりにくそう。",
+   "same_as": "C212"
+  },
+  {
+   "id": "C214",
+   "speaker": "narrator",
+   "narration": "ゆるやかに登る線は、どの年齢でてっぺんに着くのか。教える側に回った先輩が、その手がかりです。",
+   "image": "見上げ：30代の保育士が、職員室の窓から、園庭で子どもと走る主役の保育士を見つめている。",
+   "chars": [
+    "sanju",
+    "hero"
+   ]
+  },
+  {
+   "id": "C301",
+   "chapter": "47歳 山のてっぺんの高さ",
+   "speaker": "narrator",
+   "narration": "47歳。この年の保育士は、若い保育士に手遊びを教える側にいます。",
+   "image": "引き：保育室の隅で、主役の保育士が、新人の保育士に手遊びの手つきを見せている。",
+   "chars": [
+    "hero",
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C302",
+   "speaker": "narrator",
+   "narration": "保育士の年収の線は、何歳でてっぺんを迎えるでしょうか。",
+   "chart": {
+    "kind": "quiz",
+    "question": "保育士の年収がいちばん高い年代は？",
+    "choices": [
+     "40代後半",
+     "50代後半"
+    ]
+   },
+   "anim": "card",
+   "label": "山はどの年代？"
+  },
+  {
+   "id": "C303",
+   "speaker": "listener",
+   "narration": "経験の長い50代後半が、いちばん上でしょ。",
+   "same_as": "C302",
+   "tts_text": "経験の長い50代後半が、いちばんうえでしょ。"
+  },
+  {
+   "id": "C304",
+   "speaker": "narrator",
+   "narration": "40代後半です。年収は、約476万円。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "35～39歳",
+     "45～49歳",
+     "55～59歳"
+    ]
+   },
+   "anim": "card",
+   "strong": true,
+   "wow": true,
+   "label": "40代後半 約476万円"
+  },
+  {
+   "id": "C305",
+   "speaker": "listener",
+   "narration": "思ったより早いし、思ったより低い。",
+   "image": "寄り：麻衣が、口をあんぐり開けて、持っていたペンを落としかけている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C306",
+   "speaker": "narrator",
+   "narration": "入った頃の20代前半と比べて、約1.4倍の高さです。長い登りの割に、低い山です。",
+   "image": "寄り：主役の保育士が、職員室の机で給与明細の封筒を手に、小さくうなずいている。封筒の字は見えない向き。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "入った頃の約1.4倍",
+   "tts_text": "入った頃の20代前半と比べて、約1.4倍の高さです。長い登りの割に、低いやまです。"
+  },
+  {
+   "id": "C307",
+   "speaker": "listener",
+   "narration": "長年がんばって、そこまでなんだ。",
+   "same_as": "C306"
+  },
+  {
+   "id": "C308",
+   "speaker": "narrator",
+   "narration": "その山の高さは、ほかの仕事の線と並べると、はっきりします。",
+   "image": "見下ろし：職員室の机に、主役の保育士が書類を並べ、腕を組んで見比べている。書類の字は読めない。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C309",
+   "speaker": "listener",
+   "narration": "私の仕事と比べたら、どっちが上なんだろう。",
+   "image": "寄り：麻衣が、スマホを片手に首をかしげている。画面は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C310",
+   "speaker": "narrator",
+   "narration": "自分の仕事の年収が、ほかの職業と比べてどのあたりか。一覧表で確かめられます。概要欄のLINEからどうぞ。",
+   "chart": {
+    "kind": "tokuten"
+   },
+   "anim": "card",
+   "line": true,
+   "label": "主な職業の一覧表"
+  },
+  {
+   "id": "C311",
+   "speaker": "narrator",
+   "narration": "保育士全体の年収は、働く人全体の平均より下にあります。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "年収"
+    ],
+    "highlight": "年収"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "平均より下"
+  },
+  {
+   "id": "C312",
+   "speaker": "listener",
+   "narration": "山のてっぺんでも、平均に届かないってこと？",
+   "image": "見上げ：麻衣が、両手を合わせて祈るように上を見ている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C313",
+   "speaker": "narrator",
+   "narration": "届きません。しかも働く人全体の線は、40代の後半からも、まだ登り続けます。",
+   "image": "見上げ：主役の保育士が、園庭のすべり台の上から、遠くの山並みを見上げている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "ほかの線はまだ登る"
+  },
+  {
+   "id": "C314",
+   "speaker": "listener",
+   "narration": "こっちが止まった所で、向こうはまだ登るんだ。",
+   "same_as": "C313"
+  },
+  {
+   "id": "C315",
+   "speaker": "narrator",
+   "narration": "それでも47歳の保育士は、運動会の前の夜、ダンスの振り付けを考えています。",
+   "image": "寄り：夜の誰もいない保育室で、主役の保育士が、鏡の前で真剣な顔のまま、かわいいポーズを決めている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "振り付けも自前"
+  },
+  {
+   "id": "C316",
+   "speaker": "listener",
+   "narration": "ダンスの先生まで、兼ねてるんですか？",
+   "same_as": "C315"
+  },
+  {
+   "id": "C316b",
+   "speaker": "narrator",
+   "narration": "保育士の平均年齢は、働く人全体より若い。山の年代は、その少し上にあります。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "平均年齢"
+    ],
+    "highlight": "平均年齢"
+   },
+   "anim": "card",
+   "label": "平均年齢は全体より若い",
+   "tts_text": "保育士の平均年齢は、働く人全体より若い。山の年代は、そのすこしうえにあります。"
+  },
+  {
+   "id": "C317",
+   "speaker": "narrator",
+   "narration": "てっぺんを越えた線は、60代でどこまで下りるのか。早番の門の前に、その手がかりが立っています。",
+   "image": "引き：夕暮れの園庭で、主役の保育士と60代の保育士が、並んで子どもを見送っている。",
+   "chars": [
+    "hero",
+    "veteran"
+   ]
+  },
+  {
+   "id": "C401",
+   "chapter": "62歳 坂を下りない線",
+   "speaker": "narrator",
+   "narration": "62歳。早番の朝、最初に園の門を開けるのは、この年代の保育士です。",
+   "image": "引き：まだ薄暗い朝、60代の保育士が、鍵の束を手に園の門を開けている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C402",
+   "speaker": "listener",
+   "narration": "60代なら、給料はがくっと下がってそう。",
+   "image": "寄り：麻衣が、両手で下向きの矢印の形を作って、肩を落としている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C403",
+   "speaker": "narrator",
+   "narration": "60代前半の保育士の年収は、約443万円。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "45～49歳",
+     "50～54歳",
+     "55～59歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "60代前半 約443万円"
+  },
+  {
+   "id": "C404",
+   "speaker": "narrator",
+   "narration": "40代後半のてっぺんから、ほとんど下がっていません。60歳を越えても、ほぼ同じ高さです。",
+   "image": "寄り：60代の保育士が、子どもを高く抱き上げて、大きな口で笑っている。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "ほとんど下がらない"
+  },
+  {
+   "id": "C405",
+   "speaker": "listener",
+   "narration": "60歳の区切りで、どこも下がるんじゃないの？",
+   "same_as": "C404"
+  },
+  {
+   "id": "C406",
+   "speaker": "narrator",
+   "narration": "働く人全体の線は、60代前半で大きく下がります。保育士の線は、ほぼ平らです。",
+   "image": "見下ろし：昼寝の時間、60代の保育士と30代の保育士が、並んで子どもたちの寝顔を見守っている。",
+   "chars": [
+    "veteran",
+    "sanju"
+   ],
+   "wow": true,
+   "label": "保育士の線はほぼ平ら"
+  },
+  {
+   "id": "C407",
+   "speaker": "listener",
+   "narration": "下がらないのは、ちょっとうらやましい。",
+   "same_as": "C406"
+  },
+  {
+   "id": "C408",
+   "speaker": "narrator",
+   "narration": "しかも表のいちばん端、70歳を過ぎた所に、線のいちばん高い点があります。",
+   "image": "引き：園の玄関で、白髪の70代の保育士が、絵本を広げて子どもたちに読み聞かせている。絵本の字は見えない向き。",
+   "wow": true,
+   "label": "いちばん高いのは70代"
+  },
+  {
+   "id": "C409",
+   "speaker": "listener",
+   "narration": "70代がいちばん上って、何が起きてるの？",
+   "same_as": "C408",
+   "tts_text": "70代がいちばんうえって、何が起きてるの？"
+  },
+  {
+   "id": "C410",
+   "speaker": "narrator",
+   "narration": "その年代の保育士は、人数がぐっと少なくなります。20代前半と比べると、ほんのひと握りです。",
+   "image": "見下ろし：職員室で、60代の保育士が若い保育士たちに囲まれ、お茶を配っている。",
+   "chars": [
+    "veteran",
+    "shinjin"
+   ]
+  },
+  {
+   "id": "C410b",
+   "speaker": "listener",
+   "narration": "少ない人の中で、平均が上がってるだけ？",
+   "image": "寄り：麻衣が、虫めがねをのぞくしぐさで目を細めている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C410c",
+   "speaker": "narrator",
+   "narration": "残った人の中身までは、表は分けていません。山の続きと見るのは、早すぎます。",
+   "image": "寄り：60代の保育士が、湯のみを両手で持ち、にこにこと首をかしげている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C411",
+   "speaker": "narrator",
+   "narration": "保育士には、仕事で知った人の秘密を漏らさない決まりがあります。保育士をやめた後も、です。",
+   "image": "寄り：60代の保育士が、唇に人差し指を当てて、片目をつぶっている。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "やめた後も秘密は守る"
+  },
+  {
+   "id": "C412",
+   "speaker": "listener",
+   "narration": "引退しても、口は閉じたままなんだ。",
+   "same_as": "C411"
+  },
+  {
+   "id": "C413",
+   "speaker": "narrator",
+   "narration": "働き方の数字を、統計から届けています。続きが気になった方は、チャンネル登録で応援してもらえると励みになります。",
+   "image": "引き：夕焼けの園庭で、60代の保育士が、門の前で帰っていく親子に手を振っている。",
+   "chars": [
+    "veteran"
+   ],
+   "subscribe": true,
+   "label": "チャンネル登録"
+  },
+  {
+   "id": "C414",
+   "speaker": "narrator",
+   "narration": "20代は平均と並び、60代は平らな線。では、足した差はどの年代で開いたのか。",
+   "image": "見上げ：夕方の園舎の2階の窓辺で、主役の保育士が腕を組んで考えている。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C415",
+   "speaker": "listener",
+   "narration": "真ん中の年代が、あやしい気がする。",
+   "same_as": "C414"
+  },
+  {
+   "id": "C501",
+   "chapter": "64歳 最後の卒園式",
+   "speaker": "narrator",
+   "narration": "64歳。最後の卒園式で、ベテランの保育士が子どもの名前を呼びます。",
+   "image": "引き：飾り付けたホールで、60代の保育士が、並んだ子どもたちを前に名簿を手に立っている。名簿の字は見えない向き。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C502",
+   "speaker": "listener",
+   "narration": "名前を呼ぶ前から、もう泣いてそう。",
+   "image": "寄り：麻衣が、ハンカチを握りしめて目をうるませている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C503",
+   "speaker": "narrator",
+   "narration": "前の晩には、一人ひとりの名前の読み方を、声に出して確かめていました。",
+   "image": "寄り：夜の台所で、60代の保育士が、眼鏡をずらして名簿を読み上げている。名簿の字は見えない向き。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "前の晩は名前の練習"
+  },
+  {
+   "id": "C504",
+   "speaker": "listener",
+   "narration": "読み方の難しい名前、増えてそうですもんね。",
+   "same_as": "C503"
+  },
+  {
+   "id": "C505",
+   "speaker": "narrator",
+   "narration": "式のあとは、次の春に入ってくる子どもたちのために、小さな椅子を並べ直します。",
+   "image": "見下ろし：誰もいない保育室で、60代の保育士が小さな椅子を一列にそろえている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C505b",
+   "speaker": "listener",
+   "narration": "あの低い椅子、ひざと腰にきそう。",
+   "image": "寄り：麻衣が、腰に手を当てて顔をしかめている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C506",
+   "speaker": "narrator",
+   "narration": "ここで、20歳から64歳までに働いた時間を足してみます。保育士の合計は、働く人全体より短い。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "20〜64歳の労働時間の合計"
+    ],
+    "highlight": "20〜64歳の労働時間の合計"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "働く時間の合計も短い"
+  },
+  {
+   "id": "C507",
+   "speaker": "listener",
+   "narration": "時間が短いなら、そのぶん差も小さく済む？",
+   "image": "寄り：麻衣が、指で丸を作って、期待した顔をしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C508a",
+   "speaker": "narrator",
+   "narration": "1時間の値段に直すと、20歳から64歳までで約2,170円。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "40年あまりを時給に直すと"
+    ],
+    "highlight": "40年あまりを時給に直すと"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "1時間 約2,170円"
+  },
+  {
+   "id": "C508b",
+   "speaker": "narrator",
+   "narration": "働く時間が短い分を割り引いても、1時間の値段は、働く人全体の平均に届きません。",
+   "image": "寄り：主役の保育士が、電卓を打つ手を止め、苦笑いを浮かべている。電卓の字は見えない向き。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C508c",
+   "speaker": "listener",
+   "narration": "時間で割っても、追いつけないんだ。",
+   "same_as": "C508b"
+  },
+  {
+   "id": "C508",
+   "speaker": "narrator",
+   "narration": "では、年収をそのまま1年ずつ足していくと、差はどうなるのか。",
+   "image": "寄り：60代の保育士が、片付けの手を止め、壁のカレンダーをじっと見つめている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C509",
+   "speaker": "listener",
+   "narration": "なんか、嫌な予感しかしない。",
+   "same_as": "C508"
+  },
+  {
+   "id": "C510",
+   "speaker": "narrator",
+   "narration": "20歳から64歳まで、保育士の年収が働く人全体を上回る年代は、1つもありません。20代の小さな差も、50代の大きな差も、同じ向きです。",
+   "image": "引き：夕方の保育室で、60代の保育士が、窓の外を見ながら小さく肩をすくめている。",
+   "chars": [
+    "veteran"
+   ],
+   "wow": true,
+   "label": "上回る年代はゼロ"
+  },
+  {
+   "id": "C511",
+   "speaker": "listener",
+   "narration": "小さな差でも、積もるとどうなるんだろう。",
+   "same_as": "C510"
+  },
+  {
+   "id": "C512",
+   "speaker": "narrator",
+   "narration": "卒園式の拍手より、ずっと静かに積もった差。家計の言葉で言うと、どれくらいになるのか。",
+   "image": "見上げ：卒園式の飾りが残るホールで、60代の保育士が天井の飾りを見上げている。",
+   "chars": [
+    "veteran"
+   ]
+  },
+  {
+   "id": "C601",
+   "chapter": "答え 保育士の差は、何歳で生まれたのか",
+   "speaker": "narrator",
+   "narration": "20歳から64歳までの年収の合計を、働く人全体の平均と、横に並べます。",
+   "image": "引き：夜の職員室で、主役の保育士が1人、机のスタンドの明かりの下で書類を広げている。書類の字は読めない。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C602",
+   "speaker": "listener",
+   "narration": "差は、車1台分くらいでしょ。",
+   "image": "寄り：麻衣が、指を1本立てて、自信ありげにうなずいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C603",
+   "speaker": "narrator",
+   "narration": "約4910万円少ない。",
+   "chart": {
+    "kind": "vs_national",
+    "items": [
+     "20〜64歳の年収の合計"
+    ],
+    "highlight": "20〜64歳の年収の合計"
+   },
+   "anim": "card",
+   "peak": true,
+   "strong": true,
+   "wow": true,
+   "label": "約4910万円少ない"
+  },
+  {
+   "id": "C604",
+   "speaker": "listener",
+   "narration": "家が1軒建つ差じゃないですか。",
+   "same_as": "C603"
+  },
+  {
+   "id": "C605",
+   "speaker": "narrator",
+   "narration": "これは今年の、年齢ごとに別の人たちの平均を足した数です。同じ人の記録ではありません。",
+   "image": "見下ろし：職員室の机の上に、子どもたちの描いた似顔絵と電卓が並んでいる。絵に字は無い。",
+   "tts_text": "これは今年の、年齢ごとに別の人たちの平均を足した数です。おなじひとの記録ではありません。"
+  },
+  {
+   "id": "C606",
+   "speaker": "narrator",
+   "narration": "それでも、20代で並んでいた線が、これほど離れます。",
+   "image": "寄り：夜の職員室で、主役の保育士が、薄い給与明細を両手で握りしめ、目を大きく見開き、口を大きく開け、額に冷や汗を浮かべて青ざめている。背景は暗く、壁に子どもたちの絵のシルエット、顔と胸から上にだけ強い光。主役は画面の真ん中の高さのやや右に、胸から上の大きさで写り、上と下に2割ずつ空きがある。明細の字は見えない向き。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "並んでいた線が離れる"
+  },
+  {
+   "id": "C607",
+   "speaker": "listener",
+   "narration": "じゃあ、開いたのは30代から50代？",
+   "image": "寄り：麻衣が、名探偵のように指をびしっと前に突き出している。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C608",
+   "speaker": "narrator",
+   "narration": "そうです。保育士の線は、ゆるやかに登って、40代後半で早めに止まります。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "30～34歳",
+     "45～49歳",
+     "55～59歳",
+     "60～64歳"
+    ]
+   },
+   "anim": "card",
+   "payoff": true,
+   "wow": true,
+   "label": "差は真ん中の年代で"
+  },
+  {
+   "id": "C609",
+   "speaker": "narrator",
+   "narration": "働く人全体の線が、50代の後半まで登り続ける間に、差が積もっていきました。",
+   "image": "見上げ：主役の保育士が、職員室の窓に映る自分の顔を見つめ、ゆっくり息をはいている。",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "C610",
+   "speaker": "listener",
+   "narration": "山が低くて、てっぺんが早いってことか。",
+   "same_as": "C609"
+  },
+  {
+   "id": "C614",
+   "speaker": "narrator",
+   "narration": "判定です。保育士は、平均と並んで出て、山の低さで離される仕事。",
+   "image": "寄り：主役の保育士が、エプロンのひもをきゅっと結び直し、まっすぐ前を見ている。",
+   "chars": [
+    "hero"
+   ],
+   "wow": true,
+   "label": "山の低さで離される"
+  },
+  {
+   "id": "C615",
+   "speaker": "narrator",
+   "narration": "そのかわり、60代でも線がほとんど下がりません。",
+   "same_as": "C614"
+  },
+  {
+   "id": "C616",
+   "speaker": "narrator",
+   "narration": "割に合うかは、高い山より、長く平らな線をどう見るかで決まります。",
+   "image": "引き：朝の園庭で、60代の保育士と主役の保育士が、並んで子どもたちを迎えている。",
+   "chars": [
+    "veteran",
+    "hero"
+   ],
+   "wow": true,
+   "label": "平らな線をどう見るか"
+  },
+  {
+   "id": "C617",
+   "speaker": "listener",
+   "narration": "高い山か平らな道かは、性格で分かれそう。",
+   "same_as": "C616",
+   "tts_text": "高いやまか平らな道かは、性格で分かれそう。"
+  },
+  {
+   "id": "C701",
+   "chapter": "まとめ あなたの給料は山型か台地型か",
+   "speaker": "narrator",
+   "narration": "あなたの給料の線は、どちらでしょう。今の年収を、入った頃の年収で割ってください。",
+   "chart": {
+    "kind": "age_line",
+    "measure": "年収_万円",
+    "marks": [
+     "20～24歳",
+     "45～49歳"
+    ]
+   },
+   "anim": "card",
+   "label": "今の年収÷入った頃"
+  },
+  {
+   "id": "C701b",
+   "speaker": "listener",
+   "narration": "入った頃の年収なんて、もう覚えてない。",
+   "image": "寄り：麻衣が、頭をかきながら、気まずそうに笑っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C701c",
+   "speaker": "narrator",
+   "narration": "入った年の源泉徴収票の、支払金額の欄で分かります。",
+   "image": "見下ろし：家の引き出しを開けて、陽子が古い書類の束をめくっている。書類の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ],
+   "label": "入った年の源泉徴収票"
+  },
+  {
+   "id": "C702",
+   "speaker": "narrator",
+   "narration": "保育士の山は、入った頃の約1.4倍でした。それより大きければ、保育士より高い山を登っています。",
+   "image": "寄り：会社の休憩室で、健二が電卓をたたき、眉を上げて画面をのぞき込んでいる。電卓の字は見えない向き。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C703",
+   "speaker": "listener",
+   "narration": "割ったら、入った頃とほぼ横ばいでした。",
+   "image": "寄り：麻衣が、電卓を持ったまま、ぽかんと口を開けている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C704",
+   "speaker": "narrator",
+   "narration": "それなら、あなたの線は保育士と同じ、平らな台地型に近いかもしれません。",
+   "image": "見下ろし：休憩室の机で、茂が麻衣に、手のひらで平らな線を描くしぐさをして見せている。",
+   "chars": [
+    "shigeru",
+    "mai"
+   ]
+  },
+  {
+   "id": "C705",
+   "speaker": "listener",
+   "narration": "平らなら、60代で落ちないことに賭けるしかない。",
+   "same_as": "C704"
+  },
+  {
+   "id": "C706",
+   "speaker": "narrator",
+   "narration": "保育士の給料は、平均と同じスタートと、低い山と、下りない坂でできていました。",
+   "image": "引き：朝の園の門の前で、新人の保育士と60代の保育士が、並んで子どもたちを迎えている。",
+   "chars": [
+    "shinjin",
+    "veteran"
+   ]
+  },
+  {
+   "id": "C707",
+   "speaker": "narrator",
+   "narration": "あなたの職場で、給料がいちばん高いのは何歳の人ですか。コメントで教えてください。",
+   "image": "寄り：会社の休憩室で、茂が湯のみを持ち、陽子と笑いながら話している。",
+   "chars": [
+    "shigeru",
+    "yoko"
+   ]
+  },
+  {
+   "id": "C708",
+   "speaker": "narrator",
+   "narration": "職場でいちばん年上の先輩の線は、山の向こう側か、平らな道の上か。",
+   "image": "引き：朝の職場で、健二が、出勤してきた茂の背中をちらりと見ている。",
+   "chars": [
+    "kenji",
+    "shigeru"
+   ],
+   "tts_text": "職場でいちばん年上の先輩の線は、山の向こう側か、平らな道のうえか。"
+  }
+ ]
+}
