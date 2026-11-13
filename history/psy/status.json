@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/016_yoru_kangae",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/011_kanojo_iya",
  "done": [
   "pick",
   "write",
@@ -13,14 +13,13 @@
   "build",
   "gate_video"
  ],
- "started": "2026-11-13T17:46:26+09:00",
+ "started": "2026-11-14T03:42:15+09:00",
  "tries": 1,
  "code": "3a668d019cdd",
  "stage": "thumb",
- "updated": "2026-11-14T02:56:02+09:00",
- "images_back": true,
+ "updated": "2026-11-14T04:53:12+09:00",
  "restored": {
-  "日時": "2026-11-14T01:43:58+09:00",
+  "日時": "2026-11-14T03:42:15+09:00",
   "前の済み": [
    "pick",
    "write",

@@ -525,5 +525,51 @@
    ]
   },
   "short_video_id": "6Ih7okYWhA0"
+ },
+ {
+  "work": "016_yoru_kangae",
+  "type": "眠りと夜",
+  "frame": "眠りと夜",
+  "neta_id": "p_yoru_kangae",
+  "jobs": [],
+  "made": "2026-11-14",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】夜になると考えごとが止まらない人に共通する5つの特徴｜心配の9割は起きなかった",
+  "titles": [
+   "【心理学】夜になると考えごとが止まらない人に共通する5つの特徴｜心配の9割は起きなかった",
+   "【心理学】夜になると考えごとが止まらない人、実は疲れた頭が心配を大きく見せています。",
+   "【心理学】夜の心配が朝には小さく見える人の「意外な特徴」｜眠りの間に、気持ちが和らいでいた"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-11-07 の「次の回で試すこと」から1つ：3 概要欄の「📌この動画でわかること」の2行に、毎日の言葉を先に書いてから研究の言葉「深い眠り」「レム睡眠」を「」で入れた（台本の語りは「夢を見る眠り」「脳の波がゆっくりになる深い眠り」の言いかえのまま）。1 の年代の言葉は、中心の研究がほとんど18〜30歳の若い人の実験なので、タイトルに入れていない（§3 の3の6）。2 の相手のセリフは人づきあいの回ではないので使っていない。タイトルの1番目は型B（直近 015 型A・014 型A・013 型D）で、頭の20字で誰の何の話かが分かる形にした。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:08 夜の考えごとは、めずらしくない",
+   "2:39 特徴1　疲れた頭は、心配に強く反応",
+   "4:49 特徴2　眠れない夜は、翌日に残る",
+   "6:50 特徴3　朝には、心配が縮んで見える",
+   "8:59 特徴4　答えは、眠ったあとに出る",
+   "11:09 特徴5　心配の9割は、起きなかった",
+   "13:26 夜の考えごとと付き合う3つの工夫",
+   "15:45 まとめ"
+  ],
+  "video_id": "rQxyP5TIED8",
+  "回した理由": null,
+  "studies": [
+   "American Psychological Association (2013) Stress in America: Are Teens Adopting Adults' Stress Habits?",
+   "Yoo, Gujar, Hu, Jolesz & Walker (2007) Current Biology",
+   "Ben Simon, Rossi, Harvey & Walker (2019) Nature Human Behaviour",
+   "van der Helm, Yao, Dutt, Rao, Saletin & Walker (2011) Current Biology",
+   "Wagner, Gais, Haider, Verleger & Born (2004) Nature",
+   "LaFreniere & Newman (2020) Behavior Therapy",
+   "Scullin, Krueger, Ballard, Pruett & Bliwise (2018) Journal of Experimental Psychology: General",
+   "Wood, Joseph, Lloyd & Atkins (2009) Journal of Psychosomatic Research"
+  ],
+  "short_video_id": "0p2jbxM2iUQ"
  }
 ]

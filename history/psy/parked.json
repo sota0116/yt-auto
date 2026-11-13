@@ -1,23 +1,5 @@
 [
  {
-  "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/011_kanojo_iya",
-  "done": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "yomi",
-   "reading",
-   "images",
-   "motion"
-  ],
-  "started": "2026-11-02T00:30:18+09:00",
-  "tries": 0,
-  "code": "6da8e04a7ee7",
-  "stage": "gate_images",
-  "updated": "2026-11-02T03:08:20+09:00"
- },
- {
   "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/018_ikigai_yakuwari",
   "done": [
    "pick",
