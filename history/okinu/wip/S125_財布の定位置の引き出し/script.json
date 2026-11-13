@@ -1,0 +1,237 @@
+{
+ "title": "【60代】寝る前に財布を「ここ」から必ず出して",
+ "fiction": true,
+ "world_rules": [
+  "語り手のおきぬが、財布の置き場所の言い伝えを紹介する。物が主役で、名前のある人物の場面は無い",
+  "C09 だけ、名乗らない60代の女性が、バッグから財布を出してはっとする"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "お金が逃げるこれ、財布をバッグで寝かせていませんか。",
+   "tts_text": "お金が逃げるこれ、財布をバッグでねかせていませんか。",
+   "subs": [
+    "お金が逃げる\nこれ、",
+    "財布を\nバッグで",
+    "寝かせて\nいませんか。"
+   ],
+   "hook": "財布は\n引き出しへ",
+   "highlight": [
+    "お金が逃げる"
+   ],
+   "image_en": "Close-up of an older woman's hands setting down a beige leather handbag onto a wooden dining chair in a dim Japanese home in the evening, the bag's zipper half open. Only hands visible, no face. Warm lamp light.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Close-up of an older woman's hands setting down a beige leather handbag onto a wooden dining chair in a dim Japanese home in the evening, the bag's zipper half open. Only hands visible, no face. Warm lamp light."
+  },
+  {
+   "id": "C02",
+   "narration": "帰って、財布をバッグに入れっぱなし。",
+   "tts_text": "かえって、財布をバッグにいれっぱなし。",
+   "subs": [
+    "帰って、\n財布をバッグに",
+    "入れっぱなし。"
+   ],
+   "highlight": [
+    "入れっぱなし"
+   ],
+   "image_en": "Extreme close-up looking down into an open beige handbag, a brown leather wallet lying inside among a folded handkerchief and a plain glasses case. The wallet fills more than half of the frame. Soft evening light.",
+   "motion": true,
+   "anim": "kling",
+   "image": "Extreme close-up looking down into an open beige handbag, a brown leather wallet lying inside among a folded handkerchief and a plain glasses case. The wallet fills more than half of the frame. Soft evening light."
+  },
+  {
+   "id": "C03",
+   "narration": "居間の椅子で、鍵と並んで夜明けを待つ。",
+   "tts_text": "いまのいすで、かぎと並んで夜明けを待つ。",
+   "subs": [
+    "居間の椅子で、",
+    "鍵と並んで\n夜明けを待つ。"
+   ],
+   "image_en": "The same beige handbag still sitting on a wooden dining chair, now in pale early morning light coming through a window with plain curtains, the room quiet and empty. The bag fills more than half of the frame.",
+   "image": "The same beige handbag still sitting on a wooden dining chair, now in pale early morning light coming through a window with plain curtains, the room quiet and empty. The bag fills more than half of the frame."
+  },
+  {
+   "id": "C04",
+   "narration": "これは、財布がひと息つけない寝床とされます。",
+   "tts_text": "これは、財布がひといきつけないねどことされます。",
+   "subs": [
+    "これは、\n財布が",
+    "ひと息つけない\n寝床と",
+    "されます。"
+   ],
+   "highlight": [
+    "ひと息つけない"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ]
+  },
+  {
+   "id": "C05",
+   "narration": "昔から、連れ歩いた財布もぐったりすると言われています。",
+   "tts_text": "むかしから、つれあるいた財布もぐったりすると言われています。",
+   "subs": [
+    "昔から、\n連れ歩いた",
+    "財布も\nぐったりすると",
+    "言われています。"
+   ],
+   "image_en": "Close-up of a slightly worn brown leather wallet resting in the open palm of an older woman's hand, its edges softly creased, gentle warm light. Only the hand and wallet visible. The wallet fills more than half of the frame.",
+   "image": "Close-up of a slightly worn brown leather wallet resting in the open palm of an older woman's hand, its edges softly creased, gentle warm light. Only the hand and wallet visible. The wallet fills more than half of the frame."
+  },
+  {
+   "id": "C06",
+   "narration": "ひと晩くつろがせて、金運を立て直す考えです。",
+   "tts_text": "ひとばんくつろがせて、きんうんをたてなおす考えです。",
+   "subs": [
+    "ひと晩\nくつろがせて、",
+    "金運を\n立て直す",
+    "考えです。"
+   ],
+   "highlight": [
+    "くつろがせて"
+   ],
+   "same_as": "C05",
+   "shots": [
+    "C05@close"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "ただ、外へ出せば済む話でもないの。",
+   "subs": [
+    "ただ、\n外へ出せば",
+    "済む話でも\nないの。"
+   ],
+   "image_en": "Close-up of a brown leather wallet left alone on a wooden dining table next to a teacup, seen at an angle in evening light. The wallet fills more than half of the frame.",
+   "image": "Close-up of a brown leather wallet left alone on a wooden dining table next to a teacup, seen at an angle in evening light. The wallet fills more than half of the frame."
+  },
+  {
+   "id": "C08",
+   "narration": "靴箱の上、流しの横、食卓への置きっぱなしも避けたい所。",
+   "tts_text": "くつばこの上、ながしのよこ、しょくたくへの置きっぱなしも避けたいところ。",
+   "subs": [
+    "靴箱の上、\n流しの横、",
+    "食卓への\n置きっぱなしも",
+    "避けたい所。"
+   ],
+   "highlight": [
+    "置きっぱなし"
+   ],
+   "same_as": "C07",
+   "shots": [
+    "C07@full"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "バッグの中で夜を越すのは、やめておいて。",
+   "tts_text": "バッグの中でよるをこすのは、やめておいて。",
+   "subs": [
+    "バッグの中で\n夜を越すのは、",
+    "やめておいて。"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "image_en": "Sawako at night in her modest Japanese living room, pulling a brown leather wallet out of her beige handbag, eyes wide with a sudden realization, one hand lifted. Warm lamp light.",
+   "image": "Sawako at night in her modest Japanese living room, pulling a brown leather wallet out of her beige handbag, eyes wide with a sudden realization, one hand lifted. Warm lamp light."
+  },
+  {
+   "id": "C10",
+   "narration": "おすすめは、引き出しの奥で寝かせること。",
+   "tts_text": "おすすめは、ひきだしのおくでねかせること。",
+   "subs": [
+    "おすすめは、",
+    "引き出しの奥で\n寝かせること。"
+   ],
+   "highlight": [
+    "引き出し"
+   ],
+   "image_en": "Close-up of an older woman's hands gently placing a brown leather wallet into an open shallow wooden drawer that is otherwise empty and tidy. Only hands visible. The drawer and wallet fill more than half of the frame. Soft warm light.",
+   "motion": true,
+   "anim": "kling",
+   "peak": true,
+   "strong": true,
+   "image": "Close-up of an older woman's hands gently placing a brown leather wallet into an open shallow wooden drawer that is otherwise empty and tidy. Only hands visible. The drawer and wallet fill more than half of the frame. Soft warm light."
+  },
+  {
+   "id": "C11",
+   "narration": "邪気を払う白いハンカチでくるめば、なお良しとされます。",
+   "tts_text": "じゃきをはらう白いハンカチでくるめば、なおよしとされます。",
+   "subs": [
+    "邪気を払う\n白いハンカチで",
+    "くるめば、\nなお良しと",
+    "されます。"
+   ],
+   "highlight": [
+    "白いハンカチ"
+   ],
+   "image_en": "Close-up from above of a brown leather wallet wrapped loosely in a plain white cotton handkerchief, resting inside an open wooden drawer. The wrapped wallet fills more than half of the frame. Calm soft light.",
+   "image": "Close-up from above of a brown leather wallet wrapped loosely in a plain white cotton handkerchief, resting inside an open wooden drawer. The wrapped wallet fills more than half of the frame. Calm soft light."
+  },
+  {
+   "id": "C12",
+   "narration": "家にある引き出しで、十分です。",
+   "tts_text": "いえにあるひきだしで、じゅうぶんです。",
+   "subs": [
+    "家にある\n引き出しで、",
+    "十分です。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ]
+  },
+  {
+   "id": "C13",
+   "narration": "すぐ変わらなくても、気長にどうぞ。",
+   "subs": [
+    "すぐ\n変わらなくても、",
+    "気長にどうぞ。"
+   ],
+   "same_as": "C11",
+   "shots": [
+    "C11@full"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの財布の寝床は、いまどこですか。",
+   "tts_text": "あなたの財布のねどこは、いまどこですか。",
+   "subs": [
+    "あなたの財布の\n寝床は、",
+    "いまどこですか。"
+   ],
+   "highlight": [
+    "寝床"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@full"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布の寝床は、いまどこですか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #財布の定位置の引き出",
+ "tags": [
+  "金運",
+  "財布",
+  "財布の定位置の引き出",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布の寝床は、いまどこですか。"
+}
