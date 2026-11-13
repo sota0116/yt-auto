@@ -1,0 +1,290 @@
+{
+ "format": "short",
+ "title": "もしも上杉鷹山の米沢藩で、借金が頭の上に見えたら。17歳の殿だけ今の120億円 #もしも #日本史 #江戸時代",
+ "promise": "上杉鷹山は1767年に17歳で米沢藩主になり、そのとき藩の借金は20万両（米の値で今の約120億円）にのぼったとされ、1773年に藩政をにぎっていた重臣たちを処罰した、と人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※米沢藩の人の頭の上に「背負っている藩の借金」が見える話と、その数字、重臣たちが自分から城を去る話は作り話です。1767年（明和4年）に上杉治憲（鷹山）が17歳で米沢藩主になったこと、そのときの藩の借財が20万両にのぼったとされること、大倹約令から改革を始め、漆・桑・楮を各100万本植えたこと、1773年（安永2年）に藩政をにぎっていた重臣たちを処罰したことは史実をもとにしています。今のお金への直し方は、貨幣博物館の目安（18世紀の1両は米の値で約6万円）によります。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "上杉鷹山",
+  "米沢藩",
+  "藩政改革",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "17歳に借金20万両"
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：1767年に鷹山が藩主になった日から、米沢藩の人の頭の上に、その人が背負っている藩の借金の額が出る。藩主の鷹山は藩の借金20万両を丸ごと背負うので、鷹山の頭だけ20万両と出る",
+  "米沢藩の人は、ほかの人の頭の上の数字は見えるが、自分の頭の上の数字は見えない。鷹山は自分の頭の数字を見ていない（藩の借金の額は藩主として知っている）",
+  "数字を言うのは語り手だけ。人物のセリフは無い。重臣・町の人が見比べるのは、ほかの人の頭の上（殿と重臣）の数字",
+  "重臣や町の人の頭が数両ほど、鷹山だけ20万両、1773年に重臣たちが自分から城を去る、は作り話の結果で、語り手が話す",
+  "1767年の藩主就任・治憲という名・日本一の貧乏藩といわれたこと・大倹約令・一汁一菜の逸話・漆桑楮の各100万本・重臣が藩政をにぎっていたことは、作り話の世界の背景として語り手が同じ語り口で話す。現実へ戻るのは n14 の「実際は」の1文だけで、そのあと作り話には戻らない（n15 は決まった締め）"
+ ],
+ "world_terms": [
+  "借金",
+  "両",
+  "数字",
+  "頭",
+  "見え",
+  "見比べ",
+  "背負"
+ ],
+ "voices": {},
+ "facts": [
+  "上杉治憲（鷹山）は1751年生まれ。1767年（明和4）17歳で米沢藩主となり、改革政策はまず大倹約令にはじまった。幼名松三郎、元服して治憲、のち鷹山と号した。桑・コウゾ・漆の各100万本植立策を実施した。出どころ：コトバンク「上杉治憲」改訂新版 世界大百科事典 kotobank.jp/word/上杉治憲-1061048（本文で確認）。日本大百科全書は「満15歳で第10代の藩主」と満年齢で書く。台本は世界大百科事典と農林水産省の「17歳」",
+  "上杉鷹山は17才で藩主となり、厳しい藩の財政を立て直した。出どころ：農林水産省「疏水に感謝した偉人（山形県）」www.maff.go.jp/j/nousin/sekkei/museum/m_izin/yamagata/index.html（本文で確認）",
+  "鷹山が17歳で藩主となったときの米沢藩の借財は20万両にのぼった（約54年で返済を終えたとされる）。出どころ：馬田哲次の研究ノート（山口大学 petit.lib.yamaguchi-u.ac.jp/9140/files/164985。検索の抜粋で確認）。台本では「とされる」",
+  "米沢藩は借金と飢饉で日本一の貧乏藩といわれた。出どころ：佃律志『上杉鷹山 リーダーの要諦』日経BP の紹介ページ bookplus.nikkei.com/atcl/catalog/2016/9784532197926/。nippon.com も「米沢は全国で最も貧窮した藩であった」と書く（www.nippon.com/ja/guide-to-japan/gu900147/、本文で確認）。台本では「といわれた」",
+  "今のお金への直し方：18世紀の1両は、米価で換算すると約6万円、大工の賃金で換算すると約35万円（目安）。出どころ：日本銀行金融研究所 貨幣博物館「お金の歴史に関するFAQ」Q5 www.imes.boj.or.jp/cm/history/historyfaq/answer.html（本文で確認）。20万両×約6万円＝約120億円（米の値での目安。賃金で直すと約700億円）。台本は「米の値で直すと、今のお金で約120億円」",
+  "鷹山の日常の食事は一汁一菜、普段着は木綿だったといわれる。出どころ：一般向けの解説（intojapanwaraku.com/rock/culture-rock/83649/ ほか。検索の抜粋で確認）。逸話なので台本では「といわれる」",
+  "1773年（安永2）、藩政を牛耳っていた重臣を処罰した。出どころ：コトバンク「上杉治憲」山川 日本史小辞典 改訂新版（本文で確認）。七家騒動の名前・人数・訴えの中身は公的な本文で確かめられなかったので、台本では「藩を動かす重臣たち」「処罰された」とだけ言う",
+  "n02 の本当の画像：米沢城（跡）の写真 File:Yonezawa Castle 2.jpg（CC0・4080×3072）。台本に書く前に Commons で幅（800以上）と使い方の許可を確かめた。上杉鷹山の肖像（高橋由一・572px／上杉神社所蔵・609px）は幅が800未満でプログラムが取らないため使わない",
+  "米沢藩の人の頭の上に借金の額が見えること、その数字、1773年に重臣たちが自分から城を去ることは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "借金が\n頭の上に",
+   "narration": "もしも借金が頭に見えたら、重臣は上杉鷹山を見限ったか。鷹山の頭だけ、20万両。",
+   "highlight": [
+    "見限った",
+    "20万両"
+   ],
+   "tts_text": "もしもしゃっきんがあたまにみえたら、じゅうしんは、うえすぎようざんを、みかぎったか。ようざんのあたまだけ、にじゅうまんりょう。",
+   "image_en": "In a dim Edo-period castle hall lit by paper lanterns, Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono and grey hakama, sits at the front; a row of elderly senior retainers in grey and brown formal kamishimo kneel facing him and gape up at the empty air above his head in shock. The boy's head is near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "In a dim Edo-period castle hall lit by paper lanterns, Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono and grey hakama, sits at the front; a row of elderly senior retainers in grey and brown formal kamishimo kneel facing him and gape up at the empty air above his head in shock. The boy's head is near the middle of the picture with wide empty space above it.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1767年、米沢藩に17歳の新しい殿が立つ。",
+   "highlight": [
+    "17歳"
+   ],
+   "image_en": "The stone walls and moat of Yonezawa Castle in the Edo period on a cold clear morning, snow on the distant mountains, samurai in formal kamishimo crossing a wooden bridge toward the castle gate.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Yonezawa_Castle_2.jpg",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Yonezawa_Castle_2.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Yonezawa_Castle_2.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Yonezawa_Castle_2.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Yonezawa_Castle_2.jpg"
+   }
+  },
+  {
+   "id": "n03",
+   "narration": "名は上杉治憲。のちの鷹山だ。",
+   "highlight": [
+    "鷹山"
+   ],
+   "tts_text": "なは、うえすぎはるのり。のちの、ようざんだ。",
+   "image_en": "Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono and grey hakama, sits upright alone in a wide tatami audience hall, hands on his knees, determined expression, warm lantern light.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [],
+   "image": "Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono and grey hakama, sits upright alone in a wide tatami audience hall, hands on his knees, determined expression, warm lantern light."
+  },
+  {
+   "id": "n04",
+   "narration": "その日から、人の頭の上に背負う借金が出る。",
+   "highlight": [
+    "背負う借金"
+   ],
+   "tts_text": "そのひから、ひとのあたまのうえに、せおうしゃっきんがでる。",
+   "image_en": "A crowded Edo-period castle-town street in Yonezawa, townspeople and samurai in plain period clothing suddenly stop and stare up above each other's heads in surprise, pointing; their heads are near the middle of the picture with open sky above.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "image": "A crowded Edo-period castle-town street in Yonezawa, townspeople and samurai in plain period clothing suddenly stop and stare up above each other's heads in surprise, pointing; their heads are near the middle of the picture with open sky above."
+  },
+  {
+   "id": "n05",
+   "narration": "重臣も町の人も、頭の上は数両ほど。",
+   "tts_text": "じゅうしんも、まちのひとも、あたまのうえは、すうりょうほど。",
+   "image_en": "Several elderly senior retainers in grey and brown formal kamishimo stand relaxed in a castle corridor, chatting calmly with bored faces, while a merchant in a plain brown kimono passes by with a small shrug.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "Several elderly senior retainers in grey and brown formal kamishimo stand relaxed in a castle corridor, chatting calmly with bored faces, while a merchant in a plain brown kimono passes by with a small shrug."
+  },
+  {
+   "id": "n06",
+   "narration": "新しい殿の頭だけ、20万両とされる借金。",
+   "highlight": [
+    "20万両"
+   ],
+   "tts_text": "あたらしいとのの、あたまだけ、にじゅうまんりょうとされる、しゃっきん。",
+   "image_en": "Close view of Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono, standing still in a lantern-lit hall while blurred retainers behind him stare up above his head, wide-eyed and pale. His head is near the middle with wide empty space above.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "image": "Close view of Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono, standing still in a lantern-lit hall while blurred retainers behind him stare up above his head, wide-eyed and pale. His head is near the middle with wide empty space above."
+  },
+  {
+   "id": "n07",
+   "narration": "米の値で直すと、今のお金で約120億円。",
+   "highlight": [
+    "約120億円"
+   ],
+   "tts_text": "こめのねでなおすと、いまのおかねで、やく、ひゃくにじゅうおくえん。",
+   "image_en": "Mountains of straw rice bales piled high to the ceiling of a dark Edo-period storehouse, a tiny lone figure of a young lord in a plain dark navy kimono looking up at them from the floor, dramatic shaft of light from a small window.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "image": "Mountains of straw rice bales piled high to the ceiling of a dark Edo-period storehouse, a tiny lone figure of a young lord in a plain dark navy kimono looking up at them from the floor, dramatic shaft of light from a small window."
+  },
+  {
+   "id": "n08",
+   "narration": "日本一の貧乏藩といわれた、米沢の重さだ。",
+   "tts_text": "にほんいちの、びんぼうはんといわれた、よねざわのおもさだ。",
+   "image_en": "A poor snowy farming village in the Yonezawa basin in the Edo period, thin farmers in patched straw raincoats hauling firewood past empty fields and run-down thatched houses under a grey sky.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "image": "A poor snowy farming village in the Yonezawa basin in the Edo period, thin farmers in patched straw raincoats hauling firewood past empty fields and run-down thatched houses under a grey sky."
+  },
+  {
+   "id": "n09",
+   "narration": "殿は大倹約令を出す。食事は一汁一菜といわれる。",
+   "highlight": [
+    "一汁一菜"
+   ],
+   "tts_text": "とのは、だいけんやくれいをだす。しょくじは、いちじゅういっさいといわれる。",
+   "image_en": "Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono, eats alone from a tiny tray with one bowl of soup and one small dish of vegetables, calm and serious, in a bare room.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [],
+   "image": "Uesugi Yozan at seventeen, a slim Japanese young lord with a youthful beardless face, earnest large eyes, a neat young samurai topknot, plain dark navy cotton kimono, eats alone from a tiny tray with one bowl of soup and one small dish of vegetables, calm and serious, in a bare room."
+  },
+  {
+   "id": "n10",
+   "narration": "漆・桑・楮を、それぞれ100万本植えさせた。",
+   "highlight": [
+    "100万本"
+   ],
+   "tts_text": "うるし、くわ、こうぞを、それぞれひゃくまんぼん、うえさせた。",
+   "image_en": "Edo-period farmers and low-ranking samurai planting rows and rows of young saplings across a wide hillside in the Yonezawa basin at sunrise, endless lines of small trees stretching to the mountains.",
+   "shots": [
+    "n10",
+    "n10@right"
+   ],
+   "chars": [],
+   "image": "Edo-period farmers and low-ranking samurai planting rows and rows of young saplings across a wide hillside in the Yonezawa basin at sunrise, endless lines of small trees stretching to the mountains."
+  },
+  {
+   "id": "n11",
+   "narration": "それでも藩を動かすのは、古くからの重臣たち。",
+   "highlight": [
+    "重臣たち"
+   ],
+   "tts_text": "それでも、はんをうごかすのは、ふるくからのじゅうしんたち。",
+   "image_en": "A group of elderly senior retainers in grey and brown formal kamishimo sit in a dark council room around a lantern, cold arrogant faces, while the young lord in a plain dark navy kimono sits apart at the far end, small and alone.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "image": "A group of elderly senior retainers in grey and brown formal kamishimo sit in a dark council room around a lantern, cold arrogant faces, while the young lord in a plain dark navy kimono sits apart at the far end, small and alone."
+  },
+  {
+   "id": "n12",
+   "narration": "町の人は見比べる。重臣は数両、殿は20万両。",
+   "highlight": [
+    "数両",
+    "20万両"
+   ],
+   "tts_text": "まちのひとは、みくらべる。じゅうしんは、すうりょう。とのは、にじゅうまんりょう。",
+   "image_en": "Edo-period townspeople in plain kimono gather along the road outside the castle gate, frowning and murmuring, looking back and forth from a passing group of elderly retainers in grey kamishimo to the young lord in a plain dark navy kimono walking ahead of them.",
+   "shots": [
+    "n12",
+    "n12@left",
+    "n12@right"
+   ],
+   "chars": [],
+   "image": "Edo-period townspeople in plain kimono gather along the road outside the castle gate, frowning and murmuring, looking back and forth from a passing group of elderly retainers in grey kamishimo to the young lord in a plain dark navy kimono walking ahead of them."
+  },
+  {
+   "id": "n13",
+   "narration": "1773年、重臣たちは自分から城を去った。",
+   "highlight": [
+    "城を去った"
+   ],
+   "tts_text": "せんななひゃくななじゅうさんねん、じゅうしんたちは、じぶんから、しろをさった。",
+   "image_en": "At dusk, a line of elderly senior retainers in grey and brown formal kamishimo bow deeply to the young lord, a slim Japanese young man with a youthful beardless face, neat topknot and plain dark navy cotton kimono, standing at the castle gate, then walk away out of the gate in silence, long shadows in the orange sunset light.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "At dusk, a line of elderly senior retainers in grey and brown formal kamishimo bow deeply to the young lord, a slim Japanese young man with a youthful beardless face, neat topknot and plain dark navy cotton kimono, standing at the castle gate, then walk away out of the gate in silence, long shadows in the orange sunset light.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "実際は、その年に重臣たちは処罰されている。",
+   "highlight": [
+    "処罰"
+   ],
+   "tts_text": "じっさいは、そのとしに、じゅうしんたちは、しょばつされている。",
+   "image_en": "A stern young lord in a plain dark navy kimono sits on a raised dais in a formal hall, while elderly retainers in grey kamishimo kneel far below with heads bowed low in defeat; quiet, tense, lantern light.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [],
+   "image": "A stern young lord in a plain dark navy kimono sits on a raised dais in a formal hall, while elderly retainers in grey kamishimo kneel far below with heads bowed low in defeat; quiet, tense, lantern light."
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "Uesugi Yozan as a young lord, a slim Japanese young man with a youthful beardless face, earnest large eyes, a neat topknot and plain dark navy cotton kimono, stands on a hill at sunset looking over rows of young saplings and the castle town of Yonezawa below.",
+   "shots": [
+    "n15",
+    "n15@close"
+   ],
+   "chars": [],
+   "image": "Uesugi Yozan as a young lord, a slim Japanese young man with a youthful beardless face, earnest large eyes, a neat topknot and plain dark navy cotton kimono, stands on a hill at sunset looking over rows of young saplings and the castle town of Yonezawa below."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
