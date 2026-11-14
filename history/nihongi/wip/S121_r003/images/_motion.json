@@ -1,13 +1,13 @@
 {
- "_runs": 1,
+ "_runs": 0,
  "n01": {
   "状態": "失敗",
   "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
+  "回": 0
  },
  "n13": {
   "状態": "失敗",
   "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
+  "回": 0
  }
 }
