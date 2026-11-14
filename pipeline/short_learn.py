@@ -22,6 +22,8 @@ LAG = 48  # Analytics がそろうまでの余裕（時間）
 BIG = (2, 1000)  # 伸びた回の線：48時間の再生が直近12本の真ん中の2倍以上で、1,000回以上
 H = lambda n: os.path.join(ROOT, "history", "job", n)
 MIN_N = 6
+OTHER = ("routine", "kigyo")  # 統計ショートとは別に数える種類（1日の流れ・企業もしも）
+KIGYO_HIT = 2100  # 企業もしもを続ける線の1つ：48時間で2,100回以上が1本でもある（手順書 §15）
 
 
 def jl(p, d):
@@ -91,7 +93,7 @@ def routine_block(rows):
     rt = [r for r in rows if r.get("kind") == "routine"]
     if not rt:
         return None
-    st = sorted((r for r in rows if r.get("kind") != "routine"), key=lambda r: r["work"])
+    st = sorted((r for r in rows if r.get("kind") not in OTHER), key=lambda r: r["work"])
     base = st[-max(6, len(rt)):]
     mr, mb = statistics.median(v48(r) for r in rt), statistics.median(v48(r) for r in base) if base else 0
     ratio = round(mr / mb, 2) if mb else None
@@ -106,6 +108,29 @@ def routine_block(rows):
     pts = {g: round(statistics.mean(r["score"] for r in rt if r.get("measure") == "1日_" + g), 1) for g in groups}
     return {"本数": len(rt), "再生の真ん中": mr, "比べた統計ショートの本数": len(base), "統計の再生の真ん中": mb, "倍率": ratio, "1日の本数": per_day,
             "仲間の点": pts, "点の高い3本": [{k: r.get(k) for k in keep} for r in rt[:3]], "点の低い3本": [{k: r.get(k) for k in keep} for r in rt[-3:]]}
+
+
+def kigyo_block(rows):
+    """企業もしも（手順書 §15 の判定の線）：10本そろってから、48時間の再生の真ん中を統計ショートと比べる。
+    続ける＝1.5倍以上か、1本でも2,100回以上／やめる＝1.2倍未満／その間＝さらに10本。登録者は1,000回あたりで並べる"""
+    v48 = lambda r: (r.get("48h") or r.get("7d") or {}).get("views") or 0
+    kg = [r for r in rows if r.get("kind") == "kigyo"]
+    if not kg:
+        return None
+    st = sorted((r for r in rows if r.get("kind") not in OTHER), key=lambda r: r["work"])[-max(10, len(kg)):]
+    mk, mb = statistics.median(v48(r) for r in kg), statistics.median(v48(r) for r in st) if st else 0
+    ratio = round(mk / mb, 2) if mb else None
+    per1k = lambda rs: round(sum(r.get("subs") or 0 for r in rs) * 1000 / max(1, sum(v48(r) for r in rs)), 2)
+    top = sum(v48(r) >= KIGYO_HIT for r in kg)
+    verdict = "数字待ち（10本そろってから）"
+    if len(kg) >= 10 and ratio is not None:
+        verdict = "続ける" if ratio >= 1.5 or top else ("やめる（次は1コマ目の見た目だけを変える試し）" if ratio < 1.2 else "その間（さらに10本で見る）")
+    kg.sort(key=lambda r: r["score"], reverse=True)
+    keep = ("title", "hook", "measure", "views", "avp", "subs", "score", "一番落ちた位置", "半分の位置に残った割合")
+    return {"本数": len(kg), "再生の真ん中": mk, "比べた統計ショートの本数": len(st), "統計の再生の真ん中": mb, "倍率": ratio,
+            f"{KIGYO_HIT:,}回以上の本数": top, "判定": verdict,
+            "1,000回あたりの登録者": {"企業もしも": per1k(kg), "統計": per1k(st)},
+            "点の高い3本": [{k: r.get(k) for k in keep} for r in kg[:3]], "点の低い3本": [{k: r.get(k) for k in keep} for r in kg[-3:]]}
 
 
 def measure(dry):
@@ -128,7 +153,7 @@ def measure(dry):
         try:
             for k in todo:
                 s = slot(e["video_id"], at, age, 48 if k == "48h" else 24 * 7, pub)
-                if mk.get("kind") == "routine":
+                if mk.get("kind") in OTHER:
                     s.update(retention(e["video_id"], at.astimezone(PT).date().isoformat()))
                 m[k] = s
         except urllib.error.HTTPError as err:
@@ -149,7 +174,7 @@ def versions(rows):
     """編集の版ごと（種類は分ける）の、48時間の再生と平均視聴率の真ん中。音と画の直しの前後を比べる"""
     out = {}
     for r in rows:
-        out.setdefault(("1日の流れ" if r.get("kind") == "routine" else "統計") + f"_版{r.get('編集の版', 1)}", []).append(r)
+        out.setdefault({"routine": "1日の流れ", "kigyo": "企業もしも"}.get(r.get("kind"), "統計") + f"_版{r.get('編集の版', 1)}", []).append(r)
     return {k: {"本数": len(v), "再生の真ん中": statistics.median(x["views"] or 0 for x in v),
                 "平均視聴率の真ん中": round(statistics.median(x["avp"] or 0 for x in v), 1)} for k, v in sorted(out.items())}
 
@@ -171,12 +196,14 @@ def learn(met, dry=False):
             rows.append({**m, "work": w, "score": s["score"], "views": s.get("views"), "avp": s.get("averageViewPercentage"),
                          "subs": s.get("subscribersGained"), "一番落ちた位置": s.get("一番落ちた位置"),
                          "半分の位置に残った割合": s.get("半分の位置に残った割合")})
-    block = routine_block(rows)
+    block, kb = routine_block(rows), kigyo_block(rows)
     ver, hits = versions(rows), big(rows)
-    rows = [r for r in rows if r.get("kind") != "routine"]  # ここから下は統計ショートの学び。1日の流れは "1日の流れ" に分ける
+    rows = [r for r in rows if r.get("kind") not in OTHER]  # ここから下は統計ショートの学び。1日の流れと企業もしもは別の欄に分ける
     out = {"本数": len(rows), "更新": datetime.datetime.now(JST).isoformat(timespec="seconds"), "編集の版ごと": ver, "伸びた回": hits}
     if block:
         out["1日の流れ"] = block
+    if kb:
+        out["企業もしも"] = kb
     if len(rows) < MIN_N:
         out["メモ"] = f"数字のあるショートが {len(rows)}本（{MIN_N}本そろうまで学びは出さない）"
     else:

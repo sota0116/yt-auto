@@ -13,6 +13,8 @@ TOKUTEN = "主な職業の年収・労働時間と、産業別の離職率の一
 # ショートの説明欄のリンクは押せないので、押せるプロフィールのリンクへ案内する。URL は登録経路の計測のために残す（2026-11-02）
 PROFILE_NOTE = "チャンネル名を押すと、プロフィールにLINEのリンクがあります"
 HOW = "人の手では数えきれない統計をプログラムで計算し、グラフと合成音声で動画にしています。数字は全部、出典と照らしています。"
+# 企業もしも（手順書 §15 の説明文）。統計ショートの「数字は全部、出典と照らしています」は使わない
+HOW_KIGYO = "人物・出来事はイメージです。会社の数字は公開資料、年齢ごとの年収は業界の平均です。"
 HOW_ROUTINE = "1日の流れは、公開されている資料をもとに組み立てた、ある1日の例です。時間や中身は職場によって違います。統計とネットの情報をもとに、AIで映像と声にしています。"
 
 
@@ -29,6 +31,14 @@ def description(work, ch="job"):
         credit = credit.split("、")[0]
         urls = list(dict.fromkeys(x["url"] for x in sc.get("day_facts", []) if "PR" not in x["url"]))
         src = "▼1日の流れの資料\n" + "\n".join(urls) + "\n\n" + src
+    if fx.get("kind") == "kigyo":  # 企業もしも（§15）：会社の数字と記事の URL → 統計の出典 → イメージの断り → ロゴの断りと出どころ。声は語り手だけ
+        credit = credit.split("、")[0]
+        urls = list(dict.fromkeys(x["url"] for x in sc.get("day_facts", [])))
+        src = "▼会社の数字と記事\n" + "\n".join(urls) + "\n\n▼年齢ごとの年収（業界の平均）\n" + src
+        # CC BY のロゴは作者とライセンスの表示が要る（Commons の各ページの条件）
+        logos = "\n".join(f"{l['会社']}：Wikimedia Commons（{l['license']}{'・' + l['作者'] if l.get('作者') and 'BY' in l['license'] else ''}）{l['page']}"
+                          for l in fx["logos"])
+        how = f"{HOW_KIGYO}\n{fx['ロゴの断り']}。\n▼ロゴの出どころ\n{logos}"
     d = (f"{sc['desc_lead']}\n\n▼{TOKUTEN}を、LINEで無料で受け取れます\n{PROFILE_NOTE}\n{prof.get('line_url_short') or prof['line_url']}\n\n{src}\n{fx['e_stat_note']}\n{fx['加工']}\n\n"
          f"{how}\n{credit}\n\n{tags}")
     if "PR" in d:

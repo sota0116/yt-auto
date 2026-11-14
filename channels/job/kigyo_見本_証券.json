@@ -1,0 +1,272 @@
+{
+ "format": "short",
+ "kind": "kigyo",
+ "title": "もし野村證券に就職したら｜何歳でいくらになる？ #年収 #就活 #証券会社",
+ "tags": [
+  "年収",
+  "就活",
+  "証券会社",
+  "野村證券"
+ ],
+ "desc_lead": "もし証券会社に入るなら、あなたはどの会社を選びますか。",
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "style_en": "Bold clean line anime style, vivid contrast colors (navy base with yellow and red accents), dramatic TV-drama lighting and shadows, lived-in workplace details, large clear facial expressions",
+ "avoid_en": "readable text, letters, numbers on signs, real company logos, real uniforms, famous characters, blood, injury, nudity",
+ "characters": {
+  "hero": {
+   "name": "主人公",
+   "desc_en": "Japanese man, slim build, short neat black hair, plain dark navy business suit with a plain blue tie and a black leather bag, no badges or logos; shown aging from 22 to late 50s"
+  },
+  "owner": {
+   "name": "町工場の社長",
+   "desc_en": "Japanese man in his sixties, stocky, short gray crew cut, faded gray work overalls with oil stains, towel around the neck"
+  },
+  "wife": {
+   "name": "妻",
+   "desc_en": "Japanese woman in her early thirties, shoulder-length brown hair, casual beige cardigan and white blouse"
+  }
+ },
+ "hook_type": "出来事",
+ "day_facts": [
+  {
+   "事実": "野村證券の新卒のウェルス・マネジメントコースの初任給は、月例給与300,000円",
+   "url": "https://www.nomura-recruit.jp/newgraduate/requirements/",
+   "抜き書き": "初任給月例給与：300,000円（年1回水準を決定）"
+  },
+  {
+   "事実": "野村證券のウェルス・マネジメント部門は、株式や債券だけでなく、不動産、資産承継、事業承継、M＆Aのコンサルティングを行う",
+   "url": "https://www.nomura-recruit.jp/newgraduate/requirements/",
+   "抜き書き": "不動産、資産承継、事業承継、M＆A等、金融の枠にとらわれない丁寧なコンサルティングを行っています"
+  },
+  {
+   "事実": "2024年9月25日、証券取引等監視委員会は、野村證券による長期国債先物（2021年3月限月）の相場操縦について、課徴金納付命令を出すよう勧告した。課徴金の額は2,176万円",
+   "url": "https://www.fsa.go.jp/sesc/news/c_2024/2024/20240925-1.html",
+   "抜き書き": "上記の違反行為に対し金融商品取引法に基づき納付を命じられる課徴金の額は、２１７６万円である"
+  },
+  {
+   "事実": "違反は、自己勘定取引に従事していた者による、大阪取引所の長期国債先物2021年3月限月の取引",
+   "url": "https://www.fsa.go.jp/sesc/news/c_2024/2024/20240925-1.html",
+   "抜き書き": "同社の自己勘定取引に従事していた者において、同社の業務に関し"
+  },
+  {
+   "事実": "2024年9月27日の金融担当大臣の会見で、記者がこの勧告について質問した",
+   "url": "https://www.fsa.go.jp/common/conference/minister/2024b/20240927-1.html",
+   "抜き書き": "国債先物取引で相場操縦をしたとして、証券取引等監視委員会が先日、野村證券に金融商品取引法違反で課徴金を課すよう金融庁に勧告しました"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "s01",
+   "speaker": "narrator",
+   "narration": "証券会社に入ると、何歳でいくらになるのか。",
+   "image": "就活のスーツの主人公が、夕方のオフィス街の交差点で、高いビルを見上げて迷っている",
+   "image_en": "A young Japanese man in a plain navy recruit suit stands at a busy office district crossing at dusk, looking up at tall glass towers, unsure which way to go, dramatic orange backlight",
+   "angle": "引き",
+   "chars": [
+    "hero"
+   ],
+   "hook": "どこに\n入る？",
+   "logos": [
+    "野村證券",
+    "大和証券",
+    "SMBC日興証券",
+    "みずほ証券",
+    "三菱UFJモルガン・スタンレー証券"
+   ]
+  },
+  {
+   "id": "s02",
+   "speaker": "narrator",
+   "narration": "2024年9月、野村證券に課徴金2,176万円の勧告が出た。国債先物の相場操縦だった。",
+   "image": "大学の学食で、主人公が壁のテレビのニュースを見上げる。画面には値動きのグラフだけ",
+   "image_en": "In a university cafeteria, the young man looks up at a wall TV showing only a jagged red price chart, students around him eating, cold blue light from the screen on his face",
+   "angle": "見上げ",
+   "chars": [
+    "hero"
+   ],
+   "motion": true,
+   "tts_text": "2024年9月、のむらしょうけんに課徴金2,176万円の勧告が出た。国債先物の相場操縦だった。"
+  },
+  {
+   "id": "s03",
+   "speaker": "narrator",
+   "narration": "ニュースを見た経済学部の主人公は、それでも志望を変えなかった。",
+   "image": "夜の下宿の机で、主人公が志望の会社の欄を見つめ、ペンを握りしめる",
+   "image_en": "At night in a small student room, the young man grips a pen over a blank application form on his desk, determined face lit by a desk lamp",
+   "angle": "寄り",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "s04",
+   "speaker": "narrator",
+   "narration": "最終面接では、御社を弊社と言い間違えた。",
+   "image": "面接室で、主人公が言い間違えに気づいて固まる。向かいの面接官3人が目を丸くする",
+   "image_en": "In a bright interview room, the young man freezes mid-sentence with wide eyes after a slip of the tongue, three interviewers across the table blink in surprise",
+   "angle": "目線",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "s05",
+   "speaker": "narrator",
+   "narration": "決め手は、株だけでなく、事業承継やM&Aまで相談に乗る仕事だった。",
+   "image": "説明会の会場で、主人公が、町の工場や家族の写真が並ぶスライドを熱心に見る",
+   "image_en": "At a company info session, the young man leans forward watching a large screen showing photos of a small factory and a family, no words on the screen",
+   "angle": "見下ろし",
+   "chars": [
+    "hero"
+   ],
+   "tts_text": "決め手は、株だけでなく、事業承継やエムアンドエーまで相談に乗る仕事だった。"
+  },
+  {
+   "id": "s06",
+   "speaker": "narrator",
+   "narration": "22歳、野村證券に入社。初任給は月30万円だ。",
+   "image": "入社式の朝、新しいスーツの主人公が、本社のロビーで背筋を伸ばして立つ",
+   "image_en": "On the morning of the entrance ceremony, the young man in a new dark suit stands straight in a large marble lobby, morning sun streaming in, proud nervous smile",
+   "angle": "引き",
+   "chars": [
+    "hero"
+   ],
+   "logo": "野村證券",
+   "tts_text": "22歳、のむらしょうけんに入社。初任給は月30万円だ。"
+  },
+  {
+   "id": "s07",
+   "speaker": "narrator",
+   "narration": "新人は資格の勉強をしながら、担当の地区を一軒ずつ歩く。",
+   "image": "住宅と商店が並ぶ坂道を、主人公が鞄を持って一軒ずつ回り、汗をぬぐう",
+   "image_en": "The young man in a suit walks up a sloped street of houses and small shops carrying a black bag, wiping sweat, ringing a doorbell, hot afternoon sun",
+   "angle": "目線",
+   "chars": [
+    "hero"
+   ],
+   "motion": true
+  },
+  {
+   "id": "s08",
+   "speaker": "narrator",
+   "narration": "話を聞いてくれたのは、社員が数人の町工場の社長だけだった。",
+   "image": "油のにおいがする小さな町工場で、作業着の年配の社長が、主人公に缶コーヒーを差し出す",
+   "image_en": "In a small cluttered machine workshop, a gruff older owner in work overalls hands a can of coffee to the young man, lathes and metal parts around them",
+   "angle": "寄り",
+   "chars": [
+    "hero",
+    "owner"
+   ],
+   "tag": "20〜24歳"
+  },
+  {
+   "id": "s09",
+   "speaker": "narrator",
+   "narration": "口座の額は小さい。それでも主人公は、月に一度は顔を出した。",
+   "image": "季節が変わる町工場の入口に、主人公が何度も立ち寄る。桜、夏の日差し、雪",
+   "image_en": "The young man stops by the same small workshop entrance again and again, a split scene of cherry blossoms, summer sun and snow behind him",
+   "angle": "引き",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "s10",
+   "speaker": "narrator",
+   "narration": "20代後半、年収は業界の平均で約543万円まで跳ねる。",
+   "image": "支店の窓口で、少し大人びた主人公が、客に資料を見せながら説明している",
+   "image_en": "A slightly older young man in his late twenties explains documents to a customer at a bank-like branch counter, confident gesture, warm interior light",
+   "angle": "目線",
+   "chars": [
+    "hero"
+   ],
+   "tag": "25〜29歳"
+  },
+  {
+   "id": "s11",
+   "speaker": "narrator",
+   "narration": "30代前半、地方の支店へ転勤。結婚も、この街で決めた。",
+   "image": "地方の駅のホームで、30代の主人公が段ボールを抱え、隣で妻が笑っている",
+   "image_en": "On a small rural train platform, the man in his early thirties carries a cardboard box, his smiling wife beside him, mountains in the background",
+   "angle": "引き",
+   "chars": [
+    "hero",
+    "wife"
+   ],
+   "tag": "30〜34歳"
+  },
+  {
+   "id": "s12",
+   "speaker": "narrator",
+   "narration": "40代前半で課長に。業界の平均は約862万円だ。",
+   "image": "支店の会議室で、40代の主人公が部下たちの前に立ち、指示を出す",
+   "image_en": "In a branch meeting room, the man in his early forties stands at the head of a table giving instructions to younger staff, firm expression",
+   "angle": "見下ろし",
+   "chars": [
+    "hero"
+   ],
+   "tag": "40〜44歳"
+  },
+  {
+   "id": "s13",
+   "speaker": "narrator",
+   "narration": "50代前半の約888万円が、業界の平均の山になる。",
+   "image": "夜の支店で、白髪の混じった主人公が一人、窓の外の街の灯りを見ている",
+   "image_en": "Late at night in an empty branch office, the man in his early fifties with graying temples gazes out the window at city lights, reflective face",
+   "angle": "寄り",
+   "chars": [
+    "hero"
+   ],
+   "tag": "50〜54歳"
+  },
+  {
+   "id": "s14",
+   "speaker": "narrator",
+   "narration": "50代後半は約793万円。主人公も、役職を降りる日が来た。",
+   "image": "送別の花束を受け取る主人公。机の上の名札を片付ける手元",
+   "image_en": "The man in his late fifties holds a small bouquet from colleagues while clearing his desk, gentle bittersweet smile",
+   "angle": "目線",
+   "chars": [
+    "hero"
+   ],
+   "tag": "55〜59歳"
+  },
+  {
+   "id": "s15",
+   "speaker": "narrator",
+   "narration": "その春、あの町工場の社長から電話が鳴った。会社を誰に継ぐか、相談したいという。",
+   "image": "自宅の居間で、主人公が携帯電話を耳に当て、驚いて立ち上がる",
+   "image_en": "In his living room, the man in his late fifties stands up in surprise holding a phone to his ear, spring light through the window",
+   "angle": "寄り",
+   "chars": [
+    "hero"
+   ]
+  },
+  {
+   "id": "s16",
+   "speaker": "narrator",
+   "narration": "承継の担当と探した買い手が見つかり、工場の名前は残った。",
+   "image": "町工場の前で、年老いた社長と主人公と若い職人たちが並び、機械が再び動き出す",
+   "image_en": "In front of the small workshop, the elderly owner, the man and young workers stand together as the machines start running again, sparks and bright light",
+   "angle": "見上げ",
+   "chars": [
+    "hero",
+    "owner"
+   ],
+   "motion": true,
+   "peak": true
+  },
+  {
+   "id": "s17",
+   "speaker": "narrator",
+   "narration": "社長は笑った。あの頃来たのは君だけだ。次は、どの会社に入ってみたい？",
+   "image": "年老いた社長が主人公の肩をたたいて笑う。夕日の町工場",
+   "image_en": "The elderly owner laughs and pats the man on the shoulder in front of the workshop at sunset, warm golden light",
+   "angle": "目線",
+   "chars": [
+    "hero",
+    "owner"
+   ]
+  }
+ ]
+}
