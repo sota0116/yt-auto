@@ -68,7 +68,7 @@
   "seconds": 38,
   "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
   "synthetic_on": null,
-  "views_now": 1703,
+  "views_now": 1704,
   "published": true,
   "published_at": "2026-11-03T19:00:29+09:00",
   "comment_id": "UgzD4kv4_V8vv8eWSSN4AaABAg",
@@ -93,7 +93,7 @@
   "seconds": 41,
   "title_now": "【60代】財布に入れておくとお金が逃げる物3選",
   "synthetic_on": null,
-  "views_now": 1256,
+  "views_now": 1258,
   "published": true,
   "published_at": "2026-11-04T19:00:22+09:00",
   "comment_id": "UgyNaHSBf2gGGfIDi1l4AaABAg",
@@ -148,7 +148,7 @@
   "seconds": 814,
   "title_now": "【今すぐチェック】カバンに〇〇を入れたままは要注意！破産する人の特徴5選【金運】",
   "synthetic_on": null,
-  "views_now": 44,
+  "views_now": 45,
   "published": true,
   "published_at": "2026-11-08T18:00:16+09:00",
   "comment_id": "Ugw91s8VBfk7CUYMsQB4AaABAg",
@@ -254,7 +254,7 @@
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 24,
+  "views_now": 25,
   "published": true,
   "published_at": "2026-11-10T18:00:33+09:00",
   "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
@@ -304,7 +304,7 @@
   "seconds": 35,
   "title_now": "【60代】エコバッグにレシートためてる人、今すぐ出して",
   "synthetic_on": null,
-  "views_now": 165,
+  "views_now": 166,
   "published": true,
   "published_at": "2026-11-10T12:00:13+09:00",
   "comment_id": "UgySXSbCx1hO5DzRMLZ4AaABAg",
@@ -354,7 +354,7 @@
   "seconds": 39,
   "title_now": "【60代】もらったポチ袋、財布に空のまま入れないで",
   "synthetic_on": null,
-  "views_now": 978,
+  "views_now": 991,
   "published": true,
   "published_at": "2026-11-12T12:00:09+09:00",
   "comment_id": "UgyjET6e1pqF408vdzl4AaABAg",
@@ -379,7 +379,7 @@
   "seconds": 37,
   "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
   "synthetic_on": null,
-  "views_now": 989,
+  "views_now": 1020,
   "published": true,
   "published_at": "2026-11-13T19:00:05+09:00",
   "comment_id": "UgwwmBWEGDgzcB_ROHV4AaABAg",
@@ -399,12 +399,16 @@
    "【60代】年金が入った日、通帳を記帳せずに下ろさないで"
   ],
   "comment": "あなたの通帳の最後の記帳は、何月ですか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-14T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 36,
   "title_now": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1165,
+  "published": true,
+  "published_at": "2026-11-14T12:00:37+09:00",
+  "comment_id": "UgyJQctjM1ZU0LPrv454AaABAg",
+  "comment_at": "2026-11-14T18:59:50+09:00"
  },
  {
   "work": "104_クローゼットと押し入れ",
@@ -429,7 +433,7 @@
   "seconds": 822,
   "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
   "synthetic_on": null,
-  "views_now": 8,
+  "views_now": 12,
   "published": true,
   "published_at": "2026-11-12T18:00:25+09:00",
   "comment_id": "Ugz_8Vc2SwMe6_b_6jN4AaABAg",
@@ -448,7 +452,13 @@
   "titles": [
    "【60代】レジでお札を慌てて出す人、今すぐやめて"
   ],
-  "comment": "あなたの手は、レジでお札を放っていませんか。"
+  "comment": "あなたの手は、レジでお札を放っていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-15T03:00:00Z",
+  "seconds": 37,
+  "title_now": "【60代】レジでお札を慌てて出す人、今すぐやめて",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S122_買い物メモ",
@@ -459,12 +469,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-14T01:49:08+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】買い物メモ、お札と一緒に財布へ入れないで"
   ],
-  "comment": "あなたの財布には、買い物メモが入っていませんか。"
+  "comment": "あなたの財布には、買い物メモが入っていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-15T07:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】買い物メモ、お札と一緒に財布へ入れないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S123_昔の硬貨",
@@ -475,12 +490,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-14T03:41:45+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】引き出しに昔の硬貨、絶対ためこまないで"
   ],
-  "comment": "あなたの引き出しに、昭和の10円玉はありませんか。"
+  "comment": "あなたの引き出しに、昭和の10円玉はありませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-16T12:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】引き出しに昔の硬貨、絶対ためこまないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "106_ベランダ",
@@ -491,7 +511,6 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-14T04:41:52+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
@@ -500,7 +519,13 @@
   ],
   "comment": "コメントで、数を教えてくださいね。",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-19T18:00:00+09:00",
+  "seconds": 760,
+  "title_now": "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S124_お菓子の空き缶の貯金",
@@ -511,12 +536,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-14T05:46:38+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】お菓子の缶の小銭、使い道を決めずにためないで"
   ],
-  "comment": "あなたの缶に、行き先のない小銭が眠っていませんか。"
+  "comment": "あなたの缶に、行き先のない小銭が眠っていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-17T12:00:00+09:00",
+  "seconds": 38,
+  "title_now": "【60代】お菓子の缶の小銭、使い道を決めずにためないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S125_財布の定位置の引き出し",
@@ -527,11 +557,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-14T09:25:43+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】寝る前に財布を「ここ」から必ず出して"
   ],
-  "comment": "あなたの財布の寝床は、いまどこですか。"
+  "comment": "あなたの財布の寝床は、いまどこですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-18T19:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】寝る前に財布を「ここ」から必ず出して",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

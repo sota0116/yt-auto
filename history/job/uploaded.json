@@ -245,7 +245,7 @@
   "seconds": 500,
   "title_now": "大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円",
   "synthetic_on": null,
-  "views_now": 248,
+  "views_now": 256,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -329,7 +329,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 2688,
+  "views_now": 2741,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -517,7 +517,7 @@
   "seconds": 503,
   "title_now": "【悲報】もし会社が年功序列をやめたら、いちばん損をするのは若手ではなかった",
   "synthetic_on": null,
-  "views_now": 305,
+  "views_now": 306,
   "published": true,
   "published_at": "2026-11-07T19:00:03+09:00",
   "comment_id": "Ugz2vACD-b8cIGQRajh4AaABAg",
@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 226,
+  "views_now": 231,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -573,7 +573,7 @@
   "seconds": 533,
   "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
   "synthetic_on": null,
-  "views_now": 249,
+  "views_now": 251,
   "published": true,
   "published_at": "2026-11-09T19:00:01+09:00",
   "comment_id": "UgwUJfEp6L_WFq5Jw5Z4AaABAg",
@@ -601,7 +601,7 @@
   "seconds": 512,
   "title_now": "【時給の落とし穴】美容師、年収が近い仕事の中では上の方なのに、なぜ時給は安いのか",
   "synthetic_on": null,
-  "views_now": 89,
+  "views_now": 97,
   "published": true,
   "published_at": "2026-11-10T19:00:15+09:00",
   "comment_id": "UgxYAoeGWwqDKOLpWvZ4AaABAg",
@@ -657,7 +657,7 @@
   "seconds": 509,
   "title_now": "【悲報】警備員は平均より長く働くのに、なぜ1時間の値段は主な仕事で一番安いのか",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 3,
   "published": true,
   "published_at": "2026-11-13T19:00:08+09:00",
   "comment_id": "UgzwYhVVeFxgUHrb4HZ4AaABAg",
@@ -703,7 +703,13 @@
    "保育士として20歳から64歳まで働いたら、年収を全部足した結果は約1億9400万円",
    "保育士より、あなたの給料の山は高い？ スタートは平均並みの仕事と比べたら"
   ],
-  "comment": "保育士を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "保育士を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": "2026-11-17T10:00:00Z",
+  "seconds": 502,
+  "title_now": "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "023_c4_yakuzai",
@@ -721,6 +727,12 @@
    "薬剤師は割に合うのか。6年大学に通って資格を取り、64歳まで働いた結果",
    "あなたの1時間は薬剤師より高い？ 処方箋を確かめる仕事と比べたら"
   ],
-  "comment": "薬剤師を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "薬剤師を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": "2026-11-19T19:00:00+09:00",
+  "seconds": 521,
+  "title_now": "【白衣の給料】薬剤師、40代前半で平均と同じ年収なのに、最後に差がつく理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

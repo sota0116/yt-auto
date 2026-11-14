@@ -571,7 +571,16 @@
  },
  "009_居間のNG5": {
   "type": "okinu",
-  "video_id": "Yd5kxSUj5sc"
+  "video_id": "Yd5kxSUj5sc",
+  "h72": {
+   "views": 79,
+   "averageViewPercentage": 39.7,
+   "averageViewDuration": 309,
+   "subscribersGained": 2,
+   "直す所": [],
+   "取った日": "2026-11-14",
+   "再生（公開ページ）": 117
+  }
  },
  "S118_へそくり": {
   "type": null,
@@ -580,5 +589,13 @@
  "011_階段と廊下のNG5": {
   "type": "okinu",
   "video_id": "TECS2Dr3lUE"
+ },
+ "S119_年金の振込日の記帳": {
+  "type": null,
+  "video_id": "w2h7iXjAQkM"
+ },
+ "012_たんすのNG5": {
+  "type": "okinu",
+  "video_id": "3cSf_yf-gKE"
  }
 }
