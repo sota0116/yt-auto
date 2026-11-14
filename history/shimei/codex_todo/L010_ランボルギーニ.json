@@ -2,7 +2,7 @@
  "ch": "shimei",
  "work": "L010_ランボルギーニ",
  "portrait": false,
- "made": "2026-11-14 11:43",
+ "made": "2026-11-15 00:10",
  "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red. 1940s-1970s Italian period details.",
  "avoid_en": "logos, badges or emblems of real companies (no bull emblem, no prancing horse emblem), car brand names, readable text or numbers, license plates with characters, detailed national flags, blood, faces resembling real people",
  "rules": {},
@@ -10,264 +10,16 @@
   "ferruccio": {
    "desc_en": "the tractor maker, a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers"
   },
-  "enzo": {
-   "desc_en": "the racing car boss, a tall elderly man figurine with a smooth featureless face (no eyes, nose or mouth details), swept-back white hair, dark sunglasses, a plain dark gray double-breasted suit, no badges"
-  },
   "engineers": {
    "desc_en": "the three young engineers, three slim young man figurines with smooth featureless faces (no eyes, nose or mouth details), short dark hair, plain white short-sleeved shirts, dark trousers, no badges or text"
   }
  },
  "cuts": [
   {
-   "id": "A01",
-   "image": "白い空間の自動車ショーの台の上に、低くとがった赤い試作のスポーツカーの模型。まわりに小さな見物人のフィギュア",
-   "image_en": "A miniature 1960s motor show stand in the white space: on a round display platform sits a low sharp-nosed red prototype sports coupe model with no badges, tiny visitor figurines in 1960s suits gathered around it. Spotlights from above.",
-   "en": "A miniature 1960s motor show stand in the white space: on a round display platform sits a low sharp-nosed red prototype sports coupe model with no badges, tiny visitor figurines in 1960s suits gathered around it. Spotlights from above."
-  },
-  {
-   "id": "A02",
-   "image": "赤い試作のスポーツカーの模型を前から見た寄り。ボンネットが閉じていて、その上に小さな赤い南京錠が乗っている",
-   "image_en": "Close-up of the front of the low sharp-nosed red prototype sports coupe model with no badges; its long hood is shut and a small red padlock sits on top of the hood. Dramatic spotlight, dark gray surroundings.",
-   "en": "Close-up of the front of the low sharp-nosed red prototype sports coupe model with no badges; its long hood is shut and a small red padlock sits on top of the hood. Dramatic spotlight, dark gray surroundings."
-  },
-  {
-   "id": "A03",
-   "image": "赤い試作車の模型のボンネットの中が断面で見え、エンジンの場所に赤茶色のれんがが積まれている",
-   "image_en": "A cutaway view of the low red prototype sports coupe model: under the hood, where the engine should be, there is a neat stack of reddish-brown bricks. White space, clean light.",
-   "en": "A cutaway view of the low red prototype sports coupe model: under the hood, where the engine should be, there is a neat stack of reddish-brown bricks. White space, clean light."
-  },
-  {
-   "id": "A04",
-   "image": "白い空間で、茶色の革のジャンパーの男のフィギュアが、小さな赤いトラクターの模型の横に立っている",
-   "image_en": "the tractor maker standing proudly next to a small boxy red 1950s farm tractor model with no badges, one hand resting on its big rear wheel, in the white space.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker standing proudly next to a small boxy red 1950s farm tractor model with no badges, one hand resting on its big rear wheel, in the white space."
-  },
-  {
-   "id": "A05",
-   "image": "白い空間で、茶色の革のジャンパーの男のフィギュアが、小さな台座の上に腕を組んで立っている",
-   "image_en": "the tractor maker standing on a small round pedestal in the white space with arms crossed, seen from a low angle. Confident.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker standing on a small round pedestal in the white space with arms crossed, seen from a low angle. Confident."
-  },
-  {
-   "id": "A06",
-   "image": "白い空間の床に、丸い金属のクラッチの部品の模型が1つだけ置かれ、赤いスポットライトが当たっている",
-   "image_en": "A single round metal clutch disc part model lying alone on the white floor under a red spotlight, long shadow. Nothing else in the frame.",
-   "en": "A single round metal clutch disc part model lying alone on the white floor under a red spotlight, long shadow. Nothing else in the frame."
-  },
-  {
-   "id": "A07",
-   "image": "白い空間に、とても低く平たい赤いスポーツカーの模型が1台、速さを表す白い線を引いて止まっている",
-   "image_en": "A very low, flat, curvy red 1966 mid-engine sports car model with no badges, parked diagonally in the white space, faint white speed streaks painted on the floor behind it. Heroic spotlight.",
-   "en": "A very low, flat, curvy red 1966 mid-engine sports car model with no badges, parked diagonally in the white space, faint white speed streaks painted on the floor behind it. Heroic spotlight."
-  },
-  {
-   "id": "A08",
-   "image": "白い空間で、革のジャンパーの男のフィギュアが背を向けて歩き去り、後ろに赤いスポーツカーと赤いトラクターの模型が置き去りになっている",
-   "image_en": "the tractor maker walking away with his back to the camera in the white space; behind him, a red sports car model and a red farm tractor model are left standing alone. Melancholy light.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker walking away with his back to the camera in the white space; behind him, a red sports car model and a red farm tractor model are left standing alone. Melancholy light."
-  },
-  {
-   "id": "A09",
-   "image": "白い空間の天秤の模型。左の皿に赤いスポーツカー、右の皿に赤いトラクター。天秤の上に何も乗っていない空の台座",
-   "image_en": "A large antique balance scale in the white space: a small red sports car model on the left pan, a small red farm tractor model on the right pan, the scale level. An empty pedestal stands beside it.",
-   "en": "A large antique balance scale in the white space: a small red sports car model on the left pan, a small red farm tractor model on the right pan, the scale level. An empty pedestal stands beside it."
-  },
-  {
-   "id": "A10",
-   "image": "コルクボードの模型。顔が黒く塗られた写真、赤い糸、トラクターと車の形の切り抜き（文字は読めない）",
-   "image_en": "A cork board in the white space with three pinned old sepia photos whose face areas are painted solid black, red threads connecting them to paper cutouts of a farm tractor and a sports car. No readable text.",
-   "en": "A cork board in the white space with three pinned old sepia photos whose face areas are painted solid black, red threads connecting them to paper cutouts of a farm tractor and a sports car. No readable text."
-  },
-  {
-   "id": "B01",
-   "image": "白い空間に置かれた、北イタリアの平らな農村のジオラマ。ぶどう畑と、小さな石造りの農家",
-   "image_en": "A miniature diorama of a flat northern Italian countryside in the white space: neat rows of grapevines, a small stone farmhouse with a red tile roof, a dirt road. Soft morning light.",
-   "en": "A miniature diorama of a flat northern Italian countryside in the white space: neat rows of grapevines, a small stone farmhouse with a red tile roof, a dirt road. Soft morning light."
-  },
-  {
-   "id": "B02",
-   "image": "白い空間に、地中海の小さな島の模型。飛行場に古い飛行機が1機、その横で灰色の作業着の整備兵のフィギュアが工具を持っている",
-   "image_en": "A small Mediterranean island diorama in the white space with a tiny airfield; one old 1940s propeller plane with no markings, and beside it a young mechanic figurine in a plain gray-blue overall holding a wrench.",
-   "en": "A small Mediterranean island diorama in the white space with a tiny airfield; one old 1940s propeller plane with no markings, and beside it a young mechanic figurine in a plain gray-blue overall holding a wrench."
-  },
-  {
-   "id": "B03",
-   "image": "白い空間で、灰色の作業着の若い男のフィギュアが、小さな船の模型に乗って海を渡っている",
-   "image_en": "A young man figurine in a plain gray-blue overall standing on the deck of a small old ship model crossing a stylized gray sea in the white space. No flags.",
-   "en": "A young man figurine in a plain gray-blue overall standing on the deck of a small old ship model crossing a stylized gray sea in the white space. No flags."
-  },
-  {
-   "id": "B04",
-   "image": "白い空間に、古い軍のトラックの模型がたくさん並べて置かれている（印や文字は無い）",
-   "image_en": "Rows of old 1940s military trucks parked in a yard in the white space, plain olive drab, no markings, no stars, no text. Seen from above.",
-   "en": "Rows of old 1940s military trucks parked in a yard in the white space, plain olive drab, no markings, no stars, no text. Seen from above."
-  },
-  {
-   "id": "B05",
-   "image": "白い空間の小さな作業場で、革のジャンパーの男のフィギュアが、部品を組み合わせた手作りのトラクターを組み立てている",
-   "image_en": "the tractor maker in a small workshop in the white space, assembling a rough homemade tractor from mismatched army truck parts, tools scattered on the floor.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker in a small workshop in the white space, assembling a rough homemade tractor from mismatched army truck parts, tools scattered on the floor."
-  },
-  {
-   "id": "B06",
-   "image": "白い空間に、赤いトラクターの模型がずらりと何列も並んでいる",
-   "image_en": "Many identical small boxy red 1950s farm tractor models with no badges lined up in long neat rows in the white space, seen from above. Bright, prosperous light.",
-   "en": "Many identical small boxy red 1950s farm tractor models with no badges lined up in long neat rows in the white space, seen from above. Bright, prosperous light."
-  },
-  {
-   "id": "B07",
-   "image": "白い空間に、トラクター工場の模型の隣に、もう1つの工場の模型が建ち、白い箱型の機械が並んでいる",
-   "image_en": "Two small factory building models side by side in the white space: one with red tractors in front, the other with rows of white boxy heating machines in front. No signs, no text.",
-   "en": "Two small factory building models side by side in the white space: one with red tractors in front, the other with rows of white boxy heating machines in front. No signs, no text."
-  },
-  {
-   "id": "B08",
-   "image": "白い空間で、革のジャンパーの男のフィギュアが、金貨の山の上に座っている",
-   "image_en": "the tractor maker sitting relaxed on top of a large pile of gold coins in the white space, legs crossed. Warm light.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker sitting relaxed on top of a large pile of gold coins in the white space, legs crossed. Warm light."
-  },
-  {
-   "id": "B09",
-   "image": "白い空間のガレージの模型に、形の違う1950年代のスポーツカーの模型が4台並んでいる（印や文字は無い）",
-   "image_en": "A miniature private garage in the white space with four different 1950s sports car models parked side by side, one silver with gull-wing doors raised, one dark green long-nosed, two dark blue. No badges, no text.",
-   "en": "A miniature private garage in the white space with four different 1950s sports car models parked side by side, one silver with gull-wing doors raised, one dark green long-nosed, two dark blue. No badges, no text."
-  },
-  {
-   "id": "B10",
-   "image": "白い空間で、革のジャンパーの男のフィギュアが、赤い1950年代のクーペの模型のドアに手をかけている",
-   "image_en": "the tractor maker opening the door of a red 1950s Italian grand touring coupe model with no badges or text, in the white space. Proud moment.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker opening the door of a red 1950s Italian grand touring coupe model with no badges or text, in the white space. Proud moment."
-  },
-  {
-   "id": "C01",
-   "image": "白い空間に、レースの道の模型。赤い1950年代のクーペの模型が、カーブを曲がっている",
-   "image_en": "A miniature winding race road diorama in the white space with low stone walls; the red 1950s Italian grand touring coupe model with no badges is taking a curve. No crowds, no text.",
-   "en": "A miniature winding race road diorama in the white space with low stone walls; the red 1950s Italian grand touring coupe model with no badges is taking a curve. No crowds, no text."
-  },
-  {
-   "id": "C02",
-   "image": "白い空間で、赤いクーペの模型が道の途中で止まり、ボンネットが開いている",
-   "image_en": "The red 1950s Italian grand touring coupe model with no badges stopped by the side of a small road in the white space, its hood open. Lonely mood. No smoke.",
-   "en": "The red 1950s Italian grand touring coupe model with no badges stopped by the side of a small road in the white space, its hood open. Lonely mood. No smoke."
-  },
-  {
-   "id": "C03",
-   "image": "白い空間に、エンジンとタイヤの間に丸い円盤の部品がはさまった、仕組みの模型",
-   "image_en": "A clean cutaway mechanical model in the white space: a simple engine block on the left, a wheel on the right, and between them a round clutch disc part highlighted in red. Educational diorama, no text.",
-   "en": "A clean cutaway mechanical model in the white space: a simple engine block on the left, a wheel on the right, and between them a round clutch disc part highlighted in red. Educational diorama, no text."
-  },
-  {
-   "id": "C05",
-   "image": "白い空間に、赤いクーペの模型。車の下に黒い布がかけられた箱がある",
-   "image_en": "The red 1950s coupe model with no badges in the white space, and on the floor beside it a small box covered with a black cloth, a sliver of light leaking out. Mysterious.",
-   "en": "The red 1950s coupe model with no badges in the white space, and on the floor beside it a small box covered with a black cloth, a sliver of light leaking out. Mysterious."
-  },
-  {
-   "id": "C06",
-   "image": "白い空間の作業場で、つなぎの整備士のフィギュアが、持ち上げた赤いクーペの下で部品を外している",
-   "image_en": "A workshop in the white space: the red 1950s coupe model raised on a lift, a mechanic figurine in plain blue overalls underneath removing parts, parts laid out neatly on a cloth.",
-   "en": "A workshop in the white space: the red 1950s coupe model raised on a lift, a mechanic figurine in plain blue overalls underneath removing parts, parts laid out neatly on a cloth."
-  },
-  {
-   "id": "C07",
-   "image": "白い空間で、赤いクーペの模型と赤いトラクターの模型の間に、まったく同じ形のクラッチの部品が2つ並んでいる",
-   "image_en": "In the white space, a red coupe model on the left and a small red farm tractor model on the right, and between them two identical round clutch disc parts lying side by side, both lit by a spotlight.",
-   "en": "In the white space, a red coupe model on the left and a small red farm tractor model on the right, and between them two identical round clutch disc parts lying side by side, both lit by a spotlight."
-  },
-  {
-   "id": "C08",
-   "image": "白い空間で、ヘルメットを手に持った運転手のフィギュアが、小さな椅子に座って話している",
-   "image_en": "A driver figurine in a plain white racing jacket holding a helmet, sitting on a small stool in the white space, gesturing as if telling a story. No text, no badges.",
-   "en": "A driver figurine in a plain white racing jacket holding a helmet, sitting on a small stool in the white space, gesturing as if telling a story. No text, no badges."
-  },
-  {
    "id": "C09",
    "image": "白い空間に、天秤の模型。左の皿に小さな硬貨1枚、右の皿に硬貨の高い山",
    "image_en": "An antique balance scale in the white space: one small coin on the left pan, a tall stack of coins on the right pan; the right side sinks low. A clutch disc part sits in front of the scale.",
    "en": "An antique balance scale in the white space: one small coin on the left pan, a tall stack of coins on the right pan; the right side sinks low. A clutch disc part sits in front of the scale."
-  },
-  {
-   "id": "C11",
-   "image": "白い空間の社長室の模型。机の向こうにサングラスの白髪の男、手前に革のジャンパーの男が立っている",
-   "image_en": "A 1960s executive office diorama in the white space: the racing car boss sits behind a large desk, and the tractor maker stands in front of the desk, leaning forward. Tense.",
-   "chars": [
-    "enzo",
-    "ferruccio"
-   ],
-   "en": "A 1960s executive office diorama in the white space: the racing car boss sits behind a large desk, and the tractor maker stands in front of the desk, leaning forward. Tense."
-  },
-  {
-   "id": "C12",
-   "image": "社長室の模型で、サングラスの白髪の男のフィギュアが、片手で扉の方を指している",
-   "image_en": "In the office diorama, the racing car boss points toward the door with one arm outstretched, while the tractor maker stands stiff. Cold light.",
-   "chars": [
-    "enzo",
-    "ferruccio"
-   ],
-   "en": "In the office diorama, the racing car boss points toward the door with one arm outstretched, while the tractor maker stands stiff. Cold light."
-  },
-  {
-   "id": "C14",
-   "image": "白い空間に、片方だけの吹き出しの形の模型が浮かび、もう片方の場所が空いている",
-   "image_en": "In the white space, one empty speech-bubble shaped model floats on the left, and on the right an empty space with only a faint dotted outline where a second bubble should be. No text.",
-   "en": "In the white space, one empty speech-bubble shaped model floats on the left, and on the right an empty space with only a faint dotted outline where a second bubble should be. No text."
-  },
-  {
-   "id": "C15",
-   "image": "白い空間に、形の違う3つの吹き出しの模型が並び、そのうち1つに赤い？がのっている",
-   "image_en": "Three differently shaped blank speech-bubble models standing side by side in the white space, one of them topped with a red question mark sculpture. No letters.",
-   "en": "Three differently shaped blank speech-bubble models standing side by side in the white space, one of them topped with a red question mark sculpture. No letters."
-  },
-  {
-   "id": "C16",
-   "image": "白い空間で、革のジャンパーの男のフィギュアが、大きな白い紙を広げ、赤い鉛筆で車の線を描いている",
-   "image_en": "the tractor maker leaning over a large blank sheet of white paper spread on a table in the white space, drawing the outline of a sleek car with a red pencil. Determined.",
-   "chars": [
-    "ferruccio"
-   ],
-   "en": "the tractor maker leaning over a large blank sheet of white paper spread on a table in the white space, drawing the outline of a sleek car with a red pencil. Determined."
-  },
-  {
-   "id": "D01",
-   "image": "白い空間に、建てたばかりの平たい白い工場の模型。前の広い空き地",
-   "image_en": "A brand-new low white factory building model with a sawtooth roof and a wide empty forecourt, standing in flat farmland diorama in the white space. No signs, no text. Clear morning.",
-   "en": "A brand-new low white factory building model with a sawtooth roof and a wide empty forecourt, standing in flat farmland diorama in the white space. No signs, no text. Clear morning."
-  },
-  {
-   "id": "D02",
-   "image": "白い空間の地図の模型の上に、2つの小さな工場の模型。赤い糸で結ばれている（文字は無い）",
-   "image_en": "A plain relief map model of a flat plain in the white space with two tiny factory models on it, connected by a short red thread. No labels.",
-   "en": "A plain relief map model of a flat plain in the white space with two tiny factory models on it, connected by a short red thread. No labels."
-  },
-  {
-   "id": "D03",
-   "image": "白い空間で、白衣の技術者のフィギュアが、大きな12個の筒が並ぶエンジンの模型の前に立っている",
-   "image_en": "An engineer figurine in a white lab coat standing beside a large polished V12 engine model on a stand in the white space. No text, no badges.",
-   "en": "An engineer figurine in a white lab coat standing beside a large polished V12 engine model on a stand in the white space. No text, no badges."
-  },
-  {
-   "id": "D04",
-   "image": "白い空間で、エンジンの模型の横に、金貨が階段のように積み上がっていく",
-   "image_en": "Beside the V12 engine model in the white space, small stacks of gold coins rise like a staircase, each step taller than the last.",
-   "en": "Beside the V12 engine model in the white space, small stacks of gold coins rise like a staircase, each step taller than the last."
   },
   {
    "id": "D05",
@@ -277,30 +29,6 @@
     "ferruccio"
    ],
    "en": "the tractor maker standing at the start of a long straight empty country road model that stretches far into the white space. Calm golden light."
-  },
-  {
-   "id": "D07",
-   "image": "白い空間で、赤い試作車の模型の横に、大きなエンジンの模型が置かれ、ボンネットの中に入りきらずにはみ出している",
-   "image_en": "The low red prototype sports coupe model in the white space with its hood open, and a large V12 engine model sitting next to it on the floor, clearly too big for the engine bay.",
-   "en": "The low red prototype sports coupe model in the white space with its hood open, and a large V12 engine model sitting next to it on the floor, clearly too big for the engine bay."
-  },
-  {
-   "id": "D09",
-   "image": "白い空間で、赤い試作車の模型の左右に、拍手するフィギュアと、腕を組むフィギュアが分かれて立っている",
-   "image_en": "The low red prototype sports coupe model in the center of the white space; on its left, small figurines clapping; on its right, small figurines with arms crossed shaking heads. Split mood.",
-   "en": "The low red prototype sports coupe model in the center of the white space; on its left, small figurines clapping; on its right, small figurines with arms crossed shaking heads. Split mood."
-  },
-  {
-   "id": "D11",
-   "image": "白い空間の自動車ショーの台に、なめらかな形の銀色の1960年代のクーペの模型が置かれている",
-   "image_en": "A motor show platform in the white space with a smooth elegant silver 1964 grand touring coupe model with no badges, spotlights, a few visitor figurines. No text.",
-   "en": "A motor show platform in the white space with a smooth elegant silver 1964 grand touring coupe model with no badges, spotlights, a few visitor figurines. No text."
-  },
-  {
-   "id": "D12",
-   "image": "白い空間に、銀色のクーペの模型が何列か並んでいる",
-   "image_en": "Several rows of identical smooth silver 1964 grand touring coupe models with no badges parked neatly in the white space, seen from above.",
-   "en": "Several rows of identical smooth silver 1964 grand touring coupe models with no badges parked neatly in the white space, seen from above."
   },
   {
    "id": "E01",
