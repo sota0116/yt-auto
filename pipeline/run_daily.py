@@ -33,6 +33,8 @@
 #      「続きを見たくなるか」の不合格58回のうち45回が6点で、1点差で回が止まっていた（2026-11-01 本人が検品の基準を変えると決めた）
 #   11. サムネの字は作る前に意味の点検（check_thumb_text.py）を通す。NG なら fix_thumb.py --reason で直す（2回まで）。直らなくても止めない
 #      （2026-11-04 本人「サムネのテキストが日本語的に意味わからなかったり、文脈が繋がってないことが多いから変える」）
+#   12. 動く絵を Lovart がクレジット不足で断っていて、静止画のままでは完成動画ゲートの「動く絵」で落ちる回は、落とさずに「途中」で待つ
+#      （motion_wait。2026-11-14：nihongi のショートが台本・声・絵まで作っては完成動画ゲートで3回落ち、S119〜S121 を続けて捨てていた）
 # ・--no-upload：手元で試す時。アップの段の手前で止める（status は upload の前で止まったまま残る）
 # ・種類ごとに作るチャンネル（2026-10-29 アナザー日本紀から。profile.json の "kinds"：{"short": {...}, "long": {...}}）：
 #   ショート中心のチャンネルは、1日に何本ものショートと、2日に1本の横動画を作る。そこで run_daily に「種類ごとの繰り返し」を足した
@@ -448,11 +450,18 @@ def wip_restore(ch, work, st):
             "restored": {"日時": now().isoformat(timespec="seconds"), "前の済み": st.get("done", [])}}
 
 
+NO_CREDIT = "enough Lovart credits"  # Lovart の断りの文（make_images_lovart.no_credit と同じ文）。動く絵の記録 images/_motion.json の理由に入る
+
+
 def codex_wait(ch, work):
-    """Lovart がクレジット不足で、PC の Codex の絵を待っている回か（images/_lovart.json の理由で見る。作業フォルダが無ければ history の控え）"""
+    """Lovart がクレジット不足で、PC の Codex の絵を待っている回か（images/_lovart.json の理由で見る。作業フォルダが無ければ history の控え）。
+    動く絵を断られて待っている回（images/_motion.json。make_one の motion_wait）も同じく長く待つ（2026-11-14）"""
     for d in (work, wip_dir(ch, work)):
         lg = jload(os.path.join(d, "images", "_lovart.json"), {})
         if any(isinstance(v, dict) and "クレジットが足りない" in (v.get("理由") or "") for v in lg.values()):
+            return True
+        mg = jload(os.path.join(d, "images", "_motion.json"), {})
+        if any(isinstance(v, dict) and NO_CREDIT in (v.get("理由") or "") for v in mg.values()):
             return True
     return False
 
@@ -686,6 +695,27 @@ def make_one(ch, st, upload, kind=None):
                 env={"MOTION_DEADLINE": str(int(time.time() + max(0, left() - 75 * 60)))})
         if r.returncode == 3:
             busy("motion", "動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります")
+        motion_wait()
+
+    def motion_wait():
+        """動く絵を Lovart がクレジット不足で断っていて、静止画のままでは完成動画ゲートの「動く絵」で落ちる回は、落とさずに待つ（2026-11-14）。
+        前は静止画のまま組み立て、完成動画ゲートで3回落ちて回を飛ばし、次のネタも同じ所で落ちた（nihongi のショート S119〜S121。
+        台本・声・絵を作っては捨てた）。断られたカットは次の実行で頼み直せるよう、回数を0に戻す（理由は残す＝codex_wait が見る）。
+        ゲートの道具が --motion-only を受けない時（終了コード2）と、動く絵が足りている時（0）は今までどおり進む。失敗に数えず、Issue にもしない（途中）"""
+        mp = os.path.join(work, "images", "_motion.json")
+        lg = jload(mp, {})
+        no = [i for i, v in lg.items() if isinstance(v, dict) and v.get("状態") == "失敗" and NO_CREDIT in (v.get("理由") or "")]
+        if not no:
+            return
+        if run(work, "motion_check", [T("gate_video", "gate_video.py"), work, "--motion-only"], ch, ok=(0, 1, 2)).returncode != 1:
+            return
+        for i in no:
+            lg[i]["回"] = 0
+        lg["_runs"] = 0
+        jsave(mp, lg)
+        st["done"] = [d for d in st["done"] if d not in ("motion", "build")]
+        jsave(sp, st)
+        raise Busy("動く絵を Lovart がクレジット不足で頼めず、静止画のままでは完成動画ゲートを通らないので待ちます。クレジットが戻った後の実行で続きから作ります")
     if T("motion", None):
         step("motion", motion)
     if T("charts", "make_charts_job.py"):
@@ -830,6 +860,8 @@ def make_one(ch, st, upload, kind=None):
                     run(work, "build", build_args(), ch)
                     continue
             if not fixes or st.get("video_redo", 0) >= 2:
+                if T("motion", None):
+                    motion_wait()  # 動く絵を断られたまま組み立てた回は、捨てずに動く絵の段へ戻して待つ
                 raise Stop(f"gate_video で止まりました（終了コード 1）：{r.stdout.strip()[-300:]}")
             st["video_redo"] = st.get("video_redo", 0) + 1
             st["video_redo_ids"] = fixes
