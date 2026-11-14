@@ -503,7 +503,18 @@
  },
  "S116_r009": {
   "type": null,
-  "video_id": "wPgI_f4Fw7g"
+  "video_id": "wPgI_f4Fw7g",
+  "h72": {
+   "views": 1445,
+   "averageViewPercentage": 114.4,
+   "averageViewDuration": 51,
+   "subscribersGained": 1,
+   "直す所": [
+    "11%あたりで急に落ちる（13%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 1607
+  }
  },
  "S117_r005": {
   "type": null,
@@ -547,7 +558,16 @@
  },
  "L010_鎖国が逆だったら": {
   "type": null,
-  "video_id": "RBQIRTxzsWk"
+  "video_id": "RBQIRTxzsWk",
+  "h72": {
+   "views": 11,
+   "averageViewPercentage": 21.36,
+   "averageViewDuration": 105,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 17
+  }
  },
  "L009_江戸の水道が三日止まったら": {
   "type": null,
@@ -556,5 +576,9 @@
  "L011_黒船に同時通訳がいたら": {
   "type": null,
   "video_id": "85Up2l_e36s"
+ },
+ "L012_火薬の残りが見えたら": {
+  "type": null,
+  "video_id": "TLdhDHgZQ1E"
  }
 }
