@@ -1,17 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S126_小銭入れの向き",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice"
- ],
- "started": "2026-11-15T00:20:32+09:00",
- "tries": 0,
- "code": "b4688f5c4404",
- "stage": "images",
- "updated": "2026-11-15T00:29:54+09:00",
- "busy": {
-  "images": 1
- }
-}
+{}
