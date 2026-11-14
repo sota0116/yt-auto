@@ -6,13 +6,14 @@
   "gate_script",
   "voice",
   "yomi",
-  "reading"
+  "reading",
+  "images"
  ],
  "started": "2026-11-14T09:27:35+09:00",
  "tries": 0,
  "code": "b4688f5c4404",
- "stage": "images",
- "updated": "2026-11-14T09:49:03+09:00",
+ "stage": "motion",
+ "updated": "2026-11-15T02:07:02+09:00",
  "busy": {
   "images": 5
  }
