@@ -1,0 +1,531 @@
+{
+ "ch": "shimei",
+ "work": "L011_タイ洞窟13人",
+ "portrait": false,
+ "made": "2026-11-15 06:01",
+ "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red. Northern Thailand, 2018.",
+ "avoid_en": "logos, badges, insignia or emblems of real companies, militaries or agencies, marks or lettering on vehicles and equipment, readable text or numbers, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {
+  "boys": {
+   "desc_en": "the twelve boys, small slim boy figurines aged 11 to 16 with smooth featureless faces (no eyes, nose or mouth details), short black hair, plain red short-sleeved football shirts with no numbers, logos or text, black shorts"
+  },
+  "coach": {
+   "desc_en": "the young coach, a slim 25-year-old man figurine with a smooth featureless face (no eyes, nose or mouth details), very short cropped black hair, a plain dark navy tracksuit jacket with no logos, black shorts"
+  },
+  "divers": {
+   "desc_en": "the cave divers, adult man figurines with smooth featureless faces (no eyes, nose or mouth details), plain black wetsuits, plain yellow helmets with headlamps, plain gray air tanks on their sides, no logos, no badges, no text"
+  },
+  "doctor": {
+   "desc_en": "the anesthetist, a tall middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short gray hair, a plain black wetsuit, carrying a small plain red medical bag with no cross or text"
+  },
+  "navy": {
+   "desc_en": "the navy divers, fit adult man figurines with smooth featureless faces (no eyes, nose or mouth details), plain dark green wetsuits, plain black helmets with headlamps, no insignia, no badges, no flags, no text"
+  },
+  "saman": {
+   "desc_en": "the volunteer diver, a fit 37-year-old man figurine with a smooth featureless face (no eyes, nose or mouth details), short black hair, a plain dark green wetsuit, no insignia or text"
+  }
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "image": "暗い洞窟の岩の上で、灰色の短髪の医師のフィギュアが、横になった少年のフィギュアの腕に小さな注射器を当てている。ヘッドライトの光だけ",
+   "image_en": "Inside a dark cave diorama lit only by headlamps: the anesthetist kneeling on a wet rock ledge, holding a small plain syringe to the arm of one of the twelve boys lying on his back. Calm, tense mood. No text.",
+   "chars": [
+    "doctor",
+    "boys"
+   ],
+   "en": "Inside a dark cave diorama lit only by headlamps: the anesthetist kneeling on a wet rock ledge, holding a small plain syringe to the arm of one of the twelve boys lying on his back. Calm, tense mood. No text."
+  },
+  {
+   "id": "A02",
+   "image": "黒い水の中で、ダイバーのフィギュアが、顔全体を覆うマスクを付けた眠った少年を抱えて沈んでいく",
+   "image_en": "Underwater in black flooded cave water: one of the cave divers holding one of the twelve boys, who wears a full-face diving mask and is limp and asleep, both sinking slowly into darkness. A single headlamp beam.",
+   "chars": [
+    "boys",
+    "divers"
+   ],
+   "en": "Underwater in black flooded cave water: one of the cave divers holding one of the twelve boys, who wears a full-face diving mask and is limp and asleep, both sinking slowly into darkness. A single headlamp beam."
+  },
+  {
+   "id": "A03",
+   "image": "断面で見た洞窟の模型。山の下を、水に沈んだ細い通路が曲がりくねって外まで続き、赤い線でたどられている",
+   "image_en": "A cutaway model of a mountain in the white space showing a long, narrow, winding cave passage under it, mostly filled with dark water, traced by a thin red line from deep inside to the entrance. Educational diorama, no text.",
+   "en": "A cutaway model of a mountain in the white space showing a long, narrow, winding cave passage under it, mostly filled with dark water, traced by a thin red line from deep inside to the entrance. Educational diorama, no text."
+  },
+  {
+   "id": "A04",
+   "image": "白い空間で、灰色の短髪の医師のフィギュアが、赤い救急かばんを足元に置き、うつむいて立っている",
+   "image_en": "the anesthetist standing alone in the white space with head bowed, his small plain red medical bag at his feet. Heavy, doubtful mood.",
+   "chars": [
+    "doctor"
+   ],
+   "en": "the anesthetist standing alone in the white space with head bowed, his small plain red medical bag at his feet. Heavy, doubtful mood."
+  },
+  {
+   "id": "A05",
+   "image": "暗い洞窟の岩の上に、赤い無地のシャツの少年のフィギュア12人と、紺のジャージの若いコーチが身を寄せて座っている",
+   "image_en": "the twelve boys and the young coach huddled together on a high rock ledge inside a dark cave diorama, dark water below them. Seen from above. Small, fragile.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "the twelve boys and the young coach huddled together on a high rock ledge inside a dark cave diorama, dark water below them. Seen from above. Small, fragile."
+  },
+  {
+   "id": "A06",
+   "image": "白い空間で、黒いウェットスーツに黄色いヘルメットのダイバーのフィギュアが2人、ボンベを背負って立っている",
+   "image_en": "two of the cave divers standing side by side in the white space, wearing their gear and holding coils of thin white guideline. Modest, ordinary posture.",
+   "chars": [
+    "divers"
+   ],
+   "en": "two of the cave divers standing side by side in the white space, wearing their gear and holding coils of thin white guideline. Modest, ordinary posture."
+  },
+  {
+   "id": "A07",
+   "image": "白い空間で、山の模型のふもとに、とても小さな人のフィギュアが何千人も集まっている",
+   "image_en": "A small mountain model in the white space, and at its foot thousands of tiny figurines of rescuers, soldiers and volunteers gathered in crowds, plain clothes, no insignia. Seen from high above.",
+   "en": "A small mountain model in the white space, and at its foot thousands of tiny figurines of rescuers, soldiers and volunteers gathered in crowds, plain clothes, no insignia. Seen from high above."
+  },
+  {
+   "id": "A08",
+   "image": "白い空間に、洞窟の入口の形の黒い穴の模型。その前に赤い？の形が浮かんでいる",
+   "image_en": "A dark cave mouth model opening in a rock face in the white space, and floating in front of it a large red question mark sculpture. Mysterious light.",
+   "en": "A dark cave mouth model opening in a rock face in the white space, and floating in front of it a large red question mark sculpture. Mysterious light."
+  },
+  {
+   "id": "A09",
+   "image": "コルクボードの模型。顔が黒く塗られた写真、赤い糸、洞窟の地図の形の紙（文字は読めない）",
+   "image_en": "A cork board in the white space with several pinned photos whose face areas are painted solid black, red threads connecting them to a paper cutout of a winding cave map. No readable text.",
+   "en": "A cork board in the white space with several pinned photos whose face areas are painted solid black, red threads connecting them to a paper cutout of a winding cave map. No readable text."
+  },
+  {
+   "id": "B01",
+   "image": "白い空間に置かれた、北タイの緑の山のジオラマ。ふもとに洞窟の入口と田んぼ",
+   "image_en": "A miniature diorama of a forested green limestone mountain in northern Thailand in the white space, a cave entrance at its foot, small rice fields nearby. Soft overcast light.",
+   "en": "A miniature diorama of a forested green limestone mountain in northern Thailand in the white space, a cave entrance at its foot, small rice fields nearby. Soft overcast light."
+  },
+  {
+   "id": "B02",
+   "image": "白い空間の田舎道の模型を、赤いシャツの少年のフィギュアたちが自転車をこいで山へ向かっている",
+   "image_en": "the twelve boys riding plain bicycles in a line along a small country road diorama toward a green mountain in the white space. Cheerful afternoon light. Bicycles have no logos.",
+   "chars": [
+    "boys"
+   ],
+   "en": "the twelve boys riding plain bicycles in a line along a small country road diorama toward a green mountain in the white space. Cheerful afternoon light. Bicycles have no logos."
+  },
+  {
+   "id": "B03",
+   "image": "白い空間に、サッカーボールの模型と、小さな野生のイノシシのフィギュアが並んでいる",
+   "image_en": "A plain white soccer ball model and a small wild boar figurine standing side by side in the white space. Simple, friendly.",
+   "en": "A plain white soccer ball model and a small wild boar figurine standing side by side in the white space. Simple, friendly."
+  },
+  {
+   "id": "B04",
+   "image": "白い空間で、紺のジャージのコーチのフィギュアが、赤いシャツの少年たちの前に立っている",
+   "image_en": "the young coach standing in front of the twelve boys in the white space, the boys lined up in two rows, a soccer ball at the coach's feet.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "the young coach standing in front of the twelve boys in the white space, the boys lined up in two rows, a soccer ball at the coach's feet."
+  },
+  {
+   "id": "B05",
+   "image": "白い空間の洞窟の入口の前に、無地の白い看板の模型が立ち、赤い雨のしずくの形の印だけが描かれている",
+   "image_en": "A plain white warning sign board standing in front of a cave mouth model in the white space; the only mark on it is a single red raindrop shape. No letters, no numbers.",
+   "en": "A plain white warning sign board standing in front of a cave mouth model in the white space; the only mark on it is a single red raindrop shape. No letters, no numbers."
+  },
+  {
+   "id": "B07",
+   "image": "断面で見た山の模型。上から雨が降り、山の中の通路の奥に、小さな少年のフィギュアたちの列が見える",
+   "image_en": "A cutaway mountain model in the white space: heavy rain falling from a dark cloud on top, and deep inside the mountain a narrow tunnel with a tiny line of the twelve boys and the young coach walking further in with flashlights.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "A cutaway mountain model in the white space: heavy rain falling from a dark cloud on top, and deep inside the mountain a narrow tunnel with a tiny line of the twelve boys and the young coach walking further in with flashlights."
+  },
+  {
+   "id": "B08",
+   "image": "洞窟の通路の模型の断面。低い所から黒い水がたまり、通路の天井近くまで上がっている",
+   "image_en": "A cutaway cave tunnel model in the white space: dark water filling the low sections of the tunnel almost to the ceiling, the dry part getting smaller. Ominous.",
+   "en": "A cutaway cave tunnel model in the white space: dark water filling the low sections of the tunnel almost to the ceiling, the dry part getting smaller. Ominous."
+  },
+  {
+   "id": "B09",
+   "image": "夜の洞窟の入口の模型の前に、何台もの自転車とかばんが置かれたまま。雨に濡れている",
+   "image_en": "Night at the cave mouth model in the white space: many plain bicycles and small backpacks left lying at the entrance, wet with rain, no one around. A single cold light. No logos.",
+   "en": "Night at the cave mouth model in the white space: many plain bicycles and small backpacks left lying at the entrance, wet with rain, no one around. A single cold light. No logos."
+  },
+  {
+   "id": "B10",
+   "image": "白い空間に、壁かけの暦の模型。6月のページに、赤い雨のしずくの形が貼られている（字は無い）",
+   "image_en": "A plain wall calendar model in the white space with blank pages and no numbers; a red raindrop shape is stuck early on the current page. No text.",
+   "en": "A plain wall calendar model in the white space with blank pages and no numbers; a red raindrop shape is stuck early on the current page. No text."
+  },
+  {
+   "id": "C01",
+   "image": "洞窟の中の茶色い水たまりの前で、緑のウェットスーツのダイバーのフィギュアたちが、ボンベを背負って準備している",
+   "image_en": "the navy divers preparing at the edge of a muddy brown pool inside a cave diorama, checking plain gray air tanks, headlamps on. No insignia.",
+   "chars": [
+    "navy"
+   ],
+   "en": "the navy divers preparing at the edge of a muddy brown pool inside a cave diorama, checking plain gray air tanks, headlamps on. No insignia."
+  },
+  {
+   "id": "C02",
+   "image": "茶色に濁った水の中、ダイバーのヘッドライトの光が、すぐ先で泥にのまれている",
+   "image_en": "Underwater in thick muddy brown water: a diver's headlamp beam disappearing into the murk just a hand's length ahead, the diver's glove barely visible. Claustrophobic.",
+   "en": "Underwater in thick muddy brown water: a diver's headlamp beam disappearing into the murk just a hand's length ahead, the diver's glove barely visible. Claustrophobic."
+  },
+  {
+   "id": "C03",
+   "image": "狭い水中の通路で、緑のウェットスーツのダイバーが、強い流れに押されて岩につかまっている",
+   "image_en": "One of the navy divers in a narrow underwater cave passage, clinging to a rock against a strong current, white lines on the floor showing the flow direction. No insignia.",
+   "chars": [
+    "navy"
+   ],
+   "en": "One of the navy divers in a narrow underwater cave passage, clinging to a rock against a strong current, white lines on the floor showing the flow direction. No insignia."
+  },
+  {
+   "id": "C04",
+   "image": "洞窟の入口の模型から、太い管が何本も伸び、外の大きなポンプの機械につながっている",
+   "image_en": "Many thick plain hoses running out of a cave mouth model in the white space to a row of large plain gray water pump machines, workers in plain clothes beside them. Night lights. No logos, no text.",
+   "en": "Many thick plain hoses running out of a cave mouth model in the white space to a row of large plain gray water pump machines, workers in plain clothes beside them. Night lights. No logos, no text."
+  },
+  {
+   "id": "C05",
+   "image": "白い空間に、山の模型と同じ高さの、巨大な水の柱の模型が立っている",
+   "image_en": "A giant column of clear blue water standing next to a small mountain model in the white space, the water column as tall as the mountain. Symbolic scale.",
+   "en": "A giant column of clear blue water standing next to a small mountain model in the white space, the water column as tall as the mountain. Symbolic scale."
+  },
+  {
+   "id": "C06",
+   "image": "山の模型の上に、小さな穴を掘る機械と人のフィギュアが点々といて、細い縦の穴が何本も描かれている",
+   "image_en": "Top of a forested mountain model in the white space dotted with small plain drilling rigs and worker figurines, thin vertical shafts visible in a cutaway going down. No logos.",
+   "en": "Top of a forested mountain model in the white space dotted with small plain drilling rigs and worker figurines, thin vertical shafts visible in a cutaway going down. No logos."
+  },
+  {
+   "id": "C07",
+   "image": "山の断面の模型。上から伸びる細い穴はどれも、奥の少年たちの岩まで届かず止まっている",
+   "image_en": "A cutaway mountain model in the white space: many thin vertical shafts from the top all stop short, none reaching the small rock ledge deep inside where tiny figures sit. Red marks at the dead ends.",
+   "en": "A cutaway mountain model in the white space: many thin vertical shafts from the top all stop short, none reaching the small rock ledge deep inside where tiny figures sit. Red marks at the dead ends."
+  },
+  {
+   "id": "C08",
+   "image": "白い空間の空港の模型で、黒いウェットスーツのダイバーたちが、大きな道具の箱を運んでいる",
+   "image_en": "the cave divers arriving at a small airport diorama in the white space, carrying large plain equipment cases and coils of rope. No logos, no airline marks.",
+   "chars": [
+    "divers"
+   ],
+   "en": "the cave divers arriving at a small airport diorama in the white space, carrying large plain equipment cases and coils of rope. No logos, no airline marks."
+  },
+  {
+   "id": "C09",
+   "image": "白い空間を左右に分け、左に消防士の上着、右にノートパソコンが置かれ、真ん中に2人のダイバーのフィギュアが立っている",
+   "image_en": "two of the cave divers standing in the middle of the white space; on the left a plain red firefighter jacket on a stand, on the right a plain closed laptop on a small table. No text, no logos.",
+   "chars": [
+    "divers"
+   ],
+   "en": "two of the cave divers standing in the middle of the white space; on the left a plain red firefighter jacket on a stand, on the right a plain closed laptop on a small table. No text, no logos."
+  },
+  {
+   "id": "C10",
+   "image": "白い空間の地図の模型で、遠くの何か所からも赤い糸が、タイの北の山へ集まっている（字も国境も無い）",
+   "image_en": "A plain relief world map model in the white space with no borders and no labels; several red threads from distant continents converge on one small point in northern Thailand.",
+   "en": "A plain relief world map model in the white space with no borders and no labels; several red threads from distant continents converge on one small point in northern Thailand."
+  },
+  {
+   "id": "C11",
+   "image": "真っ暗な洞窟の模型の中、岩の上に、空っぽの小さな弁当箱が1つだけ置かれている",
+   "image_en": "Inside a pitch-dark cave diorama, a single empty small lunch box lies open on a wet rock, lit by one faint beam. Lonely.",
+   "en": "Inside a pitch-dark cave diorama, a single empty small lunch box lies open on a wet rock, lit by one faint beam. Lonely."
+  },
+  {
+   "id": "D01",
+   "image": "水中の暗い通路で、黄色いヘルメットのダイバーが、白い細い綱を岩に結びながら進んでいる",
+   "image_en": "One of the cave divers swimming through a dark underwater passage, tying a thin white guideline to a rock as he goes, headlamp beam ahead. Quiet.",
+   "chars": [
+    "divers"
+   ],
+   "en": "One of the cave divers swimming through a dark underwater passage, tying a thin white guideline to a rock as he goes, headlamp beam ahead. Quiet."
+  },
+  {
+   "id": "D02",
+   "image": "暗い水面から、黄色いヘルメットのダイバーが顔を出し、空になった綱の巻き枠を持っている",
+   "image_en": "One of the cave divers surfacing in a dark flooded chamber, head and shoulders above black water, holding an empty guideline reel, turning his head as if noticing something.",
+   "chars": [
+    "divers"
+   ],
+   "en": "One of the cave divers surfacing in a dark flooded chamber, head and shoulders above black water, holding an empty guideline reel, turning his head as if noticing something."
+  },
+  {
+   "id": "D03",
+   "image": "ダイバーのライトの光の先、高い岩の上に、赤いシャツの少年たちとコーチが身を寄せて座っている",
+   "image_en": "A headlamp beam from the water reaching up to a high muddy rock ledge, where the twelve boys and the young coach sit huddled together, turning toward the light.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "A headlamp beam from the water reaching up to a high muddy rock ledge, where the twelve boys and the young coach sit huddled together, turning toward the light."
+  },
+  {
+   "id": "D04",
+   "image": "洞窟の断面の模型。砂のたまった広い空間から、さらに奥の高い岩まで、赤い点線が引かれている",
+   "image_en": "A cutaway cave model in the white space: a wide chamber with a small sandy bank, and a red dotted line continuing further into the mountain to a high rock ledge. No text.",
+   "en": "A cutaway cave model in the white space: a wide chamber with a small sandy bank, and a red dotted line continuing further into the mountain to a high rock ledge. No text."
+  },
+  {
+   "id": "D06",
+   "image": "岩の上で、赤いシャツの少年のフィギュア1人が立ち上がり、水の中のダイバーの方へ手を上げている",
+   "image_en": "One of the twelve boys standing up on the rock ledge and raising a hand toward a diver's light in the water below, the other boys sitting behind him.",
+   "chars": [
+    "boys"
+   ],
+   "en": "One of the twelve boys standing up on the rock ledge and raising a hand toward a diver's light in the water below, the other boys sitting behind him."
+  },
+  {
+   "id": "D07",
+   "image": "暗い洞窟の岩の上で、少年たちとコーチの影が、ライトの光に照らされて寄りそっている",
+   "image_en": "the twelve boys and the young coach close together on the rock ledge, lit warmly by a headlamp beam, the darkness around them. Relief.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "the twelve boys and the young coach close together on the rock ledge, lit warmly by a headlamp beam, the darkness around them. Relief."
+  },
+  {
+   "id": "D09",
+   "image": "暗い岩の上で、紺のジャージのコーチのフィギュアが足を組んで座り、少年たちも同じ形で目を閉じるように座っている",
+   "image_en": "the young coach sitting cross-legged in meditation on the rock ledge, and the twelve boys sitting cross-legged around him in the same calm pose. Soft dim light.",
+   "chars": [
+    "coach",
+    "boys"
+   ],
+   "en": "the young coach sitting cross-legged in meditation on the rock ledge, and the twelve boys sitting cross-legged around him in the same calm pose. Soft dim light."
+  },
+  {
+   "id": "D10",
+   "image": "白い空間に、スマホの模型がたくさん浮かび、どの画面にも暗い洞窟の岩の上の小さな人影が光っている（字は無い）",
+   "image_en": "Many plain smartphone models floating in the white space, every screen showing the same small glowing image of tiny figures on a dark rock ledge. No text, no logos.",
+   "en": "Many plain smartphone models floating in the white space, every screen showing the same small glowing image of tiny figures on a dark rock ledge. No text, no logos."
+  },
+  {
+   "id": "D11",
+   "image": "岩の上の少年たちの横に、緑のウェットスーツのダイバーが座り、銀色の小さな袋を配っている",
+   "image_en": "the navy divers sitting beside the twelve boys on the rock ledge, handing out small plain silver food pouches and foil blankets. Warm small light. No insignia.",
+   "chars": [
+    "navy",
+    "boys"
+   ],
+   "en": "the navy divers sitting beside the twelve boys on the rock ledge, handing out small plain silver food pouches and foil blankets. Warm small light. No insignia."
+  },
+  {
+   "id": "E01",
+   "image": "水中の通路の模型。人1人がやっと通れる細い岩のすき間が、暗い水の中に続いている",
+   "image_en": "A very narrow underwater rock squeeze inside a flooded cave diorama, barely wide enough for one person, dark water, a single thin white guideline running through it.",
+   "en": "A very narrow underwater rock squeeze inside a flooded cave diorama, barely wide enough for one person, dark water, a single thin white guideline running through it."
+  },
+  {
+   "id": "E02",
+   "image": "白い空間に、ボンベとマスクの模型が置かれ、その横に赤いシャツの小さな少年のフィギュアが立って見上げている",
+   "image_en": "A plain gray air tank and a full-face diving mask lying in the white space, and one of the twelve boys standing next to them, looking at them, much smaller than the tank.",
+   "chars": [
+    "boys"
+   ],
+   "en": "A plain gray air tank and a full-face diving mask lying in the white space, and one of the twelve boys standing next to them, looking at them, much smaller than the tank."
+  },
+  {
+   "id": "E03",
+   "image": "白い空間に、4枚の大きなカードの模型が並ぶ",
+   "image_en": "Four large blank cards standing in a row in the white space, each with a simple icon: a calendar, a diving mask, a cave mouth, a drill. No text.",
+   "en": "Four large blank cards standing in a row in the white space, each with a simple icon: a calendar, a diving mask, a cave mouth, a drill. No text."
+  },
+  {
+   "id": "E04",
+   "image": "白い空間で、洞窟の岩の上に、たくさんの食べ物の箱が積まれ、その横に雲と雨の模型が並んでいる",
+   "image_en": "A rock ledge model in the white space stacked with many plain supply boxes, and above it a gray rain cloud model with long rain streaks. Long wait.",
+   "en": "A rock ledge model in the white space stacked with many plain supply boxes, and above it a gray rain cloud model with long rain streaks. Long wait."
+  },
+  {
+   "id": "E07",
+   "image": "暗い洞窟の中、岩の上の少年たちの頭の上に、しぼんでいく赤い風船の形の模型が浮かんでいる",
+   "image_en": "Inside the dark cave, above the twelve boys on the rock ledge, a red balloon-shaped model floats, half deflated and shrinking. Symbolic of thinning air.",
+   "chars": [
+    "boys"
+   ],
+   "en": "Inside the dark cave, above the twelve boys on the rock ledge, a red balloon-shaped model floats, half deflated and shrinking. Symbolic of thinning air."
+  },
+  {
+   "id": "E08",
+   "image": "白い空間に、2本の柱の模型。左は高い灰色の柱、右は低い赤い柱",
+   "image_en": "Two column models in the white space: a tall gray column on the left and a noticeably shorter red column on the right. No numbers, no text.",
+   "en": "Two column models in the white space: a tall gray column on the left and a noticeably shorter red column on the right. No numbers, no text."
+  },
+  {
+   "id": "E09",
+   "image": "白い空間で、緑のウェットスーツのダイバーのフィギュアが、空気のボンベを3本運んで水の通路へ入っていく",
+   "image_en": "the volunteer diver carrying three plain gray air tanks, walking into a dark flooded cave passage. Quiet, solemn mood.",
+   "chars": [
+    "saman"
+   ],
+   "en": "the volunteer diver carrying three plain gray air tanks, walking into a dark flooded cave passage. Quiet, solemn mood."
+  },
+  {
+   "id": "E10",
+   "image": "白い空間に、1本のボンベと、ヘルメットの模型が静かに置かれ、上から柔らかい光が当たっている",
+   "image_en": "A single plain gray air tank and a diving helmet placed together quietly on the white floor, a soft beam of light from above. Memorial mood. No text.",
+   "en": "A single plain gray air tank and a diving helmet placed together quietly on the white floor, a soft beam of light from above. Memorial mood. No text."
+  },
+  {
+   "id": "E13",
+   "image": "白い空間で、紺のジャージのコーチのフィギュアが、岩の上で小さな白い紙に何かを書いている（字は読めない）",
+   "image_en": "the young coach sitting on the rock ledge writing on a small sheet of white paper with a pencil, the boys asleep behind him. Writing is not readable.",
+   "chars": [
+    "coach"
+   ],
+   "en": "the young coach sitting on the rock ledge writing on a small sheet of white paper with a pencil, the boys asleep behind him. Writing is not readable."
+  },
+  {
+   "id": "F01",
+   "image": "白い空間で、灰色の短髪の医師のフィギュアが、黒いウェットスーツ姿で赤い救急かばんを持って立っている",
+   "image_en": "the anesthetist standing in the white space in his diving gear, holding his small plain red medical bag, looking toward a dark cave mouth model.",
+   "chars": [
+    "doctor"
+   ],
+   "en": "the anesthetist standing in the white space in his diving gear, holding his small plain red medical bag, looking toward a dark cave mouth model."
+  },
+  {
+   "id": "F03",
+   "image": "黒い水の中で、2つの人影がもつれ、白い泡が広がっている模型",
+   "image_en": "Underwater in black water, two figurine silhouettes tangled together with a burst of white bubbles around them, a dropped headlamp sinking. Danger, no blood.",
+   "en": "Underwater in black water, two figurine silhouettes tangled together with a burst of white bubbles around them, a dropped headlamp sinking. Danger, no blood."
+  },
+  {
+   "id": "F06",
+   "image": "白い空間に、砂時計の模型と、小さな注射器の模型が並んでいる。砂時計の砂は赤い",
+   "image_en": "An hourglass model with red sand running out, standing next to a small plain syringe in the white space. Clean, clinical light.",
+   "en": "An hourglass model with red sand running out, standing next to a small plain syringe in the white space. Clean, clinical light."
+  },
+  {
+   "id": "F07",
+   "image": "白い空間で、赤い救急かばんの上に、大きな透明な盾の模型がかざされている",
+   "image_en": "A large clear transparent shield model held over a small plain red medical bag in the white space. Symbolic protection. No emblem.",
+   "en": "A large clear transparent shield model held over a small plain red medical bag in the white space. Symbolic protection. No emblem."
+  },
+  {
+   "id": "F08",
+   "image": "白い空間の学校のプールの模型。水の中に障害物が並び、ダイバーたちが子どもの大きさの人形を運んで練習している",
+   "image_en": "A school swimming pool diorama in the white space with obstacles placed in the water; the cave divers and the navy divers practicing carrying a child-sized plain dummy through them. No text.",
+   "chars": [
+    "divers",
+    "navy"
+   ],
+   "en": "A school swimming pool diorama in the white space with obstacles placed in the water; the cave divers and the navy divers practicing carrying a child-sized plain dummy through them. No text."
+  },
+  {
+   "id": "F09",
+   "image": "水中で、黒いウェットスーツのダイバーが、マスクを付けた少年を胸の前に抱え、短い綱でつながっている",
+   "image_en": "Underwater: one of the cave divers swimming with one of the twelve boys held close in front of him, the boy wearing a full-face mask and connected to the diver by a short rope, both moving through a narrow passage.",
+   "chars": [
+    "divers",
+    "boys"
+   ],
+   "en": "Underwater: one of the cave divers swimming with one of the twelve boys held close in front of him, the boy wearing a full-face mask and connected to the diver by a short rope, both moving through a narrow passage."
+  },
+  {
+   "id": "F11",
+   "image": "暗い洞窟の水たまりに、ダイバーが、担架にくくられた眠った少年と一緒に入っていく",
+   "image_en": "Inside the dark cave, one of the cave divers sliding into black water together with one of the twelve boys strapped asleep on a small plain orange stretcher, full-face mask on. Only headlamp light.",
+   "chars": [
+    "divers",
+    "boys"
+   ],
+   "en": "Inside the dark cave, one of the cave divers sliding into black water together with one of the twelve boys strapped asleep on a small plain orange stretcher, full-face mask on. Only headlamp light."
+  },
+  {
+   "id": "F12",
+   "image": "洞窟の入口の模型から、オレンジの担架にのった少年が、大勢の救助の人の手で光の中へ運び出されている",
+   "image_en": "At the cave mouth model, the small plain orange stretcher with one of the twelve boys is passed out of the darkness into bright light by many hands of rescuer figurines, an ambulance with no markings waiting outside. Relief, dramatic light.",
+   "chars": [
+    "boys"
+   ],
+   "en": "At the cave mouth model, the small plain orange stretcher with one of the twelve boys is passed out of the darkness into bright light by many hands of rescuer figurines, an ambulance with no markings waiting outside. Relief, dramatic light."
+  },
+  {
+   "id": "F13",
+   "image": "白い空間に、オレンジの担架が4つずつ、2列に並んでいる",
+   "image_en": "Two neat rows of four small plain orange stretchers each, lined up in the white space, seen from above. Orderly.",
+   "en": "Two neat rows of four small plain orange stretchers each, lined up in the white space, seen from above. Orderly."
+  },
+  {
+   "id": "F14",
+   "image": "洞窟の入口の模型から、紺のジャージのコーチが担架で運び出され、外の人たちが拍手している",
+   "image_en": "the young coach being carried out of the cave mouth model on a plain orange stretcher, rescuer figurines outside clapping. Evening light.",
+   "chars": [
+    "coach"
+   ],
+   "en": "the young coach being carried out of the cave mouth model on a plain orange stretcher, rescuer figurines outside clapping. Evening light."
+  },
+  {
+   "id": "G01",
+   "image": "白い空間の病院の部屋の模型。白いベッドが並び、赤いシャツの少年たちが座って手を振っている",
+   "image_en": "A hospital ward diorama in the white space with rows of white beds, the twelve boys sitting up in the beds waving. Bright, hopeful light. No text.",
+   "chars": [
+    "boys"
+   ],
+   "en": "A hospital ward diorama in the white space with rows of white beds, the twelve boys sitting up in the beds waving. Bright, hopeful light. No text."
+  },
+  {
+   "id": "G02",
+   "image": "白い空間に、山の上の小さな村の模型。家の前に、紺のジャージのコーチと少年3人が立っている",
+   "image_en": "A small hill village diorama in the white space with wooden stilt houses, and the young coach standing in front with three of the boys. No flags, no borders drawn.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "A small hill village diorama in the white space with wooden stilt houses, and the young coach standing in front with three of the boys. No flags, no borders drawn."
+  },
+  {
+   "id": "G03",
+   "image": "白い空間で、4人のフィギュアが、それぞれ無地の赤い手帳を手にしている",
+   "image_en": "Four figurines, the young coach and three of the boys, standing in a row in the white space, each holding a small plain red booklet with no emblem or text.",
+   "chars": [
+    "boys",
+    "coach"
+   ],
+   "en": "Four figurines, the young coach and three of the boys, standing in a row in the white space, each holding a small plain red booklet with no emblem or text."
+  },
+  {
+   "id": "G04",
+   "image": "白い空間に、細長い銀色の筒の形の小さな潜水艇の模型が、使われないまま置かれている",
+   "image_en": "A small slim silver tube-shaped mini submarine model lying unused on the white floor next to a narrow rock gap that is clearly too tight for it. No logos, no text.",
+   "en": "A small slim silver tube-shaped mini submarine model lying unused on the white floor next to a narrow rock gap that is clearly too tight for it. No logos, no text."
+  },
+  {
+   "id": "G06",
+   "image": "白い空間に、2つのヘルメットの模型が並べて置かれ、柔らかい光が当たっている",
+   "image_en": "Two diving helmets placed side by side on the white floor under a soft beam of light. Quiet memorial. No text.",
+   "en": "Two diving helmets placed side by side on the white floor under a soft beam of light. Quiet memorial. No text."
+  },
+  {
+   "id": "H03",
+   "image": "白い空間の川原の模型。手前は晴れていて、遠くの山の上にだけ黒い雨雲がかかっている",
+   "image_en": "A Japanese riverbank diorama in the white space: sunny over the river and its gravel bars in front, while far upstream a single dark rain cloud hangs over the mountains. A few small tents on the gravel. No text.",
+   "en": "A Japanese riverbank diorama in the white space: sunny over the river and its gravel bars in front, while far upstream a single dark rain cloud hangs over the mountains. A few small tents on the gravel. No text."
+  },
+  {
+   "id": "H04",
+   "image": "白い空間に、2枚のカードの模型。空の形と、山と雲の形",
+   "image_en": "Two large blank cards standing in the white space, one with a simple sky icon, one with a mountain and cloud icon. No text.",
+   "en": "Two large blank cards standing in the white space, one with a simple sky icon, one with a mountain and cloud icon. No text."
+  },
+  {
+   "id": "H06",
+   "image": "白い空間で、今の服装の人のフィギュアが、左右に分かれた2つの道の前で立ち止まっている。左の道は暗い水、右の道は長い時計の形",
+   "image_en": "A figurine in modern casual clothes standing at a fork in the white space: the left path leads into dark water, the right path is lined with a long row of clock shapes. Thoughtful mood. No text.",
+   "en": "A figurine in modern casual clothes standing at a fork in the white space: the left path leads into dark water, the right path is lined with a long row of clock shapes. Thoughtful mood. No text."
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "ch": "shimei",
+ "work": "S021_においの先",
+ "portrait": true,
+ "made": "2026-11-15 06:00",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white, gray and dark cave tones, only key objects red. Northern Thailand, 2018. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos, badges, insignia or emblems of real companies, militaries or agencies, marks or lettering on equipment, readable text or numbers, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "暗い水面から顔を出したダイバー2人のライトの先に、高い岩の上の少年たち",
+   "image_en": "inside a dark flooded cave: two adult diver figurines with smooth featureless faces, plain black wetsuits and plain yellow helmets with headlamps, surfacing in black water at the bottom of the frame; their headlamp beams reach up to a high muddy rock ledge in the middle of the frame where small slim boy figurines with smooth featureless faces, short black hair and plain red football shirts sit huddled",
+   "en": "inside a dark flooded cave: two adult diver figurines with smooth featureless faces, plain black wetsuits and plain yellow helmets with headlamps, surfacing in black water at the bottom of the frame; their headlamp beams reach up to a high muddy rock ledge in the middle of the frame where small slim boy figurines with smooth featureless faces, short black hair and plain red football shirts sit huddled"
+  },
+  {
+   "id": "a02",
+   "image": "緑の山の断面。奥の岩の上に少年たちとコーチ",
+   "image_en": "a cutaway model of a forested green mountain; deep inside, on a small rock ledge in the middle of the frame, twelve small slim boy figurines with smooth featureless faces, short black hair and plain red football shirts, and a slim young man figurine with a smooth featureless face, very short cropped black hair and a plain dark navy tracksuit jacket, sitting together; dark water around the ledge",
+   "en": "a cutaway model of a forested green mountain; deep inside, on a small rock ledge in the middle of the frame, twelve small slim boy figurines with smooth featureless faces, short black hair and plain red football shirts, and a slim young man figurine with a smooth featureless face, very short cropped black hair and a plain dark navy tracksuit jacket, sitting together; dark water around the ledge"
+  },
+  {
+   "id": "a03",
+   "image": "水に沈んだ細い通路の断面",
+   "image_en": "a cutaway cave tunnel model filled with dark water almost to the ceiling, a long narrow winding passage leading to a faint light, rain falling on the mountain above in the upper part",
+   "en": "a cutaway cave tunnel model filled with dark water almost to the ceiling, a long narrow winding passage leading to a faint light, rain falling on the mountain above in the upper part"
+  },
+  {
+   "id": "a04",
+   "image": "茶色に濁った水の中で、ダイバーのライトの光がすぐ先で消える",
+   "image_en": "underwater in thick muddy brown water: an adult diver figurine with a smooth featureless face in a plain dark green wetsuit and plain black helmet, no insignia, his headlamp beam vanishing into the murk a hand's length ahead",
+   "en": "underwater in thick muddy brown water: an adult diver figurine with a smooth featureless face in a plain dark green wetsuit and plain black helmet, no insignia, his headlamp beam vanishing into the murk a hand's length ahead"
+  },
+  {
+   "id": "a05",
+   "image": "消防士の上着とノートパソコンの間に立つ、ダイバー2人",
+   "image_en": "two adult diver figurines with smooth featureless faces, plain black wetsuits and plain yellow helmets, standing side by side in the middle of the frame; on the left a plain red firefighter jacket on a stand, on the right a plain closed laptop on a small table; no text, no logos",
+   "en": "two adult diver figurines with smooth featureless faces, plain black wetsuits and plain yellow helmets, standing side by side in the middle of the frame; on the left a plain red firefighter jacket on a stand, on the right a plain closed laptop on a small table; no text, no logos"
+  },
+  {
+   "id": "a07",
+   "image": "水中で、白い細い綱を岩に結びながら進むダイバー",
+   "image_en": "underwater in a dark cave passage: an adult diver figurine with a smooth featureless face, a plain black wetsuit and plain yellow helmet with headlamp, tying a thin white guideline to a rock as he swims forward",
+   "en": "underwater in a dark cave passage: an adult diver figurine with a smooth featureless face, a plain black wetsuit and plain yellow helmet with headlamp, tying a thin white guideline to a rock as he swims forward"
+  },
+  {
+   "id": "a08",
+   "image": "暗い水面から顔を出し、空の巻き枠を持つダイバー",
+   "image_en": "an adult diver figurine with a smooth featureless face, a plain black wetsuit and plain yellow helmet with headlamp, surfacing in a dark flooded chamber, holding an empty guideline reel, turning his head as if noticing something",
+   "en": "an adult diver figurine with a smooth featureless face, a plain black wetsuit and plain yellow helmet with headlamp, surfacing in a dark flooded chamber, holding an empty guideline reel, turning his head as if noticing something"
+  }
+ ]
+}
