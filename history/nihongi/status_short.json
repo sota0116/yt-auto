@@ -11,7 +11,7 @@
  "started": "2026-11-14T07:31:57+09:00",
  "tries": 0,
  "code": "b4688f5c4404",
- "stage": "gate_video",
+ "stage": "motion",
  "updated": "2026-11-14T09:25:53+09:00",
  "busy": {
   "images": 1
