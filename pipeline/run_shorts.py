@@ -1,6 +1,7 @@
 # ショートの1日分（手順書 §12）：題選び → 台本 → 点検 → 声 → 画面 → 組み立て →（自動公開がオンの時だけ）明日の予約
 #   python -X utf8 pipeline\run_shorts.py [--n 2] [--no-upload] [--routine-only --at 2026-11-03T18:10]
 # ・統計ショートを先に作り、後ろの枠を1日の流れに回す（本数は shorts_learn.json の判定か profile.json の routine_per_day）。1日の流れが作れない時は、その枠を統計ショートに戻す
+#   v5.27（2026-11-14 本人「1日の流れ（人物が出てくる話）…をまずは攻めよう」）：routine_per_day を2に。企業もしもが残っている間は前の枠を企業もしもに残す
 #   1日の流れが絵（Lovart）で2回続けて止まったら、3日間は試さずに統計ショートを作る（images_down。3日たったら1回試す）
 # ・企業もしも（手順書 §15。2026-11-14〜）：前の枠（今は 07:10）の統計ショートを、作れた本数が KIGYO_N 本になるまで企業もしもに回す。
 #   作れない時（題が無い・絵が無い・点検で NG）は、その枠を統計ショートに戻す
@@ -26,7 +27,7 @@ def record(work, fx, sc, ok, why=""):
     h = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
     h.append({"work": os.path.basename(work), "topic_id": fx["topic_id"], "kind": fx["kind"], "measure": fx["measure"],
               "title": (sc or {}).get("title"), "hook": ((sc or {}).get("cuts") or [{}])[0].get("hook"), "banner": (sc or {}).get("banner"),
-              "編集の版": (sc or {}).get("編集の版", 1), "bgm": (sc or {}).get("bgm"),
+              "編集の版": (sc or {}).get("編集の版", 1), "言い方の版": (sc or {}).get("言い方の版", 1), "bgm": (sc or {}).get("bgm"),
               "ok": ok, "why": why, "made_at": datetime.datetime.now(JST).isoformat(timespec="seconds")})
     json.dump(h, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
@@ -171,6 +172,8 @@ def main():
     down = rp > 0 and images_down()  # 絵（Lovart）で2回続けて止まった後の3日間は、最初から統計ショートを作る（2026-11-13：9日続けて台本と声を捨てていた）
     if down:
         print("::warning::1日の流れは絵（Lovart）が作れないので見送り中です。3日おきに1回試します", flush=True)
+    if kigyo_left(cfg) > 0:  # v5.27：1日の流れを1日2本にしても、企業もしもの10本が終わるまでは前の枠を企業もしもに残す
+        rp = min(rp, n - 1)
     kg = n - rp > 0 and kigyo_left(cfg) > 0 and not down  # 前の枠（統計ショートの枠の先頭）を企業もしもに回す
     res = []
     for i in range(n):

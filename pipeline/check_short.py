@@ -5,7 +5,13 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from check_psy_script import tease  # 答えの先送りの見分け方（references/16 の6）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-META = ["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後", "次の章", "見ていきます", "紹介します",
+# 言い方の版2（手順書 v5.27・2026-11-14 本人「その他（1つの言い切り・問いかけ）をまずは攻めよう」）：
+#   Studio の28日で、視聴を続けた割合（エンゲージビュー÷視聴回数）の真ん中は「AとBを比べると」24.6%・「上位5つ」25.7%、
+#   1つの言い切りか問いの予告ショート 31.1%。比べる・並べるの決まり文句をタイトル・帯・hook で使わない（題の種類 rank・duel はそのまま）
+TEMPLATE = re.compile(r"比べ|くらべ|1位と\d位|ほぼ同じなのに|は同じなのに")
+TITLE_BODY = 32  # ハッシュタグの前の字数（予告ショートと同じ線）
+RANK_WORD = re.compile(r"\d+位|最下位|一番|トップ")
+META =["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後", "次の章", "見ていきます", "紹介します",
         "ありがとうございました", "今日", "今夜", "概要欄", "チャンネル登録", "LINE", "ミナト", "ユイ", "離職率"]
 
 
@@ -116,6 +122,16 @@ def check(work):
             ng.append(f"タイトルに「{w}」")
     if "逆転" in t and not fx.get("逆転"):
         ng.append("タイトルの「逆転」（facts.json に記録がない）")
+    body = t.split("#")[0].strip()
+    if len(body) > TITLE_BODY:
+        ng.append(f"タイトルのハッシュタグの前が {len(body)}字（{TITLE_BODY}字まで。言い切り1つか問い1つにする）")
+    for where, s in (("タイトル", body), ("帯", "".join(sc.get("banner") or [])), ("hook", hook.replace("\n", ""))):
+        m = TEMPLATE.search(s)
+        if m:
+            ng.append(f"{where}に比べる・並べるの決まり文句「{m.group(0)}」（§12 言い方の版2。1つの仕事についての言い切りか問いにする）")
+    scope = [w for w in (fx.get("group"), fx.get("仲間")) if w]
+    if fx.get("kind") == "rank" and RANK_WORD.search(body) and not any(w in body for w in scope):
+        ng.append(f"タイトルに順位の言葉があるのに、何の中の順位か（{'・'.join(scope)}）が無い")
     if not sc.get("desc_lead"):
         ng.append("desc_lead（説明文の1段落目）がない")
     print(f"字数 {n}・カット {len(cuts)}・聞き手 {lis / max(n, 1):.0%}")

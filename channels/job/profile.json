@@ -100,10 +100,10 @@
   "per_day": 2,
   "times": ["07:10", "12:10"],
   "auto_publish": true,
-  "routine_per_day": 1
+  "routine_per_day": 2
  },
  "_times": "2026-11-04 本人「動画と動画の間は時間を空けて。1日2本なら昼と夜、3本なら朝昼夜」→ 横 19:00・予告 22:10 と3時間以上あくよう 07:10・12:10 に（前は 12:10・20:10。横と70分しかあかなかった）。実際の枠は pipeline/day_slots.py の PLAN が正",
- "_routine_per_day": "1日の流れショートの本数の始まりの値（2026-11-02 本人「自動でのせてPDCAで改善して」）。あとは short_learn.py の判定が 0〜2 に動かす（手順書 §12）",
+ "_routine_per_day": "1日の流れショートの本数の始まりの値（2026-11-02 本人「自動でのせてPDCAで改善して」）。2026-11-14 本人「1日の流れ（人物が出てくる話）…をまずは攻めよう」で 1→2（手順書 v5.27）。short_learn.py は10本そろって統計の0.8倍未満の時だけ1本に下げる。企業もしもが残る間は run_shorts.py が前の枠を企業もしもに残す",
  "_shorts": "ショート（手順書 §12・pipeline/run_shorts.py・.github/workflows/shorts.yml）。1日の本数と、翌日の公開の予約の時刻（日本時間）。auto_publish は 2026-10-27 本人「PDCAで日々いい感じに改善してくれれば見ないから自動でいいよ」で true",
  "line_url": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
  "line_url_short": "https://utage-system.com/line/open/m1FcpYY2zwWA?mtid=DQNRx7AqeMn5",

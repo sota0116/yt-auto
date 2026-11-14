@@ -87,8 +87,17 @@ def retention(vid, start):
     return {"一番落ちた位置": round(rows[fall][0] * 100), "半分の位置に残った割合": round(min(rows, key=lambda r: abs(r[0] - 0.5))[1], 2)}
 
 
-def routine_block(rows):
-    """1日の流れと統計ショートを、48時間の再生の真ん中で比べる（手順書 §12）。5本そろって1.2倍以上なら2本、10本そろって0.8倍未満なら0本、それ以外は1本"""
+def base_per_day():
+    """1日の流れの本数の始まりの値（profile.json の shorts.routine_per_day。v5.27 から2）"""
+    p = os.path.join(ROOT, "channels", "job", "profile.json")
+    return int(jl(p, {}).get("shorts", {}).get("routine_per_day", 1))
+
+
+def routine_block(rows, start=None):
+    """1日の流れと統計ショートを、48時間の再生の真ん中で比べる（手順書 §12）。
+    v5.27：始まりの値（profile.json。今は2）のまま出し、10本そろって0.8倍未満の時だけ1本に下げる（0本にはしない。振り切らない）。
+    5本そろって1.2倍以上なら2本（始まりの値が2より大きい時はそちら）"""
+    start = base_per_day() if start is None else start
     v48 = lambda r: (r.get("48h") or r.get("7d") or {}).get("views") or 0
     rt = [r for r in rows if r.get("kind") == "routine"]
     if not rt:
@@ -97,11 +106,11 @@ def routine_block(rows):
     base = st[-max(6, len(rt)):]
     mr, mb = statistics.median(v48(r) for r in rt), statistics.median(v48(r) for r in base) if base else 0
     ratio = round(mr / mb, 2) if mb else None
-    per_day = 1
+    per_day = start
     if ratio is not None and len(rt) >= 5 and ratio >= 1.2:
-        per_day = 2
+        per_day = max(start, 2)
     elif ratio is not None and len(rt) >= 10 and ratio < 0.8:
-        per_day = 0
+        per_day = 1
     rt.sort(key=lambda r: r["score"], reverse=True)
     keep = ("title", "hook", "measure", "views", "avp", "subs", "score", "一番落ちた位置", "半分の位置に残った割合")
     groups = {r.get("measure", "").replace("1日_", "") for r in rt}
@@ -161,6 +170,7 @@ def measure(dry):
             continue
         m.update({"video_id": e["video_id"], "title": e["title"], "topic_id": mk.get("topic_id"), "kind": mk.get("kind"),
                   "measure": mk.get("measure"), "hook": mk.get("hook"), "banner": mk.get("banner"), "編集の版": mk.get("編集の版", 1),
+                  "言い方の版": mk.get("言い方の版", 1),
                   "bgm": mk.get("bgm"), "取った日": now.isoformat(timespec="seconds")})
         met[e["work"]] = m
         n += 1
@@ -171,10 +181,14 @@ def measure(dry):
 
 
 def versions(rows):
-    """編集の版ごと（種類は分ける）の、48時間の再生と平均視聴率の真ん中。音と画の直しの前後を比べる"""
+    """編集の版ごと（種類は分ける）の、48時間の再生と平均視聴率の真ん中。音と画の直しの前後を比べる。
+    統計ショートの言い方の版2（v5.27。言い切り・問い）からは「_言い方2」を付けて分ける"""
     out = {}
     for r in rows:
-        out.setdefault({"routine": "1日の流れ", "kigyo": "企業もしも"}.get(r.get("kind"), "統計") + f"_版{r.get('編集の版', 1)}", []).append(r)
+        k = {"routine": "1日の流れ", "kigyo": "企業もしも"}.get(r.get("kind"), "統計") + f"_版{r.get('編集の版', 1)}"
+        if r.get("kind") not in OTHER and r.get("言い方の版", 1) > 1:
+            k += f"_言い方{r['言い方の版']}"
+        out.setdefault(k, []).append(r)
     return {k: {"本数": len(v), "再生の真ん中": statistics.median(x["views"] or 0 for x in v),
                 "平均視聴率の真ん中": round(statistics.median(x["avp"] or 0 for x in v), 1)} for k, v in sorted(out.items())}
 
