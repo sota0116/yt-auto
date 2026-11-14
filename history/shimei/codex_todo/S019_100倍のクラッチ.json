@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S019_100倍のクラッチ",
+ "portrait": true,
+ "made": "2026-11-14 11:43",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. 1950s-1960s Italian period details. Keep the top 35% of the frame empty white space with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos, badges or emblems of real companies (no bull emblem, no prancing horse emblem), car brand names, readable text or numbers, license plates with characters, detailed national flags, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "赤いクーペと赤いトラクターの間に、同じ形のクラッチの部品が2つ",
+   "image_en": "a red 1950s Italian grand touring coupe model with no badges on the left and a small boxy red 1950s farm tractor model with no badges on the right, and between them on the white floor two identical round metal clutch disc parts under a spotlight",
+   "en": "a red 1950s Italian grand touring coupe model with no badges on the left and a small boxy red 1950s farm tractor model with no badges on the right, and between them on the white floor two identical round metal clutch disc parts under a spotlight"
+  },
+  {
+   "id": "a02",
+   "image": "赤いトラクターの列の前に立つ、革のジャンパーの男",
+   "image_en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, standing proudly in front of rows of small boxy red farm tractor models with no badges",
+   "en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, standing proudly in front of rows of small boxy red farm tractor models with no badges"
+  },
+  {
+   "id": "a03",
+   "image": "赤いクーペのドアに手をかける革のジャンパーの男",
+   "image_en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, opening the door of a red 1950s Italian grand touring coupe model with no badges",
+   "en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, opening the door of a red 1950s Italian grand touring coupe model with no badges"
+  },
+  {
+   "id": "a04",
+   "image": "道ばたで止まり、ボンネットが開いた赤いクーペ",
+   "image_en": "the red 1950s Italian grand touring coupe model with no badges stopped by the side of a small road, its hood open, lonely mood, no smoke",
+   "en": "the red 1950s Italian grand touring coupe model with no badges stopped by the side of a small road, its hood open, lonely mood, no smoke"
+  },
+  {
+   "id": "a05",
+   "image": "持ち上げた赤いクーペの下で部品を外す、つなぎの整備士",
+   "image_en": "a workshop: the red 1950s coupe model raised on a lift, a mechanic figurine with a smooth featureless face in plain blue overalls underneath removing parts, parts laid out on a cloth",
+   "en": "a workshop: the red 1950s coupe model raised on a lift, a mechanic figurine with a smooth featureless face in plain blue overalls underneath removing parts, parts laid out on a cloth"
+  },
+  {
+   "id": "a07",
+   "image": "天秤の左に硬貨1枚、右に硬貨の高い山",
+   "image_en": "an antique balance scale: one small coin on the left pan, a tall stack of coins on the right pan sinking low, a single round clutch disc part standing in front of the scale, spotlight",
+   "en": "an antique balance scale: one small coin on the left pan, a tall stack of coins on the right pan sinking low, a single round clutch disc part standing in front of the scale, spotlight"
+  },
+  {
+   "id": "a09",
+   "image": "社長室で、サングラスの白髪の男が扉を指し、革のジャンパーの男が立っている",
+   "image_en": "a 1960s office: a tall elderly man figurine with a smooth featureless face (no eyes, nose or mouth details), swept-back white hair, dark sunglasses, a plain dark gray double-breasted suit, sitting behind a desk and pointing at the door; in front of the desk stands a stocky middle-aged man figurine with a smooth featureless face, short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers",
+   "en": "a 1960s office: a tall elderly man figurine with a smooth featureless face (no eyes, nose or mouth details), swept-back white hair, dark sunglasses, a plain dark gray double-breasted suit, sitting behind a desk and pointing at the door; in front of the desk stands a stocky middle-aged man figurine with a smooth featureless face, short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers"
+  },
+  {
+   "id": "a10",
+   "image": "白い紙に赤い鉛筆で車の線を描く、革のジャンパーの男",
+   "image_en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, leaning over a large blank white sheet on a table, drawing the outline of a sleek car with a red pencil",
+   "en": "a stocky middle-aged man figurine with a smooth featureless face (no eyes, nose or mouth details), short slicked-back dark hair, a thin dark mustache shape, a plain brown leather jacket over a white open-collar shirt, dark gray trousers, leaning over a large blank white sheet on a table, drawing the outline of a sleek car with a red pencil"
+  }
+ ]
+}

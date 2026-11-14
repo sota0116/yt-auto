@@ -1,0 +1,54 @@
+{
+ "ch": "shimei",
+ "work": "S020_墓の鈴",
+ "portrait": true,
+ "made": "2026-11-14 11:43",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. 1800s European period details. Not gory, not scary: calm and clean. Keep the top 35% of the frame empty white space with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "skeletons, skulls, corpses, decay, blood, crosses with readable text, gravestones with readable names or numbers, readable text, logos, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "芝生の墓の上に立つ、小さな屋根付きの赤い鈴",
+   "image_en": "a single grassy grave mound in a quiet old cemetery diorama with a plain blank stone, and on top of the mound a small wooden post with a tiny roof holding a red bell, a thin cord going down into the ground, dusk light",
+   "en": "a single grassy grave mound in a quiet old cemetery diorama with a plain blank stone, and on top of the mound a small wooden post with a tiny roof holding a red bell, a thin cord going down into the ground, dusk light"
+  },
+  {
+   "id": "a02",
+   "image": "地面の断面。鈴から管を通ってひもが棺まで伸びる",
+   "image_en": "a clean cutaway diorama of the ground: a red bell on a post above the grass, and a thin cord running down through a narrow tube into a closed plain wooden coffin buried below, the coffin closed, no body visible",
+   "en": "a clean cutaway diorama of the ground: a red bell on a post above the grass, and a thin cord running down through a narrow tube into a closed plain wooden coffin buried below, the coffin closed, no body visible"
+  },
+  {
+   "id": "a04",
+   "image": "閉じた棺のふたの内側に、顔の無い手のフィギュアがそっと触れている",
+   "image_en": "a closed plain wooden coffin seen in cutaway from the side, inside it a smooth faceless gray hand figurine gently touching the inside of the lid, soft dim light, calm, not gory",
+   "en": "a closed plain wooden coffin seen in cutaway from the side, inside it a smooth faceless gray hand figurine gently touching the inside of the lid, soft dim light, calm, not gory"
+  },
+  {
+   "id": "a05",
+   "image": "古い医者のフィギュアが、聴診の筒を持って首をかしげている",
+   "image_en": "an 1800s doctor figurine with a smooth featureless face, gray side whiskers shape, black frock coat, holding an old wooden stethoscope tube and tilting his head, uncertain, beside an empty plain bed",
+   "en": "an 1800s doctor figurine with a smooth featureless face, gray side whiskers shape, black frock coat, holding an old wooden stethoscope tube and tilting his head, uncertain, beside an empty plain bed"
+  },
+  {
+   "id": "a06",
+   "image": "墓地に並ぶ、新しい土の盛られた墓",
+   "image_en": "an 1800s cemetery diorama with many fresh plain grave mounds in neat rows, two small gravedigger figurines with shovels hurrying, gray overcast light, no text on stones",
+   "en": "an 1800s cemetery diorama with many fresh plain grave mounds in neat rows, two small gravedigger figurines with shovels hurrying, gray overcast light, no text on stones"
+  },
+  {
+   "id": "a08",
+   "image": "夜の墓地で、ランプを持った見張りの男が鈴の方を見ている",
+   "image_en": "a night cemetery diorama: a nightwatchman figurine with a smooth featureless face, long dark coat and a cap, holding a glowing lantern, looking toward a red bell on a post over a grave, moonlight",
+   "en": "a night cemetery diorama: a nightwatchman figurine with a smooth featureless face, long dark coat and a cap, holding a glowing lantern, looking toward a red bell on a post over a grave, moonlight"
+  },
+  {
+   "id": "a09",
+   "image": "夜の墓の上で、赤い鈴だけが光り、見張りが驚いて振り返る",
+   "image_en": "a night cemetery diorama: the red bell on its post over a grave is lit by a beam of light, and the nightwatchman figurine with a lantern turns around in surprise, nothing else moving, calm not gory",
+   "en": "a night cemetery diorama: the red bell on its post over a grave is lit by a beam of light, and the nightwatchman figurine with a lantern turns around in surprise, nothing else moving, calm not gory"
+  }
+ ]
+}
