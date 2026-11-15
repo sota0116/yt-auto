@@ -1,0 +1,71 @@
+{
+ "ch": "kakure",
+ "work": "_chara_015_パーン",
+ "portrait": false,
+ "made": "2026-11-15 23:06",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel-shaded coloring, calm muted colors, bright even lighting, ancient Greek Archaic-period clothing. Background must be pure white.",
+ "avoid_en": "text, letters, logos, modern buildings or clothes, nudity, bare chest, blood, a second separate person",
+ "rules": {},
+ "characters": {
+  "pan": {
+   "desc_en": "Pan, the ancient Greek god of shepherds and wild mountains of Arcadia, a lively wiry man about 35 years old with two small curved goat horns on his head, pointed ears, a short dark brown beard, sharp amber eyes, the lower body of a goat with shaggy dark brown fur legs and cloven hooves, wearing a short brown fawn-skin tunic that fully covers his chest and shoulders tied with a leather cord (Archaic Greek period), a panpipe of seven reeds (syrinx) hanging from his belt, no armor, no crown",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "pan_pipe",
+   "image": "パーンが、葦の笛（7本の管の笛）を両手で口にあて、目を閉じて吹いている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan stands on his goat legs playing a panpipe of seven reeds held to his lips with both hands, eyes closed, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan stands on his goat legs playing a panpipe of seven reeds held to his lips with both hands, eyes closed, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pan_shout",
+   "image": "パーンが、口を大きく開けて叫び、両腕を広げている全身。荒々しい顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan shouts with his mouth wide open and both arms spread wide, a wild fierce face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan shouts with his mouth wide open and both arms spread wide, a wild fierce face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pan_ask",
+   "image": "パーンが、片手を前に差し出して問いかけている全身。少しすねたような、不満そうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan holds one open hand forward as if asking a question, a slightly sulky, dissatisfied face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan holds one open hand forward as if asking a question, a slightly sulky, dissatisfied face, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pan_sleep",
+   "image": "パーンが、岩に見立てた形の無い所に腰かけ、腕を組んでうたた寝している全身（岩は描かない）。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan sits dozing with arms crossed and head tilted, sleeping at midday, sitting as if on an invisible seat, full body, no rock drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan sits dozing with arms crossed and head tilted, sleeping at midday, sitting as if on an invisible seat, full body, no rock drawn. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pan_laugh",
+   "image": "パーンが、腰に手を当てて大笑いしている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan laughs heartily with his hands on his hips, head thrown back, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan laughs heartily with his hands on his hips, head thrown back, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  },
+  {
+   "id": "pan_sad",
+   "image": "パーンが、葦の笛を片手に下げ、うつむいて寂しそうに立っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Pan stands with his head bowed, lonely and sad, a reed panpipe hanging from one hand, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines.",
+   "chars": [
+    "pan"
+   ],
+   "en": "Pan stands with his head bowed, lonely and sad, a reed panpipe hanging from one hand, full body. Plain pure white background (#FFFFFF). No floor, no ground, no shadow, no scenery, no frame. The whole body fits without being cut, filling the image from top to bottom, exactly one figure in the center. Clear outlines."
+  }
+ ]
+}

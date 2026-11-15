@@ -270,5 +270,27 @@
   "uploaded_at": "2026-11-13T23:45:57+09:00",
   "missing": false,
   "playlist": "図鑑"
+ },
+ {
+  "work": "S027_切出_甘い元日",
+  "video_id": "5T1fyBtyEv8",
+  "title": "古代ローマの元日の贈り物は何だったのか 1月の神ヤヌスが笑って答えた甘い物のわけ【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-24T19:00:00+09:00",
+  "uploaded_at": "2026-11-15T23:03:18+09:00",
+  "missing": false
+ },
+ {
+  "work": "S028_格付け_長生きの天皇",
+  "video_id": "voUQmkPIlJQ",
+  "title": "古事記でいちばん長生きと書かれた天皇は168歳 日本書紀では同じ天皇が120歳だった【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-25T12:00:00+09:00",
+  "uploaded_at": "2026-11-15T23:06:02+09:00",
+  "missing": false
  }
 ]

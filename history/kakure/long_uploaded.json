@@ -194,5 +194,19 @@
   "thumb_set": true,
   "thumb": "thumb.jpg",
   "playlist": "物語"
+ },
+ {
+  "work": "015_パーン",
+  "video_id": "jkHIlkh33tA",
+  "title": "パニックの語源は牧神パーン 群れを守る神の名はなぜ恐怖の言葉になったのか【アニメ神話】",
+  "video": "long_final.mp4",
+  "format": "long",
+  "privacy": "private",
+  "publish_at": "2026-11-27T20:00:00+09:00",
+  "uploaded_at": "2026-11-15T23:00:57+09:00",
+  "missing": false,
+  "thumb_set": true,
+  "thumb": "thumb.jpg",
+  "playlist": "元ネタ"
  }
 ]
