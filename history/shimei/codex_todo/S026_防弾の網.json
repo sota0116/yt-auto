@@ -1,0 +1,66 @@
+{
+ "ch": "shimei",
+ "work": "S026_防弾の網",
+ "portrait": true,
+ "made": "2026-11-16 06:25",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines and mannequins (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos, brand names, police or military badges, readable text or numbers, people being shot, blood, wounds, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "白い空間で、紺色の防弾チョッキを着た顔の無いマネキンが立ち、胸の前に止まった弾が1つ浮いている",
+   "image_en": "in the middle of the frame a faceless white store mannequin torso wearing a plain navy blue soft bulletproof vest, a single small flattened gray bullet stuck in the fabric at the chest; no badges, no text, no people",
+   "en": "in the middle of the frame a faceless white store mannequin torso wearing a plain navy blue soft bulletproof vest, a single small flattened gray bullet stuck in the fabric at the chest; no badges, no text, no people"
+  },
+  {
+   "id": "a02",
+   "image": "実験室の模型で、白衣の女性のフィギュアが、試験管の中の黄色い繊維を見ている",
+   "image_en": "a small 1960s chemistry laboratory diorama; in the middle of the frame a woman scientist figurine with a smooth featureless face, short dark hair and a white lab coat holds up a glass beaker from which a strand of golden yellow fiber is drawn; no labels, no text",
+   "en": "a small 1960s chemistry laboratory diorama; in the middle of the frame a woman scientist figurine with a smooth featureless face, short dark hair and a white lab coat holds up a glass beaker from which a strand of golden yellow fiber is drawn; no labels, no text"
+  },
+  {
+   "id": "a03",
+   "image": "白い空間に、車のタイヤの断面の模型。中に黄色い繊維の層が見える",
+   "image_en": "in the middle of the frame a large cutaway model of a plain car tire, showing inside layers of golden yellow fiber where steel belts would be; no brand, no text",
+   "en": "in the middle of the frame a large cutaway model of a plain car tire, showing inside layers of golden yellow fiber where steel belts would be; no brand, no text"
+  },
+  {
+   "id": "a04",
+   "image": "天秤の左に黄色い繊維の束、右に同じ重さの鋼の棒。繊維の方が太い鎖を持ち上げている",
+   "image_en": "in the middle of the frame a balance scale with a small bundle of golden yellow fiber on the left and a small steel bar on the right, perfectly level; above them the fiber bundle alone holds up a heavy red chain; simple science diorama, no text",
+   "en": "in the middle of the frame a balance scale with a small bundle of golden yellow fiber on the left and a small steel bar on the right, perfectly level; above them the fiber bundle alone holds up a heavy red chain; simple science diorama, no text"
+  },
+  {
+   "id": "a05",
+   "image": "防弾チョッキの断面の模型。黄色い布が何枚も重なっている",
+   "image_en": "in the middle of the frame a cutaway model of a soft bulletproof vest panel, showing many thin layers of woven golden yellow fabric stacked inside a navy blue cover; no badges, no text",
+   "en": "in the middle of the frame a cutaway model of a soft bulletproof vest panel, showing many thin layers of woven golden yellow fabric stacked inside a navy blue cover; no badges, no text"
+  },
+  {
+   "id": "a07",
+   "image": "大きく拡大した黄色い織り目の布に、丸い先の灰色の弾が、まさに触れる直前",
+   "image_en": "an extreme close-up science diorama in the middle of the frame: a huge woven grid of golden yellow fibers like a net, and a single gray round-nosed bullet just about to touch it; clean and educational, no people, no text",
+   "en": "an extreme close-up science diorama in the middle of the frame: a huge woven grid of golden yellow fibers like a net, and a single gray round-nosed bullet just about to touch it; clean and educational, no people, no text"
+  },
+  {
+   "id": "a08",
+   "image": "同じ黄色い織り目の布が大きくへこみ、つぶれてキノコの形になった弾を受け止めている。へこみから赤い線が布全体へ広がる",
+   "image_en": "the same extreme close-up science diorama in the middle of the frame: the huge woven grid of golden yellow fibers is now pushed in deeply like a trampoline, holding a gray bullet flattened into a mushroom shape; thin red lines spread out from the dent across the whole fabric to show the force spreading; no people, no text",
+   "en": "the same extreme close-up science diorama in the middle of the frame: the huge woven grid of golden yellow fibers is now pushed in deeply like a trampoline, holding a gray bullet flattened into a mushroom shape; thin red lines spread out from the dent across the whole fabric to show the force spreading; no people, no text"
+  },
+  {
+   "id": "a09",
+   "image": "白い空間に、チョッキを脱いだマネキンの胸の模型。胸の真ん中に、紫色の丸いあざの印",
+   "image_en": "in the middle of the frame a faceless white store mannequin torso without the vest, with one round purple bruise mark in the middle of its chest and a few small red ripple lines around it; no blood, no wounds, no text",
+   "en": "in the middle of the frame a faceless white store mannequin torso without the vest, with one round purple bruise mark in the middle of its chest and a few small red ripple lines around it; no blood, no wounds, no text"
+  },
+  {
+   "id": "a10",
+   "image": "白い空間に、布のチョッキと、厚い白いセラミックの板が並び、板が差しこまれようとしている",
+   "image_en": "in the middle of the frame a plain navy blue soft vest and a thick plain white ceramic armor plate floating beside it, the plate about to slide into a pocket on the front of the vest; no badges, no text",
+   "en": "in the middle of the frame a plain navy blue soft vest and a thick plain white ceramic armor plate floating beside it, the plate about to slide into a pocket on the front of the vest; no badges, no text"
+  }
+ ]
+}

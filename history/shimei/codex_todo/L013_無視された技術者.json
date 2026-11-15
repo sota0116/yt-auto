@@ -1,0 +1,530 @@
+{
+ "ch": "shimei",
+ "work": "L013_無視された技術者",
+ "portrait": false,
+ "made": "2026-11-16 06:25",
+ "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red. Moscow, late 1970s to 1980s, Cold War.",
+ "avoid_en": "logos, badges, insignia or emblems of real agencies, hammer and sickle, red stars, flags, military or police badges, readable text or numbers, letters on license plates, blood, faces resembling real people",
+ "rules": {},
+ "characters": {
+  "engineer": {
+   "desc_en": "the engineer, a slim middle-aged man figurine around 50 with a smooth featureless face (no eyes, nose or mouth details), short dark hair streaked with gray combed back, thin black-rimmed glasses, plain brown suit jacket, white shirt, thin dark tie, carrying a plain brown leather briefcase"
+  },
+  "cia_officer": {
+   "desc_en": "the CIA officer, a man figurine in his 30s with a smooth featureless face, short light brown hair, plain long gray wool overcoat, dark knit scarf, no badges, no text"
+  },
+  "howard": {
+   "desc_en": "the fired officer, a man figurine in his 30s with a smooth featureless face, short dark brown hair, plain beige trench coat over a white shirt, no badges, no text"
+  },
+  "kgb": {
+   "desc_en": "the KGB men, adult man figurines with smooth featureless faces in identical plain dark gray overcoats and dark fur hats, no badges, no insignia, no red stars"
+  }
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "image": "冬のモスクワの通りの模型。止まった黒い車の窓に、眼鏡に茶色の背広の技術者が、白い封筒を差し入れている",
+   "image_en": "A snowy winter street diorama in Moscow, late 1970s. A parked plain black sedan, and the engineer leaning to its slightly open window, slipping a small white envelope inside. Plain license plate with no letters. Gray overcast light.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A snowy winter street diorama in Moscow, late 1970s. A parked plain black sedan, and the engineer leaning to its slightly open window, slipping a small white envelope inside. Plain license plate with no letters. Gray overcast light."
+  },
+  {
+   "id": "A02",
+   "image": "白い空間に、開いた白い便せんが1枚。その上に小さな赤い封ろう",
+   "image_en": "A single open handwritten letter lying in the white space with a small red wax seal beside it. The handwriting is only illegible wavy lines, no readable text. Soft spotlight.",
+   "en": "A single open handwritten letter lying in the white space with a small red wax seal beside it. The handwriting is only illegible wavy lines, no readable text. Soft spotlight."
+  },
+  {
+   "id": "A03",
+   "image": "白い空間に、ふたの閉じた灰色の郵便受けの模型。中は空っぽで、上にほこりが積もっている",
+   "image_en": "A plain gray mailbox model standing alone in the white space, its lid closed, a thin layer of dust on top, nothing inside. Lonely, quiet mood. No text, no logos.",
+   "en": "A plain gray mailbox model standing alone in the white space, its lid closed, a thin layer of dust on top, nothing inside. Lonely, quiet mood. No text, no logos."
+  },
+  {
+   "id": "A04",
+   "image": "白い空間に、白い封筒が5通、少しずつずれて一列に並んでいる。最後の1通だけ赤い",
+   "image_en": "Five small white envelopes lined up in a neat row in the white space, slightly staggered, the last one red. No writing on them. Simple and graphic.",
+   "en": "Five small white envelopes lined up in a neat row in the white space, slightly staggered, the last one red. No writing on them. Simple and graphic."
+  },
+  {
+   "id": "A05",
+   "image": "白い空間で、技術者のフィギュアが、灰色の戦闘機の模型の鼻先の、丸いレーダーの部品を手に持っている",
+   "image_en": "the engineer standing in the white space holding a round radar dish component, next to the open nose cone of a plain gray fighter jet model. No stars, no markings, no text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer standing in the white space holding a round radar dish component, next to the open nose cone of a plain gray fighter jet model. No stars, no markings, no text."
+  },
+  {
+   "id": "A06",
+   "image": "白い空間に、フィルムの小さな缶が山のように積まれ、その横に金色の大きな天秤が傾いている",
+   "image_en": "A large pile of small plain metal film canisters in the white space, and next to it a big golden balance scale tipping heavily toward the pile. No text, no logos.",
+   "en": "A large pile of small plain metal film canisters in the white space, and next to it a big golden balance scale tipping heavily toward the pile. No text, no logos."
+  },
+  {
+   "id": "A07",
+   "image": "白い空間で、技術者のフィギュアの両手首に、赤い手錠がかかっている",
+   "image_en": "the engineer standing in the white space with his head slightly bowed, a pair of red handcuffs on his wrists, a single harsh spotlight from above. No other people.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer standing in the white space with his head slightly bowed, a pair of red handcuffs on his wrists, a single harsh spotlight from above. No other people."
+  },
+  {
+   "id": "A08",
+   "image": "白い空間に、技術者の小さなフィギュアが立ち、その上に赤い？の形が浮かんでいる",
+   "image_en": "the engineer standing small in the center of the white space, and floating above him a large red question mark sculpture. Minimal, dramatic lighting.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer standing small in the center of the white space, and floating above him a large red question mark sculpture. Minimal, dramatic lighting."
+  },
+  {
+   "id": "A09",
+   "image": "コルクボードの模型。顔が黒く塗られた写真、赤い糸、フィルムの切れ端と戦闘機の形の紙（文字は読めない）",
+   "image_en": "A cork board in the white space with several pinned photos whose face areas are painted solid black, red threads linking them to a strip of film negative and a paper cutout of a fighter jet. No readable text.",
+   "en": "A cork board in the white space with several pinned photos whose face areas are painted solid black, red threads linking them to a strip of film negative and a paper cutout of a fighter jet. No readable text."
+  },
+  {
+   "id": "B01",
+   "image": "白い空間に、2つに分かれた大きな地図の台。左にアメリカ側、右にソ連側の灰色の戦闘機の模型が向き合っている",
+   "image_en": "A large tabletop map in the white space split into two halves, a plain gray fighter jet model on each side facing each other across a red dividing line. No flags, no stars, no text.",
+   "en": "A large tabletop map in the white space split into two halves, a plain gray fighter jet model on each side facing each other across a red dividing line. No flags, no stars, no text."
+  },
+  {
+   "id": "B02",
+   "image": "白い空間に立つ技術者のフィギュア。眼鏡に茶色の背広、茶色のかばん",
+   "image_en": "the engineer standing upright in the white space, holding his briefcase, calm and serious posture, soft spotlight.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer standing upright in the white space, holding his briefcase, calm and serious posture, soft spotlight."
+  },
+  {
+   "id": "B03",
+   "image": "白い空間に置かれた、四角い灰色の研究所の建物の模型。窓が整然と並び、屋上に小さなアンテナ",
+   "image_en": "A boxy gray Soviet-era research institute building model in the white space, rows of identical windows, a small radar antenna on the roof. No signs, no emblems, no text.",
+   "en": "A boxy gray Soviet-era research institute building model in the white space, rows of identical windows, a small radar antenna on the roof. No signs, no emblems, no text."
+  },
+  {
+   "id": "B04",
+   "image": "設計室の模型。製図台に広げた大きな青い設計図の前で、技術者が鉛筆を持っている",
+   "image_en": "A drafting room diorama, the engineer leaning over a drafting table with a large blue blueprint of a radar unit, holding a pencil. The blueprint shows only lines and shapes, no readable text or numbers.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A drafting room diorama, the engineer leaning over a drafting table with a large blue blueprint of a radar unit, holding a pencil. The blueprint shows only lines and shapes, no readable text or numbers."
+  },
+  {
+   "id": "B05",
+   "image": "冬のガソリンスタンドの模型。給油機の横の黒い車に、技術者が歩いて近づいている",
+   "image_en": "A small winter gas station diorama with one old fuel pump, a plain black sedan stopped beside it, and the engineer walking toward the car. No brand names, no signs, no letters on plates.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A small winter gas station diorama with one old fuel pump, a plain black sedan stopped beside it, and the engineer walking toward the car. No brand names, no signs, no letters on plates."
+  },
+  {
+   "id": "B06",
+   "image": "黒い車の運転席に座る、灰色のコートのアメリカ人の男性のフィギュア",
+   "image_en": "Close view of the plain black sedan at the gas station, the CIA officer sitting in the driver's seat, looking out of the window. No text.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "Close view of the plain black sedan at the gas station, the CIA officer sitting in the driver's seat, looking out of the window. No text."
+  },
+  {
+   "id": "B09",
+   "image": "白い空間に、大きなねずみ取りの模型。えさの代わりに白い封筒が置かれている",
+   "image_en": "A large old-fashioned mousetrap model in the white space, and instead of cheese a small white envelope sits on the bait plate. Tense mood. No text.",
+   "en": "A large old-fashioned mousetrap model in the white space, and instead of cheese a small white envelope sits on the bait plate. Tense mood. No text."
+  },
+  {
+   "id": "B10",
+   "image": "暗い路地の模型。灰色のコートの男性が歩いていく先の物陰に、毛皮の帽子の男たちの影がひそんでいる",
+   "image_en": "A dark narrow alley diorama, the CIA officer walking forward, while in the shadows ahead several KGB men are hiding, only their silhouettes visible. Ominous.",
+   "chars": [
+    "cia_officer",
+    "kgb"
+   ],
+   "en": "A dark narrow alley diorama, the CIA officer walking forward, while in the shadows ahead several KGB men are hiding, only their silhouettes visible. Ominous."
+  },
+  {
+   "id": "B12",
+   "image": "冬の通りの模型で、技術者が、別の黒い車の窓をノックしている",
+   "image_en": "A snowy evening street diorama, the engineer knocking lightly on the side window of another parked plain black car. No letters on plates. Lonely streetlight.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A snowy evening street diorama, the engineer knocking lightly on the side window of another parked plain black car. No letters on plates. Lonely streetlight."
+  },
+  {
+   "id": "B14",
+   "image": "アパートの電話ボックスの模型で、灰色のコートの男性が受話器を持っている",
+   "image_en": "A small old public phone booth diorama on a snowy street, the CIA officer inside holding the receiver. No signs, no text.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "A small old public phone booth diorama on a snowy street, the CIA officer inside holding the receiver. No signs, no text."
+  },
+  {
+   "id": "B15",
+   "image": "夜の雪の公園の模型で、技術者と灰色のコートの男性が、並んで歩いている",
+   "image_en": "A snowy park at night diorama, the engineer and the CIA officer walking side by side on a path under a single streetlamp. Quiet, secretive mood.",
+   "chars": [
+    "engineer",
+    "cia_officer"
+   ],
+   "en": "A snowy park at night diorama, the engineer and the CIA officer walking side by side on a path under a single streetlamp. Quiet, secretive mood."
+  },
+  {
+   "id": "B17",
+   "image": "白い空間に、古い家族の写真立てが1つ。写っているのは顔の無い夫婦のフィギュアで、写真の角が焦げている",
+   "image_en": "An old picture frame standing in the white space showing a faded photo of a faceless married couple figurines from the 1930s, one corner of the photo scorched. Sad, quiet. No text.",
+   "en": "An old picture frame standing in the white space showing a faded photo of a faceless married couple figurines from the 1930s, one corner of the photo scorched. Sad, quiet. No text."
+  },
+  {
+   "id": "B18",
+   "image": "白い空間で、技術者が窓辺に立ち、外の灰色の街を見ている。足元に雪のような白い紙が積もっている",
+   "image_en": "the engineer standing by a tall window in the white space looking out at a gray city diorama, his back to us, a pile of blank white papers at his feet like drifted snow. No text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer standing by a tall window in the white space looking out at a gray city diorama, his back to us, a pile of blank white papers at his feet like drifted snow. No text."
+  },
+  {
+   "id": "C01",
+   "image": "夜の部屋の模型。机のスタンドの光の下で、技術者が書類にカメラを向けている",
+   "image_en": "A small dark apartment room diorama at night, the engineer at a wooden desk under a single desk lamp, pointing a camera down at a stack of documents. Documents show only blurred lines, no readable text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A small dark apartment room diorama at night, the engineer at a wooden desk under a single desk lamp, pointing a camera down at a stack of documents. Documents show only blurred lines, no readable text."
+  },
+  {
+   "id": "C02",
+   "image": "白い空間に、大きな手のひらの模型。その上に、ライターほどの小さな銀色のカメラ",
+   "image_en": "An open hand model in the white space holding a tiny silver spy camera about the size of a lighter. No brand, no text.",
+   "en": "An open hand model in the white space holding a tiny silver spy camera about the size of a lighter. No brand, no text."
+  },
+  {
+   "id": "C03",
+   "image": "白い空間に、小さな銀色のカメラと、ふつうの大きさの黒いカメラが並び、黒い方に光が当たっている",
+   "image_en": "A tiny silver spy camera and a normal-sized black 35mm film camera standing side by side in the white space, the black camera in the spotlight. No brand names, no logos, no text.",
+   "en": "A tiny silver spy camera and a normal-sized black 35mm film camera standing side by side in the white space, the black camera in the spotlight. No brand names, no logos, no text."
+  },
+  {
+   "id": "C04",
+   "image": "設計室の模型で、技術者が、書類の束を灰色の棚に戻している",
+   "image_en": "the engineer in the drafting room diorama carefully placing a stack of documents back onto a gray metal shelf, glancing over his shoulder. No readable text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer in the drafting room diorama carefully placing a stack of documents back onto a gray metal shelf, glancing over his shoulder. No readable text."
+  },
+  {
+   "id": "C05",
+   "image": "灰色のアパートの模型。たくさん並んだ窓のうち、1つだけが開いている",
+   "image_en": "A large gray Soviet apartment block model in the white space with dozens of identical closed windows, only one window is open, softly highlighted. No text.",
+   "en": "A large gray Soviet apartment block model in the white space with dozens of identical closed windows, only one window is open, softly highlighted. No text."
+  },
+  {
+   "id": "C07",
+   "image": "白い空間に、小さなフィルムの缶がぎっしり詰まった茶色の買い物袋",
+   "image_en": "A plain brown paper shopping bag in the white space packed full of small plain metal film canisters, a few spilling out. No labels, no text.",
+   "en": "A plain brown paper shopping bag in the white space packed full of small plain metal film canisters, a few spilling out. No labels, no text."
+  },
+  {
+   "id": "C08",
+   "image": "白い空間に、灰色の戦闘機の模型と、その鼻先のレーダーから赤い点線がミサイルの模型へ伸びている",
+   "image_en": "A plain gray fighter jet model in the white space, a red dotted guiding line running from its nose radar to a small plain missile model in front. Educational diorama, no stars, no text.",
+   "en": "A plain gray fighter jet model in the white space, a red dotted guiding line running from its nose radar to a small plain missile model in front. Educational diorama, no stars, no text."
+  },
+  {
+   "id": "C09",
+   "image": "白い空間に、高く飛ぶ灰色の戦闘機の模型から、赤い扇形の光が下へ伸び、低く飛ぶ小さな飛行機を照らしている",
+   "image_en": "A plain gray fighter jet model flying high in the white space, a red fan-shaped radar beam spreading downward and catching a small plain airplane flying low near the ground. No markings, no text.",
+   "en": "A plain gray fighter jet model flying high in the white space, a red fan-shaped radar beam spreading downward and catching a small plain airplane flying low near the ground. No markings, no text."
+  },
+  {
+   "id": "C10",
+   "image": "白い空間の机に、書類の山がいくつもそびえ、小さな人のフィギュアが山の間で書類を読んでいる",
+   "image_en": "Several towering stacks of documents on a long desk in the white space, a few small analyst figurines in white shirts reading between the stacks. No readable text.",
+   "en": "Several towering stacks of documents on a long desk in the white space, a few small analyst figurines in white shirts reading between the stacks. No readable text."
+  },
+  {
+   "id": "C11",
+   "image": "白い空間で、大きな地図の台の上の戦闘機の模型の進む矢印が、赤く折れ曲がって向きを変えている",
+   "image_en": "A plain gray fighter jet model on a large table in the white space, with a long arrow on the table in front of it bending sharply and changing direction, the new direction drawn in red. No text, no stars.",
+   "en": "A plain gray fighter jet model on a large table in the white space, with a long arrow on the table in front of it bending sharply and changing direction, the new direction drawn in red. No text, no stars."
+  },
+  {
+   "id": "D01",
+   "image": "白い空間に、小さな茶色の封筒が1つ。中から紙幣の形の灰色の紙がのぞいている",
+   "image_en": "A small plain brown envelope lying in the white space, a few plain gray banknote-shaped papers peeking out. No numbers, no text, no portraits on the notes.",
+   "en": "A small plain brown envelope lying in the white space, a few plain gray banknote-shaped papers peeking out. No numbers, no text, no portraits on the notes."
+  },
+  {
+   "id": "D02",
+   "image": "白い空間で、技術者が、差し出された封筒に手のひらを向けて、断っている",
+   "image_en": "the engineer in the white space raising one open palm to politely refuse a small brown envelope held out to him by an unseen hand from the frame edge.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "the engineer in the white space raising one open palm to politely refuse a small brown envelope held out to him by an unseen hand from the frame edge."
+  },
+  {
+   "id": "D03",
+   "image": "白い空間に、レコード盤が数枚と、絵の具の箱と筆が並んでいる",
+   "image_en": "A few plain black vinyl records with blank labels, a small box of paints and a few brushes arranged neatly in the white space. No text, no logos, no album art.",
+   "en": "A few plain black vinyl records with blank labels, a small box of paints and a few brushes arranged neatly in the white space. No text, no logos, no album art."
+  },
+  {
+   "id": "D04",
+   "image": "白い空間に、小さな金庫の模型が置かれ、その中に紙幣の束が少しずつ積み重なっている",
+   "image_en": "A small open safe model in the white space with neat bundles of plain gray banknotes stacked inside. No numbers, no text.",
+   "en": "A small open safe model in the white space with neat bundles of plain gray banknotes stacked inside. No numbers, no text."
+  },
+  {
+   "id": "D06",
+   "image": "白い空間に、黒い万年筆の模型が1本。キャップの中に、小さな赤い粒が隠れているのが見える",
+   "image_en": "A single black fountain pen model lying in the white space, its cap slightly open revealing a tiny red capsule hidden inside. Dark, tense mood. No text.",
+   "en": "A single black fountain pen model lying in the white space, its cap slightly open revealing a tiny red capsule hidden inside. Dark, tense mood. No text."
+  },
+  {
+   "id": "D08",
+   "image": "設計室の模型で、灰色の背広の男たちが、棚の書類を1冊ずつ調べている",
+   "image_en": "The drafting room diorama with three inspectors in plain gray suits checking binders on the shelves one by one, clipboards in hand. No badges, no readable text.",
+   "en": "The drafting room diorama with three inspectors in plain gray suits checking binders on the shelves one by one, clipboards in hand. No badges, no readable text."
+  },
+  {
+   "id": "D09",
+   "image": "林の中の木の別荘の模型。裏庭の小さなたき火の前に、技術者がしゃがんでいる",
+   "image_en": "A small wooden country cottage (dacha) diorama among birch trees, the engineer crouching by a small bonfire in the backyard, feeding a small black box into it. Small orange flame, thin smoke. No text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A small wooden country cottage (dacha) diorama among birch trees, the engineer crouching by a small bonfire in the backyard, feeding a small black box into it. Small orange flame, thin smoke. No text."
+  },
+  {
+   "id": "D10",
+   "image": "長い廊下の模型。奥の閉じた扉に向かって、技術者がひとりで歩いていく",
+   "image_en": "A long empty institute corridor diorama, the engineer walking alone toward a closed door at the far end, his shadow long on the floor. Tense. No signs, no text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A long empty institute corridor diorama, the engineer walking alone toward a closed door at the far end, his shadow long on the floor. Tense. No signs, no text."
+  },
+  {
+   "id": "E01",
+   "image": "白い空間で、段ボール箱を抱えた男性のフィギュアが、大きな灰色の建物の前から歩き去っていく",
+   "image_en": "the fired officer walking away from a large plain gray office building model in the white space, carrying a cardboard box of his belongings. No emblems, no signs, no text.",
+   "chars": [
+    "howard"
+   ],
+   "en": "the fired officer walking away from a large plain gray office building model in the white space, carrying a cardboard box of his belongings. No emblems, no signs, no text."
+  },
+  {
+   "id": "E02",
+   "image": "白い空間に立つ、ベージュのトレンチコートの男性のフィギュア",
+   "image_en": "the fired officer standing in the white space, hands in his coat pockets, a cold spotlight on him.",
+   "chars": [
+    "howard"
+   ],
+   "en": "the fired officer standing in the white space, hands in his coat pockets, a cold spotlight on him."
+  },
+  {
+   "id": "E03",
+   "image": "会議室の模型で、トレンチコートの男性が、机の上のモスクワの街の模型を見下ろしている",
+   "image_en": "A small briefing room diorama, the fired officer looking down at a miniature city map of Moscow spread on the table, with a few small red pins on it. No text.",
+   "chars": [
+    "howard"
+   ],
+   "en": "A small briefing room diorama, the fired officer looking down at a miniature city map of Moscow spread on the table, with a few small red pins on it. No text."
+  },
+  {
+   "id": "E05",
+   "image": "白い空間で、トレンチコートの男性の頭の中が透けて見え、小さな地図と赤いピンが入っている",
+   "image_en": "the fired officer seen from the side in the white space, his head drawn as a transparent glass dome containing a tiny city map with red pins. Symbolic, no text.",
+   "chars": [
+    "howard"
+   ],
+   "en": "the fired officer seen from the side in the white space, his head drawn as a transparent glass dome containing a tiny city map with red pins. Symbolic, no text."
+  },
+  {
+   "id": "E06",
+   "image": "ヨーロッパの古い街の模型。トレンチコートの男性が、毛皮の帽子の男とベンチで並んで座っている",
+   "image_en": "An old European city square diorama, the fired officer sitting on a park bench next to a man in a dark overcoat and fur hat, both looking ahead, not at each other. Cold gray light. No text.",
+   "chars": [
+    "howard"
+   ],
+   "en": "An old European city square diorama, the fired officer sitting on a park bench next to a man in a dark overcoat and fur hat, both looking ahead, not at each other. Cold gray light. No text."
+  },
+  {
+   "id": "E07",
+   "image": "白い空間に、灰色の建物の模型。窓の1つから、白い封筒がそっと外へ差し出されている",
+   "image_en": "A plain gray office building model in the white space, from one window a hand silently passes a small white envelope out to the dark outside. No emblems, no text.",
+   "en": "A plain gray office building model in the white space, from one window a hand silently passes a small white envelope out to the dark outside. No emblems, no text."
+  },
+  {
+   "id": "E08",
+   "image": "白い空間に、頑丈な金庫の模型。扉は閉じたまま、裏側の小さな穴から、赤い糸が1本外へ出ている",
+   "image_en": "A heavy steel vault model in the white space, its front door firmly locked, but from a tiny hole in its back a single red thread runs out into the distance. Symbolic, no text.",
+   "en": "A heavy steel vault model in the white space, its front door firmly locked, but from a tiny hole in its back a single red thread runs out into the distance. Symbolic, no text."
+  },
+  {
+   "id": "F01",
+   "image": "林の間の田舎道の模型。技術者の乗った小さな白い車の前後を、黒い車が3台ふさいでいる",
+   "image_en": "A country road between birch trees diorama, a small plain white Soviet-era car blocked in front and behind by three plain black sedans. The engineer visible inside the white car. No letters on plates, no text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A country road between birch trees diorama, a small plain white Soviet-era car blocked in front and behind by three plain black sedans. The engineer visible inside the white car. No letters on plates, no text."
+  },
+  {
+   "id": "F02",
+   "image": "田舎道の模型で、毛皮の帽子の男たちが、技術者の両腕をつかんでいる",
+   "image_en": "On the country road diorama, several KGB men holding the engineer by both arms beside the white car. Tense, no violence shown.",
+   "chars": [
+    "engineer",
+    "kgb"
+   ],
+   "en": "On the country road diorama, several KGB men holding the engineer by both arms beside the white car. Tense, no violence shown."
+  },
+  {
+   "id": "F03",
+   "image": "白い空間に、黒い布がかけられた大きな箱の模型",
+   "image_en": "A large box model in the white space completely covered with a heavy black cloth. Mysterious, silent.",
+   "en": "A large box model in the white space completely covered with a heavy black cloth. Mysterious, silent."
+  },
+  {
+   "id": "F04",
+   "image": "夕方の大通りの模型。灰色のコートの男性が、人ごみにまぎれて歩いている",
+   "image_en": "A wide Moscow avenue diorama at dusk, the CIA officer walking among a crowd of small plain pedestrians. No signs, no text.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "A wide Moscow avenue diorama at dusk, the CIA officer walking among a crowd of small plain pedestrians. No signs, no text."
+  },
+  {
+   "id": "F05",
+   "image": "路地の角で、灰色のコートの男性が立ち止まり、振り返っている",
+   "image_en": "the CIA officer stopping at a street corner diorama and glancing back over his shoulder, checking for anyone following. Dim streetlights.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "the CIA officer stopping at a street corner diorama and glancing back over his shoulder, checking for anyone following. Dim streetlights."
+  },
+  {
+   "id": "F06",
+   "image": "夜の静かな小さな広場の模型。街灯の下に、灰色のコートの男性がひとりで立っている。まわりの物陰は暗い",
+   "image_en": "A quiet small square at night diorama, the CIA officer standing alone under a single streetlamp, holding a small plain shopping bag, surrounded by dark empty shadows. Very still.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "A quiet small square at night diorama, the CIA officer standing alone under a single streetlamp, holding a small plain shopping bag, surrounded by dark empty shadows. Very still."
+  },
+  {
+   "id": "F07",
+   "image": "同じ夜の広場の模型。街灯の下の灰色のコートの男性を、物陰から出てきた毛皮の帽子の男たち十数人が取り囲んでいる",
+   "image_en": "The same quiet small square at night diorama, the CIA officer under the single streetlamp now surrounded on all sides by more than a dozen KGB men who rushed out of the shadows, closing in. Dramatic, no violence, no blood.",
+   "chars": [
+    "cia_officer",
+    "kgb"
+   ],
+   "en": "The same quiet small square at night diorama, the CIA officer under the single streetlamp now surrounded on all sides by more than a dozen KGB men who rushed out of the shadows, closing in. Dramatic, no violence, no blood."
+  },
+  {
+   "id": "F08",
+   "image": "白い空間の机の上に、小さなカメラ、フィルム、無地の手紙、小さな無線機が並べられている",
+   "image_en": "A plain table in the white space with seized spy equipment laid out in a neat row: a tiny camera, film canisters, a blank letter, a small radio set. No text, no labels.",
+   "en": "A plain table in the white space with seized spy equipment laid out in a neat row: a tiny camera, film canisters, a blank letter, a small radio set. No text, no labels."
+  },
+  {
+   "id": "F09",
+   "image": "白い空間で、灰色のコートの男性が、空港のタラップを上っている",
+   "image_en": "the CIA officer walking up the boarding stairs of a plain white airplane model in the white space, alone. No airline names, no text.",
+   "chars": [
+    "cia_officer"
+   ],
+   "en": "the CIA officer walking up the boarding stairs of a plain white airplane model in the white space, alone. No airline names, no text."
+  },
+  {
+   "id": "F10",
+   "image": "白い空間で、小さな窓しかない灰色の部屋に、技術者がひとりで座っている",
+   "image_en": "A small bare gray cell diorama in the white space with one tiny high window, the engineer sitting alone on a plain bench, head lowered. Cold light. No text.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A small bare gray cell diorama in the white space with one tiny high window, the engineer sitting alone on a plain bench, head lowered. Cold light. No text."
+  },
+  {
+   "id": "G01",
+   "image": "白い空間に、古いテレタイプの機械の模型から、細長い紙が流れ出ている（文字は読めない）",
+   "image_en": "An old teletype news machine model in the white space with a long strip of paper flowing out of it. The paper shows only faint illegible marks, no readable text.",
+   "en": "An old teletype news machine model in the white space with a long strip of paper flowing out of it. The paper shows only faint illegible marks, no readable text."
+  },
+  {
+   "id": "G02",
+   "image": "白い空間に、技術者の眼鏡と茶色のかばんだけが、ぽつんと置かれている",
+   "image_en": "A pair of thin black-rimmed glasses resting on a closed plain brown briefcase, alone in the white space under a dim spotlight. Quiet and sad. No people, no text.",
+   "en": "A pair of thin black-rimmed glasses resting on a closed plain brown briefcase, alone in the white space under a dim spotlight. Quiet and sad. No people, no text."
+  },
+  {
+   "id": "G04",
+   "image": "夜の道の模型。トレンチコートの男性が、走る車から飛び降りて、林へ向かっている",
+   "image_en": "A dark road at night diorama, the fired officer jumping out of a slowly moving plain car and heading into the dark trees. No text, no letters on plates.",
+   "chars": [
+    "howard"
+   ],
+   "en": "A dark road at night diorama, the fired officer jumping out of a slowly moving plain car and heading into the dark trees. No text, no letters on plates."
+  },
+  {
+   "id": "G06",
+   "image": "白い空間の静かな廊下の模型。壁に、眼鏡の技術者のフィギュアを描いた額縁の絵が1枚かかっている",
+   "image_en": "A quiet white corridor diorama with a single framed painting on the wall depicting the engineer with his glasses and brown suit, painted in a soft classic style, faceless like the figurines. A small spotlight on the frame. No text, no emblems.",
+   "chars": [
+    "engineer"
+   ],
+   "en": "A quiet white corridor diorama with a single framed painting on the wall depicting the engineer with his glasses and brown suit, painted in a soft classic style, faceless like the figurines. A small spotlight on the frame. No text, no emblems."
+  },
+  {
+   "id": "H01",
+   "image": "白い空間に、鍵のかかった小さな箱。その鍵を持つ小さな人のフィギュアが3体だけ、輪になって立っている",
+   "image_en": "A small locked box in the center of the white space, and only three small figurines standing around it in a circle, each holding a small key. Calm, quiet. No text.",
+   "en": "A small locked box in the center of the white space, and only three small figurines standing around it in a circle, each holding a small key. Calm, quiet. No text."
+  },
+  {
+   "id": "H02",
+   "image": "同じ箱のまわりの3体のうち、1体が鍵を持ったまま、輪から離れて遠くへ歩いていく",
+   "image_en": "The same small locked box in the white space with two figurines still beside it, while a third figurine walks far away out of the circle, still holding his key, which glows red. No text.",
+   "en": "The same small locked box in the white space with two figurines still beside it, while a third figurine walks far away out of the circle, still holding his key, which glows red. No text."
+  },
+  {
+   "id": "H03",
+   "image": "白い空間に、ふつうの家の玄関の模型。ドアの鍵穴に、赤い光",
+   "image_en": "An ordinary house front door model in the white space, its keyhole glowing softly red. No text, no numbers.",
+   "en": "An ordinary house front door model in the white space, its keyhole glowing softly red. No text, no numbers."
+  },
+  {
+   "id": "H04",
+   "image": "白い空間に、スマホとノートパソコンと家の鍵が並び、その上にうっすらと人の影が重なっている",
+   "image_en": "A smartphone, a laptop and a house key arranged in the white space, with a faint gray translucent silhouette of a person standing behind them. Screens blank, no text, no logos.",
+   "en": "A smartphone, a laptop and a house key arranged in the white space, with a faint gray translucent silhouette of a person standing behind them. Screens blank, no text, no logos."
+  },
+  {
+   "id": "H05",
+   "image": "白い空間に、3枚の大きなカードの模型が並ぶ",
+   "image_en": "Three large blank cards standing in a row in the white space, each with a simple icon: a padlock, a house key, a person silhouette with a small x. No text.",
+   "en": "Three large blank cards standing in a row in the white space, each with a simple icon: a padlock, a house key, a person silhouette with a small x. No text."
+  },
+  {
+   "id": "H07",
+   "image": "白い空間に、白い封筒が1通だけ、スポットライトの中に置かれている",
+   "image_en": "A single small white envelope lying alone in a spotlight in the white space, the rest dark. Quiet, inviting. No writing.",
+   "en": "A single small white envelope lying alone in a spotlight in the white space, the rest dark. Quiet, inviting. No writing."
+  }
+ ]
+}

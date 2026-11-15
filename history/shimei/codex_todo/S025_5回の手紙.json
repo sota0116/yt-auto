@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S025_5回の手紙",
+ "portrait": true,
+ "made": "2026-11-16 06:25",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Moscow, late 1970s, Cold War. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos, badges, insignia or emblems of real agencies, hammer and sickle, red stars, flags, readable text or numbers, letters on license plates, blood, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "白い空間に、白い封筒が5通並び、最後の1通だけ赤い。その横に閉じた灰色の郵便受け",
+   "image_en": "in the middle of the frame five small white envelopes standing in a neat row, the last one red, next to a closed plain gray mailbox with dust on its lid; no writing, no text",
+   "en": "in the middle of the frame five small white envelopes standing in a neat row, the last one red, next to a closed plain gray mailbox with dust on its lid; no writing, no text"
+  },
+  {
+   "id": "a02",
+   "image": "冬の通りで、眼鏡に茶色の背広の男が、黒い車の窓に白い封筒を差し入れている",
+   "image_en": "a snowy Moscow street diorama; in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket slips a small white envelope into the open window of a parked plain black sedan; plain license plate with no letters",
+   "en": "a snowy Moscow street diorama; in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket slips a small white envelope into the open window of a parked plain black sedan; plain license plate with no letters"
+  },
+  {
+   "id": "a03",
+   "image": "眼鏡の男が、灰色の戦闘機の鼻先のレーダーの部品を持っている",
+   "image_en": "in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket holds a round radar dish component beside the open nose of a plain gray fighter jet model; no stars, no markings",
+   "en": "in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket holds a round radar dish component beside the open nose of a plain gray fighter jet model; no stars, no markings"
+  },
+  {
+   "id": "a04",
+   "image": "白い空間に、開いた便せんと赤い封ろう",
+   "image_en": "in the middle of the frame a single open handwritten letter with only illegible wavy lines, a small red wax seal beside it, soft spotlight; no readable text",
+   "en": "in the middle of the frame a single open handwritten letter with only illegible wavy lines, a small red wax seal beside it, soft spotlight; no readable text"
+  },
+  {
+   "id": "a06",
+   "image": "大きなねずみ取りの上に、えさの代わりに白い封筒",
+   "image_en": "in the middle of the frame a large old-fashioned mousetrap model with a small white envelope placed on the bait plate instead of cheese; tense mood, no text",
+   "en": "in the middle of the frame a large old-fashioned mousetrap model with a small white envelope placed on the bait plate instead of cheese; tense mood, no text"
+  },
+  {
+   "id": "a07",
+   "image": "暗い路地を、灰色のコートの男がひとりで歩いていく。まわりは空っぽ",
+   "image_en": "a dark narrow alley diorama at night; in the middle of the frame a man figurine in his 30s with a smooth featureless face, short light brown hair and a plain long gray wool overcoat walks alone toward a single streetlamp; the shadows around are empty",
+   "en": "a dark narrow alley diorama at night; in the middle of the frame a man figurine in his 30s with a smooth featureless face, short light brown hair and a plain long gray wool overcoat walks alone toward a single streetlamp; the shadows around are empty"
+  },
+  {
+   "id": "a08",
+   "image": "同じ路地。灰色のコートの男の先の物陰に、毛皮の帽子の男たちが何人もひそんでいる",
+   "image_en": "the same dark narrow alley diorama at night; in the middle of the frame the man in the plain long gray wool overcoat walks toward the streetlamp, while in the shadows just ahead several men in identical plain dark gray overcoats and dark fur hats are hiding, waiting; no badges, no red stars",
+   "en": "the same dark narrow alley diorama at night; in the middle of the frame the man in the plain long gray wool overcoat walks toward the streetlamp, while in the shadows just ahead several men in identical plain dark gray overcoats and dark fur hats are hiding, waiting; no badges, no red stars"
+  },
+  {
+   "id": "a10",
+   "image": "夜の雪の通りで、眼鏡の男が、別の黒い車の窓をノックしている",
+   "image_en": "a snowy street diorama in the evening; in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket knocks lightly on the side window of another parked plain black car; plain license plate with no letters",
+   "en": "a snowy street diorama in the evening; in the middle of the frame a slim middle-aged man figurine with a smooth featureless face, short gray-streaked dark hair, thin black-rimmed glasses and a plain brown suit jacket knocks lightly on the side window of another parked plain black car; plain license plate with no letters"
+  }
+ ]
+}
