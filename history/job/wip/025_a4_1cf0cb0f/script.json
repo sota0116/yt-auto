@@ -1,0 +1,1245 @@
+{
+ "format": "long",
+ "type": "A",
+ "frame": "A-4",
+ "hook_type": "問い",
+ "sub_copy": 1,
+ "line_copy": 1,
+ "pub_date": "",
+ "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+ "fun_core": "謎：年収は1位と2位で稼ぎが並ぶ、免許の仕事の歯科衛生士と美容師。1時間の値段にすると、なぜ間に介護職員と販売店員が割り込むのか｜自分ごと：あなたの1時間は、歯科衛生士の約1,980円より上か（年収÷1年に働いた時間）｜判定：稼ぎが並ぶ仕事どうしなら、免許があるかより、働く時間の短さが1時間の値段を決める",
+ "key_numbers": [
+  "約25万円",
+  "年に約36日分",
+  "約310円"
+ ],
+ "promise": "年収がほぼ同じ6つの仕事で、1時間の値段の順位が働く時間でどう入れ替わるかが分かり、自分の1時間が歯科衛生士より上かを、年収と働く時間だけで出せるようになる",
+ "characters": {
+  "eisei": {
+   "name": "水色の制服の歯科衛生士",
+   "desc_en": "A Japanese female dental hygienist in her mid thirties: slim, black hair tied in a neat low bun, calm intelligent eyes, wears a light blue short-sleeve dental scrub top, white trousers, white clinic shoes and a white surgical mask pulled down under her chin."
+  },
+  "biyo": {
+   "name": "黒シャツのスタイリスト",
+   "desc_en": "A Japanese male hairdresser around thirty: slim, stylish wavy brown hair, wears a plain black shirt with rolled sleeves, a black waist apron holding scissors and combs, and slim dark jeans."
+  },
+  "keibi": {
+   "name": "誘導灯の男性",
+   "desc_en": "A Japanese male security guard in his fifties: sturdy build, short grey hair, wears a plain navy guard uniform with a matching cap and a yellow reflective vest, holding a red light baton."
+  },
+  "kaigo": {
+   "name": "ポロシャツの女性",
+   "desc_en": "A Japanese female care worker in her mid forties: medium build, short dark brown hair, wears a light green polo shirt, navy track trousers and white indoor sneakers."
+  },
+  "hanbai": {
+   "name": "緑のエプロンの販売員",
+   "desc_en": "A Japanese female shop clerk in her early forties: medium build, shoulder-length brown hair tucked behind her ears, wears a plain dark green store apron over a white blouse, black trousers and a blank name badge."
+  },
+  "hall": {
+   "name": "黒ベストのホール係",
+   "desc_en": "A Japanese male restaurant server in his early forties: lean, short neat black hair, wears a white shirt, a plain black vest, a long black waist apron and black shoes."
+  }
+ },
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "avoid": "読める文字、実在の企業のロゴと制服、有名なキャラクターに似た顔、血やけが、裸",
+ "title": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
+ "titles": [
+  "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
+  "もし歯科衛生士になったら、年収は約396万円。美容師と1時間の値段で比べた結果",
+  "あなたの時給は歯科衛生士より上？ 歯石を取る仕事の1時間を、自分の給料と比べたら"
+ ],
+ "thumb_kind": "落差",
+ "thumb_top": "美容師 年収が近い仕事で2番目",
+ "thumb_text": "時給は2つ抜かれる",
+ "thumb_lines": [
+  "時給は",
+  "2つ抜かれる"
+ ],
+ "thumb_band": "抜いたのは、年収で下にいた2つの仕事",
+ "thumb_bg": "C611",
+ "tags": [
+  "歯科衛生士",
+  "歯科衛生士 年収",
+  "美容師 年収",
+  "介護職員 年収",
+  "販売店員 年収",
+  "警備員 年収",
+  "時給",
+  "年収",
+  "給料"
+ ],
+ "competitor_note": "競合メモ7の3（タイトル1案目を「〜のに…差が開く理由」と理由を書かずに終える形。1rsZoiEkurc・ALQPWw4mIxQ など4本）、6の上位2 y7ELNcSonJA の並び（章の名前をその章で答える問いか手がかりにし、答えの章に題の問い「稼ぎは並ぶのに、なぜ免許の2つの間に仕事が入るのか」を書き直し、最後の章を見る人の1時間に戻す）、7の1（登録の呼びかけ66.6%と答えの章の間に場面の章「美容室の時計 長さの中身」を挟み、答えの章を約82%から約65秒、まとめを約37秒）を取り入れた。7の2（つかみ〜前置き60〜70秒）は、スキルの点検の「最初の章まで6カット以内」に合わせ、6カット・約280字（約47秒）にとどめた",
+ "learn_note": "試す_11-15：章「働く時間 年に何日分の差がつくか」で、主役の数字の2つ目（年に約36日分）を出す C213 のすぐ前の C212 に、語り手の問い「あなたのひと月の働く時間は、1位の警備員より長いと思いますか。」を置き（数字は入れない）、次の C213「いちばん短い介護職員との差を、1日8時間で数えると、年に約36日分になります。」で主役の数字を出した。つかみの C001 と締めの C701・C702 の自分ごとの問いとは別の1回",
+ "desc": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第1表 職種（小分類）別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229855\n・1時間の値段は、年収を、1年に働いた時間（決まった時間と残業などの合計×12）で割った値です\n・「年に約36日分」は、警備員と施設の介護職員の1年の働く時間の差を、1日8時間で割った値で、出勤した日数ではありません\n・歯科衛生士法 第2条・第13条の2・第13条の6（e-Gov法令検索）\n・美容師法 第3条・第7条（e-Gov法令検索）\n厚生労働省「令和7年賃金構造基本統計調査」を加工して作成\nこのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。\n\n人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。\n\nチャプター\n{CHAPTERS}\n\n音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+ "cuts": [
+  {
+   "id": "C001",
+   "speaker": "narrator",
+   "narration": "あなたの1時間の値段が歯科衛生士より上かは、年収と働く時間だけで分かります。歯医者で、口を開けている間に歯石を取ってくれる、あの人です。",
+   "image": "寄り：明るい歯科医院の診療台で、歯科衛生士が麻衣の歯を細い器具でそっと掃除し、口を開けた麻衣が目だけ動かして天井を見ている。",
+   "chars": [
+    "eisei",
+    "mai"
+   ],
+   "label": "あなたの1時間は上？"
+  },
+  {
+   "id": "C002",
+   "speaker": "listener",
+   "narration": "歯医者さんの手伝いでしょ、私の方が上だと思う。",
+   "tts_text": "歯医者さんの手伝いでしょ、私のほうが上だと思う。",
+   "same_as": "C001"
+  },
+  {
+   "id": "C003",
+   "speaker": "narrator",
+   "narration": "年収が近い6つの仕事で、上の2つが歯科衛生士と美容師です。6つの年収は、上から下まで約25万円しか違いません。",
+   "chart": {
+    "kind": "range",
+    "measure": "年収"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収の差は約25万円"
+  },
+  {
+   "id": "C004",
+   "speaker": "narrator",
+   "narration": "ところが1時間の値段にすると、上の2つの間に、別の仕事が2つも割り込みます。年収の上から順に、きれいには並ばないんです。",
+   "image": "見上げ：夜の美容室で、黒シャツのスタイリストがはさみを持ったまま、壁の大きな丸い時計を見上げて口をぽかんと開けている。時計の数字は見えない。",
+   "chars": [
+    "biyo"
+   ],
+   "wow": true,
+   "label": "間に2つ割り込む",
+   "tease": true
+  },
+  {
+   "id": "C005",
+   "speaker": "listener",
+   "narration": "稼ぎがほぼ同じ2つの間に、ほかの仕事が入るの？",
+   "same_as": "C004"
+  },
+  {
+   "id": "C006",
+   "speaker": "narrator",
+   "narration": "しかも2つとも、大臣の免許を受けて就く仕事です。資格も稼ぎも近い2つの差は、ひと月に働いた時間の中に隠れています。",
+   "image": "引き：夕方の商店街で、歯科衛生士と黒シャツのスタイリストが、向かい合う歯科医院と美容室の前にそれぞれ立ち、相手の店をちらりと見ている。看板の字は見えない。",
+   "chars": [
+    "eisei",
+    "biyo"
+   ],
+   "wow": true,
+   "label": "どちらも免許の仕事"
+  },
+  {
+   "id": "C101",
+   "chapter": "年収 免許の2つ、上はどっち",
+   "speaker": "narrator",
+   "narration": "年収の低い方から。6位は飲食店のホール係、5位は警備員です。",
+   "tts_text": "年収の低いほうから。6位は飲食店のホール係、5位は警備員です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 2
+   },
+   "anim": "card",
+   "label": "年収 低い方から"
+  },
+  {
+   "id": "C102",
+   "speaker": "listener",
+   "narration": "ホール係、店じゅう走り回ってるのに？",
+   "same_as": "C101"
+  },
+  {
+   "id": "C103",
+   "speaker": "narrator",
+   "narration": "昼の店では、注文と配膳と片付けが、同じ人の両手に一度に来ます。",
+   "image": "引き：昼どきの混んだ定食屋で、黒ベストのホール係がお盆に料理をいくつも載せ、客席の間を早足で抜けている。",
+   "chars": [
+    "hall"
+   ],
+   "tts_text": "昼の店では、注文と配膳と片付けが、おなじひとの両手に一度に来ます。"
+  },
+  {
+   "id": "C104",
+   "speaker": "listener",
+   "narration": "お冷やのおかわり、頼みづらくなってきた。",
+   "image": "寄り：定食屋の席で、麻衣が空のコップを持ち上げかけて、気まずそうに手を止めている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C105",
+   "speaker": "narrator",
+   "narration": "4位は販売店員、3位は施設の介護職員です。下の4つは、どれも数万円ずつしか離れていません。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 4
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C106",
+   "speaker": "listener",
+   "narration": "介護が3位って、もっと下だと思ってた。",
+   "same_as": "C105"
+  },
+  {
+   "id": "C107",
+   "speaker": "narrator",
+   "narration": "介護は安いとよく言われますが、この6つの中では真ん中より上です。",
+   "image": "見下ろし：明るい介護施設の廊下で、ポロシャツの女性が車いすのお年寄りと並んで進み、笑顔で話しかけている。",
+   "chars": [
+    "kaigo"
+   ],
+   "wow": true,
+   "label": "介護は真ん中より上"
+  },
+  {
+   "id": "C108",
+   "speaker": "narrator",
+   "narration": "残るは歯科衛生士と美容師。年収の1位はどちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "年収",
+    "choices": [
+     "歯科衛生士",
+     "美容師・理容師"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "年収の1位は？"
+  },
+  {
+   "id": "C109",
+   "speaker": "listener",
+   "narration": "指名が取れる美容師でしょ。",
+   "image": "寄り：麻衣が、指でVの字を作り、自信たっぷりにウインクしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C110",
+   "speaker": "narrator",
+   "narration": "2位は美容師です。年収では、1位にほんのわずか届きませんでした。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 5
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C111",
+   "speaker": "narrator",
+   "narration": "1位は、歯科衛生士です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 6,
+    "highlight": "歯科衛生士"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収1位は歯科衛生士"
+  },
+  {
+   "id": "C112",
+   "speaker": "listener",
+   "narration": "歯の掃除の人が、いちばん上なんだ。",
+   "image": "寄り：麻衣が、自分の前歯を指さして、目をぱちくりさせている。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "歯の掃除の人が、いちばんうえなんだ。"
+  },
+  {
+   "id": "C113",
+   "speaker": "narrator",
+   "narration": "歯科衛生士は、歯科医師の指導の下で、歯の汚れを取ったり薬を塗ったりする仕事です。",
+   "image": "寄り：歯科衛生士が、小さな鏡と細い器具を持ち、患者の口元をのぞき込んで真剣な目をしている。",
+   "chars": [
+    "eisei"
+   ],
+   "wow": true,
+   "label": "歯石取りは免許の仕事",
+   "tts_text": "歯科衛生士は、歯科医師の指導のもとで、歯の汚れを取ったり薬を塗ったりする仕事です。"
+  },
+  {
+   "id": "C114",
+   "speaker": "listener",
+   "narration": "受付の人とは、全然ちがう仕事なんだ。",
+   "image": "見上げ：歯科医院の待合室で、麻衣が受付の方と診療室の方を交互に見比べ、口をとがらせている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C115",
+   "speaker": "narrator",
+   "narration": "ただ、1位と6位の差は約25万円。ボーナスまで入れた1年分で、この差です。",
+   "chart": {
+    "kind": "range",
+    "measure": "年収"
+   },
+   "anim": "card",
+   "label": "1年分で約25万円"
+  },
+  {
+   "id": "C116",
+   "speaker": "narrator",
+   "narration": "ひと月の明細に直すと、並べても見分けがつかないくらいです。",
+   "image": "寄り：台所のテーブルで、陽子が給与明細を2枚並べ、目を細めて見比べている。明細の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ],
+   "wow": true,
+   "label": "明細では見分けがつかない"
+  },
+  {
+   "id": "C117",
+   "speaker": "listener",
+   "narration": "じゃあ、6つのどれを選んでも同じじゃん。",
+   "image": "寄り：麻衣が、ペンを鼻の下にはさんで、つまらなそうに天井を見上げている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C118",
+   "speaker": "narrator",
+   "narration": "明細を開いて見るのは、振込の額だけ。働いた時間の欄までは、なかなか見ません。",
+   "image": "見下ろし：会社の机で、健二が給与明細の封を開け、上の方の欄だけを指でなぞって、ほっとした顔をしている。明細の字は見えない向き。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C119",
+   "speaker": "listener",
+   "narration": "時間の欄、どこにあるかも知らないです。",
+   "same_as": "C118"
+  },
+  {
+   "id": "C120",
+   "speaker": "narrator",
+   "narration": "でも、働いた時間を並べると、この横並びが崩れます。時間でいちばん上に来るのは、年収5位の仕事です。",
+   "image": "見上げ：夕方の工事現場の入口で、誘導灯の男性が赤い誘導灯を振り、長い車の列を止めている。",
+   "chars": [
+    "keibi"
+   ],
+   "label": "時間で並べると崩れる",
+   "tts_text": "でも、働いた時間を並べると、この横並びが崩れます。時間でいちばんうえに来るのは、年収5位の仕事です。"
+  },
+  {
+   "id": "C121",
+   "speaker": "listener",
+   "narration": "年収5位が、時間では1位？",
+   "image": "寄り：麻衣が、身を乗り出して、目をきらりと光らせている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C201",
+   "chapter": "働く時間 年に何日分の差がつくか",
+   "speaker": "narrator",
+   "narration": "ひと月に働いた時間を、短い方から。6位は施設の介護職員、5位は歯科衛生士です。",
+   "tts_text": "ひと月に働いた時間を、短いほうから。6位は施設の介護職員、5位は歯科衛生士です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 2
+   },
+   "anim": "card",
+   "label": "働く時間 短い方から"
+  },
+  {
+   "id": "C202",
+   "speaker": "listener",
+   "narration": "年収1位が、時間は短い方なの？",
+   "tts_text": "年収1位が、時間は短いほうなの？",
+   "same_as": "C201"
+  },
+  {
+   "id": "C203",
+   "speaker": "narrator",
+   "narration": "歯科医院の1日は、予約の枠で区切られています。最後の患者が帰ると、片付けに入ります。",
+   "image": "引き：夕方の歯科医院で、歯科衛生士が診療台を拭き、器具を消毒の箱に並べている。窓の外は夕焼け。",
+   "chars": [
+    "eisei"
+   ]
+  },
+  {
+   "id": "C203b",
+   "speaker": "narrator",
+   "narration": "診療台の横では、患者の口を見ながら、次の器具をそっとそろえます。",
+   "same_as": "C203"
+  },
+  {
+   "id": "C204",
+   "speaker": "listener",
+   "narration": "予約で区切られてるの、ちょっとうらやましい。",
+   "image": "寄り：オフィスの机で、麻衣が終わらない書類の山にほおをのせ、うらやましそうに口をとがらせている。書類の字は見えない。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C205",
+   "speaker": "narrator",
+   "narration": "4位は販売店員、3位はホール係です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 4
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C206",
+   "speaker": "narrator",
+   "narration": "販売店員は、勤めている年数が、6つの中でいちばん長い仕事です。",
+   "image": "引き：閉店間際のスーパーで、緑のエプロンの販売員が、慣れた手つきで棚の商品を前にそろえながら移動している。商品の字は見えない。",
+   "chars": [
+    "hanbai"
+   ],
+   "wow": true,
+   "label": "勤めた年数は最長"
+  },
+  {
+   "id": "C206b",
+   "speaker": "narrator",
+   "narration": "レジも品出しも、慣れた人ほど手が早い。長く勤める人の多い職場です。",
+   "same_as": "C206"
+  },
+  {
+   "id": "C207",
+   "speaker": "listener",
+   "narration": "同じ店に長くいる人、多いんだ。",
+   "same_as": "C206"
+  },
+  {
+   "id": "C208",
+   "speaker": "narrator",
+   "narration": "残る2つは、外に立つ警備員と、店に立つ美容師。ひと月により長く働くのは、どちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "月の労働時間",
+    "choices": [
+     "警備員",
+     "美容師・理容師"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "外か、店か"
+  },
+  {
+   "id": "C209",
+   "speaker": "listener",
+   "narration": "予約が詰まってる美容師だと思う。",
+   "image": "寄り：麻衣が、腕を組んで目を閉じ、うんうんと自信ありげにうなずいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C210",
+   "speaker": "narrator",
+   "narration": "1位は警備員。美容師は、2位でした。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 6,
+    "highlight": "警備員"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "外に立つ警備員が1位"
+  },
+  {
+   "id": "C211",
+   "speaker": "listener",
+   "narration": "美容師より長く働く仕事があったなんて。",
+   "image": "寄り：麻衣が、両手で口をおさえて、目を見開いている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C212",
+   "speaker": "narrator",
+   "narration": "あなたのひと月の働く時間は、1位の警備員より長いと思いますか。",
+   "image": "寄り：会社の壁のカレンダーの前で、健二が腕を組み、指で日付のます目を数えている。カレンダーの字は見えない。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C213",
+   "speaker": "narrator",
+   "narration": "いちばん短い介護職員との差を、1日8時間で数えると、年に約36日分になります。",
+   "chart": {
+    "kind": "calendar_days",
+    "ref": "言い直し.月の労働時間の差（いちばん長いと短い）.8時間の日に直すと_日"
+   },
+   "anim": "card",
+   "wow": true,
+   "strong": true,
+   "label": "年に約36日分",
+   "tts_text": "いちばん短い介護職員との差を、1日8時間で数えると、ねんに約36日分になります。"
+  },
+  {
+   "id": "C214",
+   "speaker": "narrator",
+   "narration": "カレンダーをひと月めくっても、まだ足りない日数です。",
+   "image": "引き：真夏の道路工事の現場で、誘導灯の男性が汗をぬぐいながら、強い日差しの中に立ち続けている。",
+   "chars": [
+    "keibi"
+   ]
+  },
+  {
+   "id": "C215",
+   "speaker": "listener",
+   "narration": "夏休みを丸ごと足しても、届かないです。",
+   "image": "寄り：麻衣が、手帳のカレンダーを指でめくりながら、口をあんぐり開けている。手帳の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C216",
+   "speaker": "narrator",
+   "narration": "交代の人が来るまで、持ち場は離れられない。立ち仕事の人なら、身に覚えがあるはずです。",
+   "image": "見下ろし：夜の駅前で、誘導灯の男性が交代の同僚に誘導灯を手渡し、ほっと肩を落としている。",
+   "chars": [
+    "keibi"
+   ]
+  },
+  {
+   "id": "C217",
+   "speaker": "listener",
+   "narration": "トイレに行く間合い、地味につらいやつだ。",
+   "same_as": "C216"
+  },
+  {
+   "id": "C218",
+   "speaker": "narrator",
+   "narration": "一方の美容師は、年収でも2位。この長い時間が、1時間の値段でどう響くのか。",
+   "image": "引き：休日の昼の美容室で、黒シャツのスタイリストが次の客を案内しながら、前の客の髪をドライヤーで乾かしている。",
+   "chars": [
+    "biyo"
+   ]
+  },
+  {
+   "id": "C219",
+   "speaker": "listener",
+   "narration": "年収2位のまま、逃げ切れる？",
+   "image": "寄り：麻衣が、指を組んで、祈るように目をつぶっている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C301",
+   "chapter": "1時間の値段 免許の2つの間に入るのは",
+   "speaker": "narrator",
+   "narration": "年収を、1年に働いた時間で割ると、1時間の値段が出ます。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 1年に働いた時間"
+   },
+   "anim": "card",
+   "label": "1時間の値段"
+  },
+  {
+   "id": "C302",
+   "speaker": "listener",
+   "narration": "月給の私にも、時給ってあるんだ。",
+   "image": "寄り：麻衣が、自分の給与明細を裏返して、首をかしげている。明細の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C309",
+   "speaker": "narrator",
+   "narration": "歯科衛生士を含む、主な職業の年収と労働時間を、1枚の表にまとめました。概要欄のLINEから受け取れます。",
+   "chart": {
+    "kind": "tokuten"
+   },
+   "anim": "card",
+   "line": true,
+   "label": "主な職業の一覧表"
+  },
+  {
+   "id": "C303",
+   "speaker": "narrator",
+   "narration": "低い方から。6位は警備員、5位はホール係です。どちらも、働く時間が長い側の仕事です。",
+   "tts_text": "低いほうから。6位は警備員、5位はホール係です。どちらも、働く時間が長いがわの仕事です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 2
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C304",
+   "speaker": "listener",
+   "narration": "いちばん長く働いた警備員が、ここでは一番下か。",
+   "image": "見下ろし：夜の工事現場で、誘導灯の男性が誘導灯を下ろし、腕時計をのぞき込んでため息をついている。",
+   "chars": [
+    "keibi"
+   ]
+  },
+  {
+   "id": "C305",
+   "speaker": "narrator",
+   "narration": "4位は、年収2位だった美容師です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 3
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収2位が4位に"
+  },
+  {
+   "id": "C305b",
+   "speaker": "narrator",
+   "narration": "年収では歯科衛生士のすぐ下にいたのに、間に2つの仕事が入りました。",
+   "same_as": "C305"
+  },
+  {
+   "id": "C306",
+   "speaker": "listener",
+   "narration": "年収2位から、そこまで下がる？",
+   "image": "寄り：麻衣が、両手で頭を抱えて、目を白黒させている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C307",
+   "speaker": "narrator",
+   "narration": "美容師には、店の外で切れない決まりもあります。特別な事情がある時を除いて、美容所の外では仕事ができません。",
+   "image": "寄り：雨の日の美容室の入口で、黒シャツのスタイリストが、はさみのケースを抱えたまま、ガラス戸越しに外の通りを見ている。",
+   "chars": [
+    "biyo"
+   ],
+   "wow": true,
+   "label": "店の外では切れない"
+  },
+  {
+   "id": "C308",
+   "speaker": "listener",
+   "narration": "出張カットって、特別な時だけなんだ。",
+   "same_as": "C307"
+  },
+  {
+   "id": "C310",
+   "speaker": "narrator",
+   "narration": "3位は販売店員。年収4位から、1つ上がりました。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 4
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収4位が3位へ"
+  },
+  {
+   "id": "C311",
+   "speaker": "narrator",
+   "narration": "残るは歯科衛生士と、施設の介護職員。1時間の値段の1位は、どちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "時給に直した額",
+    "choices": [
+     "歯科衛生士",
+     "介護職員（施設）"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "1時間の1位は？"
+  },
+  {
+   "id": "C312",
+   "speaker": "listener",
+   "narration": "年収3位の介護が、1位まで来たりして。",
+   "image": "寄り：麻衣が、両手のこぶしをにぎって、わくわくした顔で身を乗り出している。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C313",
+   "speaker": "narrator",
+   "narration": "2位は施設の介護職員。年収3位から、1つ上がりました。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 5
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収3位が2位へ"
+  },
+  {
+   "id": "C314",
+   "speaker": "narrator",
+   "narration": "1位は歯科衛生士。1時間あたり、約1,980円です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 6,
+    "highlight": "歯科衛生士"
+   },
+   "anim": "card",
+   "strong": true,
+   "label": "約1,980円"
+  },
+  {
+   "id": "C315",
+   "speaker": "listener",
+   "narration": "年収の差が小さいなら、時給の差も小さいでしょ。",
+   "image": "寄り：麻衣が、手をひらひら振って、余裕の笑みを浮かべている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C316",
+   "speaker": "narrator",
+   "narration": "いちばん下の警備員とは、1時間で約310円の差です。",
+   "chart": {
+    "kind": "bar_gap",
+    "measure": "時給に直した額",
+    "pair": [
+     "歯科衛生士",
+     "警備員"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "1時間で約310円"
+  },
+  {
+   "id": "C317",
+   "speaker": "narrator",
+   "narration": "1日働けば、映画を1本見て、ポップコーンまで買えるくらいの差です。",
+   "image": "引き：休日の映画館のロビーで、陽子が大きなポップコーンを両手に抱え、うれしそうに笑っている。",
+   "chars": [
+    "yoko"
+   ]
+  },
+  {
+   "id": "C318",
+   "speaker": "listener",
+   "narration": "1日ごとに映画1本ぶん…地味に大きい。",
+   "same_as": "C317"
+  },
+  {
+   "id": "C319",
+   "speaker": "narrator",
+   "narration": "年収はほぼ同じだった、免許の2つ。歯科衛生士は医院の中で、どこまで任されているのか。",
+   "image": "引き：夜の交差点で、仕事帰りの歯科衛生士と黒シャツのスタイリストが信号待ちで並び、互いの腕時計をのぞき合っている。",
+   "chars": [
+    "eisei",
+    "biyo"
+   ]
+  },
+  {
+   "id": "C320",
+   "speaker": "listener",
+   "narration": "歯の掃除のほかにも、何かあるの？",
+   "image": "見上げ：麻衣が、歯ブラシをくわえたまま洗面所の鏡の前で首をかしげている。鏡には何も映っていない。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C401",
+   "chapter": "歯科医院の裏側 免許があってもできないこと",
+   "speaker": "narrator",
+   "narration": "歯科衛生士にも、免許があるのにできないことがあります。",
+   "image": "引き：午後の歯科医院で、歯科衛生士が診療台の横に立ち、奥にいる歯科医師の後ろ姿に向かって、器具ののったトレーを差し出している。",
+   "chars": [
+    "eisei"
+   ],
+   "label": "免許があってもできない"
+  },
+  {
+   "id": "C401b",
+   "speaker": "narrator",
+   "narration": "歯石を取る手は動かせても、そこから先は、歯科医師の出番です。",
+   "same_as": "C401"
+  },
+  {
+   "id": "C402",
+   "speaker": "listener",
+   "narration": "免許があるのに、何がダメなの？",
+   "image": "寄り：麻衣が、腕を組んで、片方のまゆを上げている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C403",
+   "speaker": "narrator",
+   "narration": "主治の歯科医師の指示が無いのに、診療の機械を使ってはいけない決まりです。",
+   "image": "寄り：歯科衛生士が、診療台の機械に伸ばした手をぴたりと止め、歯科医師の方を振り返っている。",
+   "chars": [
+    "eisei"
+   ],
+   "wow": true,
+   "label": "機械は指示があってから"
+  },
+  {
+   "id": "C404",
+   "speaker": "listener",
+   "narration": "先生の一言が無いと、機械も触れないのか。",
+   "same_as": "C403"
+  },
+  {
+   "id": "C405",
+   "speaker": "narrator",
+   "narration": "仕事で知った人の秘密は、歯科衛生士でなくなった後も、漏らしてはいけません。",
+   "image": "見下ろし：歯科医院の診療台で、陽子が口をすすぎ、歯科衛生士がマスク越しに目を細めてうなずいている。",
+   "chars": [
+    "eisei",
+    "yoko"
+   ],
+   "wow": true,
+   "label": "辞めた後も秘密は守る"
+  },
+  {
+   "id": "C405b",
+   "speaker": "narrator",
+   "narration": "診療台で聞いた暮らしの話も、外では口にしません。",
+   "same_as": "C405"
+  },
+  {
+   "id": "C406",
+   "speaker": "listener",
+   "narration": "辞めた後までって、口がかたい仕事だ。",
+   "image": "寄り：麻衣が、口の前で指のチャックを閉めるしぐさをして、真顔になっている。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "辞めた、あとまでって、口がかたい仕事だ。"
+  },
+  {
+   "id": "C411",
+   "speaker": "narrator",
+   "narration": "働き方の数字を、統計から届けています。続きが気になった方は、チャンネル登録で応援してもらえると励みになります。",
+   "tts_text": "働き方の数字を、統計から届けています。続きが気になったかたは、チャンネル登録で応援してもらえると励みになります。",
+   "image": "引き：夜の商店街で、歯科衛生士と黒シャツのスタイリストが、それぞれの店の明かりの前で、手を振り合っている。",
+   "chars": [
+    "eisei",
+    "biyo"
+   ],
+   "subscribe": true,
+   "label": "チャンネル登録"
+  },
+  {
+   "id": "C407",
+   "speaker": "narrator",
+   "narration": "そんな歯科衛生士の時間は、決まった時間も残業も、6つの中で短い側です。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "歯科衛生士",
+     "介護職員（施設）"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "決まった時間も残業も短い"
+  },
+  {
+   "id": "C408",
+   "speaker": "listener",
+   "narration": "短い時間で年収1位なら、時給も1位なわけだ。",
+   "same_as": "C407"
+  },
+  {
+   "id": "C409",
+   "speaker": "narrator",
+   "narration": "仕事帰りの夕方の枠は、なかなか取れない。歯医者の予約のあるあるです。",
+   "image": "引き：夕方の歯科医院の受付で、仕事帰りの麻衣が手帳を開き、予約の空きを聞いてがっくり肩を落としている。手帳の字は見えない。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C410",
+   "speaker": "listener",
+   "narration": "夕方の枠、いつも埋まってる！",
+   "image": "寄り：麻衣が、スマホを握りしめて、予約が取れずに頭をかきむしっている。画面は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C412",
+   "speaker": "narrator",
+   "narration": "では、同じ免許の仕事でも、美容師はなぜ年収2位から4位まで下がったのか。",
+   "image": "寄り：閉店後の美容室で、黒シャツのスタイリストが鏡の前でほおづえをつき、考え込んでいる。鏡には何も映っていない。",
+   "chars": [
+    "biyo"
+   ]
+  },
+  {
+   "id": "C413",
+   "speaker": "listener",
+   "narration": "店の外で切れないのと、関係ある？",
+   "same_as": "C412"
+  },
+  {
+   "id": "C501",
+   "chapter": "美容室の時計 長さの中身",
+   "speaker": "narrator",
+   "narration": "働く時間が長い美容師と警備員。並べると、長さの中身が違います。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "美容師・理容師",
+     "警備員"
+    ]
+   },
+   "anim": "card",
+   "label": "長さの中身が違う"
+  },
+  {
+   "id": "C501b",
+   "speaker": "narrator",
+   "narration": "どちらも働く時間は長い方ですが、伸びている所が別なんです。",
+   "tts_text": "どちらも働く時間は長いほうですが、伸びている所が別なんです。",
+   "same_as": "C501"
+  },
+  {
+   "id": "C502",
+   "speaker": "listener",
+   "narration": "どっちも残業で長いんでしょ？",
+   "image": "寄り：麻衣が、両手の人さし指を立てて、得意げに首をかしげている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C503",
+   "speaker": "narrator",
+   "narration": "警備員は、残業などで長い仕事。6つの中で、残業がいちばん多い組です。",
+   "image": "見上げ：夜明け前の工事現場で、誘導灯の男性が疲れた顔で空を見上げ、誘導灯を肩にかついでいる。",
+   "chars": [
+    "keibi"
+   ],
+   "wow": true,
+   "label": "警備員は残業で長い"
+  },
+  {
+   "id": "C503b",
+   "speaker": "narrator",
+   "narration": "工事が延びれば、誘導灯を振る時間も一緒に延びていきます。",
+   "same_as": "C503"
+  },
+  {
+   "id": "C504",
+   "speaker": "narrator",
+   "narration": "美容師の残業などは、多い方ではありません。長いのは、初めから組まれた勤務の時間です。",
+   "tts_text": "美容師の残業などは、多いほうではありません。長いのは、初めから組まれた勤務の時間です。",
+   "image": "見下ろし：開店前の美容室で、黒シャツのスタイリストがひとり、タオルを棚に積み、道具を並べている。",
+   "chars": [
+    "biyo"
+   ],
+   "wow": true,
+   "label": "勤務表の時点で長い"
+  },
+  {
+   "id": "C505",
+   "speaker": "listener",
+   "narration": "シフトの時点で、もう長いのか。",
+   "image": "寄り：麻衣が、勤務表の紙を両手で持ち、目を細めている。紙の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C505b",
+   "speaker": "narrator",
+   "narration": "予約の間が空いても、店を離れて帰るわけにはいきません。",
+   "same_as": "C505"
+  },
+  {
+   "id": "C506",
+   "speaker": "narrator",
+   "narration": "休みの日に髪を切りに行くと、店に立っているのが美容師。人の休みが、いちばん忙しい日です。",
+   "image": "引き：休日の昼の美容室で、麻衣が鏡の前の椅子に座り、後ろで黒シャツのスタイリストが髪を切りながら笑っている。",
+   "chars": [
+    "mai",
+    "biyo"
+   ],
+   "wow": true,
+   "label": "人の休みが稼ぎ時"
+  },
+  {
+   "id": "C506b",
+   "speaker": "narrator",
+   "narration": "髪を切りたい人が増える日に、店を閉めて休むわけにはいきません。",
+   "same_as": "C506"
+  },
+  {
+   "id": "C507",
+   "speaker": "listener",
+   "narration": "休みの日に休めない仕事だ。",
+   "same_as": "C506"
+  },
+  {
+   "id": "C508",
+   "speaker": "narrator",
+   "narration": "では、間に割り込んだ介護職員と販売店員は、どんな時間で働いているのか。",
+   "image": "引き：夕方の駅前で、ポロシャツの女性と緑のエプロンの販売員が、仕事を終えて並んで改札へ向かっている。",
+   "chars": [
+    "kaigo",
+    "hanbai"
+   ]
+  },
+  {
+   "id": "C509",
+   "speaker": "listener",
+   "narration": "その2つ、どうやって美容師を抜いたの？",
+   "same_as": "C508"
+  },
+  {
+   "id": "C601",
+   "chapter": "答え 稼ぎは並ぶのに、なぜ免許の2つの間に仕事が入るのか",
+   "speaker": "narrator",
+   "narration": "年収と1時間の値段で、順位が動いた3つです。上がった2つと、下がった1つ。",
+   "chart": {
+    "kind": "rank_swap",
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ],
+    "shown": 3,
+    "highlight": "美容師・理容師"
+   },
+   "anim": "card",
+   "label": "順位が動いた3つ"
+  },
+  {
+   "id": "C602",
+   "speaker": "listener",
+   "narration": "上がった2つの共通点は？",
+   "image": "寄り：麻衣が、虫めがねを片目に当てて、じっと何かをのぞき込んでいる。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C603",
+   "speaker": "narrator",
+   "narration": "割り込んだ2つは、働く時間が短い組。美容師の181時間に対して、介護職員は166時間です。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "美容師・理容師",
+     "介護職員（施設）",
+     "販売店員"
+    ]
+   },
+   "anim": "card",
+   "peak": true,
+   "strong": true,
+   "wow": true,
+   "payoff": true,
+   "label": "181時間と166時間"
+  },
+  {
+   "id": "C603b",
+   "speaker": "narrator",
+   "narration": "介護職員は、6つの中で、ひと月の働く時間がいちばん短い仕事です。",
+   "same_as": "C603"
+  },
+  {
+   "id": "C604",
+   "speaker": "listener",
+   "narration": "稼ぎはほぼ同じで、時間だけ短いのか！",
+   "same_as": "C603"
+  },
+  {
+   "id": "C605",
+   "speaker": "narrator",
+   "narration": "販売店員も、美容師より短い時間で、ほぼ同じ年収を受け取っています。",
+   "image": "寄り：閉店後の店で、緑のエプロンの販売員が、片付けを終えて満足そうに大きく伸びをしている。",
+   "chars": [
+    "hanbai"
+   ],
+   "wow": true,
+   "label": "短い時間で同じ年収"
+  },
+  {
+   "id": "C606",
+   "speaker": "narrator",
+   "narration": "年収の差が小さい仕事どうしでは、働く時間の差が、そのまま順位を入れ替えます。",
+   "chart": {
+    "kind": "rank_table",
+    "measures": [
+     "年収",
+     "時給に直した額"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "時間が順位を入れ替える"
+  },
+  {
+   "id": "C607",
+   "speaker": "listener",
+   "narration": "免許があっても、時間の長さには勝てないんだ。",
+   "image": "寄り：麻衣が、机に両手をついて、がっくりとうなだれている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C608",
+   "speaker": "narrator",
+   "narration": "歯科衛生士は、年収がいちばん高く、働く時間も短い側。だから1位を守れました。",
+   "image": "寄り：歯科衛生士が、片付いた診療室で腕を組み、自信ありげにうなずいている。",
+   "chars": [
+    "eisei"
+   ]
+  },
+  {
+   "id": "C609",
+   "speaker": "narrator",
+   "narration": "判定です。この6つでは、免許があるかより、働く時間の短さが、1時間の値段を決めていました。",
+   "image": "見上げ：会社の休憩室で、健二が人さし指を立て、きっぱりした顔で言い切っている。",
+   "chars": [
+    "kenji"
+   ],
+   "wow": true,
+   "label": "判定 免許より時間"
+  },
+  {
+   "id": "C610",
+   "speaker": "listener",
+   "narration": "免許を取っても、長く立てば薄まるのか。",
+   "image": "寄り：麻衣が、資格の参考書を胸に抱えたまま、遠い目をして苦笑いしている。本の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C611",
+   "speaker": "narrator",
+   "narration": "免許の重さは同じでも、店に立つ時間の長さが、1時間の値段に出ていました。",
+   "image": "寄り：暗い閉店後の美容室で、左に歯科衛生士が腕を組んで得意げににやりと笑い、右に黒シャツのスタイリストが、砂がほとんど落ちきった大きな砂時計を両手で握ったまま目を見開き、口を大きく開けて青ざめ、額から冷や汗を流している。背景は暗く色は濃く、2人の顔と胸から上にだけ強い光。2人は画面の真ん中の高さに胸から上の大きさで、やや右寄りに並び、顔は画面の高さの4割以上、上と下に2割ずつ空きがあり、左側は暗く空いている。",
+   "chars": [
+    "eisei",
+    "biyo"
+   ]
+  },
+  {
+   "id": "C612",
+   "speaker": "listener",
+   "narration": "長く店に立つほど時給が薄まる、ずるい計算。",
+   "same_as": "C611"
+  },
+  {
+   "id": "C701",
+   "chapter": "まとめ 給与明細で出す、あなたの1時間",
+   "speaker": "narrator",
+   "narration": "あなたの1時間の値段は、年収を、1年に働いた時間で割ると出ます。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 1年に働いた時間"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C702",
+   "speaker": "narrator",
+   "narration": "歯科衛生士の約1,980円より上なら、6つのどの仕事よりも上です。",
+   "image": "寄り：会社の休憩室で、健二が電卓の答えを見て、片方の口の端を上げている。電卓の字は見えない向き。",
+   "chars": [
+    "kenji"
+   ],
+   "label": "約1,980円と比べる"
+  },
+  {
+   "id": "C702b",
+   "speaker": "narrator",
+   "narration": "下なら、6つのどの仕事の近くに入るかを見てください。",
+   "same_as": "C702"
+  },
+  {
+   "id": "C703",
+   "speaker": "listener",
+   "narration": "計算したら、私は販売店員と美容師の間でした。",
+   "image": "寄り：麻衣が、電卓を胸に抱えて、照れくさそうに笑っている。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C704",
+   "speaker": "narrator",
+   "narration": "年収が近い仕事で迷ったら、月給の隣の、勤務時間の欄から読んでみてください。",
+   "image": "見下ろし：自宅の机で、陽子が求人の冊子を開き、ペンで欄の1つを丸で囲んでいる。冊子の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ]
+  },
+  {
+   "id": "C705",
+   "speaker": "narrator",
+   "narration": "あなたの職場は、年収の割に、働く時間が長い方ですか。コメントで教えてください。",
+   "tts_text": "あなたの職場は、年収の割に、働く時間が長いほうですか。コメントで教えてください。",
+   "image": "引き：会社の休憩室で、茂が湯のみを持ち、陽子と笑いながら話している。",
+   "chars": [
+    "shigeru",
+    "yoko"
+   ]
+  },
+  {
+   "id": "C706",
+   "speaker": "narrator",
+   "narration": "次に歯医者で口を開けた時、その手の1時間の値段を思い出してください。",
+   "image": "寄り：歯科医院の診療台で、口を開けた麻衣が、器具を持つ歯科衛生士の手元を横目で見て、くすっと笑っている。",
+   "chars": [
+    "mai",
+    "eisei"
+   ]
+  }
+ ]
+}
