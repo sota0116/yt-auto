@@ -487,6 +487,18 @@
    ],
    "取った日": "2026-11-11",
    "再生（公開ページ）": 36
+  },
+  "d7": {
+   "views": 43,
+   "averageViewPercentage": 17.98,
+   "averageViewDuration": 146,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 47
   }
  },
  "S110_財布の輪ゴム": {
@@ -503,6 +515,18 @@
    ],
    "取った日": "2026-11-11",
    "再生（公開ページ）": 1295
+  },
+  "d7": {
+   "views": 152,
+   "averageViewPercentage": 55.94,
+   "averageViewDuration": 25,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 1294
   }
  },
  "S113_新札": {
@@ -570,11 +594,29 @@
  },
  "S117_ポチ袋": {
   "type": null,
-  "video_id": "119zf5l5MKg"
+  "video_id": "119zf5l5MKg",
+  "h72": {
+   "views": 546,
+   "averageViewPercentage": 150.82,
+   "averageViewDuration": 58,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 997
+  }
  },
  "104_クローゼットと押し入れ": {
   "type": null,
-  "video_id": "usVVILkewF0"
+  "video_id": "usVVILkewF0",
+  "h72": {
+   "views": 6,
+   "averageViewPercentage": 32.81,
+   "averageViewDuration": 269,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 13
+  }
  },
  "008_お風呂と洗面所": {
   "type": "okinu",
@@ -593,7 +635,16 @@
  },
  "010_ベランダのNG5": {
   "type": "okinu",
-  "video_id": "zrJfG-4waZA"
+  "video_id": "zrJfG-4waZA",
+  "h72": {
+   "views": 15,
+   "averageViewPercentage": 38.3,
+   "averageViewDuration": 302,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-15",
+   "再生（公開ページ）": 677
+  }
  },
  "009_居間のNG5": {
   "type": "okinu",
@@ -623,5 +674,17 @@
  "012_たんすのNG5": {
   "type": "okinu",
   "video_id": "3cSf_yf-gKE"
+ },
+ "S121_レジの前でお札を数える手": {
+  "type": null,
+  "video_id": "DfJnaYCj61k"
+ },
+ "S122_買い物メモ": {
+  "type": null,
+  "video_id": "CKUI_m1NhqU"
+ },
+ "013_郵便受けのNG5": {
+  "type": "okinu",
+  "video_id": "Y5unabdbnTs"
  }
 }

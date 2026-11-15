@@ -148,7 +148,7 @@
   "seconds": 814,
   "title_now": "【今すぐチェック】カバンに〇〇を入れたままは要注意！破産する人の特徴5選【金運】",
   "synthetic_on": null,
-  "views_now": 45,
+  "views_now": 47,
   "published": true,
   "published_at": "2026-11-08T18:00:16+09:00",
   "comment_id": "Ugw91s8VBfk7CUYMsQB4AaABAg",
@@ -254,7 +254,7 @@
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 25,
+  "views_now": 27,
   "published": true,
   "published_at": "2026-11-10T18:00:33+09:00",
   "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
@@ -329,7 +329,7 @@
   "seconds": 37,
   "title_now": "【60代】お札の間にお釣りの小銭、絶対しまわないで",
   "synthetic_on": null,
-  "views_now": 453,
+  "views_now": 454,
   "published": true,
   "published_at": "2026-11-11T19:00:27+09:00",
   "comment_id": "UgwrJfq7AZtmm9wIpQ94AaABAg",
@@ -354,7 +354,7 @@
   "seconds": 39,
   "title_now": "【60代】もらったポチ袋、財布に空のまま入れないで",
   "synthetic_on": null,
-  "views_now": 993,
+  "views_now": 997,
   "published": true,
   "published_at": "2026-11-12T12:00:09+09:00",
   "comment_id": "UgyjET6e1pqF408vdzl4AaABAg",
@@ -379,7 +379,7 @@
   "seconds": 37,
   "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
   "synthetic_on": null,
-  "views_now": 1033,
+  "views_now": 1045,
   "published": true,
   "published_at": "2026-11-13T19:00:05+09:00",
   "comment_id": "UgwwmBWEGDgzcB_ROHV4AaABAg",
@@ -404,7 +404,7 @@
   "seconds": 36,
   "title_now": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
   "synthetic_on": null,
-  "views_now": 1208,
+  "views_now": 1219,
   "published": true,
   "published_at": "2026-11-14T12:00:37+09:00",
   "comment_id": "UgyJQctjM1ZU0LPrv454AaABAg",
@@ -433,7 +433,7 @@
   "seconds": 822,
   "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
   "synthetic_on": null,
-  "views_now": 12,
+  "views_now": 13,
   "published": true,
   "published_at": "2026-11-12T18:00:25+09:00",
   "comment_id": "Ugz_8Vc2SwMe6_b_6jN4AaABAg",
@@ -453,12 +453,16 @@
    "【60代】レジでお札を慌てて出す人、今すぐやめて"
   ],
   "comment": "あなたの手は、レジでお札を放っていませんか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-15T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 37,
   "title_now": "【60代】レジでお札を慌てて出す人、今すぐやめて",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 298,
+  "published": true,
+  "published_at": "2026-11-15T12:00:28+09:00",
+  "comment_id": "UgwvmmU1zhjaR1ZG-Ht4AaABAg",
+  "comment_at": "2026-11-15T19:37:07+09:00"
  },
  {
   "work": "S122_買い物メモ",
@@ -474,12 +478,16 @@
    "【60代】買い物メモ、お札と一緒に財布へ入れないで"
   ],
   "comment": "あなたの財布には、買い物メモが入っていませんか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-14T22:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 37,
   "title_now": "【60代】買い物メモ、お札と一緒に財布へ入れないで",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 377,
+  "published": true,
+  "published_at": "2026-11-15T07:00:32+09:00",
+  "comment_id": "UgxOAWoMF4RWSh-_2_x4AaABAg",
+  "comment_at": "2026-11-15T19:37:08+09:00"
  },
  {
   "work": "S123_昔の硬貨",
@@ -578,11 +586,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-15T02:10:44+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】重い小銭入れ、お札の財布に絶対入れないで"
   ],
-  "comment": "あなたの財布には、重い小銭入れが入っていませんか。"
+  "comment": "あなたの財布には、重い小銭入れが入っていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-19T12:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】重い小銭入れ、お札の財布に絶対入れないで",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
