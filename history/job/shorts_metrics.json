@@ -783,7 +783,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-10T11:59:32+09:00"
+  "取った日": "2026-11-15T09:24:55+09:00",
+  "7d": {
+   "views": 1003,
+   "averageViewPercentage": 66.13,
+   "averageViewDuration": 19,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 663.3
+  },
+  "言い方の版": 1
  },
  "20261107_0927_0": {
   "48h": {
@@ -807,7 +817,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-10T11:59:32+09:00"
+  "取った日": "2026-11-15T09:24:55+09:00",
+  "7d": {
+   "views": 1404,
+   "averageViewPercentage": 92.64,
+   "averageViewDuration": 25,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 1300.7
+  },
+  "言い方の版": 1
  },
  "20261107_0931_1": {
   "48h": {
@@ -928,5 +948,80 @@
   "編集の版": 2,
   "bgm": "job_short_bgm_02_drive.m4a",
   "取った日": "2026-11-13T10:31:44+09:00"
+ },
+ "20261111_2008_0": {
+  "48h": {
+   "views": 915,
+   "averageViewPercentage": 65.69,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 601.1
+  },
+  "video_id": "V5LFrW5Bt20",
+  "title": "会社員の仕事で働く時間が長い5つ｜1位と5位は月に13時間差 #年収 #仕事",
+  "topic_id": "rank_会社員_労働時間_hi",
+  "kind": "rank",
+  "measure": "労働時間",
+  "hook": "184時間\n働く仕事",
+  "banner": [
+   "長く働く順",
+   "会社員の10職業"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-15T09:24:55+09:00"
+ },
+ "20261111_2013_1": {
+  "48h": {
+   "views": 202,
+   "averageViewPercentage": 408.26000000000005,
+   "averageViewDuration": 122,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 824.7
+  },
+  "video_id": "rPtAgTlctTg",
+  "title": "ケアマネージャーとバス運転手の残業を比べると｜年収が近いのに分かれた #年収 #仕事",
+  "topic_id": "duel_ケアマネージャー_バス運転手_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "年収同じ\n残業は？",
+  "banner": [
+   "残業くらべ",
+   "ケアマネとバス運転手"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-15T09:24:55+09:00"
+ },
+ "20261112_1103_0": {
+  "48h": {
+   "views": 1055,
+   "averageViewPercentage": 65.56,
+   "averageViewDuration": 19,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 691.7
+  },
+  "video_id": "blOJgx-YF9I",
+  "title": "介護職員と販売店員の残業を比べると｜年収はほぼ同じなのに2倍差 #年収 #仕事",
+  "topic_id": "duel_介護職員（施設）_販売店員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "年収同じ\n残業2倍？",
+  "banner": [
+   "残業くらべ",
+   "介護職員と販売店員"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-15T09:24:55+09:00"
  }
 }
