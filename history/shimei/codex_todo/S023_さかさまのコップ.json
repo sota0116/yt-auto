@@ -1,0 +1,60 @@
+{
+ "ch": "shimei",
+ "work": "S023_さかさまのコップ",
+ "portrait": true,
+ "made": "2026-11-15 21:15",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white, gray and deep sea blue tones, only key objects red. Off the coast of West Africa, 2013. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "logos, badges, insignia or emblems of real companies or agencies, names, marks or lettering on ships and equipment, readable text or numbers, detailed national flags, blood, dead bodies, faces resembling real people",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "暗い海の底に、さかさまに沈んだ小さな船の断面。中の小部屋の上の方に空気があり、男が頭を出している",
+   "image_en": "a cutaway model of a small work boat lying upside down on a dark seabed in the middle of the frame; inside, one small room has a thin pocket of air at the top where a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt keeps his head above the black water; plain hull with no name or markings",
+   "en": "a cutaway model of a small work boat lying upside down on a dark seabed in the middle of the frame; inside, one small room has a thin pocket of air at the top where a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt keeps his head above the black water; plain hull with no name or markings"
+  },
+  {
+   "id": "a02",
+   "image": "荒れた海で、小さなタグボートが裏返り、赤い船底が上を向いている",
+   "image_en": "a small white and red tugboat model completely capsized on a rough dark sea in the middle of the frame, its red hull bottom facing the sky, waves washing over it; plain hull with no name, no logos, no markings",
+   "en": "a small white and red tugboat model completely capsized on a rough dark sea in the middle of the frame, its red hull bottom facing the sky, waves washing over it; plain hull with no name, no logos, no markings"
+  },
+  {
+   "id": "a03",
+   "image": "暗い青の水の中を、さかさまの船が沈んでいく断面",
+   "image_en": "a cutaway sea diorama: the upside-down tugboat sinking through dark blue water in the middle of the frame toward a dark seabed, the bright surface far above; plain hull, no markings",
+   "en": "a cutaway sea diorama: the upside-down tugboat sinking through dark blue water in the middle of the frame toward a dark seabed, the bright surface far above; plain hull, no markings"
+  },
+  {
+   "id": "a04",
+   "image": "真っ暗な水の通路で、片手を壁につけて進む男",
+   "image_en": "a pitch-dark flooded corridor inside an upside-down ship; in the middle of the frame a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt wades neck-deep, one hand sliding along the wall; barely any light",
+   "en": "a pitch-dark flooded corridor inside an upside-down ship; in the middle of the frame a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt wades neck-deep, one hand sliding along the wall; barely any light"
+  },
+  {
+   "id": "a05",
+   "image": "さかさまの部屋。上の方にだけ空気があり、男が頭と肩を出している",
+   "image_en": "inside an upside-down small cabin, chairs hanging from what is now the ceiling, dark water filling most of the room; in the middle of the frame a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt has his head and shoulders above the water in the thin air gap",
+   "en": "inside an upside-down small cabin, chairs hanging from what is now the ceiling, dark water filling most of the room; in the middle of the frame a slim man figurine with dark brown skin, a smooth featureless face, very short black hair and a plain white sleeveless undershirt has his head and shoulders above the water in the thin air gap"
+  },
+  {
+   "id": "a06",
+   "image": "白い空間に、さかさまの船の小さな模型と赤い？",
+   "image_en": "in the middle of the frame a tiny upside-down boat model resting on a patch of dark sand, a large red question mark sculpture floating above it; plain hull, no markings",
+   "en": "in the middle of the frame a tiny upside-down boat model resting on a patch of dark sand, a large red question mark sculpture floating above it; plain hull, no markings"
+  },
+  {
+   "id": "a07",
+   "image": "水の入った透明な水槽の上で、さかさまのコップを持つ手",
+   "image_en": "a clear glass water tank model in the middle of the frame, and just above the water surface a hand holding an empty drinking glass upside down, about to push it straight down into the water; simple science demonstration, no text",
+   "en": "a clear glass water tank model in the middle of the frame, and just above the water surface a hand holding an empty drinking glass upside down, about to push it straight down into the water; simple science demonstration, no text"
+  },
+  {
+   "id": "a08",
+   "image": "水槽の中に沈んださかさまのコップ。中に空気がはっきり残っている",
+   "image_en": "the same clear glass water tank model in the middle of the frame, the upside-down drinking glass now pushed deep under the water, a clear pocket of air clearly trapped inside the glass; simple science demonstration, no text",
+   "en": "the same clear glass water tank model in the middle of the frame, the upside-down drinking glass now pushed deep under the water, a clear pocket of air clearly trapped inside the glass; simple science demonstration, no text"
+  }
+ ]
+}
