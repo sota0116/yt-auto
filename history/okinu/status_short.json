@@ -1,1 +1,17 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S127_銀行の封筒",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice"
+ ],
+ "started": "2026-11-16T00:52:13+09:00",
+ "tries": 0,
+ "code": "b4688f5c4404",
+ "stage": "images",
+ "updated": "2026-11-16T01:05:37+09:00",
+ "busy": {
+  "images": 1
+ }
+}

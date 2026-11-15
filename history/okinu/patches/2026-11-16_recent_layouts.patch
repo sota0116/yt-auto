@@ -1,0 +1,22 @@
+diff --git a/pipeline/check_okinu_script.py b/pipeline/check_okinu_script.py
+index 0af507b..4edde02 100644
+--- a/pipeline/check_okinu_script.py
++++ b/pipeline/check_okinu_script.py
+@@ -86,6 +86,17 @@ def recent_layouts(skip_num=""):
+                 seen[n] = r["thumb_kind"]
+     except Exception:
+         pass
++    # 作りかけの長尺（videos\ と wip\ の script.json の thumb.layout）も数える。上げる前の 105・106 が直近に出ず、続けて person になった（2026-11-14）
++    for p in glob.glob(os.path.join(CH_DIR, "videos", "*", "script.json")) + glob.glob(os.path.join(hist, "wip", "*", "script.json")):
++        n = num_of(os.path.dirname(p))
++        if n == skip_num or n.startswith("S") or not n.isdigit():
++            continue
++        try:
++            lay = (json.load(open(p, encoding="utf-8")).get("thumb") or {}).get("layout")
++        except Exception:
++            continue
++        if lay in LAYOUTS:
++            seen[n] = lay
+     return sorted(seen.items())
+
+

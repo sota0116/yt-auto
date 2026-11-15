@@ -1,0 +1,239 @@
+{
+ "title": "銀行の封筒、お札ごと財布にしまう人は今すぐ出して",
+ "fiction": true,
+ "world_rules": [
+  "語り手はおきぬ（名乗らない）。物が主役で、物語の場面は入れない",
+  "人物は答えの場面（C08・C09）だけ。68歳のさわこが、財布から封筒を抜いてはっとする（名乗らない）",
+  "言い伝えは facts.json で確かめた物だけを「言われています」「とされています」の形で言う"
+ ],
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "銀行の封筒を財布へ、お金が逃げるこれをしていませんか。",
+   "subs": [
+    "銀行の封筒を\n財布へ、",
+    "お金が逃げる\nこれを",
+    "して\nいませんか。"
+   ],
+   "hook": "封筒は\n家に置いて",
+   "image_en": "Extreme close-up from above of a closed brown leather wallet on a wooden table, bulging in the middle, with the edge of a folded plain white paper envelope (no logo, no print) poking out of the bill compartment. The wallet fills more than half of the vertical frame. Warm soft light, no text anywhere.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "銀行の封筒"
+   ],
+   "tts_text": "銀行のふうとうを財布へ、お金が逃げるこれをしていませんか。",
+   "image": "Extreme close-up from above of a closed brown leather wallet on a wooden table, bulging in the middle, with the edge of a folded plain white paper envelope (no logo, no print) poking out of the bill compartment. The wallet fills more than half of the vertical frame. Warm soft light, no text anywhere."
+  },
+  {
+   "id": "C02",
+   "narration": "ATMでおろした日に、ついやりがちな入れ方です。",
+   "subs": [
+    "ATMで\nおろした日に、",
+    "ついやりがちな\n入れ方です。"
+   ],
+   "image_en": "Very close vertical shot of an open brown leather wallet. Inside the bill compartment sits a folded plain white paper envelope with no logo and no print, thick with paper bills hidden inside. An older woman's hand holds the wallet open. The envelope fills more than half of the frame. No faces, no text.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "やりがち"
+   ],
+   "tts_text": "エーティーエムでおろした日に、ついやりがちないれかたです。",
+   "image": "Very close vertical shot of an open brown leather wallet. Inside the bill compartment sits a folded plain white paper envelope with no logo and no print, thick with paper bills hidden inside. An older woman's hand holds the wallet open. The envelope fills more than half of the frame. No faces, no text."
+  },
+  {
+   "id": "C03",
+   "narration": "金運の目で見ると、もったいない入れ方なのだとか。",
+   "subs": [
+    "金運の目で\n見ると、",
+    "もったいない\n入れ方",
+    "なのだとか。"
+   ],
+   "image_en": "Close-up of a brown leather wallet lying on a wooden table with a crumpled plain white paper envelope (no logo, no print) half sticking out of it, the envelope folded twice and wrinkled. The wallet and envelope fill more than half of the vertical frame. Slightly dim evening light, no text.",
+   "tts_text": "金運の目で見ると、もったいないいれかたなのだとか。",
+   "image": "Close-up of a brown leather wallet lying on a wooden table with a crumpled plain white paper envelope (no logo, no print) half sticking out of it, the envelope folded twice and wrinkled. The wallet and envelope fill more than half of the vertical frame. Slightly dim evening light, no text."
+  },
+  {
+   "id": "C04",
+   "narration": "銀行の封筒は、財布より少し長めです。",
+   "subs": [
+    "銀行の封筒は、",
+    "財布より\n少し長めです。"
+   ],
+   "image_en": "Close-up from above of a long plain white paper envelope (no logo, no print) lying on a wooden table right beside a small closed brown leather bifold wallet; the envelope is clearly longer than the wallet. The envelope and wallet fill more than half of the vertical frame. Warm soft light, no text.",
+   "tts_text": "銀行のふうとうは、財布より少し長めです。",
+   "image": "Close-up from above of a long plain white paper envelope (no logo, no print) lying on a wooden table right beside a small closed brown leather bifold wallet; the envelope is clearly longer than the wallet. The envelope and wallet fill more than half of the vertical frame. Warm soft light, no text."
+  },
+  {
+   "id": "C05",
+   "narration": "折って押しこむと、中のお札まで曲がります。",
+   "subs": [
+    "折って\n押しこむと、",
+    "中のお札まで\n曲がります。"
+   ],
+   "image_en": "Macro close-up of a plain white paper envelope folded in half with a bent, creased corner, pushing against the stretched seam of a brown leather wallet, the leather bulging and the stitching strained. Fills more than half of the vertical frame. Dim cool light, no text.",
+   "highlight": [
+    "曲がります"
+   ],
+   "tts_text": "折って押しこむと、なかのおさつまで曲がります。",
+   "image": "Macro close-up of a plain white paper envelope folded in half with a bent, creased corner, pushing against the stretched seam of a brown leather wallet, the leather bulging and the stitching strained. Fills more than half of the vertical frame. Dim cool light, no text."
+  },
+  {
+   "id": "C06",
+   "narration": "風水では、お札は折らずに入れるものと言われています。",
+   "subs": [
+    "風水では、",
+    "お札は折らずに\n入れるものと",
+    "言われています。"
+   ],
+   "image_en": "Close-up from above of an open brown leather wallet on a wooden table with several plain paper bills (no visible design) lying flat and unfolded inside the bill compartment, facing the same way. The wallet fills more than half of the vertical frame. Soft warm golden light, calm mood, no text.",
+   "highlight": [
+    "折らずに"
+   ],
+   "tts_text": "風水では、おさつは折らずに入れるものと言われています。",
+   "image": "Close-up from above of an open brown leather wallet on a wooden table with several plain paper bills (no visible design) lying flat and unfolded inside the bill compartment, facing the same way. The wallet fills more than half of the vertical frame. Soft warm golden light, calm mood, no text."
+  },
+  {
+   "id": "C07",
+   "narration": "のびのびしたお札は、金運も上向くとされています。",
+   "subs": [
+    "のびのびした\nお札は、",
+    "金運も上向くと\nされています。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@close"
+   ],
+   "tts_text": "のびのびしたおさつは、金運もうわむくとされています。"
+  },
+  {
+   "id": "C08",
+   "narration": "持ち帰るまでは、封筒のままで大丈夫です。",
+   "subs": [
+    "持ち帰るまでは、",
+    "封筒のままで\n大丈夫です。"
+   ],
+   "image_en": "Sawako, a Japanese woman in her sixties, stands at the low wooden shoe step of her modest present-day Japanese home entrance, just back from the bank, pulling a plain white paper envelope with no logo out of her brown wallet with a sudden startled, realizing face, eyes wide. Her hands and the envelope are large in the vertical frame. Warm afternoon light, no text.",
+   "chars": [
+    "sawako"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "peak": true,
+   "strong": true,
+   "highlight": [
+    "大丈夫"
+   ],
+   "tts_text": "持ち帰るまでは、ふうとうのままで大丈夫です。",
+   "image": "Sawako, a Japanese woman in her sixties, stands at the low wooden shoe step of her modest present-day Japanese home entrance, just back from the bank, pulling a plain white paper envelope with no logo out of her brown wallet with a sudden startled, realizing face, eyes wide. Her hands and the envelope are large in the vertical frame. Warm afternoon light, no text."
+  },
+  {
+   "id": "C09",
+   "narration": "ただ、財布の中に封筒は残さないでね。",
+   "subs": [
+    "ただ、",
+    "財布の中に\n封筒は",
+    "残さないでね。"
+   ],
+   "same_as": "C08",
+   "shots": [
+    "C08@face"
+   ],
+   "chars": [
+    "sawako"
+   ],
+   "tts_text": "ただ、財布のなかにふうとうは残さないでね。"
+  },
+  {
+   "id": "C10",
+   "narration": "玄関を上がったら、封筒からお札を出して。",
+   "subs": [
+    "玄関を\n上がったら、",
+    "封筒から\nお札を出して。"
+   ],
+   "image_en": "Close-up of an older woman's hands at a wooden kitchen table taking plain paper bills (no visible design) out of a plain white envelope with no logo and sliding them flat into an open brown leather wallet. The hands and wallet fill more than half of the vertical frame. No faces, warm light, no text.",
+   "motion": true,
+   "anim": "kling",
+   "highlight": [
+    "お札を出して"
+   ],
+   "tts_text": "玄関をあがったら、ふうとうからおさつを出して。",
+   "image": "Close-up of an older woman's hands at a wooden kitchen table taking plain paper bills (no visible design) out of a plain white envelope with no logo and sliding them flat into an open brown leather wallet. The hands and wallet fill more than half of the vertical frame. No faces, warm light, no text."
+  },
+  {
+   "id": "C11",
+   "narration": "折り目を指でのばして、財布へ入れます。",
+   "subs": [
+    "折り目を\n指でのばして、",
+    "財布へ\n入れます。"
+   ],
+   "same_as": "C10",
+   "shots": [
+    "C10@close"
+   ],
+   "highlight": [
+    "指でのばして"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "空の封筒は、家の引き出しへ。",
+   "subs": [
+    "空の封筒は、",
+    "家の引き出しへ。"
+   ],
+   "image_en": "Close-up from above of an open wooden kitchen drawer with a few empty, neatly folded plain white paper envelopes (no logo, no print) stacked inside, an older woman's hand placing one more on top. The drawer fills more than half of the vertical frame. No faces, soft warm light, no text.",
+   "tts_text": "からのふうとうは、いえの引き出しへ。",
+   "image": "Close-up from above of an open wooden kitchen drawer with a few empty, neatly folded plain white paper envelopes (no logo, no print) stacked inside, an older woman's hand placing one more on top. The drawer fills more than half of the vertical frame. No faces, soft warm light, no text."
+  },
+  {
+   "id": "C13",
+   "narration": "目に見える変化がなくても、気長にどうぞ。",
+   "subs": [
+    "目に見える\n変化がなくても、",
+    "気長にどうぞ。"
+   ],
+   "same_as": "C06",
+   "shots": [
+    "C06@full"
+   ]
+  },
+  {
+   "id": "C14",
+   "narration": "あなたの財布のお札は、いま封筒の中ですか。",
+   "subs": [
+    "あなたの財布の\nお札は、",
+    "いま\n封筒の中ですか。"
+   ],
+   "same_as": "C02",
+   "shots": [
+    "C02@close"
+   ],
+   "highlight": [
+    "封筒の中"
+   ],
+   "tts_text": "あなたの財布のおさつは、いまふうとうの中ですか。"
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの財布のお札は、いま封筒の中ですか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #銀行の封筒",
+ "tags": [
+  "金運",
+  "財布",
+  "銀行の封筒",
+  "60代"
+ ],
+ "short_type": 2,
+ "comment": "あなたの財布のお札は、いま封筒の中ですか。"
+}
