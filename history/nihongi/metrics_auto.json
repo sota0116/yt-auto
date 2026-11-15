@@ -593,7 +593,19 @@
  },
  "L009_江戸の水道が三日止まったら": {
   "type": null,
-  "video_id": "DQ0WCltBm8U"
+  "video_id": "DQ0WCltBm8U",
+  "h72": {
+   "views": 31,
+   "averageViewPercentage": 42.91,
+   "averageViewDuration": 237,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-16",
+   "再生（公開ページ）": 161
+  }
  },
  "L011_黒船に同時通訳がいたら": {
   "type": null,
@@ -602,5 +614,9 @@
  "L012_火薬の残りが見えたら": {
   "type": null,
   "video_id": "TLdhDHgZQ1E"
+ },
+ "L013_ゴミ収集員が江戸へ": {
+  "type": null,
+  "video_id": "4IMHGe70poc"
  }
 }

@@ -559,6 +559,13 @@
    "averageViewDuration": 35,
    "subscribersGained": 2,
    "取った日": "2026-11-12"
+  },
+  "d7": {
+   "views": 1037,
+   "averageViewPercentage": 85.48,
+   "averageViewDuration": 33,
+   "subscribersGained": 2,
+   "取った日": "2026-11-16"
   }
  },
  "009_zenbu_hitonome:short_4": {
@@ -655,5 +662,17 @@
    "subscribersGained": 0,
    "取った日": "2026-11-13"
   }
+ },
+ "016_yoru_kangae": {
+  "type": "眠りと夜",
+  "video_id": "0p2jbxM2iUQ",
+  "hook": "夜の布団で心配したことは、そのあと本当に起きているのでしょうか？",
+  "band": [
+   "心配の行方を",
+   "日記で確かめた"
+  ],
+  "kind": "after",
+  "title": "【心理学】夜に心配が止まらない人の意外な特徴｜29人が日記で確かめた心配の行方 #shorts",
+  "publish_slot": "22:10"
  }
 }
