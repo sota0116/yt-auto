@@ -637,6 +637,13 @@
    "averageViewDuration": 55,
    "subscribersGained": 1,
    "取った日": "2026-11-13"
+  },
+  "d7": {
+   "views": 946,
+   "averageViewPercentage": 115.75,
+   "averageViewDuration": 50,
+   "subscribersGained": 1,
+   "取った日": "2026-11-17"
   }
  },
  "010_niwa_shokubutsu:short_3": {
@@ -712,5 +719,17 @@
   "kind": "after",
   "title": "【心理学】疲れた夜に昼の一言を気にする人の正体｜35時間眠らなかった脳の反応 #shorts",
   "publish_slot": "12:10"
+ },
+ "016_yoru_kangae:short_4": {
+  "type": "眠りと夜",
+  "video_id": "1UAHRhq0W2Q",
+  "hook": "眠れなかった次の朝、なんとなく胸がざわざわするのは、なぜでしょうか？",
+  "band": [
+   "眠れなかった朝の",
+   "不安の大きさ"
+  ],
+  "kind": "after",
+  "title": "【心理学】眠れなかった朝に胸がざわつく人の意外な特徴｜18人の2回の朝 #shorts",
+  "publish_slot": "20:10"
  }
 }
