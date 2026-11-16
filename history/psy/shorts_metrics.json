@@ -585,6 +585,13 @@
    "averageViewDuration": 26,
    "subscribersGained": 1,
    "取った日": "2026-11-12"
+  },
+  "d7": {
+   "views": 591,
+   "averageViewPercentage": 72.18,
+   "averageViewDuration": 28,
+   "subscribersGained": 1,
+   "取った日": "2026-11-16"
   }
  },
  "010_niwa_shokubutsu": {
@@ -604,6 +611,13 @@
    "averageViewDuration": 184,
    "subscribersGained": 0,
    "取った日": "2026-11-12"
+  },
+  "d7": {
+   "views": 85,
+   "averageViewPercentage": 272.9,
+   "averageViewDuration": 136,
+   "subscribersGained": 0,
+   "取った日": "2026-11-16"
   }
  },
  "010_niwa_shokubutsu:short_2": {
@@ -674,5 +688,29 @@
   "kind": "after",
   "title": "【心理学】夜に心配が止まらない人の意外な特徴｜29人が日記で確かめた心配の行方 #shorts",
   "publish_slot": "22:10"
+ },
+ "016_yoru_kangae:short_2": {
+  "type": "眠りと夜",
+  "video_id": "alhxi_4cGKE",
+  "hook": "夜に考えても決まらないことが、朝の洗面所でひらめくのは、なぜでしょうか？",
+  "band": [
+   "夜に出ない答えが",
+   "朝にひらめく"
+  ],
+  "kind": "after",
+  "title": "【心理学】夜に考えても決まらない人、実は朝に答えが出やすい人です #shorts",
+  "publish_slot": "07:10"
+ },
+ "016_yoru_kangae:short_3": {
+  "type": "眠りと夜",
+  "video_id": "sk5n0u-Jiek",
+  "hook": "疲れた夜ほど、昼の小さな一言が重く感じるのは、なぜでしょうか？",
+  "band": [
+   "35時間眠らない",
+   "脳の反応"
+  ],
+  "kind": "after",
+  "title": "【心理学】疲れた夜に昼の一言を気にする人の正体｜35時間眠らなかった脳の反応 #shorts",
+  "publish_slot": "12:10"
  }
 }

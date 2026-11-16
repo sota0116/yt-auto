@@ -245,7 +245,7 @@
   "seconds": 500,
   "title_now": "大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円",
   "synthetic_on": null,
-  "views_now": 294,
+  "views_now": 296,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -283,7 +283,7 @@
   "seconds": 534,
   "title_now": "あなたの給料は新人より高い？ もし初任給が30万円になったら",
   "synthetic_on": null,
-  "views_now": 56,
+  "views_now": 57,
   "retitled": {
    "日時": "2026-10-30T02:35:28",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -329,7 +329,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 2895,
+  "views_now": 3002,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -413,7 +413,7 @@
   "seconds": 399,
   "title_now": "【給与逆転】タクシー運転手は年収が近い仕事で一番稼ぐのに、なぜ時給では勝てないのか",
   "synthetic_on": null,
-  "views_now": 372,
+  "views_now": 373,
   "published": true,
   "published_at": "2026-11-04T19:00:06+09:00",
   "comment_id": "UgyIBv9sF6BIW86PKlV4AaABAg",
@@ -517,7 +517,7 @@
   "seconds": 503,
   "title_now": "【悲報】もし会社が年功序列をやめたら、いちばん損をするのは若手ではなかった",
   "synthetic_on": null,
-  "views_now": 308,
+  "views_now": 309,
   "published": true,
   "published_at": "2026-11-07T19:00:03+09:00",
   "comment_id": "Ugz2vACD-b8cIGQRajh4AaABAg",
@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 239,
+  "views_now": 244,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -573,7 +573,7 @@
   "seconds": 533,
   "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
   "synthetic_on": null,
-  "views_now": 256,
+  "views_now": 258,
   "published": true,
   "published_at": "2026-11-09T19:00:01+09:00",
   "comment_id": "UgwUJfEp6L_WFq5Jw5Z4AaABAg",
@@ -629,7 +629,7 @@
   "seconds": 515,
   "title_now": "自動車整備士の新人は年収約361万円。工場で一番年上のベテランになった結果",
   "synthetic_on": null,
-  "views_now": 25,
+  "views_now": 28,
   "published": true,
   "published_at": "2026-11-11T19:00:22+09:00",
   "comment_id": "UgyajXJ-wUNkoxPCjxx4AaABAg",
@@ -663,11 +663,17 @@
   "seconds": 509,
   "title_now": "【悲報】警備員は平均より長く働くのに、なぜ1時間の値段は主な仕事で一番安いのか",
   "synthetic_on": null,
-  "views_now": 5,
+  "views_now": 6,
   "published": true,
   "published_at": "2026-11-13T19:00:08+09:00",
   "comment_id": "UgzwYhVVeFxgUHrb4HZ4AaABAg",
-  "comment_at": "2026-11-13T19:45:29+09:00"
+  "comment_at": "2026-11-13T19:45:29+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-16T19:52:40+09:00",
+    "内容": "タイトルを「警備員は割に合うのか。工事現場に1日中立つ仕事を、新人とベテランで比べた結果」に（サムネB案のファイルが見つからないのでサムネはそのまま。週報に出す）"
+   }
+  ]
  },
  {
   "work": "020_c_denki",
@@ -691,7 +697,7 @@
   "seconds": 511,
   "title_now": "【年収の逆説】電気工事士は働く人の平均より若いのに、なぜ年収は高いのか",
   "synthetic_on": null,
-  "views_now": 1,
+  "views_now": 12,
   "published": true,
   "published_at": "2026-11-15T19:00:33+09:00",
   "comment_id": "UgxckjOR_qNbmE9kHAt4AaABAg",
@@ -787,7 +793,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
   "privacy_now": "private",
-  "publish_at": "2026-11-23T19:00:00+09:00",
+  "publish_at": "2026-11-23T10:00:00Z",
   "seconds": 512,
   "title_now": "【時給の謎】保育士と美容師、稼ぎは近いのに1時間の値段に差がつく理由",
   "synthetic_on": null,
@@ -809,6 +815,12 @@
    "もし歯科衛生士になったら、年収は約396万円。美容師と1時間の値段で比べた結果",
    "あなたの時給は歯科衛生士より上？ 歯石を取る仕事の1時間を、自分の給料と比べたら"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 509,
+  "title_now": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

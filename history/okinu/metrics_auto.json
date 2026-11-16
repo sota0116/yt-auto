@@ -540,6 +540,15 @@
    "直す所": [],
    "取った日": "2026-11-12",
    "再生（公開ページ）": 766
+  },
+  "d7": {
+   "views": 768,
+   "averageViewPercentage": 91.23,
+   "averageViewDuration": 35,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-16",
+   "再生（公開ページ）": 769
   }
  },
  "103_洗面所": {
@@ -631,6 +640,18 @@
    ],
    "取った日": "2026-11-12",
    "再生（公開ページ）": 89
+  },
+  "d7": {
+   "views": 357,
+   "averageViewPercentage": 27.43,
+   "averageViewDuration": 223,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-16",
+   "再生（公開ページ）": 566
   }
  },
  "010_ベランダのNG5": {
@@ -661,11 +682,33 @@
  },
  "S118_へそくり": {
   "type": null,
-  "video_id": "3rkvzLGvBxg"
+  "video_id": "3rkvzLGvBxg",
+  "h72": {
+   "views": 1023,
+   "averageViewPercentage": 137.68,
+   "averageViewDuration": 50,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-16",
+   "再生（公開ページ）": 1050
+  }
  },
  "011_階段と廊下のNG5": {
   "type": "okinu",
-  "video_id": "TECS2Dr3lUE"
+  "video_id": "TECS2Dr3lUE",
+  "h72": {
+   "views": 20,
+   "averageViewPercentage": 20.9,
+   "averageViewDuration": 163,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-16",
+   "再生（公開ページ）": 30
+  }
  },
  "S119_年金の振込日の記帳": {
   "type": null,
@@ -686,5 +729,13 @@
  "013_郵便受けのNG5": {
   "type": "okinu",
   "video_id": "Y5unabdbnTs"
+ },
+ "S123_昔の硬貨": {
+  "type": null,
+  "video_id": "9D86Nm-eE8w"
+ },
+ "014_窓とカーテンのNG5": {
+  "type": "okinu",
+  "video_id": "L-yb7gsqnuE"
  }
 }
