@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/019_tegami_kaku",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/018_ikigai_yakuwari",
  "done": [
   "pick",
   "write",
@@ -9,12 +9,20 @@
   "reading",
   "images"
  ],
- "started": "2026-11-14T09:27:35+09:00",
+ "started": "2026-11-16T12:32:13+09:00",
  "tries": 0,
  "code": "b4688f5c4404",
  "stage": "motion",
- "updated": "2026-11-15T02:07:02+09:00",
- "busy": {
-  "images": 5
+ "updated": "2026-11-16T12:40:33+09:00",
+ "restored": {
+  "日時": "2026-11-16T12:32:13+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "yomi",
+   "reading"
+  ]
  }
 }

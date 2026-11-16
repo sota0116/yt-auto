@@ -571,5 +571,70 @@
    "Wood, Joseph, Lloyd & Atkins (2009) Journal of Psychosomatic Research"
   ],
   "short_video_id": "0p2jbxM2iUQ"
+ },
+ {
+  "work": "019_tegami_kaku",
+  "type": "人づきあい",
+  "frame": "人づきあい",
+  "neta_id": "p_tegami_kaku",
+  "jobs": [],
+  "made": "2026-11-16",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】お礼の手紙を書く人に共通する5つの特徴｜手紙を受け取った人が、次にしたこと",
+  "titles": [
+   "【心理学】お礼の手紙を書く人に共通する5つの特徴｜手紙を受け取った人が、次にしたこと",
+   "【心理学】「大げさかな」とお礼の手紙をためらう人の正体｜書く前から、気持ちは変わり始めていた",
+   "【心理学】お礼の手紙を書く人、実は手紙が届く前から、自分の気持ちが明るくなっています。"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-11-14 の「次の回で試すこと」から：3 概要欄の「📌この動画でわかること」の1行目に、毎日の言葉（お礼の手紙を書いて届ける）を先に書いてから研究の言葉「感謝の訪問」を「」で入れた（語りは言いかえのまま）。2 の相手のセリフは、つかみの場面の自分の一言「大げさかな」をタイトルの2番目の案（型D）の前の側に置いた（1番目は学び.md の型C を優先）。1 の年代の言葉は、特徴の章の中心の研究が年配の人を調べていないので入れていない（60歳以上を調べた研究は工夫の章だけ）。章の並び（つかみ・前提・特徴5つ・工夫3つ・まとめ）は zrWk9ZuTOZY・phvWpG44ifY の型1。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:13 大げさかな、とペンが止まる",
+   "2:32 特徴1　届けた人は、ひと月後も",
+   "4:39 特徴2　届く前から、明るくなる",
+   "6:46 特徴3　相手のしたことをほめる",
+   "8:50 特徴4　久しぶりの人にこそ",
+   "11:00 特徴5　ありがとうが、次へ渡る",
+   "14:06 お礼の手紙を書く3つの工夫",
+   "16:06 まとめ"
+  ],
+  "video_id": "MsH7YCEHcYA",
+  "回した理由": null,
+  "studies": [
+   "Kumar & Epley (2018) Psychological Science",
+   "Seligman, Steen, Park & Peterson (2005) American Psychologist",
+   "Toepfer, Cichy & Peters (2012) Journal of Happiness Studies",
+   "Algoe, Kurtz & Hilaire (2016) Social Psychological and Personality Science",
+   "Liu, Rim, Min & Min (2023) Journal of Personality and Social Psychology",
+   "Grant & Gino (2010) Journal of Personality and Social Psychology",
+   "Killen & Macaskill (2015) Journal of Happiness Studies"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    7,
+    6,
+    7,
+    8,
+    6,
+    7,
+    8,
+    5,
+    5
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "1文目は「届く前から明るくなる」と言い切れていて良い。A09〜A11の「関わりのない人の頼みまで引き受けやすくなる」の驚きを、A07の電話の話より前に出せば、さらに続きが気になる。",
+    "H03〜H05の日記の研究や、H10・H13の研究の言い直しが、講義の復習に聞こえる。工夫1つにつき、傘や煮物のような、人が出てくる具体的な場面を1つだけにして、研究の話は削るとよい。",
+    "I02〜I06が人数と結果を順に並べ直すだけになっている。「関わりのない人への親切が2倍になった」の1つに絞って、I07の「情けは人のためならず」へ続けるほうが、人に話したくなる。"
+   ]
+  },
+  "short_video_id": "上げられなかった"
  }
 ]

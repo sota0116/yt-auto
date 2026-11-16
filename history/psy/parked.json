@@ -1,21 +1,5 @@
 [
  {
-  "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/018_ikigai_yakuwari",
-  "done": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "yomi",
-   "reading"
-  ],
-  "started": "2026-11-13T12:25:00+09:00",
-  "tries": 0,
-  "code": "3e2c2eb1d6b4",
-  "stage": "images",
-  "updated": "2026-11-13T12:53:25+09:00"
- },
- {
   "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/013_jiman_hito",
   "done": [
    "pick",
