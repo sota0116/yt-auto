@@ -1,0 +1,66 @@
+{
+ "ch": "shimei",
+ "work": "S028_体温の時計",
+ "portrait": true,
+ "made": "2026-11-16 22:03",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines and plain wooden artist's mannequins (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered.",
+ "avoid_en": "real dead bodies, corpses, blood, wounds, faces resembling real people, police or agency badges, logos, readable text or numbers",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "白い台の上に、昔の水銀の温度計と、ふたの開いた懐中時計が並ぶ",
+   "image_en": "in the middle of the frame an old glass thermometer with a red line and an open silver pocket watch without numbers lying side by side on a small plain white table, a single spotlight; no people, no text",
+   "en": "in the middle of the frame an old glass thermometer with a red line and an open silver pocket watch without numbers lying side by side on a small plain white table, a single spotlight; no people, no text"
+  },
+  {
+   "id": "a02",
+   "image": "白い部屋の模型で、トレンチコートの男がひとり、腕時計を見ている",
+   "image_en": "a plain white room diorama; in the middle of the frame only one person: a detective, a man figurine with a smooth featureless face, short dark hair, plain beige trench coat, looking down at his wristwatch; no badges, no bodies, no text",
+   "en": "a plain white room diorama; in the middle of the frame only one person: a detective, a man figurine with a smooth featureless face, short dark hair, plain beige trench coat, looking down at his wristwatch; no badges, no bodies, no text"
+  },
+  {
+   "id": "a03",
+   "image": "白い空間に、大きな温度計の模型が立っている",
+   "image_en": "in the middle of the frame a tall old-fashioned glass thermometer model standing upright in the white space, its red line halfway up, no numbers on the scale; no people, no text",
+   "en": "in the middle of the frame a tall old-fashioned glass thermometer model standing upright in the white space, its red line halfway up, no numbers on the scale; no people, no text"
+  },
+  {
+   "id": "a04",
+   "image": "白い台の上に、白い布をかけた木の人形。横の温度計の赤い線が下がっている",
+   "image_en": "in the middle of the frame a plain wooden artist's mannequin lying on a white table, covered up to the shoulders with a white sheet, and beside it a glass thermometer whose red line is low; calm, clinical, no blood, no text",
+   "en": "in the middle of the frame a plain wooden artist's mannequin lying on a white table, covered up to the shoulders with a white sheet, and beside it a glass thermometer whose red line is low; calm, clinical, no blood, no text"
+  },
+  {
+   "id": "a06",
+   "image": "白い空間に、木のデッサン人形が1体、まっすぐ横たわっている",
+   "image_en": "in the middle of the frame a single plain wooden artist's mannequin lying straight on its back on a white table, arms at its sides; no sheet, no blood, no text",
+   "en": "in the middle of the frame a single plain wooden artist's mannequin lying straight on its back on a white table, arms at its sides; no sheet, no blood, no text"
+  },
+  {
+   "id": "a07",
+   "image": "横たわる木の人形。あごと首のあたりだけが赤く光っている",
+   "image_en": "in the middle of the frame the same plain wooden artist's mannequin lying on its back on a white table, only its jaw and neck area glowing red, the rest plain wood; no blood, no text",
+   "en": "in the middle of the frame the same plain wooden artist's mannequin lying on its back on a white table, only its jaw and neck area glowing red, the rest plain wood; no blood, no text"
+  },
+  {
+   "id": "a08",
+   "image": "同じ横たわる木の人形。全身が赤く光っている",
+   "image_en": "in the middle of the frame the same plain wooden artist's mannequin lying on its back on a white table, now its whole body glowing red from head to feet; no blood, no text",
+   "en": "in the middle of the frame the same plain wooden artist's mannequin lying on its back on a white table, now its whole body glowing red from head to feet; no blood, no text"
+  },
+  {
+   "id": "a09",
+   "image": "白い空間に、雪の結晶の模型と、赤い太陽の模型と、厚いコートが並ぶ",
+   "image_en": "in the middle of the frame three small objects on a white table: a white snowflake model, a red sun model and a folded thick winter coat, side by side; no people, no text",
+   "en": "in the middle of the frame three small objects on a white table: a white snowflake model, a red sun model and a folded thick winter coat, side by side; no people, no text"
+  },
+  {
+   "id": "a10",
+   "image": "白い空間に、大きな時計の文字盤の模型。針の間の扇形の部分だけが赤い",
+   "image_en": "in the middle of the frame a big round clock face model without numbers, a wide fan-shaped section between two hands painted red; no people, no text",
+   "en": "in the middle of the frame a big round clock face model without numbers, a wide fan-shaped section between two hands painted red; no people, no text"
+  }
+ ]
+}
