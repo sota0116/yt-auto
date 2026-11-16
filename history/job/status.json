@@ -1,1 +1,19 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/job/videos/026_a4_6b5d19ad",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "yomi",
+  "reading"
+ ],
+ "started": "2026-11-17T03:52:53+09:00",
+ "tries": 0,
+ "code": "b4688f5c4404",
+ "stage": "images",
+ "updated": "2026-11-17T04:10:18+09:00",
+ "busy": {
+  "images": 1
+ }
+}

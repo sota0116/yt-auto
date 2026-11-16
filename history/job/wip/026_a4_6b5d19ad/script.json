@@ -1,0 +1,1240 @@
+{
+ "format": "long",
+ "type": "A",
+ "frame": "A-4",
+ "hook_type": "統計",
+ "sub_copy": 2,
+ "line_copy": 3,
+ "pub_date": "",
+ "target": "年収が同じくらいの仕事のどれを選ぶか迷っている、20〜40代の会社員",
+ "fun_core": "謎：年収2位の大型トラック運転手は、6つの中でいちばん長く働くのに、なぜ1時間の値段では、年収が下だった整備士と大工に抜かれるのか｜自分ごと：あなたの1時間は、大型トラック運転手の約2,030円と看護師の約2,700円のどこに入るか（年収÷1年に働いた時間）｜判定：年収が近い仕事どうしなら、残業で積んだ年収は1時間の値段を薄める。時間で年収を積みたい人には合い、1時間の値段で比べる人には割に合いにくい",
+ "key_numbers": [
+  "年に約69日分",
+  "約2,030円",
+  "33時間"
+ ],
+ "promise": "年収が近い6つの仕事で、いちばん長く働く大型トラック運転手が、1時間の値段では何番目に落ちるのかと、その差が残業のどこから来るのかが分かり、自分の1時間がトラックと看護師のどちらに近いかを、年収と働く時間だけで出せるようになる",
+ "characters": {
+  "kango": {
+   "name": "紺のスクラブの女性",
+   "desc_en": "A Japanese female hospital nurse in her early forties: medium build, short black hair tucked behind her ears, calm alert eyes, wears a plain navy scrub top and trousers, white nurse shoes, and a blank name badge clipped to her chest."
+  },
+  "truck": {
+   "name": "黒いキャップの男性",
+   "desc_en": "A Japanese male long-haul truck driver around fifty: sturdy build, short black hair with grey at the sides, light stubble, wears a plain black cap, a grey work jacket over a white T-shirt, dark work trousers and black safety shoes."
+  },
+  "seibi": {
+   "name": "青いつなぎの男性",
+   "desc_en": "A Japanese male car mechanic around forty: lean build, short neat black hair, wears a plain blue one-piece work coverall with sleeves rolled up, black work gloves tucked in the chest pocket, and black safety shoes."
+  },
+  "daiku": {
+   "name": "ねじり鉢巻きの男性",
+   "desc_en": "A Japanese male carpenter around fifty: wiry build, tanned face, short grey hair under a white twisted headband, wears a plain dark navy work shirt, a leather tool belt with hammers, baggy beige work trousers and split-toe work boots."
+  },
+  "taxi": {
+   "name": "白手袋の男性",
+   "desc_en": "A Japanese male taxi driver in his late fifties: slim, neatly combed grey hair, gentle face, wears a plain white shirt, a dark grey vest, a plain dark tie and thin white driving gloves."
+  }
+ },
+ "style": "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり",
+ "avoid": "読める文字、実在の企業のロゴと制服、有名なキャラクターに似た顔、血やけが、裸",
+ "title": "【悲報】大型トラック運転手、年収は大工より上なのに時給にすると負けた理由",
+ "titles": [
+  "【悲報】大型トラック運転手、年収は大工より上なのに時給にすると負けた理由",
+  "大型トラック運転手、看護師よりひと月46時間長く働いた結果、年収は下だった",
+  "あなたの時給は看護師より上？ 年収が近い大型トラック運転手と比べたら"
+ ],
+ "thumb_kind": "謎",
+ "thumb_top": "大型トラック運転手",
+ "thumb_text": "走った時間はどこへ？",
+ "thumb_lines": [
+  "走った時間は",
+  "どこへ？"
+ ],
+ "thumb_band": "看護師より、ひと月46時間長くハンドルを握る",
+ "thumb_bg": "C709",
+ "tags": [
+  "大型トラック運転手",
+  "トラック運転手 年収",
+  "看護師 年収",
+  "自動車整備士 年収",
+  "大工 年収",
+  "バス運転手 年収",
+  "タクシー運転手 年収",
+  "時給",
+  "残業",
+  "年収"
+ ],
+ "competitor_note": "競合メモ7の3（タイトル1案目を「〜なのに時給にすると負けた理由」と理由を書かずに終える形。1rsZoiEkurc・ALQPWw4mIxQ など4本）、6の wrQIWXzc8II の並び（章の名前をその章の問いか手がかりにし、答えの章の名前に冒頭の問い「長く走った時間は、どこへ消えたのか」を書き直す）、7の1（登録の呼びかけ C508 を約66%に置き、答えの章との間に場面の章「トラックの時計 走れる時間にふた」を挟み、答えの章を約85%から（約330字）・まとめを約190字にした）を取り入れた。7の2（つかみ〜前置き60〜70秒）は、スキルの点検の「最初の章まで6カット以内」に合わせ、6カット・約260字（約43秒）にとどめた",
+ "learn_note": "試す_11-16：書き終えたあと答えの章とまとめの章を前の章と照らし、くり返しの3カットを替えた。C706「それなのに、整備士との年収の差は、ほんのわずか。長く走った時間は、年収の差にほとんど出ていません。」（C110 のくり返し）→「整備士より長く走った時間。その多くは、決まった時間の外の、残業などでした。」、C707 を聞き手の外れる予想「残業代が出てるなら、損はしてないでしょ？」に、C708「大工も、残業は少ない側。だから年収4位でも、1時間ではトラックを上回りました。」（C509 のくり返し）→「年収は増えます。ただ、増え方が時間の伸びほど大きくない。だから、1時間で割ると薄まるんです。」、C802「大型トラック運転手の約2,030円と、看護師の約2,700円。その間なら、トラックより上です。」（C306・C314 の数字のくり返し）→ 数字の無い「その答えが大型トラック運転手より上なら、6つの仕事の真ん中より上です。」",
+ "desc": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\n{LINE_URL}\n\n出典\n・厚生労働省「令和7年賃金構造基本統計調査」一般労働者 職種 第1表 職種（小分類）別きまって支給する現金給与額、所定内給与額及び年間賞与その他特別給与額（産業計） https://www.e-stat.go.jp/stat-search/files?layout=datalist&toukei=00450091&tstat=000001011429&cycle=0&tclass1=000001229845&tclass2=000001229849&tclass3=000001229855\n・1時間の値段は、年収を、1年に働いた時間（決まった時間と残業などの合計×12）で割った値です\n・「年に約69日分」は、大型トラック運転手と看護師の1年の働く時間の差を、1日8時間で割った値で、出勤した日数ではありません\n・保健師助産師看護師法 第5条・第6条・第7条・第8条（e-Gov法令検索） https://laws.e-gov.go.jp/law/323AC0000000203\n・厚生労働省「自動車運転者の長時間労働改善に向けたポータルサイト」トラック運転者の改善基準告示 https://driver-roudou-jikan.mhlw.go.jp/truck/notice\n・国土交通省「自動車特定整備事業について」 https://www.mlit.go.jp/jidosha/jidosha_fr9_000016.html\n厚生労働省「令和7年賃金構造基本統計調査」を加工して作成\nこのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。\n\n人の手では数えきれない統計をプログラムで計算し、AIで映像と声にしています。数字は全部、出典と照らしています。\n\nチャプター\n{CHAPTERS}\n\n音声：VOICEVOX:雀松朱司、VOICEVOX:冥鳴ひまり",
+ "cuts": [
+  {
+   "id": "C001",
+   "speaker": "narrator",
+   "narration": "年収約507万円の大型トラック運転手が、1時間の値段では何番目まで落ちるか。年収が近い6つの仕事で並べると、はっきり出ます。",
+   "image": "引き：夜明け前のトラックの営業所で、黒いキャップの男性が大型トラックの運転席に乗り込みながら、腕時計をちらりと見ている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "1時間では何番目？"
+  },
+  {
+   "id": "C002",
+   "speaker": "listener",
+   "narration": "トラックって、走るほど稼げる仕事でしょ？",
+   "same_as": "C001"
+  },
+  {
+   "id": "C003",
+   "speaker": "narrator",
+   "narration": "たしかに年収は、6つの中で上の方です。でも、ひと月に働く時間は、看護師より46時間も長いんです。",
+   "image": "寄り：深夜の高速道路を走る大型トラックの運転席で、黒いキャップの男性がハンドルを握り、眠気をこらえて目を見開いている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "看護師より46時間長い"
+  },
+  {
+   "id": "C004",
+   "speaker": "listener",
+   "narration": "長く働いて上の方なら、当然じゃない？",
+   "image": "寄り：会社の休憩室で、麻衣が缶コーヒーを片手に、肩をすくめて首をかしげている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C005",
+   "speaker": "narrator",
+   "narration": "ところが1時間の値段にすると、年収で下にいた2つの仕事に抜かれます。長く走った時間は、どこへ消えたのか。",
+   "image": "見上げ：夜のサービスエリアで、黒いキャップの男性が運転席から降り、暗い空を見上げて口をぽかんと開けている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "tease": true,
+   "label": "下の2つに抜かれる"
+  },
+  {
+   "id": "C006",
+   "speaker": "narrator",
+   "narration": "しかも6つの中で、働く時間がいちばん短いのは、夜勤もある看護師。あなたの1時間がどちらに近いかも、年収と時間だけで出せます。",
+   "image": "見下ろし：夜の病棟のナースステーションで、紺のスクラブの女性が明るい机に向かい、てきぱきと次の勤務の人に引き継ぎをしている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "最短は夜勤もある看護師"
+  },
+  {
+   "id": "C101",
+   "chapter": "年収 トラックと整備士、上はどっち",
+   "speaker": "narrator",
+   "narration": "年収の低い方から。6位はタクシー運転手、5位はバス運転手です。",
+   "tts_text": "年収の低いほうから。6位はタクシー運転手、5位はバス運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 2
+   },
+   "anim": "card",
+   "label": "年収 低い方から"
+  },
+  {
+   "id": "C102",
+   "speaker": "listener",
+   "narration": "人を乗せて走る仕事が、下に2つ並んだ。",
+   "same_as": "C101"
+  },
+  {
+   "id": "C103",
+   "speaker": "narrator",
+   "narration": "どちらも、乗る人がいる限り、終電のあとも始発の前も走ります。",
+   "image": "引き：終電のあとの駅前のタクシー乗り場で、白手袋の男性が後ろのドアを開け、酔ったサラリーマンを笑顔で迎えている。",
+   "chars": [
+    "taxi"
+   ]
+  },
+  {
+   "id": "C104",
+   "speaker": "listener",
+   "narration": "終電を逃した夜、何度も助けられてる。",
+   "image": "寄り：深夜のタクシーの後ろの席で、麻衣がほっとした顔で背もたれに体を預けている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C105",
+   "speaker": "narrator",
+   "narration": "4位は大工です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 3
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C106",
+   "speaker": "narrator",
+   "narration": "残る3つは、看護師、大型トラック運転手、自動車整備士。上の3つは、ほとんど横並びです。",
+   "image": "引き：昼の整備工場で、青いつなぎの男性が大型トラックのタイヤを点検し、その横で黒いキャップの男性が腕を組んで見守っている。",
+   "chars": [
+    "seibi",
+    "truck"
+   ],
+   "wow": true,
+   "label": "上の3つは横並び"
+  },
+  {
+   "id": "C107",
+   "speaker": "narrator",
+   "narration": "では、トラックと整備士。年収が上なのは、どちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "年収",
+    "question": "年収が上なのは？",
+    "choices": [
+     "大型トラック運転手",
+     "自動車整備士"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "トラックか整備士か"
+  },
+  {
+   "id": "C108",
+   "speaker": "listener",
+   "narration": "車を直す方が、腕がいるから上でしょ。",
+   "tts_text": "車を直すほうが、腕がいるから上でしょ。",
+   "image": "寄り：麻衣が、指でスパナを回すしぐさをしながら、得意げに片目をつぶっている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C109",
+   "speaker": "narrator",
+   "narration": "3位は自動車整備士。2位は、大型トラック運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 5
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "2位はトラック"
+  },
+  {
+   "id": "C110",
+   "speaker": "narrator",
+   "narration": "ただ、2つの差はほんのわずか。給与明細を並べても、見分けがつかないくらいです。",
+   "image": "見下ろし：台所のテーブルで、陽子が給与明細を2枚並べ、目を細めて見比べている。明細の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ]
+  },
+  {
+   "id": "C111",
+   "speaker": "listener",
+   "narration": "整備士とトラック、ほぼ同点じゃん。",
+   "same_as": "C110"
+  },
+  {
+   "id": "C112",
+   "speaker": "narrator",
+   "narration": "1位は看護師。年収でも、6つの中でいちばん上です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "年収",
+    "shown": 6,
+    "highlight": "看護師"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収1位は看護師",
+   "tts_text": "1位は看護師。年収でも、6つの中でいちばんうえです。"
+  },
+  {
+   "id": "C113",
+   "speaker": "narrator",
+   "narration": "看護師は、国家試験に受かり、厚生労働大臣の免許を受けて就く仕事です。",
+   "image": "寄り：病棟の廊下で、紺のスクラブの女性が点滴の袋をかけ替えながら、真剣な目で患者の様子を確かめている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "大臣の免許の仕事"
+  },
+  {
+   "id": "C114",
+   "speaker": "listener",
+   "narration": "免許の重みが、年収に出てるのか。",
+   "same_as": "C113"
+  },
+  {
+   "id": "C115",
+   "speaker": "narrator",
+   "narration": "ただ、上の3つは年収ではほとんど横並び。順番を大きく動かすのは、働いた時間の方です。",
+   "tts_text": "ただ、上の3つは年収ではほとんど横並び。順番を大きく動かすのは、働いた時間のほうです。",
+   "image": "目線：大型トラックの運転席から見た、深夜の高速道路。どこまでも続く白い線と、遠くの赤いテールランプ。",
+   "label": "動かすのは時間"
+  },
+  {
+   "id": "C116",
+   "speaker": "listener",
+   "narration": "時間で、そんなに順番が変わるの？",
+   "same_as": "C115"
+  },
+  {
+   "id": "C201",
+   "chapter": "働く時間 長く走る仕事、短く働く仕事",
+   "speaker": "narrator",
+   "narration": "ひと月に働いた時間を、短い方から。6位は看護師、5位は自動車整備士です。",
+   "tts_text": "ひと月に働いた時間を、短いほうから。6位は看護師、5位は自動車整備士です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 2
+   },
+   "anim": "card",
+   "label": "働く時間 短い方から"
+  },
+  {
+   "id": "C202",
+   "speaker": "listener",
+   "narration": "夜勤のある看護師が、いちばん短いの？",
+   "same_as": "C201"
+  },
+  {
+   "id": "C203",
+   "speaker": "narrator",
+   "narration": "夜勤があると、長く働く仕事に見えます。でも、ひと月で数えると、6つの中でいちばん短いんです。",
+   "image": "引き：夜の病棟の廊下で、紺のスクラブの女性が懐中電灯を手に、病室をひとつずつ静かに見回っている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "夜勤でも最短"
+  },
+  {
+   "id": "C204",
+   "speaker": "listener",
+   "narration": "夜勤で長いイメージ、完全に外れた。",
+   "image": "寄り：麻衣が、メモ帳に書いた予想を見て、頭をかきながら苦笑いしている。メモの字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C205",
+   "speaker": "narrator",
+   "narration": "4位は大工、3位はタクシー運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 4
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C206",
+   "speaker": "narrator",
+   "narration": "タクシーは、お客さんを待つ時間も、運転席にいる時間です。",
+   "image": "見下ろし：昼下がりの駅前のタクシー乗り場で、白手袋の男性が先頭の車の横に立ち、改札の方をじっと見ている。",
+   "chars": [
+    "taxi"
+   ],
+   "wow": true,
+   "label": "待つ時間も運転席"
+  },
+  {
+   "id": "C207",
+   "speaker": "listener",
+   "narration": "空車のランプ、ずっと光ってるやつだ。",
+   "same_as": "C206"
+  },
+  {
+   "id": "C208",
+   "speaker": "narrator",
+   "narration": "残るは、バスと大型トラック。ひと月により長く働くのは、どちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "月の労働時間",
+    "question": "ひと月に長く働くのは？",
+    "choices": [
+     "大型トラック運転手",
+     "バス運転手"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "バスかトラックか"
+  },
+  {
+   "id": "C209",
+   "speaker": "listener",
+   "narration": "朝から晩まで路線を回る、バスでしょ。",
+   "image": "寄り：麻衣が、腕を組んで目を閉じ、自信たっぷりにうなずいている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C210",
+   "speaker": "narrator",
+   "narration": "2位はバス運転手。1位は、大型トラック運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "月の労働時間",
+    "shown": 6,
+    "highlight": "大型トラック運転手"
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "1位は大型トラック"
+  },
+  {
+   "id": "C211",
+   "speaker": "narrator",
+   "narration": "いちばん短い看護師と、いちばん長いトラック。1年でどれだけ差がつくと思いますか。",
+   "image": "寄り：会社の壁のカレンダーの前で、健二が腕を組み、指で日付のます目を数えている。カレンダーの字は見えない。",
+   "chars": [
+    "kenji"
+   ]
+  },
+  {
+   "id": "C212",
+   "speaker": "listener",
+   "narration": "1年で、せいぜい数日ぶんでしょ。",
+   "tts_text": "いちねんで、せいぜい数日ぶんでしょ。",
+   "same_as": "C211"
+  },
+  {
+   "id": "C213",
+   "speaker": "narrator",
+   "narration": "ひと月で46時間。1日8時間で数えると、年に約69日分です。",
+   "tts_text": "ひと月で46時間。1日8時間で数えると、ねんに約69日分です。",
+   "chart": {
+    "kind": "calendar_days",
+    "ref": "言い直し.月の労働時間の差（いちばん長いと短い）.8時間の日に直すと_日"
+   },
+   "anim": "card",
+   "wow": true,
+   "strong": true,
+   "label": "年に約69日分"
+  },
+  {
+   "id": "C214",
+   "speaker": "narrator",
+   "narration": "夏休みも正月休みも全部足して、まだ届かない日数です。",
+   "image": "引き：お盆の渋滞の高速道路で、帰省の車の列の横を、黒いキャップの男性の大型トラックが黙々と走っている。",
+   "chars": [
+    "truck"
+   ]
+  },
+  {
+   "id": "C215",
+   "speaker": "listener",
+   "narration": "私の休み、全部トラックに吸われてる計算？",
+   "image": "寄り：麻衣が、手帳のカレンダーを両手で広げ、口をあんぐり開けている。手帳の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C216",
+   "speaker": "narrator",
+   "narration": "運転席の後ろの小さな寝台で、仮眠をとる大型トラックもあります。",
+   "image": "見下ろし：大型トラックの運転席の後ろの狭い寝台で、黒いキャップの男性が帽子を顔にのせ、毛布をかぶって横になっている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "運転席の後ろに寝台"
+  },
+  {
+   "id": "C217",
+   "speaker": "listener",
+   "narration": "あの後ろのスペース、ベッドだったんだ。",
+   "same_as": "C216"
+  },
+  {
+   "id": "C218",
+   "speaker": "narrator",
+   "narration": "年収は2位、働く時間は1位。では、1時間の値段にすると、何番目に残るのか。",
+   "image": "寄り：朝のトラックの営業所で、黒いキャップの男性が給与明細の封筒を手に、眉を寄せて考え込んでいる。封筒の字は見えない向き。",
+   "chars": [
+    "truck"
+   ]
+  },
+  {
+   "id": "C219",
+   "speaker": "listener",
+   "narration": "時間で割ったら、さすがに下がるよね。",
+   "image": "見下ろし：オフィスの机で、麻衣が電卓の上に人さし指を構えたまま、天井を見上げて考えている。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C301",
+   "chapter": "1時間の値段 トラックを抜いた2つ",
+   "speaker": "narrator",
+   "narration": "1時間の値段は、ボーナス込みの年収を、残業も含めた1年の時間で割って出します。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 1年に働いた時間"
+   },
+   "anim": "card",
+   "label": "1時間の値段"
+  },
+  {
+   "id": "C302",
+   "speaker": "listener",
+   "narration": "残業が多い人ほど、薄まりそう。",
+   "image": "寄り：麻衣が、電卓を指でたたきながら、眉をひそめている。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C303",
+   "speaker": "narrator",
+   "narration": "低い方から。6位はバス運転手、5位はタクシー運転手です。",
+   "tts_text": "低いほうから。6位はバス運転手、5位はタクシー運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 2
+   },
+   "anim": "card",
+   "label": "1時間 低い方から"
+  },
+  {
+   "id": "C304",
+   "speaker": "narrator",
+   "narration": "そして4位が、年収2位だった大型トラック運転手です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 3
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "年収2位が4位に"
+  },
+  {
+   "id": "C305",
+   "speaker": "listener",
+   "narration": "でも金額は、看護師とそんなに変わらないでしょ。",
+   "image": "寄り：麻衣が、手をひらひら振って、余裕の笑みを浮かべている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C306",
+   "speaker": "narrator",
+   "narration": "1時間あたり、約2,030円。看護師とは、はっきり差がつきました。",
+   "image": "寄り：夜の営業所の休憩室で、黒いキャップの男性が電卓を見つめたまま固まり、額に汗をにじませている。電卓の字は見えない向き。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "約2,030円",
+   "tts_text": "1時間あたり、約2,030円。看護師とは、はっきり さがつきました。"
+  },
+  {
+   "id": "C307",
+   "speaker": "narrator",
+   "narration": "6つの真ん中より下です。年収2位の仕事が、1時間では下から3番目まで来ました。",
+   "same_as": "C306"
+  },
+  {
+   "id": "C308",
+   "speaker": "listener",
+   "narration": "長く走った分、時給が薄まってる…",
+   "image": "寄り：麻衣が、両手でほおをはさみ、目を白黒させている。",
+   "chars": [
+    "mai"
+   ],
+   "tts_text": "長く走ったぶん、時給が薄まってる…"
+  },
+  {
+   "id": "C309",
+   "speaker": "narrator",
+   "narration": "看護師の年収と、看護師を含む産業の離職率を、ほかの職業と並べた表を作りました。概要欄のLINEから受け取れます。",
+   "chart": {
+    "kind": "tokuten"
+   },
+   "anim": "card",
+   "line": true,
+   "label": "主な職業の一覧表"
+  },
+  {
+   "id": "C310",
+   "speaker": "narrator",
+   "narration": "トラックを抜いたのは、自動車整備士と大工。2位はどちらでしょう。",
+   "chart": {
+    "kind": "quiz",
+    "measure": "時給に直した額",
+    "question": "1時間の値段、2位は？",
+    "choices": [
+     "自動車整備士",
+     "大工"
+    ]
+   },
+   "quiz": true,
+   "anim": "card",
+   "label": "整備士か大工か"
+  },
+  {
+   "id": "C311",
+   "speaker": "listener",
+   "narration": "外で体を張る、大工でしょ。",
+   "image": "寄り：麻衣が、力こぶを作るポーズで、にやりと笑っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C312",
+   "speaker": "narrator",
+   "narration": "3位は大工。2位は、自動車整備士です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 5
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "整備士が2位へ"
+  },
+  {
+   "id": "C313",
+   "speaker": "listener",
+   "narration": "年収3位の整備士が、トラックを抜いた！",
+   "same_as": "C312"
+  },
+  {
+   "id": "C314",
+   "speaker": "narrator",
+   "narration": "1位は看護師。1時間あたり、約2,700円です。",
+   "chart": {
+    "kind": "bar_reveal",
+    "measure": "時給に直した額",
+    "shown": 6,
+    "highlight": "看護師"
+   },
+   "anim": "card",
+   "strong": true,
+   "label": "約2,700円"
+  },
+  {
+   "id": "C315",
+   "speaker": "listener",
+   "narration": "年収も時間も、看護師の一人勝ち？",
+   "image": "寄り：麻衣が、目を細めて、口をとがらせている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C316",
+   "speaker": "narrator",
+   "narration": "年収はいちばん上で、働く時間はいちばん短い。だから1時間でも、いちばん上に来ます。",
+   "image": "見上げ：朝の病院の玄関で、夜勤を終えた紺のスクラブの女性が、朝日を浴びて大きく伸びをしている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "短い時間で年収1位",
+   "tts_text": "年収はいちばんうえで、働く時間はいちばん短い。だから1時間でも、いちばんうえに来ます。"
+  },
+  {
+   "id": "C317",
+   "speaker": "narrator",
+   "narration": "では、年収がほぼ同じだったトラックと整備士。どこで、1時間の値段が分かれたのか。",
+   "image": "引き：夜の整備工場の前で、青いつなぎの男性がシャッターを下ろし、その前を黒いキャップの男性の大型トラックが走り去っていく。",
+   "chars": [
+    "seibi",
+    "truck"
+   ]
+  },
+  {
+   "id": "C318",
+   "speaker": "listener",
+   "narration": "整備士って、そんなに早く帰れるの？",
+   "same_as": "C317"
+  },
+  {
+   "id": "C401",
+   "chapter": "病院の裏側 看護師の時間の中身",
+   "speaker": "narrator",
+   "narration": "看護師のひと月の時間を、決まった時間と、残業などに分けてみます。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "看護師"
+    ]
+   },
+   "anim": "card",
+   "label": "看護師の時間の中身"
+  },
+  {
+   "id": "C402",
+   "speaker": "listener",
+   "narration": "夜勤明けの残業、多そうなイメージ。",
+   "same_as": "C401"
+  },
+  {
+   "id": "C403",
+   "speaker": "narrator",
+   "narration": "残業などは、ひと月6時間。6つの中で、いちばん少ないんです。",
+   "image": "寄り：夕方のナースステーションで、紺のスクラブの女性が記録を書き終え、ペンを置いてほっと息をついている。記録の字は見えない向き。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "残業は6つで最少"
+  },
+  {
+   "id": "C404",
+   "speaker": "listener",
+   "narration": "え、私の残業より少ないんだけど。",
+   "image": "寄り：夜のオフィスで、麻衣がパソコンの前で頭を抱え、目を丸くしている。画面は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C405",
+   "speaker": "narrator",
+   "narration": "そのかわり、ナースコールが鳴れば、食べかけの弁当もそのまま置いて走ります。",
+   "image": "引き：病棟の休憩室で、紺のスクラブの女性が箸を置いて立ち上がり、廊下へ駆け出していく。机の上に食べかけの弁当。",
+   "chars": [
+    "kango"
+   ]
+  },
+  {
+   "id": "C406",
+   "speaker": "listener",
+   "narration": "休憩中でも、鳴ったら行くんだ。",
+   "same_as": "C405"
+  },
+  {
+   "id": "C407",
+   "speaker": "narrator",
+   "narration": "病院では、同じ看護の仕事でも、免許が2つに分かれています。",
+   "image": "見下ろし：病棟の廊下で、紺のスクラブの女性が、後輩に点滴の台を押しながら手順を教えている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "看護の免許は2つ"
+  },
+  {
+   "id": "C408",
+   "speaker": "listener",
+   "narration": "看護師に、種類があるの？",
+   "same_as": "C407"
+  },
+  {
+   "id": "C409",
+   "speaker": "narrator",
+   "narration": "看護師は大臣の免許。准看護師は、都道府県知事の免許です。",
+   "image": "寄り：紺のスクラブの女性が、額に入った免許証を壁から外し、誇らしげに胸の前で持っている。免許証の字は見えない向き。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "准看護師は知事の免許"
+  },
+  {
+   "id": "C410",
+   "speaker": "narrator",
+   "narration": "准看護師は、医師や看護師の指示を受けて、同じ看護の仕事をします。",
+   "same_as": "C409"
+  },
+  {
+   "id": "C411",
+   "speaker": "listener",
+   "narration": "名札だけじゃ、見分けがつかないな。",
+   "image": "寄り：病院の廊下で、麻衣が通り過ぎる看護の人たちの名札を、目を細めて追いかけている。名札の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C412",
+   "speaker": "narrator",
+   "narration": "看護師の仕事は、法律で2つに決まっています。療養の世話と、診療の補助です。",
+   "image": "引き：明るい病室で、紺のスクラブの女性が、ベッドのお年寄りの体をそっと起こして枕を整えている。",
+   "chars": [
+    "kango"
+   ],
+   "wow": true,
+   "label": "世話と診療の補助"
+  },
+  {
+   "id": "C413",
+   "speaker": "listener",
+   "narration": "身の回りの世話も、法律の仕事なんだ。",
+   "same_as": "C412"
+  },
+  {
+   "id": "C414",
+   "speaker": "narrator",
+   "narration": "年収はいちばん上で、残業はいちばん少ない。では、トラックの残業はどこにいるのか。",
+   "image": "目線：深夜の大型トラックの運転席から見た、車の少ない高速道路と、ぼんやり光るメーター。",
+   "label": "トラックの残業は？",
+   "tts_text": "年収はいちばんうえで、残業はいちばん少ない。では、トラックの残業はどこにいるのか。"
+  },
+  {
+   "id": "C415",
+   "speaker": "listener",
+   "narration": "看護師よりは、だいぶ多そうだけど。",
+   "same_as": "C414"
+  },
+  {
+   "id": "C501",
+   "chapter": "整備工場と現場 抜いた2つの1日",
+   "speaker": "narrator",
+   "narration": "年収と1時間の順位を並べると、整備士と大工は、どちらも1つずつ上がっています。",
+   "chart": {
+    "kind": "rank_table",
+    "measures": [
+     "年収",
+     "時給に直した額"
+    ]
+   },
+   "anim": "card",
+   "wow": true,
+   "label": "2つとも1つ上へ"
+  },
+  {
+   "id": "C502",
+   "speaker": "listener",
+   "narration": "トラックだけが、2つも下がったのか。",
+   "image": "寄り：麻衣が、指を2本立てたまま、口をへの字にしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C503",
+   "speaker": "narrator",
+   "narration": "整備士の仕事は、もう工具だけでは終わりません。",
+   "image": "寄り：整備工場で、青いつなぎの男性が車の横にしゃがみ、ノートパソコンにつないだ機械の画面をのぞき込んでいる。画面は見えない向き。",
+   "chars": [
+    "seibi"
+   ]
+  },
+  {
+   "id": "C504",
+   "speaker": "narrator",
+   "narration": "自動ブレーキのカメラやレーダーの調整は、特別な整備の扱いです。作業場も工具も、国が決まりを定めています。",
+   "image": "見下ろし：整備工場で、青いつなぎの男性が、車の前に置いた大きな的の板と、フロントガラスの内側のカメラを見比べて角度を合わせている。",
+   "chars": [
+    "seibi"
+   ],
+   "wow": true,
+   "label": "ブレーキのカメラも整備"
+  },
+  {
+   "id": "C505",
+   "speaker": "listener",
+   "narration": "フロントガラスの奥まで、整備士の仕事？",
+   "same_as": "C504"
+  },
+  {
+   "id": "C508",
+   "speaker": "narrator",
+   "narration": "このチャンネルでは、仕事や会社を、統計の数字で見ています。次の回も見たい方は、チャンネル登録をお願いします。",
+   "tts_text": "このチャンネルでは、仕事や会社を、統計の数字で見ています。次の回も見たいかたは、チャンネル登録をお願いします。",
+   "image": "引き：夕方の住宅の工事現場の前で、ねじり鉢巻きの男性と青いつなぎの男性が、仕事を終えて手を振り合っている。",
+   "chars": [
+    "daiku",
+    "seibi"
+   ],
+   "subscribe": true,
+   "label": "チャンネル登録"
+  },
+  {
+   "id": "C506",
+   "speaker": "narrator",
+   "narration": "車検の時期が重なると、工場のリフトは、空く暇がありません。それでも残業は、6つの中で少ない側です。",
+   "label": "忙しくても残業は少なめ",
+   "image": "引き：にぎやかな整備工場で、何台もの車がリフトに上がり、青いつなぎの男性が車の下を行き来している。",
+   "chars": [
+    "seibi"
+   ],
+   "tts_text": "車検の時期が重なると、工場のリフトは、あくひまがありません。それでも残業は、6つの中で少ない側です。"
+  },
+  {
+   "id": "C507",
+   "speaker": "listener",
+   "narration": "車検の予約、いつもギリギリに入れてる…",
+   "image": "寄り：麻衣が、スマホを握ったまま、気まずそうに目をそらしている。画面は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C509",
+   "speaker": "narrator",
+   "narration": "大工は、家の骨組みを組む仕事。年収は4位でしたが、1時間では3位に上がりました。",
+   "image": "見上げ：青空の下、家の木の骨組みの上で、ねじり鉢巻きの男性が梁に足をかけ、木づちを振り上げている。",
+   "chars": [
+    "daiku"
+   ],
+   "wow": true,
+   "label": "大工は3位へ"
+  },
+  {
+   "id": "C510",
+   "speaker": "listener",
+   "narration": "大工さん、朝早いイメージあるけど。",
+   "image": "寄り：麻衣が、あくびをかみ殺しながら、まだ暗い窓の外を見ている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C511",
+   "speaker": "narrator",
+   "narration": "朝が早い現場でも、日が落ちれば、外の作業は進みません。骨組みの上の仕事は、次の朝に回ります。",
+   "image": "引き：夕暮れの住宅の工事現場で、ねじり鉢巻きの男性が道具を片付け、暗くなった骨組みを見上げている。",
+   "chars": [
+    "daiku"
+   ],
+   "wow": true,
+   "label": "日が落ちたら止まる"
+  },
+  {
+   "id": "C512",
+   "speaker": "listener",
+   "narration": "暗くなったら、残業しようがないのか。",
+   "same_as": "C511"
+  },
+  {
+   "id": "C513",
+   "speaker": "narrator",
+   "narration": "整備士と大工に共通するのは、どこか。そして、夜通し走るトラックの時計には、何が起きているのか。",
+   "image": "見上げ：夜の高速道路の料金所で、黒いキャップの男性が運転席の窓から身を乗り出し、暗い空を見上げている。",
+   "chars": [
+    "truck"
+   ],
+   "label": "トラックの時計は？"
+  },
+  {
+   "id": "C514",
+   "speaker": "listener",
+   "narration": "トラックだけ、時計の回り方が違う？",
+   "same_as": "C513"
+  },
+  {
+   "id": "C601",
+   "chapter": "トラックの時計 走れる時間にふた",
+   "speaker": "narrator",
+   "narration": "大型トラック運転手の残業には、国が決めた上限があります。",
+   "chart": {
+    "kind": "big_text",
+    "text": "トラックの残業にも上限"
+   },
+   "anim": "card",
+   "label": "残業にも上限"
+  },
+  {
+   "id": "C602",
+   "speaker": "listener",
+   "narration": "上限なんて、普通の会社と同じでは？",
+   "image": "寄り：麻衣が、腕を組んで片方のまゆを上げ、疑うような目をしている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C603",
+   "speaker": "narrator",
+   "narration": "上限は、臨時の事情があっても年960時間。おととしの春から、トラックにもこの線が引かれました。",
+   "image": "見下ろし：夜のトラックの営業所で、何台もの大型トラックが並んで止まり、黒いキャップの男性がその間を歩いている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "上限は年960時間",
+   "tts_text": "上限は、臨時の事情があっても ねん960時間。おととしの春から、トラックにもこの線が引かれました。"
+  },
+  {
+   "id": "C604",
+   "speaker": "listener",
+   "narration": "線を引かれたら、長く走って稼げない…",
+   "same_as": "C603"
+  },
+  {
+   "id": "C605",
+   "speaker": "narrator",
+   "narration": "しかも、休まずに続けて運転できる時間にも、上限があります。",
+   "image": "引き：夜のサービスエリアの大型車の駐車場で、黒いキャップの男性がトラックを止め、エンジンを切って運転席で伸びをしている。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "続けて走るのにも上限"
+  },
+  {
+   "id": "C606",
+   "speaker": "narrator",
+   "narration": "夜のサービスエリアに並ぶ大型トラックには、決まりどおり休んでいる車もあります。",
+   "same_as": "C605"
+  },
+  {
+   "id": "C607",
+   "speaker": "listener",
+   "narration": "あの列、ただの昼寝じゃなかったんだ。",
+   "image": "寄り：深夜のサービスエリアのベンチで、麻衣が缶ジュースを持ったまま、並んだトラックの列を目で追っている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C608",
+   "speaker": "narrator",
+   "narration": "長く走れば、年収が増える。その道に、上限がかかった仕事です。時間を延ばして稼ぐやり方は、もう使いにくい。",
+   "image": "寄り：夜明け前の運転席で、黒いキャップの男性がハンドルに両手を置いたまま、うつむいて深く息を吐いている。",
+   "chars": [
+    "truck"
+   ],
+   "label": "稼ぐ道に上限"
+  },
+  {
+   "id": "C609",
+   "speaker": "listener",
+   "narration": "時間で稼いでたのに、時間を止められたら…",
+   "same_as": "C608"
+  },
+  {
+   "id": "C610",
+   "speaker": "narrator",
+   "narration": "それでも年収は、6つの中で2位を守っています。上限の中でも、走る時間はまだいちばん長い。",
+   "image": "引き：朝の営業所で、黒いキャップの男性が仲間の運転手と缶コーヒーで乾杯し、照れくさそうに笑っている。",
+   "chars": [
+    "truck"
+   ]
+  },
+  {
+   "id": "C611",
+   "speaker": "listener",
+   "narration": "じゃあ、なんで1時間だと4位なの？",
+   "same_as": "C610"
+  },
+  {
+   "id": "C612",
+   "speaker": "narrator",
+   "narration": "鍵は、3つの仕事の、ひと月の時間の中身にあります。決まった時間か、それとも残業か。",
+   "image": "見下ろし：夜の整備工場、住宅の工事現場、高速道路のトラックが、1枚の夜景の中に小さく並んで見える。",
+   "label": "鍵は時間の中身"
+  },
+  {
+   "id": "C613",
+   "speaker": "listener",
+   "narration": "中身って、決まった時間の長さの話？",
+   "same_as": "C612"
+  },
+  {
+   "id": "C701",
+   "chapter": "答え 長く走った時間は、どこへ消えたのか",
+   "speaker": "narrator",
+   "narration": "ひと月の時間を、決まった時間と残業などに分けると、3つの差がはっきりします。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "大型トラック運転手",
+     "自動車整備士",
+     "大工"
+    ]
+   },
+   "anim": "card",
+   "label": "時間の中身を分ける"
+  },
+  {
+   "id": "C702",
+   "speaker": "listener",
+   "narration": "決まった時間が長いだけでしょ？",
+   "same_as": "C701"
+  },
+  {
+   "id": "C703",
+   "speaker": "narrator",
+   "narration": "大型トラック運転手の残業などは、ひと月33時間。整備士は15時間です。",
+   "chart": {
+    "kind": "breakdown",
+    "measure": "月の労働時間",
+    "parts": [
+     "うち所定内",
+     "うち残業など（超過）"
+    ],
+    "jobs": [
+     "大型トラック運転手",
+     "自動車整備士"
+    ]
+   },
+   "anim": "card",
+   "peak": true,
+   "strong": true,
+   "wow": true,
+   "payoff": true,
+   "label": "残業33時間と15時間"
+  },
+  {
+   "id": "C704",
+   "speaker": "narrator",
+   "narration": "6つの中で、残業がいちばん多い仕事です。",
+   "same_as": "C703"
+  },
+  {
+   "id": "C705",
+   "speaker": "listener",
+   "narration": "差の正体、ほぼ残業じゃん！",
+   "image": "寄り：麻衣が、両手で口をおさえて、目を見開いている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C706",
+   "speaker": "narrator",
+   "narration": "整備士より長く走った時間。その多くは、決まった時間の外の、残業などでした。",
+   "image": "寄り：夜の営業所で、黒いキャップの男性が給与明細を両手で持ち、深夜を指す壁の時計と見比べて固まっている。明細の字は見えない向き。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "差の多くは残業"
+  },
+  {
+   "id": "C707",
+   "speaker": "listener",
+   "narration": "残業代が出てるなら、損はしてないでしょ？",
+   "same_as": "C706"
+  },
+  {
+   "id": "C708",
+   "speaker": "narrator",
+   "narration": "年収は増えます。ただ、増え方が時間の伸びほど大きくない。だから、1時間で割ると薄まるんです。",
+   "image": "見下ろし：営業所の机で、黒いキャップの男性が給与明細と電卓を並べ、苦笑いしながら頭をかいている。明細と電卓の字は見えない向き。",
+   "chars": [
+    "truck"
+   ],
+   "wow": true,
+   "label": "時間ほど年収は増えない"
+  },
+  {
+   "id": "C709",
+   "speaker": "narrator",
+   "narration": "判定です。大型トラック運転手は、長く走って年収を積み上げる仕事。1時間の値段で比べる人には、割に合いにくい仕事です。",
+   "image": "寄り：暗い夜の整備工場の前で、左に青いつなぎの男性が腕を組んで得意げににやりと笑い、右に黒いキャップの男性が給与明細を握りしめ、深夜を指す腕時計を見て目を見開き、口を大きく開けて青ざめ、額から冷や汗を流している。背景は暗く色は濃く、2人の顔と胸から上にだけ強い光。2人は画面の真ん中の高さに胸から上の大きさで、やや右寄りに並び、顔は画面の高さの4割以上、上と下に2割ずつ空きがあり、左側は暗く空いている。明細の字は見えない向き。",
+   "chars": [
+    "seibi",
+    "truck"
+   ],
+   "wow": true,
+   "label": "判定 時間で稼ぐ仕事"
+  },
+  {
+   "id": "C710",
+   "speaker": "listener",
+   "narration": "逆に、時間で稼ぎたい人には合うの？",
+   "image": "寄り：麻衣が、身を乗り出して、人さし指を立てている。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C711",
+   "speaker": "narrator",
+   "narration": "合います。長く働いて年収を積みたい人なら、上の方の年収に届く仕事です。",
+   "tts_text": "合います。長く働いて年収を積みたい人なら、上のほうの年収に届く仕事です。",
+   "image": "引き：朝日の差す高速道路を、黒いキャップの男性の大型トラックが、まっすぐ走っていく。",
+   "chars": [
+    "truck"
+   ]
+  },
+  {
+   "id": "C801",
+   "chapter": "まとめ あなたの1時間は、トラックより上か",
+   "speaker": "narrator",
+   "narration": "あなたの1時間の値段は、年収を、1年に働いた時間で割ると出ます。",
+   "chart": {
+    "kind": "formula",
+    "text": "年収 ÷ 1年に働いた時間"
+   },
+   "anim": "card"
+  },
+  {
+   "id": "C802",
+   "speaker": "narrator",
+   "narration": "その答えが大型トラック運転手より上なら、6つの仕事の真ん中より上です。",
+   "image": "寄り：会社の休憩室で、健二が電卓の答えを見て、片方の口の端を上げている。電卓の字は見えない向き。",
+   "chars": [
+    "kenji"
+   ],
+   "label": "トラックより上か"
+  },
+  {
+   "id": "C803",
+   "speaker": "listener",
+   "narration": "計算したら、私はトラックの少し下でした。",
+   "image": "寄り：麻衣が、電卓を胸に抱えて、照れくさそうに笑っている。電卓の字は見えない向き。",
+   "chars": [
+    "mai"
+   ]
+  },
+  {
+   "id": "C804",
+   "speaker": "narrator",
+   "narration": "年収が近い仕事で迷ったら、月給より先に、残業の欄を見てください。",
+   "image": "見下ろし：自宅の机で、陽子が求人の冊子を開き、ペンで欄の1つを丸で囲んでいる。冊子の字は見えない向き。",
+   "chars": [
+    "yoko"
+   ]
+  },
+  {
+   "id": "C805",
+   "speaker": "narrator",
+   "narration": "あなたの職場は、残業が長い方ですか。コメントで教えてください。",
+   "tts_text": "あなたの職場は、残業が長いほうですか。コメントで教えてください。",
+   "image": "引き：会社の休憩室で、茂が湯のみを持ち、陽子と笑いながら話している。",
+   "chars": [
+    "shigeru",
+    "yoko"
+   ]
+  },
+  {
+   "id": "C806",
+   "speaker": "narrator",
+   "narration": "次に職場の時計を見る時、その日の残業の分も、あなたの1時間の値段に入っています。",
+   "image": "寄り：夜のオフィスで、健二が壁の時計を見上げ、ネクタイをゆるめて小さく笑っている。",
+   "chars": [
+    "kenji"
+   ]
+  }
+ ]
+}
