@@ -851,7 +851,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-11T09:57:24+09:00"
+  "取った日": "2026-11-16T09:27:26+09:00",
+  "7d": {
+   "views": 1063,
+   "averageViewPercentage": 74.36,
+   "averageViewDuration": 24,
+   "subscribersGained": 0,
+   "likes": 5,
+   "再生の出どころ": "公開の数字",
+   "score": 790.4
+  },
+  "言い方の版": 1
  },
  "20261108_0901_0": {
   "48h": {
@@ -875,7 +885,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-11T09:57:24+09:00"
+  "取った日": "2026-11-16T09:27:26+09:00",
+  "7d": {
+   "views": 1040,
+   "averageViewPercentage": 65.63,
+   "averageViewDuration": 21,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 682.6
+  },
+  "言い方の版": 1
  },
  "20261108_0906_1": {
   "48h": {
@@ -1023,5 +1043,30 @@
   "言い方の版": 1,
   "bgm": "job_short_bgm_02_drive.m4a",
   "取った日": "2026-11-15T09:24:55+09:00"
+ },
+ "20261112_1106_1": {
+  "48h": {
+   "views": 1116,
+   "averageViewPercentage": 53.87,
+   "averageViewDuration": 17,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 601.2
+  },
+  "video_id": "tGK-WAb4fJI",
+  "title": "現場の仕事で平均年齢が高い5つ｜1位と5位は約9歳差 #年収 #仕事",
+  "topic_id": "rank_現場_年齢_hi",
+  "kind": "rank",
+  "measure": "年齢",
+  "hook": "平均年齢\n最高は？",
+  "banner": [
+   "年齢が高い順",
+   "現場の仕事8から"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-16T09:27:26+09:00"
  }
 }
