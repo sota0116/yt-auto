@@ -3,6 +3,7 @@
 # ・書くのは history/<ch>/competitors/ だけ（集めた物・競合メモ・その日付の写し）。サムネは _research/ に置き、commit しない
 # ・心理学ch（psy。2026-10-27 から）は、ネタ帳の残りが少ない時に channels/psy/ネタ帳.json にも候補を足す（research.py の add_neta）
 # ・PAUSED の間も動かす（読むだけなので）
+# ・2026-11-17 から、伸びた回を1チャンネル1日2本まで Gemini（無料キー secrets.GEMINI_API_KEY_FREE）に見せ、骨格を history/<ch>/competitors/見た/ に置く（research.py の watch）。鍵が無ければ飛ばす
 # ・調べたあと、仕事ch の毎日の学び（learn_job.py。history/job/学び.md）も書く（2026-10-28 本人「毎日レベル上げてね」）
 name: research
 on:
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-24.04
-    timeout-minutes: 100  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）
+    timeout-minutes: 130  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）＋Gemini で見る（2026-11-17。1本約1〜3分×10本）
     env:
       TZ: Asia/Tokyo
       CHANNELS: job psy spi nihongi okinu   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi は 2026-11-11 から翠仙の競合（channels/spi/competitors.json を替えた。千年こよみの分は competitors_千年こよみまで_2026-11-11.json）
@@ -64,6 +65,7 @@ jobs:
       - name: 調べる
         env:
           GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
         run: |

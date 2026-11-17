@@ -13,7 +13,11 @@
 # ・心理学ch（psy。2026-10-27）は、題材の決まりを心理学の4つの area に替え、ネタの候補を ネタ候補.json にも書かせる。
 #   ネタ帳の使っていない行が15行を切ったら、候補から1日5行まで channels\psy\ネタ帳.json に足す（ネタ帳が尽きて毎日の制作が止まらないように）
 # ・spi は 2026-11-11 から翠仙（白蛇弁財天の金運祈祷）。手順書がまだ無いので、決まりは SPI_RULES に書く。competitors.json の own（うちのチャンネル）は見るチャンネルに足さない
-# ・--no-claude：集めるだけ（まとめない）
+# ・2026-11-17 本人「Gemini でパワーアップ」：伸びた回の中身を Gemini（無料キー GEMINI_API_KEY_FREE）に URL のまま見せ、
+#   冒頭の拍・章・締め・画面を history\<ch>\competitors\見た\<動画id>.json に置く（watch()）。1チャンネル1日 WATCH_N 本まで・見た回は見直さない。
+#   それまでは題・概要欄・サムネしか見られず、チャプターの無い回の並びは分からなかった。リポジトリが公開なので、語りの文は写させず役割と要約だけ書かせる。
+#   鍵が無い・1日の上限・見られない回は飛ばして、競合メモはいつもどおり書く
+# ・--no-claude：集めるだけ（まとめない。Gemini で見るのはやる）
 import argparse, datetime, json, os, re, shutil, statistics, subprocess, sys, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, issue
@@ -30,6 +34,21 @@ SPI_RULES = """翠仙（白蛇弁財天の金運祈祷）の決まり（手順�
 - 競合で伸びている型をそのまま使う。変わった切り口や隙間を足さない
 - 収入や効果を約束しない・言い切らない。恐怖で煽らない。他の宗教や人を悪く言わない"""
 NETA_LOW, NETA_ADD = 15, 5  # 心理学ch：ネタ帳の使っていない行がこれを切ったら、1日にこの行数まで足す
+WATCH_N, WATCH_MAX_SEC = 2, 40 * 60  # Gemini に見せる伸びた回：1チャンネル1日2本まで・40分以下（無料枠の1日の上限に収める）
+WATCH_Q = """添付の YouTube 動画を最初から最後まで見て（聞いて）、構成の骨格を取り出してください。章の並びとつかみの型を知るためです。
+- 語りの文をそのまま書き写さない（このメモは公開の場所に置く）。何をしているかを短い言葉に要約する
+- 冒頭の拍：最初の90秒で、何秒に何の役割（例：結論の先出し・自己紹介・問いかけ・掛け合い・予告・体験談）をしているか
+- 章：始まりの秒・役割・中身（1行）。概要欄にチャプターが無くても、話の切れ目で分ける
+- 締め：最後の60秒で何を促しているか（登録・コメント・LINE・商品など）
+- 語りの形：1人語り／掛け合い／読み上げソフト など。画面：どんな絵・字幕・動きで見せているか（2〜3行）"""
+WATCH_SCH = {"type": "object", "properties": {
+    "語りの形": {"type": "string"},
+    "冒頭の拍": {"type": "array", "items": {"type": "object", "properties": {
+        "秒": {"type": "number"}, "役割": {"type": "string"}, "中身": {"type": "string"}}, "required": ["秒", "役割", "中身"]}},
+    "章": {"type": "array", "items": {"type": "object", "properties": {
+        "秒": {"type": "number"}, "役割": {"type": "string"}, "中身": {"type": "string"}}, "required": ["秒", "役割", "中身"]}},
+    "締め": {"type": "string"}, "画面": {"type": "string"}},
+    "required": ["語りの形", "冒頭の拍", "章", "締め", "画面"]}
 
 
 def get(ch, path, **q):
@@ -185,7 +204,43 @@ def thumbs(ch, hot):
     return got
 
 
-def prompt(ch, path, imgs, memo):
+def watch(ch, hot, d):
+    """伸びた回の中身を Gemini（無料キー）に URL のまま見せ、骨格を 見た\\<id>.json に置く。今日の hot で見終わっている物の場所を返す。
+    見るのは「見ているチャンネル」の回を先に、1日あたりの再生の多い順。止まっても競合メモは書く（鍵が無い・上限なら残りを飛ばす）"""
+    import gemini
+    out = os.path.join(d, "見た")
+    os.makedirs(out, exist_ok=True)
+    got, new = [], 0
+    for r in sorted((r for r in hot if r["sec"] <= WATCH_MAX_SEC), key=lambda r: (r["from"] != "見ているチャンネル", -r["per_day"])):
+        p = os.path.join(out, r["id"] + ".json")
+        if os.path.exists(p):
+            got.append(p)
+            continue
+        if new >= WATCH_N:
+            continue
+        try:
+            # 長さを書かないと、26分の回で章の秒が42分まで伸びた（2026-11-17 の試し）。長さを伝え、超えた時は「秒は不確か」と印を付ける
+            q = WATCH_Q + f"\n\nこの動画の長さは {r['sec'] // 60}分{r['sec'] % 60}秒（{r['sec']}秒）です。秒はこの長さの中で、実際に見た位置を書く。"
+            t, u = gemini.ask_media(q, youtube=["https://www.youtube.com/watch?v=" + r["id"]], schema=WATCH_SCH, low_res=True)
+            j = json.loads(t)
+            top = max([x["秒"] for x in j["章"] + j["冒頭の拍"]] or [0])
+            jsave(p, {"id": r["id"], "channel": r["channel"], "sec": r["sec"], "見た日": now().date().isoformat(),
+                      "トークン": u.get("totalTokenCount")}
+                  | ({"秒は不確か": f"答えの秒が動画の長さを超えた（最大 {top}秒・長さ {r['sec']}秒）。章の順番と中身だけを使う"}
+                     if top > r["sec"] * 1.05 else {}) | j)
+            got.append(p)
+            new += 1
+            print(f"  Gemini で見ました：{r['id']}（{r['sec'] // 60}分・{u.get('totalTokenCount')}トークン）")
+        except SystemExit as e:
+            print(f"  Gemini で見られませんでした：{r['id']}（{e}）")
+            if e.code == gemini.QUOTA_DAY or "見つかりません" in str(e):  # 1日の上限・鍵が無い：残りも通らない
+                break
+        except (ValueError, KeyError, OSError) as e:  # 答えが JSON でない・通信が切れた：この回だけ飛ばす
+            print(f"  Gemini で見られませんでした：{r['id']}（{type(e).__name__}）")
+    return got
+
+
+def prompt(ch, path, imgs, memo, seen=()):
     rel = lambda p: os.path.relpath(p, ROOT).replace("\\", "/")
     own = [rel(os.path.join(ROOT, "history", ch, n)) for n in ("uploaded.json", "metrics.json", "produced.json")
            if os.path.exists(os.path.join(ROOT, "history", ch, n))]
@@ -238,6 +293,7 @@ def prompt(ch, path, imgs, memo):
 3. {rel(memo) if os.path.exists(memo) else '（前の競合メモは無い。今日が初回）'}（前の日までの競合メモ。続いている傾向は残し、消えた傾向は消す）
 4. うちの記録：{'、'.join(own) or '（まだ無い）'}（うちの回のタイトルと数字。競合と比べる）
 5. 伸びている回のサムネ（{len(imgs)}枚。ファイル名が動画の id）：{'、'.join(rel(p) for p in imgs) or '（取れなかった）'}
+6. Gemini が動画を実際に見て取った、伸びた回の骨格（{len(seen)}本。ファイル名が動画の id。冒頭の拍・章・締め・画面）：{'、'.join(rel(p) for p in seen) or '（今日は無い）'}
 
 ## 書く物：{rel(memo)}（全部を書き直す。150行まで。見出しは ## で、この順）
 1. 今日の母数：見たチャンネルの数・動画の数・伸びている回の数（{rel(path)} の 母数 の値）と、日付
@@ -246,8 +302,9 @@ def prompt(ch, path, imgs, memo):
 4. サムネの傾向：サムネの画像を見て、構図・文字の数・色・人物の有無・数字の有無。何枚中何枚かで書く
 5. 概要欄の傾向：頭の文の型、チャプターの数と名前の付け方、リンクの置き方（desc_head と chapters から。何本中何本か）
 6. 台本と構成の傾向：長さ（分）、チャプターの並び方（つかみ→…→結末）、章の数。何本中何本か。
-   チャプターがある伸びた回は、1日あたりの再生の多い順に3本まで、動画 id と章の並びを1本ずつ書く（章ごとの役割が分かる言葉で、順番と数は変えない。うちの書き手がこの並びをそのまま借りる）。
-   チャプターが無い回の並びは推測で作らない（「チャプターなし」と書く）
+   チャプターがあるか Gemini が見た伸びた回は、1日あたりの再生の多い順に3本まで、動画 id と章の並びを1本ずつ書く（章ごとの役割が分かる言葉で、順番と数は変えない。うちの書き手がこの並びをそのまま借りる）。
+   Gemini が見た回は、冒頭90秒の拍（何秒に何の役割）と締めも1行ずつ添え、「Gemini が見た」と書く。
+   チャプターが無く Gemini も見ていない回の並びは推測で作らない（「チャプターなし」と書く）
 7. うちの次の回で試すこと（3つまで）：タイトル・サムネの文字・概要欄・台本のどれを、{"決まり" if ch == "spi" else "手順書の決まり（事実確認・使わない題材・禁止表現・点検）"}の中で、伸びた回の形にどう寄せるか。新しい工夫を考えず、伸びた回が実際にやっている形から選ぶ。1つずつ、根拠（動画 id と数字）と、{"どの決まり" if ch == "spi" else "手順書のどの決まり"}の中でやるかを書く。前のメモの提案で、うちの回が作られて数字が出た物は「結果」を1行足す
 8. ネタの候補（5つまで。2 の伸びている題材と同じ題材を、うちの決まりの中でやる候補。新しい切り口・誰もやっていない隙間ねらいを足さない）：{neta}
 9. {"決まりを変える案・手順書に入れる案" if ch == "spi" else "手順書を変える案"}（あれば。自動では変えない。週報で持ち主が決める）
@@ -289,6 +346,7 @@ def main():
     print(f"{a.ch}：動画 {len(rows)}本・伸びている回 {len(hot)}本・使った回数 {units}" + (f"・見るチャンネルに足した {added}" if added else ""))
     for r in hot[:5]:
         print(f"  {r['per_day']:>7,}/日 ×{r['x_usual'] or '?'} {r['channel']}：{r['title'][:40]}")
+    seen = watch(a.ch, hot, d)
     if a.no_claude:
         return
     imgs = thumbs(a.ch, hot)
@@ -298,7 +356,7 @@ def main():
     env["YT_SECRETS_DIR"] = os.path.join(ROOT, "_no_secrets_here")
     cmd = [shutil.which("claude") or "claude", "-p", "--model", os.environ.get("CLAUDE_RESEARCH_MODEL", "opus"),
            "--allowedTools", "Read", "Write", "Glob", "Grep", "--permission-mode", "acceptEdits", "--output-format", "json"]
-    r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(a.ch, path, imgs, memo), capture_output=True, text=True,
+    r = subprocess.run(cmd, cwd=ROOT, env=env, input=prompt(a.ch, path, imgs, memo, seen), capture_output=True, text=True,
                        encoding="utf-8", timeout=1800)
     open(os.path.join(ROOT, "_research", a.ch, "_claude.log"), "a", encoding="utf-8").write(r.stdout + "\n" + r.stderr + "\n")
     if r.returncode != 0 or not os.path.exists(memo) or os.path.getmtime(memo) <= before:
