@@ -4,14 +4,22 @@
   "pick",
   "write",
   "gate_script",
-  "voice"
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build"
  ],
  "started": "2026-11-17T17:15:46+09:00",
  "tries": 0,
  "code": "e155605ce766",
- "stage": "images",
- "updated": "2026-11-17T20:57:04+09:00",
+ "stage": "gate_video",
+ "updated": "2026-11-18T01:16:00+09:00",
  "busy": {
   "images": 1
+ },
+ "video_swapped": {
+  "H07": "H06",
+  "K04": "K03"
  }
 }
