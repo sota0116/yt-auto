@@ -1,18 +1,10 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S128_神棚に置きっぱなしにする",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S129_神棚を置くとお金が逃げる",
  "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images"
+  "pick"
  ],
- "started": "2026-11-17T21:26:35+09:00",
+ "started": "2026-11-18T01:35:59+09:00",
  "tries": 0,
  "code": "e155605ce766",
- "stage": "motion",
- "updated": "2026-11-17T21:51:16+09:00",
- "busy": {
-  "motion": 1
- }
+ "stage": "gate_script"
 }

@@ -1,20 +1,19 @@
 {
  "ch": "okinu",
- "started": "2026-11-17T21:26:35+09:00",
+ "started": "2026-11-18T00:51:20+09:00",
  "made": [
-  "107_お風呂"
+  "S128_神棚に置きっぱなしにする"
  ],
- "stopped": "動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります（1回目）（short）",
+ "stopped": "write で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（short）",
  "在庫": {
   "short": 3,
-  "long": 1
+  "long": 2
  },
  "作る本数": {
   "short": 2,
-  "long": 1
+  "long": 0
  },
  "待ち": true,
- "途中": true,
- "ended": "2026-11-18T00:48:11+09:00",
+ "ended": "2026-11-18T01:36:02+09:00",
  "今月の制作費_円": 0.0
 }
