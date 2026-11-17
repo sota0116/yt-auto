@@ -201,7 +201,7 @@ def hook():
             pass
 
 
-def publish():
+def publish(dry=False):
     """ナレッジ（history/_指摘 の json と md だけ）を GitHub の main へ送る。原文と受信箱は送らない。
     手元の C:\\yt-auto はクラウドとずれているので、別の置き場（%LOCALAPPDATA%\\yt-auto-shiteki）に取り出して送る"""
     import shutil, subprocess
@@ -210,6 +210,7 @@ def publish():
     g = lambda *a, check=True: subprocess.run(["git", "-C", wd, *a], check=check, capture_output=True, text=True, encoding="utf-8")
     if not os.path.isdir(os.path.join(wd, ".git")):
         subprocess.run(["git", "clone", "-q", "--depth", "50", url, wd], check=True)
+    g("config", "user.name", "yt-auto"); g("config", "user.email", "yt-auto@users.noreply.github.com")  # 公開リポジトリなので個人のメールを出さない
     g("fetch", "-q", "origin", "main"); g("checkout", "-q", "-B", "main", "origin/main")
     dst = os.path.join(wd, "history", "_指摘"); os.makedirs(dst, exist_ok=True)
     names = ["ナレッジ.json"] + [f"ナレッジ_{c}.md" for c in CHS]
@@ -218,6 +219,9 @@ def publish():
     g("add", "--", *[os.path.join("history", "_指摘", n) for n in names])
     if not g("diff", "--cached", "--quiet", check=False).returncode:
         print("送る変更なし（GitHub と同じ）"); return
+    if dry:
+        print("【試し】送る予定の変更（まだ送っていない）：\n" + g("diff", "--cached", "--stat").stdout.rstrip())
+        g("reset", "-q", "--hard", "origin/main"); return
     kb = load()
     g("commit", "-q", "-m", f"指摘ナレッジ更新：全{len(kb['rules'])}件（有効 {sum(r['状態'] == '有効' for r in kb['rules'])}）")
     r = g("push", "-q", "origin", "HEAD:main", check=False)
@@ -245,14 +249,15 @@ def main():
     i = sub.add_parser("inbox"); i.add_argument("--all", action="store_true")
     dn = sub.add_parser("done"); dn.add_argument("ids", nargs="+")
     c = sub.add_parser("capture"); c.add_argument("--text", required=True); c.add_argument("--ch", default=""); c.add_argument("--src", default="手入力")
-    sub.add_parser("hook"); sub.add_parser("render"); sub.add_parser("stats"); sub.add_parser("publish")
+    sub.add_parser("hook"); sub.add_parser("render"); sub.add_parser("stats")
+    pb = sub.add_parser("publish"); pb.add_argument("--dry", action="store_true")
     sh = sub.add_parser("show"); sh.add_argument("ch")
     x = ap.parse_args()
 
     if x.cmd == "hook":
         return hook()
     if x.cmd == "publish":
-        return publish()
+        return publish(x.dry)
     if x.cmd == "capture":
         print(capture(x.text, x.ch, x.src)["id"]); return
     kb = load()
