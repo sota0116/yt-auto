@@ -11,7 +11,7 @@ import argparse, datetime, json, os, re, shutil, subprocess, sys, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = datetime.timezone(datetime.timedelta(hours=9))
 # 止まった理由ごとの「やること」（設計書 §9 の表。Issue の本文の最初の行）
-TODO = [("ネタ切れ", "channels/<ch>/ネタ帳.json に行を足す（PC で Claude に「<ch>のネタ帳を足して」と言う）。足すまでは在庫で公開がつながる"),
+TODO = [("ネタ切れ", "何もしなくてよい（毎日 01:17 の research がネタ帳を自動で足す。job は統計の職業から、okinu・psy は競合の伸びた回から）。足すまでは在庫で公開がつながる。3日続いたら、Claude に見せる"),
         ("Codex","PC がついているか、タスク yt-codex-images が動いているかを見る。分からなければ C:\\tmp\\codex_images\\_runner.log を Claude に見せる"),
         ("台本ゲート", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("絵", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),

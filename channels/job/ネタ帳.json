@@ -641,5 +641,285 @@
   ],
   "hold": false,
   "メモ": "業界の離職率が全産業以下なので A-1 にできず、A-3（似た職業との比べ）にした（2026-10-24）"
+ },
+ {
+  "id": "a_truck_daisho",
+  "title": "大型トラック運転手と中小型トラック運転手",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "2026-12-22",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "truck_daisho"
+  ],
+  "hold": false,
+  "メモ": "a3_facts.py の用意済みの組で、まだ使っていなかった物（2026-11-17）。大型トラック運転手が主役の前の回（c_truck 10/27）から8週あける"
+ },
+ {
+  "id": "a_kaigo_houmon",
+  "title": "施設の介護職員と訪問介護員",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "2027-02-14",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "kaigo_houmon"
+  ],
+  "hold": false,
+  "メモ": "a3_facts.py の用意済みの組で、まだ使っていなかった物（2026-11-17）。介護職員が主役の回（c4_kaigo 12/20 から）から8週あける"
+ },
+ {
+  "id": "a_kango_junkango",
+  "title": "看護師と准看護師",
+  "type": "A",
+  "frame": "A-3",
+  "target": "同じ業界の似た仕事のどちらに進むか迷っている、20〜40代の会社員",
+  "window_start": "2027-02-22",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "a3_facts.py",
+   "make",
+   "{work}",
+   "kango_junkango"
+  ],
+  "hold": false,
+  "メモ": "a3_facts.py の用意済みの組で、まだ使っていなかった物（2026-11-17）。看護師が主役の回（c4_kango 12/28 から）から8週あける"
+ },
+ {
+  "id": "c_j124",
+  "title": "パイロット",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j124"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「航空機操縦士」"
+ },
+ {
+  "id": "c4_j124",
+  "title": "パイロットの一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-12",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j124"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。同じ職業の型C の回から8週あけて 2027-01-12 から"
+ },
+ {
+  "id": "c_j014",
+  "title": "医師",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j014"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「医師」"
+ },
+ {
+  "id": "c4_j014",
+  "title": "医師の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-12",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j014"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。同じ職業の型C の回から8週あけて 2027-01-12 から"
+ },
+ {
+  "id": "c_j038",
+  "title": "大学教授",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j038"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「大学教授（高専含む）」"
+ },
+ {
+  "id": "c_j015",
+  "title": "歯科医師",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j015"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「歯科医師」"
+ },
+ {
+  "id": "c4_j015",
+  "title": "歯科医師の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-12",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j015"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。同じ職業の型C の回から8週あけて 2027-01-12 から"
+ },
+ {
+  "id": "c_j000",
+  "title": "管理職",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j000"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「管理的職業従事者」"
+ },
+ {
+  "id": "c4_j000",
+  "title": "管理職の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-12",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j000"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。同じ職業の型C の回から8週あけて 2027-01-12 から"
+ },
+ {
+  "id": "c_j033",
+  "title": "公認会計士・税理士",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j033"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「公認会計士，税理士」"
+ },
+ {
+  "id": "c4_j033",
+  "title": "公認会計士・税理士の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-12",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j033"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。同じ職業の型C の回から8週あけて 2027-01-12 から"
  }
 ]

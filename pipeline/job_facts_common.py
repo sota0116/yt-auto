@@ -25,6 +25,10 @@ JOBS = {
               "産業の注意": "自動車整備は整備工場（サービス業）と販売店（卸売業，小売業）に分かれるので、産業を当てはめない"},
     "daiku": {"職種": ["大工"], "表示名": "大工", "産業": "Ｄ"},
 }
+# ネタ帳の自動補充（refill_job_neta.py）が足した職業。産業は当てはめない（None）ので A-1 には使わない（2026-11-17）
+_EXTRA = os.path.join(DATA, "jobs_extra.json")
+if os.path.exists(_EXTRA):
+    JOBS.update({k: v for k, v in json.load(open(_EXTRA, encoding="utf-8")).items() if k not in JOBS})
 
 
 def load(name):

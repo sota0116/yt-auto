@@ -2,6 +2,8 @@
 # ・YouTube は読むだけ（1日 約650回分。お金なし）。まとめは Claude（鍵は渡さない。research.py が子のプロセスから消す）
 # ・書くのは history/<ch>/competitors/ だけ（集めた物・競合メモ・その日付の写し）。サムネは _research/ に置き、commit しない
 # ・心理学ch（psy。2026-10-27 から）は、ネタ帳の残りが少ない時に channels/psy/ネタ帳.json にも候補を足す（research.py の add_neta）
+# ・金運おきぬ（okinu）のショートも同じ（add_neta_okinu）。仕事ch（job）は統計の職業から足す（refill_job_neta.py）。2026-11-17 から、ネタ帳の補充を人に頼まない
+# ・手で動かす時は channels に調べるチャンネルを書ける（空なら全部）
 # ・PAUSED の間も動かす（読むだけなので）
 # ・2026-11-17 から、伸びた回を1チャンネル1日2本まで Gemini（無料キー secrets.GEMINI_API_KEY_FREE）に見せ、骨格を history/<ch>/competitors/見た/ に置く（research.py の watch）。鍵が無ければ飛ばす
 # ・調べたあと、仕事ch の毎日の学び（learn_job.py。history/job/学び.md）も書く（2026-10-28 本人「毎日レベル上げてね」）
@@ -10,6 +12,11 @@ on:
   schedule:
     - cron: "17 16 * * *"   # 01:17 JST
   workflow_dispatch:
+    inputs:
+      channels:
+        description: "調べるチャンネル（空白で区切る。空なら全部）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -25,7 +32,7 @@ jobs:
     timeout-minutes: 130  # 2チャンネル分（Claude のまとめが1つ最大30分）＋学び（最大20分）＋Gemini で見る（2026-11-17。1本約1〜3分×10本）
     env:
       TZ: Asia/Tokyo
-      CHANNELS: job psy spi nihongi okinu   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi は 2026-11-11 から翠仙の競合（channels/spi/competitors.json を替えた。千年こよみの分は competitors_千年こよみまで_2026-11-11.json）
+      CHANNELS: ${{ inputs.channels || 'job psy spi nihongi okinu' }}   # nihongi・okinu は 2026-10-29 に competitors.json を作って足した。 spi は 2026-11-11 から翠仙の競合（channels/spi/competitors.json を替えた。千年こよみの分は competitors_千年こよみまで_2026-11-11.json）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -79,12 +86,17 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB || secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           CLAUDE_TOKEN_ALT: ${{ env.CLAUDE_PICK == 'sub' && secrets.CLAUDE_CODE_OAUTH_TOKEN || secrets.CLAUDE_CODE_OAUTH_TOKEN_SUB }}
         run: python -X utf8 pipeline/learn_job.py job
+      - name: 仕事ch のネタ帳を足す（今日選べる行が6行を切ったら、統計の職業から。refill_job_neta.py）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -X utf8 pipeline/refill_job_neta.py
       - name: 記録を commit する（ぶつかったら最新を取り込んで5回まで）
         if: always()
         run: |
           git config user.name "yt-auto"
           git config user.email "yt-auto@users.noreply.github.com"
-          git add history channels/psy/ネタ帳.json
+          git add history channels/psy/ネタ帳.json channels/okinu/ネタ帳.json channels/job/ネタ帳.json data/job/jobs_extra.json
           git diff --cached --quiet && exit 0
           git commit -qm "競合リサーチ：$(date +%F_%H%M)"
           for i in 1 2 3 4 5; do git pull -q --rebase --autostash -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done

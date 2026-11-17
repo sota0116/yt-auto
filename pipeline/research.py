@@ -12,6 +12,8 @@
 # ・金運おきぬ（okinu）は 2026-11-13 に専用の文を足した（それまで job の文＝仕事・年収・公的な統計で書かせていた）
 # ・心理学ch（psy。2026-10-27）は、題材の決まりを心理学の4つの area に替え、ネタの候補を ネタ候補.json にも書かせる。
 #   ネタ帳の使っていない行が15行を切ったら、候補から1日5行まで channels\psy\ネタ帳.json に足す（ネタ帳が尽きて毎日の制作が止まらないように）
+# ・金運おきぬ（okinu。2026-11-17）も、ショートのネタの候補を ネタ候補.json に書かせ、ショートの使っていない行が8行を切ったら1日5行まで
+#   channels\okinu\ネタ帳.json の rows に足す（本人「なんで俺がやるんだよ」：ネタ帳の補充を人に頼まない）。job は refill_job_neta.py が統計から足す
 # ・spi は 2026-11-11 から翠仙（白蛇弁財天の金運祈祷）。手順書がまだ無いので、決まりは SPI_RULES に書く。competitors.json の own（うちのチャンネル）は見るチャンネルに足さない
 # ・2026-11-17 本人「Gemini でパワーアップ」：伸びた回の中身を Gemini（無料キー GEMINI_API_KEY_FREE）に URL のまま見せ、
 #   冒頭の拍・章・締め・画面を history\<ch>\competitors\見た\<動画id>.json に置く（watch()）。1チャンネル1日 WATCH_N 本まで・見た回は見直さない。
@@ -49,6 +51,7 @@ WATCH_SCH = {"type": "object", "properties": {
         "秒": {"type": "number"}, "役割": {"type": "string"}, "中身": {"type": "string"}}, "required": ["秒", "役割", "中身"]}},
     "締め": {"type": "string"}, "画面": {"type": "string"}},
     "required": ["語りの形", "冒頭の拍", "章", "締め", "画面"]}
+OKINU_LOW, OKINU_ADD = 8, 5  # 金運おきぬ：ショートの使っていない行がこれを切ったら、1日にこの行数まで足す
 
 
 def get(ch, path, **q):
@@ -270,9 +273,16 @@ def prompt(ch, path, imgs, memo, seen=()):
 - 顔を出して1人が語る型、収入や効果を約束・断定する題、恐怖で煽る題、他の宗教や人を攻撃する題は、伸びていても「うちは使わない」と書く"""
     elif ch == "okinu":  # 2026-11-13：それまで job の文（仕事・年収・公的な統計）で書かせていた
         ex = "例「玄関に置くとお金が逃げる物」「財布に入れてはいけない物」「トイレの NG」"
-        neta = """伸びている回と同じ場所・同じ物の NG を先に出す（独自の切り口を足さない）。場所か小物（財布・玄関・台所・トイレ・寝室・かばん など）と、
+        neta = f"""伸びている回と同じ場所・同じ物の NG を先に出す（独自の切り口を足さない）。場所か小物（財布・玄関・台所・トイレ・寝室・かばん など）と、
    手順書 §8 の題の型（A〜F）のどれに当たるかと、根拠の動画 id。お金のかからない・手元の物で直せる話だけ。
-   うちの記録にある場所と NG の組み合わせと同じ物は出さない"""
+   うちの記録にある場所と NG の組み合わせと同じ物は出さない。
+   ほかに、ショートにできる候補を {rel(os.path.join(os.path.dirname(memo), 'ネタ候補.json'))} にも書く（全部を書き直す。JSON の配列。8つまで。
+   型1 を4つ以上、型2 を2つ以上）。先に channels/okinu/ネタ帳.json を全部読み（_説明・_行の項目・rows・手で作った回）、
+   rows の小物・題・items と、手で作った回の小物と、うちの記録の題と同じ物・言い換えただけの物は出さない。1つの形：
+   型1（NG3つの数え下げ）{{"id": "s1_英小文字と_", "kind": "short", "型": 1, "題": "〇〇に置くとお金が逃げる物3選 の形", "items": ["NG1", "NG2", "NG3"],
+   "小物": "題と同じ文字", "悩み": "〜しているのに、お金が残らない の形の1文", "年": 60〜69 の数, "ok_q": "〇〇を、〇〇していいか", "competitor": "根拠の動画 id と再生"}}
+   型2（1つだけ禁止）{{"id": "s2_英小文字と_", "kind": "short", "型": 2, "小物": "小物か行為1つ", "悩み": "同じ形の1文", "年": 60〜69 の数,
+   "ok_q": "〇〇を、〇〇していいか", "competitor": "根拠の動画 id と再生"}}"""
         off = """- 金運・開運・暮らしの言い伝えと関係のない回（政治・海外の反応・投資や節約の助言・流行りの物など）は、2 の題材から外し、3〜6 の型の参考だけにする
 - 手順書 §1 の使わない語（宝くじ・億・借金・一発逆転・N秒以内に）に寄る題材、高い商品を前提にする題材、暮らしへの脅しは、伸びていても「うちは使わない」と書く"""
     else:
@@ -369,6 +379,8 @@ def main():
         print("競合メモを書きました")
     if a.ch == "psy":
         add_neta(a.ch, d)
+    elif a.ch == "okinu":
+        add_neta_okinu(d)
 
 
 def add_neta(ch, d):
@@ -392,6 +404,48 @@ def add_neta(ch, d):
     if new:
         jsave(bp, board + new)
     print(f"ネタ帳の残り {free}行 → 競合リサーチの候補から {len(new)}行足しました：{[x['title'] for x in new]}")
+
+
+def add_neta_okinu(d):
+    """金運おきぬ：ショートの使っていない行が OKINU_LOW を切ったら、ネタ候補.json から OKINU_ADD 行まで rows に足す（形の合わない候補・重なる候補は捨てる）。
+    使った行の数え方は pick_neta_okinu.py に合わせる（作った回・作る予定の回・作業フォルダ・used_by・hold・手で作った回の小物）"""
+    hp = lambda n: os.path.join(ROOT, "history", "okinu", n)
+    bp = os.path.join(ROOT, "channels", "okinu", "ネタ帳.json")
+    book = jload(bp, {})
+    rows = book.get("rows", [])
+    hand = " ".join(book.get("手で作った回", {}).values())
+    used = {x.get("neta_id") or x.get("id") for x in jload(hp("produced.json"), []) if isinstance(x, dict)}
+    used |= {v.get("neta_id") for v in jload(hp("pub_plan.json"), {}).values() if isinstance(v, dict)}
+    vdir = os.path.join(ROOT, "channels", "okinu", "videos")
+    for w in os.listdir(vdir) if os.path.isdir(vdir) else []:
+        x = jload(os.path.join(vdir, w, "neta.json"), {})
+        used |= {x.get("neta_id"), x.get("id")}
+    free = [r for r in rows if r.get("kind") == "short" and not r.get("hold") and not r.get("used_by")
+            and r["id"] not in used and r.get("小物", "") not in hand]
+    if len(free) >= OKINU_LOW:
+        print(f"okinu のネタ帳：ショートの残り {len(free)}行（{OKINU_LOW}行以上あるので足さない）")
+        return
+    ids = {r["id"] for r in rows}
+    seen = {r.get(k) for r in rows for k in ("小物", "題") if r.get(k)} | {i for r in rows for i in r.get("items", [])}
+    s = lambda v: isinstance(v, str) and v.strip()
+    new = []
+    for c in jload(os.path.join(d, "ネタ候補.json"), []):
+        if len(new) >= OKINU_ADD or not isinstance(c, dict):
+            continue
+        t = c.get("型")
+        ok = t in (1, 2) and c.get("kind") == "short" and re.fullmatch(rf"s{t}_[a-z0-9_]{{3,40}}", str(c.get("id"))) \
+            and all(s(c.get(k)) for k in ("小物", "悩み", "ok_q")) and isinstance(c.get("年"), int) and 55 <= c["年"] <= 75
+        if ok and t == 1:
+            ok = s(c.get("題")) and isinstance(c.get("items"), list) and len(c["items"]) == 3 and all(s(i) for i in c["items"])
+        if not ok or c["id"] in ids or c["小物"] in seen or c["小物"] in hand or (t == 1 and (c["題"] in seen or any(i in seen for i in c["items"]))):
+            continue
+        keys = ("id", "kind", "型", "題", "items", "小物", "悩み", "年", "ok_q", "competitor") if t == 1 else ("id", "kind", "型", "小物", "悩み", "年", "ok_q", "competitor")
+        new.append({k: c[k] for k in keys if k in c} | {"added": now().date().isoformat(), "from": "競合リサーチ"})
+        ids.add(c["id"]); seen |= {c["小物"], c.get("題")} | set(c.get("items", []))
+    if new:
+        book["rows"] = rows + new
+        jsave(bp, book)
+    print(f"okinu のネタ帳：ショートの残り {len(free)}行 → 競合リサーチの候補から {len(new)}行足しました：{[x['小物'] for x in new]}")
 
 
 if __name__ == "__main__":
