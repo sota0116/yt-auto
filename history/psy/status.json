@@ -7,13 +7,14 @@
   "voice",
   "yomi",
   "reading",
-  "images"
+  "images",
+  "motion"
  ],
  "started": "2026-11-16T12:32:13+09:00",
  "tries": 0,
  "code": "b4688f5c4404",
- "stage": "motion",
- "updated": "2026-11-16T12:40:33+09:00",
+ "stage": "gate_images",
+ "updated": "2026-11-17T11:52:40+09:00",
  "restored": {
   "日時": "2026-11-16T12:32:13+09:00",
   "前の済み": [
