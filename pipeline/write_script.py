@@ -34,6 +34,21 @@ def doc(ch, name):
     sys.exit(f"【止まりました】{name} が見つかりません（channels/{ch}/）")
 
 
+def shiteki_ask(ch):
+    """本人の指摘ナレッジ（2026-11-17 本人「動画への指摘を全部記録し言語化して、次の動画の布石にしてレベルを上げる」）。
+    history/_指摘/ナレッジ_<ch>.md（shiteki.py が作る）を指示書にそのまま足す。全チャンネルの書き手が使う。読めなくても書く作業は止めない"""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import shiteki
+        t = shiteki.text_for(ch)
+    except Exception as e:  # noqa: BLE001
+        t = f"（指摘ナレッジを読めませんでした：{e!r}）\n"
+    if not t.strip():
+        return ""
+    t = "\n".join(("#" + x) if x.startswith("#") else x for x in t.splitlines())  # 見出しを1段下げる
+    return "\n" + t.rstrip() + "\n- 上の「使い方」3の1行は、改善ログの行より前に書く。\n\n"
+
+
 def levelup(ch):
     """改善ログ（毎日1つ上げる。2026-10-28）：書く前に最後の「次に上げること」を読ませ、書き終えたら書き手の最後の行を1行足す"""
     return os.path.join(ROOT, "history", ch, "改善ログ.md")
@@ -203,7 +218,7 @@ def prompt(work, ch, fix):
 - `python -X utf8 pipeline/check_job_script.py {rel(work)}` を回し、NG が0件・注意も0件になるまで script.json を直す（pub_date が空という注意だけは残す。公開日は在庫に入れる時にプログラムが入れる）。
 - 最後に、字数・カット数・聞き手の割合・LINE の案内と登録の呼びかけの位置（%）を1行ずつ書いて終える。
 
-""" + TTP_ASK + HOOK_ASK + ARC_ASK + IMAGE_ASK + THUMB_TEXT_ASK + LEVELUP_ASK
+""" + TTP_ASK + HOOK_ASK + ARC_ASK + IMAGE_ASK + THUMB_TEXT_ASK + shiteki_ask(ch) + LEVELUP_ASK
     if neta["type"] == "D":  # 見本（001）は型A-4 なので、型D の図と項目の形はここで渡す
         p += """
 ## 型D の script.json（見本に無い所）

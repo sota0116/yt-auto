@@ -15,7 +15,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK, shiteki_ask  # noqa: E402
 from write_script_psy import recent  # noqa: E402
 import koyomi_spi as KS  # noqa: E402
 
@@ -142,7 +142,7 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
 {ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
-{LEVELUP_ASK}
+{shiteki_ask(ch)}{LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 家事の合間に耳だけで聞く50〜60代の女性として10点満点。最初の30秒が7点以上、全部の章が5点以上で合格。
 - 最初の30秒は、1文目で、この回を聞くと何が分かるか・何ができるようになるか（その日にすること・やめること・次はいつか）を言い切り、2文目からつかみの型（日付・場面・問い）で、いちばん驚く日付か由来を言い切る。各章の終わりの1文で、次の章で分かることを中身で引く。

@@ -4,7 +4,7 @@
 # ・これまでの1日の流れの数字（shorts_learn.json）を渡す（PDCA）。モデルは CLAUDE_SHORT_MODEL（無ければ sonnet）
 import hashlib, json, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, SECRET_ENV, doc
+from write_script import ROOT, SECRET_ENV, doc, shiteki_ask
 
 HIST = os.path.join(ROOT, "history", "job", "shorts.json")
 STYLE = "はっきりした主線のアニメ調、メリハリのある色（紺の地に黄と赤のさし色）、ドラマのような強い光と影、職場や現場の生活感、人物の表情は大きくはっきり"
@@ -101,6 +101,7 @@ WebSearch と WebFetch で、その職業の実際の1日を、現場の人の�
 - 実際の道具と服装に合わせる。motion は人か物が動く場面の2〜3カットに付ける。peak は一番見せたい1カットに付ける。
 - 読み間違えやすい語はカットに "tts_text"（読みやすいひらがな混じりの文）を書いてよい。
 
+{shiteki_ask('job')}
 ## 終わる前に必ずやること
 - `python -X utf8 pipeline/check_routine.py {rel(work)}` を回し、NG が0件になるまで script.json を直す。注意もできるだけ0件にする。
 - 最後に、字数、カット数、資料の数を1行で書いて終える。

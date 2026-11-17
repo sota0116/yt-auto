@@ -14,7 +14,7 @@
 import argparse, datetime, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, LEVELUP_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, LEVELUP_ASK, shiteki_ask  # noqa: E402
 from make_short_spi import fetch_long, CLOSE, CLOSE_TEASER, WEEK  # noqa: E402
 from short_slot_spi import slot  # noqa: E402
 from upload_short_spi import used_slots  # noqa: E402
@@ -114,7 +114,7 @@ def prompt(work, pl, lg, names, fixes):
 3. 1本ずつ `python -X utf8 pipeline/make_short_spi.py --check --offline --name <short か short_2 …> {rel(work)}` を回し、NG が0件になるまで直す。
 4. 最後に、1本ずつ「名前・kind・問い（S01）・持ち帰れる事実」を1行で書いて終える。
 
-{LEVELUP_ASK}"""
+{shiteki_ask(CH)}{LEVELUP_ASK}"""
     if fixes:
         p += f"""
 ## 今回は書き直し

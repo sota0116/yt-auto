@@ -7,7 +7,7 @@
 # ・モデルは環境変数 CLAUDE_SHORT_MODEL（無ければ sonnet。ショートは短く、型が決まっているため）
 import json, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc
+from write_script import ROOT, DOCS, SECRET_ENV, doc, shiteki_ask
 
 HIST = os.path.join(ROOT, "history", "job", "shorts.json")
 LINE_VER = 2  # 言い方の版（手順書 v5.27）。script.json に残し、short_learn.py が前後を比べる
@@ -84,6 +84,7 @@ def prompt(work):
 - 最後のコメントへの問いかけは、自分の仕事名か数字で答えられる具体的な形にする（「あなたの仕事は何位でしたか」の形。はい／いいえで終わる問いは書かない）。
 - 「答えは最後に」「このあと発表します」「最後まで見てください」のような、答えを先に延ばすだけの文は書かない。問いで引き、答えはこのショートの中で出す。
 
+{shiteki_ask('job')}
 ## 終わる前に必ずやること
 - `python -X utf8 pipeline/check_short.py {rel(work)}` を回し、NG が0件になるまで script.json を直す。注意もできるだけ0件にする。
 - 最後に、字数・カット数・聞き手の割合を1行で書いて終える。

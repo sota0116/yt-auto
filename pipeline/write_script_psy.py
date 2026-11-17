@@ -9,7 +9,7 @@
 import argparse, json, os, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK  # noqa: E402
+from write_script import ROOT, DOCS, SECRET_ENV, doc, levelup, levelup_add, LEVELUP_ASK, HOOK_ASK, ARC_ASK, IMAGE_ASK, THUMB_TEXT_ASK, TTP_ASK, shiteki_ask  # noqa: E402
 
 GOLDEN =os.path.join(ROOT, "channels", "psy", "golden", "script_001.json")
 GOLDEN_FACTS = os.path.join(ROOT, "channels", "psy", "golden", "facts_001.md")
@@ -122,7 +122,7 @@ def prompt(work, ch, fix):
 {ARC_ASK}
 {IMAGE_ASK}
 {THUMB_TEXT_ASK}
-{LEVELUP_ASK}
+{shiteki_ask(ch)}{LEVELUP_ASK}
 ## 台本ゲートの採点（書いたあと、別のAIがこの線で見る）
 - 家事をしながら耳で聞き、退屈ならすぐ次の動画へ行く60代の女性として10点満点。最初の30秒が7点以上、全部の章が6点以上、最後まで楽しく見られるか（全体）が7点以上で合格。
 - 研究の結果を並べるだけの講義の章は、正しくても低く付く。「へぇ」「これ私のことだ」「人に話したい」を章ごとに1つ作る。
