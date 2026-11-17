@@ -8,13 +8,16 @@
   "yomi",
   "reading",
   "images",
-  "motion"
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
  "started": "2026-11-17T15:25:20+09:00",
- "tries": 0,
- "code": "b4688f5c4404",
- "stage": "gate_images",
- "updated": "2026-11-17T17:35:39+09:00",
+ "tries": 1,
+ "code": "e155605ce766",
+ "stage": "thumb",
+ "updated": "2026-11-17T22:22:46+09:00",
  "images_back": true,
  "restored": {
   "日時": "2026-11-17T15:25:20+09:00",
