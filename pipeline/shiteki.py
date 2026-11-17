@@ -32,9 +32,9 @@ KB = os.path.join(DIR, "ナレッジ.json")
 INBOX = os.environ.get("SHITEKI_INBOX") or os.path.join(os.path.expanduser("~"), "OneDrive", "YouTube自動チャンネル", "指摘", "受信箱.jsonl")
 JST = datetime.timezone(datetime.timedelta(hours=9))
 CHS = ["job", "psy", "spi", "nihongi", "okinu", "kakure", "shimei", "shinshiten", "tokujiro"]
-CH_NAMES = {"job": "あの仕事の年収と一生", "psy": "しずくの心理学", "spi": "千年こよみ", "nihongi": "アナザー日本紀",
+CH_NAMES = {"job": "あの仕事の年収と一生", "psy": "しずくの心理学", "spi": "翠仙（旧 千年こよみ）", "nihongi": "アナザー日本紀",
             "okinu": "金運おきぬ", "kakure": "かくれ神語り", "shimei": "指名手配ボード", "shinshiten": "シン視点事件簿", "tokujiro": "徳次郎"}
-CH_WORDS = {"job": r"年収|あの仕事|\bjob\b", "psy": r"しずく|心理学|\bpsy\b", "spi": r"こよみ|千年|\bspi\b", "nihongi": r"日本紀|ニホンキ|nihongi",
+CH_WORDS = {"job": r"年収|あの仕事|\bjob\b", "psy": r"しずく|心理学|\bpsy\b", "spi": r"翠仙|こよみ|千年|\bspi\b", "nihongi": r"日本紀|ニホンキ|nihongi",
             "okinu": r"おきぬ|okinu", "kakure": r"かくれ神|kakure", "shimei": r"指名手配|shimei", "shinshiten": r"シン視点|shinshiten", "tokujiro": r"徳次郎|tokujiro"}
 BUNYA = ["台本・構成", "つかみ", "言い回し", "読み・発音", "声・音", "絵・動き", "テロップ・字", "サムネ", "題・概要欄", "本数・投稿", "その他"]
 STATES = ["有効", "点検化", "手順書化", "廃止"]
@@ -43,6 +43,10 @@ PROMOTE_AT = 3
 VIDEO_WORDS = r"動画|サムネ|台本|テロップ|字幕|ナレ|BGM|効果音|ショート|長尺|横動画|縦動画|尺|カット|つかみ|冒頭|フック|題|タイトル|概要欄|読み間違|読み方|発音|イントネーション|声|絵|画像|映像|動き|紙芝居|場面|セリフ|言い回し|チャンネル"
 QUOTES = os.path.join(os.path.dirname(INBOX), "原文.jsonl")  # 本人の原文（公開リポジトリに入れない）
 AUTO_PREFIX = ("次のファイルが今回の指示書です",)
+# これだけで動画の話と分かる言葉。VIDEO_WORDS の残り（声・絵・題など）は、チャンネル名か yt-auto・YouTube のフォルダで開いた会話の時だけ拾う
+STRONG_WORDS = r"動画|サムネ|台本|テロップ|字幕|ナレーション|BGM|効果音|長尺|横動画|縦動画|概要欄|紙芝居|YouTube|ユーチューブ"
+# 予定で動く claude -p（CLAUDE_CODE_ENTRYPOINT が sdk-…）は本人の発言ではないので拾わない（2026-11-17 実測：-p は sdk-cli、VS Code は claude-vscode）
+AUTO_ENTRY = ("sdk",)
 
 
 def now():
@@ -113,7 +117,8 @@ def capture(text, ch="", src="会話", cwd="", session=""):
     os.makedirs(os.path.dirname(INBOX), exist_ok=True)
     rows = inbox_rows()
     iid = f"I{len(rows) + 1:04d}"
-    row = {"id": iid, "at": now().isoformat(timespec="seconds"), "src": src, "ch": ch or guess_ch(text, cwd), "text": text, "cwd": cwd, "session": session}
+    row = {"id": iid, "at": now().isoformat(timespec="seconds"), "src": src, "ch": ch or guess_ch(text, cwd), "text": text, "cwd": cwd, "session": session,
+           "entry": os.environ.get("CLAUDE_CODE_ENTRYPOINT", "")}
     with open(INBOX, "a", encoding="utf-8") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
     return row
@@ -175,9 +180,11 @@ def hook():
     try:
         d = json.loads(sys.stdin.buffer.read().decode("utf-8", "replace") or "{}")
         text = (d.get("prompt") or "").strip()
-        if not text or text.startswith(AUTO_PREFIX) or len(text) > 4000 or not re.search(VIDEO_WORDS, text):
-            return
         cwd = d.get("cwd") or ""
+        if not text or text.startswith(AUTO_PREFIX) or len(text) > 4000 or os.environ.get("CLAUDE_CODE_ENTRYPOINT", "").startswith(AUTO_ENTRY):
+            return
+        if not (re.search(STRONG_WORDS, text) or (re.search(VIDEO_WORDS, text) and (guess_ch(text, cwd) or re.search(r"yt-auto|YouTube", cwd, re.I)))):
+            return
         row = capture(text, src="会話", cwd=cwd, session=d.get("session_id") or "")
         msg = (f"【指摘ナレッジ】この発言は受信箱 {row['id']}（推定ch：{row['ch'] or '不明'}）に原文で残した。"
                "動画（台本・つかみ・言い回し・読み・声・絵・テロップ・サムネ・題など）への指摘や好みが入っているなら、直す作業と同じターンで "
