@@ -14,13 +14,13 @@
   "gate_video"
  ],
  "started": "2026-11-17T15:25:20+09:00",
- "tries": 2,
+ "tries": 1,
  "code": "e155605ce766",
  "stage": "thumb",
- "updated": "2026-11-17T22:22:46+09:00",
+ "updated": "2026-11-18T04:21:31+09:00",
  "images_back": true,
  "restored": {
-  "日時": "2026-11-17T15:25:20+09:00",
+  "日時": "2026-11-18T02:51:43+09:00",
   "前の済み": [
    "pick",
    "write",
@@ -29,7 +29,10 @@
    "yomi",
    "reading",
    "images",
-   "motion"
+   "motion",
+   "gate_images",
+   "build",
+   "gate_video"
   ]
  }
 }
