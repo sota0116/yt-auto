@@ -1,0 +1,259 @@
+{
+ "title": "【60代】神棚に置きっぱなしにしてはいけない物3選",
+ "fiction": true,
+ "world_rules": [
+  "語りはおきぬ1人。人物は第1位の場面の澄江だけで、名乗らず、セリフも無い",
+  "言い伝えは神棚の作法として紹介し、効き目は言い切らない",
+  "神棚の扉は閉じたまま。お札や紙の字は絵に出さない"
+ ],
+ "competitor_note": "題材とネタ（榊が枯れる・神棚の祀り方）・題の型（〇〇に入れてはいけない物3選）｜wbCRVrYRsmk の章5〜8・ショートの型 v2 の「財布に入れてはいけないもの5選」180万",
+ "cuts": [
+  {
+   "id": "C01",
+   "narration": "神棚に置きっぱなしだと、お金が逃げる物、3つ。",
+   "subs": [
+    "神棚に\n置きっぱなしだと、",
+    "お金が逃げる物、\n3つ。"
+   ],
+   "image_en": "Vertical close-up of a small plain wooden Japanese household kamidana shelf mounted high on a wall, its little shrine doors closed. On the shelf: two wilted sakaki branches with brown drooping leaves in white ceramic vases, a small white water cup with cloudy stale water, and two small white dishes of rice and salt covered in a thin layer of grey dust. Dim morning light, dust motes floating in the air. The objects fill more than half of the frame. No writing, no paper talismans visible, no people.",
+   "hook": "神棚の物\n替えてる?",
+   "band": "お金が逃げる物",
+   "highlight": [
+    "お金が逃げる物"
+   ],
+   "motion": true,
+   "anim": "kling",
+   "image": "Vertical close-up of a small plain wooden Japanese household kamidana shelf mounted high on a wall, its little shrine doors closed. On the shelf: two wilted sakaki branches with brown drooping leaves in white ceramic vases, a small white water cup with cloudy stale water, and two small white dishes of rice and salt covered in a thin layer of grey dust. Dim morning light, dust motes floating in the air. The objects fill more than half of the frame. No writing, no paper talismans visible, no people."
+  },
+  {
+   "id": "C02",
+   "narration": "手を合わせてもお金が残らない人、榊と水と米と塩を見て。",
+   "subs": [
+    "手を\n合わせても",
+    "お金が\n残らない人、",
+    "榊と水と\n米と塩を見て。"
+   ],
+   "tts_text": "手を合わせてもお金が残らない人、さかきと水と米と塩を見て。",
+   "highlight": [
+    "米と塩を見て"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@full"
+   ]
+  },
+  {
+   "id": "C03",
+   "narration": "第3位、枯れたままの榊。",
+   "subs": [
+    "第3位、\n枯れたままの榊。"
+   ],
+   "tts_text": "第3位、枯れたままのさかき。",
+   "image_en": "Extreme close-up of two wilted sakaki branches in a small white ceramic vase on a plain wooden shelf, the leaves curled, dry and brown, a few fallen leaves lying on the shelf. Soft dim light. The branches fill most of the vertical frame. No writing, no people.",
+   "highlight": [
+    "枯れたままの榊"
+   ],
+   "image": "Extreme close-up of two wilted sakaki branches in a small white ceramic vase on a plain wooden shelf, the leaves curled, dry and brown, a few fallen leaves lying on the shelf. Soft dim light. The branches fill most of the vertical frame. No writing, no people."
+  },
+  {
+   "id": "C04",
+   "narration": "葉が茶色いままだと、金運が下がると言われます。",
+   "subs": [
+    "葉が茶色い\nままだと、",
+    "金運が下がると\n言われます。"
+   ],
+   "same_as": "C03",
+   "shots": [
+    "C03@close"
+   ]
+  },
+  {
+   "id": "C05",
+   "narration": "昔から、榊の緑は神様のめぐみのしるしと言われています。",
+   "subs": [
+    "昔から、\n榊の緑は",
+    "神様のめぐみの\nしるしと",
+    "言われています。"
+   ],
+   "tts_text": "昔から、さかきの緑は神様のめぐみのしるしと言われています。",
+   "image_en": "Close-up of fresh glossy deep-green sakaki branches standing in a small white ceramic vase, bright clear morning sunlight shining through the leaves. The leaves fill most of the vertical frame. Calm and clean. No writing, no people.",
+   "real": "Cleyera japonica",
+   "real_src": {
+    "題": "File:W sakaki4061.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/W_sakaki4061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:W_sakaki4061.jpg",
+    "検索語": "Cleyera japonica"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "1日と15日に替えて、枯れたら早めに下げてね。",
+   "subs": [
+    "1日と15日に\n替えて、",
+    "枯れたら\n早めに下げてね。"
+   ],
+   "tts_text": "ついたちとじゅうごにちに替えて、枯れたら早めに下げてね。",
+   "same_as": "C05",
+   "shots": [
+    "C05@full"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "第2位、何日も替えていない水。",
+   "subs": [
+    "第2位、",
+    "何日も替えて\nいない水。"
+   ],
+   "image_en": "Extreme close-up of a small white ceramic offering water cup on a plain wooden shelf, the water inside cloudy and stale with dust floating on the surface and a faint ring stain on the inner wall. Dim light. The cup fills more than half of the vertical frame. No writing, no people.",
+   "highlight": [
+    "何日も替えていない水"
+   ],
+   "image": "Extreme close-up of a small white ceramic offering water cup on a plain wooden shelf, the water inside cloudy and stale with dust floating on the surface and a faint ring stain on the inner wall. Dim light. The cup fills more than half of the vertical frame. No writing, no people."
+  },
+  {
+   "id": "C08",
+   "narration": "水がにごったままでは、金運も止まると言われます。",
+   "subs": [
+    "水がにごった\nままでは、",
+    "金運も止まると\n言われます。"
+   ],
+   "same_as": "C07",
+   "shots": [
+    "C07@close"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "昔から、神様の水は毎朝替えるものと言われています。",
+   "subs": [
+    "昔から、\n神様の水は",
+    "毎朝替える\nものと",
+    "言われています。"
+   ],
+   "image_en": "Close-up of an older woman's hands pouring fresh clear water from a small glass pitcher into a small white ceramic offering cup, bright soft morning light from a window, water sparkling. Only the hands and the cup are visible, no face. No writing.",
+   "image": "Close-up of an older woman's hands pouring fresh clear water from a small glass pitcher into a small white ceramic offering cup, bright soft morning light from a window, water sparkling. Only the hands and the cup are visible, no face. No writing."
+  },
+  {
+   "id": "C10",
+   "narration": "朝いちばんに、くみたての水と入れ替えて。",
+   "subs": [
+    "朝いちばんに、\nくみたての水と",
+    "入れ替えて。"
+   ],
+   "same_as": "C09",
+   "shots": [
+    "C09@close"
+   ]
+  },
+  {
+   "id": "C11",
+   "narration": "第1位、ほこりをかぶった米と塩。",
+   "subs": [
+    "第1位、",
+    "ほこりをかぶった\n米と塩。"
+   ],
+   "image_en": "Extreme close-up of two small flat white ceramic dishes on a plain wooden shelf, one holding a small mound of uncooked white rice and the other a small cone of salt, both dull and covered with a thin layer of grey dust, a few dead specks on the rim. Dim light. The dishes fill more than half of the vertical frame. No writing, no people.",
+   "highlight": [
+    "米と塩"
+   ],
+   "image": "Extreme close-up of two small flat white ceramic dishes on a plain wooden shelf, one holding a small mound of uncooked white rice and the other a small cone of salt, both dull and covered with a thin layer of grey dust, a few dead specks on the rim. Dim light. The dishes fill more than half of the vertical frame. No writing, no people."
+  },
+  {
+   "id": "C12",
+   "narration": "ほとんどの人が、つい置いたままです。",
+   "subs": [
+    "ほとんどの人が、",
+    "つい\n置いたままです。"
+   ],
+   "image_en": "Sumie stands in a modest present-day Japanese living room looking up at a small plain wooden kamidana shelf on the wall, startled, eyes wide and one hand raised in surprise, as she notices the dusty dishes of rice and salt on the shelf. The shelf and dishes are large in the upper half of the vertical frame, her surprised face below. Shrine doors closed, no writing.",
+   "chars": [
+    "sumie"
+   ],
+   "image": "Sumie stands in a modest present-day Japanese living room looking up at a small plain wooden kamidana shelf on the wall, startled, eyes wide and one hand raised in surprise, as she notices the dusty dishes of rice and salt on the shelf. The shelf and dishes are large in the upper half of the vertical frame, her surprised face below. Shrine doors closed, no writing."
+  },
+  {
+   "id": "C13",
+   "narration": "何日か置くより、毎朝替えるのがよいとされます。",
+   "subs": [
+    "何日か置くより、",
+    "毎朝替えるのが\nよいとされます。"
+   ],
+   "image_en": "Close-up of an older woman's hands gently placing two small white ceramic dishes of fresh clean white rice and a neat cone of white salt onto a plain wooden kamidana shelf, beside fresh green sakaki in a vase, bright morning sunlight. Only the hands and the dishes are visible, no face. The dishes fill more than half of the vertical frame. No writing.",
+   "highlight": [
+    "毎朝替える"
+   ],
+   "peak": true,
+   "strong": true,
+   "motion": true,
+   "anim": "kling",
+   "image": "Close-up of an older woman's hands gently placing two small white ceramic dishes of fresh clean white rice and a neat cone of white salt onto a plain wooden kamidana shelf, beside fresh green sakaki in a vase, bright morning sunlight. Only the hands and the dishes are visible, no face. The dishes fill more than half of the vertical frame. No writing."
+  },
+  {
+   "id": "C14",
+   "narration": "昔から、お下がりはいただくものと言われています。",
+   "subs": [
+    "昔から、\nお下がりは",
+    "いただくものと\n言われています。"
+   ],
+   "same_as": "C13",
+   "shots": [
+    "C13@full"
+   ]
+  },
+  {
+   "id": "C15",
+   "narration": "お米はご飯に、塩はお料理に。",
+   "subs": [
+    "お米はご飯に、\n塩はお料理に。"
+   ],
+   "image_en": "Close-up of an older woman's hands in a warm home kitchen pouring a small handful of uncooked white rice from a little white offering dish into a rice cooker pot, a small dish of salt waiting beside a simmering pot on the stove. Only the hands are visible, no face. No writing, no labels.",
+   "image": "Close-up of an older woman's hands in a warm home kitchen pouring a small handful of uncooked white rice from a little white offering dish into a rice cooker pot, a small dish of salt waiting beside a simmering pot on the stove. Only the hands are visible, no face. No writing, no labels."
+  },
+  {
+   "id": "C16",
+   "narration": "すぐ変わらなくても、続けてね。",
+   "subs": [
+    "すぐ\n変わらなくても、",
+    "続けてね。"
+   ],
+   "same_as": "C13",
+   "shots": [
+    "C13@close"
+   ]
+  },
+  {
+   "id": "C17",
+   "narration": "あなたの神棚には、いくつ残っていましたか。",
+   "subs": [
+    "あなたの神棚には、",
+    "いくつ\n残っていましたか。"
+   ],
+   "same_as": "C01",
+   "shots": [
+    "C01@close"
+   ]
+  }
+ ],
+ "format": "short",
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "tempo": 1.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9
+ },
+ "voices": {},
+ "desc": "あなたの神棚には、いくつ残っていましたか。コメントで教えてくださいね。\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ\n\n#shorts #金運 #神棚に置きっぱなしに",
+ "tags": [
+  "金運",
+  "財布",
+  "神棚に置きっぱなしに",
+  "60代"
+ ],
+ "short_type": 1,
+ "comment": "あなたの神棚には、いくつ残っていましたか。"
+}
