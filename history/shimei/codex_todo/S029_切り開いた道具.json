@@ -1,0 +1,76 @@
+{
+ "ch": "shimei",
+ "work": "S029_切り開いた道具",
+ "portrait": true,
+ "made": "2026-11-17 12:19",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing and hairstyle. Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Water is a simple sculpted blue-gray sea surface. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered. Everything from the single year 1982; no extra props from other eras.",
+ "avoid_en": "logos, brand names, readable text or numbers, flags, blood, wounds, faces resembling real people",
+ "rules": {},
+ "characters": {
+  "sailor": {
+   "desc_en": "the sailor, a slim man around 30 as a miniature 3D figurine with a smooth featureless face (no eyes, nose or mouth details), short messy brown hair and a short brown beard, plain light gray T-shirt with no print, dark navy shorts, barefoot"
+  }
+ },
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "海の模型の上に、透明な丸い道具が浮かび、内側に水滴",
+   "image_en": "in the middle of the frame a clear balloon-like solar still device floating on a calm sculpted gray-blue sea, shining water droplets on its inner wall, bright sun from above; no people, no text",
+   "en": "in the middle of the frame a clear balloon-like solar still device floating on a calm sculpted gray-blue sea, shining water droplets on its inner wall, bright sun from above; no people, no text"
+  },
+  {
+   "id": "a02",
+   "image": "広い灰色の海の真ん中に、赤い屋根の丸いゴムいかだ。中に男がひとり",
+   "image_en": "in the middle of the frame a tiny round inflatable life raft with black tubes and a red canopy alone on a wide sculpted gray sea; only one person, the sailor, a man, sits inside; no other people, no ships, no text",
+   "chars": [
+    "sailor"
+   ],
+   "en": "in the middle of the frame a tiny round inflatable life raft with black tubes and a red canopy alone on a wide sculpted gray sea; only one person, the sailor, a man, sits inside; no other people, no ships, no text"
+  },
+  {
+   "id": "a03",
+   "image": "白い台の上に、小さな水の容器が1つだけ",
+   "image_en": "in the middle of the frame a single small plastic water jug, only a little water inside, standing on a plain white table, spotlight; no people, no label, no text",
+   "en": "in the middle of the frame a single small plastic water jug, only a little water inside, standing on a plain white table, spotlight; no people, no label, no text"
+  },
+  {
+   "id": "a04",
+   "image": "開いたオレンジの袋から、透明な丸い道具が3つ出ている",
+   "image_en": "in the middle of the frame an open orange waterproof survival bag on a white table with three folded clear plastic balloon-like devices coming out of it; no people, no logos, no text",
+   "en": "in the middle of the frame an open orange waterproof survival bag on a white table with three folded clear plastic balloon-like devices coming out of it; no people, no logos, no text"
+  },
+  {
+   "id": "a05",
+   "image": "透明な丸い道具の断面。下に海の水、内側の壁に水滴、底のカップに真水",
+   "image_en": "in the middle of the frame a simple cross-section model of a solar still: a clear plastic dome over a black cloth soaked with sea water, water droplets on the inner wall running down into a small collecting cup at the bottom, sun rays from above; no text, no labels",
+   "en": "in the middle of the frame a simple cross-section model of a solar still: a clear plastic dome over a black cloth soaked with sea water, water droplets on the inner wall running down into a small collecting cup at the bottom, sun rays from above; no text, no labels"
+  },
+  {
+   "id": "a06",
+   "image": "海の上で、しぼんで傾いた透明な道具",
+   "image_en": "in the middle of the frame a clear balloon-like solar still device, half deflated and tilted over, floating on a gray sea next to the edge of a black rubber raft tube; no people, no text",
+   "en": "in the middle of the frame a clear balloon-like solar still device, half deflated and tilted over, floating on a gray sea next to the edge of a black rubber raft tube; no people, no text"
+  },
+  {
+   "id": "a07",
+   "image": "いかだの中で、男がひとり、切り開いた透明な道具を両手で広げてのぞきこむ",
+   "image_en": "in the middle of the frame inside a small round life raft: only one person, the sailor, a man, holding a cut-open clear plastic solar still spread wide in both hands and looking closely at its inner parts; no other people, no text",
+   "chars": [
+    "sailor"
+   ],
+   "en": "in the middle of the frame inside a small round life raft: only one person, the sailor, a man, holding a cut-open clear plastic solar still spread wide in both hands and looking closely at its inner parts; no other people, no text"
+  },
+  {
+   "id": "a08",
+   "image": "いかだの横に、ふくらんだ透明な道具が2つ浮かび、内側に水滴",
+   "image_en": "in the middle of the frame two fully inflated clear balloon-like solar still devices floating side by side on a gray sea, tied to the edge of a black rubber raft tube, water droplets shining on their inner walls; no people, no text",
+   "en": "in the middle of the frame two fully inflated clear balloon-like solar still devices floating side by side on a gray sea, tied to the edge of a black rubber raft tube, water droplets shining on their inner walls; no people, no text"
+  },
+  {
+   "id": "a09",
+   "image": "白い台の上に、半分だけ水の入った小さなボトル",
+   "image_en": "in the middle of the frame a single small clear plastic bottle only half filled with water on a plain white table, spotlight; no label, no text, no people",
+   "en": "in the middle of the frame a single small clear plastic bottle only half filled with water on a plain white table, spotlight; no label, no text, no people"
+  }
+ ]
+}

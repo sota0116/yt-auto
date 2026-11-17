@@ -1,0 +1,82 @@
+{
+ "ch": "shimei",
+ "work": "S030_クジラの口",
+ "portrait": true,
+ "made": "2026-11-17 12:19",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details). Soft shadows, slightly high angle. Mostly white, gray and blue-gray, only key objects red. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered. Everything from the single year 2021; no extra props from other eras.",
+ "avoid_en": "logos, brand names, readable text or numbers, flags, blood, wounds, teeth on the whale, a person visible inside a mouth, faces resembling real people",
+ "rules": {},
+ "characters": {
+  "diver": {
+   "desc_en": "the diver, a man figurine with a smooth featureless face, plain black wetsuit, black fins, a single gray air tank on his back, a plain diving mask, no logos"
+  }
+ },
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "青灰色の海の中を、口を閉じた大きなザトウクジラが上へ泳ぐ",
+   "image_en": "in the middle of the frame a large humpback whale with its mouth closed swimming upward through blue-gray water, long white flippers, light from the surface above; no people visible, no teeth, no text",
+   "en": "in the middle of the frame a large humpback whale with its mouth closed swimming upward through blue-gray water, long white flippers, light from the surface above; no people visible, no teeth, no text"
+  },
+  {
+   "id": "a02",
+   "image": "砂の海底で、黒いウェットスーツのダイバーがひとり、岩の間をのぞく",
+   "image_en": "in the middle of the frame a sandy sea floor with rocks; only one person, the diver, a man in a plain black wetsuit with one gray air tank, bending to look between the rocks; no other people, no text",
+   "chars": [
+    "diver"
+   ],
+   "en": "in the middle of the frame a sandy sea floor with rocks; only one person, the diver, a man in a plain black wetsuit with one gray air tank, bending to look between the rocks; no other people, no text"
+  },
+  {
+   "id": "a03",
+   "image": "ほとんど真っ黒な画面の真ん中に、小さな泡が少しだけ光る",
+   "image_en": "an almost completely black scene, only a few tiny silver bubbles faintly glowing in the middle of the frame; no people, no text",
+   "en": "an almost completely black scene, only a few tiny silver bubbles faintly glowing in the middle of the frame; no people, no text"
+  },
+  {
+   "id": "a04",
+   "image": "暗い海の中に、サメの背びれの形の影がぼんやり",
+   "image_en": "in the middle of the frame a dark blue-gray underwater scene with a vague blurry shadow in the shape of a shark's fin; no teeth, no blood, no people, no text",
+   "en": "in the middle of the frame a dark blue-gray underwater scene with a vague blurry shadow in the shape of a shark's fin; no teeth, no blood, no people, no text"
+  },
+  {
+   "id": "a05",
+   "image": "暗い中で、ダイバーの影がひとり、手を広げて浮かんでいる",
+   "image_en": "in the middle of the frame a very dark scene: only one person, the dark silhouette of the diver, a man, floating with his arms spread, faint light from his mask; no teeth, no blood, no other people, no text",
+   "chars": [
+    "diver"
+   ],
+   "en": "in the middle of the frame a very dark scene: only one person, the dark silhouette of the diver, a man, floating with his arms spread, faint light from his mask; no teeth, no blood, no other people, no text"
+  },
+  {
+   "id": "a06",
+   "image": "口を閉じた大きなザトウクジラを横から。のどのしま模様がふくらんでいる",
+   "image_en": "in the middle of the frame a large humpback whale seen from the side underwater with its mouth tightly closed and its pleated throat swollen and bulging, blue-gray water; no person visible, no teeth, no text",
+   "en": "in the middle of the frame a large humpback whale seen from the side underwater with its mouth tightly closed and its pleated throat swollen and bulging, blue-gray water; no person visible, no teeth, no text"
+  },
+  {
+   "id": "a07",
+   "image": "大きく口を開けたザトウクジラが、銀色の小魚の群れに向かう",
+   "image_en": "in the middle of the frame a humpback whale with its huge mouth wide open, no teeth, only rows of baleen plates, lunging toward a dense school of small silver fish; no people, no text",
+   "en": "in the middle of the frame a humpback whale with its huge mouth wide open, no teeth, only rows of baleen plates, lunging toward a dense school of small silver fish; no people, no text"
+  },
+  {
+   "id": "a09",
+   "image": "海面の白い泡の中から、ダイバーがひとり浮かび上がる。後ろにクジラの頭",
+   "image_en": "in the middle of the frame the sea surface with a burst of white foam; only one person, the diver, a man in a black wetsuit, popping up out of the foam, and the closed head of a humpback whale just behind him; no blood, no other people, no text",
+   "chars": [
+    "diver"
+   ],
+   "en": "in the middle of the frame the sea surface with a burst of white foam; only one person, the diver, a man in a black wetsuit, popping up out of the foam, and the closed head of a humpback whale just behind him; no blood, no other people, no text"
+  },
+  {
+   "id": "a10",
+   "image": "小さな船の上で、ダイバーがひとり、毛布にくるまって座っている",
+   "image_en": "in the middle of the frame a small plain white boat on a calm sea; only one person, the diver, a man, sitting on deck wrapped in a gray blanket, his wetsuit still on; no wounds, no blood, no other people, no text",
+   "chars": [
+    "diver"
+   ],
+   "en": "in the middle of the frame a small plain white boat on a calm sea; only one person, the diver, a man, sitting on deck wrapped in a gray blanket, his wetsuit still on; no wounds, no blood, no other people, no text"
+  }
+ ]
+}

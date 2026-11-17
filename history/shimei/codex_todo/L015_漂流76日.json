@@ -1,0 +1,317 @@
+{
+ "ch": "shimei",
+ "work": "L015_漂流76日",
+ "portrait": false,
+ "made": "2026-11-17 12:19",
+ "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red. Water is shown as a simple sculpted blue-gray sea surface on the diorama base. Whenever a life raft appears, it is the same small round liferaft with two stacked black rubber tubes and a red tent-like canopy with an open doorway (never a swim ring).Show only the objects and people named in the scene, all from the single year of that scene; no extra props from other eras.",
+ "avoid_en": "logos, brand names, readable text or numbers, flags, names painted on boats, blood, wounds, sores, faces resembling real people",
+ "rules": {},
+ "characters": {
+  "sailor": {
+   "desc_en": "the sailor, a slim man around 30 as a miniature 3D figurine with a smooth featureless face (no eyes, nose or mouth details), short messy brown hair and a short brown beard, plain light gray T-shirt with no print, dark navy shorts, barefoot"
+  },
+  "fishermen": {
+   "desc_en": "two fishermen, men figurines with smooth featureless faces, dark skin, plain white short-sleeved shirts, simple straw hats, rolled-up trousers"
+  }
+ },
+ "cuts": [
+  {
+   "id": "A03",
+   "image": "灰色の海の模型の上に、黒い筒と赤い屋根の丸いゴムいかだがひとつ。中に船乗りがひとり座る",
+   "image_en": "Year 1982. Only one person: the sailor, a man, sitting inside a small round inflatable life raft (a liferaft with two stacked black rubber tubes and a red tent-like canopy with an open doorway, not a swim ring) on a wide sculpted gray sea surface. The raft is tiny compared to the sea around it. No other people, no text, no logos on the raft.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Year 1982. Only one person: the sailor, a man, sitting inside a small round inflatable life raft (a liferaft with two stacked black rubber tubes and a red tent-like canopy with an open doorway, not a swim ring) on a wide sculpted gray sea surface. The raft is tiny compared to the sea around it. No other people, no text, no logos on the raft."
+  },
+  {
+   "id": "A06",
+   "image": "白い空間に、灰色の大きな船の模型が9隻、列になって並んでいる。手前に小さないかだ",
+   "image_en": "Year 1982. Nine plain gray merchant cargo ship and tanker models (civilian freighters, not warships, no guns) of different sizes lined up in a long row in the empty white space, all facing away, and a tiny round life raft with a red canopy in the foreground. No people, no text, no logos.",
+   "en": "Year 1982. Nine plain gray merchant cargo ship and tanker models (civilian freighters, not warships, no guns) of different sizes lined up in a long row in the empty white space, all facing away, and a tiny round life raft with a red canopy in the foreground. No people, no text, no logos."
+  },
+  {
+   "id": "B07",
+   "image": "白いヨットの船体の横に、ぎざぎざの黒い穴。そこに水が流れこむ",
+   "image_en": "Close-up of the side of a small white sailboat hull in a dark stormy sea diorama, a jagged black hole punched in the hull near the waterline with sea water pouring in. The boat is empty: no people, no figurines anywhere in the scene, no text.",
+   "en": "Close-up of the side of a small white sailboat hull in a dark stormy sea diorama, a jagged black hole punched in the hull near the waterline with sea water pouring in. The boat is empty: no people, no figurines anywhere in the scene, no text."
+  },
+  {
+   "id": "B08",
+   "image": "夜の海の模型の下に、大きな黒い影がぼんやり見える。上に小さなヨット",
+   "image_en": "A cross-section of a dark sea diorama: a small white single-mast sailboat with white sails on the surface at night, and deep below, a huge vague dark shadow shape like a whale, blurred and unclear. Nobody on the boat: no people, no figurines at all. No text.",
+   "en": "A cross-section of a dark sea diorama: a small white single-mast sailboat with white sails on the surface at night, and deep below, a huge vague dark shadow shape like a whale, blurred and unclear. Nobody on the boat: no people, no figurines at all. No text."
+  },
+  {
+   "id": "C12",
+   "image": "いかだの横に、ふくらんだ透明な道具が2つ浮かび、内側に水滴がついている",
+   "image_en": "Two fully inflated clear balloon-like solar still devices floating tied beside the round life raft with a red canopy, small water droplets shining on their inner walls in the sun. No people visible, no text.",
+   "en": "Two fully inflated clear balloon-like solar still devices floating tied beside the round life raft with a red canopy, small water droplets shining on their inner walls in the sun. No people visible, no text."
+  },
+  {
+   "id": "C13",
+   "image": "白い空間に、半分だけ水の入った小さなペットボトルが1本",
+   "image_en": "A single small plain clear plastic bottle only half filled with water standing in the empty white space, spotlight. No label, no text, no people.",
+   "en": "A single small plain clear plastic bottle only half filled with water standing in the empty white space, spotlight. No label, no text, no people."
+  },
+  {
+   "id": "C14",
+   "image": "雨の中、いかだの赤い屋根のはしから水が缶へしたたり、船乗りがひとりそれを見ている",
+   "image_en": "Year 1982. Light rain over a gray sea: rainwater drips from the edge of the life raft's red canopy into a small tin can, and only one person, the sailor, a man, sits inside watching it. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Year 1982. Light rain over a gray sea: rainwater drips from the edge of the life raft's red canopy into a small tin can, and only one person, the sailor, a man, sits inside watching it. No other people, no text."
+  },
+  {
+   "id": "D01",
+   "image": "海の模型の遠くに大きな灰色の貨物船。手前のいかだから、船乗りがひとり船を見ている",
+   "image_en": "Year 1982. Only one person: the sailor, a man, sitting in the round life raft in the foreground, looking at a large plain gray cargo ship far away on the horizon of a sculpted gray sea. No people on the ship, no name, no text, no logos.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Year 1982. Only one person: the sailor, a man, sitting in the round life raft in the foreground, looking at a large plain gray cargo ship far away on the horizon of a sculpted gray sea. No people on the ship, no name, no text, no logos."
+  },
+  {
+   "id": "D02",
+   "image": "いかだの上の空に、赤く光る照明弾の光が一つ浮かんでいる。遠くに船",
+   "image_en": "Year 1982. A single bright red emergency flare glowing high in the dusky sky above the tiny life raft, a large gray cargo ship far away on the horizon. No text, no people visible.",
+   "en": "Year 1982. A single bright red emergency flare glowing high in the dusky sky above the tiny life raft, a large gray cargo ship far away on the horizon. No text, no people visible."
+  },
+  {
+   "id": "D03",
+   "image": "海の模型の上で、大きな船が小さく遠ざかり、その航跡だけが白く残っている",
+   "image_en": "Year 1982. A large gray cargo ship sailing away and getting small in the distance, leaving a long white wake on a sculpted gray sea; the tiny life raft is left behind in the foreground. No text, no people visible.",
+   "en": "Year 1982. A large gray cargo ship sailing away and getting small in the distance, leaving a long white wake on a sculpted gray sea; the tiny life raft is left behind in the foreground. No text, no people visible."
+  },
+  {
+   "id": "D04",
+   "image": "大きな船の甲板の高さから見下ろした海。波の間に、いかだが小さな赤い点になっている",
+   "image_en": "View from high up on the deck rail of a large ship looking down at a wide sculpted gray sea; far below, between the waves, the life raft is just a tiny red dot. No people, no text.",
+   "en": "View from high up on the deck rail of a large ship looking down at a wide sculpted gray sea; far below, between the waves, the life raft is just a tiny red dot. No people, no text."
+  },
+  {
+   "id": "D06",
+   "image": "いかだの中で、船乗りがひとり、空になった照明弾の筒を手に、うなだれている",
+   "image_en": "Only one person: the sailor, a man, sitting slumped in the round life raft holding an empty used red flare tube in one hand, head lowered. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, sitting slumped in the round life raft holding an empty used red flare tube in one hand, head lowered. No other people, no text."
+  },
+  {
+   "id": "D07",
+   "image": "大西洋の地図の模型の上に、白い太い帯が2本。その上に小さないかだ",
+   "image_en": "The tabletop relief map of the Atlantic in the empty white space with two wide pale white bands painted across the ocean showing shipping lanes, small gray ship models along them, and the tiny red life raft model on one of the bands. No text, no labels, no borders.",
+   "en": "The tabletop relief map of the Atlantic in the empty white space with two wide pale white bands painted across the ocean showing shipping lanes, small gray ship models along them, and the tiny red life raft model on one of the bands. No text, no labels, no borders."
+  },
+  {
+   "id": "D08",
+   "image": "同じ地図の模型で、小さないかだが白い帯から外れ、何も無い海へ出ている",
+   "image_en": "The same tabletop Atlantic relief map: the tiny red life raft model has drifted off the white shipping lane bands into a wide empty area of ocean with no ships. No text, no labels.",
+   "en": "The same tabletop Atlantic relief map: the tiny red life raft model has drifted off the white shipping lane bands into a wide empty area of ocean with no ships. No text, no labels."
+  },
+  {
+   "id": "E01",
+   "image": "海の断面の模型。いかだの真下に、青と金色の大きな魚が何匹も泳いでいる",
+   "image_en": "Cross-section diorama of the sea: the round life raft with a red canopy floating on the surface, and right below it several large blue-and-gold dorado fish swimming in the clear blue-gray water. No people visible, no text.",
+   "en": "Cross-section diorama of the sea: the round life raft with a red canopy floating on the surface, and right below it several large blue-and-gold dorado fish swimming in the clear blue-gray water. No people visible, no text."
+  },
+  {
+   "id": "E02",
+   "image": "いかだのふちから、船乗りがひとり、細い水中銃を水の中の魚の影へ向けている",
+   "image_en": "Only one person: the sailor, a man, leaning over the edge of the round life raft aiming a short slim spear gun down at the shadow of a large fish in the water. No blood, no other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, leaning over the edge of the round life raft aiming a short slim spear gun down at the shadow of a large fish in the water. No blood, no other people, no text."
+  },
+  {
+   "id": "E03",
+   "image": "白い空間に、銀色のトビウオが1匹と、フジツボのついたゴムの切れ端",
+   "image_en": "A single silver flying fish with its wing-like fins spread, and a piece of black rubber covered with small white barnacles, placed side by side in the empty white space. No blood, no people, no text.",
+   "en": "A single silver flying fish with its wing-like fins spread, and a piece of black rubber covered with small white barnacles, placed side by side in the empty white space. No blood, no people, no text."
+  },
+  {
+   "id": "E04",
+   "image": "いかだのふちから、船乗りがひとり、小さな缶の中身を海へあけている（中身は見えない）",
+   "image_en": "Only one person: the sailor, a man, at the edge of the round life raft tipping a small tin can over the side into the sea, the contents not visible, just a small splash. No blood, no other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, at the edge of the round life raft tipping a small tin can over the side into the sea, the contents not visible, just a small splash. No blood, no other people, no text."
+  },
+  {
+   "id": "E05",
+   "image": "いかだの周りの海に小さな魚の群れ、空に白い海鳥が数羽",
+   "image_en": "Year 1982. The round life raft with a red canopy on a sculpted gray sea, a school of small silver fish gathering in the water around it and a few white seabirds flying low above it. No people visible, no text.",
+   "en": "Year 1982. The round life raft with a red canopy on a sculpted gray sea, a school of small silver fish gathering in the water around it and a few white seabirds flying low above it. No people visible, no text."
+  },
+  {
+   "id": "E06",
+   "image": "上から見た海。いかだを中心に、魚と鳥が輪になって集まっている",
+   "image_en": "High overhead view of a sculpted gray sea: the tiny round life raft in the center, surrounded by a ring of fish in the water and a ring of white seabirds circling above it. No people visible, no text.",
+   "en": "High overhead view of a sculpted gray sea: the tiny round life raft in the center, surrounded by a ring of fish in the water and a ring of white seabirds circling above it. No people visible, no text."
+  },
+  {
+   "id": "E08",
+   "image": "いかだの中で、やせた船乗りがひとり、ひざを抱えて座っている",
+   "image_en": "Only one person: the sailor, a man, very thin, sitting hugging his knees inside the round life raft, tired posture. No wounds, no sores, no other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, very thin, sitting hugging his knees inside the round life raft, tired posture. No wounds, no sores, no other people, no text."
+  },
+  {
+   "id": "F01",
+   "image": "いかだの黒いゴムの筒に、細長い裂け目。筒が少ししぼんでいる",
+   "image_en": "Close-up of the black rubber tube of the round life raft with a long thin tear in it, the tube slightly deflated and sagging into the gray sea. No people, no text.",
+   "en": "Close-up of the black rubber tube of the round life raft with a long thin tear in it, the tube slightly deflated and sagging into the gray sea. No people, no text."
+  },
+  {
+   "id": "F02",
+   "image": "しぼみかけたいかだの中で、船乗りがひとり、小さな手押しのポンプを押している",
+   "image_en": "Only one person: the sailor, a man, kneeling in the sagging half-deflated round life raft, pushing a small hand air pump connected to the rubber tube. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, kneeling in the sagging half-deflated round life raft, pushing a small hand air pump connected to the rubber tube. No other people, no text."
+  },
+  {
+   "id": "F04",
+   "image": "しぼんだいかだの中で、船乗りがひとり、あおむけに倒れている。ポンプが手から離れている",
+   "image_en": "Only one person: the sailor, a man, lying flat on his back inside the sagging round life raft, exhausted, the small hand pump lying loose beside his hand. No wounds, no other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, lying flat on his back inside the sagging round life raft, exhausted, the small hand pump lying loose beside his hand. No wounds, no other people, no text."
+  },
+  {
+   "id": "F05",
+   "image": "いかだの中で、船乗りがひとり、身を起こして、ゴムの筒に手をのばしている",
+   "image_en": "Only one person: the sailor, a man, pushing himself back up to sitting inside the sagging life raft and reaching both hands toward the torn rubber tube with determination. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, pushing himself back up to sitting inside the sagging life raft and reaching both hands toward the torn rubber tube with determination. No other people, no text."
+  },
+  {
+   "id": "F06",
+   "image": "いかだのゴムの筒の裂け目が、ひもと布で固く縛られてふさがっている",
+   "image_en": "Close-up of the black rubber tube of the round life raft, the tear now tightly bound shut with wrapped cord and a patch of cloth, the tube fully inflated again. No people, no text.",
+   "en": "Close-up of the black rubber tube of the round life raft, the tear now tightly bound shut with wrapped cord and a patch of cloth, the tube fully inflated again. No people, no text."
+  },
+  {
+   "id": "F07",
+   "image": "ふくらんだいかだの中で、船乗りがひとり、空を見上げて座っている。夕日",
+   "image_en": "Year 1982. Only one person: the sailor, a man, sitting upright in the fully inflated round life raft looking up at the sky, warm sunset light over a calm gray sea. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Year 1982. Only one person: the sailor, a man, sitting upright in the fully inflated round life raft looking up at the sky, warm sunset light over a calm gray sea. No other people, no text."
+  },
+  {
+   "id": "F09",
+   "image": "白い空間に、小さな缶が3つだけ、ぽつんと並んでいる",
+   "image_en": "Only three small plain tin cans standing in a row in a big empty white space, a single spotlight. No labels, no text, no people.",
+   "en": "Only three small plain tin cans standing in a row in a big empty white space, a single spotlight. No labels, no text, no people."
+  },
+  {
+   "id": "G01",
+   "image": "夜の海。いかだの船乗りがひとり、水平線の上の小さな島の灯りを見つめている",
+   "image_en": "Year 1982. Night sea diorama: only one person, the sailor, a man, sitting in the round life raft in the foreground, gazing at a few tiny warm lights of a small island on the dark horizon. No other people, no text.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Year 1982. Night sea diorama: only one person, the sailor, a man, sitting in the round life raft in the foreground, gazing at a few tiny warm lights of a small island on the dark horizon. No other people, no text."
+  },
+  {
+   "id": "G02",
+   "image": "地図の模型で、カリブ海の小さな丸い島に赤い印。そこまで大西洋を横切る赤い点線",
+   "image_en": "The tabletop relief map of the Atlantic in the empty white space: a long red dotted line crossing the whole ocean from the islands off Africa and ending at a small round island in the Caribbean, which is marked with a red pin. No text, no labels, no flags.",
+   "en": "The tabletop relief map of the Atlantic in the empty white space: a long red dotted line crossing the whole ocean from the islands off Africa and ending at a small round island in the Caribbean, which is marked with a red pin. No text, no labels, no flags."
+  },
+  {
+   "id": "G05",
+   "image": "朝の海に、青い小さな木の漁船。漁師の男が2人、空を指さしている",
+   "image_en": "Year 1982. Morning sea near a green island: a small wooden fishing boat painted plain blue with two fishermen on board. Two men only. One of them points up at the sky. No name, no text, no logos on the boat.",
+   "chars": [
+    "fishermen"
+   ],
+   "en": "Year 1982. Morning sea near a green island: a small wooden fishing boat painted plain blue with two fishermen on board. Two men only. One of them points up at the sky. No name, no text, no logos on the boat."
+  },
+  {
+   "id": "G06",
+   "image": "広い海の一か所の上で、白い海鳥が十数羽、輪になって舞っている。下は波で見えない",
+   "image_en": "Year 1982. A wide sculpted blue-gray sea in morning light; above one single spot on the water, a dozen white seabirds circle in a ring. What is below them is hidden by the waves. No boats, no people, no text.",
+   "en": "Year 1982. A wide sculpted blue-gray sea in morning light; above one single spot on the water, a dozen white seabirds circle in a ring. What is below them is hidden by the waves. No boats, no people, no text."
+  },
+  {
+   "id": "G08",
+   "image": "鳥の輪の下の海に、赤い屋根のいかだと、その中のやせた船乗り。横に青い漁船が寄ってくる",
+   "image_en": "Year 1982. The same morning sea and the same ring of white seabirds circling above; below them now visible: the round life raft with a red canopy, the thin sailor sitting inside, fish around it, and the small plain blue wooden fishing boat with the two fishermen pulling up alongside. Three men in total. No text, no names on the boat.",
+   "chars": [
+    "sailor",
+    "fishermen"
+   ],
+   "en": "Year 1982. The same morning sea and the same ring of white seabirds circling above; below them now visible: the round life raft with a red canopy, the thin sailor sitting inside, fish around it, and the small plain blue wooden fishing boat with the two fishermen pulling up alongside. Three men in total. No text, no names on the boat."
+  },
+  {
+   "id": "H01",
+   "image": "白い空間に、古い天びんの模型。片方に重り3つ、もう片方に重り2つ",
+   "image_en": "An old-fashioned balance scale model in the empty white space: three plain gray weights on one pan and only two on the other, the red pointer leaning. No people, no numbers, no text.",
+   "en": "An old-fashioned balance scale model in the empty white space: three plain gray weights on one pan and only two on the other, the red pointer leaning. No people, no numbers, no text."
+  },
+  {
+   "id": "H02",
+   "image": "白い空間に、白い病室のベッドが1つ。窓から南の島の明るい光",
+   "image_en": "A single empty white hospital bed in a small simple room diorama, bright tropical light through a window with palm leaves outside. No people, no red cross, no text.",
+   "en": "A single empty white hospital bed in a small simple room diorama, bright tropical light through a window with palm leaves outside. No people, no red cross, no text."
+  },
+  {
+   "id": "H03",
+   "image": "木の机で、船乗りがひとり、無地の紙に書いている。横にいかだの小さな模型",
+   "image_en": "Only one person: the sailor, a man, now healthy, sitting at a wooden desk writing on blank sheets of paper, a tiny model of a round life raft on the desk beside him. No readable text, no other people.",
+   "chars": [
+    "sailor"
+   ],
+   "en": "Only one person: the sailor, a man, now healthy, sitting at a wooden desk writing on blank sheets of paper, a tiny model of a round life raft on the desk beside him. No readable text, no other people."
+  },
+  {
+   "id": "H04",
+   "image": "白い空間に、映画の撮影用の大きな水槽の模型。中に小さな救命ボートとカメラの模型",
+   "image_en": "Year 2012. A large film studio water tank diorama in the empty white space with a small lifeboat floating in it and a movie camera on a crane beside the tank. No people, no text, no logos.",
+   "en": "Year 2012. A large film studio water tank diorama in the empty white space with a small lifeboat floating in it and a movie camera on a crane beside the tank. No people, no text, no logos."
+  },
+  {
+   "id": "H05",
+   "image": "白い空間に、手作りの釣りの道具・ひも・小さな網が並んでいる",
+   "image_en": "Handmade survival props laid out in the empty white space: a simple handmade fishing lure, coiled cord, a small net and a carved wooden tool. No people, no text, no logos.",
+   "en": "Handmade survival props laid out in the empty white space: a simple handmade fishing lure, coiled cord, a small net and a carved wooden tool. No people, no text, no logos."
+  },
+  {
+   "id": "I01",
+   "image": "白い空間に、透明な丸い道具・ひもで縛ったゴムの切れ端・小さな缶が一列に並ぶ",
+   "image_en": "Three small objects in a row on the floor of the empty white space: a clear balloon-like solar still, a piece of black rubber tube bound with cord, and a small tin can. Soft spotlight. No people, no text.",
+   "en": "Three small objects in a row on the floor of the empty white space: a clear balloon-like solar still, a piece of black rubber tube bound with cord, and a small tin can. Soft spotlight. No people, no text."
+  },
+  {
+   "id": "I02",
+   "image": "白い空間に、3枚の大きなカードの模型が並ぶ",
+   "image_en": "Three large blank cards standing in a row in the empty white space, each with a simple icon: a clear dome device, a raft tube with a cord, a white seabird. No text.",
+   "en": "Three large blank cards standing in a row in the empty white space, each with a simple icon: a clear dome device, a raft tube with a cord, a white seabird. No text."
+  },
+  {
+   "id": "I04",
+   "image": "日本の家の玄関の模型。床に赤い防災の袋が置かれ、口が閉じたまま",
+   "image_en": "A small Japanese house entrance (genkan) diorama with a closed red emergency go-bag sitting on the floor by the shoes. No people, no text, no logos.",
+   "en": "A small Japanese house entrance (genkan) diorama with a closed red emergency go-bag sitting on the floor by the shoes. No people, no text, no logos."
+  },
+  {
+   "id": "I05",
+   "image": "玄関の床で、赤い防災の袋が開かれ、懐中電灯・水・ラジオが並べられている",
+   "image_en": "The same small Japanese house entrance diorama: the red emergency go-bag is now open on the floor, and a flashlight, a water bottle and a small hand-crank radio are laid out neatly next to it. No people, no text, no logos.",
+   "en": "The same small Japanese house entrance diorama: the red emergency go-bag is now open on the floor, and a flashlight, a water bottle and a small hand-crank radio are laid out neatly next to it. No people, no text, no logos."
+  }
+ ]
+}
