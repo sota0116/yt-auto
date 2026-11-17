@@ -254,7 +254,7 @@
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 29,
+  "views_now": 30,
   "published": true,
   "published_at": "2026-11-10T18:00:33+09:00",
   "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
@@ -379,7 +379,7 @@
   "seconds": 37,
   "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
   "synthetic_on": null,
-  "views_now": 1055,
+  "views_now": 1056,
   "published": true,
   "published_at": "2026-11-13T19:00:05+09:00",
   "comment_id": "UgwwmBWEGDgzcB_ROHV4AaABAg",
@@ -404,7 +404,7 @@
   "seconds": 36,
   "title_now": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
   "synthetic_on": null,
-  "views_now": 1241,
+  "views_now": 1243,
   "published": true,
   "published_at": "2026-11-14T12:00:37+09:00",
   "comment_id": "UgyJQctjM1ZU0LPrv454AaABAg",
@@ -433,7 +433,7 @@
   "seconds": 822,
   "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
   "synthetic_on": null,
-  "views_now": 14,
+  "views_now": 15,
   "published": true,
   "published_at": "2026-11-12T18:00:25+09:00",
   "comment_id": "Ugz_8Vc2SwMe6_b_6jN4AaABAg",
@@ -483,7 +483,7 @@
   "seconds": 37,
   "title_now": "【60代】買い物メモ、お札と一緒に財布へ入れないで",
   "synthetic_on": null,
-  "views_now": 1029,
+  "views_now": 1030,
   "published": true,
   "published_at": "2026-11-15T07:00:32+09:00",
   "comment_id": "UgxOAWoMF4RWSh-_2_x4AaABAg",
@@ -558,7 +558,7 @@
   "seconds": 38,
   "title_now": "【60代】お菓子の缶の小銭、使い道を決めずにためないで",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-11-17T12:00:01+09:00",
   "comment_id": "UgwIRdJUtzCFkX-aoFN4AaABAg",
@@ -636,7 +636,6 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-18T00:47:07+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
@@ -645,7 +644,13 @@
   ],
   "comment": "コメントで、数を教えてくださいね。",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-21T18:00:00+09:00",
+  "seconds": 834,
+  "title_now": "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S128_神棚に置きっぱなしにする",
@@ -656,11 +661,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-18T01:34:58+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】神棚に置きっぱなしにしてはいけない物3選"
   ],
-  "comment": "あなたの神棚には、いくつ残っていましたか。"
+  "comment": "あなたの神棚には、いくつ残っていましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-21T12:00:00+09:00",
+  "seconds": 45,
+  "title_now": "【60代】神棚に置きっぱなしにしてはいけない物3選",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

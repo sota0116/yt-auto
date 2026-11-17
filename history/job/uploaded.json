@@ -329,7 +329,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 3034,
+  "views_now": 3035,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 249,
+  "views_now": 251,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -573,7 +573,7 @@
   "seconds": 533,
   "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
   "synthetic_on": null,
-  "views_now": 265,
+  "views_now": 267,
   "published": true,
   "published_at": "2026-11-09T19:00:01+09:00",
   "comment_id": "UgwUJfEp6L_WFq5Jw5Z4AaABAg",
@@ -599,7 +599,7 @@
   "privacy_now": "public",
   "publish_at": null,
   "seconds": 512,
-  "title_now": "【時給の落とし穴】美容師、年収が近い仕事の中では上の方なのに、なぜ時給は安いのか",
+  "title_now": "美容師・理容師は割に合うのか。年収約389万円を、店に立った時間で割った結果",
   "synthetic_on": null,
   "views_now": 97,
   "published": true,
@@ -827,7 +827,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
   "privacy_now": "private",
-  "publish_at": null,
+  "publish_at": "2026-11-25T19:00:00+09:00",
   "seconds": 509,
   "title_now": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
   "synthetic_on": null,
@@ -873,6 +873,12 @@
    "もしパイロットになったら、新人の年収は約359万円。50代で何倍になるか",
    "パイロットの新人より、あなたの時給は上？ 年収いちばんの仕事を1時間で割ったら"
   ],
-  "comment": "パイロットを含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "パイロットを含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 514,
+  "title_now": "【空の給料】パイロット、年収は全職業でいちばんなのに、新人は平均より安い理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
