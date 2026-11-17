@@ -1,0 +1,294 @@
+{
+ "format": "short",
+ "title": "もしも町奉行の頭に「在任年数」が見えたら。町人は大岡越前の南町にだけ並ぶ #もしも #日本史 #江戸時代",
+ "promise": "大岡越前（大岡忠相）が1717年に41歳で南町奉行になり、2〜3年から5〜6年で替わる者が多い町奉行を約20年務め、のちに1万石の大名になったと人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※町奉行の頭の上に在任年数が見える話と、町人が月番を守らず南町奉行所にだけ並ぶ話は作り話です。大岡忠相が1717年に41歳で南町奉行になったこと、1720年の町火消いろは47組、南北の町奉行が月番で務めたこと、同じ時期に北町奉行が中山時春・諏訪頼篤・稲生正武と替わったこと、忠相が約20年町奉行を務めて1736年に寺社奉行となり、1748年に1万石の大名になったことは、史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "大岡越前",
+  "大岡忠相",
+  "町奉行",
+  "徳川吉宗",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "大岡越前だけ約20年"
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "competitor_note": "TTP：題材＝「徳川の世で〇〇なのに〇〇だった人」（旗本の町奉行なのに大名になった人）｜競合メモ 伸びている題材5（rR2p5yhP8Zg・6yMQmssvE1k・3w2mLASsmXo）。つかみと題の型＝見える化＋1人だけ異常値（手順書 §2・S001 裏切り確率の型）",
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：将軍の家来（この回では江戸の町奉行）の頭の上に、今の役についてからの年数が出る。1年ごとに1つ増え、役が替わった人は0年から数え直す",
+  "数字は江戸の誰でも、ほかの人の頭の上に見える。町人にも見える。自分の頭の上の数字は自分には見えない。大岡越前も北町奉行たちも、自分の数字は見ていない",
+  "数字と年数を言うのは語り手だけ。越前・北町奉行・町人のセリフは無い",
+  "町人は、北町と南町の奉行の頭の数字を見比べて、数字の大きい南町へ訴えに並ぶ。北の月番の月でも並ぶのは作り話の結果で、語り手が話す",
+  "1717年の南町奉行就任（41歳）、町奉行は2〜3年から5〜6年で替わる者が多いこと、南北の月番、1720年の町火消いろは47組、1723年と1731年の北町奉行の交代、1736年の寺社奉行、1748年の1万石は、作り話の世界の背景として語り手が同じ語り口で話す。『実際は』と現実へ戻る文は置かない（最後の締めは決まった一言）"
+ ],
+ "world_terms": [
+  "頭の上",
+  "頭は",
+  "数字",
+  "年数",
+  "0年",
+  "並ん"
+ ],
+ "voices": {},
+ "facts": [
+  "大岡忠相は「1717年41歳で町奉行となり」「約20年間この職にあり」（改訂新版 世界大百科事典）。「17年(享保2)8代将軍徳川吉宗によって町奉行に抜擢された」（山川 日本史小辞典）。「町奉行を 20年間つとめ」（ブリタニカ国際大百科事典 小項目事典）。南町奉行は1717〜1736年。出どころ：kotobank.jp/word/大岡忠相（本文で確認）",
+  "町奉行は「南北各1人で、月番で務めた」「任期はないが、2～3年から5～6年という者が多い」。出どころ：imidas 時代劇用語指南「町奉行」 imidas.jp/jidaigeki/detail/L-57-045-08-04-G252.html（本文で確認）。山川 日本史小辞典「月番」も町奉行が月番制だったと書く（kotobank.jp/word/月番）。台本の「1か月交代」はデジタル大辞泉「月番」の「1か月ずつ交代で勤務すること」による",
+  "町火消：「1720年町奉行大岡忠相の答申に基づき整備され，いろは47組（のち48組）に編成された」（百科事典マイペディア）、「20年のいろは47組の設定」（山川 日本史小辞典）、忠相が「町火消〈いろは四十七組〉をつくり」（世界大百科事典 旧版「大岡忠相」）。出どころ：kotobank.jp/word/町火消（本文で確認）。設置令の年は1718年とする事典もあるので、台本は47組の1720年にそろえた",
+  "同じ時期の北町奉行：中山時春（1714〜1723）、諏訪頼篤（1723〜1731）、稲生正武（1731〜1738。享保16年9月19日〜元文3年2月15日）。出どころ：Wikipedia「町奉行」の歴代一覧（ja.wikipedia.org/wiki/町奉行）と weblio の同じ一覧。一覧の載る本は国立国会図書館レファレンス協同データベース（crd.ndl.go.jp/reference/entry/index.php?id=1000243710）が『国史大辞典13』『日本史広辞典』などを挙げる。事典の本文では読めていないので、台本では年と名だけを言い、在任の月日は言わない",
+  "「36年(元文1)旗本としてはまったく異例な寺社奉行に昇進」（日本大百科全書 ニッポニカ）、「1736年(元文1)8月12日寺社奉行に栄進」（世界大百科事典）。neta.json の『寺社奉行就任 1748年とされる』は事典では1736年で、1748年は1万石の大名になった年だった。出どころ：kotobank.jp/word/大岡忠相（本文で確認）",
+  "「寛延1 (1748) 年にはそれまでの領地に合せて三河国に 4080石の加増を受け，1万石の大名に列せられた」（ブリタニカ国際大百科事典 小項目事典）。ニッポニカは三河国西大平（愛知県岡崎市）に陣屋をもつ1万石の大名と書く。出どころ：kotobank.jp/word/大岡忠相（本文で確認）。『町奉行から大名になった唯一の人』は裏が弱いので台本では使わない",
+  "（台本では使わない補足）「有名な〈大岡政談〉の話は実際の彼とはほとんど関係がなく」（世界大百科事典）。オチに使うと現実へ戻る文が増えるので外した",
+  "n02 の本当の画像：「大岡忠相像」国立国会図書館蔵（File:Oooka tadasuke.jpg・1536×2048・パブリックドメイン）。台本に書く前に Commons の API で幅と許可を確かめた。File:Ooka Tadasuke.jpg は425pxで幅が足りず外した",
+  "公的な PDF：neta.json の神奈川県立公文書館 紀要（kiyo903.pdf）と東京都公文書館の資料（0601ooedo07.pdf）を WebFetch で保存したが、字を取り出す python（/tmp/pdftools/pdf_text.py）の実行に許可が要り、pdftoppm も無いため本文は読めなかった。台本には使っていない",
+  "町奉行の頭の上に在任年数が見えること、町人が月番を守らず南町奉行所にだけ並び、北町奉行所の前に誰もいなくなる場面は作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "奉行の頭に\n在任年数",
+   "narration": "在任年数が見えたら、町人は北町を捨て大岡越前に並ぶ。",
+   "highlight": [
+    "大岡越前に並ぶ"
+   ],
+   "tts_text": "ざいにんねんすうがみえたら、ちょうにんは、きたまちをすて、おおおかえちぜんにならぶ。",
+   "image_en": "In front of the big wooden gate of an Edo magistrate's office, a crowd of Edo townspeople in plain kimono stare up in amazement at the empty air above the head of Ooka Tadasuke, a Japanese magistrate about fifty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo over a pale grey kimono, who stands calmly at the gate. His head is near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "In front of the big wooden gate of an Edo magistrate's office, a crowd of Edo townspeople in plain kimono stare up in amazement at the empty air above the head of Ooka Tadasuke, a Japanese magistrate about fifty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo over a pale grey kimono, who stands calmly at the gate. His head is near the middle of the picture with wide empty space above it.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1717年、41歳の大岡越前が南町奉行になる。",
+   "highlight": [
+    "南町奉行"
+   ],
+   "tts_text": "せんななひゃくじゅうななねん、よんじゅういっさいの、おおおかえちぜんが、みなみまちぶぎょうになる。",
+   "image_en": "Ooka Tadasuke, a Japanese magistrate about forty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo over a pale grey kimono, bows deeply on the tatami of a grand hall of Edo Castle, receiving his appointment; lantern light.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/2/26/Oooka_tadasuke.jpg",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "Ooka Tadasuke, a Japanese magistrate about forty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo over a pale grey kimono, bows deeply on the tatami of a grand hall of Edo Castle, receiving his appointment; lantern light."
+  },
+  {
+   "id": "n03",
+   "narration": "頭の上には、役についてからの年数が出る。",
+   "highlight": [
+    "年数"
+   ],
+   "tts_text": "あたまのうえには、やくについてからの、ねんすうがでる。",
+   "image_en": "Edo townspeople on a busy street point up in surprise at the empty air above the head of Ooka Tadasuke, a Japanese magistrate about forty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo, who walks past with two attendants. His head is near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [],
+   "image": "Edo townspeople on a busy street point up in surprise at the empty air above the head of Ooka Tadasuke, a Japanese magistrate about forty with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo, who walks past with two attendants. His head is near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n04",
+   "narration": "南北の町奉行が、1か月交代で訴えを受ける。",
+   "highlight": [
+    "1か月交代"
+   ],
+   "tts_text": "なんぼくの、まちぶぎょうが、いっかげつこうたいで、うったえをうける。",
+   "image_en": "A wide view of an Edo street at morning with two large wooden magistrate office gates far apart, one on the left and one on the right, guards standing at each, townspeople passing between them.",
+   "shots": [
+    "n04",
+    "n04@left",
+    "n04@right"
+   ],
+   "chars": [],
+   "image": "A wide view of an Edo street at morning with two large wooden magistrate office gates far apart, one on the left and one on the right, guards standing at each, townspeople passing between them."
+  },
+  {
+   "id": "n05",
+   "narration": "町奉行は、数年で替わる者が多い。",
+   "highlight": [
+    "数年"
+   ],
+   "tts_text": "まちぶぎょうは、すうねんで、かわるものがおおい。",
+   "image_en": "In a corridor of Edo Castle, an older magistrate in plain dark kamishimo hands over a lacquered document box to a younger magistrate who bows to receive it, other officials watching quietly; soft lantern light.",
+   "shots": [
+    "n05",
+    "n05@close"
+   ],
+   "chars": [],
+   "image": "In a corridor of Edo Castle, an older magistrate in plain dark kamishimo hands over a lacquered document box to a younger magistrate who bows to receive it, other officials watching quietly; soft lantern light."
+  },
+  {
+   "id": "n06",
+   "narration": "1720年、越前は町火消いろは47組をつくる。頭は3年。",
+   "highlight": [
+    "いろは47組"
+   ],
+   "tts_text": "せんななひゃくにじゅうねん、えちぜんは、まちびけし、いろはよんじゅうななくみをつくる。あたまは、さんねん。",
+   "image_en": "Ooka Tadasuke, a Japanese magistrate about forty-five with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo, stands before rows of Edo town firemen in plain indigo happi coats holding fire hooks, ladders and blank matoi standards, at dusk. His head is near the middle with wide empty space above it.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "image": "Ooka Tadasuke, a Japanese magistrate about forty-five with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot and plain black kamishimo, stands before rows of Edo town firemen in plain indigo happi coats holding fire hooks, ladders and blank matoi standards, at dusk. His head is near the middle with wide empty space above it."
+  },
+  {
+   "id": "n07",
+   "narration": "1723年、北町奉行が中山から諏訪へ。北は0年。",
+   "highlight": [
+    "0年"
+   ],
+   "tts_text": "せんななひゃくにじゅうさんねん、きたまちぶぎょうが、なかやまから、すわへ。きたは、ぜろねん。",
+   "image_en": "At the gate of the north magistrate's office in Edo, an old round-faced magistrate in plain brown kamishimo walks out with his head down, while a thin sharp-eyed new magistrate in plain grey kamishimo walks in; townspeople glance up above the new man's head. His head is near the middle with wide empty space above it.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "At the gate of the north magistrate's office in Edo, an old round-faced magistrate in plain brown kamishimo walks out with his head down, while a thin sharp-eyed new magistrate in plain grey kamishimo walks in; townspeople glance up above the new man's head. His head is near the middle with wide empty space above it."
+  },
+  {
+   "id": "n08",
+   "narration": "1731年、北はまた稲生に替わり、また0年。",
+   "highlight": [
+    "また0年"
+   ],
+   "tts_text": "せんななひゃくさんじゅういちねん、きたは、また、いのうにかわり、また、ぜろねん。",
+   "image_en": "Inside the north magistrate's office in Edo, a square-jawed new magistrate about fifty with a stern face, a short moustache, a chonmage topknot and plain dark green kamishimo kneels at the judge's seat for the first time, looking around uneasily. His head is near the middle with wide empty space above it.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": [],
+   "image": "Inside the north magistrate's office in Edo, a square-jawed new magistrate about fifty with a stern face, a short moustache, a chonmage topknot and plain dark green kamishimo kneels at the judge's seat for the first time, looking around uneasily. His head is near the middle with wide empty space above it."
+  },
+  {
+   "id": "n09",
+   "narration": "越前の頭の上だけ、14年、15年と増える。",
+   "highlight": [
+    "15年"
+   ],
+   "tts_text": "えちぜんの、あたまのうえだけ、じゅうよねん、じゅうごねんと、ふえる。",
+   "image_en": "Ooka Tadasuke, a Japanese magistrate about fifty-five with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot, a little grey in his hair and plain black kamishimo, sits at the judge's seat of the south magistrate's office, calmly hearing a case, while the townspeople kneeling on the white gravel look up above his head in awe. His head is near the middle with wide empty space above it.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [],
+   "image": "Ooka Tadasuke, a Japanese magistrate about fifty-five with a long calm face, gentle wise eyes, thin eyebrows, a chonmage topknot, a little grey in his hair and plain black kamishimo, sits at the judge's seat of the south magistrate's office, calmly hearing a case, while the townspeople kneeling on the white gravel look up above his head in awe. His head is near the middle with wide empty space above it."
+  },
+  {
+   "id": "n10",
+   "narration": "北の月番の月。決まりでは、訴えは北町へ。",
+   "highlight": [
+    "北町へ"
+   ],
+   "tts_text": "きたの、つきばんのつき。きまりでは、うったえは、きたまちへ。",
+   "image_en": "The square-jawed north magistrate with a short moustache, a chonmage topknot and plain dark green kamishimo waits at the wide-open gate of the north magistrate's office in Edo with a stern face, guards beside him, the street in front strangely quiet; grey morning light.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "image": "The square-jawed north magistrate with a short moustache, a chonmage topknot and plain dark green kamishimo waits at the wide-open gate of the north magistrate's office in Edo with a stern face, guards beside him, the street in front strangely quiet; grey morning light."
+  },
+  {
+   "id": "n11",
+   "narration": "それでも町人は、数字の大きい南町の門に並んだ。",
+   "highlight": [
+    "南町の門に並んだ"
+   ],
+   "tts_text": "それでも、ちょうにんは、すうじのおおきい、みなみまちの、もんにならんだ。",
+   "image_en": "A huge long line of Edo townspeople, merchants, craftsmen and mothers with children, stretches down the street to the gate of the south magistrate's office, everyone gazing up at the empty air above the head of Ooka Tadasuke, a magistrate about fifty-five with a long calm face, gentle wise eyes, a chonmage topknot and plain black kamishimo, who stands at the gate looking surprised. His head is near the middle with wide empty space above it.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "A huge long line of Edo townspeople, merchants, craftsmen and mothers with children, stretches down the street to the gate of the south magistrate's office, everyone gazing up at the empty air above the head of Ooka Tadasuke, a magistrate about fifty-five with a long calm face, gentle wise eyes, a chonmage topknot and plain black kamishimo, who stands at the gate looking surprised. His head is near the middle with wide empty space above it.",
+   "motion": true
+  },
+  {
+   "id": "n12",
+   "narration": "北町奉行所の前には、誰もいない。",
+   "highlight": [
+    "誰もいない"
+   ],
+   "tts_text": "きたまちぶぎょうしょの、まえには、だれもいない。",
+   "image_en": "The square-jawed north magistrate with a short moustache, a chonmage topknot and plain dark green kamishimo stands alone at the open gate of the north magistrate's office, staring at the completely empty street, a single dry leaf blowing past; dusk light.",
+   "shots": [
+    "n12",
+    "n12@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "The square-jawed north magistrate with a short moustache, a chonmage topknot and plain dark green kamishimo stands alone at the open gate of the north magistrate's office, staring at the completely empty street, a single dry leaf blowing past; dusk light.",
+   "motion": true
+  },
+  {
+   "id": "n13",
+   "narration": "1736年、約20年いた南町を離れ、寺社奉行へ。",
+   "highlight": [
+    "約20年"
+   ],
+   "tts_text": "せんななひゃくさんじゅうろくねん、やくにじゅうねんいた、みなみまちをはなれ、じしゃぶぎょうへ。",
+   "image_en": "Ooka Tadasuke, a Japanese magistrate about sixty with a long calm face, gentle wise eyes, grey in his chonmage topknot and plain black kamishimo, walks out of the gate of the south magistrate's office, turning back once, while townspeople bow deeply along the street; sunset light.",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "image": "Ooka Tadasuke, a Japanese magistrate about sixty with a long calm face, gentle wise eyes, grey in his chonmage topknot and plain black kamishimo, walks out of the gate of the south magistrate's office, turning back once, while townspeople bow deeply along the street; sunset light."
+  },
+  {
+   "id": "n14",
+   "narration": "1748年、越前は1万石の大名になった。",
+   "highlight": [
+    "1万石"
+   ],
+   "tts_text": "せんななひゃくよんじゅうはちねん、えちぜんは、いちまんごくの、だいみょうになった。",
+   "image_en": "Ooka Tadasuke, an elderly Japanese lord about seventy with a long calm face, gentle wise eyes, a grey chonmage topknot and formal dark kamishimo, stands on the veranda of a small rural jinya residence in Mikawa, looking out over green rice fields and a village with a quiet smile.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [],
+   "image": "Ooka Tadasuke, an elderly Japanese lord about seventy with a long calm face, gentle wise eyes, a grey chonmage topknot and formal dark kamishimo, stands on the veranda of a small rural jinya residence in Mikawa, looking out over green rice fields and a village with a quiet smile."
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "At dusk, an empty white-gravel courtyard of the south magistrate's office in Edo with the judge's seat on a raised veranda, a paper lantern glowing beside it, cherry petals drifting.",
+   "shots": [
+    "n15",
+    "n15@close"
+   ],
+   "chars": [],
+   "image": "At dusk, an empty white-gravel courtyard of the south magistrate's office in Edo with the judge's seat on a raised veranda, a paper lantern glowing beside it, cherry petals drifting."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
