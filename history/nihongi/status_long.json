@@ -13,6 +13,7 @@
  "stage": "motion",
  "updated": "2026-11-15T02:06:28+09:00",
  "busy": {
-  "images": 5
+  "images": 5,
+  "motion": 1
  }
 }

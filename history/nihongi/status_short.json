@@ -1,18 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S122_r007",
- "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images"
- ],
- "started": "2026-11-16T11:52:28+09:00",
- "tries": 0,
- "code": "b4688f5c4404",
- "stage": "motion",
- "updated": "2026-11-16T17:00:08+09:00",
- "busy": {
-  "images": 1
- }
-}
+{}

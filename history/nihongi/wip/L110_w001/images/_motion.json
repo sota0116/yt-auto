@@ -1,78 +1,95 @@
 {
- "_runs": 0,
+ "_runs": 1,
  "A01": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "8acfbb53-4ca3-4aa5-aa35-30e9dcd03e83",
+  "回": 1,
+  "秒": 1217
  },
  "A02": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "cb10fc75-4910-4a1b-8cbf-7a5a2a77af31",
+  "回": 1,
+  "秒": 1176
  },
  "B12": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "f6a80179-b56d-4545-ae8f-ff2c2fa28e3b",
+  "回": 1,
+  "秒": 1217
  },
  "C01": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "4b59e4f1-9061-4ec5-8c55-7016c1b78b2b",
+  "回": 1,
+  "秒": 1440
  },
  "C05": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "77a4b29e-6bab-40d9-a5a9-ab71df69a92b",
+  "回": 1,
+  "秒": 1480
  },
  "C08": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "218ee498-2b81-47cd-aa10-a0c001d9f146",
+  "回": 1,
+  "秒": 182
  },
  "D04": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "fc78e3e8-5671-404b-b42e-27a3626f08de",
+  "回": 1,
+  "秒": 1560
  },
  "D09": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "41300ac8-b3f9-4779-9d43-37c1dd1396c5",
+  "回": 1,
+  "秒": 1703
  },
  "E05": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "08b2ea9c-2e3b-4303-b997-2f03392c1a47",
+  "回": 1,
+  "秒": 1723
  },
  "F09": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "1f1d1616-72ad-4dd8-b8f7-52c2f7a5fe6b",
+  "回": 1,
+  "秒": 1744
  },
  "G01": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "待ち",
+  "thread": "aafc11a4-5a4b-4f48-aa1a-637c4506c61e",
+  "頼んだ時刻": 1794885279.7904637,
+  "回": 1,
+  "速い": false
  },
  "H04": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "e16030c7-e6bc-4a29-85f8-0c6959bcfd8e",
+  "回": 1,
+  "秒": 1927
  },
  "I05": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "280aa614-8eb5-46c2-8863-d3f8218f70b8",
+  "回": 1,
+  "秒": 162
  },
  "J03": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "できた",
+  "thread": "8e389563-0354-40d9-a57d-02c46df6800b",
+  "回": 1,
+  "秒": 2068
  },
  "J05": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 0
+  "状態": "待ち",
+  "thread": "9dd2ef99-4113-4bcd-8cd7-2a052ff1a568",
+  "頼んだ時刻": 1794887309.5566556,
+  "回": 1,
+  "速い": false
  }
 }
