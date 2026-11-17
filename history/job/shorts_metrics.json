@@ -919,7 +919,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-11T20:08:28+09:00"
+  "取った日": "2026-11-17T12:16:04+09:00",
+  "7d": {
+   "views": 1039,
+   "averageViewPercentage": 83.42,
+   "averageViewDuration": 25,
+   "subscribersGained": 0,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 866.7
+  },
+  "言い方の版": 1
  },
  "20261109_0909_0": {
   "48h": {
@@ -943,7 +953,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_03_lofi.m4a",
-  "取った日": "2026-11-12T11:03:06+09:00"
+  "取った日": "2026-11-17T12:16:04+09:00",
+  "7d": {
+   "views": 1701,
+   "averageViewPercentage": 102.93999999999998,
+   "averageViewDuration": 32,
+   "subscribersGained": 1,
+   "likes": 3,
+   "再生の出どころ": "公開の数字",
+   "score": 1951.0
+  },
+  "言い方の版": 1
  },
  "20261109_0913_1": {
   "48h": {
@@ -967,7 +987,17 @@
   ],
   "編集の版": 2,
   "bgm": "job_short_bgm_02_drive.m4a",
-  "取った日": "2026-11-13T10:31:44+09:00"
+  "取った日": "2026-11-17T12:16:04+09:00",
+  "7d": {
+   "views": 1003,
+   "averageViewPercentage": 73.92,
+   "averageViewDuration": 22,
+   "subscribersGained": 2,
+   "likes": 3,
+   "再生の出どころ": "公開の数字",
+   "score": 1141.4
+  },
+  "言い方の版": 1
  },
  "20261111_2008_0": {
   "48h": {
@@ -1068,5 +1098,105 @@
   "言い方の版": 1,
   "bgm": "job_short_bgm_02_drive.m4a",
   "取った日": "2026-11-16T09:27:26+09:00"
+ },
+ "20261113_1031_0": {
+  "48h": {
+   "views": 4,
+   "averageViewPercentage": 43.77,
+   "averageViewDuration": 12,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 1.8
+  },
+  "video_id": "A9Syl0Kkw_o",
+  "title": "バス運転手と理学療法士の残業を比べると｜年収はほぼ同じなのに6倍差 #年収 #仕事",
+  "topic_id": "duel_バス運転手_理学療法士など（リハビリ職）_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "同じ年収\n残業は6倍",
+  "banner": [
+   "月の残業差",
+   "バスと療法士"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "取った日": "2026-11-17T12:16:04+09:00"
+ },
+ "20261113_1035_1": {
+  "48h": {
+   "views": 990,
+   "averageViewPercentage": 68.71,
+   "averageViewDuration": 19,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 680.2
+  },
+  "video_id": "JlvKTZ3lRdA",
+  "title": "警備員と販売店員の残業を比べると｜年収はほぼ同じなのに約2.9倍差 #年収 #仕事",
+  "topic_id": "duel_警備員_販売店員_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "同じ年収\n得なのは？",
+  "banner": [
+   "残業くらべ",
+   "警備員と販売店員"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-17T12:16:04+09:00"
+ },
+ "20261114_1006_0": {
+  "48h": {
+   "views": 1148,
+   "averageViewPercentage": 75.75,
+   "averageViewDuration": 24,
+   "subscribersGained": 1,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 1069.6
+  },
+  "video_id": "1esBvYrQvUs",
+  "title": "現場の仕事で年収が高い5つ｜1位と5位は約175万円差 #年収 #仕事",
+  "topic_id": "rank_現場_年収_hi",
+  "kind": "rank",
+  "measure": "年収",
+  "hook": "年収が高い\n現場は？",
+  "banner": [
+   "年収が高い順",
+   "現場の仕事8から"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-17T12:16:04+09:00"
+ },
+ "20261114_1007_1": {
+  "48h": {
+   "views": 1060,
+   "averageViewPercentage": 73.29,
+   "averageViewDuration": 22,
+   "subscribersGained": 1,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 976.9
+  },
+  "video_id": "JLbPUZAoYsQ",
+  "title": "大型トラック運転手と看護師の残業を比べると｜年収はほぼ同じなのに約5.5倍差 #年収 #仕事",
+  "topic_id": "duel_大型トラック運転手_看護師_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "残業が多い\nのは誰？",
+  "banner": [
+   "残業の多さ",
+   "トラックと看護師"
+  ],
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-17T12:16:04+09:00"
  }
 }

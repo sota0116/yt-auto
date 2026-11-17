@@ -1009,5 +1009,38 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-16T09:29:48+09:00"
+ },
+ {
+  "work": "20261117_1216_k0",
+  "topic_id": "kigyo_shoken",
+  "kind": "kigyo",
+  "measure": "企業_証券",
+  "title": "もし野村證券に就職したら｜何歳でいくらになる？ #年収 #就活 #証券会社",
+  "hook": "どこに\n入る？",
+  "banner": null,
+  "編集の版": 1,
+  "言い方の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "pipeline/make_images_lovart.py で止まった",
+  "made_at": "2026-11-17T14:29:47+09:00"
+ },
+ {
+  "work": "20261117_1429_0",
+  "topic_id": "rank_現場_時給_lo",
+  "kind": "rank",
+  "measure": "時給",
+  "title": "現場の仕事で時給が一番低いのは？｜答えは約1,670円 #年収 #仕事",
+  "hook": "時給最下位\nの現場は？",
+  "banner": [
+   "時給が低い順",
+   "現場の仕事8から"
+  ],
+  "編集の版": 2,
+  "言い方の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-17T14:30:50+09:00"
  }
 ]
