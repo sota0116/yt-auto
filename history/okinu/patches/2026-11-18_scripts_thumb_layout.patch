@@ -1,0 +1,13 @@
+diff --git a/pipeline/run_daily.py b/pipeline/run_daily.py
+index a760c8d..ad4d9ff 100644
+--- a/pipeline/run_daily.py
++++ b/pipeline/run_daily.py
+@@ -284,6 +284,8 @@ def record(ch, work):
+     hs = {"cuts": [{"id": c.get("id"), "narration": c.get("narration", "")} for c in s.get("cuts", [])]}
+     if s.get("banner"):  # アナザー日本紀：題・帯・hook も残す（次の回が同じ言葉を使わないため）
+         hs.update({"kind": s.get("format"), "title": s.get("title"), "banner": s.get("banner"), "hook": (s.get("cuts") or [{}])[0].get("hook")})
++    if isinstance(s.get("thumb"), dict) and s["thumb"].get("layout"):  # 金運おきぬ：長尺のサムネの型（check_okinu_script.py の recent_layouts() が写しの thumb.layout を読む。2026-11-18）
++        hs["thumb"] = {"layout": s["thumb"]["layout"]}
+     jsave(os.path.join(ROOT, "history", ch, "scripts", rec["work"] + ".json"), hs)
+ 
+ 

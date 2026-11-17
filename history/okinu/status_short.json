@@ -1,10 +1,23 @@
 {
  "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S129_神棚を置くとお金が逃げる",
  "done": [
-  "pick"
+  "pick",
+  "write",
+  "gate_script",
+  "voice"
  ],
- "started": "2026-11-18T01:35:59+09:00",
+ "started": "2026-11-18T02:52:07+09:00",
  "tries": 0,
+ "redone": {
+  "日時": "2026-11-18T02:52:07+09:00",
+  "前の済み": [
+   "pick"
+  ]
+ },
  "code": "e155605ce766",
- "stage": "gate_script"
+ "stage": "images",
+ "updated": "2026-11-18T02:57:06+09:00",
+ "busy": {
+  "images": 1
+ }
 }
