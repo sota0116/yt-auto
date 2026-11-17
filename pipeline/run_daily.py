@@ -1022,6 +1022,7 @@ def main():
         if not KS and not a.count.isdigit() and (int(pf.get("publish_every_days") or 1) > 1 or len(pf.get("publish_weekdays") or range(7)) < 7) \
                 and n_stock >= goal and not jload(hpath(ch, "status.json"), {}).get("work"):
             n = 0
+            jobs = [(None, 0)]  # 2026-11-17：n だけ0にしても下の繰り返し（jobs）には入らず、「作らなかった理由」を書いた回も制作に入っていた（job 11-10・spi 11-02／05／06）
             res["作らなかった理由"] = f"在庫が{n_stock}本で目標の{goal}本に届いている（長尺は毎日ではない）"
         stops = []  # 種類ごとのチャンネルで、種類ごとに止まった理由
         for kind, n in jobs:
@@ -1086,6 +1087,11 @@ def main():
         print("【止まりました】", e, flush=True)
     except subprocess.TimeoutExpired as e:
         res["stopped"] = f"時間切れ：{e.cmd[2] if len(e.cmd) > 2 else e.cmd}"
+    except Exception as e:
+        # 2026-11-17：想定外のエラーも、止まった理由を last_run.json に残してから落とす。前は stopped が空のまま保存され、
+        # やり直しの枠（08:07・17:37）が「今日の分はもう作れています」で飛ばし、通知の段も Issue にしなかった
+        res["stopped"] = f"想定外のエラー（{type(e).__name__}）：{str(e)[:300]}"
+        raise
     finally:
         res["ended"] = now().isoformat(timespec="seconds")
         res["今月の制作費_円"] = month_cost(ch)

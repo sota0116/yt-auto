@@ -10,6 +10,7 @@
 import argparse, datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from yt_auth import access_token
+from ustore import _dump as jdump  # 途中で切れても壊れない書き方（別名で書いてから置き換える）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://www.googleapis.com/youtube/v3"
@@ -99,9 +100,11 @@ def main():
         api(ch, "POST", f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={vid}", open(thumb, "rb").read(),
             {"Content-Type": "image/jpeg"}, timeout=120)
         print("サムネを付けました")
-    except urllib.error.HTTPError as e:
+    except Exception as e:
+        # 2026-11-17：通信エラー（URLError・時間切れ）でも、下の記録までは必ず進む。前は HTTPError だけを受けていて、
+        # 記録を書かずに落ちると、次の実行から「同じタイトルの動画があります」で止まり続けた
         thumb_ok = False
-        print("【メモ】サムネを付けられませんでした（電話番号の確認が済んでいないと付けられない）：", e.code)
+        print("【メモ】サムネを付けられませんでした（電話番号の確認が済んでいないと付けられない）：", getattr(e, "code", None) or type(e).__name__)
     prof = json.load(open(os.path.join(ROOT, "channels", ch, "profile.json"), encoding="utf-8"))
     comment = (prof.get("comment_text") or "").replace("{LINE_URL}", prof.get("line_url", "")) or desc.split("\n\n")[0].strip()
     rec = {"work": name, "video_id": vid, "title": title, "privacy": a.privacy, "thumb": a.thumb, "thumb_set": thumb_ok,
@@ -109,9 +112,11 @@ def main():
            "requested_privacy": a.privacy, "privacy_after_upload": d["status"].get("privacyStatus"),
            # 見張り（watch.py）が使う：公開後のコメント（説明文の1段落目＝LINE の案内とリンク）と、差し替え用のタイトル案
            "type": s.get("type"), "titles": s.get("titles", [title]), "comment": comment}
-    json.dump(rec, open(os.path.join(work, "uploaded.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    jdump(os.path.join(work, "uploaded.json"), rec)
     os.makedirs(os.path.dirname(hp), exist_ok=True)
-    json.dump(hist + [rec], open(hp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # 上げている間（長いと15分）に見張りなどが書いた分を消さないよう、書く直前に読み直す（2026-11-17）
+    hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else []
+    jdump(hp, hist + [rec])
 
 
 if __name__ == "__main__":

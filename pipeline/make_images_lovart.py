@@ -65,8 +65,14 @@ def is_free(sk, waits=(30, 90, 240)):
         try:
             return sk.query_mode().get("unlimited") is True
         except Exception as e:
-            if getattr(e, "code", None) != 429 and "Rate limit" not in str(e):
+            code = getattr(e, "code", None)
+            if code in (401, 403):  # 鍵の誤り・期限切れは待っても直らないので、今までどおり止める
                 raise
+            if code != 429 and "Rate limit" not in str(e):
+                # 2026-11-17：通信の瞬断・Lovart 側のエラーでは落とさない（前はここで落ち、待っている絵をその回は受け取れなかった）。
+                # 分からない間は新しく頼まず、次の見直し（60秒後）でまた聞く
+                print("Lovart のモードを確かめられないので、新しく頼まずに待ちます：", type(e).__name__, str(e)[:120], flush=True)
+                return None
             if wait is None:
                 print("Lovart の回数の上限でモードを確かめられないので、新しく頼まずに待ちます", flush=True)
                 return None
@@ -371,6 +377,9 @@ def main():
     cuts = {c["id"]: c for c in s["cuts"] if c.get("image") and not c.get("same_as") and not c.get("chart")
             and (not only or c["id"] in only)}
     todo = [i for i in cuts if a.force or i in fix or not os.path.exists(os.path.join(img, i + ".png"))]
+    for i in todo:  # 2026-11-17：--force・--fix の絵の回数は、ここで1回だけ0に戻す。前は頼む所で毎回1に戻していて、2回までの歯止めが効かず、失敗する絵を時間の枠いっぱい頼み直した
+        if (a.force or i in fix) and i in log:
+            log[i]["回"] = 0
     # 前回頼んだまま受け取っていない会話は、頼み直さずに待つ（--boost は順番待ちを捨てて、速いモードで頼み直す）
     # できたはずの物のファイルが無い時（作業フォルダが消えて、history の控えから戻した時。2026-10-30 psy 005）は、頼み直さずに
     # 同じ会話（thread）から受け取り直す。Lovart は終わった会話の結果を持っているので、クレジットも順番待ちも要らない
@@ -447,7 +456,7 @@ def main():
                 joined, paused = False, True
                 break
             i = queue.pop(0)
-            tries = log.get(i, {}).get("回", 0) + 1 if not (a.force or i in fix) else 1
+            tries = log.get(i, {}).get("回", 0) + 1
             try:
                 tid = sk.send(prompt(en, cuts[i], bool(ref_url), fix.get(i, ""), [chars[k] for k in cuts[i].get("chars", [])], rules, portrait),
                               project, attachments=attach(i) or None, prefer_models=MODEL,
