@@ -636,5 +636,51 @@
    ]
   },
   "short_video_id": "上げられなかった"
+ },
+ {
+  "work": "018_ikigai_yakuwari",
+  "type": "幸せの心理",
+  "frame": "幸せの心理",
+  "neta_id": "p_ikigai_yakuwari",
+  "jobs": [],
+  "made": "2026-11-17",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】人の役に立つと元気が出る人に共通する5つの特徴｜2歳前の子も、同じ顔をした",
+  "titles": [
+   "【心理学】人の役に立つと元気が出る人に共通する5つの特徴｜2歳前の子も、同じ顔をした",
+   "【心理学】野菜をおすそわけした日、一日じゅう気分がいい人の「意外な特徴」｜夕方5時に分かったこと",
+   "【心理学】年を重ねて、人のために動く日が増えた人の正体｜60歳を過ぎた人は、若い人の3倍だった"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "競合メモ 2026-11-13 の「次の回で試すこと」から：3 概要欄の「📌この動画でわかること」の行に、毎日の言葉を先に書いてから「人のために動く日」「自分には時間がある」を「」で入れた。1 の年代の言葉は、60〜91歳を調べた S3 があるので、タイトルの3番目の案（型D）と2本目のショートの題・帯に入れた（中心の研究の多くは学生・大人なので1番目の案には入れていない）。2 のセリフは人づきあいの回でないので使っていない。1番目の案は学び.md（型C の2本が型A の3本より再生が多い）に合わせて型C（直近 017 型C・016 型B・015 型A）。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:22 おすそわけの日は、気分がいい",
+   "3:09 特徴1　夕方まで気分が明るい",
+   "5:34 特徴2　年を重ねて、手を貸す日が増える",
+   "7:51 特徴3　いやな日も、沈みにくい",
+   "10:01 特徴4　時間が増えた気がする",
+   "12:33 特徴5　自分の分から分けて笑顔",
+   "15:14 役に立つ日をつくる3つの工夫",
+   "17:52 まとめ"
+  ],
+  "video_id": "XEjTNtnAi9g",
+  "回した理由": null,
+  "studies": [
+   "Aknin, Barrington-Leigh, Dunn, Helliwell, Burns, Biswas-Diener, Kemeza, Nyende, Ashton-James & Norton (2013) Journal of Personality and Social Psychology",
+   "Dunn, Aknin & Norton (2008) Science",
+   "Sin, Klaiber, Wen & DeLongis (2021) The Gerontologist",
+   "Raposa, Laws & Ansell (2016) Clinical Psychological Science",
+   "Mogilner, Chance & Norton (2012) Psychological Science",
+   "Aknin, Hamlin & Dunn (2012) PLoS ONE",
+   "Weinstein & Ryan (2010) Journal of Personality and Social Psychology",
+   "Aknin, Dunn & Norton (2012) Journal of Happiness Studies"
+  ],
+  "short_video_id": "lsv50PV9wV8"
  }
 ]
