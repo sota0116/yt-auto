@@ -1,8 +1,8 @@
 {
  "ch": "okinu",
- "started": "2026-11-18T02:52:07+09:00",
+ "started": "2026-11-18T06:57:53+09:00",
  "made": [],
- "stopped": "絵がまだ途中（残り1枚。Lovart の無料モードは1枚十数分）。次の実行で続きから作ります（1回目）（short）",
+ "stopped": "gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（short）",
  "在庫": {
   "short": 4,
   "long": 2
@@ -12,7 +12,6 @@
   "long": 0
  },
  "待ち": true,
- "途中": true,
- "ended": "2026-11-18T03:01:58+09:00",
+ "ended": "2026-11-18T07:03:05+09:00",
  "今月の制作費_円": 0.0
 }
