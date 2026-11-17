@@ -1,19 +1,8 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L110_w001",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L111_w002",
  "done": [
-  "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "images"
+  "pick"
  ],
- "started": "2026-11-14T09:26:09+09:00",
- "tries": 0,
- "code": "b4688f5c4404",
- "stage": "motion",
- "updated": "2026-11-15T02:06:28+09:00",
- "busy": {
-  "images": 5,
-  "motion": 1
- }
+ "started": "2026-11-17T17:15:46+09:00",
+ "tries": 0
 }

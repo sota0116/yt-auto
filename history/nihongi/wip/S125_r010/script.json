@@ -1,0 +1,283 @@
+{
+ "format": "short",
+ "title": "もしも将軍の剣の師範に「石高」が見えたら。一刀流は800石、柳生宗矩だけ1万石 #もしも #日本史 #江戸時代",
+ "promise": "将軍家の剣の師範だった柳生宗矩が、1632年に大名を見張る総目付になり、1636年に1万石の大名になったと人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※剣の師範の頭の上に石高の数字が見える話と、大名たちが数字を見つけて屋敷の門を閉める話は作り話です。小野忠明が1593年に200石で家康に召し抱えられ、のちに800石を領したこと、柳生宗矩が関ヶ原のあと柳生の旧領2000石を取り戻したこと、1621年に家光の兵法師範になったこと、1632年に総目付になったこと、1636年に1万石の大名になったことは、史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "柳生宗矩",
+  "小野忠明",
+  "徳川家光",
+  "剣術",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "宗矩だけ1万石"
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：将軍家の剣の師範（小野忠明と柳生宗矩）の頭の上に、その人の石高の数字が出る。数字は加増されたその時に変わる。ほかの人の頭の上には何も出ない",
+  "数字は、江戸の人なら誰でも、ほかの人の頭の上に見える。遠くからでも見える。自分の頭の上の数字は自分には見えない。宗矩は自分の数字を見ていない",
+  "数字と桁を言うのは語り手だけ。宗矩・忠明・家光・大名たちのセリフは無い",
+  "大名たちは、総目付が宗矩だと知っている（役目は表に出ている）。だから、大きな数字が近づくのを見つけると、見張りが来たと分かって門を閉める。これは作り話の結果で、語り手が話す",
+  "門を閉めていた大名の隣に宗矩が座るのは、作り話の世界の結果として語り手が話す（1636年に1万石の大名になったことは史実、大名の席でのようすは作り話）",
+  "1593年の忠明の召し抱え（200石）、のちの800石、関ヶ原のあとの柳生の旧領2000石、1621年の家光の兵法師範、1632年の総目付、1636年の1万石は、作り話の世界の背景として語り手が同じ語り口で話す。『実際は』と現実へ戻る文は置かない（n14 は決まった締め）"
+ ],
+ "world_terms": [
+  "頭の上",
+  "数字",
+  "石高",
+  "桁",
+  "見つけ",
+  "門を閉め"
+ ],
+ "voices": {},
+ "facts": [
+  "柳生宗矩（1571〜1646）は、関ヶ原の戦いのあと「その功によって柳生の旧領2000石を回復し」、将軍世子秀忠の兵法指南を命ぜられて1000石を加増された。1621年（元和7）「将軍世子家光の兵法師範を託され」た。出どころ：日本大百科全書（ニッポニカ）「柳生宗矩」 kotobank.jp/word/柳生宗矩-143473（本文で確認）。山川 日本史小辞典も「戦後柳生荘2000石を与えられた」",
+  "「1632年には総目付（後の大目付）に補せられて、諸大名の監察役となった」（ニッポニカ）。デジタル大辞泉「寛永9年（1632）総目付となり」、日本人名大辞典「寛永9年初代の大目付」。出どころ：kotobank 同ページ（本文で確認）。ブリタニカは1629年の文脈で大目付と書き、事典で分かれるので台本はニッポニカ・大辞泉・人名大辞典の1632年にそろえた",
+  "「1636年には加増されて総高1万石を領し、大名の列に加えられ」（ニッポニカ）、「1636年（寛永13）宗矩は1万石（のち1万2500石）の大名に列せられた」（世界大百科事典 改訂新版）。出どころ：kotobank 同ページ（本文で確認）。1629年の加増後の石高は、ニッポニカ6000石・ブリタニカ3000石と分かれるので、台本では数を言わず『4桁』の段も言わない。1万2500石は neta.json のとおり台本では使わない",
+  "小野忠明（1565〜1628）は「1593年（文禄2）29歳のとき江戸に出て徳川家康に謁し、200石をもって召し抱えられ、嗣子秀忠の剣術の師となった」「やがて累進して御使番、御目付兼役となり、800石を領した」。一刀流の剣術家。出どころ：日本大百科全書（ニッポニカ）「小野忠明」 kotobank.jp/word/小野忠明-1062395（本文で確認）。精選版 日本国語大辞典・世界大百科事典も秀忠の剣術師範と書く",
+  "（台本では使わない補足）剣士の身から大名にまで立身した剣豪は宗矩ただ一人といわれる（Wikipedia「柳生宗矩」weblio 掲載版の本文）。事典で確かめられず、字数も330字を超えるので台本から外した",
+  "n06 の本当の画像：「徳川家光の肖像」（File:Iemitsu Tokugawa.jpg・2240×2240・パブリックドメイン）。台本に書く前に Commons の API で幅（800以上）と許可を確かめた。宗矩の木像（File:Yagyu Munenori.jpg）は640pxで幅が足りず、芳徳寺の墓所の写真は CC BY 2.5 で、どちらも外した",
+  "公的な PDF：奈良市の柳生の資料（city.nara.lg.jp/uploaded/attachment/150695.pdf）を保存したが、PDF の字を取り出す python の実行に許可が要り、pdftoppm も無いため本文は読めなかった。台本には使っていない",
+  "剣の師範の頭の上に石高が見えること、大名たちが数字を見つけて門を閉めること、門を閉めていた大名の隣に宗矩が座る場面は作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "剣の師範に\n石高が出る",
+   "narration": "剣の師範に石高が出たら、柳生宗矩だけ大名の1万石。",
+   "highlight": [
+    "1万石"
+   ],
+   "tts_text": "けんのしはんに、こくだかがでたら、やぎゅうむねのりだけ、だいみょうの、いちまんごく。",
+   "image_en": "In a large wooden hall of Edo Castle, rows of kneeling samurai in formal kamishimo stare up in shock at the empty air above the head of Yagyu Munenori, a lean Japanese swordsman about sixty with calm sharp eyes, a short grey-streaked beard, a chonmage topknot, dark navy kamishimo over a grey kimono, who kneels calmly in the middle. His head is near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "In a large wooden hall of Edo Castle, rows of kneeling samurai in formal kamishimo stare up in shock at the empty air above the head of Yagyu Munenori, a lean Japanese swordsman about sixty with calm sharp eyes, a short grey-streaked beard, a chonmage topknot, dark navy kamishimo over a grey kimono, who kneels calmly in the middle. His head is near the middle of the picture with wide empty space above it.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "秀忠の剣の師範に、一刀流の小野忠明と柳生宗矩。",
+   "highlight": [
+    "小野忠明"
+   ],
+   "tts_text": "ひでただの、けんのしはんに、いっとうりゅうの、おのただあきと、やぎゅうむねのり。",
+   "image_en": "In a wooden dojo of Edo Castle, two Japanese swordsmen stand side by side holding wooden practice swords: on the left Ono Tadaaki, a stocky fierce swordsman about fifty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama; on the right Yagyu Munenori, a lean swordsman with calm sharp eyes, a short dark beard, a chonmage topknot, dark navy kimono and grey hakama. Morning light through the windows.",
+   "shots": [
+    "n02",
+    "n02@left",
+    "n02@right"
+   ],
+   "chars": [],
+   "image": "In a wooden dojo of Edo Castle, two Japanese swordsmen stand side by side holding wooden practice swords: on the left Ono Tadaaki, a stocky fierce swordsman about fifty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama; on the right Yagyu Munenori, a lean swordsman with calm sharp eyes, a short dark beard, a chonmage topknot, dark navy kimono and grey hakama. Morning light through the windows."
+  },
+  {
+   "id": "n03",
+   "narration": "この世界では、2人の頭の上に石高が浮かぶ。",
+   "highlight": [
+    "石高"
+   ],
+   "tts_text": "このせかいでは、ふたりの、あたまのうえに、こくだかがうかぶ。",
+   "image_en": "Young samurai trainees at the edge of a wooden dojo point up in surprise at the empty air above the heads of two swordsmen, Ono Tadaaki, stocky with thick eyebrows, square jaw, topknot, plain brown kimono and black hakama, and Yagyu Munenori, lean with calm sharp eyes, short dark beard, topknot, dark navy kimono and grey hakama. Their heads are near the middle of the picture with wide empty space above.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [],
+   "image": "Young samurai trainees at the edge of a wooden dojo point up in surprise at the empty air above the heads of two swordsmen, Ono Tadaaki, stocky with thick eyebrows, square jaw, topknot, plain brown kimono and black hakama, and Yagyu Munenori, lean with calm sharp eyes, short dark beard, topknot, dark navy kimono and grey hakama. Their heads are near the middle of the picture with wide empty space above."
+  },
+  {
+   "id": "n04",
+   "narration": "1593年、小野忠明は200石で家康に仕える。",
+   "highlight": [
+    "200石"
+   ],
+   "tts_text": "せんごひゃくきゅうじゅうさんねん、おのただあきは、にひゃっこくで、いえやすに、つかえる。",
+   "image_en": "Ono Tadaaki, a stocky fierce Japanese swordsman about thirty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama, bows deeply on the wooden floor of a lord's audience hall, his long sword laid beside him; lantern light.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "image": "Ono Tadaaki, a stocky fierce Japanese swordsman about thirty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama, bows deeply on the wooden floor of a lord's audience hall, his long sword laid beside him; lantern light."
+  },
+  {
+   "id": "n05",
+   "narration": "宗矩は関ヶ原の後、柳生の旧領2000石を取り戻す。",
+   "highlight": [
+    "2000石"
+   ],
+   "tts_text": "むねのりは、せきがはらのあと、やぎゅうの、きゅうりょう、にせんごくを、とりもどす。",
+   "image_en": "Yagyu Munenori, a lean Japanese swordsman about thirty with calm sharp eyes, a short dark beard, a chonmage topknot, dark navy kimono and grey hakama, stands on a hill looking down at a quiet mountain village with rice fields and thatched roofs in a green valley at sunset, his face full of emotion. His head is near the middle with wide empty space above.",
+   "shots": [
+    "n05",
+    "n05@face"
+   ],
+   "chars": [],
+   "image": "Yagyu Munenori, a lean Japanese swordsman about thirty with calm sharp eyes, a short dark beard, a chonmage topknot, dark navy kimono and grey hakama, stands on a hill looking down at a quiet mountain village with rice fields and thatched roofs in a green valley at sunset, his face full of emotion. His head is near the middle with wide empty space above."
+  },
+  {
+   "id": "n06",
+   "narration": "1621年、宗矩は世継ぎの家光の兵法師範になる。",
+   "highlight": [
+    "家光"
+   ],
+   "tts_text": "せんろっぴゃくにじゅういちねん、むねのりは、よつぎの、いえみつの、へいほうしはんになる。",
+   "image_en": "Yagyu Munenori, a lean Japanese swordsman about fifty with calm sharp eyes, a short grey-streaked beard, a chonmage topknot, dark navy kimono and grey hakama, guides the hands of a slim teenage young lord in a white and pale gold kimono holding a wooden sword, in a quiet wooden dojo of Edo Castle.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Iemitsu_Tokugawa.jpg",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Iemitsu_Tokugawa.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Iemitsu_Tokugawa.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Iemitsu_Tokugawa.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Iemitsu_Tokugawa.jpg"
+   }
+  },
+  {
+   "id": "n07",
+   "narration": "小野忠明は、のちに800石。頭の上はまだ3桁。",
+   "highlight": [
+    "3桁"
+   ],
+   "tts_text": "おのただあきは、のちに、はっぴゃっこく。あたまのうえは、まだ、さんけた。",
+   "image_en": "Ono Tadaaki, a stocky fierce Japanese swordsman about fifty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama, sits alone on the veranda of a modest samurai house at dusk, wiping his sword blade with a cloth, a little gloomy. His head is near the middle with wide empty space above.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "Ono Tadaaki, a stocky fierce Japanese swordsman about fifty with thick eyebrows, a square jaw, a chonmage topknot, a plain brown kimono and black hakama, sits alone on the veranda of a modest samurai house at dusk, wiping his sword blade with a cloth, a little gloomy. His head is near the middle with wide empty space above."
+  },
+  {
+   "id": "n08",
+   "narration": "1632年、宗矩は総目付。大名を見張る役になる。",
+   "highlight": [
+    "総目付"
+   ],
+   "tts_text": "せんろっぴゃくさんじゅうにねん、むねのりは、そうめつけ。だいみょうを、みはるやくになる。",
+   "image_en": "Yagyu Munenori, a lean Japanese man about sixty with calm sharp eyes, a short grey-streaked beard, a chonmage topknot, dark navy kamishimo over a grey kimono, walks with a stern face down a long street lined with the white walls and big wooden gates of daimyo mansions in Edo, two attendants behind him. His head is near the middle with wide empty space above.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": [],
+   "image": "Yagyu Munenori, a lean Japanese man about sixty with calm sharp eyes, a short grey-streaked beard, a chonmage topknot, dark navy kamishimo over a grey kimono, walks with a stern face down a long street lined with the white walls and big wooden gates of daimyo mansions in Edo, two attendants behind him. His head is near the middle with wide empty space above."
+  },
+  {
+   "id": "n09",
+   "narration": "だが頭の上の大きな数字は、遠くからでも見える。",
+   "highlight": [
+    "遠くからでも"
+   ],
+   "tts_text": "だが、あたまのうえの、おおきなすうじは、とおくからでもみえる。",
+   "image_en": "From the top of a daimyo mansion wall in Edo, a startled gatekeeper samurai points far down the street at the small figure of an approaching official in dark navy kamishimo, glowing faintly above his head; other servants turn around in alarm.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [],
+   "image": "From the top of a daimyo mansion wall in Edo, a startled gatekeeper samurai points far down the street at the small figure of an approaching official in dark navy kamishimo, glowing faintly above his head; other servants turn around in alarm."
+  },
+  {
+   "id": "n10",
+   "narration": "大名たちは数字を見つけるたび、屋敷の門を閉めた。",
+   "highlight": [
+    "門を閉めた"
+   ],
+   "tts_text": "だいみょうたちは、すうじをみつけるたび、やしきの、もんをしめた。",
+   "image_en": "Panicked servants of a daimyo mansion in Edo push its huge wooden gate shut in a hurry, while a nervous daimyo lord in formal kamishimo peeks out through the narrowing gap, sweating; dusk light.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "image": "Panicked servants of a daimyo mansion in Edo push its huge wooden gate shut in a hurry, while a nervous daimyo lord in formal kamishimo peeks out through the narrowing gap, sweating; dusk light."
+  },
+  {
+   "id": "n11",
+   "narration": "1636年、加増で1万石。宗矩の頭の上だけ5桁。",
+   "highlight": [
+    "1万石",
+    "5桁"
+   ],
+   "tts_text": "せんろっぴゃくさんじゅうろくねん、かぞうで、いちまんごく。むねのりの、あたまのうえだけ、ごけた。",
+   "image_en": "Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot, dark navy kamishimo over a grey kimono, kneels in the center of a grand hall of Edo Castle, bathed in a sudden burst of golden light shining down from above his head, while the kneeling officials around him jump back with eyes wide and mouths open. His head is near the middle with wide empty space above.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot, dark navy kamishimo over a grey kimono, kneels in the center of a grand hall of Edo Castle, bathed in a sudden burst of golden light shining down from above his head, while the kneeling officials around him jump back with eyes wide and mouths open. His head is near the middle with wide empty space above.",
+   "motion": true
+  },
+  {
+   "id": "n12",
+   "narration": "剣の師範の列を離れ、宗矩は大名の席に座る。",
+   "highlight": [
+    "大名の席"
+   ],
+   "tts_text": "けんのしはんの、れつをはなれ、むねのりは、だいみょうの、せきにすわる。",
+   "image_en": "Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot, dark navy kamishimo over a grey kimono, walks calmly across the wide tatami floor of a grand Edo Castle hall, leaving a row of plain swordsmen behind and heading toward a row of richly dressed daimyo lords.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "image": "Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot, dark navy kamishimo over a grey kimono, walks calmly across the wide tatami floor of a grand Edo Castle hall, leaving a row of plain swordsmen behind and heading toward a row of richly dressed daimyo lords."
+  },
+  {
+   "id": "n13",
+   "narration": "門を閉めていた大名の隣に、見張り役が座った。",
+   "highlight": [
+    "見張り役"
+   ],
+   "tts_text": "もんをしめていた、だいみょうの、となりに、みはりやくが、すわった。",
+   "image_en": "In a row of daimyo lords kneeling in a grand Edo Castle hall, a nervous lord in formal kamishimo turns pale and stiff, sweating, as Yagyu Munenori, a lean man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot and dark navy kamishimo, quietly kneels right beside him with a faint smile.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "In a row of daimyo lords kneeling in a grand Edo Castle hall, a nervous lord in formal kamishimo turns pale and stiff, sweating, as Yagyu Munenori, a lean man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot and dark navy kamishimo, quietly kneels right beside him with a faint smile.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "At dusk, Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot and dark navy kamishimo, sits on the veranda of a mountain temple overlooking a green valley village, sipping tea, a lantern beside him.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [],
+   "image": "At dusk, Yagyu Munenori, a lean Japanese man about sixty-five with calm sharp eyes, a short grey beard, a chonmage topknot and dark navy kamishimo, sits on the veranda of a mountain temple overlooking a green valley village, sipping tea, a lantern beside him."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
