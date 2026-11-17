@@ -2,11 +2,15 @@
  "ch": "kakure",
  "work": "_chara_016_稲荷の狐",
  "portrait": false,
- "made": "2026-11-18 00:17",
+ "made": "2026-11-18 04:16",
  "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, bright even light. Pure white background.",
  "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
  "rules": {},
  "characters": {
+  "byakko": {
+   "desc_en": "Byakko, the white fox messenger of the Inari shrine in Japan, a slender elegant fox with pure white fur, a long bushy white tail with a faint golden tip, calm narrow golden eyes, a small red bib (yodarekake) tied at the neck, sitting or standing on four legs like a real fox, not humanoid, no clothes other than the red bib",
+   "channel": true
+  },
   "irogu": {
    "desc_en": "Hata no Irogu, a wealthy landowner of ancient Yamashiro in Japan, a proud man about 40 years old with a short black beard, black hair tied in mizura loops beside both ears, a white Kofun-period kinu tunic with a brown sash and white hakama trousers tied below the knees, a simple wooden longbow, no armor",
    "channel": true
@@ -17,6 +21,78 @@
   }
  },
  "cuts": [
+  {
+   "id": "byakko_sit",
+   "image": "白狐が、前足をそろえて背筋をのばし、正面を向いて静かに座っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox sits upright facing forward, front paws together, calm. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. The whole body fits without cropping, filling the frame top to bottom, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox sits upright facing forward, front paws together, calm. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. The whole body fits without cropping, filling the frame top to bottom, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "byakko_walk",
+   "image": "白狐が、横向きに静かに歩いている全身。尾を後ろへ長くのばす。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox walks quietly in side view, long tail stretched behind. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. Whole body fits without cropping, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox walks quietly in side view, long tail stretched behind. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. Whole body fits without cropping, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "byakko_look",
+   "image": "白狐が、座ったまま首だけをこちらへ振り返り、金色の目で見つめている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox sits and turns its head back over its shoulder toward the viewer, staring with golden eyes. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox sits and turns its head back over its shoulder toward the viewer, staring with golden eyes. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "byakko_ear",
+   "image": "白狐が、耳をぴんと立て、何かの音に気づいて首をかしげている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox stands with ears pricked up, tilting its head as if it noticed a sound. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox stands with ears pricked up, tilting its head as if it noticed a sound. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "byakko_ine",
+   "image": "白狐が、口に金色の稲穂の束をくわえて、座っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox sits holding a bundle of golden rice ears in its mouth. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox sits holding a bundle of golden rice ears in its mouth. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "byakko_run",
+   "image": "白狐が、野を駆けるように前足と後ろ足を大きくのばして跳んでいる全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1匹だけ。輪郭線ははっきり。",
+   "image_en": "The white fox leaps forward mid-run, front and hind legs fully stretched. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "The white fox leaps forward mid-run, front and hind legs fully stretched. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one fox in the center. Clear outlines."
+  },
+  {
+   "id": "irogu_bow",
+   "image": "秦伊侶具が、木の弓を引きしぼり、得意そうな顔で前を狙っている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Hata no Irogu draws a wooden longbow, aiming forward with a proud smug face. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits top to bottom, only one person in the center. Clear outlines.",
+   "chars": [
+    "irogu"
+   ],
+   "en": "Hata no Irogu draws a wooden longbow, aiming forward with a proud smug face. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits top to bottom, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "irogu_shock",
+   "image": "秦伊侶具が、弓を下げ、空を見上げて目を見開き驚いている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Hata no Irogu lowers his bow and looks up at the sky with wide eyes, shocked. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "irogu"
+   ],
+   "en": "Hata no Irogu lowers his bow and looks up at the sky with wide eyes, shocked. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
   {
    "id": "irogu_regret",
    "image": "秦伊侶具が、両手で若い木の苗をささげ持ち、うなだれて悔やんでいる全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
