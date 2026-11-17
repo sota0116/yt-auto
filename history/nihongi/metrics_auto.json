@@ -561,6 +561,18 @@
    ],
    "取った日": "2026-11-14",
    "再生（公開ページ）": 104
+  },
+  "d7": {
+   "views": 120,
+   "averageViewPercentage": 18.65,
+   "averageViewDuration": 92,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-17",
+   "再生（公開ページ）": 121
   }
  },
  "L007_参勤交代が毎月だったら": {
@@ -638,7 +650,16 @@
  },
  "L012_火薬の残りが見えたら": {
   "type": null,
-  "video_id": "TLdhDHgZQ1E"
+  "video_id": "TLdhDHgZQ1E",
+  "h72": {
+   "views": 11,
+   "averageViewPercentage": 47.39,
+   "averageViewDuration": 252,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-17",
+   "再生（公開ページ）": 24
+  }
  },
  "L013_ゴミ収集員が江戸へ": {
   "type": null,
@@ -647,5 +668,13 @@
  "L014_生糸の値札が全部読めたら": {
   "type": null,
   "video_id": "wxV93PdA_mc"
+ },
+ "S121_r003": {
+  "type": null,
+  "video_id": "NSzZMy40Oyc"
+ },
+ "L015_現場監督が戦国の城普請へ": {
+  "type": null,
+  "video_id": "m1TRjB_YPos"
  }
 }

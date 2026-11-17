@@ -245,7 +245,7 @@
   "seconds": 500,
   "title_now": "大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円",
   "synthetic_on": null,
-  "views_now": 297,
+  "views_now": 304,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -329,7 +329,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 3027,
+  "views_now": 3034,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -479,7 +479,7 @@
   "seconds": 514,
   "title_now": "あなたの時給、調理人より上？ 全産業より長く立つ厨房の1時間の値段",
   "synthetic_on": null,
-  "views_now": 5,
+  "views_now": 6,
   "published": true,
   "published_at": "2026-11-06T19:00:06+09:00",
   "comment_id": "UgyQsp-NdbuBQPBWCM14AaABAg",
@@ -517,7 +517,7 @@
   "seconds": 503,
   "title_now": "【悲報】もし会社が年功序列をやめたら、いちばん損をするのは若手ではなかった",
   "synthetic_on": null,
-  "views_now": 310,
+  "views_now": 311,
   "published": true,
   "published_at": "2026-11-07T19:00:03+09:00",
   "comment_id": "Ugz2vACD-b8cIGQRajh4AaABAg",
@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 245,
+  "views_now": 249,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -573,7 +573,7 @@
   "seconds": 533,
   "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
   "synthetic_on": null,
-  "views_now": 263,
+  "views_now": 265,
   "published": true,
   "published_at": "2026-11-09T19:00:01+09:00",
   "comment_id": "UgwUJfEp6L_WFq5Jw5Z4AaABAg",
@@ -605,7 +605,13 @@
   "published": true,
   "published_at": "2026-11-10T19:00:15+09:00",
   "comment_id": "UgxYAoeGWwqDKOLpWvZ4AaABAg",
-  "comment_at": "2026-11-10T19:55:20+09:00"
+  "comment_at": "2026-11-10T19:55:20+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-17T20:38:44+09:00",
+    "内容": "タイトルを「美容師・理容師は割に合うのか。年収約389万円を、店に立った時間で割った結果」に（サムネB案のファイルが見つからないのでサムネはそのまま。週報に出す）"
+   }
+  ]
  },
  {
   "work": "021_c_seibi",
@@ -697,7 +703,7 @@
   "seconds": 511,
   "title_now": "【年収の逆説】電気工事士は働く人の平均より若いのに、なぜ年収は高いのか",
   "synthetic_on": null,
-  "views_now": 15,
+  "views_now": 17,
   "published": true,
   "published_at": "2026-11-15T19:00:33+09:00",
   "comment_id": "UgxckjOR_qNbmE9kHAt4AaABAg",
@@ -720,12 +726,16 @@
    "保育士より、あなたの給料の山は高い？ スタートは平均並みの仕事と比べたら"
   ],
   "comment": "保育士を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
-  "privacy_now": "private",
-  "publish_at": "2026-11-17T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 502,
   "title_now": "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-17T19:00:10+09:00",
+  "comment_id": "Ugxwc3M2Dfqp0lAQUgJ4AaABAg",
+  "comment_at": "2026-11-17T20:38:42+09:00"
  },
  {
   "work": "023_c4_yakuzai",
@@ -839,6 +849,12 @@
    "大型トラック運転手、看護師よりひと月46時間長く働いた結果、年収は下だった",
    "あなたの時給は看護師より上？ 年収が近い大型トラック運転手と比べたら"
   ],
-  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 513,
+  "title_now": "【悲報】大型トラック運転手、年収は大工より上なのに時給にすると負けた理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

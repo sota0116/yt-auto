@@ -43,7 +43,7 @@
   "seconds": 501,
   "title_now": "【もしも歴史】刀に「心」があったら｜刀狩の夜、1本だけ家に帰った刀の世界線",
   "synthetic_on": null,
-  "views_now": 257,
+  "views_now": 258,
   "published": true,
   "published_at": "2026-11-02T20:00:05+09:00"
  },
@@ -68,7 +68,7 @@
   "seconds": 511,
   "title_now": "【もしも歴史】江戸の小判が、しゃべれたら｜元禄の改鋳で500万両が消えた世界線",
   "synthetic_on": null,
-  "views_now": 62,
+  "views_now": 63,
   "published": true,
   "published_at": "2026-11-04T20:00:31+09:00"
  },
@@ -298,7 +298,7 @@
   "seconds": 53,
   "title_now": "もしも大坂夏の陣で「家康の陣に届く確率」が見えたら。真田幸村の頭の上だけ100% #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 520,
+  "views_now": 521,
   "published": true,
   "published_at": "2026-11-12T07:00:13+09:00"
  },
@@ -339,12 +339,14 @@
    "もしも上杉鷹山の米沢藩で、借金が頭の上に見えたら。17歳の殿だけ今の120億円 #もしも #日本史 #江戸時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-16T22:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 56,
   "title_now": "もしも上杉鷹山の米沢藩で、借金が頭の上に見えたら。17歳の殿だけ今の120億円 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1104,
+  "published": true,
+  "published_at": "2026-11-17T07:00:18+09:00"
  },
  {
   "work": "S122_r007",
@@ -355,12 +357,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-17T09:57:58+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも伊勢参りの人に「行きたい度」が見えたら。210万人が犬の後ろを歩く #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-18T12:10:00+09:00",
+  "seconds": 52,
+  "title_now": "もしも伊勢参りの人に「行きたい度」が見えたら。210万人が犬の後ろを歩く #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S123_r012",
@@ -371,12 +378,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-17T11:01:38+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも信長の家臣の頭に「領地」が見えたら。足軽の子の秀吉だけ12万石に跳ね上がる #もしも #日本史 #戦国時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-18T20:00:00+09:00",
+  "seconds": 49,
+  "title_now": "もしも信長の家臣の頭に「領地」が見えたら。足軽の子の秀吉だけ12万石に跳ね上がる #もしも #日本史 #戦国時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S124_n012",
@@ -387,11 +399,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-17T15:31:45+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも長篠の戦いで、鉄砲が10倍あったら。信長の3万挺が朝のうちに弾切れ #もしも #日本史 #戦国時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-19T07:00:00+09:00",
+  "seconds": 51,
+  "title_now": "もしも長篠の戦いで、鉄砲が10倍あったら。信長の3万挺が朝のうちに弾切れ #もしも #日本史 #戦国時代",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
