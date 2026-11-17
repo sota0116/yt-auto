@@ -240,7 +240,7 @@ def run(work, stage, args, ch, ok=(0,), timeout=4 * 3600, env=None):
         raise Wait(f"{stage} で Claude の利用枠の上限に届きました（{m.group(0).strip()[:80]}）。枠が戻った後の実行で続きから作ります")
     if r.returncode == 75:
         raise Wait(f"{stage} で Gemini の1日の回数の上限に届きました。上限が戻る 17:37 の実行で続きから作ります")
-    if r.returncode == 76:  # 材料待ち（日本紀の横動画の元にするショートがまだ無い時）。失敗ではない
+    if r.returncode == 76:  # 材料待ち（日本紀の横動画の元にするショートがまだ無い時）・ネタ切れ（pick_neta*.py。2026-11-17）。失敗ではない
         raise Wait(f"{stage}：{out.strip().splitlines()[-1]}")
     if r.returncode not in ok:
         raise Stop(f"{stage} で止まりました（終了コード {r.returncode}）：{tail[-300:]}")

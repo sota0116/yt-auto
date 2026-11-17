@@ -144,7 +144,9 @@ def main():
             else:
                 rows.append(r)
         if not rows:
-            sys.exit(f"【止まりました】ネタ帳に、まだ作っていない {kind} の行がありません（ネタ帳.json に行を足す）")
+            # ネタ切れは「待ち」（終了コード 76。pick_neta.py と同じ。2026-11-17）
+            print(f"【ネタ切れ】okinu：ネタ帳に、まだ作っていない {kind} の行がありません（ネタ帳.json に行を足す）", file=sys.stderr)
+            sys.exit(76)
 
         if kind == "short":  # 型1:型2 = 2:1 で回す
             ts = [m.get("型") for m in made if m.get("kind") == "short" and m.get("型")][-2:]

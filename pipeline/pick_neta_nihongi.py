@@ -147,7 +147,9 @@ def pick_short(today):
         cands.append((sub, -round(deficit, 3), last4.count(r["distort"]), idx, r))
     if not cands:
         log(json.dumps({"選ばなかった行": skipped}, ensure_ascii=False))
-        sys.exit("【止まりました】nihongi：今出せるネタがありません（ネタ帳.json に行を足すか、補充を確かめる）")
+        # ネタ切れは「待ち」（終了コード 76。pick_neta.py と同じ。2026-11-17）
+        print("【ネタ切れ】nihongi：今出せるネタがありません（ネタ帳.json に行を足すか、補充を確かめる）", file=sys.stderr)
+        sys.exit(76)
     cands.sort(key=lambda c: c[:4])
     r = cands[0][4]
     no = f"S{next_no('S')}"

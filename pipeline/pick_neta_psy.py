@@ -46,7 +46,9 @@ def main():
     free = [r for r in rows if r["id"] not in used and not r.get("hold")]
     free.sort(key=lambda r: r["area"] in hold)  # 並びは保ったまま、後回しの area を後ろへ
     if not free:
-        sys.exit("【止まりました】psy：ネタ帳.json の行を全部使いました。ネタ帳を足してください（在庫で公開をつなぐ）")
+        # ネタ切れは「待ち」（終了コード 76。pick_neta.py と同じ。2026-11-17）
+        print("【ネタ切れ】psy：ネタ帳.json の行を全部使いました。ネタ帳を足してください（在庫で公開をつなぐ）", file=sys.stderr)
+        sys.exit(76)
     row = next((r for r in free if r["area"] != last), free[0])
     slug = re.sub(r"[^0-9a-z_]", "", row["id"].lower().removeprefix("p_"))
     work = os.path.join(vdir, f"{n:03d}_{slug}")

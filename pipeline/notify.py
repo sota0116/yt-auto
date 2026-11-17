@@ -11,7 +11,8 @@ import argparse, datetime, json, os, re, shutil, subprocess, sys, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = datetime.timezone(datetime.timedelta(hours=9))
 # 止まった理由ごとの「やること」（設計書 §9 の表。Issue の本文の最初の行）
-TODO = [("Codex", "PC がついているか、タスク yt-codex-images が動いているかを見る。分からなければ C:\\tmp\\codex_images\\_runner.log を Claude に見せる"),
+TODO = [("ネタ切れ", "channels/<ch>/ネタ帳.json に行を足す（PC で Claude に「<ch>のネタ帳を足して」と言う）。足すまでは在庫で公開がつながる"),
+        ("Codex","PC がついているか、タスク yt-codex-images が動いているかを見る。分からなければ C:\\tmp\\codex_images\\_runner.log を Claude に見せる"),
         ("台本ゲート", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("絵", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
         ("完成", "何もしなくてよい。同じ理由が3日続いたら、Claude に見せる"),
@@ -77,10 +78,11 @@ def daily(ch, slot):
         if any(int(n) % 5 == 0 for n in re.findall(r"PC の Codex[^／]*?（(\d+)回目）", stopped)):
             issue(f"【止まりました】{ch}：PC の Codex の絵が届かない", f"{when}（{slot}）{stopped}")
     elif stopped and r.get("待ち") and slot != "late":
-        print(f"Gemini の回数の上限で待ち。17:37 の実行で続きから作る（Issue にしない）：{stopped}")
+        print(f"待ち（回数の上限・材料待ち・ネタ切れ）。Issue は 17:37 の実行でも止まった時だけ：{stopped}")
     elif stopped and not paused:
         reason = stopped.split("：")[0].split("（")[0]
-        issue(f"【止まりました】{ch}：{reason}", f"{when}（{slot}）{stopped}\n在庫 {r.get('在庫', '?')}本・今月の制作費 {r.get('今月の制作費_円', '?')}円")
+        # ネタ切れ（pick_neta*.py の終了コード 76）は1日1回（17:37）だけ、チャンネルごとに1つの Issue へまとめる（2026-11-17）
+        issue(f"【ネタ切れ】{ch}" if "【ネタ切れ】" in stopped else f"【止まりました】{ch}：{reason}",f"{when}（{slot}）{stopped}\n在庫 {r.get('在庫', '?')}本・今月の制作費 {r.get('今月の制作費_円', '?')}円")
         if slot in ("retry", "late"):
             ping(f"HC_DAILY_{ch.upper()}", "/fail")
     else:

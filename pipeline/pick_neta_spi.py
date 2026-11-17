@@ -185,7 +185,9 @@ def main():
                       "late": we, "free_n": len(free)})
     if not cands:
         print(json.dumps({"選ばなかった行": skipped}, ensure_ascii=False, indent=1))
-        sys.exit("【止まりました】spi：今出せるネタがありません（上の理由）。ネタ帳.json か特典を足してください（在庫で公開をつなぐ）")
+        # ネタ切れは「待ち」（終了コード 76。pick_neta.py と同じ。2026-11-17）
+        print("【ネタ切れ】spi：今出せるネタがありません（上の理由）。ネタ帳.json か特典を足してください（在庫で公開をつなぐ）", file=sys.stderr)
+        sys.exit(76)
 
     def key(c):
         r = c["row"]

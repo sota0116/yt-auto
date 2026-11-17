@@ -139,7 +139,9 @@ def main():
     hist = done_list(a.ch)
     row, want, got = choose(a.ch, hist)
     if not row:
-        sys.exit(f"【止まりました】{a.ch}：作れるネタがありません（型 {want} から全部の型を見た）。在庫で公開をつなぐ")
+        # ネタ切れは道具の失敗ではない（終了コード 76＝run_daily.py が「待ち」にし、GitHub の画面を赤くしない。知らせは 17:37 の Issue だけ。2026-11-17）
+        print(f"【ネタ切れ】{a.ch}：作れるネタがありません（型 {want} から全部の型を見た）。在庫で公開をつなぐ", file=sys.stderr)
+        sys.exit(76)
     n = len(hist) + 1
     slug = re.sub(r"[^0-9a-z_]", "", row["id"].lower())
     work = os.path.join(ROOT, "channels", a.ch, "videos", f"{n:03d}_{slug}")
