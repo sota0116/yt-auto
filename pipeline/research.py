@@ -439,6 +439,9 @@ def add_neta_okinu(d):
             ok = s(c.get("題")) and isinstance(c.get("items"), list) and len(c["items"]) == 3 and all(s(i) for i in c["items"])
         if not ok or c["id"] in ids or c["小物"] in seen or c["小物"] in hand or (t == 1 and (c["題"] in seen or any(i in seen for i in c["items"]))):
             continue
+        src = str(c.get("competitor", "")).split(" ")[0]  # 同じ競合の1本から足すのは1日2行まで（2026-11-17 初回：5行とも神棚の1本からで、同じ話が続く）
+        if src and sum(1 for x in new if str(x.get("competitor", "")).split(" ")[0] == src) >= 2:
+            continue
         keys = ("id", "kind", "型", "題", "items", "小物", "悩み", "年", "ok_q", "competitor") if t == 1 else ("id", "kind", "型", "小物", "悩み", "年", "ok_q", "competitor")
         new.append({k: c[k] for k in keys if k in c} | {"added": now().date().isoformat(), "from": "競合リサーチ"})
         ids.add(c["id"]); seen |= {c["小物"], c.get("題")} | set(c.get("items", []))
