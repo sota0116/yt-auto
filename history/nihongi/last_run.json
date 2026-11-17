@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-18T02:53:13+09:00",
+ "started": "2026-11-18T06:58:03+09:00",
  "made": [],
- "stopped": "gate_video で止まりました（終了コード 1）：動く絵 3 カット・止まった見どころ 0\n完成動画ゲート：60.6秒・1080x1920・-14.7 LUFS・2秒以上の無音 0か所・画面 合格8/8\n  不合格： 長さ 60.6秒（ショートは59.5秒以内）（short）／thumb で止まりました（終了コード 1）：保存 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L111_w002/thumb_a.jpg\n点検：いちばん大きい字の横幅 96%（めやす70%以上）／字の面積 約27%（めやす30〜60%）／行数 2（めやす4行まで）\n  NG 字が少なすぎて目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L111_w002/thumb_a_small.jpg（long）",
+ "stopped": "gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（short）／gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（long）",
  "在庫": {
   "short": 4,
   "long": 0
@@ -11,6 +11,7 @@
   "short": 2,
   "long": 1
  },
- "ended": "2026-11-18T02:54:30+09:00",
+ "待ち": true,
+ "ended": "2026-11-18T07:08:49+09:00",
  "今月の制作費_円": 0.0
 }

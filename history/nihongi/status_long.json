@@ -6,21 +6,32 @@
   "gate_script",
   "voice",
   "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "motion"
  ],
  "started": "2026-11-17T17:15:46+09:00",
- "tries": 1,
+ "tries": 0,
  "code": "e155605ce766",
- "stage": "thumb",
- "updated": "2026-11-18T02:53:51+09:00",
+ "stage": "gate_images",
+ "updated": "2026-11-18T07:06:52+09:00",
  "busy": {
   "images": 1
  },
  "video_swapped": {
   "H07": "H06",
   "K04": "K03"
+ },
+ "restored": {
+  "日時": "2026-11-18T07:01:55+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "images",
+   "motion",
+   "gate_images",
+   "build",
+   "gate_video"
+  ]
  }
 }
