@@ -1,20 +1,12 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/020_yotei_hitotsu",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/021_zenbu_nemuri",
  "done": [
   "pick",
-  "write",
-  "gate_script",
-  "voice",
-  "yomi",
-  "reading",
-  "images"
+  "write"
  ],
- "started": "2026-11-18T22:02:13+09:00",
- "tries": 0,
+ "started": "2026-11-19T04:22:44+09:00",
+ "tries": 1,
  "code": "cacc4e01d226",
- "stage": "motion",
- "updated": "2026-11-19T01:13:51+09:00",
- "busy": {
-  "motion": 1
- }
+ "stage": "gate_script",
+ "gate_fails": 1
 }
