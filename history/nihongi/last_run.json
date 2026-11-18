@@ -1,8 +1,8 @@
 {
  "ch": "nihongi",
- "started": "2026-11-18T06:58:03+09:00",
+ "started": "2026-11-18T08:51:07+09:00",
  "made": [],
- "stopped": "gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（short）／gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（long）",
+ "stopped": "gate_video で止まりました（終了コード 1）：動く絵 3 カット・止まった見どころ 0\n完成動画ゲート：60.6秒・1080x1920・-14.7 LUFS・2秒以上の無音 0か所・画面 合格8/8\n  不合格： 長さ 60.6秒（ショートは59.5秒以内）（short）／絵が足りないカットがあるので、絵の段へ戻しました。次の実行で受け取り直します（long）",
  "在庫": {
   "short": 4,
   "long": 0
@@ -11,7 +11,6 @@
   "short": 2,
   "long": 1
  },
- "待ち": true,
- "ended": "2026-11-18T07:08:49+09:00",
+ "ended": "2026-11-18T09:01:33+09:00",
  "今月の制作費_円": 0.0
 }

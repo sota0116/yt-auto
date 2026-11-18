@@ -33,10 +33,10 @@
  },
  "A06": {
   "状態": "できた",
-  "thread": "d89d95f2-e5c6-467a-955a-9bbdc46dd295",
+  "thread": "a0c43ce1-bb46-49fe-ba91-9392cc5aca54",
   "回": 1,
-  "秒": 23,
-  "元": "images/_lovart/A06/lovart_52db2e9c4798.jpeg",
+  "秒": 47,
+  "元": "images/_lovart/A06/lovart_aa738ce61bc9.png",
   "注意": ""
  },
  "B01": {
@@ -263,8 +263,11 @@
  },
  "E10": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "330c8219-8a1a-4ccb-b18a-6646cf08a173",
+  "回": 1,
+  "秒": 110,
+  "元": "images/_lovart/E10/lovart_022dad0a9b06.png",
+  "注意": ""
  },
  "E11": {
   "状態": "できた",
