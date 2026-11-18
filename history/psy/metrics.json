@@ -243,6 +243,19 @@
  },
  "016_yoru_kangae": {
   "type": "眠りと夜",
-  "video_id": "rQxyP5TIED8"
+  "video_id": "rQxyP5TIED8",
+  "h72": {
+   "views": 20,
+   "averageViewPercentage": 27.140000000000004,
+   "averageViewDuration": 279,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 29
+  }
+ },
+ "019_tegami_kaku": {
+  "type": "人づきあい",
+  "video_id": "MsH7YCEHcYA"
  }
 }

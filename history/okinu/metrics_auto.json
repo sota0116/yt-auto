@@ -624,6 +624,18 @@
    ],
    "取った日": "2026-11-15",
    "再生（公開ページ）": 453
+  },
+  "d7": {
+   "views": 457,
+   "averageViewPercentage": 73.34,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 455
   }
  },
  "S117_ポチ袋": {
@@ -703,6 +715,15 @@
    "直す所": [],
    "取った日": "2026-11-14",
    "再生（公開ページ）": 117
+  },
+  "d7": {
+   "views": 133,
+   "averageViewPercentage": 41.49,
+   "averageViewDuration": 323,
+   "subscribersGained": 2,
+   "直す所": [],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 135
   }
  },
  "S118_へそくり": {
@@ -768,15 +789,45 @@
  },
  "S121_レジの前でお札を数える手": {
   "type": null,
-  "video_id": "DfJnaYCj61k"
+  "video_id": "DfJnaYCj61k",
+  "h72": {
+   "views": 309,
+   "averageViewPercentage": 55.14,
+   "averageViewDuration": 20,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 597
+  }
  },
  "S122_買い物メモ": {
   "type": null,
-  "video_id": "CKUI_m1NhqU"
+  "video_id": "CKUI_m1NhqU",
+  "h72": {
+   "views": 565,
+   "averageViewPercentage": 141.62,
+   "averageViewDuration": 52,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 1031
+  }
  },
  "013_郵便受けのNG5": {
   "type": "okinu",
-  "video_id": "Y5unabdbnTs"
+  "video_id": "Y5unabdbnTs",
+  "h72": {
+   "views": 15,
+   "averageViewPercentage": 23.65,
+   "averageViewDuration": 175,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-18",
+   "再生（公開ページ）": 77
+  }
  },
  "S123_昔の硬貨": {
   "type": null,
@@ -793,5 +844,9 @@
  "015_洗濯機のNG5": {
   "type": "okinu",
   "video_id": "EREnIN4PJJM"
+ },
+ "S125_財布の定位置の引き出し": {
+  "type": null,
+  "video_id": "NBi9n-j4ne4"
  }
 }

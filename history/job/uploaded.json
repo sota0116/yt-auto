@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 251,
+  "views_now": 252,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -644,6 +644,10 @@
    {
     "日時": "2026-11-15T00:43:58+09:00",
     "内容": "タイトルを「自動車整備士の新人は年収約361万円。工場で一番年上のベテランになった結果」に（サムネB案のファイルが見つからないのでサムネはそのまま。週報に出す）"
+   },
+   {
+    "日時": "2026-11-18T20:24:50+09:00",
+    "内容": "タイトルを「自動車整備士は割に合う？ 車検の車を朝からばらす仕事を、1時間の値段にしたら」に"
    }
   ]
  },
@@ -703,11 +707,17 @@
   "seconds": 511,
   "title_now": "【年収の逆説】電気工事士は働く人の平均より若いのに、なぜ年収は高いのか",
   "synthetic_on": null,
-  "views_now": 17,
+  "views_now": 21,
   "published": true,
   "published_at": "2026-11-15T19:00:33+09:00",
   "comment_id": "UgxckjOR_qNbmE9kHAt4AaABAg",
-  "comment_at": "2026-11-15T19:36:51+09:00"
+  "comment_at": "2026-11-15T19:36:51+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-18T20:24:51+09:00",
+    "内容": "タイトルを「電気工事士、天井裏の新人が分電盤の前に立った結果、給料はどう跳ねたか」に（サムネB案のファイルが見つからないのでサムネはそのまま。週報に出す）"
+   }
+  ]
  },
  {
   "work": "022_c4_hoiku",
@@ -731,7 +741,7 @@
   "seconds": 502,
   "title_now": "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 7,
   "published": true,
   "published_at": "2026-11-17T19:00:10+09:00",
   "comment_id": "Ugxwc3M2Dfqp0lAQUgJ4AaABAg",
@@ -827,7 +837,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
   "privacy_now": "private",
-  "publish_at": "2026-11-25T19:00:00+09:00",
+  "publish_at": "2026-11-25T10:00:00Z",
   "seconds": 509,
   "title_now": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
   "synthetic_on": null,
@@ -873,7 +883,13 @@
    "もしパイロットになったら、新人の年収は約359万円。50代で何倍になるか",
    "パイロットの新人より、あなたの時給は上？ 年収いちばんの仕事を1時間で割ったら"
   ],
-  "comment": "パイロットを含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "パイロットを含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 514,
+  "title_now": "【空の給料】パイロット、年収は全職業でいちばんなのに、新人は平均より安い理由",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "028_c_j014",
@@ -891,6 +907,12 @@
    "もし医師になったら、20代の時給は約2,340円。50代の医師と同じ1日を過ごした結果",
    "あなたは医師より長く働いている？ 年収約1512万円の仕事の1か月と比べたら"
   ],
-  "comment": "医師を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "医師を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 507,
+  "title_now": "【激務の謎】医師、働く時間は働く人の平均とほぼ同じなのに、激務と言われる理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
