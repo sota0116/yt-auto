@@ -1,1 +1,12 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/022_furusato",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-11-19T08:22:43+09:00",
+ "tries": 1,
+ "code": "c2c4b3d4e3b4",
+ "stage": "gate_script",
+ "gate_fails": 1
+}
