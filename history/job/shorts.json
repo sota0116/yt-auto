@@ -1042,5 +1042,35 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-17T14:30:50+09:00"
+ },
+ {
+  "work": "20261118_1138_0",
+  "topic_id": "duel_デザイナー_保険の営業_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "言い方の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-18T11:38:54+09:00"
+ },
+ {
+  "work": "20261118_1138_1",
+  "topic_id": "duel_大型トラック運転手_臨床検査技師_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "title": null,
+  "hook": null,
+  "banner": null,
+  "編集の版": 1,
+  "言い方の版": 1,
+  "bgm": null,
+  "ok": false,
+  "why": "台本の点検で NG が残った",
+  "made_at": "2026-11-18T11:38:59+09:00"
  }
 ]
