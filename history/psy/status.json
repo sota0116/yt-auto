@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/013_jiman_hito",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/psy/videos/020_yotei_hitotsu",
  "done": [
   "pick",
   "write",
@@ -7,32 +7,14 @@
   "voice",
   "yomi",
   "reading",
-  "images",
-  "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "images"
  ],
- "started": "2026-11-17T15:25:20+09:00",
- "tries": 1,
- "code": "6c4f9118ddd8",
- "stage": "thumb",
- "updated": "2026-11-18T04:21:31+09:00",
- "images_back": true,
- "restored": {
-  "日時": "2026-11-18T02:51:43+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "yomi",
-   "reading",
-   "images",
-   "motion",
-   "gate_images",
-   "build",
-   "gate_video"
-  ]
+ "started": "2026-11-18T22:02:13+09:00",
+ "tries": 0,
+ "code": "cacc4e01d226",
+ "stage": "motion",
+ "updated": "2026-11-19T01:13:51+09:00",
+ "busy": {
+  "motion": 1
  }
 }
