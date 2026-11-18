@@ -11,8 +11,8 @@
   "build"
  ],
  "started": "2026-11-17T18:58:09+09:00",
- "tries": 2,
- "code": "e155605ce766",
+ "tries": 1,
+ "code": "6c4f9118ddd8",
  "stage": "gate_video",
  "updated": "2026-11-18T08:56:01+09:00",
  "busy": {
