@@ -769,11 +769,41 @@ def make_one(ch, st, upload, kind=None):
     step("gate_images", gate_images)
     def build_args():  # 長さの足りない回は、カットの間を広げて組み直す（決まり7。build_gap は status に残す）
         return [T("build", "build_long_job.py"), work] + (["--gap", str(st["build_gap"])] if st.get("build_gap") else [])
+    def restore_real():
+        """実画像（real）のカットは台本から image を外して png だけを置くので、作業フォルダが作り直されて png が消えると「絵がないカット」で
+        毎回止まる（2026-11-19 nihongi L111 が8カットで止まり続けた）。絵の段へ戻す前に、real の検索語で取り直す。1枚でも置けたら True"""
+        try:
+            import real_images
+        except Exception:
+            return False
+        sp2 = os.path.join(work, "script.json")
+        s = jload(sp2, {})
+        size = (1080, 1920) if s.get("format") == "short" else (1920, 1080)
+        avoid, ok = set(), False
+        for c in s.get("cuts", []):
+            if not c.get("real") or c.get("image") or c.get("same_as") or os.path.exists(os.path.join(work, "images", c["id"] + ".png")):
+                continue
+            try:
+                src = real_images.place(work, c, size, avoid)
+            except Exception:
+                src = None
+            if src:
+                avoid.add(src["題"])
+                c["real_src"] = src
+                ok = True
+        if ok:
+            jsave(sp2, s)
+        return ok
+
     def build():
         try:
             run(work, "build", build_args(), ch)
         except Stop as e:
             if "絵がないカット" in str(e):
+                if restore_real():
+                    print("■ 消えていた実画像を取り直したので、組み直す", flush=True)
+                    run(work, "build", build_args(), ch)
+                    return
                 images_back()
             raise
     step("build", build)
@@ -847,6 +877,19 @@ def make_one(ch, st, upload, kind=None):
                 st["build_gap"] = gap
                 jsave(sp, st)
                 print(f"■ 完成動画ゲート：8分にわずかに足りないので、カットの間を {gap} 秒にして組み直す（1回だけ）", flush=True)
+                run(work, "build", build_args(), ch)
+                continue
+            g0 = jload(os.path.join(work, "_gate_video.json"), {})
+            sec0, bad0 = g0.get("長さ秒") or 0, g0.get("不合格") or []
+            if (not st.get("tempo_fast") and 59.5 < sec0 <= 66 and bad0 and all(b.startswith("長さ") for b in bad0)
+                    and jload(os.path.join(work, "script.json"), {}).get("format") == "short"):
+                # ショートが60秒の枠をわずかに超えた時は、声の速さを上げて組み直す（1回だけ。2026-11-19 nihongi S126 が60.6秒で止まり続けた）
+                sc2 = jload(os.path.join(work, "script.json"), {})
+                sc2["tempo"] = round(float(sc2.get("tempo") or 1.35) * sec0 / 58.5, 3)
+                jsave(os.path.join(work, "script.json"), sc2)
+                st["tempo_fast"] = sc2["tempo"]
+                jsave(sp, st)
+                print(f"■ 完成動画ゲート：ショートが{sec0}秒で長いので、声の速さを {sc2['tempo']} にして組み直す（1回だけ）", flush=True)
                 run(work, "build", build_args(), ch)
                 continue
             fixes = bad_frame_cuts(work)
