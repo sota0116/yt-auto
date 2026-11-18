@@ -1,8 +1,10 @@
 {
  "ch": "okinu",
- "started": "2026-11-18T06:57:53+09:00",
- "made": [],
- "stopped": "gate_images で Claude の利用枠の上限に届きました（You've hit your weekly limit · resets 12pm (Asia/Tokyo)）。枠が戻った後の実行で続きから作ります（short）",
+ "started": "2026-11-18T10:08:07+09:00",
+ "made": [
+  "S129_神棚を置くとお金が逃げる"
+ ],
+ "stopped": null,
  "在庫": {
   "short": 4,
   "long": 2
@@ -11,7 +13,6 @@
   "short": 1,
   "long": 0
  },
- "待ち": true,
- "ended": "2026-11-18T07:03:05+09:00",
+ "ended": "2026-11-18T10:32:37+09:00",
  "今月の制作費_円": 0.0
 }
