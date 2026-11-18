@@ -790,5 +790,74 @@
    ]
   },
   "short_video_id": "N5_uh1v57Dc"
+ },
+ {
+  "work": "021_zenbu_nemuri",
+  "type": "眠りと夜",
+  "frame": "眠りと夜",
+  "neta_id": "p_zenbu_nemuri",
+  "jobs": [],
+  "made": "2026-11-19",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】よく眠れた人の脳が夜にしていること、全6つ｜眠りながら、知らない声を聞き分けていた",
+  "titles": [
+   "【心理学】よく眠れた人の脳が夜にしていること、全6つ｜眠りながら、知らない声を聞き分けていた",
+   "【心理学】ひと晩寝ると、きのうの練習がうまくいく人の正体｜脳が夜にしていた6つのこと",
+   "【心理学】眠っていても物音で目が覚める人、実は脳が見張り番をしています。"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "ネタ帳の網羅回（form 網羅・手順書 §3 の網羅回・§6 の型E）。競合メモ 2026-11-18 の「伸びている題材」の1つ目（夜、布団の中で頭が動き出す：AZvQGM0aTf8・CX90FOqbB3Q・Nynyw3qGf3s）の眠りの側を題材にした。ネタは Nynyw3qGf3s（1日42,927回・53.3倍）の章「眠っていても聞き慣れた声を聞き分ける」を借り、4つ目の特徴（Blume ほか 2018）にした。章の並びは競合メモの型5（Nynyw3qGf3s：場面と問いのつかみ・仕組みと研究の章・付き合い方の工夫3つ・まとめ）を、点検が数える「〇つ目の特徴は」の形の6章で使った。まとめの余韻はことわざ1つ（Nynyw3qGf3s が古典の一節で締める形）。題は型E（網羅回の1番目の決まり）、2番目は型D、3番目は型B。概要欄の「この動画でわかること」に研究の言葉（「グリンパティック系」「見張り番のモード」）を「」で入れた（競合メモの試すこと3）。年代の言葉は、中心の研究が若い大人とネズミを調べた物なので、題に入れていない（試すこと1の決まり）。人づきあいの回ではないので、相手のセリフの題（試すこと2）は使っていない。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:15 眠りは、記憶をしまう時間",
+   "2:39 1つ目　練習を夜に磨き直す",
+   "4:26 2つ目　明日使う記憶を残す",
+   "6:15 3つ目　脳のすき間を洗う",
+   "8:21 4つ目　知らない声に気づく",
+   "9:59 5つ目　人に会う気持ちを整える",
+   "12:21 6つ目　香りで記憶を呼ぶ",
+   "14:24 夜の脳を生かす3つの工夫",
+   "16:03 まとめ"
+  ],
+  "video_id": "ZouePQX5pF4",
+  "回した理由": null,
+  "studies": [
+   "Walker, Brakefield, Morgan, Hobson & Stickgold (2002) Neuron",
+   "Wilhelm, Diekelmann, Molzow, Ayoub, Mölle & Born (2011) The Journal of Neuroscience",
+   "Xie, Kang, Xu, Chen, Liao, Thiyagarajan, O'Donnell, Christensen, Nicholson, Iliff, Takano, Deane & Nedergaard (2013) Science",
+   "Fultz, Bonmassar, Setsompop, Stickgold, Rosen, Polimeni & Lewis (2019) Science",
+   "Blume, del Giudice, Wislowska, Heib & Schabus (2018) NeuroImage",
+   "Ben Simon & Walker (2018) Nature Communications",
+   "Axelsson, Sundelin, Ingre, Van Someren, Olsson & Lekander (2010) BMJ",
+   "Rasch, Büchel, Gais & Born (2007) Science",
+   "Rasch & Born (2013) Physiological Reviews"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 6,
+   "章": [
+    7,
+    5,
+    8,
+    7,
+    8,
+    6,
+    9,
+    9,
+    6,
+    6
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "1文目の「2割ほど速く」は得る物が見えるが、2文目以降が縁側の編み物の場面で「そんな朝はありませんか」まで長いので、A03〜A06を2つ減らして問いを早めに置く。",
+    "B05〜B08の研究史の説明が講義調なので、編み物の模様が朝に変わった場面を先に見せ、『100年以上』や考え方の変遷は短く削る。",
+    "いびきは聞き流して物音で起きる場面は自分ごとだが、実験の中身が薄く数字もないので、『知らない声にだけ強く反応した』を驚きとして立て、見張り番の話を膨らませる。"
+   ]
+  },
+  "short_video_id": "sHiKHMHNSvE"
  }
 ]
