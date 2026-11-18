@@ -70,6 +70,8 @@ def ask(cur, title, reason):
            "字が小さく、字の面積が基準の30%に届きませんでした。")
     area = ("" if reason else
             "- 各行の字数の差を小さくする（いちばん長い行の字数が減るほど、1字が大きくなる）。行の境目を動かすか、同じ意味の短い語に替える\n")
+    psy = ("- 心理学ch（lines・lines_b がある指定）：lines も lines_b も、全部の字をつなげて11〜17字・2〜3行・黄色（#FFE234）の語はちょうど1か所（白は #FFFFFF）。17字を超える長い言い回しにしない（2026-11-18 psy 013 が23字で止まった）\n"
+           if ("lines" in cur or "lines_b" in cur) else "")
     p = f"""YouTube のサムネの字を直してください。{why}
 動画のタイトル：{title or "（無し）"}
 今の指定：
@@ -83,7 +85,7 @@ def ask(cur, title, reason):
 - タイトルをそのまま写さない（タイトル＝何の話か、サムネ＝命令・結果・数の落差・伏せた答え・問い、と役を分ける）
 - 項目の名前と形は今の指定のまま。色を変える語（hl・hl_top・hl_big、lines の "#FFE234" の語）は本文に残る語にし、語の途中で切らない
 - thumb_text は10字以内、thumb_top は16字以内。thumb_lines は、つなぐと thumb_text になる並び
-- 説明は書かず、直した後の指定を JSON のオブジェクトだけで出力する"""
+{psy}- 説明は書かず、直した後の指定を JSON のオブジェクトだけで出力する"""
     r = subprocess.run([shutil.which("claude") or "claude", "-p", "--model", os.environ.get("CLAUDE_PICK_MODEL", "sonnet"), "--output-format", "json"],
                        cwd=ROOT, env=claude_env(), input=p, capture_output=True, text=True, encoding="utf-8", timeout=600)
     out = json.loads(r.stdout).get("result", "")

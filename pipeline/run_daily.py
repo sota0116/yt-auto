@@ -910,10 +910,11 @@ def make_one(ch, st, upload, kind=None):
             except Wait:
                 raise
             except Stop as e:
-                if i == 2 or "面積30%未満" not in str(e):
+                moji = "サムネの文字の決まり" in str(e)  # psy：字数11〜17字・黄色1語の外れ（2026-11-18 psy 013 が23字で止まり続けた）
+                if i == 2 or ("面積30%未満" not in str(e) and not moji):
                     raise
-                print(f"■ サムネの字が少ないので、字の組み方を変えて作り直す（{i + 1}回目・2回まで）", flush=True)
-                run(work, "thumb_fix", ["fix_thumb.py", work], ch)
+                print(f"■ サムネの字が少ない／決まりの外なので、字の組み方を変えて作り直す（{i + 1}回目・2回まで）", flush=True)
+                run(work, "thumb_fix", ["fix_thumb.py", work] + (["--reason", str(e)[:500]] if moji else []), ch)
     if T("thumb", "make_thumb_job.py"):  # null＝この種類はサムネを作らない（アナザー日本紀のショート。ショートは動画の中の1コマが表紙）
         step("thumb", thumb)
     def short(name, args):  # ショート（心理学ch。2026-10-27）。作れなくても本編は止めない（その回はショート無しで先へ進む。理由は _run.log）
