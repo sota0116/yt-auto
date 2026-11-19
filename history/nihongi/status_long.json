@@ -8,13 +8,14 @@
   "images",
   "motion",
   "gate_images",
-  "build"
+  "build",
+  "gate_video"
  ],
  "started": "2026-11-19T08:30:22+09:00",
- "tries": 2,
+ "tries": 3,
  "code": "c2c4b3d4e3b4",
- "stage": "gate_video",
- "updated": "2026-11-19T10:30:55+09:00",
+ "stage": "thumb",
+ "updated": "2026-11-19T23:02:53+09:00",
  "video_swapped": {
   "H04": "H03"
  },
