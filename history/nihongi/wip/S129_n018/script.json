@@ -59,10 +59,10 @@
   {
    "id": "n01",
    "hook": "1300年\n前の都へ",
-   "narration": "もしも平城京に迷い込めば、大通りは東京駅前と同じ幅。",
-   "tts_text": "もしもへいじょうきょうに迷い込めば、おおどおりは東京駅前と同じ幅。",
+   "narration": "もしも平城京を歩けば、大路が東京駅前と同じ幅と分かる。約75m。",
+   "tts_text": "もしもへいじょうきょうを歩けば、おおじが東京駅前と同じ幅と分かる。約ななじゅうごメートル。",
    "highlight": [
-    "東京駅前と同じ"
+    "東京駅前と同じ幅"
    ],
    "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stands frozen in astonishment at the edge of an enormously wide straight earthen avenue in ancient Nara at sunrise, robed people walking far away across it.",
    "shots": [
@@ -77,8 +77,8 @@
   },
   {
    "id": "n02",
-   "narration": "710年、都は奈良へ移された。平城京だ。",
-   "tts_text": "ななひゃくじゅうねん、都は奈良へ移された。へいじょうきょうだ。",
+   "narration": "710年、都は奈良へ移された。",
+   "tts_text": "ななひゃくじゅうねん、都は奈良へ移された。",
    "highlight": [
     "710年"
    ],
