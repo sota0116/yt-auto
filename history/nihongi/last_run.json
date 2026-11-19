@@ -1,19 +1,23 @@
 {
  "ch": "nihongi",
- "started": "2026-11-19T21:51:14+09:00",
+ "started": "2026-11-20T02:39:12+09:00",
  "made": [
-  "S131_r023",
-  "S132_n002"
+  "S133_r027"
  ],
- "stopped": "thumb で止まりました（終了コード 1）：保存 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L112_w001/thumb_a.jpg\n点検：いちばん大きい字の横幅 95%（めやす70%以上）／字の面積 約28%（めやす30〜60%）／行数 2（めやす4行まで）\n  NG 字が少なすぎて目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L112_w001/thumb_a_small.jpg（long）",
+ "stopped": "動く絵がまだ途中（Lovart の無料モードの順番待ち）。次の実行で続きから作ります（1回目）（long）",
  "在庫": {
-  "short": 3,
+  "short": 5,
   "long": 0
  },
  "作る本数": {
-  "short": 2,
+  "short": 1,
   "long": 1
  },
- "ended": "2026-11-19T23:03:21+09:00",
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L112_w001"
+ ],
+ "待ち": true,
+ "途中": true,
+ "ended": "2026-11-20T03:51:24+09:00",
  "今月の制作費_円": 0.0
 }
