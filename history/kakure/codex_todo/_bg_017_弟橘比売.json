@@ -2,12 +2,60 @@
  "ch": "kakure",
  "work": "_bg_017_弟橘比売",
  "portrait": false,
- "made": "2026-11-19 23:38",
+ "made": "2026-11-20 04:36",
  "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, slightly dark lighting, subtle washi paper texture. Wide 16:9 landscape.",
  "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
  "rules": {},
  "characters": {},
  "cuts": [
+  {
+   "id": "ai_storm",
+   "image": "嵐の海峡。黒い雲、高く逆巻く波、波にもまれる古墳時代の小さな木の舟が1そう、遠くに対岸の陸地。人は小さく描くか描かない",
+   "image_en": "A narrow sea strait in a storm: black clouds, towering crashing waves, one small Kofun-period wooden boat tossed on the waves, the far shore faintly visible. No people or only tiny distant figures.",
+   "en": "A narrow sea strait in a storm: black clouds, towering crashing waves, one small Kofun-period wooden boat tossed on the waves, the far shore faintly visible. No people or only tiny distant figures."
+  },
+  {
+   "id": "ai_mats",
+   "image": "夜の荒れた海の波の上に、菅の畳・毛皮の敷物・絹の敷物が何枚も重ねて敷かれ、波にゆれている。人はいない。青白い月明かり",
+   "image_en": "At night on a rough sea, several layers of woven sedge mats, fur rugs and silk cloths are spread one on top of another over the waves, rising and falling on the swell. No people. Pale bluish moonlight.",
+   "en": "At night on a rough sea, several layers of woven sedge mats, fur rugs and silk cloths are spread one on top of another over the waves, rising and falling on the swell. No people. Pale bluish moonlight."
+  },
+  {
+   "id": "ai_calm",
+   "image": "嵐がやみ、静まった朝の海を、古墳時代の木の舟が1そう、対岸へ進んでいく。雲の切れ目から光。人は舟の上に小さく",
+   "image_en": "After the storm, a calm morning sea; one Kofun-period wooden boat moves toward the far shore. Light breaks through gaps in the clouds. People only tiny on the boat.",
+   "en": "After the storm, a calm morning sea; one Kofun-period wooden boat moves toward the far shore. Light breaks through gaps in the clouds. People only tiny on the boat."
+  },
+  {
+   "id": "ai_comb",
+   "image": "夜明けの静かな浜辺。波打ちぎわの砂の上に、木の櫛がひとつだけ流れ着いている。櫛を大きく手前に、遠くに静かな海。人はいない",
+   "image_en": "A quiet beach at dawn. A single simple wooden comb has washed up on the sand at the water's edge, shown large in the foreground, a calm sea in the distance. No people.",
+   "en": "A quiet beach at dawn. A single simple wooden comb has washed up on the sand at the water's edge, shown large in the foreground, a calm sea in the distance. No people."
+  },
+  {
+   "id": "ai_mound",
+   "image": "海の見える丘の上の、小さな古墳のような土の墓。まわりに松の木、夕方の光。人はいない",
+   "image_en": "A small earthen burial mound like a little kofun on a hill overlooking the sea, pine trees around it, evening light. No people.",
+   "en": "A small earthen burial mound like a little kofun on a hill overlooking the sea, pine trees around it, evening light. No people."
+  },
+  {
+   "id": "ai_fire",
+   "image": "夜の広い草原が燃えている。赤い炎の壁が迫り、火の粉が舞う。手前に向かい火の炎。人は描かない",
+   "image_en": "A wide grassy plain burning at night: a wall of red flames advancing, sparks flying, and in the foreground a counter-fire burning toward it. No people.",
+   "en": "A wide grassy plain burning at night: a wall of red flames advancing, sparks flying, and in the foreground a counter-fire burning toward it. No people."
+  },
+  {
+   "id": "ai_pass",
+   "image": "山の峠の上から、東に広がる平野と遠い海を見下ろす景色。夕暮れ、雲が流れる。人はいない",
+   "image_en": "The view from the top of a mountain pass looking down east over a wide plain and the distant sea, at dusk with drifting clouds. No people.",
+   "en": "The view from the top of a mountain pass looking down east over a wide plain and the distant sea, at dusk with drifting clouds. No people."
+  },
+  {
+   "id": "ai_palace",
+   "image": "古墳時代の大和の宮。高床の木造の建物、白い衣の人々が小さく。旅立ちの朝",
+   "image_en": "A Kofun-period royal palace in Yamato: raised-floor wooden buildings, small figures of people in white robes, the morning of a departure on a long journey.",
+   "en": "A Kofun-period royal palace in Yamato: raised-floor wooden buildings, small figures of people in white robes, the morning of a departure on a long journey."
+  },
   {
    "id": "ai_march",
    "image": "古墳時代の兵の一行が、東へ向かう草原の道を進む後ろ姿。先頭に若い男、そのそばに女の人。遠い山並み。人物は小さく",

@@ -1,0 +1,35 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_016_稲荷の狐",
+ "portrait": false,
+ "made": "2026-11-20 04:36",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, rich deep colors, dark background with the subjects brightly lit, subtle washi paper texture. No text, no letters, no logos.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "byakko": {
+   "desc_en": "Byakko, the white fox messenger of the Inari shrine in Japan, a slender elegant fox with pure white fur, a long bushy white tail with a faint golden tip, calm narrow golden eyes, a small red bib (yodarekake) tied at the neck, sitting or standing on four legs like a real fox, not humanoid, no clothes other than the red bib",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "左右2つに分けた比べる絵。左半分：朱色の鳥居の前に、白狐が座り、金色の目でこちらを鋭く見ている。赤い光。右半分：夜の山の峰へ向かって、白い丸い餅が白い鳥に変わって大きく羽ばたいて飛び立つ。鳥に白い光。2つとも画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い夜空と暗い地面だけで何も描かない",
+   "image_en": "A split comparison picture, left and right halves. Left half: in front of a vermilion torii gate, a white fox sits and stares sharply at the viewer with golden eyes, lit by red light. Right half: against a dark night mountain peak, a round white rice cake turns into a large white bird spreading its wings and flying up, lit by white light. Draw both large at the vertical middle of the frame. Keep the top quarter and the bottom quarter of the frame empty: only dark night sky and dark ground there. No text.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "A split comparison picture, left and right halves. Left half: in front of a vermilion torii gate, a white fox sits and stares sharply at the viewer with golden eyes, lit by red light. Right half: against a dark night mountain peak, a round white rice cake turns into a large white bird spreading its wings and flying up, lit by white light. Draw both large at the vertical middle of the frame. Keep the top quarter and the bottom quarter of the frame empty: only dark night sky and dark ground there. No text."
+  },
+  {
+   "id": "T2",
+   "image": "画面の真ん中に、白い鳥が大きく羽を広げて飛ぶ。その下の暗がりに、白狐が見上げて、驚いたように目を見開いている。背景は暗い稲荷山と朱色の鳥居の列のかすかな影。鳥と狐に光、まわりは暗い。画面の上の4分の1と下の4分の1は暗い空と暗い地面だけで何も描かない",
+   "image_en": "In the center of the frame a large white bird flies with wings spread wide. Below it in the darkness, a white fox looks up with wide surprised eyes. Background: a dark wooded mountain and faint silhouettes of a row of vermilion torii gates. The bird and the fox are lit, the rest is dark. Keep the top quarter and the bottom quarter of the frame empty: only dark sky and dark ground. No text.",
+   "chars": [
+    "byakko"
+   ],
+   "en": "In the center of the frame a large white bird flies with wings spread wide. Below it in the darkness, a white fox looks up with wide surprised eyes. Background: a dark wooded mountain and faint silhouettes of a row of vermilion torii gates. The bird and the fox are lit, the rest is dark. Keep the top quarter and the bottom quarter of the frame empty: only dark sky and dark ground. No text."
+  }
+ ]
+}
