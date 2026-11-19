@@ -183,7 +183,7 @@
   "seconds": 42,
   "title_now": "もしも本多忠勝の槍・蜻蛉切が、口をきいたら。敵がほめたのは槍 #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1827,
+  "views_now": 1829,
   "published": true,
   "published_at": "2026-11-04T18:00:16+09:00"
  },
@@ -298,7 +298,7 @@
   "seconds": 53,
   "title_now": "もしも大坂夏の陣で「家康の陣に届く確率」が見えたら。真田幸村の頭の上だけ100% #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 523,
+  "views_now": 524,
   "published": true,
   "published_at": "2026-11-12T07:00:13+09:00"
  },
@@ -344,7 +344,7 @@
   "seconds": 56,
   "title_now": "もしも上杉鷹山の米沢藩で、借金が頭の上に見えたら。17歳の殿だけ今の120億円 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1280,
+  "views_now": 1284,
   "published": true,
   "published_at": "2026-11-17T07:00:18+09:00"
  },
@@ -367,7 +367,7 @@
   "seconds": 52,
   "title_now": "もしも伊勢参りの人に「行きたい度」が見えたら。210万人が犬の後ろを歩く #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 977,
+  "views_now": 978,
   "published": true,
   "published_at": "2026-11-18T12:10:22+09:00"
  },
@@ -390,7 +390,7 @@
   "seconds": 49,
   "title_now": "もしも信長の家臣の頭に「領地」が見えたら。足軽の子の秀吉だけ12万石に跳ね上がる #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1344,
+  "views_now": 1351,
   "published": true,
   "published_at": "2026-11-18T20:00:09+09:00"
  },
@@ -413,7 +413,7 @@
   "seconds": 51,
   "title_now": "もしも長篠の戦いで、鉄砲が10倍あったら。信長の3万挺が朝のうちに弾切れ #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1118,
+  "views_now": 1121,
   "published": true,
   "published_at": "2026-11-19T07:00:26+09:00"
  },
@@ -436,7 +436,7 @@
   "seconds": 59,
   "title_now": "もしも将軍の剣の師範に「石高」が見えたら。一刀流は800石、柳生宗矩だけ1万石 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 362,
+  "views_now": 365,
   "published": true,
   "published_at": "2026-11-19T12:10:01+09:00"
  },
@@ -455,7 +455,7 @@
   ],
   "comment": "",
   "privacy_now": "private",
-  "publish_at": "2026-11-20T12:10:00+09:00",
+  "publish_at": "2026-11-20T03:10:00Z",
   "seconds": 51,
   "title_now": "もしも20歳の福沢諭吉と同じ塾に入ったら。1冊の辞書の前で、福沢があなたの後ろに並ぶ #もしも #日本史 #幕末",
   "synthetic_on": null,
@@ -474,7 +474,13 @@
   "titles": [
    "もしもあなたが江戸の長屋に住んだら。6畳で風呂なし、でも風呂代はそば半分 #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-20T11:00:00Z",
+  "seconds": 47,
+  "title_now": "もしもあなたが江戸の長屋に住んだら。6畳で風呂なし、でも風呂代はそば半分 #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S130_r016",
@@ -485,12 +491,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-19T20:59:18+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも江戸城の役人に「石高」が見えたら。田沼意次だけ600石が5万7千石に伸びる #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-21T07:00:00+09:00",
+  "seconds": 52,
+  "title_now": "もしも江戸城の役人に「石高」が見えたら。田沼意次だけ600石が5万7千石に伸びる #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S131_r023",
@@ -501,12 +512,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-19T22:13:25+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも戦国武将に「仕えた主君の数」が見えたら。藤堂高虎だけ7人、それでも家康に一番頼られる #もしも #日本史 #戦国時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-21T12:10:00+09:00",
+  "seconds": 60,
+  "title_now": "もしも戦国武将に「仕えた主君の数」が見えたら。藤堂高虎だけ7人、それでも家康に一番頼られる #もしも #日本史 #戦国時代",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S132_n002",
@@ -517,11 +533,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-19T23:01:19+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも参勤交代が逆で、将軍が大名の国へ通ったら。将軍が前田家に金を借りる #もしも #日本史 #江戸時代"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-22T12:10:00+09:00",
+  "seconds": 45,
+  "title_now": "もしも参勤交代が逆で、将軍が大名の国へ通ったら。将軍が前田家に金を借りる #もしも #日本史 #江戸時代",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
