@@ -1,0 +1,265 @@
+{
+ "format": "short",
+ "title": "もしもあなたが1300年前の平城京に迷い込んだら。都の大通りは東京駅前の道と同じ幅 #もしも #日本史 #奈良時代",
+ "promise": "1300年前の平城京の朱雀大路（約75m）が、今の東京駅前の行幸通り（約73m）とほぼ同じ幅だったと分かる。",
+ "competitor_note": "TTP：題材（もしも〇〇年前の都に自分が行ったら）・題の型（年の隔たりの数字を頭に置く）・ネタ（今の物と数で比べる）｜wrQIWXzc8II（1000年前の都で1日・1日21,790・8.1倍）",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※あなたが平城京に迷い込み、歩幅で道幅を数える話は作り話です。平城京が710年から784年までの都だったこと、朱雀大路の幅（約75m）、都が移ったあと道が耕されて田畑になったこと、朱雀門が発掘をもとに1998年に建て直されたこと、行幸通りの幅（約73m）は史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "奈良時代",
+  "平城京",
+  "朱雀大路",
+  "朱雀門",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "古代の道が幅75m"
+ ],
+ "fiction": true,
+ "world_rules": [
+  "あなた（今の旅行者1人）だけが、奈良時代の平城京に迷い込む。都の人々は、あなたが未来から来たことを知らない",
+  "あなたが知っている未来（784年に都が長岡京へ移ること・道が耕されて田畑になること・朱雀門が1998年に建て直されること・東京駅前の行幸通りの幅）は、学校と今の平城宮跡の案内で知ったこと。都の人々は知らない",
+  "あなたは道幅を自分の歩幅（約75cm）で数える。巻き尺や機械は使わない。数えた歩数は、あなたしか知らない",
+  "行幸通りと比べるのは語り手とあなただけ。都の人々は東京を知らない",
+  "都の役人は、あなたが大路で歩数を数えている姿だけを見る。何のために数えるのか、歩数がいくつか、未来のことは知らない",
+  "語り手は本当の歴史（年・幅・建て直し）を知っていて語る"
+ ],
+ "world_terms": [
+  "知っている",
+  "歩幅",
+  "数え",
+  "歩",
+  "東京",
+  "行幸通り",
+  "実際"
+ ],
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "voices": {
+  "nara_kanjin": 53
+ },
+ "characters_dir": "../../characters",
+ "facts": [
+  "平城京は、和銅3年（710年）に藤原京から移ってきた都で、延暦3年（784年）に長岡京へ移るまで続いた（デジタル大辞泉「和銅3年（710）藤原京から遷都し」「延暦3年（784）長岡京に遷都する」。山川 日本史小辞典「710年(和銅3)から784年(延暦3)まで現在の奈良市に存続した都城」。ブリタニカは「74年間の都」）。出どころ：コトバンク「平城京」kotobank.jp/word/平城京-125991",
+  "朱雀門は平城宮の正門で、そこから南へ約4km、幅約75mの朱雀大路が延びていた（「約75mもの幅をもつ朱雀大路がまっすぐ北に向かってのびていました」「その4km先には平城宮の正門である朱雀門が建っていたのです」）。出どころ：奈良文化財研究所 平城宮跡資料館「宮跡案内」www.nabunken.go.jp/heijo/museum/guide.html。事典では72m（山川）・約73.4m（世界大百科・側溝の中心間）・80m（ニッポニカ）・約83m（旺文社）と分かれる（コトバンク「平城京」）。奈良文化財研究所の第552次調査の現地説明会資料（repository.nabunken.go.jp/dspace/bitstream/11177/5490/1/20160305_h552.pdf）は「東西両側溝の心心間で約74ｍ」とあるが、PDF の本文はこの環境で読めず、検索の抜粋で確認。台本は奈良文化財研究所の「約75m」",
+  "長岡京へ移ったあと、「平城上皇が平城遷都を計画するが失敗し50年あまり後には平城旧京の道路は耕されて田畑となる」。出どころ：国土交通省 近畿地方整備局 国営飛鳥歴史公園事務所「平城宮跡歴史公園保存の経緯」www.kkr.mlit.go.jp/asuka/initiatives-heijo/course.html",
+  "平成10年（1998年）に「朱雀門、東院庭園の復原が完成する」（同上）。朱雀門の復原は「昭和39年度に同跡地を発掘調査し」から始まり、手がかりは「基壇を示す基礎と地業、平面規模を知る柱位置、出土した屋根の瓦」。出どころ：奈良文化財研究所「宮跡案内」（同上）",
+  "東京駅丸の内中央口前と皇居前を結ぶ行幸通りは「幅員約73mの風格ある道路」。出どころ：内閣府 防災情報のページ「不屈の大地 Build Back Betterの軌跡」www.bousai.go.jp/kohou/kouhoubousai/h29/88/bbb_01.html",
+  "約75mを約100歩とするのは、歩幅を約75cmとした計算（作り話の中の数え方）",
+  "今のあなたが奈良時代の平城京に迷い込むこと、784年より前に未来を知っていること、歩幅で道幅を数えることは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "1300年\n前の都へ",
+   "narration": "もしも平城京に迷い込めば、大通りは東京駅前と同じ幅。",
+   "tts_text": "もしもへいじょうきょうに迷い込めば、おおどおりは東京駅前と同じ幅。",
+   "highlight": [
+    "東京駅前と同じ"
+   ],
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stands frozen in astonishment at the edge of an enormously wide straight earthen avenue in ancient Nara at sunrise, robed people walking far away across it.",
+   "shots": [
+    "n01",
+    "n01@close",
+    "n01@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stands frozen in astonishment at the edge of an enormously wide straight earthen avenue in ancient Nara at sunrise, robed people walking far away across it.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "710年、都は奈良へ移された。平城京だ。",
+   "tts_text": "ななひゃくじゅうねん、都は奈良へ移された。へいじょうきょうだ。",
+   "highlight": [
+    "710年"
+   ],
+   "image_en": "A wide view of the ancient capital Heijo-kyo at dawn: a vast grid of straight earthen avenues, tiled-roof buildings and earthen walls stretching toward soft green hills, smoke rising from homes.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "A wide view of the ancient capital Heijo-kyo at dawn: a vast grid of straight earthen avenues, tiled-roof buildings and earthen walls stretching toward soft green hills, smoke rising from homes."
+  },
+  {
+   "id": "n03",
+   "narration": "あなたが立つのは、平城宮の正門、朱雀門の前。",
+   "tts_text": "あなたが立つのは、へいじょうきゅうの正門、すざくもんの前。",
+   "highlight": [
+    "朱雀門"
+   ],
+   "image_en": "Seen from behind, a Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers looks up at a towering two-storey vermilion palace gate with a sweeping tiled roof, guards in ancient robes at its foot.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [],
+   "image": "Seen from behind, a Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers looks up at a towering two-storey vermilion palace gate with a sweeping tiled roof, guards in ancient robes at its foot."
+  },
+  {
+   "id": "n04",
+   "narration": "門から南へ、朱雀大路が約4kmまっすぐ延びる。",
+   "tts_text": "門から南へ、すざくおおじが約よんキロまっすぐ延びる。",
+   "highlight": [
+    "約4km"
+   ],
+   "image_en": "A high view from the top of a vermilion gate looking south down a perfectly straight, extremely wide earthen avenue lined with willow trees and earthen walls, running all the way to the horizon in morning light.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [],
+   "image": "A high view from the top of a vermilion gate looking south down a perfectly straight, extremely wide earthen avenue lined with willow trees and earthen walls, running all the way to the horizon in morning light."
+  },
+  {
+   "id": "n05",
+   "narration": "渡ろうとして、足が止まる。向こう側の人が豆粒だ。",
+   "tts_text": "渡ろうとして、足が止まる。向こうがわの人がまめつぶだ。",
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stops mid-step on a vast earthen avenue, squinting; on the far side, an ox cart and robed officials look like tiny dots.",
+   "shots": [
+    "n05",
+    "n05@face"
+   ],
+   "chars": [],
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stops mid-step on a vast earthen avenue, squinting; on the far side, an ox cart and robed officials look like tiny dots."
+  },
+  {
+   "id": "n06",
+   "narration": "あなただけは知っている。784年、都は長岡京へ移る。",
+   "tts_text": "あなただけは知っている。ななひゃくはちじゅうよねん、都はながおかきょうへ移る。",
+   "highlight": [
+    "784年"
+   ],
+   "image_en": "Close-up of a Japanese man about thirty with short black hair and a plain grey hooded sweatshirt, his face turning pale and sad as busy Nara-period townspeople in plain robes hurry past him on the grand avenue.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [],
+   "image": "Close-up of a Japanese man about thirty with short black hair and a plain grey hooded sweatshirt, his face turning pale and sad as busy Nara-period townspeople in plain robes hurry past him on the grand avenue."
+  },
+  {
+   "id": "n07",
+   "narration": "50年あまりで、この道は耕されて田畑になる。",
+   "tts_text": "ごじゅうねんあまりで、この道は耕されてたはたになる。",
+   "highlight": [
+    "田畑"
+   ],
+   "image_en": "Quiet green rice paddies and farmers in plain clothes working with hoes where a great avenue once ran, low hills behind, grey cloudy evening light, no buildings left.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [],
+   "image": "Quiet green rice paddies and farmers in plain clothes working with hoes where a great avenue once ran, low hills behind, grey cloudy evening light, no buildings left."
+  },
+  {
+   "id": "n08",
+   "narration": "消えてしまう前に、あなたは歩幅で道幅を数えた。",
+   "tts_text": "消えてしまう前に、あなたはほはばでみちはばを数えた。",
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers walks with careful even strides across a vast earthen avenue in ancient Nara, looking down at his feet in concentration, golden afternoon light.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [],
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers walks with careful even strides across a vast earthen avenue in ancient Nara, looking down at his feet in concentration, golden afternoon light."
+  },
+  {
+   "id": "n09",
+   "narration": "これ、大路の真ん中で何を数えておる。",
+   "tts_text": "これ、おおじの真ん中で何を数えておる。",
+   "voice": "nara_kanjin",
+   "image_en": "A Nara-period Japanese court official about forty-five with a stern square face, thin moustache, black cloth court headwear and a long dark green round-collared robe with a belt, holding a wooden tablet, frowns suspiciously and points at someone off-screen on a vast earthen avenue.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [],
+   "image": "A Nara-period Japanese court official about forty-five with a stern square face, thin moustache, black cloth court headwear and a long dark green round-collared robe with a belt, holding a wooden tablet, frowns suspiciously and points at someone off-screen on a vast earthen avenue."
+  },
+  {
+   "id": "n10",
+   "narration": "端から端まで約100歩。幅は、およそ75m。",
+   "tts_text": "端から端まで約ひゃっぽ。幅は、およそななじゅうごメートル。",
+   "highlight": [
+    "75m"
+   ],
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt and a small black backpack stands at the far edge of an immense earthen avenue, turning back to look at the long distance he has just walked, breathing hard.",
+   "shots": [
+    "n10",
+    "n10@face"
+   ],
+   "chars": [],
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt and a small black backpack stands at the far edge of an immense earthen avenue, turning back to look at the long distance he has just walked, breathing hard."
+  },
+  {
+   "id": "n11",
+   "narration": "東京駅前の行幸通り、約73mとほぼ同じ幅だ。",
+   "tts_text": "東京駅前のぎょうこうどおり、約ななじゅうさんメートルとほぼ同じ幅だ。",
+   "highlight": [
+    "ほぼ同じ幅"
+   ],
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stands in the middle of a vast earthen avenue of ancient Nara, eyes wide and mouth open in amazement, arms spread wide as if measuring the huge road, sunset glow.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans, a small black backpack and white sneakers stands in the middle of a vast earthen avenue of ancient Nara, eyes wide and mouth open in amazement, arms spread wide as if measuring the huge road, sunset glow.",
+   "motion": true
+  },
+  {
+   "id": "n12",
+   "narration": "1300年前の都に、今の東京と同じ大通りがあった。",
+   "tts_text": "せんさんびゃくねん前の都に、今の東京と同じおおどおりがあった。",
+   "image_en": "A Japanese man about thirty with short black hair and a plain grey hooded sweatshirt sits on the edge of a vast earthen avenue at dusk, smiling in quiet wonder as robed people and an ox cart pass along the wide road under a glowing sky.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [],
+   "image": "A Japanese man about thirty with short black hair and a plain grey hooded sweatshirt sits on the edge of a vast earthen avenue at dusk, smiling in quiet wonder as robed people and an ox cart pass along the wide road under a glowing sky."
+  },
+  {
+   "id": "n13",
+   "narration": "実際の朱雀門は、発掘をもとに1998年に建て直された。",
+   "tts_text": "実際のすざくもんは、発掘をもとにせんきゅうひゃくきゅうじゅうはちねんに建て直された。",
+   "highlight": [
+    "1998年"
+   ],
+   "image_en": "The present-day reconstructed vermilion two-storey palace gate of the Heijo Palace site in Nara standing on a wide grassy plain under a blue sky.",
+   "real": "https://commons.wikimedia.org/wiki/File:Heijokyo_Suzakumon_05.JPG",
+   "shots": [
+    "n13",
+    "n13@close"
+   ],
+   "chars": [],
+   "image": "The present-day reconstructed vermilion two-storey palace gate of the Heijo Palace site in Nara standing on a wide grassy plain under a blue sky."
+  },
+  {
+   "id": "n14",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans and a small black backpack stands before a towering vermilion gate of ancient Nara at dusk, looking back over his shoulder toward the viewer with a calm smile.",
+   "shots": [
+    "n14"
+   ],
+   "chars": [],
+   "image": "A Japanese man about thirty with short black hair, a plain grey hooded sweatshirt, dark jeans and a small black backpack stands before a towering vermilion gate of ancient Nara at dusk, looking back over his shoulder toward the viewer with a calm smile."
+  }
+ ],
+ "bgm": null,
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

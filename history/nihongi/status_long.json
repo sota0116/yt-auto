@@ -11,16 +11,19 @@
   "build"
  ],
  "started": "2026-11-19T08:30:22+09:00",
- "tries": 1,
- "code": "cacc4e01d226",
+ "tries": 0,
+ "code": "c2c4b3d4e3b4",
  "stage": "gate_video",
  "updated": "2026-11-19T10:30:55+09:00",
  "video_swapped": {
   "H04": "H03"
  },
- "video_redo": 1,
+ "video_redo": 2,
  "video_redo_ids": {
-  "A01": "Absolutely no readable text anywhere: no signs, shop names, letters, numbers or logos (leave signboards blank)."
+  "A01": "Redraw the scene cleanly: natural hands, faces, bodies and objects, nothing deformed, no readable text."
  },
- "video_redo_sent": true
+ "video_redo_sent": true,
+ "busy": {
+  "images": 1
+ }
 }

@@ -1,1 +1,12 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S129_n018",
+ "done": [
+  "pick",
+  "write"
+ ],
+ "started": "2026-11-19T11:42:16+09:00",
+ "tries": 1,
+ "code": "c2c4b3d4e3b4",
+ "stage": "gate_script",
+ "gate_fails": 1
+}
