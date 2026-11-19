@@ -1,0 +1,1136 @@
+{
+ "format": "long",
+ "distort": "分かれ道",
+ "era": "戦国",
+ "title": "もしも本能寺の変がなかったら｜安土城は焼けず、今も琵琶湖のほとりに建っていた【もしも歴史】",
+ "promise": "1582年の信長がどこまで天下に近づいていたか（武田氏の滅亡・安土城と楽市楽座・南蛮貿易・高松城の水攻め・四国攻め）と、光秀が本能寺を襲わなければ秀吉・家康・本能寺・安土城がどう変わったはずかが、本当の出来事を根拠に1本で分かる",
+ "desc": "もしも、1582年に本能寺の変が起きなかったら。\n宣教師フロイスの記録には、天下を取ったあとの信長が海の向こうの明を見ていた、と伝わる話が残っています。\n明智光秀が本能寺を襲わず、そのまま中国攻めへ向かった日本で、信長・信忠・秀吉・家康、そして安土城がどうなったかを、章ごとに追います。あなたは、どっちの日本になったと思いますか。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※光秀が本能寺を襲わなかったところから先（光秀が西へ進むこと、信長が高松城へ出て毛利が従うこと、四国が降ること、秀吉が家来のままでいること、家康が三河へ帰ること、大坂城が建たないこと、早まった天下統一、1590年に4人の少年を信長が安土で迎える場面、九州に船を集めること、今も建つ安土城、2つの未来など）は作り話です。それより前は史実をもとにしています（コトバンク掲載の各事典、滋賀県の解説など）。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "本能寺の変",
+  "織田信長",
+  "明智光秀",
+  "豊臣秀吉",
+  "安土城",
+  "戦国時代",
+  "日本史"
+ ],
+ "thumb": {
+  "top": "もしも1582年、本能寺の変がなかったら",
+  "big": "秀吉は天下人になれない",
+  "hl_top": "なかったら",
+  "hl_big": "天下人",
+  "bg": "E01"
+ },
+ "futures": {
+  "良い": "1590年、ローマから帰った4人の少年を信長が安土城で迎え、日本は海に開かれた国になった。",
+  "悪い": "1590年代、信長の大船団が九州から海を渡り、明との長い戦が始まった。"
+ },
+ "competitor_note": "TTP：題材・章の並び｜OAARpXxEJo4・a6_-zdlALtY（本能寺の変のあと、もしも〇〇が生きていたら）と OAARpXxEJo4 の章の並び（史実で何が起きたか→分かれた年から年ごとの場面→振り返り）。概要欄の頭は競合メモ『試すこと3』（coWDBfcXKhI・eE2nFGD1VKA の型）、サムネ上段の年は『試すこと2』（wrQIWXzc8II・eE2nFGD1VKA の型）",
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "変えたのは、1582年6月2日の明け方、明智光秀が本能寺を襲わず、命じられたとおり中国（秀吉の援軍）へ向かった1点だけ",
+  "光秀が兵を京都へ向けるより前は史実どおり（武田氏の滅亡・安土城・楽市楽座・宣教師の学校・天正遣欧使節の出発・朝廷が位を贈る意向・高松城の水攻め・四国攻めの命令・信長の上洛と本能寺の宿・光秀の出陣）",
+  "光秀が西へ進んだところから先（信長と信忠が生きる・信長が高松城へ出て毛利が従う・四国が降る・秀吉が家来のまま・家康が三河へ帰る・大坂城が建たない・早まった天下統一・1590年に信長が4人を安土で迎える・九州に船を集める・今も建つ安土城と元の場所の本能寺・2つの未来）は作り話",
+  "4人の少年がローマで教皇に会う（1585年）・1590年に長崎へ帰る、は作り話の世界でも本当の歴史と同じに起きたことにする",
+  "本当の歴史を知っているのは語り手だけ。信長・光秀・秀吉・家康など作り話の世界の人は、本能寺の変が起きるはずだったことを知らない。「本当の歴史では」と現実に戻るのは章の終わりの1文だけ"
+ ],
+ "world_terms": [
+  "本当の歴史",
+  "本当の",
+  "作り話",
+  "この世界",
+  "襲",
+  "本能寺の変"
+ ],
+ "voices": {
+  "nobunaga": 21,
+  "mitsuhide": 11,
+  "hideyoshi": 12,
+  "ieyasu": 100
+ },
+ "facts": [
+  "本能寺の変：1582年（天正10）6月2日（日本大百科全書・世界大百科事典・山川日本史小辞典・ブリタニカ）、未明（旺文社日本史事典）。中国征伐を支援するため出陣を命ぜられた明智光秀が1万3000の軍を率いて出陣し（世界大百科事典・山川）、京都四条西洞院の本能寺（世界大百科事典・山川）に宿泊した信長を襲った。信長は森乱法師ら近臣と防戦（世界大百科事典）、わずかな近臣とともに防戦（山川）、少数の手勢で防戦（ブリタニカ）。光秀は中国征伐の友軍として西下する途中、丹波亀山城から引き返した（ブリタニカ）。織田信忠は二条御所にこもって防戦のすえ自殺（世界大百科事典・日本大百科全書）。光秀の動機は四国説などの説がある（共同通信ニュース用語解説）。出どころ：コトバンク「本能寺の変」 kotobank.jp/word/本能寺の変",
+  "織田信長：1534年生まれ、1582年没、49歳（日本人名大辞典+Plus）。1575年（天正3）に家督を信忠に譲る（日本大百科全書・世界大百科事典）。安土城は1576年着工、1579年完成（日本大百科全書）。安土城下で楽市・楽座（日本大百科全書）。1569年にフロイスの在京を許し、1581年にバリニャーノに学校の建設を許した（世界大百科事典）。安土にセミナリオ、京都に南蛮寺（日本大百科全書）。1582年春に甲斐へ遠征して武田氏を滅ぼした（世界大百科事典）。朝廷は太政大臣か将軍の地位を贈る意向があった（世界大百科事典）。1582年に神戸信孝らに四国征伐を命じ、6月には中国征伐の指示のため上洛（世界大百科事典）。出どころ：コトバンク「織田信長」 kotobank.jp/word/織田信長",
+  "安土城：1576年（天正4）着工（日本大百科全書・大辞泉）、天主は1579年完成（世界大百科事典）。天主は五層七重（地上6階地下1階）（日本大百科全書）。本能寺の変の後、山崎の戦いの余波で焼け落ちた（日本大百科全書）。光秀が城に入り、のち信孝の軍が焼いたとする事典もある（ブリタニカ）。石垣と堀が残り、国の特別史跡（日本国語大辞典）。出どころ：コトバンク「安土城」。滋賀県の解説では、1576年に築城を開始し約3年で完成、本能寺の変の後になんらかの原因で焼失して廃城、設計図などが残っておらず姿が分からない『幻の城』とされる（滋賀県 www.pref.shiga.lg.jp/kensei/koho/reports/347650.html）。台本では焼けた原因と日付を言わない",
+  "楽市楽座：座商人の特権や市場税を廃止し、新興商人の自由営業を認めた（デジタル大辞泉）。安土山下町は1577年（ブリタニカは天正5年6月）、『諸座諸役諸公事悉免許事』（日本大百科全書）。出どころ：コトバンク「楽市楽座」",
+  "天正遣欧使節：1582年2月（ブリタニカは1月）長崎を出発。大友宗麟・有馬晴信・大村純忠が派遣。伊東マンショ・千々石ミゲル・原マルチノ・中浦ジュリアン。1585年ローマ教皇グレゴリウス13世に謁見。1590年帰国。1591年閏正月に聚楽第で秀吉に謁見。1587年のバテレン追放令のため、インド副王の使節という名目で入国を許された（日本大百科全書・山川ほか）。出どころ：コトバンク「天正遣欧使節」",
+  "備中高松城：清水宗治が城主。秀吉が足守川の水を引き込んで城周辺を水で満たした（マイペディア「備中高松城」）。足守川をせき止める堤防と多数の陣城を築いて水攻め、毛利の援軍は包囲を破れず、宗治の切腹で開城（山川）。秀吉は水攻めの最中に本能寺の変を知り、宗治の自刃と開城を条件に和睦（旺文社）。出どころ：コトバンク「高松城」「備中高松城」",
+  "四国征伐：1582年5月、信長は信孝と丹羽長秀を将とする四国討伐動員令を下したが、6月の本能寺の変で途絶えた（世界大百科事典）。1585年、秀吉が長宗我部元親を討って四国を統一、元親は土佐一国を認められた（日本大百科全書・世界大百科事典）。出どころ：コトバンク「四国征伐」",
+  "山崎の戦い：1582年6月13日（ブリタニカ）。秀吉は信長の死を秘して毛利と講和し、2日後に姫路城へ戻った（日本大百科全書）。本能寺の変後わずか11日目（日本大百科全書「豊臣秀吉」）。光秀は小栗栖を通過中に殺害（ブリタニカ）。出どころ：コトバンク「山崎の戦い」「豊臣秀吉」",
+  "清洲会議：1582年6月27日、清洲城。秀吉が信忠の遺児三法師を後継に主張して決まり、主導権を握った（マイペディア）。出どころ：コトバンク「清洲会議」",
+  "徳川家康：本能寺の変の時、わずかの供回りで堺に滞在中。伊勢白子から海路で岡崎へ戻った。帰国後、信長死後空白地帯となった甲斐・信濃に出陣し、その年のうちに手中にした。1590年関東に移って250万石、江戸に入府（日本大百科全書・日本国語大辞典）。出どころ：コトバンク「徳川家康」",
+  "豊臣秀吉：1585年関白。1590年小田原征伐で北条氏を滅ぼし全国統一（日本大百科全書）。1587年6月19日バテレン追放令。明国を討つため朝鮮出兵（文禄・慶長の役。世界大百科事典）、1592年。出どころ：コトバンク「豊臣秀吉」",
+  "大坂城：豊臣秀吉が石山本願寺跡に天正11年（1583）から築いた（デジタル大辞泉）。1585年ほぼ完成（日本大百科全書）。信長と本願寺の対立は11年にわたる石山合戦に発展（世界大百科事典）。出どころ：コトバンク「大坂城」",
+  "本能寺：変のときの寺地は四条坊門西洞院（世界大百科事典）。変で伽藍は焼けた。1589年（天正17）豊臣秀吉の命により現在地に移転（デジタル大辞泉・日本国語大辞典）。今は京都市中京区下本能寺前町。出どころ：コトバンク「本能寺」",
+  "信長の明への出兵の考え：フロイス『日本史』と『一五八二年日本年報追加』に、信長が毛利を平定して日本の絶対君主となった後、一大艦隊でシナを武力で征服し、諸国を子息たちに分け与える考えだった、と書かれているとされる（二次の解説記事の引用だけで、刊本の本文は読めていない）。台本では『書き残したと伝わる』とだけ言う",
+  "公的な PDF：滋賀県の安土城の資料 PDF（www.pref.shiga.lg.jp/documents/2526/20261027094851.pdf）を保存したが、字が圧縮されていて WebFetch では読めず、Read の PDF 読みも pdftoppm が無く、pdftotext も入っていなかった。台本には同じ滋賀県の HTML ページの本文だけを使った。",
+  "本物の画像（2026-11-19 に Wikimedia Commons の API で幅を確かめた。全部800px以上）：Honnoj.jpg 3200px（本能寺焼討の錦絵）、Oda-Nobunaga.jpg 2100px、Nanban Byobu Folding Screen Carrack Portuguese Traders in Nagasaki by Kano Domi.jpg 15284px、Bitchu Takamatsu castle ruins.jpg 2272px、Toyotomi Hideyoshi c1598 Kodai-ji Temple.png 1429px、First Japanese Embassy to Europe 1586.png 1887px、Honno-ji (Nakagyo-ku Kyoto) Temple hdsr S5 04.jpg 5234px、Tokugawa Ieyasu.jpg 1340px（L110 で測った物）、Azuchi Castle Ruins.jpg 4032px。幅が足りず外した物：Akechi Mitsuhide.jpg 578px、JapaneseEmbassy.jpg 807px は小さめなので外した",
+  "使わない：『敵は本能寺にあり』（逸話）、光秀の動機の説の中身、老ノ坂などの道の名、安土城が焼けた日付と火を付けた人、信長の明への出兵の考えの細かい中身、信忠の年齢、天主の金の飾り"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "もしも本能寺の変が起きなかったら、信長が天下を取り、安土城は今も建っていた。",
+   "image_en": "Oda Nobunaga, standing alive and calm on a stone terrace before dawn, a tall multi-storied castle keep rising on the forested hill behind him beside a wide misty lake, cool blue-green light falling from above through clouds, no fire anywhere. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, standing alive and calm on a stone terrace before dawn, a tall castle keep beside a misty lake behind him",
+   "label": "本能寺の変が起きなかったら",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "tts_text": "もしもほんのうじのへんが起きなかったら、のぶながが天下を取り、あづちじょうは今も建っていた。",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "1582年6月2日の朝、明智光秀の兵が、京都の本能寺を囲んだ。",
+   "image_en": "Akechi Mitsuhide, on horseback in armor at the head of a silent army surrounding a temple wall in Kyoto before dawn, plain banners with no writing, cool blue-green mist, light from above. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, on horseback in armor at the head of a silent army surrounding a temple wall",
+   "label": "1582年6月2日",
+   "chars": [
+    "mitsuhide"
+   ],
+   "anim": "kling",
+   "tts_text": "1582年6月2日の朝、あけちみつひでの兵が、京都のほんのうじを囲んだ。",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "信長も跡継ぎの信忠も死に、天下は秀吉の手に渡っていく。",
+   "image_en": "Thick smoke rising at dawn above the tiled roofs of a temple in Kyoto, seen from a distance, blue-green morning haze, quiet town in the foreground. No people.",
+   "image": "Thick smoke rising at dawn above the tiled roofs of a temple in Kyoto, seen from a distance",
+   "chars": [],
+   "tts_text": "のぶながも跡継ぎののぶただも死に、天下はひでよしの手に渡っていく。"
+  },
+  {
+   "id": "A04",
+   "narration": "変えるのは1つだけ。光秀が、本能寺を襲わない。",
+   "image_en": "Akechi Mitsuhide, pulling the reins of his horse on a misty mountain road before dawn, turning away from the direction of the capital, serious quiet face, blue-green light from above. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, pulling the reins of his horse on a misty mountain road before dawn",
+   "label": "変えるのは1つだけ",
+   "strong": true,
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "変えるのは1つだけ。みつひでが、ほんのうじを襲わない。"
+  },
+  {
+   "id": "A05",
+   "narration": "本能寺の変までは本当の歴史。そこから先が作り話です。",
+   "same_as": "A01",
+   "tts_text": "ほんのうじのへんまでは本当の歴史。そこから先が作り話です。",
+   "chars": []
+  },
+  {
+   "id": "A06",
+   "narration": "では、秀吉と安土城は、どうなるのか。",
+   "same_as": "A04",
+   "label": "秀吉と安土城はどうなるのか",
+   "tts_text": "では、ひでよしとあづちじょうは、どうなるのか。",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "chapter": "1582年、天下まであと少し",
+   "narration": "1582年の春。信長は甲斐へ攻め入り、武田氏を滅ぼした。",
+   "image_en": "Oda Nobunaga, on horseback in armor leading a huge army through a spring mountain valley, plain banners with no writing, cool morning light from above. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, on horseback in armor leading a huge army through a spring mountain valley",
+   "label": "武田氏の滅亡",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "1582年の春。のぶながはかいへ攻め入り、たけだしを滅ぼした。"
+  },
+  {
+   "id": "B02",
+   "narration": "長く戦ってきた東の強敵が、これで消えた。",
+   "image_en": "An abandoned mountain castle gate with fallen plain banners lying in the spring grass, mist drifting, blue-green light. No people.",
+   "image": "An abandoned mountain castle gate with fallen plain banners lying in the spring grass",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "本拠地は、琵琶湖のほとりの安土城。天主は、地上6階、地下1階。",
+   "image_en": "A grand Japanese castle with a tall multi-storied keep on a hill beside a wide calm lake, early morning mist, light falling from above through clouds.",
+   "image": "A grand Japanese castle with a tall multi-storied keep on a hill beside a wide calm lake",
+   "label": "安土城 地上6階・地下1階",
+   "chars": [],
+   "tts_text": "本拠地は、びわこのほとりのあづちじょう。てんしゅは、地上6階、地下1階。"
+  },
+  {
+   "id": "B05",
+   "narration": "城の下の町では、楽市楽座。座の特権をなくし、商いの税を免じた。",
+   "image_en": "A lively castle-town market street in the late 1500s, merchants of all kinds selling rice, cloth and pottery from open stalls, crowds of townspeople, a castle on a hill far behind. No writing on any cloth.",
+   "image": "A lively castle-town market street in the late 1500s, merchants of all kinds selling",
+   "label": "楽市楽座",
+   "chars": [],
+   "tts_text": "城の下の町では、らくいちらくざ。ざの特権をなくし、商いの税を免じた。"
+  },
+  {
+   "id": "B06",
+   "narration": "新しく来た商人も、自由に店を開いて商いができた。",
+   "image_en": "A young traveling merchant setting down his goods and opening a small new stall in a busy market street, smiling, other merchants nodding. Place the main person slightly right of center.",
+   "image": "A young traveling merchant setting down his goods and opening a small new stall",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "信長は、宣教師が安土に学校を建てることも許していた。",
+   "image_en": "European Jesuit missionaries in black robes and young Japanese students in kimono standing in front of a new wooden school building in a Japanese castle town, morning light.",
+   "image": "European Jesuit missionaries in black robes and young Japanese students in kimono",
+   "chars": []
+  },
+  {
+   "id": "B07b",
+   "narration": "京都には、南蛮寺と呼ばれる教会も建っていた。",
+   "image_en": "A three-story Japanese-style wooden building used as a church in old Kyoto, a small plain cross on the roof, townspeople looking up curiously.",
+   "image": "A three-story Japanese-style wooden building used as a church in old Kyoto",
+   "label": "南蛮寺",
+   "chars": [],
+   "tts_text": "京都には、なんばんでらと呼ばれる教会も建っていた。"
+  },
+  {
+   "id": "B08",
+   "narration": "九州の港には、ポルトガルの南蛮船がやって来ていた。",
+   "real": "Nanban Byobu Folding Screen Carrack Portuguese Traders in Nagasaki by Kano Domi",
+   "image_en": "A large Portuguese carrack ship anchored in a Japanese harbor, small boats carrying goods to the shore, Japanese and Portuguese traders on the beach.",
+   "label": "南蛮貿易",
+   "chars": [],
+   "real_src": {
+    "題": "File:Nanban Byobu Folding Screen Carrack Portuguese Traders in Nagasaki by Kano Domi.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Nanban_Byobu_Folding_Screen_Carrack_Portuguese_Traders_in_Nagasaki_by_Kano_Domi.jpg/1920px-Nanban_Byobu_Folding_Screen_Carrack_Portuguese_Traders_in_Nagasaki_by_Kano_Domi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Nanban_Byobu_Folding_Screen_Carrack_Portuguese_Traders_in_Nagasaki_by_Kano_Domi.jpg",
+    "検索語": "Nanban Byobu Folding Screen Carrack Portuguese Traders in Nagasaki by Kano Domi"
+   }
+  },
+  {
+   "id": "B09",
+   "narration": "この年の2月には、4人の少年が、長崎からヨーロッパへ発った。",
+   "image_en": "Four Japanese boys about thirteen in fine kimono, standing on a wooden pier and looking up at a big Portuguese ship, Jesuit priests beside them, a harbor at sunrise.",
+   "image": "Four Japanese boys about thirteen in fine kimono, standing on a wooden pier",
+   "label": "天正遣欧使節",
+   "chars": [],
+   "tts_text": "この年の2月には、4人の少年が、ながさきからヨーロッパへ発った。"
+  },
+  {
+   "id": "B10",
+   "narration": "少年たちを送り出したのは、九州のキリシタン大名たちだ。",
+   "image_en": "Three Japanese Christian feudal lords in formal clothes standing on the shore and watching a ship sail out of the harbor, a small plain wooden cross on a hill behind them.",
+   "image": "Three Japanese Christian feudal lords in formal clothes standing on the shore",
+   "chars": []
+  },
+  {
+   "id": "B11",
+   "narration": "朝廷も、信長に太政大臣か将軍の位を贈ろうとしていたといわれる。",
+   "real": "Oda Nobunaga portrait Chokoji",
+   "image_en": "Court messengers in black court robes and tall black hats bowing before a seated warlord in a grand castle hall.",
+   "image": "Court messengers in black court robes and tall black hats bowing before a seated warlord",
+   "label": "太政大臣か将軍",
+   "tts_text": "ちょうていも、のぶながにだじょうだいじんかしょうぐんの位を贈ろうとしていたといわれる。",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "残る大きな敵は、西の毛利と、四国の長宗我部元親だった。",
+   "image_en": "A large old hand-painted map of western Japan spread on a wooden floor, the Seto Inland Sea and the island of Shikoku, two small plain wooden pieces placed on it, lamp light. No writing.",
+   "image": "A large old hand-painted map of western Japan spread on a wooden floor",
+   "chars": [],
+   "tts_text": "残る大きな敵は、西のもうりと、しこくのちょうそかべもとちかだった。"
+  },
+  {
+   "id": "B13",
+   "narration": "西では家来の羽柴秀吉が、毛利方の備中高松城を囲んでいた。",
+   "real": "Bitchu Takamatsu castle ruins",
+   "image_en": "A small flat-land castle surrounded by rice fields in western Japan, a large army camped around it.",
+   "label": "備中高松城",
+   "tts_text": "西では家来のはしばひでよしが、もうりがたのびっちゅうたかまつじょうを囲んでいた。",
+   "chars": [],
+   "real_src": {
+    "題": "File:Bitchu Takamatsu castle ruins.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Bitchu_Takamatsu_castle_ruins.jpg/1920px-Bitchu_Takamatsu_castle_ruins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Bitchu_Takamatsu_castle_ruins.jpg",
+    "検索語": "Bitchu Takamatsu castle ruins"
+   }
+  },
+  {
+   "id": "B13b",
+   "narration": "秀吉が西の国々を攻めるよう命じられたのは、5年前の1577年だった。",
+   "image_en": "Hashiba Hideyoshi, younger, kneeling and bowing with a wide eager grin as he receives orders in a castle hall, lamp light. Place the main person slightly right of center.",
+   "image": "Hashiba Hideyoshi, younger, kneeling and bowing with a wide eager grin as he receives orders",
+   "label": "1577年",
+   "chars": [
+    "hideyoshi"
+   ],
+   "tts_text": "ひでよしが西の国々を攻めるよう命じられたのは、5年前の1577年だった。"
+  },
+  {
+   "id": "B14",
+   "narration": "川をせき止める堤を築き、城の周りを水で満たしたのだ。",
+   "image_en": "A small castle standing in the middle of a wide flooded plain, muddy water spreading around its walls, a long earthen dam in the distance, soldiers watching from hills.",
+   "image": "A small castle standing in the middle of a wide flooded plain",
+   "label": "水攻め",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B15",
+   "narration": "信長は、中国攻めの指図をするため、京都に入った。",
+   "image_en": "Oda Nobunaga, riding into the old capital Kyoto with a small group of attendants, townspeople bowing along a wide street, afternoon light. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, riding into the old capital Kyoto with a small group of attendants",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "のぶながは、ちゅうごく攻めの指図をするため、京都に入った。"
+  },
+  {
+   "id": "B15b",
+   "narration": "このとき信長は49歳。天下まで、あと少しの所にいた。",
+   "image_en": "Close-up of Oda Nobunaga, a confident fierce smile in the evening light of a temple room, eyes full of ambition. Place the main person slightly right of center.",
+   "image": "Close-up of Oda Nobunaga, a confident fierce smile in the evening light of a temple room",
+   "chars": [
+    "nobunaga"
+   ],
+   "label": "49歳",
+   "tts_text": "このときのぶながは49歳。天下まで、あと少しの所にいた。"
+  },
+  {
+   "id": "B16",
+   "narration": "泊まったのは、四条西洞院の本能寺。連れていたのは、わずかな近臣だけ。",
+   "image_en": "A large walled Buddhist temple compound in the middle of Kyoto at evening, a few young pages and attendants carrying lanterns at the gate.",
+   "image": "A large walled Buddhist temple compound in the middle of Kyoto at evening",
+   "label": "本能寺",
+   "chars": [],
+   "tts_text": "泊まったのは、しじょうにしのとういんのほんのうじ。連れていたのは、わずかなきんしんだけ。"
+  },
+  {
+   "id": "B16b",
+   "narration": "ここで問題です。この本能寺は、今も同じ場所に建っているでしょうか。",
+   "same_as": "B16",
+   "label": "問題",
+   "tease": true,
+   "tts_text": "ここで問題です。このほんのうじは、今も同じ場所に建っているでしょうか。",
+   "chars": []
+  },
+  {
+   "id": "B17",
+   "narration": "そして明智光秀にも、秀吉を助けに中国へ出陣せよと命じていた。",
+   "image_en": "Akechi Mitsuhide, kneeling and bowing deeply while receiving a folded letter of orders in a dim castle room, lamp light. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, kneeling and bowing deeply while receiving a folded letter of orders",
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "そしてあけちみつひでにも、ひでよしを助けにちゅうごくへ出陣せよと命じていた。"
+  },
+  {
+   "id": "B18",
+   "narration": "光秀は1万3000の兵を連れて、丹波の亀山城を出た。",
+   "image_en": "Akechi Mitsuhide, leading a long column of thousands of soldiers out of a castle gate at night, torches, plain banners with no writing. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, leading a long column of thousands of soldiers out of a castle gate at night",
+   "label": "1万3000",
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "みつひでは1万3000の兵を連れて、たんばのかめやまじょうを出た。"
+  },
+  {
+   "id": "C01",
+   "chapter": "6月2日の分かれ道",
+   "narration": "6月2日の夜明け前。光秀の1万3000は、中国へ向かう道の上にいた。",
+   "image_en": "Akechi Mitsuhide, on horseback on a dark mountain pass where the road splits in two, his army stretched behind him with torches, the eastern sky slightly pale. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, on horseback on a dark mountain pass where the road splits in two",
+   "label": "6月2日 夜明け前",
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "6月2日の夜明け前。みつひでの1万3000は、ちゅうごくへ向かう道の上にいた。"
+  },
+  {
+   "id": "C02",
+   "narration": "馬の上で、光秀は、東の空をじっと見ていた。",
+   "image_en": "Close-up of Akechi Mitsuhide, gazing silently toward the eastern sky from horseback, deep shadows, the faint glow of dawn on his face. Place the main person slightly right of center.",
+   "image": "Close-up of Akechi Mitsuhide, gazing silently toward the eastern sky from horseback",
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "馬の上で、みつひでは、東の空をじっと見ていた。"
+  },
+  {
+   "id": "C03",
+   "narration": "やがて光秀は、手綱を引いた。",
+   "image_en": "Close-up of gloved hands pulling hard on the reins of a dark horse, the horse turning its head, dawn mist on a mountain road.",
+   "image": "Close-up of gloved hands pulling hard on the reins of a dark horse, dawn mist",
+   "chars": [],
+   "tts_text": "やがてみつひでは、たづなを引いた。"
+  },
+  {
+   "id": "C04",
+   "narration": "このまま西へ進め。",
+   "same_as": "C02",
+   "voice": "mitsuhide",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "1万3000の兵は、京都に背を向け、西の山道へ入っていった。",
+   "image_en": "A long column of thousands of samurai soldiers marching away on a winding mountain road toward the west at dawn, torches going out, plain banners with no writing, seen from behind.",
+   "image": "A long column of thousands of samurai soldiers marching away on a winding mountain road",
+   "label": "西へ",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C06",
+   "narration": "同じころ、本能寺。信長は、いつものように目を覚ました。",
+   "image_en": "Oda Nobunaga, sitting up calmly on his bedding in a quiet temple room at dawn, pale light through paper sliding doors. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, sitting up calmly on his bedding in a quiet temple room at dawn",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "同じころ、ほんのうじ。のぶながは、いつものように目を覚ました。"
+  },
+  {
+   "id": "C07",
+   "narration": "京都の町には、跡継ぎの信忠も泊まっていた。",
+   "image_en": "Oda Nobutada, a young Japanese samurai lord in his twenties with a sharp face like his father, chonmage topknot, dark blue kimono, washing his face at a well in a temple courtyard at dawn. Place the main person slightly right of center.",
+   "image": "Oda Nobutada, a young Japanese samurai lord in his twenties washing his face at a well",
+   "chars": [],
+   "tts_text": "京都の町には、跡継ぎののぶただも泊まっていた。"
+  },
+  {
+   "id": "C08",
+   "narration": "信忠は、7年前に父から織田の家を継いだ跡継ぎだ。",
+   "image_en": "Oda Nobutada, the young samurai lord in a dark blue kimono, kneeling formally before Oda Nobunaga and receiving a sword with both hands in a castle hall. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Oda Nobutada kneeling before Oda Nobunaga and receiving a sword with both hands",
+   "chars": [
+    "nobunaga"
+   ],
+   "label": "家督は信忠",
+   "tts_text": "のぶただは、7年前に父からおだの家を継いだ跡継ぎだ。"
+  },
+  {
+   "id": "C09",
+   "narration": "この朝は、何も起きなかった。本能寺の屋根に、静かに日が差した。",
+   "image_en": "Morning sunlight rising over the peaceful tiled roofs of a large temple in Kyoto, birds flying, smoke only from a kitchen chimney, calm and bright.",
+   "image": "Morning sunlight rising over the peaceful tiled roofs of a large temple in Kyoto",
+   "label": "何も起きない朝",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "この朝は、何も起きなかった。ほんのうじの屋根に、静かに日が差した。",
+   "motion": true
+  },
+  {
+   "id": "C10",
+   "narration": "本当の歴史では、この朝、本能寺は燃え、信長は自害している。",
+   "real": "Honnoj.jpg",
+   "image_en": "A large temple burning at dawn, armored soldiers with spears surrounding it, smoke filling the sky. Faded old-memory colors, no blood.",
+   "label": "本当の歴史",
+   "tts_text": "本当の歴史では、この朝、ほんのうじは燃え、のぶながはじがいしている。",
+   "chars": [],
+   "real_src": {
+    "題": "File:Honnoj.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Honnoj.jpg/1920px-Honnoj.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Honnoj.jpg",
+    "検索語": "Honnoj.jpg"
+   }
+  },
+  {
+   "id": "D01",
+   "chapter": "毛利と四国が降る",
+   "narration": "6月、信長は京都を発ち、西の秀吉の陣へ向かった。",
+   "image_en": "Oda Nobunaga, riding west at the head of a great army along a coastal road, the Seto Inland Sea shining beside them, plain banners with no writing. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, riding west at the head of a great army along a coastal road",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "6月、のぶながは京都を発ち、西のひでよしの陣へ向かった。"
+  },
+  {
+   "id": "D02",
+   "narration": "その先を、光秀の1万3000が進んでいく。",
+   "image_en": "Akechi Mitsuhide, riding at the front of his marching army on a sunny western road, plain banners with no writing, calm face. Place the main person slightly right of center.",
+   "image": "Akechi Mitsuhide, riding at the front of his marching army on a sunny western road",
+   "chars": [
+    "mitsuhide"
+   ],
+   "tts_text": "その先を、みつひでの1万3000が進んでいく。"
+  },
+  {
+   "id": "D03",
+   "narration": "水に沈んだ高松城の周りに、織田の大軍の旗が並んだ。",
+   "image_en": "Thousands of plain banners of a huge army lining the hills and dams around a small castle standing in a wide flooded plain, evening light reflecting on the water. No writing on the banners.",
+   "image": "Thousands of plain banners of a huge army lining the hills and dams around a small castle",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "水に沈んだたかまつじょうの周りに、おだの大軍の旗が並んだ。",
+   "motion": true
+  },
+  {
+   "id": "D04",
+   "narration": "助けに来た毛利の大軍も、水に囲まれた城に手が出せない。",
+   "image_en": "A large army in armor waiting on a distant hilltop, generals staring helplessly at a flooded castle below, grim faces.",
+   "image": "A large army in armor waiting on a distant hilltop, generals staring helplessly",
+   "chars": [],
+   "tts_text": "助けに来たもうりの大軍も、水に囲まれた城に手が出せない。"
+  },
+  {
+   "id": "D05",
+   "narration": "城を守っていた清水宗治が腹を切り、高松城は開かれた。",
+   "image_en": "A small boat floating alone on calm flood water in front of a castle, a samurai in white clothes kneeling quietly in the boat, seen from far away, solemn, no blood.",
+   "image": "A small boat floating alone on calm flood water in front of a castle",
+   "label": "開城",
+   "chars": [],
+   "tts_text": "城を守っていたしみずむねはるが腹を切り、たかまつじょうは開かれた。"
+  },
+  {
+   "id": "D06",
+   "narration": "毛利は、信長に頭を下げた。その夏のうちに、西の国々が織田に従った。",
+   "image_en": "Oda Nobunaga, seated on a camp stool inside a war camp curtain, while lords of a western clan in armor kneel and bow before him. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, seated on a camp stool inside a war camp curtain, while lords kneel",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "もうりは、のぶながに頭を下げた。その夏のうちに、西の国々がおだに従った。"
+  },
+  {
+   "id": "D07",
+   "narration": "上様じきじきのお出ましで、西はすっかり片づきましたな。",
+   "image_en": "Hashiba Hideyoshi, grinning broadly and bowing beside his lord in a war camp, rubbing his hands with joy. Place the main person slightly right of center.",
+   "image": "Hashiba Hideyoshi, grinning broadly and bowing beside his lord in a war camp",
+   "chars": [
+    "hideyoshi"
+   ],
+   "voice": "hideyoshi",
+   "tts_text": "うえさまじきじきのおでましで、西はすっかり片づきましたな。"
+  },
+  {
+   "id": "D08",
+   "narration": "同じ6月、四国へも織田の大軍が海を渡った。",
+   "image_en": "Many wooden war ships crossing a calm strait toward a green island, soldiers crowded on the decks, plain sails, bright summer sky.",
+   "image": "Many wooden war ships crossing a calm strait toward a green island",
+   "chars": [],
+   "tts_text": "同じ6月、しこくへもおだの大軍が海を渡った。"
+  },
+  {
+   "id": "D09",
+   "narration": "大将は、信長の三男の信孝と、丹羽長秀。5月に命令が出ていた。",
+   "image_en": "Two samurai generals in armor standing at the bow of a war ship, a young lord in his twenties and an older stern general, looking toward an island. Place the main person slightly right of center.",
+   "image": "Two samurai generals in armor standing at the bow of a war ship",
+   "label": "四国攻め",
+   "chars": [],
+   "tts_text": "大将は、のぶながの三男ののぶたかと、にわながひで。5月に命令が出ていた。"
+  },
+  {
+   "id": "D10",
+   "narration": "長宗我部元親は、土佐1国だけを残されて、織田に降った。",
+   "image_en": "A proud island warlord in armor kneeling in defeat on a beach, his helmet set on the sand beside him, ships in the bay behind. Place the main person slightly right of center.",
+   "image": "A proud island warlord in armor kneeling in defeat on a beach",
+   "chars": [],
+   "tts_text": "ちょうそかべもとちかは、とさ1国だけを残されて、おだに降った。"
+  },
+  {
+   "id": "D11",
+   "narration": "本当の歴史では、四国攻めは本能寺の変で止まり、元親を降したのは秀吉だった。",
+   "image_en": "Soldiers sadly unloading their gear from ships that never sailed, at a harbor at dusk, plain sails lowered. Faded old-memory colors.",
+   "image": "Soldiers sadly unloading their gear from ships that never sailed, at a harbor at dusk",
+   "chars": [],
+   "label": "本当の歴史",
+   "tts_text": "本当の歴史では、しこく攻めはほんのうじのへんで止まり、もとちかを降したのはひでよしだった。"
+  },
+  {
+   "id": "E01",
+   "chapter": "秀吉と家康の出番が消える",
+   "narration": "この世界の秀吉は、手柄を立てた、信長の家来のままだった。",
+   "image_en": "Hashiba Hideyoshi, kneeling low with his forehead near the floor before Oda Nobunaga seated high in a grand hall, eyes wide with surprise and frustration, dramatic lantern light. Place the main person slightly right of center.",
+   "image": "Hashiba Hideyoshi, kneeling low with his forehead near the floor before Oda Nobunaga",
+   "label": "家来のまま",
+   "strong": true,
+   "chars": [
+    "hideyoshi",
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "tts_text": "この世界のひでよしは、手柄を立てた、のぶながの家来のままだった。",
+   "motion": true
+  },
+  {
+   "id": "E02",
+   "narration": "主君の死を聞いて、大軍で京都へ駆け戻ることも無い。",
+   "image_en": "An empty coastal road at dusk where no army marches, quiet fishing village, calm sea. No people on the road.",
+   "image": "An empty coastal road at dusk where no army marches, quiet fishing village",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "光秀と戦う山崎の戦いも、起きない。",
+   "image_en": "A peaceful green valley between a river and a low mountain, farmers planting rice, no soldiers, summer afternoon.",
+   "image": "A peaceful green valley between a river and a low mountain, farmers planting rice",
+   "chars": [],
+   "tts_text": "みつひでと戦うやまざきの戦いも、起きない。"
+  },
+  {
+   "id": "E04",
+   "narration": "信長の跡継ぎを決める、清洲城の話し合いも開かれない。",
+   "image_en": "An empty castle meeting hall with tatami mats and closed sliding doors, cushions neatly stacked, nobody there, dim light.",
+   "image": "An empty castle meeting hall with tatami mats and closed sliding doors",
+   "chars": [],
+   "tts_text": "のぶながの跡継ぎを決める、きよすじょうの話し合いも開かれない。"
+  },
+  {
+   "id": "E05",
+   "narration": "跡継ぎは、もう決まっている。信忠だ。",
+   "image_en": "Oda Nobutada, the young samurai lord in a dark blue kimono, sitting confidently in a castle hall as many retainers bow to him. Place the main person slightly right of center.",
+   "image": "Oda Nobutada, the young samurai lord sitting confidently in a castle hall",
+   "chars": [],
+   "tts_text": "跡継ぎは、もう決まっている。のぶただだ。"
+  },
+  {
+   "id": "E06",
+   "narration": "秀吉が、信忠の幼い子の三法師を、跡継ぎに押し立てることも無い。",
+   "image_en": "A small child in fine kimono playing with a wooden toy in a quiet garden, an old servant watching gently, peaceful.",
+   "image": "A small child in fine kimono playing with a wooden toy in a quiet garden",
+   "label": "三法師",
+   "chars": [],
+   "tts_text": "ひでよしが、のぶただの幼い子のさんぼうしを、跡継ぎに押し立てることも無い。"
+  },
+  {
+   "id": "E07",
+   "narration": "徳川家康は、このとき、わずかな供と堺の町にいた。",
+   "image_en": "Tokugawa Ieyasu, strolling through a busy merchant port town with a few attendants, foreign goods in the shops, ships in the harbor. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, strolling through a busy merchant port town with a few attendants",
+   "label": "堺",
+   "chars": [
+    "ieyasu"
+   ],
+   "tts_text": "とくがわいえやすは、このとき、わずかな供とさかいの町にいた。"
+  },
+  {
+   "id": "E08",
+   "narration": "この世界の家康は、何事もなく、船で三河へ帰った。",
+   "image_en": "Tokugawa Ieyasu, standing calmly on the deck of a wooden ship on a quiet sea, looking toward the coast. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, standing calmly on the deck of a wooden ship on a quiet sea",
+   "chars": [
+    "ieyasu"
+   ],
+   "tts_text": "この世界のいえやすは、何事もなく、船でみかわへ帰った。"
+  },
+  {
+   "id": "E09",
+   "narration": "信長殿の天下は、もう動かぬな。",
+   "same_as": "E08",
+   "voice": "ieyasu",
+   "tts_text": "のぶながどのの天下は、もう動かぬな。",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "信長の死で空いた甲斐と信濃へ、兵を出すことも無い。",
+   "image_en": "Quiet mountain provinces in early summer, empty roads winding through valleys, no armies anywhere, distant snowy peaks.",
+   "image": "Quiet mountain provinces in early summer, empty roads winding through valleys",
+   "chars": [],
+   "tts_text": "のぶながの死で空いたかいとしなのへ、兵を出すことも無い。"
+  },
+  {
+   "id": "E10b",
+   "narration": "家康の国は広がらないまま。信長に仕える、東の大名の1人だった。",
+   "image_en": "Tokugawa Ieyasu, kneeling politely in a row of lords before a high seat in a grand castle hall, his face calm and patient. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, kneeling politely in a row of lords before a high seat in a grand castle hall",
+   "chars": [
+    "ieyasu"
+   ],
+   "tts_text": "いえやすの国は広がらないまま。のぶながに仕える、東の大名の1人だった。"
+  },
+  {
+   "id": "E11",
+   "narration": "本当の歴史では、秀吉は変から11日目に、山崎で光秀を破っている。",
+   "real": "Toyotomi Hideyoshi c1598 Kodai-ji Temple",
+   "image_en": "A battle on a plain beside a river below a low mountain, armored soldiers clashing, plain banners. Faded old-memory colors.",
+   "image": "A battle on a plain beside a river below a low mountain, armored soldiers clashing",
+   "label": "11日目",
+   "tts_text": "本当の歴史では、ひでよしは変から11日目に、やまざきでみつひでを破っている。",
+   "chars": []
+  },
+  {
+   "id": "E12",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。よければ、チャンネル登録で応援してください。",
+   "same_as": "C09",
+   "label": "チャンネル登録",
+   "tts_text": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。よければ、チャンネル登録で応援してください。",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "chapter": "安土からの天下統一",
+   "narration": "信長と信忠の軍は、東へ、北へ、そして九州へと広がっていく。",
+   "image_en": "Oda Nobunaga, standing on a high castle balcony looking over a wide land as several armies march out in different directions below, plain banners with no writing. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, standing on a high castle balcony looking over a wide land as armies march out",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "のぶながとのぶただの軍は、東へ、北へ、そしてきゅうしゅうへと広がっていく。"
+  },
+  {
+   "id": "F02",
+   "narration": "大坂には、信長が11年戦った石山本願寺の跡地が広がっていた。",
+   "image_en": "A wide empty plateau with burnt foundation stones of a huge former temple, rivers and the sea beyond, grass growing, cloudy sky. No people.",
+   "image": "A wide empty plateau with burnt foundation stones of a huge former temple",
+   "label": "石山本願寺の跡",
+   "chars": [],
+   "tts_text": "おおさかには、のぶながが11年戦ったいしやまほんがんじの跡地が広がっていた。"
+  },
+  {
+   "id": "F03",
+   "narration": "1583年に秀吉が築き始めるはずの大坂城は、この世界には建たない。",
+   "image_en": "Hashiba Hideyoshi, standing on an empty grassy plateau with his hands on his hips, looking around at bare land where no castle stands, puzzled face. Place the main person slightly right of center.",
+   "image": "Hashiba Hideyoshi, standing on an empty grassy plateau where no castle stands",
+   "chars": [
+    "hideyoshi"
+   ],
+   "label": "大坂城は建たない",
+   "tts_text": "1583年にひでよしが築き始めるはずのおおさかじょうは、この世界には建たない。"
+  },
+  {
+   "id": "F04",
+   "narration": "天下の真ん中は、琵琶湖のほとりの安土のままだった。",
+   "image_en": "A magnificent tall castle keep on a hill beside a wide lake at sunset, a busy castle town below with many boats on the lake, warm golden light.",
+   "image": "A magnificent tall castle keep on a hill beside a wide lake at sunset, a busy castle town below",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "天下の真ん中は、びわこのほとりのあづちのままだった。",
+   "motion": true
+  },
+  {
+   "id": "F05",
+   "narration": "安土の楽市の決まりは、新しく従えた国々の町にも広がっていく。",
+   "image_en": "A newly built market street in a provincial castle town, merchants unloading goods from carts, a crowd of happy shoppers, warm afternoon light. No writing on any sign.",
+   "image": "A newly built market street in a provincial castle town, merchants unloading goods",
+   "chars": [],
+   "tts_text": "あづちのらくいちの決まりは、新しく従えた国々の町にも広がっていく。"
+  },
+  {
+   "id": "F05b",
+   "narration": "安土の掟には、座の特権も、さまざまな税も、すべて免じると書かれていた。",
+   "image_en": "A town official in kamishimo nailing a folded paper notice, seen from behind so its face is hidden, onto a wooden post at a busy market entrance while merchants gather to look, warm light.",
+   "image": "A town official in kamishimo nailing a folded paper notice onto a wooden post at a market entrance",
+   "label": "安土の掟",
+   "chars": [],
+   "tts_text": "あづちのおきてには、ざの特権も、さまざまな税も、すべて免じると書かれていた。"
+  },
+  {
+   "id": "F06",
+   "narration": "そして天下統一。秀吉が成しとげた年より、何年も早かった。",
+   "image_en": "Oda Nobunaga, standing proudly at the top of a castle keep at dawn, arms folded, a vast unified land of mountains and rivers spreading below. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, standing proudly at the top of a castle keep at dawn, arms folded",
+   "label": "天下統一",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "そして天下統一。ひでよしが成しとげた年より、何年も早かった。"
+  },
+  {
+   "id": "F07",
+   "narration": "日の本は、ひとつになった。",
+   "same_as": "F06",
+   "voice": "nobunaga",
+   "tts_text": "ひのもとは、ひとつになった。",
+   "chars": []
+  },
+  {
+   "id": "F08",
+   "narration": "本当の歴史では、天下統一は1590年。秀吉が小田原の北条氏を滅ぼした年だ。",
+   "image_en": "A huge army camped in a ring around a large castle near the sea, thousands of plain banners, a samurai lord watching from a hilltop. Faded old-memory colors.",
+   "image": "A huge army camped in a ring around a large castle near the sea",
+   "label": "1590年",
+   "chars": [],
+   "tts_text": "本当の歴史では、天下統一は1590年。ひでよしがおだわらのほうじょうしを滅ぼした年だ。"
+  },
+  {
+   "id": "G01",
+   "chapter": "帰ってきた4人の少年",
+   "narration": "1590年。ヨーロッパへ行った4人の少年が、8年ぶりに長崎へ帰ってきた。",
+   "image_en": "Four young Japanese men about twenty in European-style travel clothes stepping off a Portuguese ship onto a harbor pier, crowds welcoming them, bright sky.",
+   "image": "Four young Japanese men about twenty in European-style travel clothes stepping off a ship",
+   "label": "1590年",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "1590年。ヨーロッパへ行った4人の少年が、8年ぶりにながさきへ帰ってきた。",
+   "motion": true
+  },
+  {
+   "id": "G02",
+   "narration": "伊東マンショ、千々石ミゲル、原マルチノ、中浦ジュリアン。",
+   "real": "First Japanese Embassy to Europe 1586",
+   "image_en": "An old European print showing four young Japanese envoys in fine clothes standing together with a European priest.",
+   "image": "An old European print showing four young Japanese envoys in fine clothes",
+   "label": "4人の少年",
+   "tts_text": "いとうマンショ、ちぢわミゲル、はらマルチノ、なかうらジュリアン。",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "4人は1585年、ローマで教皇に会っていた。",
+   "image_en": "Four young Japanese envoys kneeling before the Pope seated on a throne in a grand hall in Rome, cardinals in red standing around, candles.",
+   "image": "Four young Japanese envoys kneeling before the Pope seated on a throne in Rome",
+   "label": "ローマ教皇",
+   "chars": []
+  },
+  {
+   "id": "G04",
+   "narration": "この世界で4人を迎えたのは、安土城の信長だった。",
+   "image_en": "Oda Nobunaga, now older with grey in his hair, seated in a splendid castle hall and leaning forward with great interest as four young envoys in European clothes bow before him. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, now older with grey in his hair, seated in a splendid castle hall with four envoys",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "この世界で4人を迎えたのは、あづちじょうののぶながだった。"
+  },
+  {
+   "id": "G05",
+   "narration": "信長は、海の向こうの話を、夜がふけるまで聞いた。",
+   "image_en": "Oda Nobunaga, older with grey in his hair, listening intently by lamp light as a young envoy unfolds a large hand-drawn world map with no writing on the floor. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, older, listening intently by lamp light as a young envoy unfolds a world map",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "のぶながは、海の向こうの話を、夜がふけるまで聞いた。"
+  },
+  {
+   "id": "G06",
+   "narration": "海の向こうは、それほど広いか。",
+   "same_as": "G05",
+   "voice": "nobunaga",
+   "chars": []
+  },
+  {
+   "id": "G07",
+   "narration": "安土の学校も、京都の南蛮寺も、そのまま残った。",
+   "image_en": "Young Japanese students in kimono playing small European string instruments in a wooden school room, a Jesuit teacher smiling, soft afternoon light.",
+   "image": "Young Japanese students in kimono playing small European string instruments in a school room",
+   "chars": [],
+   "tts_text": "あづちの学校も、京都のなんばんでらも、そのまま残った。"
+  },
+  {
+   "id": "G08",
+   "narration": "本当の歴史では、4人が帰る3年前、秀吉が宣教師の追放を命じていた。",
+   "image_en": "Jesuit missionaries in black robes walking sadly toward a harbor carrying small bundles, Japanese believers watching from a distance. Faded old-memory colors.",
+   "image": "Jesuit missionaries in black robes walking sadly toward a harbor carrying small bundles",
+   "label": "バテレン追放令",
+   "chars": [],
+   "tts_text": "本当の歴史では、4人が帰る3年前、ひでよしが宣教師の追放を命じていた。"
+  },
+  {
+   "id": "H01",
+   "chapter": "海の向こうを見る信長",
+   "narration": "天下を取った信長は、次にどこを見たのか。",
+   "image_en": "Oda Nobunaga, older with grey in his hair, standing alone at the top floor window of a tall castle keep, staring far to the west over the water, sunset. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, older, standing alone at the top floor window of a tall castle keep, staring west",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "天下を取ったのぶながは、次にどこを見たのか。"
+  },
+  {
+   "id": "H02",
+   "narration": "宣教師のフロイスは、信長の考えを書き残したと伝わる。",
+   "image_en": "A bearded Portuguese Jesuit priest in black robes writing a long letter with a quill by candlelight in a small Japanese room. Place the main person slightly right of center.",
+   "image": "A bearded Portuguese Jesuit priest in black robes writing a long letter with a quill by candlelight",
+   "label": "フロイスの記録",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "日本を従えたら、大船団を作り、海の向こうの明を攻める、と。",
+   "image_en": "A huge imagined fleet of wooden war ships with plain sails spread across a wide sea toward a distant continent coastline, dramatic clouds.",
+   "image": "A huge imagined fleet of wooden war ships with plain sails toward a distant continent coastline",
+   "chars": [],
+   "tts_text": "日本を従えたら、大船団を作り、海の向こうのみんを攻める、と。"
+  },
+  {
+   "id": "H04",
+   "narration": "天下を取った秀吉も、1592年、明を討つと言って朝鮮へ大軍を送った。のちに、文禄・慶長の役と呼ばれる戦だ。",
+   "image_en": "Hundreds of wooden war ships with plain sails setting out from a Japanese harbor across a grey sea, soldiers crowded on the decks. Faded old-memory colors.",
+   "image": "Hundreds of wooden war ships with plain sails setting out from a Japanese harbor across a grey sea",
+   "label": "1592年 文禄・慶長の役",
+   "chars": [],
+   "tts_text": "天下を取ったひでよしも、1592年、みんを討つと言ってちょうせんへ大軍を送った。のちに、ぶんろく・けいちょうのえきと呼ばれる戦だ。"
+  },
+  {
+   "id": "H05",
+   "narration": "この世界の信長も、九州の港に、船を集めはじめた。",
+   "image_en": "A crowded harbor in Kyushu filled with newly built large wooden ships, carpenters hammering, workers carrying timber, smoke and noise, cloudy sky.",
+   "image": "A crowded harbor in Kyushu filled with newly built large wooden ships, carpenters hammering",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "この世界ののぶながも、きゅうしゅうの港に、船を集めはじめた。",
+   "motion": true
+  },
+  {
+   "id": "H06",
+   "narration": "船に乗るのは、天下統一まで戦い続けてきた大名と兵たちだ。",
+   "image_en": "Tired samurai soldiers sitting on the stone pier beside the ships, sharpening spears in silence, worried faces, grey sea.",
+   "image": "Tired samurai soldiers sitting on the stone pier beside the ships, sharpening spears in silence",
+   "chars": []
+  },
+  {
+   "id": "H06b",
+   "narration": "安土で4人から聞いた海の向こうの話が、信長を急がせていた。",
+   "image_en": "Oda Nobunaga, older with grey in his hair, pressing his finger hard on a large blank world map spread on a table, eyes burning, lamp light. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, older, pressing his finger hard on a large blank world map, eyes burning",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "あづちで4人から聞いた海の向こうの話が、のぶながを急がせていた。"
+  },
+  {
+   "id": "H07",
+   "narration": "やっと静かになった国が、また戦に向かおうとしていた。",
+   "image_en": "A farming village where wives and children watch with anxious faces as young men leave with spears toward the coast, cold wind, grey sky.",
+   "image": "A farming village where wives and children watch with anxious faces as young men leave",
+   "label": "また戦へ",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H07b",
+   "narration": "海の向こうで、どれほどの命が失われるのか。",
+   "image_en": "A lone old mother standing on a windy shore holding a small bundle, watching ships disappear over a grey horizon, seen from behind.",
+   "image": "A lone old mother standing on a windy shore watching ships disappear over a grey horizon",
+   "chars": []
+  },
+  {
+   "id": "H08",
+   "narration": "上様は、まだ止まられぬのか。",
+   "image_en": "Hashiba Hideyoshi, now older and thin, sitting alone in a dark room with a worried frown, clutching his knees, lamp light. Place the main person slightly right of center.",
+   "image": "Hashiba Hideyoshi, now older and thin, sitting alone in a dark room with a worried frown",
+   "chars": [
+    "hideyoshi"
+   ],
+   "voice": "hideyoshi",
+   "tts_text": "うえさまは、まだとまられぬのか。"
+  },
+  {
+   "id": "H09",
+   "narration": "信長は、このとき60歳に近い。それでも、目は西の海から離れなかった。",
+   "image_en": "Close-up of Oda Nobunaga, older with deep wrinkles and grey hair, staring hard toward the western sea in red sunset light, unbending eyes. Place the main person slightly right of center.",
+   "image": "Close-up of Oda Nobunaga, older with deep wrinkles and grey hair, staring toward the western sea",
+   "chars": [
+    "nobunaga"
+   ],
+   "tts_text": "のぶながは、このとき60歳に近い。それでも、目は西の海から離れなかった。"
+  },
+  {
+   "id": "I01",
+   "chapter": "今の日本に残る違い",
+   "narration": "では、この世界の今の日本は、何が違うのか。",
+   "image_en": "A modern Japanese city street seen from above at dusk, old temple roofs among modern buildings, soft lights.",
+   "image": "A modern Japanese city street seen from above at dusk, old temple roofs among modern buildings",
+   "chars": []
+  },
+  {
+   "id": "I02",
+   "narration": "まず、京都の本能寺は、今とは違う場所に建っている。",
+   "image_en": "A large old temple gate in the middle of a quiet Kyoto city block, a few modern visitors walking past, morning light. Place the main person slightly right of center.",
+   "image": "A large old temple gate in the middle of a quiet Kyoto city block, a few visitors",
+   "chars": [],
+   "tts_text": "まず、京都のほんのうじは、今とは違う場所に建っている。"
+  },
+  {
+   "id": "I03",
+   "narration": "今の本能寺は、1589年に秀吉の命令で、今の場所へ移った寺だ。",
+   "real": "Honno-ji (Nakagyo-ku Kyoto) Temple hdsr S5 04",
+   "image_en": "A Buddhist temple main hall in modern Kyoto with stone paving and visitors, clear day.",
+   "label": "1589年に移転",
+   "payoff": true,
+   "tts_text": "今のほんのうじは、1589年にひでよしの命令で、今の場所へ移った寺だ。",
+   "chars": [],
+   "real_src": {
+    "題": "File:Honno-ji (Nakagyo-ku Kyoto) Temple hdsr S5 04.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Honno-ji_%28Nakagyo-ku_Kyoto%29_Temple_hdsr_S5_04.jpg/1920px-Honno-ji_%28Nakagyo-ku_Kyoto%29_Temple_hdsr_S5_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Honno-ji_(Nakagyo-ku_Kyoto)_Temple_hdsr_S5_04.jpg",
+    "検索語": "Honno-ji (Nakagyo-ku Kyoto) Temple hdsr S5 04"
+   }
+  },
+  {
+   "id": "I04",
+   "narration": "この世界の本能寺は、信長が泊まった四条西洞院に、そのまま残る。",
+   "image_en": "A large old walled temple compound with tall tiled roofs standing among modern low buildings in central Kyoto, seen from a high angle on a clear day.",
+   "image": "A large old walled temple compound standing among modern low buildings in central Kyoto",
+   "chars": [],
+   "tts_text": "この世界のほんのうじは、のぶながが泊まったしじょうにしのとういんに、そのまま残る。"
+  },
+  {
+   "id": "I05",
+   "narration": "家康は1590年、関東へ移され、江戸の城に入った。",
+   "real": "Tokugawa Ieyasu portrait",
+   "image_en": "A small simple castle on low land by a bay with marshes and a few fishing houses. Faded old-memory colors.",
+   "label": "1590年 江戸",
+   "tts_text": "いえやすは1590年、かんとうへ移され、えどの城に入った。",
+   "chars": [],
+   "real_src": {
+    "題": "File:Tokugawa Ieyasu2.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Tokugawa_Ieyasu2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG",
+    "検索語": "Tokugawa Ieyasu portrait"
+   }
+  },
+  {
+   "id": "I06",
+   "narration": "この世界の家康は、その国替えを命じられず、江戸へは行かない。",
+   "image_en": "Tokugawa Ieyasu, older, sitting calmly on a veranda of his home castle among green hills, sipping tea. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, older, sitting calmly on a veranda of his home castle among green hills",
+   "chars": [
+    "ieyasu"
+   ],
+   "tts_text": "この世界のいえやすは、そのくにがえを命じられず、えどへは行かない。"
+  },
+  {
+   "id": "I07",
+   "narration": "そして、琵琶湖のほとり。",
+   "image_en": "A wide calm lake at sunrise seen from the shore, reeds and a small boat, a forested hill rising on the far side.",
+   "image": "A wide calm lake at sunrise seen from the shore, reeds and a small boat",
+   "chars": [],
+   "tts_text": "そして、びわこのほとり。"
+  },
+  {
+   "id": "I08",
+   "narration": "安土山の上に、信長の天主が、今も立っている。",
+   "image_en": "A magnificent tall multi-storied castle keep standing on top of a forested hill beside a wide lake in the present day, morning sun shining on its roof, small modern tourists walking up the stone steps below, breathtaking.",
+   "image": "A magnificent tall multi-storied castle keep standing on top of a forested hill beside a lake today",
+   "label": "安土城が今も立つ",
+   "strong": true,
+   "highlight": [
+    "今も立っている"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "tts_text": "あづちやまの上に、のぶながのてんしゅが、今も立っている。",
+   "motion": true
+  },
+  {
+   "id": "I09",
+   "narration": "旅行に来た人たちが、天主の窓から、琵琶湖を見下ろしている。",
+   "image_en": "Modern tourists in casual clothes looking out from the high wooden window of an old castle keep over a wide shining lake, amazed smiles. Place the main person slightly right of center.",
+   "image": "Modern tourists looking out from the high wooden window of an old castle keep over a wide lake",
+   "chars": [],
+   "tts_text": "旅行に来た人たちが、てんしゅの窓から、びわこを見下ろしている。"
+  },
+  {
+   "id": "I09b",
+   "narration": "安土の町は、天主を見に来る人でにぎわう、湖のほとりの観光地だ。",
+   "image_en": "A lively lakeside town street in the present day with old wooden houses and souvenir shops, crowds of visitors, a tall castle keep on the hill behind. No writing on any sign.",
+   "image": "A lively lakeside town street in the present day with old wooden houses, a castle keep on the hill",
+   "chars": [],
+   "tts_text": "あづちの町は、てんしゅを見に来る人でにぎわう、湖のほとりの観光地だ。"
+  },
+  {
+   "id": "I10",
+   "narration": "本当の安土城は変の後に焼け、図面も残らない幻の城と呼ばれている。",
+   "real": "Azuchi Castle Ruins",
+   "image_en": "Mossy old stone walls and steep stone stairs of a castle ruin on a forested hill, no buildings left, quiet.",
+   "label": "幻の城",
+   "tts_text": "本当のあづちじょうは変の後に焼け、図面も残らないまぼろしの城と呼ばれている。",
+   "chars": [],
+   "real_src": {
+    "題": "File:Azuchi Castle Ruins.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Azuchi_Castle_Ruins.jpg/1920px-Azuchi_Castle_Ruins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Azuchi_Castle_Ruins.jpg",
+    "検索語": "Azuchi Castle Ruins"
+   }
+  },
+  {
+   "id": "J01",
+   "chapter": "2つの未来",
+   "narration": "本能寺の変が起きなかった日本は、どうなったのか。未来を2つ並べてみる。",
+   "image_en": "Oda Nobunaga, older with grey in his hair, standing on a cliff above the sea at sunset, his crimson surcoat blowing in the wind, looking toward the horizon. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, older, standing on a cliff above the sea at sunset, crimson surcoat blowing",
+   "chars": [
+    "nobunaga"
+   ],
+   "anim": "kling",
+   "tts_text": "ほんのうじのへんが起きなかった日本は、どうなったのか。未来を2つ並べてみる。",
+   "motion": true
+  },
+  {
+   "id": "J03",
+   "narration": "良い未来。1590年、4人の少年を信長が安土で迎え、日本は海に開かれた国になった。",
+   "same_as": "G04",
+   "label": "良い未来",
+   "tts_text": "良い未来。1590年、4人の少年をのぶなががあづちで迎え、日本は海に開かれた国になった。",
+   "chars": []
+  },
+  {
+   "id": "J04",
+   "narration": "安土の学校からは、海の外の言葉を話す若者が育っていく。",
+   "image_en": "A young Japanese man in kimono talking cheerfully with Portuguese merchants on a harbor pier, pointing at goods, ships behind them, bright day. Place the main person slightly right of center.",
+   "image": "A young Japanese man in kimono talking cheerfully with Portuguese merchants on a harbor pier",
+   "chars": [],
+   "tts_text": "あづちの学校からは、海の外の言葉を話す若者が育っていく。"
+  },
+  {
+   "id": "J05",
+   "narration": "悪い未来。1590年代、信長の大船団が九州から海を渡り、明との長い戦が始まった。",
+   "image_en": "A vast fleet of wooden war ships with plain sails crossing a stormy grey sea, dark clouds above, soldiers clinging to the decks.",
+   "image": "A vast fleet of wooden war ships with plain sails crossing a stormy grey sea",
+   "label": "悪い未来",
+   "chars": [],
+   "tts_text": "悪い未来。1590年代、のぶながの大船団がきゅうしゅうから海を渡り、みんとの長い戦が始まった。"
+  },
+  {
+   "id": "J06",
+   "narration": "天下統一の兵たちは、休む間もなく、海の向こうの戦へ送られた。",
+   "image_en": "Exhausted samurai soldiers climbing up the side of a war ship in heavy rain, officers shouting, dark sea.",
+   "image": "Exhausted samurai soldiers climbing up the side of a war ship in heavy rain",
+   "chars": []
+  },
+  {
+   "id": "J07",
+   "narration": "どちらの未来でも、天下人は秀吉ではなく、信長だった。",
+   "image_en": "Oda Nobunaga, older, seated high on a dais in a golden castle hall as Hashiba Hideyoshi bows among many lords below, dramatic light. Place the main person slightly right of center.",
+   "image": "Oda Nobunaga, older, seated high on a dais as Hashiba Hideyoshi bows among many lords below",
+   "chars": [
+    "nobunaga",
+    "hideyoshi"
+   ],
+   "tts_text": "どちらの未来でも、天下人はひでよしではなく、のぶながだった。"
+  },
+  {
+   "id": "J08",
+   "narration": "あなたは、どっちの日本になったと思いますか。",
+   "image_en": "A fork in a mountain road at sunset, one path leading down to a peaceful harbor town, the other path leading to dark sea and war ships, no people.",
+   "image": "A fork in a mountain road at sunset, one path to a peaceful harbor town, the other to war ships",
+   "label": "どっちの日本になった？",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "J09",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "same_as": "I08",
+   "chars": []
+  },
+  {
+   "id": "J10",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "F04",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

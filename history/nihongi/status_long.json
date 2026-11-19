@@ -1,5 +1,5 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L111_w002",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L112_w001",
  "done": [
   "pick",
   "write",
@@ -7,31 +7,20 @@
   "voice",
   "images",
   "motion",
-  "gate_images"
+  "gate_images",
+  "build"
  ],
- "started": "2026-11-17T17:15:46+09:00",
- "tries": 3,
+ "started": "2026-11-19T08:30:22+09:00",
+ "tries": 1,
  "code": "cacc4e01d226",
- "stage": "build",
- "updated": "2026-11-18T12:00:19+09:00",
- "busy": {},
+ "stage": "gate_video",
+ "updated": "2026-11-19T10:30:55+09:00",
  "video_swapped": {
-  "H07": "H06",
-  "K04": "K03"
+  "H04": "H03"
  },
- "restored": {
-  "日時": "2026-11-18T07:01:55+09:00",
-  "前の済み": [
-   "pick",
-   "write",
-   "gate_script",
-   "voice",
-   "images",
-   "motion",
-   "gate_images",
-   "build",
-   "gate_video"
-  ]
+ "video_redo": 1,
+ "video_redo_ids": {
+  "A01": "Absolutely no readable text anywhere: no signs, shop names, letters, numbers or logos (leave signboards blank)."
  },
- "images_back": true
+ "video_redo_sent": true
 }
