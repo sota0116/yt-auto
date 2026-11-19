@@ -68,7 +68,7 @@
   "seconds": 38,
   "title_now": "【60代】古い財布を引き出しにしまったままの人へ",
   "synthetic_on": null,
-  "views_now": 1707,
+  "views_now": 1708,
   "published": true,
   "published_at": "2026-11-03T19:00:29+09:00",
   "comment_id": "UgzD4kv4_V8vv8eWSSN4AaABAg",
@@ -148,7 +148,7 @@
   "seconds": 814,
   "title_now": "【今すぐチェック】カバンに〇〇を入れたままは要注意！破産する人の特徴5選【金運】",
   "synthetic_on": null,
-  "views_now": 47,
+  "views_now": 49,
   "published": true,
   "published_at": "2026-11-08T18:00:16+09:00",
   "comment_id": "Ugw91s8VBfk7CUYMsQB4AaABAg",
@@ -254,7 +254,7 @@
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 36,
+  "views_now": 37,
   "published": true,
   "published_at": "2026-11-10T18:00:33+09:00",
   "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
@@ -404,7 +404,7 @@
   "seconds": 36,
   "title_now": "【60代】年金が入った日、通帳を記帳せずに下ろさないで",
   "synthetic_on": null,
-  "views_now": 1246,
+  "views_now": 1247,
   "published": true,
   "published_at": "2026-11-14T12:00:37+09:00",
   "comment_id": "UgyJQctjM1ZU0LPrv454AaABAg",
@@ -458,7 +458,7 @@
   "seconds": 37,
   "title_now": "【60代】レジでお札を慌てて出す人、今すぐやめて",
   "synthetic_on": null,
-  "views_now": 600,
+  "views_now": 601,
   "published": true,
   "published_at": "2026-11-15T12:00:28+09:00",
   "comment_id": "UgwvmmU1zhjaR1ZG-Ht4AaABAg",
@@ -483,7 +483,7 @@
   "seconds": 37,
   "title_now": "【60代】買い物メモ、お札と一緒に財布へ入れないで",
   "synthetic_on": null,
-  "views_now": 1041,
+  "views_now": 1045,
   "published": true,
   "published_at": "2026-11-15T07:00:32+09:00",
   "comment_id": "UgxOAWoMF4RWSh-_2_x4AaABAg",
@@ -532,12 +532,16 @@
   "comment": "コメントで、数を教えてくださいね。",
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
-  "privacy_now": "private",
-  "publish_at": "2026-11-19T09:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 760,
   "title_now": "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-19T18:00:00+09:00",
+  "comment_id": "Ugz1HUAKRivBY36OwIB4AaABAg",
+  "comment_at": "2026-11-19T20:23:10+09:00"
  },
  {
   "work": "S124_お菓子の空き缶の貯金",
@@ -583,7 +587,7 @@
   "seconds": 37,
   "title_now": "【60代】寝る前に財布を「ここ」から必ず出して",
   "synthetic_on": null,
-  "views_now": 6,
+  "views_now": 7,
   "published": true,
   "published_at": "2026-11-18T19:00:13+09:00",
   "comment_id": "UgwIQkBEu-eoHaKl_Kt4AaABAg",
@@ -603,12 +607,16 @@
    "【60代】重い小銭入れ、お札の財布に絶対入れないで"
   ],
   "comment": "あなたの財布には、重い小銭入れが入っていませんか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-19T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 37,
   "title_now": "【60代】重い小銭入れ、お札の財布に絶対入れないで",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 18,
+  "published": true,
+  "published_at": "2026-11-19T12:00:28+09:00",
+  "comment_id": "UgyBHKVS7zvyj0_sTUJ4AaABAg",
+  "comment_at": "2026-11-19T20:23:11+09:00"
  },
  {
   "work": "S127_銀行の封筒",
@@ -707,12 +715,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-19T02:58:59+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】2階の真下に神棚を置いてる人、天井を見て"
   ],
-  "comment": "あなたの神棚の真上は、何の部屋ですか。"
+  "comment": "あなたの神棚の真上は、何の部屋ですか。",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 37,
+  "title_now": "【60代】2階の真下に神棚を置いてる人、天井を見て",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S131_神棚をこう置くとお金が逃",
@@ -723,11 +736,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-19T08:40:02+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】神棚の向きと高さでお金が逃げる置き方3選"
   ],
-  "comment": "あなたの神棚の向きと高さ、いくつ直せそうですか。"
+  "comment": "あなたの神棚の向きと高さ、いくつ直せそうですか。",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 44,
+  "title_now": "【60代】神棚の向きと高さでお金が逃げる置き方3選",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
