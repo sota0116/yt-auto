@@ -1198,5 +1198,80 @@
   "言い方の版": 1,
   "bgm": "job_short_bgm_02_drive.m4a",
   "取った日": "2026-11-17T12:16:04+09:00"
+ },
+ "20261115_0924_0": {
+  "48h": {
+   "views": 392,
+   "averageViewPercentage": 52.14,
+   "averageViewDuration": 15,
+   "subscribersGained": 0,
+   "likes": 1,
+   "再生の出どころ": "公開の数字",
+   "score": 204.4
+  },
+  "video_id": "LcWJhciNeUI",
+  "title": "保険の営業は残業が月1時間｜一般事務は月9時間 #年収 #仕事",
+  "topic_id": "duel_一般事務（総合事務員）_保険の営業_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "保険営業の\n残業は？",
+  "banner": [
+   "残業の少なさ",
+   "保険営業と事務"
+  ],
+  "編集の版": 2,
+  "言い方の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-19T11:05:30+09:00"
+ },
+ "20261115_0926_1": {
+  "48h": {
+   "views": 996,
+   "averageViewPercentage": 109.46000000000001,
+   "averageViewDuration": 33,
+   "subscribersGained": 0,
+   "likes": 2,
+   "再生の出どころ": "公開の数字",
+   "score": 1090.2
+  },
+  "video_id": "VOvZgb90paM",
+  "title": "主な職業で平均年齢が高い5つ｜1位は約58歳 #年収 #仕事",
+  "topic_id": "rank_全体_年齢_hi",
+  "kind": "rank",
+  "measure": "年齢",
+  "hook": "年齢が高い\n仕事は？",
+  "banner": [
+   "年齢が高い順",
+   "主な職業38から"
+  ],
+  "編集の版": 2,
+  "言い方の版": 2,
+  "bgm": "job_short_bgm_02_drive.m4a",
+  "取った日": "2026-11-19T11:05:30+09:00"
+ },
+ "20261116_0927_0": {
+  "48h": {
+   "views": 909,
+   "averageViewPercentage": 59.23,
+   "averageViewDuration": 18,
+   "subscribersGained": 0,
+   "likes": 0,
+   "再生の出どころ": "公開の数字",
+   "score": 538.4
+  },
+  "video_id": "Ywonu4BxHxk",
+  "title": "調理人の残業は月12時間｜介護職員は月に4時間 #年収 #仕事",
+  "topic_id": "duel_介護職員（施設）_調理人_残業",
+  "kind": "duel",
+  "measure": "残業",
+  "hook": "調理人の\n残業は？",
+  "banner": [
+   "残業の差",
+   "調理人と介護職員"
+  ],
+  "編集の版": 2,
+  "言い方の版": 2,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "取った日": "2026-11-19T11:05:30+09:00"
  }
 }
