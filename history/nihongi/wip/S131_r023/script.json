@@ -1,0 +1,323 @@
+{
+ "format": "short",
+ "title": "もしも戦国武将に「仕えた主君の数」が見えたら。藤堂高虎だけ7人、それでも家康に一番頼られる #もしも #日本史 #戦国時代",
+ "promise": "藤堂高虎が浅井長政から徳川家康まで7人の主君に仕えたとされ、それでも外様でただ1人幕府の会議に出たといわれ、1608年に伊勢の津へ移って、のちに32万石余りの大名になったと人に話せる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※武将の頭の上に仕えた主君の数が見える話と、家康のセリフ・徳川の家臣たちがざわつく場面は作り話です。藤堂高虎が1570年の姉川の戦いで初陣し、浅井長政・阿閉貞征・磯野員昌・織田信澄・羽柴秀長・豊臣秀吉・徳川家康の7人の主君に仕えたとされること、秀長の死後に出家しようと高野山に登り、秀吉に説かれて伊予7万石の大名になったこと、関ヶ原で東軍についたこと、1608年に伊勢の津へ移り、のちに32万石余りになったことは、史実をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "戦国時代",
+  "藤堂高虎",
+  "徳川家康",
+  "津藩",
+  "外様大名",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "家康の隣に7の高虎"
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "competitor_note": "TTP：題材＝「徳川の世で〇〇なのに〇〇だった人」（主君を7人変えたとされるのに、外様で家康に一番頼られた人）｜競合メモ 伸びている題材5（rR2p5yhP8Zg・6yMQmssvE1k・3w2mLASsmXo「徳川幕府が『豊臣の家臣だったのに重く用いた』大名」）。題の型＝「AなのにB」のねじれ（同じ3本）を「もしも〜。〜だけ7人、それでも〜」の後ろ半分に入れた。つかみ＝結末の先出し（coWDBfcXKhI・IjKhuTV8yvo）。ずらし方＝見える化＋1人だけ異常値（手順書 §2・S001 裏切り確率の型）",
+ "fiction": true,
+ "world_rules": [
+  "この世界の決まり：戦国の武将の頭の上に、その人がそれまでに仕えた主君の数が数字で出る。主君を変えるとその場で数字が増える",
+  "数字は誰でも、ほかの人の頭の上に見える。自分の頭の上の数字は自分には見えない。高虎も自分の数字は見ていない",
+  "数字を言うのは語り手だけ。家康のセリフ（n12）は数字に触れない。家康は高虎の頭の上の7を見られる（ほかの人の頭の上なので決まりに合う）",
+  "周りの武将が目をそらす（n05）・徳川の家臣たちがざわつく（n11）のは、ほかの人（高虎）の数字を見ているので決まりに合う。どちらも作り話の場面で、語り手が話す",
+  "数え方は、三重大学の資料の『主な主君』7人（浅井長政・阿閉貞征・磯野員昌・織田信澄・羽柴秀長・豊臣秀吉・徳川家康）に合わせる。秀長の養子・秀保は数えない（数え方で7人説と10回説がある）",
+  "1570年の姉川の初陣、阿閉・磯野・織田信澄、1576年の秀長、高野山と伊予7万石、1600年の関ヶ原、本多忠勝が家康に仕えたこと、外様でただ1人会議に出たといわれること、1608年の津と32万石余りは、作り話の世界の背景として語り手が同じ語り口で話す。『実際は』と現実へ戻る文は置かない（最後は決まった一言）"
+ ],
+ "world_terms": [
+  "頭の上",
+  "数字",
+  "主君の数",
+  "の7",
+  "7は",
+  "は1",
+  "目をそらす",
+  "ざわつく",
+  "隣"
+ ],
+ "voices": {
+  "ieyasu": 100
+ },
+ "facts": [
+  "藤堂高虎の年表（三重大学広報誌 HOT NEWS「藤堂高虎400年 三重大学188年」、藤田達生 三重大学教育学部教授。出どころ：www.mie-u.ac.jp/about/pr/item/vol015_1_4.pdf。保存した PDF の本文を Read で読んで確認）：「1556年（弘治2）近江国（滋賀県）に生まれる」「1570年（元亀元）浅井長政に仕える。姉川の合戦で初陣。二年後に浅井家を出て、阿閉貞征など次々に主君を変える」「1576年（天正4）羽柴秀長に仕え、三百石に」「1591年 秀長死去、秀長の養子秀保に仕える」「1595年（文禄4）秀保死去、出家しようと高野山に登るが、豊臣秀吉の説得で下山。伊予板島（後の宇和島）七万石に」「1600年（慶長5）関ヶ原の戦いで東軍に属し勝利。二十万石に」「1608年（同13）伊予今治から伊勢・伊賀へ国替え。計二十二万石余に」「1615年（元和元）大坂夏の陣に従軍。二十七万石余に。二年後、三十二万石余」「1630年（寛永7）十月五日に死去」",
+  "主君の数：同じ PDF の【主な主君】は「浅井長政、阿閉貞征、磯野員昌、織田信澄、豊臣（羽柴）秀長、豊臣秀吉、徳川家康」の7人。president.jp/articles/-/24850 の本文に「浅井長政から徳川家康まで7人の主に仕えた」。秀保を数えると8になり、数え方で10回とする説もあるので、台本は『7人とされる』の数え方（概要欄も「とされる」）",
+  "外様で会議：同じ PDF に「重臣会議への出席も許された唯一の外様大名」「高虎は、幕府にとって重要な政務を決定する会議にも出席する」。台本は「〜といわれる」。家康の信頼：同じ PDF「徳川家康の厚い信頼のもと」、改訂新版 世界大百科事典（kotobank.jp/word/藤堂高虎）は外様ながら家康・秀忠の信任が厚かったとする",
+  "事典での確かめ（kotobank.jp/word/藤堂高虎 の本文）：世界大百科事典「浅井長政，織田信澄に仕えたあと，羽柴（豊臣）秀長の家臣となり」「秀吉の死後は徳川家康に近づき」「大坂の陣では，大和筋の先鋒として活躍，戦後，大和，山城，下総で加増され，伊勢，伊賀と合わせて32万石余を領した」。ニッポニカ「浅井氏に属して15歳で初陣」「関ヶ原の戦いでは徳川家康に味方して今治城主20万石」「計32万3951石の外様大名となった」。1608年の入府は山川 日本史小辞典「08年津に転封し，伊賀・伊勢両国を領有」",
+  "本多忠勝：「幼少から徳川家康に仕え」（ブリタニカ国際大百科事典 小項目事典）、「徳川家康に仕えた武将」（ニッポニカ）。出どころ：kotobank.jp/word/本多忠勝（本文で確認）。台本の「家康ひとすじ」「1」はこの数え方",
+  "n15 の本当の画像：藤堂高虎像（津・寒松院の写し。File:Todo Takatora (Kanshoin Tsu) (replica).jpg・2251×4982・パブリックドメイン）。台本に書く前に Commons の API で幅と許可を確かめた",
+  "使わない物：「七度主君を変えねば武士とはいえぬ」の言葉は本人が言った証拠が無いので使わない（neta.json）。旗印の白餅の話・身の丈6尺3寸も PDF にあるが、字数の都合で使わない",
+  "武将の頭の上に仕えた主君の数が見えること、周りの武将が目をそらす場面、徳川の家臣たちがざわつく場面、家康のセリフ「高虎、わしの隣に座れ。」は作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "仕えた\n主君の数",
+   "narration": "もしも主君の数が見えたら、最多の高虎が家康の隣に座る。",
+   "highlight": [
+    "主君の数",
+    "家康の隣"
+   ],
+   "tts_text": "もしも、しゅくんのかずがみえたら、さいたの、たかとらが、いえやすの、となりにすわる。",
+   "image_en": "In a war council tent of the Tokugawa camp, Tokugawa Ieyasu sits on a camp stool at the center while samurai generals in armor stand in a row beside him; all of them turn and stare up in amazement at the empty air above the head of Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes, a chonmage topknot, dark navy armor with a plain grey jinbaori, who stands calmly right next to Ieyasu. Heads near the middle of the picture with wide empty space above them.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [
+    "ieyasu"
+   ],
+   "anim": "kling",
+   "image": "In a war council tent of the Tokugawa camp, Tokugawa Ieyasu sits on a camp stool at the center while samurai generals in armor stand in a row beside him; all of them turn and stare up in amazement at the empty air above the head of Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes, a chonmage topknot, dark navy armor with a plain grey jinbaori, who stands calmly right next to Ieyasu. Heads near the middle of the picture with wide empty space above them.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "戦国の武将の頭の上に、仕えた主君の数が浮かぶ。",
+   "highlight": [
+    "仕えた主君の数"
+   ],
+   "tts_text": "せんごくの、ぶしょうの、あたまのうえに、つかえた、しゅくんのかずがうかぶ。",
+   "image_en": "Many Japanese samurai generals in armor gather in a castle courtyard at sunset, seen from slightly behind and above, some glancing curiously at the space above each other's heads; wide empty space above their heads.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [],
+   "image": "Many Japanese samurai generals in armor gather in a castle courtyard at sunset, seen from slightly behind and above, some glancing curiously at the space above each other's heads; wide empty space above their heads."
+  },
+  {
+   "id": "n03",
+   "narration": "1570年、姉川の戦い。藤堂高虎が初陣。",
+   "highlight": [
+    "姉川の戦い"
+   ],
+   "tts_text": "せんごひゃくななじゅうねん、あねがわのたたかい。とうどうたかとらが、ういじん。",
+   "image_en": "Todo Takatora as a very tall broad-shouldered teenage samurai about fifteen with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in simple dark foot-soldier armor, charging with a spear through a shallow river in a fierce battle, Azai Nagamasa on horseback behind him; his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [
+    "nagamasa"
+   ],
+   "image": "Todo Takatora as a very tall broad-shouldered teenage samurai about fifteen with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in simple dark foot-soldier armor, charging with a spear through a shallow river in a fierce battle, Azai Nagamasa on horseback behind him; his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n04",
+   "narration": "主君は浅井長政から、阿閉、磯野、織田信澄へ。",
+   "highlight": [
+    "阿閉、磯野、織田信澄"
+   ],
+   "tts_text": "しゅくんは、あざいながまさから、あつじ、いその、おだのぶずみへ。",
+   "image_en": "Todo Takatora as a very tall broad-shouldered young samurai about twenty with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a plain dark kimono and hakama, walking away alone from a castle gate along a dusty road with a bundle on his shoulder, looking back once; his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n04",
+    "n04@face"
+   ],
+   "chars": [],
+   "image": "Todo Takatora as a very tall broad-shouldered young samurai about twenty with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a plain dark kimono and hakama, walking away alone from a castle gate along a dusty road with a bundle on his shoulder, looking back once; his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n05",
+   "narration": "数字は4。周りが目をそらす。",
+   "highlight": [
+    "4"
+   ],
+   "tts_text": "すうじは、よん。まわりが、めをそらす。",
+   "image_en": "Todo Takatora as a very tall broad-shouldered young samurai about twenty with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a plain dark kimono and hakama, kneels alone at the end of a hall while other samurai sitting in rows glance up above his head and then turn their faces away coldly; his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n05",
+    "n05@face"
+   ],
+   "chars": [],
+   "image": "Todo Takatora as a very tall broad-shouldered young samurai about twenty with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a plain dark kimono and hakama, kneels alone at the end of a hall while other samurai sitting in rows glance up above his head and then turn their faces away coldly; his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n06",
+   "narration": "1576年、羽柴秀長に仕え300石。数字は5。",
+   "highlight": [
+    "300石"
+   ],
+   "tts_text": "せんごひゃくななじゅうろくねん、はしばひでながにつかえ、さんびゃっこく。すうじは、ご。",
+   "image_en": "Todo Takatora as a very tall broad-shouldered samurai about twenty-one with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a dark navy kimono and hakama, bows deeply on the tatami before Hashiba Hidenaga, a gentle kind-faced Japanese lord about thirty-five with a calm smile, a chonmage topknot and a plain olive green kimono, who welcomes him warmly in lantern light.",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": [],
+   "image": "Todo Takatora as a very tall broad-shouldered samurai about twenty-one with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in a dark navy kimono and hakama, bows deeply on the tatami before Hashiba Hidenaga, a gentle kind-faced Japanese lord about thirty-five with a calm smile, a chonmage topknot and a plain olive green kimono, who welcomes him warmly in lantern light."
+  },
+  {
+   "id": "n07",
+   "narration": "秀長の死後、出家しようと高野山へ。",
+   "highlight": [
+    "高野山"
+   ],
+   "tts_text": "ひでながの、しごに、しゅっけしようと、こうやさんへ。",
+   "image_en": "Todo Takatora, a very tall broad-shouldered Japanese samurai about forty with a square strong jaw, thick eyebrows, determined deep-set eyes, now with a shaved head, in a plain grey monk's robe, climbs a misty mountain path between giant cedar trees toward a temple gate, his face heavy with grief.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "Todo Takatora, a very tall broad-shouldered Japanese samurai about forty with a square strong jaw, thick eyebrows, determined deep-set eyes, now with a shaved head, in a plain grey monk's robe, climbs a misty mountain path between giant cedar trees toward a temple gate, his face heavy with grief."
+  },
+  {
+   "id": "n08",
+   "narration": "秀吉に説かれて山を下り、伊予7万石。数字は6。",
+   "highlight": [
+    "伊予7万石"
+   ],
+   "tts_text": "ひでよしに、とかれて、やまをくだり、いよ、ななまんごく。すうじは、ろく。",
+   "image_en": "Toyotomi Hideyoshi, now an old man, grins and beckons from the gate of a mountain temple while Todo Takatora, a very tall broad-shouldered Japanese samurai about forty with a square strong jaw, thick eyebrows, determined deep-set eyes and a shaved head in a plain grey robe, kneels and looks up at him in surprise among cedar trees.",
+   "shots": [
+    "n08",
+    "n08@close"
+   ],
+   "chars": [
+    "hideyoshi"
+   ],
+   "image": "Toyotomi Hideyoshi, now an old man, grins and beckons from the gate of a mountain temple while Todo Takatora, a very tall broad-shouldered Japanese samurai about forty with a square strong jaw, thick eyebrows, determined deep-set eyes and a shaved head in a plain grey robe, kneels and looks up at him in surprise among cedar trees."
+  },
+  {
+   "id": "n09",
+   "narration": "1600年、関ヶ原で家康の東軍に。数字は7。",
+   "highlight": [
+    "7"
+   ],
+   "tts_text": "せんろっぴゃくねん、せきがはらで、いえやすの、とうぐんに。すうじは、なな。",
+   "image_en": "Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, leads his soldiers across a foggy battlefield of Sekigahara, banners without any marks waving behind him; his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n09",
+    "n09@face"
+   ],
+   "chars": [],
+   "image": "Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, leads his soldiers across a foggy battlefield of Sekigahara, banners without any marks waving behind him; his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n10",
+   "narration": "家康ひとすじの本多忠勝は1。",
+   "highlight": [
+    "1"
+   ],
+   "tts_text": "いえやすひとすじの、ほんだただかつは、いち。",
+   "image_en": "Honda Tadakatsu, a fierce Japanese samurai general about fifty with a stern weathered face, thick moustache, in black lacquered armor and a helmet with large deer antlers, stands proudly holding a long spear, his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n10",
+    "n10@face"
+   ],
+   "chars": [],
+   "image": "Honda Tadakatsu, a fierce Japanese samurai general about fifty with a stern weathered face, thick moustache, in black lacquered armor and a helmet with large deer antlers, stands proudly holding a long spear, his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n11",
+   "narration": "徳川の家臣たちが、高虎の7にざわつく。",
+   "highlight": [
+    "ざわつく"
+   ],
+   "tts_text": "とくがわの、かしんたちが、たかとらの、ななに、ざわつく。",
+   "image_en": "Tokugawa retainers in armor crowd together in a camp, whispering behind their hands and pointing up at the empty air above the head of Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, who stands alone with a stiff, tense face; his head near the middle of the picture with wide empty space above it.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [],
+   "image": "Tokugawa retainers in armor crowd together in a camp, whispering behind their hands and pointing up at the empty air above the head of Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, who stands alone with a stiff, tense face; his head near the middle of the picture with wide empty space above it."
+  },
+  {
+   "id": "n12",
+   "narration": "高虎、わしの隣に座れ。",
+   "voice": "ieyasu",
+   "tts_text": "たかとら、わしのとなりにすわれ。",
+   "image_en": "Close-up of Tokugawa Ieyasu seated on a camp stool, calmly patting the empty stool right beside him and looking straight ahead with quiet confident eyes, warm lantern light in a war council tent.",
+   "shots": [
+    "n12",
+    "n12@close"
+   ],
+   "chars": [
+    "ieyasu"
+   ],
+   "image": "Close-up of Tokugawa Ieyasu seated on a camp stool, calmly patting the empty stool right beside him and looking straight ahead with quiet confident eyes, warm lantern light in a war council tent."
+  },
+  {
+   "id": "n13",
+   "narration": "家康の隣に並ぶ武将で、7は高虎だけ。",
+   "highlight": [
+    "7は高虎だけ"
+   ],
+   "tts_text": "いえやすの、となりにならぶ、ぶしょうで、ななは、たかとらだけ。",
+   "image_en": "Tokugawa Ieyasu sits at the center of a war council tent with a row of samurai generals in armor kneeling on both sides; right beside him sits Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, head held high, while the other generals stare up above his head in shock. Heads near the middle of the picture with wide empty space above them.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": [
+    "ieyasu"
+   ],
+   "anim": "kling",
+   "peak": true,
+   "image": "Tokugawa Ieyasu sits at the center of a war council tent with a row of samurai generals in armor kneeling on both sides; right beside him sits Todo Takatora, a very tall broad-shouldered Japanese samurai general about forty-five with a square strong jaw, thick eyebrows, determined deep-set eyes and a chonmage topknot, in dark navy armor with a plain grey jinbaori, head held high, while the other generals stare up above his head in shock. Heads near the middle of the picture with wide empty space above them.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "外様でただ1人、幕府の会議に出たといわれる。",
+   "highlight": [
+    "ただ1人"
+   ],
+   "tts_text": "とざまで、ただひとり、ばくふのかいぎに、でたといわれる。",
+   "image_en": "A grand tatami council hall of Edo Castle where shogunate elders in formal kamishimo sit in a circle; among them sits Todo Takatora, an older very tall broad-shouldered Japanese lord about sixty with a square strong jaw, thick grey eyebrows, determined deep-set eyes and a chonmage topknot, in formal dark navy kamishimo, speaking seriously while the others listen.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [],
+   "image": "A grand tatami council hall of Edo Castle where shogunate elders in formal kamishimo sit in a circle; among them sits Todo Takatora, an older very tall broad-shouldered Japanese lord about sixty with a square strong jaw, thick grey eyebrows, determined deep-set eyes and a chonmage topknot, in formal dark navy kamishimo, speaking seriously while the others listen."
+  },
+  {
+   "id": "n15",
+   "narration": "1608年、伊勢の津へ。のちに32万石余り。",
+   "highlight": [
+    "32万石"
+   ],
+   "tts_text": "せんろっぴゃくはちねん、いせのつへ。のちに、さんじゅうにまんごくあまり。",
+   "image_en": "A castle with stone walls and wide moats in Tsu, Ise province, seen from across the water at dawn, the town and the sea of Ise Bay beyond, warm morning light.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/2/23/Todo_Takatora_%28Kanshoin_Tsu%29_%28replica%29.jpg",
+   "shots": [
+    "n15",
+    "n15@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/2/23/Todo_Takatora_%28Kanshoin_Tsu%29_%28replica%29.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Todo_Takatora_%28Kanshoin_Tsu%29_%28replica%29.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/2/23/Todo_Takatora_%28Kanshoin_Tsu%29_%28replica%29.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/2/23/Todo_Takatora_%28Kanshoin_Tsu%29_%28replica%29.jpg"
+   }
+  },
+  {
+   "id": "n16",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "Todo Takatora, an older very tall broad-shouldered Japanese lord about sixty with a square strong jaw, thick grey eyebrows, determined deep-set eyes and a chonmage topknot, in formal dark navy kamishimo, stands on the stone wall of his castle at sunset looking out over the town and the sea.",
+   "shots": [
+    "n16"
+   ],
+   "chars": [],
+   "image": "Todo Takatora, an older very tall broad-shouldered Japanese lord about sixty with a square strong jaw, thick grey eyebrows, determined deep-set eyes and a chonmage topknot, in formal dark navy kamishimo, stands on the stone wall of his castle at sunset looking out over the town and the sea."
+  }
+ ],
+ "tempo": 1.35,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
