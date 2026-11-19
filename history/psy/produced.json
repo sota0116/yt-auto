@@ -859,5 +859,70 @@
    ]
   },
   "short_video_id": "sHiKHMHNSvE"
+ },
+ {
+  "work": "023_otto_kyori",
+  "type": "人づきあい",
+  "frame": "人づきあい",
+  "neta_id": "p_otto_kyori",
+  "jobs": [],
+  "made": "2026-11-20",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】夫が家にいると疲れる人に共通する5つの特徴｜534人の夫婦に見えた、もめごとの山",
+  "titles": [
+   "【心理学】夫が家にいると疲れる人に共通する5つの特徴｜534人の夫婦に見えた、もめごとの山",
+   "【心理学】夫が一日中家にいると疲れる人、実は「ひとりの場所」が家から消えています。",
+   "【心理学】夫の昼ごはんで一日が終わる人の正体｜日本の夫婦のデータで、夫の心にも起きていたこと"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "題材は neta.json（夫が家にいると疲れる・人づきあい）のまま。章の並びは競合メモの型1（ひととき心理学 zrWk9ZuTOZY・phvWpG44ifY、qnOHXxPCR68：つかみ、同じ言い方の特徴5つ、工夫の章、まとめ）。題の1番目は型C「〇〇な人に共通するN個の特徴」（競合メモのタイトルの部品「Nつの〇〇」ujE5kko7p-c・TQy6dzVvtsg、学び.md の型C）で、「｜」の後ろは答えを言わない一言（改善ログ 2026-11-12）。2番目は neta の題を型B、3番目は型D。つかみは構成見本 v5 の、予告の前に結論1つを見せる形（ひととき心理学 kwUIsy6FAEE・XTpsvMNmLac）。サムネは §6 の下の段に答えを言い切る型で、競合メモの試すこと2の時間の数字（2年）を入れた（上の段は§6で「誰の話か」なので、数字は下の段）。まとめの問いは、試すこと3の場面の一言で答えられる形（rRd6GSm0XT8 の場面を聞く問い）。試すこと1は、つかみを約360字にして予告までを早めた。人づきあいの回なので、つかみに相手のセリフ「昼は何だ」を入れた（試すこと2の前回分）。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:04 ひとりの時間は自分で選ぶ物",
+   "2:55 特徴1　夫が手伝っても、家事は残る",
+   "5:14 特徴2　家にひとりの場所が無い",
+   "7:12 特徴3　自分で決めたひとり時間",
+   "9:18 特徴4　年がたつほど重なる疲れ",
+   "11:30 特徴5　つらいのは、なりたての時期",
+   "14:17 夫と家で過ごす3つの工夫",
+   "16:31 まとめ"
+  ],
+  "video_id": "FQEghqtOakI",
+  "回した理由": null,
+  "studies": [
+   "Leopold & Skopek (2015) Journal of Marriage and Family",
+   "Lay, Pauly, Graf, Mahmood & Hoppmann (2018) The Journals of Gerontology: Series B",
+   "Nikitin, Rupprecht & Ristl (2022) International Journal of Behavioral Development",
+   "Bertoni & Brunello (2017) Social Science & Medicine",
+   "Moen, Kim & Hofmeister (2001) Social Psychology Quarterly",
+   "Szinovacz & Davey (2004) The Journals of Gerontology: Series B",
+   "Aron, Norman, Aron, McKenna & Heyman (2000) Journal of Personality and Social Psychology",
+   "Mark, Gudith & Klocke (2008) Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 8,
+   "章": [
+    8,
+    6,
+    9,
+    7,
+    6,
+    7,
+    9,
+    7,
+    6
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "B06〜B09の「100人」「10日間」「7回に6回」は数字が並ぶ講義調なので、「昼ごはんをゆっくり食べた、あの時間は、実は自分で選んで取っていた時間だった」という妻自身の体験に置き換えて話すと、耳に残りやすい。",
+    "囲碁の会の午後と散歩のたとえは分かりやすいが、E05〜E11の129人・3日間・8回・323人という調査の説明が長く、講義になっている。「年が上の人ほど、ひとりを上手に過ごしていた」という意外な点を先に言い、調査の細かい説明は1つに減らすと"
+   ]
+  },
+  "short_video_id": "g_ug1dAUa8o"
  }
 ]
