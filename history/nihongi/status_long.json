@@ -5,14 +5,22 @@
   "write",
   "gate_script",
   "voice",
-  "images"
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
  ],
  "started": "2026-11-20T03:15:18+09:00",
- "tries": 0,
+ "tries": 1,
  "code": "c2c4b3d4e3b4",
- "stage": "motion",
- "updated": "2026-11-20T03:51:23+09:00",
+ "stage": "thumb",
+ "updated": "2026-11-20T07:04:32+09:00",
  "busy": {
   "motion": 1
- }
+ },
+ "video_swapped": {
+  "F09": "F08"
+ },
+ "video_redo": 1
 }
