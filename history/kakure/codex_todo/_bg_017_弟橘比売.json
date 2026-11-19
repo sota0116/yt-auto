@@ -1,0 +1,24 @@
+{
+ "ch": "kakure",
+ "work": "_bg_017_弟橘比売",
+ "portrait": false,
+ "made": "2026-11-19 23:38",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, slightly dark lighting, subtle washi paper texture. Wide 16:9 landscape.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "ai_march",
+   "image": "古墳時代の兵の一行が、東へ向かう草原の道を進む後ろ姿。先頭に若い男、そのそばに女の人。遠い山並み。人物は小さく",
+   "image_en": "A small Kofun-period troop marching east along a road through grassland, seen from behind; a young man at the front and a woman beside him, distant mountains. Figures small.",
+   "en": "A small Kofun-period troop marching east along a road through grassland, seen from behind; a young man at the front and a woman beside him, distant mountains. Figures small."
+  },
+  {
+   "id": "ai_shore",
+   "image": "海峡の岸辺。波の荒い浅瀬と岩、向こう岸の陸地がかすむ。曇り空。人はいない",
+   "image_en": "The shore of a sea strait: rough shallow water and rocks, the land across the strait hazy, an overcast sky. No people.",
+   "en": "The shore of a sea strait: rough shallow water and rocks, the land across the strait hazy, an overcast sky. No people."
+  }
+ ]
+}
