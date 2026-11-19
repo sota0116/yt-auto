@@ -1,1 +1,17 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/S132_神棚の下に置くとお金が逃",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice"
+ ],
+ "started": "2026-11-20T02:42:11+09:00",
+ "tries": 0,
+ "code": "c2c4b3d4e3b4",
+ "stage": "images",
+ "updated": "2026-11-20T02:49:34+09:00",
+ "busy": {
+  "images": 1
+ }
+}
