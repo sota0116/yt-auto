@@ -11,7 +11,7 @@
   "build"
  ],
  "started": "2026-11-20T08:43:05+09:00",
- "tries": 0,
+ "tries": 1,
  "code": "c2c4b3d4e3b4",
  "stage": "gate_video",
  "updated": "2026-11-20T11:49:39+09:00",
@@ -21,9 +21,5 @@
  "video_redo": 2,
  "busy": {
   "images": 1
- },
- "video_redo_ids": {
-  "A01": "Absolutely no readable text anywhere: no signs, shop names, letters, numbers or logos (leave signboards blank)."
- },
- "video_redo_sent": true
+ }
 }
