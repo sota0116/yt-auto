@@ -18,12 +18,12 @@
  "video_swapped": {
   "A01": "A02"
  },
- "video_redo": 1,
- "video_redo_ids": {
-  "D08": "Redraw the scene cleanly: natural hands, faces, bodies and objects, nothing deformed, no readable text."
- },
- "video_redo_sent": true,
+ "video_redo": 2,
  "busy": {
   "images": 1
- }
+ },
+ "video_redo_ids": {
+  "A01": "Absolutely no readable text anywhere: no signs, shop names, letters, numbers or logos (leave signboards blank)."
+ },
+ "video_redo_sent": true
 }
