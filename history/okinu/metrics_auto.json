@@ -773,6 +773,15 @@
    "直す所": [],
    "取った日": "2026-11-16",
    "再生（公開ページ）": 1050
+  },
+  "d7": {
+   "views": 1057,
+   "averageViewPercentage": 136.73,
+   "averageViewDuration": 50,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-20",
+   "再生（公開ページ）": 1057
   }
  },
  "011_階段と廊下のNG5": {
@@ -790,6 +799,20 @@
    ],
    "取った日": "2026-11-16",
    "再生（公開ページ）": 30
+  },
+  "d7": {
+   "views": 31,
+   "averageViewPercentage": 17.13,
+   "averageViewDuration": 133,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "15%あたりで急に落ちる（8%）→ その章を後ろに回し、クイズか山場を手前に置く",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-20",
+   "再生（公開ページ）": 32
   }
  },
  "S119_年金の振込日の記帳": {
@@ -896,11 +919,29 @@
  },
  "S124_お菓子の空き缶の貯金": {
   "type": null,
-  "video_id": "URkbMpNQHSA"
+  "video_id": "URkbMpNQHSA",
+  "h72": {
+   "views": 4,
+   "averageViewPercentage": 101.33000000000001,
+   "averageViewDuration": 38,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-20",
+   "再生（公開ページ）": 4
+  }
  },
  "015_洗濯機のNG5": {
   "type": "okinu",
-  "video_id": "EREnIN4PJJM"
+  "video_id": "EREnIN4PJJM",
+  "h72": {
+   "views": 9,
+   "averageViewPercentage": 16.18,
+   "averageViewDuration": 117,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-20",
+   "再生（公開ページ）": 10
+  }
  },
  "S125_財布の定位置の引き出し": {
   "type": null,
@@ -913,5 +954,9 @@
  "S126_小銭入れの向き": {
   "type": null,
   "video_id": "ZqyEUD32u9o"
+ },
+ "S127_銀行の封筒": {
+  "type": null,
+  "video_id": "nHqDo3fcTuQ"
  }
 }

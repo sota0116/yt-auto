@@ -79,7 +79,7 @@
   "published_at": "2026-10-25T19:00:29+09:00",
   "comment_id": "UgwgNYaJMof9xoHQweV4AaABAg",
   "comment_at": "2026-10-25T19:39:39+09:00",
-  "views_now": 60,
+  "views_now": 63,
   "retitled": {
    "日時": "2026-10-30T03:03:07",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -245,7 +245,7 @@
   "seconds": 500,
   "title_now": "大型トラック運転手の1日、月208時間ハンドルを握って年収は約507万円",
   "synthetic_on": null,
-  "views_now": 307,
+  "views_now": 308,
   "retitled": {
    "日時": "2026-10-30T02:35:26",
    "内容": "手順書 v5.4 の形へタイトルを差し替え"
@@ -329,7 +329,7 @@
   "privacy_now": "public",
   "seconds": 475,
   "synthetic_on": null,
-  "views_now": 3042,
+  "views_now": 3053,
   "published": true,
   "published_at": "2026-10-31T19:00:26+09:00",
   "comment_id": "Ugwyk3U0htQL_jZ353h4AaABAg",
@@ -441,7 +441,7 @@
   "seconds": 518,
   "title_now": "あなたの残業代、消えても平気？ もし会社が残業をゼロにしたら",
   "synthetic_on": null,
-  "views_now": 70,
+  "views_now": 71,
   "published": true,
   "published_at": "2026-11-05T19:00:08+09:00",
   "comment_id": "UgyJO5OqbR9Rhk362EB4AaABAg",
@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 254,
+  "views_now": 255,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -673,7 +673,7 @@
   "seconds": 509,
   "title_now": "警備員は割に合うのか。工事現場に1日中立つ仕事を、新人とベテランで比べた結果",
   "synthetic_on": null,
-  "views_now": 10,
+  "views_now": 11,
   "published": true,
   "published_at": "2026-11-13T19:00:08+09:00",
   "comment_id": "UgzwYhVVeFxgUHrb4HZ4AaABAg",
@@ -741,7 +741,7 @@
   "seconds": 502,
   "title_now": "【給料の山】保育士、20代前半は平均と変わらないのに、64歳までで大きな差がつく理由",
   "synthetic_on": null,
-  "views_now": 8,
+  "views_now": 10,
   "published": true,
   "published_at": "2026-11-17T19:00:10+09:00",
   "comment_id": "Ugxwc3M2Dfqp0lAQUgJ4AaABAg",
@@ -769,7 +769,7 @@
   "seconds": 521,
   "title_now": "【白衣の給料】薬剤師、40代前半で平均と同じ年収なのに、最後に差がつく理由",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 35,
   "published": true,
   "published_at": "2026-11-19T19:00:39+09:00",
   "comment_id": "Ugzl2XIiPTasPmQwALB4AaABAg",
@@ -865,7 +865,7 @@
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
   "privacy_now": "private",
-  "publish_at": "2026-11-27T19:00:00+09:00",
+  "publish_at": "2026-11-27T10:00:00Z",
   "seconds": 513,
   "title_now": "【悲報】大型トラック運転手、年収は大工より上なのに時給にすると負けた理由",
   "synthetic_on": null,
@@ -935,6 +935,12 @@
    "もし大学教授を目指したら、30代前半の年収は約559万円。教授の席に着いた結果",
    "大学教授より、あなたの給料は早く上がる？ 60代でも下がらない仕事と比べたら"
   ],
-  "comment": "大学教授を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f"
+  "comment": "大学教授を含む、主な職業の年収と労働時間の一覧表を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 528,
+  "title_now": "【給料の代償】大学教授、年収は平均のほぼ倍なのに、20代がほとんどいない理由",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

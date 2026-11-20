@@ -272,7 +272,7 @@
   "publish_at": null,
   "seconds": 1097,
   "synthetic_on": null,
-  "views_now": 18,
+  "views_now": 20,
   "published": true,
   "published_at": "2026-10-30T19:00:21+09:00",
   "comment_id": "UgxFn2YYi6FwDpYfN8d4AaABAg",
@@ -300,7 +300,7 @@
   "seconds": 1054,
   "title_now": "【心理学】年を重ねるほど、楽しい思い出が残る人、実は「昔の自分」まで明るく思い出しています。",
   "synthetic_on": null,
-  "views_now": 91,
+  "views_now": 92,
   "published": true,
   "published_at": "2026-11-01T19:00:15+09:00",
   "comment_id": "Ugy-Cv-VPkIA14htNHR4AaABAg",
@@ -468,7 +468,7 @@
   "seconds": 1028,
   "title_now": "【心理学】夜になると考えごとが止まらない人に共通する5つの特徴｜心配の9割は起きなかった",
   "synthetic_on": null,
-  "views_now": 31,
+  "views_now": 33,
   "published": true,
   "published_at": "2026-11-15T19:00:24+09:00",
   "comment_id": "UgwO2b5CtKULZu7v6Ed4AaABAg",
@@ -496,7 +496,7 @@
   "seconds": 1062,
   "title_now": "【心理学】お礼の手紙を書く人に共通する5つの特徴｜手紙を受け取った人が、次にしたこと",
   "synthetic_on": null,
-  "views_now": 13,
+  "views_now": 15,
   "published": true,
   "published_at": "2026-11-18T19:00:09+09:00",
   "comment_id": "Ugy9jMT6-2ZF2Unrm7F4AaABAg",
@@ -519,12 +519,16 @@
    "【心理学】年を重ねて、人のために動く日が増えた人の正体｜60歳を過ぎた人は、若い人の3倍だった"
   ],
   "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
-  "privacy_now": "private",
-  "publish_at": "2026-11-20T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 1171,
   "title_now": "【心理学】人の役に立つと元気が出る人に共通する5つの特徴｜2歳前の子も、同じ顔をした",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-20T19:00:21+09:00",
+  "comment_id": "UgwPLnYhy5I4ddxpkWl4AaABAg",
+  "comment_at": "2026-11-20T20:12:09+09:00"
  },
  {
   "work": "013_jiman_hito",
@@ -592,7 +596,7 @@
   ],
   "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
   "privacy_now": "private",
-  "publish_at": "2026-11-27T19:00:00+09:00",
+  "publish_at": "2026-11-27T10:00:00Z",
   "seconds": 1052,
   "title_now": "【心理学】よく眠れた人の脳が夜にしていること、全6つ｜眠りながら、知らない声を聞き分けていた",
   "synthetic_on": null,
@@ -614,6 +618,12 @@
    "【心理学】夫が一日中家にいると疲れる人、実は「ひとりの場所」が家から消えています。",
    "【心理学】夫の昼ごはんで一日が終わる人の正体｜日本の夫婦のデータで、夫の心にも起きていたこと"
   ],
-  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3"
+  "comment": "LINE登録で「心のクセ診断」を無料で受けられます🎁\nhttps://utage-system.com/line/open/ntrNEWTbCnh3",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 1084,
+  "title_now": "【心理学】夫が家にいると疲れる人に共通する5つの特徴｜534人の夫婦に見えた、もめごとの山",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
