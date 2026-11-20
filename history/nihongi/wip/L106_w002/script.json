@@ -1,0 +1,989 @@
+{
+ "format": "long",
+ "distort": "分かれ道",
+ "era": "戦国",
+ "title": "もしも関ヶ原で西軍が勝っていたら｜江戸は小さな城下町のままだった【もしも歴史】",
+ "promise": "関ヶ原で小早川秀秋が寝返らなかったら、なぜ江戸は100万人の町にならず、東京という名も生まれなかったはずかが、天下普請・参勤交代・大久保利通の大坂遷都の案という本当の出来事を根拠に1本で分かる",
+ "desc": "もしも、1600年9月15日の関ヶ原で、小早川秀秋が寝返らなかったら。\n江戸が100万人の町になったのは、家康が将軍になったからだけではありません。全国の大名を集めた江戸城の工事、1635年の参勤交代、そして1868年の都選び。本当にあった出来事を根拠に、西軍が勝った日本の江戸と大坂を、1600年から1868年までたどります。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※小早川秀秋が寝返らず西軍が勝ったところから先（三成が大坂城に入る・家康が江戸の一大名に戻る・江戸幕府が開かれない・大名が大坂へ通う・江戸が小さな城下町のまま・1868年に都が大坂に決まり東京が生まれない・2つの未来）は作り話です。それより前は史実をもとにしています（コトバンク所収の日本大百科全書・世界大百科事典・ブリタニカ・山川日本史小辞典、東京都立図書館、国立公文書館ほか）。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "関ヶ原の戦い",
+  "小早川秀秋",
+  "石田三成",
+  "徳川家康",
+  "江戸",
+  "東京",
+  "大坂",
+  "戦国時代",
+  "日本史"
+ ],
+ "thumb": {
+  "top": "もしも1600年、関ヶ原で西軍が勝ったら",
+  "big": "東京は生まれなかった",
+  "hl_top": "西軍",
+  "hl_big": "東京",
+  "bg": "H11"
+ },
+ "futures": {
+  "良い": "1800年ごろ、大名と商人が集まる大坂は、100万人をこえる日本一の町になった。",
+  "悪い": "1854年、南海地震の津波が川をさかのぼり、国の役所が集まる都の大坂をおそった。"
+ },
+ "competitor_note": "TTP：題材（史実の1点を逆にする『もしも』eE2nFGD1VKA・OAARpXxEJo4、同じ分かれ道の qfeiltXVZOw）、章の並び（OAARpXxEJo4：史実→分かれた年→年ごとの場面→振り返り）、結末を先に言う1文目（coWDBfcXKhI・IjKhuTV8yvo）、サムネ上段に年の数字（競合メモ 試すこと2：wrQIWXzc8II・eE2nFGD1VKA）、最後の『どっち』の問い（eE2nFGD1VKA）。競合メモ 2026-11-19",
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "fiction": true,
+ "world_rules": [
+  "変えたのは、1600年9月15日の関ヶ原で、松尾山の小早川秀秋が東軍に寝返らず、西軍として東軍の横を攻めた1点だけ",
+  "秀秋が山を下りるより前は史実どおり（秀吉の死・大老と奉行・家康の会津攻め・三成の挙兵と総大将の毛利輝元・関ヶ原の布陣・吉川広家の内通・家康の催促。問鉄砲は作り話ともいわれる話として語り手だけが言う）",
+  "秀秋が西軍として攻めたところから先は作り話（西軍の勝ち・三成が生きて大坂城に入る・東軍の大名の領地が削られる・家康が江戸の一大名に戻る・将軍と江戸幕府が無い・江戸の天下普請が無い・1635年に大名が大坂へ通う決まり・江戸が小さな城下町のまま・1868年に都が大坂に決まる・東京の名が生まれない・2つの未来）",
+  "1868年に武家の世が終わる時期と、大久保利通の大坂の案・前島密の江戸の案は、本当の歴史の出来事を、この世界にも同じ年に起きた物として置く（そこから先の決まり方は作り話）",
+  "本当の歴史を知っているのは語り手だけ。家康・三成・秀秋・大久保など作り話の世界の人は知らない。人物のセリフは、その場で見えていることだけを言う",
+  "現実に戻る『実際の歴史では』は章の終わりの1文だけ（最後の章は津波の碑の1文）"
+ ],
+ "world_terms": [
+  "本当の歴史",
+  "実際の",
+  "この世界",
+  "作り話",
+  "知って",
+  "伝わる",
+  "はず"
+ ],
+ "voices": {
+  "ieyasu": 100
+ },
+ "facts": [
+  "関ヶ原の戦い：1600年（慶長5）9月、美濃国関ヶ原（岐阜県不破郡関ヶ原町）で、石田三成らの西軍と徳川家康らの東軍が戦った。両軍とも8万前後でほぼ伯仲、西軍で実際に戦闘に参加したのは3万5000（日本大百科全書）。小早川秀秋は午後になって大谷隊の側背に攻撃をしかけ、東軍の大勝は午後4時ごろ決定（日本大百科全書）。戦闘は9月15日に始まり、裏切りで西軍は総くずれ。三成・小西行長・安国寺恵瓊は処刑。改易91家420万石、減封4家（ブリタニカ）。毛利輝元は112万石から周防・長門36万石へ、秀頼は摂津・河内・和泉65万石の一大名に（日本大百科全書。大辞泉は60万石）。出どころ：コトバンク「関ヶ原の戦い」 https://kotobank.jp/word/関ヶ原の戦い-80917 （2026-11-20 本文で確認）",
+  "小早川秀秋：1582年生まれ、1602年10月18日岡山で死去（21歳）。秀吉の養子となり羽柴秀俊と名のる。高台院の甥（日本人名大辞典+Plus）。関ヶ原の功で備前・美作など約50万石（事典で50万・51万石）。出どころ：コトバンク「小早川秀秋」 https://kotobank.jp/word/小早川秀秋-16259 （2026-11-20 本文で確認）。1600年は数え19歳（生年からの計算）。兵1万5千は岐阜県観光連盟「松尾山城跡」 www.kankou-gifu.jp/spot/detail_6715.html（L111 の facts。今回は本文を開いていない）",
+  "問鉄砲（家康が松尾山へ鉄砲を撃ちかけて催促した話）：neta.json の注のとおり作り話ともいわれる。家康の厳しい催促は日本大百科全書（L111 の facts）。台本は『という話もある。ただ、作り話ともいわれる』とした",
+  "吉川広家：西軍に属しながら徳川氏に通じ、毛利軍が戦闘に参加するのを阻止した（ブリタニカ。L111 の facts でコトバンク「吉川広家」）。大谷吉継：親友の三成に懇請され、敗戦を覚悟で西軍に加わり、小早川の大兵に側背を攻められ陣没（コトバンク「大谷吉継」。L111 の facts）。台本は『といわれる』とした",
+  "五大老・五奉行：秀吉の死（1598年8月）後、五大老（家康・前田利家・毛利輝元・宇喜多秀家・上杉景勝）と五奉行の合議で政治を動かした（コトバンク「五大老」。L111 の facts）。秀頼は1593年生まれで、1598年は数え6歳ほど（コトバンク「豊臣秀頼」）。三成は1595年に佐和山城主・19万石余（日本大百科全書。18万石とする事典もある）。1600年、三成が毛利輝元を総大将に兵を挙げた（防府市歴史用語集。コトバンク「関ヶ原の戦い」で確認）",
+  "石田三成の最期：9月29日に京都所司代奥平信昌に預けられ、10月1日に京都市中を引き回され、六条河原に引き出された（nippon.com https://www.nippon.com/ja/japan-topics/b06917/ 本文で確認）。処刑されたのは三成・小西行長・安国寺恵瓊など数名（同）。死没日は慶長5年10月1日（『シン・関ヶ原』抜粋・史料編纂所の情報を載せるサイトの検索の抜粋）。台本は『10月1日、京都で斬られている』とした（刑場は事典で六条河原・三条河原と分かれるので言わない）",
+  "徳川家康と江戸：1590年、秀吉から関八州を与えられて江戸城に入った。1592年に日比谷の入り江を埋め立てて城下を拡張。1603年に征夷大将軍となった後、諸大名に人夫を出させ、神田山の台地を崩して豊島の洲を埋め立てる大工事（天下普請）を行った（日本大百科全書・世界大百科事典。コトバンク「江戸」 https://kotobank.jp/word/江戸-36887 本文で確認）。将軍の宣旨は1603年2月12日（日本大百科全書。コトバンク「江戸幕府」で確認）。関東約250万石（コトバンク「徳川家康」。L111・L105 の facts）。1590年の江戸城に石垣は無く土塁が中心だったという説明は、江戸東京博物館の研究紀要（edo-tokyo-museum.repo.nii.ac.jp kenkyu14_25-36.pdf）の検索の抜粋で確認（PDF の本文は読めていない）。台本は『といわれる』とした",
+  "参勤交代：1635年（寛永12）の武家諸法度の改定で制度化され、在府・在国は1年交代が原則（コトバンク「参勤交代」の検索の抜粋。L111 の facts で妻子が江戸に住む義務も確認）",
+  "江戸の人口：『正確な数字は不明ですが、享保期（1716〜1736）頃には江戸の人口は100万人を超えたと言われています』。1800年ごろ北京約90万・ロンドン約86万・パリ約54万。『急激な人口増加の背景には参勤交代の制度化があげられます』。大名が江戸に住むことで家臣や物資も集まった。出どころ：東京都立図書館「『大江戸』の誕生」 https://www.library.metro.tokyo.lg.jp/portals/0/edo/tokyo_library/machi/page3-1.html （本文で確認）。武家を加えて約100万（世界大百科事典。コトバンク「江戸」）",
+  "大坂：1743年の人口50万人（ジャパンナレッジの検索の抜粋。江戸1723年町人52万6000人・京都1715年35万9000人も同じ所）。蔵屋敷は商業・金融の中心の大坂が最も多く、延宝年間（1673〜81）に91、天保年間（1830〜44）に124（コトバンク「蔵屋敷」の検索の抜粋）。『天下の台所』は江戸時代からの言葉と思われがちだが、最近の研究では幸田成友がつけたキャッチコピーとわかってきた（大阪市史編纂所の見解。国立国会図書館レファレンス協同データベース https://crd.ndl.go.jp/reference/entry/index.php?page=ref_view&id=1000054646 の検索の抜粋）。台本は『のちの学者が付けた言葉ともいわれる』とした",
+  "大坂図屏風：豊臣期の大坂の町並みを描いた屏風。Schloss Eggenberg 所蔵、1607〜1615年ごろ（Wikimedia Commons の説明）",
+  "大久保利通の大坂遷都の建言：慶応4年（1868）正月17日、新政府の参与大久保利通が総裁有栖川宮熾仁親王に大坂遷都を建言（国立公文書館「変貌 江戸から帝都そして首都へ」 https://www.archives.go.jp/exhibition/digital/henbou/contents/01.html の検索の抜粋。ページ本文は文字化けで読めず）。1868年1月の大久保の大阪遷都建白の頃から遷都が現実の課題となり、4月の江戸開城後は江戸を政治的中心とする論が一般的に（山川日本史小辞典。コトバンク「東京遷都」の検索の抜粋）。大久保の大坂遷都論・前島密の江戸遷都論・京都江戸の二京併置論などが出たのち、政府の方針は江戸遷都に確定（世界大百科事典の検索の抜粋）",
+  "東京：慶応4年（1868）7月17日『江戸を東京と称す』の詔書、同日東京府設置（国立公文書館「変貌 4.東京府を設置」の検索の抜粋）。10月13日天皇が東京に到着、いったん京都に還幸し翌年3月再び東幸、太政官も移り事実上の遷都（山川日本史小辞典の検索の抜粋）",
+  "安政南海地震：嘉永7年（安政元年）11月5日（1854年12月24日）の夕方、紀伊半島沖で発生。大坂では津波が川を逆流し、船を沈め、橋をこわし、死者多数（世界大百科事典。コトバンク「安政地震」の検索の抜粋）。安治川・木津川の両川口に泊まっていた大型の廻船を市中の堀川に押し上げた（内閣府 災害教訓の継承に関する専門調査会報告書の検索の抜粋）。大坂の死者は341人と伝えられる（都司）・200人余・2千人余と分かれるので台本は数を言わない。大正橋の東詰の『大地震両川口津浪記』碑は大阪市指定有形文化財（大阪市 https://www.city.osaka.lg.jp/kensetsu/page/0000009541.html の検索の抜粋）",
+  "本物の画像（2026-11-20 に Wikimedia Commons の API で幅と許可を確かめた。全部800px以上・パブリックドメイン）：Sekigahara Kassen Byōbu-zu (Gifu History Museum).jpg 7700px、Ishida Mitsunari.jpg 1492px（絵本著色 石田三成像 模本）、Kobayakawa Hideaki 2.jpg 2580px（高台寺所蔵の肖像の模写）、Tokugawa Ieyasu.jpg 1340px、Osaka-zu byobu.jpg 2953px（豊臣期の大坂図屏風）、Hiroshige-53-Stations-Hoeido-01-Nihonbashi-BM-03.jpg 1600px（広重 日本橋 行列振出）、Edo 1844-1848 Map.jpg 5625px、Ōkubo Toshimichi 1872.jpg 990px、武州六郷船渡図 Bushu Rokugo funawatashi no zu.jpg 3484px（1868年 明治天皇の東京入りの錦絵）。幅の足りない候補（大久保の肖像 297〜599px・秀秋の旗 388px・関ヶ原の屏風の別版 501px）と、今の建物の写真（関ヶ原古戦場記念館。CC BY-SA）は外した",
+  "1回だけ出る人物（characters.json に無い秀秋・三成・大久保）は、見た目の英文を全カットで一字一句同じにした（改善ログ 2026-11-20 S134・S135 の続き）",
+  "使わない：秀秋の兵の動きの細部（どの隊を最初に攻めたか）、近年の新説（開戦前から寝返っていた説）、秀頼と千姫の婚礼・大坂の陣・方広寺の鐘（作りかけの L111 と主役を重ねない）、三成の刑場の名、津波の死者数"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "もしも関ヶ原で小早川秀秋が寝返らなかったら、東京という町は生まれなかった。",
+   "tts_text": "もしも関ヶ原で、こばやかわひであきが寝返らなかったら、東京という町は生まれなかった。",
+   "image_en": "Before dawn over a wide misty mountain basin of old Japan, thousands of tiny campfires and plain banners on the surrounding hills, pale blue-green light pouring down from above through the clouds.",
+   "image": "Before dawn over a wide misty mountain basin of old Japan, thousands of tiny campfires and plain banners on the surrounding hills, pale blue-green light pouring down from above through the clouds.",
+   "label": "東京が生まれない日本",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "1600年9月15日、関ヶ原。松尾山の上に、秀秋の大軍がいた。",
+   "tts_text": "1600年9月15日、関ヶ原。まつおやまの上に、ひであきの大軍がいた。",
+   "image_en": "A forested hill rising out of thick morning fog, rows of armored soldiers with long spears and plain banners waiting silently on its slope, cold blue-green light falling from above.",
+   "image": "A forested hill rising out of thick morning fog, rows of armored soldiers with long spears and plain banners waiting silently on its slope, cold blue-green light falling from above.",
+   "label": "1600年9月15日",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "この山がどう動くかで、天下の主が決まる。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands on a misty hilltop gripping a war fan, staring down at the foggy battlefield, blue-green light from above. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands on a misty hilltop gripping a war fan, staring down at the foggy battlefield, blue-green light from above. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "変えるのは1つだけ。秀秋が寝返らず、西軍が勝つ。",
+   "tts_text": "変えるのは1つだけ。ひであきが寝返らず、せいぐんが勝つ。",
+   "same_as": "A03",
+   "label": "変えるのは1つだけ",
+   "chars": []
+  },
+  {
+   "id": "A05",
+   "narration": "山の上の決断までは本当の歴史。そこから先が作り話です。",
+   "same_as": "A02",
+   "chars": []
+  },
+  {
+   "id": "A06",
+   "narration": "では、家康が築いた江戸の町は、どうなるのか。",
+   "image_en": "A small castle of earthen walls and wooden towers beside wide marshes and rice paddies at dawn, a few thatched houses, mist on the water, pale blue-green light from above.",
+   "image": "A small castle of earthen walls and wooden towers beside wide marshes and rice paddies at dawn, a few thatched houses, mist on the water, pale blue-green light from above.",
+   "label": "江戸の町は、どうなるのか",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "chapter": "2つに割れた大名たち",
+   "narration": "1598年、天下人の豊臣秀吉が亡くなった。跡継ぎの秀頼は、まだ数え6歳だった。",
+   "image_en": "A great castle hall in dim blue-green light from high windows, a small boy in white court robes sitting alone on a raised dais, rows of bowing samurai lords below.",
+   "image": "A great castle hall in dim blue-green light from high windows, a small boy in white court robes sitting alone on a raised dais, rows of bowing samurai lords below.",
+   "label": "1598年",
+   "chars": []
+  },
+  {
+   "id": "B02",
+   "narration": "国は、5人の大老と5人の奉行が、話し合いで動かすことになった。",
+   "image_en": "Ten samurai lords in formal robes seated in two rows facing each other in a dim council room, tense faces, cool light falling from a high window.",
+   "image": "Ten samurai lords in formal robes seated in two rows facing each other in a dim council room, tense faces, cool light falling from a high window.",
+   "label": "5大老と5奉行",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "大老の筆頭は、関東250万石を持つ徳川家康。",
+   "image_en": "Tokugawa Ieyasu, sitting calmly at the head of a council room, hands on his knees, quiet heavy gaze, cool blue-green window light. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, sitting calmly at the head of a council room, hands on his knees, quiet heavy gaze, cool blue-green window light. Place the main person slightly right of center.",
+   "label": "関東250万石",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "B04",
+   "narration": "奉行の中心は、近江の佐和山19万石の石田三成だった。",
+   "tts_text": "奉行の中心は、近江のさわやま19万石の石田三成だった。",
+   "image_en": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He sits at a low desk covered with blank papers. Place the main person slightly right of center.",
+   "image": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He sits at a low desk covered with blank papers. Place the main person slightly right of center.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/8/80/Ishida_Mitsunari.jpg",
+   "label": "石田三成",
+   "chars": []
+  },
+  {
+   "id": "B04b",
+   "narration": "翌1599年、大老の前田利家が亡くなると、話し合いの形は崩れ始めた。",
+   "image_en": "A quiet funeral in a temple hall, samurai lords in white mourning robes kneeling before an altar with incense smoke, one empty seat in the council row.",
+   "image": "A quiet funeral in a temple hall, samurai lords in white mourning robes kneeling before an altar with incense smoke, one empty seat in the council row.",
+   "label": "1599年",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "秀吉の死から2年。大名たちは、家康につく者と、三成につく者に割れていった。",
+   "image_en": "Two groups of armored samurai lords standing apart on either side of a castle courtyard, glaring at each other, cold morning light.",
+   "image": "Two groups of armored samurai lords standing apart on either side of a castle courtyard, glaring at each other, cold morning light.",
+   "chars": []
+  },
+  {
+   "id": "B06",
+   "narration": "1600年、家康は大軍を連れて、会津の上杉景勝を攻めに出た。",
+   "tts_text": "1600年、家康は大軍を連れて、あいづの上杉かげかつを攻めに出た。",
+   "image_en": "Tokugawa Ieyasu, on horseback leading a long army column with plain banners along a mountain road heading east, determined face. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, on horseback leading a long army column with plain banners along a mountain road heading east, determined face. Place the main person slightly right of center.",
+   "label": "会津へ",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "B07",
+   "narration": "その留守に、三成が兵を挙げた。総大将は、大坂城の毛利輝元だ。",
+   "tts_text": "その留守に、三成が兵を挙げた。総大将は、おおさかじょうの毛利てるもとだ。",
+   "image_en": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He raises his arm before a crowd of armored warriors in front of a great castle gate. Place the main person slightly right of center.",
+   "image": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He raises his arm before a crowd of armored warriors in front of a great castle gate. Place the main person slightly right of center.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B08",
+   "narration": "東軍と西軍。日本中の大名が、2つに割れた。",
+   "image_en": "Two huge armies with plain banners facing each other across a wide plain, seen from high above, dust in the air.",
+   "image": "Two huge armies with plain banners facing each other across a wide plain, seen from high above, dust in the air.",
+   "label": "東軍と西軍",
+   "chars": []
+  },
+  {
+   "id": "B09",
+   "narration": "ここで問題です。江戸はのちに、100万人をこえる町になったといわれる。",
+   "image_en": "A vast bustling Edo-period city of countless tiled roofs stretching to the horizon, a white castle in the middle, crowds on wide streets, warm afternoon light. Faded old-memory colors.",
+   "image": "A vast bustling Edo-period city of countless tiled roofs stretching to the horizon, a white castle in the middle, crowds on wide streets, warm afternoon light. Faded old-memory colors.",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "その元になった、大名たちのある決まりとは、何でしょう。",
+   "same_as": "B09",
+   "label": "江戸を大きくした決まりは？",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "chapter": "関ヶ原の朝",
+   "narration": "1600年9月15日、美濃の関ヶ原。両軍の兵は、どちらも8万前後といわれる。",
+   "image_en": "A wide valley surrounded by low hills in morning fog, two great armies with plain banners deployed on opposite sides, smoke of matchlock fuses rising.",
+   "image": "A wide valley surrounded by low hills in morning fog, two great armies with plain banners deployed on opposite sides, smoke of matchlock fuses rising.",
+   "label": "両軍8万前後",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "この日の戦いは、のちに大きな屏風に描かれた。",
+   "image_en": "An old gold-leaf Japanese folding screen painting of a great battle with thousands of tiny warriors and banners, seen in a dim museum hall. No people in front.",
+   "image": "An old gold-leaf Japanese folding screen painting of a great battle with thousands of tiny warriors and banners, seen in a dim museum hall. No people in front.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sekigahara_Kassen_By%C5%8Dbu-zu_%28Gifu_History_Museum%29.jpg",
+   "label": "関ヶ原合戦図屏風",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "西軍の多くは、関ヶ原を囲む山や丘に陣を取った。",
+   "image_en": "Camps with plain curtain walls and banners on the green slopes of hills surrounding a foggy valley, soldiers looking down.",
+   "image": "Camps with plain curtain walls and banners on the green slopes of hills surrounding a foggy valley, soldiers looking down.",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "南西の松尾山には、小早川秀秋。数え19歳の、若い大将だ。",
+   "tts_text": "南西のまつおやまには、こばやかわひであき。数え19歳の、若い大将だ。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He sits on a camp stool inside a curtained hilltop camp, biting his lip. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He sits on a camp stool inside a curtained hilltop camp, biting his lip. Place the main person slightly right of center.",
+   "label": "数え19歳",
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "秀秋は、秀吉の妻・高台院の甥。子どものころは、秀吉の養子だった。",
+   "tts_text": "ひであきは、秀吉の妻、こうだいいんの甥。子どものころは、秀吉の養子だった。",
+   "image_en": "An old Japanese hanging-scroll portrait of a young samurai lord in court dress sitting formally on a mat. No people in front.",
+   "image": "An old Japanese hanging-scroll portrait of a young samurai lord in court dress sitting formally on a mat. No people in front.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Kobayakawa_Hideaki_2.jpg",
+   "label": "秀吉の養子",
+   "chars": []
+  },
+  {
+   "id": "C06",
+   "narration": "東の南宮山には、毛利の大軍が陣を取っていた。",
+   "tts_text": "東のなんぐうさんには、毛利の大軍が陣を取っていた。",
+   "image_en": "A large army camped on a distant mountain ridge to the east, banners motionless, soldiers sitting and waiting in the morning haze.",
+   "image": "A large army camped on a distant mountain ridge to the east, banners motionless, soldiers sitting and waiting in the morning haze.",
+   "chars": []
+  },
+  {
+   "id": "C07",
+   "narration": "だが吉川広家がひそかに家康と通じ、毛利の兵は戦わなかった。",
+   "tts_text": "だが、きっかわひろいえがひそかに家康と通じ、毛利の兵は戦わなかった。",
+   "image_en": "A samurai general in dark armor quietly handing a sealed blank letter to a messenger behind a camp curtain, secretive face, dim light.",
+   "image": "A samurai general in dark armor quietly handing a sealed blank letter to a messenger behind a camp curtain, secretive face, dim light.",
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "8万のうち、本当に刀を交えた西軍は、3万5000ほどといわれる。",
+   "tts_text": "8万のうち、本当に刀を交えたせいぐんは、3万5000ほどといわれる。",
+   "image_en": "Many western army soldiers sitting idle on a hillside with their spears laid down, watching a distant battle in the fog below.",
+   "image": "Many western army soldiers sitting idle on a hillside with their spears laid down, watching a distant battle in the fog below.",
+   "label": "3万5000",
+   "chars": []
+  },
+  {
+   "id": "C09",
+   "narration": "三成、宇喜多秀家、大谷吉継の隊が、東軍と正面からぶつかる。",
+   "tts_text": "三成、うきたひでいえ、おおたによしつぐの隊が、とうぐんと正面からぶつかる。",
+   "image_en": "A fierce clash of armored foot soldiers with long spears in a foggy valley, gun smoke drifting, plain banners swaying, no blood.",
+   "image": "A fierce clash of armored foot soldiers with long spears in a foggy valley, gun smoke drifting, plain banners swaying, no blood.",
+   "chars": []
+  },
+  {
+   "id": "C10",
+   "narration": "戦いの行方は、松尾山の大軍が、どちらへ下りるかにかかっていた。",
+   "tts_text": "戦いの行方は、まつおやまの大軍が、どちらへ下りるかにかかっていた。",
+   "image_en": "A wooded hill seen from the battlefield below, its slope covered with silent soldiers and plain banners, both armies' fighters glancing up at it through gun smoke.",
+   "image": "A wooded hill seen from the battlefield below, its slope covered with silent soldiers and plain banners, both armies' fighters glancing up at it through gun smoke.",
+   "chars": []
+  },
+  {
+   "id": "C11",
+   "narration": "東軍にも不安があった。家康の息子、秀忠の大軍が、まだ着いていない。",
+   "tts_text": "とうぐんにも不安があった。家康の息子、ひでただの大軍が、まだ着いていない。",
+   "image_en": "Tokugawa Ieyasu, looking anxiously toward the east from his curtained camp, a messenger kneeling beside him with empty hands. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, looking anxiously toward the east from his curtained camp, a messenger kneeling beside him with empty hands. Place the main person slightly right of center.",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "C12",
+   "narration": "秀忠は中山道の上田城で、真田昌幸に足を止められていた。",
+   "tts_text": "ひでただは、なかせんどうの上田城で、真田まさゆきに足を止められていた。",
+   "image_en": "A large army stalled before a small mountain castle with wooden walls, defenders firing from the walls, autumn hills around.",
+   "image": "A large army stalled before a small mountain castle with wooden walls, defenders firing from the walls, autumn hills around.",
+   "label": "上田城",
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "chapter": "秀秋、山を下りる",
+   "narration": "昼が近づいても、山の上の秀秋は動かない。",
+   "tts_text": "昼が近づいても、山の上のひであきは動かない。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands frozen at the edge of a hilltop camp, sweat on his brow, gun smoke rising from the valley below. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands frozen at the edge of a hilltop camp, sweat on his brow, gun smoke rising from the valley below. Place the main person slightly right of center.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D02",
+   "narration": "山のすぐ下には、大谷吉継の隊がいた。",
+   "tts_text": "山のすぐ下には、おおたによしつぐの隊がいた。",
+   "image_en": "A small samurai unit with plain white banners holding a position at the foot of a wooded hill, a calm older general in a white hood seated on a palanquin among them.",
+   "image": "A small samurai unit with plain white banners holding a position at the foot of a wooded hill, a calm older general in a white hood seated on a palanquin among them.",
+   "chars": []
+  },
+  {
+   "id": "D03",
+   "narration": "吉継は親友の三成に頼まれ、負けを覚悟で西軍に入ったといわれる。",
+   "tts_text": "よしつぐは親友の三成に頼まれ、負けを覚悟でせいぐんに入ったといわれる。",
+   "image_en": "Two samurai friends clasping hands in a dim tent by lamplight before battle, one in a white hood, solemn resolve on their faces. Faded old-memory colors.",
+   "image": "Two samurai friends clasping hands in a dim tent by lamplight before battle, one in a white hood, solemn resolve on their faces. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "家康からは、早く山を下りろという催促が届き続けていた。",
+   "image_en": "A breathless mounted messenger arriving at a hilltop camp, bowing low and holding out a sealed blank letter, soldiers watching.",
+   "image": "A breathless mounted messenger arriving at a hilltop camp, bowing low and holding out a sealed blank letter, soldiers watching.",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "家康が山へ鉄砲を撃ちかけて急かした、という話もある。ただ、作り話ともいわれる。",
+   "image_en": "A line of matchlock gunners firing toward a wooded hill, white smoke bursting, seen from a distance. Faded old-memory colors.",
+   "image": "A line of matchlock gunners firing toward a wooded hill, white smoke bursting, seen from a distance. Faded old-memory colors.",
+   "label": "問鉄砲の話",
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "ここが、分かれ道だった。",
+   "same_as": "D01",
+   "label": "分かれ道",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "秀秋は、秀吉に育てられた恩を、捨てなかった。",
+   "tts_text": "ひであきは、秀吉に育てられた恩を、捨てなかった。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. Close-up as he raises his war fan high with sudden resolve, eyes burning. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. Close-up as he raises his war fan high with sudden resolve, eyes burning. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "D08",
+   "narration": "1万5000の兵が山を駆け下りる。向かう先は、東軍の横腹だ。",
+   "tts_text": "1万5000の兵が山を駆け下りる。向かう先は、とうぐんの横腹だ。",
+   "image_en": "A huge wave of armored soldiers with spears and plain banners charging down a steep wooded hillside into the side of an enemy army below, dust and smoke.",
+   "image": "A huge wave of armored soldiers with spears and plain banners charging down a steep wooded hillside into the side of an enemy army below, dust and smoke.",
+   "label": "1万5000",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D09",
+   "narration": "不意を突かれた東軍の列が、1つ、また1つと崩れていく。",
+   "tts_text": "不意を突かれたとうぐんの列が、1つ、また1つと崩れていく。",
+   "image_en": "Lines of soldiers breaking apart and turning to run across a muddy field, dropped plain banners on the ground, no blood.",
+   "image": "Lines of soldiers breaking apart and turning to run across a muddy field, dropped plain banners on the ground, no blood.",
+   "chars": []
+  },
+  {
+   "id": "D10",
+   "narration": "家康の本陣にも、西軍の旗が迫ってきた。",
+   "tts_text": "家康の本陣にも、せいぐんの旗が迫ってきた。",
+   "image_en": "Tokugawa Ieyasu, standing up from his camp stool in a curtained headquarters, face pale and tense, enemy banners visible over the curtain. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, standing up from his camp stool in a curtained headquarters, face pale and tense, enemy banners visible over the curtain. Place the main person slightly right of center.",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "D11",
+   "narration": "ここは引く。江戸へ戻るぞ。",
+   "same_as": "D10",
+   "voice": "ieyasu",
+   "chars": []
+  },
+  {
+   "id": "D12",
+   "narration": "夕方の関ヶ原。三成は、勝ちどきの声を聞いていた。",
+   "image_en": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori, now in battle armor. He stands on a hill at sunset as soldiers raise spears and shout in victory. Place the main person slightly right of center.",
+   "image": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori, now in battle armor. He stands on a hill at sunset as soldiers raise spears and shout in victory. Place the main person slightly right of center.",
+   "label": "西軍の勝ち",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D13",
+   "narration": "実際の歴史では、秀秋はこの日、大谷隊に攻めかかり、西軍は総崩れになった。",
+   "tts_text": "実際の歴史では、ひであきはこの日、おおたにたいに攻めかかり、せいぐんは総崩れになった。",
+   "image_en": "Soldiers charging down a wooded hill into a small unit with plain white banners at its foot, the defenders overwhelmed. Faded old-memory colors.",
+   "image": "Soldiers charging down a wooded hill into a small unit with plain white banners at its foot, the defenders overwhelmed. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "E01",
+   "chapter": "生き残った三成",
+   "narration": "戦いのあと、三成は大坂城に入った。",
+   "image_en": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He walks up stone steps toward a towering black-and-gold castle keep, retainers following. Place the main person slightly right of center.",
+   "image": "Ishida Mitsunari, a lean Japanese samurai administrator about forty: thin sharp face, intelligent narrow eyes, small neat moustache, chonmage topknot, dark green kimono under a plain grey haori. He walks up stone steps toward a towering black-and-gold castle keep, retainers following. Place the main person slightly right of center.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E02",
+   "narration": "西軍の大名たちは、数え8歳の秀頼の前に並んで頭を下げた。",
+   "tts_text": "せいぐんの大名たちは、数え8歳の秀頼の前に並んで頭を下げた。",
+   "image_en": "Rows of armored samurai lords bowing deeply in a gilded castle hall before a small boy in white court robes seated on a raised dais, warm lantern light.",
+   "image": "Rows of armored samurai lords bowing deeply in a gilded castle hall before a small boy in white court robes seated on a raised dais, warm lantern light.",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "家康についた大名たちは、領地を削られていく。",
+   "image_en": "A worried samurai lord kneeling before officials who unroll a large blank map and draw a line across it, tense room.",
+   "image": "A worried samurai lord kneeling before officials who unroll a large blank map and draw a line across it, tense room.",
+   "chars": []
+  },
+  {
+   "id": "E04",
+   "narration": "取り上げた土地は、西軍で戦った大名に分けられた。",
+   "tts_text": "取り上げた土地は、せいぐんで戦った大名に分けられた。",
+   "image_en": "Victorious samurai lords in armor receiving blank deed scrolls one by one from an official in a castle hall, satisfied faces, warm lantern light.",
+   "image": "Victorious samurai lords in armor receiving blank deed scrolls one by one from an official in a castle hall, satisfied faces, warm lantern light.",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "総大将の毛利輝元は、112万石のまま。宇喜多秀家も、57万石のまま残る。",
+   "tts_text": "総大将の毛利てるもとは、112万石のまま。うきたひでいえも、57万石のまま残る。",
+   "image_en": "Two proud samurai lords in fine armor sitting side by side at a victory banquet in a castle hall, smiling, warm lantern light.",
+   "image": "Two proud samurai lords in fine armor sitting side by side at a victory banquet in a castle hall, smiling, warm lantern light.",
+   "label": "112万石のまま",
+   "chars": []
+  },
+  {
+   "id": "E06",
+   "narration": "秀秋も、豊臣の家を守った大将として、ほうびの土地を受けた。",
+   "tts_text": "ひであきも、豊臣の家を守った大将として、ほうびの土地を受けた。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He kneels and receives a blank scroll with both hands in a castle hall, a shy proud smile. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He kneels and receives a blank scroll with both hands in a castle hall, a shy proud smile. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "E07",
+   "narration": "一方の家康は、わずかな兵と、東海道を江戸へ戻っていった。",
+   "image_en": "Tokugawa Ieyasu, riding wearily at the head of a small band of tired soldiers along a coastal road in the rain, grim face. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, riding wearily at the head of a small band of tired soldiers along a coastal road in the rain, grim face. Place the main person slightly right of center.",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "E08",
+   "narration": "残ったのは、関東の領地と、江戸の城だけ。",
+   "image_en": "A modest castle with earthen walls seen from across a marsh at dusk, a small band of weary soldiers trudging toward its gate, warm low sunlight.",
+   "image": "A modest castle with earthen walls seen from across a marsh at dusk, a small band of weary soldiers trudging toward its gate, warm low sunlight.",
+   "chars": []
+  },
+  {
+   "id": "E09",
+   "narration": "1590年に家康が入ったころの江戸城は、石垣の少ない、土の城だったといわれる。",
+   "image_en": "An Edo-period castle with earthen ramparts and wooden palisades instead of stone walls, a shallow moat, reeds and marsh around it, grey sky.",
+   "image": "An Edo-period castle with earthen ramparts and wooden palisades instead of stone walls, a shallow moat, reeds and marsh around it, grey sky.",
+   "label": "土の城",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "この世界の家康は、豊臣の家来の大名の1人に戻った。",
+   "image_en": "Tokugawa Ieyasu, sitting alone in a plain wooden room of a modest castle at dusk, staring at a single lamp, heavy silence. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, sitting alone in a plain wooden room of a modest castle at dusk, staring at a single lamp, heavy silence. Place the main person slightly right of center.",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "E11",
+   "narration": "実際の歴史では、捕らえられた三成は、この年の10月1日、京都で斬られている。",
+   "image_en": "A crowd of townspeople in old Kyoto watching a procession of guards leading a bound prisoner along a riverbank, solemn, no blood. Faded old-memory colors.",
+   "image": "A crowd of townspeople in old Kyoto watching a procession of guards leading a bound prisoner along a riverbank, solemn, no blood. Faded old-memory colors.",
+   "label": "10月1日",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "chapter": "将軍のいない江戸",
+   "narration": "1603年。江戸に、将軍の幕府は開かれない。",
+   "image_en": "A quiet modest castle town beside marshes and rice fields, a few samurai houses and thatched roofs, farmers working, no crowds, clear morning.",
+   "image": "A quiet modest castle town beside marshes and rice fields, a few samurai houses and thatched roofs, farmers working, no crowds, clear morning.",
+   "label": "1603年",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "国を動かすのは、大坂城の秀頼と、それを支える大老と奉行たちだ。",
+   "image_en": "A grand council in a gilded castle hall, a young boy lord on a dais and samurai elders seated in rows discussing over blank maps, warm light.",
+   "image": "A grand council in a gilded castle hall, a young boy lord on a dais and samurai elders seated in rows discussing over blank maps, warm light.",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "豊臣の大坂のにぎわいは、当時の屏風にも描かれている。",
+   "image_en": "An old gold-leaf Japanese folding screen showing a great castle and a busy merchant town with rivers and bridges. No people in front.",
+   "image": "An old gold-leaf Japanese folding screen showing a great castle and a busy merchant town with rivers and bridges. No people in front.",
+   "real": "Osaka-zu byobu",
+   "label": "大坂図屏風",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "一方の江戸では、町を大きく広げる工事が始まらない。",
+   "image_en": "A quiet hill covered with trees next to a shallow reedy bay, a few fishing boats, no workers, peaceful morning by an Edo-period castle town.",
+   "image": "A quiet hill covered with trees next to a shallow reedy bay, a few fishing boats, no workers, peaceful morning by an Edo-period castle town.",
+   "chars": []
+  },
+  {
+   "id": "F04b",
+   "narration": "家康は大名のころから、日比谷の入り江を埋めて、城下を少しずつ広げてはいた。",
+   "image_en": "A small group of laborers dumping baskets of earth into the edge of a shallow inlet beside a modest castle, slow work under a grey sky.",
+   "image": "A small group of laborers dumping baskets of earth into the edge of a shallow inlet beside a modest castle, slow work under a grey sky.",
+   "label": "日比谷の入り江",
+   "chars": []
+  },
+  {
+   "id": "F05",
+   "narration": "神田の山を崩し、海辺の洲を埋め立てて、町の土地を作る。",
+   "tts_text": "かんだの山を崩し、海辺のすを埋め立てて、町の土地を作る。",
+   "image_en": "Thousands of laborers with baskets and shovels cutting down a hill and carrying earth to fill a shallow bay, wooden boats and stakes in the water, dust in the sun.",
+   "image": "Thousands of laborers with baskets and shovels cutting down a hill and carrying earth to fill a shallow bay, wooden boats and stakes in the water, dust in the sun.",
+   "chars": []
+  },
+  {
+   "id": "F06",
+   "narration": "そんな大工事には、全国の大名から集めた人手が要る。",
+   "image_en": "Long lines of laborers from many different lords, each group under its own plain banner, hauling huge stones on wooden sledges with ropes.",
+   "image": "Long lines of laborers from many different lords, each group under its own plain banner, hauling huge stones on wooden sledges with ropes.",
+   "label": "全国の人手",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "将軍ではない家康に、全国の大名を呼び出す力は無かった。",
+   "image_en": "Tokugawa Ieyasu, standing on an earthen rampart looking at a handful of his own retainers digging a moat with shovels, sweat and mud. Place the main person slightly right of center.",
+   "image": "Tokugawa Ieyasu, standing on an earthen rampart looking at a handful of his own retainers digging a moat with shovels, sweat and mud. Place the main person slightly right of center.",
+   "chars": [
+    "ieyasu"
+   ]
+  },
+  {
+   "id": "F08",
+   "narration": "堀は、わしの家来だけで掘る。",
+   "same_as": "F07",
+   "voice": "ieyasu",
+   "chars": []
+  },
+  {
+   "id": "F09",
+   "narration": "江戸は、徳川の家来と、わずかな町人の住む町のまま。",
+   "image_en": "A small dusty street of a provincial castle town with a few shops and samurai walking, rice fields visible at the end of the street, late afternoon.",
+   "image": "A small dusty street of a provincial castle town with a few shops and samurai walking, rice fields visible at the end of the street, late afternoon.",
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。よければ、チャンネル登録で応援してください。",
+   "same_as": "A03",
+   "label": "毎回1つだけ歴史を変える",
+   "chars": []
+  },
+  {
+   "id": "F11",
+   "narration": "実際の歴史では1603年、家康は征夷大将軍になり、江戸に幕府を開いた。",
+   "image_en": "An old Japanese hanging-scroll portrait of an elderly lord in formal court robes and a black cap, seated solemnly. No people in front.",
+   "image": "An old Japanese hanging-scroll portrait of an elderly lord in formal court robes and a black cap, seated solemnly. No people in front.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/8/89/Tokugawa_Ieyasu.jpg",
+   "label": "征夷大将軍",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "chapter": "大名はどこへ通う",
+   "narration": "関ヶ原から35年。1635年、大名たちに大きな決まりができた。",
+   "image_en": "Samurai lords in formal kamishimo kneeling in rows in a great hall as an official reads out a long blank scroll, warm lantern light.",
+   "image": "Samurai lords in formal kamishimo kneeling in rows in a great hall as an official reads out a long blank scroll, warm lantern light.",
+   "label": "1635年",
+   "chars": []
+  },
+  {
+   "id": "G02",
+   "narration": "領地と都を、1年ごとに行き来する。妻と子は、都に住まわせる。",
+   "image_en": "A samurai lord saying goodbye to his wife and small child at the gate of a mansion in a big city, a travel palanquin waiting, early morning.",
+   "image": "A samurai lord saying goodbye to his wife and small child at the gate of a mansion in a big city, a travel palanquin waiting, early morning.",
+   "chars": []
+  },
+  {
+   "id": "G02b",
+   "narration": "行き来の旅と、都の屋敷の暮らし。大名は、そのたびに大きなお金を使った。",
+   "image_en": "A worried samurai retainer counting a dwindling pile of coins and rice tickets at a low desk in a mansion office, account books stacked, lamp light.",
+   "image": "A worried samurai retainer counting a dwindling pile of coins and rice tickets at a low desk in a mansion office, account books stacked, lamp light.",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "参勤交代だ。江戸を100万人の町にしたのは、この決まりだったといわれる。",
+   "image_en": "An old ukiyo-e woodblock print of a daimyo procession crossing a wooden bridge at dawn, porters carrying boxes and spears. No people in front.",
+   "real": "Hiroshige 53 Stations Hoeido Nihonbashi",
+   "label": "答え：参勤交代",
+   "strong": true,
+   "payoff": true,
+   "chars": [],
+   "real_src": {
+    "題": "File:Nihonbashi LCCN2008660299.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Nihonbashi_LCCN2008660299.jpg/1920px-Nihonbashi_LCCN2008660299.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Nihonbashi_LCCN2008660299.jpg",
+    "検索語": "Hiroshige 53 Stations Hoeido Nihonbashi"
+   }
+  },
+  {
+   "id": "G04",
+   "narration": "大名が来れば、家来も、物も、商人も、一緒に集まってくるからだ。",
+   "image_en": "A busy street crowded with samurai retainers, porters with loads, and merchants opening shops, carts of rice bales, warm sunny day.",
+   "image": "A busy street crowded with samurai retainers, porters with loads, and merchants opening shops, carts of rice bales, warm sunny day.",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "この世界で大名が通う先は、江戸ではない。大坂だ。",
+   "image_en": "A long daimyo procession with lacquered boxes, spears and a palanquin marching along a road toward a huge castle with a black-and-gold keep on the horizon, sunset glow.",
+   "image": "A long daimyo procession with lacquered boxes, spears and a palanquin marching along a road toward a huge castle with a black-and-gold keep on the horizon, sunset glow.",
+   "label": "通う先は大坂",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G05b",
+   "narration": "大坂はもともと、1700年代の半ばに50万人ほどが住んだといわれる町。そこへ大名と家来が加わる。",
+   "image_en": "A crowded riverside merchant town with countless tiled roofs, canals and bridges, seen from a high tower, busy daytime haze.",
+   "image": "A crowded riverside merchant town with countless tiled roofs, canals and bridges, seen from a high tower, busy daytime haze.",
+   "label": "50万人",
+   "chars": []
+  },
+  {
+   "id": "G06",
+   "narration": "大坂の城のまわりに、全国の大名の屋敷が並んでいく。",
+   "image_en": "Rows of large samurai mansions with white walls and tiled gates lining wide streets around a great castle, seen from above, evening light.",
+   "image": "Rows of large samurai mansions with white walls and tiled gates lining wide streets around a great castle, seen from above, evening light.",
+   "chars": []
+  },
+  {
+   "id": "G07",
+   "narration": "大名が年貢の米を売る蔵屋敷も、もとから大坂の川沿いに多く集まっていた。",
+   "tts_text": "大名が年貢の米を売るくらやしきも、もとからおおさかの川沿いに多く集まっていた。",
+   "image_en": "White-walled storehouses with stone landings along a river, boats unloading rice bales, workers carrying them up steps, busy morning.",
+   "image": "White-walled storehouses with stone landings along a river, boats unloading rice bales, workers carrying them up steps, busy morning.",
+   "label": "蔵屋敷",
+   "chars": []
+  },
+  {
+   "id": "G07b",
+   "narration": "その数は、1670年代で91。1830年代には124にふえている。",
+   "same_as": "G07",
+   "label": "91から124へ",
+   "chars": []
+  },
+  {
+   "id": "G08",
+   "narration": "大坂は、天下の台所と呼ばれる。",
+   "image_en": "A bustling rice exchange street with merchants shouting and waving hands over piles of rice bales, porters running, lively warm morning.",
+   "image": "A bustling rice exchange street with merchants shouting and waving hands over piles of rice bales, porters running, lively warm morning.",
+   "label": "天下の台所",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "ただ、この呼び名は、のちの学者が付けた言葉ともいわれる。",
+   "image_en": "A scholar in a Western suit of the early twentieth century writing at a desk piled with old Japanese books by lamplight. Faded old-memory colors.",
+   "image": "A scholar in a Western suit of the early twentieth century writing at a desk piled with old Japanese books by lamplight. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "一方の江戸。大名の屋敷は並ばず、行列も来ない。",
+   "image_en": "An empty wide road leading to a modest castle on a low hill, grass growing at the roadside, a lone farmer with a hoe, quiet afternoon.",
+   "image": "An empty wide road leading to a modest castle on a low hill, grass growing at the roadside, a lone farmer with a hoe, quiet afternoon.",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "江戸は、関東にいくつもある城下町の1つで、止まった。",
+   "image_en": "A small castle town with a modest castle surrounded by vast rice paddies and marshes, a few boats on a river, a distant snowy mountain, sunset.",
+   "image": "A small castle town with a modest castle surrounded by vast rice paddies and marshes, a few boats on a river, a distant snowy mountain, sunset.",
+   "label": "小さな城下町",
+   "chars": []
+  },
+  {
+   "id": "G12",
+   "narration": "実際の江戸は、享保のころ、100万人をこえたといわれる町になった。",
+   "tts_text": "実際の江戸は、きょうほうのころ、100万人をこえたといわれる町になった。",
+   "image_en": "An old detailed hand-drawn map of a huge city around a castle with moats, rivers and countless blocks. No people in front.",
+   "image": "An old detailed hand-drawn map of a huge city around a castle with moats, rivers and countless blocks. No people in front.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Edo_1844-1848_Map.jpg",
+   "label": "100万人",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "chapter": "1868年の都選び",
+   "narration": "関ヶ原から260年あまり。武家の世が終わり、新しい国を作る時が来る。",
+   "image_en": "Japanese officials of the 1860s, some in samurai dress and some in Western coats, gathered around a large blank map of Japan on the floor of a hall, lamp light.",
+   "image": "Japanese officials of the 1860s, some in samurai dress and some in Western coats, gathered around a large blank map of Japan on the floor of a hall, lamp light.",
+   "label": "1868年",
+   "chars": []
+  },
+  {
+   "id": "H02",
+   "narration": "新しい国の都を、どこに置くか。",
+   "image_en": "Close view of hands placing a small stone marker on a large blank map of Japan spread on tatami, lamplight, other hands hovering undecided.",
+   "image": "Close view of hands placing a small stone marker on a large blank map of Japan spread on tatami, lamplight, other hands hovering undecided.",
+   "label": "都はどこに",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "1868年の正月、大久保利通は、都を大坂に移す案を出した。",
+   "image_en": "An old black-and-white photograph portrait of a bearded Japanese statesman in a dark Western frock coat. No people in front.",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/d/df/%C5%8Ckubo_Toshimichi_1872.jpg",
+   "label": "大久保利通",
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/d/df/%C5%8Ckubo_Toshimichi_1872.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/%C5%8Ckubo_Toshimichi_1872.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/d/df/%C5%8Ckubo_Toshimichi_1872.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/d/df/%C5%8Ckubo_Toshimichi_1872.jpg"
+   }
+  },
+  {
+   "id": "H03b",
+   "narration": "武家の世を終わらせる戦いが、京都の南で終わった直後のことだ。",
+   "image_en": "Tired soldiers in mixed Western uniforms and samurai armor resting by a road outside Kyoto on a winter morning after battle, smoke fading in the distance, no blood.",
+   "image": "Tired soldiers in mixed Western uniforms and samurai armor resting by a road outside Kyoto on a winter morning after battle, smoke fading in the distance, no blood.",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "この世界の大坂には、大名の屋敷も、蔵屋敷も、全部そろっている。",
+   "tts_text": "この世界のおおさかには、大名の屋敷も、くらやしきも、全部そろっている。",
+   "image_en": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He walks along a riverside street lined with white-walled mansions and storehouses in a great castle city, looking around with interest. Place the main person slightly right of center.",
+   "image": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He walks along a riverside street lined with white-walled mansions and storehouses in a great castle city, looking around with interest. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "だが、江戸を都にする案もあった。前島密が出した案だ。",
+   "tts_text": "だが、江戸を都にする案もあった。まえじまひそかが出した案だ。",
+   "image_en": "A serious young Japanese official in a dark kimono presenting a folded blank document to seated leaders in a dim hall, tense faces.",
+   "image": "A serious young Japanese official in a dark kimono presenting a folded blank document to seated leaders in a dim hall, tense faces.",
+   "chars": []
+  },
+  {
+   "id": "H06",
+   "narration": "都を東に置かなければ、関東は新しい国に従わない。そんな声が強まる。",
+   "image_en": "A heated argument among Japanese officials in a hall, one slamming his fist on the floor beside a blank map, others shouting, lamp light flickering.",
+   "image": "A heated argument among Japanese officials in a hall, one slamming his fist on the floor beside a blank map, others shouting, lamp light flickering.",
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "大久保は、関東の地図をにらんだ。",
+   "image_en": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He leans over a large blank map by lamplight, frowning hard. Place the main person slightly right of center.",
+   "image": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He leans over a large blank map by lamplight, frowning hard. Place the main person slightly right of center.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H08",
+   "narration": "だが、この世界の江戸には、100万人の町が無い。あるのは、土の城と田畑だ。",
+   "image_en": "A small castle with earthen walls and wooden towers in the middle of wide rice paddies and reed marshes, a few farmhouses, cold winter afternoon.",
+   "image": "A small castle with earthen walls and wooden towers in the middle of wide rice paddies and reed marshes, a few farmhouses, cold winter afternoon.",
+   "chars": []
+  },
+  {
+   "id": "H09",
+   "narration": "1868年、新しい国の都は、大坂に決まった。",
+   "image_en": "A grand procession of officials and soldiers in mixed Western and Japanese dress entering a huge castle gate under a clear sky, crowds of townspeople cheering along a riverside street.",
+   "image": "A grand procession of officials and soldiers in mixed Western and Japanese dress entering a huge castle gate under a clear sky, crowds of townspeople cheering along a riverside street.",
+   "label": "都は大坂",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H10",
+   "narration": "江戸を東京と呼ぶ詔書は、この世界には出ない。",
+   "same_as": "G10",
+   "chars": []
+  },
+  {
+   "id": "H11",
+   "narration": "東京という町は、生まれなかった。",
+   "image_en": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He stands on a grassy hill at sunset looking over a small quiet castle town surrounded by endless rice paddies and marshes, wind in his coat, astonished face. Place the main person slightly right of center.",
+   "image": "Okubo Toshimichi, a stern Japanese statesman about forty: long thick sideburns joined to a full dark beard, swept-back hair, black Western frock coat with a white shirt. He stands on a grassy hill at sunset looking over a small quiet castle town surrounded by endless rice paddies and marshes, wind in his coat, astonished face. Place the main person slightly right of center.",
+   "label": "東京は生まれなかった",
+   "strong": true,
+   "highlight": [
+    "生まれなかった"
+   ],
+   "chars": [],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "H12",
+   "narration": "実際の歴史では1868年7月、江戸は東京と改められ、天皇は10月に東京へ入った。",
+   "image_en": "An old ukiyo-e woodblock print of a grand imperial procession crossing a wide river on a bridge of boats, crowds watching. No people in front.",
+   "real": "Bushu Rokugo funawatashi no zu",
+   "label": "1868年 東京",
+   "chars": [],
+   "real_src": {
+    "題": "File:武州六郷船渡図 Bushu Rokugo funawatashi no zu.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%E6%AD%A6%E5%B7%9E%E5%85%AD%E9%83%B7%E8%88%B9%E6%B8%A1%E5%9B%B3_Bushu_Rokugo_funawatashi_no_zu.jpg/1920px-%E6%AD%A6%E5%B7%9E%E5%85%AD%E9%83%B7%E8%88%B9%E6%B8%A1%E5%9B%B3_Bushu_Rokugo_funawatashi_no_zu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E5%B7%9E%E5%85%AD%E9%83%B7%E8%88%B9%E6%B8%A1%E5%9B%B3_Bushu_Rokugo_funawatashi_no_zu.jpg",
+    "検索語": "Bushu Rokugo funawatashi no zu"
+   }
+  },
+  {
+   "id": "I01",
+   "chapter": "大坂1つに集めた日本",
+   "narration": "大名も、商いも、国の役所も、大坂1つに集めた日本。",
+   "image_en": "A vast riverside city around a great black-and-gold castle at dusk, countless roofs, canals full of boats, lantern lights coming on.",
+   "image": "A vast riverside city around a great black-and-gold castle at dusk, countless roofs, canals full of boats, lantern lights coming on.",
+   "chars": []
+  },
+  {
+   "id": "I02",
+   "narration": "その先には、2つの未来が考えられる。",
+   "image_en": "A road splitting into two paths at sunset, one toward a bright festive city, the other toward a dark stormy sea, a lone traveler standing at the fork.",
+   "image": "A road splitting into two paths at sunset, one toward a bright festive city, the other toward a dark stormy sea, a lone traveler standing at the fork.",
+   "label": "2つの未来",
+   "chars": []
+  },
+  {
+   "id": "I03",
+   "narration": "良い未来。1800年ごろ、大坂は100万人をこえる、日本一の町になった。",
+   "image_en": "A booming merchant city with crowded bridges, festival lanterns, ships unloading goods, cheerful townspeople everywhere, bright warm evening.",
+   "image": "A booming merchant city with crowded bridges, festival lanterns, ships unloading goods, cheerful townspeople everywhere, bright warm evening.",
+   "label": "良い未来",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I04",
+   "narration": "同じころの北京は約90万、ロンドンは約86万の町だったといわれる。",
+   "image_en": "Two distant foreign cities of around 1800 side by side in one wide view: a walled Chinese capital with tiled gates and a European city of brick and church spires by a river, hazy light.",
+   "image": "Two distant foreign cities of around 1800 side by side in one wide view: a walled Chinese capital with tiled gates and a European city of brick and church spires by a river, hazy light.",
+   "label": "北京90万・ロンドン86万",
+   "chars": []
+  },
+  {
+   "id": "I05",
+   "narration": "悪い未来。1854年、南海地震の津波が、都の大坂をおそった。",
+   "image_en": "A dark wave surging up a wide city river at dusk, wooden boats tossed against a bridge, people running up the banks, no bodies, no blood.",
+   "image": "A dark wave surging up a wide city river at dusk, wooden boats tossed against a bridge, people running up the banks, no bodies, no blood.",
+   "label": "悪い未来",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "I06",
+   "narration": "地震からおよそ2時間後。津波は川をさかのぼり、大きな船を町の堀へ押し上げ、橋をこわした。",
+   "image_en": "Large wooden cargo ships pushed by rushing water into a narrow city canal, crashing into a wooden bridge, townspeople fleeing along the banks in the dusk, no bodies, no blood.",
+   "image": "Large wooden cargo ships pushed by rushing water into a narrow city canal, crashing into a wooden bridge, townspeople fleeing along the banks in the dusk, no bodies, no blood.",
+   "label": "地震から2時間",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "国の役所が集まる都が、ひと晩で水につかる。",
+   "image_en": "Flooded streets of a large city at night, government buildings with tiled roofs standing in muddy water, officials carrying boxes of documents on their heads.",
+   "image": "Flooded streets of a large city at night, government buildings with tiled roofs standing in muddy water, officials carrying boxes of documents on their heads.",
+   "chars": []
+  },
+  {
+   "id": "I08",
+   "narration": "実際の大坂でもこの津波で多くの人が亡くなり、大正橋のそばに今も碑が立つ。",
+   "image_en": "An old weathered stone monument standing quietly beside a modern river bridge in a Japanese city, flowers placed in front. Faded old-memory colors.",
+   "image": "An old weathered stone monument standing quietly beside a modern river bridge in a Japanese city, flowers placed in front. Faded old-memory colors.",
+   "label": "大地震両川口津浪記",
+   "chars": []
+  },
+  {
+   "id": "I09",
+   "narration": "1つの町に、全部を集めた日本。にぎわいも、危うさも、1か所に集まる。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands on a hill gazing at a great castle city far below, half bright with lanterns and half under dark storm clouds. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands on a hill gazing at a great castle city far below, half bright with lanterns and half under dark storm clouds. Place the main person slightly right of center.",
+   "chars": []
+  },
+  {
+   "id": "I10",
+   "narration": "あなたは、どっちの日本になったと思いますか。",
+   "image_en": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands alone on a hilltop at sunset looking far east, thoughtful face. Place the main person slightly right of center.",
+   "image": "Kobayakawa Hideaki, a pale young Japanese samurai lord of nineteen: slim build, nervous wide eyes, smooth beardless face, chonmage topknot, dark red lacquered armor under a plain white jinbaori surcoat. He stands alone on a hilltop at sunset looking far east, thoughtful face. Place the main person slightly right of center.",
+   "label": "どっちの日本？",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I11",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "same_as": "I10",
+   "chars": []
+  },
+  {
+   "id": "I12",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "A01",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
