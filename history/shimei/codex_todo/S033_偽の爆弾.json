@@ -1,0 +1,79 @@
+{
+ "ch": "shimei",
+ "work": "S033_偽の爆弾",
+ "portrait": true,
+ "made": "2026-11-21 00:00",
+ "style_en": "Vertical 9:16 miniature diorama 3D CG render in an empty white space. Smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing and hairstyle. Soft shadows, slightly high angle. Mostly white and gray, only key objects red. Keep the top 35% of the frame empty with no heads or objects; place the main subject between 35% and 68% of the height, centered. The robbers' helicopter is always the same small light helicopter with a white body, a gray belly and a red side stripe, no registration letters, no markings. Police helicopters are always plain dark blue with no markings. Police officers always wear plain dark navy uniforms with no insignia. The black bag is always the same plain black duffel bag with no text. All set in 2009; no extra props from other eras, no year plaque, no caption plate.",
+ "avoid_en": "logos, brand names, readable text or numbers, flags, police insignia, registration letters on aircraft, blood, wounds, guns, explosions, fire, faces resembling real people, year plaques",
+ "rules": {},
+ "characters": {
+  "police": {
+   "desc_en": "police officers, figurines with smooth featureless faces in plain dark navy uniforms and plain navy caps with no insignia, no badges and no text"
+  }
+ },
+ "cuts": [
+  {
+   "id": "a01",
+   "image": "濃い青の警察のヘリの前に、黒い袋が1つ置かれている",
+   "image_en": "in the middle of the frame a plain dark blue police helicopter parked on a helipad at dawn, and one plain black duffel bag lying on the ground in front of it, lit by a spotlight; no people, no text, no markings",
+   "en": "in the middle of the frame a plain dark blue police helicopter parked on a helipad at dawn, and one plain black duffel bag lying on the ground in front of it, lit by a spotlight; no people, no text, no markings"
+  },
+  {
+   "id": "a02",
+   "image": "灰色の建物の平らな屋上に、白い小型ヘリが降りている",
+   "image_en": "in the middle of the frame a large plain gray concrete building with a flat roof and a glass pyramid skylight; the robbers' small white helicopter sits on the roof in pre-dawn blue light; no people visible, no text, no signs",
+   "en": "in the middle of the frame a large plain gray concrete building with a flat roof and a glass pyramid skylight; the robbers' small white helicopter sits on the roof in pre-dawn blue light; no people visible, no text, no signs"
+  },
+  {
+   "id": "a03",
+   "image": "格納庫の中に、濃い青の警察のヘリが2機並ぶ",
+   "image_en": "in the middle of the frame two plain dark blue police helicopters parked side by side inside a clean hangar; no people, no markings, no text",
+   "en": "in the middle of the frame two plain dark blue police helicopters parked side by side inside a clean hangar; no people, no markings, no text"
+  },
+  {
+   "id": "a05",
+   "image": "格納庫の扉の前の地面に、黒い袋がぽつんと1つ",
+   "image_en": "in the middle of the frame one plain black duffel bag lying alone on the concrete in front of a closed hangar door, everything else dark; no people, no text",
+   "en": "in the middle of the frame one plain black duffel bag lying alone on the concrete in front of a closed hangar door, everything else dark; no people, no text"
+  },
+  {
+   "id": "a06",
+   "image": "閉じた黒い袋を赤いテープが囲み、離れた所に警察官が3人立ち止まる",
+   "image_en": "in the middle of the frame one closed plain black duffel bag on the ground, surrounded at a distance by a ring of red barrier tape; three police officers stand still behind the tape, not approaching; three people only, their heads below the top third of the frame; no text on the bag or tape, no insignia",
+   "chars": [
+    "police"
+   ],
+   "en": "in the middle of the frame one closed plain black duffel bag on the ground, surrounded at a distance by a ring of red barrier tape; three police officers stand still behind the tape, not approaching; three people only, their heads below the top third of the frame; no text on the bag or tape, no insignia"
+  },
+  {
+   "id": "a07",
+   "image": "同じ場所。黒い袋が開いていて、中は丸めた布と空の箱だけ",
+   "image_en": "in the middle of the frame the same spot with the same red barrier tape ring; the same plain black duffel bag is now unzipped and open, and inside it there is only crumpled gray cloth and an empty gray box, nothing dangerous; the three police officers stand behind the tape; three people only, their heads below the top third of the frame; no text",
+   "en": "in the middle of the frame the same spot with the same red barrier tape ring; the same plain black duffel bag is now unzipped and open, and inside it there is only crumpled gray cloth and an empty gray box, nothing dangerous; the three police officers stand behind the tape; three people only, their heads below the top third of the frame; no text"
+  },
+  {
+   "id": "a08",
+   "image": "夜明けの空へ、白いヘリが小さく遠ざかる",
+   "image_en": "in the middle of the frame the robbers' small white helicopter flying away small into a pale dawn sky above a miniature city with water; no other aircraft, no people, no text",
+   "en": "in the middle of the frame the robbers' small white helicopter flying away small into a pale dawn sky above a miniature city with water; no other aircraft, no people, no text"
+  },
+  {
+   "id": "a09",
+   "image": "道路の上に、とがった星形の金具が散らばり、濃い色の車が止まっている",
+   "image_en": "in the middle of the frame a strip of gray road scattered with many small four-pointed steel caltrops, and a plain dark car with no markings stopped with a flat front tire; no people, no text, no license plate text",
+   "en": "in the middle of the frame a strip of gray road scattered with many small four-pointed steel caltrops, and a plain dark car with no markings stopped with a flat front tire; no people, no text, no license plate text"
+  },
+  {
+   "id": "a10",
+   "image": "白い空間に、赤い八角形の札と、その前で立ち止まる小さな人",
+   "image_en": "in the middle of the frame a red octagon-shaped sign with no text standing in the empty white space, and a small plain figurine stopped in front of it; one person only, head below the top third of the frame; no letters",
+   "en": "in the middle of the frame a red octagon-shaped sign with no text standing in the empty white space, and a small plain figurine stopped in front of it; one person only, head below the top third of the frame; no letters"
+  },
+  {
+   "id": "a11",
+   "image": "黒い袋を真上から見る。周りに赤いテープの輪",
+   "image_en": "in the middle of the frame a top-down view of one closed plain black duffel bag on gray concrete inside a ring of red barrier tape; no people, no text",
+   "en": "in the middle of the frame a top-down view of one closed plain black duffel bag on gray concrete inside a ring of red barrier tape; no people, no text"
+  }
+ ]
+}

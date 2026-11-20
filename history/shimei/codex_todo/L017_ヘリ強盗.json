@@ -1,0 +1,385 @@
+{
+ "ch": "shimei",
+ "work": "L017_ヘリ強盗",
+ "portrait": false,
+ "made": "2026-11-21 00:00",
+ "style_en": "Miniature diorama 3D CG render placed in an empty white space. Figures are smooth faceless figurines (no eyes, nose or mouth details), told apart by clothing, hairstyle and props. Soft shadows, slightly high camera angle looking down. Mostly white and gray, only the key objects in red. The robbers' helicopter is always the same small light helicopter with a white body, a gray belly and a red stripe along the side, with no registration letters, no logo and no markings. Police helicopters are always plain dark blue with no markings and no text. The cash depot is always the same large plain gray concrete building with a flat roof and one glass pyramid skylight in the middle of the roof, no signs. Police officers always wear plain dark navy uniforms with no insignia, no badges and no text. Show only the objects and people named in the scene, all set in 2009; no extra props from other eras, no year plaque, no caption plate.",
+ "avoid_en": "logos, brand names, readable text or numbers, flags, police insignia, registration letters on aircraft, car badges, license plate text, blood, wounds, injured people, guns being aimed or fired, faces resembling real people, year plaques, caption plates",
+ "rules": {},
+ "characters": {
+  "robbers": {
+   "desc_en": "robbers, men figurines with smooth featureless faces wearing plain black long-sleeved clothes, plain black full-face masks with no markings, black gloves, holding no visible weapons"
+  },
+  "police": {
+   "desc_en": "police officers, figurines with smooth featureless faces in plain dark navy uniforms and plain navy caps with no insignia, no badges and no text"
+  },
+  "staff": {
+   "desc_en": "depot staff, figurines with smooth featureless faces in plain light gray work uniforms with no logo"
+  },
+  "investigators": {
+   "desc_en": "investigators, figurines with smooth featureless faces in plain white coveralls with hoods and white gloves, no text"
+  },
+  "pilot": {
+   "desc_en": "the pilot, a man in his mid 30s as a miniature 3D figurine with a smooth featureless face, short light brown hair, plain dark gray zip jacket with no print, dark jeans"
+  }
+ },
+ "cuts": [
+  {
+   "id": "C02",
+   "image": "ヘリの横に、黒い服とマスクの男のフィギュアが3体並ぶ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Three robbers standing in a row on the flat roof next to the white helicopter at night. Three people only. Empty hands, no visible weapons, no text.",
+   "chars": [
+    "robbers"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. Three robbers standing in a row on the flat roof next to the white helicopter at night. Three people only. Empty hands, no visible weapons, no text."
+  },
+  {
+   "id": "C03",
+   "image": "割れたガラスのピラミッドに銀色のはしごが差しこまれ、黒い服の男が降りていく",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A long silver aluminum ladder pushed down through the broken glass pyramid skylight; one robber climbing down it into the bright room below. One person only. No visible weapons, no text.",
+   "chars": [
+    "robbers"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. A long silver aluminum ladder pushed down through the broken glass pyramid skylight; one robber climbing down it into the bright room below. One person only. No visible weapons, no text."
+  },
+  {
+   "id": "C04",
+   "image": "厚い金属の扉が、白い煙を少し出して外れかけている",
+   "image_en": "A heavy gray steel door model bent open and hanging off its hinges, a small puff of white dust around it. No fire, no people, no text.",
+   "en": "A heavy gray steel door model bent open and hanging off its hinges, a small puff of white dust around it. No fire, no people, no text."
+  },
+  {
+   "id": "C05",
+   "image": "白い部屋で、灰色の作業着の職員たちが顔を上げて天井を見る",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Inside a bright plain room, four depot staff stop their work at desks and look up toward the ceiling. Four people only. No text.",
+   "chars": [
+    "staff"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. Inside a bright plain room, four depot staff stop their work at desks and look up toward the ceiling. Four people only. No text."
+  },
+  {
+   "id": "C06",
+   "image": "分厚い扉の小部屋の中に、職員たちが身を寄せ合っている。扉は閉まっている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A cutaway model of a small safe room with a thick closed steel door; inside, four depot staff sit close together on the floor, safe and calm. Four people only. No injuries, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A cutaway model of a small safe room with a thick closed steel door; inside, four depot staff sit close together on the floor, safe and calm. Four people only. No injuries, no text."
+  },
+  {
+   "id": "C07",
+   "image": "金網のおりの前で、黒い服の男が丸い刃の工具を当て、火花が少し散る",
+   "image_en": "Set in 2009, no year plaque, no caption plate. One robber cutting into a tall wire-mesh cage full of gray bags with a handheld circular power cutter, a few small orange sparks. One person only. No visible weapons, no text.",
+   "chars": [
+    "robbers"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. One robber cutting into a tall wire-mesh cage full of gray bags with a handheld circular power cutter, a few small orange sparks. One person only. No visible weapons, no text."
+  },
+  {
+   "id": "C08",
+   "image": "はしごの上から、灰色の袋がロープで屋上へ引き上げられている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Cutaway of the depot: plain gray canvas bags being hauled up on a rope through the broken skylight toward the white helicopter on the roof; two robbers on the roof pulling. Two people only. No text.",
+   "chars": [
+    "robbers"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. Cutaway of the depot: plain gray canvas bags being hauled up on a rope through the broken skylight toward the white helicopter on the roof; two robbers on the roof pulling. Two people only. No text."
+  },
+  {
+   "id": "C09",
+   "image": "建物の前の道に、無地の濃い色の車が2台止まり、紺の制服の警察官が降りる",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Two plain dark police cars with no markings and blank plates stop on the street in front of the gray depot building; three police officers step out. Three people only. No text, no insignia.",
+   "chars": [
+    "police"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. Two plain dark police cars with no markings and blank plates stop on the street in front of the gray depot building; three police officers step out. Three people only. No text, no insignia."
+  },
+  {
+   "id": "C11",
+   "image": "警察官が車の陰で無線を耳に当て、遠くを見ている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Only one person: a police officer crouching behind a plain dark car, holding a radio handset to his ear and looking toward the building. No visible weapons, no text, no insignia.",
+   "en": "Set in 2009, no year plaque, no caption plate. Only one person: a police officer crouching behind a plain dark car, holding a radio handset to his ear and looking toward the building. No visible weapons, no text, no insignia."
+  },
+  {
+   "id": "C12",
+   "image": "下から見上げる角度。白いヘリが屋上から離れ、夜明けの空へ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Low angle from the street looking up: the robbers' small white helicopter lifting away from the depot roof into the pale dawn sky; small police officer figurines at the bottom edge looking up. No text.",
+   "en": "Set in 2009, no year plaque, no caption plate. Low angle from the street looking up: the robbers' small white helicopter lifting away from the depot roof into the pale dawn sky; small police officer figurines at the bottom edge looking up. No text."
+  },
+  {
+   "id": "D01",
+   "image": "夜明けの空に、白いヘリが小さく遠ざかっていく",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A wide pale dawn sky over a miniature city and water; the robbers' small white helicopter far away and small, flying north. No other aircraft, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A wide pale dawn sky over a miniature city and water; the robbers' small white helicopter far away and small, flying north. No other aircraft, no text."
+  },
+  {
+   "id": "D02",
+   "image": "格納庫の中に、濃い青の警察のヘリが2機並ぶ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Inside a clean hangar, two plain dark blue police helicopters parked side by side. No people, no markings, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. Inside a clean hangar, two plain dark blue police helicopters parked side by side. No people, no markings, no text."
+  },
+  {
+   "id": "D04",
+   "image": "島の上の小さな基地の模型。格納庫の扉の前に黒い袋",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A small island diorama with a little police helicopter base: a hangar and a helipad; in front of the hangar door one plain black duffel bag lies on the ground. No people, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A small island diorama with a little police helicopter base: a hangar and a helipad; in front of the hangar door one plain black duffel bag lies on the ground. No people, no text."
+  },
+  {
+   "id": "D06",
+   "image": "黒い袋から離れて、警察官たちが立ち止まり、周りに赤いテープが張られている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A plain black duffel bag on the ground, surrounded at a distance by a ring of red barrier tape; three police officers stand behind the tape, not approaching. Three people only. No text on the tape or bag, no insignia.",
+   "chars": [
+    "police"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. A plain black duffel bag on the ground, surrounded at a distance by a ring of red barrier tape; three police officers stand behind the tape, not approaching. Three people only. No text on the tape or bag, no insignia."
+  },
+  {
+   "id": "D07",
+   "image": "開いた黒い袋の中に、ただの丸めた布と灰色の箱",
+   "image_en": "An open plain black duffel bag in the empty white space; inside it only crumpled cloth and an empty gray box, nothing dangerous. No text, no people.",
+   "en": "An open plain black duffel bag in the empty white space; inside it only crumpled cloth and an empty gray box, nothing dangerous. No text, no people."
+  },
+  {
+   "id": "D08",
+   "image": "黒い袋の模型が、濃い青のヘリの前に、壁のように大きく立ちはだかる",
+   "image_en": "Surreal scale: a giant plain black duffel bag standing in front of a small plain dark blue police helicopter like a wall, in the empty white space. No text, no people.",
+   "en": "Surreal scale: a giant plain black duffel bag standing in front of a small plain dark blue police helicopter like a wall, in the empty white space. No text, no people."
+  },
+  {
+   "id": "D09",
+   "image": "道路の上に、とがった金属の小さな星形の金具がたくさん散らばっている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A strip of gray road diorama scattered with many small four-pointed steel caltrops. No cars, no people, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A strip of gray road diorama scattered with many small four-pointed steel caltrops. No cars, no people, no text."
+  },
+  {
+   "id": "D10",
+   "image": "濃い色の車が金具の上で止まり、タイヤがしぼんでいる",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A plain dark car with no markings stopped on the road with its front tire flat, steel caltrops on the road around it. No people, no text, no license plate text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A plain dark car with no markings stopped on the road with its front tire flat, steel caltrops on the road around it. No people, no text, no license plate text."
+  },
+  {
+   "id": "D11",
+   "image": "灰色の戦闘機の模型が2機、白い空間に浮かぶ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Two plain gray jet fighter models flying side by side in the empty white space, no markings, no roundels, no text, no weapons visible.",
+   "en": "Set in 2009, no year plaque, no caption plate. Two plain gray jet fighter models flying side by side in the empty white space, no markings, no roundels, no text, no weapons visible."
+  },
+  {
+   "id": "E01",
+   "image": "森と湖の模型の上を、白いヘリが低く飛ぶ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A miniature landscape of dark pine forests and small lakes in early morning light; the robbers' small white helicopter flies low over the trees. No people, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A miniature landscape of dark pine forests and small lakes in early morning light; the robbers' small white helicopter flies low over the trees. No people, no text."
+  },
+  {
+   "id": "E02",
+   "image": "森のすき間の地面に、白いヘリが乗り捨てられている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. The robbers' small white helicopter left alone in a small clearing among pine trees, door open, morning light. No people, no text.",
+   "en": "Set in 2009, no year plaque, no caption plate. The robbers' small white helicopter left alone in a small clearing among pine trees, door open, morning light. No people, no text."
+  },
+  {
+   "id": "E03",
+   "image": "ヘリの開いた扉から中が見える。座席は空っぽ",
+   "image_en": "Close view into the open side door of the white helicopter: empty seats, nothing inside, a few dry pine needles on the floor. No people, no bags, no text.",
+   "en": "Close view into the open side door of the white helicopter: empty seats, nothing inside, a few dry pine needles on the floor. No people, no bags, no text."
+  },
+  {
+   "id": "E04",
+   "image": "森のヘリの周りに、紺の制服の警察官たちが立ち、黄色ではなく赤いテープで囲む",
+   "image_en": "Set in 2009, no year plaque, no caption plate. In the forest clearing, the white helicopter is surrounded by red barrier tape; three police officers stand around it. Three people only. No text, no insignia.",
+   "chars": [
+    "police"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. In the forest clearing, the white helicopter is surrounded by red barrier tape; three police officers stand around it. Three people only. No text, no insignia."
+  },
+  {
+   "id": "E06",
+   "image": "森の地図の模型の上に、白いヘリの道筋が点線で描かれ、途中が空白になっている",
+   "image_en": "A small relief map model of forests and lakes in the empty white space; a dotted gray line shows a flight path that fades out in the middle with a blank gap. No text, no numbers.",
+   "en": "A small relief map model of forests and lakes in the empty white space; a dotted gray line shows a flight path that fades out in the middle with a blank gap. No text, no numbers."
+  },
+  {
+   "id": "E07",
+   "image": "森の模型の上に、小さな黒い人影がばらばらの方向へ散っている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A forest diorama seen from high above; tiny dark figurine silhouettes scattered walking away in different directions. No text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A forest diorama seen from high above; tiny dark figurine silhouettes scattered walking away in different directions. No text."
+  },
+  {
+   "id": "F01",
+   "image": "白い作業服の調べる人が、ヘリの操縦席をライトで照らしている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Two investigators in white coveralls searching the cockpit of the white helicopter with flashlights in the forest clearing. Two people only. No text.",
+   "chars": [
+    "investigators"
+   ],
+   "en": "Set in 2009, no year plaque, no caption plate. Two investigators in white coveralls searching the cockpit of the white helicopter with flashlights in the forest clearing. Two people only. No text."
+  },
+  {
+   "id": "F02",
+   "image": "操縦席に取り付けられた小さな黒い四角い機械",
+   "image_en": "Close-up of a helicopter cockpit dashboard; a small black handheld GPS unit is mounted on it, its screen dark. No readable text, no logo, no numbers.",
+   "en": "Close-up of a helicopter cockpit dashboard; a small black handheld GPS unit is mounted on it, its screen dark. No readable text, no logo, no numbers."
+  },
+  {
+   "id": "F04",
+   "image": "白い空間に、大きな黒いGPSの機械の模型。画面は暗い",
+   "image_en": "A large model of a plain black handheld GPS unit standing upright in the empty white space under a spotlight, its screen dark and blank. No text, no logo, no numbers.",
+   "en": "A large model of a plain black handheld GPS unit standing upright in the empty white space under a spotlight, its screen dark and blank. No text, no logo, no numbers."
+  },
+  {
+   "id": "F05",
+   "image": "同じGPSの機械の画面に、赤い線の道筋と赤い点が光る",
+   "image_en": "The same large model of the plain black handheld GPS unit in the same spot and angle; now its screen glows and shows a simple red route line with three small red dots on a plain gray background. No text, no numbers, no map labels.",
+   "en": "The same large model of the plain black handheld GPS unit in the same spot and angle; now its screen glows and shows a simple red route line with three small red dots on a plain gray background. No text, no numbers, no map labels."
+  },
+  {
+   "id": "F06",
+   "image": "地図の模型の上に、赤い線の道筋と、3つの赤い画びょう",
+   "image_en": "A small relief map model of land and water in the empty white space; a red string route runs across it with three red push pins marking stops. No text, no labels, no numbers.",
+   "en": "A small relief map model of land and water in the empty white space; a red string route runs across it with three red push pins marking stops. No text, no labels, no numbers."
+  },
+  {
+   "id": "F07",
+   "image": "白い作業服の手袋の手が、黒い結束バンドを透明な袋に入れている",
+   "image_en": "Close-up: two hands in white gloves putting a black plastic cable tie into a clear evidence bag, in the empty white space. No text on the bag, no faces.",
+   "en": "Close-up: two hands in white gloves putting a black plastic cable tie into a clear evidence bag, in the empty white space. No text on the bag, no faces."
+  },
+  {
+   "id": "F08",
+   "image": "2本の試験管が並び、その間に赤い線がつながる",
+   "image_en": "Two clear sample tubes standing side by side in the empty white space with a red thread connecting them. No text, no labels.",
+   "en": "Two clear sample tubes standing side by side in the empty white space with a red thread connecting them. No text, no labels."
+  },
+  {
+   "id": "F09",
+   "image": "コルクボードに、顔が黒く塗られた男の写真が赤い画びょうでとまる",
+   "image_en": "A cork board in the empty white space; one big pinned photo of the pilot whose face area is painted solid black, held by a red push pin. No readable text.",
+   "chars": [
+    "pilot"
+   ],
+   "en": "A cork board in the empty white space; one big pinned photo of the pilot whose face area is painted solid black, held by a red push pin. No readable text."
+  },
+  {
+   "id": "F10",
+   "image": "空のヘリと地上の小さな車の間を、赤い点線が行き来している",
+   "image_en": "The white helicopter floating in the empty white space and a small plain dark car on the floor below, with a red dotted line zigzagging between them like a signal. No text, no people.",
+   "en": "The white helicopter floating in the empty white space and a small plain dark car on the floor below, with a red dotted line zigzagging between them like a signal. No text, no people."
+  },
+  {
+   "id": "F11",
+   "image": "白いヘリの模型の前に、GPSの機械と黒い結束バンドが並んで光っている",
+   "image_en": "The white helicopter model in the empty white space, and in front of it a small black GPS unit and a black cable tie placed side by side under a spotlight. No text, no people.",
+   "en": "The white helicopter model in the empty white space, and in front of it a small black GPS unit and a black cable tie placed side by side under a spotlight. No text, no people."
+  },
+  {
+   "id": "F12",
+   "image": "地球儀の模型の上に、赤い画びょうが遠くの島と国に刺さっている",
+   "image_en": "A plain white globe model with no labels in the empty white space; red push pins stuck in a far island and a far country, connected by red threads. No text, no flags.",
+   "en": "A plain white globe model with no labels in the empty white space; red push pins stuck in a far island and a far country, connected by red threads. No text, no flags."
+  },
+  {
+   "id": "F13",
+   "image": "白い空間に、無地の服の若い男のフィギュアが6体、間をあけて並ぶ",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Six young men in plain dark casual clothes standing in a row with space between them in the empty white space, heads slightly down. Six people only, all men. No text, no handcuffs visible.",
+   "en": "Set in 2009, no year plaque, no caption plate. Six young men in plain dark casual clothes standing in a row with space between them in the empty white space, heads slightly down. Six people only, all men. No text, no handcuffs visible."
+  },
+  {
+   "id": "G01",
+   "image": "法廷の模型。被告の席に男のフィギュアが10体並ぶ",
+   "image_en": "Set in 2010, no year plaque, no caption plate. A small Scandinavian courtroom diorama seen from above; ten men in plain clothes sit in two rows of defendant benches facing the judge's bench. No text, no flags.",
+   "en": "Set in 2010, no year plaque, no caption plate. A small Scandinavian courtroom diorama seen from above; ten men in plain clothes sit in two rows of defendant benches facing the judge's bench. No text, no flags."
+  },
+  {
+   "id": "G02",
+   "image": "証言台の前に、灰色の上着の男のフィギュアが立ち、両手を広げている",
+   "image_en": "Set in 2010, no year plaque, no caption plate. Only one person: the pilot standing at a witness stand in a courtroom, both hands open as if explaining. No text.",
+   "chars": [
+    "pilot"
+   ],
+   "en": "Set in 2010, no year plaque, no caption plate. Only one person: the pilot standing at a witness stand in a courtroom, both hands open as if explaining. No text."
+  },
+  {
+   "id": "G03",
+   "image": "白い空間に、黒い結束バンドの束が1つ",
+   "image_en": "A bundle of black plastic cable ties lying alone in the empty white space under a spotlight. No text, no people.",
+   "en": "A bundle of black plastic cable ties lying alone in the empty white space under a spotlight. No text, no people."
+  },
+  {
+   "id": "G04",
+   "image": "裁判官の机で小槌が振り下ろされる",
+   "image_en": "Set in 2010, no year plaque, no caption plate. A judge's wooden gavel striking the sound block on the bench, seen close. No faces, no text.",
+   "en": "Set in 2010, no year plaque, no caption plate. A judge's wooden gavel striking the sound block on the bench, seen close. No faces, no text."
+  },
+  {
+   "id": "G05",
+   "image": "天秤の模型。片方の皿に重りが1つ足される",
+   "image_en": "A brass balance scale model in the empty white space; one pan holds two small dark figurines, and a red weight is being added to the other pan. No text.",
+   "en": "A brass balance scale model in the empty white space; one pan holds two small dark figurines, and a red weight is being added to the other pan. No text."
+  },
+  {
+   "id": "G06",
+   "image": "チェス盤の模型で、黒いキングの駒が倒れている",
+   "image_en": "A small chessboard model in the empty white space; a black king piece lies toppled on its side. No text, no people.",
+   "en": "A small chessboard model in the empty white space; a black king piece lies toppled on its side. No text, no people."
+  },
+  {
+   "id": "G07",
+   "image": "交差点の模型で、2台の無地の車が軽くぶつかって止まっている",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A small road intersection diorama at night; two plain cars with no badges have lightly bumped into each other and stopped. No people, no injuries, no license plate text.",
+   "en": "Set in 2009, no year plaque, no caption plate. A small road intersection diorama at night; two plain cars with no badges have lightly bumped into each other and stopped. No people, no injuries, no license plate text."
+  },
+  {
+   "id": "G08",
+   "image": "白い空間で、男のフィギュア3体が開いた扉から出ていく後ろ姿",
+   "image_en": "Three men in plain clothes seen from behind walking out through an open white door in the empty white space. Three people only. No text.",
+   "en": "Three men in plain clothes seen from behind walking out through an open white door in the empty white space. Three people only. No text."
+  },
+  {
+   "id": "G10",
+   "image": "黒い袋の模型の上に、大きな赤い？の形が浮かぶ",
+   "image_en": "A plain black duffel bag in the empty white space with a large red question mark shape floating above it. No text, no people.",
+   "en": "A plain black duffel bag in the empty white space with a large red question mark shape floating above it. No text, no people."
+  },
+  {
+   "id": "G11",
+   "image": "大きな空の袋の山の横に、小さな灰色の袋が1つだけ",
+   "image_en": "A big heap of empty flat gray canvas bags, and next to it only one tiny full gray bag, in the empty white space. No text, no numbers.",
+   "en": "A big heap of empty flat gray canvas bags, and next to it only one tiny full gray bag, in the empty white space. No text, no numbers."
+  },
+  {
+   "id": "G12",
+   "image": "コルクボードに、黒い紙で隠された写真がたくさん並ぶ",
+   "image_en": "A cork board in the empty white space covered with many small pinned photos that are fully covered by black paper, joined by loose red threads. No readable text, no faces.",
+   "en": "A cork board in the empty white space covered with many small pinned photos that are fully covered by black paper, joined by loose red threads. No readable text, no faces."
+  },
+  {
+   "id": "H01",
+   "image": "白い空間に、建物・ヘリ・警察の車・袋の模型がチェスの駒のように並ぶ盤",
+   "image_en": "Set in 2009, no year plaque, no caption plate. A large board game style diorama in the empty white space: the gray depot building, the white helicopter, two small police cars and a black duffel bag placed like game pieces on a plain grid. No text, no people.",
+   "en": "Set in 2009, no year plaque, no caption plate. A large board game style diorama in the empty white space: the gray depot building, the white helicopter, two small police cars and a black duffel bag placed like game pieces on a plain grid. No text, no people."
+  },
+  {
+   "id": "H03",
+   "image": "白い空間に、赤い一時停止の形の札が立ち、前で小さな人が立ち止まっている",
+   "image_en": "A red octagon-shaped sign with no text standing in the empty white space; a small plain figurine has stopped in front of it. One person only. No letters on the sign.",
+   "en": "A red octagon-shaped sign with no text standing in the empty white space; a small plain figurine has stopped in front of it. One person only. No letters on the sign."
+  },
+  {
+   "id": "H04",
+   "image": "白い空間に、今のスマホの模型。画面に赤い警告の三角が光る",
+   "image_en": "A modern smartphone model lying in the empty white space; its screen shows only a big red warning triangle icon. No text, no logo.",
+   "en": "A modern smartphone model lying in the empty white space; its screen shows only a big red warning triangle icon. No text, no logo."
+  },
+  {
+   "id": "H05",
+   "image": "スマホの画面から赤い糸が伸び、小さな人のフィギュアの手足につながる",
+   "image_en": "A smartphone model in the empty white space; red strings come out of its screen and are tied to the arms of a small plain figurine like a puppet. One person only. No text.",
+   "en": "A smartphone model in the empty white space; red strings come out of its screen and are tied to the arms of a small plain figurine like a puppet. One person only. No text."
+  },
+  {
+   "id": "H06",
+   "image": "白い空間に、3枚の大きなカードの模型が並ぶ",
+   "image_en": "Three large blank cards standing in a row in the empty white space, each with a simple red icon: a crossed-out link chain, a house-shaped door, and an hourglass. No text.",
+   "en": "Three large blank cards standing in a row in the empty white space, each with a simple red icon: a crossed-out link chain, a house-shaped door, and an hourglass. No text."
+  },
+  {
+   "id": "H08",
+   "image": "濃い青の警察のヘリと、その前の黒い袋を、真上から見る",
+   "image_en": "Set in 2009, no year plaque, no caption plate. Top-down view: a plain dark blue police helicopter on a helipad, and a plain black duffel bag lying a few meters in front of it. No people, no text, no markings.",
+   "en": "Set in 2009, no year plaque, no caption plate. Top-down view: a plain dark blue police helicopter on a helipad, and a plain black duffel bag lying a few meters in front of it. No people, no text, no markings."
+  }
+ ]
+}
