@@ -1001,5 +1001,85 @@
   ],
   "hold": false,
   "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-18）。同じ職業の型C の回から8週あけて 2027-01-13 から"
+ },
+ {
+  "id": "c_j067",
+  "title": "銀行・証券の営業",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j067"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-20）。統計の職種「金融営業職業従事者」"
+ },
+ {
+  "id": "c4_j067",
+  "title": "銀行・証券の営業の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-15",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j067"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-20）。同じ職業の型C の回から8週あけて 2027-01-15 から"
+ },
+ {
+  "id": "c_j037",
+  "title": "高校の先生",
+  "type": "C",
+  "frame": "C",
+  "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+  "window_start": "",
+  "window_end": "",
+  "data_ref": "",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "c_facts.py",
+   "make",
+   "{work}",
+   "j037"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-20）。統計の職種「高等学校教員」"
+ },
+ {
+  "id": "c4_j037",
+  "title": "高校の先生の一生",
+  "type": "C",
+  "frame": "C-4",
+  "target": "20〜50代で、今の仕事を続けた先の年収の合計が気になっている会社員",
+  "window_start": "2027-01-15",
+  "window_end": "",
+  "data_ref": "data/job/a1c_r7.json（賃金構造基本統計 第5表の年齢階級・第1表の産業計）",
+  "premise_numbers": [],
+  "expected_top": "",
+  "facts_cmd": [
+   "isshou_facts.py",
+   "make",
+   "{work}",
+   "j037"
+  ],
+  "hold": false,
+  "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-20）。同じ職業の型C の回から8週あけて 2027-01-15 から"
  }
 ]
