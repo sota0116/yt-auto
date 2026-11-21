@@ -1,0 +1,218 @@
+{
+ "at": "2026-11-22T03:20+09:00",
+ "pc": {
+  "mem": {
+   "freeMb": 21504,
+   "totalMb": 65277
+  },
+  "need": 1500,
+  "apps": [
+   {
+    "name": "Chrome",
+    "mb": 13139,
+    "n": 84
+   },
+   {
+    "name": "Claude",
+    "mb": 6609,
+    "n": 32
+   },
+   {
+    "name": "Cursor",
+    "mb": 5908,
+    "n": 21
+   },
+   {
+    "name": "Node",
+    "mb": 2846,
+    "n": 70
+   },
+   {
+    "name": "Python",
+    "mb": 28,
+    "n": 2
+   }
+  ],
+  "jobs": [],
+  "works": [
+   {
+    "ch": "shinshiten",
+    "work": "004",
+    "kind": "long",
+    "stage": "pick",
+    "at": "2026-11-22T03:17+09:00",
+    "auto": true
+   },
+   {
+    "ch": "shinshiten",
+    "work": "003",
+    "kind": "long",
+    "stage": "upload",
+    "at": "2026-11-22T02:50+09:00",
+    "auto": true,
+    "done": true
+   },
+   {
+    "ch": "okinu",
+    "work": "028",
+    "kind": "long",
+    "stage": "thumb",
+    "at": "2026-11-22T02:25+09:00",
+    "auto": true,
+    "done": true
+   }
+  ],
+  "heavy": null,
+  "autoLong": {
+   "task": "ready",
+   "state": "running",
+   "nextAt": "2026-11-22T04:30:00",
+   "lastAt": "2026-11-22T02:52+09:00",
+   "ch": "shinshiten",
+   "stock": {
+    "nihongi": {
+     "n": 1,
+     "last": "2026-11-23",
+     "taken": [
+      "2026-11-23"
+     ]
+    },
+    "spi": {
+     "n": 1,
+     "last": "2026-11-22",
+     "taken": [
+      "2026-11-22"
+     ]
+    },
+    "okinu": {
+     "n": 0,
+     "last": "",
+     "taken": []
+    },
+    "kakure": {
+     "n": 6,
+     "last": "2026-12-03",
+     "taken": [
+      "2026-11-23",
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-29",
+      "2026-12-01",
+      "2026-12-03"
+     ]
+    },
+    "shimei": {
+     "n": 6,
+     "last": "2026-12-02",
+     "taken": [
+      "2026-11-22",
+      "2026-11-24",
+      "2026-11-26",
+      "2026-11-28",
+      "2026-11-30",
+      "2026-12-02"
+     ]
+    },
+    "shinshiten": {
+     "n": 1,
+     "last": "2026-11-22",
+     "taken": [
+      "2026-11-22"
+     ]
+    }
+   },
+   "since": "2026-11-22T02:52+09:00"
+  },
+  "tasks": {
+   "auto": {
+    "state": "Running",
+    "last": "2026-11-22T02:52:53",
+    "next": "2026-11-22T04:30:00",
+    "res": 267009
+   },
+   "status": {
+    "state": "Running",
+    "last": "2026-11-22T03:20:01",
+    "next": "2026-11-22T03:50:00",
+    "res": 267009
+   }
+  }
+ },
+ "cloud": {
+  "at": "2026-11-22T03:20+09:00",
+  "ch": {
+   "job": {
+    "ok24": 7,
+    "fail24": 0,
+    "state": "running",
+    "at": "2026-11-22T02:57+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "nihongi": {
+    "ok24": 6,
+    "fail24": 0,
+    "state": "running",
+    "at": "2026-11-22T02:57+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "psy": {
+    "ok24": 5,
+    "fail24": 2,
+    "state": "running",
+    "at": "2026-11-22T01:20+09:00",
+    "end": null,
+    "wf": "daily",
+    "step": "作る"
+   },
+   "okinu": {
+    "ok24": 8,
+    "fail24": 0,
+    "state": "ok",
+    "at": "2026-11-22T02:57+09:00",
+    "end": "2026-11-22T02:59+09:00",
+    "wf": "daily",
+    "step": null
+   }
+  },
+  "wf": [
+   {
+    "name": "daily",
+    "state": "pending",
+    "at": "2026-11-22T02:57+09:00"
+   },
+   {
+    "name": "agent",
+    "state": "success",
+    "at": "2026-11-22T02:29+09:00"
+   },
+   {
+    "name": "watch",
+    "state": "success",
+    "at": "2026-11-22T01:43+09:00"
+   },
+   {
+    "name": "dashboard",
+    "state": "success",
+    "at": "2026-11-21T20:39+09:00"
+   },
+   {
+    "name": "shorts",
+    "state": "success",
+    "at": "2026-11-21T10:48+09:00"
+   },
+   {
+    "name": "research",
+    "state": "cancelled",
+    "at": "2026-11-21T07:40+09:00"
+   }
+  ],
+  "ok24": 26,
+  "fail24": 2,
+  "running": 3
+ },
+ "errors": []
+}
