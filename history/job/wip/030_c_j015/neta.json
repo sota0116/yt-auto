@@ -1,0 +1,23 @@
+{
+ "id": "c_j015",
+ "title": "歯科医師",
+ "type": "C",
+ "frame": "C",
+ "target": "その仕事に就こうか迷っている、または今その仕事をしている20〜40代",
+ "window_start": "",
+ "window_end": "",
+ "data_ref": "",
+ "premise_numbers": [],
+ "expected_top": "",
+ "facts_cmd": [
+  "c_facts.py",
+  "make",
+  "{work}",
+  "j015"
+ ],
+ "hold": false,
+ "メモ": "ネタ帳の自動補充（refill_job_neta.py・2026-11-17）。統計の職種「歯科医師」",
+ "made": "2026-11-22",
+ "順番の型": "D",
+ "回した理由": "順番は型Dだったが、作れるネタが無いか決まりに当たるため型Cに回した"
+}
