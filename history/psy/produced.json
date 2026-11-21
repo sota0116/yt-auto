@@ -988,5 +988,71 @@
    ]
   },
   "short_video_id": "Y0osrtOCsxk"
+ },
+ {
+  "work": "025_kuchiguse",
+  "type": "人づきあい",
+  "frame": "人づきあい",
+  "neta_id": "p_kuchiguse",
+  "jobs": [],
+  "made": "2026-11-22",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】「でも」「だって」が口ぐせの人の正体｜うれしい話への返事に、2か月後の2人が表れていた",
+  "titles": [
+   "【心理学】「でも」「だって」が口ぐせの人の正体｜うれしい話への返事に、2か月後の2人が表れていた",
+   "【心理学】何を勧めても「でもね」と返す人、実は悪い場合を先に考えて心配を小さくしています。",
+   "【心理学】「でも」が口ぐせの人に共通する5つの特徴｜130組の夫婦に見えた「だって」の重さ"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "題材は neta.json（「でも」「だって」が口ぐせの人・人づきあい。元はちょっとダークな心理学「他責思考 何でも他人のせいにする人の口癖」7万回）のまま。章の並びは競合メモの型1（qnOHXxPCR68・zrWk9ZuTOZY・phvWpG44ifY：つかみ、同じ言い方の特徴5つ、工夫の章、まとめ）。題の1番目は型D「〇〇な人の正体」（neta の題の型・学び.md の型C/D が多い）で、「｜」の後ろは答えを言い切らない一言。2番目は型B（qnOHXxPCR68・Nynyw3qGf3s の「〇〇な人、実は〇〇」に答えを書いた形）、3番目は型C。つかみは構成見本 v5 の、ひっくり返す文のあとに結論1つ（けなすとかしこく見える）と答えの一部を置く形（ひととき心理学 kwUIsy6FAEE・XTpsvMNmLac）。競合メモの試すこと1：つかみを約330字・12カットにし、前提の章を13カットに短くした。試すこと2（型Bを1番目に・人の前に場面の時間の数字）は、学び.md で型C/Dの再生が多いことと、この回の場面に時刻の数字が無いことから2番目の案に回した。試すこと3（サムネの上の段に時間の数字）はB案の「2か月後」に入れた。サムネの欲求は「隠れた答えを知りたい」「自分のことか確かめたい」（qnOHXxPCR68）。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:23 人の案は、誰でも軽く聞く",
+   "2:44 特徴1　悪い場合を先に考える",
+   "5:26 特徴2　でもの人は、かしこく見える",
+   "7:30 特徴3　「だって」は話の戸を閉める",
+   "9:37 特徴4　うれしい話にも「でも」",
+   "11:50 特徴5　うれしい話への返しが分かれ目",
+   "14:29 「でも」と上手に付き合う3つの工夫",
+   "16:49 まとめ"
+  ],
+  "video_id": "ULjJ-p53MYw",
+  "回した理由": null,
+  "studies": [
+   "Yaniv & Kleinberger (2000) Organizational Behavior and Human Decision Processes",
+   "Norem & Cantor (1986) Journal of Personality and Social Psychology",
+   "Amabile (1983) Journal of Experimental Social Psychology",
+   "Gottman, Coan, Carrere & Swanson (1998) Journal of Marriage and Family",
+   "Gable, Reis, Impett & Asher (2004) Journal of Personality and Social Psychology",
+   "Gable, Gonzaga & Strachman (2006) Journal of Personality and Social Psychology",
+   "Reis, Smith, Carmichael, Caprariello, Tsai, Rodrigues & Maniaci (2010) Journal of Personality and Social Psychology",
+   "Itzchakov, Kluger & Castro (2017) Personality and Social Psychology Bulletin"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 7,
+   "章": [
+    8,
+    5,
+    8,
+    8,
+    7,
+    7,
+    7,
+    6,
+    5
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "1文目は伏せすぎず「友だちの『でもね』は、じつは自分の心配を小さくする工夫で、しかも、かしこく見えていた」と先に1つ驚きを見せ、A02以降の場面と「ありませんか」の問いはそのまま後ろに回す。",
+    "B04〜B07が研究の説明の並びになっているので、「あなたも、友だちの助言を軽く聞いていませんでしたか」と聞き手自身に向け、自分のことだと思える場面から入る形に直す。",
+    "I02〜I06は5つの特徴をただ読み返すだけなので、「でもの人は、心配しているだけ」という人に話したくなる一言を中心にして、数を並べる量を減らす。"
+   ]
+  },
+  "short_video_id": "Dte5fDu4M5Y"
  }
 ]
