@@ -1144,5 +1144,35 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-20T11:01:33+09:00"
+ },
+ {
+  "work": "20261121_1050_k0",
+  "topic_id": "kigyo_shoken",
+  "kind": "kigyo",
+  "measure": "企業_証券",
+  "title": "もし野村證券に就職したら｜入社から定年前まで、年収の山はどこ？ #年収 #就活 #証券会社",
+  "hook": "どこに\n入る？",
+  "banner": null,
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_01_tense.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-21T12:50:18+09:00"
+ },
+ {
+  "work": "20261121_1250_r1",
+  "topic_id": "routine_医師",
+  "kind": "routine",
+  "measure": "1日_医療・福祉",
+  "title": "医師の1日｜メスより先にカルテを開く、朝7時半から夜7時 #年収 #仕事",
+  "hook": "メスの前に\n開く画面",
+  "banner": null,
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_01_tense.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-21T13:53:52+09:00"
  }
 ]
