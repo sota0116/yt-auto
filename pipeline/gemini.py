@@ -3,6 +3,7 @@
 # ・混んでいる（429・5xx）時は、待つ時間を倍にしながら5回までやり直す（設計書 §4・§5⑤）
 # ・ただし「1日の回数の上限」の 429 はやり直さず、終了コード 75 で止める（上限は太平洋時間の0時＝日本時間の16時（夏時間）か17時に戻る）
 # ・前払い残高が0（402）の時も、やり直さずに「残高を足して」と止める
+# ・「月の使用上限（spending cap）」の 429 もやり直さずに止める（2026-11-21。やり直しの待ちで research が2日続けて時間切れになった）
 # ・2026-10-24 から ask() はふだん Claude（claude -p・契約の範囲内）が答える。Gemini は前払い残高が0で、足さない方針。JUDGE=gemini で Gemini に戻せる
 # ・2026-11-17 本人「Gemini でパワーアップ」：支払い設定の無いプロジェクトの無料キー GEMINI_API_KEY_FREE を足した。
 #   使うのは ask_media()（動画・音声をそのまま見る／聞く。YouTube の URL も渡せる）だけ。Claude が見られない物だけを Gemini に回す。
@@ -15,6 +16,7 @@ UPLOAD = "https://generativelanguage.googleapis.com/upload/v1beta/files"
 TEXT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-3.8-flash")
 MEDIA_MODEL = os.environ.get("GEMINI_MEDIA_MODEL", TEXT_MODEL)
 QUOTA_DAY = 75  # 1日の回数の上限に届いた時の終了コード
+SPEND_CAP = "Gemini の月の使用上限に届きました"  # 止まった時の文。research.py の watch() がこの文で残りを飛ばす
 
 
 def key(free=False):
@@ -50,6 +52,10 @@ def _req(method, path, body=None, timeout=300, free=False):
                 # 1日の回数の上限：やり直しても通らない。終了コード 75 で「あとで続き」と伝える（run_daily.py が失敗に数えない）
                 print("【回数の上限】Gemini の1日の上限に届きました（日本時間の16時か17時に戻る）", file=sys.stderr, flush=True)
                 raise SystemExit(QUOTA_DAY)
+            if e.code == 429 and "spending cap" in full.lower():
+                # 月の使用上限（2026-11-20 から無料キーで発生）：やり直しても月が替わるまで通らない。
+                # 4〜64秒の待ちを5回くり返すと1本約2分かかり、43本で約89分を待つだけで使って research が時間切れになった
+                raise SystemExit(f"【止まりました】{SPEND_CAP}（AI Studio の https://ai.studio/spend で確かめる）")
             if e.code == 402:  # 前払いの残高が0（2026-10-24 に2本目の声の作り直しで発生）。やり直しても通らない
                 raise SystemExit("【止まりました】Gemini の前払い残高がありません。AI Studio（https://ai.studio/projects）の支払いで残高を足すと、次の実行から続きを作ります")
             if e.code in (429, 500, 502, 503, 504) and i < 5:

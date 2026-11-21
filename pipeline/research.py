@@ -237,7 +237,7 @@ def watch(ch, hot, d):
             print(f"  Gemini で見ました：{r['id']}（{r['sec'] // 60}分・{u.get('totalTokenCount')}トークン）")
         except SystemExit as e:
             print(f"  Gemini で見られませんでした：{r['id']}（{e}）")
-            if e.code == gemini.QUOTA_DAY or "見つかりません" in str(e):  # 1日の上限・鍵が無い：残りも通らない
+            if e.code == gemini.QUOTA_DAY or "見つかりません" in str(e) or gemini.SPEND_CAP in str(e):  # 1日の上限・鍵が無い・月の使用上限：残りも通らない
                 break
         except (ValueError, KeyError, OSError) as e:  # 答えが JSON でない・通信が切れた：この回だけ飛ばす
             print(f"  Gemini で見られませんでした：{r['id']}（{type(e).__name__}）")
