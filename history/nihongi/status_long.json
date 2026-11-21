@@ -10,5 +10,8 @@
  "tries": 1,
  "code": "c2c4b3d4e3b4",
  "stage": "images",
- "updated": "2026-11-21T04:10:46+09:00"
+ "updated": "2026-11-21T04:10:46+09:00",
+ "busy": {
+  "images": 1
+ }
 }
