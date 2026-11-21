@@ -379,7 +379,7 @@
   "seconds": 37,
   "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
   "synthetic_on": null,
-  "views_now": 1057,
+  "views_now": 1060,
   "published": true,
   "published_at": "2026-11-13T19:00:05+09:00",
   "comment_id": "UgwwmBWEGDgzcB_ROHV4AaABAg",
@@ -537,7 +537,7 @@
   "seconds": 760,
   "title_now": "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
   "synthetic_on": null,
-  "views_now": 36,
+  "views_now": 37,
   "published": true,
   "published_at": "2026-11-19T18:00:00+09:00",
   "comment_id": "Ugz1HUAKRivBY36OwIB4AaABAg",
@@ -612,7 +612,7 @@
   "seconds": 37,
   "title_now": "【60代】重い小銭入れ、お札の財布に絶対入れないで",
   "synthetic_on": null,
-  "views_now": 22,
+  "views_now": 23,
   "published": true,
   "published_at": "2026-11-19T12:00:28+09:00",
   "comment_id": "UgyBHKVS7zvyj0_sTUJ4AaABAg",
@@ -637,7 +637,7 @@
   "seconds": 37,
   "title_now": "銀行の封筒、お札ごと財布にしまう人は今すぐ出して",
   "synthetic_on": null,
-  "views_now": 12,
+  "views_now": 62,
   "published": true,
   "published_at": "2026-11-20T19:00:26+09:00",
   "comment_id": "UgxyoOH4oIWloAbcKCt4AaABAg",
@@ -661,12 +661,16 @@
   "comment": "コメントで、数を教えてくださいね。",
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
-  "privacy_now": "private",
-  "publish_at": "2026-11-21T09:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 834,
   "title_now": "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-21T18:00:10+09:00",
+  "comment_id": "UgwsP2grYi4LpVf4uFh4AaABAg",
+  "comment_at": "2026-11-21T19:50:26+09:00"
  },
  {
   "work": "S128_神棚に置きっぱなしにする",
@@ -682,12 +686,16 @@
    "【60代】神棚に置きっぱなしにしてはいけない物3選"
   ],
   "comment": "あなたの神棚には、いくつ残っていましたか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-21T03:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 45,
   "title_now": "【60代】神棚に置きっぱなしにしてはいけない物3選",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1234,
+  "published": true,
+  "published_at": "2026-11-21T12:00:01+09:00",
+  "comment_id": "Ugw3vD9zJtxc9tm7r5d4AaABAg",
+  "comment_at": "2026-11-21T19:50:26+09:00"
  },
  {
   "work": "S129_神棚を置くとお金が逃げる",
@@ -788,7 +796,7 @@
   ],
   "comment": "あなたのお参りの服は、いくつ当たりましたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-26T19:00:00+09:00",
+  "publish_at": "2026-11-26T10:00:00Z",
   "seconds": 45,
   "title_now": "【60代】神社にお参りする時お金が逃げる服装3選",
   "synthetic_on": null,
@@ -803,11 +811,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-21T13:54:27+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】神社でやるとお金が逃げるお参りの仕方3選"
   ],
-  "comment": "あなたのお参り、3つのうちいくつでしたか。"
+  "comment": "あなたのお参り、3つのうちいくつでしたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-27T12:00:00+09:00",
+  "seconds": 43,
+  "title_now": "【60代】神社でやるとお金が逃げるお参りの仕方3選",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

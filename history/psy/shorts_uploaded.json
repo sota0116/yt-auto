@@ -708,7 +708,7 @@
   "seconds": 42,
   "title_now": "【心理学】いちばん大きないちごを、孫にあげてしまう人の「意外な特徴」 #shorts",
   "synthetic_on": null,
-  "views_now": 1,
+  "views_now": 4,
   "published": true,
   "published_at": "2026-11-20T22:10:01+09:00"
  },
@@ -725,12 +725,14 @@
    "時間が増えた気分"
   ],
   "uploaded_at": "2026-11-17T15:25:15+09:00",
-  "privacy_now": "private",
-  "publish_at": "2026-11-20T22:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 38,
   "title_now": "【心理学】忙しい年末に、人を手伝ってしまう人の正体 #shorts",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 190,
+  "published": true,
+  "published_at": "2026-11-21T07:10:27+09:00"
  },
  {
   "work": "018_ikigai_yakuwari",
@@ -745,12 +747,14 @@
    "若い人の3倍動く"
   ],
   "uploaded_at": "2026-11-17T15:25:17+09:00",
-  "privacy_now": "private",
-  "publish_at": "2026-11-21T03:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 37,
   "title_now": "【心理学】60代から、町内の当番を引き受けてしまう人の「意外な特徴」 #shorts",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 26,
+  "published": true,
+  "published_at": "2026-11-21T12:10:13+09:00"
  },
  {
   "work": "018_ikigai_yakuwari",
@@ -1064,7 +1068,13 @@
    "家族に聞いた迷子の話",
    "24人中7人が思い出した"
   ],
-  "uploaded_at": "2026-11-21T14:30:35+09:00"
+  "uploaded_at": "2026-11-21T14:30:35+09:00",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 51,
+  "title_now": "【心理学】家族に聞いた昔話を、自分の思い出だと覚えている人の意外な特徴 #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "024_omoide_kawaru",
@@ -1078,7 +1088,13 @@
    "姉と取り合う思い出",
    "双子のほとんどにあった"
   ],
-  "uploaded_at": "2026-11-21T14:30:37+09:00"
+  "uploaded_at": "2026-11-21T14:30:37+09:00",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 42,
+  "title_now": "【心理学】姉と昔話が食いちがう人の正体｜双子20組の、取り合いになった思い出 #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "024_omoide_kawaru",
@@ -1092,7 +1108,13 @@
    "聞いただけの物を",
    "10人に7人が見た"
   ],
-  "uploaded_at": "2026-11-21T14:30:39+09:00"
+  "uploaded_at": "2026-11-21T14:30:39+09:00",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 43,
+  "title_now": "【心理学】同窓会で昔話がそろっていく人の意外な特徴｜話し合った10人に7人に起きたこと #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "024_omoide_kawaru",
@@ -1106,6 +1128,12 @@
    "つらい思い出の",
    "いやな気持ちは早くあせる"
   ],
-  "uploaded_at": "2026-11-21T14:30:41+09:00"
+  "uploaded_at": "2026-11-21T14:30:41+09:00",
+  "privacy_now": "private",
+  "publish_at": null,
+  "seconds": 43,
+  "title_now": "【心理学】若いころの失敗が笑い話になる人、実はいやな気持ちから先にあせています。 #shorts",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

@@ -829,6 +829,18 @@
    ],
    "取った日": "2026-11-17",
    "再生（公開ページ）": 1241
+  },
+  "d7": {
+   "views": 92,
+   "averageViewPercentage": 77.16,
+   "averageViewDuration": 27,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-21",
+   "再生（公開ページ）": 1248
   }
  },
  "012_たんすのNG5": {
@@ -844,6 +856,15 @@
    ],
    "取った日": "2026-11-17",
    "再生（公開ページ）": 85
+  },
+  "d7": {
+   "views": 106,
+   "averageViewPercentage": 30.5,
+   "averageViewDuration": 228,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-21",
+   "再生（公開ページ）": 109
   }
  },
  "S121_レジの前でお札を数える手": {
@@ -945,7 +966,16 @@
  },
  "S125_財布の定位置の引き出し": {
   "type": null,
-  "video_id": "NBi9n-j4ne4"
+  "video_id": "NBi9n-j4ne4",
+  "h72": {
+   "views": 6,
+   "averageViewPercentage": 98.36,
+   "averageViewDuration": 36,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-21",
+   "再生（公開ページ）": 11
+  }
  },
  "106_ベランダ": {
   "type": null,
@@ -958,5 +988,13 @@
  "S127_銀行の封筒": {
   "type": null,
   "video_id": "nHqDo3fcTuQ"
+ },
+ "107_お風呂": {
+  "type": null,
+  "video_id": "0lDjD_P4N44"
+ },
+ "S128_神棚に置きっぱなしにする": {
+  "type": null,
+  "video_id": "cdTwp21IvGM"
  }
 }

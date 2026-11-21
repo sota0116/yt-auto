@@ -256,7 +256,16 @@
  },
  "019_tegami_kaku": {
   "type": "人づきあい",
-  "video_id": "MsH7YCEHcYA"
+  "video_id": "MsH7YCEHcYA",
+  "h72": {
+   "views": 7,
+   "averageViewPercentage": 30.48,
+   "averageViewDuration": 323,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-21",
+   "再生（公開ページ）": 28
+  }
  },
  "018_ikigai_yakuwari": {
   "type": "幸せの心理",
