@@ -924,5 +924,69 @@
    ]
   },
   "short_video_id": "g_ug1dAUa8o"
+ },
+ {
+  "work": "024_omoide_kawaru",
+  "type": "幸せの心理",
+  "frame": "幸せの心理",
+  "neta_id": "p_omoide_kawaru",
+  "jobs": [],
+  "made": "2026-11-21",
+  "hook_type": null,
+  "sub_copy": null,
+  "line_copy": null,
+  "name_copy": null,
+  "title": "【心理学】思い出話が話すたびに変わる人に共通する5つの特徴｜乗っていない気球を、半分の人が思い出した",
+  "titles": [
+   "【心理学】思い出話が話すたびに変わる人に共通する5つの特徴｜乗っていない気球を、半分の人が思い出した",
+   "【心理学】姉と昔話が食いちがう人、実は思い出を「組み立て直して」います。",
+   "【心理学】昔話が毎回少しちがう人の正体｜双子の2人ともが「私のこと」と覚えていた思い出"
+  ],
+  "thumb_text": null,
+  "thumb_kind": null,
+  "competitor_note": "題材は neta.json（思い出話が話すたびに変わる・幸せの心理）のまま。章の並びは競合メモの型1（ひととき心理学 zrWk9ZuTOZY・phvWpG44ifY、qnOHXxPCR68：つかみ、同じ言い方の特徴5つ、工夫の章、まとめ）。題の1番目は型C「〇〇な人に共通するN個の特徴」（競合メモのタイトルの部品「Nつの〇〇」ujE5kko7p-c・TQy6dzVvtsg、学び.md の型C）で、「｜」の後ろは答えを言わない一言（改善ログ 2026-11-12）。2番目は型B、3番目は型D。つかみは構成見本 v5 の、予告の前に数字1つ（10人に7人）と答えの形を見せる形（ひととき心理学 kwUIsy6FAEE・XTpsvMNmLac）。競合メモの試すこと1：つかみを約360字にして前提の章を短くした。試すこと3：まとめの問いを場面の一言で答えられる形（rRd6GSm0XT8）。試すこと2（サムネの上の段に時間の数字）は、この回の may_say に場面の時間の数字が無いので入れていない。サムネの欲求は「自分のことか確かめたい」（qnOHXxPCR68・rRd6GSm0XT8）。",
+  "learn_note": null,
+  "chapters": [
+   "0:00 はじめに",
+   "1:36 思い出は、しまったままではない",
+   "3:04 特徴1　中身が変わっても自信は残る",
+   "5:46 特徴2　いやな思い出は色があせる",
+   "8:08 特徴3　人の話が思い出に混ざる",
+   "10:27 特徴4　姉と思い出を取り合う",
+   "12:49 特徴5　聞いた話が思い出になる",
+   "16:19 思い出話を楽しむ3つの工夫",
+   "18:18 まとめ"
+  ],
+  "video_id": "U8RBxp7I0KE",
+  "回した理由": null,
+  "studies": [
+   "Talarico & Rubin (2003) Psychological Science",
+   "Gabbert, Memon & Allan (2003) Applied Cognitive Psychology",
+   "Sheen, Kemp & Rubin (2001) Memory & Cognition",
+   "Walker, Skowronski & Thompson (2003) Review of General Psychology",
+   "Loftus & Pickrell (1995) Psychiatric Annals",
+   "Wade, Garry, Read & Lindsay (2002) Psychonomic Bulletin & Review",
+   "Schacter & Addis (2007) Philosophical Transactions of the Royal Society B"
+  ],
+  "台本ゲートの点": {
+   "最初の30秒": 8,
+   "章": [
+    8,
+    6,
+    8,
+    7,
+    8,
+    9,
+    9,
+    7,
+    7
+   ],
+   "山場": null,
+   "低い所の直すなら": [
+    "B04〜B05のシャクター氏の説明が理屈だけで人が出てこないので、B01〜B02の「日記を出して確かめる」場面を続け、日記を開いたら姉の言う通りだったら、という小さな物語にすると上がる。",
+    "D05〜D06の「8つの研究・229人・17人」は数字が多く耳で追いにくい。「229人のうち、いやな日が多い人は17人だけ」の一点に絞り、迷った旅の場面に早めに戻すと上がる。"
+   ]
+  },
+  "short_video_id": "Y0osrtOCsxk"
  }
 ]
