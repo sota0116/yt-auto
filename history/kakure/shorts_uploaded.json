@@ -337,5 +337,28 @@
   "publish_at": "2026-11-29T12:00:00+09:00",
   "uploaded_at": "2026-11-19T23:38:00+09:00",
   "missing": false
+ },
+ {
+  "work": "S033_切出_真昼の笛",
+  "video_id": "ghMReq2tFD4",
+  "title": "古代ギリシャの羊飼いが真昼に笛を吹かなかったわけ 群れを守る牧神パーンの昼寝【アニメ神話】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-11-30T19:00:00+09:00",
+  "uploaded_at": "2026-11-21T23:38:16+09:00",
+  "missing": false
+ },
+ {
+  "work": "S034_図鑑_ククリヒメ",
+  "video_id": "SX8lXnGGlLU",
+  "title": "日本書紀に1度だけ出て何を言ったか書かれない神 ククリヒメ【かくれ神図鑑 #9】",
+  "video": "short_final.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-12-01T12:00:00+09:00",
+  "uploaded_at": "2026-11-21T23:39:54+09:00",
+  "missing": false,
+  "playlist": "図鑑"
  }
 ]
