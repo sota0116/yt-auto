@@ -1,0 +1,40 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_018_エコー",
+ "portrait": false,
+ "made": "2026-11-22 02:34",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, slightly dark lighting, subtle washi paper texture.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、裸、肌の多い服、血",
+ "rules": {},
+ "characters": {
+  "echo": {
+   "desc_en": "Echo, a mountain nymph of ancient Greek myth, a slender young woman about 18 years old, long wavy light brown hair with a few small green leaves in it, a pale sage-green ankle-length chiton that fully covers her chest, shoulders and arms to the elbow, a soft grey-green himation shawl, simple leather sandals, shy gentle grey eyes, no crown, no jewelry except a thin leaf circlet",
+   "channel": true
+  },
+  "narcissus": {
+   "desc_en": "Narcissus, a beautiful youth of ancient Greek myth about 16 years old, short wavy dark blond hair, fair face with long eyelashes, a white knee-length chiton that fully covers his chest and shoulders, a dark blue chlamys cloak pinned at one shoulder, leather sandals laced to the shin, a light hunting spear, proud cool expression (Classical Greek period)",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "夜の暗い森の中の泉。左側に、ナルキッソスがひざをつき、水面に映る自分の顔にうっとり見とれている。右側の木の陰から、エコーが涙をためた目で彼を見つめ、口元に手を当てて声を出せずにいる。2人の顔に月の光が当たって明るく、まわりは暗い。2人は画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い木の葉と暗い水だけで何も描かない",
+   "image_en": "A spring in a dark forest at night. On the left, Narcissus kneels at the water's edge, enchanted by his own reflection on the surface. On the right, from behind a tree trunk, Echo the nymph watches him with tear-filled eyes, a hand at her lips, unable to speak. Moonlight falls on both faces so they are bright; everything around is dark. Draw both large at the vertical middle of the frame; the top quarter and the bottom quarter of the image contain only dark leaves and dark water, nothing else.",
+   "chars": [
+    "echo",
+    "narcissus"
+   ],
+   "en": "A spring in a dark forest at night. On the left, Narcissus kneels at the water's edge, enchanted by his own reflection on the surface. On the right, from behind a tree trunk, Echo the nymph watches him with tear-filled eyes, a hand at her lips, unable to speak. Moonlight falls on both faces so they are bright; everything around is dark. Draw both large at the vertical middle of the frame; the top quarter and the bottom quarter of the image contain only dark leaves and dark water, nothing else."
+  },
+  {
+   "id": "T2",
+   "image": "暗い山の洞窟の入口に、エコーがひとり立ち、驚いたような悲しい顔でこちらを振り返っている。体の下半分が灰色の岩と同じ色に薄れ始めている。顔に青白い光が当たって明るく、まわりは暗い。人物は画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い岩だけで何も描かない",
+   "image_en": "At the mouth of a dark mountain cave, Echo the nymph stands alone and looks back toward the viewer with a startled, sorrowful face; the lower half of her body is beginning to fade into the same grey as the rocks. Pale light falls on her face so it is bright; everything around is dark. Draw her large at the vertical middle of the frame; the top quarter and bottom quarter contain only dark rock, nothing else.",
+   "chars": [
+    "echo"
+   ],
+   "en": "At the mouth of a dark mountain cave, Echo the nymph stands alone and looks back toward the viewer with a startled, sorrowful face; the lower half of her body is beginning to fade into the same grey as the rocks. Pale light falls on her face so it is bright; everything around is dark. Draw her large at the vertical middle of the frame; the top quarter and bottom quarter contain only dark rock, nothing else."
+  }
+ ]
+}

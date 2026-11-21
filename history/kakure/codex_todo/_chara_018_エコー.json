@@ -1,0 +1,102 @@
+{
+ "ch": "kakure",
+ "work": "_chara_018_エコー",
+ "portrait": false,
+ "made": "2026-11-22 02:34",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, bright even light. Pure white background.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、ローマ風の鎧、アメコミ風の衣装、日本や中国の服、裸、肌の多い服、血",
+ "rules": {},
+ "characters": {
+  "echo": {
+   "desc_en": "Echo, a mountain nymph of ancient Greek myth, a slender young woman about 18 years old, long wavy light brown hair with a few small green leaves in it, a pale sage-green ankle-length chiton that fully covers her chest, shoulders and arms to the elbow, a soft grey-green himation shawl, simple leather sandals, shy gentle grey eyes, no crown, no jewelry except a thin leaf circlet",
+   "channel": true
+  },
+  "narcissus": {
+   "desc_en": "Narcissus, a beautiful youth of ancient Greek myth about 16 years old, short wavy dark blond hair, fair face with long eyelashes, a white knee-length chiton that fully covers his chest and shoulders, a dark blue chlamys cloak pinned at one shoulder, leather sandals laced to the shin, a light hunting spear, proud cool expression (Classical Greek period)",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "echo_stand",
+   "image": "エコーが、片手を口元にそえて、静かに立っている全身。はにかんだ顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph stands quietly with one hand near her lips, a shy face. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. The whole body fits without cropping, filling the frame top to bottom, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph stands quietly with one hand near her lips, a shy face. Full body. Plain pure white background (#FFFFFF), no floor, no ground, no shadow, no scenery, no frame. The whole body fits without cropping, filling the frame top to bottom, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "echo_hide",
+   "image": "エコーが、体を半分ひねり、肩ごしに後ろをそっとのぞき見ている全身。恋をしている顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・木・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph half turns her body and secretly peeks back over her shoulder, a face in love. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no tree, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph half turns her body and secretly peeks back over her shoulder, a face in love. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no tree, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "echo_reach",
+   "image": "エコーが、両腕を前へ広げて、誰かに駆け寄ろうとしている全身。うれしそうな顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph runs forward with both arms open wide toward someone, a joyful hopeful face. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph runs forward with both arms open wide toward someone, a joyful hopeful face. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "echo_call",
+   "image": "エコーが、両手を口の横にそえて、遠くへ呼びかけている全身。何か言いたそうで言えない、もどかしい顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph cups both hands beside her mouth and calls out into the distance, with a frustrated face as if she cannot say what she wants. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph cups both hands beside her mouth and calls out into the distance, with a frustrated face as if she cannot say what she wants. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "echo_down",
+   "image": "エコーが、うつむいて、ショールで顔を半分隠して立っている全身。恥ずかしさと悲しさの顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph stands with her head bowed, half hiding her face with her shawl, ashamed and sad. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph stands with her head bowed, half hiding her face with her shawl, ashamed and sad. Full body. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "echo_sit",
+   "image": "エコーが、ひざを抱えてうずくまって座り、遠くを見ている全身。やつれた悲しい顔。背景は真っ白の無地（#FFFFFF）。床・地面・岩・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Echo the nymph sits curled up hugging her knees, gazing into the distance with a worn, sad face. Full body. Plain pure white background (#FFFFFF), no floor, no rock, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "echo"
+   ],
+   "en": "Echo the nymph sits curled up hugging her knees, gazing into the distance with a worn, sad face. Full body. Plain pure white background (#FFFFFF), no floor, no rock, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "narcissus_stand",
+   "image": "ナルキッソスが、槍を持って立ち、冷たい顔で横を向いている全身。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、絵の上下いっぱいの大きさで、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Narcissus stands holding a light hunting spear, turning his face aside with a cold proud look. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits top to bottom, only one person in the center. Clear outlines.",
+   "chars": [
+    "narcissus"
+   ],
+   "en": "Narcissus stands holding a light hunting spear, turning his face aside with a cold proud look. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits top to bottom, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "narcissus_reject",
+   "image": "ナルキッソスが、片手を前に突き出して、近づく誰かを拒み、身を引いている全身。嫌がる顔。背景は真っ白の無地（#FFFFFF）。床・地面・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Narcissus pulls back and thrusts one hand forward to push someone away, a disgusted refusing face. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "narcissus"
+   ],
+   "en": "Narcissus pulls back and thrusts one hand forward to push someone away, a disgusted refusing face. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  },
+  {
+   "id": "narcissus_kneel",
+   "image": "ナルキッソスが、片ひざをついて身をかがめ、下の何かを夢中で見つめている全身。うっとりした顔。背景は真っ白の無地（#FFFFFF）。床・地面・水・影・景色・枠は描かない。全身が切れずに入り、画面の真ん中に1人だけ。輪郭線ははっきり。",
+   "image_en": "Narcissus kneels on one knee and leans forward, gazing down at something below him, enchanted. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no water, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines.",
+   "chars": [
+    "narcissus"
+   ],
+   "en": "Narcissus kneels on one knee and leans forward, gazing down at something below him, enchanted. Full body, fully clothed in a white chiton and blue cloak. Plain pure white background (#FFFFFF), no floor, no water, no shadow, no scenery, no frame. Whole body fits, only one person in the center. Clear outlines."
+  }
+ ]
+}

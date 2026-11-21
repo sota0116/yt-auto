@@ -1,0 +1,72 @@
+{
+ "ch": "kakure",
+ "work": "_bg_018_エコー",
+ "portrait": false,
+ "made": "2026-11-22 02:34",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, slightly dark lighting, subtle washi paper texture. Wide 16:9 landscape.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、裸、血",
+ "rules": {},
+ "characters": {},
+ "cuts": [
+  {
+   "id": "ai_spring",
+   "image": "深い森の奥の、だれも来たことのない澄んだ泉。銀色に光る静かな水面、まわりに草、木陰。人はいない",
+   "image_en": "Deep in a forest, a clear untouched spring with a silvery, perfectly still water surface, grass all around, shade of trees. No people.",
+   "en": "Deep in a forest, a clear untouched spring with a silvery, perfectly still water surface, grass all around, shade of trees. No people."
+  },
+  {
+   "id": "ai_forest",
+   "image": "古代ギリシャの山の森。オークの木々、岩、こけ、木もれ日。人はいない",
+   "image_en": "A mountain forest of ancient Greece: oak trees, rocks, moss, dappled sunlight. No people.",
+   "en": "A mountain forest of ancient Greece: oak trees, rocks, moss, dappled sunlight. No people."
+  },
+  {
+   "id": "ai_cave",
+   "image": "山の斜面の暗い洞窟の入口。岩の割れ目、つたが垂れる。人はいない",
+   "image_en": "The dark mouth of a cave on a mountain slope, cracked rock, hanging ivy. No people.",
+   "en": "The dark mouth of a cave on a mountain slope, cracked rock, hanging ivy. No people."
+  },
+  {
+   "id": "ai_valley",
+   "image": "夕暮れの深い谷。両側に切り立った岩の崖、遠くまで続く山なみ。人はいない",
+   "image_en": "A deep valley at dusk with steep rocky cliffs on both sides and mountain ridges stretching into the distance. No people.",
+   "en": "A deep valley at dusk with steep rocky cliffs on both sides and mountain ridges stretching into the distance. No people."
+  },
+  {
+   "id": "ai_hunt",
+   "image": "森の中の狩りの道。木の間に張られた網、遠くを駆ける鹿。人はいない",
+   "image_en": "A hunting path in the forest: nets stretched between trees, a deer running in the distance. No people.",
+   "en": "A hunting path in the forest: nets stretched between trees, a deer running in the distance. No people."
+  },
+  {
+   "id": "ai_flower",
+   "image": "泉のほとりの草の上に、白い花びらの真ん中が黄色い水仙が1本だけ咲いている。朝の光。人はいない",
+   "image_en": "On the grass at the edge of a forest spring, a single narcissus flower with white petals and a yellow center is blooming, in morning light. No people.",
+   "en": "On the grass at the edge of a forest spring, a single narcissus flower with white petals and a yellow center is blooming, in morning light. No people."
+  },
+  {
+   "id": "ai_rocks",
+   "image": "山の中の、人の形にも見える灰色の岩がいくつか転がる、さびしい岩場。人はいない",
+   "image_en": "A lonely rocky place in the mountains with several grey stones scattered around, some faintly shaped like a curled-up body. No people.",
+   "en": "A lonely rocky place in the mountains with several grey stones scattered around, some faintly shaped like a curled-up body. No people."
+  },
+  {
+   "id": "ai_styx",
+   "image": "冥界の暗い川。黒い水面に、ぼんやり光が映る。岸は岩。人はいない",
+   "image_en": "The dark river of the underworld: a black water surface with dim reflected light, rocky banks. No people.",
+   "en": "The dark river of the underworld: a black water surface with dim reflected light, rocky banks. No people."
+  },
+  {
+   "id": "ai_olympus",
+   "image": "雲の上の山の頂。白い石の柱が立つ古代ギリシャの神殿。夕暮れ。人はいない",
+   "image_en": "A mountain summit above the clouds with an ancient Greek temple of white stone columns, at dusk. No people.",
+   "en": "A mountain summit above the clouds with an ancient Greek temple of white stone columns, at dusk. No people."
+  },
+  {
+   "id": "ai_thebes",
+   "image": "古代ギリシャの小さな町の家の中庭。石の壁、オリーブの木、昼の光。人はいない",
+   "image_en": "The courtyard of a house in a small town of ancient Greece: stone walls, an olive tree, daylight. No people.",
+   "en": "The courtyard of a house in a small town of ancient Greece: stone walls, an olive tree, daylight. No people."
+  }
+ ]
+}

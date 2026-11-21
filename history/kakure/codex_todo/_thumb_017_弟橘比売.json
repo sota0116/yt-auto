@@ -1,0 +1,35 @@
+{
+ "ch": "kakure",
+ "work": "_thumb_017_弟橘比売",
+ "portrait": false,
+ "made": "2026-11-22 02:34",
+ "style_en": "Japanese TV anime style, crisp clean line art, cel shading, calm colors, slightly dark lighting, subtle washi paper texture.",
+ "avoid_en": "文字、ロゴ、現代の建物や服、大陸風（中国風）の服、裸、血",
+ "rules": {},
+ "characters": {
+  "ototachibana": {
+   "desc_en": "Ototachibana-hime, a young noblewoman of ancient Japan about 20 years old, long straight black hair tied low at the back with a simple wooden comb (kushi) set in her hair, a white Kofun-period kinu robe with a long pale indigo pleated mo skirt and a pale orange sash, a green magatama bead necklace, calm determined face, gentle eyes",
+   "channel": true
+  }
+ },
+ "cuts": [
+  {
+   "id": "T1",
+   "image": "嵐の夜の暗い海。荒れる波の上に、何枚も重ねて敷いた畳の上に、弟橘比売がひとり立ち、肩ごしにこちらを振り返っている。髪に木の櫛。顔に月の光が当たって明るく、決めた顔で少しほほえむ。まわりは暗い。人物は画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い空と暗い波だけで何も描かない",
+   "image_en": "A stormy night sea. On top of several layers of woven mats spread over the rough dark waves, Ototachibana-hime stands alone and looks back over her shoulder toward the viewer, a wooden comb in her hair. Moonlight falls on her face so she is bright, with a resolved faint smile; everything around is dark. Draw her large at the vertical middle of the frame; the top quarter and the bottom quarter of the image contain only dark sky and dark waves, nothing else.",
+   "chars": [
+    "ototachibana"
+   ],
+   "en": "A stormy night sea. On top of several layers of woven mats spread over the rough dark waves, Ototachibana-hime stands alone and looks back over her shoulder toward the viewer, a wooden comb in her hair. Moonlight falls on her face so she is bright, with a resolved faint smile; everything around is dark. Draw her large at the vertical middle of the frame; the top quarter and the bottom quarter of the image contain only dark sky and dark waves, nothing else."
+  },
+  {
+   "id": "T2",
+   "image": "左右2つに分けた比べる絵。左半分：嵐の暗い海の波の上に敷かれた畳に、弟橘比売が背を向けて立ち、波へ下りようとしている。冷たい青い光。右半分：夜明けの静かな浜辺の砂の上に、木の櫛がひとつだけ流れ着いている。暖かい朝の光。どちらも画面の上下の真ん中の高さに大きく描き、画面の上の4分の1と下の4分の1は、暗い空と暗い海・砂だけで何も描かない",
+   "image_en": "A split comparison picture. Left half: on layered mats spread over the waves of a dark stormy sea, Ototachibana-hime stands with her back turned, about to step down into the waves, in cold blue light. Right half: on the sand of a quiet beach at dawn, a single wooden comb has washed ashore, in warm morning light. Draw both large at the vertical middle of the frame; the top quarter and bottom quarter contain only dark sky and dark sea or sand, nothing else.",
+   "chars": [
+    "ototachibana"
+   ],
+   "en": "A split comparison picture. Left half: on layered mats spread over the waves of a dark stormy sea, Ototachibana-hime stands with her back turned, about to step down into the waves, in cold blue light. Right half: on the sand of a quiet beach at dawn, a single wooden comb has washed ashore, in warm morning light. Draw both large at the vertical middle of the frame; the top quarter and bottom quarter contain only dark sky and dark sea or sand, nothing else."
+  }
+ ]
+}
