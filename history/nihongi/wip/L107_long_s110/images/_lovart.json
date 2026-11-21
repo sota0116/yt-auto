@@ -1,457 +1,178 @@
 {
  "A01": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "efb761b1-9a05-46ae-88ca-3d31fb6bed96",
+  "回": 1,
+  "秒": 53,
+  "元": "images/_lovart/A01/lovart_8e5927aa1795.jpeg",
+  "注意": ""
  },
  "A02": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "bbc60f0a-e828-4a14-9f03-478e40c601ab",
+  "回": 1,
+  "秒": 54,
+  "元": "images/_lovart/A02/lovart_6644bcfe39e2.jpeg",
+  "注意": ""
+ },
+ "A03": {
+  "状態": "できた",
+  "thread": "12814ccd-7e5b-4c7f-bd04-545fe5618b11",
+  "回": 1,
+  "秒": 55,
+  "元": "images/_lovart/A03/lovart_0b5742db2937.jpeg",
+  "注意": ""
  },
  "A04": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "5c44e296-6805-489f-bdc8-f3832692935b",
+  "回": 1,
+  "秒": 56,
+  "元": "images/_lovart/A04/lovart_826a6e88c92e.jpeg",
+  "注意": ""
+ },
+ "A05": {
+  "状態": "できた",
+  "thread": "f2ddfc99-8a07-4d75-88b3-51f5ec2ced49",
+  "回": 1,
+  "秒": 34,
+  "元": "images/_lovart/A05/lovart_a2159360d683.png",
+  "注意": ""
  },
  "B01": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "72cd41eb-6eeb-4b4e-b730-449175c9688b",
+  "回": 1,
+  "秒": 35,
+  "元": "images/_lovart/B01/lovart_8fc5b7433bd5.png",
+  "注意": ""
  },
  "B02": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "5dbee7da-c464-43ca-afe0-068324d275af",
+  "回": 1,
+  "秒": 72,
+  "元": "images/_lovart/B02/lovart_0c81e36387db.jpeg",
+  "注意": ""
  },
- "B04": {
+ "B03": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "571db3d0-c332-4f5d-8283-cd913c526b2b",
+  "回": 1,
+  "秒": 38,
+  "元": "images/_lovart/B03/lovart_ad8bb1ba0e57.png",
+  "注意": ""
  },
  "B05": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "B05b": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "7d29fcde-c86b-4133-82e7-b61fa7eae015",
+  "回": 1,
+  "秒": 35,
+  "元": "images/_lovart/B05/lovart_524396eed108.png",
+  "注意": ""
  },
  "B06": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
+  "状態": "できた",
+  "thread": "647c46fe-bde9-4d08-871c-d3eb291f0530",
+  "回": 1,
+  "秒": 53,
+  "元": "images/_lovart/B06/lovart_8cde366d3360.jpeg",
+  "注意": ""
  },
  "B07": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "9e58ffde-34cb-460b-ade2-67e903b918de",
+  "回": 1,
+  "秒": 161,
+  "元": "images/_lovart/B07/lovart_6ea3b529062a.png",
+  "注意": ""
  },
  "B08": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
+  "状態": "できた",
+  "thread": "817b1a28-5d07-481e-addb-5c08f9efc1f7",
+  "回": 1,
+  "秒": 162,
+  "元": "images/_lovart/B08/lovart_6b146ab7b7aa.jpeg",
+  "注意": ""
  },
  "B09": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "9f75f0b8-2d3d-4f60-8200-8f9e6ba2c3f9",
+  "回": 1,
+  "秒": 164,
+  "元": "images/_lovart/B09/lovart_c8c52014c36a.png",
+  "注意": ""
  },
- "B11": {
+ "B10": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "10fb09a0-cbe3-42be-8f8e-d46d4ecb0375",
+  "回": 1,
+  "秒": 185,
+  "元": "images/_lovart/B10/lovart_b079c0a2f848.jpeg",
+  "注意": ""
  },
- "B12": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
+ "B13": {
+  "状態": "できた",
+  "thread": "e34973ad-ffe9-4bba-9f53-5633d05db514",
+  "回": 1,
+  "秒": 165,
+  "元": "images/_lovart/B13/lovart_3a0902494aab.jpeg",
+  "注意": ""
  },
  "C01": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "c3f9ce38-9c5b-4e05-b88a-a678f0abbea4",
+  "回": 1,
+  "秒": 167,
+  "元": "images/_lovart/C01/lovart_6454c6ac8afd.png",
+  "注意": ""
  },
  "C02": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "630e2db0-cf64-4854-9915-022e807b5059",
+  "回": 1,
+  "秒": 35,
+  "元": "images/_lovart/C02/lovart_aec56653bfb6.png",
+  "注意": ""
  },
  "C03": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "b2db2e8f-8606-46d3-9474-53619157fa2b",
+  "回": 1,
+  "秒": 56,
+  "元": "images/_lovart/C03/lovart_abd51d594206.jpeg",
+  "注意": ""
  },
  "C04": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "6b2ab94a-c1de-4d78-811d-8d223073816b",
+  "回": 1,
+  "秒": 37,
+  "元": "images/_lovart/C04/lovart_2854aca453d1.png",
+  "注意": ""
  },
  "C05": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "d3297132-ec42-417e-964b-8b49af8e7bfc",
+  "回": 1,
+  "秒": 57,
+  "元": "images/_lovart/C05/lovart_6887818a9d12.jpeg",
+  "注意": ""
+ },
+ "C06": {
+  "状態": "できた",
+  "thread": "a9f0dbc1-1eaf-4929-bcf8-ae742ef4d5cb",
+  "回": 1,
+  "秒": 39,
+  "元": "images/_lovart/C06/lovart_1dc415b65e38.png",
+  "注意": ""
  },
  "C07": {
   "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C08": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C09": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C11": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C12": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C13": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "C14": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D01": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D04": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D05": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D06": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "D07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D08": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D09": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "D10": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D11": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "D12": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D14": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D15": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "D16": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E01": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E02": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "E03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E04": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "E05": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E06": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E08": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "E09": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E10": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "E12": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "F01": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F02": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F04": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F04b": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F04c": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "F05": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F06": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F07c": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F08": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F09": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F10": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "F11": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F12": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "F13": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F14": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "F15": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G01": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G04": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "G05": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G06": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G08": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G09": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G11": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "G12": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H01": {
-  "状態": "失敗",
-  "理由": "頼めなかった：AgentSkillError You don’t have enough Lovart credits for this generation. No task was submitted and no credits were deducted.",
-  "回": 1
- },
- "H02": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H04": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H05": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H06": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "H07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "I01": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "I03": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "I04": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "I07": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
- },
- "I08": {
-  "状態": "できた",
-  "元": "codex",
-  "回": 1
+  "thread": "046ebc28-60da-4557-8407-0d56c42b13e1",
+  "回": 1,
+  "秒": 42,
+  "元": "images/_lovart/C07/lovart_36c4fc9d2616.png",
+  "注意": ""
  }
 }
