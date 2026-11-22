@@ -715,6 +715,13 @@
    "averageViewDuration": 96,
    "subscribersGained": 1,
    "取った日": "2026-11-19"
+  },
+  "d7": {
+   "views": 407,
+   "averageViewPercentage": 179.89,
+   "averageViewDuration": 88,
+   "subscribersGained": 1,
+   "取った日": "2026-11-23"
   }
  },
  "016_yoru_kangae:short_2": {
@@ -821,5 +828,17 @@
   "kind": "after",
   "title": "【心理学】孫のいちごを買うと、帰り道まで足が軽い人の正体 #shorts",
   "publish_slot": "20:10"
+ },
+ "013_jiman_hito": {
+  "type": "人づきあい",
+  "video_id": "PMETLdWbGfQ",
+  "hook": "「困っちゃうのよ」と言いながら、顔はどこか、うれしそうな人、いませんか？",
+  "band": [
+   "「困っちゃう」の",
+   "自慢は逆効果"
+  ],
+  "kind": "after",
+  "title": "【心理学】「困っちゃう」が口ぐせの人の正体｜ふつうの自慢より、好かれなかった言い方 #shorts",
+  "publish_slot": "22:10"
  }
 }

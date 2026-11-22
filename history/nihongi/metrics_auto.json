@@ -761,6 +761,15 @@
    "直す所": [],
    "取った日": "2026-11-18",
    "再生（公開ページ）": 14
+  },
+  "d7": {
+   "views": 16,
+   "averageViewPercentage": 37.1,
+   "averageViewDuration": 209,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-23",
+   "再生（公開ページ）": 17
   }
  },
  "L014_生糸の値札が全部読めたら": {
@@ -888,5 +897,9 @@
  "S132_n002": {
   "type": null,
   "video_id": "LFKCvRmftWs"
+ },
+ "S133_r027": {
+  "type": null,
+  "video_id": "wsxUNBVkD_k"
  }
 }
