@@ -1058,6 +1058,8 @@ def main():
                 nk = int(a.count) if a.count.isdigit() else (0 if ns >= g else (mx if ns <= t2 else 1))
                 if nk == 0 and jload(status_path(ch, k), {}).get("work"):
                     nk = 1  # 作り途中の回は、在庫が目標に届いていても最後まで作る
+                if KS[k].get("make") is False:  # 作るのをやめた種類（2026-11-22 日本紀のショート。本人「ショートは廃止でいい」）。作り途中の回も作らない
+                    nk = 0
                 jobs.append((k, nk))
             res["作る本数"] = {k or "-": nk for k, nk in jobs}
         # 長尺を毎日は出さないチャンネル（profile.json の publish_every_days＝仕事chは 2026-11-08 から1日おき・publish_weekdays＝心理学chは週3本・千年こよみは週1本）は、

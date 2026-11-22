@@ -10,6 +10,8 @@
 #   history/nihongi/ネタ補充_横.json の使っていない行を上から。2行以下になったら claude -p で6行足す）。両方『分かれ道』なら伸びたショートから。選んだ方が無ければもう一方。
 #   伸びたショートから：公開済み（または予約済み）のショートのうち、まだ横動画にしていない1本を選ぶ（再生が多い順。数字がまだ無ければ番号の若い順）。
 #   手で作った S001〜S005 は L001・L002 に入っているので選ばない（ネタ帳.json の long_done_from）。企画・ずらし方・時代・史実は元のショートと同じ
+# ・2026-11-22（本人「ショートは廃止でいい」）：横動画の3つ目の出どころ＝ショート用のネタの行（rows・ネタ補充.json の使っていない行。食の時代ワープを先に）。
+#   『分かれ道』でない枠を、伸びたショートとネタの行で交互に使う。neta.json に "from_row"（行の id）が付く。ショートは profile.json の kinds.short.make=false で作らない
 # ・2026-11-12（手順書 v2.7。本人「昭和も扱っていこう」）：昭和を時代に入れた。昭和の『分かれ道』は横動画の直近4本に1本まで（直近3本に昭和があれば
 #   昭和でない行を選ぶ。昭和でない行が無ければ伸びたショートへ回す）。ショートでは戦争そのものをずらしの種にしない（戦争ではない昭和はよい）
 # ・番号：毎日の制作が作る回は S101・L101 から（手で作った S001〜S010・L001〜L002 と衝突しない）。作業フォルダは channels/nihongi/videos/S101_<ネタの id>
@@ -227,18 +229,40 @@ def pick_long_if(past):
     return row, f"L{next_no('L')}", f"『分かれ道』の横動画（検索される『もしも』。直近2本の横動画が両方『分かれ道』でない時に選ぶ。検索語：{r.get('検索語')}）"
 
 
+def pick_long_from_row(past):
+    """ショート用に作ったネタの行から横動画を作る（2026-11-22 本人「ショートは廃止でいい」。ショートを作らなくなったので、ネタ帳の rows・ネタ補充.json の
+    使っていない行を横動画にも使う）。『食の時代ワープ』（本人「これはやろう」）→ 主力のずらし方 → ほかの順。『へえ』の主役の史実が過去の回と同じ行は選ばない。無ければ None"""
+    rows = book().get("rows", []) + refill_rows()
+    wip_ids = {jload(os.path.join(VDIR, d, "neta.json"), {}).get("id") for d in (os.listdir(VDIR) if os.path.isdir(VDIR) else [])}
+    prod_ids = {p.get("neta_id") for p in jload(os.path.join(HIST, "produced.json"), [])}
+    unused = [r for r in rows if r.get("id") not in wip_ids | prod_ids and r.get("企画") and r.get("distort")
+              and not any(same_fact(r.get("fact_main"), f) for f in used_facts(past))]
+    if not unused:
+        log("横動画にできるショート用のネタの行がありません（使っていない行が無い）")
+        return None
+    unused.sort(key=lambda r: (0 if r.get("series") == "食の時代ワープ" else 1 if is_main(r.get("distort")) else 2, rows.index(r)))
+    r = unused[0]
+    row = {**r, "kind": "long", "from_row": r["id"],
+           "note": (r.get("note") or "") + "／ショート用に作ったネタから作る横動画（元のショートは無い）。企画のずらしたルールを1つだけ置き、章ごとに本当にあった出来事を足す（手順書 §7 の 2026-11-22 追記）"}
+    return row, f"L{next_no('L')}", f"ショート用のネタの行から（{r['id']}{'・食の時代ワープ' if r.get('series') == '食の時代ワープ' else ''}。ショートを作らなくなったので、残ったネタを横動画にする。2026-11-22）"
+
+
 def pick_long():
-    """横動画は3本のうち2本を『分かれ道』、1本を伸びたショートから（2026-11-12）。選んだ方が無ければ、もう一方から"""
+    """横動画は3本のうち2本を『分かれ道』、1本を伸びたショートかショート用のネタの行から（2026-11-12・2026-11-22）。選んだ方が無ければ、ほかから。
+    『分かれ道』でない枠は、伸びたショートとネタの行を交互に（前の『分かれ道』でない横動画が伸びたショートからなら、今回はネタの行を先に）"""
     past = past_works()
     longs = [x for x in past if x["kind"] == "long"]
     want_if = sum(1 for x in longs[-2:] if x.get("distort") == LONG_IF) < 2
-    order = (lambda: pick_long_if(past), pick_long_from_short) if want_if else (pick_long_from_short, lambda: pick_long_if(past))
+    other = [x for x in longs if x.get("distort") != LONG_IF]
+    row_first = bool(other) and bool(other[-1].get("from_short"))
+    alt = (lambda: pick_long_from_row(past), pick_long_from_short) if row_first else (pick_long_from_short, lambda: pick_long_from_row(past))
+    order = ((lambda: pick_long_if(past)), *alt) if want_if else (*alt, lambda: pick_long_if(past))
     for f in order:
         got = f()
         if got:
             return got
     # 失敗ではない。次のショートが上がるか、分かれ道の行を足せば作れる（終了コード 76＝run_daily.py が「待ち」にする。Issue にしない。2026-11-01）
-    print("横動画の元にできる物がまだありません（分かれ道の行が切れていて、上げたショートで横動画にしていない物も無い）。待ちます", file=sys.stderr)
+    print("横動画の元にできる物がまだありません（分かれ道の行が切れていて、上げたショートで横動画にしていない物も、ショート用のネタの行も無い）。待ちます", file=sys.stderr)
     sys.exit(76)
 
 

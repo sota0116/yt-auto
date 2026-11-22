@@ -491,6 +491,8 @@ def watch_channel(ch, dry, ahead=1):
     if started and ch not in WATCH_ONLY and KS:
         # 種類ごとのチャンネル：在庫0・公開が止まっている・明後日の予約が無い、を種類ごとに見る（横動画は every_days 日おきなので間隔が長い）
         for k, kc in KS.items():
+            if kc.get("make") is False:  # 作るのをやめた種類（2026-11-22 日本紀のショート）。作り置きは予約して出し切るが、在庫0・公開の間隔・予約なしの Issue は出さない
+                continue
             lk = [e for e in live if ustore.kind_of(e) == k]
             ns = sum(1 for e in lk if not e.get("published"))
             if ns == 0 and kc.get("start_date", "") <= now().date().isoformat():
