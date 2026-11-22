@@ -86,9 +86,9 @@ def gate_form(work, s, n, kind):
         if not c.get("image_en") and not c.get("same_as") and not c.get("card"):
             ng.append(f"NG: {c['id']} に image_en（英語の場面）も same_as も無い")
         if c.get("chars"):
-            known = (jload(os.path.join(CDIR, "characters", "characters.json"), {}).get("chars") or {})
+            known = {**(jload(os.path.join(CDIR, "characters", "characters.json"), {}).get("chars") or {}), **(s.get("characters") or {})}  # 台本の characters も（2026-11-22）
             if any(k not in known for k in c["chars"]):
-                ng.append(f"NG: {c['id']} の chars に characters.json に無い id がある：{c['chars']}")
+                ng.append(f"NG: {c['id']} の chars に characters.json にも台本の characters にも無い id がある：{c['chars']}")
     if kind == "short":
         if not 240 <= chars <= 345:
             ng.append(f"NG: 字数 {chars} 字（250〜330字・30〜45秒。手順書 §3）")

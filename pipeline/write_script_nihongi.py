@@ -1,7 +1,7 @@
 # ③台本（アナザー日本紀・2026-10-29 新設。千年こよみ write_script_spi.py と同じ形）：Claude（claude -p）に、手順書と見本から script.json を書かせる
 #   python -X utf8 pipeline/write_script_nihongi.py <作業フォルダ> --ch nihongi [--fix]
 # ・作業フォルダには neta.json（pick_neta_nihongi.py が置く。kind が short か long）が先にあること
-# ・書く前に読ませる物：手順書（制作ルール v2.8。全部）・neta.json・見本（ショート S010／横動画 L002）・characters.json・禁止表現・改善ログ（2か所の最後の行）・
+# ・書く前に読ませる物：手順書（制作ルール v2.10。全部）・neta.json・見本（ショート S010／横動画 L002）・characters.json・禁止表現・改善ログ（2か所の最後の行）・
 #   直近の回・競合メモ（あれば）・学び（あれば）・元のショートの台本（横動画の時）
 # ・史実は書き手が WebSearch・WebFetch で調べて "facts" に出どころ付きで書く（手順書 §4）。ずらしたルールは "fiction": true・"world_rules"・"world_terms" に書く
 # ・書く作業には鍵を渡さない（write_script.py と同じ。子のプロセスから鍵の場所と鍵の環境変数を消して動かす）
@@ -86,7 +86,9 @@ LONG_FORM = f"""## script.json の形（横動画。見本は L002 の台本。�
   - 『分かれ道』：史実の1つの出来事・決断（neta.json の「分かれ道」）だけを逆にし、そこから先の日本を章ごとに追う。逆にするのは1点だけ。それより前は全部史実どおり。
     章の流れ：本当に起きたこと（年・人・場所）→ 分かれ道の瞬間 → 逆になった直後 → 数年後 → 数十年後 → 今の日本に残る違い。各章に、本当にあった出来事か当時の本当の状況を1つ入れ、それを根拠に『こうなったはず』を語る。
     world_rules には「変えたのは〇〇の1点だけ」「〇〇より前は史実どおり」「〇〇から先は作り話」を書く。
-  - それ以外（伸びたショートから作る回）：元のショートと『ずらしたルール』は同じ。ショートで言えなかった史実を章ごとに足す。
+  - それ以外（伸びたショートから作る回・ショート用のネタから作る回）：元のショート（ネタから作る回は neta.json の企画）と『ずらしたルール』は同じ。ショートで言えなかった史実を章ごとに足す。
+    ネタから作る回は、A04 を「足すルールは1つだけ。<ずらしたルール>。」、A05 を「<ルールが効く範囲>のほかは本当の歴史です。」の形にする。
+    『食の時代ワープ』の回（2026-11-22 本人「これはやろう」）は、章ごとに1つの食事・1つの料理を出し、今の食べ物と比べて『何が違うか』（量・味・値段・食べ方）を絵で見せる。料理の値段・量・材料は facts に出どころを書く。
   伏線の問いは問いだけを書く（先送りの文は書かない）。
 - 最後の章（2026-11-12 手順書 v2.6 §7。コメントで答えたくなる終わり方）：作り話の結果を、良い未来と悪い未来の2つに並べる（どちらも、その世界で起きたはずの具体的な出来事1つ。例『良い未来：〇〇年に〜』）。
   その2つを一番上の "futures": {{"良い": "<1文>", "悪い": "<1文>"}} にも書く。そのあと問いのカット「あなたは、どっちの日本になったと思いますか。」（言い方は変えてよい。『どっち』か『どちら』を入れる）を置き、最後の決まった一言へつなぐ。
@@ -96,6 +98,11 @@ LONG_FORM = f"""## script.json の形（横動画。見本は L002 の台本。�
 - cuts の各カット：id（章ごとに A01, A02… B01…）・narration（1文40字まで）・image_en（横長の絵の英語の場面。人物は『真ん中より少し右』に置かせる：文末に "Place the main person slightly right of center."）・chars・label・
   "anim": "kling"（章ごとに1つ以上と見どころ。最初の2カットも）・"peak": true（1本に1つ以上）。同じ絵を使い回す時は "same_as": "<前のカットの id>"（全体の1割まで）。
   人物のセリフは "voice": "<id>" のセリフだけのカット。
+- 2カット以上に出る人物で characters.json にいない人（2026-11-22 本人「それは改善して自動でいくようにしよう」）は、一番上の "characters" に
+  {{"<英小文字の id。例 hideaki>": {{"name": "<日本語の名前>", "desc_en": "<顔・年齢・髪型・ひげ・服の色と形・紋を英語1〜2文>"}}}} で書き、その人の出るカットの chars に id を入れる
+  （image_en に顔や服の説明を繰り返さない）。プログラムがこの説明から設定画を1枚作って絵に付け、絵ゲートが設定画と全カットを並べて、別人に見える絵を作り直す。
+  1カットだけの人・顔の見えない群衆は characters に入れない。characters.json の id と同じ id は使わない。
+  改善ログの『次に上げること』に「絵ができたら一覧に並べて確かめる」は書かない（絵ゲートが毎回自動でやる）。
 - 実際の画像を8〜12カット（全体の1割ほど・章に1つ前後）：史実の証拠を見せるカット（古地図・屏風・浮世絵・古文書・城や寺の古写真・当時の道具）に
   "real": "<Wikimedia Commons を探す英語の語。例 Sekigahara folding screen／Edo 1844 map／Honnoji ukiyo-e>" を書く（WebSearch で見つけた画像の URL そのままでもよい）。
   AI の絵が続く中に本物を挟み、見た目の単調さを崩すためのもの。image_en も書いておく（取れない時はその絵になる）。chars・anim・peak・voice・same_as のカットには付けない。real_src はプログラムが書く。
@@ -141,7 +148,10 @@ def prompt(work, fix):
     ex = extra_docs()
     more = "".join(f"\n{i}. {rel(p)}（{what}）" for i, (p, what) in enumerate(ex, 8))
     src = ""
-    if kind == "long" and not neta.get("from_short"):
+    if kind == "long" and neta.get("from_row"):  # 2026-11-22 ショート廃止。ショート用に作ったネタの行から作る横動画
+        src = (f"\n- この回は、ショート用に作ったネタ（{neta.get('from_row')}{'・シリーズ ' + neta['series'] if neta.get('series') else ''}）から作る横動画（元のショートは無い。『分かれ道』ではない）。"
+               f"ずらしたルールは企画「{neta.get('企画')}」の1つだけ。下の『それ以外』の回として、章ごとに本当にあった出来事を足して書く")
+    elif kind == "long" and not neta.get("from_short"):
         src = (f"\n- この回は『分かれ道』の横動画（元のショートは無い）。逆にする1点：{neta.get('分かれ道')}／検索語：{neta.get('検索語')}"
                "（題の前半にこの検索語の言い方を入れる。手順書 v2.7 §7）")
     elif kind == "long":
@@ -152,7 +162,7 @@ def prompt(work, fix):
 作業フォルダ {rel(work)} に script.json を書いてください（今回は{'ショート' if kind == 'short' else '横動画'}）。
 
 ## 先に全部読むファイル（部分読み禁止。手順書は最後の行まで）
-1. {rel(doc(CH, '手順書.md'))}（制作ルール v2.8。このチャンネルの決まりの正本。§0〜§11 を全部読む。ショートは §2〜§6 と §10、横動画は §2〜§4・§5・§7・§10）
+1. {rel(doc(CH, '手順書.md'))}（制作ルール v2.10。このチャンネルの決まりの正本。§0〜§11 を全部読む。ショートは §2〜§6 と §10、横動画は §2〜§4・§5・§7・§10）
 2. {rel(os.path.join(work, 'neta.json'))}（この回の企画・ずらし方・時代・『へえ』の主役の史実。ネタ選びが決めた値。書き換えない）
 3. {rel(GOLDEN[kind])}（見本の台本。形・密度・1カットの長さ・image_en の書き方・決まった文の置き方を借りる。中身の場面・言い回しは写さない）
 4. {rel(os.path.join(CDIR, 'characters', 'characters.json'))}（絵に出る人物と声。chars に書けるのはこの id だけ）
@@ -224,6 +234,19 @@ def finish(work):
         if c.get("voice") and c["voice"] in chars and chars[c["voice"]].get("voice") is not None:
             voices[c["voice"]] = chars[c["voice"]]["voice"]  # 声の番号は characters.json の値に戻す
     s["voices"] = {k: v for k, v in voices.items() if any(c.get("voice") == k for c in s.get("cuts", []))}
+    # 台本の人物（2026-11-22）：英小文字の id で desc_en のある物だけ残す。絵に出せない id が chars にあると、絵の段が「無い人物」で止まるので外す
+    sc = {k: v for k, v in (s.get("characters") or {}).items()
+          if re.fullmatch(r"[a-z][a-z0-9_]{0,30}", str(k)) and isinstance(v, dict) and isinstance(v.get("desc_en"), str) and v["desc_en"].strip()
+          and not (k in chars and chars[k].get("desc_en"))}
+    if sc or "characters" in s:
+        s["characters"] = sc
+    can = set(sc) | {k for k, v in chars.items() if v.get("desc_en")}
+    dropped = sorted({k for c in s.get("cuts", []) for k in (c.get("chars") or []) if k not in can})
+    if dropped:
+        print(f"（絵に出せない人物の id を chars から外した：{dropped}）")
+    for c in s.get("cuts", []):
+        if c.get("chars"):
+            c["chars"] = [k for k in c["chars"] if k in can]
     last = None
     for c in s.get("cuts", []):
         c.setdefault("chars", [])

@@ -10,7 +10,7 @@
 #   視聴維持のグラフ（audienceWatchRatio）を1回だけ取り、30秒・60秒に当たる点を読む。取った値は open_judge.json に残す
 # ・判定（1回だけ）：v2.8 より後に台本を書いた横動画で、q_sec が25秒以下・r30 と r60 がある回が2本以上たまったら、
 #   q_sec が25秒より遅い回（いつの回でも）の真ん中と比べる。r30 も r60 も、差が -0.03 以上（悪くなっていない）なら案2へ進む
-#   進む時：手順書を v2.9 にして（v2.8 は 手順書_v2.8_<日付>.md に写す）冒頭60秒の行の下に1行足し、書き手の版の文字を直し、
+#   進む時：手順書を V_NEW にして（V_OLD は 手順書_<V_OLD>_<日付>.md に写す。2026-11-22 から v2.10 → v2.11）冒頭60秒の行の下に1行足し、書き手の版の文字を直し、
 #   改善ログに1行足し、Issue で知らせる。進まない時：Issue で知らせる（手順書はそのまま。冒頭の問いは続ける）
 # ・書き手が守っていない時：v2.8 より後の毎日の制作の回で q_sec が25秒を超えた回が2本たまったら、1回だけ Issue
 # ・--dry：YouTube から読むが、ファイルを書かず、Issue も出さない
@@ -32,8 +32,8 @@ DOC = os.path.join(ROOT, "channels", CH, "手順書.md")
 WRITER = os.path.join(ROOT, "pipeline", "write_script_nihongi.py")
 KAIZEN = hpath(CH, "改善ログ.md")
 ANCHOR = "  - 冒頭60秒の台本は、1枚の絵を約10秒見せる"
-V_OLD, V_NEW = "v2.8", "v2.9"
-H1_OLD = "# アナザー日本紀 制作ルール v2.8（2026-11-13）"
+V_OLD, V_NEW = "v2.10", "v2.11"  # 2026-11-22 手順書を v2.10 にした（ショート廃止・絵の人物のそろい。OneDrive の v2.9 と番号がぶつかるので v2.10）
+H1_OLD = "# アナザー日本紀 制作ルール v2.10（2026-11-22）"
 
 
 def head(work):
@@ -141,7 +141,7 @@ def write_keep(path, raw):
 
 
 def plan_doc(today, nums):
-    """手順書 v2.8 → v2.9 の中身を作る。思った形でなければ None（手順書は直さない）"""
+    """手順書 V_OLD → V_NEW の中身を作る（2026-11-22 から v2.10 → v2.11）。思った形でなければ None（手順書は直さない）"""
     raw, eol = read_keep(DOC)
     lines = raw.split(eol)
     hit = [i for i, l in enumerate(lines) if l.startswith(ANCHOR)]
@@ -150,9 +150,9 @@ def plan_doc(today, nums):
     rule = (f"  - 冒頭60秒の6枚前後のうち2枚以上は、主役の人物の劇画（表情のアップ）にする（{today} から。冒頭の問いの数字を見て自動で足した）。"
             "動かさず、ゆっくり寄るだけ（`open_still` は守る）。光は上と同じ青緑の薄明かりで頼む。"
             "前の回の同じ人物の絵を `same_as` で使い回してもよい。頼む絵の枚数は増やさない（6枚前後のうちの2枚を人物にする）。")
-    change = (f"v2.9 の変更：{today}、見張りのあとの `pipeline/nihongi_open_judge.py` が、v2.8 の冒頭の問いの数字を見て進めた"
+    change = (f"{V_NEW} の変更：{today}、見張りのあとの `pipeline/nihongi_open_judge.py` が、v2.8 の冒頭の問いの数字を見て進めた"
               f"（{nums}）。変えた所：§7 の冒頭60秒の行の下に、主役の人物の絵を2枚以上にする行を1行足した。"
-              f"古い版は `手順書_v2.8_{today}.md`。")
+              f"古い版は `手順書_{V_OLD}_{today}.md`。")
     lines[hit[0] + 1:hit[0] + 1] = [rule]
     lines[0] = f"# アナザー日本紀 制作ルール {V_NEW}（{today}）"
     lines[2:2] = [change, ""]
@@ -188,7 +188,7 @@ def go(today, nums, dry):
     if dry:
         return [f"（--dry）手順書：{'直せる' if d else '形が違うので直さない'}／書き手：{'直せる' if w else '形が違うので直さない'}"]
     if d and w:
-        back = os.path.join(os.path.dirname(DOC), f"手順書_v2.8_{today}.md")
+        back = os.path.join(os.path.dirname(DOC), f"手順書_{V_OLD}_{today}.md")
         if not os.path.exists(back):
             shutil.copyfile(DOC, back)  # バイトのまま写す（改行もそのまま）
         write_keep(DOC, d[1])
