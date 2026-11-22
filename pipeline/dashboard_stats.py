@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""YouTube司令室（claude.ai の管理ページ）に載せる「数字」を作る（v4・2026-10-30。かくれ神語り・指名手配ボードを足して8チャンネルにした）。
+"""YouTube司令室（claude.ai の管理ページ）に載せる「数字」を作る（v6・2026-11-22。シン視点事件簿 shinshiten を足した。11/11 の v5 は OneDrive 側だけで、yt-auto に入っていなかった。v4 は 2026-10-30 にかくれ神語り・指名手配ボードを足した版）。
 
 v3 の足し物：videos[id] に ch（チャンネル）・t（題名）・f（l＝横動画／s＝ショート）・seen（初めて見つけた時刻。記録を始める前からあった回は null）。
 seenSince は記録を始めた時刻。司令室の「新しく公開された動画」は seen から作る（予約一覧に無い回、徳次郎の手動公開も拾える）。
@@ -13,7 +13,7 @@ PC を閉じていても動くよう、yt-auto の GitHub Actions（dashboard.ym
   - 仕組みの具合：yt-auto の history（在庫・予約・見張り・制作中の段階・週報の制作費と期限）
 
 使い方:
-  python -X utf8 dashboard_stats_v4.py --prev stats_prev.json --out stats.json --yt-auto . --source actions
+  python -X utf8 dashboard_stats_v6.py --prev stats_prev.json --out stats.json --yt-auto . --source actions
     --schedule : board/schedule の中身（省ける。KNOWN_IDS に無いチャンネルの ID を、公開済みの回から拾う時だけ使う）
     --prev     : 前回の board/stats の中身（無ければ省く。初回は前日比が空になる）
     --yt-auto  : yt-auto の場所（history を読む）。--git-ref origin/main を足すと、その枝の中身を読む（PC の手元が古い時）
@@ -29,7 +29,7 @@ from datetime import datetime, timedelta, timezone
 import yt_dlp
 
 JST = timezone(timedelta(hours=9))
-CHANNELS = ["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei", "tokujiro"]
+CHANNELS = ["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei", "shinshiten", "tokujiro"]
 KNOWN_IDS = {
     "job": "UCBjRmvLkUHlt0MHgwm-nBGw",
     "spi": "UCO30nV7L9lp4g4Cvz38n40A",
@@ -38,6 +38,7 @@ KNOWN_IDS = {
     "okinu": "UCRachsKL_U8-eO0BBETE0-w",
     "kakure": "UCFfKxlfMSA8ZtR8JJ1loXbg",
     "shimei": "UClPeRu9FNOUyzJSGZfTjRUQ",
+    "shinshiten": "UCqjsFHU9ACKQFassZJJwAcA",
     "tokujiro": "UCvPF6RWMlpTWtkWpj-AU5rw",
 }
 SERIES_DAYS = 60

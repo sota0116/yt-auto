@@ -5,8 +5,9 @@
 # ・PAUSED が 1 の間は作らない（数字を取るのは続ける）
 name: shorts
 on:
-  schedule:
-    - cron: "47 20 * * *"   # 05:47 JST
+  # 2026-11-22 本人「止めよう」：仕事ch（job）のショートの毎日の制作を止めた（schedule を外した）。戻す時は下を戻す
+  #  schedule:
+  #    - cron: "47 20 * * *"   # 05:47 JST
   workflow_dispatch:
     inputs:
       n:
