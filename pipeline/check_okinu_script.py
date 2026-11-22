@@ -6,7 +6,7 @@
 # ・ショートの型 v2 を数える（単独のショート）：型1（NG3つの数え下げ）＝290〜360字・第3位70〜90／第2位70〜90／第1位90〜110字・1文目に「3つ」・最後が「あなたの〇〇には、いくつ入っていましたか。」／
 #   型2（1つだけ禁止）＝250〜300字・1文目「〇〇に、これを置いていませんか。」・最後「あなたの〇〇には、置いてありませんか。」。共通：1文最長27字・最初の文字（hook）5字×2行・
 #   絵7〜9枚・動く絵2つ以上・字幕は声と同じ字（subs をつなぐと narration になる）で1行8字まで・効果音なし・題は【年代】の有無を問わない。型は neta.json の「型」（無ければ「第3位」の有無で見る）
-# ・長尺（v1.7 §15 の順位の型）：字数 3,800〜5,000・カット130〜190・第5位〜第1位の rank カード・まとめの rules（nums）・モンタージュ・伏線は40%より前／答えは50%より後・山場・Kling 6つ以上・
+# ・長尺（v1.7 §15 の順位の型。2026-11-22 v2.0 で15〜18分）：字数 4,600〜6,300（めやす 5,000〜6,000）・カット160〜240（めやす 180〜215）・おまけの相談の章が無ければ注意・第5位〜第1位の rank カード・まとめの rules（nums）・モンタージュ・伏線は40%より前／答えは50%より後・山場・Kling 6つ以上・
 #   使えるカードは rank／rules／big_text／two_cards／photo だけ・題は【金運】で終わる・題が履歴の題と 0.55 以上似ていない・サムネ（thumb.layout 4種）が直近2本と違う型（直近6本で2回まで）
 import argparse, glob, json, os, re, shutil, subprocess, sys
 
@@ -413,12 +413,16 @@ def check_long(work, s, cuts, voiced, text, desc, ng, warn):
         if r >= TITLE_LINE:
             ng.append(f"題が履歴の題と似すぎ（title_guard の線 {TITLE_LINE}・{r:.2f}）：「{o}」。型（手順書 §8 の A〜F）か言い回しを替える")
     n = n_chars(text)
-    if not 3800 <= n <= 5000:
-        ng.append(f"字数 {n}（3,800〜5,000字。006 は4,354字・約13分）")
-    if not 130 <= len(voiced) <= 190:
-        ng.append(f"文（カット）の数 {len(voiced)}（150〜170カット前後。130〜190）")
-    elif not 150 <= len(voiced) <= 170:
-        warn.append(f"文（カット）の数 {len(voiced)}（150〜170が目安）")
+    if not 4600 <= n <= 6300:  # 制作ルール v2.0（2026-11-22）：15〜18分＝1分330字で 5,000〜6,000字
+        ng.append(f"字数 {n}（v2.0 は 5,000〜6,000字・15〜18分。4,600〜6,300 の外は NG。声を遅くせず中身で伸ばす）")
+    elif not 5000 <= n <= 6000:
+        warn.append(f"字数 {n}（5,000〜6,000字が目安）")
+    if not 160 <= len(voiced) <= 240:
+        ng.append(f"文（カット）の数 {len(voiced)}（180〜215カット前後。160〜240）")
+    elif not 180 <= len(voiced) <= 215:
+        warn.append(f"文（カット）の数 {len(voiced)}（180〜215が目安）")
+    if not any("おまけ" in str(c.get("yt_chapter") or c.get("chapter") or "") for c in cuts):
+        warn.append("おまけ よくある相談の章（yt_chapter）が無い（v2.0 §15）")
     ch_n = len([c for c in cuts if c.get("chapter") or c.get("yt_chapter")])
     if ch_n < 6:
         ng.append(f"章（chapter／yt_chapter）が {ch_n} つ（第5位〜第1位・上がる側・まとめで6つ以上）")
