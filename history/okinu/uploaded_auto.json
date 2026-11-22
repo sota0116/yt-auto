@@ -148,7 +148,7 @@
   "seconds": 814,
   "title_now": "【今すぐチェック】カバンに〇〇を入れたままは要注意！破産する人の特徴5選【金運】",
   "synthetic_on": null,
-  "views_now": 49,
+  "views_now": 50,
   "published": true,
   "published_at": "2026-11-08T18:00:16+09:00",
   "comment_id": "Ugw91s8VBfk7CUYMsQB4AaABAg",
@@ -537,7 +537,7 @@
   "seconds": 760,
   "title_now": "【年金11万円】物干し竿を〇〇ずに干す人は残らない。ベランダの違い5選【金運】",
   "synthetic_on": null,
-  "views_now": 37,
+  "views_now": 39,
   "published": true,
   "published_at": "2026-11-19T18:00:00+09:00",
   "comment_id": "Ugz1HUAKRivBY36OwIB4AaABAg",
@@ -666,7 +666,7 @@
   "seconds": 834,
   "title_now": "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
   "synthetic_on": null,
-  "views_now": 3,
+  "views_now": 35,
   "published": true,
   "published_at": "2026-11-21T18:00:10+09:00",
   "comment_id": "UgwsP2grYi4LpVf4uFh4AaABAg",
@@ -691,7 +691,7 @@
   "seconds": 45,
   "title_now": "【60代】神棚に置きっぱなしにしてはいけない物3選",
   "synthetic_on": null,
-  "views_now": 1315,
+  "views_now": 1324,
   "published": true,
   "published_at": "2026-11-21T12:00:01+09:00",
   "comment_id": "Ugw3vD9zJtxc9tm7r5d4AaABAg",
@@ -711,12 +711,14 @@
    "【60代】神棚の置き場所で貧乏になる家の特徴3選、1位は"
   ],
   "comment": "あなたの神棚は、いくつ当てはまりましたか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-22T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 44,
   "title_now": "【60代】神棚の置き場所で貧乏になる家の特徴3選、1位は",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-22T19:00:14+09:00"
  },
  {
   "work": "S130_上の階を人が歩く神棚",
@@ -832,7 +834,6 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-22T19:15:05+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】御札を●●にしまっていませんか？神棚が無い家のNG5選【金運】",
@@ -841,6 +842,12 @@
   ],
   "comment": "あなたの神棚と御札は、5つのうち、いくつ当てはまりましたか？コメントで、数を教えてくださいね。",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-23T18:00:00+09:00",
+  "seconds": 1003,
+  "title_now": "【60代】御札を●●にしまっていませんか？神棚が無い家のNG5選【金運】",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

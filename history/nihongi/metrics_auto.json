@@ -841,11 +841,29 @@
  },
  "S124_n012": {
   "type": null,
-  "video_id": "PSMan686e9g"
+  "video_id": "PSMan686e9g",
+  "h72": {
+   "views": 8,
+   "averageViewPercentage": 109.13999999999999,
+   "averageViewDuration": 55,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-22",
+   "再生（公開ページ）": 1186
+  }
  },
  "S125_r010": {
   "type": null,
-  "video_id": "w-Syw35kO9I"
+  "video_id": "w-Syw35kO9I",
+  "h72": {
+   "views": 646,
+   "averageViewPercentage": 116.71000000000001,
+   "averageViewDuration": 68,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-22",
+   "再生（公開ページ）": 1216
+  }
  },
  "S127_r015": {
   "type": null,
@@ -866,5 +884,9 @@
  "L105_w001": {
   "type": null,
   "video_id": "X7BFKzgbg48"
+ },
+ "S132_n002": {
+  "type": null,
+  "video_id": "LFKCvRmftWs"
  }
 }

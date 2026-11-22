@@ -252,6 +252,17 @@
    "直す所": [],
    "取った日": "2026-11-18",
    "再生（公開ページ）": 29
+  },
+  "d7": {
+   "views": 32,
+   "averageViewPercentage": 20.53,
+   "averageViewDuration": 211,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-22",
+   "再生（公開ページ）": 33
   }
  },
  "019_tegami_kaku": {
@@ -270,5 +281,9 @@
  "018_ikigai_yakuwari": {
   "type": "幸せの心理",
   "video_id": "XEjTNtnAi9g"
+ },
+ "013_jiman_hito": {
+  "type": "人づきあい",
+  "video_id": "lk-KSTru4J0"
  }
 }
