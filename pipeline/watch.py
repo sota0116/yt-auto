@@ -5,7 +5,7 @@
 # ・上げた動画の今の状態を YouTube から読み、history\<ch>\uploaded.json に書く（published・publish_at・missing）。
 #   retired の付いた回（作り直して差し替えた古い版）は missing と同じ扱い
 #   毎日の実行（run_daily.py）は published の付いていない本数を在庫として数える
-# ・公開された回には、チャンネルからコメントを1件入れる（説明文の1段落目＝LINE の案内とリンク。PR は付けない）。
+# ・（2026-11-22 停止。COMMENTS_POST）公開された回には、チャンネルからコメントを1件入れる（説明文の1段落目＝LINE の案内とリンク。PR は付けない）。
 #   入れたコメントが消された回が2本出たら、そのチャンネルはコメントをやめる（history\<ch>\watch.json の comments_off）
 # ・数字：公開72時間後と7日後に、表示回数・クリック率・平均視聴率・登録・視聴維持のグラフを取り、history\<ch>\metrics.json に書く
 #   表示1,000回以上でクリック率4%未満なら差し替える（72時間：タイトル2番目＋サムネB案／7日：タイトル3番目。1本2回まで）
@@ -34,6 +34,7 @@ import day_slots  # 同じチャンネルの公開どうしを3時間以上あ�
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
 CTR_LINE, IMP_LINE = 4.0, 1000
+COMMENTS_POST = False  # 2026-11-22 本人の指示でコメントの自動投稿を全チャンネル止めた。戻す時は本人の指示があってから True にする
 VIEWS_SWAP, VIEWS_LINE = {"job"}, 0.7  # クリック率が取れない時に、再生で差し替えを決めるチャンネルと線（ほかの回の真ん中の7割）
 TEASER_AFTER = 190  # 長尺の公開から何分後に予告を出すか（19:00 の長尺なら 22:10）。2026-11-04 本人「動画と動画の間は時間を空けて」で 150（21:30。ショート20:10と80分）から変えた。前後3時間に何かあれば次の日（day_slots.py）
 WATCH_ONLY = set()  # 在庫・予約を持たないチャンネル（手で作って、Claude が上げる）。psy は 2026-10-27、spi は 2026-10-29 に毎日の制作へ入れたので外した。
@@ -88,7 +89,10 @@ def refresh(ch, up):
 
 def comment(ch, e, state, dry):
     """公開された回にコメントを1件。7日間は残っているかを毎日確かめる
-    公開の後に非公開へ戻した回（作り直す前の版など）は、コメントを入れられない（403）ので飛ばす（2026-10-25）"""
+    公開の後に非公開へ戻した回（作り直す前の版など）は、コメントを入れられない（403）ので飛ばす（2026-10-25）
+    2026-11-22 本人「コメントの自動投稿は止めてほしい」：全チャンネルで入れない（COMMENTS_POST）"""
+    if not COMMENTS_POST:
+        return
     if not e.get("published") or state.get("comments_off") or e.get("privacy_now") != "public":
         return
     if not e.get("comment_id"):
