@@ -1174,5 +1174,35 @@
   "ok": true,
   "why": "",
   "made_at": "2026-11-21T13:53:52+09:00"
+ },
+ {
+  "work": "20261122_0945_k0",
+  "topic_id": "kigyo_megabank",
+  "kind": "kigyo",
+  "measure": "企業_メガバンク",
+  "title": "もし三菱UFJ銀行に就職したら｜年収の山は何歳？ #年収 #就活 #メガバンク",
+  "hook": "どこに\n入る？",
+  "banner": null,
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-22T10:11:15+09:00"
+ },
+ {
+  "work": "20261122_1011_r1",
+  "topic_id": "routine_タクシー運転手",
+  "kind": "routine",
+  "measure": "1日_乗り物",
+  "title": "タクシー運転手の1日｜終電のあとも走る、夕方4時から夜2時 #年収 #仕事",
+  "hook": "終電のあとに\n走る仕事",
+  "banner": null,
+  "編集の版": 2,
+  "言い方の版": 1,
+  "bgm": "job_short_bgm_03_lofi.m4a",
+  "ok": true,
+  "why": "",
+  "made_at": "2026-11-22T10:42:49+09:00"
  }
 ]
