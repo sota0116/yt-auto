@@ -166,6 +166,9 @@ def contact(work, cid_list, sheet, path):
     g.save(path, quality=70)
 
 
+FAILS = []  # そろいの点検ができなかった所（改善ログの行に残す。クラウドの print は誰も見ないため）
+
+
 def consistency(work, s, ids, res, use):
     """人物のそろい方（2026-11-22 本人「それは改善して自動でいくようにしよう」。改善ログの『次』に毎回「絵ができたら一覧に並べて顔と服がそろっているか
     確かめる」が残り、次の書き手は絵を見られないので7回続けてできなかった）。profile.json の image_consistency が true のチャンネルだけ。
@@ -191,9 +194,10 @@ def consistency(work, s, ids, res, use):
             continue
         name, sheet = sh[k]
         try:
-            contact(work, [c["id"] for c in cuts], sheet, os.path.join(ROOT, "history", ch, "checks", os.path.basename(os.path.abspath(work)), k + ".jpg"))
+            contact(work, [c["id"] for c in cuts], sheet, os.path.join(ROOT, "history", ch, "checks", os.path.basename(os.path.dirname(os.path.abspath(work))), k + ".jpg"))
         except Exception as e:  # noqa: BLE001  控えが作れなくても点検は続ける
             print(f"（{k} の一覧の控えは作れなかった：{type(e).__name__}）", flush=True)
+            FAILS.append(f"{k} の一覧の控え（{type(e).__name__}）")
         sp = os.path.join(work, "images", "_gate_tmp", "_sheet_" + k + ".jpg")
         os.makedirs(os.path.dirname(sp), exist_ok=True)
         im = Image.open(sheet).convert("RGB")
@@ -215,6 +219,7 @@ def consistency(work, s, ids, res, use):
                 got = {x["id"]: x for x in json.loads(t)["判定"]}
             except Exception as e:  # noqa: BLE001  そろいの点検が動かなくても、絵ゲートの本体は止めない
                 print(f"（{k} のそろいの点検ができなかった：{type(e).__name__} {str(e)[:120]}）", flush=True)
+                FAILS.append(f"{k} の判定（{type(e).__name__} {str(e)[:60]}）")
                 continue
             for c in part:
                 v = got.get(c["id"])
@@ -241,10 +246,10 @@ def kaizen(work, s, seen, res):
     """そろいの点検の結果を改善ログに1行足す（回ごとに1回）。『次に上げること』は前の行のものを引き継ぐ（絵の一覧を確かめる『次』は、この点検がやったので置き換える）"""
     ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(work))))
     p = os.path.join(ROOT, "history", ch, "改善ログ.md")
-    name = os.path.basename(os.path.abspath(work))
+    name = os.path.basename(os.path.dirname(os.path.abspath(work)))  # 回の名前（work の1つ上。channels/<ch>/<回>/work）
     tag = f"｜{name}（絵の人物のそろい・自動）｜"
     raw = open(p, "rb").read().decode("utf-8") if os.path.exists(p) else ""
-    if not seen or tag in raw:
+    if (not seen and not FAILS) or tag in raw:
         return
     eol = "\r\n" if "\r\n" in raw else "\n"
     lines = [x for x in raw.splitlines() if x.startswith("- ")]
@@ -254,9 +259,13 @@ def kaizen(work, s, seen, res):
     ng = sorted({i for i, v in res.items() if any("設定画の" in q for q in v.get("問題") or []) or v.get("そろいの注意")})
     note = sorted(i for i, v in res.items() if v.get("そろいの注意"))
     who = "・".join(f"{k} {len(v)}枚" for k, v in seen.items())
-    line = (f"- {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))):%Y-%m-%d}{tag}"
-            f"設定画と絵を並べて人物の顔と服を見た（{who}）。別人に見えた絵 {len(ng)}枚{('（' + '・'.join(ng) + '）') if ng else ''}は設定画を付けて作り直した"
-            f"{('。作り直してもそろわず注意で残した絵：' + '・'.join(note)) if note else ''}（一覧の控え：history/{ch}/checks/{name}/）｜{nxt}")
+    did = (f"設定画と絵を並べて人物の顔と服を見た（{who}）。"
+           + (f"別人に見えた絵 {len(ng)}枚（{'・'.join(ng)}）は設定画を付けて作り直した" if ng else "別人に見えた絵は無かった")
+           + (f"。作り直してもそろわず注意で残した絵：{'・'.join(note)}" if note else "")
+           + f"（一覧の控え：history/{ch}/checks/{name}/）") if seen else "人物のそろいの点検を始めたが、判定が1つも取れなかった"
+    if FAILS:
+        did += "。点検できなかった所：" + "・".join(FAILS[:5])
+    line = f"- {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))):%Y-%m-%d}{tag}{did}｜{nxt}"
     body = raw if raw.endswith(eol) or not raw else raw + eol
     open(p, "wb").write((body + line + eol).encode("utf-8"))
 
@@ -302,8 +311,14 @@ def main():
     run_gate(a.work, s, [i for i in ids if i not in missing and i not in again], res, use)
     seen = {}
 
-    def look(cids):  # 人物のそろい方（image_consistency のチャンネルだけ。2026-11-22）
-        for k, v in consistency(a.work, s, set(cids), res, use).items():
+    def look(cids):  # 人物のそろい方（image_consistency のチャンネルだけ。2026-11-22）。動かなくても絵ゲートの本体は止めない
+        try:
+            got = consistency(a.work, s, set(cids), res, use)
+        except Exception as e:  # noqa: BLE001
+            print(f"（そろいの点検が動かなかった：{type(e).__name__} {str(e)[:120]}）", flush=True)
+            FAILS.append(f"点検の全体（{type(e).__name__} {str(e)[:60]}）")
+            return
+        for k, v in got.items():
             seen.setdefault(k, {}).update(v)
     look([i for i in ids if i not in missing and i not in again])
     save = lambda: json.dump(res, open(gp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
