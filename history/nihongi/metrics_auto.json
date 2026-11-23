@@ -783,6 +783,18 @@
    "直す所": [],
    "取った日": "2026-11-19",
    "再生（公開ページ）": 42
+  },
+  "d7": {
+   "views": 43,
+   "averageViewPercentage": 29.09,
+   "averageViewDuration": 132,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-23",
+   "再生（公開ページ）": 44
   }
  },
  "S121_r003": {
@@ -876,11 +888,33 @@
  },
  "S127_r015": {
   "type": null,
-  "video_id": "EsDdpWQjshc"
+  "video_id": "EsDdpWQjshc",
+  "h72": {
+   "views": 181,
+   "averageViewPercentage": 63.73,
+   "averageViewDuration": 32,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "11%あたりで急に落ちる（15%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-23",
+   "再生（公開ページ）": 1364
+  }
  },
  "S128_n017": {
   "type": null,
-  "video_id": "KEc4CDNJz7I"
+  "video_id": "KEc4CDNJz7I",
+  "h72": {
+   "views": 1206,
+   "averageViewPercentage": 114.36999999999999,
+   "averageViewDuration": 53,
+   "subscribersGained": 2,
+   "直す所": [],
+   "取った日": "2026-11-23",
+   "再生（公開ページ）": 1393
+  }
  },
  "S130_r016": {
   "type": null,
@@ -901,5 +935,17 @@
  "S133_r027": {
   "type": null,
   "video_id": "wsxUNBVkD_k"
+ },
+ "S134_r002": {
+  "type": null,
+  "video_id": "yXkQ1RDSyBs"
+ },
+ "S135_r014": {
+  "type": null,
+  "video_id": "VGTYw1XOz_Q"
+ },
+ "L106_w002": {
+  "type": null,
+  "video_id": "avX3kAvPkwk"
  }
 }

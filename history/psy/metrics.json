@@ -280,7 +280,19 @@
  },
  "018_ikigai_yakuwari": {
   "type": "幸せの心理",
-  "video_id": "XEjTNtnAi9g"
+  "video_id": "XEjTNtnAi9g",
+  "h72": {
+   "views": 68,
+   "averageViewPercentage": 27.18,
+   "averageViewDuration": 318,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "10%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-23",
+   "再生（公開ページ）": 237
+  }
  },
  "013_jiman_hito": {
   "type": "人づきあい",

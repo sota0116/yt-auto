@@ -741,6 +741,13 @@
    "averageViewDuration": 19,
    "subscribersGained": 0,
    "取った日": "2026-11-19"
+  },
+  "d7": {
+   "views": 62,
+   "averageViewPercentage": 38.32,
+   "averageViewDuration": 18,
+   "subscribersGained": 0,
+   "取った日": "2026-11-23"
   }
  },
  "016_yoru_kangae:short_3": {
@@ -760,6 +767,13 @@
    "averageViewDuration": 49,
    "subscribersGained": 0,
    "取った日": "2026-11-19"
+  },
+  "d7": {
+   "views": 66,
+   "averageViewPercentage": 94.32,
+   "averageViewDuration": 44,
+   "subscribersGained": 0,
+   "取った日": "2026-11-23"
   }
  },
  "016_yoru_kangae:short_4": {
@@ -779,6 +793,13 @@
    "averageViewDuration": 18,
    "subscribersGained": 0,
    "取った日": "2026-11-19"
+  },
+  "d7": {
+   "views": 2,
+   "averageViewPercentage": 43.52,
+   "averageViewDuration": 18,
+   "subscribersGained": 0,
+   "取った日": "2026-11-23"
   }
  },
  "018_ikigai_yakuwari": {
@@ -840,5 +861,17 @@
   "kind": "after",
   "title": "【心理学】「困っちゃう」が口ぐせの人の正体｜ふつうの自慢より、好かれなかった言い方 #shorts",
   "publish_slot": "22:10"
+ },
+ "013_jiman_hito:short_3": {
+  "type": "人づきあい",
+  "video_id": "aYybyBUSKCs",
+  "hook": "同窓会で、自分の話ばかりしている人には、まわりの顔がどう見えているのでしょうか？",
+  "band": [
+   "聞き手の顔を",
+   "明るく読みすぎ"
+  ],
+  "kind": "after",
+  "title": "【心理学】自慢話が止まらない人、実は聞き手の顔を明るく読みすぎています。 #shorts",
+  "publish_slot": "07:10"
  }
 }
