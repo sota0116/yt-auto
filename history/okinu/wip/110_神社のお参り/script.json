@@ -1,0 +1,2310 @@
+{
+ "format": "long",
+ "title": "【60代】初詣は行くのに残らない｜お金が残る人が神社でしない5つ【金運】",
+ "titles": [
+  "【60代】初詣は行くのに残らない｜お金が残る人が神社でしない5つ【金運】",
+  "【60代】お賽銭を●●ていませんか？お金が残る人がお参りでしない5つ【金運】",
+  "【60代】お金が残る人が神社のお参りで絶対しない5つ｜1位は初詣のあと【金運】"
+ ],
+ "thumb": {
+  "layout": "object",
+  "bg": "B01",
+  "line1": "初詣で5つ中",
+  "line2": "●●する人は",
+  "judge": "金が逃げる"
+ },
+ "thumb_kind": "object",
+ "desc": "神社のお参りで、お金が残る人が絶対にしない5つと、お金をかけずにできる直し方が分かります。\nいくつ当てはまるか、数えながらご覧ください。\nお賽銭の納め方やお礼参りの決まりは、神社の作法と、昔からの縁起の考え方から来ています。\n\nあなたのお参りは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね⛩\n\n{CHAPTERS}\n\n※映像とナレーションはAIを使って作っています。\n※お話は創作です。\nVOICEVOX:波音リツ、VOICEVOX:もち子さん",
+ "desc_lead": "神社のお参りで、お金が残る人が絶対にしない5つと、お金をかけずにできる直し方が分かります。\nいくつ当てはまるか、数えながらご覧ください。\nお賽銭の納め方やお礼参りの決まりは、神社の作法と、昔からの縁起の考え方から来ています。\n\nあなたのお参りは、5つのうちいくつ当てはまりましたか？ コメントで数を教えてくださいね⛩",
+ "tags": [
+  "金運",
+  "金運アップ",
+  "神社",
+  "参拝",
+  "お参り",
+  "初詣",
+  "お賽銭",
+  "お礼参り",
+  "朔日参り",
+  "開運",
+  "年金",
+  "60代",
+  "50代"
+ ],
+ "promise": "お金が残る人が神社のお参りでしない5つ（お賽銭を投げ入れる・夕方すぎにお参りする・お願いをいくつも並べる・帰りに寄り道をする・初詣で願ってお礼に行かない）の言い伝えのわけと、お金をかけずにできる直し方、近所の神社と有名な神社に両方お参りしていいか、叶わなかった年のお礼、毎月1日の朔日参りが持ち帰れる",
+ "competitor_note": "TTP：題材と章（帰り方・いくつもの寺社に参る・まとめのあとのおまけの相談）は wbCRVrYRsmk の章4・9・14、題の型（お金が残る〇〇が絶対にしないこと＋｜副題＋のに）は 7xg1qfQq1es、サムネの指示語（コレ）は wbCRVrYRsmk・ryToxudYpOE から。文・絵は写していない",
+ "fiction": true,
+ "world_rules": [
+  "物語は創作。佐和子さん（68歳）・澄江さんは架空の人物（同じ団地の2人。年金はほとんど同じ）",
+  "語り手（おきぬ）は場面の外から話す。人物の心の中は佐和子さんの分だけ語る",
+  "セリフは佐和子さんだけ（もち子さんの声）。澄江さんの言葉は語り手が言い換えて伝える",
+  "金運の話は言い伝えとして話す。効き目の数字は出さない。お金が増えたとは言わない"
+ ],
+ "world_terms": [
+  "言われ",
+  "考え",
+  "されて",
+  "そうです",
+  "風水",
+  "陽の気",
+  "陰の気",
+  "福"
+ ],
+ "voices": {
+  "sawako": 20
+ },
+ "card_theme": "kinun",
+ "tempo": 1.0,
+ "gap": 0.3,
+ "voice": {
+  "engine": "voicevox",
+  "speaker": 9,
+  "speedScale": 1.0
+ },
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "お金が残る人が神社のお参りで絶対にしないことが5つあります。",
+   "tts_text": "お金が残る人が神社のお参りで絶対にしないことがいつつあります。",
+   "image_en": "Early evening at a crowded Japanese Shinto shrine during New Year's visit (hatsumode): from behind a dense crowd of older people in winter coats, one woman's hand flings a coin high over the heads toward a large wooden offering box (saisen-bako) in front of the worship hall; the coin glints in mid-air. Dim blue dusk light, paper lanterns glowing faintly. No readable text, no logos, no brand names.",
+   "anim": "kling",
+   "motion": true,
+   "image": "Early evening at a crowded Japanese Shinto shrine during New Year's visit (hatsumode): from behind a dense crowd of older people in winter coats, one woman's hand flings a coin high over the heads toward a large wooden offering box (saisen-bako) in front of the worship hall; the coin glints in mid-air. Dim blue dusk light, paper lanterns glowing faintly. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "A02",
+   "narration": "人の頭の向こうへ、お賽銭を、ぽんと投げ入れていませんか。",
+   "tts_text": "人の頭の向こうへ、おさいせんを、ぽんと投げ入れていませんか。",
+   "same_as": "A01"
+  },
+  {
+   "id": "A03",
+   "narration": "金運の世界では、それは、お金を軽く扱う人のしるしだと言われています。",
+   "tts_text": "きんうんの世界では、それは、お金を軽く扱う人のしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お賽銭を投げるのは",
+     "big": "お金を軽く扱うしるし",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "A04",
+   "narration": "神社でしないことは、全部で5つ。どれも、お金をかけずに直せます。",
+   "tts_text": "神社でしないことは、全部でいつつ。どれも、お金をかけずに直せます。",
+   "card": {
+    "type": "big_text",
+    "text": "お金が残る人が神社で",
+    "text2": "絶対にしない、5つのこと",
+    "accent": "5つ"
+   }
+  },
+  {
+   "id": "A05",
+   "narration": "あなたはいくつやっているか、指を折って数えながら見てください。",
+   "card": {
+    "type": "big_text",
+    "text": "数えながら見てください",
+    "text2": "いくつやっている？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "A06",
+   "narration": "佐和子さん、68歳。年金は月11万円です。",
+   "tts_text": "さわこさん、ろくじゅうはっさい。年金は月じゅういちまんえんです。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "佐和子さん",
+    "role": "68歳　年金は月11万円"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "A07",
+   "narration": "同じ団地の澄江さんも、年金はほとんど同じ。",
+   "tts_text": "同じ団地のすみえさんも、年金はほとんど同じ。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "澄江さん",
+    "role": "同じ団地　年金もほぼ同じ"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "A08",
+   "narration": "佐和子さんは、初詣を毎年欠かしません。それなのに、お金が残らない。",
+   "tts_text": "さわこさんは、はつもうでを毎年欠かしません。それなのに、お金が残らない。",
+   "card": {
+    "type": "big_text",
+    "text": "初詣は毎年、欠かさない",
+    "text2": "それなのに、お金が残らない",
+    "accent": "残らない"
+   }
+  },
+  {
+   "id": "A09",
+   "narration": "月末に、財布にお札が残るのは、澄江さんの方でした。",
+   "tts_text": "げつまつに、財布におさつが残るのは、すみえさんのほうでした。",
+   "card": {
+    "type": "two_cards",
+    "items": [
+     {
+      "head": "佐和子さん",
+      "sub": "月末のお札　0枚",
+      "x": true
+     },
+     {
+      "head": "澄江さん",
+      "sub": "月末のお札　残る"
+     }
+    ],
+    "sep": "VS"
+   }
+  },
+  {
+   "id": "A10",
+   "narration": "2人の違いは、神社でのお参りの仕方にありました。",
+   "tts_text": "ふたりの違いは、神社でのお参りの仕方にありました。",
+   "card": {
+    "type": "big_text",
+    "text": "2人の違いは",
+    "text2": "お参りの仕方だった",
+    "accent": "お参り"
+   }
+  },
+  {
+   "id": "A11",
+   "narration": "神社は、神様に、ふだんのあいさつをしに行く所だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "神社は",
+     "big": "神様へのあいさつの場所",
+     "size": 100
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "A12",
+   "narration": "お金が残らない人は、神社で、この5つをやっています。",
+   "tts_text": "お金が残らない人は、神社で、このいつつをやっています。",
+   "montage": [
+    "A01",
+    "C01",
+    "D01",
+    "E01"
+   ],
+   "montage_blur": 14,
+   "montage_labels": [
+    "第5位　お賽銭を●●入れる",
+    "第4位　●●すぎにお参りする",
+    "第3位　お願いを●●●並べる",
+    "第2位　帰りに●●●をする"
+   ]
+  },
+  {
+   "id": "A13",
+   "narration": "第1位は、初詣に行く人の、ほとんどがやっていることです。",
+   "tts_text": "だいいちいは、はつもうでに行く人の、ほとんどがやっていることです。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "初詣で願って、●●に行かない",
+    "sub": "ほとんどの人がやっている",
+    "mark": "？"
+   }
+  },
+  {
+   "id": "B00",
+   "narration": "第5位。お賽銭を、投げ入れる。",
+   "tts_text": "だいごい。おさいせんを、投げ入れる。",
+   "card": {
+    "type": "rank",
+    "num": "第5位",
+    "title": "お賽銭を投げ入れる",
+    "sub": "混んでいるから、後ろから"
+   },
+   "yt_chapter": "第5位 お賽銭を投げ入れる"
+  },
+  {
+   "id": "B01",
+   "narration": "初詣の行列。前まで行けずに、後ろからお賽銭を放る。",
+   "tts_text": "はつもうでの行列。前まで行けずに、後ろからおさいせんをほうる。",
+   "image_en": "Extreme close-up of a large old wooden offering box (saisen-bako) at a Japanese Shinto shrine at dusk: a few coins bounce off its worn wooden rim and scatter on the stone pavement, one coin spinning on the ground. Gloomy dim light, the box fills most of the frame, dark empty space in the upper left. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Extreme close-up of a large old wooden offering box (saisen-bako) at a Japanese Shinto shrine at dusk: a few coins bounce off its worn wooden rim and scatter on the stone pavement, one coin spinning on the ground. Gloomy dim light, the box fills most of the frame, dark empty space in the upper left. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B02",
+   "narration": "賽銭箱のふちに当たって、からんと、はね返る音。",
+   "tts_text": "さいせんばこのふちに当たって、からんと、はね返る音。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B03",
+   "narration": "混んでいる日は、ほとんどの人が、こうしていませんか。",
+   "same_as": "B01"
+  },
+  {
+   "id": "B04",
+   "narration": "お賽銭は、神様へのお供え物だと言われています。",
+   "tts_text": "おさいせんは、神様へのおそなえものだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お賽銭は",
+     "big": "神様へのお供え物",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "B05",
+   "narration": "お供え物は、投げずに、そっと納める物。",
+   "tts_text": "おそなえものは、投げずに、そっと納める物。",
+   "card": {
+    "type": "big_text",
+    "text": "お供え物は",
+    "text2": "投げずに、そっと納める",
+    "accent": "そっと"
+   }
+  },
+  {
+   "id": "B06",
+   "narration": "これは、神社の賽銭箱です。木の格子の奥へ、お供えが落ちていきます。",
+   "tts_text": "これは、神社のさいせんばこです。木のこうしの奥へ、おそなえが落ちていきます。",
+   "real": "Saisen box Shinto shrine",
+   "image_en": "A traditional large wooden offering box (saisen-bako) with a slatted top standing in front of a Shinto shrine worship hall, thick braided bell rope hanging above, calm daylight. No people. No readable text, no logos, no brand names.",
+   "real_src": {
+    "題": "File:Saisen.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Saisen.jpg/1920px-Saisen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Saisen.jpg",
+    "検索語": "Saisen box Shinto shrine"
+   }
+  },
+  {
+   "id": "B07",
+   "narration": "昔は、お金ではなく、お米を供えていたとも言われます。",
+   "tts_text": "むかしは、お金ではなく、おこめを供えていたとも言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "昔のお賽銭は",
+    "text2": "お米だった",
+    "accent": "お米"
+   }
+  },
+  {
+   "id": "B08",
+   "narration": "金運の世界では、お金を投げる人からは、お金が離れていくと言われます。",
+   "tts_text": "きんうんの世界では、お金を投げる人からは、お金が離れていくと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お金を投げる人から",
+     "big": "お金は離れていく",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "B09",
+   "narration": "お金は、大切にしてくれる人の所へ集まる。昔から、そう考えられてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "お金は",
+    "text2": "大切にする人の所へ集まる",
+    "accent": "大切"
+   }
+  },
+  {
+   "id": "B10",
+   "narration": "佐和子さんも、毎年、行列の後ろから、お賽銭を投げていました。",
+   "tts_text": "さわこさんも、毎年、行列の後ろから、おさいせんを投げていました。",
+   "image_en": "A crowded Japanese Shinto shrine at New Year (hatsumode) in the late afternoon: Sawako stands at the very back of a long line of visitors, stretching up on her toes and raising one arm to toss a coin over the heads in front of her, with a hesitant, slightly guilty face. Winter coats, cold grey light, a wooden worship hall far ahead. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "A crowded Japanese Shinto shrine at New Year (hatsumode) in the late afternoon: Sawako stands at the very back of a long line of visitors, stretching up on her toes and raising one arm to toss a coin over the heads in front of her, with a hesitant, slightly guilty face. Winter coats, cold grey light, a wooden worship hall far ahead. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B11",
+   "narration": "前まで並んだら、後ろの人に悪いもの。",
+   "card": {
+    "type": "big_text",
+    "text": "後ろの人に",
+    "text2": "悪いと思って",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B12",
+   "narration": "投げた小銭が、箱に入ったかどうかも、見ていませんでした。",
+   "same_as": "B10"
+  },
+  {
+   "id": "B13",
+   "narration": "澄江さんは、前まで進んで、お賽銭を、そっと箱に落とします。",
+   "tts_text": "すみえさんは、前まで進んで、おさいせんを、そっと箱に落とします。",
+   "image_en": "Quiet bright morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sumie stands right in front of a wooden offering box (saisen-bako) and gently lowers a coin into the slats with her fingertips, calm and attentive face, stone lanterns and tall trees behind her. Soft morning sunlight. No readable text, no logos, no brand names.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "Quiet bright morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sumie stands right in front of a wooden offering box (saisen-bako) and gently lowers a coin into the slats with her fingertips, calm and attentive face, stone lanterns and tall trees behind her. Soft morning sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "B14",
+   "narration": "混んでいる日は、人の少ない朝の早い時間を、選んでいました。",
+   "same_as": "B13"
+  },
+  {
+   "id": "B15",
+   "narration": "直し方は、賽銭箱の前まで進んでから、入れること。",
+   "tts_text": "なおしかたは、さいせんばこの前まで進んでから、入れること。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "前まで進んでから、入れる",
+     "投げずに、そっと落とす",
+     "混む日は、朝の早い時間に"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "B16",
+   "narration": "投げずに、手を近づけて、そっと落とします。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "前まで進んでから、入れる",
+     "投げずに、そっと落とす",
+     "混む日は、朝の早い時間に"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "B17",
+   "narration": "混む日を避けるなら、朝の早い時間に行きます。",
+   "card": {
+    "type": "rules",
+    "title": "第5位の直し方",
+    "items": [
+     "前まで進んでから、入れる",
+     "投げずに、そっと落とす",
+     "混む日は、朝の早い時間に"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "B18",
+   "narration": "そっと納めるのも、神様へのあいさつの一つだと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "そっと納めるのも",
+     "big": "神様へのあいさつ",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "B19",
+   "narration": "人が多くて、前まで行けない時は、どうするの？",
+   "card": {
+    "type": "big_text",
+    "text": "前まで行けない",
+    "text2": "混んでいる時は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B20",
+   "narration": "列に並んで、順番を待ちます。待てない日は、日を改めてもいいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "待てない日は、日を改める",
+    "text2": "列に並んで、前で入れる",
+    "accent": "前で",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B21",
+   "narration": "お賽銭は、いくら入れたら、いいの？",
+   "tts_text": "おさいせんは、いくら入れたら、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "お賽銭は",
+    "text2": "いくら入れたらいい？",
+    "kicker": "金額"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "B22",
+   "narration": "金額に決まりはありません。たくさん入れても、願いが叶うわけではないと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "多いほど叶う、ではない",
+    "text2": "金額に、決まりはない",
+    "accent": "決まりはない",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "B23",
+   "narration": "佐和子さんは、次のお参りで、初めて賽銭箱の前まで進みました。",
+   "tts_text": "さわこさんは、次のお参りで、初めてさいせんばこの前まで進みました。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:s02_A05"
+  },
+  {
+   "id": "B24",
+   "narration": "小銭を丁寧に置けると、家でのお金の扱いも、少しずつ変わっていきます。",
+   "tts_text": "こぜにを丁寧に置けると、いえでのお金の扱いも、少しずつ変わっていきます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "小銭を丁寧に置くと",
+     "big": "お金の扱いが変わる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "B25",
+   "narration": "同じお参りでも、行く時間で、違いが出ると言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "同じお参りでも",
+    "text2": "行く時間で、違いが出る",
+    "accent": "時間"
+   }
+  },
+  {
+   "id": "C00",
+   "narration": "第4位。夕方すぎに、お参りする。",
+   "tts_text": "だいよんい。ゆうがたすぎに、お参りする。",
+   "card": {
+    "type": "rank",
+    "num": "第4位",
+    "title": "夕方すぎにお参りする",
+    "sub": "買い物の帰りに、ついでに"
+   },
+   "yt_chapter": "第4位 夕方すぎにお参りする"
+  },
+  {
+   "id": "C01",
+   "narration": "スーパーの帰りに、日の暮れた神社へ、ちょっと寄る。",
+   "image_en": "After sunset at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako, holding a heavy plain shopping bag with green onions sticking out, hurries up the stone steps toward the dark wooden worship hall, glancing at her watch, tired face. Only one stone lantern glows faintly, deep blue darkness. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "After sunset at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako, holding a heavy plain shopping bag with green onions sticking out, hurries up the stone steps toward the dark wooden worship hall, glancing at her watch, tired face. Only one stone lantern glows faintly, deep blue darkness. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C02",
+   "narration": "暗くなった境内で、急いで手を合わせていませんか。",
+   "tts_text": "暗くなったけいだいで、急いで手を合わせていませんか。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C03",
+   "narration": "金運の世界では、お参りは、日の出から正午までの午前中がいいと言われます。",
+   "tts_text": "きんうんの世界では、お参りは、日の出からしょうごまでの午前中がいいと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お参りは",
+     "big": "日の出から正午まで",
+     "size": 110
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "C04",
+   "narration": "午前中は、陽の気が強い時間。その力を、追い風にできるからです。",
+   "tts_text": "ごぜんちゅうは、ようのきが強い時間。その力を、追い風にできるからです。",
+   "card": {
+    "type": "big_text",
+    "text": "午前中は",
+    "text2": "陽の気が、追い風になる",
+    "accent": "陽"
+   }
+  },
+  {
+   "id": "C05",
+   "narration": "正午を過ぎると、陰の気の時間に入っていくと考えられています。",
+   "tts_text": "しょうごを過ぎると、いんのきの時間にはいっていくと考えられています。",
+   "card": {
+    "type": "big_text",
+    "text": "正午を過ぎると",
+    "text2": "陰の気の時間へ",
+    "accent": "陰"
+   }
+  },
+  {
+   "id": "C06",
+   "narration": "日が暮れた神社は、人も少なく、灯りも心細いものです。",
+   "tts_text": "日が暮れた神社は、人も少なく、あかりも心細いものです。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C07",
+   "narration": "疲れた体で、急いで拝むと、せっかくのお参りが、用事のついでになってしまう。",
+   "card": {
+    "type": "big_text",
+    "text": "急いで拝むと",
+    "text2": "お参りが、用事のついでに",
+    "accent": "ついで"
+   }
+  },
+  {
+   "id": "C08",
+   "narration": "暮れてからの慌ただしいお参りは、お金が逃げる人のしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "暮れてからのお参りは",
+     "big": "お金が逃げるしるし",
+     "size": 110
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "C09",
+   "narration": "佐和子さんのお参りは、いつも、買い物の帰りの夕方でした。",
+   "tts_text": "さわこさんのお参りは、いつも、買い物の帰りのゆうがたでした。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C10",
+   "narration": "通り道だから、ついでに寄れば、手間がないと思って。",
+   "card": {
+    "type": "big_text",
+    "text": "通り道だから",
+    "text2": "ついでに寄ればいい",
+    "kicker": "ついで"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C11",
+   "narration": "手には、ねぎの出た買い物袋。頭の中は、夕ごはんのことでいっぱいでした。",
+   "tts_text": "手には、ねぎの出た買い物袋。頭の中は、ゆうごはんのことでいっぱいでした。",
+   "same_as": "C01"
+  },
+  {
+   "id": "C12",
+   "narration": "澄江さんは、朝の散歩の途中で、お参りをすませます。",
+   "tts_text": "すみえさんは、朝の散歩の途中で、お参りをすませます。",
+   "image_en": "Bright early morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sumie in walking shoes bows politely in front of the wooden worship hall, sunbeams slanting through tall trees onto the freshly swept gravel, a light mist. Fresh golden morning light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "Bright early morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sumie in walking shoes bows politely in front of the wooden worship hall, sunbeams slanting through tall trees onto the freshly swept gravel, a light mist. Fresh golden morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "C13",
+   "narration": "朝日の差す境内は、掃き清められて、空気まで違うそうです。",
+   "tts_text": "あさひの差すけいだいは、はききよめられて、空気まで違うそうです。",
+   "same_as": "C12"
+  },
+  {
+   "id": "C14",
+   "narration": "直し方は、お参りを、午前中にすること。",
+   "tts_text": "なおしかたは、お参りを、ごぜんちゅうにすること。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "お参りは、午前中に",
+     "用事の帰りでなく、行きに寄る",
+     "暮れたら、別の日に回す"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "C15",
+   "narration": "出かける用事があるなら、帰りではなく、行きに寄ります。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "お参りは、午前中に",
+     "用事の帰りでなく、行きに寄る",
+     "暮れたら、別の日に回す"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "C16",
+   "narration": "日が暮れてしまったら、無理をせず、別の日に回します。",
+   "card": {
+    "type": "rules",
+    "title": "第4位の直し方",
+    "items": [
+     "お参りは、午前中に",
+     "用事の帰りでなく、行きに寄る",
+     "暮れたら、別の日に回す"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "C17",
+   "narration": "仕事のある日は、朝に行けないんだけど、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "朝に行けない",
+    "text2": "仕事のある日は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "C18",
+   "narration": "休みの日の朝に、回せばいいのです。毎日行かなくても、かまいません。",
+   "card": {
+    "type": "big_text",
+    "text": "毎日でなくていい",
+    "text2": "休みの日の朝に回す",
+    "accent": "朝",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "C19",
+   "narration": "朝のお参りは、1日の始まりに、気持ちを整える時間にもなります。",
+   "tts_text": "朝のお参りは、いちにちの始まりに、気持ちを整える時間にもなります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "朝のお参りは",
+     "big": "1日の気持ちが整う",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "C20",
+   "narration": "ここで、問題です。",
+   "card": {
+    "type": "big_text",
+    "text": "",
+    "text2": "問題",
+    "accent": "問題",
+    "kicker": "ここで"
+   },
+   "tease": true
+  },
+  {
+   "id": "C21",
+   "narration": "毎月1日に、近所の神社へお参りする、昔からの習わしがあります。",
+   "tts_text": "まいつきついたちに、近所の神社へお参りする、昔からの習わしがあります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "毎月1日の",
+     "big": "昔からのお参り",
+     "size": 120
+    }
+   },
+   "img_from": "pose:C09"
+  },
+  {
+   "id": "C22",
+   "narration": "毎月1日のお参りを、何と呼ぶでしょう。",
+   "tts_text": "まいつきついたちのお参りを、何と呼ぶでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "毎月1日のお参りを",
+    "text2": "何と呼ぶ？",
+    "accent": "何"
+   }
+  },
+  {
+   "id": "C23",
+   "narration": "ヒントは、月の始まりの日の、昔の呼び方です。",
+   "card": {
+    "type": "big_text",
+    "text": "ヒント",
+    "text2": "月の始まりの日の呼び方",
+    "accent": "始まり"
+   }
+  },
+  {
+   "id": "M01",
+   "narration": "ここまでで、2つです。",
+   "tts_text": "ここまでで、ふたつです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いを●●●並べる",
+     "帰りに●●●をする",
+     "初詣で願って、●●に行かない"
+    ],
+    "show": 2,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M02",
+   "narration": "残りの3つは、手を合わせている時と、そのあとのことです。",
+   "tts_text": "残りのみっつは、手を合わせている時と、そのあとのことです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いを●●●並べる",
+     "帰りに●●●をする",
+     "初詣で願って、●●に行かない"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "M03",
+   "narration": "お金をかけずにできる金運の決まりを、いつもお伝えしています。",
+   "tts_text": "お金をかけずにできるきんうんの決まりを、いつもお伝えしています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "name": "おきぬ",
+    "role": "語り手"
+   },
+   "img_from": "pose:M03"
+  },
+  {
+   "id": "M04",
+   "narration": "次のお話も見たい方は、チャンネル登録をしておくと、新しいお話が届きます。",
+   "tts_text": "次のお話もみたいかたは、チャンネル登録をしておくと、新しいお話が届きます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:M04"
+  },
+  {
+   "id": "D00",
+   "narration": "第3位。お願いを、いくつも並べる。",
+   "tts_text": "だいさんい。おねがいを、いくつも並べる。",
+   "card": {
+    "type": "rank",
+    "num": "第3位",
+    "title": "お願いをいくつも並べる",
+    "sub": "せっかく来たから、あれもこれも"
+   },
+   "yt_chapter": "第3位 お願いをいくつも並べる"
+  },
+  {
+   "id": "D01",
+   "narration": "手を合わせたら、お金のこと、膝のこと、孫のこと。",
+   "tts_text": "手を合わせたら、お金のこと、ひざのこと、まごのこと。",
+   "image_en": "In front of the wooden worship hall of a Japanese Shinto shrine on a cloudy day: Sawako stands with her palms pressed together and eyes squeezed tightly shut, lips moving as she prays for a long time, while a few people wait behind her with impatient faces. Muted grey light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "In front of the wooden worship hall of a Japanese Shinto shrine on a cloudy day: Sawako stands with her palms pressed together and eyes squeezed tightly shut, lips moving as she prays for a long time, while a few people wait behind her with impatient faces. Muted grey light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D02",
+   "narration": "せっかく来たのだからと、お願いを次々に並べていませんか。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D03",
+   "narration": "後ろの人が待っていても、なかなか顔を上げられない。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D04",
+   "narration": "金運の世界では、手を合わせたら、まず感謝を伝えると言われています。",
+   "tts_text": "きんうんの世界では、手を合わせたら、まず感謝を伝えると言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "手を合わせたら",
+     "big": "まず感謝を伝える",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "D05",
+   "narration": "願い事は、欲張らずに、1つか2つに絞るのがいいとされています。",
+   "tts_text": "ねがいごとは、欲張らずに、ひとつかふたつに絞るのがいいとされています。",
+   "card": {
+    "type": "big_text",
+    "text": "願い事は",
+    "text2": "1つか2つに絞る",
+    "accent": "1つか2つ"
+   }
+  },
+  {
+   "id": "D06",
+   "narration": "まずは、日ごろのお礼。お願いは、そのあとに、丁寧に伝えます。",
+   "card": {
+    "type": "big_text",
+    "text": "まず、日ごろのお礼",
+    "text2": "お願いは、そのあと",
+    "accent": "お礼"
+   }
+  },
+  {
+   "id": "D07",
+   "narration": "お願いばかりのお参りは、もらうばかりで返さない人のしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お願いばかりは",
+     "big": "もらうばかりのしるし",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "D08",
+   "narration": "金運の世界では、お金は巡る物だと考えます。もらうばかりでは、巡りが止まってしまうのです。",
+   "tts_text": "きんうんの世界では、お金はめぐる物だと考えます。もらうばかりでは、めぐりが止まってしまうのです。",
+   "card": {
+    "type": "big_text",
+    "text": "もらうばかりでは",
+    "text2": "お金の巡りが、止まる",
+    "accent": "巡り"
+   }
+  },
+  {
+   "id": "D09",
+   "narration": "佐和子さんのお願いは、毎年、10個近くありました。",
+   "tts_text": "さわこさんのおねがいは、毎年、じっこ近くありました。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D10",
+   "narration": "年に1回だもの。まとめて頼まないと、もったいないでしょう。",
+   "tts_text": "ねんにいっかいだもの。まとめて頼まないと、もったいないでしょう。",
+   "card": {
+    "type": "big_text",
+    "text": "年に1回だから",
+    "text2": "まとめて頼みたい",
+    "kicker": "まとめて"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D11",
+   "narration": "手を合わせて、お礼を言ったことは、一度もありませんでした。",
+   "tts_text": "手を合わせて、お礼を言ったことは、いちども、ありませんでした。",
+   "same_as": "D01"
+  },
+  {
+   "id": "D12",
+   "narration": "澄江さんのお参りは、手を合わせて、ほんの数秒です。",
+   "tts_text": "すみえさんのお参りは、手を合わせて、ほんのすうびょうです。",
+   "image_en": "In front of the wooden worship hall of a small neighborhood Shinto shrine on a clear morning: Sumie stands with her palms lightly together, head slightly bowed, a gentle peaceful smile on her face, a braided bell rope hanging beside her. Soft warm sunlight. No readable text, no logos, no brand names.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "In front of the wooden worship hall of a small neighborhood Shinto shrine on a clear morning: Sumie stands with her palms lightly together, head slightly bowed, a gentle peaceful smile on her face, a braided bell rope hanging beside her. Soft warm sunlight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "D13",
+   "narration": "まず、無事に過ごせたお礼。お願いは、1つだけ。",
+   "tts_text": "まず、無事に過ごせたお礼。おねがいは、ひとつだけ。",
+   "same_as": "D12"
+  },
+  {
+   "id": "D14",
+   "narration": "直し方は、手を合わせたら、まずお礼を言うこと。",
+   "tts_text": "なおしかたは、手を合わせたら、まずお礼を言うこと。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "手を合わせたら、まずお礼",
+     "お願いは、1つか2つに",
+     "最後に、深く一礼"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "D15",
+   "narration": "お願いは、1つか2つに絞って、丁寧に伝えます。",
+   "tts_text": "おねがいは、ひとつかふたつに絞って、丁寧に伝えます。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "手を合わせたら、まずお礼",
+     "お願いは、1つか2つに",
+     "最後に、深く一礼"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "D16",
+   "narration": "言い終わったら、おしまいに深く、1回お辞儀をします。",
+   "tts_text": "言い終わったら、おしまいに深く、いっかいおじぎをします。",
+   "card": {
+    "type": "rules",
+    "title": "第3位の直し方",
+    "items": [
+     "手を合わせたら、まずお礼",
+     "お願いは、1つか2つに",
+     "最後に、深く一礼"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "D17",
+   "narration": "家族みんなの分を、お願いしてもいいの？",
+   "tts_text": "かぞくみんなの分を、おねがいしてもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "家族みんなの",
+    "text2": "お願いをしてもいい？",
+    "kicker": "家族"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D18",
+   "narration": "していいのです。ただ、家族の分は1つにまとめます。家族が元気で暮らせますように、と。",
+   "tts_text": "していいのです。ただ、かぞくの分はひとつにまとめます。かぞくが元気で暮らせますように、と。",
+   "card": {
+    "type": "big_text",
+    "text": "家族の分は、1つにまとめる",
+    "text2": "お願いしても、いい",
+    "accent": "1つ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D19",
+   "narration": "お願いすることが、何も浮かばない時は？",
+   "tts_text": "おねがいすることが、何も浮かばない時は？",
+   "card": {
+    "type": "big_text",
+    "text": "お願いが",
+    "text2": "浮かばない時は？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "D20",
+   "narration": "お礼だけのお参りで、十分です。神社は、感謝を伝える所だからです。",
+   "card": {
+    "type": "big_text",
+    "text": "神社は、感謝を伝える所",
+    "text2": "お礼だけでも、十分",
+    "accent": "お礼だけ",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "D21",
+   "narration": "お礼から始まるお参りは、短くても、気持ちがすっと軽くなります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お礼から始めると",
+     "big": "気持ちが軽くなる",
+     "size": 110
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "D22",
+   "narration": "ところが、手を合わせたあとにも、お金が逃げるくせがあるのです。",
+   "card": {
+    "type": "big_text",
+    "text": "手を合わせた、あとにも",
+    "text2": "お金が逃げるくせがある",
+    "accent": "あと"
+   }
+  },
+  {
+   "id": "E00",
+   "narration": "第2位。お参りの帰りに、寄り道をする。",
+   "tts_text": "だいにい。お参りの帰りに、よりみちをする。",
+   "card": {
+    "type": "rank",
+    "num": "第2位",
+    "title": "お参りの帰りに寄り道をする",
+    "sub": "背を向けて、そのまま駅前へ"
+   },
+   "yt_chapter": "第2位 お参りの帰りに寄り道をする"
+  },
+  {
+   "id": "E01",
+   "narration": "拝み終わったら、くるりと背を向けて、すぐ歩き出す。",
+   "image_en": "At a Japanese Shinto shrine on a cloudy afternoon: right after praying, Sawako has already turned her back on the wooden worship hall and walks briskly away down the gravel path toward the street, swinging her handbag, eager hurried face. Muted afternoon light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "At a Japanese Shinto shrine on a cloudy afternoon: right after praying, Sawako has already turned her back on the wooden worship hall and walks briskly away down the gravel path toward the street, swinging her handbag, eager hurried face. Muted afternoon light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E02",
+   "narration": "そのまま、駅前でお茶を飲んで、買い物をして帰る。",
+   "image_en": "A small table by the window of a cozy coffee shop in the afternoon: a half-eaten slice of cake, a cup of coffee, a plain receipt slip, and two full plain paper shopping bags leaning against the chair, a coat thrown over the chair back. No people. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "A small table by the window of a cozy coffee shop in the afternoon: a half-eaten slice of cake, a cup of coffee, a plain receipt slip, and two full plain paper shopping bags leaning against the chair, a coat thrown over the chair back. No people. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E03",
+   "narration": "お参りの日は、出かけたついでに、あちこち回っていませんか。",
+   "same_as": "E02"
+  },
+  {
+   "id": "E04",
+   "narration": "金運の世界では、神社でいただいたいい気は、まっすぐ家へ持ち帰る物だと言われます。",
+   "tts_text": "きんうんの世界では、神社でいただいたいい気は、まっすぐいえへ持ち帰る物だと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "神社のいい気は",
+     "big": "まっすぐ家へ持ち帰る",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "E05",
+   "narration": "寄り道をすると、せっかくの福を、途中で落としてしまうと考えられてきました。",
+   "tts_text": "よりみちをすると、せっかくのふくを、途中で落としてしまうと考えられてきました。",
+   "card": {
+    "type": "big_text",
+    "text": "寄り道をすると",
+    "text2": "福を、途中で落とす",
+    "accent": "落とす"
+   }
+  },
+  {
+   "id": "E06",
+   "narration": "神様の前から下がる時も同じ。くるりと背を向けるのは、神様にお尻を向けることになります。",
+   "card": {
+    "type": "big_text",
+    "text": "すぐ背を向けると",
+    "text2": "神様に、お尻を向ける",
+    "accent": "お尻"
+   }
+  },
+  {
+   "id": "E07",
+   "narration": "拝んだら一礼して、右足から少し後ろへ下がる。それから、向きを変えるのです。",
+   "tts_text": "おがんだらいちれいして、みぎあしから少し後ろへ下がる。それから、向きを変えるのです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "拝んだら",
+     "big": "一礼して、後ろへ下がる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "E08",
+   "narration": "福をいただいて、すぐ背を向ける。それは、福を持ち帰れない人のしるしだと言われています。",
+   "tts_text": "ふくをいただいて、すぐ背を向ける。それは、ふくを持ち帰れない人のしるしだと言われています。",
+   "card": {
+    "type": "big_text",
+    "text": "背を向けて寄り道は",
+    "text2": "福を持ち帰れないしるし",
+    "accent": "持ち帰れない"
+   }
+  },
+  {
+   "id": "E09",
+   "narration": "佐和子さんは、お参りが済むと、いつも急いで鳥居へ向かっていました。",
+   "tts_text": "さわこさんは、お参りが済むと、いつも急いでとりいへ向かっていました。",
+   "same_as": "E01"
+  },
+  {
+   "id": "E10",
+   "narration": "せっかく出てきたんだもの。お茶くらい、したいじゃない。",
+   "card": {
+    "type": "big_text",
+    "text": "せっかく出てきたから",
+    "text2": "お茶くらいしたい",
+    "kicker": "お茶"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E11",
+   "narration": "帰りの喫茶店で、ケーキと、新しいセーター。財布は、軽くなる一方でした。",
+   "same_as": "E02"
+  },
+  {
+   "id": "E12",
+   "narration": "澄江さんは、拝んだあと、一礼して、ゆっくり後ろへ下がります。",
+   "tts_text": "すみえさんは、おがんだあと、いちれいして、ゆっくり後ろへ下がります。",
+   "image_en": "At a small neighborhood Shinto shrine on a calm sunny morning: Sumie, having finished praying, bows once more and takes a careful small step backward away from the wooden worship hall, still facing it, hands resting together in front of her, serene face. Gentle morning light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "At a small neighborhood Shinto shrine on a calm sunny morning: Sumie, having finished praying, bows once more and takes a careful small step backward away from the wooden worship hall, still facing it, hands resting together in front of her, serene face. Gentle morning light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "E13",
+   "narration": "お参りの日は、そのまま、まっすぐ家へ帰るそうです。",
+   "tts_text": "お参りの日は、そのまま、まっすぐいえへ帰るそうです。",
+   "same_as": "E12"
+  },
+  {
+   "id": "E14",
+   "narration": "直し方は、拝んだら一礼して、少し下がってから向きを変えること。",
+   "tts_text": "なおしかたは、おがんだらいちれいして、少し下がってから向きを変えること。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "一礼して、下がってから向きを変える",
+     "帰りは、まっすぐ家へ",
+     "買い物は、一度帰ってから"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "E15",
+   "narration": "帰りは、寄り道をせずに、まっすぐ家へ帰ります。",
+   "tts_text": "帰りは、よりみちをせずに、まっすぐいえへ帰ります。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "一礼して、下がってから向きを変える",
+     "帰りは、まっすぐ家へ",
+     "買い物は、一度帰ってから"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "E16",
+   "narration": "買い物の用事は、一度家に帰ってから、出直します。",
+   "tts_text": "買い物の用事は、いちどいえに帰ってから、出直します。",
+   "card": {
+    "type": "rules",
+    "title": "第2位の直し方",
+    "items": [
+     "一礼して、下がってから向きを変える",
+     "帰りは、まっすぐ家へ",
+     "買い物は、一度帰ってから"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "E17",
+   "narration": "帰りに、お手洗いに寄るのも、だめなの？",
+   "card": {
+    "type": "big_text",
+    "text": "帰りに",
+    "text2": "お手洗いもだめ？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E18",
+   "narration": "急ぎの時は、かまわないと言われます。困るのは、遊びや買い物で、あちこち回ることです。",
+   "card": {
+    "type": "big_text",
+    "text": "困るのは、遊びや買い物",
+    "text2": "急ぎの時は、かまわない",
+    "accent": "かまわない",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E19",
+   "narration": "遠くの神社へ、旅行で行った時も、寄り道しちゃいけないの？",
+   "tts_text": "遠くの神社へ、旅行で行った時も、よりみちしちゃいけないの？",
+   "card": {
+    "type": "big_text",
+    "text": "旅行で行った",
+    "text2": "遠くの神社も？",
+    "kicker": "旅行"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "E20",
+   "narration": "旅先なら、お参りを、その日の最後の予定にします。そのあとは、宿へまっすぐ帰ればいいのです。",
+   "tts_text": "たびさきなら、お参りを、その日のさいごの予定にします。そのあとは、やどへまっすぐ帰ればいいのです。",
+   "card": {
+    "type": "big_text",
+    "text": "お参りのあとは、宿へ",
+    "text2": "お参りを、その日の終わりに",
+    "accent": "終わり",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "E21",
+   "narration": "まっすぐ帰った家の中に、いただいた福が、そのまま届くと言われます。",
+   "tts_text": "まっすぐ帰ったいえの中に、いただいたふくが、そのまま届くと言われます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "まっすぐ帰れば",
+     "big": "福が家に届く",
+     "size": 120
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "E22",
+   "narration": "そして、いちばん多くの人がやっているのは、帰ったあとの、1年の過ごし方です。",
+   "tts_text": "そして、いちばん多くの人がやっているのは、帰ったあとの、いちねんの過ごし方です。",
+   "card": {
+    "type": "big_text",
+    "text": "いちばん多いのは",
+    "text2": "帰ったあとの、1年",
+    "accent": "1年"
+   }
+  },
+  {
+   "id": "P01",
+   "narration": "ここまでで、4つ。残るは、第1位だけです。",
+   "tts_text": "ここまでで、よっつ。残るは、だいいちいだけです。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いをいくつも並べる",
+     "お参りの帰りに寄り道をする",
+     "初詣で願って、●●に行かない"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "F00",
+   "narration": "いよいよ、第1位です。",
+   "tts_text": "いよいよ、だいいちいです。",
+   "card": {
+    "type": "big_text",
+    "text": "いよいよ",
+    "text2": "第1位",
+    "accent": "第1位"
+   }
+  },
+  {
+   "id": "F01",
+   "narration": "第1位は、初詣で願って、お礼に行かないこと。",
+   "tts_text": "だいいちいは、はつもうでで願って、お礼に行かないこと。",
+   "card": {
+    "type": "rank",
+    "num": "第1位",
+    "title": "初詣で願って、お礼に行かない",
+    "sub": "ほとんどの人がやっている"
+   },
+   "yt_chapter": "第1位 初詣で願って、お礼に行かない"
+  },
+  {
+   "id": "F02",
+   "narration": "初詣で手を合わせたら、次に来るのは、また来年の初詣。",
+   "tts_text": "はつもうでで手を合わせたら、次に来るのは、また来年のはつもうで。",
+   "image_en": "A small neighborhood Shinto shrine in a present-day Japanese town on a grey early-summer day, months after New Year: Sawako walks quickly past its small stone gate (torii) along the street, eyes fixed straight ahead, never glancing at the shrine, carrying a shopping bag; the shrine grounds behind her are empty and quiet, dry leaves gathered by the offering box. Overcast flat light. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "peak": true,
+   "strong": true,
+   "highlight": "お礼に行かない",
+   "image": "A small neighborhood Shinto shrine in a present-day Japanese town on a grey early-summer day, months after New Year: Sawako walks quickly past its small stone gate (torii) along the street, eyes fixed straight ahead, never glancing at the shrine, carrying a shopping bag; the shrine grounds behind her are empty and quiet, dry leaves gathered by the offering box. Overcast flat light. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F03",
+   "narration": "1年のあいだ、神社の前を通っても、素通りしていませんか。",
+   "tts_text": "いちねんのあいだ、神社の前を通っても、すどおりしていませんか。",
+   "same_as": "F02"
+  },
+  {
+   "id": "F04",
+   "narration": "初詣に行く人の、ほとんどがやっていることです。",
+   "tts_text": "はつもうでに行く人の、ほとんどがやっていることです。",
+   "card": {
+    "type": "big_text",
+    "text": "願ったら、それきり",
+    "text2": "ほとんどの人がやっている",
+    "accent": "ほとんど"
+   }
+  },
+  {
+   "id": "F05",
+   "narration": "金運の世界では、初詣は、お願いをするだけの日ではないと言われています。",
+   "tts_text": "きんうんの世界では、はつもうでは、おねがいをするだけの日ではないと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "初詣は",
+     "big": "お願いだけの日ではない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:A17"
+  },
+  {
+   "id": "F06",
+   "narration": "過ぎた1年の感謝と、新しい1年の無事を祈る。それが初詣だと、されています。",
+   "tts_text": "すぎたいちねんの感謝と、新しいいちねんの無事を祈る。それがはつもうでだと、されています。",
+   "card": {
+    "type": "big_text",
+    "text": "初詣は",
+    "text2": "過ぎた1年への感謝",
+    "accent": "感謝"
+   }
+  },
+  {
+   "id": "F07",
+   "narration": "昔の絵にも、年の初めに、神社へ向かう人の姿が、たくさん描かれています。",
+   "tts_text": "むかしの絵にも、としのはじめに、神社へ向かう人の姿が、たくさん描かれています。",
+   "real": "Hatsumode ukiyo-e shrine new year",
+   "image_en": "Japanese woodblock print style scene from the Edo period: many people in kimono walking through a large wooden shrine gate toward a shrine at New Year, light snow, pine decorations, flat colors and fine outlines. No readable text, no logos, no brand names.",
+   "image": "Japanese woodblock print style scene from the Edo period: many people in kimono walking through a large wooden shrine gate toward a shrine at New Year, light snow, pine decorations, flat colors and fine outlines. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F08",
+   "narration": "初詣は、去年1年を守ってもらったお礼から始まる、あいさつだったのです。",
+   "tts_text": "はつもうでは、きょねんいちねんを守ってもらったお礼から始まる、あいさつだったのです。",
+   "card": {
+    "type": "big_text",
+    "text": "初詣は",
+    "text2": "お礼から始まる、あいさつ",
+    "accent": "お礼"
+   }
+  },
+  {
+   "id": "F09",
+   "narration": "願いだけを置いて、お礼に来ない。それは、受けた恩を返さない人のしるしだと言われています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "願ってお礼に来ないのは",
+     "big": "恩を返さないしるし",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "F10",
+   "narration": "お金も同じ。受け取るばかりで返さない所では、巡りが止まると考えられています。",
+   "tts_text": "お金も同じ。受け取るばかりで返さない所では、めぐりが止まると考えられています。",
+   "card": {
+    "type": "big_text",
+    "text": "受け取るばかりだと",
+    "text2": "お金の巡りが、止まる",
+    "accent": "止まる"
+   }
+  },
+  {
+   "id": "F11",
+   "narration": "ある年の暮れ、佐和子さんは、引き出しの奥から、古いお守りを見つけました。",
+   "tts_text": "あるとしのくれ、さわこさんは、引き出しの奥から、古いおまもりを見つけました。",
+   "image_en": "Inside a modest present-day Japanese public housing apartment (danchi) living room in the evening: Sawako kneels by an open low wooden drawer crammed with many small faded fabric shrine charm pouches (omamori) from past years, holding several in her palms, eyes wide with dismay, one hand pressed to her forehead. Warm dim lamp light. No readable text on the charms, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "Inside a modest present-day Japanese public housing apartment (danchi) living room in the evening: Sawako kneels by an open low wooden drawer crammed with many small faded fabric shrine charm pouches (omamori) from past years, holding several in her palms, eyes wide with dismay, one hand pressed to her forehead. Warm dim lamp light. No readable text on the charms, no logos, no brand names."
+  },
+  {
+   "id": "F12",
+   "narration": "毎年の初詣でいただいた物が、10年分。",
+   "tts_text": "毎年のはつもうででいただいた物が、じゅうねんぶん。",
+   "same_as": "F11"
+  },
+  {
+   "id": "F13",
+   "narration": "どれも、お願いをして、そのままになっていました。",
+   "tts_text": "どれも、おねがいをして、そのままになっていました。",
+   "same_as": "F11"
+  },
+  {
+   "id": "F14",
+   "narration": "こんなに頼んで、一度もお礼に行っていなかったなんて。",
+   "tts_text": "こんなに頼んで、いちども、お礼に行っていなかったなんて。",
+   "card": {
+    "type": "big_text",
+    "text": "一度も",
+    "text2": "お礼に行っていなかった",
+    "kicker": "10年分"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F15",
+   "narration": "頼んだことは覚えていても、叶ったことは、忘れていたのです。",
+   "chars": [
+    "sawako"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:s02_A07"
+  },
+  {
+   "id": "F16",
+   "narration": "膝の手術がうまくいったのも、孫が無事に生まれたのも、あの年のお願いでした。",
+   "tts_text": "ひざの手術がうまくいったのも、まごが無事に生まれたのも、あのとしのおねがいでした。",
+   "card": {
+    "type": "big_text",
+    "text": "叶っていたのに",
+    "text2": "お礼を忘れていた",
+    "accent": "忘れて"
+   }
+  },
+  {
+   "id": "F16a",
+   "narration": "お金が残らない理由を、外にばかり探していたのかもしれません。",
+   "same_as": "F11"
+  },
+  {
+   "id": "F17",
+   "narration": "澄江さんは、年に何回も、近所の小さな神社へ顔を出します。",
+   "tts_text": "すみえさんは、年になんかいも、近所の小さな神社へ顔を出します。",
+   "image_en": "A small neighborhood Shinto shrine in a present-day Japanese town in early autumn morning: Sumie bows deeply in front of the wooden worship hall with a warm grateful smile, a few red maple leaves on the swept gravel, sunlight through the trees. No readable text, no logos, no brand names.",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "image": "A small neighborhood Shinto shrine in a present-day Japanese town in early autumn morning: Sumie bows deeply in front of the wooden worship hall with a warm grateful smile, a few red maple leaves on the swept gravel, sunlight through the trees. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F18",
+   "narration": "願いが叶った時は、必ず、同じ神社へお礼に行くそうです。",
+   "same_as": "F17"
+  },
+  {
+   "id": "F19",
+   "narration": "お願いの数より、お礼の数の方が多いのよ。澄江さんは、そう言って笑いました。",
+   "tts_text": "おねがいの数より、お礼の数のほうが多いのよ。すみえさんは、そう言って笑いました。",
+   "same_as": "F17"
+  },
+  {
+   "id": "F20",
+   "narration": "叶わなかった年も、無事に過ごせたお礼を、言いに行くのだそうです。",
+   "chars": [
+    "sumie"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:A10"
+  },
+  {
+   "id": "F21",
+   "narration": "直し方は、初詣では、まず去年1年のお礼から伝えること。",
+   "tts_text": "なおしかたは、はつもうででは、まずきょねんいちねんのお礼から伝えること。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "初詣は、まず去年のお礼から",
+     "叶ったら、同じ神社へお礼に",
+     "年の途中にも、近所の神社へ"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "F22",
+   "narration": "願いが叶ったら、なるべく早く、同じ神社へお礼に行きます。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "初詣は、まず去年のお礼から",
+     "叶ったら、同じ神社へお礼に",
+     "年の途中にも、近所の神社へ"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "F23",
+   "narration": "そして、年の途中にも、近所の神社へ顔を出します。",
+   "tts_text": "そして、としの途中にも、近所の神社へ顔を出します。",
+   "card": {
+    "type": "rules",
+    "title": "第1位の直し方",
+    "items": [
+     "初詣は、まず去年のお礼から",
+     "叶ったら、同じ神社へお礼に",
+     "年の途中にも、近所の神社へ"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "F24",
+   "narration": "お礼参りに、決まった作法はありません。いつもの二礼二拍手一礼で、ありがとうを伝えるだけです。",
+   "tts_text": "おれいまいりに、決まった作法はありません。いつものにれいにはくしゅいちれいで、ありがとうを伝えるだけです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お礼参りは",
+     "big": "いつもの拝み方でいい",
+     "size": 100
+    }
+   },
+   "img_from": "pose:D10"
+  },
+  {
+   "id": "F25",
+   "narration": "お金のかからない、いちばん簡単な直し方です。",
+   "tts_text": "お金のかからない、いちばん簡単ななおしかたです。",
+   "card": {
+    "type": "big_text",
+    "text": "お礼参りは",
+    "text2": "お金がかからない",
+    "accent": "かからない"
+   }
+  },
+  {
+   "id": "F26",
+   "narration": "近所の神社と、有名な神社。両方にお参りしても、いいの？",
+   "card": {
+    "type": "big_text",
+    "text": "近所の神社と有名な神社",
+    "text2": "両方、お参りしていい？",
+    "kicker": "佐和子さん"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F27",
+   "narration": "両方、お参りしていいのです。神様同士が、けんかをすることはないと言われます。",
+   "tts_text": "りょうほう、お参りしていいのです。かみさまどうしが、けんかをすることはないと言われます。",
+   "card": {
+    "type": "big_text",
+    "text": "神様は、けんかしない",
+    "text2": "両方、お参りしていい",
+    "accent": "両方",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F28",
+   "narration": "困るのは、両方にお願いだけをして、どちらにも、お礼に行かないことです。",
+   "tts_text": "困るのは、りょうほうにおねがいだけをして、どちらにも、お礼に行かないことです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "困るのは",
+     "big": "どちらにもお礼なし",
+     "size": 110
+    }
+   },
+   "img_from": "pose:C16"
+  },
+  {
+   "id": "F29",
+   "narration": "遠くの神社には、何度も行けません。澄江さんは、ふだんのお礼を、歩いて行ける神社で伝えていました。",
+   "tts_text": "遠くの神社には、なんども行けません。すみえさんは、ふだんのお礼を、歩いて行ける神社で伝えていました。",
+   "same_as": "F17"
+  },
+  {
+   "id": "F30",
+   "narration": "お願いが叶わなかった年も、お礼に行くの？",
+   "tts_text": "おねがいが叶わなかったとしも、お礼に行くの？",
+   "card": {
+    "type": "big_text",
+    "text": "叶わなかった年も",
+    "text2": "お礼に行くの？",
+    "kicker": "叶わない"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F31",
+   "narration": "行きます。初詣は、過ぎた1年を、無事に過ごせた感謝を伝える日だからです。",
+   "tts_text": "行きます。はつもうでは、すぎたいちねんを、無事に過ごせた感謝を伝える日だからです。",
+   "card": {
+    "type": "big_text",
+    "text": "無事に過ごせた1年に",
+    "text2": "叶わなくても、お礼を",
+    "accent": "お礼",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "F32",
+   "narration": "佐和子さんは、次の朝、近所の小さな神社へ、10年分のお礼に行きました。",
+   "tts_text": "さわこさんは、次の朝、近所の小さな神社へ、じゅうねんぶんのお礼に行きました。",
+   "image_en": "Clear winter morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako stands alone in front of the wooden worship hall, bowing deeply with her palms together, a relieved, gentle and teary smile on her face, warm golden sunrise light spilling over the stone lanterns and the swept gravel. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Clear winter morning at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako stands alone in front of the wooden worship hall, bowing deeply with her palms together, a relieved, gentle and teary smile on her face, warm golden sunrise light spilling over the stone lanterns and the swept gravel. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "F33",
+   "narration": "お願いは、1つもしませんでした。ありがとうございました、とだけ。",
+   "tts_text": "おねがいは、ひとつもしませんでした。ありがとうございました、とだけ。",
+   "same_as": "F32"
+  },
+  {
+   "id": "F34",
+   "narration": "なんだか、肩の荷が下りたみたい。",
+   "card": {
+    "type": "big_text",
+    "text": "なんだか",
+    "text2": "肩の荷が下りたみたい",
+    "kicker": "お礼参り"
+   },
+   "voice": "sawako"
+  },
+  {
+   "id": "F35",
+   "narration": "それからは、月に一度、買い物の行きに、神社へ寄るようになりました。",
+   "tts_text": "それからは、つきにいちど、買い物の行きに、神社へ寄るようになりました。",
+   "same_as": "F32"
+  },
+  {
+   "id": "F36",
+   "narration": "帰りに寄り道をしなくなって、喫茶店のレシートも、減っていきました。",
+   "card": {
+    "type": "big_text",
+    "text": "寄り道をやめたら",
+    "text2": "喫茶店のレシートが減った",
+    "accent": "減った"
+   }
+  },
+  {
+   "id": "F37",
+   "narration": "お礼を伝える人の所には、また次の福が巡ってくる。昔から、そう考えられてきました。",
+   "tts_text": "お礼を伝える人の所には、また次のふくがめぐってくる。昔から、そう考えられてきました。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "お礼を伝える人に",
+     "big": "次の福が巡ってくる",
+     "size": 100
+    }
+   },
+   "img_from": "pose:F06"
+  },
+  {
+   "id": "F38",
+   "narration": "お願いの数より、お礼の数。それだけで、お参りは変わります。",
+   "tts_text": "おねがいの数より、お礼の数。それだけで、お参りは変わります。",
+   "card": {
+    "type": "big_text",
+    "text": "お願いの数より",
+    "text2": "お礼の数",
+    "accent": "お礼"
+   }
+  },
+  {
+   "id": "Q01",
+   "narration": "問題の答えは、朔日参りです。",
+   "tts_text": "問題の答えは、ついたちまいりです。",
+   "card": {
+    "type": "big_text",
+    "text": "毎月1日のお参りは",
+    "text2": "朔日参り",
+    "accent": "朔日参り",
+    "kicker": "答え"
+   },
+   "payoff": true
+  },
+  {
+   "id": "Q02",
+   "narration": "朔日は、月の始まりの日。ひと月を無事に過ごせた感謝と、新しい月の無事を祈るお参りです。",
+   "tts_text": "ついたちは、月の始まりの日。ひとつきを無事に過ごせた感謝と、新しい月の無事を祈るお参りです。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "朔日参りは",
+     "big": "ひと月のお礼のお参り",
+     "size": 100
+    }
+   },
+   "img_from": "pose:E11"
+  },
+  {
+   "id": "Q03",
+   "narration": "伊勢では、毎月1日に、朝早くからお参りする習わしが、今も続いています。",
+   "tts_text": "いせでは、まいつきついたちに、朝早くからお参りする習わしが、いまも続いています。",
+   "real": "Ise Grand Shrine Uji Bridge ukiyo-e",
+   "image_en": "Japanese woodblock print style scene: pilgrims in Edo-period clothing crossing a long wooden bridge toward a forested Shinto shrine at early morning, soft dawn colors, flat colors and fine outlines. No readable text, no logos, no brand names.",
+   "image": "Japanese woodblock print style scene: pilgrims in Edo-period clothing crossing a long wooden bridge toward a forested Shinto shrine at early morning, soft dawn colors, flat colors and fine outlines. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G00",
+   "narration": "逆に、金運が上がると言われる行いを、1つ。",
+   "tts_text": "ぎゃくに、きんうんが上がると言われる行いを、ひとつ。",
+   "card": {
+    "type": "rank",
+    "num": "番外",
+    "title": "毎月1日に朔日参りをする",
+    "sub": "金運が上がると言われる行い",
+    "mark": "開運",
+    "good": true
+   },
+   "yt_chapter": "番外 金運が上がる朔日参り"
+  },
+  {
+   "id": "G01",
+   "narration": "毎月1日の朝、近所の神社へ、ひと月のお礼に行くことです。",
+   "tts_text": "まいつきついたちの朝、近所の神社へ、ひとつきのお礼に行くことです。",
+   "image_en": "Sunrise on the first morning of the month at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako and Sumie walk side by side up the stone path toward the wooden worship hall, both smiling and chatting, their breath faintly visible, bright warm golden light through the trees. No readable text, no logos, no brand names.",
+   "chars": [
+    "sawako",
+    "sumie"
+   ],
+   "anim": "kling",
+   "motion": true,
+   "image": "Sunrise on the first morning of the month at a small neighborhood Shinto shrine in a present-day Japanese town: Sawako and Sumie walk side by side up the stone path toward the wooden worship hall, both smiling and chatting, their breath faintly visible, bright warm golden light through the trees. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "G02",
+   "narration": "月を一区切りにして、近所の氏神様に感謝を伝える。初詣を、毎月するようなものです。",
+   "tts_text": "つきをひとくぎりにして、近所のうじがみさまに感謝を伝える。はつもうでを、毎月するようなものです。",
+   "card": {
+    "type": "big_text",
+    "text": "朔日参りは",
+    "text2": "毎月の、小さな初詣",
+    "accent": "初詣"
+   }
+  },
+  {
+   "id": "G03",
+   "narration": "月に一度お礼を言うと、お願いだけのお参りに、戻らずにすみます。",
+   "tts_text": "つきにいちどお礼を言うと、おねがいだけのお参りに、戻らずにすみます。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "月に一度のお礼で",
+     "big": "お願いだけに戻らない",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C09"
+  },
+  {
+   "id": "G04",
+   "narration": "行くのは、毎月1日の朝。",
+   "tts_text": "行くのは、まいつきついたちの朝。",
+   "card": {
+    "type": "rules",
+    "title": "毎月1日の朔日参り",
+    "items": [
+     "毎月1日の朝に",
+     "まず、先月のお礼を",
+     "お願いは、1つだけ"
+    ],
+    "show": 1,
+    "fresh": true
+   }
+  },
+  {
+   "id": "G05",
+   "narration": "まず、先月1か月のお礼を伝えます。",
+   "tts_text": "まず、せんげつひとつきのお礼を伝えます。",
+   "card": {
+    "type": "rules",
+    "title": "毎月1日の朔日参り",
+    "items": [
+     "毎月1日の朝に",
+     "まず、先月のお礼を",
+     "お願いは、1つだけ"
+    ],
+    "show": 2
+   }
+  },
+  {
+   "id": "G06",
+   "narration": "お願いをするなら、1つだけにします。",
+   "tts_text": "おねがいをするなら、ひとつだけにします。",
+   "card": {
+    "type": "rules",
+    "title": "毎月1日の朔日参り",
+    "items": [
+     "毎月1日の朝に",
+     "まず、先月のお礼を",
+     "お願いは、1つだけ"
+    ],
+    "show": 3,
+    "all": true
+   }
+  },
+  {
+   "id": "G07",
+   "narration": "佐和子さんは、澄江さんを誘って、1日の朝に、歩いて行くようになりました。",
+   "tts_text": "さわこさんは、すみえさんを誘って、ついたちの朝に、歩いて行くようになりました。",
+   "same_as": "G01"
+  },
+  {
+   "id": "G08",
+   "narration": "1日に行けなかった月は、月の初めの、行ける朝にします。",
+   "tts_text": "ついたちに行けなかった月は、月の初めの、行ける朝にします。",
+   "same_as": "G01"
+  },
+  {
+   "id": "H00",
+   "narration": "おまけに、よくある相談を、3つお答えします。",
+   "tts_text": "おまけに、よくある相談を、みっつお答えします。",
+   "card": {
+    "type": "big_text",
+    "text": "おまけ",
+    "text2": "よくある相談　3つ",
+    "accent": "相談"
+   },
+   "yt_chapter": "おまけ よくある相談"
+  },
+  {
+   "id": "H01",
+   "narration": "去年のお守りは、どうしたらいいの？",
+   "tts_text": "きょねんのおまもりは、どうしたらいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "去年のお守りは",
+    "text2": "どうしたらいい？",
+    "kicker": "相談"
+   }
+  },
+  {
+   "id": "H02",
+   "narration": "次にお参りした時に、神社の古札納め所へ納めます。1年守ってもらったお礼と一緒に。",
+   "tts_text": "次にお参りした時に、神社のこさつおさめしょへ納めます。いちねん守ってもらったお礼と一緒に。",
+   "card": {
+    "type": "big_text",
+    "text": "1年のお礼と一緒に",
+    "text2": "古札納め所へ納める",
+    "accent": "納める",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "H03",
+   "narration": "納める所は、木の箱や棚になっていて、そっと置いてくるだけです。",
+   "image_en": "Close-up at a Japanese Shinto shrine: an older woman's hands gently place a small faded fabric charm pouch (omamori) into a plain wooden box for returning old charms, beside a few other old charms. Only the hands, no face. Soft daylight. No readable text, no logos, no brand names.",
+   "card": {
+    "type": "photo"
+   },
+   "image": "Close-up at a Japanese Shinto shrine: an older woman's hands gently place a small faded fabric charm pouch (omamori) into a plain wooden box for returning old charms, beside a few other old charms. Only the hands, no face. Soft daylight. No readable text, no logos, no brand names."
+  },
+  {
+   "id": "H04",
+   "narration": "引き出しにしまったままにせず、いただいた神社へ返すのが、丁寧だとされています。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "古いお守りは",
+     "big": "いただいた神社へ返す",
+     "size": 100
+    }
+   },
+   "img_from": "pose:C02"
+  },
+  {
+   "id": "H05",
+   "narration": "おみくじで凶が出たら、結んで帰るの？",
+   "tts_text": "おみくじできょうが出たら、結んで帰るの？",
+   "card": {
+    "type": "big_text",
+    "text": "おみくじで凶",
+    "text2": "結んで帰る？",
+    "kicker": "相談"
+   }
+  },
+  {
+   "id": "H06",
+   "narration": "持ち帰って、お守りのように持ち歩いてもいいと言われます。結んで帰っても、かまいません。",
+   "tts_text": "持ち帰って、おまもりのように持ち歩いてもいいと言われます。結んで帰っても、かまいません。",
+   "card": {
+    "type": "big_text",
+    "text": "結んで帰っても、いい",
+    "text2": "持ち歩いても、いい",
+    "accent": "持ち歩いて",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "H07",
+   "narration": "書いてあることを、気をつける目安にすれば、凶も、ありがたい言葉になります。",
+   "tts_text": "書いてあることを、気をつける目安にすれば、きょうも、ありがたい言葉になります。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "凶のおみくじも",
+     "big": "気をつける目安に",
+     "size": 110
+    }
+   },
+   "img_from": "pose:F03"
+  },
+  {
+   "id": "H08",
+   "narration": "神社とお寺を、同じ日に回ってもいいの？",
+   "card": {
+    "type": "big_text",
+    "text": "神社とお寺",
+    "text2": "同じ日に回っていい？",
+    "kicker": "相談"
+   }
+  },
+  {
+   "id": "H09",
+   "narration": "かまわないと言われます。七福神めぐりのように、お寺と神社を続けて回る習わしもあります。",
+   "tts_text": "かまわないと言われます。しちふくじんめぐりのように、お寺と神社を続けて回る習わしもあります。",
+   "card": {
+    "type": "big_text",
+    "text": "七福神めぐりのように",
+    "text2": "続けて回って、いい",
+    "accent": "いい",
+    "kicker": "答え"
+   }
+  },
+  {
+   "id": "H10",
+   "narration": "どこを回っても、1か所ずつ、丁寧に手を合わせることが大切です。",
+   "tts_text": "どこを回っても、いっかしょずつ、丁寧に手を合わせることが大切です。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo",
+    "pop": {
+     "small": "どこを回っても",
+     "big": "1か所ずつ丁寧に",
+     "size": 120
+    }
+   },
+   "img_from": "pose:A16"
+  },
+  {
+   "id": "K01",
+   "narration": "お金が残る人が神社でしない5つを、もう一度。",
+   "tts_text": "お金が残る人が神社でしないいつつを、もういちど。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いをいくつも並べる",
+     "お参りの帰りに寄り道をする",
+     "初詣で願って、お礼に行かない"
+    ],
+    "show": 5,
+    "all": true,
+    "fresh": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   },
+   "yt_chapter": "まとめ"
+  },
+  {
+   "id": "K02",
+   "narration": "第5位、お賽銭を投げ入れる。第4位、夕方すぎにお参りする。第3位、お願いをいくつも並べる。",
+   "tts_text": "だいごい、おさいせんを投げ入れる。だいよんい、ゆうがたすぎにお参りする。だいさんい、おねがいをいくつも並べる。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いをいくつも並べる",
+     "お参りの帰りに寄り道をする",
+     "初詣で願って、お礼に行かない"
+    ],
+    "show": 3,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K03",
+   "narration": "第2位、お参りの帰りに寄り道をする。そして第1位、初詣で願って、お礼に行かない。",
+   "tts_text": "だいにい、お参りの帰りによりみちをする。そしてだいいちい、はつもうでで願って、お礼に行かない。",
+   "card": {
+    "type": "rules",
+    "title": "お金が残る人が神社でしないこと　5つ",
+    "items": [
+     "お賽銭を投げ入れる",
+     "夕方すぎにお参りする",
+     "お願いをいくつも並べる",
+     "お参りの帰りに寄り道をする",
+     "初詣で願って、お礼に行かない"
+    ],
+    "show": 5,
+    "all": true,
+    "nums": [
+     "5",
+     "4",
+     "3",
+     "2",
+     "1"
+    ]
+   }
+  },
+  {
+   "id": "K04",
+   "narration": "3つ以上当てはまった人は、まず第1位。近所の神社へ、お礼を言いに行ってみてください。",
+   "tts_text": "みっつ以上当てはまった人は、まずだいいちい。近所の神社へ、お礼を言いに行ってみてください。",
+   "card": {
+    "type": "big_text",
+    "text": "3つ以上なら",
+    "text2": "まず、近所の神社へお礼に",
+    "accent": "お礼"
+   }
+  },
+  {
+   "id": "K05",
+   "narration": "直しても、すぐにお金が増えるわけではありません。",
+   "tts_text": "なおしても、すぐにお金が増えるわけではありません。",
+   "card": {
+    "type": "big_text",
+    "text": "直しても",
+    "text2": "すぐに増えるわけではない",
+    "accent": "すぐに"
+   }
+  },
+  {
+   "id": "K06",
+   "narration": "それでも、お礼から始まるお参りは、次の日から、すぐにできます。",
+   "same_as": "G01"
+  },
+  {
+   "id": "K07",
+   "narration": "あなたのお参りは、5つのうち、いくつ当てはまりましたか？",
+   "tts_text": "あなたのお参りは、いつつのうち、いくつ当てはまりましたか？",
+   "card": {
+    "type": "big_text",
+    "text": "あなたのお参りは、5つのうち",
+    "text2": "いくつ当てはまった？",
+    "accent": "いくつ"
+   }
+  },
+  {
+   "id": "K08",
+   "narration": "コメントで、数を教えてくださいね。",
+   "chars": [
+    "okinu"
+   ],
+   "card": {
+    "type": "photo"
+   },
+   "img_from": "pose:K07"
+  }
+ ],
+ "channel": "okinu",
+ "style": "やわらかい手描きアニメ映画の画風、温かく落ち着いた色。人物は設定画でそろえる",
+ "avoid": "文字、ロゴ、実在の紙幣や硬貨の細かい絵柄、実在の人物の肖像、店名",
+ "characters_dir": "../../characters",
+ "bgm": "../../assets/bgm/okinu_bgm_01_seed1.m4a",
+ "comment": "コメントで、数を教えてくださいね。"
+}

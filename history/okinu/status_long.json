@@ -1,1 +1,19 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/110_神社のお参り",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build",
+  "gate_video"
+ ],
+ "started": "2026-11-24T06:52:32+09:00",
+ "tries": 1,
+ "code": "a6b20fd30a46",
+ "stage": "thumb",
+ "updated": "2026-11-24T08:32:30+09:00"
+}
