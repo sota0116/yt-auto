@@ -106,5 +106,17 @@
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Saisen.jpg/1920px-Saisen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "説明ページ": "https://commons.wikimedia.org/wiki/File:Saisen.jpg",
   "検索語": "Saisen box Shinto shrine"
+ },
+ {
+  "日": "2026-11-24",
+  "回": "S137_神棚にこう供えるとお金が",
+  "カット": "C05",
+  "題": "File:Taira no masakado kubiduka Kari.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taira_no_masakado_kubiduka_Kari.jpg/1920px-Taira_no_masakado_kubiduka_Kari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Taira_no_masakado_kubiduka_Kari.jpg",
+  "検索語": "kamidana offerings",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
