@@ -12,7 +12,7 @@
 #   （甘茶の音楽工房の規約で、音楽だけの配布ができないので wav は git に入れない。クラウドには別の方法で置く必要がある）
 # ・字幕の字：Windows は Noto Sans JP Bold、Linux は Noto Sans CJK JP Bold（fonts-noto-cjk）
 # ・Chrome（Playwright）：motion_cards_spi.py の順（Windows の Chrome → /usr/bin/google-chrome → Playwright の chromium）
-import argparse, hashlib, json, os, re, shutil, subprocess, sys, time
+import argparse, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"))
@@ -149,6 +149,30 @@ def make_cards(work, b, cuts, durs, theme, data, clips, par, stamps, stamp_p):
     print(f"動く図解カード：{(time.time() - t0) / 60:.1f}分", flush=True)
 
 
+def encode_clip(src, dst, duration):
+    return ["ffmpeg", "-v", "error", "-y", "-i", src,
+            "-vf", f"scale={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=10",
+            "-t", f"{duration:.3f}", "-an", "-pix_fmt", "yuv420p", "-c:v", "libx264",
+            "-crf", "14", "-preset", "veryfast" if CLOUD else "fast", dst]
+
+
+def try_hf_clip(src, dst, duration):
+    try:
+        with tempfile.TemporaryDirectory(dir=os.path.dirname(dst)) as td:
+            output = os.path.join(td, "clip.mp4")
+            cmd = encode_clip(src, output, duration)
+            cmd[1:1] = ["-xerror", "-nostdin"]
+            subprocess.run(cmd, check=True, timeout=90)
+            if dur(output) < duration - 1 / FPS:
+                raise ValueError("3D ?????????")
+            os.replace(output, dst)
+        return True
+    except (OSError, subprocess.SubprocessError, ValueError, SystemExit) as exc:
+        print(f"HyperFrames: {os.path.basename(src)} ????????????????? ({type(exc).__name__})",
+              flush=True)
+        return False
+
+
 def loud(path, cwd):
     r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-af", "ebur128=peak=true", "-f", "null", "-"],
                        capture_output=True, text=True, cwd=cwd)
@@ -210,6 +234,7 @@ def main():
     # ③ 絵を声の長さに合わせて切る ＋ ④ 字幕
     t, chaps, clips, events = 0.0, [], [], []
     n_anchor = n_split = n_exact = 0
+    hf_count = 0
     for c in cuts:
         cid, d = c["id"], durs[c["id"]]
         n = c.get("chapter") or c.get("yt_chapter")
@@ -218,10 +243,20 @@ def main():
         src = os.path.join(work, a.clips, cid + ".mp4")
         clip = os.path.join(b, cid + ".mp4")
         key = f"{mt(src)}|{d:.3f}"
+        hf_src = None
+        if hf_count < 2 and c.get("hf_3d") is True and (n or c.get("peak")):
+            hf_count += 1
+            candidate = os.path.join(work, "images", "_hf", cid + ".mp4")
+            if os.path.isfile(candidate):
+                hf_src = candidate
+        hf_key = f"hf:{mt(hf_src)}|{key}" if hf_src else None
+        if hf_key and stamps.get(cid) == hf_key and os.path.exists(clip):
+            key = hf_key
+        elif hf_src and try_hf_clip(hf_src, clip, d):
+            key = hf_key
         if stamps.get(cid) != key or not os.path.exists(clip):
-            # カードは声より少し長く作ってあるので切る。足りない時は最後のコマで延ばす
-            run("ffmpeg", "-v", "error", "-y", "-i", src, "-vf", f"scale={W}:{H},fps={FPS},tpad=stop_mode=clone:stop_duration=10",
-                "-t", f"{d:.3f}", "-an", "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "14", "-preset", "veryfast" if CLOUD else "fast", clip)
+            if key != hf_key:
+                run(*encode_clip(src, clip, d))
             stamps[cid] = key
             json.dump(stamps, open(stamp_p, "w", encoding="utf-8"), ensure_ascii=False)
         clips.append(clip)

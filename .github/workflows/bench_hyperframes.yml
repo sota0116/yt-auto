@@ -1,0 +1,50 @@
+name: Benchmark HyperFrames
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: pipeline/hf/spi_3d_pilot
+    env:
+      HYPERFRAMES_NO_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+      PRODUCER_BROWSER_GPU_MODE: software
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install HyperFrames and FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          npm install --no-save --package-lock=false --no-audit --no-fund hyperframes@0.9.19
+          ./node_modules/.bin/hyperframes --version
+      - name: Measure check and render
+        run: |
+          printf '### HyperFrames 0.9.19 (software GPU)\n\n' >> "$GITHUB_STEP_SUMMARY"
+          printf '| Step | Elapsed (s) | Output (bytes) | Exit code |\n| --- | ---: | ---: | ---: |\n' >> "$GITHUB_STEP_SUMMARY"
+          measure() {
+            local label="$1" start end status=0 bytes='—'
+            shift
+            start=$(date +%s%3N)
+            "$@" || status=$?
+            end=$(date +%s%3N)
+            if [[ "$label" == render && -f "$RUNNER_TEMP/spi-pilot.mp4" ]]; then
+              bytes=$(stat -c '%s' "$RUNNER_TEMP/spi-pilot.mp4")
+            fi
+            printf '| %s | %s.%03d | %s | %s |\n' "$label" "$(((end-start)/1000))" "$(((end-start)%1000))" "$bytes" "$status" >> "$GITHUB_STEP_SUMMARY"
+            return "$status"
+          }
+          check_status=0
+          render_status=0
+          measure check ./node_modules/.bin/hyperframes check --no-browser-gpu || check_status=$?
+          measure render ./node_modules/.bin/hyperframes render --no-browser-gpu --output "$RUNNER_TEMP/spi-pilot.mp4" || render_status=$?
+          [[ "$check_status" == 0 && "$render_status" == 0 && -s "$RUNNER_TEMP/spi-pilot.mp4" ]]
