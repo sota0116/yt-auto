@@ -12,7 +12,8 @@
 #   （甘茶の音楽工房の規約で、音楽だけの配布ができないので wav は git に入れない。クラウドには別の方法で置く必要がある）
 # ・字幕の字：Windows は Noto Sans JP Bold、Linux は Noto Sans CJK JP Bold（fonts-noto-cjk）
 # ・Chrome（Playwright）：motion_cards_spi.py の順（Windows の Chrome → /usr/bin/google-chrome → Playwright の chromium）
-import argparse, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time
+import argparse, hashlib, json, math, os, re, shutil, subprocess, sys, tempfile, time
+from bisect import bisect_left
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"))
@@ -106,13 +107,37 @@ def card_spec(work, cuts, c, n, b):
     return spec, deps
 
 
-def make_cards(work, b, cuts, durs, theme, data, clips, par, stamps, stamp_p):
+def beat_grid(cuts, durs, bpm, offset, loop_duration):
+    period = 60 / bpm
+    offset %= period
+    total = sum(durs.values())
+    markers = []
+    for loop in range(math.ceil(total / loop_duration)):
+        start = loop * loop_duration
+        end = min(loop_duration, total - start)
+        markers.extend(start + offset + n * period
+                       for n in range(max(0, math.ceil((end - offset) / period))))
+    grids = {}
+    start = 0.0
+    for cut in cuts:
+        cid = cut["id"]
+        end = start + durs[cid]
+        if (cut.get("card") or {}).get("type") == "chart_bar":
+            grids[cid] = [round(mark - start, 4) for mark in
+                          markers[bisect_left(markers, start):bisect_left(markers, end)]]
+        start = end
+    return grids
+
+
+def make_cards(work, b, cuts, durs, theme, data, clips, par, stamps, stamp_p, beats=None):
     html = os.path.join(os.path.dirname(os.path.abspath(__file__)), "motion_cards_spi.html")
     todo, miss = [], []
     for n, c in enumerate(cuts):
         spec, deps = card_spec(work, cuts, c, n, b)
         if spec is None:
             miss.append(c["id"]); continue
+        if beats and c["id"] in beats:
+            spec["beat"] = beats[c["id"]]
         d = durs[c["id"]] + 0.3
         out = os.path.join(work, clips, c["id"] + ".mp4")
         key = hashlib.md5(json.dumps([spec, round(d, 2), theme, data, [mt(x) for x in deps], mt(html), mt(MC.__file__)],
@@ -189,6 +214,8 @@ def main():
     ap.add_argument("--clips", default=prof.get("clips", "images/_v3"))
     ap.add_argument("--tempo", type=float, default=prof.get("tempo", 1.25))
     ap.add_argument("--gap", type=float, default=prof.get("gap", 0.25))
+    ap.add_argument("--beat-bpm", type=float, help="比較グラフの表示を合わせるBGMのテンポ（30〜300）")
+    ap.add_argument("--beat-offset", type=float, default=0.0, help="BGM の拍グリッドの開始位置（秒）")
     ap.add_argument("--bgm-volume", type=float, default=prof.get("bgm_volume", 0.03))
     ap.add_argument("--lufs", type=float, default=prof.get("lufs", -14))
     ap.add_argument("--height", type=int, default=prof.get("height", 1440))
@@ -198,6 +225,8 @@ def main():
     ap.add_argument("--build", default="_build")
     ap.add_argument("--only-cards", action="store_true", help="カードを描くところまで（見た目の確認用）")
     a = ap.parse_args()
+    if a.beat_bpm is not None and not (30 <= a.beat_bpm <= 300 and math.isfinite(a.beat_offset)):
+        ap.error("--beat-bpm は30〜300、--beat-offset は有限の秒数を指定してください")
     for cmd in ("ffmpeg", "ffprobe"):
         if not shutil.which(cmd):
             raise SystemExit(f"【止まりました】{cmd} が見つかりません")
@@ -228,7 +257,13 @@ def main():
     print(f"声：{len(cuts)}カット・{sum(durs.values()) / 60:.1f}分（速さ {a.tempo}・間 {a.gap}）", flush=True)
 
     # ② カード
-    make_cards(work, b, cuts, durs, sc.get("card_theme", "koyomi"), sc.get("card_data", {}), a.clips, max(1, a.par), stamps, stamp_p)
+    beats = None
+    if a.beat_bpm is not None:
+        bgm_duration = dur(bgm)
+        if math.isfinite(bgm_duration) and bgm_duration > 0:
+            beats = beat_grid(cuts, durs, a.beat_bpm, a.beat_offset, bgm_duration)
+    make_cards(work, b, cuts, durs, sc.get("card_theme", "koyomi"), sc.get("card_data", {}),
+               a.clips, max(1, a.par), stamps, stamp_p, beats)
     if a.only_cards:
         return
 

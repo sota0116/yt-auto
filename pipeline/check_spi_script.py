@@ -39,7 +39,7 @@ LINE_COPY["C2"] = LINE_COPY["A"]
 TOKUTEN = {"A": "今月と来月の吉日と行事のカレンダー", "C2": "今月と来月の吉日と行事のカレンダー", "B": "今月と来月の吉日と行事のカレンダー",
            "C": "2027年 年間の吉日カレンダー", "D": "言い伝え早見表"}
 CARD_TYPES = {"photo", "big_text", "quote", "chapter_title", "rules", "calendar", "next_table", "tally", "timeline", "kgrid", "two_cards",
-              "kinetic", "count"}  # kinetic・count は 2026-11-07 に足した GSAP のカード（motion_cards_spi.html v10）
+              "kinetic", "count", "chart_bar"}  # kinetic・count は 2026-11-07 に足した GSAP のカード（motion_cards_spi.html v10）
 META = ["この動画", "この回", "今回", "このチャンネル", "ここからは", "ここまで", "この後", "このあと", "次の章", "見ていきます", "紹介します",
         "おさらい", "採点結果です", "ありがとうございました", "ご覧いただき", "今日", "今夜", "今宵", "舞台裏", "概要欄に残して", "ひより",
         "最後に言います", "発表します", "最後の章で", "後半で", "最後まで見て", "お見せします"]
@@ -410,6 +410,22 @@ def main():
                 for p, iso in zip(cd["points"], ds):
                     if "最強開運日" in p.get("text", "") and iso not in meta["saikyo_kaiun"]:
                         ng.append(f"{c['id']} {p['label']} は最強開運日ではない")
+            elif cd["type"] == "chart_bar":
+                title, bars, unit = cd.get("title"), cd.get("bars"), cd.get("unit", "")
+                if not isinstance(title, str) or not title.strip() or len(title) > 26:
+                    ng.append(f"{c['id']} chart_bar の title は1〜26字")
+                if not isinstance(unit, str) or len(unit) > 20:
+                    ng.append(f"{c['id']} chart_bar の unit は20字まで")
+                if not isinstance(bars, list) or not 2 <= len(bars) <= 5:
+                    ng.append(f"{c['id']} chart_bar の bars は2〜5項目")
+                else:
+                    for bar in bars:
+                        label = bar.get("label") if isinstance(bar, dict) else None
+                        value = bar.get("value") if isinstance(bar, dict) else None
+                        if (not isinstance(label, str) or not label.strip() or len(label) > 12
+                                or type(value) not in (int, float) or not 0 <= value <= 1e9):
+                            ng.append(f"{c['id']} chart_bar の各項目に label（1〜12字）と value（0〜10億の数値）が必要")
+                            break
             elif cd["type"] == "kinetic":  # 2026-11-07：1字ずつ出る大きい字。字が多いと小さくなりすぎる
                 if not cd.get("text"):
                     ng.append(f"{c['id']} kinetic のカードに text が無い")

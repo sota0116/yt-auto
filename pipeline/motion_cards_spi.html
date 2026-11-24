@@ -154,6 +154,13 @@ body.kinun .rl .no{width:96px;height:96px;font-size:58px}
 .kg .kf{position:absolute;inset:0;border:7px solid var(--shu);border-radius:6px;background:rgba(196,62,44,.12);opacity:0}
 /* 補足札は題と重ならないよう表の下・左に出す（題が長いので右上は使わない） */
 .kg-note{right:auto;top:716px;font-size:42px;padding:14px 30px}
+.cb-rows{position:absolute;left:150px;right:150px;top:210px;height:675px;display:flex;flex-direction:column;justify-content:space-evenly}
+.cb-row{display:grid;grid-template-columns:380px minmax(0,1fr) 290px;gap:32px;align-items:center;font-size:56px;font-weight:800}
+.cb-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb-track{height:58px;background:color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;overflow:hidden}
+.cb-fill{height:100%;background:var(--gold);transform-origin:left}
+.cb-value{font-variant-numeric:tabular-nums;text-align:right}
+.cb-note{position:absolute;right:150px;top:908px;font-size:34px;color:var(--sub)}
 /* v10（2026-11-07）：GSAP のカード（kinetic・count）と three.js の背景（#bg3d）。名前は gk- / gc- / bg3d で始めて、既存のクラスと混ぜない */
 #bg3d{position:absolute;left:0;top:0;width:1920px;height:1080px;pointer-events:none}
 .gk{position:absolute;left:80px;right:80px;top:0;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
@@ -194,6 +201,32 @@ function fit(e,maxW){let fs=parseFloat(getComputedStyle(e).fontSize);while(e.scr
 
 const BILL={'10000':['var(--b10000)','一万円'],'1000':['var(--b1000)','千円'],'5000':['#C9B7D3','五千円']};
 const CARDS={
+chart_bar(s){
+  const bars=s.bars;
+  const max=Math.max(...bars.map(b=>b.value))||1;
+  const heading=H(`<div class="title">${esc(s.title)}</div>`);
+  const root=H('<div class="cb-rows"></div>');
+  const note=s.unit?H(`<div class="cb-note">${esc(s.unit)}</div>`):null;
+  const beats=Array.isArray(s.beat)?s.beat.filter(t=>Number.isFinite(t)&&t>=0&&t<DUR):[];
+  const rows=bars.map((bar,i)=>{
+    const start=DUR*.14+i*Math.min(.34,DUR*.11);
+    const at=beats.reduce((closest,beat)=>Math.abs(beat-start)<Math.abs(closest-start)?beat:closest,Infinity);
+    const hit=Math.abs(at-start)<=.16;
+    const row=H(`<div class="cb-row"><div class="cb-label">${esc(bar.label)}</div><div class="cb-track"><div class="cb-fill"></div></div><div class="cb-value">${bar.value.toLocaleString('ja-JP',{maximumFractionDigits:6})}</div></div>`,root);
+    return {row,fill:row.querySelector('.cb-fill'),width:bar.value/max,at:hit?at:start,hit};
+  });
+  return {layout(){fit(heading,1650);rows.forEach(({row})=>fit(row.querySelector('.cb-value'),290))},draw(t){
+    heading.style.opacity=out(P(t,0,Math.min(.35,DUR*.2)));
+    if(note)note.style.opacity=heading.style.opacity;
+    rows.forEach(({row,fill,width,at,hit})=>{
+      const progress=out(P(t,at,Math.min(.5,DUR*.3)));
+      show(row,progress,0,(1-progress)*18);
+      fill.style.transform=`scaleX(${width*progress})`;
+      fill.style.filter=hit&&t>=at?`brightness(${1+.5*(1-P(t,at,.3))})`:'none';
+    });
+  }};
+},
+
 photo(s){
   // v6（2026-10-27）：s.video があれば、絵の代わりに動く絵（Kling の5秒動画）を下地にする。カットが長い時はゆっくり再生、さらに長い時は往復
   const media=s.video?`<video src="${s.video}" muted preload="auto" playsinline></video>`:`<img src="${s.src}">`;

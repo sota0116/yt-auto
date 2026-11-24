@@ -1,6 +1,7 @@
 # 千年こよみ（spi）の動く図解カードを、カットごとの動画にする（2026-10-29 新設。OneDrive の motion_cards_v4.py をクラウドでも動く形に写した）
 #   python -X utf8 pipeline/motion_cards_spi.py --jobs <jobs.json>
 #   jobs.json：{"theme": "koyomi", "data": {...}, "items": [{"id", "spec", "dur", "out", "still"(任意)}]}
+# ・chart_bar の spec.beat はカット内の拍位置（秒）の配列。省略時は等間隔で表示する。
 # ・ふだんは build_long_spi.py が呼ぶ（カードの中身・長さ・出す場所・作り直すかどうかは、そちらが決める）
 # ・型は pipeline/motion_cards_spi.html（motion_cards_v8.html の写し。字の読み込みだけを、ここで Windows と Linux に合わせて差し込む）
 # ・Chrome の場所：Windows の Chrome → /usr/bin/google-chrome（GitHub の ubuntu ランナーに入っている）→ Playwright の chromium
