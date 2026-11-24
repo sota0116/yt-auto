@@ -164,11 +164,11 @@ def try_hf_clip(src, dst, duration):
             cmd[1:1] = ["-xerror", "-nostdin"]
             subprocess.run(cmd, check=True, timeout=90)
             if dur(output) < duration - 1 / FPS:
-                raise ValueError("3D ?????????")
+                raise ValueError("3D 素材の尺が不足しています")
             os.replace(output, dst)
         return True
     except (OSError, subprocess.SubprocessError, ValueError, SystemExit) as exc:
-        print(f"HyperFrames: {os.path.basename(src)} ????????????????? ({type(exc).__name__})",
+        print(f"HyperFrames: {os.path.basename(src)} を使えないため既存カードにフォールバックします ({type(exc).__name__})",
               flush=True)
         return False
 
