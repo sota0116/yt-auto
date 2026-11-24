@@ -394,5 +394,27 @@
   "publish_at": "2026-12-05T19:00:00+09:00",
   "uploaded_at": "2026-11-23T01:24:53+09:00",
   "missing": false
+ },
+ {
+  "work": "S037_富豪の名前",
+  "video_id": "apt6LX9hieU",
+  "title": "海のまん中に何週間も止まる巨大な船を、CIAはどう隠したか #実話 #CIA",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-12-06T12:00:00+09:00",
+  "uploaded_at": "2026-11-25T02:55:01+09:00",
+  "missing": false
+ },
+ {
+  "work": "S038_浮く日数",
+  "video_id": "E5m8Dq2Afn0",
+  "title": "沈んだ人が、何日かあとに浮いてくる理由 #法医学 #雑学",
+  "video": "完成.mp4",
+  "format": "short",
+  "privacy": "private",
+  "publish_at": "2026-12-07T19:00:00+09:00",
+  "uploaded_at": "2026-11-25T02:56:34+09:00",
+  "missing": false
  }
 ]
