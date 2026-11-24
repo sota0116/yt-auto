@@ -459,7 +459,7 @@
   "seconds": 51,
   "title_now": "もしも20歳の福沢諭吉と同じ塾に入ったら。1冊の辞書の前で、福沢があなたの後ろに並ぶ #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 1373,
+  "views_now": 1372,
   "published": true,
   "published_at": "2026-11-20T12:10:16+09:00"
  },
@@ -482,7 +482,7 @@
   "seconds": 47,
   "title_now": "もしもあなたが江戸の長屋に住んだら。6畳で風呂なし、でも風呂代はそば半分 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1553,
+  "views_now": 1556,
   "published": true,
   "published_at": "2026-11-20T20:00:34+09:00"
  },
@@ -505,7 +505,7 @@
   "seconds": 52,
   "title_now": "もしも江戸城の役人に「石高」が見えたら。田沼意次だけ600石が5万7千石に伸びる #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 3255,
+  "views_now": 3380,
   "published": true,
   "published_at": "2026-11-21T07:00:09+09:00"
  },
@@ -528,7 +528,7 @@
   "seconds": 60,
   "title_now": "もしも戦国武将に「仕えた主君の数」が見えたら。藤堂高虎だけ7人、それでも家康に一番頼られる #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 2494,
+  "views_now": 2515,
   "published": true,
   "published_at": "2026-11-21T12:10:19+09:00"
  },
@@ -551,7 +551,7 @@
   "seconds": 45,
   "title_now": "もしも参勤交代が逆で、将軍が大名の国へ通ったら。将軍が前田家に金を借りる #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 2904,
+  "views_now": 3140,
   "published": true,
   "published_at": "2026-11-22T12:10:06+09:00"
  },
@@ -574,7 +574,7 @@
   "seconds": 47,
   "title_now": "もしも幕末の人に「見た外国の数」が見えたら。漁師のジョン万次郎が役人の先生になる #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 1827,
+  "views_now": 1950,
   "published": true,
   "published_at": "2026-11-22T20:00:37+09:00"
  },
@@ -597,7 +597,7 @@
   "seconds": 51,
   "title_now": "もしも今の医師が、吉宗の無料病院で診たら。空っぽの門に一晩で長い行列 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1714,
+  "views_now": 2339,
   "published": true,
   "published_at": "2026-11-23T07:00:36+09:00"
  },
@@ -620,7 +620,7 @@
   "seconds": 53,
   "title_now": "もしも江戸の奉行に「在任年数」が見えたら。北の奉行の名裁きまで大岡越前の手柄に #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1729,
+  "views_now": 1798,
   "published": true,
   "published_at": "2026-11-23T12:10:03+09:00"
  },
@@ -668,7 +668,7 @@
   "seconds": 54,
   "title_now": "もしも今の観光客が、完成直後の安土城に登ったら。3年で焼けた天主がスマホに全部残る #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1316,
+  "views_now": 1693,
   "published": true,
   "published_at": "2026-11-24T12:10:05+09:00"
  },
@@ -691,7 +691,7 @@
   "seconds": 57,
   "title_now": "もしも関ヶ原で負けた大名に「戻れる領地」が見えたら。立花宗茂だけ20年後に柳川の城へ帰る #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 726,
+  "views_now": 1195,
   "published": true,
   "published_at": "2026-11-24T20:00:39+09:00"
  },
@@ -758,7 +758,7 @@
   "seconds": 470,
   "title_now": "もしも関ヶ原で西軍が勝っていたら｜東京は日本の中心にならなかった【もしも歴史】",
   "synthetic_on": null,
-  "views_now": 165,
+  "views_now": 284,
   "published": true,
   "published_at": "2026-11-23T20:00:13+09:00"
  },
@@ -794,13 +794,18 @@
   "video": "long.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-24T23:57:13+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも坂本龍馬が生きていたら｜10年後、龍馬の船が西南戦争の兵を運んだ【もしも歴史】"
   ],
   "comment": "",
   "thumb_set": true,
-  "thumb": "thumb_a.jpg"
+  "thumb": "thumb_a.jpg",
+  "privacy_now": "private",
+  "publish_at": "2026-11-27T20:00:00+09:00",
+  "seconds": 493,
+  "title_now": "もしも坂本龍馬が生きていたら｜10年後、龍馬の船が西南戦争の兵を運んだ【もしも歴史】",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
