@@ -337,18 +337,18 @@ def _collect_candidates(want, avoid, cid):
     return []
 
 
-def pick_with_gemini(want, narration, cands, cid):
+def pick_with_gemini(want, narration, cands, cid, no_person=False):
     """候補（最大3枚）をまとめて Gemini（pipeline/gemini.py の無料キー ask_media）に見せ、合う1枚を選ぶ。
     どれも合わなければ None（AI の絵のまま）。Gemini が使えない時は先頭を返す（回は止めない）。1カットにつき1回まで。"""
     global _gemini_disabled, _gemini_reason
     if _gemini_disabled:
-        return cands[0], "fallback", _gemini_reason
+        return (None if no_person else cands[0]), "fallback", _gemini_reason
     try:
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import gemini
     except Exception as e:
         _gemini_disabled, _gemini_reason = True, f"gemini import失敗: {type(e).__name__}"
-        return cands[0], "fallback", _gemini_reason
+        return (None if no_person else cands[0]), "fallback", _gemini_reason
 
     sch = {
         "type": "object",
@@ -374,6 +374,12 @@ def pick_with_gemini(want, narration, cands, cid):
         "- 極端にぼやけた画像・大きな透かし（ストック写真のウォーターマーク）入り\n"
         "どの候補も合わない場合は pick に 0 を返してください。reason には選んだ／却下した理由を日本語で簡潔に（40字以内）書いてください。"
     )
+    if no_person:
+        prompt += (
+            "\n?????????????????????????????????"
+            "???????????????????????????????????"
+            "???????????????? pick ? 0 ????"
+        )
     try:
         with tempfile.TemporaryDirectory(prefix="yt_real_g_") as td:
             paths = []
@@ -392,7 +398,7 @@ def pick_with_gemini(want, narration, cands, cid):
         if 1 <= idx <= len(cands):
             return cands[idx - 1], "gemini", reason
         print(f"  （実画像 {cid}：Gemini の返答番号が範囲外 {idx} → 先頭を採用）")
-        return cands[0], "fallback", f"範囲外:{idx}"
+        return (None if no_person else cands[0]), "fallback", f"範囲外:{idx}"
     except (SystemExit, Exception) as e:
         msg = str(e) or type(e).__name__
         low = msg.lower()
@@ -402,13 +408,13 @@ def pick_with_gemini(want, narration, cands, cid):
             _gemini_disabled = True
             _gemini_reason = msg[:80]
         print(f"  （実画像 {cid}：Gemini が使えないため先頭を採用：{msg[:100]}）")
-        return cands[0], "fallback", msg[:80]
+        return (None if no_person else cands[0]), "fallback", msg[:80]
 
 
-def place(work, c, size, avoid, use_gemini=True):
+def place(work, c, size, avoid, use_gemini=True, no_person=False):
     """1カット分。置けたら出どころの記録を返す。置けなければ None"""
     want = str(c.get("real") or "").strip()
-    if not want:
+    if not want or (no_person and not use_gemini):
         return None
     dst = os.path.join(work, "images", c["id"] + ".png")
     os.makedirs(os.path.dirname(dst), exist_ok=True)
@@ -416,7 +422,7 @@ def place(work, c, size, avoid, use_gemini=True):
     if not cands:
         return None
     if use_gemini:
-        chosen, verdict, reason = pick_with_gemini(want, c.get("narration") or "", cands, c["id"])
+        chosen, verdict, reason = pick_with_gemini(want, c.get("narration") or "", cands, c["id"], no_person=no_person)
         if chosen is None:
             print(f"  （実画像 {c['id']}：Gemini が全候補を不適合と判定「{reason}」→ AI の絵のまま）")
             return None
@@ -430,7 +436,7 @@ def place(work, c, size, avoid, use_gemini=True):
     return rec
 
 
-def apply(work, s, ch, kind, use_gemini=True):
+def apply(work, s, ch, kind, use_gemini=True, allow_card=False, no_person=False):
     """script.json（読み込み済みの dict）の "real" のあるカットに実画像を置く。置いた枚数を返す。s は書き換えるだけで保存はしない"""
     size = (1080, 1920) if kind == "short" else (1920, 1080)
     avoid = used_before(ch)
@@ -444,7 +450,7 @@ def apply(work, s, ch, kind, use_gemini=True):
         if c.get("id") in thumb:
             print(f"  （実画像 {c['id']}：サムネの背景なので AI の絵のまま）")
             continue
-        if any(c.get(k) for k in SKIP_KEYS):
+        if any(c.get(k) for k in SKIP_KEYS if not (allow_card and k == "card")):
             print(f"  （実画像 {c['id']}：人物・動く絵・見どころ・セリフ等のカットなので AI の絵のまま）")
             continue
         dst = os.path.join(work, "images", c["id"] + ".png")
@@ -453,7 +459,7 @@ def apply(work, s, ch, kind, use_gemini=True):
             n += 1
             continue
         try:
-            src = place(work, c, size, avoid, use_gemini=use_gemini)
+            src = place(work, c, size, avoid, use_gemini=use_gemini, no_person=no_person)
         except Exception as e:
             src = None
             print(f"  （実画像 {c['id']}：探せない {type(e).__name__}: {e}）")
@@ -480,12 +486,15 @@ def main():
     a.add_argument("--ch", required=True)
     a.add_argument("--kind", choices=("short", "long"))
     a.add_argument("--no-gemini", action="store_true", help="Gemini の適合確認を飛ばして先頭候補を使う")
+    a.add_argument("--allow-card", action="store_true", help="card ????????????")
+    a.add_argument("--no-person", action="store_true", help="??????????????????? Gemini ?????")
     a = a.parse_args()
     work = os.path.abspath(a.work)
     sp = os.path.join(work, "script.json")
     s = json.load(open(sp, encoding="utf-8"))
     kind = a.kind or ("short" if s.get("format") == "short" else "long")
-    apply(work, s, a.ch, kind, use_gemini=not a.no_gemini)
+    apply(work, s, a.ch, kind, use_gemini=not a.no_gemini,
+          allow_card=a.allow_card, no_person=a.no_person)
     json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
