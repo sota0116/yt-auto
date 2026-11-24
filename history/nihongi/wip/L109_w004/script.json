@@ -1,0 +1,1126 @@
+{
+ "format": "long",
+ "distort": "分かれ道",
+ "title": "もしも坂本龍馬が生きていたら｜10年後、龍馬の船が西南戦争の兵を運んだ【もしも歴史】",
+ "promise": "坂本龍馬が近江屋で襲われずに生きていたら、新しい政府・海援隊の船・西南戦争がどう変わったかを、本当にあった出来事（大政奉還・八策の伏せ字・横井小楠の死・三菱の上海航路・西南戦争）を手がかりに1本でたどれる",
+ "desc": "もしも1867年11月15日の夜、坂本龍馬が京都の近江屋で襲われなかったら。龍馬は新しい政府に入らず、海援隊の船で商いに戻る。そして10年後、龍馬の会社に「西郷を討つ兵を運べ」という命令が届く――。龍馬が生きていた日本を、本当の出来事を手がかりに年を追ってたどります。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※近江屋で龍馬が襲われなかった所から先は作り話です。それより前は史実をもとにしています（国立国会図書館「史料にみる日本の近代」、京都市の大政奉還150周年の解説、京都市観光協会、国立公文書館、鹿児島県、国土交通省四国地方整備局、コトバンク所収の事典などの本文）。作り話の場面：近江屋で龍馬と中岡が生き残る・龍馬が三岡八郎を呼ぶ・龍馬が政府に入らない・海援隊が解かれない・龍馬の船の上海航路・岩崎と龍馬の言い合い・龍馬の会社への兵を運ぶ命令・熊本の陣で龍馬と西郷が会う・2つの未来。近江屋を襲った者は、見廻組とする説が有力ですが、諸説あります。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "坂本龍馬",
+  "坂本龍馬が生きていたら",
+  "近江屋事件",
+  "幕末",
+  "海援隊",
+  "西郷隆盛",
+  "西南戦争",
+  "日本史"
+ ],
+ "thumb": {
+  "top": "もしも龍馬が生きていたら",
+  "big": "西郷を討つ船を出す",
+  "hl_top": "生きていたら",
+  "hl_big": "西郷",
+  "bg": "H06"
+ },
+ "futures": {
+  "良い": "1877年3月、西郷は熊本の陣で龍馬と話し、兵を引いて鹿児島へ帰った。",
+  "悪い": "1877年9月、龍馬の船が運んだ兵の前で、西郷は城山に倒れた。"
+ },
+ "competitor_note": "TTP：題材・章の並び・題の型｜題材は競合メモ『史実の1点を逆にするもしも』（〇〇が生きていたら。eE2nFGD1VKA・OAARpXxEJo4）、章の並びは OAARpXxEJo4（史実では何が起きたか→分かれた年から年ごとの場面→振り返り）、題の後ろ半分のねじれ（薩長を結んだ龍馬の船が西郷を討つ兵を運ぶ）は rR2p5yhP8Zg・6yMQmssvE1k の『AなのにB』。見せ方の違い：最後の前の章を、作り話の『船の上の40代の龍馬』の絵から、本当の桂浜の銅像の写真（I10）で閉じ、2つの龍馬を並べる。伏線の問い（B02）を新聞の小説（I04）で回収する",
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "characters_dir": "../../characters",
+ "characters": {
+  "ryoma": {
+   "name": "坂本龍馬（30代〜40代）",
+   "desc_en": "Sakamoto Ryoma, a tall lanky Japanese man in his thirties: long face, slightly narrow eyes, thick wavy unkempt black hair tied loosely at the back with no shaved pate, faint stubble, dark navy-black kimono with one small plain white round crest, worn grey hakama and scuffed brown leather Western boots."
+  },
+  "nakaoka": {
+   "name": "中岡慎太郎（20代）",
+   "desc_en": "Nakaoka Shintaro, a Japanese samurai about twenty-nine: square face, strong jaw, firm serious eyes, neat chonmage topknot, dark brown kimono and black hakama."
+  },
+  "saigo": {
+   "name": "西郷隆盛（40代）",
+   "desc_en": "Saigo Takamori, a very large heavy-set Japanese man about fifty: big round face, very thick black eyebrows, large intense dark eyes, short-cropped black hair, plain dark indigo kimono with a simple sash."
+  },
+  "iwasaki": {
+   "name": "岩崎弥太郎（30代）",
+   "desc_en": "Iwasaki Yataro, a Japanese merchant about thirty-six: broad face, sharp confident eyes, thick black moustache, chonmage topknot, dark grey haori over a brown kimono."
+  }
+ },
+ "fiction": true,
+ "world_rules": [
+  "変えたのは、1867年11月15日の夜、京都の近江屋で龍馬と中岡が襲われなかった、の1点だけ",
+  "近江屋の夜より前は史実どおり（薩長の手を結ばせた・海援隊・大政奉還・八策の伏せ字・11月10日の手紙）",
+  "近江屋の夜から先は作り話（龍馬と中岡が生き残る・龍馬が三岡を呼ぶ・龍馬が政府に入らない・海援隊が解かれない・龍馬の船の上海航路・龍馬の会社への兵を運ぶ命令・熊本の陣で龍馬と西郷が会う・2つの未来）",
+  "王政復古・小御所会議・鳥羽伏見の戦い・江戸城の明け渡し・横井小楠の死・九十九商会・西南戦争の始まり（2月15日・22日）は、この世界でも本当の歴史と同じ日に起きることにする",
+  "この世界の人物（龍馬・中岡・岩崎・西郷）は、龍馬が近江屋で倒れた本当の歴史を知らない。本当の歴史と比べて言うのは語り手だけで、章の終わりの1文（本当の歴史では〜）に限る"
+ ],
+ "world_terms": [
+  "本当の歴史",
+  "この世界",
+  "生きて",
+  "知らせ",
+  "伝わる",
+  "命令"
+ ],
+ "voices": {
+  "ryoma": 11,
+  "nakaoka": 52,
+  "iwasaki": 12,
+  "saigo": 53
+ },
+ "facts": [
+  "近江屋：慶応3年（1867）11月15日夜半、土佐藩御用達の醤油商・近江屋にかくまわれていた龍馬と中岡慎太郎を凶刃が襲う。暗殺者は諸説あるが、京都見廻組説が有力（京都市観光協会『京都で龍馬』三条〜四条界わい https://ja.kyoto.travel/ryoma/area02.html の本文）。1867年（旧暦：慶応3年11月15日）、京都河原町通の近江屋に宿泊中だった龍馬・中岡・従僕の山田藤吉の3人が暗殺された、実行犯は諸説あるが見廻組との見方が強い（nippon.com today1210 の本文）",
+  "中岡：1867年11月15日夜、近江屋で龍馬と会談中に幕府見廻組に襲われ、17日に絶命（コトバンク 日本大百科全書『中岡慎太郎』の本文）。1866年に坂本龍馬の協力で薩長同盟の成立に成功（同）。井口新助は近江屋の主人で龍馬を寄宿させていた（コトバンク 日本人名大辞典『井口新助』の検索の抜粋）",
+  "龍馬の生まれた日：1835年11月15日（コトバンク『坂本竜馬』367日誕生日大事典の本文）。命日と同じ11月15日。台本では『と伝わる』。数えで33歳（1835年生まれから数えた）",
+  "海援隊：67年藩公認で海援隊（もと亀山社中）を指揮（コトバンク『坂本竜馬』山川日本史小辞典の本文）。龍馬の死後は振るわず1868年に解散（旺文社日本史事典）、閏4月27日に藩命で解散（改訂新版 世界大百科事典。いずれもコトバンク『海援隊』の検索の抜粋）。格言『世界の海援隊でもやらんかな』（コトバンク『坂本竜馬』日本人名大辞典の本文。台本では『と伝わる』）",
+  "大政奉還：慶応3年10月14日、慶喜が政権を朝廷に帰し奉るとする上表を呈し、翌15日の夜、朝廷は受け入れを伝えた（京都市『大政奉還150周年記念幕末維新スタンプラリー』PDF https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233933/taiseihoukanntowa.pdf の本文。PDF の本文で確認。青山忠正 佛教大学教授）",
+  "新政府綱領八策：慶応3年11月、船中八策をもとに坂本が起草し土佐藩重役に示した政体案。伏字の部分は山内容堂説・徳川慶喜説などがあり通説は定まっていない。国立国会図書館所蔵（石田英吉関係文書『亡友帖』所収）（国立国会図書館『史料にみる日本の近代』1-2 坂本龍馬の政体構想 https://www.ndl.go.jp/modern/cha1/description02.html の本文の要旨）",
+  "11月10日の手紙：龍馬が福井藩の重臣・中根雪江に宛てた慶応3年11月10日付とされる手紙。『新国家』という言葉を使い、新政府の財政担当に三岡八郎（のちの由利公正）を出仕させるよう頼む。2017年に見つかったと報じられ、画像は高知県が提供（福井県の報道資料 PDF と記事の検索の抜粋。本文は読めず）。台本では『とされる』『といわれる』",
+  "由利公正（三岡八郎）：維新後、新政府の参与となり、太政官札の発行など財政を担当（コトバンク『由利公正』の検索の抜粋）",
+  "王政復古：慶応3年12月9日の王政復古の大号令で天皇中心の新政府が立ち、摂政・関白・幕府を廃止（国立公文書館『変貌』の検索の抜粋）。新政府は小御所会議で慶喜の官位辞退と領地返納を決定（鹿児島県『戊辰戦争』 https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/boshin.html の本文）。近江屋の夜から24日後（11月は29日まで、と数えた。台本では日数を言わない）",
+  "鳥羽伏見と江戸城：翌（慶応4年）1月3日、鳥羽口・伏見で薩摩・長州兵と衝突。1月6日、慶喜は江戸へ。3月13日と14日、薩摩藩邸で勝と西郷が会談し、江戸城の無血開城が決定（鹿児島県『戊辰戦争』の本文）",
+  "横井小楠：没 明治2（1869）年1月5日 京都。退庁の途中、十津川郷士・津下四郎左衛門らに暗殺された（コトバンク『横井小楠』ブリタニカ国際大百科事典の本文）。新政府に呼ばれ参与に就任（同 世界大百科事典）。勝海舟・坂本龍馬らを敬服させた（同 日本大百科全書）",
+  "岩崎弥太郎と三菱：1870年10月、開成館大阪商会が藩から分離し九十九商会という海運業の私商社に、1873年に三菱商会と改名（コトバンク『岩崎弥太郎』日本大百科全書の本文）。坂本竜馬の知遇を得る（同 マイペディア）。1875年に横浜―上海航路を開設、同年に郵便汽船三菱会社と改称、佐賀の乱・台湾出兵・西南戦争で軍事輸送に従事（コトバンク『三菱会社』日本大百科全書の本文）",
+  "西南戦争：1877年、西郷隆盛を擁して起こした反政府内戦（日本大百科全書）。2月15日約1万3000人の兵を率いて鹿児島を進発、3月4日からの田原坂の戦で敗北（山川日本史小辞典）。2月22日に熊本城の熊本鎮台を強襲したが失敗（日本大百科全書）。9月24日城山陥落、西郷は城山で自刃（デジタル大辞泉）（すべてコトバンク『西南戦争』の本文）",
+  "汗血千里駒：明治15（1882）年、山崎年信が土陽新聞社に招かれて高知へ。翌16年、坂崎紫瀾の坂本龍馬を主人公とした小説『汗血千里の駒』の挿絵を描いて評判となり、寺田屋の場面の挿絵が特に人気（国立国会図書館サーチ オーテピア高知図書館の資料 https://ndlsearch.ndl.go.jp/en/books/R100000140-I000004291 に引かれた高知県人名事典の本文の抜粋）。本は1883年（摂陽堂）・1885年（春陽堂）・1890年（桜井堂『天下無双の豪傑坂本竜馬君之伝』）と出し直された（国立国会図書館の書誌・江戸東京博物館の資料の検索の抜粋）",
+  "桂浜：丘の上には太平洋の大海原を眺める坂本龍馬の銅像がある。アクセスに『高知龍馬空港』（国土交通省四国地方整備局『四国八十八景』26 龍馬と眺める太平洋と桂浜 PDF https://www.skr.mlit.go.jp/kikaku/88-kei/scenery/pdf/88-kei_26(jp).pdf の本文。PDF の本文で確認）。銅像の建った年は旅行記事でしか確かめられなかったので言わない",
+  "作り話の部分：近江屋に誰も来ない・龍馬と中岡の会話・龍馬が三岡を京都へ呼ぶ・龍馬が政府の役に入らない・伏見の煙を見る龍馬・海援隊が解かれない・横井の知らせを船で聞く・岩崎との言い合い・1872年の龍馬の船の上海航路・龍馬の会社への兵を運ぶ命令・熊本の陣で龍馬と西郷が会う・2つの未来（1877年3月と9月）",
+  "本物の画像（real）は Wikimedia Commons の検索 API で幅を確かめた（全部800px以上）：Sakamoto Ryoma.jpg 1024px／Taisei Hōkan.jpg 912px／Eight-Point Program for a New Government WDL2939.png 3072px（国立国会図書館の新政府綱領八策）／NAKAOKA Shintaro.jpg 1024px／Restoration of Imperial Rule by Shimada Bokusen 1173px／Battle of Toba–Fushimi.jpg 3613px／Portrait of Yokoi Shonan.jpg 845px／Iwasaki Yataro Photo Mitsubishi Archives.png 2274px／Building of Oriental Bank Corporation, Shanghai Branch.jpg 1020px／Kochi Katsurahama Sakamoto Ryoma Statue 2.jpg 2592px。幅の足りない Portrait of Sakamoto Ryoma by Kunisawa Shinkuro（236px）・Nakaoka Shintaro.jpg（502px）・Iwasaki Yataro.jpg（630px）・Munemitsu Mutsu.jpg（582px）は外した。近江屋跡の写真（Oumiya2767.JPG）は今の店の看板の字が写るので使わない",
+  "使わない：犯人を1つに決める言い方、近江屋の夜の龍馬の風邪と軍鶏の話（公的な出どころで確かめられなかった）、船中八策を船の上で書いたと言い切ること（後世の作という説がある）、桂浜の銅像の建った年"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "もしも近江屋で龍馬が襲われなかったら、10年後、龍馬の船は西郷を討つ兵を運んだ。",
+   "tts_text": "もしもおうみやで龍馬が襲われなかったら、10年後、龍馬の船は西郷を討つ兵を運んだ。",
+   "image_en": "Dawn over a calm harbor in old Japan: a black wooden steamship with one tall funnel at anchor, long lines of uniformed soldiers with rifles walking up the gangway, mist on the water, cold bluish-green light falling from above through clouds.",
+   "image": "Dawn over a calm harbor in old Japan: a black wooden steamship with one tall funnel at anchor, long lines of uniformed soldiers with rifles walking up the gangway, mist on the water, cold bluish-green light falling from above through clouds.",
+   "label": "龍馬が生きていたら",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "1867年11月15日の夜、京都の近江屋で、龍馬は中岡慎太郎と襲われた。",
+   "image_en": "Night in an old Kyoto merchant street: a two-story wooden shop house with closed shutters, one dim paper window glowing upstairs, cold bluish-green moonlight from above, empty street, mist.",
+   "image": "Night in an old Kyoto merchant street: a two-story wooden shop house with closed shutters, one dim paper window glowing upstairs, cold bluish-green moonlight from above, empty street, mist.",
+   "label": "1867年11月15日",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "1867年11月15日の夜、京都のおうみやで、龍馬は中岡慎太郎と襲われた。",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "西郷の薩摩と長州を結ぶのに力を貸した男が、ここで命を落とした。",
+   "image_en": "Sakamoto Ryoma, kneeling between Saigo Takamori and a stern Choshu samurai in a lantern-lit tatami room, joining their hands together over a low table, all three serious. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, kneeling between Saigo Takamori and a stern Choshu samurai in a lantern-lit tatami room, joining their hands together over a low table, all three serious. Place the main person slightly right of center.",
+   "label": "薩長を結んだ男",
+   "chars": [
+    "ryoma",
+    "saigo"
+   ]
+  },
+  {
+   "id": "A04",
+   "narration": "変えるのは1つだけ。近江屋で、龍馬が襲われなかった。",
+   "image_en": "The narrow wooden staircase inside an old Kyoto shop house at night, steep steps leading up to a closed paper sliding door, nobody on the stairs, a thin bluish-green light from a high window. No people.",
+   "image": "The narrow wooden staircase inside an old Kyoto shop house at night, steep steps leading up to a closed paper sliding door, nobody on the stairs, a thin bluish-green light from a high window. No people.",
+   "label": "変えるのは1つだけ",
+   "strong": true,
+   "chars": [],
+   "tts_text": "変えるのは1つだけ。おうみやで、龍馬が襲われなかった。"
+  },
+  {
+   "id": "A05",
+   "narration": "近江屋の夜までは本当の歴史。そこから先が作り話です。",
+   "same_as": "A04",
+   "chars": [],
+   "tts_text": "おうみやの夜までは本当の歴史。そこから先が作り話です。"
+  },
+  {
+   "id": "A06",
+   "narration": "では、生き残った龍馬は、なぜ西郷を討つ側に回るのか。",
+   "image_en": "A lone figure in a dark kimono on the deck of an old wooden steamship at sea before dawn, seen from behind, looking toward a misty southern coastline, bluish-green light from above.",
+   "image": "A lone figure in a dark kimono on the deck of an old wooden steamship at sea before dawn, seen from behind, looking toward a misty southern coastline, bluish-green light from above.",
+   "label": "生き残った龍馬は、なぜ西郷の敵に回るのか",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "龍馬は土佐の生まれ。藩を抜け、長崎で船の商いをする仲間を率いた。",
+   "chapter": "近江屋の夜まで",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+   "image_en": "An old sepia studio photograph style portrait of a tall Japanese man in a dark kimono and hakama leaning on a pedestal. Faded old-memory colors.",
+   "label": "坂本龍馬",
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg"
+   }
+  },
+  {
+   "id": "B02",
+   "narration": "ここで問題です。龍馬の名が、死んだあとに広まったきっかけは何だったでしょう。",
+   "image_en": "A quiet wooden room in old Japan at dusk: an empty cushion and a low desk with a closed blank book and a brush, warm lantern light. No people.",
+   "image": "A quiet wooden room in old Japan at dusk: an empty cushion and a low desk with a closed blank book and a brush, warm lantern light. No people.",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "1866年、中岡慎太郎は龍馬の力を借りて、薩摩と長州の手を結ばせた。",
+   "image_en": "Sakamoto Ryoma, sitting between two stern samurai who face each other in a dim tatami room, his hands raised as if bringing them together, lantern light. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sitting between two stern samurai who face each other in a dim tatami room, his hands raised as if bringing them together, lantern light. Place the main person slightly right of center.",
+   "label": "1866年 薩長",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "B04",
+   "narration": "1867年、龍馬の仲間は、土佐藩が認めた海援隊になった。",
+   "image_en": "A small black sailing steamship moored in Nagasaki harbor, young men in kimono and boots loading wooden crates, green hills behind, sunny day.",
+   "image": "A small black sailing steamship moored in Nagasaki harbor, young men in kimono and boots loading wooden crates, green hills behind, sunny day.",
+   "label": "海援隊",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "その年の10月14日。将軍の徳川慶喜が、政権を朝廷に返すと申し出た。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Taisei_H%C5%8Dkan.jpg",
+   "image_en": "A grand painted hall of a Japanese castle: rows of retainers in formal kamishimo bowing low before a lord seated on a raised floor. Faded old-memory colors.",
+   "image": "A grand painted hall of a Japanese castle: rows of retainers in formal kamishimo bowing low before a lord seated on a raised floor. Faded old-memory colors.",
+   "label": "10月14日",
+   "chars": [],
+   "tts_text": "その年の10月14日。将軍の徳川よしのぶが、政権を朝廷に返すと申し出た。"
+  },
+  {
+   "id": "B06",
+   "narration": "翌15日の夜、朝廷はそれを受け入れた。大政奉還だ。",
+   "image_en": "Night at the old imperial palace in Kyoto: a long roofed gate with lanterns, a palanquin arriving, guards bowing.",
+   "image": "Night at the old imperial palace in Kyoto: a long roofed gate with lanterns, a palanquin arriving, guards bowing.",
+   "label": "大政奉還",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "11月、龍馬は新しい政府の形を、8つの箇条に書いている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/6/69/Eight-Point_Program_for_a_New_Government_WDL2939.png",
+   "image_en": "An old Japanese handwritten paper document with eight lines of brush writing, aged paper, seen from above. Faded old-memory colors.",
+   "image": "An old Japanese handwritten paper document with eight lines of brush writing, aged paper, seen from above. Faded old-memory colors.",
+   "label": "新政府綱領八策",
+   "chars": []
+  },
+  {
+   "id": "B08",
+   "narration": "その中に、ふしぎな所がある。国の上に立つ人の名が、丸3つで伏せてあるのだ。",
+   "image_en": "Sakamoto Ryoma, sitting at a low desk by lantern light, holding a brush above a blank sheet of paper and hesitating, thoughtful face. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sitting at a low desk by lantern light, holding a brush above a blank sheet of paper and hesitating, thoughtful face. Place the main person slightly right of center.",
+   "label": "〇〇〇",
+   "strong": true,
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "B09",
+   "narration": "誰の名が入るはずだったのか。慶喜説や山内容堂説があり、今も決まっていない。",
+   "same_as": "B07",
+   "label": "慶喜説・容堂説",
+   "tts_text": "誰の名が入るはずだったのか。よしのぶ説や、やまうちようどう説があり、今も決まっていない。",
+   "chars": []
+  },
+  {
+   "id": "B10",
+   "narration": "11月10日。龍馬は越前の重臣に、手紙を書いたとされる。",
+   "image_en": "Close-up of a hand writing a long letter with a brush on a scroll of blank paper, an ink stone beside it, lantern light, no readable characters.",
+   "image": "Close-up of a hand writing a long letter with a brush on a scroll of blank paper, an ink stone beside it, lantern light, no readable characters.",
+   "label": "11月10日",
+   "chars": []
+  },
+  {
+   "id": "B11",
+   "narration": "新しい政府のお金の係に、越前の三岡八郎を出してほしい、という頼みだ。",
+   "image_en": "A calm intelligent samurai official of Echizen in his late thirties, sitting with an abacus and account books in a bright room, looking up. Place the main person slightly right of center.",
+   "image": "A calm intelligent samurai official of Echizen in his late thirties, sitting with an abacus and account books in a bright room, looking up. Place the main person slightly right of center.",
+   "label": "三岡八郎",
+   "chars": [],
+   "tts_text": "新しい政府のお金の係に、えちぜんのみつおかはちろうを出してほしい、という頼みだ。"
+  },
+  {
+   "id": "B12",
+   "narration": "その手紙には、新国家という言葉があったといわれる。",
+   "image_en": "Close-up of an old folded letter on aged paper sealed with a plain cord beside an ink stone, warm lantern light, no readable characters.",
+   "image": "Close-up of an old folded letter on aged paper sealed with a plain cord beside an ink stone, warm lantern light, no readable characters.",
+   "label": "新国家",
+   "chars": []
+  },
+  {
+   "id": "B12b",
+   "narration": "この手紙が見つかったと報じられたのは、2017年のことだ。",
+   "image_en": "A museum curator in white gloves carefully unfolding an old letter on a table under soft light, the paper's writing side turned away from view.",
+   "image": "A museum curator in white gloves carefully unfolding an old letter on a table under soft light, the paper's writing side turned away from view.",
+   "label": "2017年",
+   "chars": []
+  },
+  {
+   "id": "B13",
+   "narration": "龍馬が泊まっていたのは、河原町の醤油屋、近江屋。土佐藩出入りの店だ。",
+   "image_en": "Evening on an old Kyoto street: a two-story wooden soy sauce shop with large wooden barrels at the front, plain cloth curtains, lanterns being lit, people passing.",
+   "image": "Evening on an old Kyoto street: a two-story wooden soy sauce shop with large wooden barrels at the front, plain cloth curtains, lanterns being lit, people passing.",
+   "label": "近江屋",
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "龍馬が泊まっていたのは、かわらまちの醤油屋、おうみや。土佐藩出入りの店だ。",
+   "motion": true
+  },
+  {
+   "id": "B14",
+   "narration": "11月15日の夜、中岡慎太郎が、龍馬をたずねてきた。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/2/27/NAKAOKA_Shintaro.jpg",
+   "image_en": "An old sepia photograph style portrait of a young Japanese samurai with a firm serious face in kimono and hakama. Faded old-memory colors.",
+   "image": "An old sepia photograph style portrait of a young Japanese samurai with a firm serious face in kimono and hakama. Faded old-memory colors.",
+   "label": "中岡慎太郎",
+   "chars": []
+  },
+  {
+   "id": "B15",
+   "narration": "11月15日は、龍馬の生まれた日と同じ日付だったと伝わる。",
+   "image_en": "A small charcoal brazier glowing in a dark upstairs tatami room, two cups of tea beside it, a paper window with night outside. No people.",
+   "image": "A small charcoal brazier glowing in a dark upstairs tatami room, two cups of tea beside it, a paper window with night outside. No people.",
+   "label": "生まれた日",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "夜がふけても、近江屋の戸をたたく者は、来なかった。",
+   "chapter": "誰も来なかった夜",
+   "image_en": "Late night in front of an old wooden Kyoto shop house: closed shutters, a quiet empty street, a cat crossing, a single lantern swaying in the wind.",
+   "image": "Late night in front of an old wooden Kyoto shop house: closed shutters, a quiet empty street, a cat crossing, a single lantern swaying in the wind.",
+   "label": "誰も来ない",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "tts_text": "夜がふけても、おうみやの戸をたたく者は、来なかった。",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "2階では、龍馬と中岡が、火鉢をはさんで話し込んでいた。",
+   "image_en": "Sakamoto Ryoma, and Nakaoka Shintaro sitting face to face across a glowing charcoal brazier in a small upstairs tatami room, talking intensely, lantern light. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, and Nakaoka Shintaro sitting face to face across a glowing charcoal brazier in a small upstairs tatami room, talking intensely, lantern light. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma",
+    "nakaoka"
+   ]
+  },
+  {
+   "id": "C03",
+   "narration": "話は、これからの日本のことだ。",
+   "image_en": "Close view of two pairs of hands over a brazier, one pointing at a hand-drawn map of Japan's coastline with no writing on a sheet of paper, lantern light.",
+   "image": "Close view of two pairs of hands over a brazier, one pointing at a hand-drawn map of Japan's coastline with no writing on a sheet of paper, lantern light.",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "幕府は、本当に手を引くと思うか。",
+   "image_en": "Nakaoka Shintaro, leaning forward with a doubtful frown, arms folded, lit by the brazier. Place the main person slightly right of center.",
+   "image": "Nakaoka Shintaro, leaning forward with a doubtful frown, arms folded, lit by the brazier. Place the main person slightly right of center.",
+   "chars": [
+    "nakaoka"
+   ],
+   "voice": "nakaoka"
+  },
+  {
+   "id": "C05",
+   "narration": "引かせるがよ。戦をせんで済む道が、まだある。",
+   "image_en": "Sakamoto Ryoma, grinning boldly with one knee raised, pointing a finger upward, lit by the brazier. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, grinning boldly with one knee raised, pointing a finger upward, lit by the brazier. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "C06",
+   "narration": "階段の下では、近江屋の主人の井口新助が、店を閉めていた。",
+   "image_en": "A middle-aged Kyoto shopkeeper in a plain apron sliding wooden shutters closed at night inside a soy sauce shop, barrels around him, a lantern on the floor.",
+   "image": "A middle-aged Kyoto shopkeeper in a plain apron sliding wooden shutters closed at night inside a soy sauce shop, barrels around him, a lantern on the floor.",
+   "chars": [],
+   "tts_text": "階段の下では、おうみやの主人のいぐちしんすけが、店を閉めていた。"
+  },
+  {
+   "id": "C08",
+   "narration": "明け方、龍馬は2階の窓を開けた。冬の京都の空が、白んでいく。",
+   "image_en": "Sakamoto Ryoma, sliding open a paper window on the upper floor at dawn, breathing the cold air, the sky over Kyoto rooftops turning pale. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sliding open a paper window on the upper floor at dawn, breathing the cold air, the sky over Kyoto rooftops turning pale. Place the main person slightly right of center.",
+   "label": "明け方",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C09",
+   "narration": "33になった龍馬は、まだ生きていた。",
+   "image_en": "Close-up of Sakamoto Ryoma, smiling quietly with morning light on his face, breath visible in the cold air. Place the main person slightly right of center.",
+   "image": "Close-up of Sakamoto Ryoma, smiling quietly with morning light on his face, breath visible in the cold air. Place the main person slightly right of center.",
+   "label": "生きていた",
+   "strong": true,
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "C10",
+   "narration": "本当の歴史では、その夜2人は何者かに襲われ、命を落としている。",
+   "image_en": "An empty dark upstairs tatami room at night, a toppled lantern and a folding screen knocked over, cold moonlight through a torn paper window, no people, no blood. Faded old-memory colors.",
+   "image": "An empty dark upstairs tatami room at night, a toppled lantern and a folding screen knocked over, cold moonlight through a torn paper window, no people, no blood. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "12月9日。王政復古の大号令が出され、幕府は無くなった。",
+   "chapter": "御所の会議",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Restoration_of_Imperial_Rule_by_Shimada_Bokusen_%28Meiji_Memorial_Picture_Gallery%29.jpg",
+   "image_en": "A painting of nobles and lords in court robes seated in a lantern-lit palace hall at night, solemn council. Faded old-memory colors.",
+   "image": "A painting of nobles and lords in court robes seated in a lantern-lit palace hall at night, solemn council. Faded old-memory colors.",
+   "label": "12月9日",
+   "chars": []
+  },
+  {
+   "id": "D02",
+   "narration": "その夜の小御所会議で、慶喜には官位と領地を返させると決まった。",
+   "image_en": "A tense night council in a large hall of the Kyoto imperial palace, court nobles and samurai lords in formal robes arguing, candles burning.",
+   "image": "A tense night council in a large hall of the Kyoto imperial palace, court nobles and samurai lords in formal robes arguing, candles burning.",
+   "label": "小御所会議",
+   "chars": [],
+   "tts_text": "その夜のこごしょ会議で、よしのぶには官位と領地を返させると決まった。"
+  },
+  {
+   "id": "D03",
+   "narration": "龍馬の八策の丸3つは、埋まらないまま、話は進んでいった。",
+   "same_as": "B08",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "龍馬は、近江屋の2階で、その知らせを聞いた。",
+   "image_en": "Sakamoto Ryoma, sitting on the tatami reading a folded blank letter brought by a young messenger who kneels at the door, his face darkening. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sitting on the tatami reading a folded blank letter brought by a young messenger who kneels at the door, his face darkening. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "tts_text": "龍馬は、おうみやの2階で、その知らせを聞いた。",
+   "motion": true
+  },
+  {
+   "id": "D05",
+   "narration": "これでは、戦になる。",
+   "image_en": "Close-up of Sakamoto Ryoma, crushing the letter in his fist, teeth clenched. Place the main person slightly right of center.",
+   "image": "Close-up of Sakamoto Ryoma, crushing the letter in his fist, teeth clenched. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "D06",
+   "narration": "それでも龍馬は、越前から三岡八郎を京都へ呼び寄せた。",
+   "image_en": "Sakamoto Ryoma, greeting a calm samurai official of Echizen with an abacus case under his arm at a snowy Kyoto gate, both bowing. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, greeting a calm samurai official of Echizen with an abacus case under his arm at a snowy Kyoto gate, both bowing. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "tts_text": "それでも龍馬は、えちぜんからみつおかはちろうを京都へ呼び寄せた。"
+  },
+  {
+   "id": "D07",
+   "narration": "三岡は新しい政府の参与になり、お金の仕組みを任された。",
+   "image_en": "A calm samurai official of Echizen in formal robes working at a long desk piled with ledgers and stacks of blank paper money in a government office.",
+   "image": "A calm samurai official of Echizen in formal robes working at a long desk piled with ledgers and stacks of blank paper money in a government office.",
+   "label": "参与",
+   "chars": [],
+   "tts_text": "みつおかは新しい政府の参与になり、お金の仕組みを任された。"
+  },
+  {
+   "id": "D08",
+   "narration": "ただ、龍馬は自分の名を、新しい政府の役に入れなかった。",
+   "image_en": "Sakamoto Ryoma, pushing a list of blank paper back across a desk toward a surprised official, shaking his head with a grin. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, pushing a list of blank paper back across a desk toward a surprised official, shaking his head with a grin. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "D09",
+   "narration": "世界の海援隊でもやらんかな。龍馬は、そう言ったと伝わる。",
+   "image_en": "Sakamoto Ryoma, standing on a wooden pier gazing at a wide sea with a ship on the horizon, wind in his hair, sunset. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing on a wooden pier gazing at a wide sea with a ship on the horizon, wind in his hair, sunset. Place the main person slightly right of center.",
+   "label": "世界の海援隊",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "D10",
+   "narration": "本当の歴史でも、三岡は参与になり、新しい政府のお金を任されている。",
+   "image_en": "A Meiji-era government office hall with officials in formal robes counting stacks of blank paper money at long desks. Faded old-memory colors.",
+   "image": "A Meiji-era government office hall with officials in formal robes counting stacks of blank paper money at long desks. Faded old-memory colors.",
+   "chars": [],
+   "tts_text": "本当の歴史でも、みつおかは参与になり、新しい政府のお金を任されている。"
+  },
+  {
+   "id": "E01",
+   "narration": "1868年1月3日。京都の南、鳥羽と伏見で、戦が始まった。",
+   "chapter": "鳥羽・伏見の煙",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Battle_of_Toba%E2%80%93Fushimi.jpg",
+   "image_en": "An old Japanese woodblock print of a battle: soldiers with rifles and cannons firing across a river, smoke and flags. Faded old-memory colors.",
+   "image": "An old Japanese woodblock print of a battle: soldiers with rifles and cannons firing across a river, smoke and flags. Faded old-memory colors.",
+   "label": "1868年1月3日",
+   "chars": []
+  },
+  {
+   "id": "E02",
+   "narration": "旧幕府の兵と、薩摩・長州の兵がぶつかった。",
+   "image_en": "Two lines of soldiers in different uniforms firing rifles at each other across a winter field near Kyoto, gun smoke rolling, no blood.",
+   "image": "Two lines of soldiers in different uniforms firing rifles at each other across a winter field near Kyoto, gun smoke rolling, no blood.",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "1月6日、慶喜は大坂を離れ、江戸へ去った。",
+   "image_en": "A black Western-style warship leaving Osaka bay at night, lanterns on deck, a lone figure in formal robes at the stern looking back.",
+   "image": "A black Western-style warship leaving Osaka bay at night, lanterns on deck, a lone figure in formal robes at the stern looking back.",
+   "chars": [],
+   "tts_text": "1月6日、よしのぶは大坂を離れ、江戸へ去った。"
+  },
+  {
+   "id": "E04",
+   "narration": "龍馬は、伏見の方に上がる煙を、丘の上から見ていた。",
+   "image_en": "Sakamoto Ryoma, standing on a hill above Kyoto, watching dark smoke rise from the south, his fists clenched. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing on a hill above Kyoto, watching dark smoke rise from the south, his fists clenched. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E05",
+   "narration": "止められんかった。",
+   "image_en": "Close-up of Sakamoto Ryoma, eyes shut tight, head lowered, smoke drifting behind him. Place the main person slightly right of center.",
+   "image": "Close-up of Sakamoto Ryoma, eyes shut tight, head lowered, smoke drifting behind him. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "E06",
+   "narration": "戦を止める力は、龍馬には無い。龍馬が持っていたのは、船だけだ。",
+   "image_en": "Sakamoto Ryoma, walking alone down a wharf toward a moored black steamship at dusk, carrying a small bundle. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, walking alone down a wharf toward a moored black steamship at dusk, carrying a small bundle. Place the main person slightly right of center.",
+   "label": "持っていたのは船だけ",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "E07",
+   "narration": "3月、江戸では勝海舟と西郷隆盛が会い、江戸城を戦わずに明け渡すと決めた。",
+   "image_en": "Saigo Takamori, sitting across from a slim samurai negotiator in a quiet tatami room of a mansion in Edo, both calm and serious, a garden beyond. Place the main person slightly right of center.",
+   "image": "Saigo Takamori, sitting across from a slim samurai negotiator in a quiet tatami room of a mansion in Edo, both calm and serious, a garden beyond. Place the main person slightly right of center.",
+   "label": "江戸城を明け渡す",
+   "chars": [
+    "saigo"
+   ]
+  },
+  {
+   "id": "E08",
+   "narration": "その知らせを、龍馬は長崎へ向かう船の上で聞いた。",
+   "image_en": "Sakamoto Ryoma, on the deck of a steamship at sea, reading a blank letter and smiling with relief, seagulls overhead. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, on the deck of a steamship at sea, reading a blank letter and smiling with relief, seagulls overhead. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "E09",
+   "narration": "本当の歴史では、龍馬のいない海援隊は、この年の閏4月に解かれた。",
+   "image_en": "An empty wooden headquarters room by a harbor, crates stacked and covered with cloth, a closed door, dust in the light. Faded old-memory colors.",
+   "image": "An empty wooden headquarters room by a harbor, crates stacked and covered with cloth, a closed door, dust in the light. Faded old-memory colors.",
+   "label": "閏4月",
+   "chars": [],
+   "tts_text": "本当の歴史では、龍馬のいない海援隊は、この年のうるう4月に解かれた。"
+  },
+  {
+   "id": "F01",
+   "narration": "この世界の海援隊は、解かれなかった。",
+   "chapter": "京都からの知らせ",
+   "image_en": "Young men in kimono and boots cheering on the deck of a black steamship in Nagasaki harbor, crates being hoisted aboard, bright morning.",
+   "image": "Young men in kimono and boots cheering on the deck of a black steamship in Nagasaki harbor, crates being hoisted aboard, bright morning.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "龍馬は長崎に戻り、船で米や品物を運ぶ商いを続けた。",
+   "image_en": "Sakamoto Ryoma, checking bales of rice and wooden boxes on a busy Nagasaki wharf with his crew, laughing. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, checking bales of rice and wooden boxes on a busy Nagasaki wharf with his crew, laughing. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "F03",
+   "narration": "だが1869年1月、京都から悪い知らせが届く。",
+   "image_en": "A messenger running along a harbor road in winter with a letter box on his shoulder, grey sky, people turning to look.",
+   "image": "A messenger running along a harbor road in winter with a letter box on his shoulder, grey sky, people turning to look.",
+   "label": "1869年1月",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "1月5日、新しい政府の参与、横井小楠が、帰り道で襲われて亡くなった。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/4/45/Portrait_of_Yokoi_Shonan.jpg",
+   "image_en": "An old portrait painting of an elderly Japanese scholar in formal dark robes, calm wise face. Faded old-memory colors.",
+   "image": "An old portrait painting of an elderly Japanese scholar in formal dark robes, calm wise face. Faded old-memory colors.",
+   "label": "横井小楠",
+   "strong": true,
+   "chars": [],
+   "tts_text": "1月5日、新しい政府の参与、よこいしょうなんが、帰り道で襲われて亡くなった。"
+  },
+  {
+   "id": "F04b",
+   "narration": "襲ったのは、十津川の郷士らだったとされる。",
+   "image_en": "Several shadowy figures in plain dark kimono and straw hats waiting under the eaves of a Kyoto street at dusk, faces hidden. Faded old-memory colors.",
+   "image": "Several shadowy figures in plain dark kimono and straw hats waiting under the eaves of a Kyoto street at dusk, faces hidden. Faded old-memory colors.",
+   "chars": [],
+   "tts_text": "襲ったのは、とつかわの郷士らだったとされる。"
+  },
+  {
+   "id": "F05",
+   "narration": "横井は、龍馬や勝海舟が、心から敬った学者だった。",
+   "image_en": "A small quiet study with a low desk, stacks of old books and a cold tea cup, an empty cushion, winter light through a paper window. No people. Faded old-memory colors.",
+   "image": "A small quiet study with a low desk, stacks of old books and a cold tea cup, an empty cushion, winter light through a paper window. No people. Faded old-memory colors.",
+   "chars": [],
+   "tts_text": "よこいは、龍馬や勝海舟が、心から敬った学者だった。"
+  },
+  {
+   "id": "F06",
+   "narration": "新しい国のために働く者が、京都の道で命をねらわれていた。",
+   "image_en": "A dark narrow Kyoto street at night with deep shadows under the eaves, a single lantern on the ground, an empty palanquin left behind. No people.",
+   "image": "A dark narrow Kyoto street at night with deep shadows under the eaves, a single lantern on the ground, an empty palanquin left behind. No people.",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "龍馬は、船の上で、長いあいだ黙っていた。",
+   "image_en": "Sakamoto Ryoma, sitting alone on coiled ropes on the deck of a steamship at dusk, the letter hanging from his hand, staring at grey waves. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sitting alone on coiled ropes on the deck of a steamship at dusk, the letter hanging from his hand, staring at grey waves. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F08",
+   "narration": "京都に戻れば、わしも同じよ。",
+   "image_en": "Close-up of Sakamoto Ryoma, a bitter half smile, eyes wet, wind blowing his hair. Place the main person slightly right of center.",
+   "image": "Close-up of Sakamoto Ryoma, a bitter half smile, eyes wet, wind blowing his hair. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "F09",
+   "narration": "それから龍馬は、京都の政治に近づかず、海の上で生きると決めた。",
+   "same_as": "F07",
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になる方は、チャンネル登録で応援してください。",
+   "same_as": "A03",
+   "label": "チャンネル登録",
+   "tts_text": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。続きが気になるかたは、チャンネル登録で応援してください。",
+   "chars": []
+  },
+  {
+   "id": "G01",
+   "narration": "1870年。土佐の岩崎弥太郎が、船の商いをする会社を始めた。",
+   "chapter": "上海への船",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Iwasaki_Yataro_Photo_Mitsubishi_Archives.png",
+   "image_en": "An old sepia photograph style portrait of a Japanese merchant with a moustache in kimono and haori, sitting upright. Faded old-memory colors.",
+   "image": "An old sepia photograph style portrait of a Japanese merchant with a moustache in kimono and haori, sitting upright. Faded old-memory colors.",
+   "label": "1870年",
+   "chars": []
+  },
+  {
+   "id": "G02",
+   "narration": "名は、九十九商会。のちの三菱だ。",
+   "image_en": "A busy Osaka river port with wooden warehouses and a small black steamship being loaded, porters carrying bales, sunny day.",
+   "image": "A busy Osaka river port with wooden warehouses and a small black steamship being loaded, porters carrying bales, sunny day.",
+   "label": "九十九商会",
+   "chars": [],
+   "tts_text": "名は、つくも商会。のちの三菱だ。"
+  },
+  {
+   "id": "G02b",
+   "narration": "1873年には、名を三菱商会と改めている。",
+   "image_en": "A Meiji-era merchant office with a new wooden signboard hanging over the door turned away from view, clerks carrying ledgers inside, morning light.",
+   "image": "A Meiji-era merchant office with a new wooden signboard hanging over the door turned away from view, clerks carrying ledgers inside, morning light.",
+   "label": "1873年",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "岩崎は、長崎で龍馬と顔を合わせてきた、同じ土佐の男だった。",
+   "image_en": "Iwasaki Yataro, and Sakamoto Ryoma standing face to face on a crowded wharf, smiling stiffly like rivals, ships behind them. Place the main person slightly right of center.",
+   "image": "Iwasaki Yataro, and Sakamoto Ryoma standing face to face on a crowded wharf, smiling stiffly like rivals, ships behind them. Place the main person slightly right of center.",
+   "chars": [
+    "iwasaki",
+    "ryoma"
+   ]
+  },
+  {
+   "id": "G04",
+   "narration": "この世界では、海援隊の船と岩崎の船が、同じ海で荷を取り合った。",
+   "image_en": "Two black steamships racing side by side across a bay, black smoke pouring from their funnels, crews shouting at each other across the water.",
+   "image": "Two black steamships racing side by side across a bay, black smoke pouring from their funnels, crews shouting at each other across the water.",
+   "label": "荷の取り合い",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "坂本さん、日本の海は、わしがもらうぜよ。",
+   "image_en": "Iwasaki Yataro, jabbing a finger forward with a fierce confident grin in a merchant office full of ledgers. Place the main person slightly right of center.",
+   "image": "Iwasaki Yataro, jabbing a finger forward with a fierce confident grin in a merchant office full of ledgers. Place the main person slightly right of center.",
+   "chars": [
+    "iwasaki"
+   ],
+   "voice": "iwasaki"
+  },
+  {
+   "id": "G06",
+   "narration": "なら、わしは、もっと先の海へ出る。",
+   "image_en": "Sakamoto Ryoma, laughing with his head thrown back, spreading a large plain sea chart with no writing across a table. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, laughing with his head thrown back, spreading a large plain sea chart with no writing across a table. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "G07",
+   "narration": "1872年。龍馬の蒸気船が、横浜の港から西へ向かった。",
+   "image_en": "Sakamoto Ryoma, standing at the bow of a black steamship leaving Yokohama harbor, a red-and-white sun flag flying at the stern, morning sun. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing at the bow of a black steamship leaving Yokohama harbor, a red-and-white sun flag flying at the stern, morning sun. Place the main person slightly right of center.",
+   "label": "1872年",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "G08",
+   "narration": "行き先は、海の向こうの清の国、上海。",
+   "image_en": "A black steamship crossing the open East China Sea under a big sky, waves breaking at the bow, seagulls following.",
+   "image": "A black steamship crossing the open East China Sea under a big sky, waves breaking at the bow, seagulls following.",
+   "label": "上海",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "日本の会社の船が、決まった日に外国の港へ通う、定期の航路だ。",
+   "image_en": "A ship's officer in a dark jacket marking a calendar on the cabin wall beside a brass ship's clock and a plain chart, lamp light.",
+   "image": "A ship's officer in a dark jacket marking a calendar on the cabin wall beside a brass ship's clock and a plain chart, lamp light.",
+   "label": "定期の航路",
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "上海の岸には、西洋の銀行や商館が、石造りでずらりと並んでいた。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/5/52/Building_of_Oriental_Bank_Corporation%2C_Shanghai_Branch.jpg",
+   "image_en": "An old photograph of a stone Western-style bank building on a riverside street in nineteenth-century Shanghai. Faded old-memory colors.",
+   "image": "An old photograph of a stone Western-style bank building on a riverside street in nineteenth-century Shanghai. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "その前を、日の丸を立てた龍馬の船が、ゆっくりと入っていく。",
+   "image_en": "A black steamship with a red-and-white sun flag sailing slowly into Shanghai harbor past Western stone buildings and Chinese junks, Sakamoto Ryoma waving from the deck, golden afternoon light. Place the main person slightly right of center.",
+   "image": "A black steamship with a red-and-white sun flag sailing slowly into Shanghai harbor past Western stone buildings and Chinese junks, Sakamoto Ryoma waving from the deck, golden afternoon light. Place the main person slightly right of center.",
+   "label": "龍馬の船、上海へ",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G12",
+   "narration": "本当の歴史では、横浜と上海の航路は、1875年に三菱が開いている。",
+   "image_en": "An old-style steamship with a single funnel moored at a Yokohama pier, passengers in Western hats and kimono boarding. Faded old-memory colors.",
+   "image": "An old-style steamship with a single funnel moored at a Yokohama pier, passengers in Western hats and kimono boarding. Faded old-memory colors.",
+   "label": "1875年",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "narration": "1877年2月15日。西郷隆盛が、兵を率いて鹿児島を出た。",
+   "chapter": "10年後の命令",
+   "image_en": "Saigo Takamori, marching at the head of a long column of soldiers along a snowy road out of Kagoshima, the smoking volcano Sakurajima behind. Place the main person slightly right of center.",
+   "image": "Saigo Takamori, marching at the head of a long column of soldiers along a snowy road out of Kagoshima, the smoking volcano Sakurajima behind. Place the main person slightly right of center.",
+   "label": "1877年2月15日",
+   "chars": [
+    "saigo"
+   ]
+  },
+  {
+   "id": "H02",
+   "narration": "その数、およそ1万3000。西南戦争の始まりだ。",
+   "image_en": "A huge army of samurai soldiers with rifles and swords marching across a winter plain in southern Japan, banners with no writing, seen from a hill.",
+   "image": "A huge army of samurai soldiers with rifles and swords marching across a winter plain in southern Japan, banners with no writing, seen from a hill.",
+   "label": "1万3000",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H02b",
+   "narration": "迎える政府の兵は、あわせて5万8000あまりにのぼった。",
+   "image_en": "Endless ranks of government soldiers in dark Western uniforms and caps lined up on a parade ground with rifles, officers on horseback, cold sky.",
+   "image": "Endless ranks of government soldiers in dark Western uniforms and caps lined up on a parade ground with rifles, officers on horseback, cold sky.",
+   "label": "5万8000",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "22日、西郷の軍は熊本城を攻めた。",
+   "image_en": "A great black castle on a stone base under a grey sky, smoke from cannon fire rising around its walls, soldiers in the foreground.",
+   "image": "A great black castle on a stone base under a grey sky, smoke from cannon fire rising around its walls, soldiers in the foreground.",
+   "label": "熊本城",
+   "chars": []
+  },
+  {
+   "id": "H03b",
+   "narration": "だが城は落ちず、西郷の軍は城を囲んだまま、動けなくなった。",
+   "image_en": "Samurai soldiers crouching behind earthworks around a great castle at night, campfires dotting the ground, the castle walls dark and silent.",
+   "image": "Samurai soldiers crouching behind earthworks around a great castle at night, campfires dotting the ground, the castle walls dark and silent.",
+   "chars": []
+  },
+  {
+   "id": "H04",
+   "narration": "政府は、九州へ兵を送るため、国じゅうの船を集めた。",
+   "image_en": "A crowded harbor with many black steamships, government soldiers in dark Western uniforms lined up on the pier with rifles, officers shouting orders.",
+   "image": "A crowded harbor with many black steamships, government soldiers in dark Western uniforms lined up on the pier with rifles, officers shouting orders.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H05",
+   "narration": "龍馬の会社にも、船を出せという命令が届いた。",
+   "image_en": "Sakamoto Ryoma, ten years older with a few grey hairs, holding a stamped blank order paper at his office desk, his face frozen. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, ten years older with a few grey hairs, holding a stamped blank order paper at his office desk, his face frozen. Place the main person slightly right of center.",
+   "label": "船を出せ",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "H06",
+   "narration": "薩摩と長州を結んだ龍馬の船が、西郷を討つ兵を運ぶ。",
+   "image_en": "Sakamoto Ryoma, standing on a pier with a pained, shocked face while rows of government soldiers with rifles march past him up the gangway of his black steamship, grey dawn. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing on a pier with a pained, shocked face while rows of government soldiers with rifles march past him up the gangway of his black steamship, grey dawn. Place the main person slightly right of center.",
+   "label": "西郷を討つ兵を運ぶ",
+   "strong": true,
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "H07",
+   "narration": "港では、政府の兵が次々に、龍馬の船へ乗り込んでいった。",
+   "image_en": "A black steamship packed with soldiers pulling away from a pier, black smoke pouring from the funnel, soldiers crowding the rails.",
+   "image": "A black steamship packed with soldiers pulling away from a pier, black smoke pouring from the funnel, soldiers crowding the rails.",
+   "chars": []
+  },
+  {
+   "id": "H08",
+   "narration": "龍馬は、遠ざかる船を見送り、南の海を見つめた。",
+   "image_en": "Sakamoto Ryoma, alone at the end of a pier, watching a steamship full of soldiers disappear toward the south, wind and grey waves. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, alone at the end of a pier, watching a steamship full of soldiers disappear toward the south, wind and grey waves. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "H09",
+   "narration": "西郷さんと、話をしに行く。",
+   "image_en": "Close-up of Sakamoto Ryoma, looking up with sudden fierce resolve, jaw set. Place the main person slightly right of center.",
+   "image": "Close-up of Sakamoto Ryoma, looking up with sudden fierce resolve, jaw set. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "voice": "ryoma"
+  },
+  {
+   "id": "H10",
+   "narration": "龍馬は、兵を乗せない小さな船に乗り、熊本へ向かった。",
+   "image_en": "Sakamoto Ryoma, standing at the bow of a small steamboat with only a few sailors aboard, heading into rough seas along a mountainous southern coast. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing at the bow of a small steamboat with only a few sailors aboard, heading into rough seas along a mountainous southern coast. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "H11",
+   "narration": "3月のはじめ。龍馬は1人で、西郷の陣に入っていった。",
+   "image_en": "Sakamoto Ryoma, walking alone and unarmed between rows of wary samurai soldiers around campfires at night, hands open at his sides. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, walking alone and unarmed between rows of wary samurai soldiers around campfires at night, hands open at his sides. Place the main person slightly right of center.",
+   "label": "1人で",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "H12",
+   "narration": "たき火をはさんで、龍馬と西郷が、向かい合った。",
+   "image_en": "Sakamoto Ryoma, and Saigo Takamori sitting face to face across a crackling campfire at night in an army camp, sparks rising, both faces lit orange, tense and moved. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, and Saigo Takamori sitting face to face across a crackling campfire at night in an army camp, sparks rising, both faces lit orange, tense and moved. Place the main person slightly right of center.",
+   "label": "龍馬と西郷",
+   "strong": true,
+   "highlight": [
+    "向かい合った"
+   ],
+   "chars": [
+    "ryoma",
+    "saigo"
+   ],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "H13",
+   "narration": "坂本どん、よう来もした。",
+   "image_en": "Close-up of Saigo Takamori, his big eyes softening into a slow smile in the firelight. Place the main person slightly right of center.",
+   "image": "Close-up of Saigo Takamori, his big eyes softening into a slow smile in the firelight. Place the main person slightly right of center.",
+   "chars": [
+    "saigo"
+   ],
+   "voice": "saigo"
+  },
+  {
+   "id": "H14",
+   "narration": "本当の歴史では、兵を運んだのは三菱の船で、3月には田原坂で激しい戦いになった。",
+   "image_en": "A steep sunken road on a misty hillside in spring rain, abandoned helmets and broken rifles in the mud, no people, no blood. Faded old-memory colors.",
+   "image": "A steep sunken road on a misty hillside in spring rain, abandoned helmets and broken rifles in the mud, no people, no blood. Faded old-memory colors.",
+   "label": "田原坂",
+   "chars": [],
+   "tts_text": "本当の歴史では、兵を運んだのは三菱の船で、3月には、たばるざかで激しい戦いになった。"
+  },
+  {
+   "id": "I01",
+   "narration": "この世界の龍馬は、40をすぎても、船の上にいた。",
+   "chapter": "桂浜の銅像",
+   "image_en": "Sakamoto Ryoma, in his forties with grey at the temples, standing on the deck of his steamship at sunset, hands on the rail, calm smile, open Pacific ocean. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, in his forties with grey at the temples, standing on the deck of his steamship at sunset, hands on the rail, calm smile, open Pacific ocean. Place the main person slightly right of center.",
+   "label": "40代の龍馬",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I02",
+   "narration": "若くして倒れた志士の物語は、ここには生まれない。",
+   "same_as": "I01",
+   "chars": []
+  },
+  {
+   "id": "I09",
+   "narration": "この世界の龍馬は、生きたまま、船の上で年を取っていく。",
+   "image_en": "Sakamoto Ryoma, older with grey hair, at the helm of his steamship on a calm evening sea, a young sailor beside him learning to steer. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, older with grey hair, at the helm of his steamship on a calm evening sea, a young sailor beside him learning to steer. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "I03",
+   "narration": "では、本当の歴史で、龍馬の名を広めたのは何だったのか。",
+   "image_en": "A small Meiji-era printing shop in Kochi, a worker pulling freshly printed newspaper sheets from a wooden press, the printed side facing away, lamp light.",
+   "image": "A small Meiji-era printing shop in Kochi, a worker pulling freshly printed newspaper sheets from a wooden press, the printed side facing away, lamp light.",
+   "chars": []
+  },
+  {
+   "id": "I04",
+   "narration": "それは、新聞の小説。1883年、高知の新聞に、龍馬が主役の小説が載った。",
+   "same_as": "I03",
+   "label": "新聞の小説",
+   "strong": true,
+   "payoff": true,
+   "chars": []
+  },
+  {
+   "id": "I05",
+   "narration": "題は、汗血千里駒。龍馬が主役の、この話が評判になった。",
+   "image_en": "Meiji-era townspeople in a Kochi street crowding around a man reading a newspaper aloud, excited faces, the paper's printed side turned away from view.",
+   "image": "Meiji-era townspeople in a Kochi street crowding around a man reading a newspaper aloud, excited faces, the paper's printed side turned away from view.",
+   "label": "汗血千里駒",
+   "chars": [],
+   "tts_text": "題は、かんけつせんりのこま。龍馬が主役の、この話が評判になった。"
+  },
+  {
+   "id": "I05b",
+   "narration": "書いたのは、高知の坂崎紫瀾。龍馬が倒れて16年後のことだった。",
+   "image_en": "A Meiji-era writer with a moustache writing by lamplight at a cluttered desk in a small room in Kochi, a pile of manuscript pages, the writing side hidden.",
+   "image": "A Meiji-era writer with a moustache writing by lamplight at a cluttered desk in a small room in Kochi, a pile of manuscript pages, the writing side hidden.",
+   "label": "16年後",
+   "chars": [],
+   "tts_text": "書いたのは、高知のさかざきしらん。龍馬が倒れて16年後のことだった。"
+  },
+  {
+   "id": "I06",
+   "narration": "特に人気だったのは、挿絵。寺田屋で龍馬がピストルを構える場面だ。",
+   "image_en": "A Meiji-era woodblock illustration style scene: a man in a kimono aiming a small pistol in a lamp-lit inn room while a companion holds a spear, dramatic, no writing.",
+   "image": "A Meiji-era woodblock illustration style scene: a man in a kimono aiming a small pistol in a lamp-lit inn room while a companion holds a spear, dramatic, no writing.",
+   "label": "寺田屋の挿絵",
+   "chars": []
+  },
+  {
+   "id": "I07",
+   "narration": "話は本にもなり、1883年、1885年、1890年と、出し直された。",
+   "image_en": "Stacks of old Japanese bound books with plain covers piled on the counter of a Meiji-era bookshop, customers browsing, warm light.",
+   "image": "Stacks of old Japanese bound books with plain covers piled on the counter of a Meiji-era bookshop, customers browsing, warm light.",
+   "label": "3度の出し直し",
+   "chars": []
+  },
+  {
+   "id": "I08",
+   "narration": "今、高知の空港の名前にも、龍馬の名が入っている。高知龍馬空港だ。",
+   "image_en": "A small modern airport terminal by the sea in southern Japan with palm trees and a passenger plane on the runway, blue sky, no signs or letters visible.",
+   "image": "A small modern airport terminal by the sea in southern Japan with palm trees and a passenger plane on the runway, blue sky, no signs or letters visible.",
+   "label": "高知龍馬空港",
+   "chars": []
+  },
+  {
+   "id": "I10",
+   "narration": "本当の歴史の桂浜では、龍馬の銅像が、今も太平洋の大海原を見ている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Kochi_Katsurahama_Sakamoto_Ryoma_Statue_2.jpg",
+   "image_en": "A tall bronze statue of a samurai in kimono and boots with folded arms on a high stone pedestal, overlooking the Pacific ocean from a hill with pine trees, blue sky.",
+   "image": "A tall bronze statue of a samurai in kimono and boots with folded arms on a high stone pedestal, overlooking the Pacific ocean from a hill with pine trees, blue sky.",
+   "label": "桂浜の龍馬像",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "narration": "変えたのは、1867年11月15日の夜、近江屋に誰も来なかったことだけ。",
+   "chapter": "どっちの日本？",
+   "image_en": "An old wooden Kyoto shop house at dawn with its shutters opening, the upstairs paper window bright, bluish morning light, a quiet street.",
+   "image": "An old wooden Kyoto shop house at dawn with its shutters opening, the upstairs paper window bright, bluish morning light, a quiet street.",
+   "chars": [],
+   "tts_text": "変えたのは、1867年11月15日の夜、おうみやに誰も来なかったことだけ。"
+  },
+  {
+   "id": "J02",
+   "narration": "熊本の陣で向き合った2人。この世界の日本は、ここで2つに分かれる。",
+   "image_en": "Two silhouettes sitting by a dying campfire at night in a hillside army camp, seen from far away, stars above, a road forking into two directions below them.",
+   "image": "Two silhouettes sitting by a dying campfire at night in a hillside army camp, seen from far away, stars above, a road forking into two directions below them.",
+   "label": "2つの未来",
+   "chars": []
+  },
+  {
+   "id": "J03",
+   "narration": "良い未来。1877年3月、西郷は熊本の陣で龍馬と話し、兵を引いて鹿児島へ帰った。",
+   "image_en": "Saigo Takamori, leading his soldiers back home along a spring road lined with blossoming trees, villagers watching in relief, Sakamoto Ryoma's steamship on the bay behind. Place the main person slightly right of center.",
+   "image": "Saigo Takamori, leading his soldiers back home along a spring road lined with blossoming trees, villagers watching in relief, Sakamoto Ryoma's steamship on the bay behind. Place the main person slightly right of center.",
+   "label": "良い未来",
+   "chars": [
+    "saigo"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J04",
+   "narration": "田原坂の戦いは起きず、龍馬の船は、兵ではなく米を運んだ。",
+   "image_en": "Sakamoto Ryoma, laughing on the deck of his steamship loaded with rice bales, sailing into a peaceful sunny harbor. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, laughing on the deck of his steamship loaded with rice bales, sailing into a peaceful sunny harbor. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "tts_text": "たばるざかの戦いは起きず、龍馬の船は、兵ではなく米を運んだ。"
+  },
+  {
+   "id": "J05",
+   "narration": "悪い未来。1877年9月、龍馬の船が運んだ兵の前で、西郷は城山に倒れた。",
+   "image_en": "Autumn dusk on a wooded hill above Kagoshima, a torn plain banner fallen on the ground, government soldiers standing silently in the distance, no blood, no bodies.",
+   "image": "Autumn dusk on a wooded hill above Kagoshima, a torn plain banner fallen on the ground, government soldiers standing silently in the distance, no blood, no bodies.",
+   "label": "悪い未来",
+   "chars": [],
+   "tts_text": "悪い未来。1877年9月、龍馬の船が運んだ兵の前で、西郷はしろやまに倒れた。"
+  },
+  {
+   "id": "J06",
+   "narration": "龍馬は、それから2度と、鹿児島の港に船を入れなかった。",
+   "image_en": "Sakamoto Ryoma, standing alone on a dark deck at night, turning his back on a distant harbor with a volcano silhouette, head bowed. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, standing alone on a dark deck at night, turning his back on a distant harbor with a volcano silhouette, head bowed. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ]
+  },
+  {
+   "id": "J07",
+   "narration": "あなたは、どっちの日本になったと思いますか。",
+   "same_as": "J02",
+   "label": "どっちの日本？",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "J08",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "Sakamoto Ryoma, sitting on the bow of his steamship at sunset with a relaxed grin, looking toward the viewer, the open sea behind him. Place the main person slightly right of center.",
+   "image": "Sakamoto Ryoma, sitting on the bow of his steamship at sunset with a relaxed grin, looking toward the viewer, the open sea behind him. Place the main person slightly right of center.",
+   "chars": [
+    "ryoma"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J09",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "J08",
+   "chars": []
+  }
+ ],
+ "tempo": 1.15,
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

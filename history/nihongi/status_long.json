@@ -1,24 +1,17 @@
 {
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L108_w003",
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L109_w004",
  "done": [
   "pick",
   "write",
   "gate_script",
-  "voice",
-  "images",
-  "motion",
-  "gate_images",
-  "build"
+  "voice"
  ],
- "started": "2026-11-24T06:20:17+09:00",
- "tries": 3,
+ "started": "2026-11-24T12:17:45+09:00",
+ "tries": 0,
  "code": "a6b20fd30a46",
- "stage": "gate_video",
- "updated": "2026-11-24T08:10:00+09:00",
- "video_swapped": {
-  "A01": "A02",
-  "E02": "E01",
-  "K04": "K03"
- },
- "video_redo": 2
+ "stage": "images",
+ "updated": "2026-11-24T12:40:08+09:00",
+ "busy": {
+  "images": 1
+ }
 }
