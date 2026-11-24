@@ -1,0 +1,1015 @@
+{
+ "format": "long",
+ "distort": "分かれ道",
+ "title": "もしもペリーが来なかったら｜お台場も横浜の港も生まれなかった【もしも歴史】",
+ "promise": "ペリーの艦隊が来なかったら、日本の扉を最初に開けたのは誰で、お台場と横浜がどう変わったかが、本当にあった出来事（ロシアの来航・下田の津波・対馬の事件）を根拠に1本で分かる",
+ "desc": "もしも1853年、ペリーの艦隊が浦賀に来なかったら。品川の沖に台場は造られず、横浜は漁村のまま。日本が最初に条約を結んだ相手は、アメリカではなくロシアだった――。ペリーが来なかった日本を、本当の出来事を手がかりに年を追ってたどります。\n\nあなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※ペリーの艦隊が来なかった所から先は作り話です。それより前は史実をもとにしています（国立国会図書館・外務省・横浜市・港区・品川区・文化庁 文化遺産オンライン・笹川平和財団 Ocean Newsletter・nippon.com などの解説の本文）。作り話の場面：浦賀に艦隊が来ない・台場が造られない・日本が最初に条約を結んだ相手がロシア・横浜が漁村のまま・お台場の名が生まれない・2つの未来。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "もしも歴史",
+  "歴史IF",
+  "ペリー来航",
+  "ペリーが来なかったら",
+  "黒船",
+  "幕末",
+  "プチャーチン",
+  "お台場",
+  "日本史"
+ ],
+ "thumb": {
+  "top": "もしもペリーが来なかったら",
+  "big": "日本を開けたのはロシア",
+  "hl_top": "来なかった",
+  "hl_big": "ロシア",
+  "bg": "G07"
+ },
+ "futures": {
+  "良い": "1868年、幕府と大名は戦わず、江戸の町は戦の火を見なかった。",
+  "悪い": "1861年、対馬に来たロシアの軍艦は去らず、対馬の湾にロシアの港ができた。"
+ },
+ "competitor_note": "TTP：題材・章の並び・題の型｜eE2nFGD1VKA（もしも今も鎖国が続いていたら）の題材と、OAARpXxEJo4（史実では何が起きたか→分かれた年から年ごとの場面→振り返り）の章の並び。題は手順書 §7 の『もしも＜検索語＞｜目に浮かぶ結果』。見せ方の違い：台場の問い（D05「今も残る台場はいくつ」）を今の第三台場・第六台場（J06・J07）で回収し、昔と今を1本の線でつなぐ",
+ "characters": {
+  "putyatin": {
+   "name": "プチャーチン（50歳ごろ）",
+   "desc_en": "Yevfimiy Putyatin, a Russian admiral about fifty: long oval face, receding grey-brown hair, thick grey side whiskers, calm stern eyes, dark navy 1850s Russian naval uniform with gold epaulettes and plain gold buttons."
+  },
+  "kawaji": {
+   "name": "川路聖謨（50代）",
+   "desc_en": "Kawaji Toshiakira, a Japanese shogunate official about fifty-two: thin intelligent face, high cheekbones, small sharp eyes, chonmage topknot with shaved pate, formal dark grey kamishimo over a pale blue kimono."
+  },
+  "abe": {
+   "name": "阿部正弘（30代）",
+   "desc_en": "Abe Masahiro, a Japanese senior councilor about thirty-four: plump round gentle face, chonmage topknot with shaved pate, formal black haori with one small plain white circle crest, grey hakama."
+  }
+ },
+ "fiction": true,
+ "world_rules": [
+  "変えたのは、ペリーの艦隊が日本に来なかった、の1点だけ",
+  "1853年6月3日、艦隊が浦賀に来るはずだった日より前は史実どおり（ラクスマン・レザノフ・ビッドル・オランダの予告）",
+  "艦隊が来なかった所から先（台場が造られない・日本が最初に条約を結ぶ相手がロシア・横浜が漁村のまま・お台場の名が生まれない・2つの未来）は作り話",
+  "ロシアの長崎来航・大坂湾・下田の津波・ヘダ号・対馬のロシア軍艦は、この世界でも本当の歴史と同じ年に起きることにする（ロシアの使節がアメリカの動きを見て送られた面は、ここでは変えない前提として扱う）",
+  "この世界の人物（阿部・川路・プチャーチン）は、ペリーが来た本当の歴史を知らない。本当の歴史と比べて言うのは語り手だけで、章の終わりの1文（実際の歴史では〜）に限る"
+ ],
+ "world_terms": [
+  "実際の歴史",
+  "この世界",
+  "ペリー",
+  "アメリカ",
+  "知らせ",
+  "来なかった"
+ ],
+ "voices": {
+  "abe": 52,
+  "kawaji": 53,
+  "putyatin": 21
+ },
+ "facts": [
+  "ペリー来航：嘉永6年6月3日（1853年7月8日）、米国東インド艦隊が浦賀沖に投錨し、国書の授受を申し入れた（国立国会図書館『近代日本とフランス／史料にみる日本の近代』第1章 https://www.ndl.go.jp/modern/cha1/description01.html の本文）。艦隊は4隻（横浜市中央図書館『よこれき』 https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/shiru/sakoku/kaei/yokohamabook/yokoreki.html の本文：『ペリー提督の4隻の軍艦が浦賀沖に姿を現わした』、江戸へ『黒船現わる』の早飛脚）。6月9日（7月14日）に久里浜で浦賀奉行が大統領の国書を受け取った（外務省『日本外交のあけぼの』ほかの検索の抜粋）",
+  "ペリーは長崎で対応するとの幕府の回答を拒否し、浦賀か江戸での国書の受け渡しを主張した（外務省『日本外交のあけぼの』 https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/02.html の検索の抜粋。ページ本体は403で読めず）",
+  "阿部正弘は国書と関係書翰の和文訳を諸侯に示し、意見を募った（国立国会図書館 同ページの本文）。日米和親条約は1854年3月31日（嘉永7年3月3日）に横浜で調印、1855年2月21日の批准書交換で発効し『日本の鎖国政策は終わりを迎えた』（同ページの本文、横浜市『よこれき』）",
+  "オランダ：天保15年（1844）国王ウィレム2世が開国を勧告、幕府は断った。最後の商館長ドンケル・クルティウスは嘉永5年（1852）着任し、アメリカ使節の来航を予告した（国立国会図書館『日蘭交流の400年の歴史と展望』第1部 https://www.ndl.go.jp/nichiran/s1/s1_4.html の本文）",
+  "ラクスマン：1792年に根室に来航。幕府は国書を受け取らず、長崎入港の許可書を与えた。レザノフ：1804年にその許可書と皇帝の親書を持って長崎に来たが、幕府は半年ほど出島に留め置いた末、長崎奉行が通商の拒絶を通告した（山口県文書館の解説 https://archives.pref.yamaguchi.lg.jp/user_data/upload/File/ags/3-3-4-030.pdf の検索の抜粋。国立公文書館デジタルアーカイブの解説の抜粋も同じ）",
+  "ビッドル：1846年（弘化3年）7月、コロンバス号とヴィンセンス号で浦賀沖へ。幕府は警備を強めつつ水や食糧を渡し、通商の求めは退けられ、両艦は戦わずに引き揚げた（神奈川新聞 https://www.kanaloco.jp/news/culture/entry-32563.html と SamuraiWiki の検索の抜粋。京都大学『史林』85-1 上松俊弘の論文の要旨も、帆走軍艦での来航を記す）。台本では『通商は断った』『戦わずに帰っていった』まで",
+  "品川台場：嘉永6年（1853）、ペリー来航に驚いた幕府が品川沖に台場（砲台）の建設を始め、人工島を石垣で補強した台場7基が着工。今残るのは第三台場と第六台場で、第三台場は台場公園として開放（港区『港区今昔』 https://www.city.minato.tokyo.jp/kouhou/kuse/koho/konjaku/konjaku07.html の本文）。11基を計画、韮山代官の江川太郎左衛門英龍がヨーロッパの書物をもとに台場造りを指導、完成は6基（品川区の多言語解説 PDF https://www.city.shinagawa.tokyo.jp/jigyo/06/historyhp/en/pdf/kaisetsu_multi/tagengo_jpn/PDF_jpn/1_07jpn.pdf の検索の抜粋）。着工は同年8月（同）。コトバンク『品川台場』は『1853年（嘉永6）に着工』『江川太郎左衛門の献策で』『国の史跡は第三・第六台場』",
+  "台場の地名：港区『地名の歴史（芝浦港南地区）』 https://www.city.minato.tokyo.jp/kouhou/kuse/gaiyo/chimerekishi/index-shibaura.html の本文『砲台場、つまり台場がそのまま地名になった地域です』『現在は史蹟公園になっている第三台場とは陸続きになっており』（2026-11-24 本文で確認）。今残るのは第三・第六台場（港区『港区今昔』の本文）。D05 の問いと J06・J07 の答えの出どころ",
+  "2026-11-24 に本文を読み直して確かめた出どころ：国立国会図書館 description01（6月3日の浦賀投錨・阿部の意見募集・1855年2月21日発効）、横浜市『よこれき』（4隻・3月31日調印・村の畑仕事と貝と漁）、港区『港区今昔』（1853年に台場の建設開始・7基着工・第三と第六が残る）、笹川平和財団 Ocean Newsletter 221号（11月4日朝9時ごろの地震・津波でディアナ号の艦底破損・宮島村沖で沈没・ヘダ号の日付と人数）、文化遺産オンライン 377357（9月18日の大坂湾・理由・大坂城代）、nippon.com g00094（1853年8月長崎・国境・実物大の設計図）。対馬の件は立命館大学の論文 PDF の検索の抜粋で、退去の月（8月）までにとどめた",
+  "プチャーチン：ロシア皇帝ニコライ1世の命で1853年8月に長崎に入港（nippon.com https://www.nippon.com/ja/column/g00094/ の本文）。1853年8月22日に長崎着、ペリーより1か月以上遅れた。長崎の交渉は1854年1月から、1853年10月にクリミア戦争が始まり、ロシアはイギリス・フランスと敵対、プチャーチンはいったん長崎を退去（世界史の窓 https://y-history.net/appendix/wh1303-107_1.html の本文）。4隻の艦隊（Japan Times 2003年の記事などの検索の抜粋）。目的は国境の画定と開国・通商（外務省『日露関係史』の検索の抜粋）",
+  "川路聖謨：嘉永6年10月に露使応接掛を拝命して長崎へ。嘉永6年12月に交渉人として長崎に来た（国立公文書館『旗本御家人II』川路聖謨 と 長崎市『出島を訪問した人々』の検索の抜粋）",
+  "大坂湾：嘉永7年（1854）9月18日、大阪湾に侵入したロシア軍艦が天保山の『凡そ一里半の沖合に投錨』。理由は『天皇が住む京都に近い大坂に乗り込むことで脅威を与え、条約締結交渉を早期に、そして優位に進めるため』と説明される。大坂城代が兵を出し、各海岸に大名が派兵された（文化庁 文化遺産オンライン https://online.bunka.go.jp/index.php/heritages/detail/377357 の本文）。台本では理由は『といわれる』",
+  "イギリス：スターリングの艦隊は、クリミア戦争中にロシア艦隊を追うのが任務で、1854年10月14日に長崎で日英約定を結んだ（英語版ウィキペディア Anglo-Japanese Friendship Treaty ほかの検索の抜粋）。台本では『1854年の秋、ロシアの船を追うイギリスの艦隊も長崎に来ていた』まで",
+  "安政東海地震と津波：1854年12月23日（嘉永7年11月4日）。下田港のディアナ号は津波で艦底を損傷、戸田浦を修理地に決め、曳航の途中で大しけに遭い宮島村（富士市）沖で沈没（笹川平和財団 Ocean Newsletter 221号 https://www.spf.org/opri/newsletter/221_3.html の本文、労働新聞『国土を脅かす地震と噴火』の検索の抜粋）。戸田村には約500名のロシア人が滞在（同じ検索の抜粋）",
+  "ヘダ号：ロシア人技師が実物大の設計図を作り、船大工がそれに合わせて材木を切り出した。日本初の本格的な洋式帆船（nippon.com の本文）。建造開始は安政元年12月24日、竣工は安政2年3月15日ころで設計から百日余り、2本マストの帆船・87トン・50人乗り。戸田の船匠7人・船大工約40人・人夫150人を招集、洋式帆船の建造に直接加わったのはこのときが初めて（Ocean Newsletter 221号の本文）。幕府は同型船の建造を川路聖謨に指示し、戸田で6隻・石川島で4隻の君沢形が造られた（日本船舶海洋工学会 造船資料館のコラム PDF の検索の抜粋。台本では『といわれる』）",
+  "日露和親条約（日露通好条約）：1855年2月7日（安政元年12月21日）、下田で筒井政憲・川路聖謨と調印（外務省『日露関係史』の検索の抜粋、世界史の窓の本文）。択捉島と得撫島の間に境界を置き、樺太は日露両国民の『雑居』（nippon.com の本文）",
+  "条約の順番：日米和親条約1854年3月31日、日英約定1854年10月14日、日露和親条約1855年2月7日。ロシアは3番目（上の3つの出どころの日付から数えた）",
+  "ハリス：1856年8月21日（安政3年7月21日）に下田駐在総領事として赴任、玉泉寺を宿所とした（外務省『日本外交のあけぼの』と下田市の資料の検索の抜粋）。日米修好通商条約は1858年7月29日（安政5年6月19日）、井伊直弼が未勅許のまま調印を断行（外務省『日本外交のあけぼの』の検索の抜粋）。台本では『天皇の許しの無いまま結ばれた』『国が割れるもとになったといわれる』",
+  "横浜：開港前は『港の施設がほとんどない小さな漁村』。1859年7月1日（安政6年6月2日）に神奈川・長崎・箱館を開港し、幕府は神奈川宿ではなく横浜に開港場をつくった。開港後、今の大さん橋の付け根付近に2か所の波止場がつくられた（横浜市『横浜港の歴史』 https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/manabu/rekishi/history1.html の本文）。開港前の村人は畑を耕し、貝を拾い、魚をとった（横浜市『よこれき』の本文）",
+  "対馬：文久元年（1861）2月、ロシア軍艦ポサドニック号が船体修理を理由に対馬の尾崎浦（芋崎）に来航。艦長ビリレフは兵営施設の建設、対馬の租借、藩主宗義和との面会を求めた。対馬藩は拒んだが退去させる強硬手段はとれず、幕府は幕吏を送って退去を求めたが容易に退去せず。7月にイギリス軍艦エンカウンター号・リンダウ号が来て抗議し、翌8月にポサドニック号は退去（立命館大学 松平智史の論文 PDF https://ritsumei.repo.nii.ac.jp/record/2692/files/LCS_23_3_MATSUDAIRA.pdf と福井県立図書館『若越郷土研究』の検索の抜粋）",
+  "作り話の部分：浦賀に艦隊が来ない・阿部の独り言・台場が造られない・幕府が話し合いの場を下田にする・日本が最初に条約を結んだ相手がロシア・ヘダ号の造り方が日本の洋式船の始まりになる・総領事が来ない・横浜が漁村のまま・お台場の名が生まれない・2つの未来（1868年の江戸・1861年の対馬）",
+  "本物の画像（real）は Wikimedia Commons の検索 API で幅を確かめた（全部800px以上）：View of Dejima in Nagasaki Bay Folding Screen by Kawahara Keiga c1836 5000px／Nagasaki Harbour (c1833-6) by Kawahara Keiga 7393px／Russians at Nagasaki MET 2012 34 Strm1 02（文化元年 長崎渡来）2052px／Commodore Matthew Calbraith Perry.jpg 2064px／The Mission of Commodore Perry to Japan in 1854 (BM 2013,3002.1) 1600px／Shinagawa Baidai cannon.jpg 2804px／Launch of Heda.jpg 3628px／Hiroshige II View of the Coast at Yokohama (1860) 8855px／Dai-San Daiba Park (9224646221) 3648px。幅の足りない Putyatin in Nagasaki 1853.jpg（665px）と Schooner Heda.jpg（400px）は外した",
+  "使わない：『泰平の眠りをさます上喜撰』の狂歌（後の作という説がある）、江川がヘダ号の建造を指揮したという話（公的な出どころで確かめられなかった）、横浜の開港前の戸数"
+ ],
+ "cuts": [
+  {
+   "id": "A01",
+   "narration": "もしもペリーが来なかったら、日本の扉を最初に開けたのはロシアだった。お台場も横浜の港も、生まれなかった。",
+   "image_en": "Dawn over a calm empty bay at the mouth of an old Japanese harbor, a few small wooden fishing boats, green wooded headlands, no large ships anywhere on the horizon, cold bluish-green light falling from above through thin clouds.",
+   "image": "Dawn over a calm empty bay at the mouth of an old Japanese harbor, a few small wooden fishing boats, green wooded headlands, no large ships anywhere on the horizon, cold bluish-green light falling from above through thin clouds.",
+   "label": "ペリーが来なかったら",
+   "strong": true,
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A02",
+   "narration": "1853年6月、浦賀沖にペリーの軍艦4隻が現れた。",
+   "image_en": "Four dark foreign warships, two of them steamships with tall smokestacks and paddle wheels, emerging from morning mist off a Japanese coast, black smoke rising, small Japanese guard boats watching, pale bluish-green light from above.",
+   "image": "Four dark foreign warships, two of them steamships with tall smokestacks and paddle wheels, emerging from morning mist off a Japanese coast, black smoke rising, small Japanese guard boats watching, pale bluish-green light from above.",
+   "label": "1853年6月",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "A03",
+   "narration": "翌年、日本は条約を結び、国を開いた。",
+   "image_en": "Japanese officials in formal kamishimo standing in a row on a beach, looking out at dark foreign warships anchored in a misty bay, cold bluish-green dawn light.",
+   "image": "Japanese officials in formal kamishimo standing in a row on a beach, looking out at dark foreign warships anchored in a misty bay, cold bluish-green dawn light.",
+   "chars": []
+  },
+  {
+   "id": "A04",
+   "narration": "変えるのは1つだけ。ペリーの艦隊が日本に来なかった。",
+   "image_en": "A samurai lookout in a wooden watchtower on a sea cliff, leaning on the rail and gazing at a wide empty sea, light falling from above through clouds, bluish-green dawn haze.",
+   "image": "A samurai lookout in a wooden watchtower on a sea cliff, leaning on the rail and gazing at a wide empty sea, light falling from above through clouds, bluish-green dawn haze.",
+   "label": "変えるのは1つだけ",
+   "chars": []
+  },
+  {
+   "id": "A05",
+   "narration": "艦隊が来る日までは本当の歴史。そこから先が作り話です。",
+   "same_as": "A04",
+   "chars": []
+  },
+  {
+   "id": "A06",
+   "narration": "では、ロシアはどうやって日本の扉を開けたのか。",
+   "image_en": "A huge closed wooden gate of a Japanese coastal guard post facing the sea at dawn, heavy iron fittings, waves beyond, mist, bluish-green light from above.",
+   "image": "A huge closed wooden gate of a Japanese coastal guard post facing the sea at dawn, heavy iron fittings, waves beyond, mist, bluish-green light from above.",
+   "label": "日本の扉を最初にたたくのは誰か",
+   "chars": []
+  },
+  {
+   "id": "B01",
+   "narration": "このころ日本が付き合った西洋の国は、オランダだけ。場所は長崎の出島だ。",
+   "chapter": "話は長崎で",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/e/e9/View_of_Dejima_in_Nagasaki_Bay_Folding_Screen_by_Kawahara_Keiga_c1836.jpg",
+   "image_en": "A painted folding screen view of a small fan-shaped artificial island in a Japanese harbor with Dutch sailing ships at anchor. Faded old-memory colors.",
+   "image": "A painted folding screen view of a small fan-shaped artificial island in a Japanese harbor with Dutch sailing ships at anchor. Faded old-memory colors.",
+   "label": "出島",
+   "chars": []
+  },
+  {
+   "id": "B02",
+   "narration": "外国の船と話をするのは、長崎で。それが幕府の決まりだった。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nagasaki_Harbour_%28c1833-6%29%2C_by_Kawahara_Keiga.jpg",
+   "image_en": "An old painting of a busy Japanese harbor surrounded by green hills, many boats and a few foreign sailing ships. Faded old-memory colors.",
+   "image": "An old painting of a busy Japanese harbor surrounded by green hills, many boats and a few foreign sailing ships. Faded old-memory colors.",
+   "label": "話すのは長崎",
+   "chars": []
+  },
+  {
+   "id": "B03",
+   "narration": "1792年、ロシアのラクスマンが根室に来た。",
+   "image_en": "A Russian three-masted sailing ship anchored off a cold northern Japanese coast with snow on the hills, a few Ainu and Japanese people watching from small boats, grey sky.",
+   "image": "A Russian three-masted sailing ship anchored off a cold northern Japanese coast with snow on the hills, a few Ainu and Japanese people watching from small boats, grey sky.",
+   "label": "1792年",
+   "chars": []
+  },
+  {
+   "id": "B04",
+   "narration": "幕府は国書を受け取らず、長崎に入る許しの書き付けを渡した。",
+   "image_en": "A Japanese official in formal kamishimo handing a folded blank paper to a European officer in an 18th-century naval coat inside a plain wooden hall, stiff polite expressions.",
+   "image": "A Japanese official in formal kamishimo handing a folded blank paper to a European officer in an 18th-century naval coat inside a plain wooden hall, stiff polite expressions.",
+   "chars": []
+  },
+  {
+   "id": "B05",
+   "narration": "1804年、その書き付けを持って、レザノフが長崎に来た。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/8/82/%E3%80%8C%E3%83%B2%E3%83%AD%E3%82%B7%E3%82%A2%E4%BA%BA%E5%95%9A%E3%80%81%E6%96%87%E5%8C%96%E5%85%83%E7%94%B2%E5%AD%90%E5%B9%B4%E4%B9%9D%E6%9C%88_%E9%95%B7%E5%B4%8E%E6%B8%A1%E6%9D%A5%E3%80%8D-Russians_at_Nagasaki_MET_2012_34_Strm1_02.jpg",
+   "image_en": "An old Japanese scroll painting of Russian visitors in European coats and hats, drawn by a Japanese artist. Faded old-memory colors.",
+   "image": "An old Japanese scroll painting of Russian visitors in European coats and hats, drawn by a Japanese artist. Faded old-memory colors.",
+   "label": "1804年",
+   "chars": []
+  },
+  {
+   "id": "B06",
+   "narration": "幕府は半年ほど待たせたあと、通商を断った。",
+   "image_en": "A European envoy in an early 19th-century coat sitting bored in a small bare room, looking out a window at a harbor, Japanese guards standing outside the door, autumn leaves falling.",
+   "image": "A European envoy in an early 19th-century coat sitting bored in a small bare room, looking out a window at a harbor, Japanese guards standing outside the door, autumn leaves falling.",
+   "label": "半年",
+   "chars": []
+  },
+  {
+   "id": "B07",
+   "narration": "1846年には、アメリカのビッドルが2隻の帆の軍艦で浦賀に来た。",
+   "image_en": "Two large foreign sailing warships with many gun ports anchored in a Japanese bay, surrounded by dozens of small Japanese guard boats with plain banners, summer haze.",
+   "image": "Two large foreign sailing warships with many gun ports anchored in a Japanese bay, surrounded by dozens of small Japanese guard boats with plain banners, summer haze.",
+   "label": "1846年",
+   "chars": []
+  },
+  {
+   "id": "B08",
+   "narration": "幕府は水や食べ物を渡し、通商は断った。船は戦わずに帰っていった。",
+   "image_en": "Small Japanese boats carrying barrels of water and baskets of food out to a large foreign sailing warship, Japanese officials watching calmly from the shore.",
+   "image": "Small Japanese boats carrying barrels of water and baskets of food out to a large foreign sailing warship, Japanese officials watching calmly from the shore.",
+   "chars": []
+  },
+  {
+   "id": "B09",
+   "narration": "長崎へ回され、待たされ、断られる。それが、日本の海だった。",
+   "image_en": "A foreign sailing warship raising its sails and leaving a Japanese bay at sunset, Japanese guard boats lined up watching it go, golden light on the water.",
+   "image": "A foreign sailing warship raising its sails and leaving a Japanese bay at sunset, Japanese guard boats lined up watching it go, golden light on the water.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B10",
+   "narration": "1852年、長崎のオランダ商館長が、幕府に知らせた。アメリカの使節が来る。",
+   "image_en": "A Dutch merchant in a dark 1850s frock coat bowing and handing a sealed blank letter to a Japanese magistrate in formal kamishimo in a tatami room, lantern light.",
+   "image": "A Dutch merchant in a dark 1850s frock coat bowing and handing a sealed blank letter to a Japanese magistrate in formal kamishimo in a tatami room, lantern light.",
+   "label": "1852年",
+   "chars": []
+  },
+  {
+   "id": "B11",
+   "narration": "そして1853年6月3日。ペリーは長崎ではなく、江戸に近い浦賀に来た。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/9/93/Commodore_Matthew_Calbraith_Perry.jpg",
+   "image_en": "An old portrait of an American naval commodore in a dark uniform with epaulettes, stern face. Faded old-memory colors.",
+   "image": "An old portrait of an American naval commodore in a dark uniform with epaulettes, stern face. Faded old-memory colors.",
+   "label": "1853年6月3日",
+   "chars": []
+  },
+  {
+   "id": "B12",
+   "narration": "長崎へ回れという幕府の答えを、ペリーは受け入れなかった。",
+   "image_en": "American naval officers in dark 1850s uniforms standing on the deck of a black steam warship, looking at the Japanese shore with resolute faces, smoke from the funnel.",
+   "image": "American naval officers in dark 1850s uniforms standing on the deck of a black steam warship, looking at the Japanese shore with resolute faces, smoke from the funnel.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "B13",
+   "narration": "煙を吐く黒い船体。江戸へは、黒船が現れたという知らせが走った。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/f/f5/The_Mission_of_Commodore_Perry_to_Japan_in_1854_%28BM_2013%2C3002.1%29.jpg",
+   "image_en": "An old Japanese hand-painted scroll showing black foreign steamships with smoke. Faded old-memory colors.",
+   "image": "An old Japanese hand-painted scroll showing black foreign steamships with smoke. Faded old-memory colors.",
+   "label": "黒船",
+   "chars": []
+  },
+  {
+   "id": "B14",
+   "narration": "6月9日、幕府は久里浜の浜で、アメリカの国書を受け取った。",
+   "image_en": "A large striped curtained tent on a Japanese beach, Japanese officials in formal dress seated inside, rows of American sailors and marines in dark uniforms standing on the sand, warships offshore.",
+   "image": "A large striped curtained tent on a Japanese beach, Japanese officials in formal dress seated inside, rows of American sailors and marines in dark uniforms standing on the sand, warships offshore.",
+   "label": "久里浜",
+   "chars": []
+  },
+  {
+   "id": "C01",
+   "narration": "この世界の1853年6月3日。浦賀の沖は、静かだった。",
+   "chapter": "空っぽの浦賀",
+   "image_en": "A calm summer morning sea off a Japanese harbor town, small fishing boats with square sails, gulls, green hills, no foreign ships, soft warm light.",
+   "image": "A calm summer morning sea off a Japanese harbor town, small fishing boats with square sails, gulls, green hills, no foreign ships, soft warm light.",
+   "label": "この世界の6月3日",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "C02",
+   "narration": "見張りの役人は、いつもの朝と同じように、海をながめていた。",
+   "image_en": "A Japanese guard official in a wooden lookout post on a cliff, yawning and stretching, looking at a quiet sea, summer morning light.",
+   "image": "A Japanese guard official in a wooden lookout post on a cliff, yawning and stretching, looking at a quiet sea, summer morning light.",
+   "chars": []
+  },
+  {
+   "id": "C03",
+   "narration": "煙も、見なれない帆も、どこにも無い。",
+   "same_as": "C01",
+   "chars": []
+  },
+  {
+   "id": "C04",
+   "narration": "ペリーの艦隊は、この世界では日本に来なかった。",
+   "image_en": "A wide empty bay seen from a hill, the horizon perfectly clear, a lone fishing boat drifting, white clouds, Mount Fuji faint in the far distance.",
+   "image": "A wide empty bay seen from a hill, the horizon perfectly clear, a lone fishing boat drifting, white clouds, Mount Fuji faint in the far distance.",
+   "label": "艦隊は来なかった",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "C05",
+   "narration": "江戸へ走る早馬も無い。町の人は、いつもの夏を過ごしていた。",
+   "image_en": "A lively Edo street in summer, vendors selling cold water and goldfish, children running, people fanning themselves, peaceful.",
+   "image": "A lively Edo street in summer, vendors selling cold water and goldfish, children running, people fanning themselves, peaceful.",
+   "chars": []
+  },
+  {
+   "id": "C06",
+   "narration": "江戸城では、老中の阿部正弘が、オランダの知らせを思い出していた。",
+   "image_en": "Abe Masahiro, sitting alone at a low desk in a quiet castle room, holding a folded blank letter and frowning thoughtfully, summer light through paper screens. Place the main person slightly right of center.",
+   "image": "Abe Masahiro, sitting alone at a low desk in a quiet castle room, holding a folded blank letter and frowning thoughtfully, summer light through paper screens. Place the main person slightly right of center.",
+   "label": "阿部正弘",
+   "chars": [
+    "abe"
+   ]
+  },
+  {
+   "id": "C07",
+   "narration": "来ると聞いた船は、来ぬか。",
+   "same_as": "C06",
+   "voice": "abe",
+   "chars": []
+  },
+  {
+   "id": "C08",
+   "narration": "知らせが外れたのか。それとも、遅れているだけなのか。",
+   "image_en": "Abe Masahiro, standing on a castle veranda and looking far toward the sea beyond the city roofs, hands behind his back, uneasy face, evening light. Place the main person slightly right of center.",
+   "image": "Abe Masahiro, standing on a castle veranda and looking far toward the sea beyond the city roofs, hands behind his back, uneasy face, evening light. Place the main person slightly right of center.",
+   "chars": [
+    "abe"
+   ]
+  },
+  {
+   "id": "C09",
+   "narration": "実際の歴史では、阿部はアメリカの国書を訳して大名に見せ、意見を集めている。",
+   "image_en": "Many daimyo lords in formal kimono reading copied documents in a large castle hall, murmuring to each other, lantern light. Faded old-memory colors.",
+   "image": "Many daimyo lords in formal kimono reading copied documents in a large castle hall, murmuring to each other, lantern light. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "D01",
+   "narration": "国書が無ければ、急いで海を守る話も出ない。",
+   "chapter": "造られなかった台場",
+   "image_en": "The shallow shore of Shinagawa near Edo in summer, fishermen pulling nets, small boats, a wide open bay with nothing built in the water, gentle waves.",
+   "image": "The shallow shore of Shinagawa near Edo in summer, fishermen pulling nets, small boats, a wide open bay with nothing built in the water, gentle waves.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "D02",
+   "narration": "伊豆の韮山の代官、江川太郎左衛門も、自分の土地にとどまっていた。",
+   "image_en": "A Japanese local magistrate in his fifties with a square determined face, chonmage topknot, plain brown kimono and hakama, reading a thick Western book with diagrams by a lamp in a country house. Place the main person slightly right of center.",
+   "image": "A Japanese local magistrate in his fifties with a square determined face, chonmage topknot, plain brown kimono and hakama, reading a thick Western book with diagrams by a lamp in a country house. Place the main person slightly right of center.",
+   "label": "江川太郎左衛門",
+   "chars": []
+  },
+  {
+   "id": "D03",
+   "narration": "ヨーロッパの書物をもとに、砲台の造り方を知る男だった。",
+   "image_en": "Close view of an open old Western book on a wooden desk showing drawings of a stone fortress and cannons, a brush and inkstone beside it, lamplight. No readable writing.",
+   "image": "Close view of an open old Western book on a wooden desk showing drawings of a stone fortress and cannons, a brush and inkstone beside it, lamplight. No readable writing.",
+   "chars": []
+  },
+  {
+   "id": "D04",
+   "narration": "海に土を盛り、石垣で固めて大砲を並べる人工の島。それが台場だ。",
+   "image_en": "A square artificial island in the sea with stone walls and a row of old iron cannons on top, workers carrying earth in baskets, small boats around, clear day.",
+   "image": "A square artificial island in the sea with stone walls and a row of old iron cannons on top, workers carrying earth in baskets, small boats around, clear day.",
+   "label": "台場",
+   "chars": []
+  },
+  {
+   "id": "D05",
+   "narration": "ここで問題です。品川の沖に造られた台場のうち、今も残っているのはいくつでしょう。",
+   "same_as": "D04",
+   "label": "問題",
+   "tease": true,
+   "chars": []
+  },
+  {
+   "id": "D06",
+   "narration": "この世界の品川の沖には、その島が1つも造られない。",
+   "image_en": "A wide calm bay off Edo at sunset with only fishing boats and seaweed stakes in the water, no islands, no forts, the low shore far behind.",
+   "image": "A wide calm bay off Edo at sunset with only fishing boats and seaweed stakes in the water, no islands, no forts, the low shore far behind.",
+   "label": "台場は0",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "D07",
+   "narration": "実際の歴史では、ペリーが去った2か月後に、品川の沖で台場の工事が始まっている。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/5/50/Shinagawa_Baidai_cannon.jpg",
+   "image_en": "An old iron cannon on a grassy stone fort by the sea, quiet. Faded old-memory colors.",
+   "image": "An old iron cannon on a grassy stone fort by the sea, quiet. Faded old-memory colors.",
+   "label": "1853年8月",
+   "chars": []
+  },
+  {
+   "id": "E01",
+   "narration": "そのころ、遠い海を回って、別の国の軍艦が日本へ向かっていた。",
+   "chapter": "長崎に来たロシア",
+   "image_en": "A Russian sailing frigate with full sails and a small steamship beside it crossing a rough grey ocean, waves breaking on the bow, dramatic clouds.",
+   "image": "A Russian sailing frigate with full sails and a small steamship beside it crossing a rough grey ocean, waves breaking on the bow, dramatic clouds.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E02",
+   "narration": "1853年の夏。長崎の港に、ロシアの軍艦4隻が入ってきた。",
+   "image_en": "Four Russian warships entering a Japanese harbor surrounded by green hills, Japanese guard boats rowing out to meet them, townspeople crowding the shore, summer afternoon.",
+   "image": "Four Russian warships entering a Japanese harbor surrounded by green hills, Japanese guard boats rowing out to meet them, townspeople crowding the shore, summer afternoon.",
+   "label": "ロシアの軍艦4隻",
+   "chars": []
+  },
+  {
+   "id": "E03",
+   "narration": "率いるのはプチャーチン。ロシア皇帝の命令を受けた使節だ。",
+   "image_en": "Putyatin, standing on the deck of a Russian frigate looking at a Japanese harbor town, hands clasped behind his back, sea wind. Place the main person slightly right of center.",
+   "image": "Putyatin, standing on the deck of a Russian frigate looking at a Japanese harbor town, hands clasped behind his back, sea wind. Place the main person slightly right of center.",
+   "label": "プチャーチン",
+   "chars": [
+    "putyatin"
+   ]
+  },
+  {
+   "id": "E04",
+   "narration": "来たのは、ラクスマンの時に幕府が示した、長崎の港だった。",
+   "image_en": "A Japanese harbor with a small fan-shaped island in the middle, foreign warships anchored politely at a distance, guard boats lined up, clear sky.",
+   "image": "A Japanese harbor with a small fan-shaped island in the middle, foreign warships anchored politely at a distance, guard boats lined up, clear sky.",
+   "chars": []
+  },
+  {
+   "id": "E05",
+   "narration": "求めたのは2つ。港を開くこと。北の島々の境目を決めること。",
+   "image_en": "Putyatin, unrolling a large blank map of northern islands on a cabin table, pointing at the islands, lamplight. Place the main person slightly right of center.",
+   "image": "Putyatin, unrolling a large blank map of northern islands on a cabin table, pointing at the islands, lamplight. Place the main person slightly right of center.",
+   "label": "港と国境",
+   "chars": [
+    "putyatin"
+   ]
+  },
+  {
+   "id": "E06",
+   "narration": "幕府のやり方は、レザノフの時と同じだった。まず、待たせる。",
+   "image_en": "Russian sailors and officers leaning on the rail of a warship, bored, looking at a harbor town as autumn turns to winter, a few red leaves blowing over the water.",
+   "image": "Russian sailors and officers leaning on the rail of a warship, bored, looking at a harbor town as autumn turns to winter, a few red leaves blowing over the water.",
+   "label": "まず待たせる",
+   "chars": []
+  },
+  {
+   "id": "E07",
+   "narration": "江戸から応接の役人、川路聖謨が長崎に着いたのは、その年の暮れだった。",
+   "image_en": "Kawaji Toshiakira, arriving at a harbor town by palanquin and stepping out in winter, attendants bowing, Russian warships visible in the bay. Place the main person slightly right of center.",
+   "image": "Kawaji Toshiakira, arriving at a harbor town by palanquin and stepping out in winter, attendants bowing, Russian warships visible in the bay. Place the main person slightly right of center.",
+   "label": "川路聖謨",
+   "chars": [
+    "kawaji"
+   ]
+  },
+  {
+   "id": "E08",
+   "narration": "急いで決めることではござらぬ。",
+   "image_en": "Close-up of Kawaji Toshiakira, smiling politely but firmly across a negotiation table, hands on his knees, lantern light. Place the main person slightly right of center.",
+   "image": "Close-up of Kawaji Toshiakira, smiling politely but firmly across a negotiation table, hands on his knees, lantern light. Place the main person slightly right of center.",
+   "voice": "kawaji",
+   "chars": [
+    "kawaji"
+   ]
+  },
+  {
+   "id": "E09",
+   "narration": "その間に、遠い西の海で戦が始まった。1853年10月、クリミア戦争だ。",
+   "image_en": "Distant European wooden warships firing cannons at each other on a dark sea, white gun smoke drifting, seen from far away, stormy dusk, no blood.",
+   "image": "Distant European wooden warships firing cannons at each other on a dark sea, white gun smoke drifting, seen from far away, stormy dusk, no blood.",
+   "label": "クリミア戦争",
+   "chars": []
+  },
+  {
+   "id": "E10",
+   "narration": "ロシアは、やがてイギリス・フランスとも戦うことになる。",
+   "image_en": "A line of British steam warships with tall masts sailing in formation across a grey sea, smoke trailing, ominous clouds.",
+   "image": "A line of British steam warships with tall masts sailing in formation across a grey sea, smoke trailing, ominous clouds.",
+   "chars": []
+  },
+  {
+   "id": "E11",
+   "narration": "プチャーチンは話をまとめられないまま、長崎を出ていった。",
+   "image_en": "Russian warships raising sails and leaving a Japanese harbor at a cold winter dusk, Japanese guard boats watching silently, snow flurries.",
+   "image": "Russian warships raising sails and leaving a Japanese harbor at a cold winter dusk, Japanese guard boats watching silently, snow flurries.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "E12",
+   "narration": "実際の歴史でも、長崎での話はまとまらず、プチャーチンはいったん去っている。",
+   "image_en": "Putyatin, standing at the stern of a departing ship and looking back at the harbor hills with a grim face, winter wind. Place the main person slightly right of center. Faded old-memory colors.",
+   "image": "Putyatin, standing at the stern of a departing ship and looking back at the harbor hills with a grim face, winter wind. Place the main person slightly right of center. Faded old-memory colors.",
+   "chars": [
+    "putyatin"
+   ]
+  },
+  {
+   "id": "E13",
+   "narration": "ここまで見てくださって、ありがとうございます。このチャンネルでは、毎回1つだけ歴史を変えてみています。気に入っていただけたら、チャンネル登録で応援してください。",
+   "same_as": "A04",
+   "label": "チャンネル登録",
+   "chars": []
+  },
+  {
+   "id": "F01",
+   "narration": "1854年9月18日。ロシアの軍艦が、大坂の天保山の沖に現れた。",
+   "chapter": "大坂湾から下田へ",
+   "image_en": "A large Russian sailing frigate anchoring in a wide bay off a busy Japanese merchant city, crowds on the shore pointing in alarm, small boats scattering, autumn afternoon.",
+   "image": "A large Russian sailing frigate anchoring in a wide bay off a busy Japanese merchant city, crowds on the shore pointing in alarm, small boats scattering, autumn afternoon.",
+   "label": "1854年9月 大坂湾",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F02",
+   "narration": "天皇のいる京都に近い所で、交渉を急がせるためだったといわれる。",
+   "image_en": "Townspeople of Osaka crowding a riverbank and staring at a foreign warship far out in the bay, merchants whispering, a mother holding her child close.",
+   "image": "Townspeople of Osaka crowding a riverbank and staring at a foreign warship far out in the bay, merchants whispering, a mother holding her child close.",
+   "chars": []
+  },
+  {
+   "id": "F03",
+   "narration": "大坂城代は兵を出し、海辺には大名の兵が並んだ。",
+   "image_en": "Lines of samurai soldiers with spears, matchlock guns and old bronze cannons spread along a beach, plain banners flapping, a foreign frigate on the horizon.",
+   "image": "Lines of samurai soldiers with spears, matchlock guns and old bronze cannons spread along a beach, plain banners flapping, a foreign frigate on the horizon.",
+   "chars": []
+  },
+  {
+   "id": "F04",
+   "narration": "この世界の日本は、まだどの国とも条約を結んでいない。",
+   "image_en": "Shogunate officials arguing tensely around an empty blank scroll in a castle council room, one slamming the floor with his fan, lantern light.",
+   "image": "Shogunate officials arguing tensely around an empty blank scroll in a castle council room, one slamming the floor with his fan, lantern light.",
+   "label": "条約は0",
+   "chars": []
+  },
+  {
+   "id": "F05",
+   "narration": "この年の秋には、ロシアの船を追うイギリスの艦隊も、長崎に来ていた。",
+   "image_en": "British steam warships entering a Japanese harbor with guns ready, officers scanning the bay with telescopes, Japanese guard boats nervously keeping distance.",
+   "image": "British steam warships entering a Japanese harbor with guns ready, officers scanning the bay with telescopes, Japanese guard boats nervously keeping distance.",
+   "chars": []
+  },
+  {
+   "id": "F06",
+   "narration": "よその国の戦が、日本の海へ近づいてくる。",
+   "image_en": "Dark storm clouds rolling over a Japanese bay, two groups of foreign warships far apart on the horizon, a small Japanese fishing village below lit by a last ray of sun.",
+   "image": "Dark storm clouds rolling over a Japanese bay, two groups of foreign warships far apart on the horizon, a small Japanese fishing village below lit by a last ray of sun.",
+   "chars": []
+  },
+  {
+   "id": "F07",
+   "narration": "幕府は、話し合いの場所を伊豆の下田にした。",
+   "image_en": "A small quiet harbor town on the Izu coast with wooden houses, a temple roof and green hills, a single Russian frigate anchored in the little bay, early winter.",
+   "image": "A small quiet harbor town on the Izu coast with wooden houses, a temple roof and green hills, a single Russian frigate anchored in the little bay, early winter.",
+   "label": "下田",
+   "chars": []
+  },
+  {
+   "id": "F08",
+   "narration": "下田で、プチャーチンと川路が、もう一度向かい合った。",
+   "image_en": "Putyatin and Kawaji Toshiakira, seated across from each other at a low table in a temple hall, interpreters beside them, serious faces, winter light. Place the main person slightly right of center.",
+   "image": "Putyatin and Kawaji Toshiakira, seated across from each other at a low table in a temple hall, interpreters beside them, serious faces, winter light. Place the main person slightly right of center.",
+   "chars": [
+    "putyatin",
+    "kawaji"
+   ]
+  },
+  {
+   "id": "F09",
+   "narration": "嘉永7年11月4日の朝。東海の海辺を、大きな地震がゆさぶった。",
+   "image_en": "Wooden houses of a seaside town shaking violently in an earthquake, roof tiles sliding off, people running out into the street, dust rising, morning light.",
+   "image": "Wooden houses of a seaside town shaking violently in an earthquake, roof tiles sliding off, people running out into the street, dust rising, morning light.",
+   "label": "大地震",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "F10",
+   "narration": "下田の港に、大きな津波が押し寄せる。",
+   "image_en": "A huge dark wave surging into a small harbor, lifting wooden boats, a large frigate spinning in the churning water, people fleeing uphill, no bodies.",
+   "image": "A huge dark wave surging into a small harbor, lifting wooden boats, a large frigate spinning in the churning water, people fleeing uphill, no bodies.",
+   "label": "津波",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "F11",
+   "narration": "ロシアの軍艦ディアナ号は、船の底を壊された。",
+   "image_en": "A damaged Russian frigate tilted in muddy swirling water, broken rudder, sailors pumping water desperately on deck, grey sky.",
+   "image": "A damaged Russian frigate tilted in muddy swirling water, broken rudder, sailors pumping water desperately on deck, grey sky.",
+   "label": "ディアナ号",
+   "chars": []
+  },
+  {
+   "id": "F12",
+   "narration": "修理の港へ引かれていく途中、大しけの海で沈んだ。",
+   "image_en": "Dozens of small Japanese fishing boats towing a large sinking frigate with ropes through a stormy sea, high waves, rain, desperate rowers.",
+   "image": "Dozens of small Japanese fishing boats towing a large sinking frigate with ropes through a stormy sea, high waves, rain, desperate rowers.",
+   "chars": []
+  },
+  {
+   "id": "F13",
+   "narration": "およそ500人のロシア人が、国へ帰る船を失った。",
+   "image_en": "Hundreds of Russian sailors in wet uniforms standing on a cold beach in the wind, staring at the empty grey sea, a few Japanese villagers watching from a distance.",
+   "image": "Hundreds of Russian sailors in wet uniforms standing on a cold beach in the wind, staring at the empty grey sea, a few Japanese villagers watching from a distance.",
+   "label": "帰る船が無い",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "F14",
+   "narration": "国へ帰る船が、無い。",
+   "image_en": "Close-up of Putyatin, standing on a wind-swept beach, his face pale and exhausted, staring at the empty sea. Place the main person slightly right of center.",
+   "image": "Close-up of Putyatin, standing on a wind-swept beach, his face pale and exhausted, staring at the empty sea. Place the main person slightly right of center.",
+   "voice": "putyatin",
+   "chars": [
+    "putyatin"
+   ]
+  },
+  {
+   "id": "G01",
+   "narration": "修理の港に選ばれていたのは、伊豆の戸田の浦だった。",
+   "chapter": "戸田の船",
+   "image_en": "A small quiet cove village on the Izu coast surrounded by steep green mountains, a sandy spit curving around calm water, wooden fishing houses, winter morning.",
+   "image": "A small quiet cove village on the Izu coast surrounded by steep green mountains, a sandy spit curving around calm water, wooden fishing houses, winter morning.",
+   "label": "戸田",
+   "tts_text": "修理の港に選ばれていたのは、伊豆のへだの浦だった。",
+   "chars": []
+  },
+  {
+   "id": "G02",
+   "narration": "船が無いなら、造ればいい。ロシア人が、実物大の図面を引いた。",
+   "image_en": "A Russian naval engineer drawing full-size curved lines of a ship hull on a huge wooden floor with chalk and string, Japanese carpenters kneeling around watching intently.",
+   "image": "A Russian naval engineer drawing full-size curved lines of a ship hull on a huge wooden floor with chalk and string, Japanese carpenters kneeling around watching intently.",
+   "label": "実物大の図面",
+   "chars": []
+  },
+  {
+   "id": "G03",
+   "narration": "その図面に合わせて、戸田の船大工が木を切った。",
+   "image_en": "Japanese shipwrights with headbands sawing and shaping large timbers on a beach while Russian sailors help carry the wood, the ribs of a Western-style ship rising behind them.",
+   "image": "Japanese shipwrights with headbands sawing and shaping large timbers on a beach while Russian sailors help carry the wood, the ribs of a Western-style ship rising behind them.",
+   "tts_text": "その図面に合わせて、へだの船大工が木を切った。",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "G04",
+   "narration": "集められた船大工は、およそ40人。西洋の船を造るのは、初めてだった。",
+   "image_en": "Rows of Japanese carpenters hammering wooden pegs into the hull frame of a Western-style ship under construction, sawdust in the air, focused faces.",
+   "image": "Rows of Japanese carpenters hammering wooden pegs into the hull frame of a Western-style ship under construction, sawdust in the air, focused faces.",
+   "label": "船大工40人",
+   "chars": []
+  },
+  {
+   "id": "G05",
+   "narration": "そのあいだも、下田では話し合いが続いていた。",
+   "image_en": "Kawaji Toshiakira, pointing at a blank map of northern islands on the table while talking earnestly, a temple hall in winter. Place the main person slightly right of center.",
+   "image": "Kawaji Toshiakira, pointing at a blank map of northern islands on the table while talking earnestly, a temple hall in winter. Place the main person slightly right of center.",
+   "chars": [
+    "kawaji"
+   ]
+  },
+  {
+   "id": "G06",
+   "narration": "安政元年12月21日。日本とロシアは、下田で条約を結んだ。",
+   "image_en": "Putyatin and Kawaji Toshiakira, both signing long blank documents with brush and pen at the same table in a temple hall, officials watching. Place the main person slightly right of center.",
+   "image": "Putyatin and Kawaji Toshiakira, both signing long blank documents with brush and pen at the same table in a temple hall, officials watching. Place the main person slightly right of center.",
+   "label": "1855年2月",
+   "chars": [
+    "putyatin",
+    "kawaji"
+   ]
+  },
+  {
+   "id": "G07",
+   "narration": "この世界で、日本が最初に条約を結んだ相手は、アメリカではなくロシアだった。",
+   "image_en": "Putyatin and Kawaji Toshiakira, standing side by side at the same height and the same size in the center of a temple courtyard, bowing to each other, Russian sailors and Japanese officials lined up on both sides, warm sunset light. Place the main person slightly right of center.",
+   "image": "Putyatin and Kawaji Toshiakira, standing side by side at the same height and the same size in the center of a temple courtyard, bowing to each other, Russian sailors and Japanese officials lined up on both sides, warm sunset light. Place the main person slightly right of center.",
+   "label": "最初の条約はロシア",
+   "strong": true,
+   "highlight": [
+    "ロシア"
+   ],
+   "chars": [
+    "putyatin",
+    "kawaji"
+   ],
+   "anim": "kling",
+   "peak": true,
+   "motion": true
+  },
+  {
+   "id": "G08",
+   "narration": "国境は、択捉島と得撫島の間。樺太は、境を決めずにおいた。",
+   "image_en": "A long chain of islands in a cold northern sea seen from high above, mist between two of the islands, snowy peaks, no writing.",
+   "image": "A long chain of islands in a cold northern sea seen from high above, mist between two of the islands, snowy peaks, no writing.",
+   "label": "択捉と得撫の間",
+   "chars": []
+  },
+  {
+   "id": "G09",
+   "narration": "安政2年3月ごろ、戸田の浜で、2本マストの帆船ができあがった。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/1/12/Launch_of_Heda.jpg",
+   "image_en": "An old Japanese painting of a small two-masted Western-style schooner being launched from a beach, crowds watching. Faded old-memory colors.",
+   "image": "An old Japanese painting of a small two-masted Western-style schooner being launched from a beach, crowds watching. Faded old-memory colors.",
+   "label": "ヘダ号",
+   "tts_text": "あんせい2年3月ごろ、へだの浜で、2本マストの帆船ができあがった。",
+   "chars": []
+  },
+  {
+   "id": "G10",
+   "narration": "村の名をとって、ヘダ号。造り始めてから、百日あまりの船だった。",
+   "image_en": "A small two-masted schooner with white sails floating in a calm cove, Japanese carpenters and Russian sailors cheering together on the beach, bright morning.",
+   "image": "A small two-masted schooner with white sails floating in a calm cove, Japanese carpenters and Russian sailors cheering together on the beach, bright morning.",
+   "label": "百日あまり",
+   "chars": []
+  },
+  {
+   "id": "G11",
+   "narration": "日本の大工は、見事だ。",
+   "image_en": "Putyatin, shaking hands warmly with an old Japanese master shipwright in a headband on the beach, both smiling, the new schooner behind them. Place the main person slightly right of center.",
+   "image": "Putyatin, shaking hands warmly with an old Japanese master shipwright in a headband on the beach, both smiling, the new schooner behind them. Place the main person slightly right of center.",
+   "voice": "putyatin",
+   "chars": [
+    "putyatin"
+   ]
+  },
+  {
+   "id": "G12",
+   "narration": "幕府は、同じ形の船を造るよう命じたといわれる。",
+   "image_en": "Several small two-masted Western-style schooners being built side by side on a Japanese beach by many carpenters, wooden scaffolding, busy and hopeful.",
+   "image": "Several small two-masted Western-style schooners being built side by side on a Japanese beach by many carpenters, wooden scaffolding, busy and hopeful.",
+   "chars": []
+  },
+  {
+   "id": "G13",
+   "narration": "実際の歴史では、ロシアとの条約は、アメリカ、イギリスに次ぐ3番目だった。",
+   "image_en": "Three long blank treaty scrolls laid side by side on a black lacquered table in a quiet room, brushes and seals beside them. Faded old-memory colors.",
+   "image": "Three long blank treaty scrolls laid side by side on a black lacquered table in a quiet room, brushes and seals beside them. Faded old-memory colors.",
+   "label": "本当は3番目",
+   "chars": []
+  },
+  {
+   "id": "H01",
+   "narration": "1856年。この世界の下田に、アメリカの総領事はやって来ない。",
+   "chapter": "漁村のままの横浜",
+   "image_en": "A quiet small temple by the sea in a Japanese harbor town, monks sweeping fallen leaves, no foreign visitors, calm summer afternoon.",
+   "image": "A quiet small temple by the sea in a Japanese harbor town, monks sweeping fallen leaves, no foreign visitors, calm summer afternoon.",
+   "label": "1856年",
+   "chars": []
+  },
+  {
+   "id": "H02",
+   "narration": "江戸の近くに港を開けと、強く迫る国は、まだ現れない。",
+   "image_en": "Japanese cargo sailing ships with large square sails crossing a calm bay near Edo, gulls, no foreign ships, golden afternoon.",
+   "image": "Japanese cargo sailing ships with large square sails crossing a calm bay near Edo, gulls, no foreign ships, golden afternoon.",
+   "chars": []
+  },
+  {
+   "id": "H03",
+   "narration": "江戸湾の西の岸。横浜村は、小さな漁村のままだった。",
+   "image_en": "A small fishing village of thatched huts on a sandy shore by a bay, fishing nets drying on poles, small boats pulled up on the beach, a few villagers working, peaceful.",
+   "image": "A small fishing village of thatched huts on a sandy shore by a bay, fishing nets drying on poles, small boats pulled up on the beach, a few villagers working, peaceful.",
+   "label": "横浜村",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "H04",
+   "narration": "畑を耕し、浜で貝を拾い、魚をとる。そんな暮らしが続いた。",
+   "image_en": "Villagers in plain work kimono gathering shellfish on a wide tidal flat at low tide, baskets on their backs, a farmer hoeing a field behind, warm light.",
+   "image": "Villagers in plain work kimono gathering shellfish on a wide tidal flat at low tide, baskets on their backs, a farmer hoeing a field behind, warm light.",
+   "chars": []
+  },
+  {
+   "id": "H05",
+   "narration": "1859年の夏。この世界の横浜には、波止場も外国の商館も建たない。",
+   "image_en": "An empty summer beach by a calm bay with only fishing boats and reeds, no piers, no buildings, a heron standing in the shallows.",
+   "image": "An empty summer beach by a calm bay with only fishing boats and reeds, no piers, no buildings, a heron standing in the shallows.",
+   "label": "波止場は無い",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "H06",
+   "narration": "外国の船が入るのは、遠い長崎と、北の箱館だけだ。",
+   "image_en": "A northern Japanese harbor town at the foot of a mountain, a single Russian ship anchored in the bay, fishermen unloading catch, cool clear day.",
+   "image": "A northern Japanese harbor town at the foot of a mountain, a single Russian ship anchored in the bay, fishermen unloading catch, cool clear day.",
+   "chars": []
+  },
+  {
+   "id": "H07",
+   "narration": "実際の歴史では、1858年にアメリカと結んだ条約で、翌年、横浜が開港している。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hiroshige_II_-_%E6%A9%AB%E6%BF%B1%E6%B5%B7%E5%B2%B8%E5%9C%96%E6%9C%83_%28View_of_the_Coast_at_Yokohama%29_%281860%29.jpg",
+   "image_en": "An old Japanese woodblock print of a busy new port town by the sea with foreign ships and many buildings. Faded old-memory colors.",
+   "image": "An old Japanese woodblock print of a busy new port town by the sea with foreign ships and many buildings. Faded old-memory colors.",
+   "label": "1859年 横浜開港",
+   "chars": []
+  },
+  {
+   "id": "I01",
+   "narration": "1861年2月。対馬の浅い湾に、ロシアの軍艦ポサドニック号が入ってきた。",
+   "chapter": "対馬の軍艦",
+   "image_en": "A Russian steam warship entering a narrow green bay on a rugged Japanese island in late winter, local fishermen in small boats staring up at it, grey sky.",
+   "image": "A Russian steam warship entering a narrow green bay on a rugged Japanese island in late winter, local fishermen in small boats staring up at it, grey sky.",
+   "label": "1861年 対馬",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "I02",
+   "narration": "船の修理のためと言いながら、陸に兵の小屋を建て始めた。",
+   "image_en": "Russian sailors building wooden barracks on a rocky shore beside an anchored warship, sawing logs and raising walls, Japanese villagers watching uneasily from the trees.",
+   "image": "Russian sailors building wooden barracks on a rocky shore beside an anchored warship, sawing logs and raising walls, Japanese villagers watching uneasily from the trees.",
+   "chars": []
+  },
+  {
+   "id": "I03",
+   "narration": "さらに、土地を貸せ、藩主に会わせろと迫った。",
+   "image_en": "A Russian naval captain in a dark uniform demanding loudly with his finger raised before kneeling Japanese domain officials in kamishimo on a beach, tense faces.",
+   "image": "A Russian naval captain in a dark uniform demanding loudly with his finger raised before kneeling Japanese domain officials in kamishimo on a beach, tense faces.",
+   "chars": []
+  },
+  {
+   "id": "I04",
+   "narration": "対馬藩は断った。だが、ロシアの船を追い出す力は無かった。",
+   "image_en": "Japanese samurai of a small domain standing helplessly on a hill with spears and old matchlocks, looking down at a large foreign warship in the bay, clenched fists, dusk.",
+   "image": "Japanese samurai of a small domain standing helplessly on a hill with spears and old matchlocks, looking down at a large foreign warship in the bay, clenched fists, dusk.",
+   "label": "追い出せない",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "I05",
+   "narration": "江戸から幕府の役人が来ても、船は動かない。",
+   "image_en": "A shogunate official in formal kamishimo arguing on a beach with Russian officers who fold their arms and refuse, the warship and new barracks behind them.",
+   "image": "A shogunate official in formal kamishimo arguing on a beach with Russian officers who fold their arms and refuse, the warship and new barracks behind them.",
+   "chars": []
+  },
+  {
+   "id": "I06",
+   "narration": "実際の歴史では、イギリスの軍艦2隻が来て抗議し、ロシアの船は8月に去っている。",
+   "image_en": "Two British warships entering an island bay where a Russian warship lies at anchor, sailors on all decks watching each other, summer haze. Faded old-memory colors.",
+   "image": "Two British warships entering an island bay where a Russian warship lies at anchor, sailors on all decks watching each other, summer haze. Faded old-memory colors.",
+   "label": "8月に退去",
+   "chars": []
+  },
+  {
+   "id": "J01",
+   "narration": "では、ペリーが来なかった世界の、今の東京湾はどうなっているのか。",
+   "chapter": "今の東京湾",
+   "image_en": "Modern Tokyo bay at dusk seen from the water, city towers glowing on the far shore, a wide stretch of open dark water in the foreground with no islands, a ferry passing.",
+   "image": "Modern Tokyo bay at dusk seen from the water, city towers glowing on the far shore, a wide stretch of open dark water in the foreground with no islands, a ferry passing.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "J02",
+   "narration": "ペリーの来なかった世界には、砲台の島が無い。お台場という名前も生まれない。",
+   "image_en": "Modern Tokyo bay in daylight from above, open blue water where no artificial islands stand, cargo ships and small boats crossing, the city skyline on the shore.",
+   "image": "Modern Tokyo bay in daylight from above, open blue water where no artificial islands stand, cargo ships and small boats crossing, the city skyline on the shore.",
+   "label": "お台場が無い",
+   "strong": true,
+   "highlight": [
+    "お台場"
+   ],
+   "chars": []
+  },
+  {
+   "id": "J03",
+   "narration": "横浜も、大きな港町にはならなかった。",
+   "image_en": "A quiet modern coastal town with low houses and a small fishing harbor on a bay, a few boats tied up, hills behind, no tall buildings, afternoon.",
+   "image": "A quiet modern coastal town with low houses and a small fishing harbor on a bay, a few boats tied up, hills behind, no tall buildings, afternoon.",
+   "chars": []
+  },
+  {
+   "id": "J04",
+   "narration": "1859年の開港から始まった港と町並みが、この世界には無い。",
+   "image_en": "An old seaside road along a calm bay with pine trees and a small shrine, fishermen mending nets, no port facilities, soft evening light.",
+   "image": "An old seaside road along a calm bay with pine trees and a small shrine, fishermen mending nets, no port facilities, soft evening light.",
+   "chars": []
+  },
+  {
+   "id": "J05",
+   "narration": "その代わり、伊豆の戸田と北の箱館に、ロシアとの縁が残る。",
+   "image_en": "A small two-masted schooner model displayed on a wooden stand in front of a window overlooking a calm cove with mountains, warm light.",
+   "image": "A small two-masted schooner model displayed on a wooden stand in front of a window overlooking a calm cove with mountains, warm light.",
+   "tts_text": "その代わり、伊豆のへだと北のはこだてに、ロシアとの縁が残る。",
+   "chars": []
+  },
+  {
+   "id": "J06",
+   "narration": "さっきの問題の答え。実際の東京湾に今も残る台場は、2つ。第三と第六だ。",
+   "image_en": "Two small square old stone fort islands covered with trees floating in a modern bay at dusk, a large suspension bridge lit in white beyond them, city lights reflecting on the water.",
+   "image": "Two small square old stone fort islands covered with trees floating in a modern bay at dusk, a large suspension bridge lit in white beyond them, city lights reflecting on the water.",
+   "label": "答え：2つ",
+   "strong": true,
+   "payoff": true,
+   "tts_text": "さっきの問題の答え。実際の東京湾に今も残る台場は、ふたつ。だいさんと、だいろくだ。",
+   "chars": []
+  },
+  {
+   "id": "J07",
+   "narration": "第三台場は台場公園になり、陸続きの埋立地には、台場という町の名が付いた。",
+   "real": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dai-San_Daiba_Park_%289224646221%29.jpg",
+   "image_en": "A grassy park on an old stone fort island in a modern bay, trees and stone walls, city buildings beyond. Faded old-memory colors.",
+   "image": "A grassy park on an old stone fort island in a modern bay, trees and stone walls, city buildings beyond. Faded old-memory colors.",
+   "label": "第三台場",
+   "tts_text": "だいさんだいばは台場公園になり、陸続きの埋立地には、だいばという町の名が付いた。",
+   "chars": []
+  },
+  {
+   "id": "K01",
+   "narration": "変えたのは、1853年6月の浦賀に、4隻が来なかったことだけ。",
+   "chapter": "どっちの日本？",
+   "image_en": "The calm empty bay at the mouth of an old Japanese harbor at sunset, a few fishing boats returning, green headlands, the horizon clear and golden.",
+   "image": "The calm empty bay at the mouth of an old Japanese harbor at sunset, a few fishing boats returning, green headlands, the horizon clear and golden.",
+   "chars": [],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "K02",
+   "narration": "実際の歴史では、アメリカとの通商の条約は、天皇の許しの無いまま結ばれた。",
+   "image_en": "A shogunate official signing a long blank treaty document with a brush in a tense room, other officials looking away uneasily. Faded old-memory colors.",
+   "image": "A shogunate official signing a long blank treaty document with a brush in a tense room, other officials looking away uneasily. Faded old-memory colors.",
+   "chars": []
+  },
+  {
+   "id": "K03",
+   "narration": "それが国の割れるもとになったといわれる。この世界の日本は、2つの方へ分かれていく。",
+   "image_en": "A coastal road splitting into two paths at a crossroads, one leading down to a sunny peaceful castle town, the other toward a dark stormy island bay, evening.",
+   "image": "A coastal road splitting into two paths at a crossroads, one leading down to a sunny peaceful castle town, the other toward a dark stormy island bay, evening.",
+   "label": "2つの未来",
+   "chars": []
+  },
+  {
+   "id": "K04",
+   "narration": "良い未来。1868年、幕府と大名は戦わず、江戸の町は戦の火を見なかった。",
+   "image_en": "A peaceful Edo street in spring with cherry blossoms, townspeople shopping and children playing, samurai walking calmly, no soldiers, bright warm light.",
+   "image": "A peaceful Edo street in spring with cherry blossoms, townspeople shopping and children playing, samurai walking calmly, no soldiers, bright warm light.",
+   "label": "良い未来",
+   "chars": []
+  },
+  {
+   "id": "K05",
+   "narration": "戸田で船を覚えた大工たちが、日本の港を守る船を造り続けた。",
+   "image_en": "A busy Japanese shipyard on a cove where carpenters build several Western-style sailing ships, finished ships at anchor without flags, morning sun, proud faces.",
+   "image": "A busy Japanese shipyard on a cove where carpenters build several Western-style sailing ships, finished ships at anchor without flags, morning sun, proud faces.",
+   "tts_text": "へだで船を覚えた大工たちが、日本の港を守る船を造り続けた。",
+   "chars": []
+  },
+  {
+   "id": "K06",
+   "narration": "悪い未来。1861年、対馬に来たロシアの軍艦は、去らなかった。",
+   "image_en": "A Russian warship still anchored in an island bay at dusk, the wooden barracks on the shore now enlarged with a fence, Japanese villagers watching from a distance, gloomy sky.",
+   "image": "A Russian warship still anchored in an island bay at dusk, the wooden barracks on the shore now enlarged with a fence, Japanese villagers watching from a distance, gloomy sky.",
+   "label": "悪い未来",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "K07",
+   "narration": "対馬の湾には、ロシアの港ができていた。",
+   "image_en": "A foreign naval harbor built in a narrow island bay with stone piers, warehouses and several warships, Japanese fishing boats pushed to the edge, cold grey light.",
+   "image": "A foreign naval harbor built in a narrow island bay with stone piers, warehouses and several warships, Japanese fishing boats pushed to the edge, cold grey light.",
+   "chars": []
+  },
+  {
+   "id": "K08",
+   "narration": "あなたは、どっちの日本になったと思いますか。",
+   "same_as": "K03",
+   "label": "どっちの日本？",
+   "strong": true,
+   "chars": []
+  },
+  {
+   "id": "K09",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えてください。",
+   "image_en": "Putyatin and Kawaji Toshiakira, standing together on a hill above a calm cove at sunset, looking out at a small two-masted schooner in the water. Place the main person slightly right of center.",
+   "image": "Putyatin and Kawaji Toshiakira, standing together on a hill above a calm cove at sunset, looking out at a small two-masted schooner in the water. Place the main person slightly right of center.",
+   "chars": [
+    "putyatin",
+    "kawaji"
+   ],
+   "anim": "kling",
+   "motion": true
+  },
+  {
+   "id": "K10",
+   "narration": "それでは、また次の世界線で。",
+   "same_as": "K01",
+   "chars": []
+  }
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯や夕日の暖かい色。表情は大げさに。横長の画面で1枚の絵に1つの場面（コマ割り・枠を付けない）。人物は真ん中より少し右。有名なアニメ・漫画・ゲームの絵柄に似せない。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "tempo": 1.15,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
