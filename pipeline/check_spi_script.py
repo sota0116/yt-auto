@@ -76,6 +76,18 @@ def main():
     pub = s.get("pub_date") or (neta or {}).get("pub_date")
     pub_d = dt.date.fromisoformat(pub) if pub else dt.date.fromisoformat(meta["valid_from"])
     chap = lambda c: c.get("chapter") or c.get("yt_chapter")
+    hf_cuts = []
+    for cut in s["cuts"]:
+        if "hf_3d" not in cut:
+            continue
+        if type(cut["hf_3d"]) is not bool:
+            ng.append(f"{cut['id']} hf_3d は true または false")
+        elif cut["hf_3d"]:
+            hf_cuts.append(cut["id"])
+            if not (chap(cut) or cut.get("peak")):
+                ng.append(f"{cut['id']} hf_3d は章の頭または山場（peak）だけ")
+    if len(hf_cuts) > 2:
+        ng.append(f"hf_3d は1本につき2カットまで（{len(hf_cuts)}カット）")
     typ = s.get("type")
 
     def ymd(y, m, d):

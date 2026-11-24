@@ -101,6 +101,7 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
       "accent": "色を変える語（text か text2 の中の語）", "style": "drop" か "pop"}}。1行14字まで。言い切りの1文・山場の答えに使う（big_text と同じ役で、もっと動く）。
     ・count（数え上がる数字）：{{"type": "count", "title": "何の数か", "value": 60, "unit": "日", "prefix": "約"（任意）, "decimals": 0,
       "text": "数の下の1行（任意）", "accent": "text の中の色を変える語", "note": "右上の小さい注（任意）"}}。value は数だけ（"koyomi" の数か、sources にある数）。
+    ・章の頭（chapter / yt_chapter）か山場（peak）には、カット直下に "hf_3d": true を付けてもよい。任意で1本につき最大2カット。通常の card も書く。
     ・どの図のカードにも "bg3d": "stars" を足すと、後ろに金の粒の球がゆっくり回る。山場（peak）か章の頭の1〜2枚だけに付ける（全部に付けない）。
   - 場面の絵のカット：card を付けない。"image" に、絵を作るAIへの頼み方を日本語で書く（季節・時間帯・場所・人が何をしているか・表情。手順書 §6）。
     人は "chars": ["kazue"] のように characters.json の id で（1カット2人まで）。人のいない絵は "nobody": true（場面の絵の3割まで）。

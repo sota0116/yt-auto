@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.join(ROOT, "vendor", "youtube-video-maker", "scripts"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import dur, run, voice_path, chunks, ass_time, prep_voice  # noqa: E402
 from build_long_psy import onsets, sub_starts  # noqa: E402
+from make_hf_spi import make_clips as make_hf_clips  # noqa: E402
 import motion_cards_spi as MC  # noqa: E402
 
 W, H, FPS = 1920, 1080, 30
@@ -231,10 +232,11 @@ def main():
     if a.only_cards:
         return
 
+    hf_clips = make_hf_clips(work, cuts, durs)
+
     # ③ 絵を声の長さに合わせて切る ＋ ④ 字幕
     t, chaps, clips, events = 0.0, [], [], []
     n_anchor = n_split = n_exact = 0
-    hf_count = 0
     for c in cuts:
         cid, d = c["id"], durs[c["id"]]
         n = c.get("chapter") or c.get("yt_chapter")
@@ -243,12 +245,7 @@ def main():
         src = os.path.join(work, a.clips, cid + ".mp4")
         clip = os.path.join(b, cid + ".mp4")
         key = f"{mt(src)}|{d:.3f}"
-        hf_src = None
-        if hf_count < 2 and c.get("hf_3d") is True and (n or c.get("peak")):
-            hf_count += 1
-            candidate = os.path.join(work, "images", "_hf", cid + ".mp4")
-            if os.path.isfile(candidate):
-                hf_src = candidate
+        hf_src = hf_clips.get(cid)
         hf_key = f"hf:{mt(hf_src)}|{key}" if hf_src else None
         if hf_key and stamps.get(cid) == hf_key and os.path.exists(clip):
             key = hf_key

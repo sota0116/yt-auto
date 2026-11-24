@@ -90,6 +90,22 @@ jobs:
           mkdir -p vendor/youtube-video-maker
           printf '%s' "$VENDOR_SKILL_B64" | base64 -d | tar -xz -C vendor/youtube-video-maker
           test -f vendor/youtube-video-maker/scripts/build_long.py
+      - uses: actions/setup-node@v4
+        if: matrix.ch == 'spi'
+        continue-on-error: true
+        with:
+          node-version: 22
+      - name: SPI 用の HyperFrames を準備
+        if: matrix.ch == 'spi'
+        continue-on-error: true
+        timeout-minutes: 3
+        env:
+          HYPERFRAMES_NO_TELEMETRY: "1"
+          DO_NOT_TRACK: "1"
+        run: |
+          npm install --prefix "$RUNNER_TEMP/spi-hf" --no-save --package-lock=false --no-audit --no-fund hyperframes@0.9.19
+          "$RUNNER_TEMP/spi-hf/node_modules/.bin/hyperframes" --version
+          echo "$RUNNER_TEMP/spi-hf/node_modules/.bin" >> "$GITHUB_PATH"
       - name: spi の BGM を戻す（甘茶の音楽工房の曲。規約が「音楽だけの配布」を禁じるので、公開リポジトリには暗号にして置き、鍵は Secrets）
         if: matrix.ch == 'spi'
         env:
