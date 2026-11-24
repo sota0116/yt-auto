@@ -7,13 +7,25 @@
   "voice",
   "images",
   "motion",
-  "gate_images",
-  "build",
-  "gate_video"
+  "gate_images"
  ],
  "started": "2026-11-24T06:52:32+09:00",
- "tries": 2,
+ "tries": 1,
  "code": "a6b20fd30a46",
- "stage": "thumb",
- "updated": "2026-11-24T08:32:30+09:00"
+ "stage": "build",
+ "updated": "2026-11-24T10:27:05+09:00",
+ "restored": {
+  "日時": "2026-11-24T10:16:07+09:00",
+  "前の済み": [
+   "pick",
+   "write",
+   "gate_script",
+   "voice",
+   "images",
+   "motion",
+   "gate_images",
+   "build",
+   "gate_video"
+  ]
+ }
 }
