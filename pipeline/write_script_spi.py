@@ -106,9 +106,9 @@ LINE の案内文の番号：{neta.get('line_copy')}／登録の呼びかけの�
     人は "chars": ["kazue"] のように characters.json の id で（1カット2人まで）。人のいない絵は "nobody": true（場面の絵の3割まで）。
     写真の上に出す札は "photo": {{"pop": {{"small", "big", "side"}}, "tag", "tag_sub", "tate": {{"text", "by"}}}}（001 の photo カードの pop・tag・tate と同じ形）。
     昔の場面は "era": "江戸" のように時代の名前（画面の右上に「再現イメージ」が出る）。
-    実際の画像：本物の資料を見せた方が伝わるカット（古い暦・浮世絵や錦絵の行事・神社や祭りの古写真・古地図）の1〜2カットに、
-    "real": "Wikimedia Commons で探す英語の検索語"（例 "Japanese calendar Edo period"・"ukiyo-e Setsubun"）を書く（2026-11-05。単調な絵が続くのを崩すため）。
-    image もいつもどおり書く（見つからない時は AI の絵になる）。real のカットに era は書かない。chars・motion・peak のカットとサムネの背景には付けない。
+    実際の画像（2026-11-24 強化。単調な絵が続くのを崩すため）：**毎回 2〜4カット** に必ず `"real": "<英語または日本語の検索語>"`（例 `"Japanese calendar Edo period"`・`"ukiyo-e Setsubun"`・`"Shinto shrine torii"`・`"江戸 暦"`・`"浮世絵 神社"`）または `"real": "https://..."`（公開アーカイブや SNS／Web の実写真・X ポスト・Bluesky ポストの URL も可）を書く（Wikimedia Commons・Openverse・ジャパンサーチ／国会図書館デジタルコレクション・NASA・Bing 画像検索から探す）。
+    向くのは古い暦・浮世絵や錦絵の行事・神社や鳥居や社殿や祭りの実写真（SNS や Web の参拝写真も可）・古地図・年中行事の道具など、話の証拠になる本物の資料や写真。
+    image もいつもどおり書く（見つからない時・内容が合わない時は AI の絵になる）。real のカットに era は書かない。chars・motion・peak・card・same_as のカットとサムネの背景（THUMB）には付けない。
     声では「こちらは江戸時代の暦です」のように、何の資料かを言う（画面の文字は読ませない）。
     001 の image_en・img_src・"card": {{"type": "photo"}} は手で作った時の形なので使わない。
   - 動く場面："motion": true を、場面の絵のカットの1〜2割に付ける（Kling で5秒動かす。card の無いカットだけ）。

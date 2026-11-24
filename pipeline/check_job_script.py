@@ -445,7 +445,7 @@ def check_d(sc, facts, cuts, chars, ng, warn):
     imgs = [c for c in cuts if c.get("image") and not c.get("chart")]
     if len(imgs) > 70:
         ng.append(f"AIの絵が {len(imgs)} 枚（型D は70枚まで。残りは図・出典カード）")
-    sw = ["絵" if c.get("image") and not c.get("chart") else ("出典カード" if (c.get("chart") or {}).get("kind") == "source_card" else "図")
+    sw = ["絵" if (c.get("image") or c.get("real_src")) and not c.get("chart") else ("出典カード" if (c.get("chart") or {}).get("kind") == "source_card" else "図")
           for c in cuts if not c.get("same_as")]
     run = 1
     for k in range(1, len(sw)):
@@ -797,8 +797,8 @@ def main(work):
     tmp = tempfile.mkdtemp()
     sc2 = json.loads(json.dumps(sc))
     for c in sc2["cuts"]:
-        if c.get("chart") and not c.get("image"):
-            c["image"] = "（図）"
+        if (c.get("chart") or c.get("real_src")) and not c.get("image"):
+            c["image"] = "（図）" if c.get("chart") else "（実画像）"
     json.dump(sc2, open(os.path.join(tmp, "script.json"), "w", encoding="utf-8"), ensure_ascii=False)
     r = subprocess.run([sys.executable, "-X", "utf8", SKILL_CHECK, tmp, "--long"], capture_output=True, text=True, encoding="utf-8")
     print("【スキルの点検】\n" + r.stdout.strip())

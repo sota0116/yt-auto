@@ -135,7 +135,7 @@ def main():
         if c["same_as"] not in ids:
             ng.append(f"{c['id']}：same_as の先 {c['same_as']} が無い")
     for c in talk:
-        if not c.get("image") and not c.get("same_as"):
+        if not c.get("image") and not c.get("same_as") and not c.get("real_src"):
             ng.append(f"{c['id']}：image も same_as も無い")
     for c in img:
         hero_txt = "主役" in c["image"]

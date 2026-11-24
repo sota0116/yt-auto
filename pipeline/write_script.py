@@ -187,6 +187,10 @@ def prompt(work, ch, fix):
 - 手順書 §3 のこの回の型・骨組み、§4 の全回共通の決まり、§5 の絵、§6 のタイトル3案とサムネの文字、§7 の概要欄、§10 の点検の項目を全部守る。
 - 手順書 §4 の「メタの禁止」を守る。名乗り・動画や回のこと・「ここからは」「次の章では」「見ていきます」のような進み方の言葉・聞き手の名前を呼ぶこと・お礼を書かず、中身（数字・場面・問い）だけで進める。例外は登録の呼びかけ・LINE の案内・コメントへの問いかけの決まった文だけ。
 - 絵のカットの image は、日本語で場面を1〜2文。読める文字・ロゴ・実在の会社は書かない。
+- 実際の画像（2026-11-24 追加。AI の絵と図だけで単調になるのを崩す）：1本につき **1〜3カット** に `"real": "<英語または日本語の検索語>"`（例 `"Japanese delivery truck"`・`"construction site tools"`・`"public hospital building exterior Japan"`・`"工業 工場 設備"`）または `"real": "https://..."`（公開アーカイブや SNS／Web の実写真・X ポスト・Bluesky ポストの URL も可）を書く。
+  向くのは実在の道具・現場・建物・公的資料・インフラなどの実写真（SNS や Web の現場写真も可）。**人物の顔写真と企業ロゴは使わない**。
+  そのカットにも `"image"` はいつもどおり書いておく（取れない時・内容が合わない時は AI の絵になる）。`chars`・`chart`・`peak`・`same_as`・`reenact` のカットとサムネの背景（`thumb_bg`）には付けない。
+  書いたあとプログラム（`real_images.py`）が自動で画像を取り、置けたカットだけ `real_src` を付けて `image` を外す。
 - 場面の絵は、人が何かをしている場面を主にする（手順書 §5 の登場人物）。人のいない部屋・物だけの絵は、場面の絵の3割まで。
   人を出すカットには characters.json の人物から合う人を選び、カットに "chars": ["kenji"] と書く（1カット2人まで）。image にもその人の名前（例「健二が」）を書き、年齢・髪・服は書かない（設定画でそろえる）。
   登場人物の名前は声では言わない（絵だけに出る人。聞き手・語り手とは別）。同じ回で同じ人を何度も出してよい。
@@ -317,8 +321,17 @@ def main():
         print(f"（Claude：{out.get('num_turns')}手・{out.get('duration_ms', 0) / 60000:.1f}分）")
     except json.JSONDecodeError:
         print(r.stdout[-1500:], r.stderr[-800:])
-    if r.returncode != 0 or not os.path.exists(os.path.join(work, "script.json")):
+    sp = os.path.join(work, "script.json")
+    if r.returncode != 0 or not os.path.exists(sp):
         sys.exit("【止まりました】台本を書けませんでした（_write.log を見る）")
+    try:  # 実際の画像（real のカット）を置く。取れなければ AI の絵のまま（2026-11-24）
+        import real_images
+        s = json.load(open(sp, encoding="utf-8"))
+        if any(c.get("real") for c in s.get("cuts", [])):
+            real_images.apply(work, s, a.ch, "long")
+            json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception as e:
+        print(f"【注意】実際の画像を置けませんでした（AI の絵で進めます）：{type(e).__name__}: {e}")
     if not a.fix:
         levelup_add(a.ch, work, out.get("result", ""))
     chk = subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "pipeline", "check_job_script.py"), work],

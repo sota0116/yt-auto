@@ -105,6 +105,8 @@ def prompt(work, ch, fix):
      形の例（言葉は写さない）：上「〇〇を選ぶ人は」下「実は〇〇な人」／上「60代でも〇〇をやめない人は」下「〇〇が若い」。上の段に誰か（何を選ぶ・する人か）を必ず書く。
      心理学の用語（〇〇効果）・研究の名前だけを主役にせず、見る人の毎日の行い（選ぶ・言う・持つ・やめない）で言う。言いさし（下の段が「〜は」「〜の」で終わって続きが無い）にしない。
      書いたら3つを確かめる：字だけで分かるか／見る人が「これ私のことだ」と思う話か／題とサムネで役が分かれているか。
+   - 実際の画像（2026-11-24 追加。単調な絵が続くのを崩す）：**0〜2カット**（研究者の肖像・実験装置や実験風景・論文の図版・歴史的な心理学実験の資料など、実物がある回だけ。無い回は無理に入れない）に `"real": "<英語または日本語の検索語>"`（例 `"Stanley Milgram"`・`"Pavlov dog experiment"`・`"Stroop effect diagram"`・`"EEG brain waves"`）または `"real": "https://..."`（公開アーカイブや SNS／Web の実写真・X ポスト・Bluesky ポストの URL も可）を書く。
+     そのカットにも `"image"` はいつもどおり書く（取れない時・内容が合わない時は AI の絵になる）。`chars`・`motion`・`peak`・`card`・`same_as` のカットとサムネの背景（`THUMB`）には付けない。ショートの `from` には実画像のカットを使わず AI の絵のカットを選ぶ。書いたあとプログラム（`real_images.py`）が自動で画像を取り、置けたカットだけ `real_src` を付けて `image` を外す。
    2026-10-28 本人の指摘（スキル references/16。見本 001 に無くても守る。見本の B20・C35・I11c の言い方は写さない）：
    ・章ごとに motion のカット（動く絵）を1つ以上置く。
    ・見どころ：この回でいちばん驚く所（最後の特徴の章の、驚く数字が出る所など）のカット1つに "peak": true を書き、motion・label・strong のうち2つ以上を付ける。締めの10カットには付けない。
@@ -178,7 +180,13 @@ def main():
     area = json.load(open(os.path.join(work, "neta.json"), encoding="utf-8")).get("area")
     if area and s.get("type") != area:
         s["type"] = area
-        json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    try:  # 実際の画像（real のカット）を置く。取れなければ AI の絵のまま（2026-11-24）
+        import real_images
+        if any(c.get("real") for c in s.get("cuts", [])):
+            real_images.apply(work, s, a.ch, "long")
+    except Exception as e:
+        print(f"【注意】実際の画像を置けませんでした（AI の絵で進めます）：{type(e).__name__}: {e}")
+    json.dump(s, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not s.get("short"):
         print("【メモ】ショートの台本（short）がありません。この回はショートを作りません")
     chk = subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "pipeline", "check_psy_script.py"), work],
