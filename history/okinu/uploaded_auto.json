@@ -254,7 +254,7 @@
   "seconds": 864,
   "title_now": "洗面台の〇〇で決まる！毎朝きれいでもお金が出ていく家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 37,
+  "views_now": 38,
   "published": true,
   "published_at": "2026-11-10T18:00:33+09:00",
   "comment_id": "Ugy7VWkUnFY7yzKmEh54AaABAg",
@@ -379,7 +379,7 @@
   "seconds": 37,
   "title_now": "【60代】へそくり、家のあちこちに絶対分けないで",
   "synthetic_on": null,
-  "views_now": 1060,
+  "views_now": 1062,
   "published": true,
   "published_at": "2026-11-13T19:00:05+09:00",
   "comment_id": "UgwwmBWEGDgzcB_ROHV4AaABAg",
@@ -433,7 +433,7 @@
   "seconds": 822,
   "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
   "synthetic_on": null,
-  "views_now": 19,
+  "views_now": 20,
   "published": true,
   "published_at": "2026-11-12T18:00:25+09:00",
   "comment_id": "Ugz_8Vc2SwMe6_b_6jN4AaABAg",
@@ -666,7 +666,7 @@
   "seconds": 834,
   "title_now": "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
   "synthetic_on": null,
-  "views_now": 42,
+  "views_now": 44,
   "published": true,
   "published_at": "2026-11-21T18:00:10+09:00",
   "comment_id": "UgwsP2grYi4LpVf4uFh4AaABAg",
@@ -691,7 +691,7 @@
   "seconds": 45,
   "title_now": "【60代】神棚に置きっぱなしにしてはいけない物3選",
   "synthetic_on": null,
-  "views_now": 1465,
+  "views_now": 1468,
   "published": true,
   "published_at": "2026-11-21T12:00:01+09:00",
   "comment_id": "Ugw3vD9zJtxc9tm7r5d4AaABAg",
@@ -716,7 +716,7 @@
   "seconds": 44,
   "title_now": "【60代】神棚の置き場所で貧乏になる家の特徴3選、1位は",
   "synthetic_on": null,
-  "views_now": 1238,
+  "views_now": 1241,
   "published": true,
   "published_at": "2026-11-22T19:00:14+09:00"
  },
@@ -739,7 +739,7 @@
   "seconds": 37,
   "title_now": "【60代】2階の真下に神棚を置いてる人、天井を見て",
   "synthetic_on": null,
-  "views_now": 1474,
+  "views_now": 1483,
   "published": true,
   "published_at": "2026-11-23T12:00:28+09:00"
  },
@@ -757,12 +757,14 @@
    "【60代】神棚の向きと高さでお金が逃げる置き方3選"
   ],
   "comment": "あなたの神棚の向きと高さ、いくつ直せそうですか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-24T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 44,
   "title_now": "【60代】神棚の向きと高さでお金が逃げる置き方3選",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 88,
+  "published": true,
+  "published_at": "2026-11-24T19:00:01+09:00"
  },
  {
   "work": "S132_神棚の下に置くとお金が逃",
@@ -850,7 +852,7 @@
   "seconds": 1003,
   "title_now": "【60代】御札を●●にしまっていませんか？神棚が無い家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 6,
+  "views_now": 24,
   "published": true,
   "published_at": "2026-11-23T18:00:27+09:00"
  },
@@ -909,12 +911,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-24T06:51:32+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】有名な神社へ行く前に「これ」絶対忘れないで"
   ],
-  "comment": "あなたの家の氏神様は、どこの神社ですか。"
+  "comment": "あなたの家の氏神様は、どこの神社ですか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-29T12:00:00+09:00",
+  "seconds": 37,
+  "title_now": "【60代】有名な神社へ行く前に「これ」絶対忘れないで",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S137_神棚にこう供えるとお金が",
@@ -925,11 +932,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-24T21:23:18+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】神棚のお供えでやってはいけないこと3選"
   ],
-  "comment": "あなたのお供えには、いくつありましたか。"
+  "comment": "あなたのお供えには、いくつありましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-30T19:00:00+09:00",
+  "seconds": 44,
+  "title_now": "【60代】神棚のお供えでやってはいけないこと3選",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
