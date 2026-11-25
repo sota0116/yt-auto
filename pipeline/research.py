@@ -22,6 +22,7 @@
 # ・2026-11-18 本人「伸びてるサムネを言語化して視聴者のニーズを理解することが大事」：サムネの傾向に、形の数え上げに加えて「字の約束→期待→欲求」を書かせる
 # ・--no-claude：集めるだけ（まとめない。Gemini で見るのはやる）
 import argparse, datetime, json, os, re, shutil, statistics, subprocess, sys, urllib.parse, urllib.request
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, issue
 from run_daily import jsave
@@ -339,6 +340,9 @@ def main():
     a.add_argument("ch", choices=["job", "spi", "psy", "nihongi", "okinu"])
     a.add_argument("--no-claude", action="store_true")
     a = a.parse_args()
+    if a.ch in RETIRED_CHANNELS:
+        print(f"{a.ch}: 自動運用を停止しています")
+        return
     os.environ["TZ"] = "Asia/Tokyo"
     d = os.path.join(ROOT, "history", a.ch, "competitors")
     os.makedirs(d, exist_ok=True)

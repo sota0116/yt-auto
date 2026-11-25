@@ -11,6 +11,7 @@
 # ・書いた物は _log に残す。元に戻す時は slot_plan.json のそのチャンネルの行を消す
 # ・すでに入っている予約は動かさない。効くのは次に予約する分から
 import argparse, datetime, json, os, sys
+from channel_policy import RETIRED_CHANNELS
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import day_slots as ds
@@ -35,6 +36,8 @@ def settled_at(ch, hm):
 def check(p, ov, today, done):
     """案1件を確かめる。(書いてよいか, 理由)"""
     ch, key, to = p.get("ch"), p.get("key"), p.get("to")
+    if ch in RETIRED_CHANNELS:
+        return False, f"{ch}: 自動運用を停止しています"
     if ch not in ds.PLAN:
         return False, f"チャンネル名が違う（{ch}）"
     if key not in ds.AUTO_KEYS:

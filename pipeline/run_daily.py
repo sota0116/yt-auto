@@ -44,6 +44,7 @@
 #   ・作り途中の回は種類ごとに history/<ch>/status_<種類>.json（ショートが詰まっても横動画の続きは止まらず、横動画が詰まってもショートは作れる）
 #   ・在庫は種類ごとに数える（ustore.kind_of）。pick には --kind <種類> を渡す。kinds の無いチャンネル（job・psy・spi）は今までと同じ動き
 import argparse, datetime, hashlib, json, os, re, subprocess, sys, time, wave
+from channel_policy import RETIRED_CHANNELS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PY = [sys.executable, "-X", "utf8"]
@@ -999,6 +1000,9 @@ def main():
     a.add_argument("--kind", default="", help="kinds のあるチャンネルで、この種類だけ作る（short／long）")
     a.add_argument("--slot", default="first", choices=["first", "retry", "late"], help="retry＝08:07・late＝17:37 のやり直し。今日の 02:07 が成功していれば何もしない")
     a = a.parse_args()
+    if a.ch in RETIRED_CHANNELS:
+        print(f"{a.ch}: 自動運用を停止しています")
+        return
     os.environ["TZ"] = "Asia/Tokyo"
     ch = a.ch
     cloud = os.environ.get("GITHUB_ACTIONS") == "true"

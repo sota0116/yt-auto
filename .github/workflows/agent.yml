@@ -28,11 +28,13 @@ permissions:
 
 jobs:
   make:
-    if: (inputs.ch != '' || vars.AGENT_CHANNELS != '') && vars.PAUSED != 'true'
+    if: inputs.ch != 'psy' && (inputs.ch != '' || vars.AGENT_CHANNELS != '') && vars.PAUSED != 'true'
     strategy:
       fail-fast: false
       matrix:
         ch: ${{ fromJSON(inputs.ch && format('["{0}"]', inputs.ch) || vars.AGENT_CHANNELS) }}
+        exclude:
+          - ch: psy
     concurrency:
       group: agent-${{ matrix.ch }}
       cancel-in-progress: false

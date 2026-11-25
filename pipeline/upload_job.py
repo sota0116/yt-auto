@@ -8,6 +8,7 @@
 # ・公開後のコメント：profile.json に comment_text があればそれ（{LINE_URL} を置き換え。心理学ch 2026-10-27）、無ければ説明文の1段落目
 # ・--dry：上げずに、説明文とタイトルと確かめの結果だけ出す
 import argparse, datetime, json, os, sys, urllib.error, urllib.parse, urllib.request
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from yt_auth import access_token
 from ustore import _dump as jdump  # 途中で切れても壊れない書き方（別名で書いてから置き換える）
@@ -64,6 +65,9 @@ def main():
     a.add_argument("--thumb", default="thumb_a.jpg")
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
+    if a.channel in RETIRED_CHANNELS:
+        print(f"{a.channel}: 自動運用を停止しています")
+        return
     ch, work = a.channel, os.path.abspath(a.work)
     s, desc = description(work, ch)
     title = s["title"]

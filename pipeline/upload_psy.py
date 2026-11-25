@@ -6,6 +6,7 @@
 # ・非公開で上げる。--publish-at を付けるとその日時に公開の予約。AI の申告はオン、子ども向けではない
 # ・記録：<作業フォルダ>\<--up>\uploaded.json と history\psy\uploaded.json（watch.py が読む）
 import argparse, datetime, json, os, subprocess, sys, time, urllib.error
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import api, API, channel_titles
 
@@ -48,6 +49,9 @@ def main():
     a.add_argument("--publish-at")
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
+    if CH in RETIRED_CHANNELS:
+        print(f"{CH}: 自動運用を停止しています")
+        return
     work = os.path.abspath(a.work)
     upd = os.path.join(work, a.up)
     s = json.load(open(os.path.join(upd, "script.json"), encoding="utf-8"))

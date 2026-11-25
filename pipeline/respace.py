@@ -9,6 +9,7 @@
 #   単独のショート…同じ日の枠（早い時刻も可）→だめなら元の時刻より後の最初の枠
 # ・YouTube の予約を PUT で直し（embeddable・publicStatsViewable も送る。送らないとオフに戻る）、記録の publish_at も直す
 import argparse, datetime, glob, json, os, sys
+from channel_policy import RETIRED_CHANNELS
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import day_slots as ds
@@ -71,6 +72,8 @@ def pick(ch, rows, item, teaser_ids, now):
 
 
 def run(ch, dry, now):
+    if ch in RETIRED_CHANNELS:
+        return [], [f"{ch}: 自動運用を停止しています"]
     rows = sorted(r for r in ds.booked(ch))
     teaser_ids = set()
     tp = os.path.join(ds.ROOT, "history", ch, "teasers.json")

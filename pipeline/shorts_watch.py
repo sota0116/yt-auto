@@ -8,6 +8,7 @@
 # ・数字：公開から72時間と7日の時点で、再生・平均視聴率・平均視聴時間・登録を history\<ch>\shorts_metrics.json に残す
 #   （週報 weekly.py と、次の回の台本の書き手が読む。つかみの文と上の帯の字ごとに、どれが見られたかを比べるため）
 import argparse, datetime, json, os, sys, traceback
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, JST
 from run_daily import hpath, jsave
@@ -67,6 +68,10 @@ def main():
     a.add_argument("chs", nargs="+", choices=["psy"])
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
+    a.chs = [ch for ch in a.chs if ch not in RETIRED_CHANNELS]
+    if not a.chs:
+        print("対象チャンネルの自動運用を停止しています")
+        return
     os.environ["TZ"] = "Asia/Tokyo"
     bad = 0
     for ch in a.chs:

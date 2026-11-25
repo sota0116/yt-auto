@@ -14,6 +14,7 @@
 # ・--auto は動き始めに、今いない回（status*.json・parked*.json・注文書のどれにも無い回）の絵を release から消し、
 #   作るのも今いる回だけにする（2026-11-13。release は1000件までで、満杯になって新しい絵を置けなくなった）
 import argparse, glob, json, os, shutil, subprocess, sys, tempfile, threading, time
+from channel_policy import RETIRED_CHANNELS
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 
@@ -191,13 +192,15 @@ def auto_specs():
     keep = wanted()
     for p in glob.glob(os.path.join(ROOT, "history", "*", "codex_todo", "*.json")):
         try:
-            out.append(todo_spec(p))
+            spec = todo_spec(p)
+            if spec["ch"] not in RETIRED_CHANNELS:
+                out.append(spec)
         except Exception as e:
             print(f"{p}：注文書を読めない（{type(e).__name__}）", flush=True)
     for sp in glob.glob(os.path.join(ROOT, "history", "*", "wip", "*", "script.json")):
         wk = os.path.basename(os.path.dirname(sp))
         ch = os.path.basename(os.path.dirname(os.path.dirname(os.path.dirname(sp))))
-        if keep and (ch, wk) not in keep:
+        if ch in RETIRED_CHANNELS or (keep and (ch, wk) not in keep):
             continue  # 飛ばされた回の控え（wip）は残り続ける。その絵は使われないので作らない（2026-11-13）
         try:
             out.append(wip_spec(ch, wk))
@@ -233,7 +236,8 @@ def main():
         clean(have, a.dry)
         specs = auto_specs()
     else:
-        specs = [wip_spec(*w.replace("\\", "/").split("/", 1)) for w in (a.works or ORDER)]
+        works = [w.replace("\\", "/").split("/", 1) for w in (a.works or ORDER)]
+        specs = [wip_spec(ch, wk) for ch, wk in works if ch not in RETIRED_CHANNELS]
     jobs = []
     for sp in specs:
         ch, wk, s, cuts, rules, portrait = sp["ch"], sp["wk"], sp["s"], sp["cuts"], sp["rules"], sp["portrait"]

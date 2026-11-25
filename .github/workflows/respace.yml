@@ -10,7 +10,7 @@ on:
       channels:
         description: "対象のチャンネル（空白で区切る。空なら全部）"
         required: false
-        default: "job psy spi kakure shimei nihongi okinu"
+        default: "job spi kakure shimei nihongi okinu"
       dry:
         description: "移さずに、移し先だけ出す（true / false）"
         required: false

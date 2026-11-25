@@ -20,6 +20,7 @@
 #   history\slot_plan.json に書く（day_slots.py が読む）。結果は週報の最後に足す
 # ・kakure・shimei・nihongi・okinu は 3（健康）・4（数字）・8（時間帯）だけ書かせる（1〜7 の全部は job・psy・spi）
 import argparse, datetime, json, os, re, shutil, subprocess, sys
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import jload, now, ping
 from run_daily import jsave, verify_checksums
@@ -235,6 +236,10 @@ def main():
     a.add_argument("chs", nargs="+", choices=["job", "spi", "psy", "nihongi", "okinu", "kakure", "shimei", "karada"])
     a.add_argument("--no-issue", action="store_true")
     a = a.parse_args()
+    a.chs = [ch for ch in a.chs if ch not in RETIRED_CHANNELS]
+    if not a.chs:
+        print("対象チャンネルの自動運用を停止しています")
+        return
     os.environ["TZ"] = "Asia/Tokyo"
     wd = os.path.join(ROOT, "history", "weekly")
     os.makedirs(wd, exist_ok=True)

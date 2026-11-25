@@ -24,6 +24,7 @@
 #   （手で上げた記録は shorts_uploaded.json／long_uploaded.json。ustore.py が全部つなげて読む）。kinds の無いチャンネルは今までと同じ
 # ・--dry：YouTube に書かない（コメント・差し替え・予約をしない）。読むのと記録だけ
 import argparse, datetime, json, os, re, statistics, sys, traceback, urllib.error, urllib.parse
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from notify import issue, ping, stale, jload, now, JST
 from run_daily import hpath, jsave
@@ -404,6 +405,9 @@ def move(spec, dry):
     """予約を指定の時刻へ移す（本人の指示で、決まりの枠や期間の外に出す時。手で動かす見張りの move 入力）。
     spec＝「チャンネル:作業フォルダの名前@2026-10-30T18:00」（日本時間）。2026-10-30 本人「10月30日に横動画載せて」"""
     ch, rest = spec.split(":", 1)
+    if ch in RETIRED_CHANNELS:
+        print(f"{ch}: 自動運用を停止しています")
+        return
     work, when = rest.rsplit("@", 1)
     at = datetime.datetime.fromisoformat(when).replace(tzinfo=JST)
     if at <= now() + datetime.timedelta(minutes=30):
@@ -429,6 +433,9 @@ def book(spec, dry, days=21):
     明日から近い日へ順に、見張りと同じ決まり（schedule_tomorrow：曜日・公開日と期間・空けておく枠）で在庫を予約し、この回に入ったら止める。
     days 日先まで入らなければ、予約なしのまま（見張りが後で入れる。ショートは solo だけになる）"""
     ch, work = spec.split(":", 1)
+    if ch in RETIRED_CHANNELS:
+        print(f"{ch}: 自動運用を停止しています")
+        return
     up = ustore.load(ch)
     me = lambda: next((e for e in up if e.get("work") == work and not e.get("missing")), None)
     try:
@@ -448,6 +455,8 @@ def book(spec, dry, days=21):
 
 
 def watch_channel(ch, dry, ahead=1):
+    if ch in RETIRED_CHANNELS:
+        return
     st_p, me_p = hpath(ch, "watch.json"), hpath(ch, "metrics.json")
     up, state, metrics = ustore.load(ch), jload(st_p, {}), jload(me_p, {})  # 記録が複数のファイルに分かれているチャンネルは、つなげて読む
     if not isinstance(metrics, dict):
@@ -542,12 +551,16 @@ def main():
     if a.book:
         book(a.book, a.dry)
         return
+    channels = [ch for ch in a.chs if ch not in RETIRED_CHANNELS]
+    if not channels and not a.move:
+        print("対象チャンネルの自動運用を停止しています")
+        return
     hb_p = os.path.join(ROOT, "history", "heartbeat.json")
     when = now().strftime("%m/%d %H:%M")
     failed = False
     for spec in a.move.split():  # 見張りの前に移す（空いた枠に、このあと見張りが在庫を入れられるように）
         move(spec, a.dry)
-    for ch in a.chs:
+    for ch in channels:
         try:
             watch_channel(ch, a.dry, a.ahead)
         except SystemExit as e:  # ログインが切れた（yt_auth.py が止めた）など

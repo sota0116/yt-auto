@@ -6,9 +6,9 @@
 # ・記録は history\psy\shorts_uploaded.json（長尺の uploaded.json に入れない。見張りが長尺の在庫と公開の間隔に使っているため）
 # ・「AIで作った映像・声」の申告（containsSyntheticMedia）はいつもオン。二重に上げない（記録と、チャンネルの同じタイトル）
 import argparse, datetime, json, os, sys
+from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import ROOT, api, channel_titles
-from make_short_psy import shorts_of
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 CH = "psy"
@@ -16,6 +16,8 @@ NOTE = "この動画は、心理学の研究をもとにした一般的なお話
 
 
 def description(work, name="short"):
+    from make_short_psy import shorts_of
+
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
     sh = dict(shorts_of(s))[name]
     long_up = json.load(open(os.path.join(work, "uploaded.json"), encoding="utf-8"))
@@ -38,8 +40,13 @@ def main():
     a.add_argument("--name", default="")
     a.add_argument("--dry", action="store_true")
     a = a.parse_args()
+    if CH in RETIRED_CHANNELS:
+        print(f"{CH}: 自動運用を停止しています")
+        return
     work = os.path.abspath(a.work)
     s = json.load(open(os.path.join(work, "script.json"), encoding="utf-8"))
+    from make_short_psy import shorts_of
+
     names = [a.name] if a.name else [k for k, _ in shorts_of(s) if os.path.exists(os.path.join(work, k, "short.mp4"))]
     if not names:
         sys.exit(f"【止まりました】{os.path.join(work, 'short', 'short.mp4')} がありません")
