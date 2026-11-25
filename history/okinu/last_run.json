@@ -1,10 +1,10 @@
 {
  "ch": "okinu",
- "started": "2026-11-26T03:49:56+09:00",
+ "started": "2026-11-26T07:50:55+09:00",
  "made": [
-  "S143_鍵の束に付けておくとお金"
+  "S144_神社の帰りにやるとお金が"
  ],
- "stopped": "build で止まりました（終了コード 1）：声：185カット・15.7分（速さ 1.0・間 0.3）\nA12：4 枚・1枚 1.13 秒・4.50 秒 → /home/runner/work/yt-auto/yt-auto/channels/okinu/videos/110_神社のお参り/images/A12.mp4\n\n【止まりました】絵（images/<id>.png）が無いカット：['B06']（1カット）（long）",
+ "stopped": "pick：【ネタ切れ】okinu：ネタ帳に、まだ作っていない long の行がありません（ネタ帳.json に行を足す）（long）",
  "在庫": {
   "short": 10,
   "long": 0
@@ -13,6 +13,10 @@
   "short": 1,
   "long": 1
  },
- "ended": "2026-11-26T04:16:53+09:00",
+ "飛ばした回": [
+  "/home/runner/work/yt-auto/yt-auto/channels/okinu/videos/110_神社のお参り"
+ ],
+ "待ち": true,
+ "ended": "2026-11-26T08:20:44+09:00",
  "今月の制作費_円": 0.0
 }

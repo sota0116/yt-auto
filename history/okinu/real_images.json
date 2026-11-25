@@ -166,5 +166,29 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S144_神社の帰りにやるとお金が",
+  "カット": "C14",
+  "題": "File:Jingu taima front.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Jingu_taima_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Jingu_taima_front.jpg",
+  "検索語": "ofuda Shinto talisman",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S144_神社の帰りにやるとお金が",
+  "カット": "C13",
+  "題": "File:Ofuda from Kegon-Ji.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Ofuda_from_Kegon-Ji.jpg/1920px-Ofuda_from_Kegon-Ji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Ofuda_from_Kegon-Ji.jpg",
+  "検索語": "ofuda Shinto talisman",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
