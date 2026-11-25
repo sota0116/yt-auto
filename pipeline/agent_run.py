@@ -118,6 +118,7 @@ def title(ch, t):
 def finish(ch):
     from notify import issue
     made, bad = [], []
+    uploaded_longs = []
     for w in waiting_upload(ch):
         name = os.path.basename(w)
         r = subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "pipeline", CHS[ch]["upload"]), w, "--go"], cwd=ROOT,
@@ -126,8 +127,29 @@ def finish(ch):
         with open(os.path.join(w, "_upload.log"), "a", encoding="utf-8") as f:
             f.write(f"\n### {now().isoformat(timespec='seconds')}\n{r.stdout}\n{r.stderr}\n")
         (made if r.returncode == 0 else bad).append(name)
+        if r.returncode == 0 and CHS[ch]["is_long"](name):
+            uploaded_longs.append(w)
         if r.returncode:
             issue(f"【止まりました】{ch}：上げられなかった回があります", f"{now():%m/%d %H:%M} {name}：{(r.stdout + r.stderr).strip()[-300:]}")
+    if ch == "shimei" and uploaded_longs:
+        try:
+            import clip_long_to_shorts
+            for lw in uploaded_longs:
+                try:
+                    clips = clip_long_to_shorts.clip_long(lw, ch=ch, count=2, out_root=videos(ch), prefix="S_clip")
+                    for cw in clips:
+                        cname = os.path.basename(cw)
+                        cr = subprocess.run([sys.executable, "-X", "utf8", os.path.join(ROOT, "pipeline", CHS[ch]["upload"]), cw, "--go"], cwd=ROOT,
+                                            capture_output=True, text=True, encoding="utf-8", errors="replace")
+                        print(cr.stdout[-1000:], cr.stderr[-400:], flush=True)
+                        with open(os.path.join(cw, "_upload.log"), "a", encoding="utf-8") as f:
+                            f.write(f"\n### {now().isoformat(timespec='seconds')}\n{cr.stdout}\n{cr.stderr}\n")
+                        if cr.returncode == 0:
+                            made.append(cname)
+                except Exception as e:
+                    print(f"【メモ】{ch} 切り出しショート生成でエラー（本編の完了は止めません）：{e}", flush=True)
+        except Exception as e:
+            print(f"【メモ】clip_long_to_shorts の読み込みに失敗（本編の完了は止めません）：{e}", flush=True)
     p = os.path.join(ROOT, "history", ch, "last_run.json")
     os.makedirs(os.path.dirname(p), exist_ok=True)
     json.dump({"ch": ch, "ended": now().isoformat(timespec="seconds"), "made": made, "上げられなかった": bad, "在庫": stock(ch)[0]},

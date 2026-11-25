@@ -556,6 +556,7 @@ def make_one(ch, st, upload, kind=None):
     """1本作る。st は status.json の中身（続きから始める時は work と done が入っている）。kind＝種類（kinds のあるチャンネルだけ）"""
     sp = status_path(ch, kind)
     KIND = kind  # boost() の引数 kind（images／motion）と区別するため
+    KS = kinds(ch) or {}
     T = lambda stage, default: tool(ch, stage, default, KIND)  # 種類ごとの道具（kind が None なら今までと同じ）
     if not st.get("work"):
         r = run(ROOT, "pick", [T("pick", "pick_neta.py"), ch] + (["--kind", kind] if kind else []), ch)
@@ -651,6 +652,8 @@ def make_one(ch, st, upload, kind=None):
     def boost(kind, ids, script, extra):
         """詰まった時の決まり2：同じ段が2回続けて「途中」で、在庫が目標より少なければ、残りを速いモードで作る（上の説明）。
         extra は環境変数を返す関数（23:00 まで待った後の残り時間で決めるため）"""
+        if KIND == "short" or (KIND and KS.get(KIND, {}).get("no_boost")):
+            return
         import lovart_boost as lb
         if not ids or st.get("busy", {}).get(kind, 0) < lb.boost_after() or stock(ch, KIND) >= stock_goal(ch, KIND)[0]:
             return
