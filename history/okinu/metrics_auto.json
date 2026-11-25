@@ -1047,6 +1047,15 @@
    "直す所": [],
    "取った日": "2026-11-21",
    "再生（公開ページ）": 11
+  },
+  "d7": {
+   "views": 14,
+   "averageViewPercentage": 95.51,
+   "averageViewDuration": 35,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 14
   }
  },
  "106_ベランダ": {
@@ -1125,7 +1134,16 @@
  },
  "S129_神棚を置くとお金が逃げる": {
   "type": null,
-  "video_id": "KKzfP5eWay8"
+  "video_id": "KKzfP5eWay8",
+  "h72": {
+   "views": 1209,
+   "averageViewPercentage": 119.63,
+   "averageViewDuration": 52,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 1271
+  }
  },
  "S130_上の階を人が歩く神棚": {
   "type": null,
@@ -1138,5 +1156,13 @@
  "S131_神棚をこう置くとお金が逃": {
   "type": null,
   "video_id": "1mVPiPEIolI"
+ },
+ "S132_神棚の下に置くとお金が逃": {
+  "type": null,
+  "video_id": "EGaO_JL5mao"
+ },
+ "109_お金が逃げる家に出るしる": {
+  "type": null,
+  "video_id": "HYtl-w6f2Ag"
  }
 }

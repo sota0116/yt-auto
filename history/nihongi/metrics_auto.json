@@ -872,6 +872,17 @@
    ],
    "取った日": "2026-11-21",
    "再生（公開ページ）": 979
+  },
+  "d7": {
+   "views": 678,
+   "averageViewPercentage": 134.71,
+   "averageViewDuration": 70,
+   "subscribersGained": 1,
+   "直す所": [
+    "11%あたりで急に落ちる（10%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 982
   }
  },
  "S123_r012": {
@@ -885,6 +896,15 @@
    "直す所": [],
    "取った日": "2026-11-22",
    "再生（公開ページ）": 1392
+  },
+  "d7": {
+   "views": 1414,
+   "averageViewPercentage": 126.03999999999999,
+   "averageViewDuration": 61,
+   "subscribersGained": 1,
+   "直す所": [],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 1414
   }
  },
  "S124_n012": {
@@ -988,11 +1008,36 @@
  },
  "S132_n002": {
   "type": null,
-  "video_id": "LFKCvRmftWs"
+  "video_id": "LFKCvRmftWs",
+  "h72": {
+   "views": 1048,
+   "averageViewPercentage": 82.34,
+   "averageViewDuration": 37,
+   "subscribersGained": 3,
+   "直す所": [
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る",
+    "11%あたりで急に落ちる（9%）→ その章を後ろに回し、クイズか山場を手前に置く",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 3218
+  }
  },
  "S133_r027": {
   "type": null,
-  "video_id": "wsxUNBVkD_k"
+  "video_id": "wsxUNBVkD_k",
+  "h72": {
+   "views": 1627,
+   "averageViewPercentage": 66.91,
+   "averageViewDuration": 31,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-25",
+   "再生（公開ページ）": 1982
+  }
  },
  "S134_r002": {
   "type": null,
@@ -1013,5 +1058,17 @@
  "S137_r021": {
   "type": null,
   "video_id": "LwQ6LFpdzDI"
+ },
+ "S138_n019": {
+  "type": null,
+  "video_id": "dHlwn13REkA"
+ },
+ "S139_r025": {
+  "type": null,
+  "video_id": "ax8BswMd014"
+ },
+ "L107_long_s110": {
+  "type": null,
+  "video_id": "3Vt7UjTEhlI"
  }
 }

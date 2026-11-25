@@ -505,7 +505,7 @@
   "seconds": 52,
   "title_now": "もしも江戸城の役人に「石高」が見えたら。田沼意次だけ600石が5万7千石に伸びる #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 3380,
+  "views_now": 3403,
   "published": true,
   "published_at": "2026-11-21T07:00:09+09:00"
  },
@@ -528,7 +528,7 @@
   "seconds": 60,
   "title_now": "もしも戦国武将に「仕えた主君の数」が見えたら。藤堂高虎だけ7人、それでも家康に一番頼られる #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 2515,
+  "views_now": 2624,
   "published": true,
   "published_at": "2026-11-21T12:10:19+09:00"
  },
@@ -551,7 +551,7 @@
   "seconds": 45,
   "title_now": "もしも参勤交代が逆で、将軍が大名の国へ通ったら。将軍が前田家に金を借りる #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 3140,
+  "views_now": 3218,
   "published": true,
   "published_at": "2026-11-22T12:10:06+09:00"
  },
@@ -574,7 +574,7 @@
   "seconds": 47,
   "title_now": "もしも幕末の人に「見た外国の数」が見えたら。漁師のジョン万次郎が役人の先生になる #もしも #日本史 #幕末",
   "synthetic_on": null,
-  "views_now": 1950,
+  "views_now": 1982,
   "published": true,
   "published_at": "2026-11-22T20:00:37+09:00"
  },
@@ -597,7 +597,7 @@
   "seconds": 51,
   "title_now": "もしも今の医師が、吉宗の無料病院で診たら。空っぽの門に一晩で長い行列 #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 2339,
+  "views_now": 2589,
   "published": true,
   "published_at": "2026-11-23T07:00:36+09:00"
  },
@@ -620,7 +620,7 @@
   "seconds": 53,
   "title_now": "もしも江戸の奉行に「在任年数」が見えたら。北の奉行の名裁きまで大岡越前の手柄に #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1798,
+  "views_now": 1835,
   "published": true,
   "published_at": "2026-11-23T12:10:03+09:00"
  },
@@ -668,7 +668,7 @@
   "seconds": 54,
   "title_now": "もしも今の観光客が、完成直後の安土城に登ったら。3年で焼けた天主がスマホに全部残る #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 1693,
+  "views_now": 2287,
   "published": true,
   "published_at": "2026-11-24T12:10:05+09:00"
  },
@@ -691,7 +691,7 @@
   "seconds": 57,
   "title_now": "もしも関ヶ原で負けた大名に「戻れる領地」が見えたら。立花宗茂だけ20年後に柳川の城へ帰る #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 1195,
+  "views_now": 1607,
   "published": true,
   "published_at": "2026-11-24T20:00:39+09:00"
  },
@@ -709,12 +709,14 @@
    "もしも関ヶ原の朝、今のあなたが西軍の足軽だったら。組の10人が1人も欠けずに村へ帰る #もしも #日本史 #戦国時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-24T22:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 43,
   "title_now": "もしも関ヶ原の朝、今のあなたが西軍の足軽だったら。組の10人が1人も欠けずに村へ帰る #もしも #日本史 #戦国時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1,
+  "published": true,
+  "published_at": "2026-11-25T07:00:20+09:00"
  },
  {
   "work": "S139_r025",
@@ -730,12 +732,14 @@
    "もしも村八分の家に「付き合う人数」が見えたら。0の家に、火事の夜だけ村中が駆けつける #もしも #日本史 #江戸時代"
   ],
   "comment": "",
-  "privacy_now": "private",
-  "publish_at": "2026-11-25T03:10:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 47,
   "title_now": "もしも村八分の家に「付き合う人数」が見えたら。0の家に、火事の夜だけ村中が駆けつける #もしも #日本史 #江戸時代",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1857,
+  "published": true,
+  "published_at": "2026-11-25T12:10:14+09:00"
  },
  {
   "work": "L106_w002",
@@ -758,7 +762,7 @@
   "seconds": 470,
   "title_now": "もしも関ヶ原で西軍が勝っていたら｜東京は日本の中心にならなかった【もしも歴史】",
   "synthetic_on": null,
-  "views_now": 284,
+  "views_now": 350,
   "published": true,
   "published_at": "2026-11-23T20:00:13+09:00"
  },
@@ -778,12 +782,14 @@
   "comment": "",
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
-  "privacy_now": "private",
-  "publish_at": "2026-11-25T11:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 459,
   "title_now": "もしも寿司職人が江戸時代にタイムスリップしたら｜客が握りを2つずつ頼みだした【もしも歴史】",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 1,
+  "published": true,
+  "published_at": "2026-11-25T20:00:02+09:00"
  },
  {
   "work": "L109_w004",
@@ -802,7 +808,7 @@
   "thumb_set": true,
   "thumb": "thumb_a.jpg",
   "privacy_now": "private",
-  "publish_at": "2026-11-27T20:00:00+09:00",
+  "publish_at": "2026-11-27T11:00:00Z",
   "seconds": 493,
   "title_now": "もしも坂本龍馬が生きていたら｜10年後、龍馬の船が西南戦争の兵を運んだ【もしも歴史】",
   "synthetic_on": null,
@@ -817,11 +823,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-25T18:13:21+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "もしも吉田松陰の松下村塾がグループLINEだったら。江戸の牢から、萩の塾生92人に授業が届く #もしも #日本史 #幕末"
   ],
-  "comment": ""
+  "comment": "",
+  "privacy_now": "private",
+  "publish_at": "2026-11-26T07:00:00+09:00",
+  "seconds": 53,
+  "title_now": "もしも吉田松陰の松下村塾がグループLINEだったら。江戸の牢から、萩の塾生92人に授業が届く #もしも #日本史 #幕末",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]

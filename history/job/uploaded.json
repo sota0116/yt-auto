@@ -545,7 +545,7 @@
   "seconds": 528,
   "title_now": "【休みの罠】もし会社が週休3日にしたら、休みは増えたのに帰りが遅くなった",
   "synthetic_on": null,
-  "views_now": 262,
+  "views_now": 263,
   "published": true,
   "published_at": "2026-11-08T19:00:19+09:00",
   "comment_id": "UgzOBYOOZVUchpzWhKV4AaABAg",
@@ -573,7 +573,7 @@
   "seconds": 533,
   "title_now": "【給料の謎】もし看護師になったら、20代前半で年収約440万円。50代でいくらになるか",
   "synthetic_on": null,
-  "views_now": 268,
+  "views_now": 269,
   "published": true,
   "published_at": "2026-11-09T19:00:01+09:00",
   "comment_id": "UgwUJfEp6L_WFq5Jw5Z4AaABAg",
@@ -843,7 +843,7 @@
   "seconds": 512,
   "title_now": "【時給の謎】保育士と美容師、稼ぎは近いのに1時間の値段に差がつく理由",
   "synthetic_on": null,
-  "views_now": 16,
+  "views_now": 49,
   "published": true,
   "published_at": "2026-11-23T19:00:16+09:00"
  },
@@ -864,12 +864,14 @@
    "あなたの時給は歯科衛生士より上？ 歯石を取る仕事の1時間を、自分の給料と比べたら"
   ],
   "comment": "主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
-  "privacy_now": "private",
-  "publish_at": "2026-11-25T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 509,
   "title_now": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-25T19:00:31+09:00"
  },
  {
   "work": "026_a4_6b5d19ad",
