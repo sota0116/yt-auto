@@ -781,5 +781,29 @@
   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
   "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg",
   "検索語": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sakamoto_Ryoma.jpg"
+ },
+ {
+  "日": "2026-11-25",
+  "回": "S140_r028",
+  "カット": "n03",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/5/53/%E6%9D%BE%E4%B8%8B%E6%9D%91%E5%A1%BE%E8%AC%9B%E7%BE%A9%E5%AE%A4.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/%E6%9D%BE%E4%B8%8B%E6%9D%91%E5%A1%BE%E8%AC%9B%E7%BE%A9%E5%AE%A4.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/5/53/%E6%9D%BE%E4%B8%8B%E6%9D%91%E5%A1%BE%E8%AC%9B%E7%BE%A9%E5%AE%A4.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/5/53/%E6%9D%BE%E4%B8%8B%E6%9D%91%E5%A1%BE%E8%AC%9B%E7%BE%A9%E5%AE%A4.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-25",
+  "回": "S141_n020",
+  "カット": "n05",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
