@@ -1,12 +1,1 @@
-{
- "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S143_n021",
- "done": [
-  "pick",
-  "write"
- ],
- "started": "2026-11-26T00:25:11+09:00",
- "tries": 1,
- "code": "7eb4737e6c0f",
- "stage": "gate_script",
- "gate_fails": 1
-}
+{}

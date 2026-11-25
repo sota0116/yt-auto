@@ -877,5 +877,41 @@
   "源": "url",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S144_r032",
+  "カット": "n08",
+  "題": "File:Portrait of Toyotomi Hidenaga, Shungaku-in (detail).jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Portrait_of_Toyotomi_Hidenaga%2C_Shungaku-in_%28detail%29.jpg/1920px-Portrait_of_Toyotomi_Hidenaga%2C_Shungaku-in_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Portrait_of_Toyotomi_Hidenaga,_Shungaku-in_(detail).jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Portrait_of_Toyotomi_Hidenaga,_Shungaku-in_(detail).jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S144_r032",
+  "カット": "n14",
+  "題": "File:Dainagonzuka-M6791.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Dainagonzuka-M6791.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Dainagonzuka-M6791.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Dainagonzuka-M6791.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S145_n025",
+  "カット": "n14",
+  "題": "File:Musashiabumi Great Fire of Meireki.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Musashiabumi_Great_Fire_of_Meireki.jpg/1920px-Musashiabumi_Great_Fire_of_Meireki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Musashiabumi_Great_Fire_of_Meireki.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Musashiabumi_Great_Fire_of_Meireki.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
