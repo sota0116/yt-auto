@@ -130,5 +130,29 @@
   "源": "japan_search",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-25",
+  "回": "S139_神社とお寺を回るとお金が",
+  "カット": "C05",
+  "題": "Letras Elegantes",
+  "url": "https://i.pinimg.com/originals/92/38/7f/92387f66a90a2481bb23da09d35c45b4.jpg",
+  "説明ページ": "https://utpaqp.edu.pe/explore/letras-elegantes",
+  "検索語": "gassho prayer hands Buddhist temple",
+  "源": "bing_web",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S141_盛り塩をこう置くとお金が",
+  "カット": "C05",
+  "題": "Best Happy Thanksgiving Images with beautiful messages wishes and quotes",
+  "url": "https://happybirthdayblessings.com/wp-content/uploads/2024/11/Happy-Thanksgiving-blessings-768x983.jpg",
+  "説明ページ": "https://happybirthdayblessings.com/happy-thanksgiving-images/",
+  "検索語": "morijio salt cone",
+  "源": "bing_web",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
