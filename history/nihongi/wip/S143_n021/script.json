@@ -1,0 +1,315 @@
+{
+ "format": "short",
+ "title": "もしも今の高校生が、秀吉の陣で足軽めしを食べたら。荷物の縄が味噌汁になる #もしも #日本史 #戦国時代",
+ "promise": "戦国の足軽は、芋の茎を味噌で煮た縄で荷物を縛り、刻んで湯に入れると汁の具にしたと伝わる、と分かる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※今の高校生が小田原攻めの陣に入り、荷物の縄を食べ尽くして荷物が出せなくなる話は作り話です。1590年の豊臣秀吉の小田原攻め、戦の携帯食の干飯（糒）、芋の茎の荷縄を味噌で煮て、刻めば汁の実になるという『雑兵物語』（江戸前期）の話は、史実と資料をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "戦国時代",
+  "豊臣秀吉",
+  "小田原攻め",
+  "芋がら縄",
+  "雑兵物語",
+  "雑学"
+ ],
+ "banner": [
+  "アナザー日本紀",
+  "高校生が縄を完食"
+ ],
+ "fiction": true,
+ "world_rules": [
+  "足すルールは1つだけ：今の高校生が1人、1590年の小田原攻めの秀吉方の陣に、荷物運びの足軽として入る",
+  "高校生が知っているのは今の暮らし（コンビニ・スマホ・カップの味噌汁）だけ。荷物の縄が食べられることは知らない",
+  "荷宰料の老人はその時代の人で、芋の茎の荷縄を汁にする知恵を知っている。高校生が未来から来たことは知らない",
+  "秀吉と北条方は高校生を知らない。小田原攻めの流れ（石垣山の城・7月までの囲み）は史実どおり",
+  "高校生が組の縄を食べ尽くし、翌朝荷物が出せなかったのは作り話"
+ ],
+ "world_terms": [
+  "高校生",
+  "スマホ",
+  "コンビニ",
+  "カップ",
+  "縄"
+ ],
+ "voices": {
+  "nizairyo": 53
+ },
+ "characters": {
+  "koukousei": {
+   "name": "今の高校生（16歳）",
+   "desc_en": "A modern Japanese high school boy about sixteen: short black hair, round friendly face with thick eyebrows, plain navy school blazer uniform with no badge, emblem or logo, white shirt, plain grey trousers, wearing a borrowed plain dark conical ashigaru jingasa hat."
+  },
+  "nizairyo": {
+   "name": "荷宰料の老人（60代）",
+   "desc_en": "A Sengoku-period elderly army quartermaster about sixty: weathered tanned face, deep wrinkles, grey stubble beard, grey topknot, faded indigo short work kimono with tied-up sleeves, straw sandals, a coil of thick brown rope over one shoulder."
+  }
+ },
+ "competitor_note": "TTP：題材（身分・職業の人が戦場で何を食べたか）｜語り部 麿「戦国足軽の飯事情」（40万回・neta.json の note）。つかみの型＝結果の言い切り（S110 寿司・時代ワープの型）。題の型＝「もしも今の〇〇が〇〇したら。＜結果＞」（真夜中のもしも y7ELNcSonJA の『今の人が昔の暮らしを体験』）",
+ "facts": [
+  "1590年（天正18年）、豊臣秀吉は3月1日に京都を出て小田原の北条氏を攻め、4月に石垣山に城を築いて長い囲みに入り、7月5日に北条氏直が降伏した。出どころ：コトバンク「小田原攻め」 https://kotobank.jp/word/小田原攻め",
+  "糒（ほしいい・干飯）は、米を一度煮たり蒸したりしたうえで天日に干した飯で、出征・旅行のときに持った携帯食。水か湯につけて柔らかくして食べた。出どころ：日本大百科全書（ニッポニカ）「糒」 https://kotobank.jp/word/糒",
+  "『雑兵物語』は1657年から1683年にかけてまとめられた、足軽と支援部隊30人の証言と助言の書で、縄や木の皮で汁物を作る方法が書かれている。出どころ：観光庁 地域観光資源の多言語解説文データベース「雑兵物語：足軽のためのハウツーガイド」（PDF の本文で確認） https://www.mlit.go.jp/tagengo-db/common/001653332.pdf ／ https://www.mlit.go.jp/tagengo-db/R4-00130.html",
+  "『雑兵物語』下巻「荷宰料」に「芋の莖を荷繩になつて、味噌で煮て荷をひつからげて來た程に、其繩をひつきざんで水へ入、こねまはせば、汁の實にもなるべい」とある（底本：中村通夫・湯沢幸吉郎校訂『雑兵物語』岩波文庫。引用は https://note.com/mitimasu/n/n021d5734e40f による。同記事は岩波版の註で「味噌で煮て」が補筆とされると書く）。台本は「この縄の話がある」と言い、言い切りの範囲を広げない",
+  "芋がら縄は芋の茎を味噌で煮しめて作り、ちぎって鍋で煮ると味噌汁になる野戦食と紹介される（ウィキペディア「芋がら縄」・出典不十分の注記つき https://ja.wikipedia.org/wiki/芋がら縄）。台本では作り話の場面の中の出来事として描く",
+  "芋茎（ずいき）はサトイモの葉柄で、干した物を芋がら（いもがら）という。出どころ：デジタル大辞泉・改訂新版 世界大百科事典「芋茎」 https://kotobank.jp/word/芋茎",
+  "n14 の本物の画像：Wikimedia Commons「Quartermaster and laborer.jpg」（『雑兵物語』の挿絵。荷宰料の八木五蔵と荷馬。パブリックドメイン・幅736px） https://commons.wikimedia.org/wiki/File:Quartermaster_and_laborer.jpg",
+  "今の高校生が秀吉の陣に入ること、荷宰料の老人のセリフ、高校生が組の縄を食べ尽くして翌朝荷物が出せなかったことは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "高校生が\n足軽めし",
+   "narration": "もしも高校生が縄を食べたら、秀吉の荷はどうなったか。",
+   "tts_text": "もしも高校生が、縄を食べたら、秀吉の荷はどうなったか。",
+   "highlight": [
+    "縄を食べたら"
+   ],
+   "image_en": "At a Sengoku-period army camp at dusk, the high school boy stares in shock at a thick brown rope dangling from his hand over a steaming iron pot, mouth wide open, campfire light on his face.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "anim": "kling",
+   "image": "At a Sengoku-period army camp at dusk, the high school boy stares in shock at a thick brown rope dangling from his hand over a steaming iron pot, mouth wide open, campfire light on his face.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "1590年、秀吉の小田原攻め。高校生は荷物運びに。",
+   "highlight": [
+    "小田原攻め"
+   ],
+   "image_en": "The high school boy struggles to lead a pack horse loaded with straw rice bales tied with thick brown ropes, along a muddy road crowded with ashigaru foot soldiers and banners without any marks, hills and a distant castle behind.",
+   "shots": [
+    "n02",
+    "n02@close"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "The high school boy struggles to lead a pack horse loaded with straw rice bales tied with thick brown ropes, along a muddy road crowded with ashigaru foot soldiers and banners without any marks, hills and a distant castle behind."
+  },
+  {
+   "id": "n03",
+   "narration": "晩めしは干飯。炊いた米を干した、戦の携帯食だ。",
+   "tts_text": "晩めしは、ほしいい。炊いた米を干した、戦の携帯食だ。",
+   "highlight": [
+    "干飯"
+   ],
+   "image_en": "Close view of the high school boy's open palm holding a small heap of dry, hard, pale grains of dried cooked rice, poured from a plain cloth pouch, in a rough army camp at evening.",
+   "shots": [
+    "n03",
+    "n03@close"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "Close view of the high school boy's open palm holding a small heap of dry, hard, pale grains of dried cooked rice, poured from a plain cloth pouch, in a rough army camp at evening."
+  },
+  {
+   "id": "n04",
+   "narration": "歯が立たない。水か湯でもどす物だった。",
+   "image_en": "The high school boy bites the hard dried rice and grimaces with watering eyes, clutching his jaw, while weathered ashigaru beside him soak their dried rice in small wooden bowls of water and chuckle.",
+   "shots": [
+    "n04",
+    "n04@face"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "The high school boy bites the hard dried rice and grimaces with watering eyes, clutching his jaw, while weathered ashigaru beside him soak their dried rice in small wooden bowls of water and chuckle."
+  },
+  {
+   "id": "n05",
+   "narration": "秀吉は石垣山に城を築き、囲みは7月まで続く。",
+   "tts_text": "秀吉は、いしがきやまに城を築き、囲みは7月まで続く。",
+   "highlight": [
+    "7月まで"
+   ],
+   "image_en": "From a forested hilltop with new stone walls and a fresh castle, the warlord stands looking down at a large castle town by the sea surrounded by countless army camps and smoke, wide view, summer haze.",
+   "shots": [
+    "n05",
+    "n05@right"
+   ],
+   "chars": [
+    "hideyoshi"
+   ],
+   "image": "From a forested hilltop with new stone walls and a fresh castle, the warlord stands looking down at a large castle town by the sea surrounded by countless army camps and smoke, wide view, summer haze."
+  },
+  {
+   "id": "n06",
+   "narration": "冷える夜。スマホも切れ、コンビニも無い。",
+   "image_en": "Late at night in the army camp, the high school boy sits alone on a straw mat, hugging his knees and shivering, holding a dark dead smartphone with its blank screen facing down, a weak campfire nearby.",
+   "shots": [
+    "n06",
+    "n06@face"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "Late at night in the army camp, the high school boy sits alone on a straw mat, hugging his knees and shivering, holding a dark dead smartphone with its blank screen facing down, a weak campfire nearby."
+  },
+  {
+   "id": "n07",
+   "narration": "温かい汁が飲みたい。でも味噌はもう尽きた。",
+   "highlight": [
+    "味噌はもう尽きた"
+   ],
+   "image_en": "The high school boy peers miserably into an empty iron pot hanging over the fire, then at an empty wooden miso tub turned upside down, hungry ashigaru slumped around him in the dark.",
+   "shots": [
+    "n07",
+    "n07@close"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "The high school boy peers miserably into an empty iron pot hanging over the fire, then at an empty wooden miso tub turned upside down, hungry ashigaru slumped around him in the dark."
+  },
+  {
+   "id": "n08",
+   "narration": "その縄は捨てるな。刻めば汁の実になる。",
+   "tts_text": "その縄は捨てるな。きざめば、しるのみになる。",
+   "voice": "nizairyo",
+   "image_en": "The old quartermaster grabs the high school boy's wrist just as the boy is about to toss a thick brown rope from a rice bale into the dark, the old man's eyes sharp and serious, campfire light.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": [
+    "nizairyo",
+    "koukousei"
+   ],
+   "image": "The old quartermaster grabs the high school boy's wrist just as the boy is about to toss a thick brown rope from a rice bale into the dark, the old man's eyes sharp and serious, campfire light."
+  },
+  {
+   "id": "n09",
+   "narration": "荷物を縛っていた縄を刻み、鍋の湯へ放る。",
+   "image_en": "The old quartermaster chops the thick brown rope into short pieces with a small blade on a wooden board and drops them into the boiling iron pot, while the high school boy leans in, wide-eyed.",
+   "shots": [
+    "n09",
+    "n09@close"
+   ],
+   "chars": [
+    "nizairyo",
+    "koukousei"
+   ],
+   "image": "The old quartermaster chops the thick brown rope into short pieces with a small blade on a wooden board and drops them into the boiling iron pot, while the high school boy leans in, wide-eyed."
+  },
+  {
+   "id": "n10",
+   "narration": "縄にしみた味噌が溶け、鍋は味噌汁になった。",
+   "highlight": [
+    "味噌汁"
+   ],
+   "peak": true,
+   "anim": "kling",
+   "image_en": "Inside the boiling iron pot seen from just above: the chopped rope pieces swell and soften into tender stalk vegetables while clouds of brown miso spread out from them and turn the clear water into rich miso soup, steam rising in the firelight.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [],
+   "image": "Inside the boiling iron pot seen from just above: the chopped rope pieces swell and soften into tender stalk vegetables while clouds of brown miso spread out from them and turn the clear water into rich miso soup, steam rising in the firelight.",
+   "motion": true
+  },
+  {
+   "id": "n11",
+   "narration": "具は芋の茎。今のカップ味噌汁に見えた。",
+   "highlight": [
+    "芋の茎"
+   ],
+   "image_en": "On a straw mat by the fire, a rough wooden bowl of miso soup with soft taro stalk pieces sits right next to a plain white modern paper cup of instant miso soup with no print at all, both exactly the same size, side by side, the high school boy's hands reaching for the wooden bowl.",
+   "shots": [
+    "n11",
+    "n11@close"
+   ],
+   "chars": [],
+   "image": "On a straw mat by the fire, a rough wooden bowl of miso soup with soft taro stalk pieces sits right next to a plain white modern paper cup of instant miso soup with no print at all, both exactly the same size, side by side, the high school boy's hands reaching for the wooden bowl."
+  },
+  {
+   "id": "n12",
+   "narration": "高校生はおかわりを重ね、組の縄を食べ尽くした。",
+   "highlight": [
+    "食べ尽くした"
+   ],
+   "image_en": "The high school boy happily slurps from a wooden bowl with a pile of empty bowls beside him, while the old quartermaster stares in horror at a bare pole where many coils of rope used to hang.",
+   "shots": [
+    "n12",
+    "n12@face"
+   ],
+   "chars": [
+    "koukousei",
+    "nizairyo"
+   ],
+   "image": "The high school boy happily slurps from a wooden bowl with a pile of empty bowls beside him, while the old quartermaster stares in horror at a bare pole where many coils of rope used to hang."
+  },
+  {
+   "id": "n13",
+   "narration": "翌朝、米俵を縛る縄が無く、荷物が出せなかった。",
+   "highlight": [
+    "荷物が出せなかった"
+   ],
+   "image_en": "Next morning in the army camp, straw rice bales lie scattered untied on the ground beside confused pack horses with empty saddles, ashigaru scratching their heads, and the high school boy bowing his head in apology.",
+   "shots": [
+    "n13",
+    "n13@right"
+   ],
+   "chars": [
+    "koukousei"
+   ],
+   "image": "Next morning in the army camp, straw rice bales lie scattered untied on the ground beside confused pack horses with empty saddles, ashigaru scratching their heads, and the high school boy bowing his head in apology."
+  },
+  {
+   "id": "n14",
+   "narration": "実際、江戸前期の雑兵物語に、この縄の話がある。",
+   "tts_text": "実際、えどぜんきの、ぞうひょうものがたりに、この縄の話がある。",
+   "highlight": [
+    "雑兵物語"
+   ],
+   "real": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+   "image_en": "An old Japanese woodblock-style book illustration of an Edo-period army quartermaster walking beside a laborer who leads a pack horse loaded with bundles tied with rope, on aged paper.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+    "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+    "検索語": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+    "源": "url",
+    "判定": "fallback",
+    "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+   }
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "At sunrise in the army camp, the high school boy and the old quartermaster sit side by side sipping miso soup from wooden bowls, a newly twisted coil of rope on the ground between them.",
+   "shots": [
+    "n15"
+   ],
+   "chars": [
+    "koukousei",
+    "nizairyo"
+   ],
+   "image": "At sunrise in the army camp, the high school boy and the old quartermaster sit side by side sipping miso soup from wooden bowls, a newly twisted coil of rope on the ground between them."
+  }
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "tempo": 1.35,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}

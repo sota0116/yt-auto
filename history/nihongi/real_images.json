@@ -805,5 +805,77 @@
   "源": "url",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-25",
+  "回": "S142_r029",
+  "カット": "n18",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Memorial_to_William_Adams_%28Anjin_san%29_and_his_wife_03.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Memorial_to_William_Adams_%28Anjin_san%29_and_his_wife_03.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Memorial_to_William_Adams_%28Anjin_san%29_and_his_wife_03.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Memorial_to_William_Adams_%28Anjin_san%29_and_his_wife_03.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S143_n021",
+  "カット": "n14",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Quartermaster_and_laborer.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "L110_n022",
+  "カット": "B06",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bjh37_Yedo_castlemoat.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bjh37_Yedo_castlemoat.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bjh37_Yedo_castlemoat.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bjh37_Yedo_castlemoat.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "L110_n022",
+  "カット": "C09b",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E5%8D%83%E4%BB%A3%E7%94%B0%E3%81%AE%E5%A4%A7%E5%A5%A5-The_Inner_Palace_of_Chiyoda_%28Chiyoda_no_%C5%8Coku%29_MET_DP149362.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E5%8D%83%E4%BB%A3%E7%94%B0%E3%81%AE%E5%A4%A7%E5%A5%A5-The_Inner_Palace_of_Chiyoda_%28Chiyoda_no_%C5%8Coku%29_MET_DP149362.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E5%8D%83%E4%BB%A3%E7%94%B0%E3%81%AE%E5%A4%A7%E5%A5%A5-The_Inner_Palace_of_Chiyoda_%28Chiyoda_no_%C5%8Coku%29_MET_DP149362.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E5%8D%83%E4%BB%A3%E7%94%B0%E3%81%AE%E5%A4%A7%E5%A5%A5-The_Inner_Palace_of_Chiyoda_%28Chiyoda_no_%C5%8Coku%29_MET_DP149362.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "L110_n022",
+  "カット": "C11",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chiyoda_Ooku_Hanami_%28center%29.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chiyoda_Ooku_Hanami_%28center%29.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chiyoda_Ooku_Hanami_%28center%29.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chiyoda_Ooku_Hanami_%28center%29.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "L110_n022",
+  "カット": "F01",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/5/50/Machiya_on_alley_in_Edo.jpeg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
