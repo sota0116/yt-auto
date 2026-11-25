@@ -10,8 +10,8 @@
   "gate_images"
  ],
  "started": "2026-11-24T06:52:32+09:00",
- "tries": 2,
- "code": "cb9fc41fe9b5",
+ "tries": 1,
+ "code": "039807f62e19",
  "stage": "build",
  "updated": "2026-11-24T10:27:05+09:00",
  "restored": {

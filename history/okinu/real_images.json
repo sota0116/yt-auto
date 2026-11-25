@@ -118,5 +118,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-25",
+  "回": "S138_神棚の無い家でお祀りする",
+  "カット": "C09",
+  "題": "Zen Buddhism and its influence on Japanese culture, by Daisetz Teitaro Suzuki",
+  "url": "https://www.dl.ndl.go.jp/api/iiif/1680651/R0000001/full/1920,/0/default.jpg",
+  "説明ページ": "http://dl.ndl.go.jp/info:ndljp/pid/1680651",
+  "検索語": "ofuda Japanese shrine talisman",
+  "源": "japan_search",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
