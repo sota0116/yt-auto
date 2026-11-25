@@ -913,5 +913,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S148_n004",
+  "カット": "n13",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E6%9C%AC%E6%89%80%E7%AB%8B%E5%B7%9D-Tatekawa_in_Honj%C5%8D_%28Honj%C5%8D_Tatekawa%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141077.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E6%9C%AC%E6%89%80%E7%AB%8B%E5%B7%9D-Tatekawa_in_Honj%C5%8D_%28Honj%C5%8D_Tatekawa%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141077.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E6%9C%AC%E6%89%80%E7%AB%8B%E5%B7%9D-Tatekawa_in_Honj%C5%8D_%28Honj%C5%8D_Tatekawa%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141077.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E6%9C%AC%E6%89%80%E7%AB%8B%E5%B7%9D-Tatekawa_in_Honj%C5%8D_%28Honj%C5%8D_Tatekawa%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141077.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]

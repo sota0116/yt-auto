@@ -1,20 +1,21 @@
 {
  "ch": "nihongi",
- "started": "2026-11-26T02:44:59+09:00",
+ "started": "2026-11-26T06:00:11+09:00",
  "made": [
-  "S143_n021",
-  "S144_r032",
-  "S145_n025"
+  "S146_r030",
+  "S147_n024",
+  "S148_n004",
+  "L110_n022"
  ],
- "stopped": "thumb で止まりました（終了コード 1）：保存 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L110_n022/thumb_a.jpg\n点検：いちばん大きい字の横幅 96%（めやす70%以上）／字の面積 約29%（めやす30〜60%）／行数 2（めやす4行まで）\n  NG 字が少なすぎて目に入らない（面積30%未満）\n小さい版 /home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L110_n022/thumb_a_small.jpg（long）",
+ "stopped": null,
  "在庫": {
-  "short": 3,
+  "short": 6,
   "long": 1
  },
  "作る本数": {
   "short": 3,
   "long": 1
  },
- "ended": "2026-11-26T05:53:19+09:00",
+ "ended": "2026-11-26T07:46:27+09:00",
  "今月の制作費_円": 0.0
 }
