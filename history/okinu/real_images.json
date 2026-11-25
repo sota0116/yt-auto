@@ -154,5 +154,17 @@
   "源": "bing_web",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S143_鍵の束に付けておくとお金",
+  "カット": "C09",
+  "題": "File:Japanese shrine Bell01.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Japanese_shrine_Bell01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Japanese_shrine_Bell01.jpg",
+  "検索語": "Japanese suzu bell shrine",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
