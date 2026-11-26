@@ -250,5 +250,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S150_家に置いておくとお金が逃",
+  "カット": "C05",
+  "題": "File:Edo-Hurin.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Edo-Hurin.jpg/1920px-Edo-Hurin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Edo-Hurin.jpg",
+  "検索語": "Edo furin wind chime",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
