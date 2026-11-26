@@ -1,1 +1,18 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S150_n028",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "images"
+ ],
+ "started": "2026-11-26T11:38:11+09:00",
+ "tries": 0,
+ "code": "7eb4737e6c0f",
+ "stage": "motion",
+ "updated": "2026-11-26T13:52:33+09:00",
+ "busy": {
+  "motion": 1
+ }
+}

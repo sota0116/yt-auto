@@ -925,5 +925,29 @@
   "源": "url",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S149_r038",
+  "カット": "n05",
+  "題": "File:Kyodō risshi no motoi, Yamanouchi Kazutoyo Tsuma.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kyod%C5%8D_risshi_no_motoi%2C_Yamanouchi_Kazutoyo_Tsuma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Kyod%C5%8D_risshi_no_motoi,_Yamanouchi_Kazutoyo_Tsuma.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Kyod%C5%8D_risshi_no_motoi,_Yamanouchi_Kazutoyo_Tsuma.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S150_n028",
+  "カット": "n02",
+  "題": "File:Chiyoda Ooku Hanami.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Chiyoda_Ooku_Hanami.jpg/1920px-Chiyoda_Ooku_Hanami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]

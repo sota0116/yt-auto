@@ -1,0 +1,340 @@
+{
+ "format": "short",
+ "title": "もしも今のトップアイドルが、江戸城の大奥に入ったら。将軍の前に並ぶ女中が、全員ぱっちり目になる #もしも #日本史 #江戸時代",
+ "promise": "江戸城の大奥では、いちばん下の御末は朝の総触れでも廊下で顔を伏せたままで、江戸の化粧の本は大きい目を小さく見せる方法を教えていた、と分かる。",
+ "desc": "あなたなら、どこで歴史を変える？ コメントで教えてください。\n\n※今のトップアイドルが大奥に入り、目の化粧が大奥じゅうに広がる話は作り話です。大奥が将軍のほかの男をほぼ入れない場所だったこと、役の上下が細かく分かれ、いちばん下の御末が水くみや煮炊きをしたこと、朝の総触れで将軍に会えたのは御年寄や御中﨟など十数人で、ほかの女中は廊下で平伏したこと、1813年の化粧の本『都風俗化粧伝』が色の白さを第一とし、大きい目を小さく見せる化粧を載せたことは、史実と資料をもとにしています。\n※映像とナレーションはAIを使って作っています。",
+ "tags": [
+  "もしも",
+  "日本史",
+  "江戸時代",
+  "大奥",
+  "総触れ",
+  "都風俗化粧伝",
+  "江戸の美人",
+  "雑学"
+ ],
+ "style": "劇画寄りの歴史漫画。太く力強い主線、陰の濃い塗り、行灯と夕日の暖かい色。縦長で1枚の絵に1つの場面（コマ割り・上下2分割にしない・枠を付けない）。大事な物は画面の縦30〜65%・真ん中。絵の中に文字を入れない",
+ "avoid": "絵の中の文字・数字・ロゴ・看板の字、コマ割り、枠、吹き出し、血・けが",
+ "banner": [
+  "アナザー日本紀",
+  "大奥がアイドル顔に"
+ ],
+ "fiction": true,
+ "world_rules": [
+  "足すルールは1つだけ：今のトップアイドルが1人、江戸城の大奥に、いちばん下の役の御末として入る",
+  "アイドルが知っているのは今の化粧とファンのことだけ。大奥の決まり・化粧の本・総触れの中の様子は、語り手だけが言う",
+  "大奥の人はアイドルを知らない。アイドルが今の時代から来たことも知らない。御年寄は江戸の物差し（色白・大きい目は小さく見せる）でアイドルを見る",
+  "御末は御目見得の外なので、アイドルは将軍に会えず、総触れでは廊下で顔を伏せたまま。将軍の前の列が変わったところを、アイドルは見ていない（n13・n14 は語り手の文）",
+  "女中たちがアイドルに目の化粧を習い、総触れの列の目が全部大きくなるのは作り話。将軍は誰が広めたかを知らない"
+ ],
+ "world_terms": [
+  "アイドル",
+  "将軍",
+  "総触れ",
+  "御目見得",
+  "化粧",
+  "目",
+  "推す",
+  "ファン"
+ ],
+ "voices": {
+  "otoshiyori": 16
+ },
+ "characters": {
+  "idol": {
+   "name": "今のトップアイドル（20歳ごろ）",
+   "desc_en": "A modern Japanese top idol singer about twenty: slim, small oval face, very large bright round eyes with modern double-eyelid eye makeup and long lashes, glossy dark brown hair tied in a simple low bun, wearing a plain pale-blue cotton kimono of a lowest-rank palace maid with a plain white sash."
+  },
+  "otoshiyori": {
+   "name": "大奥の御年寄（50歳ごろ）",
+   "desc_en": "A senior lady-in-waiting of the Edo castle inner palace about fifty: stern dignified face, white-powdered skin, thin painted eyebrows, small red-painted mouth, narrow downcast eyes, hair in an elaborate traditional palace bun with tortoiseshell pins, layered dark purple and gold robe."
+  },
+  "shogun": {
+   "name": "江戸の将軍（40代）",
+   "desc_en": "A Tokugawa shogun in his forties: calm dignified face, neat chonmage topknot, formal pale grey silk kimono under a plain dark blue haori with no crest."
+  }
+ },
+ "competitor_note": "TTP：題材（その場所で1日を暮らす）｜もしも、あの日の日本に「もしも大奥で暮らしたら？ 将軍の妻の知られざる一日」（8VLNoZ1Avl0・38万回）の『朝から夜の1日』の骨格（朝の総触れ→夜の長局→ある朝の総触れ）。将軍に会えない身分の見せ方は同じチャンネルの「大奥で30年働いても、将軍に会えなかった女性」（X_7pcDF7da8）。題の型＝「もしも今の〇〇が〇〇したら。＜結果＞」（真夜中のもしも y7ELNcSonJA の、今の人が昔の暮らしに入る型）。見せ方で足した物：最後の山の1枚（n14）に、目が大きくなった前の列と、廊下で伏せたままのアイドルを同じ1枚に入れ、会えないまま顔を変えたのを絵だけで見せる",
+ "facts": [
+  "大奥は将軍家の家族の役所で、上の女中は上﨟御年寄・小上﨟・御年寄・御客会釈・中年寄・御中﨟・御小姓・御錠口、中の女中は御表使・御右筆・御切手書・御次・呉服之間・御坊主・御広座敷・御三之間、その下に御末頭・御仲居・火之番・使番・御半下などの下の女中がいた。御末頭より下は御家人・町人・名主・百姓の娘が混じっていた。出どころ：山本博文（東京大学史料編纂所教授）「華麗なる江戸城大奥の世界―仕事と生活―」東京都立中央図書館の講演資料 https://www.library.metro.tokyo.lg.jp/guide/event/uploads/ookutext.pdf （PDF の本文で確認。5・6ページ）",
+  "大奥は男子禁制で、例外は医師（立ち会いつきで診察）・9歳までの男子・留守居だった。御末は御膳所の水くみ・煮物・小料理・所々の点灯などをした（柴田宵曲『幕末の武家』の引用）。出どころ：同上の東京都立中央図書館の PDF の本文で確認（7・9ページ）。台本は「将軍のほかの男は、ほぼ入れない」",
+  "朝の総触は御小座敷で、御台様・御年寄4人・中年寄1人・御中﨟頭1人・御中﨟6、7人が出て、ほかの一般の女中は御鈴廊下に平伏して挨拶した。出どころ：同上の東京都立中央図書館の PDF の本文で確認（3ページ）。台本の「十数人」は4＋1＋1＋6〜7の数",
+  "大奥の出世は「一引き、二運、三女」といわれた（例：滝山は御錠口→御客会釈→御年寄）。出どころ：同上の東京都立中央図書館の PDF の本文で確認（10ページ）。台本は「1に引き、2に運、見た目は3番目といわれた」",
+  "将軍に直接お目通りできる身分が御目見得以上で、旗本以上の家の出を指し、許されない家（御家人など下級武士・町人・農民の娘）は御目見得以下だった。出どころ：nippon.com「大奥の謎 愛と権力に彩られた徳川250年の裏面史」 https://www.nippon.com/ja/japan-topics/c10809/ （本文で確認）",
+  "文化10年（1813年）、佐山半七丸の化粧の本『都風俗化粧伝』が出た。「顔面之部」に「その中にも色の白きを第一とす。色のしろきは七難かくすと、諺にいえり」とあり、「目の大いなるを小さく見する図」に「まぶたの上、おしろいを濃くぬるべし」「目は目八分とて、すこし下を見るこころもちにすべし」とある。出どころ：和樂web「ぱっちり二重は見苦しい！江戸の流行メイクを徹底検証してみたら？」 https://intojapanwaraku.com/rock/culture-rock/28773/ ・同「都風俗化粧伝」の紹介 https://intojapanwaraku.com/rock/culture-rock/30273/2/ （本文の原文の引用で確認。原本の版本のページ画像では確かめていない）。書誌は国立国会図書館サーチ（『女子愛敬都風俗化粧伝』、2002年の日本医史学雑誌の論文「江戸時代の化粧と医療 『容顔美艶考』と『都風俗化粧伝』分析を中心に」）",
+  "n02 の本物の画像：Wikimedia Commons「Chiyoda Ooku Hanami.jpg」（楊洲周延『千代田の大奥』花見、1894年、三枚続。パブリックドメイン・9239×4628px。台本を書く前に Commons の API で幅と許可を確かめた） https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+  "今のトップアイドルが御末として大奥に入ること、御年寄のセリフ、女中たちがアイドルに目の化粧を習うこと、総触れの列の目が全部大きくなることは作り話"
+ ],
+ "cuts": [
+  {
+   "id": "n01",
+   "hook": "アイドル\n大奥入り",
+   "narration": "アイドルが大奥の下働きなら、ぱっちり目は流行るか。",
+   "tts_text": "アイドルが、おおおくの、したばたらきなら、ぱっちり目は、はやるか。",
+   "highlight": [
+    "ぱっちり目"
+   ],
+   "image_en": "The idol stands at the entrance of a long gleaming lacquered corridor inside the Edo castle inner palace, eyes wide with wonder, while rows of court ladies in rich kimono turn to stare at her face, golden lantern light.",
+   "shots": [
+    "n01",
+    "n01@face"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "anim": "kling",
+   "image": "The idol stands at the entrance of a long gleaming lacquered corridor inside the Edo castle inner palace, eyes wide with wonder, while rows of court ladies in rich kimono turn to stare at her face, golden lantern light.",
+   "motion": true
+  },
+  {
+   "id": "n02",
+   "narration": "江戸城の大奥。将軍のほかの男は、ほぼ入れない。",
+   "tts_text": "えどじょうの、おおおく。将軍のほかの男は、ほぼ入れない。",
+   "highlight": [
+    "ほぼ入れない"
+   ],
+   "real": "https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+   "image_en": "A grand garden of the Edo castle inner palace in spring, dozens of court ladies in colorful layered kimono strolling under cherry blossoms beside a pond, no men anywhere, tall white castle walls behind.",
+   "shots": [
+    "n02",
+    "n02@right"
+   ],
+   "chars": [],
+   "real_src": {
+    "題": "File:Chiyoda Ooku Hanami.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Chiyoda_Ooku_Hanami.jpg/1920px-Chiyoda_Ooku_Hanami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "説明ページ": "https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+    "検索語": "https://commons.wikimedia.org/wiki/File:Chiyoda_Ooku_Hanami.jpg",
+    "源": "wikimedia_commons",
+    "判定": "fallback",
+    "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+   }
+  },
+  {
+   "id": "n03",
+   "narration": "役の上下は細かく、アイドルはいちばん下の御末。",
+   "tts_text": "役の上下は細かく、アイドルは、いちばん下の、おすえ。",
+   "highlight": [
+    "いちばん下"
+   ],
+   "image_en": "Before dawn in a back kitchen yard of the inner palace, the idol carries two heavy wooden water buckets on a shoulder pole, breath steaming, beside other plain-dressed maids washing pots by a well.",
+   "shots": [
+    "n03",
+    "n03@face"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "Before dawn in a back kitchen yard of the inner palace, the idol carries two heavy wooden water buckets on a shoulder pole, breath steaming, beside other plain-dressed maids washing pots by a well."
+  },
+  {
+   "id": "n04",
+   "narration": "何万人のファンも、ここでは数に入らない。",
+   "tts_text": "なんまんにんのファンも、ここでは、かずに入らない。",
+   "highlight": [
+    "数に入らない"
+   ],
+   "image_en": "The idol kneels alone on the wooden floor of a dim servants' room, lighting a small paper lantern with a taper, a lonely tired face, a single beam of evening light through a lattice window.",
+   "shots": [
+    "n04",
+    "n04@close"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "The idol kneels alone on the wooden floor of a dim servants' room, lighting a small paper lantern with a taper, a lonely tired face, a single beam of evening light through a lattice window."
+  },
+  {
+   "id": "n05",
+   "narration": "出世は1に引き、2に運、見た目は3番目といわれた。",
+   "tts_text": "しゅっせは、いちに、ひき、にに、うん、見た目は、さんばんめといわれた。",
+   "highlight": [
+    "見た目は3番目"
+   ],
+   "image_en": "In a quiet tatami office room of the inner palace, the senior lady sits motionless behind a tobacco tray while a line of kneeling maids bow low before her one by one, the idol kneeling at the very end of the line.",
+   "shots": [
+    "n05",
+    "n05@left"
+   ],
+   "chars": [
+    "otoshiyori",
+    "idol"
+   ],
+   "image": "In a quiet tatami office room of the inner palace, the senior lady sits motionless behind a tobacco tray while a line of kneeling maids bow low before her one by one, the idol kneeling at the very end of the line."
+  },
+  {
+   "id": "n06",
+   "narration": "見た目も、1813年の化粧の本では色白が第一。",
+   "tts_text": "見た目も、せんはっぴゃくじゅうさんねんの、けしょうの本では、いろじろが、だいいち。",
+   "highlight": [
+    "色白が第一"
+   ],
+   "image_en": "Close view of an Edo-period court lady's hands patting thick white face powder onto her cheek with a soft brush in front of a round bronze hand mirror, a lacquered makeup box open beside her, lantern light.",
+   "shots": [
+    "n06",
+    "n06@close"
+   ],
+   "chars": [],
+   "image": "Close view of an Edo-period court lady's hands patting thick white face powder onto her cheek with a soft brush in front of a round bronze hand mirror, a lacquered makeup box open beside her, lantern light."
+  },
+  {
+   "id": "n07",
+   "narration": "大きい目は、小さく見せる化粧まで載っていた。",
+   "highlight": [
+    "小さく見せる"
+   ],
+   "image_en": "An Edo-period lady with white-powdered skin brushes extra white powder onto her upper eyelids and lowers her gaze toward the floor so her eyes look narrow and modest, a bronze mirror in front of her, soft warm light.",
+   "shots": [
+    "n07",
+    "n07@face"
+   ],
+   "chars": [],
+   "image": "An Edo-period lady with white-powdered skin brushes extra white powder onto her upper eyelids and lowers her gaze toward the floor so her eyes look narrow and modest, a bronze mirror in front of her, soft warm light."
+  },
+  {
+   "id": "n08",
+   "narration": "その目は、大きすぎます。",
+   "voice": "otoshiyori",
+   "image_en": "The senior lady leans down and frowns coldly at the idol's large bright eyes, tapping a folded fan against her own palm, while the idol kneels below with a shocked, hurt face.",
+   "shots": [
+    "n08",
+    "n08@face"
+   ],
+   "chars": [
+    "otoshiyori",
+    "idol"
+   ],
+   "image": "The senior lady leans down and frowns coldly at the idol's large bright eyes, tapping a folded fan against her own palm, while the idol kneels below with a shocked, hurt face."
+  },
+  {
+   "id": "n09",
+   "narration": "将軍に会える御目見得は、旗本より上の家の娘。",
+   "tts_text": "将軍に会える、おめみえは、はたもとより上の家の娘。",
+   "highlight": [
+    "旗本より上"
+   ],
+   "image_en": "Elegant young ladies in rich silk kimono of samurai families walk proudly along an inner palace corridor toward a gilded sliding door, while plain-dressed maids, the idol among them, step aside and lower their heads by the wall.",
+   "shots": [
+    "n09",
+    "n09@left"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "Elegant young ladies in rich silk kimono of samurai families walk proudly along an inner palace corridor toward a gilded sliding door, while plain-dressed maids, the idol among them, step aside and lower their heads by the wall."
+  },
+  {
+   "id": "n10",
+   "narration": "朝の総触れも、御末は廊下で顔を伏せたまま。",
+   "tts_text": "あさの、そうぶれも、おすえは、ろうかで、顔をふせたまま。",
+   "highlight": [
+    "顔を伏せたまま"
+   ],
+   "image_en": "Morning in a long dim palace corridor: rows of maids bow with foreheads pressed to the polished floor, the idol among them in the front of the frame with her face hidden against the floor, while far away at the bright end of the corridor the shogun's silhouette passes.",
+   "shots": [
+    "n10",
+    "n10@close"
+   ],
+   "chars": [
+    "idol",
+    "shogun"
+   ],
+   "image": "Morning in a long dim palace corridor: rows of maids bow with foreheads pressed to the polished floor, the idol among them in the front of the frame with her face hidden against the floor, while far away at the bright end of the corridor the shogun's silhouette passes."
+  },
+  {
+   "id": "n11",
+   "narration": "でも夜の長局で、女中たちが目の化粧を習いに来た。",
+   "tts_text": "でも、よるの、ながつぼねで、じょちゅうたちが、目のけしょうを、ならいに来た。",
+   "highlight": [
+    "目の化粧"
+   ],
+   "image_en": "At night in a small lantern-lit room of the maids' quarters, the idol smiles and gently brushes dark lines along the eyelid of a young maid holding a bronze hand mirror, three more maids crowding in eagerly to watch.",
+   "shots": [
+    "n11",
+    "n11@face"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "At night in a small lantern-lit room of the maids' quarters, the idol smiles and gently brushes dark lines along the eyelid of a young maid holding a bronze hand mirror, three more maids crowding in eagerly to watch."
+  },
+  {
+   "id": "n12",
+   "narration": "1人、また1人。推す人が、下から増えていく。",
+   "tts_text": "ひとり、また、ひとり。おす人が、下から、ふえていく。",
+   "highlight": [
+    "推す人"
+   ],
+   "image_en": "A long line of maids in plain and then richer kimono stretches down a night corridor of the maids' quarters toward the idol's small lit doorway, each holding a bronze hand mirror, excited faces glowing in lantern light.",
+   "shots": [
+    "n12",
+    "n12@right"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "A long line of maids in plain and then richer kimono stretches down a night corridor of the maids' quarters toward the idol's small lit doorway, each holding a bronze hand mirror, excited faces glowing in lantern light."
+  },
+  {
+   "id": "n13",
+   "narration": "ある朝の総触れ。将軍の前の目が、全部大きい。",
+   "tts_text": "ある朝の、そうぶれ。将軍の前の目が、ぜんぶ大きい。",
+   "highlight": [
+    "全部大きい"
+   ],
+   "peak": true,
+   "anim": "kling",
+   "image_en": "In a gilded audience room of the inner palace at morning, the shogun stops short with his eyes wide in astonishment: the row of high-ranking ladies kneeling before him, the senior lady among them, all lift their faces showing big bright round eyes with dark idol-style eyeliner; far behind them in the open corridor, the idol still bows with her face to the floor, unseen.",
+   "shots": [
+    "n13",
+    "n13@face"
+   ],
+   "chars": [
+    "shogun",
+    "otoshiyori",
+    "idol"
+   ],
+   "image": "In a gilded audience room of the inner palace at morning, the shogun stops short with his eyes wide in astonishment: the row of high-ranking ladies kneeling before him, the senior lady among them, all lift their faces showing big bright round eyes with dark idol-style eyeliner; far behind them in the open corridor, the idol still bows with her face to the floor, unseen.",
+   "motion": true
+  },
+  {
+   "id": "n14",
+   "narration": "将軍に会わないまま、大奥の顔を変えた。",
+   "tts_text": "将軍に会わないまま、おおおくの顔を変えた。",
+   "highlight": [
+    "会わないまま"
+   ],
+   "image_en": "The idol, still kneeling in the plain corridor, raises her head slightly and smiles to herself, while through the half-open gilded door ahead, rows of ladies with big bright eyes are reflected in the polished floor.",
+   "shots": [
+    "n14",
+    "n14@close"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "The idol, still kneeling in the plain corridor, raises her head slightly and smiles to herself, while through the half-open gilded door ahead, rows of ladies with big bright eyes are reflected in the polished floor."
+  },
+  {
+   "id": "n15",
+   "narration": "あなたなら、どこで歴史を変える？コメントで教えて。",
+   "image_en": "At sunset on a veranda of the inner palace, the idol and a group of young maids sit side by side holding bronze hand mirrors and laughing together, big bright eyes, warm orange sky over the castle roofs.",
+   "shots": [
+    "n15",
+    "n15@close"
+   ],
+   "chars": [
+    "idol"
+   ],
+   "image": "At sunset on a veranda of the inner palace, the idol and a group of young maids sit side by side holding bronze hand mirrors and laughing together, big bright eyes, warm orange sky over the castle roofs."
+  }
+ ],
+ "bgm": null,
+ "characters_dir": "../../characters",
+ "tempo": 1.35,
+ "voicevox": {
+  "speaker": 13,
+  "name": "青山龍星（ノーマル）",
+  "credit": "VOICEVOX:青山龍星"
+ },
+ "style_en": "Japanese historical gekiga manga illustration: bold confident ink outlines, heavy dramatic shadows, rich warm colors of paper lanterns and sunset, painted backgrounds of feudal Japan, intense exaggerated facial expressions. Hand-drawn look, never glossy or 3D. Original style that does not resemble any famous anime, manga or video game."
+}
