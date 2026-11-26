@@ -238,5 +238,17 @@
   "源": "openverse",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S149_家の中でほこりをためると",
+  "カット": "C15",
+  "題": "File:Sarugatsuji of Kyoto Imperial Palace.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Sarugatsuji_of_Kyoto_Imperial_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Sarugatsuji_of_Kyoto_Imperial_Palace.jpg",
+  "検索語": "Sarugatsuji Kyoto Imperial Palace",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
