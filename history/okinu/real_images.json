@@ -190,5 +190,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S145_神棚の造花の榊",
+  "カット": "C06",
+  "題": "File:Cleyera japonica SZ81.png",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Cleyera_japonica_SZ81.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Cleyera_japonica_SZ81.png",
+  "検索語": "Cleyera japonica",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
