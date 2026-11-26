@@ -226,5 +226,17 @@
   "源": "openverse",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S148_ひびの入った仏壇のおりん",
+  "カット": "C06",
+  "題": "Tibetan Singing Bowl",
+  "url": "https://live.staticflickr.com/3006/2973062190_60332e87be_b.jpg",
+  "説明ページ": "https://www.flickr.com/photos/25678284@N03/2973062190",
+  "検索語": "Buddhist singing bowl rin Japan",
+  "源": "openverse",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
