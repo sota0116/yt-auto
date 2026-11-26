@@ -1073,6 +1073,19 @@
    ],
    "取った日": "2026-11-22",
    "再生（公開ページ）": 39
+  },
+  "d7": {
+   "views": 40,
+   "averageViewPercentage": 34.8,
+   "averageViewDuration": 264,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "26%あたりで急に落ちる（8%）→ その章を後ろに回し、クイズか山場を手前に置く",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-26",
+   "再生（公開ページ）": 42
   }
  },
  "S126_小銭入れの向き": {
@@ -1086,6 +1099,15 @@
    "直す所": [],
    "取った日": "2026-11-22",
    "再生（公開ページ）": 23
+  },
+  "d7": {
+   "views": 12,
+   "averageViewPercentage": 90.6,
+   "averageViewDuration": 33,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-26",
+   "再生（公開ページ）": 29
   }
  },
  "S127_銀行の封筒": {
@@ -1147,11 +1169,32 @@
  },
  "S130_上の階を人が歩く神棚": {
   "type": null,
-  "video_id": "TotRwD_CiyQ"
+  "video_id": "TotRwD_CiyQ",
+  "h72": {
+   "views": 250,
+   "averageViewPercentage": 150.73,
+   "averageViewDuration": 55,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-26",
+   "再生（公開ページ）": 1616
+  }
  },
  "108_神棚（神棚が無い家も）": {
   "type": null,
-  "video_id": "jgp9L-lQPe8"
+  "video_id": "jgp9L-lQPe8",
+  "h72": {
+   "views": 24,
+   "averageViewPercentage": 24.59,
+   "averageViewDuration": 246,
+   "subscribersGained": 0,
+   "直す所": [
+    "52%あたりで急に落ちる（24%）→ その章を後ろに回し、クイズか山場を手前に置く",
+    "最後の2割で多く離脱 → 締めを短くする（振り返りを1文に）"
+   ],
+   "取った日": "2026-11-26",
+   "再生（公開ページ）": 96
+  }
  },
  "S131_神棚をこう置くとお金が逃": {
   "type": null,
@@ -1164,5 +1207,13 @@
  "109_お金が逃げる家に出るしる": {
   "type": null,
   "video_id": "HYtl-w6f2Ag"
+ },
+ "S133_神社にお参りする時お金が": {
+  "type": null,
+  "video_id": "MRlmJQMlv68"
+ },
+ "S138_神棚の無い家でお祀りする": {
+  "type": null,
+  "video_id": "J2P-pk3mxSI"
  }
 }

@@ -18,7 +18,7 @@
   "seconds": 38,
   "title_now": "【60代】財布の底に、使えない10円玉がある人へ",
   "synthetic_on": null,
-  "views_now": 1186,
+  "views_now": 1187,
   "published": true,
   "published_at": "2026-11-01T19:00:00+09:00",
   "comment_id": "Ugy0EVapQkJuL77B9aR4AaABAg",
@@ -43,7 +43,7 @@
   "seconds": 40,
   "title_now": "【60代】通帳を財布に入れて持ち歩く人へ",
   "synthetic_on": null,
-  "views_now": 1488,
+  "views_now": 1490,
   "published": true,
   "published_at": "2026-11-02T19:00:13+09:00",
   "comment_id": "Ugzys4XNIRHYA2j-4HJ4AaABAg",
@@ -279,7 +279,7 @@
   "seconds": 39,
   "title_now": "【60代】財布に「新札」絶対ため込まないで",
   "synthetic_on": null,
-  "views_now": 771,
+  "views_now": 773,
   "published": true,
   "published_at": "2026-11-09T19:00:03+09:00",
   "comment_id": "Ugwewxrt_y-FFmZgLcd4AaABAg",
@@ -433,7 +433,7 @@
   "seconds": 822,
   "title_now": "【要注意】クローゼットにコレを押しこむ人はお金が残らない。NG5選【金運】",
   "synthetic_on": null,
-  "views_now": 21,
+  "views_now": 22,
   "published": true,
   "published_at": "2026-11-12T18:00:25+09:00",
   "comment_id": "Ugz_8Vc2SwMe6_b_6jN4AaABAg",
@@ -562,7 +562,7 @@
   "seconds": 38,
   "title_now": "【60代】お菓子の缶の小銭、使い道を決めずにためないで",
   "synthetic_on": null,
-  "views_now": 8,
+  "views_now": 10,
   "published": true,
   "published_at": "2026-11-17T12:00:01+09:00",
   "comment_id": "UgwIRdJUtzCFkX-aoFN4AaABAg",
@@ -666,7 +666,7 @@
   "seconds": 834,
   "title_now": "【60代】浴室の〇〇を流さずに上がる人は残らない！お風呂のくせワースト5【金運】",
   "synthetic_on": null,
-  "views_now": 46,
+  "views_now": 49,
   "published": true,
   "published_at": "2026-11-21T18:00:10+09:00",
   "comment_id": "UgwsP2grYi4LpVf4uFh4AaABAg",
@@ -716,7 +716,7 @@
   "seconds": 44,
   "title_now": "【60代】神棚の置き場所で貧乏になる家の特徴3選、1位は",
   "synthetic_on": null,
-  "views_now": 1288,
+  "views_now": 1330,
   "published": true,
   "published_at": "2026-11-22T19:00:14+09:00"
  },
@@ -739,7 +739,7 @@
   "seconds": 37,
   "title_now": "【60代】2階の真下に神棚を置いてる人、天井を見て",
   "synthetic_on": null,
-  "views_now": 1592,
+  "views_now": 1616,
   "published": true,
   "published_at": "2026-11-23T12:00:28+09:00"
  },
@@ -762,7 +762,7 @@
   "seconds": 44,
   "title_now": "【60代】神棚の向きと高さでお金が逃げる置き方3選",
   "synthetic_on": null,
-  "views_now": 963,
+  "views_now": 1003,
   "published": true,
   "published_at": "2026-11-24T19:00:01+09:00"
  },
@@ -785,7 +785,7 @@
   "seconds": 46,
   "title_now": "【60代】神棚はきれいでも真下にあるとお金が逃げる物3選",
   "synthetic_on": null,
-  "views_now": 89,
+  "views_now": 229,
   "published": true,
   "published_at": "2026-11-25T12:00:15+09:00"
  },
@@ -803,12 +803,14 @@
    "【60代】神社にお参りする時お金が逃げる服装3選"
   ],
   "comment": "あなたのお参りの服は、いくつ当たりましたか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-26T10:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 45,
   "title_now": "【60代】神社にお参りする時お金が逃げる服装3選",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 0,
+  "published": true,
+  "published_at": "2026-11-26T19:00:13+09:00"
  },
  {
   "work": "S134_神社でやるとお金が逃げる",
@@ -854,7 +856,7 @@
   "seconds": 1003,
   "title_now": "【60代】御札を●●にしまっていませんか？神棚が無い家のNG5選【金運】",
   "synthetic_on": null,
-  "views_now": 79,
+  "views_now": 96,
   "published": true,
   "published_at": "2026-11-23T18:00:27+09:00"
  },
@@ -902,7 +904,7 @@
   "seconds": 961,
   "title_now": "【60代】●●が曇ったままの家は要注意！お金が残る家に無い5つのしるし【金運】",
   "synthetic_on": null,
-  "views_now": 1,
+  "views_now": 57,
   "published": true,
   "published_at": "2026-11-25T18:00:19+09:00"
  },
@@ -962,12 +964,14 @@
    "【60代】神棚の無い家でお札を置くとお金が逃げる場所3選"
   ],
   "comment": "あなたの家には、いくつ見つかりましたか。",
-  "privacy_now": "private",
-  "publish_at": "2026-11-25T22:00:00Z",
+  "privacy_now": "public",
+  "publish_at": null,
   "seconds": 46,
   "title_now": "【60代】神棚の無い家でお札を置くとお金が逃げる場所3選",
   "synthetic_on": null,
-  "views_now": 0
+  "views_now": 214,
+  "published": true,
+  "published_at": "2026-11-26T07:00:22+09:00"
  },
  {
   "work": "S139_神社とお寺を回るとお金が",
@@ -984,7 +988,7 @@
   ],
   "comment": "あなたの寺社めぐりには、いくつありましたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-27T07:00:00+09:00",
+  "publish_at": "2026-11-26T22:00:00Z",
   "seconds": 47,
   "title_now": "【60代】お寺と神社めぐりで貧乏になる人の回り方3選",
   "synthetic_on": null,
@@ -1005,7 +1009,7 @@
   ],
   "comment": "あなたの家では、いくつ眠っていましたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-28T07:00:00+09:00",
+  "publish_at": "2026-11-27T22:00:00Z",
   "seconds": 44,
   "title_now": "【60代】捨てられない壊れた物で貧乏になる家の特徴3選",
   "synthetic_on": null,
@@ -1026,7 +1030,7 @@
   ],
   "comment": "あなたの玄関の盛り塩は、いくつ替えどきでしたか。",
   "privacy_now": "private",
-  "publish_at": "2026-11-28T12:00:00+09:00",
+  "publish_at": "2026-11-28T03:00:00Z",
   "seconds": 46,
   "title_now": "【60代】玄関に盛り塩してもお金が残らない人の置き方3選",
   "synthetic_on": null,
@@ -1045,7 +1049,13 @@
   "titles": [
    "【60代】毎日持ち歩くとお金が逃げるかばんの小物3選"
   ],
-  "comment": "あなたのかばんには、いくつ入っていましたか。"
+  "comment": "あなたのかばんには、いくつ入っていましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-28T22:00:00Z",
+  "seconds": 45,
+  "title_now": "【60代】毎日持ち歩くとお金が逃げるかばんの小物3選",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S143_鍵の束に付けておくとお金",
@@ -1056,12 +1066,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-26T04:15:00+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】鍵の束に付けてはいけない物3選"
   ],
-  "comment": "あなたの鍵の束には、いくつ付いていましたか。"
+  "comment": "あなたの鍵の束には、いくつ付いていましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-30T07:00:00+09:00",
+  "seconds": 45,
+  "title_now": "【60代】鍵の束に付けてはいけない物3選",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S144_神社の帰りにやるとお金が",
@@ -1072,12 +1087,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-26T08:19:44+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】お参りした日の帰り道、お金を逃がす人の特徴3選"
   ],
-  "comment": "あなたのお参りの帰り道、いくつ思い当たりますか。"
+  "comment": "あなたのお参りの帰り道、いくつ思い当たりますか。",
+  "privacy_now": "private",
+  "publish_at": "2026-11-30T12:00:00+09:00",
+  "seconds": 50,
+  "title_now": "【60代】お参りした日の帰り道、お金を逃がす人の特徴3選",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S145_神棚の造花の榊",
@@ -1088,12 +1108,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-26T10:42:42+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】神棚の榊は造花でもいい？お金が残る家の答え"
   ],
-  "comment": "あなたの神棚の榊には、ほこりがたまっていませんか。"
+  "comment": "あなたの神棚の榊には、ほこりがたまっていませんか。",
+  "privacy_now": "private",
+  "publish_at": "2026-12-01T07:00:00+09:00",
+  "seconds": 40,
+  "title_now": "【60代】神棚の榊は造花でもいい？お金が残る家の答え",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S146_神社でお賽銭をこう入れる",
@@ -1104,12 +1129,17 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-26T14:51:54+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】お金が残らない人がやるお賽銭の入れ方3選"
   ],
-  "comment": "あなたのお賽銭、いくつ見直しますか。"
+  "comment": "あなたのお賽銭、いくつ見直しますか。",
+  "privacy_now": "private",
+  "publish_at": "2026-12-01T12:00:00+09:00",
+  "seconds": 46,
+  "title_now": "【60代】お金が残らない人がやるお賽銭の入れ方3選",
+  "synthetic_on": null,
+  "views_now": 0
  },
  {
   "work": "S147_神棚を掃除する時お金が逃",
@@ -1120,11 +1150,16 @@
   "video": "short.mp4",
   "privacy": "private",
   "uploaded_at": "2026-11-26T16:44:01+09:00",
-  "missing": false,
   "type": null,
   "titles": [
    "【60代】年末の神棚掃除でやりがちなNG3選、1位は"
   ],
-  "comment": "あなたの年末の神棚掃除、いくつやっていましたか。"
+  "comment": "あなたの年末の神棚掃除、いくつやっていましたか。",
+  "privacy_now": "private",
+  "publish_at": "2026-12-02T07:00:00+09:00",
+  "seconds": 51,
+  "title_now": "【60代】年末の神棚掃除でやりがちなNG3選、1位は",
+  "synthetic_on": null,
+  "views_now": 0
  }
 ]
