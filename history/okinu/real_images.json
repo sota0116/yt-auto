@@ -214,5 +214,17 @@
   "源": "japan_search",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S147_神棚を掃除する時お金が逃",
+  "カット": "C05",
+  "題": "My Household Shrine",
+  "url": "https://live.staticflickr.com/9/12901645_c3e71c4a6f_b.jpg",
+  "説明ページ": "https://www.flickr.com/photos/64015205@N00/12901645",
+  "検索語": "kamidana household shrine",
+  "源": "openverse",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
