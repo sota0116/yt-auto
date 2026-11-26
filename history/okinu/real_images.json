@@ -202,5 +202,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-26",
+  "回": "S146_神社でお賽銭をこう入れる",
+  "カット": "C05",
+  "題": "地蔵信仰が育んだ日本最大の大山牛馬市　ストーリー動画",
+  "url": "https://cb-contents.s3.ap-northeast-1.amazonaws.com/contents/76972fab-df47-4e51-81d3-21384a6295e0/76972fab-df47-4e51-81d3-21384a6295e0_thumbnail.jpg",
+  "説明ページ": "https://cb.bunka.go.jp/ja/contents/1cc1d540-f522-4420-b4f6-a72c6dd1b530",
+  "検索語": "saisen-bako offering box shrine",
+  "源": "japan_search",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
