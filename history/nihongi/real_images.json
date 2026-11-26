@@ -949,5 +949,53 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S151_r034",
+  "カット": "n03",
+  "題": "File:松平定信像.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/%E6%9D%BE%E5%B9%B3%E5%AE%9A%E4%BF%A1%E5%83%8F.jpg/1920px-%E6%9D%BE%E5%B9%B3%E5%AE%9A%E4%BF%A1%E5%83%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:%E6%9D%BE%E5%B9%B3%E5%AE%9A%E4%BF%A1%E5%83%8F.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:松平定信像.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S151_r034",
+  "カット": "n08",
+  "題": "https://dl.ndl.go.jp/api/iiif/1170458/R0000027/full/1600,/0/default.jpg",
+  "url": "https://dl.ndl.go.jp/api/iiif/1170458/R0000027/full/1600,/0/default.jpg",
+  "説明ページ": "https://dl.ndl.go.jp/api/iiif/1170458/R0000027/full/1600,/0/default.jpg",
+  "検索語": "https://dl.ndl.go.jp/api/iiif/1170458/R0000027/full/1600,/0/default.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S152_r036",
+  "カット": "n12",
+  "題": "File:Map of Karafuto and the Amur estuary by Mamiya Rinzo (1810)／間宮林蔵『黒竜江中州并天度』（文化7年）.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Map_of_Karafuto_and_the_Amur_estuary_by_Mamiya_Rinzo_%281810%29%EF%BC%8F%E9%96%93%E5%AE%AE%E6%9E%97%E8%94%B5%E3%80%8E%E9%BB%92%E7%AB%9C%E6%B1%9F%E4%B8%AD%E5%B7%9E%E5%B9%B6%E5%A4%A9%E5%BA%A6%E3%80%8F%EF%BC%88%E6%96%87%E5%8C%967%E5%B9%B4%EF%BC%89.jpg/1920px-Map_of_Karafuto_and_the_Amur_estuary_by_Mamiya_Rinzo_%281810%29%EF%BC%8F%E9%96%93%E5%AE%AE%E6%9E%97%E8%94%B5%E3%80%8E%E9%BB%92%E7%AB%9C%E6%B1%9F%E4%B8%AD%E5%B7%9E%E5%B9%B6%E5%A4%A9%E5%BA%A6%E3%80%8F%EF%BC%88%E6%96%87%E5%8C%967%E5%B9%B4%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Map_of_Karafuto_and_the_Amur_estuary_by_Mamiya_Rinzo_(1810)%EF%BC%8F%E9%96%93%E5%AE%AE%E6%9E%97%E8%94%B5%E3%80%8E%E9%BB%92%E7%AB%9C%E6%B1%9F%E4%B8%AD%E5%B7%9E%E5%B9%B6%E5%A4%A9%E5%BA%A6%E3%80%8F%EF%BC%88%E6%96%87%E5%8C%967%E5%B9%B4%EF%BC%89.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Map_of_Karafuto_and_the_Amur_estuary_by_Mamiya_Rinzo_(1810)%EF%BC%8F%E9%96%93%E5%AE%AE%E6%9E%97%E8%94%B5%E3%80%8E%E9%BB%92%E7%AB%9C%E6%B1%9F%E4%B8%AD%E5%B7%9E%E5%B9%B6%E5%A4%A9%E5%BA%A6%E3%80%8F%EF%BC%88%E6%96%87%E5%8C%967%E5%B9%B4%EF%BC%89.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S153_r035",
+  "カット": "n04",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kawahara_Nagasaki.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kawahara_Nagasaki.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kawahara_Nagasaki.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kawahara_Nagasaki.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
