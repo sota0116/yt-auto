@@ -1045,5 +1045,17 @@
   "源": "url",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-28",
+  "回": "S156_r049",
+  "カット": "n04",
+  "題": "File:Nansō Satomi Hakkenden - Rampaging cattle.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Nans%C5%8D_Satomi_Hakkenden_-_Rampaging_cattle.jpg/1920px-Nans%C5%8D_Satomi_Hakkenden_-_Rampaging_cattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Nans%C5%8D_Satomi_Hakkenden_-_Rampaging_cattle.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Nans%C5%8D_Satomi_Hakkenden_-_Rampaging_cattle.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
