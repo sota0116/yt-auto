@@ -1123,6 +1123,17 @@
    ],
    "取った日": "2026-11-23",
    "再生（公開ページ）": 78
+  },
+  "d7": {
+   "views": 78,
+   "averageViewPercentage": 81.38,
+   "averageViewDuration": 30,
+   "subscribersGained": 0,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）"
+   ],
+   "取った日": "2026-11-27",
+   "再生（公開ページ）": 83
   }
  },
  "107_お風呂": {
@@ -1198,7 +1209,18 @@
  },
  "S131_神棚をこう置くとお金が逃": {
   "type": null,
-  "video_id": "1mVPiPEIolI"
+  "video_id": "1mVPiPEIolI",
+  "h72": {
+   "views": 410,
+   "averageViewPercentage": 81.83,
+   "averageViewDuration": 36,
+   "subscribersGained": 1,
+   "直す所": [
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-27",
+   "再生（公開ページ）": 1044
+  }
  },
  "S132_神棚の下に置くとお金が逃": {
   "type": null,
@@ -1215,5 +1237,13 @@
  "S138_神棚の無い家でお祀りする": {
   "type": null,
   "video_id": "J2P-pk3mxSI"
+ },
+ "S134_神社でやるとお金が逃げる": {
+  "type": null,
+  "video_id": "IJ1q_2yo92w"
+ },
+ "S139_神社とお寺を回るとお金が": {
+  "type": null,
+  "video_id": "rgvN_sXi3-E"
  }
 }
