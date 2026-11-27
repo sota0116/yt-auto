@@ -1,1 +1,21 @@
-{}
+{
+ "work": "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/L111_w005",
+ "done": [
+  "pick",
+  "write",
+  "gate_script",
+  "voice",
+  "images",
+  "motion",
+  "gate_images",
+  "build"
+ ],
+ "started": "2026-11-28T01:01:37+09:00",
+ "tries": 0,
+ "code": "7eb4737e6c0f",
+ "stage": "gate_video",
+ "updated": "2026-11-28T04:01:06+09:00",
+ "video_swapped": {
+  "A01": "A02"
+ }
+}

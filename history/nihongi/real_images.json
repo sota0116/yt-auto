@@ -1009,5 +1009,41 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-28",
+  "回": "S155_r045",
+  "カット": "n05",
+  "題": "File:Utagawa Hiroshige I, published by Tsutaya Kichizō (Kōeidō) - Riverbank at Sukiya in Edo (Tōto Sukiya-gashi), from the series Thirty-six Views of Mount Fuji (Fuji... - Google Art Project.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Utagawa_Hiroshige_I%2C_published_by_Tsutaya_Kichiz%C5%8D_%28K%C5%8Deid%C5%8D%29_-_Riverbank_at_Sukiya_in_Edo_%28T%C5%8Dto_Sukiya-gashi%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fuji..._-_Google_Art_Project.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_I,_published_by_Tsutaya_Kichiz%C5%8D_(K%C5%8Deid%C5%8D)_-_Riverbank_at_Sukiya_in_Edo_(T%C5%8Dto_Sukiya-gashi),_from_the_series_Thirty-six_Views_of_Mount_Fuji_(Fuji..._-_Google_Art_Project.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_I,_published_by_Tsutaya_Kichiz%C5%8D_(K%C5%8Deid%C5%8D)_-_Riverbank_at_Sukiya_in_Edo_(T%C5%8Dto_Sukiya-gashi),_from_the_series_Thirty-six_Views_of_Mount_Fuji_(Fuji..._-_Google_Art_Project.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-28",
+  "回": "L111_w005",
+  "カット": "B02",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/3/33/Takeda_Harunobu.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Takeda_Harunobu.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/3/33/Takeda_Harunobu.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/3/33/Takeda_Harunobu.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-28",
+  "回": "L111_w005",
+  "カット": "B04",
+  "題": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hamamatsu_Castle%2C_enkei-2.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hamamatsu_Castle%2C_enkei-2.jpg",
+  "説明ページ": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hamamatsu_Castle%2C_enkei-2.jpg",
+  "検索語": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hamamatsu_Castle%2C_enkei-2.jpg",
+  "源": "url",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
