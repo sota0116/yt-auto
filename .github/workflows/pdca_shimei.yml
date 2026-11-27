@@ -1,0 +1,76 @@
+# 指名手配ボード（shimei）の PDCA の数字を毎日取る（2026-11-27 本人が B 案＝クラウドで集める を選んだ）
+# ・手元に shimei のトークンが無いので、手元の毎日のタスク（stats_pdca_v2.py collect）の代わりにここで取る
+# ・使う鍵は YouTube の YT_TOKEN_SHIMEI だけ。アナリティクスと Reporting API を読むだけで、動画は触らない
+# ・stats_pdca_v2.py は channels/shimei/pdca/ に書くが、channels/shimei/ は .gitignore で外れている。
+#   そのため前回までの数字を history/shimei/pdca/ から戻して取り、取った後に history/shimei/pdca/ へ写して commit する
+# ・手元で読む時：git fetch のあと git show origin/main:history/shimei/pdca/metrics_v1.json
+name: pdca_shimei
+on:
+  schedule:
+    - cron: "37 0 * * *"   # 09:37 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pdca_shimei
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 前回までの数字を戻す
+        run: |
+          mkdir -p channels/shimei/pdca
+          if [ -d history/shimei/pdca ]; then cp -r history/shimei/pdca/. channels/shimei/pdca/; fi
+      - name: YouTube の鍵を置く（中身は画面に出さない）
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN_SHIMEI: ${{ secrets.YT_TOKEN_SHIMEI }}
+        run: |
+          YT_SECRETS_DIR="$RUNNER_TEMP/secrets" && echo "YT_SECRETS_DIR=$YT_SECRETS_DIR" >> "$GITHUB_ENV"
+          mkdir -p "$YT_SECRETS_DIR" && chmod 700 "$YT_SECRETS_DIR"
+          printf '%s' "$YT_CLIENT_SECRET" > "$YT_SECRETS_DIR/client_secret.json"
+          printf '%s' "$YT_TOKEN_SHIMEI" > "$YT_SECRETS_DIR/token_shimei.json"
+          chmod 600 "$YT_SECRETS_DIR"/*
+      - name: 表示回数の日報の予約が無ければ入れる（reach。予約名 shimei_reach_basic。あれば何もしない）
+        working-directory: pipeline
+        run: |
+          python -X utf8 - <<'EOF' || true
+          import json
+          from upload_job import api
+          R = "https://youtubereporting.googleapis.com/v1"
+          jobs = json.load(api("shimei", "GET", R + "/jobs", timeout=60)).get("jobs", [])
+          if any(j.get("reportTypeId") == "channel_reach_basic_a1" for j in jobs):
+              print("reach の予約はある")
+          else:
+              r = json.load(api("shimei", "POST", R + "/jobs", body={"reportTypeId": "channel_reach_basic_a1", "name": "shimei_reach_basic"}, timeout=60))
+              print("reach を予約した", r.get("id"))
+          EOF
+      - name: 数字を取る（48時間・7日の区切り。pipeline/pdca/stats_pdca_v2.py）
+        run: python -X utf8 pipeline/pdca/stats_pdca_v2.py collect --ch shimei
+      - name: YouTube の鍵を消す
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/secrets"
+      - name: 記録を history/shimei/pdca に写して commit する（ぶつかったら最新を取り込んで5回まで）
+        if: always()
+        run: |
+          mkdir -p history/shimei/pdca
+          if [ -f channels/shimei/pdca/metrics_v1.json ]; then cp channels/shimei/pdca/metrics_v1.json history/shimei/pdca/; fi
+          if [ -d channels/shimei/pdca/reach_raw ]; then cp -r channels/shimei/pdca/reach_raw history/shimei/pdca/; fi
+          git config user.name "yt-auto"
+          git config user.email "yt-auto@users.noreply.github.com"
+          git add history/shimei/pdca
+          git diff --cached --quiet && exit 0
+          git commit -qm "PDCA の数字：shimei $(date +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash -X theirs && git push -q && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*10)); done
+          exit 1
