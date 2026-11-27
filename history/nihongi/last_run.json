@@ -1,23 +1,18 @@
 {
  "ch": "nihongi",
- "started": "2026-11-27T00:14:31+09:00",
+ "started": "2026-11-27T10:02:38+09:00",
  "made": [
-  "S151_r034",
-  "S152_r036",
-  "S153_r035"
+  "S154_r047"
  ],
  "stopped": null,
  "在庫": {
-  "short": 9,
+  "short": 11,
   "long": 2
  },
  "作る本数": {
-  "short": 3,
+  "short": 1,
   "long": 0
  },
- "飛ばした回": [
-  "/home/runner/work/yt-auto/yt-auto/channels/nihongi/videos/S150_n028"
- ],
- "ended": "2026-11-27T03:01:58+09:00",
+ "ended": "2026-11-27T11:26:13+09:00",
  "今月の制作費_円": 0.0
 }

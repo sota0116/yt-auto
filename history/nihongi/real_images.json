@@ -997,5 +997,17 @@
   "源": "url",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-27",
+  "回": "S154_r047",
+  "カット": "n08",
+  "題": "File:Uesugi Hakushakutei and moat of Yonezawa Castle.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Uesugi_Hakushakutei_and_moat_of_Yonezawa_Castle.jpg/1920px-Uesugi_Hakushakutei_and_moat_of_Yonezawa_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Uesugi_Hakushakutei_and_moat_of_Yonezawa_Castle.jpg",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Uesugi_Hakushakutei_and_moat_of_Yonezawa_Castle.jpg",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
