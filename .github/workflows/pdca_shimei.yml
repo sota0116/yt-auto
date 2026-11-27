@@ -46,14 +46,42 @@ jobs:
         working-directory: pipeline
         run: |
           python -X utf8 - <<'EOF' || true
-          import json
+          # 2026-11-27：初回が 403 だったので、原因が分かるように ①鍵の許可（scope）の一覧 ②断られた時の応答本文 を出す。
+          # 鍵の中身・access token そのものは出さない（tokeninfo の返事からも scope だけ取り出す）
+          import json, sys, urllib.error, urllib.parse, urllib.request
           from upload_job import api
+          from yt_auth import access_token
+          try:
+              q = urllib.parse.urlencode({"access_token": access_token("shimei")}).encode()
+              info = json.load(urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/tokeninfo", q), timeout=60))
+              sc = sorted(s.rsplit("/", 1)[-1] for s in info.get("scope", "").split())
+              print("鍵の許可（scope）：", ", ".join(sc) or "（空）")
+              print("yt-analytics.readonly（Reporting API に要る）：", "ある" if "yt-analytics.readonly" in sc else "★無い")
+          except urllib.error.HTTPError as e:
+              print("tokeninfo が断られた：", e.code)
+          def call(method, url, body=None):
+              try:
+                  return json.load(api("shimei", method, url, body=body, timeout=60))
+              except urllib.error.HTTPError as e:
+                  txt = e.read().decode("utf-8", "replace")
+                  print(f"【断られた】{method} {url} → {e.code}")
+                  try:
+                      err = json.loads(txt).get("error", {})
+                      print("  message：", err.get("message"))
+                      print("  status：", err.get("status"))
+                      for d in err.get("errors", []):
+                          print("  reason：", d.get("reason"), "／", d.get("domain"))
+                      for d in err.get("details", []):
+                          print("  details：", d.get("reason"), d.get("metadata", {}).get("service", ""), d.get("metadata", {}).get("consumer", ""))
+                  except Exception:
+                      print("  本文：", txt[:1500])
+                  sys.exit(1)
           R = "https://youtubereporting.googleapis.com/v1"
-          jobs = json.load(api("shimei", "GET", R + "/jobs", timeout=60)).get("jobs", [])
+          jobs = call("GET", R + "/jobs").get("jobs", [])
           if any(j.get("reportTypeId") == "channel_reach_basic_a1" for j in jobs):
               print("reach の予約はある")
           else:
-              r = json.load(api("shimei", "POST", R + "/jobs", body={"reportTypeId": "channel_reach_basic_a1", "name": "shimei_reach_basic"}, timeout=60))
+              r = call("POST", R + "/jobs", {"reportTypeId": "channel_reach_basic_a1", "name": "shimei_reach_basic"})
               print("reach を予約した", r.get("id"))
           EOF
       - name: 数字を取る（48時間・7日の区切り。pipeline/pdca/stats_pdca_v2.py）
