@@ -10,7 +10,7 @@
 import argparse, datetime, json, os, subprocess, sys, time, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import api, API, channel_titles
-import long_day_guard, title_guard
+import day_slots, long_day_guard, title_guard
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH = "okinu"
@@ -102,6 +102,8 @@ def main():
         sys.exit("【止まりました】15分を超える動画は、チャンネルの電話番号の確認が済むまで上げられません（https://www.youtube.com/verify）")
     if a.publish_at and sec > 60:  # 横動画は同じ日に2本以上出さない（2026-10-29）
         long_day_guard.check(CH, datetime.datetime.fromisoformat(a.publish_at))
+    if a.publish_at and sec <= 180:  # ショートは、ほかのショートと6時間・横と3時間あける（2026-11-28）
+        day_slots.check(CH, day_slots._ts(a.publish_at))
     title_guard.check(title, channel_titles(CH))  # ほかの回の題の言い換えは止める（2026-10-30）
     if a.dry:
         print("（--dry なので上げません）", title)
@@ -132,6 +134,7 @@ def main():
         thumb_ok = False
         print("【メモ】サムネを付けられませんでした：", e.code)
     rec = {"work": name, "video_id": vid, "title": title, "video": a.video, "privacy": "private", "thumb": a.thumb,
+           "format": "long" if sec > 180 else "short",
            "thumb_set": thumb_ok, "publish_at": a.publish_at,
            "uploaded_at": datetime.datetime.now(JST).isoformat(timespec="seconds"),
            "type": "okinu", "titles": [title], "comment": comment}

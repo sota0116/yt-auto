@@ -160,7 +160,7 @@ def main():
     if at < datetime.datetime.now(JST) + datetime.timedelta(minutes=30):
         sys.exit(f"【止まりました】予約の時刻 {at:%m/%d %H:%M} が近すぎるか過ぎています")
     long_day_guard.check(CH, at)  # 横動画は同じ日に2本以上出さない
-    for t, wk in day_slots.near(CH, at)[:1]:
+    for t, wk in day_slots.near(CH, at, long=True)[:1]:
         print(f"（注意）{wk}（{t:%m/%d %H:%M}）と3時間あいていません")
     print("投稿案：", os.path.basename(post))
     print(f"動画 {sec:.1f}秒・{w}x{h}・{os.path.getsize(video) / 1e6:.1f}MB｜目次 {len(ch)}個（最後 {ch[-1]}秒）")

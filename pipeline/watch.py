@@ -30,7 +30,7 @@ from notify import issue, ping, stale, jload, now, JST
 from run_daily import hpath, jsave
 from upload_job import api, API
 import ustore
-import day_slots  # 同じチャンネルの公開どうしを3時間以上あける枠（2026-11-04）
+import day_slots  # 同じチャンネルの公開の間をあける枠（ショートどうしは6時間・横とは3時間）
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANA = "https://youtubeanalytics.googleapis.com/v2/reports"
@@ -279,12 +279,17 @@ def schedule_tomorrow(ch, up, dry, tom=None):
     # 手元で作っている回のために空けておく枠（profile.json の reserved_slots。種類ごとのチャンネルと同じ。spi 002 酉の市 2026-10-29）
     if f"{tom.isoformat()}T{hh}:{mm}" in (jload(os.path.join(ROOT, "channels", ch, "profile.json"), {}).get("reserved_slots") or []):
         return f"明日 {hh}:{mm} は手元で作っている回のために空けてある枠（profile.json の reserved_slots）"
-    warn = "".join(f"（注意：{w} {t:%m/%d %H:%M} と3時間あいていません。day_slots.py）" for t, w in day_slots.near(ch, at)[:1])
+    long = ustore.kind_of(e) == "long"
+    hits = day_slots.near(ch, at, skip_vid=e["video_id"], long=long)
+    if hits and not long:  # ショートは、ほかのショートと6時間・横と3時間あかなければ入れない（2026-11-28）
+        return f"{e['work']} は予約しません（{hits[0][1]} {hits[0][0]:%m/%d %H:%M} と近すぎます。day_slots.py）"
+    warn = "".join(f"（注意：{w} {t:%m/%d %H:%M} と3時間あいていません。day_slots.py）" for t, w in hits[:1])
     if dry:
         return f"（--dry）{e['work']} を {at.isoformat()} に予約する{warn}"
     st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
               "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
     api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
+    day_slots.remember(ch, e["video_id"], at, long)
     e["publish_at"] = at.isoformat()
     return f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました{warn}"
 
@@ -330,10 +335,10 @@ def schedule_tomorrow_kinds(ch, up, dry, tom=None):
                 and len(pool) - len(free) >= int(kc.get("extra_min_stock") or 99):
             free.insert(0, extra)  # 在庫があふれそうな日だけ、枠を1つ足す
         if rows is not None:
-            ok = [x for x in free if day_slots.gap_ok(ch, day_slots.at_of(tom, x), extra=new_ats, rows=rows)]
-            if kind == "short":
+            ok = [x for x in free if day_slots.gap_ok(ch, day_slots.at_of(tom, x), extra=new_ats, rows=rows, long=kind == "long")]
+            if kind != "long":
                 if len(ok) < len(free):
-                    out.append(f"{kind}：{'・'.join(x for x in free if x not in ok)} は前後3時間に別の公開があるので入れない")
+                    out.append(f"{kind}：{'・'.join(x for x in free if x not in ok)} は近くに別の公開があるので入れない（ショートどうしは6時間・横とは3時間）")
                 free = ok
             elif len(ok) < len(free):
                 out.append(f"{kind}：注意 {'・'.join(x for x in free if x not in ok)} は前後3時間に別の公開があります（横は時刻を動かさない）")
@@ -350,15 +355,22 @@ def schedule_tomorrow_kinds(ch, up, dry, tom=None):
             e = pool.pop(0)
             hh, mm = x.split(":")
             at = datetime.datetime.combine(tom, datetime.time(int(hh), int(mm)), JST)
+            # この種類の中で先に入れた予約とも比べる（上の ok は入れる前の判定）
+            if kind != "long" and rows is not None and not day_slots.gap_ok(ch, at, extra=new_ats, rows=rows):
+                pool.insert(0, e)
+                out.append(f"{kind}：{x} は、いま入れた予約と近すぎるので入れない")
+                continue
             if dry:
                 out.append(f"（--dry）{e['work']} を {at.isoformat()} に予約する")
+                new_ats.append((at, kind == "long"))
                 continue
             st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
                   "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
             api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
+            day_slots.remember(ch, e["video_id"], at, kind == "long")
             e["publish_at"] = at.isoformat()
             taken.add(at.strftime("%Y-%m-%dT%H:%M"))
-            new_ats.append(at)
+            new_ats.append((at, kind == "long"))
             out.append(f"{e['work']} を {at.strftime('%m/%d %H:%M')} に予約しました")
     return "／".join(out) or None
 
@@ -380,7 +392,7 @@ def schedule_teasers(ch, up, dry):
         at = (base + datetime.timedelta(minutes=TEASER_AFTER)).replace(second=0, microsecond=0)
         while at < now() + datetime.timedelta(minutes=30) or at.date() in used \
                 or not day_slots.gap_ok(ch, at, skip_vid=t.get("video_id"), extra=new_ats):
-            at += datetime.timedelta(days=1)  # 2026-11-04〜 前後3時間に同じチャンネルの公開があれば次の日（day_slots.py）
+            at += datetime.timedelta(days=1)  # 予告はショート。ほかのショートと6時間・横と3時間あかなければ次の日（day_slots.py）
         used.add(at.date())
         new_ats.append(at)
         if dry:
@@ -394,6 +406,7 @@ def schedule_teasers(ch, up, dry):
             t["予約の失敗"] = f"{err.code} {now().isoformat(timespec='seconds')}"
             out.append(f"{w} の予告を予約できませんでした（{err.code}）")
             continue
+        day_slots.remember(ch, t["video_id"], at)
         t["publish_at"] = at.isoformat()
         out.append(f"{w} の予告を {at.strftime('%m/%d %H:%M')} に予約しました")
     if tz and not dry:
@@ -416,12 +429,18 @@ def move(spec, dry):
     e = next((x for x in up if x.get("work") == work and not x.get("missing")), None)
     if not e or e.get("published"):
         raise SystemExit(f"{spec}：上げた回に無いか、もう公開されています")
+    long = ustore.kind_of(e) == "long"
+    if not long:  # 手で移す時も、ショートは6時間あける（2026-11-28）
+        day_slots.check(ch, at, skip_vid=e["video_id"])
+    for t, w in day_slots.near(ch, at, skip_vid=e["video_id"], long=long)[:1]:
+        print(f"（注意）{w}（{t:%m/%d %H:%M}）と3時間あいていません。day_slots.py")
     if dry:
         print(f"（--dry）{ch} {work} を {at.isoformat()} へ移す（今は {e.get('publish_at')}）")
         return
     st = {"privacyStatus": "private", "publishAt": at.isoformat(), "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
           "embeddable": True, "publicStatsViewable": True}  # 送らないと予約の時にオフに戻る（2026-10-28 002 で起きた）
     api(ch, "PUT", f"{API}/videos?part=status", {"id": e["video_id"], "status": st}, timeout=60)
+    day_slots.remember(ch, e["video_id"], at, long)
     print(f"{ch} {work} の予約を {e.get('publish_at')} → {at.isoformat()} に移しました")
     e["publish_at"] = at.isoformat()
     ustore.save(ch, up)

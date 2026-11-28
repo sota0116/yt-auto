@@ -18,11 +18,11 @@ import day_slots
 
 TIMES = ((7, 10), (12, 10), (20, 10))  # 2026-11-04 までの枠（記録として残す）。今は day_slots.py の PLAN["psy"] を使う
 # 2026-11-04 本人「1日2本なら昼と夜、3本なら朝昼夜」：本編（19:00）の日は 07:10・12:10・22:10、本編の無い日は 07:10・12:10・20:10。
-#   どの2本も3時間以上あける（day_slots.py）
+#   ショートどうしは6時間・横とは3時間以上あける（day_slots.py）
 
 
 def slot_after(when, used, ch="psy"):
-    """本編の公開（when）より後で、1時間より先で、空いていて、前後3時間に何も無い最初の枠（day_slots.py）"""
+    """本編の公開（when）より後で、1時間より先で、空いていて、ほかのショートと6時間・横と3時間あく最初の枠（day_slots.py）"""
     return day_slots.next_short(ch, used=used, after=when)
 
 

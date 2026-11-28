@@ -156,8 +156,8 @@ def main():
         sys.exit(0 if res[0].startswith("○") else 1)
     n = a.n or cfg.get("per_day", 2)
     tom = (datetime.datetime.now(JST) + datetime.timedelta(days=1)).date()
-    # 2026-11-04〜 枠は day_slots.py の PLAN["job"]（07:10・12:10。横 19:00・予告 22:10 と3時間以上あける）。
-    #   翌日から順に、空いていて前後3時間に何も無い枠を取る（埋まっていれば次の日へ）
+    # 2026-11-04〜 枠は day_slots.py の PLAN["job"]（07:10・12:10。ショートどうしは6時間以上・横とは3時間以上あける）。
+    #   翌日から順に、空いていてほかのショートと6時間・横と3時間あく枠を取る（埋まっていれば次の日へ）
     import day_slots
     picked = []
     for _ in range(n):

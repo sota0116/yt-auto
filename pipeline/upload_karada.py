@@ -13,7 +13,7 @@
 # ・非公開で上げて publishAt で公開の予約。AI の申告（containsSyntheticMedia）はオン、子ども向けではない。カテゴリは 27（教育）
 # ・script.json に "playlist" があれば、その再生リストに足す（ID は history\karada\playlists.json。まだ作っていない）
 # ・二重に上げない：history\karada\*_uploaded.json に同じ作業フォルダがある時と、チャンネルに同じタイトルがある時
-# ・同じチャンネルの公開・予約と3時間以上あける決まり（day_slots.py）はそのまま。横は時刻を動かさず注意だけ出す
+# ・同じチャンネルのショートどうしは6時間・横との間は3時間あける決まり（day_slots.py）はそのまま。横は時刻を動かさず注意だけ出す
 import argparse, datetime, glob, json, os, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import ROOT, api, API, channel_titles
@@ -58,8 +58,8 @@ def load(p):
 
 def next_slot(hist, long_, plan=()):
     """空いている一番近い枠（今から1時間より後）。横動画は、前の横動画から LONG_GAP 日あける。ショートは1日2つの時刻を順に埋める"""
-    if not long_:  # 2026-11-04〜 ショートは day_slots.py の枠（横の日と無い日で変わる。前後3時間に何も無い枠）
-        return day_slots.next_short(CH, used=[p["publish_at"] for p in plan]) or sys.exit("【止まりました】60日先まで枠が埋まっています")
+    if not long_:  # 2026-11-04〜 ショートは day_slots.py の枠（横の日と無い日で変わる。ショートと6時間・横と3時間あく枠）
+        return day_slots.next_short(CH, used=[(p["publish_at"], p["format"] == "long") for p in plan]) or sys.exit("【止まりました】60日先まで枠が埋まっています")
     now = datetime.datetime.now(JST)
     times = [LONG_AT] if long_ else SHORT_AT
     live_at = [h["publish_at"] for h in hist if h.get("publish_at") and live(h)]
@@ -121,9 +121,9 @@ def prepare(work, at_s, plan):
     if at < datetime.datetime.now(JST) + datetime.timedelta(minutes=30):
         sys.exit(f"【止まりました】{name}：予約の時刻 {at:%m/%d %H:%M} が近すぎるか過ぎています")
     if not long_:
-        day_slots.check(CH, at, extra=[p["publish_at"] for p in plan])  # 同じチャンネルの公開と3時間以上あける（2026-11-04）
+        day_slots.check(CH, at, extra=[(p["publish_at"], p["format"] == "long") for p in plan])  # ショートどうしは6時間・横とは3時間
     else:
-        for t, w in day_slots.near(CH, at, extra=[p["publish_at"] for p in plan])[:1]:
+        for t, w in day_slots.near(CH, at, extra=[(p["publish_at"], p["format"] == "long") for p in plan], long=True)[:1]:
             print(f"（注意）{name}：{w}（{t:%m/%d %H:%M}）と3時間あいていません。ショートを動かす（day_slots.py）")
     if long_:
         long_day_guard.check(CH, at)  # 横動画は同じ日に2本以上出さない

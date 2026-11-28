@@ -58,7 +58,7 @@ def main():
     if at < datetime.datetime.now(JST) + datetime.timedelta(minutes=30):
         sys.exit(f"【止まりました】予約の時刻 {at:%m/%d %H:%M} が近すぎるか過ぎています")
     import day_slots
-    day_slots.check("job", at)  # 2026-11-04〜 同じチャンネルの公開・予約と3時間以上あける（本人「動画と動画の間は時間を空けて」）
+    day_slots.check("job", at)  # 2026-11-04〜 ほかのショートと6時間・横と3時間以上あける（本人「動画と動画の間は時間を空けて」）
     video = os.path.join(work, "short.mp4")
     if not os.path.exists(video):
         sys.exit(f"【止まりました】{video} がありません")

@@ -9,6 +9,7 @@ import argparse, datetime, json, os, subprocess, sys, time, urllib.error
 from channel_policy import RETIRED_CHANNELS
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import api, API, channel_titles
+import day_slots
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH = "psy"
@@ -73,6 +74,8 @@ def main():
     print(f"動画 {sec / 60:.1f}分・{os.path.getsize(video) / 1e6:.0f}MB｜長い動画の許可：{long_ok}")
     if sec > 15 * 60 and long_ok != "allowed":
         sys.exit("【止まりました】15分を超える動画は、チャンネルの電話番号の確認が済むまで上げられません（https://www.youtube.com/verify）")
+    if a.publish_at and sec <= 180:  # ショートは、ほかのショートと6時間・横と3時間あける（2026-11-28）
+        day_slots.check(CH, day_slots._ts(a.publish_at))
     if a.dry:
         print("（--dry なので上げません）", title)
         return
@@ -99,6 +102,7 @@ def main():
         thumb_ok = False
         print("【メモ】サムネを付けられませんでした：", e.code)
     rec = {"work": name, "video_id": vid, "title": title, "video": a.video, "privacy": "private", "thumb": a.thumb,
+           "format": "long" if sec > 180 else "short",
            "thumb_set": thumb_ok, "publish_at": a.publish_at,
            "uploaded_at": datetime.datetime.now(JST).isoformat(timespec="seconds"),
            "type": "psy", "titles": [title], "comment": comment}

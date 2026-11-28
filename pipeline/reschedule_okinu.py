@@ -7,10 +7,10 @@
 #   横動画を、横動画がもう入っている日へ動かそうとしたら止まる（long_day_guard.py。2026-10-29）
 # ・--retire：予約を外して非公開のまま、題の頭に --prefix を付け、記録に "retired": true。消すのは本人
 # ・status を書き直す時は、上げた時と同じ項目（AI の申告オン・子ども向けでない）を全部入れる（入れないと既定に戻るため）
-import argparse, datetime, json, os, sys
+import argparse, datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from upload_job import api, API
-import long_day_guard
+import day_slots, long_day_guard
 
 CH = "okinu"
 JST = datetime.timezone(datetime.timedelta(hours=9))
@@ -18,7 +18,7 @@ HIST = [r"C:\yt-auto\history\okinu\uploaded.json"]
 
 
 def get(vid):
-    items = json.load(api(CH, "GET", f"{API}/videos?part=snippet,status&id={vid}", timeout=60)).get("items", [])
+    items = json.load(api(CH, "GET", f"{API}/videos?part=snippet,status,contentDetails&id={vid}", timeout=60)).get("items", [])
     if not items:
         sys.exit(f"【止まりました】{vid} が見つかりません")
     return items[0]
@@ -62,6 +62,9 @@ def main():
         at = datetime.datetime.fromisoformat(a.at).replace(tzinfo=JST)
         if at < now + datetime.timedelta(minutes=30):
             sys.exit("【止まりました】30分より先の時刻にしてください")
+        m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", it.get("contentDetails", {}).get("duration") or "")
+        if not m or sum(int(x or 0) * w for x, w in zip(m.groups(), (3600, 60, 1))) <= 180:  # 3分以内はショート：6時間あける
+            day_slots.check(CH, at, skip_vid=a.vid)
         long_day_guard.check_vid(CH, a.vid, at)  # 横動画は同じ日に2本以上出さない（2026-10-29）
         utc = at.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         print("変えた後：公開予定", at.isoformat())
