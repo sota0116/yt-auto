@@ -1,0 +1,65 @@
+{
+ "at": "2026-11-28T21:43+09:00",
+ "pc": {
+  "mem": {
+   "freeMb": 27160,
+   "totalMb": 65277
+  },
+  "need": 1500,
+  "apps": [
+   {
+    "name": "Chrome",
+    "mb": 9395,
+    "n": 50
+   },
+   {
+    "name": "Cursor",
+    "mb": 3014,
+    "n": 21
+   },
+   {
+    "name": "Claude",
+    "mb": 1869,
+    "n": 8
+   },
+   {
+    "name": "Node",
+    "mb": 947,
+    "n": 23
+   },
+   {
+    "name": "Python",
+    "mb": 233,
+    "n": 6
+   }
+  ],
+  "jobs": [],
+  "works": [],
+  "heavy": null,
+  "autoLong": {
+   "task": "ready",
+   "state": "idle",
+   "nextAt": "2026-11-28T22:30:00",
+   "lastAt": "2026-11-28T20:48+09:00",
+   "ch": "spi"
+  },
+  "tasks": {
+   "auto": {
+    "state": "Ready",
+    "last": "2026-11-28T19:30:01",
+    "next": "2026-11-28T22:30:00",
+    "res": 0
+   },
+   "status": {
+    "state": "Ready",
+    "last": "2026-11-28T21:20:01",
+    "next": "2026-11-28T21:50:00",
+    "res": 0
+   }
+  }
+ },
+ "cloud": null,
+ "errors": [
+  "cloud"
+ ]
+}
