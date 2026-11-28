@@ -413,7 +413,7 @@
   "seconds": 399,
   "title_now": "【給与逆転】タクシー運転手は年収が近い仕事で一番稼ぐのに、なぜ時給では勝てないのか",
   "synthetic_on": null,
-  "views_now": 376,
+  "views_now": 377,
   "published": true,
   "published_at": "2026-11-04T19:00:06+09:00",
   "comment_id": "UgyIBv9sF6BIW86PKlV4AaABAg",
@@ -673,7 +673,7 @@
   "seconds": 509,
   "title_now": "あなたの時給は警備員より上？ 年収約380万円で1日中旗を振る仕事と比べたら",
   "synthetic_on": null,
-  "views_now": 34,
+  "views_now": 42,
   "published": true,
   "published_at": "2026-11-13T19:00:08+09:00",
   "comment_id": "UgzwYhVVeFxgUHrb4HZ4AaABAg",
@@ -787,7 +787,7 @@
   "seconds": 521,
   "title_now": "【白衣の給料】薬剤師、40代前半で平均と同じ年収なのに、最後に差がつく理由",
   "synthetic_on": null,
-  "views_now": 90,
+  "views_now": 93,
   "published": true,
   "published_at": "2026-11-19T19:00:39+09:00",
   "comment_id": "Ugzl2XIiPTasPmQwALB4AaABAg",
@@ -815,7 +815,7 @@
   "seconds": 516,
   "title_now": "【職人の謎】大工、働く人全体より年上で長く働くのに、稼ぎが平均に届かない理由",
   "synthetic_on": null,
-  "views_now": 593,
+  "views_now": 594,
   "published": true,
   "published_at": "2026-11-21T19:00:33+09:00",
   "comment_id": "Ugz0eVSrP2vdYHCFg6R4AaABAg",
@@ -869,9 +869,15 @@
   "seconds": 509,
   "title_now": "【給与逆転】歯科衛生士と美容師、稼ぎは並ぶのに1時間の値段で差が開く理由",
   "synthetic_on": null,
-  "views_now": 21,
+  "views_now": 32,
   "published": true,
-  "published_at": "2026-11-25T19:00:31+09:00"
+  "published_at": "2026-11-25T19:00:31+09:00",
+  "swaps": [
+   {
+    "日時": "2026-11-28T20:31:59+09:00",
+    "内容": "タイトルを「もし歯科衛生士になったら、年収は約396万円。美容師と1時間の値段で比べた結果」に（サムネB案のファイルが見つからないのでサムネはそのまま。週報に出す）"
+   }
+  ]
  },
  {
   "work": "026_a4_6b5d19ad",
@@ -895,7 +901,7 @@
   "seconds": 513,
   "title_now": "【悲報】大型トラック運転手、年収は大工より上なのに時給にすると負けた理由",
   "synthetic_on": null,
-  "views_now": 0,
+  "views_now": 93,
   "published": true,
   "published_at": "2026-11-27T19:00:33+09:00"
  },
@@ -989,7 +995,7 @@
   ],
   "comment": "歯科医師を含む、主な職業の年収・労働時間と、産業別の離職率の一覧を、LINEで無料で受け取れます。\nhttps://utage-system.com/line/open/m1FcpYY2zwWA?mtid=obkoW3UnzT4f",
   "privacy_now": "private",
-  "publish_at": "2026-12-05T19:00:00+09:00",
+  "publish_at": "2026-12-05T10:00:00Z",
   "seconds": 503,
   "title_now": "【高給の謎】歯科医師、年収は平均より約517万円高いのに、勤め先の年数は短い理由",
   "synthetic_on": null,

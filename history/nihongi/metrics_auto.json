@@ -1016,6 +1016,15 @@
    "直す所": [],
    "取った日": "2026-11-24",
    "再生（公開ページ）": 3255
+  },
+  "d7": {
+   "views": 2146,
+   "averageViewPercentage": 104.65,
+   "averageViewDuration": 54,
+   "subscribersGained": 2,
+   "直す所": [],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 3410
   }
  },
  "S131_r023": {
@@ -1033,6 +1042,18 @@
    ],
    "取った日": "2026-11-24",
    "再生（公開ページ）": 2494
+  },
+  "d7": {
+   "views": 1429,
+   "averageViewPercentage": 73.59,
+   "averageViewDuration": 44,
+   "subscribersGained": 1,
+   "直す所": [
+    "最初の30秒で30%以上が離脱 → つかみの型を変える（ネタ帳の次の3本で別の型のつかみ）",
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 2629
   }
  },
  "L105_w001": {
@@ -1046,6 +1067,15 @@
    "直す所": [],
    "取った日": "2026-11-24",
    "再生（公開ページ）": 8
+  },
+  "d7": {
+   "views": 8,
+   "averageViewPercentage": 77.65,
+   "averageViewDuration": 378,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 17
   }
  },
  "S132_n002": {
@@ -1161,15 +1191,46 @@
  },
  "S138_n019": {
   "type": null,
-  "video_id": "dHlwn13REkA"
+  "video_id": "dHlwn13REkA",
+  "h72": {
+   "views": 5,
+   "averageViewPercentage": 71.81,
+   "averageViewDuration": 30,
+   "subscribersGained": 0,
+   "直す所": [],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 6
+  }
  },
  "S139_r025": {
   "type": null,
-  "video_id": "ax8BswMd014"
+  "video_id": "ax8BswMd014",
+  "h72": {
+   "views": 1535,
+   "averageViewPercentage": 81.64,
+   "averageViewDuration": 38,
+   "subscribersGained": 0,
+   "直す所": [
+    "1分の時点で残りが50%未満 → 前置きをさらに短くし、1文目から本編の場面に入る"
+   ],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 4976
+  }
  },
  "L107_long_s110": {
   "type": null,
-  "video_id": "3Vt7UjTEhlI"
+  "video_id": "3Vt7UjTEhlI",
+  "h72": {
+   "views": 39,
+   "averageViewPercentage": 25.47,
+   "averageViewDuration": 116,
+   "subscribersGained": 0,
+   "直す所": [
+    "21%あたりで急に落ちる（9%）→ その章を後ろに回し、クイズか山場を手前に置く"
+   ],
+   "取った日": "2026-11-28",
+   "再生（公開ページ）": 169
+  }
  },
  "S140_r028": {
   "type": null,
@@ -1186,5 +1247,13 @@
  "S142_r029": {
   "type": null,
   "video_id": "Cs55Bqh2KZ0"
+ },
+ "S143_n021": {
+  "type": null,
+  "video_id": "v6o08DK7BlI"
+ },
+ "S145_n025": {
+  "type": null,
+  "video_id": "9w27PAt5GS0"
  }
 }
