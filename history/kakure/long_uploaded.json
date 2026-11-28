@@ -6,12 +6,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-10-30T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-10-30T12:04:53+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-10-30T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "002_タケミナカタ",
@@ -20,12 +22,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-01T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-10-31T16:12:34+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-11-01T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "003_因幡の白兎",
@@ -34,12 +38,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-03T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-01T23:45:17+09:00",
-  "missing": false,
+  "missing": true,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "謎"
+  "playlist": "謎",
+  "unscheduled_publish_at": "2026-11-03T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "004_曜日の神々",
@@ -48,12 +54,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-05T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-02T00:03:15+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-11-05T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "005_エピメテウス",
@@ -62,12 +70,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-07T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-04T19:05:27+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-11-07T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "006_神無月",
@@ -76,12 +86,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-09T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-05T05:01:46+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "謎"
+  "playlist": "謎",
+  "unscheduled_publish_at": "2026-11-09T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "007_星座",
@@ -90,12 +102,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-11T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-05T10:38:34+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-11-11T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "008_イザナミ",
@@ -104,12 +118,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-13T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-05T13:59:16+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-11-13T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "009_セイレーン",
@@ -118,12 +134,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-15T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-05T22:44:42+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-11-15T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "010_ヤマタノオロチ",
@@ -132,12 +150,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-17T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-06T04:41:13+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "謎"
+  "playlist": "謎",
+  "unscheduled_publish_at": "2026-11-17T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "011_アメノウズメ",
@@ -146,12 +166,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-19T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-07T21:28:44+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-11-19T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "012_ヤヌス",
@@ -160,12 +182,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-21T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-10T00:24:01+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-11-21T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "013_浦島太郎",
@@ -174,12 +198,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-23T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-11T22:51:14+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "謎"
+  "playlist": "謎",
+  "unscheduled_publish_at": "2026-11-23T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "014_海幸山幸",
@@ -188,12 +214,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-25T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-13T23:41:10+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-11-25T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "015_パーン",
@@ -202,12 +230,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-27T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-15T23:00:57+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-11-27T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "016_稲荷の狐",
@@ -216,12 +246,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-11-29T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-18T00:12:28+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "謎"
+  "playlist": "謎",
+  "unscheduled_publish_at": "2026-11-29T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "017_弟橘比売",
@@ -230,12 +262,14 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-12-01T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-19T23:34:13+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "物語"
+  "playlist": "物語",
+  "unscheduled_publish_at": "2026-12-01T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  },
  {
   "work": "018_エコー",
@@ -244,11 +278,13 @@
   "video": "long_final.mp4",
   "format": "long",
   "privacy": "private",
-  "publish_at": "2026-12-03T20:00:00+09:00",
+  "publish_at": null,
   "uploaded_at": "2026-11-21T23:35:47+09:00",
   "missing": false,
   "thumb_set": true,
   "thumb": "thumb.jpg",
-  "playlist": "元ネタ"
+  "playlist": "元ネタ",
+  "unscheduled_publish_at": "2026-12-03T20:00:00+09:00",
+  "unscheduled_checked_at": "2026-11-28T15:22:54+09:00"
  }
 ]
