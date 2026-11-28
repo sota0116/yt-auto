@@ -1057,5 +1057,17 @@
   "源": "wikimedia_commons",
   "判定": "fallback",
   "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
+ },
+ {
+  "日": "2026-11-28",
+  "回": "S157_r053",
+  "カット": "n13",
+  "題": "File:Tekijuku 01.JPG",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Tekijuku_01.JPG/1920px-Tekijuku_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "説明ページ": "https://commons.wikimedia.org/wiki/File:Tekijuku_01.JPG",
+  "検索語": "https://commons.wikimedia.org/wiki/File:Tekijuku_01.JPG",
+  "源": "wikimedia_commons",
+  "判定": "fallback",
+  "判定理由": "【止まりました】GEMINI_API_KEY_FREE が見つかりません（中身は人に見せない）"
  }
 ]
