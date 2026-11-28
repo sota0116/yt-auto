@@ -28,7 +28,8 @@ permissions:
 
 jobs:
   make:
-    if: inputs.ch != 'psy' && (inputs.ch != '' || vars.AGENT_CHANNELS != '') && vars.PAUSED != 'true'
+    # AGENT_CHANNELS が [] の時も止める（空の matrix は「workflow file issue」で毎回落ちて failed メールが来るため。2026-11-28）
+    if: inputs.ch != 'psy' && (inputs.ch != '' || (vars.AGENT_CHANNELS != '' && vars.AGENT_CHANNELS != '[]')) && vars.PAUSED != 'true'
     strategy:
       fail-fast: false
       matrix:
