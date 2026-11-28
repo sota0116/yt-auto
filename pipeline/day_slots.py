@@ -208,15 +208,18 @@ def remember(ch, vid, at, long=False):
 
 
 def booked(ch):
-    """[(日時, 横か, video_id, 名前)]：公開済みと予約中の全部（ショート・横・予告）。YouTube を読めた動画は YouTube の時刻が正"""
+    """[(日時, 横か, video_id, 名前)]：公開済みと予約中の全部（ショート・横・予告）。YouTube を読めた動画は YouTube の時刻を数える。
+    記録のこれからの予約が YouTube と違う時は両方の時刻をふさぐ（同じ video_id が2行になる）"""
     out = _history_rows(ch)
     lv = live_rows(ch)
     if lv:
         kind = {v: lg for _, lg, v, _ in out if v}
         name = {v: w for _, _, v, w in out if v}
         now = datetime.datetime.now(JST)
-        # YouTube に公開も予約も無い動画でも、記録にこれからの予約があれば残す（予約した直後は古い値が返る。空きと数えない）
-        rows = [r for r in out if not r[2] or r[2] not in lv or (not lv[r[2]][0] and r[0] > now)]
+        # videos.list は書き換えの後も古い値を返すことがある（2026-11-28 に確認：同じ動画で新旧が15分以上まざった）。
+        # 記録のこれからの予約が YouTube に無いか違う時は、記録の時刻も残して空きと数えない
+        rows = [r for r in out if not r[2] or r[2] not in lv
+                or (r[0] > now and (not lv[r[2]][0] or abs(r[0] - lv[r[2]][0]) >= datetime.timedelta(minutes=2)))]
         for vid, (at, is_long, title) in lv.items():
             if at:  # 記録と長さのどちらかがショートなら、ショートとして数える（きつい方）。長さがまだ出ない時は記録
                 lg = kind.get(vid, is_long) if is_long is None else (is_long and kind.get(vid, True))
@@ -331,6 +334,8 @@ def violations(rows, since):
         for b in rows[i + 1:]:
             if b[0] - a[0] >= SHORT_GAP:
                 break
+            if a[2] and a[2] == b[2]:
+                continue  # 同じ動画の記録の時刻と YouTube の時刻
             if b[0] > since and b[0] - a[0] < need_gap(a[1], b[1]):
                 out.append((a, b))
     return out

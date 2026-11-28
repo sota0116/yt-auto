@@ -48,13 +48,13 @@ def record(ch, vid, old, new, root=None):
 
 
 def plan(ch, rows, scheduled, now):
-    """rows：booked の全部。scheduled：YouTube で今も予約中の {video_id}。返り値 (移す [(行, 新しい日時)], 残る問題 [文])"""
-    movable = sorted((r for r in rows if r[2] in scheduled and not r[1] and r[0] > now + LOCK_BEFORE), key=lambda r: (r[0], r[2]))
-    ids = {r[2] for r in movable}
-    placed = [r for r in rows if r[2] not in ids]
+    """rows：booked の全部。scheduled：YouTube で今も予約中の {video_id: 公開予定}。返り値 (移す [(行, 新しい日時)], 残る問題 [文])"""
+    movable = sorted((r for r in rows if r[2] in scheduled and abs(r[0] - scheduled[r[2]]) < datetime.timedelta(minutes=2)
+                      and not r[1] and r[0] > now + LOCK_BEFORE), key=lambda r: (r[0], r[2]))
+    placed = [r for r in rows if r not in movable]  # 記録にだけある時刻の行も、場所をふさぐ側に残る
     moves, left, later = [], [], []
     for r in movable:  # 先に、動かさずに残せる予約を全部決める（移し先が、残せる予約の場所を取らないように）
-        (placed if ds.gap_ok(ch, r[0], rows=[x for x in placed if not x[1]]) else later).append(r)
+        (placed if ds.gap_ok(ch, r[0], skip_vid=r[2], rows=[x for x in placed if not x[1]]) else later).append(r)
     for r in later:
         t0, _, vid, work = r
         floor = max(t0, now + LEAD)
@@ -62,7 +62,7 @@ def plan(ch, rows, scheduled, now):
         for _ in range(90):
             for hm in ds.short_times(ch, day, rows=rows):
                 t = ds.at_of(day, hm)
-                if t > floor and ds.gap_ok(ch, t, rows=placed):
+                if t > floor and ds.gap_ok(ch, t, skip_vid=vid, rows=placed):
                     to = t
                     break
             if to:
@@ -121,7 +121,7 @@ def run(ch, dry, now, log):
     if not lv:
         return [], [f"{ch}: この機械では YouTube を読めません（ログイン無し）。予約は直していません"]
     rows = ds.booked(ch)
-    scheduled = {v for v, (at, _, _) in lv.items() if at and at > now}
+    scheduled = {v: at for v, (at, _, _) in lv.items() if at and at > now}
     moves, left = plan(ch, rows, scheduled, now)
     done = []
     for (old, _, vid, work), new in moves:
